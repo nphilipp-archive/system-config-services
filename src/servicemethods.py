@@ -17,13 +17,28 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-import commands
 import string
 import re
 import os
 import sys
 from translate import _, N_, cat
 
+
+def getstatusoutput(cmd):
+    """Return (status, output) of executing cmd in a shell."""
+    import os
+    text=""
+    pipe = os.popen('{ ' + cmd + '; } 2>&1', 'r')
+    try:
+        text = pipe.read()
+    except IOError,v:
+        text = pipe.read()
+#        print v[0],cmd,text
+        
+    sts = pipe.close()
+    if sts is None: sts = 0
+    if text[-1:] == '\n': text = text[:-1]
+    return sts, text
 
 class ServiceMethods:
     """Includes methods used to find services, and information about them such
@@ -37,7 +52,7 @@ class ServiceMethods:
     def get_status(self,servicename):
         status = self.UNKNOWN
         try:
-            message = commands.getoutput("LANG=en_US /sbin/service " + servicename + " status < /dev/null")
+            message = getoutput("LANG=en_US /sbin/service " + servicename + " status < /dev/null")
         except:
             pass
         if string.find(message,"running")!=-1:
@@ -76,7 +91,7 @@ class ServiceMethods:
 	      servicename[-8:] == '.rpmsave' or servicename[-7:] == '.rpmnew' or \
 	      servicename[-4:] == '.swp' or servicename[-8:] == '.rpmorig':
 		  continue
-	    configured_list = commands.getstatusoutput("LANG=en_US /sbin/chkconfig --list " + servicename)
+	    configured_list = getstatusoutput("LANG=en_US /sbin/chkconfig --list " + servicename)
 	    if configured_list[0] != 0:
 		continue
 	    services.append(servicename)
@@ -130,7 +145,7 @@ class ServiceMethods:
 
     def get_runlevel(self):
         """returns the current runlevel, uses /sbin/runlevel"""
-        runlevel_output = commands.getstatusoutput("/sbin/runlevel")
+        runlevel_output = getstatusoutput("/sbin/runlevel")
         # This is the current runlevel
         return runlevel_output[len(runlevel_output)-1][2]
 
@@ -145,7 +160,7 @@ class ServiceMethods:
 
         if add_or_del == 1 or add_or_del == 0:
             try:
-                commands.getstatusoutput("LANG=en_US /sbin/chkconfig --level %s %s %s" % (editing_runlevel, servicename, chkconfig_action))
+                getstatusoutput("LANG=en_US /sbin/chkconfig --level %s %s %s" % (editing_runlevel, servicename, chkconfig_action))
             except IOError:
                 pass
             self.dict_services[servicename][0][int(editing_runlevel)] = add_or_del
@@ -163,7 +178,7 @@ class ServiceMethods:
 
         if add_or_del == 1 or add_or_del == 0:
             try:
-                commands.getstatusoutput("LANG=en_US /sbin/chkconfig %s %s" % (xinetd_servicename , disable_option))
+                getstatusoutput("LANG=en_US /sbin/chkconfig %s %s" % (xinetd_servicename , disable_option))
             except:
                 pass
             # for xinetd services, set the dictionary to show that it's disabled in all runlevels
@@ -187,7 +202,7 @@ class ServiceMethods:
         self.allservices = []
 
         
-        chkconfig_list = commands.getstatusoutput("LANG=en_US /sbin/chkconfig --list")[1]
+        chkconfig_list = getstatusoutput("LANG=en_US /sbin/chkconfig --list")[1]
         chkconfig_list = re.split('\n', chkconfig_list)
 
         for i in range(0, len(chkconfig_list)):
@@ -226,7 +241,7 @@ class ServiceMethods:
                     break
                 
             runlevels = []
-            runlevels = commands.getstatusoutput("LANG=en_US /sbin/chkconfig --list " + servicename)[1]
+            runlevels = getstatusoutput("LANG=en_US /sbin/chkconfig --list " + servicename)[1]
             runlevels = re.sub("\\011", " ", runlevels)
             runlevels = re.split(r'[0-6]\:', runlevels)
             del runlevels[0]
@@ -262,7 +277,7 @@ class ServiceMethods:
             f.close()
 
             runlevels = []
-            runlevels = commands.getstatusoutput("LANG=en_US /sbin/chkconfig --list " + servicename)[1]
+            runlevels = getstatusoutput("LANG=en_US /sbin/chkconfig --list " + servicename)[1]
             runlevels = re.split("", runlevels)
             runlevels = re.split('\\011', runlevels[0])
             del runlevels[0]
@@ -327,7 +342,7 @@ class ServiceMethods:
         if self.dict_services.has_key(servicename):
             if int(self.dict_services[servicename][1]) == 1:
                 if int(self.dict_services["xinetd"][0][int(runlevel)]) == 1:
-                    action_results = commands.getstatusoutput("/sbin/service xinetd reload < /dev/null ")
+                    action_results = getstatusoutput("/sbin/service xinetd reload < /dev/null ")
 
                     if action_results[0] != 0:
                         return (1,_("xinetd failed to reload for ") + servicename +
@@ -339,7 +354,7 @@ class ServiceMethods:
                     return (1, _("xinetd must be enabled for %s to run") % servicename)
 
             if int(self.dict_services[servicename][1]) == 0:
-                action_results = commands.getstatusoutput("/sbin/service %s %s < /dev/null" % (servicename, action_type))
+                action_results = getstatusoutput("/sbin/service %s %s < /dev/null" % (servicename, action_type))
                 if action_results[0] != 0:
                     return (1, _("%s failed. The error was: %s") % (servicename,action_results[1]))
                 else:
