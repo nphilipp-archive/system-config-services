@@ -1,4 +1,34 @@
+2003-03-07  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* redhat-config-services.spec.in: bump version for rhel
+
+2003-03-05  mitr  <mitr@redhat.com>
+
+	* po/cs.po: Update Czech translation
+
+2003-03-05  morais  <morais@redhat.com>
+
+	* po/pt.po: update
+
+2003-03-04  khashida  <khashida@redhat.com>
+
+	* po/ja.po: update
+
+2003-03-04  menthos  <menthos@redhat.com>
+
+	* po/sv.po: 2003-03-04  Christian Rose  <menthos@menthos.com>
+
+		* sv.po: Updated Swedish translation.
+
+2003-03-04  nalin  <nalin@redhat.com>
+
+	* redhat-config-services.pam:
+	- fixup PAM configuration for multilib systems
+
 2003-03-04  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* ChangeLog, config.status, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po:
+	release 0.8.5
 
 	* configure.in, redhat-config-services.spec.in, src/serviceconf.glade, src/serviceconf.py:
 	Fix swiching runlevels on modified screens.
