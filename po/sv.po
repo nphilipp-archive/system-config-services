@@ -1,12 +1,12 @@
 # Swedish messages for serviceconf.
 # Copyright (C) 2001, 2003 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.31 2003/01/28 14:35:35 dwalsh Exp $
+# $Id: sv.po,v 1.32 2003/01/28 18:21:36 dwalsh Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2003-01-28 09:45-0500\n"
+"POT-Creation-Date: 2003-01-28 13:31-0500\n"
 "PO-Revision-Date: 2003-01-09 23:59+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
