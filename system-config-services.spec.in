@@ -49,8 +49,9 @@ rm -rf %{buildroot}
 
 %changelog
 
-* Mon Aug 26 2002 Dan Walsh <dwalsh@redhat.com> 0.8.1-12
+* Tue Aug 27 2002 Dan Walsh <dwalsh@redhat.com> 0.8.1-12
 - Update translations
+- Fix multi-processor problem with popen
 
 * Tue Aug 20 2002 Dan Walsh <dwalsh@redhat.com> 0.8.1-11
 - Use gnome url_show for help
