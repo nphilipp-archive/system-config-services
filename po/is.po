@@ -84,20 +84,19 @@ msgstr "Endurræsa"
 
 #: src/serviceconf.py:195
 msgid "_Save"
-msgstr ""
+msgstr "_Vista"
 
 #: src/serviceconf.py:195
 msgid "Save"
-msgstr ""
+msgstr "Vista"
 
 #: src/serviceconf.py:200
 msgid "_Revert"
-msgstr ""
+msgstr "_Afturkalla"
 
 #: src/serviceconf.py:200
-#, fuzzy
 msgid "Revert"
-msgstr "Endurræsa"
+msgstr "Afturkalla"
 
 #. the textbox
 #. the statusbox
@@ -156,10 +155,17 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"System Services stillingatólið VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 
 #: src/serviceconf.py:476
 msgid "About"
-msgstr ""
+msgstr "Um"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -167,7 +173,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:505
 msgid "Help is not available."
-msgstr ""
+msgstr "Hjálpin er ekki tiltæk."
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -361,7 +367,7 @@ msgstr "_Hjálp"
 
 #: src/serviceconf.glade.h:28
 msgid "_Quit"
-msgstr ""
+msgstr "_Hætta"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
@@ -382,27 +388,3 @@ msgstr "_Ræsa þjónustu"
 #: src/serviceconf.glade.h:33
 msgid "_View"
 msgstr "_Birta"
-
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "Höfundarréttur (c) 2002 Red Hat, Inc. Allur réttur áskilinn."
-
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "Þessum hugbúnaði má dreifa samkvæmt skilmálum GPL leyfisins.\n"
-#~ "Vinsamlegast tilkynnið villur á villuvef Red Hat:\n"
-#~ "http://bugzilla.redhat.com"
-
-#~ msgid "translator_credits"
-#~ msgstr "Þýtt af Richard Allen <ra@ra.is>"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "Endurræsa valda þjónustu"
-
-#~ msgid "Start the selected service"
-#~ msgstr "Ræsa valda þjónustu"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "Stöðva valda þjónustu"
