@@ -211,7 +211,7 @@ class ServiceMethods:
                 f = open("/etc/init.d/" + servicename)
             except IOError, msg:
                 print "/etc/init.d/" + servicename , msg
-                raise
+                continue
                 
             line = f.readline()
             while line:
