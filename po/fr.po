@@ -76,7 +76,7 @@ msgstr ""
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:185
 msgid "Currently Running in Runlevel: "
-msgstr "Actuellement en exécution sur le niveau d'exécution: "
+msgstr "Actuellement en exécution sur le niveau d'exécution&nbsp;: "
 
 #. This is a sentry
 #: src/serviceconf.py:196
@@ -101,7 +101,7 @@ msgstr "Services"
 #: src/serviceconf.py:252 src/serviceconf.py:357 src/serviceconf.py:374
 #: src/serviceconf.py:393
 msgid "Editing Runlevel: "
-msgstr "Modification du niveau d'exécution: "
+msgstr "Modification du niveau d'exécution&nbsp;: "
 
 #. set the text in txtDesc
 #. if an xinetd service is selected, disable these,
@@ -211,7 +211,7 @@ msgstr "xinetd n'est pas reparti à cause de "
 
 #: src/servicemethods.py:324
 msgid ". The error was: "
-msgstr ". L'erreur était: "
+msgstr ". L'erreur était&nbsp;: "
 
 #: src/servicemethods.py:326
 #, python-format
@@ -226,7 +226,7 @@ msgstr "xinetd doit être activé pour que %s puisse être exécuté"
 #: src/servicemethods.py:334
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s n'a pas réussi. L'erreur était: %s"
+msgstr "%s n'a pas réussi. L'erreur était&nbsp;: %s"
 
 #: src/servicemethods.py:336
 msgid " successful"
@@ -234,7 +234,7 @@ msgstr " réussi"
 
 #: src/serviceconf.glade.h:1
 msgid "Current Active Runlevel: "
-msgstr "Niveau d'exécution actif:"
+msgstr "Niveau d'exécution actif&nbsp;:"
 
 #: src/serviceconf.glade.h:2
 msgid "Description"
@@ -246,7 +246,7 @@ msgstr "Ne pas enregistrer"
 
 #: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
-msgstr "Modification du niveau d'exécution:"
+msgstr "Modification du niveau d'exécution&nbsp;:"
 
 #: src/serviceconf.glade.h:5
 msgid "None"
@@ -314,7 +314,7 @@ msgid ""
 "Do you want to save the changes?"
 msgstr ""
 "Vous avez effectué des modifications sur le niveau d'exécution en cours.\n"
-"Voulez-vous sauvegarder ces modifications ?"
+"Voulez-vous sauvegarder ces modifications&nbsp;?"
 
 #: src/serviceconf.glade.h:22
 msgid "_Actions"
