@@ -113,7 +113,7 @@ msgstr ""
 #. set the text in StatusView
 #: src/serviceconf.py:318
 msgid "Unknown"
-msgstr ""
+msgstr "Άγνωστο"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -133,7 +133,7 @@ msgstr ""
 
 #: src/serviceconf.py:451
 msgid "translator_credits"
-msgstr ""
+msgstr "Νίκος Χαρωνιτάκης <charosn@her.forthnet.gr>"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -235,7 +235,7 @@ msgstr "Επιτυχής"
 
 #: src/serviceconf.glade.h:1
 msgid "*"
-msgstr ""
+msgstr "*"
 
 #: src/serviceconf.glade.h:2
 #, fuzzy
@@ -253,7 +253,7 @@ msgstr "_Διακοπή Υπηρεσίας"
 
 #: src/serviceconf.glade.h:5
 msgid "Description"
-msgstr ""
+msgstr "Περιγραφή"
 
 #: src/serviceconf.glade.h:6
 msgid "Don't Save"
@@ -310,7 +310,7 @@ msgstr "Υπηρεσίες"
 
 #: src/serviceconf.glade.h:19
 msgid "Start"
-msgstr "Εκκίνηση"
+msgstr "Έναρξη"
 
 #: src/serviceconf.glade.h:20
 msgid "Start the selected service"
@@ -319,7 +319,7 @@ msgstr "Εκκίνηση επιλεγμένης υπηρεσίας"
 #: src/serviceconf.glade.h:21
 #, fuzzy
 msgid "Status"
-msgstr "Εκκίνηση"
+msgstr "Κατάσταση"
 
 #: src/serviceconf.glade.h:22
 msgid "Stop"
