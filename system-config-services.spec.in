@@ -2,7 +2,7 @@
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: @PACKAGE@
 Version: @VERSION@
-Release: 1
+Release: 2
 URL: http://www.redhat.com/ 
 Source0: %{name}-%{version}.tar.gz
 License: GPL
@@ -13,6 +13,7 @@ Requires: /sbin/chkconfig
 Requires: pygtk2, pygtk2-libglade, rhpl
 Requires: usermode >= 1.36, usermode-gtk
 Requires: htmlview
+BuildRequires: automake17
 Obsoletes: serviceconf
 Obsoletes: redhat-config-services
 
@@ -50,6 +51,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Wed Mar  3 2004 Brent Fox <bfox@redhat.com> 0.8.7-2
+- add a BuildRequires on automake17
+
 * Tue Mar  2 2004 Brent Fox <bfox@redhat.com> 0.8.7-1
 - remove dependency on gnome-python2 and gnome-python2-canvas
 - try to load glade file in the cwd, if not, pull from /usr/share/
