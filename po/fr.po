@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: service conf\n"
 "POT-Creation-Date: 2003-01-09 10:22-0500\n"
-"PO-Revision-Date: 2002-10-03 13:40+1000\n"
+"PO-Revision-Date: 2003-01-10 19:48+1000\n"
 "Last-Translator: Jean-Paul AUBRY <jpaubry@redhat.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -265,9 +265,8 @@ msgid "Restart the selected service"
 msgstr "Redémarrer le service sélectionné"
 
 #: src/serviceconf.glade.h:7
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "_Retourner à la dernière sauvegarde"
+msgstr "Retourner à la _dernière sauvegarde"
 
 #: src/serviceconf.glade.h:8
 msgid "Runlevel _3"
@@ -395,3 +394,4 @@ msgstr "_Démarrer le service"
 
 #~ msgid "Exit"
 #~ msgstr "Fermer"
+
