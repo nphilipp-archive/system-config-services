@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"POT-Creation-Date: 2005-01-28 17:02+0100\n"
+"POT-Creation-Date: 2005-02-17 17:34-0500\n"
 "PO-Revision-Date: 2004-03-17 14:12+0800\n"
 "Last-Translator: hutuworm <hutuworm@hutuworm.org>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
@@ -15,63 +15,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Report-Msgid-Bugs-To: \n"
 
-#: src/serviceconf.py:73
+#: ../src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "您确定要删除 %s 吗？"
 
-#: src/serviceconf.py:197 src/serviceconf.glade.h:18
+#: ../src/serviceconf.py:195 ../src/serviceconf.glade.h:19
 msgid "Start"
 msgstr "开始"
 
-#: src/serviceconf.py:201 src/serviceconf.glade.h:20
+#: ../src/serviceconf.py:199 ../src/serviceconf.glade.h:21
 msgid "Stop"
 msgstr "停止"
 
-#: src/serviceconf.py:205 src/serviceconf.glade.h:9
+#: ../src/serviceconf.py:203 ../src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "重启"
 
-#: src/serviceconf.py:211
+#: ../src/serviceconf.py:209
 msgid "_Save"
 msgstr "保存(_S)"
 
-#: src/serviceconf.py:211
+#: ../src/serviceconf.py:209
 msgid "Save"
 msgstr "保存"
 
-#: src/serviceconf.py:216
+#: ../src/serviceconf.py:214
 msgid "_Revert"
 msgstr "恢复(_R)"
 
-#: src/serviceconf.py:216
+#: ../src/serviceconf.py:214
 msgid "Revert"
 msgstr "恢复"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:250
+#: ../src/serviceconf.py:248
 msgid "Currently Running in Runlevel: "
 msgstr "目前运行的级别是："
 
-#: src/serviceconf.py:261
-msgid "Start at Boot"
-msgstr "在引导时启动"
-
-#: src/serviceconf.py:262
+#: ../src/serviceconf.py:261
 msgid "Services"
 msgstr "服务"
 
-#: src/serviceconf.py:320 src/serviceconf.py:426 src/serviceconf.py:443
-#: src/serviceconf.py:462
+#: ../src/serviceconf.py:336 ../src/serviceconf.py:439
+#: ../src/serviceconf.py:464 ../src/serviceconf.py:486
+#: ../src/serviceconf.py:508
 msgid "Editing Runlevel: "
 msgstr "编辑运行级别："
 
-#: src/serviceconf.py:363
+#: ../src/serviceconf.py:379
 msgid "Unknown"
 msgstr "未知"
 
-#: src/serviceconf.py:491
+#: ../src/serviceconf.py:508
+msgid "All"
+msgstr ""
+
+#: ../src/serviceconf.py:551
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -89,22 +90,22 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 "  "
 
-#: src/serviceconf.py:495
+#: ../src/serviceconf.py:555
 msgid "About"
 msgstr "关于"
 
-#: src/serviceconf.py:524
+#: ../src/serviceconf.py:584
 msgid "Help is not available."
 msgstr "帮助不存在"
 
-#: src/serviceconf.py:677
+#: ../src/serviceconf.py:738
 msgid "You must run system-config-services as root."
 msgstr "您必须作为根用户才能运行 system-config-services。"
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:289
+#: ../src/servicemethods.py:283
 msgid ""
 "\n"
 "\n"
@@ -114,102 +115,107 @@ msgstr ""
 "\n"
 "该服务需要启用 xinetd。"
 
-#: src/servicemethods.py:335
+#: ../src/servicemethods.py:319
 msgid "xinetd failed to reload for "
 msgstr "xinetd 重载失败"
 
-#: src/servicemethods.py:336
+#: ../src/servicemethods.py:320
 msgid ". The error was: "
 msgstr "错误是："
 
-#: src/servicemethods.py:338
+#: ../src/servicemethods.py:322
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xined 重载 %s 成功"
 
-#: src/servicemethods.py:341
+#: ../src/servicemethods.py:325
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "一定要启用 xinetd 才可运行 %s"
 
-#: src/servicemethods.py:346
+#: ../src/servicemethods.py:330
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s 失败，错误是：%s"
 
-#: src/servicemethods.py:348
+#: ../src/servicemethods.py:332
 msgid " successful"
 msgstr "成功"
 
-#: src/serviceconf.glade.h:1
+#: ../src/serviceconf.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: src/serviceconf.glade.h:2
+#: ../src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "添加服务"
 
-#: src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "目前活跃的运行级别："
 
-#: src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:4
 msgid "Delete Service"
 msgstr "删除服务"
 
-#: src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "描述"
 
-#: src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "不保存"
 
-#: src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "编辑运行级别："
 
-#: src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:8
 msgid "None"
 msgstr "无"
 
-#: src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
 msgstr "还原到上一次保存(_L)"
 
-#: src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "运行级别 _3"
 
-#: src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "运行级别 _4"
 
-#: src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "运行级别 _5"
 
-#: src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:14
+#, fuzzy
+msgid "Runlevel _All"
+msgstr "运行级别 _3"
+
+#: ../src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "停止服务(_T)"
 
-#: src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:16
 msgid "Save Dialog"
 msgstr "保存对话"
 
-#: src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "服务配置"
 
-#: src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:18
 msgid "Service Name: "
 msgstr "服务名称："
 
-#: src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:20
 msgid "Status"
 msgstr "状态"
 
-#: src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:22
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -217,46 +223,49 @@ msgstr ""
 "您对当前的运行级别已做了些改变。\n"
 "您想保存这些改变吗？"
 
-#: src/serviceconf.glade.h:23
+#: ../src/serviceconf.glade.h:24
 msgid "_Actions"
 msgstr "行动(_A)"
 
-#: src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:25
 msgid "_Contents"
 msgstr "内容(_C)"
 
-#: src/serviceconf.glade.h:25
+#: ../src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
 msgstr "编辑运行级别(_E)"
 
-#: src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:27
 msgid "_File"
 msgstr "文件(_F)"
 
-#: src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:28
 msgid "_Help"
 msgstr "帮助(_H)"
 
-#: src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:29
 msgid "_Quit"
 msgstr "退出(_Q)"
 
-#: src/serviceconf.glade.h:29
+#: ../src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
 msgstr "刷新服务列表(_R)"
 
-#: src/serviceconf.glade.h:30
+#: ../src/serviceconf.glade.h:31
 msgid "_Restart Service"
 msgstr "重启服务(_R)"
 
-#: src/serviceconf.glade.h:31
+#: ../src/serviceconf.glade.h:32
 msgid "_Save Changes"
 msgstr "保存改变(_S)"
 
-#: src/serviceconf.glade.h:32
+#: ../src/serviceconf.glade.h:33
 msgid "_Start Service"
 msgstr "开始服务(_S)"
 
-#: src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:34
 msgid "_View"
 msgstr "查看(_V)"
+
+#~ msgid "Start at Boot"
+#~ msgstr "在引导时启动"
