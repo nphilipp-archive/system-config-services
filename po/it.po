@@ -1,21 +1,24 @@
+# translation of it.po to Italian
 # translation of service config.po to italiano
 # Copyright (C) 2001, Red Hat, Inc.
 # Valentina Besi <valentina@redhat.it>, 2001.
 # Luca Ferrari <alexluca@inwind.it>, 2004.
 # Luca Ferrari <alexluca@inwind.it>, 2004.
-# 
-# 
+# Francesco Valente <fvalen@redhat.com>, 2004
+#
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: service config\n"
+"Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
-"PO-Revision-Date: 2004-03-08 18:54+0100\n"
-"Last-Translator: Federico Bernardi <fbernardi@bbros.it>\n"
-"Language-Team: Italian\n"
+"PO-Revision-Date: 2004-03-22 12:03+1000\n"
+"Last-Translator: Francesco Valente <fvalen@redhat.com>\n"
+"Language-Team: Italian <i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0\n"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -86,9 +89,8 @@ msgid "Restart"
 msgstr "Riavviare"
 
 #: src/serviceconf.py:195
-#, fuzzy
 msgid "_Save"
-msgstr "Salva"
+msgstr "_Salva"
 
 #: src/serviceconf.py:195
 msgid "Save"
@@ -96,12 +98,11 @@ msgstr "Salva"
 
 #: src/serviceconf.py:200
 msgid "_Revert"
-msgstr ""
+msgstr "_Annulla"
 
 #: src/serviceconf.py:200
-#, fuzzy
 msgid "Revert"
-msgstr "Riavviare"
+msgstr "Annulla"
 
 #. the textbox
 #. the statusbox
@@ -371,9 +372,8 @@ msgid "_Help"
 msgstr "_Help"
 
 #: src/serviceconf.glade.h:28
-#, fuzzy
 msgid "_Quit"
-msgstr "Abbandona"
+msgstr "_Abbandona"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
@@ -431,3 +431,4 @@ msgstr "_Vista"
 
 #~ msgid "Save the changes you have made"
 #~ msgstr "Salvare le modifiche effettuate"
+
