@@ -2,7 +2,7 @@
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: @PACKAGE@
 Version: @VERSION@
-Release: 1
+Release: 2
 URL: http://www.redhat.com/ 
 Source0: %{name}-%{version}.tar.gz
 License: GPL
@@ -23,7 +23,6 @@ should be enabled on your machine.
 
 %prep
 %setup -q
-autoconf
 
 CFLAGS="$RPM_OPT_FLAGS" ./configure \
     $MYARCH_FLAGS --enable-more-warnings=no \
@@ -58,6 +57,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Wed Mar 17 2004 Brent Fox <bfox@redhat.com> 0.8.8-2
+- bump release
+
 * Tue Mar 16 2004 Brent Fox <bfox@redhat.com> 0.8.8-1
 - work around problem with libglade
 
