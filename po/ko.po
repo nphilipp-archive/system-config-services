@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "POT-Creation-Date: 2003-01-09 10:22-0500\n"
-"PO-Revision-Date: 2002-10-03 09:23+1000\n"
+"PO-Revision-Date: 2003-01-10 09:28+1000\n"
 "Last-Translator: Michelle Kim <mkim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -264,9 +264,8 @@ msgid "Restart the selected service"
 msgstr "선택된 서비스 재시작"
 
 #: src/serviceconf.glade.h:7
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "마지막 변동 사항 취소 (_R)"
+msgstr "마지막 변동 사항 취소 (_L)"
 
 #: src/serviceconf.glade.h:8
 msgid "Runlevel _3"
@@ -559,3 +558,4 @@ msgstr "서비스 시작 (_S)"
 
 #~ msgid "Exit"
 #~ msgstr "종료"
+
