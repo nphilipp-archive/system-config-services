@@ -53,9 +53,17 @@ uninstall-local:
 	rm -f $(DESTDIR)$(prefix)/bin/serviceconf
 
 changelog:
-	hostname='$(shell hostname | sed -e 's|\.|\\.|g')'; \
-	rcs2log | sed -e 's|/usr/local/CVS/system-config-network/||g' \
-		-e 's|@'"$${hostname}"'|@redhat.com|g' > ChangeLog
+	rcs2log -h redhat.com \
+		| sed -e 's|/usr/local/CVS/system-config-network/||g' \
+		> ChangeLog.new
+	if test -f ChangeLog; then \
+		cp -dpf ChangeLog ChangeLog.old; \
+	else \
+		touch ChangeLog.old; \
+	fi
+	cat ChangeLog.new ChangeLog.old > ChangeLog
+	rm -f ChangeLog.new ChangeLog.old
+	
 
 clean:
 	rm -f system-config-services.desktop
