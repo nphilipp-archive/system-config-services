@@ -6,9 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
-"PO-Revision-Date: 2004-03-11 10:55+0800\n"
+"PO-Revision-Date: 2004-03-17 14:12+0800\n"
 "Last-Translator: hutuworm <hutuworm@hutuworm.org>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -71,34 +70,36 @@ msgstr "您确定要删除 %s 吗？"
 #. main window
 #. menu items
 #. toolbars
-#: src/serviceconf.py:181 src/serviceconf.glade.h:18
+#: src/serviceconf.py:181
+#: src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "开始"
 
-#: src/serviceconf.py:185 src/serviceconf.glade.h:20
+#: src/serviceconf.py:185
+#: src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "停止"
 
-#: src/serviceconf.py:189 src/serviceconf.glade.h:9
+#: src/serviceconf.py:189
+#: src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "重启"
 
 #: src/serviceconf.py:195
 msgid "_Save"
-msgstr ""
+msgstr "保存(_S)"
 
 #: src/serviceconf.py:195
 msgid "Save"
-msgstr ""
+msgstr "保存"
 
 #: src/serviceconf.py:200
 msgid "_Revert"
-msgstr ""
+msgstr "恢复(_R)"
 
 #: src/serviceconf.py:200
-#, fuzzy
 msgid "Revert"
-msgstr "重启"
+msgstr "恢复"
 
 #. the textbox
 #. the statusbox
@@ -130,7 +131,9 @@ msgstr "服务"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:301 src/serviceconf.py:407 src/serviceconf.py:424
+#: src/serviceconf.py:301
+#: src/serviceconf.py:407
+#: src/serviceconf.py:424
 #: src/serviceconf.py:443
 msgid "Editing Runlevel: "
 msgstr "编辑运行级别："
@@ -369,7 +372,7 @@ msgstr "帮助(_H)"
 
 #: src/serviceconf.glade.h:28
 msgid "_Quit"
-msgstr ""
+msgstr "退出(_Q)"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
@@ -391,11 +394,3 @@ msgstr "开始服务(_S)"
 msgid "_View"
 msgstr "查看(_V)"
 
-#~ msgid "Restart the selected service"
-#~ msgstr "重启选定的服务"
-
-#~ msgid "Start the selected service"
-#~ msgstr "启动选定的服务"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "停止选定的服务"
