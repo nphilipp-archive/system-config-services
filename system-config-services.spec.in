@@ -40,6 +40,18 @@ rm -rf %{buildroot}
 
 %find_lang %name
 
+%post
+touch --no-create %{_datadir}/icons/hicolor
+if [ -x /usr/bin/gtk-update-icon-cache ]; then
+  gtk-update-icon-cache %{_datadir}/icons/hicolor
+fi
+
+%postun
+touch --no-create %{_datadir}/icons/hicolor
+if [ -x /usr/bin/gtk-update-icon-cache ]; then
+  gtk-update-icon-cache %{_datadir}/icons/hicolor
+fi
+
 %clean
 rm -rf %{buildroot}
 
@@ -61,6 +73,7 @@ rm -rf %{buildroot}
 %changelog
 * Fri Apr 01 2005 Nils Philippsen <nphilipp@redhat.com> 0.8.22-1
 - fix deprecation warnings (#153052) with patch by Colin Charles
+- update the GTK+ theme icon cache on (un)install (Christopher Aillon)
 
 * Thu Mar 24 2005 Nils Philippsen <nphilipp@redhat.com> 0.8.21-1
 - connect toggled signals of service/runlevel checkboxes to enable saving again
