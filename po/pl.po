@@ -149,7 +149,7 @@ msgstr "Informacje o"
 
 #: ../src/serviceconf.py:584
 msgid "Help is not available."
-msgstr "Pomoc nie jest dostępna"
+msgstr "Pomoc nie jest dostępna."
 
 #: ../src/serviceconf.py:738
 msgid "You must run system-config-services as root."
@@ -257,7 +257,7 @@ msgstr "_Wszystkie poziomy"
 
 #: ../src/serviceconf.glade.h:15
 msgid "S_top Service"
-msgstr "Zatrzymaj usługę"
+msgstr "Za_trzymaj usługę"
 
 #: ../src/serviceconf.glade.h:16
 msgid "Save Dialog"
@@ -309,7 +309,7 @@ msgstr "_Zakończ"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
-msgstr "Odśwież listę usług"
+msgstr "_Odśwież listę usług"
 
 #: ../src/serviceconf.glade.h:31
 msgid "_Restart Service"
