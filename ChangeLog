@@ -1,3 +1,43 @@
+2005-04-01  nphilipp  <nphilipp@redhat.com>
+
+	* system-config-services.spec.in:
+	update the GTK+ theme icon cache on (un)install (Christopher Aillon)
+
+	* configure.in, po/system-config-services.pot, src/checklist.py, src/serviceconf.py, system-config-services.spec.in:
+	fix deprecation warnings (#153052) with patch by Colin Charles
+
+2005-03-31  ccheng  <ccheng@redhat.com>
+
+	* po/zh_TW.po: *** empty log message ***
+
+2005-03-30  ccheng  <ccheng@redhat.com>
+
+	* po/zh_TW.po: Script 'automerge' run by Chester Cheng.
+
+2005-03-29  morais  <morais@redhat.com>
+
+	* po/pt.po: update
+
+2005-03-28  rranjan  <rranjan@redhat.com>
+
+	* po/hi.po: miscellaneous
+
+2005-03-25  raven  <raven@redhat.com>
+
+	* po/pl.po: Small fixes
+
+2005-03-24  nphilipp  <nphilipp@redhat.com>
+
+	* ChangeLog, po/system-config-services.pot: release 0.8.21
+
+	* configure.in, src/checklist.py, src/serviceconf.glade, src/serviceconf.py, system-config-services.spec.in:
+	connect toggled signals of service/runlevel checkboxes to enable saving again (#151982)
+	consolidate on_optRL*_toggled
+	connect delete_event of mainWindow to ask whether things should be saved
+	before quitting
+	tab -> space indentation to avoid ambiguity
+	change some typos
+
 2005-03-24  nphilipp  <nphilipp@redhat.com>
 
 	* configure.in, src/checklist.py, src/serviceconf.glade, src/serviceconf.py, system-config-services.spec.in:
