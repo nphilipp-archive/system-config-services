@@ -1,14 +1,14 @@
-# Swedish messages for redhat-config-services.
+# Swedish messages for system-config-services.
 # Copyright (C) 2001, 2003, 2004 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.51 2004/03/16 21:15:25 bfox Exp $
+# $Id: sv.po,v 1.52 2004/03/17 17:35:38 menthos Exp $
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: redhat-config-services\n"
+"Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
-"PO-Revision-Date: 2004-03-10 23:52+0100\n"
+"PO-Revision-Date: 2004-03-17 18:40+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -84,9 +84,8 @@ msgid "Restart"
 msgstr "Starta om"
 
 #: src/serviceconf.py:195
-#, fuzzy
 msgid "_Save"
-msgstr "Spara"
+msgstr "_Spara"
 
 #: src/serviceconf.py:195
 msgid "Save"
@@ -94,12 +93,11 @@ msgstr "Spara"
 
 #: src/serviceconf.py:200
 msgid "_Revert"
-msgstr ""
+msgstr "_Återställ"
 
 #: src/serviceconf.py:200
-#, fuzzy
 msgid "Revert"
-msgstr "Starta om"
+msgstr "Återställ"
 
 #. the textbox
 #. the statusbox
@@ -158,10 +156,20 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"Verktyg för konfiguration av systemtjänster VERSION\n"
+" Copyright © 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 
 #: src/serviceconf.py:476
 msgid "About"
-msgstr ""
+msgstr "Om"
+
+msgid "_About"
+msgstr "_Om"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -362,8 +370,10 @@ msgid "_Help"
 msgstr "_Hjälp"
 
 #: src/serviceconf.glade.h:28
-#, fuzzy
 msgid "_Quit"
+msgstr "_Avsluta"
+
+msgid "Quit"
 msgstr "Avsluta"
 
 #: src/serviceconf.glade.h:29
