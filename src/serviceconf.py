@@ -109,6 +109,9 @@ def find_browser():
                 return None
         
 class Gui:
+    def destroy(self, args):
+        gtk.mainquit()
+
     """This class handles everything gui for the system-config-services application"""
     def __init__(self):
 
@@ -155,6 +158,7 @@ class Gui:
 
         # main window
         self.winMain = self.xml.get_widget("winMain")
+        self.winMain.connect("destroy", self.destroy)
 
         # menu items
         self.mnuRescan = self.xml.get_widget("mnuRescan")
