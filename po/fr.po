@@ -64,7 +64,7 @@ msgstr ""
 #: src/serviceconf.py:62
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr "Souhaitez-vous vraiment supprimer %s&nbsp;?"
+msgstr "Souhaitez-vous vraiment supprimer %s ?"
 
 #. make sure threading is disabled
 #. map the event signals to specific methods
@@ -82,7 +82,7 @@ msgstr "Souhaitez-vous vraiment supprimer %s&nbsp;?"
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:208
 msgid "Currently Running in Runlevel: "
-msgstr "Actuellement en exécution sur le niveau d'exécution&nbsp;: "
+msgstr "Actuellement en exécution sur le niveau d'exécution : "
 
 #. This is a sentry
 #: src/serviceconf.py:219
@@ -107,7 +107,7 @@ msgstr "Services"
 #: src/serviceconf.py:275 src/serviceconf.py:380 src/serviceconf.py:397
 #: src/serviceconf.py:416
 msgid "Editing Runlevel: "
-msgstr "Modification du niveau d'exécution&nbsp;: "
+msgstr "Modification du niveau d'exécution : "
 
 #. set the text in txtDesc
 #. if an xinetd service is selected, disable these,
@@ -217,7 +217,7 @@ msgstr "xinetd n'est pas reparti à cause de "
 
 #: src/servicemethods.py:332
 msgid ". The error was: "
-msgstr ". L'erreur était&nbsp;: "
+msgstr ". L'erreur était : "
 
 #: src/servicemethods.py:334
 #, python-format
@@ -232,7 +232,7 @@ msgstr "xinetd doit être activé pour que %s puisse être exécuté"
 #: src/servicemethods.py:342
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s n'a pas réussi. L'erreur était&nbsp;: %s"
+msgstr "%s n'a pas réussi. L'erreur était : %s"
 
 #: src/servicemethods.py:344
 msgid " successful"
@@ -248,7 +248,7 @@ msgstr "Ajouter un service"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
-msgstr "Niveau d'exécution actif&nbsp;:"
+msgstr "Niveau d'exécution actif :"
 
 #: src/serviceconf.glade.h:4
 msgid "Delete Service"
@@ -264,7 +264,7 @@ msgstr "Ne pas enregistrer"
 
 #: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
-msgstr "Modification du niveau d'exécution&nbsp;:"
+msgstr "Modification du niveau d'exécution :"
 
 #: src/serviceconf.glade.h:8
 msgid "None"
@@ -308,7 +308,7 @@ msgstr "Configuration du service"
 
 #: src/serviceconf.glade.h:18
 msgid "Service Name: "
-msgstr "Nom de service&nbsp;:"
+msgstr "Nom de service :"
 
 #: src/serviceconf.glade.h:19
 msgid "Start"
@@ -336,7 +336,7 @@ msgid ""
 "Do you want to save the changes?"
 msgstr ""
 "Vous avez effectué des modifications sur le niveau d'exécution en cours.\n"
-"Voulez-vous sauvegarder ces modifications&nbsp;?"
+"Voulez-vous sauvegarder ces modifications ?"
 
 #: src/serviceconf.glade.h:26
 msgid "_Actions"
