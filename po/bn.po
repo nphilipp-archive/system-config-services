@@ -85,20 +85,19 @@ msgstr "রিস্টার্ট"
 
 #: src/serviceconf.py:201
 msgid "_Save"
-msgstr ""
+msgstr "সংরক্ষন (_স)"
 
 #: src/serviceconf.py:201
 msgid "Save"
-msgstr ""
+msgstr "সংরক্ষন"
 
 #: src/serviceconf.py:206
 msgid "_Revert"
-msgstr ""
+msgstr "পুর্বাবস্থায় (_প)"
 
 #: src/serviceconf.py:206
-#, fuzzy
 msgid "Revert"
-msgstr "রিস্টার্ট"
+msgstr "পুর্বাবস্থায়"
 
 #. the textbox
 #. the statusbox
@@ -157,10 +156,17 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"সিষ্টম সার্ভিস কনফিগারেশন টুল VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 
 #: src/serviceconf.py:482
 msgid "About"
-msgstr ""
+msgstr "পরিচিতি"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -168,7 +174,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:511
 msgid "Help is not available."
-msgstr ""
+msgstr "সহায়িকা পাওয়া যাচ্ছে না।"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -362,7 +368,7 @@ msgstr "সহায়ক তথ্য (_স)"
 
 #: src/serviceconf.glade.h:28
 msgid "_Quit"
-msgstr ""
+msgstr "বন্ধ (_ব)"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
