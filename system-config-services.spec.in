@@ -13,7 +13,7 @@ Requires: /sbin/chkconfig
 Requires: pygtk2, pygtk2-libglade, rhpl
 Requires: usermode >= 1.36, usermode-gtk
 Requires: htmlview
-BuildRequires: automake17
+BuildRequires: automake
 Obsoletes: serviceconf
 Obsoletes: redhat-config-services
 
