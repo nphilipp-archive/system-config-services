@@ -5,30 +5,35 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services\n"
+"Project-Id-Version: system-config-services-0.8.15-1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-10-20 13:01+0200\n"
-"PO-Revision-Date: 2004-06-25 02:50+0700\n"
-"Last-Translator: Teguh DC <dheche@brawijaya.ac.id>\n"
-"Language-Team: Indonesian\n"
+"PO-Revision-Date: 2004-12-16 10:18+0700\n"
+"Last-Translator: Erwien Samantha Y <erwiensamantha@sederhana.or.id>\n"
+"Language-Team: BlankOn <http:/www.blankonlinux.or.id>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Indonesian\n"
+"X-Poedit-Country: INDONESIA\n"
 
 #: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Apakah anda yakin ingin menghapus %s?"
 
-#: src/serviceconf.py:197 src/serviceconf.glade.h:18
+#: src/serviceconf.py:197
+#: src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Mulai"
 
-#: src/serviceconf.py:201 src/serviceconf.glade.h:20
+#: src/serviceconf.py:201
+#: src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "Berhenti"
 
-#: src/serviceconf.py:205 src/serviceconf.glade.h:9
+#: src/serviceconf.py:205
+#: src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Mulai kembali"
 
@@ -49,7 +54,6 @@ msgid "Revert"
 msgstr "Kembali"
 
 #. initialize this to the runlevel we are running in. It will
-#. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:250
 msgid "Currently Running in Runlevel: "
 msgstr "Yang berjalan saat ini di Runlevel: "
@@ -62,7 +66,9 @@ msgstr "Mulai pada saat Boot"
 msgid "Services"
 msgstr "Layanan"
 
-#: src/serviceconf.py:320 src/serviceconf.py:426 src/serviceconf.py:443
+#: src/serviceconf.py:320
+#: src/serviceconf.py:426
+#: src/serviceconf.py:443
 #: src/serviceconf.py:462
 msgid "Editing Runlevel: "
 msgstr "Mengedit Runlevel: "
@@ -102,7 +108,6 @@ msgid "You must run system-config-services as root."
 msgstr "Anda harus menjalankan system-config-services sebagai root."
 
 #. configured=1 if the service is configured already
-#. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
 #: src/servicemethods.py:289
 msgid ""
@@ -260,3 +265,4 @@ msgstr "Jalankan Layanan"
 #: src/serviceconf.glade.h:33
 msgid "_View"
 msgstr "Lihat"
+
