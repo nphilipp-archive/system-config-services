@@ -1,18 +1,19 @@
-# SOME DESCRIPTIVE TITLE.
+# translation of de.po to Deutsch
 # Copyright (C) 2001 Red Hat, Inc.
 # Claudia Krug <fhonig@redhat.it>, 2001.
+# Bernd Groh <bgroh@redhat.com>, 2003
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: serviceconf 7.2\n"
+"Project-Id-Version: de\n"
 "POT-Creation-Date: 2003-01-14 11:21-0500\n"
-"PO-Revision-Date: 2003-01-10 12:22+1000\n"
-"Last-Translator: Nadine Richter <nrichter@redhat.com>\n"
-"Language-Team: German <de@li.org>\n"
+"PO-Revision-Date: 2003-01-22 10:13+0100\n"
+"Last-Translator: Bernd Groh <bgroh@redhat.com>\n"
+"Language-Team: Deutsch <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 0.9.6\n"
+"X-Generator: KBabel 1.0beta2\n"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -270,19 +271,19 @@ msgstr "Zum _letzten Speicherpunkt zurückkehren"
 
 #: src/serviceconf.glade.h:8
 msgid "Runlevel _3"
-msgstr "Runlevel_3"
+msgstr "Runlevel _3"
 
 #: src/serviceconf.glade.h:9
 msgid "Runlevel _4"
-msgstr "Runlevel_4"
+msgstr "Runlevel _4"
 
 #: src/serviceconf.glade.h:10
 msgid "Runlevel _5"
-msgstr "Runlevel_5"
+msgstr "Runlevel _5"
 
 #: src/serviceconf.glade.h:11
 msgid "S_top Service"
-msgstr "Dienst a_nhalten"
+msgstr "Dienst anhal_ten"
 
 #: src/serviceconf.glade.h:12
 msgid "Service Configuration"
@@ -318,7 +319,7 @@ msgstr "_Inhalt"
 
 #: src/serviceconf.glade.h:20
 msgid "_Edit Runlevel"
-msgstr "Runlevel _bearbeiten"
+msgstr "Runlevel b_earbeiten"
 
 #: src/serviceconf.glade.h:21
 msgid "_File"
@@ -330,19 +331,19 @@ msgstr "_Hilfe"
 
 #: src/serviceconf.glade.h:23
 msgid "_Refresh Service List"
-msgstr "Diensteliste _auffrischen"
+msgstr "Liste de_r Dienste neuladen"
 
 #: src/serviceconf.glade.h:24
 msgid "_Restart Service"
-msgstr "Dienst _Neu starten"
+msgstr "Dienst neu sta_rten"
 
 #: src/serviceconf.glade.h:25
 msgid "_Save Changes"
-msgstr "Änderungen _Speichern"
+msgstr "Änderungen _speichern"
 
 #: src/serviceconf.glade.h:26
 msgid "_Start Service"
-msgstr "_Starte Dienst"
+msgstr "Dienst _starten"
 
 #~ msgid "Cancel"
 #~ msgstr "Abbrechen"
@@ -392,3 +393,4 @@ msgstr "_Starte Dienst"
 
 #~ msgid "Exit"
 #~ msgstr "Beenden"
+
