@@ -1,45 +1,44 @@
 AC_INIT(system-config-services.spec.in)
-AM_INIT_AUTOMAKE(system-config-services, 0.8.15)
-
-PYTHON=python
-AC_SUBST(PYTHON)
+AM_INIT_AUTOMAKE(system-config-services, 0.8.16)
 
 #ALL_LINGUAS="ar bn bs ca cs cy da de el es et fa fi fr hi hr hu is it ja ko ms nl no pa pl pt_BR pt ru sk sl sv ta tr uk vi zh_CN zh_TW"
 ALL_LINGUAS="ar bg bn bs ca cs cy da de el es et fa fi fr gu he hi hr hu id is it ja ka ko ku lo lt mk mr ms nb nl no pa pl pt_BR pt ro ru si sk sl sq sv ta tr uk ur vi zh_CN zh_TW" 
 
-paths=`python <<EOF
-import sys;
-for p in sys.path:
-   if len(p): print p
-EOF`
+PYTHON=python
+PYTHON_MINVER_MAJ=2
+PYTHON_MINVER_MIN=3
+PYTHON_MINVER_MIC=0
+PYTHON_MINVER="${PYTHON_MINVER_MAJ}.${PYTHON_MINVER_MIN}.${PYTHON_MINVER_MIC}"
+AC_SUBST(PYTHON)
+AC_SUBST(PYTHON_MINVER)
 
-AC_MSG_CHECKING([for your python path])
-AC_SUBST(PY_PYTHONPATH)
-PY_PYTHONPATH=`python2.3 <<EOF
-import sys;
-path=""
-for p in sys.path:
-   if len(p): 
-	if path: path=path + p + ":" 
-	else: path=p
-print path;
-EOF`
-AC_MSG_RESULT([$PY_PYTHONPATH]);
+AC_MSG_CHECKING([for python version >= ${PYTHON_MINVER}])
+PY_VERFOUND="[`python - $PYTHON_MINVER_MAJ $PYTHON_MINVER_MIN $PYTHON_MINVER_MIC << EOF
+import sys
 
+havemaj, havemin, havemic = sys.version_info[0:3]
+havemaj, havemin, havemic = (int (havemaj), int (havemin), int(havemic))
+needmaj, needmin, needmic = sys.argv[1:4]
+needmaj, needmin, needmic = (int (needmaj), int (needmin), int(needmic))
 
-AC_MSG_CHECKING([for compileall])
+good = 0
 
-AC_SUBST(PY_COMPILEALL)
-PY_COMPILEALL="/usr/lib/python2.3/compileall.pyc"
-for p in $paths;do test -f "$p/compileall.pyc" && PY_COMPILEALL="$p/compileall.pyc" && break;done
+if (havemaj > needmaj or (havemaj == needmaj and havemin > needmin) or (havemaj == needmaj and havemin == needmin and havemic >= needmic)):
+    good = 1
 
-if ! test -f $PY_COMPILEALL;then
-	AC_MSG_ERROR([compileall.pyc not found in $PY_PYTHONPATH]);
-else
-	AC_MSG_RESULT([$PY_COMPILEALL]);
+print '%s.%s.%s' % (havemaj, havemin, havemic)
+
+if good == 1:
+    sys.exit (0)
+else:
+    sys.exit (1)
+EOF
+`]"
+PY_VER_RESULT=$?
+AC_MSG_RESULT([$PY_VERFOUND])
+if test "$PY_VER_RESULT" -ne 0; then
+    AC_MSG_ERROR([python version found ($PY_VERFOUND) is too old, we need at least $PYTHON_MINVER]);
 fi
-
-
 
 dnl prevent to copy po/Makefile.in.in
 GETTEXT_PACKAGE=system-config-services
