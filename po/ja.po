@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
-"POT-Creation-Date: 2002-08-05 10:35-0400\n"
+"POT-Creation-Date: 2002-08-05 10:43-0400\n"
 "PO-Revision-Date: 2002-07-25 12:57GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
