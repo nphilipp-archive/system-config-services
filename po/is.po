@@ -310,7 +310,7 @@ msgstr "_Aðgerðir"
 
 #: src/serviceconf.glade.h:21
 msgid "_Contents"
-msgstr ""
+msgstr "_Innihald"
 
 #: src/serviceconf.glade.h:22
 msgid "_Edit Runlevel"
@@ -318,11 +318,11 @@ msgstr "_Breyta keyrslustigi"
 
 #: src/serviceconf.glade.h:23
 msgid "_File"
-msgstr ""
+msgstr "_Skrá"
 
 #: src/serviceconf.glade.h:24
 msgid "_Help"
-msgstr ""
+msgstr "_Hjálp"
 
 #: src/serviceconf.glade.h:25
 msgid "_Refresh Service List"
@@ -343,203 +343,3 @@ msgstr "_Vista breytingum"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "_Ræsa þjónustu"
-
-#~ msgid "Directory "
-#~ msgstr "Mappa "
-
-#~ msgid " does not begin with a slash!"
-#~ msgstr " byrjar ekki á skástriki!"
-
-#~ msgid " is not an existing directory!"
-#~ msgstr " er ekki mappa sem þegar er til!"
-
-#~ msgid "Master "
-#~ msgstr "Fyrsti "
-
-#~ msgid " is not a valid IP address."
-#~ msgstr " er ekki gilt IP vistfang."
-
-#~ msgid " is defined twice."
-#~ msgstr " er skilgreint tvisvar."
-
-#~ msgid "Slave zone name "
-#~ msgstr "Heiti þrælsléns "
-
-#~ msgid " is not a valid domain name."
-#~ msgstr " er ekki gilt lénsheiti."
-
-#~ msgid "Forwarder "
-#~ msgstr "Áframsendir"
-
-#~ msgid " is not a valid Ip address."
-#~ msgstr " er ekki gilt IP vistfang."
-
-#~ msgid "Primary Nameserver not defined."
-#~ msgstr "Fyrsti nafnaþjónn er ekki skilgreindur."
-
-#~ msgid "Primary Nameserver `"
-#~ msgstr "Fyrsti nafnaþjónn `"
-
-#~ msgid "' has no . at the end. You must use a full hostname."
-#~ msgstr "' endar ekki á punkti (.) Þú verður að gefa upp fullt heiti."
-
-#~ msgid "' is not a valid hostname or IP address."
-#~ msgstr "' er ekki gilt vélarheiti eða IP vistfang."
-
-#~ msgid "Refresh value should be bigger than Retry"
-#~ msgstr "Gildi 'Refresh' ætti að vera hærra en 'Retry'"
-
-#~ msgid "Serial number must be >= 1."
-#~ msgstr "Raðnúmerið verður að vera >= 1."
-
-#~ msgid "Refresh value must be >= 0."
-#~ msgstr "Hressigildið þarf að vera >= 0."
-
-#~ msgid "Retry value must be >= 0."
-#~ msgstr "Reyna aftur gildið þarf að vera >= 0."
-
-#~ msgid "Expire value must be >= 0."
-#~ msgstr "'Expire' gildið verður að vera >= 0."
-
-#~ msgid "Minimum value must be >= 0."
-#~ msgstr "'Minimum' gildið þarf að vera >= 0."
-
-#~ msgid "NewHost"
-#~ msgstr "Ný vél"
-
-#~ msgid "PTR hostname not defined"
-#~ msgstr "PTR vélarheiti er ekki skilgreint"
-
-#~ msgid "PTR hostname `"
-#~ msgstr "PTR vélarheiti '"
-
-#~ msgid " is not a valid hostname."
-#~ msgstr " er ekki gilt vélarheiti."
-
-#~ msgid " must be in the range 0..255."
-#~ msgstr " verður að vera á bilinu 0..255"
-
-#~ msgid "IP "
-#~ msgstr "IP "
-
-#~ msgid "Nameserver "
-#~ msgstr "Nafnaþjónn "
-
-#~ msgid " is not a valid host or domain name."
-#~ msgstr " er ekki gilt vélar eða lénsheiti."
-
-#~ msgid " is defined twice for "
-#~ msgstr " er skilgreint tvisvar fyrir "
-
-#~ msgid "New"
-#~ msgstr "Nýr"
-
-#~ msgid "Alias "
-#~ msgstr "Samheiti "
-
-#~ msgid "<New Forward Zone>"
-#~ msgstr "<Nýtt len>"
-
-#~ msgid "Forward zone name "
-#~ msgstr "Lénsheiti "
-
-#~ msgid "Zone "
-#~ msgstr "Lén "
-
-#~ msgid "<New Reverse Zone>"
-#~ msgstr "<Nýtt öfugt lén>"
-
-#~ msgid "Reverse zone name `"
-#~ msgstr "Heiti öfugs léns `"
-
-#~ msgid "' is not the end of a reverse IP address."
-#~ msgstr "' er ekki endir á IP vistangi afturábak."
-
-#~ msgid "Reverse zone `"
-#~ msgstr "Öfugt lén `"
-
-#~ msgid "' must list at least one name server"
-#~ msgstr "' verður að innihalda amk einn nafnaþjón"
-
-#~ msgid "Reverse zone "
-#~ msgstr "Öfugt lén "
-
-#~ msgid "<New Zone>"
-#~ msgstr "<Nýtt lén>"
-
-#~ msgid " aliased to "
-#~ msgstr " samheiti er "
-
-#~ msgid "You must enter a host name."
-#~ msgstr "Þú verður að gefa upp vélarheiti."
-
-#~ msgid "You must enter an alias."
-#~ msgstr "Þú verður að slá inn samheiti."
-
-#~ msgid "An alias with this name already exists."
-#~ msgstr "Samheiti með þessu heiti er þegar til."
-
-#~ msgid " at priority "
-#~ msgstr " í forgangi"
-
-#~ msgid "Mail Exchanger for %s"
-#~ msgstr "Póstflutningsleið fyrir %s"
-
-#~ msgid "Edit Mail Exchanger"
-#~ msgstr "Breyta póstflutningsleiðum"
-
-#~ msgid "Add a Mail Exchanger"
-#~ msgstr "Bæta við póstflutningsleið"
-
-#~ msgid "You must enter an priority."
-#~ msgstr "Þú verður að gefa upp forgang."
-
-#~ msgid " served by "
-#~ msgstr " þjónað af "
-
-#~ msgid "You must enter a resolution address."
-#~ msgstr "Þú verður að gefa upp vistfang nafnaþjóns."
-
-#~ msgid "NS hostname `"
-#~ msgstr "NS vélarheiti `"
-
-#~ msgid "SOA Refresh value should be bigger than Retry"
-#~ msgstr "'Refresh' gildi SOA færslunnar þarf að vera hærra en 'Retry'"
-
-#~ msgid "Forward zone `"
-#~ msgstr "Lén `"
-
-#~ msgid "Settings for %s"
-#~ msgstr "Stillingar %s"
-
-#~ msgid "_Manual"
-#~ msgstr "_Handbók"
-
-#~ msgid "Configure which services will be running when the system starts"
-#~ msgstr "Stýra hvaða þjónustur eru keyrandi þegar vélin ræsir"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "Uppfæra þjónustulistann"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr "Aðgerðir eins og að ræsa, stöðva og endurræsa á valdar þjónustur"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Veldu keyrslustigið sem þú vilt breyta"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "Keyrslustig 3 er fjölnotandahamur með neti"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr ""
-#~ "Keyrslustig 4 er frátekið fyrir þig að sérsníða og er venjulega ekki notað"
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr "Keyrslustig 3 er fjölnotandahamur með neti og X gluggakerfinu"
-
-#~ msgid "Read Manual"
-#~ msgstr "Lesa handbók"
-
-#~ msgid "Exit"
-#~ msgstr "Hætta"
