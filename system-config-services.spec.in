@@ -46,6 +46,7 @@ rm -rf %{buildroot}
 %config %{_sysconfdir}/security/console.apps/redhat-config-services
 %config %{_sysconfdir}/security/console.apps/serviceconf
 %config %{_sysconfdir}/pam.d/serviceconf
+%{_mandir}/*/redhat-config-services.8*
 
 %changelog
 * Thu Oct 24 2002 Dan Walsh <dwalsh@redhat.com> 0.8.3-3
