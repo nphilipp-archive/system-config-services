@@ -1,4 +1,16 @@
+2003-03-04  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* configure.in, redhat-config-services.spec.in, src/serviceconf.glade, src/serviceconf.py:
+	Fix swiching runlevels on modified screens.
+
+2003-02-26  barzilay  <barzilay@redhat.com>
+
+	* po/pt_BR.po: updatedheaderspt_BR2502
+
 2003-02-25  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po, redhat-config-services.spec.in:
+	release 0.8.4
 
 	* src/serviceconf.py: fix dissappearing description
 
