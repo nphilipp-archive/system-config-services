@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
-"POT-Creation-Date: 2002-08-10 07:45-0400\n"
+"POT-Creation-Date: 2003-10-06 10:40-0400\n"
 "PO-Revision-Date: 2003-08-04 17:32-0200\n"
 "Last-Translator: Nikos Charonitakis <charosn@her.fothnet.gr>\n"
 "Language-Team: Greek <nls@hellug.gr>\n"
@@ -59,6 +59,11 @@ msgstr ""
 #. #
 #. # I18N
 #. #
+#: src/serviceconf.py:62
+#, python-format
+msgid "Are you sure you want to delete the %s?"
+msgstr ""
+
 #. make sure threading is disabled
 #. map the event signals to specific methods
 #. main window
@@ -68,20 +73,21 @@ msgstr ""
 #. self.tbrSave.set_style(GTK.TOOLBAR_ICONS)
 #. self.tbrSave.set_button_relief(GTK.RELIEF_NORMAL)
 #. the textbox
+#. the statusbox
 #. the CheckCList which will display whether the service
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:170
+#: src/serviceconf.py:208
 msgid "Currently Running in Runlevel: "
 msgstr ""
 
 #. This is a sentry
-#: src/serviceconf.py:181
+#: src/serviceconf.py:219
 msgid "Start at Boot"
 msgstr ""
 
-#: src/serviceconf.py:182
+#: src/serviceconf.py:220
 msgid "Services"
 msgstr "Υπηρεσίες"
 
@@ -96,43 +102,44 @@ msgstr "Υπηρεσίες"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:227
-#: src/serviceconf.py:309
-#: src/serviceconf.py:318
-#: src/serviceconf.py:342
+#: src/serviceconf.py:275 src/serviceconf.py:381 src/serviceconf.py:398
+#: src/serviceconf.py:417
 msgid "Editing Runlevel: "
 msgstr ""
 
-#: src/serviceconf.py:324
-msgid ""
-"You have made changes to the current runlevel.\n"
-"Do you want to save the changes?"
+#. set the text in txtDesc
+#. if an xinetd service is selected, disable these,
+#. they'll do nothing
+#. set the text in StatusView
+#: src/serviceconf.py:318
+msgid "Unknown"
 msgstr ""
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:354
+#: src/serviceconf.py:446
 #, fuzzy
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Πνευματικά Δικαιώματα (c) 2002 Red Hat, Inc."
 
-#: src/serviceconf.py:355
+#: src/serviceconf.py:447
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
 
+#: src/serviceconf.py:451
+msgid "translator_credits"
+msgstr ""
+
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:373
-msgid "Help is not available."
-msgstr "Η βοήθεια δεν είναι διαθέσιμη."
-
+#. gnome.help_display_uri(page)
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
 #. The menu and popup menu items for "Start", "Stop", and "Restart" are
@@ -144,9 +151,11 @@ msgstr "Η βοήθεια δεν είναι διαθέσιμη."
 #. ----------------------------------------------------------------------------
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
-#: src/serviceconf.py:491
+#. if you quit during initialization exceptions can be raised
+#: src/serviceconf.py:595
 msgid "You must run redhat-config-services as root."
-msgstr "Πρέπει να τρέξετε το redhat-config-services ως διαχειριστής συστήματος."
+msgstr ""
+"Πρέπει να τρέξετε το redhat-config-services ως διαχειριστής συστήματος."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -181,11 +190,11 @@ msgstr "Πρέπει να τρέξετε το redhat-config-services ως δια
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:271
+#: src/servicemethods.py:286
 msgid ""
 "\n"
 "\n"
-"You must enable xinetd to use this service."
+"xinetd is required for this service."
 msgstr ""
 
 #. an unmodified dictionary. Needed to compare for saving etc.
@@ -196,146 +205,186 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:317
+#: src/servicemethods.py:332
 msgid "xinetd failed to reload for "
 msgstr ""
 
-#: src/servicemethods.py:318
+#: src/servicemethods.py:333
 msgid ". The error was: "
 msgstr ". Το σφάλμα ήταν:"
 
-#: src/servicemethods.py:320
+#: src/servicemethods.py:335
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr ""
 
-#: src/servicemethods.py:323
+#: src/servicemethods.py:338
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr ""
 
-#: src/servicemethods.py:328
+#: src/servicemethods.py:343
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s απέτυχε. Το σφάλμα ήταν: %s"
 
-#: src/servicemethods.py:330
+#: src/servicemethods.py:345
 msgid " successful"
 msgstr "Επιτυχής"
 
 #: src/serviceconf.glade.h:1
-msgid "Cancel"
-msgstr "Ακύρωση"
+msgid "*"
+msgstr ""
 
 #: src/serviceconf.glade.h:2
+#, fuzzy
+msgid "Add Service"
+msgstr "Υπηρεσίες"
+
+#: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr ""
 
-#: src/serviceconf.glade.h:3
+#: src/serviceconf.glade.h:4
+#, fuzzy
+msgid "Delete Service"
+msgstr "_Διακοπή Υπηρεσίας"
+
+#: src/serviceconf.glade.h:5
+msgid "Description"
+msgstr ""
+
+#: src/serviceconf.glade.h:6
+msgid "Don't Save"
+msgstr ""
+
+#: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr ""
 
-#: src/serviceconf.glade.h:4
+#: src/serviceconf.glade.h:8
 msgid "None"
 msgstr ""
 
-#: src/serviceconf.glade.h:5
-msgid "Quit"
-msgstr "Έξοδος"
-
-#: src/serviceconf.glade.h:6
+#: src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Επανεκκίνηση"
 
-#: src/serviceconf.glade.h:7
+#: src/serviceconf.glade.h:10
 msgid "Restart the selected service"
 msgstr ""
 
-#: src/serviceconf.glade.h:8
-msgid "Revert to the last saved change"
-msgstr ""
-
-#: src/serviceconf.glade.h:9
-msgid "Runlevel _3"
-msgstr ""
-
-#: src/serviceconf.glade.h:10
-msgid "Runlevel _4"
-msgstr ""
-
 #: src/serviceconf.glade.h:11
-msgid "Runlevel _5"
+msgid "Revert To _Last Save"
 msgstr ""
 
 #: src/serviceconf.glade.h:12
+msgid "Runlevel _3"
+msgstr ""
+
+#: src/serviceconf.glade.h:13
+msgid "Runlevel _4"
+msgstr ""
+
+#: src/serviceconf.glade.h:14
+msgid "Runlevel _5"
+msgstr ""
+
+#: src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "_Διακοπή Υπηρεσίας"
 
-#: src/serviceconf.glade.h:13
-msgid "Save"
-msgstr "Αποθήκευση"
+#: src/serviceconf.glade.h:16
+msgid "Save Dialog"
+msgstr ""
 
-#: src/serviceconf.glade.h:14
-msgid "Save the changes you have made"
-msgstr "Αποθήκευση αλλαγών που έχετε κάνει"
-
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "Ρύθμιση Υπηρεσίας"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:18
+#, fuzzy
+msgid "Service Name: "
+msgstr "Υπηρεσίες"
+
+#: src/serviceconf.glade.h:19
 msgid "Start"
 msgstr "Εκκίνηση"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:20
 msgid "Start the selected service"
 msgstr "Εκκίνηση επιλεγμένης υπηρεσίας"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:21
+#, fuzzy
+msgid "Status"
+msgstr "Εκκίνηση"
+
+#: src/serviceconf.glade.h:22
 msgid "Stop"
 msgstr "Διακοπή"
 
-#: src/serviceconf.glade.h:19
+#: src/serviceconf.glade.h:23
 msgid "Stop the selected service"
 msgstr "Διακοπή επιλεγμένης υπηρεσίας"
 
-#: src/serviceconf.glade.h:20
-msgid "_Actions"
-msgstr "_Ενέργειες"
-
-#: src/serviceconf.glade.h:21
-msgid "_Contents"
-msgstr "_Περιεχόμενα"
-
-#: src/serviceconf.glade.h:22
-msgid "_Edit Runlevel"
-msgstr ""
-
-#: src/serviceconf.glade.h:23
-msgid "_File"
-msgstr "_Αρχείο"
-
 #: src/serviceconf.glade.h:24
-msgid "_Help"
-msgstr "_Βοήθεια"
-
-#: src/serviceconf.glade.h:25
-msgid "_Refresh Service List"
+msgid ""
+"You have made changes to the current runlevel.\n"
+"Do you want to save the changes?"
 msgstr ""
 
 #: src/serviceconf.glade.h:26
+msgid "_Actions"
+msgstr "_Ενέργειες"
+
+#: src/serviceconf.glade.h:27
+msgid "_Contents"
+msgstr "_Περιεχόμενα"
+
+#: src/serviceconf.glade.h:28
+msgid "_Edit Runlevel"
+msgstr ""
+
+#: src/serviceconf.glade.h:29
+msgid "_File"
+msgstr "_Αρχείο"
+
+#: src/serviceconf.glade.h:30
+msgid "_Help"
+msgstr "_Βοήθεια"
+
+#: src/serviceconf.glade.h:31
+msgid "_Refresh Service List"
+msgstr ""
+
+#: src/serviceconf.glade.h:32
 msgid "_Restart Service"
 msgstr "Ε_πανεκκίνηση Υπηρεσίας"
 
-#: src/serviceconf.glade.h:27
-msgid "_Revert To Last Save"
-msgstr ""
-
-#: src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:33
 msgid "_Save Changes"
 msgstr "_Αποθήκευση Αλλαγών"
 
-#: src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:34
 msgid "_Start Service"
 msgstr "_Εκκίνηση Υπηρεσίας"
 
+#: src/serviceconf.glade.h:35
+msgid "_View"
+msgstr ""
+
+#~ msgid "Help is not available."
+#~ msgstr "Η βοήθεια δεν είναι διαθέσιμη."
+
+#~ msgid "Cancel"
+#~ msgstr "Ακύρωση"
+
+#~ msgid "Quit"
+#~ msgstr "Έξοδος"
+
+#~ msgid "Save"
+#~ msgstr "Αποθήκευση"
+
+#~ msgid "Save the changes you have made"
+#~ msgstr "Αποθήκευση αλλαγών που έχετε κάνει"

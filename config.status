@@ -522,15 +522,15 @@ s,@USE_NLS@,yes,;t t
 s,@MSGFMT@,/usr/bin/msgfmt,;t t
 s,@GMSGFMT@,/usr/bin/msgfmt,;t t
 s,@XGETTEXT@,/usr/bin/xgettext,;t t
-s,@CATALOGS@, cs.gmo da.gmo de.gmo es.gmo fr.gmo is.gmo it.gmo ja.gmo ko.gmo no.gmo pt.gmo ru.gmo sv.gmo tr.gmo zh_CN.gmo zh_TW.gmo,;t t
+s,@CATALOGS@, bn.gmo bs.gmo cs.gmo cy.gmo da.gmo de.gmo el.gmo es.gmo fi.gmo fr.gmo hr.gmo hu.gmo is.gmo it.gmo ja.gmo ko.gmo ms.gmo nl.gmo no.gmo pt_BR.gmo pt.gmo ru.gmo sl.gmo sv.gmo tr.gmo uk.gmo vi.gmo zh_CN.gmo zh_TW.gmo,;t t
 s,@CATOBJEXT@,.gmo,;t t
 s,@DATADIRNAME@,share,;t t
-s,@GMOFILES@, cs.gmo da.gmo de.gmo es.gmo fr.gmo is.gmo it.gmo ja.gmo ko.gmo no.gmo pt.gmo ru.gmo sv.gmo tr.gmo zh_CN.gmo zh_TW.gmo,;t t
+s,@GMOFILES@, bn.gmo bs.gmo cs.gmo cy.gmo da.gmo de.gmo el.gmo es.gmo fi.gmo fr.gmo hr.gmo hu.gmo is.gmo it.gmo ja.gmo ko.gmo ms.gmo nl.gmo no.gmo pt_BR.gmo pt.gmo ru.gmo sl.gmo sv.gmo tr.gmo uk.gmo vi.gmo zh_CN.gmo zh_TW.gmo,;t t
 s,@INSTOBJEXT@,.mo,;t t
 s,@INTLLIBS@,,;t t
 s,@PO_IN_DATADIR_TRUE@,,;t t
 s,@PO_IN_DATADIR_FALSE@,,;t t
-s,@POFILES@, cs.po da.po de.po es.po fr.po is.po it.po ja.po ko.po no.po pt.po ru.po sv.po tr.po zh_CN.po zh_TW.po,;t t
+s,@POFILES@, bn.po bs.po cs.po cy.po da.po de.po el.po es.po fi.po fr.po hr.po hu.po is.po it.po ja.po ko.po ms.po nl.po no.po pt_BR.po pt.po ru.po sl.po sv.po tr.po uk.po vi.po zh_CN.po zh_TW.po,;t t
 s,@POSUB@,po,;t t
 s,@MKINSTALLDIRS@,./mkinstalldirs,;t t
 s,@INTLTOOL_DESKTOP_RULE@,%.desktop:   %.desktop.in   $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache,;t t

@@ -1,13 +1,13 @@
 # SLOVENIAN TRANSLATION OF REDHAT-CONFIG-SERVICES.
 # Copyright (C) 2003 Free Software Foundation.
 # Roman Maurer <roman@lugos.si>, 2003.
-# $Id: sl.po,v 1.1 2003/09/26 20:59:12 romanm Exp $
+# $Id: sl.po,v 1.2 2003/10/22 14:02:09 dwalsh Exp $
 # $Source: /home/fedora/mmcgrath/elvis/cvs/redhat-config-services/po/sl.po,v $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services 0.8.4\n"
-"POT-Creation-Date: 2003-09-05 15:44-0400\n"
+"POT-Creation-Date: 2003-10-06 10:40-0400\n"
 "PO-Revision-Date: 2003-09-26 22:59+0200\n"
 "Last-Translator: Roman Maurer <roman@lugos.si>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
@@ -134,6 +134,10 @@ msgstr ""
 "o morebitnih hroščih poročajte prek sistema zasledovanja hroščev\n"
 "podjetja Red Hat: http://bugzilla.redhat.com"
 
+#: src/serviceconf.py:451
+msgid "translator_credits"
+msgstr ""
+
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
@@ -151,7 +155,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:596
+#: src/serviceconf.py:595
 msgid "You must run redhat-config-services as root."
 msgstr "Program redhat-config-services morate zagnati kot root."
 

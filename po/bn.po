@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
-"POT-Creation-Date: 2003-06-17 15:08-0400\n"
+"POT-Creation-Date: 2003-10-06 10:40-0400\n"
 "PO-Revision-Date: 2003-06-26 12:00+0600\n"
 "Last-Translator: Indranil Das Gupta <indradg@cal.vsnl.net.in>\n"
 "Language-Team: Bangla <redhat-translation@bengalinux.org>\n"
@@ -59,6 +59,11 @@ msgstr ""
 #. #
 #. # I18N
 #. #
+#: src/serviceconf.py:62
+#, python-format
+msgid "Are you sure you want to delete the %s?"
+msgstr ""
+
 #. make sure threading is disabled
 #. map the event signals to specific methods
 #. main window
@@ -73,16 +78,16 @@ msgstr ""
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:185
+#: src/serviceconf.py:208
 msgid "Currently Running in Runlevel: "
 msgstr "বর্তমানে যে রান-লেভেলে চলছে: "
 
 #. This is a sentry
-#: src/serviceconf.py:196
+#: src/serviceconf.py:219
 msgid "Start at Boot"
 msgstr "বুট করার সময় শুরু করো"
 
-#: src/serviceconf.py:197
+#: src/serviceconf.py:220
 msgid "Services"
 msgstr "সার্ভিসগুলো"
 
@@ -97,8 +102,8 @@ msgstr "সার্ভিসগুলো"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:252 src/serviceconf.py:357 src/serviceconf.py:374
-#: src/serviceconf.py:393
+#: src/serviceconf.py:275 src/serviceconf.py:381 src/serviceconf.py:398
+#: src/serviceconf.py:417
 msgid "Editing Runlevel: "
 msgstr "রান-লেভেল সম্পাদন করা হচ্ছে: "
 
@@ -106,31 +111,32 @@ msgstr "রান-লেভেল সম্পাদন করা হচ্ছ�
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:295
+#: src/serviceconf.py:318
 msgid "Unknown"
 msgstr "অজ্ঞাত"
-
-#: src/serviceconf.py:298
-msgid "xinetd service"
-msgstr "এক্সআইনেটডী সার্ভিস"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:422
+#: src/serviceconf.py:446
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "কপিরাইট (ক) ২০০২ রেড হ্যাট, ইঙ্ক। সর্বসত্ব সংরক্ষিত।"
 
-#: src/serviceconf.py:423
+#: src/serviceconf.py:447
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
 "এই সফ্‌টওয়ারটি জীপীএলের শর্তসাপেক্ষে স্বাধীন ভাবে পুনঃর্বিতরণ-যোগ্য।\n"
-"আপনার পাওয়া প্রোগ্রাম ত্রুটিগুলি দয়া করে রেড হ্যাটের প্রোগ্রাম ত্রুটি-সমীক্ষণ ব্যবস্থাকে জানান:\n"
+"আপনার পাওয়া প্রোগ্রাম ত্রুটিগুলি দয়া করে রেড হ্যাটের প্রোগ্রাম ত্রুটি-সমীক্ষণ ব্যবস্থাকে "
+"জানান:\n"
 "http://bugzilla.redhat.com"
+
+#: src/serviceconf.py:451
+msgid "translator_credits"
+msgstr ""
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -149,7 +155,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:551
+#: src/serviceconf.py:595
 msgid "You must run redhat-config-services as root."
 msgstr "রেডহ্যাট-কোনফিগ-সার্ভিসেস চালাবার জন্যে আপনার রুট হওয়া আবশ্যিক"
 
@@ -186,11 +192,12 @@ msgstr "রেডহ্যাট-কোনফিগ-সার্ভিসেস 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:277
+#: src/servicemethods.py:286
+#, fuzzy
 msgid ""
 "\n"
 "\n"
-"You must enable xinetd to use this service."
+"xinetd is required for this service."
 msgstr ""
 "\n"
 "\n"
@@ -204,110 +211,129 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:323
+#: src/servicemethods.py:332
 msgid "xinetd failed to reload for "
 msgstr "জন্যে এক্স্‌আইনেটডী রি-লোড করতে ব্যর্থ হয়েছে"
 
-#: src/servicemethods.py:324
+#: src/servicemethods.py:333
 msgid ". The error was: "
 msgstr "। ভ্রান্তিটি হল: "
 
-#: src/servicemethods.py:326
+#: src/servicemethods.py:335
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "এক্সআইনেটডী সাফল্যের সঙ্গে %s রি-লোড করেছে"
 
-#: src/servicemethods.py:329
+#: src/servicemethods.py:338
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s চলবার জন্যে এক্স্‌আইনেটডীর সক্রিয় থাকা আবশ্যিক"
 
-#: src/servicemethods.py:334
+#: src/servicemethods.py:343
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s ব্যর্থ। ভ্রান্তিটি হল: "
 
-#: src/servicemethods.py:336
+#: src/servicemethods.py:345
 msgid " successful"
 msgstr " সফল"
 
 #: src/serviceconf.glade.h:1
+msgid "*"
+msgstr ""
+
+#: src/serviceconf.glade.h:2
+#, fuzzy
+msgid "Add Service"
+msgstr "সার্ভিসগুলো"
+
+#: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "বর্তমানে সক্রিয় রান-লেভেল: "
 
-#: src/serviceconf.glade.h:2
+#: src/serviceconf.glade.h:4
+#, fuzzy
+msgid "Delete Service"
+msgstr "সার্ভিস বন্ধ"
+
+#: src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "বিবরণ"
 
-#: src/serviceconf.glade.h:3
+#: src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "সেভ করা হবে না"
 
-#: src/serviceconf.glade.h:4
+#: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "রান-লেভেল সম্পাদনা: "
 
-#: src/serviceconf.glade.h:5
+#: src/serviceconf.glade.h:8
 msgid "None"
 msgstr "কোনটাই নয়"
 
-#: src/serviceconf.glade.h:6
+#: src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "রিস্টার্ট"
 
-#: src/serviceconf.glade.h:7
+#: src/serviceconf.glade.h:10
 msgid "Restart the selected service"
 msgstr "নির্বাচিত সার্ভিসটি রিস্টার্ট কর"
 
-#: src/serviceconf.glade.h:8
+#: src/serviceconf.glade.h:11
 msgid "Revert To _Last Save"
 msgstr "শেষ সেভ করা অবস্থায় ফেরত যাও"
 
-#: src/serviceconf.glade.h:9
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _3"
 msgstr "রান-লেভেল_৩"
 
-#: src/serviceconf.glade.h:10
+#: src/serviceconf.glade.h:13
 msgid "Runlevel _4"
 msgstr "রান-লেভেল_৪"
 
-#: src/serviceconf.glade.h:11
+#: src/serviceconf.glade.h:14
 msgid "Runlevel _5"
 msgstr "রান-লেভেল_৫"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "সার্ভিস বন্ধ"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:16
 msgid "Save Dialog"
 msgstr "ডায়লগ সেভ কর"
 
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "সার্ভিস কনফিগারেশন"
 
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:18
+#, fuzzy
+msgid "Service Name: "
+msgstr "সার্ভিসগুলো"
+
+#: src/serviceconf.glade.h:19
 msgid "Start"
 msgstr "আরম্ভ"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:20
 msgid "Start the selected service"
 msgstr "নির্বাচিত সার্ভিসগুলিকে চালু কর"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:21
 msgid "Status"
 msgstr "অবস্থা"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:22
 msgid "Stop"
 msgstr "থামো"
 
-#: src/serviceconf.glade.h:19
+#: src/serviceconf.glade.h:23
 msgid "Stop the selected service"
 msgstr "নির্বাচিত সার্ভিসগুলিকে থামাও"
 
-#: src/serviceconf.glade.h:20
+#: src/serviceconf.glade.h:24
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -315,42 +341,45 @@ msgstr ""
 "বর্তমান রানলেভেলে আপনি পরিবর্তন করেছেন।\n"
 "আপনি কি পরিবর্তনগুলি সেভ করতে চান ?"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:26
 msgid "_Actions"
 msgstr "কাজ (_ক)"
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:27
 msgid "_Contents"
 msgstr "বিষয়বস্তু (_ব)"
 
-#: src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
 msgstr "রানলেভেল সম্পাদন (_র)"
 
-#: src/serviceconf.glade.h:25
+#: src/serviceconf.glade.h:29
 msgid "_File"
 msgstr "ফাইল (_ফ)"
 
-#: src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:30
 msgid "_Help"
 msgstr "সহায়ক তথ্য (_স)"
 
-#: src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:31
 msgid "_Refresh Service List"
 msgstr "রিফ্রশ সার্ভিস তালিকা (_র)"
 
-#: src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:32
 msgid "_Restart Service"
 msgstr "রিস্টার্ট সার্ভিস (_ভ)"
 
-#: src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:33
 msgid "_Save Changes"
 msgstr "সেভ পরিবর্তনগুলি (_স)"
 
-#: src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:34
 msgid "_Start Service"
 msgstr "সার্ভিস আরম্ভ (_আ)"
 
-#: src/serviceconf.glade.h:31
+#: src/serviceconf.glade.h:35
 msgid "_View"
 msgstr "প্রদর্শন (_দ)"
+
+#~ msgid "xinetd service"
+#~ msgstr "এক্সআইনেটডী সার্ভিস"

@@ -1,4 +1,43 @@
+2003-10-22  Dan Walsh  <dwalsh@redhat.com>
+
+	* configure.in: add missing languages
+
+2003-10-20  maxik  <maxik@redhat.com>
+
+	* po/uk.po: *** empty log message ***
+
+2003-10-20  lkanter  <lkanter@redhat.com>
+
+	* po/ru.po: update
+
+2003-10-19  Alan Cox  <alan@redhat.com>
+
+	* po/cy.po: Initial translation
+
+2003-10-18  Alan Cox  <alan@redhat.com>
+
+	* po/cy.po: Initial translation run
+
+2003-10-18  pclouds  <pclouds@redhat.com>
+
+	* po/vi.po: update vi.po
+
+2003-10-18  mitr  <mitr@redhat.com>
+
+	* po/cs.po: Update Czech translation
+
+2003-10-18  delacko  <delacko@redhat.com>
+
+	* po/hr.po: croatian translations update
+
+2003-10-17  andmuell  <andmuell@redhat.com>
+
+	* po/de.po: added one missing translation
+
 2003-10-17  Dan Walsh  <dwalsh@redhat.com>
+
+	* ChangeLog, aclocal.m4, config.status, intltool-extract.in, intltool-merge.in, intltool-update.in, po/Makefile.in.in:
+	release 0.8.5
 
 	* aclocal.m4, config.status, intltool-extract.in, intltool-merge.in, intltool-update.in, po/Makefile.in.in:
 	update for latest tools

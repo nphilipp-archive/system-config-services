@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
-"POT-Creation-Date: 2003-01-28 14:41-0500\n"
+"POT-Creation-Date: 2003-10-06 10:40-0400\n"
 "PO-Revision-Date: 2003-02-19 11:11+0100\n"
 "Last-Translator: Tamas Szanto <tszanto@mol.hu>\n"
 "Language-Team: Hungarian\n"
@@ -59,6 +59,11 @@ msgstr ""
 #. #
 #. # I18N
 #. #
+#: src/serviceconf.py:62
+#, python-format
+msgid "Are you sure you want to delete the %s?"
+msgstr ""
+
 #. make sure threading is disabled
 #. map the event signals to specific methods
 #. main window
@@ -73,16 +78,16 @@ msgstr ""
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:182
+#: src/serviceconf.py:208
 msgid "Currently Running in Runlevel: "
 msgstr "Az aktuális futási szint: "
 
 #. This is a sentry
-#: src/serviceconf.py:193
+#: src/serviceconf.py:219
 msgid "Start at Boot"
 msgstr "Automatikus indítás"
 
-#: src/serviceconf.py:194
+#: src/serviceconf.py:220
 msgid "Services"
 msgstr "Szolgáltatások"
 
@@ -97,8 +102,8 @@ msgstr "Szolgáltatások"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:249 src/serviceconf.py:348 src/serviceconf.py:357
-#: src/serviceconf.py:381
+#: src/serviceconf.py:275 src/serviceconf.py:381 src/serviceconf.py:398
+#: src/serviceconf.py:417
 msgid "Editing Runlevel: "
 msgstr "A szerkesztendő futási szint: "
 
@@ -106,31 +111,19 @@ msgstr "A szerkesztendő futási szint: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:292
+#: src/serviceconf.py:318
 msgid "Unknown"
 msgstr "Ismeretlen"
-
-#: src/serviceconf.py:295
-msgid "xinetd service"
-msgstr "xinetd szolgáltatás"
-
-#: src/serviceconf.py:363
-msgid ""
-"You have made changes to the current runlevel.\n"
-"Do you want to save the changes?"
-msgstr ""
-"Módosítások történtek az aktuális futási szint beállításaiban.\n"
-"El szeretné menteni a módosításokat?"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:393
+#: src/serviceconf.py:446
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright (c) Red Hat, Inc., 2002. Minden jog fenntartva."
 
-#: src/serviceconf.py:394
+#: src/serviceconf.py:447
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -139,6 +132,10 @@ msgstr ""
 "Ez a szoftver szabadon továbbadható a GPL feltételeinek betartásával.\n"
 "Kérjük jelentse be a talált hibákat a Red Hat hibakövető rendszerében:\n"
 "http://bugzilla.redhat.com"
+
+#: src/serviceconf.py:451
+msgid "translator_credits"
+msgstr ""
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -157,7 +154,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:522
+#: src/serviceconf.py:595
 msgid "You must run redhat-config-services as root."
 msgstr "A program csak rendszergazdai jogosultsággal futtatható."
 
@@ -194,11 +191,12 @@ msgstr "A program csak rendszergazdai jogosultsággal futtatható."
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:277
+#: src/servicemethods.py:286
+#, fuzzy
 msgid ""
 "\n"
 "\n"
-"You must enable xinetd to use this service."
+"xinetd is required for this service."
 msgstr ""
 "\n"
 "\n"
@@ -212,133 +210,175 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:323
+#: src/servicemethods.py:332
 msgid "xinetd failed to reload for "
 msgstr "A xinetd újratöltése nem sikerült: "
 
-#: src/servicemethods.py:324
+#: src/servicemethods.py:333
 msgid ". The error was: "
 msgstr ". A hibaüzenet: "
 
-#: src/servicemethods.py:326
+#: src/servicemethods.py:335
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "A xinetd sikeresen újratöltötte ezt: %s"
 
-#: src/servicemethods.py:329
+#: src/servicemethods.py:338
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "A xinetd futtatásához engedélyezni kell ezt: %s"
 
-#: src/servicemethods.py:334
+#: src/servicemethods.py:343
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s nem sikerült. A hibaüzenet: %s"
 
-#: src/servicemethods.py:336
+#: src/servicemethods.py:345
 msgid " successful"
 msgstr " sikerült"
 
 #: src/serviceconf.glade.h:1
+msgid "*"
+msgstr ""
+
+#: src/serviceconf.glade.h:2
+#, fuzzy
+msgid "Add Service"
+msgstr "Szolgáltatások"
+
+#: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "A jelenlegi aktív futási szint: "
 
-#: src/serviceconf.glade.h:2
+#: src/serviceconf.glade.h:4
+#, fuzzy
+msgid "Delete Service"
+msgstr "A szolgáltatás _leállítása"
+
+#: src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "Leírás"
 
-#: src/serviceconf.glade.h:3
+#: src/serviceconf.glade.h:6
+msgid "Don't Save"
+msgstr ""
+
+#: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "Futási szint szerkesztése:"
 
-#: src/serviceconf.glade.h:4
+#: src/serviceconf.glade.h:8
 msgid "None"
 msgstr "Nincs"
 
-#: src/serviceconf.glade.h:5
+#: src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Újraindítás"
 
-#: src/serviceconf.glade.h:6
+#: src/serviceconf.glade.h:10
 msgid "Restart the selected service"
 msgstr "A kijelölt szolgáltatás újraindítása"
 
-#: src/serviceconf.glade.h:7
+#: src/serviceconf.glade.h:11
 msgid "Revert To _Last Save"
 msgstr "A legutóbbi álla_pot visszatöltése"
 
-#: src/serviceconf.glade.h:8
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _3"
 msgstr "_3. futási szint"
 
-#: src/serviceconf.glade.h:9
+#: src/serviceconf.glade.h:13
 msgid "Runlevel _4"
 msgstr "_4. futási szint"
 
-#: src/serviceconf.glade.h:10
+#: src/serviceconf.glade.h:14
 msgid "Runlevel _5"
 msgstr "_5. futási szint"
 
-#: src/serviceconf.glade.h:11
+#: src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "A szolgáltatás _leállítása"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:16
+msgid "Save Dialog"
+msgstr ""
+
+#: src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "A szolgáltatás beállításai"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:18
+#, fuzzy
+msgid "Service Name: "
+msgstr "Szolgáltatások"
+
+#: src/serviceconf.glade.h:19
 msgid "Start"
 msgstr "Indítás"
 
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:20
 msgid "Start the selected service"
 msgstr "A kijelölt szolgáltatás elindítása"
 
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:21
 msgid "Status"
 msgstr "Állapot"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:22
 msgid "Stop"
 msgstr "Leállítás"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:23
 msgid "Stop the selected service"
 msgstr "A kijelölt szolgáltatás leállítása"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:24
+msgid ""
+"You have made changes to the current runlevel.\n"
+"Do you want to save the changes?"
+msgstr ""
+"Módosítások történtek az aktuális futási szint beállításaiban.\n"
+"El szeretné menteni a módosításokat?"
+
+#: src/serviceconf.glade.h:26
 msgid "_Actions"
 msgstr "Mű_veletek"
 
-#: src/serviceconf.glade.h:19
+#: src/serviceconf.glade.h:27
 msgid "_Contents"
 msgstr "_Tartalom"
 
-#: src/serviceconf.glade.h:20
+#: src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
 msgstr "F_utási szint szerkesztése"
 
-#: src/serviceconf.glade.h:21
+#: src/serviceconf.glade.h:29
 msgid "_File"
 msgstr "_Fájl"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:30
 msgid "_Help"
 msgstr "_Segítség"
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:31
 msgid "_Refresh Service List"
 msgstr "A sz_olgáltatáslista frissítése"
 
-#: src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:32
 msgid "_Restart Service"
 msgstr "A szolgáltatás újrain_dítása"
 
-#: src/serviceconf.glade.h:25
+#: src/serviceconf.glade.h:33
 msgid "_Save Changes"
 msgstr "A módosítások m_entése"
 
-#: src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:34
 msgid "_Start Service"
 msgstr "A szol_gáltatás elindítása"
+
+#: src/serviceconf.glade.h:35
+msgid "_View"
+msgstr ""
+
+#~ msgid "xinetd service"
+#~ msgstr "xinetd szolgáltatás"
