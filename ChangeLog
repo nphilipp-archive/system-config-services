@@ -1,5 +1,7 @@
 2004-03-03  Brent Fox  <bfox@redhat.com>
 
+	* ChangeLog: release 0.8.7
+
 	* system-config-services.spec.in: add BuildRequires on automake17
 
 2004-03-02  Brent Fox  <bfox@redhat.com>
