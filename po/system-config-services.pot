@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-27 09:35+0200\n"
+"POT-Creation-Date: 2004-10-08 11:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,58 +21,58 @@ msgstr ""
 msgid "Are you sure you want to delete the %s?"
 msgstr ""
 
-#: src/serviceconf.py:187 src/serviceconf.glade.h:18
+#: src/serviceconf.py:190 src/serviceconf.glade.h:18
 msgid "Start"
 msgstr ""
 
-#: src/serviceconf.py:191 src/serviceconf.glade.h:20
+#: src/serviceconf.py:194 src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr ""
 
-#: src/serviceconf.py:195 src/serviceconf.glade.h:9
+#: src/serviceconf.py:198 src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr ""
 
-#: src/serviceconf.py:201
+#: src/serviceconf.py:204
 msgid "_Save"
 msgstr ""
 
-#: src/serviceconf.py:201
+#: src/serviceconf.py:204
 msgid "Save"
 msgstr ""
 
-#: src/serviceconf.py:206
+#: src/serviceconf.py:209
 msgid "_Revert"
 msgstr ""
 
-#: src/serviceconf.py:206
+#: src/serviceconf.py:209
 msgid "Revert"
 msgstr ""
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:240
+#: src/serviceconf.py:243
 msgid "Currently Running in Runlevel: "
 msgstr ""
 
-#: src/serviceconf.py:251
+#: src/serviceconf.py:254
 msgid "Start at Boot"
 msgstr ""
 
-#: src/serviceconf.py:252
+#: src/serviceconf.py:255
 msgid "Services"
 msgstr ""
 
-#: src/serviceconf.py:307 src/serviceconf.py:413 src/serviceconf.py:430
-#: src/serviceconf.py:449
+#: src/serviceconf.py:313 src/serviceconf.py:419 src/serviceconf.py:436
+#: src/serviceconf.py:455
 msgid "Editing Runlevel: "
 msgstr ""
 
-#: src/serviceconf.py:350
+#: src/serviceconf.py:356
 msgid "Unknown"
 msgstr ""
 
-#: src/serviceconf.py:478
+#: src/serviceconf.py:484
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -83,52 +83,52 @@ msgid ""
 " "
 msgstr ""
 
-#: src/serviceconf.py:482
+#: src/serviceconf.py:488
 msgid "About"
 msgstr ""
 
-#: src/serviceconf.py:511
+#: src/serviceconf.py:517
 msgid "Help is not available."
 msgstr ""
 
-#: src/serviceconf.py:658
+#: src/serviceconf.py:670
 msgid "You must run system-config-services as root."
 msgstr ""
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:289
+#: src/servicemethods.py:327
 msgid ""
 "\n"
 "\n"
 "xinetd is required for this service."
 msgstr ""
 
-#: src/servicemethods.py:335
+#: src/servicemethods.py:373
 msgid "xinetd failed to reload for "
 msgstr ""
 
-#: src/servicemethods.py:336
+#: src/servicemethods.py:374
 msgid ". The error was: "
 msgstr ""
 
-#: src/servicemethods.py:338
+#: src/servicemethods.py:376
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr ""
 
-#: src/servicemethods.py:341
+#: src/servicemethods.py:379
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr ""
 
-#: src/servicemethods.py:346
+#: src/servicemethods.py:384
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr ""
 
-#: src/servicemethods.py:348
+#: src/servicemethods.py:386
 msgid " successful"
 msgstr ""
 

@@ -1,3 +1,21 @@
+2004-10-08  nphilipp  <nphilipp@redhat.com>
+
+	* aclocal.m4, intltool-extract.in, intltool-merge.in, intltool-update.in, mkinstalldirs:
+	pick up autofoo related script updates
+
+	* configure.in: bump version
+
+	* src/serviceconf.py, src/servicemethods.py, system-config-services.spec.in:
+	fix gtk.main*() related DeprecationWarnings (#134978)
+
+2004-10-01  dwalsh  <dwalsh@redhat.com>
+
+	* system-config-services.spec.in: fix spec
+
+	* ChangeLog, aclocal.m4: release 0.8.10
+
+	* system-config-services.spec.in, configure.in: update translations
+
 2004-10-01  dwalsh  <dwalsh@redhat.com>
 
 	* system-config-services.spec.in, configure.in: update translations
