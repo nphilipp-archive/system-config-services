@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services 0\n"
 "POT-Creation-Date: 2003-09-05 15:44-0400\n"
-"PO-Revision-Date: 2003-09-15 18:44+CEST\n"
+"PO-Revision-Date: 2003-09-17 10:28+CEST\n"
 "Last-Translator: auto\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "MIME-Version: 1.0\n"
@@ -58,7 +58,7 @@ msgstr ""
 #: src/serviceconf.py:62
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr "Sigurni ste da Å¾elite obrisati %s?"
+msgstr "Sigurni ste da želite obrisati %s?"
 
 #. make sure threading is disabled
 #. map the event signals to specific methods
@@ -76,7 +76,7 @@ msgstr "Sigurni ste da Å¾elite obrisati %s?"
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:208
 msgid "Currently Running in Runlevel: "
-msgstr "Trenutno izvrÅ¡avam u razini izvrÅ¡avanja: "
+msgstr "Trenutno izvršavam u razini izvršavanja: "
 
 #. This is a sentry
 #: src/serviceconf.py:219
@@ -101,7 +101,7 @@ msgstr "Servisi"
 #: src/serviceconf.py:275 src/serviceconf.py:381 src/serviceconf.py:398
 #: src/serviceconf.py:417
 msgid "Editing Runlevel: "
-msgstr "UreÄujem razinu pokretanja: "
+msgstr "Uređujem razinu pokretanja: "
 
 #. set the text in txtDesc
 #. if an xinetd service is selected, disable these,
@@ -117,7 +117,7 @@ msgstr "Nepoznato"
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:446
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Copyright (c) 2002 Red Hat, Inc. Sva prava zadrÅ¾ana."
+msgstr "Copyright (c) 2002 Red Hat, Inc. Sva prava zadržana."
 
 #: src/serviceconf.py:447
 msgid ""
@@ -125,8 +125,8 @@ msgid ""
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
-"Ovaj softver se moÅ¾e slobodno distribuirati pod uvjetima GPL-a.\n"
-"O greÅ¡kama izvjestite na Red Hat sustav praÄenja greÅ¡aka na:\n"
+"Ovaj softver se može slobodno distribuirati pod uvjetima GPL-a.\n"
+"O greškama izvjestite na Red Hat sustav praćenja grešaka na:\n"
 "http://bugzilla.redhat.com"
 
 #. ----------------------------------------------------------------------------
@@ -203,30 +203,30 @@ msgstr ""
 #. if it's toggled off
 #: src/servicemethods.py:332
 msgid "xinetd failed to reload for "
-msgstr "xinetd nike uspio ponovo uÄitati "
+msgstr "xinetd nike uspio ponovo učitati "
 
 #: src/servicemethods.py:333
 msgid ". The error was: "
-msgstr ". GreÅ¡ka je bila: "
+msgstr ". Greška je bila: "
 
 #: src/servicemethods.py:335
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "Xinetd je uspjeÅ¡no ponovo uÄitao %s"
+msgstr "Xinetd je uspješno ponovo učitao %s"
 
 #: src/servicemethods.py:338
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "xinetd mora biti ukljuÄen za pokretanje %s"
+msgstr "xinetd mora biti uključen za pokretanje %s"
 
 #: src/servicemethods.py:343
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s nije uspio. GreÅ¡ka je bila: %s"
+msgstr "%s nije uspio. Greška je bila: %s"
 
 #: src/servicemethods.py:345
 msgid " successful"
-msgstr " uspjeÅ¡no"
+msgstr " uspješno"
 
 #: src/serviceconf.glade.h:1
 msgid "*"
@@ -242,7 +242,7 @@ msgstr "Trenutno aktivna razina pokretanja: "
 
 #: src/serviceconf.glade.h:4
 msgid "Delete Service"
-msgstr "ObriÅ¡i servis"
+msgstr "Obriši servis"
 
 #: src/serviceconf.glade.h:5
 msgid "Description"
@@ -258,7 +258,7 @@ msgstr "Uredi razinu pokretanja:"
 
 #: src/serviceconf.glade.h:8
 msgid "None"
-msgstr "NiÅ¡ta"
+msgstr "Ništa"
 
 #: src/serviceconf.glade.h:9
 msgid "Restart"
@@ -306,7 +306,7 @@ msgstr "Pokreni"
 
 #: src/serviceconf.glade.h:20
 msgid "Start the selected service"
-msgstr "PokreÄe izabrani servis"
+msgstr "Pokreće izabrani servis"
 
 #: src/serviceconf.glade.h:21
 msgid "Status"
@@ -326,7 +326,7 @@ msgid ""
 "Do you want to save the changes?"
 msgstr ""
 "Napravili ste promjene na trenutnom runlevelu.\n"
-"Å½elite li saÄuvati promijene?"
+"Želite li sačuvati promijene?"
 
 #: src/serviceconf.glade.h:26
 msgid "_Actions"
@@ -334,11 +334,11 @@ msgstr "_Akcije"
 
 #: src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr "_SadrÅ¾aj"
+msgstr "_Sadržaj"
 
 #: src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
-msgstr "_Uredi razinu izvrÅ¡avanja"
+msgstr "_Uredi razinu izvršavanja"
 
 #: src/serviceconf.glade.h:29
 msgid "_File"
@@ -346,11 +346,11 @@ msgstr "_Datoteka"
 
 #: src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr "_PomoÄ"
+msgstr "_Pomoć"
 
 #: src/serviceconf.glade.h:31
 msgid "_Refresh Service List"
-msgstr "_OsvjeÅ¾i popis servisa"
+msgstr "_Osvježi popis servisa"
 
 #: src/serviceconf.glade.h:32
 msgid "_Restart Service"
