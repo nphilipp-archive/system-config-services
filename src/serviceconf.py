@@ -58,6 +58,27 @@ _=gettext.gettext
 quiting = 0
 VERSION = "@VERSION@"
 
+def verify_delete(arg):
+    message=_("Are you sure you want to delete the %s?") % arg
+    dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_INFO,
+                            gtk.BUTTONS_YES_NO,
+                            message)
+    dlg.set_position(gtk.WIN_POS_MOUSE)
+    dlg.show_all()
+    rc = dlg.run()
+    dlg.destroy()
+    return rc
+
+def error_dialog (message, dialog_type=gtk.MESSAGE_WARNING):
+    dialog = gtk.MessageDialog (None,
+                                gtk.DIALOG_DESTROY_WITH_PARENT | gtk.DIALOG_MODAL,
+                                dialog_type,
+                                gtk.BUTTONS_OK,
+                                message)
+    dialog.set_position(gtk.WIN_POS_MOUSE)
+    dialog.run ()
+    dialog.destroy ()
+
 def find_browser():
     try:
         path = '/usr/bin/mozilla'
@@ -102,6 +123,8 @@ class Gui:
               "on_mnuSave_activate" : self.on_mnuSave_clicked,
               "on_mnuRevert_activate" : self.on_mnuRevert_clicked,
               "on_mnuExit_activate" : self.quit,
+              "on_add_service_activate" : self.on_add_service_clicked,
+              "on_delete_service_activate" : self.on_delete_service_clicked,
               "on_mnuStart_activate" : self.on_btnStart_clicked,
               "on_mnuStop_activate" : self.on_btnStop_clicked,
               "on_mnuRestart_activate" : self.on_btnRestart_clicked,
@@ -485,6 +508,27 @@ http://bugzilla.redhat.com"""),
 	dlg.destroy()
         self.set_text_status()
 
+    def on_add_service_clicked(self,None):
+        dlg = self.xml.get_widget ("serviceNameDialog")
+        rc = dlg.run()
+        dlg.hide()
+            
+        if rc==gtk.RESPONSE_OK:
+            service=self.xml.get_widget ("serviceNameEntry").get_text()
+            response=self.ServiceMethods.chkconfig_add_service(service)
+            if response[0]!=0:
+                error_dialog(response[1])
+            else:
+                self.on_mnuRescan_activate(None)
+
+    def on_delete_service_clicked(self,None):
+        if verify_delete(self.current_selected) == gtk.RESPONSE_YES:
+            response=self.ServiceMethods.chkconfig_delete_service(self.current_selected)
+            if response[0]!=0:
+                error_dialog(response[1])
+            else:
+                self.on_mnuRescan_activate(None)
+            
     def on_btnStart_clicked(self,None):
         """calls get_service_action_results to start the selected initscript"""
         self.get_service_action_results(self.text_in_row, "start")

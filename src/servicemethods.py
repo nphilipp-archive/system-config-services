@@ -136,6 +136,14 @@ class ServiceMethods:
 
 
 
+    def chkconfig_add_service(self, servicename):
+        """calls chkconfig --add servicename"""
+        return getstatusoutput("LC_ALL=C /sbin/chkconfig --add %s" % (servicename))
+        
+    def chkconfig_delete_service(self, servicename):
+        """calls chkconfig --del servicename"""
+        return getstatusoutput("LC_ALL=C /sbin/chkconfig --del %s" % (servicename))
+        
     def chkconfig_add_del(self, servicename, add_or_del, editing_runlevel):
         """calls chkconfig --level , on if add_or_del == 1, off if add_or_del == 0"""
         if add_or_del == 1:
