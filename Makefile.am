@@ -9,7 +9,7 @@ EXTRA_DIST = \
 	redhat-config-services.console		\
 	redhat-config-services.pam		\
 	pycheckrc				\
-	pixmaps/serviceconf.xpm 		\
+	pixmaps/redhat-config-services.png	\
 	intltool-extract.in			\
 	intltool-merge.in			\
 	intltool-update.in			\
@@ -34,7 +34,7 @@ install-data-hook:
 	$(mkinstalldirs) $(DESTDIR)$(prefix)/bin/
 	$(INSTALL_DATA) $(srcdir)/redhat-config-services.console $(DESTDIR)$(sysconfdir)/security/console.apps/redhat-config-services
 	$(INSTALL_DATA) $(srcdir)/redhat-config-services.pam $(DESTDIR)$(sysconfdir)/pam.d/redhat-config-services
-	$(INSTALL_DATA) $(srcdir)/pixmaps/serviceconf.xpm $(DESTDIR)$(datadir)/pixmaps
+	$(INSTALL_DATA) $(srcdir)/pixmaps/redhat-config-services.png $(DESTDIR)$(datadir)/pixmaps
 	ln -fs consolehelper $(DESTDIR)$(prefix)/bin/redhat-config-services
 	ln -fs consolehelper $(DESTDIR)$(prefix)/bin/serviceconf
 	ln -fs redhat-config-services $(DESTDIR)$(sysconfdir)/security/console.apps/serviceconf
@@ -43,7 +43,7 @@ install-data-hook:
 uninstall-local:
 	rm -f $(DESTDIR)$(sysconfdir)/pam.d/redhat-config-services
 	rm -f $(DESTDIR)$(prefix)/bin/redhat-config-services
-	rm -f $(DESTDIR)$(datadir)/pixmaps/serviceconf.xpm
+	rm -f $(DESTDIR)$(datadir)/pixmaps/redhat-config-services.png
 	ln -f $(DESTDIR)$(prefix)/bin/serviceconf
 
 changelog:
