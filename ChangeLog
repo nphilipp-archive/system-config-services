@@ -1,3 +1,36 @@
+2002-08-20  dwalsh  <dwalsh@redhat.com>
+
+	* redhat-config-services.spec.in: update changelog
+
+2002-08-19  dwalsh  <dwalsh@redhat.com>
+
+	* src/serviceconf.py:
+	fix path selection, quiting before fully inited, and wrap mode
+
+2002-08-18  keld  <keld@redhat.com>
+
+	* po/da.po: updates
+	 	redhat-config-date/po/da.po redhat-config-kickstart/po/da.po
+	redhat-config-rootpassword/po/da.po
+	redhat-config-securitylevel/po/da.po
+	redhat-config-services/po/da.po
+
+2002-08-13  ra  <ra@redhat.com>
+
+	* po/is.po: *** empty log message ***
+
+2002-08-12  sarahs  <sarahs@redhat.com>
+
+	* po/zh_CN.po: another update
+
+2002-08-12  mkim  <mkim@redhat.com>
+
+	* po/ko.po: Updated translation.
+
+2002-08-12  hpwu  <hpwu@redhat.com>
+
+	* po/zh_TW.po: Updated translation.
+
 2002-08-10  dwalsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/messages.mo: release 0.8.1

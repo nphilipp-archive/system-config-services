@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
-"POT-Creation-Date: 2002-08-10 07:45-0400\n"
+"POT-Creation-Date: 2002-08-20 09:01-0400\n"
 "PO-Revision-Date: 2002-08-12 10:52+1000\n"
 "Last-Translator: Michelle Kim <mkim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -71,16 +71,16 @@ msgstr ""
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:170
+#: src/serviceconf.py:169
 msgid "Currently Running in Runlevel: "
 msgstr "런레벨에서 현재 실행 중임: "
 
 #. This is a sentry
-#: src/serviceconf.py:181
+#: src/serviceconf.py:180
 msgid "Start at Boot"
 msgstr "부팅시 시작"
 
-#: src/serviceconf.py:182
+#: src/serviceconf.py:181
 msgid "Services"
 msgstr "서비스"
 
@@ -95,12 +95,12 @@ msgstr "서비스"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:227 src/serviceconf.py:309 src/serviceconf.py:318
-#: src/serviceconf.py:342
+#: src/serviceconf.py:228 src/serviceconf.py:310 src/serviceconf.py:319
+#: src/serviceconf.py:343
 msgid "Editing Runlevel: "
 msgstr "런레벨 편집: "
 
-#: src/serviceconf.py:324
+#: src/serviceconf.py:325
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -112,11 +112,11 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:354
+#: src/serviceconf.py:355
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 
-#: src/serviceconf.py:355
+#: src/serviceconf.py:356
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -130,7 +130,7 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:373
+#: src/serviceconf.py:374
 msgid "Help is not available."
 msgstr "도움말이 없습니다."
 
@@ -145,7 +145,8 @@ msgstr "도움말이 없습니다."
 #. ----------------------------------------------------------------------------
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
-#: src/serviceconf.py:491
+#. if you quit during initialization exceptions can be raised
+#: src/serviceconf.py:499
 msgid "You must run redhat-config-services as root."
 msgstr "redhat-config-services는 루트로 실행하셔야 합니다."
 
@@ -541,4 +542,3 @@ msgstr "서비스 시작 (_S)"
 
 #~ msgid "Exit"
 #~ msgstr "종료"
-

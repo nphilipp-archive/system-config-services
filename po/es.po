@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: 2002-08-10 07:45-0400\n"
+"POT-Creation-Date: 2002-08-20 09:01-0400\n"
 "PO-Revision-Date: 2002-07-17 10:52GMT\n"
 "Last-Translator: Nuria Soriano <nuria@redhat.es>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -75,20 +75,20 @@ msgstr ""
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:170
+#: src/serviceconf.py:169
 msgid "Currently Running in Runlevel: "
 msgstr "Actualmente corriendo en el nivel de ejecución: "
 
 # ../serviceconf.py:143
 # ../serviceconf.py:143
 #. This is a sentry
-#: src/serviceconf.py:181
+#: src/serviceconf.py:180
 msgid "Start at Boot"
 msgstr "Comenzar al arrancar"
 
 # ../serviceconf.py:144
 # ../serviceconf.py:144
-#: src/serviceconf.py:182
+#: src/serviceconf.py:181
 msgid "Services"
 msgstr "Servicios"
 
@@ -105,12 +105,12 @@ msgstr "Servicios"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:227 src/serviceconf.py:309 src/serviceconf.py:318
-#: src/serviceconf.py:342
+#: src/serviceconf.py:228 src/serviceconf.py:310 src/serviceconf.py:319
+#: src/serviceconf.py:343
 msgid "Editing Runlevel: "
 msgstr "Editando nivel de ejecución: "
 
-#: src/serviceconf.py:324
+#: src/serviceconf.py:325
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -122,13 +122,13 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:354
+#: src/serviceconf.py:355
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright (c) 2001 Red Hat, Inc. Todos los derechos reservados."
 
 # ../serviceconf.py:312
 # ../serviceconf.py:312
-#: src/serviceconf.py:355
+#: src/serviceconf.py:356
 #, fuzzy
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
@@ -144,7 +144,7 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:373
+#: src/serviceconf.py:374
 msgid "Help is not available."
 msgstr ""
 
@@ -161,7 +161,8 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
-#: src/serviceconf.py:491
+#. if you quit during initialization exceptions can be raised
+#: src/serviceconf.py:499
 msgid "You must run redhat-config-services as root."
 msgstr "Debe ejecutar redhat-config-services como root."
 
