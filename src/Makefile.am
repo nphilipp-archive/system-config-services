@@ -18,6 +18,7 @@ install-exec-local:
 	sed -e 's/\@VERSION\@/@VERSION@/g' $(srcdir)/serviceconf.py > $(DESTDIR)$(pkgdatadir)/serviceconf.py
 	chmod 755 $(DESTDIR)$(pkgdatadir)/serviceconf.py
 	install -m 0755 $(srcdir)/checklist.py $(DESTDIR)$(pkgdatadir)/
+	install -m 0755 $(srcdir)/nonblockingreader.py $(DESTDIR)$(pkgdatadir)/
 	install -m 0755 $(srcdir)/servicemethods.py $(DESTDIR)$(pkgdatadir)/
 	softdir=$(pkgdatadir); \
 	p=$(DESTDIR) ; \
