@@ -28,13 +28,12 @@ applications_DATA=redhat-config-services.desktop
 applications_in_files=$(applications_DATA:.desktop=.desktop.in)
 
 install-data-hook:
-	$(mkinstalldirs) $(DESTDIR)$(datadir)/pixmaps
 	$(mkinstalldirs) $(DESTDIR)$(sysconfdir)/security/console.apps
 	$(mkinstalldirs) $(DESTDIR)$(sysconfdir)/pam.d
 	$(mkinstalldirs) $(DESTDIR)$(prefix)/bin/
 	$(INSTALL_DATA) $(srcdir)/redhat-config-services.console $(DESTDIR)$(sysconfdir)/security/console.apps/redhat-config-services
 	$(INSTALL_DATA) $(srcdir)/redhat-config-services.pam $(DESTDIR)$(sysconfdir)/pam.d/redhat-config-services
-	$(INSTALL_DATA) $(srcdir)/pixmaps/redhat-config-services.png $(DESTDIR)$(datadir)/pixmaps
+	$(INSTALL_DATA) $(srcdir)/pixmaps/redhat-config-services.png $(DESTDIR)$(pkgdatadir)/
 	ln -fs consolehelper $(DESTDIR)$(prefix)/bin/redhat-config-services
 	ln -fs consolehelper $(DESTDIR)$(prefix)/bin/serviceconf
 	ln -fs redhat-config-services $(DESTDIR)$(sysconfdir)/security/console.apps/serviceconf
@@ -43,7 +42,7 @@ install-data-hook:
 uninstall-local:
 	rm -f $(DESTDIR)$(sysconfdir)/pam.d/redhat-config-services
 	rm -f $(DESTDIR)$(prefix)/bin/redhat-config-services
-	rm -f $(DESTDIR)$(datadir)/pixmaps/redhat-config-services.png
+	rm -f $(DESTDIR)$(pkgdatadir)/redhat-config-service.png
 	ln -f $(DESTDIR)$(prefix)/bin/serviceconf
 
 changelog:
