@@ -30,8 +30,8 @@ install-exec-local:
 	p=$(prefix) ; \
 	softdir=$${softdir/#$$p} ; \
 	softdir=$${softdir/#\/} ; \
-	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(sbindir)/redhat-config-services; \
-	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(sbindir)/serviceconf;
+	ln  -fs ../$${softdir}/redhat-config-services $(DESTDIR)$(sbindir)/redhat-config-services; \
+	ln  -fs ../$${softdir}/redhat-config-services $(DESTDIR)$(sbindir)/serviceconf;
 
 uninstall-local:
 	rm -fr $(DESTDIR)$(pkgdatadir)

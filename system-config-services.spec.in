@@ -44,8 +44,8 @@ rm -rf %{buildroot}
 %{_datadir}/pixmaps/serviceconf.xpm
 %config %{_sysconfdir}/pam.d/redhat-config-services
 %config %{_sysconfdir}/security/console.apps/redhat-config-services
-#%config %{_sysconfdir}/security/console.apps/serviceconf
-#%config %{_sysconfdir}/pam.d/serviceconf
+%config %{_sysconfdir}/security/console.apps/serviceconf
+%config %{_sysconfdir}/pam.d/serviceconf
 
 %changelog
 
