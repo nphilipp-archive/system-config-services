@@ -448,8 +448,7 @@ class Gui:
 Please report all bugs you find at the Red Hat bug tracking system:
 http://bugzilla.redhat.com"""),
                              ["Tim Powers <timp@redhat.com>" ,
-                                  "Bill Nottingham <notting@redhat.com>", "Dan Walsh <dwalsh@redhat.com"],
-                             )
+                                  "Bill Nottingham <notting@redhat.com>", "Dan Walsh <dwalsh@redhat.com"],[ 'Tammy Fox <tfox@redhat.com>'],_("translator_credits"))
         dlg.show()
 
 #----------------------------------------------------------------------------
