@@ -109,11 +109,11 @@ msgstr "Ændrer kørselsniveau: "
 #. set the text in StatusView
 #: src/serviceconf.py:289
 msgid "Unknown"
-msgstr ""
+msgstr "Ukendt"
 
 #: src/serviceconf.py:292
 msgid "xinetd service"
-msgstr ""
+msgstr "xinetd-tjeneste"
 
 #: src/serviceconf.py:360
 msgid ""
@@ -252,7 +252,7 @@ msgstr "Nuværende aktive kørselsniveau: "
 
 #: src/serviceconf.glade.h:3
 msgid "Description"
-msgstr ""
+msgstr "Beskrivelse"
 
 #: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
@@ -315,9 +315,8 @@ msgid "Start the selected service"
 msgstr "Start den valgte tjeneste"
 
 #: src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "Start"
+msgstr "Status"
 
 #: src/serviceconf.glade.h:20
 msgid "Stop"
