@@ -6,11 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: service conf\n"
 "POT-Creation-Date: 2003-03-04 14:02-0500\n"
-"PO-Revision-Date: 2003-01-10 19:48+1000\n"
-"Last-Translator: Jean-Paul AUBRY <jpaubry@redhat.com>\n"
-"Language-Team: French <fr@li.org>\n"
+"PO-Revision-Date: 2003-03-19 14:41+0100\n"
+"Last-Translator: Audrey Simons <asimons@redhat.com>\n"
+"Language-Team: french <fr@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
 "X-Generator: KBabel 0.9.6\n"
@@ -76,12 +76,12 @@ msgstr ""
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:185
 msgid "Currently Running in Runlevel: "
-msgstr "Actuellement en exécution sur le niveau d'exécution: "
+msgstr "Actuellement en exÃ©cution sur le niveau d'exÃ©cution: "
 
 #. This is a sentry
 #: src/serviceconf.py:196
 msgid "Start at Boot"
-msgstr "Activation au démarrage"
+msgstr "Activation au dÃ©marrage"
 
 #: src/serviceconf.py:197
 msgid "Services"
@@ -101,7 +101,7 @@ msgstr "Services"
 #: src/serviceconf.py:252 src/serviceconf.py:357 src/serviceconf.py:374
 #: src/serviceconf.py:393
 msgid "Editing Runlevel: "
-msgstr "Modification du niveau d'exécution : "
+msgstr "Modification du niveau d'exÃ©cution: "
 
 #. set the text in txtDesc
 #. if an xinetd service is selected, disable these,
@@ -121,7 +121,7 @@ msgstr "service xinetd"
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:422
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Copyright (c) 2002 Red Hat, Inc. Tous droits réservés."
+msgstr "Copyright (c) 2002 Red Hat, Inc. Tous droits rÃ©servÃ©s."
 
 #: src/serviceconf.py:423
 msgid ""
@@ -129,9 +129,9 @@ msgid ""
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
-"Ce logiciel peut être redistribué librement selon les termes de la GPL.\n"
-"Envoyez un rapport sur les bogues trouvés au système de contrôle des\n"
-"bogues Red Hat à l'adresse http://bugzilla.redhat.com"
+"Ce logiciel peut Ãªtre redistribuÃ© librement selon les termes de la GPL.\n"
+"Envoyez un rapport sur les bogues trouvÃ©s au systÃ¨me de contrÃ´le des\n"
+"bogues Red Hat Ã  l'adresse http://bugzilla.redhat.com"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -152,7 +152,7 @@ msgstr ""
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:551
 msgid "You must run redhat-config-services as root."
-msgstr "Vous devez exécuter redhat-config-services en tant que root."
+msgstr "Vous devez exÃ©cuter redhat-config-services en tant que root."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -195,7 +195,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Vous devez activer xinetd de façon à ce qu'il utilise ce service."
+"Vous devez activer xinetd de faÃ§on Ã  ce qu'il utilise ce service."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -207,34 +207,34 @@ msgstr ""
 #. if it's toggled off
 #: src/servicemethods.py:323
 msgid "xinetd failed to reload for "
-msgstr "xinetd n'est pas reparti à cause de "
+msgstr "xinetd n'est pas reparti Ã  cause de "
 
 #: src/servicemethods.py:324
 msgid ". The error was: "
-msgstr ". L'erreur était : "
+msgstr ". L'erreur Ã©tait: "
 
 #: src/servicemethods.py:326
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "rechargement de xinetd pour %s réussi"
+msgstr "rechargement de xinetd pour %s rÃ©ussi"
 
 #: src/servicemethods.py:329
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "xinetd doit être activé pour que %s puisse être exécuté."
+msgstr "xinetd doit Ãªtre activÃ© pour que %s puisse Ãªtre exÃ©cutÃ©"
 
 #: src/servicemethods.py:334
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s n'a pas réussi. L'erreur était : %s"
+msgstr "%s n'a pas rÃ©ussi. L'erreur Ã©tait: %s"
 
 #: src/servicemethods.py:336
 msgid " successful"
-msgstr " réussi"
+msgstr " rÃ©ussi"
 
 #: src/serviceconf.glade.h:1
 msgid "Current Active Runlevel: "
-msgstr "Niveau d'exécution actif :"
+msgstr "Niveau d'exÃ©cution actif:"
 
 #: src/serviceconf.glade.h:2
 msgid "Description"
@@ -242,11 +242,11 @@ msgstr "Description"
 
 #: src/serviceconf.glade.h:3
 msgid "Don't Save"
-msgstr ""
+msgstr "Ne pas enregistrer"
 
 #: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
-msgstr "Modification du niveau d'exécution :"
+msgstr "Modification du niveau d'exÃ©cution:"
 
 #: src/serviceconf.glade.h:5
 msgid "None"
@@ -254,35 +254,35 @@ msgstr "Aucun"
 
 #: src/serviceconf.glade.h:6
 msgid "Restart"
-msgstr "Redémarrer"
+msgstr "RedÃ©marrer"
 
 #: src/serviceconf.glade.h:7
 msgid "Restart the selected service"
-msgstr "Redémarrer le service sélectionné"
+msgstr "RedÃ©marrer le service sÃ©lectionnÃ©"
 
 #: src/serviceconf.glade.h:8
 msgid "Revert To _Last Save"
-msgstr "Retourner à la _dernière sauvegarde"
+msgstr "Retourner Ã  la _derniÃ¨re sauvegarde"
 
 #: src/serviceconf.glade.h:9
 msgid "Runlevel _3"
-msgstr "Niveau d'exécution _3"
+msgstr "Niveau d'exÃ©cution _3"
 
 #: src/serviceconf.glade.h:10
 msgid "Runlevel _4"
-msgstr "Niveau d'exécution _4"
+msgstr "Niveau d'exÃ©cution _4"
 
 #: src/serviceconf.glade.h:11
 msgid "Runlevel _5"
-msgstr "Niveau d'exécution _5"
+msgstr "Niveau d'exÃ©cution _5"
 
 #: src/serviceconf.glade.h:12
 msgid "S_top Service"
-msgstr "A_rrêter le service"
+msgstr "ArrÃªter le _service"
 
 #: src/serviceconf.glade.h:13
 msgid "Save Dialog"
-msgstr ""
+msgstr "Dialogue de sauvegarde"
 
 #: src/serviceconf.glade.h:14
 msgid "Service Configuration"
@@ -290,30 +290,30 @@ msgstr "Configuration du service"
 
 #: src/serviceconf.glade.h:15
 msgid "Start"
-msgstr "Démarrer"
+msgstr "DÃ©marrer"
 
 #: src/serviceconf.glade.h:16
 msgid "Start the selected service"
-msgstr "Démarrer le service sélectionné"
+msgstr "DÃ©marrer le service sÃ©lectionnÃ©"
 
 #: src/serviceconf.glade.h:17
 msgid "Status"
-msgstr "Statut"
+msgstr "Ã‰tat"
 
 #: src/serviceconf.glade.h:18
 msgid "Stop"
-msgstr "Arrêter"
+msgstr "ArrÃªter"
 
 #: src/serviceconf.glade.h:19
 msgid "Stop the selected service"
-msgstr "Arrêter le service sélectionné"
+msgstr "ArrÃªter le service sÃ©lectionnÃ©"
 
 #: src/serviceconf.glade.h:20
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
-"Vous avez effectué des modifications sur le niveau d'exécution en cours.\n"
+"Vous avez effectuÃ© des modifications sur le niveau d'exÃ©cution en cours.\n"
 "Voulez-vous sauvegarder ces modifications ?"
 
 #: src/serviceconf.glade.h:22
@@ -326,7 +326,7 @@ msgstr "_Contenu"
 
 #: src/serviceconf.glade.h:24
 msgid "_Edit Runlevel"
-msgstr "_Modifier le niveau d'exécution"
+msgstr "_Modifier le niveau d'exÃ©cution"
 
 #: src/serviceconf.glade.h:25
 msgid "_File"
@@ -338,11 +338,11 @@ msgstr "_Aide"
 
 #: src/serviceconf.glade.h:27
 msgid "_Refresh Service List"
-msgstr "_Mettre à jour la liste des services"
+msgstr "_Mettre Ã  jour la liste des services"
 
 #: src/serviceconf.glade.h:28
 msgid "_Restart Service"
-msgstr "_Redémarrer le service"
+msgstr "_RedÃ©marrer le service"
 
 #: src/serviceconf.glade.h:29
 msgid "_Save Changes"
@@ -350,7 +350,7 @@ msgstr "_Sauvegarder les modifications"
 
 #: src/serviceconf.glade.h:30
 msgid "_Start Service"
-msgstr "_Démarrer le service"
+msgstr "_DÃ©marrer le service"
 
 #~ msgid "Cancel"
 #~ msgstr "Effacer"
@@ -359,46 +359,47 @@ msgstr "_Démarrer le service"
 #~ msgstr "Quitter"
 
 #~ msgid "Revert to the last saved change"
-#~ msgstr "Retourner à la dernière modification sauvegardée"
+#~ msgstr "Retourner Ã  la derniÃ¨re modification sauvegardÃ©e"
 
 #~ msgid "Save"
 #~ msgstr "Sauvegarder"
 
 #~ msgid "Save the changes you have made"
-#~ msgstr "Sauvegarder les modifications apportées"
+#~ msgstr "Sauvegarder les modifications apportÃ©es"
 
 #~ msgid "_Manual"
 #~ msgstr "_Manuel"
 
 #~ msgid "Refresh the list of services"
-#~ msgstr "Mettre à jour la liste des services"
+#~ msgstr "Mettre Ã  jour la liste des services"
 
 #~ msgid "Actions such as start, stop, and restart on the selected service"
 #~ msgstr ""
-#~ "Des actions telles que démarrer, arrêter et redémarrer sur le service "
-#~ "sélectionné"
+#~ "Des actions telles que dÃ©marrer, arrÃªter et redÃ©marrer sur le service "
+#~ "sÃ©lectionnÃ©"
 
 #~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Sélectionner le niveau d'exécution que vous souhaitez modifier"
+#~ msgstr "SÃ©lectionner le niveau d'exÃ©cution que vous souhaitez modifier"
 
 #~ msgid "Runlevel 3 is multiuser mode with networking"
 #~ msgstr ""
-#~ "Le niveau d'exécution 3 est multi-utilisateurs et il est doté d'un "
-#~ "support réseau"
+#~ "Le niveau d'exÃ©cution 3 est multi-utilisateurs et il est dotÃ© d'un "
+#~ "support rÃ©seau"
 
 #~ msgid ""
 #~ "Runlevel 4 is reserved for local customization, and is not usually used"
 #~ msgstr ""
-#~ "Le niveau d'exécution 4 est réservé à la personnalisation locale et, "
-#~ "habituellement, il n'est pas utilisé"
+#~ "Le niveau d'exÃ©cution 4 est rÃ©servÃ© Ã  la personnalisation locale et, "
+#~ "habituellement, il n'est pas utilisÃ©"
 
 #~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
 #~ msgstr ""
-#~ "Le niveau d'exécution 5 est multi-utilisateurs et il est doté d'un "
-#~ "support réseau et de X Window"
+#~ "Le niveau d'exÃ©cution 5 est multi-utilisateurs et il est dotÃ© d'un "
+#~ "support rÃ©seau et de X Window"
 
 #~ msgid "Read Manual"
 #~ msgstr "Lire le manuel"
 
 #~ msgid "Exit"
 #~ msgstr "Fermer"
+
