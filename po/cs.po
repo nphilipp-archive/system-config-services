@@ -1,10 +1,13 @@
-# Miloslav Trmac <mitr@volny.cz>, 2002, 2003.
+# Copyright (C) 2002, 2003, 2004 redhat-config-services' COPYRIGHT HOLDER
+# Copyright (C) 2004 Miloslav Trmac <mitr@volny.cz>
+#
+# Miloslav Trmac <mitr@volny.cz>, 2002, 2003, 2004.
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
-"PO-Revision-Date: 2003-12-05 11:49+0100\n"
+"PO-Revision-Date: 2004-03-17 20:54+0100\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -82,20 +85,19 @@ msgstr "Restartovat"
 
 #: src/serviceconf.py:195
 msgid "_Save"
-msgstr ""
+msgstr "_Uložit"
 
 #: src/serviceconf.py:195
 msgid "Save"
-msgstr ""
+msgstr "Uložit"
 
 #: src/serviceconf.py:200
 msgid "_Revert"
-msgstr ""
+msgstr "_Vrátit"
 
 #: src/serviceconf.py:200
-#, fuzzy
 msgid "Revert"
-msgstr "Restartovat"
+msgstr "Vrátit"
 
 #. the textbox
 #. the statusbox
@@ -154,10 +156,17 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"Nástroj pro nastavení služeb systému VERSION\n"
+" Copyright © 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 
 #: src/serviceconf.py:476
 msgid "About"
-msgstr ""
+msgstr "O aplikaci"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -165,7 +174,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:505
 msgid "Help is not available."
-msgstr ""
+msgstr "Nápověda není k dispozici."
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -359,7 +368,7 @@ msgstr "_Nápověda"
 
 #: src/serviceconf.glade.h:28
 msgid "_Quit"
-msgstr ""
+msgstr "U_končit"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
@@ -380,11 +389,6 @@ msgstr "_Spustit službu"
 #: src/serviceconf.glade.h:33
 msgid "_View"
 msgstr "_Zobrazit"
-
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr ""
-#~ "Copyright (c) 2002 Red Hat, Inc. All rights reserved. Všechna práva "
-#~ "vyhrazena."
 
 #~ msgid ""
 #~ "This software may be freely redistributed under the terms of the GPL.\n"
