@@ -1,5 +1,21 @@
 2004-10-12  nphilipp  <nphilipp@redhat.com>
 
+	* configure.in, system-config-services.spec.in: bump version
+
+	* src/Makefile.am: you really need to install this manually, doh
+
+	* ChangeLog: release 0.8.13
+
+	* intltool-extract.in, intltool-merge.in, intltool-update.in, aclocal.m4:
+	autofoo/i18n stuff updated
+
+	* configure.in: bump version
+
+	* src/Makefile.am, system-config-services.spec.in:
+	actually install nonblockingreader module (#135445)
+
+2004-10-12  nphilipp  <nphilipp@redhat.com>
+
 	* intltool-extract.in, intltool-merge.in, intltool-update.in, aclocal.m4:
 	autofoo/i18n stuff updated
 
