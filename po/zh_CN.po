@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"POT-Creation-Date: 2004-10-20 13:01+0200\n"
+"POT-Creation-Date: 2005-01-28 17:02+0100\n"
 "PO-Revision-Date: 2004-03-17 14:12+0800\n"
 "Last-Translator: hutuworm <hutuworm@hutuworm.org>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
