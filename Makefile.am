@@ -13,7 +13,7 @@ EXTRA_DIST = \
 	intltool-extract.in			\
 	intltool-merge.in			\
 	intltool-update.in			\
-	docs/*					\
+	docs/html					\
 	ChangeLog
 
 CLEANFILES=$(applications_DATA)
@@ -45,9 +45,11 @@ install-data-hook:
 	ln -fs system-config-services $(DESTDIR)$(sysconfdir)/pam.d/serviceconf
 
 uninstall-local:
+	rm -f $(DESTDIR)$(sysconfdir)/security/console.apps/system-config-services
 	rm -f $(DESTDIR)$(sysconfdir)/pam.d/system-config-services
 	rm -f $(DESTDIR)$(prefix)/bin/system-config-services
 	rm -f $(DESTDIR)$(pkgdatadir)/system-config-service.png
+	rm -f $(DESTDIR)$(prefix)/share/icons/hicolor/48x48/apps/system-config-services.png
 	rm -f $(DESTDIR)$(prefix)/bin/serviceconf
 
 changelog:
