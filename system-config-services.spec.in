@@ -48,6 +48,9 @@ rm -rf %{buildroot}
 %config %{_sysconfdir}/pam.d/serviceconf
 
 %changelog
+* Tue Oct 1 2002 Dan Walsh <dwalsh@redhat.com> 0.8.3-1
+- Change GUI Presentation and add service status
+
 * Wed Sep 4 2002 Bill Nottingham <notting@redhat.com> 0.8.2-1
 - fix startup in some locales
 
