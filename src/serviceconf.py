@@ -150,6 +150,11 @@ class Gui:
 	self.txtBuffer = gtk.TextBuffer(None)
 	self.txtDesc.set_buffer(self.txtBuffer)
 
+        # the statusbox
+#        self.txtStatus = self.xml.get_widget("StatusView")
+#	self.txtStatusBuffer = gtk.TextBuffer(None)
+#	self.txtStatus.set_buffer(self.txtStatusBuffer)
+
         self.lblRunlevel = self.xml.get_widget("lblRunlevel")
         self.lblEditing = self.xml.get_widget("lblEditing")
         
@@ -203,7 +208,6 @@ class Gui:
         self.save_revert_sensitive(0)
         
         self.clstServices.get_selection().select_path ((0,))
-        
         self.current_selected_service = self.clstServices.get_text(0,1)
 
         self.winMain.show()
@@ -216,6 +220,14 @@ class Gui:
     def populateList(self):
         """Populates clstServices with the service names, whether it is configured, and service descriptions"""
         # sentinal so that we don't have selected rows while we are updating
+        path=(0,)
+        result = self.clstServices.get_selection().get_selected ()
+        try:
+            (model, iter) = result
+            path = model.get_path (iter)
+        except:
+            pass
+
         self.am_updating = 1
         self.winMain.get_toplevel().window.set_cursor(gtk.gdk.Cursor(gtk.gdk.WATCH))
         self.winMain.set_sensitive(0)
@@ -239,6 +251,7 @@ class Gui:
         self.winMain.set_sensitive(1)
         self.winMain.get_toplevel().window.set_cursor(gtk.gdk.Cursor(gtk.gdk.LEFT_PTR))
         self.am_updating = 0
+        self.clstServices.get_selection().select_path (path)
         
     def changed(self,selection, data):
         result = selection.get_selected ()
@@ -248,13 +261,13 @@ class Gui:
                 row = model.get_path(iter)[0]
                 self.text_in_row = self.clstServices.get_text(int(row),1)
                 self.set_text_buffer()
+                self.set_text_status()
         
     def set_text_buffer(self):
         # set the text in txtDesc
         if self.ServiceMethods.dict_services.has_key(self.text_in_row):
             x = self.ServiceMethods.dict_services[self.text_in_row]
 	    self.txtBuffer.set_text(string.strip(x[2]),len(string.strip(x[2])))
-
 	# if an xinetd service is selected, disable these,
         # they'll do nothing
         if self.ServiceMethods.dict_services[self.text_in_row][1] == 1:
@@ -262,6 +275,23 @@ class Gui:
         else:
             self.action_widgets_sensitive(1)
             
+    def set_text_status(self):
+        # set the text in StatusView
+        pass
+#        if self.ServiceMethods.dict_services[self.text_in_row][1] != 1:
+#            if self.ServiceMethods.dict_services.has_key(self.text_in_row):
+#                result = self.ServiceMethods.get_status(self.text_in_row)
+#                message=result[1]
+#                status=result[0]
+#            else:
+#                status=self.ServiceMethods.UNKNOWN
+#                message = _("Unknown")
+#        else:
+#            status=self.ServiceMethods.UNKNOWN
+#            message = _("xinetd service")
+#        self.txtStatusBuffer.set_text(string.strip(message),len(string.strip(message)))
+
+
     def toggled_service(self, data, row):
         """Populates txtDesc with the service description of the service selected in clstServices"""
         self.txtBuffer.set_text("", 0)
@@ -449,6 +479,7 @@ http://bugzilla.redhat.com"""),
         self.text_in_row = self.clstServices.get_text(int(row),1)
         self.current_selected = self.clstServices.get_text(int(row),1)
         self.set_text_buffer()
+        self.set_text_status()
         if (event.button == 3):
             self.popupMenu = self.xml.get_widget ("popup_menu")
 
