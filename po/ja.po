@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
 "POT-Creation-Date: 2002-08-20 15:37-0400\n"
-"PO-Revision-Date: 2002-08-21 10:20GMT+10:00\n"
+"PO-Revision-Date: 2002-08-26 09:46GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -192,7 +192,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"このサービスを利用するためには xinetd を有効にしなければなりません。"
+"このサービスの利用には xinetd を有効にする必要があります。"
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -204,21 +204,21 @@ msgstr ""
 #. if it's toggled off
 #: src/servicemethods.py:317
 msgid "xinetd failed to reload for "
-msgstr "xinetd は"
+msgstr "xinetdは再読み込みに失敗"
 
 #: src/servicemethods.py:318
 msgid ". The error was: "
-msgstr "の再読み込みに失敗しました。エラー: "
+msgstr "エラー: "
 
 #: src/servicemethods.py:320
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "xinetd は %s の再読み込みに成功しました"
+msgstr "xinetdは%sを正常に再読み込みしました"
 
 #: src/servicemethods.py:323
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "%s の実行のためには xinetd を有効にしておかなければなりません"
+msgstr "%sの実行にはxinetdを有効にする必要があります"
 
 #: src/servicemethods.py:328
 #, python-format
@@ -275,7 +275,7 @@ msgstr "ランレベル _5"
 
 #: src/serviceconf.glade.h:12
 msgid "S_top Service"
-msgstr "サービスを停止(_T)"
+msgstr "サービスを停止(_t)"
 
 #: src/serviceconf.glade.h:13
 msgid "Save"
@@ -307,7 +307,7 @@ msgstr "選択したサービスを停止"
 
 #: src/serviceconf.glade.h:20
 msgid "_Actions"
-msgstr "操作"
+msgstr "操作(_A)"
 
 #: src/serviceconf.glade.h:21
 msgid "_Contents"
