@@ -23,6 +23,7 @@ should be enabled on your machine.
 
 %prep
 %setup -q
+autoconf
 
 %build
 make
