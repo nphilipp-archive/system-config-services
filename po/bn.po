@@ -317,40 +317,40 @@ msgstr ""
 
 #: src/serviceconf.glade.h:22
 msgid "_Actions"
-msgstr "_কাজ"
+msgstr "কাজ (_ক)"
 
 #: src/serviceconf.glade.h:23
 msgid "_Contents"
-msgstr "_বিষয়বস্তু"
+msgstr "বিষয়বস্তু (_ব)"
 
 #: src/serviceconf.glade.h:24
 msgid "_Edit Runlevel"
-msgstr "_রানলেভেল সম্পাদন"
+msgstr "রানলেভেল সম্পাদন (_র)"
 
 #: src/serviceconf.glade.h:25
 msgid "_File"
-msgstr "_ফাইল"
+msgstr "ফাইল (_ফ)"
 
 #: src/serviceconf.glade.h:26
 msgid "_Help"
-msgstr "_সহায়ক তথ্য"
+msgstr "সহায়ক তথ্য (_স)"
 
 #: src/serviceconf.glade.h:27
 msgid "_Refresh Service List"
-msgstr "_রিফ্রশ সার্ভিস তালিকা"
+msgstr "রিফ্রশ সার্ভিস তালিকা (_র)"
 
 #: src/serviceconf.glade.h:28
 msgid "_Restart Service"
-msgstr "_রিস্টার্ট সার্ভিস"
+msgstr "রিস্টার্ট সার্ভিস (_ভ)"
 
 #: src/serviceconf.glade.h:29
 msgid "_Save Changes"
-msgstr "_সেভ পরিবর্তনগুলি"
+msgstr "সেভ পরিবর্তনগুলি (_স)"
 
 #: src/serviceconf.glade.h:30
 msgid "_Start Service"
-msgstr "সার্ভিস আরম্ভ"
+msgstr "সার্ভিস আরম্ভ (_আ)"
 
 #: src/serviceconf.glade.h:31
 msgid "_View"
-msgstr "_প্রদর্শন"
+msgstr "প্রদর্শন (_দ)"
