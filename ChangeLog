@@ -1,4 +1,12 @@
+2002-07-26  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* /usr/local/CVS/redhat-config-services/redhat-config-services.pam:
+	add pam_timestanp
+
 2002-07-25  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* /usr/local/CVS/redhat-config-services/ChangeLog, /usr/local/CVS/redhat-config-services/po/ja.po, /usr/local/CVS/redhat-config-services/po/ko.po, /usr/local/CVS/redhat-config-services/po/messages.mo:
+	release 0.8.1
 
 	* /usr/local/CVS/redhat-config-services/docs/html/index.html:
 	update to latest from serviceconf directory

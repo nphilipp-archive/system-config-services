@@ -1,21 +1,21 @@
 # Portuguese localization of Red Hat Linux
 # Pedro Morais <morais@kde.org>
-# JosÈ Nuno Pires <jncp@netcabo.pt>
+# Jos√© Nuno Pires <jncp@netcabo.pt>
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
 "POT-Creation-Date: 2002-07-24 05:57-0400\n"
-"PO-Revision-Date: 2002-02-13 16:12+0000\n"
+"PO-Revision-Date: 2002-07-26 11:08+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Creation-Date: Fri Aug 17 12:30:57 2001\n"
 
 #: ../redhat-config-services.desktop.in:2
 msgid "Services"
-msgstr "ServiÁos"
+msgstr "Servi√ßos"
 
 #: ../redhat-config-services.desktop.in:3
 msgid "Configure which services will be running when the system starts"
@@ -33,7 +33,7 @@ msgstr "Nenhum"
 #: serviceconf.gladestrings:8 serviceconf.gladestrings:23
 #: serviceconf.gladestrings:45
 msgid "Start the selected service"
-msgstr "Iniciar o serviÁo seleccionado"
+msgstr "Iniciar o servi√ßo seleccionado"
 
 #: serviceconf.gladestrings:9 serviceconf.gladestrings:46
 msgid "Start"
@@ -42,7 +42,7 @@ msgstr "Iniciar"
 #: serviceconf.gladestrings:10 serviceconf.gladestrings:25
 #: serviceconf.gladestrings:47
 msgid "Stop the selected service"
-msgstr "Parar o serviÁo seleccionado"
+msgstr "Parar o servi√ßo seleccionado"
 
 #: serviceconf.gladestrings:11 serviceconf.gladestrings:48
 msgid "Stop"
@@ -59,85 +59,85 @@ msgstr "Reiniciar"
 
 #: serviceconf.gladestrings:14
 msgid "Service Configuration"
-msgstr "ConfiguraÁ„o do ServiÁo"
+msgstr "Configura√ß√£o do Servi√ßo"
 
 #: serviceconf.gladestrings:15
 msgid "Refresh the list of services"
-msgstr "Actualizar a lista de serviÁos"
+msgstr "Actualizar a lista de servi√ßos"
 
 #: serviceconf.gladestrings:16
 msgid "_Refresh Service List"
-msgstr "Actualiza_r a Lista de ServiÁos"
+msgstr "Actualiza_r a Lista de Servi√ßos"
 
 #: serviceconf.gladestrings:17 serviceconf.gladestrings:39
 msgid "Save the changes you have made"
-msgstr "Gravar as alteraÁıes efectuadas"
+msgstr "Gravar as altera√ß√µes efectuadas"
 
 #: serviceconf.gladestrings:18
 msgid "_Save Changes"
-msgstr "Gravar AlteraÁıe_s"
+msgstr "Gravar Altera√ß√µe_s"
 
 #: serviceconf.gladestrings:19 serviceconf.gladestrings:41
 msgid "Revert to the last saved change"
-msgstr "Reverter para a ˙ltima alteraÁ„o gravada"
+msgstr "Reverter para a √∫ltima altera√ß√£o gravada"
 
 #: serviceconf.gladestrings:20
 msgid "_Revert To Last Save"
-msgstr "_Reverter para ⁄ltima GravaÁ„o"
+msgstr "_Reverter para √öltima Grava√ß√£o"
 
 #: serviceconf.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr "AcÁıes como iniciar, parar e reiniciar o serviÁo seleccionado"
+msgstr "Ac√ß√µes como iniciar, parar e reiniciar o servi√ßo seleccionado"
 
 #: serviceconf.gladestrings:22
 msgid "_Actions"
-msgstr "_AcÁıes"
+msgstr "_Ac√ß√µes"
 
 #: serviceconf.gladestrings:24
 msgid "_Start Service"
-msgstr "Iniciar _ServiÁo"
+msgstr "Iniciar _Servi√ßo"
 
 #: serviceconf.gladestrings:26
 msgid "S_top Service"
-msgstr "_Parar ServiÁo"
+msgstr "_Parar Servi√ßo"
 
 #: serviceconf.gladestrings:28
 msgid "_Restart Service"
-msgstr "_Reiniciar ServiÁo"
+msgstr "_Reiniciar Servi√ßo"
 
 #: serviceconf.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr "Seleccione o nÌvel de execuÁ„o que quer editar"
+msgstr "Seleccione o n√≠vel de execu√ß√£o que quer editar"
 
 #: serviceconf.gladestrings:30
 msgid "_Edit Runlevel"
-msgstr "_Editar NÌvel de ExecuÁ„o"
+msgstr "_Editar N√≠vel de Execu√ß√£o"
 
 #: serviceconf.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr "O nÌvel de execuÁ„o 3 È o modo multi-utilizador com rede"
+msgstr "O n√≠vel de execu√ß√£o 3 √© o modo multi-utilizador com rede"
 
 #: serviceconf.gladestrings:32
 msgid "Runlevel _3"
-msgstr "NÌvel de ExecuÁ„o _3"
+msgstr "N√≠vel de Execu√ß√£o _3"
 
 #: serviceconf.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
 msgstr ""
-"O nÌvel de execuÁ„o 4 È reservado para utilizaÁ„o local, e normalmente n„o È "
+"O n√≠vel de execu√ß√£o 4 √© reservado para utiliza√ß√£o local, e normalmente n√£o √© "
 "utilizado"
 
 #: serviceconf.gladestrings:34
 msgid "Runlevel _4"
-msgstr "NÌvel de ExecuÁ„o _4"
+msgstr "N√≠vel de Execu√ß√£o _4"
 
 #: serviceconf.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr "O nÌvel de execuÁ„o 5 È o modo multi-utilizador com rede e X Windows"
+msgstr "O n√≠vel de execu√ß√£o 5 √© o modo multi-utilizador com rede e X Windows"
 
 #: serviceconf.gladestrings:36
 msgid "Runlevel _5"
-msgstr "NÌvel de ExecuÁ„o _4"
+msgstr "N√≠vel de Execu√ß√£o _4"
 
 #: serviceconf.gladestrings:37
 msgid "Read Manual"
@@ -165,28 +165,27 @@ msgstr "Sair"
 
 #: serviceconf.gladestrings:51
 msgid "Current Active Runlevel: "
-msgstr "NÌvel de ExecuÁ„o Actualmente Activo: "
+msgstr "N√≠vel de Execu√ß√£o Actualmente Activo: "
 
 #: serviceconf.gladestrings:52
 msgid "Editing Runlevel:"
-msgstr "A Editar NÌvel de ExecuÁ„o:"
+msgstr "A Editar N√≠vel de Execu√ß√£o:"
 
 #: ../dnsdata.py:113 ../dnsdata.py:125
 msgid "Master "
-msgstr ""
+msgstr "Mestre "
 
 #: ../dnsdata.py:433 ../dnsdata.py:511
-#, fuzzy
 msgid "Zone "
-msgstr "Nenhum"
+msgstr "Zona"
 
 #: ../serviceconf.py:363
 msgid "Help is not available."
-msgstr ""
+msgstr "A ajuda n√£o est√° dispon√≠vel."
 
 #: ../dnsdata.py:181 ../dnsdata.py:183
 msgid "Primary Nameserver `"
-msgstr ""
+msgstr "Servidor de Nomes Prim√°rio `"
 
 #: ../FwdZone.py:338 ../FwdZone.py:340
 msgid "Mail Exchanger for %s"
@@ -198,7 +197,7 @@ msgstr ""
 
 #: ../dnsdata.py:241 ../dnsdata.py:285 ../dnsdata.py:319 ../dnsdata.py:390
 msgid "NewHost"
-msgstr ""
+msgstr "NovaMaquina"
 
 #: ../servicemethods.py:318
 msgid ". The error was: "
@@ -207,30 +206,28 @@ msgstr ". O erro foi: "
 #: ../serviceconf.py:217 ../serviceconf.py:299 ../serviceconf.py:308
 #: ../serviceconf.py:332
 msgid "Editing Runlevel: "
-msgstr "Editar NÌvel de ExecuÁ„o: "
+msgstr "Editar N√≠vel de Execu√ß√£o: "
 
 #: ../dnsdata.py:451
 msgid "Reverse zone `"
-msgstr ""
+msgstr "Zona inversa `"
 
 #: ../dnsdata.py:220
 msgid "Minimum value must be >= 0."
-msgstr ""
+msgstr "O valor m√≠nimo deve ser >= 0."
 
 #: ../dnsdata.py:113 ../dnsdata.py:294
 msgid " is not a valid IP address."
-msgstr ""
+msgstr " n√£o √© uma endere√ßo IP v√°lido."
 
 #: ../serviceconf.py:345
-#, fuzzy
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
-"Este software pode ser redistribuÌdo livremente nos termos da GPL.\n"
-"                                  \n"
-"Por favor comunique todos os erros encontrados no sistema de gest„o\n"
+"Este software pode ser redistribu√≠do livremente nos termos da GPL.\n"
+"Por favor comunique todos os erros encontrados no sistema de gest√£o\n"
 "de erros da Red Hat:\n"
 "http://bugzilla.redhat.com"
 
@@ -331,9 +328,8 @@ msgid "' has no . at the end. You must use a full hostname."
 msgstr ""
 
 #: ../FwdZone.py:365
-#, fuzzy
 msgid "You must enter an priority."
-msgstr "Deve correr o serviceconf como root."
+msgstr "Deve correr inserir uma prioridade."
 
 #: ../FwdZone.py:349
 msgid "Add a Mail Exchanger"
@@ -341,7 +337,7 @@ msgstr ""
 
 #: ../dnsdata.py:482
 msgid "<New Zone>"
-msgstr ""
+msgstr "<Nova Zona>"
 
 #: ../FwdZone.py:268
 msgid "You must enter an alias."
@@ -349,11 +345,11 @@ msgstr ""
 
 #: ../FwdZone.py:394
 msgid " served by "
-msgstr ""
+msgstr " servido por "
 
 #: ../serviceconf.py:160
 msgid "Currently Running in Runlevel: "
-msgstr "Actualmente a Executar-se no NÌvel: "
+msgstr "Actualmente a Executar-se no N√≠vel: "
 
 #: ../dnsdata.py:246
 msgid "PTR hostname not defined"
@@ -365,7 +361,7 @@ msgstr ""
 
 #: ../dnsdata.py:216
 msgid "Expire value must be >= 0."
-msgstr ""
+msgstr "O valor de tempo de validade deve ser >= 0."
 
 #: ../servicemethods.py:271
 msgid ""
@@ -375,11 +371,11 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Tem que activar o xinetd para utilizar este serviÁo."
+"Tem que activar o xinetd para utilizar este servi√ßo."
 
 #: ../FwdZone.py:312
 msgid " at priority "
-msgstr ""
+msgstr " com a prioridade "
 
 #: ../dnsdata.py:204
 msgid "Serial number must be >= 1."
@@ -387,29 +383,27 @@ msgstr ""
 
 #: ../dnsdata.py:349
 msgid " is defined twice for "
-msgstr ""
+msgstr " est√° definido duas vezes para "
 
 #: ../FwdZone.py:265 ../FwdZone.py:362 ../FwdZone.py:433
-#, fuzzy
 msgid "You must enter a host name."
-msgstr "Deve correr o serviceconf como root."
+msgstr "Deve inserir um nome de m√°quina."
 
 #: ../serviceconf.py:481
-#, fuzzy
 msgid "You must run redhat-config-services as root."
-msgstr "Deve correr o serviceconf como root."
+msgstr "Deve correr o redhat-config-services como root."
 
 #: ../dnsdata.py:133 ../dnsdata.py:414 ../dnsdata.py:487
 msgid " is not a valid domain name."
-msgstr ""
+msgstr " n√£o √© um nome de dom√≠nio v√°lido."
 
 #: ../dnsdata.py:260
 msgid " must be in the range 0..255."
-msgstr ""
+msgstr " tem que estar na gama 0..255."
 
 #: ../dnsdata.py:470
 msgid "Reverse zone "
-msgstr ""
+msgstr "Zona inversa "
 
 #: ../dnsdata.py:183
 msgid "' is not a valid hostname or IP address."
@@ -420,9 +414,8 @@ msgid "xinetd reloaded %s successfully"
 msgstr "O xinetd recarregou o %s com sucesso"
 
 #: ../serviceconf.py:344
-#, fuzzy
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Copyright (c) 2001 Red Hat, Inc. Todos os direitos reservados."
+msgstr "Copyright (c) 2002 Red Hat, Inc. Todos os direitos reservados."
 
 #: ../dnsdata.py:197
 msgid "Refresh value should be bigger than Retry"
@@ -430,7 +423,7 @@ msgstr ""
 
 #: ../dnsdata.py:90 ../dnsdata.py:92
 msgid "Directory "
-msgstr ""
+msgstr "Directoria "
 
 #: ../serviceconf.py:171
 msgid "Start at Boot"
@@ -450,33 +443,32 @@ msgstr ""
 
 #: ../servicemethods.py:317
 msgid "xinetd failed to reload for "
-msgstr "xinetd n„o conseguiu voltar a carregar "
+msgstr "xinetd n√£o conseguiu voltar a carregar "
 
 #: ../dnsdata.py:414 ../dnsdata.py:487
 msgid "Forward zone name "
 msgstr ""
 
 #: ../servicemethods.py:328
-#, fuzzy
 msgid "%s failed. The error was: %s"
-msgstr "%s n„o conseguiu %s. O erro foi: %s"
+msgstr "%s falhou. O erro foi: %s"
 
 #: ../dnsdata.py:212
 msgid "Retry value must be >= 0."
-msgstr ""
+msgstr "O valor de repeti√ß√£o tem que ser >= 0."
 
 #: ../dnsdata.py:208
 msgid "Refresh value must be >= 0."
-msgstr ""
+msgstr "O valor de actualiza√ß√£o deve ser >= 0."
 
 #: ../FwdZone.py:724
 msgid "Settings for %s"
-msgstr ""
+msgstr "Configura√ß√£o para %s"
 
 #: ../dnsdata.py:442
 msgid "<New Reverse Zone>"
-msgstr ""
+msgstr "<Nova Zona Inversa>"
 
 #: ../dnsdata.py:279
 msgid "IP "
-msgstr ""
+msgstr "IP "
