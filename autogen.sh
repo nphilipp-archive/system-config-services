@@ -47,7 +47,7 @@ patch -p0 < intltool.patch
 autoconf
 aclocal -I . $ACLOCAL_FLAGS
 aclocal
-automake --add-missing $am_opt
+automake --copy --add-missing $am_opt
 autoconf
 cd $THEDIR
 
