@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2002-11-14 11:28-0500\n"
+"POT-Creation-Date: 2002-11-14 13:45-0500\n"
 "PO-Revision-Date: 2002-10-03 09:25+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Chinese (Traditional) <i18n-list@redhat.com>\n"
@@ -195,7 +195,7 @@ msgstr "您必須是 root 才能執行 redhat-config-services。"
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:274
+#: src/servicemethods.py:277
 msgid ""
 "\n"
 "\n"
@@ -213,30 +213,30 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:320
+#: src/servicemethods.py:323
 msgid "xinetd failed to reload for "
 msgstr "xinetd 無法重新載入給 "
 
-#: src/servicemethods.py:321
+#: src/servicemethods.py:324
 msgid ". The error was: "
 msgstr "。 錯誤是: "
 
-#: src/servicemethods.py:323
+#: src/servicemethods.py:326
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd 重新載入 %s 成功"
 
-#: src/servicemethods.py:326
+#: src/servicemethods.py:329
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "必須啟動 xinetd 才能執行 %s"
 
-#: src/servicemethods.py:331
+#: src/servicemethods.py:334
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s 失敗。 錯誤是: %s"
 
-#: src/servicemethods.py:333
+#: src/servicemethods.py:336
 msgid " successful"
 msgstr " 成功"
 
