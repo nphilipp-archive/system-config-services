@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: redhat-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
-"PO-Revision-Date: 2004-01-15 11:18+0200\n"
+"PO-Revision-Date: 2004-03-17 00:19+0200\n"
 "Last-Translator: Lauri Nurmi <lanurmi@iki.fi>\n"
 "Language-Team: Gnome Finnish Translation Team <gnome-fi-laatu@lists."
 "sourceforge.net>\n"
@@ -87,20 +87,19 @@ msgstr "Käynnistä uudelleen"
 
 #: src/serviceconf.py:195
 msgid "_Save"
-msgstr ""
+msgstr "_Tallenna"
 
 #: src/serviceconf.py:195
 msgid "Save"
-msgstr ""
+msgstr "Tallenna"
 
 #: src/serviceconf.py:200
 msgid "_Revert"
-msgstr ""
+msgstr "_Palauta"
 
 #: src/serviceconf.py:200
-#, fuzzy
 msgid "Revert"
-msgstr "Käynnistä uudelleen"
+msgstr "Palauta"
 
 #. the textbox
 #. the statusbox
@@ -159,10 +158,17 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"Järjestelmäpalveluiden asetustyökalu VERSIO\n"
+"Tekijänoikeus © 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 
 #: src/serviceconf.py:476
 msgid "About"
-msgstr ""
+msgstr "Tietoja"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -170,7 +176,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:505
 msgid "Help is not available."
-msgstr ""
+msgstr "Ohjetta ei ole saatavilla."
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -364,7 +370,7 @@ msgstr "_Ohje"
 
 #: src/serviceconf.glade.h:28
 msgid "_Quit"
-msgstr ""
+msgstr "_Lopeta"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
