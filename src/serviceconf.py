@@ -367,19 +367,8 @@ http://bugzilla.redhat.com"""),
 #----------------------------------------------------------------------------
     def on_mnuManual_activate(self,args):
         page = "file:///usr/share/doc/redhat-config-services-" + VERSION + "/index.html"
-        path = find_browser()
-
-        if path == None:
-            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_WARNING, gtk.BUTTONS_OK,
-                                    (_("Help is not available.")))
-            dlg.set_position(gtk.WIN_POS_CENTER)
-            dlg.run()
-            dlg.destroy()
-            return
-        
-        pid = os.fork()
-        if not pid:
-            os.execv(path, [path, page])
+#        gnome.help_display_uri(page)
+        gnome.url_show(page)
 
     def on_selectCursor(self,None):
         """calls get_service_action_results to start the selected initscript"""
