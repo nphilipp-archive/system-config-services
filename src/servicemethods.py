@@ -204,7 +204,6 @@ class ServiceMethods:
                 name = x[0][:end].strip()
             else:
                 name=x[0].strip()
-            name=x[0][:end].strip()
             if name != "xinetd based services":
                 runlevel=x[1:]
                 if len(runlevel) > 1:
