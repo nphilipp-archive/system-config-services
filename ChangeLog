@@ -1,4 +1,76 @@
-2004-02-05  dwalsh  <dwalsh@redhat.com>
+2004-03-02  Brent Fox  <bfox@redhat.com>
+
+	* po/da.po, po/bs.po: convert to UTF-8
+
+	* configure.in, system-config-services.spec.in: update changelog
+
+	* src/serviceconf.glade, src/serviceconf.py:
+	apply patch from bug #117277
+
+	* src/serviceconf.py: remove dependency on gnome libs
+
+2004-03-01  owaing  <owaing@redhat.com>
+
+	* po/cy.po: Updated to match .pot
+
+2004-02-26  lisivka  <lisivka@redhat.com>
+
+	* po/uk.po: Minor fixes
+
+2004-02-26  sebol  <sebol@redhat.com>
+
+	* po/ms.po: updated malay transölation
+
+2004-02-26  lisivka  <lisivka@redhat.com>
+
+	* po/uk.po: "PO file header fuzzy" warning fixed
+
+2004-02-25  rhariram  <rhariram@redhat.com>
+
+	* po/ta.po: more translations
+
+2004-02-24  Alan Cox  <alan@redhat.com>
+
+	* po/cy.po: Welsh translation update by Owain Green
+
+2004-02-20  Jean Paul Aubrey  <jpaubry@redhat.com>
+
+	* po/fr.po: changed to UTF8
+
+2004-02-18  luka  <luka@redhat.com>
+
+	* po/it.po: it.po
+
+2004-02-16  radzaw  <radzaw@redhat.com>
+
+	* po/pl.po: complete
+
+2004-02-12  tszanto  <tszanto@redhat.com>
+
+	* po/hu.po: Tamas Szanto
+
+2004-02-11  Sarah Smith  <sarahs@redhat.com>
+
+	* po/zh_CN.po: unified more terms
+
+	* po/zh_CN.po: deleted outdated entries, unified some terms
+
+2004-02-10  xyzallan  <xyzallan@redhat.com>
+
+	* po/et.po: Estonian
+
+2004-02-10  joseppc  <joseppc@redhat.com>
+
+	* po/ca.po: First revision for the Catalan translation.
+
+2004-02-08  radzaw  <radzaw@redhat.com>
+
+	* po/pl.po: first translation of this file
+
+2004-02-05  Dan Walsh  <dwalsh@redhat.com>
+
+	* ChangeLog, po/bn.po, po/bs.po, po/cs.po, po/cy.po, po/da.po, po/de.po, po/el.po, po/es.po, po/fi.po, po/fr.po, po/hr.po, po/hu.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/ms.po, po/nl.po, po/no.po, po/pt.po, po/pt_BR.po, po/ru.po, po/sl.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/uk.po, po/vi.po, po/zh_CN.po, po/zh_TW.po:
+	release 0.8.6
 
 	* src/checklist.py: fix size of check box
 
@@ -8,7 +80,7 @@
 	* src/serviceconf.py, system-config-services.console, system-config-services.spec.in:
 	fix console app to lauch correctly
 
-2004-02-03  sarahs  <sarahs@redhat.com>
+2004-02-03  Sarah Smith  <sarahs@redhat.com>
 
 	* po/zh_CN.po: changed name in header
 
@@ -54,7 +126,7 @@
 
 	* po/is.po: *** empty log message ***
 
-2004-01-06  dwalsh  <dwalsh@redhat.com>
+2004-01-06  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog: release 0.8.6
 
@@ -102,7 +174,7 @@
 
 	* po/es.po: Updated on Dec 13, 2003
 
-2003-12-11  dwalsh  <dwalsh@redhat.com>
+2003-12-11  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, config.status, po/bn.po, po/bs.po, po/cs.po, po/cy.po, po/da.po, po/de.po, po/el.po, po/es.po, po/fi.po, po/fr.po, po/hr.po, po/hu.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/ms.po, po/nl.po, po/no.po, po/pt.po, po/pt_BR.po, po/ru.po, po/sl.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/uk.po, po/vi.po, po/zh_CN.po, po/zh_TW.po:
 	release 0.8.6
@@ -110,11 +182,11 @@
 	* configure.in, src/servicemethods.py, system-config-services.spec.in:
 	add patch and complete rename
 
-2003-12-09  hpwu  <hpwu@redhat.com>
+2003-12-09  Hung-Pin Wu  <hpwu@redhat.com>
 
 	* po/zh_TW.po: Updated
 
-2003-12-09  mkim  <mkim@redhat.com>
+2003-12-09  Michelle Kim  <mkim@redhat.com>
 
 	* po/ko.po: updated
 
@@ -130,19 +202,19 @@
 
 	* po/pt.po: update
 
-2003-12-05  sarahs  <sarahs@redhat.com>
+2003-12-05  Sarah Smith  <sarahs@redhat.com>
 
 	* po/zh_CN.po: updated the changes
 
-2003-12-05  hpwu  <hpwu@redhat.com>
+2003-12-05  Hung-Pin Wu  <hpwu@redhat.com>
 
 	* po/zh_TW.po: Updated
 
-2003-12-04  jpaubry  <jpaubry@redhat.com>
+2003-12-04  Jean Paul Aubrey  <jpaubry@redhat.com>
 
 	* po/fr.po: post-release modifications
 
-2003-12-04  dwalsh  <dwalsh@redhat.com>
+2003-12-04  Dan Walsh  <dwalsh@redhat.com>
 
 	* po/sv.po, po/system-config-services.pot, po/tr.po, po/uk.po, po/vi.po, po/zh_CN.po, po/zh_TW.po, ChangeLog, aclocal.m4, config.status, intltool-extract.in, intltool-merge.in, intltool-update.in, po/Makefile.in.in, po/bn.po, po/bs.po, po/cs.po, po/cy.po, po/da.po, po/de.po, po/el.po, po/es.po, po/fi.po, po/fr.po, po/hr.po, po/hu.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/ms.po, po/nl.po, po/no.po, po/pt.po, po/pt_BR.po, po/ru.po, po/sl.po:
 	release 0.8.5
@@ -157,19 +229,19 @@
 
 	* po/es.po: Updated on Dec 1, 2003
 
-2003-11-26  jpaubry  <jpaubry@redhat.com>
+2003-11-26  Jean Paul Aubrey  <jpaubry@redhat.com>
 
 	* po/fr.po: updated
 
-2003-11-21  sarahs  <sarahs@redhat.com>
+2003-11-21  Sarah Smith  <sarahs@redhat.com>
 
 	* po/zh_CN.po: updated the changes
 
-2003-11-21  hpwu  <hpwu@redhat.com>
+2003-11-21  Hung-Pin Wu  <hpwu@redhat.com>
 
 	* po/zh_TW.po: Updated
 
-2003-11-13  jnansi  <jnansi@redhat.com>
+2003-11-13  Jatin Nansi  <jnansi@redhat.com>
 
 	* po/hi.po: Commit by jnansi@redhat.com
 
@@ -179,7 +251,7 @@
 
 		* Update ukrainian translations.
 
-2003-11-07  jnansi  <jnansi@redhat.com>
+2003-11-07  Jatin Nansi  <jnansi@redhat.com>
 
 	* po/hi.po: Commit by jnansi@redhat.com
 
@@ -187,7 +259,7 @@
 
 	* po/nl.po: Updated Dutch translation
 
-2003-10-22  dwalsh  <dwalsh@redhat.com>
+2003-10-22  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog: release 0.8.5
 
@@ -206,11 +278,11 @@
 
 	* po/ru.po: update
 
-2003-10-19  alan  <alan@redhat.com>
+2003-10-19  Alan Cox  <alan@redhat.com>
 
 	* po/cy.po: Initial translation
 
-2003-10-18  alan  <alan@redhat.com>
+2003-10-18  Alan Cox  <alan@redhat.com>
 
 	* po/cy.po: Initial translation run
 
@@ -230,7 +302,7 @@
 
 	* po/de.po: added one missing translation
 
-2003-10-17  dwalsh  <dwalsh@redhat.com>
+2003-10-17  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, aclocal.m4, config.status, intltool-extract.in, intltool-merge.in, intltool-update.in, po/Makefile.in.in:
 	release 0.8.5
@@ -263,7 +335,7 @@
 
 	* po/pt.po: updates
 
-2003-10-06  dwalsh  <dwalsh@redhat.com>
+2003-10-06  Dan Walsh  <dwalsh@redhat.com>
 
 	* po/zh_CN.po, po/zh_TW.po, ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po:
 	release 0.8.5
@@ -271,7 +343,7 @@
 	* src/serviceconf.py, system-config-services.spec.in:
 	fix help about crash
 
-2003-10-01  dwalsh  <dwalsh@redhat.com>
+2003-10-01  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog: release 0.8.5
 
@@ -298,7 +370,7 @@
 
 	* po/hr.po: initial croatian translation import
 
-2003-09-05  dwalsh  <dwalsh@redhat.com>
+2003-09-05  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog: release 0.8.5
 
@@ -319,7 +391,7 @@
 
 	* po/no.po: Update
 
-2003-08-25  dwalsh  <dwalsh@redhat.com>
+2003-08-25  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, aclocal.m4, config.status, intltool-extract.in, intltool-merge.in, intltool-update.in, po/Makefile.in.in, system-config-services.spec.in:
 	release 0.8.5
@@ -334,7 +406,7 @@
 
 	* po/bn.po: Updated on Aug 11, 2003
 
-2003-08-05  dwalsh  <dwalsh@redhat.com>
+2003-08-05  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/messages.mo, system-config-services.spec.in, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	release 0.8.5
@@ -349,7 +421,7 @@
 
 	* po/el.po: fixes for el.po
 
-2003-08-04  bgroh  <bgroh@redhat.com>
+2003-08-04  Bernd Groh  <bgroh@redhat.com>
 
 	* po/de.po: daily update
 
@@ -365,23 +437,23 @@
 
 	* po/ru.po: update
 
-2003-08-01  ylouze  <ylouze@redhat.com>
+2003-08-01  Yelitza Louze  <ylouze@redhat.com>
 
 	* po/es.po: Updated spanish translation
 
-2003-07-31  hpwu  <hpwu@redhat.com>
+2003-07-31  Hung-Pin Wu  <hpwu@redhat.com>
 
 	* po/zh_TW.po: Updated translation
 
-2003-07-30  sarahs  <sarahs@redhat.com>
+2003-07-30  Sarah Smith  <sarahs@redhat.com>
 
 	* po/zh_CN.po: updated.
 
-2003-07-30  asimons  <asimons@redhat.com>
+2003-07-30  Audrey Simons  <asimons@redhat.com>
 
 	* po/fr.po: Software updates
 
-2003-07-30  mkim  <mkim@redhat.com>
+2003-07-30  Michelle Kim  <mkim@redhat.com>
 
 	* po/ko.po: updated
 
@@ -393,7 +465,7 @@
 
 	* po/pt.po: update
 
-2003-07-30  dwalsh  <dwalsh@redhat.com>
+2003-07-30  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/messages.mo, system-config-services.spec.in, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	release 0.8.5
@@ -404,7 +476,7 @@
 	* ChangeLog, po/messages.mo, system-config-services.spec.in:
 	release 0.8.5
 
-2003-07-29  dwalsh  <dwalsh@redhat.com>
+2003-07-29  Dan Walsh  <dwalsh@redhat.com>
 
 	* po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po, ChangeLog:
 	release 0.8.5
@@ -420,7 +492,7 @@
 
 	* po/is.po: *** empty log message ***
 
-2003-07-18  asimons  <asimons@redhat.com>
+2003-07-18  Audrey Simons  <asimons@redhat.com>
 
 	* po/fr.po: Software &nbsp removed
 
@@ -428,15 +500,15 @@
 
 	* po/ru.po: update
 
-2003-07-13  hpwu  <hpwu@redhat.com>
+2003-07-13  Hung-Pin Wu  <hpwu@redhat.com>
 
 	* po/zh_TW.po: updated translation
 
-2003-07-11  bgroh  <bgroh@redhat.com>
+2003-07-11  Bernd Groh  <bgroh@redhat.com>
 
 	* po/de.po: daily update
 
-2003-07-11  ylouze  <ylouze@redhat.com>
+2003-07-11  Yelitza Louze  <ylouze@redhat.com>
 
 	* po/es.po: Updated spanish translation
 
@@ -444,15 +516,15 @@
 
 	* po/pt.po: update
 
-2003-07-10  mkim  <mkim@redhat.com>
+2003-07-10  Michelle Kim  <mkim@redhat.com>
 
 	* po/ko.po: updated translation.
 
-2003-07-09  asimons  <asimons@redhat.com>
+2003-07-09  Audrey Simons  <asimons@redhat.com>
 
 	* po/fr.po: Software updates
 
-2003-07-09  tfox  <tfox@redhat.com>
+2003-07-09  Tammy Fox  <tfox@redhat.com>
 
 	* docs/html/index.html, docs/html/legalnotice.html:
 	add para about adding and deleting a service
@@ -465,7 +537,7 @@
 
 	* po/tr.po: update
 
-2003-07-09  dwalsh  <dwalsh@redhat.com>
+2003-07-09  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/messages.mo, system-config-services.spec.in, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	release 0.8.5
@@ -489,7 +561,7 @@
 
 	* po/fi.po: Added Finnish translation.
 
-2003-06-24  asimons  <asimons@redhat.com>
+2003-06-24  Audrey Simons  <asimons@redhat.com>
 
 	* po/fr.po: Updated
 
@@ -497,11 +569,11 @@
 
 	* po/vi.po: update vi.po
 
-2003-06-18  bgroh  <bgroh@redhat.com>
+2003-06-18  Bernd Groh  <bgroh@redhat.com>
 
 	* po/de.po: software translation update
 
-2003-06-17  dwalsh  <dwalsh@redhat.com>
+2003-06-17  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog: release 0.8.5
 
@@ -516,11 +588,11 @@
 
 	* po/ru.po: update
 
-2003-06-12  ylouze  <ylouze@redhat.com>
+2003-06-12  Yelitza Louze  <ylouze@redhat.com>
 
 	* po/es.po: Updated spanish translation
 
-2003-05-27  dwalsh  <dwalsh@redhat.com>
+2003-05-27  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog: release 0.8.5
 
@@ -532,7 +604,7 @@
 	* Makefile.am, system-config-services.desktop.in, system-config-services.spec.in:
 	move redhat-config-services.png
 
-2003-05-21  tfox  <tfox@redhat.com>
+2003-05-21  Tammy Fox  <tfox@redhat.com>
 
 	* docs/html/index.html: update path to menu item
 
@@ -541,31 +613,31 @@
 	* docs/html/figs/serviceconf.png, docs/html/index.html, docs/html/legalnotice.html:
 	update image for 0.8.5, a few other minor tweaks like updating date
 
-2003-03-26  nrichter  <nrichter@redhat.com>
+2003-03-26  Nadine Richter  <nrichter@redhat.com>
 
 	* po/de.po: po file updated
 
-2003-03-26  sarahs  <sarahs@redhat.com>
+2003-03-26  Sarah Smith  <sarahs@redhat.com>
 
 	* po/zh_CN.po: translated red hat into chinese term
 
-2003-03-25  fvalen  <fvalen@redhat.com>
+2003-03-25  Francesco Valente  <fvalen@redhat.com>
 
 	* po/it.po: updated
 
-2003-03-20  hpwu  <hpwu@redhat.com>
+2003-03-20  Hung-Pin Wu  <hpwu@redhat.com>
 
 	* po/zh_TW.po: Updated translation.
 
-2003-03-19  asimons  <asimons@redhat.com>
+2003-03-19  Audrey Simons  <asimons@redhat.com>
 
 	* po/fr.po: Checked
 
-2003-03-19  sarahs  <sarahs@redhat.com>
+2003-03-19  Sarah Smith  <sarahs@redhat.com>
 
 	* po/zh_CN.po: starting update for Cambridge
 
-2003-03-18  mkim  <mkim@redhat.com>
+2003-03-18  Michelle Kim  <mkim@redhat.com>
 
 	* po/ko.po: updated
 
@@ -580,7 +652,7 @@
 
 	* po/is.po: *** empty log message ***
 
-2003-03-07  dwalsh  <dwalsh@redhat.com>
+2003-03-07  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog: release 0.8.5
 
@@ -594,7 +666,7 @@
 
 	* po/pt.po: update
 
-2003-03-04  khashida  <khashida@redhat.com>
+2003-03-04  James Hashida  <khashida@redhat.com>
 
 	* po/ja.po: update
 
@@ -604,12 +676,12 @@
 
 		* sv.po: Updated Swedish translation.
 
-2003-03-04  nalin  <nalin@redhat.com>
+2003-03-04  Nalin Dahyabhai  <nalin@redhat.com>
 
 	* system-config-services.pam:
 	- fixup PAM configuration for multilib systems
 
-2003-03-04  dwalsh  <dwalsh@redhat.com>
+2003-03-04  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, config.status, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	release 0.8.5
@@ -617,11 +689,11 @@
 	* configure.in, src/serviceconf.glade, src/serviceconf.py, system-config-services.spec.in:
 	Fix swiching runlevels on modified screens.
 
-2003-02-26  barzilay  <barzilay@redhat.com>
+2003-02-26  David Barzilay  <barzilay@redhat.com>
 
 	* po/pt_BR.po: updatedheaderspt_BR2502
 
-2003-02-25  dwalsh  <dwalsh@redhat.com>
+2003-02-25  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po, system-config-services.spec.in:
 	release 0.8.4
@@ -637,7 +709,7 @@
 	* po/hu.po: CVS_SILENT
 	Tamas Szanto
 
-2003-02-14  barzilay  <barzilay@redhat.com>
+2003-02-14  David Barzilay  <barzilay@redhat.com>
 
 	* po/pt_BR.po: updated1402
 
@@ -649,7 +721,7 @@
 
 	* po/ru.po: update
 
-2003-01-28  dwalsh  <dwalsh@redhat.com>
+2003-01-28  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, system-config-services.desktop.in: release 0.8.4
 
@@ -681,11 +753,11 @@
 	* src/servicemethods.py, system-config-services.spec.in:
 	handle errors in /etc/init.d/ directory
 
-2003-01-22  dwalsh  <dwalsh@redhat.com>
+2003-01-22  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/messages.mo: release 0.8.3
 
-2003-01-22  bgroh  <bgroh@redhat.com>
+2003-01-22  Bernd Groh  <bgroh@redhat.com>
 
 	* po/de.po: first round of _-fixes
 
@@ -702,14 +774,14 @@
 
 	* po/no.po: Update
 
-2003-01-14  dwalsh  <dwalsh@redhat.com>
+2003-01-14  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	release 0.8.3
 
 	* system-config-services.spec.in: update docs
 
-2003-01-14  tfox  <tfox@redhat.com>
+2003-01-14  Tammy Fox  <tfox@redhat.com>
 
 	* docs/html/figs/serviceconf.png: with new gtk2 bluecurve icons
 
@@ -732,27 +804,27 @@
 
 	* po/pt.po: update
 
-2003-01-10  ylouze  <ylouze@redhat.com>
+2003-01-10  Yelitza Louze  <ylouze@redhat.com>
 
 	* po/es.po: spanish translation
 
-2003-01-10  nrichter  <nrichter@redhat.com>
+2003-01-10  Nadine Richter  <nrichter@redhat.com>
 
 	* po/de.po: updated
 
-2003-01-09  jpaubry  <jpaubry@redhat.com>
+2003-01-09  Jean Paul Aubrey  <jpaubry@redhat.com>
 
 	* po/fr.po: updated
 
-2003-01-09  mkim  <mkim@redhat.com>
+2003-01-09  Michelle Kim  <mkim@redhat.com>
 
 	* po/ko.po: updated translation
 
-2003-01-09  hpwu  <hpwu@redhat.com>
+2003-01-09  Hung-Pin Wu  <hpwu@redhat.com>
 
 	* po/zh_TW.po: Updated.
 
-2003-01-09  khashida  <khashida@redhat.com>
+2003-01-09  James Hashida  <khashida@redhat.com>
 
 	* po/ja.po: update
 
@@ -762,7 +834,7 @@
 
 		* sv.po: Updated Swedish translation.
 
-2003-01-09  sarahs  <sarahs@redhat.com>
+2003-01-09  Sarah Smith  <sarahs@redhat.com>
 
 	* po/zh_CN.po: updated merged po
 
@@ -770,7 +842,7 @@
 
 	* po/cs.po: Update Czech translation
 
-2003-01-09  dwalsh  <dwalsh@redhat.com>
+2003-01-09  Dan Walsh  <dwalsh@redhat.com>
 
 	* po/zh_TW.po, ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po:
 	release 0.8.3
@@ -778,22 +850,22 @@
 	* system-config-services.desktop.in, system-config-services.spec.in, src/serviceconf.glade:
 	Add accellerators
 
-2002-12-24  barzilay  <barzilay@redhat.com>
+2002-12-24  David Barzilay  <barzilay@redhat.com>
 
 	* po/pt_BR.po: updated2412
 
-2002-12-12  dwalsh  <dwalsh@redhat.com>
+2002-12-12  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/messages.mo: release 0.8.3
 
 	* system-config-services.spec.in: Update to latest docs
 
-2002-12-11  tfox  <tfox@redhat.com>
+2002-12-11  Tammy Fox  <tfox@redhat.com>
 
 	* docs/html/figs/serviceconf.png, docs/html/index.html, docs/html/legalnotice.html:
 	updated for latest version
 
-2002-12-06  dwalsh  <dwalsh@redhat.com>
+2002-12-06  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po, src/serviceconf.py:
 	release 0.8.3
@@ -801,7 +873,7 @@
 	* src/serviceconf.py, system-config-services.spec.in:
 	Fix invalid display error catch
 
-2002-12-03  dwalsh  <dwalsh@redhat.com>
+2002-12-03  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	release 0.8.3
@@ -809,7 +881,7 @@
 	* src/serviceconf.glade, src/serviceconf.py, system-config-services.spec.in:
 	fix screen size, status update and bad pixmap
 
-2002-12-02  dwalsh  <dwalsh@redhat.com>
+2002-12-02  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	release 0.8.3
@@ -817,7 +889,7 @@
 	* src/serviceconf.py, system-config-services.spec.in:
 	fix DISPLAY handling
 
-2002-11-14  dwalsh  <dwalsh@redhat.com>
+2002-11-14  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, config.status, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	release 0.8.3
@@ -837,11 +909,11 @@
 
 	* po/no.po: Update
 
-2002-10-25  dwalsh  <dwalsh@redhat.com>
+2002-10-25  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog: release 0.8.3
 
-2002-10-24  dwalsh  <dwalsh@redhat.com>
+2002-10-24  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, system-config-services.spec.in: release 0.8.3
 
@@ -861,7 +933,7 @@
 
 	* po/cs.po: Update Czech translation
 
-2002-10-10  dwalsh  <dwalsh@redhat.com>
+2002-10-10  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	release 0.8.3
@@ -875,7 +947,7 @@
 	bindconf/da.po printconf/da.po rhn-applet/da.po
 	redhat-config-mouse/po/da.po redhat-config-services/po/da.po
 
-2002-10-03  fvalen  <fvalen@redhat.com>
+2002-10-03  Francesco Valente  <fvalen@redhat.com>
 
 	* po/it.po: updated messages
 
@@ -885,11 +957,11 @@
 
 		* sv.po:  Updated Swedish translation.
 
-2002-10-03  jpaubry  <jpaubry@redhat.com>
+2002-10-03  Jean Paul Aubrey  <jpaubry@redhat.com>
 
 	* po/fr.po: updated
 
-2002-10-03  hpwu  <hpwu@redhat.com>
+2002-10-03  Hung-Pin Wu  <hpwu@redhat.com>
 
 	* po/zh_TW.po: Updated translation.
 
@@ -897,23 +969,23 @@
 
 	* po/is.po: *** empty log message ***
 
-2002-10-03  sarahs  <sarahs@redhat.com>
+2002-10-03  Sarah Smith  <sarahs@redhat.com>
 
 	* po/zh_CN.po: updated
 
-2002-10-03  khashida  <khashida@redhat.com>
+2002-10-03  James Hashida  <khashida@redhat.com>
 
 	* po/ja.po: update
 
-2002-10-03  bgroh  <bgroh@redhat.com>
+2002-10-03  Bernd Groh  <bgroh@redhat.com>
 
 	* po/de.po: bindconf, printconf, redhat-config-services updated.
 
-2002-10-02  mkim  <mkim@redhat.com>
+2002-10-02  Michelle Kim  <mkim@redhat.com>
 
 	* po/ko.po: Updated translation.
 
-2002-10-02  ylouze  <ylouze@redhat.com>
+2002-10-02  Yelitza Louze  <ylouze@redhat.com>
 
 	* po/es.po: Updated translation
 
@@ -921,7 +993,7 @@
 
 	* po/cs.po: Update Czech translation
 
-2002-10-02  dwalsh  <dwalsh@redhat.com>
+2002-10-02  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/messages.mo, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	release 0.8.3
@@ -934,7 +1006,7 @@
 	* src/serviceconf.glade, src/serviceconf.py, src/servicemethods.py:
 	fix get status, speedup startup
 
-2002-10-01  dwalsh  <dwalsh@redhat.com>
+2002-10-01  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, config.status, po/messages.mo: release 0.8.3
 
@@ -950,7 +1022,7 @@
 
 	* po/cs.po: Update Czech translation
 
-2002-09-05  notting  <notting@redhat.com>
+2002-09-05  Bill Nottingham  <notting@redhat.com>
 
 	* ChangeLog, aclocal.m4, config.status, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	release 0.8.2
@@ -964,33 +1036,33 @@
 
 	* po/pt.po: cleanups
 
-2002-09-04  sarahs  <sarahs@redhat.com>
+2002-09-04  Sarah Smith  <sarahs@redhat.com>
 
 	* po/zh_CN.po: sorry, last minute fix
 
-2002-09-03  dwalsh  <dwalsh@redhat.com>
+2002-09-03  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po, system-config-services.spec.in:
 	release 0.8.1
 
-2002-09-02  federico  <federico@redhat.com>
+2002-09-02  Federico Musto  <federico@redhat.com>
 
 	* po/fr.po: "/mnt/traduzioni/RH8.0/translate/redhat-config-services"
 
-2002-08-30  federico  <federico@redhat.com>
+2002-08-30  Federico Musto  <federico@redhat.com>
 
 	* po/it.po: "/mnt/traduzioni/RH8.0/translate/redhat-config-services"
 
-2002-08-29  federico  <federico@redhat.com>
+2002-08-29  Federico Musto  <federico@redhat.com>
 
 	* po/es.po: "/mnt/traduzioni/RH8.0/translate/redhat-config-services"
 
-2002-08-28  federico  <federico@redhat.com>
+2002-08-28  Federico Musto  <federico@redhat.com>
 
 	* po/de.po, po/es.po, po/fr.po, po/it.po:
 	"/mnt/traduzioni/RH8.0/translate/redhat-config-services"
 
-2002-08-27  dwalsh  <dwalsh@redhat.com>
+2002-08-27  Dan Walsh  <dwalsh@redhat.com>
 
 	* po/tr.po, po/zh_CN.po, po/zh_TW.po, ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot:
 	release 0.8.1
@@ -1008,12 +1080,12 @@
 
 	* po/nl.po: Added dutch support from Taco Witte <T.C.Witte@phys.uu.nl>
 
-2002-08-27  federico  <federico@redhat.com>
+2002-08-27  Federico Musto  <federico@redhat.com>
 
 	* po/de.po, po/es.po, po/fr.po, po/it.po:
 	"/mnt/traduzioni/RH8.0/translate/redhat-config-services"
 
-2002-08-26  dwalsh  <dwalsh@redhat.com>
+2002-08-26  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po, system-config-services.spec.in:
 	release 0.8.1
@@ -1022,7 +1094,7 @@
 
 	* po/ms.po: added malay tranlation for this module
 
-2002-08-25  khashida  <khashida@redhat.com>
+2002-08-25  James Hashida  <khashida@redhat.com>
 
 	* po/ja.po: update
 
@@ -1030,7 +1102,7 @@
 
 	* po/no.po: update and encode
 
-2002-08-23  dwalsh  <dwalsh@redhat.com>
+2002-08-23  Dan Walsh  <dwalsh@redhat.com>
 
 	* src/serviceconf.py: fix refresh bug
 
@@ -1038,11 +1110,11 @@
 
 	* src/serviceconf.glade.new: add status display
 
-2002-08-21  dwalsh  <dwalsh@redhat.com>
+2002-08-21  Dan Walsh  <dwalsh@redhat.com>
 
 	* src/serviceconf.py: fix internationalization code
 
-2002-08-21  khashida  <khashida@redhat.com>
+2002-08-21  James Hashida  <khashida@redhat.com>
 
 	* po/ja.po: update
 
@@ -1050,7 +1122,7 @@
 
 	* po/el.po: initial greek translation
 
-2002-08-20  dwalsh  <dwalsh@redhat.com>
+2002-08-20  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	release 0.8.1
@@ -1069,7 +1141,7 @@
 
 	* system-config-services.spec.in: update changelog
 
-2002-08-19  dwalsh  <dwalsh@redhat.com>
+2002-08-19  Dan Walsh  <dwalsh@redhat.com>
 
 	* src/serviceconf.py:
 	fix path selection, quiting before fully inited, and wrap mode
@@ -1086,19 +1158,19 @@
 
 	* po/is.po: *** empty log message ***
 
-2002-08-12  sarahs  <sarahs@redhat.com>
+2002-08-12  Sarah Smith  <sarahs@redhat.com>
 
 	* po/zh_CN.po: another update
 
-2002-08-12  mkim  <mkim@redhat.com>
+2002-08-12  Michelle Kim  <mkim@redhat.com>
 
 	* po/ko.po: Updated translation.
 
-2002-08-12  hpwu  <hpwu@redhat.com>
+2002-08-12  Hung-Pin Wu  <hpwu@redhat.com>
 
 	* po/zh_TW.po: Updated translation.
 
-2002-08-10  dwalsh  <dwalsh@redhat.com>
+2002-08-10  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/messages.mo: release 0.8.1
 
@@ -1126,11 +1198,11 @@
 
 	* po/pt.po: update
 
-2002-08-08  khashida  <khashida@redhat.com>
+2002-08-08  James Hashida  <khashida@redhat.com>
 
 	* po/ja.po: update
 
-2002-08-08  dwalsh  <dwalsh@redhat.com>
+2002-08-08  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog: release 0.8.1
 
@@ -1141,11 +1213,11 @@
 
 	* autogen.sh: change netconf to redhat-config-services
 
-2002-08-07  dwalsh  <dwalsh@redhat.com>
+2002-08-07  Dan Walsh  <dwalsh@redhat.com>
 
 	* system-config-services.spec.in: update dependencies
 
-2002-08-05  dwalsh  <dwalsh@redhat.com>
+2002-08-05  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/messages.mo, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	release 0.8.1
@@ -1166,7 +1238,7 @@
 	* po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/ru.po, po/sv.po, po/system-config-services.pot, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	Ran update-po
 
-2002-08-01  dwalsh  <dwalsh@redhat.com>
+2002-08-01  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog: release 0.8.1
 
@@ -1174,7 +1246,7 @@
 
 	* po/bs.po: add bosnian
 
-2002-07-31  dwalsh  <dwalsh@redhat.com>
+2002-07-31  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog: release 0.8.1
 
@@ -1186,7 +1258,7 @@
 
 	* ChangeLog: release 0.8.1
 
-2002-07-26  dwalsh  <dwalsh@redhat.com>
+2002-07-26  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, Makefile.am, aclocal.m4, config.status, intltool-extract.in, intltool-merge.in, intltool-update.in, autogen.sh:
 	release 0.8.1
@@ -1197,7 +1269,7 @@
 
 	* system-config-services.pam: add pam_timestanp
 
-2002-07-25  dwalsh  <dwalsh@redhat.com>
+2002-07-25  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, po/ja.po, po/ko.po, po/messages.mo: release 0.8.1
 
@@ -1213,7 +1285,7 @@
 	* Makefile.am, ChangeLog, src/Makefile.am, system-config-services.spec.in:
 	release 0.8.1
 
-2002-07-24  dwalsh  <dwalsh@redhat.com>
+2002-07-24  Dan Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, src/Makefile.am: release 0.8.1
 
