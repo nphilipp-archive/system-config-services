@@ -2,7 +2,7 @@
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: @PACKAGE@
 Version: @VERSION@
-Release: 2
+Release: 1
 URL: http://www.redhat.com/ 
 Source0: %{name}-%{version}.tar.gz
 License: GPL
@@ -51,6 +51,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Tue Mar 16 2004 Brent Fox <bfox@redhat.com> 0.8.8-1
+- work around problem with libglade
+
 * Wed Mar  3 2004 Brent Fox <bfox@redhat.com> 0.8.7-2
 - add a BuildRequires on automake17
 
