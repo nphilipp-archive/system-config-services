@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
-"POT-Creation-Date: 2002-08-05 10:59-0400\n"
+"POT-Creation-Date: 2002-08-05 11:09-0400\n"
 "PO-Revision-Date: 2001-08-21 10:16+0200\n"
 "Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
@@ -244,6 +244,9 @@ msgstr ""
 #. You should have received a copy of the GNU General Public License
 #. along with this program; if not, write to the Free Software
 #. Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#. #
+#. # I18N
+#. #
 #. make sure threading is disabled
 #. map the event signals to specific methods
 #. main window
@@ -257,16 +260,16 @@ msgstr ""
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:161
+#: src/serviceconf.py:170
 msgid "Currently Running in Runlevel: "
 msgstr "Aktiv runlevel: "
 
 #. This is a sentry
-#: src/serviceconf.py:172
+#: src/serviceconf.py:181
 msgid "Start at Boot"
 msgstr "Aktiv ved oppstart"
 
-#: src/serviceconf.py:173
+#: src/serviceconf.py:182
 msgid "Services"
 msgstr "Tjenester"
 
@@ -281,12 +284,12 @@ msgstr "Tjenester"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:218 src/serviceconf.py:300 src/serviceconf.py:309
-#: src/serviceconf.py:333
+#: src/serviceconf.py:227 src/serviceconf.py:309 src/serviceconf.py:318
+#: src/serviceconf.py:342
 msgid "Editing Runlevel: "
 msgstr "Redigerer runlevel: "
 
-#: src/serviceconf.py:315
+#: src/serviceconf.py:324
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -296,12 +299,12 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:345
+#: src/serviceconf.py:354
 #, fuzzy
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright (c) 2001 Red Hat, Inc. All rights reserved."
 
-#: src/serviceconf.py:346
+#: src/serviceconf.py:355
 #, fuzzy
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
@@ -317,7 +320,7 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:364
+#: src/serviceconf.py:373
 msgid "Help is not available."
 msgstr ""
 
@@ -332,7 +335,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
-#: src/serviceconf.py:482
+#: src/serviceconf.py:491
 #, fuzzy
 msgid "You must run redhat-config-services as root."
 msgstr "Du må kjøre serviceconf som root."
