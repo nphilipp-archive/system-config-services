@@ -31,6 +31,7 @@ ac_given_INSTALL="/usr/bin/install -c"
 trap 'rm -fr 
 Makefile
 src/Makefile
+man/Makefile
 po/Makefile.in
 redhat-config-services.spec conftest*; exit 1' 1 2 15
 
@@ -149,6 +150,7 @@ fi
 
 CONFIG_FILES=${CONFIG_FILES-"Makefile
 src/Makefile
+man/Makefile
 po/Makefile.in
 redhat-config-services.spec
 "}
