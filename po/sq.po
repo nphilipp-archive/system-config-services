@@ -1,0 +1,250 @@
+# Albanian translations for PACKAGE package.
+# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-03-24 22:48-0500\n"
+"PO-Revision-Date: 2004-03-24 22:48-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/serviceconf.py:73
+#, python-format
+msgid "Are you sure you want to delete the %s?"
+msgstr ""
+
+#: src/serviceconf.py:185 src/serviceconf.glade.h:18
+msgid "Start"
+msgstr ""
+
+#: src/serviceconf.py:189 src/serviceconf.glade.h:20
+msgid "Stop"
+msgstr ""
+
+#: src/serviceconf.py:193 src/serviceconf.glade.h:9
+msgid "Restart"
+msgstr ""
+
+#: src/serviceconf.py:199
+msgid "_Save"
+msgstr ""
+
+#: src/serviceconf.py:199
+msgid "Save"
+msgstr ""
+
+#: src/serviceconf.py:204
+msgid "_Revert"
+msgstr ""
+
+#: src/serviceconf.py:204
+msgid "Revert"
+msgstr ""
+
+#. initialize this to the runlevel we are running in. It will
+#. change when one of the optRL[3-6] are selected
+#: src/serviceconf.py:238
+msgid "Currently Running in Runlevel: "
+msgstr ""
+
+#: src/serviceconf.py:249
+msgid "Start at Boot"
+msgstr ""
+
+#: src/serviceconf.py:250
+msgid "Services"
+msgstr ""
+
+#: src/serviceconf.py:305 src/serviceconf.py:411 src/serviceconf.py:428
+#: src/serviceconf.py:447
+msgid "Editing Runlevel: "
+msgstr ""
+
+#: src/serviceconf.py:348
+msgid "Unknown"
+msgstr ""
+
+#: src/serviceconf.py:476
+msgid ""
+"System Services Configuration Tool VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
+msgstr ""
+
+#: src/serviceconf.py:480
+msgid "About"
+msgstr ""
+
+#: src/serviceconf.py:509
+msgid "Help is not available."
+msgstr ""
+
+#: src/serviceconf.py:653
+msgid "You must run system-config-services as root."
+msgstr ""
+
+#. configured=1 if the service is configured already
+#. configured = self.xinetd_check_if_on(servicename)
+#. the list corresponding to the key is: [configured, is it an xinetd serv., description]
+#: src/servicemethods.py:290
+msgid ""
+"\n"
+"\n"
+"xinetd is required for this service."
+msgstr ""
+
+#: src/servicemethods.py:336
+msgid "xinetd failed to reload for "
+msgstr ""
+
+#: src/servicemethods.py:337
+msgid ". The error was: "
+msgstr ""
+
+#: src/servicemethods.py:339
+#, python-format
+msgid "xinetd reloaded %s successfully"
+msgstr ""
+
+#: src/servicemethods.py:342
+#, python-format
+msgid "xinetd must be enabled for %s to run"
+msgstr ""
+
+#: src/servicemethods.py:347
+#, python-format
+msgid "%s failed. The error was: %s"
+msgstr ""
+
+#: src/servicemethods.py:349
+msgid " successful"
+msgstr ""
+
+#: src/serviceconf.glade.h:1
+msgid "*"
+msgstr ""
+
+#: src/serviceconf.glade.h:2
+msgid "Add Service"
+msgstr ""
+
+#: src/serviceconf.glade.h:3
+msgid "Current Active Runlevel: "
+msgstr ""
+
+#: src/serviceconf.glade.h:4
+msgid "Delete Service"
+msgstr ""
+
+#: src/serviceconf.glade.h:5
+msgid "Description"
+msgstr ""
+
+#: src/serviceconf.glade.h:6
+msgid "Don't Save"
+msgstr ""
+
+#: src/serviceconf.glade.h:7
+msgid "Editing Runlevel:"
+msgstr ""
+
+#: src/serviceconf.glade.h:8
+msgid "None"
+msgstr ""
+
+#: src/serviceconf.glade.h:10
+msgid "Revert To _Last Save"
+msgstr ""
+
+#: src/serviceconf.glade.h:11
+msgid "Runlevel _3"
+msgstr ""
+
+#: src/serviceconf.glade.h:12
+msgid "Runlevel _4"
+msgstr ""
+
+#: src/serviceconf.glade.h:13
+msgid "Runlevel _5"
+msgstr ""
+
+#: src/serviceconf.glade.h:14
+msgid "S_top Service"
+msgstr ""
+
+#: src/serviceconf.glade.h:15
+msgid "Save Dialog"
+msgstr ""
+
+#: src/serviceconf.glade.h:16
+msgid "Service Configuration"
+msgstr ""
+
+#: src/serviceconf.glade.h:17
+msgid "Service Name: "
+msgstr ""
+
+#: src/serviceconf.glade.h:19
+msgid "Status"
+msgstr ""
+
+#: src/serviceconf.glade.h:21
+msgid ""
+"You have made changes to the current runlevel.\n"
+"Do you want to save the changes?"
+msgstr ""
+
+#: src/serviceconf.glade.h:23
+msgid "_Actions"
+msgstr ""
+
+#: src/serviceconf.glade.h:24
+msgid "_Contents"
+msgstr ""
+
+#: src/serviceconf.glade.h:25
+msgid "_Edit Runlevel"
+msgstr ""
+
+#: src/serviceconf.glade.h:26
+msgid "_File"
+msgstr ""
+
+#: src/serviceconf.glade.h:27
+msgid "_Help"
+msgstr ""
+
+#: src/serviceconf.glade.h:28
+msgid "_Quit"
+msgstr ""
+
+#: src/serviceconf.glade.h:29
+msgid "_Refresh Service List"
+msgstr ""
+
+#: src/serviceconf.glade.h:30
+msgid "_Restart Service"
+msgstr ""
+
+#: src/serviceconf.glade.h:31
+msgid "_Save Changes"
+msgstr ""
+
+#: src/serviceconf.glade.h:32
+msgid "_Start Service"
+msgstr ""
+
+#: src/serviceconf.glade.h:33
+msgid "_View"
+msgstr ""
