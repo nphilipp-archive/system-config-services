@@ -43,7 +43,7 @@ uninstall-local:
 	rm -f $(DESTDIR)$(sysconfdir)/pam.d/system-config-services
 	rm -f $(DESTDIR)$(prefix)/bin/system-config-services
 	rm -f $(DESTDIR)$(pkgdatadir)/system-config-service.png
-	ln -f $(DESTDIR)$(prefix)/bin/serviceconf
+	rm -f $(DESTDIR)$(prefix)/bin/serviceconf
 
 changelog:
 	rcs2log | sed -e 's|/usr/local/CVS/system-config-network/||g' \

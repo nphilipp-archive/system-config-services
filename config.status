@@ -484,22 +484,24 @@ s,@LIBS@,,;t t
 s,@INSTALL_PROGRAM@,${INSTALL},;t t
 s,@INSTALL_SCRIPT@,${INSTALL},;t t
 s,@INSTALL_DATA@,${INSTALL} -m 644,;t t
+s,@CYGPATH_W@,echo,;t t
 s,@PACKAGE@,system-config-services,;t t
 s,@VERSION@,0.8.6,;t t
-s,@ACLOCAL@,${SHELL} /home/boston/dwalsh/src/redhat/system-config-services/missing --run aclocal-1.6,;t t
-s,@AUTOCONF@,${SHELL} /home/boston/dwalsh/src/redhat/system-config-services/missing --run autoconf,;t t
-s,@AUTOMAKE@,${SHELL} /home/boston/dwalsh/src/redhat/system-config-services/missing --run automake-1.6,;t t
-s,@AUTOHEADER@,${SHELL} /home/boston/dwalsh/src/redhat/system-config-services/missing --run autoheader,;t t
-s,@MAKEINFO@,${SHELL} /home/boston/dwalsh/src/redhat/system-config-services/missing --run makeinfo,;t t
-s,@AMTAR@,${SHELL} /home/boston/dwalsh/src/redhat/system-config-services/missing --run tar,;t t
-s,@install_sh@,/home/boston/dwalsh/src/redhat/system-config-services/install-sh,;t t
+s,@ACLOCAL@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run aclocal-1.7,;t t
+s,@AUTOCONF@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run autoconf,;t t
+s,@AUTOMAKE@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run automake-1.7,;t t
+s,@AUTOHEADER@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run autoheader,;t t
+s,@MAKEINFO@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run makeinfo,;t t
+s,@AMTAR@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run tar,;t t
+s,@install_sh@,/home/dwalsh/src/redhat/system-config-services/install-sh,;t t
 s,@STRIP@,,;t t
 s,@ac_ct_STRIP@,,;t t
 s,@INSTALL_STRIP_PROGRAM@,${SHELL} $(install_sh) -c -s,;t t
 s,@AWK@,gawk,;t t
 s,@SET_MAKE@,,;t t
-s,@PYTHON@,python2.2,;t t
-s,@PY_PYTHONPATH@,/usr/lib/python2.2/usr/lib/python2.2/plat-linux2:/usr/lib/python2.2/lib-dynload:/usr/lib/python2.2/site-packages:/usr/lib/python2.2/site-packages/gtk-2.0:,;t t
+s,@am__leading_dot@,.,;t t
+s,@PYTHON@,python,;t t
+s,@PY_PYTHONPATH@,,;t t
 s,@PY_COMPILEALL@,/usr/lib/python2.2/compileall.pyc,;t t
 s,@GETTEXT_PACKAGE@,system-config-services,;t t
 s,@CC@,gcc,;t t
@@ -516,6 +518,8 @@ s,@AMDEP_TRUE@,,;t t
 s,@AMDEP_FALSE@,#,;t t
 s,@AMDEPBACKSLASH@,\,;t t
 s,@CCDEPMODE@,depmode=none,;t t
+s,@am__fastdepCC_TRUE@,#,;t t
+s,@am__fastdepCC_FALSE@,,;t t
 s,@CPP@,gcc -E,;t t
 s,@EGREP@,grep -E,;t t
 s,@USE_NLS@,yes,;t t
@@ -533,20 +537,21 @@ s,@PO_IN_DATADIR_FALSE@,,;t t
 s,@POFILES@, bn.po bs.po cs.po cy.po da.po de.po el.po es.po fi.po fr.po hr.po hu.po is.po it.po ja.po ko.po ms.po nl.po no.po pt_BR.po pt.po ru.po sl.po sv.po tr.po uk.po vi.po zh_CN.po zh_TW.po,;t t
 s,@POSUB@,po,;t t
 s,@MKINSTALLDIRS@,./mkinstalldirs,;t t
-s,@INTLTOOL_DESKTOP_RULE@,%.desktop:   %.desktop.in   $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
-s,@INTLTOOL_DIRECTORY_RULE@,%.directory: %.directory.in $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
-s,@INTLTOOL_KEYS_RULE@,%.keys:      %.keys.in      $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -k -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
-s,@INTLTOOL_PROP_RULE@,%.prop:      %.prop.in      $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
-s,@INTLTOOL_OAF_RULE@,%.oaf:       %.oaf.in       $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -o -p,;t t
-s,@INTLTOOL_PONG_RULE@,%.pong:      %.pong.in      $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -x -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
-s,@INTLTOOL_SERVER_RULE@,%.server:    %.server.in    $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -o -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
-s,@INTLTOOL_SHEET_RULE@,%.sheet:     %.sheet.in     $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -x -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
-s,@INTLTOOL_SOUNDLIST_RULE@,%.soundlist: %.soundlist.in $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
-s,@INTLTOOL_UI_RULE@,%.ui:        %.ui.in        $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -x -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
-s,@INTLTOOL_XML_RULE@,%.xml:       %.xml.in       $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -x -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
-s,@INTLTOOL_CAVES_RULE@,%.caves:     %.caves.in     $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
-s,@INTLTOOL_SCHEMAS_RULE@,%.schemas:   %.schemas.in   $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -s -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
-s,@INTLTOOL_THEME_RULE@,%.theme:     %.theme.in     $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
+s,@INTLTOOL_DESKTOP_RULE@,%.desktop:   %.desktop.in   $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
+s,@INTLTOOL_DIRECTORY_RULE@,%.directory: %.directory.in $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
+s,@INTLTOOL_KEYS_RULE@,%.keys:      %.keys.in      $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -k -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
+s,@INTLTOOL_PROP_RULE@,%.prop:      %.prop.in      $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
+s,@INTLTOOL_OAF_RULE@,%.oaf:       %.oaf.in       $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -o -p,;t t
+s,@INTLTOOL_PONG_RULE@,%.pong:      %.pong.in      $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -x -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
+s,@INTLTOOL_SERVER_RULE@,%.server:    %.server.in    $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -o -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
+s,@INTLTOOL_SHEET_RULE@,%.sheet:     %.sheet.in     $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -x -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
+s,@INTLTOOL_SOUNDLIST_RULE@,%.soundlist: %.soundlist.in $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
+s,@INTLTOOL_UI_RULE@,%.ui:        %.ui.in        $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -x -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
+s,@INTLTOOL_XAM_RULE@,%.xam:       %.xml.in       $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -x -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
+s,@INTLTOOL_XML_RULE@,%.xml:       %.xml.in       $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -x -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
+s,@INTLTOOL_CAVES_RULE@,%.caves:     %.caves.in     $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
+s,@INTLTOOL_SCHEMAS_RULE@,%.schemas:   %.schemas.in   $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -s -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
+s,@INTLTOOL_THEME_RULE@,%.theme:     %.theme.in     $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
 s,@INTLTOOL_EXTRACT@,$(top_builddir)/intltool-extract,;t t
 s,@INTLTOOL_MERGE@,$(top_builddir)/intltool-merge,;t t
 s,@INTLTOOL_UPDATE@,$(top_builddir)/intltool-update,;t t
