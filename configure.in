@@ -1,13 +1,13 @@
 AC_INIT(system-config-services.spec.in)
 AM_INIT_AUTOMAKE(system-config-services, 0.8.6)
 
-PYTHON=python2.2
+PYTHON=python
 AC_SUBST(PYTHON)
 
 # ALL_LINGUAS="cs da de es fr hr is it ja ko no pt ru sv tr zh_CN zh_TW"
 ALL_LINGUAS="bn bs cs cy da de el es fi fr hr hu is it ja ko ms nl no pt_BR pt ru sl sv tr uk vi zh_CN zh_TW"
 
-paths=`python2.2 <<EOF
+paths=`python <<EOF
 import sys;
 for p in sys.path:
    if len(p): print p
@@ -15,7 +15,7 @@ EOF`
 
 AC_MSG_CHECKING([for your python path])
 AC_SUBST(PY_PYTHONPATH)
-PY_PYTHONPATH=`python2.2 <<EOF
+PY_PYTHONPATH=`python2.3 <<EOF
 import sys;
 path=""
 for p in sys.path:
@@ -30,7 +30,7 @@ AC_MSG_RESULT([$PY_PYTHONPATH]);
 AC_MSG_CHECKING([for compileall])
 
 AC_SUBST(PY_COMPILEALL)
-PY_COMPILEALL="/usr/lib/python2.2/compileall.pyc"
+PY_COMPILEALL="/usr/lib/python2.3/compileall.pyc"
 for p in $paths;do test -f "$p/compileall.pyc" && PY_COMPILEALL="$p/compileall.pyc" && break;done
 
 if ! test -f $PY_COMPILEALL;then

@@ -2,9 +2,7 @@ PYTHON_FILES = checklist.py serviceconf.py servicemethods.py
 
 GLADE_FILES = serviceconf.glade
 
-SCRIPT_FILES = system-config-services.sh
-
-EXTRA_DIST = $(PYTHON_FILES) $(GLADE_FILES) $(SCRIPT_FILES)
+EXTRA_DIST = $(PYTHON_FILES) $(GLADE_FILES)
 
 execdir = $(sbindir)
 
@@ -21,15 +19,14 @@ install-exec-local:
 	chmod 755 $(DESTDIR)$(pkgdatadir)/serviceconf.py
 	install -m 0755 $(srcdir)/checklist.py $(DESTDIR)$(pkgdatadir)/
 	install -m 0755 $(srcdir)/servicemethods.py $(DESTDIR)$(pkgdatadir)/
-	install -m 0755 $(srcdir)/system-config-services.sh $(DESTDIR)$(pkgdatadir)/system-config-services
 	softdir=$(pkgdatadir); \
 	p=$(DESTDIR) ; \
 	softdir=$${softdir/#$$p} ; \
 	p=$(prefix) ; \
 	softdir=$${softdir/#$$p} ; \
 	softdir=$${softdir/#\/} ; \
-	ln  -fs ../$${softdir}/system-config-services $(DESTDIR)$(sbindir)/system-config-services; \
-	ln  -fs ../$${softdir}/system-config-services $(DESTDIR)$(sbindir)/serviceconf;
+	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(sbindir)/system-config-services; \
+	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(sbindir)/serviceconf;
 
 uninstall-local:
 	rm -fr $(DESTDIR)$(pkgdatadir)

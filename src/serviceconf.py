@@ -35,6 +35,19 @@ import gnome
 import gnome.ui
 domain = "system-config-services"
 gnome.program_init(domain, "0.1")
+
+appPath="/usr/share/%s" % domain
+if not appPath in sys.path:
+    sys.path.append(appPath)
+
+rhplPath="/usr/lib/python%d.%d/site-packages/rhpl" % (sys.version_info[0], sys.version_info[1])
+if not rhplPath in sys.path:
+    sys.path.append(rhplPath)
+
+rhplPath="/usr/lib64/python%d.%d/site-packages/rhpl" % (sys.version_info[0], sys.version_info[1])
+if not rhplPath in sys.path:
+    sys.path.append(rhplPath)
+
 import gtk.glade
 import os
 import string
