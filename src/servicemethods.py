@@ -29,7 +29,7 @@ import nonblockingreader
 
 def getstatusoutput(cmd, callback):
     """Return (status, output) of executing cmd in a shell."""
-    pipe = os.popen('{ ' + cmd + '; } 2>&1', 'r')
+    pipe = os.popen('{ ' + cmd + '; } 2>/dev/null', 'r')
     output = nonblockingreader.Reader ().run ([pipe], callback)
     text = output[pipe]
     sts = pipe.close ()
