@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
-"POT-Creation-Date: 2003-07-09 10:10-0400\n"
+"POT-Creation-Date: 2003-07-29 16:25-0400\n"
 "PO-Revision-Date: 2003-07-09 19:53+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -188,7 +188,7 @@ msgstr "redhat-config-services musíte spustit jako root."
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:285
+#: src/servicemethods.py:286
 msgid ""
 "\n"
 "\n"
@@ -206,30 +206,30 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:331
+#: src/servicemethods.py:332
 msgid "xinetd failed to reload for "
 msgstr "Selhalo opětovné načtení xinetd pro "
 
-#: src/servicemethods.py:332
+#: src/servicemethods.py:333
 msgid ". The error was: "
 msgstr ". Chyba byla: "
 
-#: src/servicemethods.py:334
+#: src/servicemethods.py:335
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd úspěšně opětovně načetl %s"
 
-#: src/servicemethods.py:337
+#: src/servicemethods.py:338
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "Pro běh %s musí být povolen xinetd"
 
-#: src/servicemethods.py:342
+#: src/servicemethods.py:343
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s selhalo. Chyba byla: %s"
 
-#: src/servicemethods.py:344
+#: src/servicemethods.py:345
 msgid " successful"
 msgstr " úspěšný"
 

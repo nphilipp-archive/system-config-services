@@ -1,12 +1,12 @@
 # Swedish messages for serviceconf.
 # Copyright (C) 2001, 2003 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.38 2003/07/09 14:06:09 dwalsh Exp $
+# $Id: sv.po,v 1.39 2003/07/29 20:24:35 dwalsh Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2003-07-09 10:10-0400\n"
+"POT-Creation-Date: 2003-07-29 16:25-0400\n"
 "PO-Revision-Date: 2003-03-04 22:28+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -191,7 +191,7 @@ msgstr "Du måste köra redhat-config-services som root."
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:285
+#: src/servicemethods.py:286
 msgid ""
 "\n"
 "\n"
@@ -209,30 +209,30 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:331
+#: src/servicemethods.py:332
 msgid "xinetd failed to reload for "
 msgstr "xinetd misslyckades att läsa om för "
 
-#: src/servicemethods.py:332
+#: src/servicemethods.py:333
 msgid ". The error was: "
 msgstr ". Felet var: "
 
-#: src/servicemethods.py:334
+#: src/servicemethods.py:335
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd läste om %s utan problem"
 
-#: src/servicemethods.py:337
+#: src/servicemethods.py:338
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd måste vara aktiverat för att %s ska kunna köras"
 
-#: src/servicemethods.py:342
+#: src/servicemethods.py:343
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s misslyckades. Felet var: %s"
 
-#: src/servicemethods.py:344
+#: src/servicemethods.py:345
 msgid " successful"
 msgstr " lyckades"
 

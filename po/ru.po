@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
-"POT-Creation-Date: 2003-07-09 10:10-0400\n"
+"POT-Creation-Date: 2003-07-29 16:25-0400\n"
 "PO-Revision-Date: 2003-07-16 17:01+0300\n"
 "Last-Translator: Leonid Kanter <leon@geon.donetsk.ua>\n"
 "Language-Team:  <ru@li.org>\n"
@@ -196,7 +196,7 @@ msgstr "redhat-config-services должен выполняться от поль
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:285
+#: src/servicemethods.py:286
 msgid ""
 "\n"
 "\n"
@@ -214,30 +214,30 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:331
+#: src/servicemethods.py:332
 msgid "xinetd failed to reload for "
 msgstr "Ошибка перезапуска xinetd для "
 
-#: src/servicemethods.py:332
+#: src/servicemethods.py:333
 msgid ". The error was: "
 msgstr ". Ошибка была:"
 
-#: src/servicemethods.py:334
+#: src/servicemethods.py:335
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd перезагрузил %s успешно."
 
-#: src/servicemethods.py:337
+#: src/servicemethods.py:338
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd должен быть разрешен для запуска %s"
 
-#: src/servicemethods.py:342
+#: src/servicemethods.py:343
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "Сбой %s. Ошибка была: %s"
 
-#: src/servicemethods.py:344
+#: src/servicemethods.py:345
 msgid " successful"
 msgstr " успешно"
 
@@ -600,4 +600,3 @@ msgstr "_Вид"
 
 #~ msgid "Exit"
 #~ msgstr "Выход"
-
