@@ -1,5 +1,8 @@
 2002-07-24  Daniel J Walsh  <dwalsh@localhost.localdomain>
 
+	* /usr/local/CVS/redhat-config-services/man/Makefile.am:
+	convert to use configure
+
 	* /usr/local/CVS/redhat-config-services/ChangeLog, /usr/local/CVS/redhat-config-services/config.status, /usr/local/CVS/redhat-config-services/configure.in, /usr/local/CVS/redhat-config-services/Makefile.am:
 	release 0.8.1
 
