@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "POT-Creation-Date: 2003-01-09 10:22-0500\n"
-"PO-Revision-Date: 2002-10-03 09:06+1000\n"
+"PO-Revision-Date: 2003-01-10 14:16+1000\n"
 "Last-Translator: Yelitza Louze <ylouze@redhat.com>\n"
 "Language-Team:  <es@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -304,9 +304,8 @@ msgstr "Reiniciar el servicio seleccionado"
 
 # serviceconf.gladestrings:20
 #: src/serviceconf.glade.h:7
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "_Volver a lo último guardado"
+msgstr "Volver a _lo último guardado"
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
@@ -430,3 +429,4 @@ msgstr "Comenzar _Servicio"
 # serviceconf.gladestrings:17 serviceconf.gladestrings:39
 #~ msgid "Save the changes you have made"
 #~ msgstr "Guardar los cambios que ha hecho"
+
