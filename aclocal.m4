@@ -10,98 +10,6 @@ dnl but WITHOUT ANY WARRANTY, to the extent permitted by law; without
 dnl even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 dnl PARTICULAR PURPOSE.
 
-# Do all the work for Automake.  This macro actually does too much --
-# some checks are only needed if your package does certain things.
-# But this isn't really a big deal.
-
-# serial 1
-
-dnl Usage:
-dnl AM_INIT_AUTOMAKE(package,version, [no-define])
-
-AC_DEFUN([AM_INIT_AUTOMAKE],
-[AC_REQUIRE([AC_PROG_INSTALL])
-PACKAGE=[$1]
-AC_SUBST(PACKAGE)
-VERSION=[$2]
-AC_SUBST(VERSION)
-dnl test to see if srcdir already configured
-if test "`cd $srcdir && pwd`" != "`pwd`" && test -f $srcdir/config.status; then
-  AC_MSG_ERROR([source directory already configured; run "make distclean" there first])
-fi
-ifelse([$3],,
-AC_DEFINE_UNQUOTED(PACKAGE, "$PACKAGE", [Name of package])
-AC_DEFINE_UNQUOTED(VERSION, "$VERSION", [Version number of package]))
-AC_REQUIRE([AM_SANITY_CHECK])
-AC_REQUIRE([AC_ARG_PROGRAM])
-dnl FIXME This is truly gross.
-missing_dir=`cd $ac_aux_dir && pwd`
-AM_MISSING_PROG(ACLOCAL, aclocal, $missing_dir)
-AM_MISSING_PROG(AUTOCONF, autoconf, $missing_dir)
-AM_MISSING_PROG(AUTOMAKE, automake, $missing_dir)
-AM_MISSING_PROG(AUTOHEADER, autoheader, $missing_dir)
-AM_MISSING_PROG(MAKEINFO, makeinfo, $missing_dir)
-AC_REQUIRE([AC_PROG_MAKE_SET])])
-
-#
-# Check to make sure that the build environment is sane.
-#
-
-AC_DEFUN([AM_SANITY_CHECK],
-[AC_MSG_CHECKING([whether build environment is sane])
-# Just in case
-sleep 1
-echo timestamp > conftestfile
-# Do `set' in a subshell so we don't clobber the current shell's
-# arguments.  Must try -L first in case configure is actually a
-# symlink; some systems play weird games with the mod time of symlinks
-# (eg FreeBSD returns the mod time of the symlink's containing
-# directory).
-if (
-   set X `ls -Lt $srcdir/configure conftestfile 2> /dev/null`
-   if test "[$]*" = "X"; then
-      # -L didn't work.
-      set X `ls -t $srcdir/configure conftestfile`
-   fi
-   if test "[$]*" != "X $srcdir/configure conftestfile" \
-      && test "[$]*" != "X conftestfile $srcdir/configure"; then
-
-      # If neither matched, then we have a broken ls.  This can happen
-      # if, for instance, CONFIG_SHELL is bash and it inherits a
-      # broken ls alias from the environment.  This has actually
-      # happened.  Such a system could not be considered "sane".
-      AC_MSG_ERROR([ls -t appears to fail.  Make sure there is not a broken
-alias in your environment])
-   fi
-
-   test "[$]2" = conftestfile
-   )
-then
-   # Ok.
-   :
-else
-   AC_MSG_ERROR([newly created file is older than distributed files!
-Check your system clock])
-fi
-rm -f conftest*
-AC_MSG_RESULT(yes)])
-
-dnl AM_MISSING_PROG(NAME, PROGRAM, DIRECTORY)
-dnl The program must properly implement --version.
-AC_DEFUN([AM_MISSING_PROG],
-[AC_MSG_CHECKING(for working $2)
-# Run test in a subshell; some versions of sh will print an error if
-# an executable is not found, even if stderr is redirected.
-# Redirect stdin to placate older versions of autoconf.  Sigh.
-if ($2 --version) < /dev/null > /dev/null 2>&1; then
-   $1=$2
-   AC_MSG_RESULT(found)
-else
-   $1="$3/missing $2"
-   AC_MSG_RESULT(missing)
-fi
-AC_SUBST($1)])
-
 # Macro to add for using GNU gettext.
 # Ulrich Drepper <drepper@cygnus.com>, 1995.
 #
@@ -124,106 +32,184 @@ AC_SUBST($1)])
 # serial 5
 
 AC_DEFUN(AM_GLIB_WITH_NLS,
-  dnl NLS is obligatory
-  [USE_NLS=yes
+  [AC_MSG_CHECKING([whether NLS is requested])
+    dnl Default is enabled NLS
+    AC_ARG_ENABLE(nls,
+      [  --disable-nls           do not use Native Language Support],
+      USE_NLS=$enableval, USE_NLS=yes)
+    AC_MSG_RESULT($USE_NLS)
     AC_SUBST(USE_NLS)
 
-    dnl Figure out what method
-    nls_cv_force_use_gnu_gettext="no"
+    USE_INCLUDED_LIBINTL=no
+    AM_PATH_PROG_WITH_TEST(XGETTEXT, xgettext,
+		  [test -z "`$ac_dir/$ac_word -h 2>&1 | grep '(HELP)'`"], :)
 
-    nls_cv_use_gnu_gettext="$nls_cv_force_use_gnu_gettext"
-    if test "$nls_cv_force_use_gnu_gettext" != "yes"; then
-      dnl User does not insist on using GNU NLS library.  Figure out what
-      dnl to use.  If gettext or catgets are available (in this order) we
-      dnl use this.  Else we have to fall back to GNU NLS library.
-      dnl catgets is only used if permitted by option --with-catgets.
-      nls_cv_header_intl=
-      nls_cv_header_libgt=
-      CATOBJEXT=NONE
+    dnl If we use NLS figure out what method
+    if test "$USE_NLS" = "yes"; then
+#      AC_DEFINE(ENABLE_NLS)
+#      AC_MSG_CHECKING([whether included gettext is requested])
+#      AC_ARG_WITH(included-gettext,
+#        [  --with-included-gettext use the GNU gettext library included here],
+#        nls_cv_force_use_gnu_gettext=$withval,
+#        nls_cv_force_use_gnu_gettext=no)
+#      AC_MSG_RESULT($nls_cv_force_use_gnu_gettext)
+      nls_cv_force_use_gnu_gettext="no"
 
-      AC_CHECK_HEADER(libintl.h,
-        [AC_CACHE_CHECK([for dgettext in libc], gt_cv_func_dgettext_libc,
-	  [AC_TRY_LINK([#include <libintl.h>], [return (int) dgettext ("","")],
-	    gt_cv_func_dgettext_libc=yes, gt_cv_func_dgettext_libc=no)])
+      nls_cv_use_gnu_gettext="$nls_cv_force_use_gnu_gettext"
+      if test "$nls_cv_force_use_gnu_gettext" != "yes"; then
+        dnl User does not insist on using GNU NLS library.  Figure out what
+        dnl to use.  If gettext or catgets are available (in this order) we
+        dnl use this.  Else we have to fall back to GNU NLS library.
+	dnl catgets is only used if permitted by option --with-catgets.
+	nls_cv_header_intl=
+	nls_cv_header_libgt=
+	CATOBJEXT=NONE
 
-	  if test "$gt_cv_func_dgettext_libc" != "yes"; then
-	    AC_CHECK_LIB(intl, bindtextdomain,
-	      [AC_CACHE_CHECK([for dgettext in libintl],
-	        gt_cv_func_dgettext_libintl,
-	        [AC_CHECK_LIB(intl, dgettext,
+	AC_CHECK_HEADER(libintl.h,
+	  [AC_CACHE_CHECK([for dgettext in libc], gt_cv_func_dgettext_libc,
+	    [AC_TRY_LINK([#include <libintl.h>], [return (int) dgettext ("","")],
+	       gt_cv_func_dgettext_libc=yes, gt_cv_func_dgettext_libc=no)])
+
+	   if test "$gt_cv_func_dgettext_libc" != "yes"; then
+	     AC_CHECK_LIB(intl, bindtextdomain,
+	       [AC_CACHE_CHECK([for dgettext in libintl],
+		 gt_cv_func_dgettext_libintl,
+		 [AC_CHECK_LIB(intl, dgettext,
 		  gt_cv_func_dgettext_libintl=yes,
 		  gt_cv_func_dgettext_libintl=no)],
-	        gt_cv_func_dgettext_libintl=no)])
-	  fi
+		 gt_cv_func_dgettext_libintl=no)])
+	   fi
 
-          if test "$gt_cv_func_dgettext_libintl" = "yes"; then
-	    LIBS="$LIBS -lintl";
-          fi
+           if test "$gt_cv_func_dgettext_libintl" = "yes"; then
+	     LIBS="$LIBS -lintl";
+           fi
 
-	  if test "$gt_cv_func_dgettext_libc" = "yes" \
-	    || test "$gt_cv_func_dgettext_libintl" = "yes"; then
-	    AC_DEFINE(HAVE_GETTEXT,1,
-              [Define if the GNU gettext() function is already present or preinstalled.])
-	    AM_PATH_PROG_WITH_TEST(MSGFMT, msgfmt,
- 	      [test -z "`$ac_dir/$ac_word -h 2>&1 | grep 'dv '`"], no)dnl
-	    if test "$MSGFMT" != "no"; then
-	      AC_CHECK_FUNCS(dcgettext)
-	      AC_PATH_PROG(GMSGFMT, gmsgfmt, $MSGFMT)
-	      AM_PATH_PROG_WITH_TEST(XGETTEXT, xgettext,
-	        [test -z "`$ac_dir/$ac_word -h 2>&1 | grep '(HELP)'`"], :)
-	      AC_TRY_LINK(, [extern int _nl_msg_cat_cntr;
-		 	     return _nl_msg_cat_cntr],
-	        [CATOBJEXT=.gmo
-	         DATADIRNAME=share],
-	        [CATOBJEXT=.mo
-	         DATADIRNAME=lib])
-	      INSTOBJEXT=.mo
+	   if test "$gt_cv_func_dgettext_libc" = "yes" \
+	      || test "$gt_cv_func_dgettext_libintl" = "yes"; then
+	      AC_DEFINE(HAVE_GETTEXT)
+	      AM_PATH_PROG_WITH_TEST(MSGFMT, msgfmt,
+		[test -z "`$ac_dir/$ac_word -h 2>&1 | grep 'dv '`"], no)dnl
+	      if test "$MSGFMT" != "no"; then
+		AC_CHECK_FUNCS(dcgettext)
+		AC_PATH_PROG(GMSGFMT, gmsgfmt, $MSGFMT)
+		AC_TRY_LINK(, [extern int _nl_msg_cat_cntr;
+			       return _nl_msg_cat_cntr],
+		  [CATOBJEXT=.gmo
+		   DATADIRNAME=share],
+		  [CATOBJEXT=.mo
+		   DATADIRNAME=lib])
+		INSTOBJEXT=.mo
+	      fi
 	    fi
-	  fi
 
-	  # Added by Martin Baulig 12/15/98 for libc5 systems
-	  if test "$gt_cv_func_dgettext_libc" != "yes" \
-	    && test "$gt_cv_func_dgettext_libintl" = "yes"; then
-	    INTLLIBS=-lintl
-	    LIBS=`echo $LIBS | sed -e 's/-lintl//'`
-	  fi
-      ])
+	    # Added by Martin Baulig 12/15/98 for libc5 systems
+	    if test "$gt_cv_func_dgettext_libc" != "yes" \
+	       && test "$gt_cv_func_dgettext_libintl" = "yes"; then
+	       INTLLIBS=-lintl
+	       LIBS=`echo $LIBS | sed -e 's/-lintl//'`
+	    fi
+	])
 
-      if test "$CATOBJEXT" = "NONE"; then
-        dnl Neither gettext nor catgets in included in the C library.
-        dnl Fall back on GNU gettext library.
-        nls_cv_use_gnu_gettext=yes
+#        if test "$CATOBJEXT" = "NONE"; then
+#	  AC_MSG_CHECKING([whether catgets can be used])
+#	  AC_ARG_WITH(catgets,
+#	    [  --with-catgets          use catgets functions if available],
+#	    nls_cv_use_catgets=$withval, nls_cv_use_catgets=no)
+#	  AC_MSG_RESULT($nls_cv_use_catgets)
+#
+#	  if test "$nls_cv_use_catgets" = "yes"; then
+#	    dnl No gettext in C library.  Try catgets next.
+#	    AC_CHECK_LIB(i, main)
+#	    AC_CHECK_FUNC(catgets,
+#	      [AC_DEFINE(HAVE_CATGETS)
+#	       INTLOBJS="\$(CATOBJS)"
+#	       AC_PATH_PROG(GENCAT, gencat, no)dnl
+#	       if test "$GENCAT" != "no"; then
+#		 AC_PATH_PROG(GMSGFMT, gmsgfmt, no)
+#		 if test "$GMSGFMT" = "no"; then
+#		   AM_PATH_PROG_WITH_TEST(GMSGFMT, msgfmt,
+#		    [test -z "`$ac_dir/$ac_word -h 2>&1 | grep 'dv '`"], no)
+#		 fi
+#		 AM_PATH_PROG_WITH_TEST(XGETTEXT, xgettext,
+#		   [test -z "`$ac_dir/$ac_word -h 2>&1 | grep '(HELP)'`"], :)
+#		 USE_INCLUDED_LIBINTL=yes
+#		 CATOBJEXT=.cat
+#		 INSTOBJEXT=.cat
+#		 DATADIRNAME=lib
+#		 INTLDEPS='$(top_builddir)/intl/libintl.a'
+#		 INTLLIBS=$INTLDEPS
+#		 LIBS=`echo $LIBS | sed -e 's/-lintl//'`
+#		 nls_cv_header_intl=intl/libintl.h
+#		 nls_cv_header_libgt=intl/libgettext.h
+#              fi
+#            ])
+#	  fi
+#        fi
+
+        if test "$CATOBJEXT" = "NONE"; then
+	  dnl Neither gettext nor catgets in included in the C library.
+	  dnl Fall back on GNU gettext library.
+	  nls_cv_use_gnu_gettext=yes
+        fi
       fi
-    fi
 
-    if test "$nls_cv_use_gnu_gettext" != "yes"; then
-      AC_DEFINE(ENABLE_NLS, 1,
-        [always defined to indicate that i18n is enabled])
-    else
-      dnl Unset this variable since we use the non-zero value as a flag.
-      CATOBJEXT=
-    fi
-
-    dnl Test whether we really found GNU xgettext.
-    if test "$XGETTEXT" != ":"; then
-      dnl If it is no GNU xgettext we define it as : so that the
-      dnl Makefiles still can work.
-      if $XGETTEXT --omit-header /dev/null 2> /dev/null; then
-        : ;
+      if test "$nls_cv_use_gnu_gettext" != "yes"; then
+        AC_DEFINE(ENABLE_NLS)
       else
-        AC_MSG_RESULT(
-	  [found xgettext program is not GNU xgettext; ignore it])
-        XGETTEXT=":"
+         dnl Unset this variable since we use the non-zero value as a flag.
+         CATOBJEXT=
+#        dnl Mark actions used to generate GNU NLS library.
+#        INTLOBJS="\$(GETTOBJS)"
+#        AM_PATH_PROG_WITH_TEST(MSGFMT, msgfmt,
+#	  [test -z "`$ac_dir/$ac_word -h 2>&1 | grep 'dv '`"], msgfmt)
+#        AC_PATH_PROG(GMSGFMT, gmsgfmt, $MSGFMT)
+#        AM_PATH_PROG_WITH_TEST(XGETTEXT, xgettext,
+#	  [test -z "`$ac_dir/$ac_word -h 2>&1 | grep '(HELP)'`"], :)
+#        AC_SUBST(MSGFMT)
+#	USE_INCLUDED_LIBINTL=yes
+#        CATOBJEXT=.gmo
+#        INSTOBJEXT=.mo
+#        DATADIRNAME=share
+#	INTLDEPS='$(top_builddir)/intl/libintl.a'
+#	INTLLIBS=$INTLDEPS
+#	LIBS=`echo $LIBS | sed -e 's/-lintl//'`
+#        nls_cv_header_intl=intl/libintl.h
+#        nls_cv_header_libgt=intl/libgettext.h
       fi
+
+      dnl Test whether we really found GNU xgettext.
+      if test "$XGETTEXT" != ":"; then
+	dnl If it is no GNU xgettext we define it as : so that the
+	dnl Makefiles still can work.
+	if $XGETTEXT --omit-header /dev/null 2> /dev/null; then
+	  : ;
+	else
+	  AC_MSG_RESULT(
+	    [found xgettext program is not GNU xgettext; ignore it])
+	  XGETTEXT=":"
+	fi
+      fi
+
+      # We need to process the po/ directory.
+      POSUB=po
+    else
+      DATADIRNAME=share
+#      nls_cv_header_intl=intl/libintl.h
+#      nls_cv_header_libgt=intl/libgettext.h
     fi
-
-    # We need to process the po/ directory.
-    POSUB=po
-
+#    AC_LINK_FILES($nls_cv_header_libgt, $nls_cv_header_intl)
     AC_OUTPUT_COMMANDS(
-      [case "$CONFIG_FILES" in *po/Makefile.in*)
+     [case "$CONFIG_FILES" in *po/Makefile.in*)
         sed -e "/POTFILES =/r po/POTFILES" po/Makefile.in > po/Makefile
       esac])
+
+
+#    # If this is used in GNU gettext we have to set USE_NLS to `yes'
+#    # because some of the sources are only built for this goal.
+#    if test "$PACKAGE" = gettext; then
+#      USE_NLS=yes
+#      USE_INCLUDED_LIBINTL=yes
+#    fi
 
     dnl These rules are solely for the distribution goal.  While doing this
     dnl we only have to keep exactly one list of the available catalogs
@@ -234,6 +220,7 @@ AC_DEFUN(AM_GLIB_WITH_NLS,
     done
 
     dnl Make all variables we use known to autoconf.
+    AC_SUBST(USE_INCLUDED_LIBINTL)
     AC_SUBST(CATALOGS)
     AC_SUBST(CATOBJEXT)
     AC_SUBST(DATADIRNAME)
@@ -247,25 +234,8 @@ AC_DEFUN(AM_GLIB_WITH_NLS,
   ])
 
 AC_DEFUN(AM_GLIB_GNU_GETTEXT,
-  [AC_REQUIRE([AC_PROG_MAKE_SET])dnl
-   AC_REQUIRE([AC_PROG_CC])dnl
-   AC_REQUIRE([AC_PROG_RANLIB])dnl
-   AC_REQUIRE([AC_HEADER_STDC])dnl
-   AC_REQUIRE([AC_C_CONST])dnl
-   AC_REQUIRE([AC_C_INLINE])dnl
-   AC_REQUIRE([AC_TYPE_OFF_T])dnl
-   AC_REQUIRE([AC_TYPE_SIZE_T])dnl
-   AC_REQUIRE([AC_FUNC_ALLOCA])dnl
-   AC_REQUIRE([AC_FUNC_MMAP])dnl
-
-   AC_CHECK_HEADERS([argz.h limits.h locale.h nl_types.h malloc.h string.h \
-unistd.h sys/param.h])
-   AC_CHECK_FUNCS([getcwd munmap putenv setenv setlocale strchr strcasecmp \
-strdup __argz_count __argz_stringify __argz_next])
-
-   AM_LC_MESSAGES
+  [
    AM_GLIB_WITH_NLS
-
    if test "x$CATOBJEXT" != "x"; then
      if test "x$ALL_LINGUAS" = "x"; then
        LINGUAS=
@@ -287,17 +257,15 @@ strdup __argz_count __argz_stringify __argz_next])
      fi
    fi
 
-   dnl Determine which catalog format we have (if any is needed)
-   dnl For now we know about two different formats:
-   dnl   Linux libc-5 and the normal X/Open format
    test -d po || mkdir po
    if test "$CATOBJEXT" = ".cat"; then
-     AC_CHECK_HEADER(linux/version.h, msgformat=linux, msgformat=xopen)
-
      dnl Transform the SED scripts while copying because some dumb SEDs
      dnl cannot handle comments.
      sed -e '/^#/d' $srcdir/po/$msgformat-msg.sed > po/po2msg.sed
    fi
+   dnl po2tbl.sed is always needed.
+   sed -e '/^#.*[^\\]$/d' -e '/^#$/d' \
+     $srcdir/po/po2tbl.sed.in > po/po2tbl.sed
 
    dnl If the AC_CONFIG_AUX_DIR macro for autoconf is used we possibly
    dnl find the mkinstalldirs script in another subdir but ($top_srcdir).
@@ -389,38 +357,97 @@ fi
 AC_SUBST($1)dnl
 ])
 
-# lcmessage.m4 serial 2 (gettext-0.10.40)
-dnl Copyright (C) 1995-2002 Free Software Foundation, Inc.
-dnl This file is free software, distributed under the terms of the GNU
-dnl General Public License.  As a special exception to the GNU General
-dnl Public License, this file may be distributed as part of a program
-dnl that contains a configuration script generated by Autoconf, under
-dnl the same distribution terms as the rest of that program.
-dnl
-dnl This file can can be used in projects which are not available under
-dnl the GNU General Public License or the GNU Library General Public
-dnl License but which still want to provide support for the GNU gettext
-dnl functionality.
-dnl Please note that the actual code of the GNU gettext library is covered
-dnl by the GNU Library General Public License, and the rest of the GNU
-dnl gettext package package is covered by the GNU General Public License.
-dnl They are *not* in the public domain.
+# Do all the work for Automake.  This macro actually does too much --
+# some checks are only needed if your package does certain things.
+# But this isn't really a big deal.
 
-dnl Authors:
-dnl   Ulrich Drepper <drepper@cygnus.com>, 1995.
+# serial 1
 
-# Check whether LC_MESSAGES is available in <locale.h>.
+dnl Usage:
+dnl AM_INIT_AUTOMAKE(package,version, [no-define])
 
-AC_DEFUN([AM_LC_MESSAGES],
-  [if test $ac_cv_header_locale_h = yes; then
-    AC_CACHE_CHECK([for LC_MESSAGES], am_cv_val_LC_MESSAGES,
-      [AC_TRY_LINK([#include <locale.h>], [return LC_MESSAGES],
-       am_cv_val_LC_MESSAGES=yes, am_cv_val_LC_MESSAGES=no)])
-    if test $am_cv_val_LC_MESSAGES = yes; then
-      AC_DEFINE(HAVE_LC_MESSAGES, 1,
-        [Define if your <locale.h> file defines LC_MESSAGES.])
-    fi
-  fi])
+AC_DEFUN([AM_INIT_AUTOMAKE],
+[AC_REQUIRE([AC_PROG_INSTALL])
+PACKAGE=[$1]
+AC_SUBST(PACKAGE)
+VERSION=[$2]
+AC_SUBST(VERSION)
+dnl test to see if srcdir already configured
+if test "`cd $srcdir && pwd`" != "`pwd`" && test -f $srcdir/config.status; then
+  AC_MSG_ERROR([source directory already configured; run "make distclean" there first])
+fi
+ifelse([$3],,
+AC_DEFINE_UNQUOTED(PACKAGE, "$PACKAGE", [Name of package])
+AC_DEFINE_UNQUOTED(VERSION, "$VERSION", [Version number of package]))
+AC_REQUIRE([AM_SANITY_CHECK])
+AC_REQUIRE([AC_ARG_PROGRAM])
+dnl FIXME This is truly gross.
+missing_dir=`cd $ac_aux_dir && pwd`
+AM_MISSING_PROG(ACLOCAL, aclocal, $missing_dir)
+AM_MISSING_PROG(AUTOCONF, autoconf, $missing_dir)
+AM_MISSING_PROG(AUTOMAKE, automake, $missing_dir)
+AM_MISSING_PROG(AUTOHEADER, autoheader, $missing_dir)
+AM_MISSING_PROG(MAKEINFO, makeinfo, $missing_dir)
+AC_REQUIRE([AC_PROG_MAKE_SET])])
+
+#
+# Check to make sure that the build environment is sane.
+#
+
+AC_DEFUN([AM_SANITY_CHECK],
+[AC_MSG_CHECKING([whether build environment is sane])
+# Just in case
+sleep 1
+echo timestamp > conftestfile
+# Do `set' in a subshell so we don't clobber the current shell's
+# arguments.  Must try -L first in case configure is actually a
+# symlink; some systems play weird games with the mod time of symlinks
+# (eg FreeBSD returns the mod time of the symlink's containing
+# directory).
+if (
+   set X `ls -Lt $srcdir/configure conftestfile 2> /dev/null`
+   if test "[$]*" = "X"; then
+      # -L didn't work.
+      set X `ls -t $srcdir/configure conftestfile`
+   fi
+   if test "[$]*" != "X $srcdir/configure conftestfile" \
+      && test "[$]*" != "X conftestfile $srcdir/configure"; then
+
+      # If neither matched, then we have a broken ls.  This can happen
+      # if, for instance, CONFIG_SHELL is bash and it inherits a
+      # broken ls alias from the environment.  This has actually
+      # happened.  Such a system could not be considered "sane".
+      AC_MSG_ERROR([ls -t appears to fail.  Make sure there is not a broken
+alias in your environment])
+   fi
+
+   test "[$]2" = conftestfile
+   )
+then
+   # Ok.
+   :
+else
+   AC_MSG_ERROR([newly created file is older than distributed files!
+Check your system clock])
+fi
+rm -f conftest*
+AC_MSG_RESULT(yes)])
+
+dnl AM_MISSING_PROG(NAME, PROGRAM, DIRECTORY)
+dnl The program must properly implement --version.
+AC_DEFUN([AM_MISSING_PROG],
+[AC_MSG_CHECKING(for working $2)
+# Run test in a subshell; some versions of sh will print an error if
+# an executable is not found, even if stderr is redirected.
+# Redirect stdin to placate older versions of autoconf.  Sigh.
+if ($2 --version) < /dev/null > /dev/null 2>&1; then
+   $1=$2
+   AC_MSG_RESULT(found)
+else
+   $1="$3/missing $2"
+   AC_MSG_RESULT(missing)
+fi
+AC_SUBST($1)])
 
 
 dnl AC_PROG_INTLTOOL([MINIMUM-VERSION])

@@ -44,14 +44,14 @@ intltoolize --copy -f --automake
 
 patch -p0 < intltool.patch
 
-autoheader
+autoconf
 aclocal -I . $ACLOCAL_FLAGS
+aclocal
 automake --add-missing $am_opt
 autoconf
-
 cd $THEDIR
 
 $srcdir/configure --enable-maintainer-mode "$@"
 
 echo 
-echo "Now type 'make' to compile redhat-config-services."
+echo "Now type 'make' to compile netconf."

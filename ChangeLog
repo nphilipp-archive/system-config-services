@@ -1,6 +1,7 @@
 2002-07-26  Daniel J Walsh  <dwalsh@redhat.com>
 
-	* /usr/local/CVS/redhat-config-services/ChangeLog: release 0.8.1
+	* /usr/local/CVS/redhat-config-services/autogen.sh, /usr/local/CVS/redhat-config-services/ChangeLog, /usr/local/CVS/redhat-config-services/config.status, /usr/local/CVS/redhat-config-services/Makefile.am:
+	release 0.8.1
 
 	* /usr/local/CVS/redhat-config-services/redhat-config-services.spec.in:
 	update changelog
