@@ -1,12 +1,12 @@
 # translation of ko.po to Korean
 # Michelle Kim <mkim@redhat.com>, 2002
-# Michelle J Kim <mkim@redhat.com>, 2003
+# Michelle J Kim <mkim@redhat.com>, 2003,2004
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
-"PO-Revision-Date: 2003-12-09 10:37+1000\n"
+"PO-Revision-Date: 2004-03-25 09:50+1000\n"
 "Last-Translator: Michelle J Kim <mkim@redhat.com>\n"
 "Language-Team:  <ko@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -84,9 +84,8 @@ msgid "Restart"
 msgstr "재시작"
 
 #: src/serviceconf.py:195
-#, fuzzy
 msgid "_Save"
-msgstr "저장"
+msgstr "저장(_S)"
 
 #: src/serviceconf.py:195
 msgid "Save"
@@ -94,12 +93,11 @@ msgstr "저장"
 
 #: src/serviceconf.py:200
 msgid "_Revert"
-msgstr ""
+msgstr "되돌아가기(_R)"
 
 #: src/serviceconf.py:200
-#, fuzzy
 msgid "Revert"
-msgstr "재시작"
+msgstr "되돌아가기"
 
 #. the textbox
 #. the statusbox
@@ -158,10 +156,17 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"시스템 서비스 설정 도구 VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 
 #: src/serviceconf.py:476
 msgid "About"
-msgstr ""
+msgstr "정보"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -363,9 +368,8 @@ msgid "_Help"
 msgstr "도움말(_H)"
 
 #: src/serviceconf.glade.h:28
-#, fuzzy
 msgid "_Quit"
-msgstr "종료"
+msgstr "종료(_Q)"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
@@ -620,3 +624,4 @@ msgstr "보기(_V)"
 
 #~ msgid "Exit"
 #~ msgstr "종료"
+
