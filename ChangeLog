@@ -1,4 +1,12 @@
+2002-08-01  dwalsh  <dwalsh@redhat.com>
+
+	* po/da.po: Update language
+
+	* po/bs.po: add bosnian
+
 2002-07-31  dwalsh  <dwalsh@redhat.com>
+
+	* ChangeLog: release 0.8.1
 
 	* redhat-config-services.spec.in: update changelog
 
