@@ -145,11 +145,6 @@ class Gui:
               "on_pmnStart_activate" : self.on_btnStart_clicked,
               "on_pmnStop_activate" : self.on_btnStop_clicked,
               "on_pmnRestart_activate" : self.on_btnRestart_clicked,
-              "on_btnStart_clicked" : self.on_btnStart_clicked,
-              "on_btnRestart_clicked" : self.on_btnRestart_clicked,
-              "on_btnStop_clicked" : self.on_btnStop_clicked,
-              "on_mnuAbout_activate" : self.on_mnuAbout_activate,
-              "on_mnuManual_activate" : self.on_mnuManual_activate,
               "on_edit_runlevel" : self.on_edit_runlevel,
               "on_optRL3_toggled" : self.on_optRL3_toggled,
               "on_optRL4_toggled" : self.on_optRL4_toggled,
@@ -178,18 +173,33 @@ class Gui:
         self.optRL4= self.xml.get_widget("optRL4")
         self.optRL5= self.xml.get_widget("optRL5")
 
-        # buttons
-        self.btnStart = self.xml.get_widget("btnStart")
-        self.btnRestart = self.xml.get_widget("btnRestart")
-        self.btnStop = self.xml.get_widget("btnStop")
-        self.btnSave = self.xml.get_widget("btnSave")
-        self.btnRevert = self.xml.get_widget("btnRevert")
-
         #toolbars
         self.tbrSave = self.xml.get_widget("tbrSave")
-        #self.tbrSave.set_style(GTK.TOOLBAR_ICONS)
-        #self.tbrSave.set_button_relief(GTK.RELIEF_NORMAL)
+
+        icon = gtk.Image()
+        icon.set_from_stock("gtk-go-forward", gtk.ICON_SIZE_BUTTON)
+        self.btnStart = self.tbrSave.append_item(_("Start"), _("Start"), None, icon, self.on_btnStart_clicked, None)
+
+        icon = gtk.Image()
+        icon.set_from_stock("gtk-stop", gtk.ICON_SIZE_BUTTON)
+        self.btnStop = self.tbrSave.append_item(_("Stop"), _("Stop"), None, icon, self.on_btnStop_clicked, None)
+
+        icon = gtk.Image()
+        icon.set_from_stock("gtk-refresh", gtk.ICON_SIZE_BUTTON)
+        self.btnRestart = self.tbrSave.append_item(_("Restart"), _("Restart"), None, icon, self.on_btnRestart_clicked, None)
+
+        self.tbrSave.insert_space(3)
+
+        icon = gtk.Image()
+        icon.set_from_stock("gtk-save", gtk.ICON_SIZE_BUTTON)
+        self.btnSave = self.tbrSave.append_item(_("_Save"), _("Save"), None, icon, self.on_mnuSave_clicked, None)
+        self.btnSave.get_children()[0].get_children()[1].set_use_underline(gtk.TRUE)
         
+        icon = gtk.Image()
+        icon.set_from_stock("gtk-revert-to-saved", gtk.ICON_SIZE_BUTTON)
+        self.btnRevert = self.tbrSave.append_item(_("_Revert"), _("Revert"), None, icon, self.on_mnuRevert_clicked, None)
+        self.btnRevert.get_children()[0].get_children()[1].set_use_underline(gtk.TRUE)        
+
         # the textbox
         self.txtDesc = self.xml.get_widget("txtDesc")
 	self.txtBuffer = gtk.TextBuffer(None)
@@ -571,11 +581,11 @@ class Gui:
             else:
                 self.on_mnuRescan_activate(None)
             
-    def on_btnStart_clicked(self,args):
+    def on_btnStart_clicked(self, *args):
         """calls get_service_action_results to start the selected initscript"""
         self.get_service_action_results(self.text_in_row, "start")
 
-    def on_btnStop_clicked(self,args):
+    def on_btnStop_clicked(self, *args):
         """calls get_service_action_results to stop the selected initscript"""
         self.get_service_action_results(self.text_in_row, "stop")
 
@@ -590,7 +600,7 @@ class Gui:
 #----------------------------------------------------------------------------
     def local_button_press_cb (self, clist, event):
         """checks to see if the third mouse button was clicked. If it was, then bring up the popup menu"""
-        row=clist.get_path_at_pos (event.x,event.y)[0][0]
+        row=clist.get_path_at_pos (int(event.x),int(event.y))[0][0]
         self.text_in_row = self.clstServices.get_text(int(row),1)
         self.current_selected = self.clstServices.get_text(int(row),1)
         self.set_text_buffer()
