@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2002-08-27 17:19-0400\n"
+"POT-Creation-Date: 2002-08-27 17:27-0400\n"
 "PO-Revision-Date: 2002-08-12 10:45+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Chinese (traditional) <i18n-list@redhat.com>\n"
@@ -101,12 +101,12 @@ msgstr "服務"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:245 src/serviceconf.py:345 src/serviceconf.py:354
-#: src/serviceconf.py:378
+#: src/serviceconf.py:246 src/serviceconf.py:346 src/serviceconf.py:355
+#: src/serviceconf.py:379
 msgid "Editing Runlevel: "
 msgstr "編輯執行等級: "
 
-#: src/serviceconf.py:360
+#: src/serviceconf.py:361
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -118,11 +118,11 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:390
+#: src/serviceconf.py:391
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 
-#: src/serviceconf.py:391
+#: src/serviceconf.py:392
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -149,7 +149,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:524
+#: src/serviceconf.py:525
 msgid "You must run redhat-config-services as root."
 msgstr "您必須是 root 才能執行 redhat-config-services。"
 
