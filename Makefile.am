@@ -43,6 +43,8 @@ install-data-hook:
 uninstall-local:
 	rm -f $(DESTDIR)$(sysconfdir)/pam.d/redhat-config-services
 	rm -f $(DESTDIR)$(prefix)/bin/redhat-config-services
+	rm -f $(DESTDIR)$(datadir)/pixmaps/serviceconf.xpm
+	ln -f $(DESTDIR)$(prefix)/bin/serviceconf
 
 changelog:
 	rcs2log | sed -e 's|/usr/local/CVS/redhat-config-network/||g' \
