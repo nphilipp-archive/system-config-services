@@ -61,7 +61,7 @@ msgstr ""
 #: src/serviceconf.py:62
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "Ertu viss um að þú viljir eyða %s?"
 
 #. make sure threading is disabled
 #. map the event signals to specific methods
@@ -237,21 +237,19 @@ msgstr " tókst"
 
 #: src/serviceconf.glade.h:1
 msgid "*"
-msgstr ""
+msgstr "*"
 
 #: src/serviceconf.glade.h:2
-#, fuzzy
 msgid "Add Service"
-msgstr "Þjónustur"
+msgstr "Bæta við þjónustu"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Núverandi keyrsluþrep:"
 
 #: src/serviceconf.glade.h:4
-#, fuzzy
 msgid "Delete Service"
-msgstr "S_öðva þjónustu"
+msgstr "Eyða þjónustu"
 
 #: src/serviceconf.glade.h:5
 msgid "Description"
@@ -306,9 +304,8 @@ msgid "Service Configuration"
 msgstr "Stillingar þjónustna"
 
 #: src/serviceconf.glade.h:18
-#, fuzzy
 msgid "Service Name: "
-msgstr "Þjónustur"
+msgstr "Heiti þjónustu: "
 
 #: src/serviceconf.glade.h:19
 msgid "Start"
@@ -376,4 +373,4 @@ msgstr "_Ræsa þjónustu"
 
 #: src/serviceconf.glade.h:35
 msgid "_View"
-msgstr ""
+msgstr "_Birta"
