@@ -89,15 +89,15 @@ class Gui:
         except ImportError:
             pass
         self.dirty=0
-
+        self.previous=None
         self.ServiceMethods = servicemethods.ServiceMethods()
 
         gtk.glade.bindtextdomain(domain)
         self.xml = gtk.glade.XML("/usr/share/redhat-config-services/serviceconf.glade", domain=domain)
         # map the event signals to specific methods
         self.xml.signal_autoconnect(
-            { "on_mainwin_delete_event" : self.quit,
-              "on_mainwin_hide" : self.quit,
+            {
+              'on_winMain_delete_event' : self.quit,
               "on_mnuRescan_activate" : self.on_mnuRescan_activate,
               "on_mnuSave_activate" : self.on_mnuSave_clicked,
               "on_mnuRevert_activate" : self.on_mnuRevert_clicked,
@@ -113,17 +113,16 @@ class Gui:
               "on_btnStop_clicked" : self.on_btnStop_clicked,
               "on_mnuAbout_activate" : self.on_mnuAbout_activate,
               "on_mnuManual_activate" : self.on_mnuManual_activate,
-              "on_optRL3_activate" : self.on_optRL3_activate,
-              "on_optRL4_activate" : self.on_optRL4_activate,
-              "on_optRL5_activate" : self.on_optRL5_activate ,
+              "on_edit_runlevel" : self.on_edit_runlevel,
+              "on_optRL3_toggled" : self.on_optRL3_toggled,
+              "on_optRL4_toggled" : self.on_optRL4_toggled,
+              "on_optRL5_toggled" : self.on_optRL5_toggled ,
               "on_pmnStart_activate" : self.on_btnStart_clicked,
               "on_pmnStop_activate" : self.on_btnStop_clicked,
               "on_pmnRestart_activate" : self.on_btnRestart_clicked } )
 
         # main window
         self.winMain = self.xml.get_widget("winMain")
-        self.winMain.connect("delete-event", self.quit)
-        self.winMain.connect("hide", self.quit)
 
         # menu items
         self.mnuRescan = self.xml.get_widget("mnuRescan")
@@ -138,6 +137,10 @@ class Gui:
         self.optRL4 = self.xml.get_widget("optRL4")
         self.optRL5 = self.xml.get_widget("optRL5")
         
+        self.optRL3= self.xml.get_widget("optRL3")
+        self.optRL4= self.xml.get_widget("optRL4")
+        self.optRL5= self.xml.get_widget("optRL5")
+
         # buttons
         self.btnStart = self.xml.get_widget("btnStart")
         self.btnRestart = self.xml.get_widget("btnRestart")
@@ -340,46 +343,73 @@ class Gui:
 #----------------------------------------------------------------------------
 # Methods pertaining to the "Edit Runlevel" menu items 
 #----------------------------------------------------------------------------
-    def on_optRL3_activate(self, None):
+    def on_optRL3_toggled(self, button):
         """calls  populateList() to repopulate the checklist for runlevel 3"""
-        self.check_dirty()
+        if self.previous==button:
+            return
+        if button.get_active() != gtk.TRUE:
+            self.previous=button
+            return
+        if self.check_dirty() == gtk.RESPONSE_CANCEL:
+            self.previous.set_active(1)
+            return gtk.TRUE
         self.editing_runlevel = "3"
         self.lblEditing.set_text(_("Editing Runlevel: ") + self.editing_runlevel)
         self.populateList()
 
 
 
-    def on_optRL4_activate(self, None):
+    def on_optRL4_toggled(self, button):
         """calls populateList() to repopulate the checklist for runlevel 4"""
-        self.check_dirty()
+        if self.previous==button:
+            return
+        if button.get_active() != gtk.TRUE:
+            self.previous=button
+            return
+
+        if self.check_dirty() == gtk.RESPONSE_CANCEL:
+            self.previous.set_active(1)
+            return gtk.TRUE
         self.editing_runlevel = "4"
         self.lblEditing.set_text(_("Editing Runlevel: ") + self.editing_runlevel)
         self.populateList()
 
+    def on_edit_runlevel(self, button):
+        self.optRL3.set_sensitive(not self.dirty)
+        self.optRL4.set_sensitive(not self.dirty)
+        self.optRL5.set_sensitive(not self.dirty)
+        
+    def on_optRL5_toggled(self, button):
+        """calls populateList() to repopulate the checklist for runlevel 5"""
+        if self.previous==button:
+            return
+        if button.get_active() != gtk.TRUE:
+            self.previous=button
+            return
+        if self.check_dirty() == gtk.RESPONSE_CANCEL:
+            self.previous.set_active(1)
+            return gtk.TRUE
+        self.editing_runlevel = "5"
+        self.lblEditing.set_text(_("Editing Runlevel: ") + self.editing_runlevel)
+        self.populateList()
+
     def check_dirty(self):
+        rc=gtk.RESPONSE_YES
         """Check to see if the user has any unsaved changes."""
         if self.dirty:
-            message=_("""You have made changes to the current runlevel.\nDo you want to save the changes?""")
-            dlg = gtk.MessageDialog(self.winMain, 0, gtk.MESSAGE_INFO,
-                                    gtk.BUTTONS_YES_NO,
-                                    message)
-            dlg.show_all()
+            dlg = self.xml.get_widget ("saveDialog")
             rc = dlg.run()
-            dlg.destroy()
+            dlg.hide()
+            
             if rc==gtk.RESPONSE_YES:
                 try:
                     self.on_mnuSave_clicked(None)
                 except IOError:
                     pass
-            self.dirty=0
-
-    def on_optRL5_activate(self, None):
-        """calls populateList() to repopulate the checklist for runlevel 5"""
-        self.check_dirty()
-        self.editing_runlevel = "5"
-        self.lblEditing.set_text(_("Editing Runlevel: ") + self.editing_runlevel)
-        self.populateList()
-
+            if rc!=gtk.RESPONSE_CANCEL:
+                self.dirty=0
+        return rc
+    
 
 
 #----------------------------------------------------------------------------
@@ -427,10 +457,10 @@ http://bugzilla.redhat.com"""),
         self.save_revert_sensitive(0)
 
     def quit(self,arg1=None,arg2=None):
-
         global quiting
+        if self.check_dirty() == gtk.RESPONSE_CANCEL:
+            return  gtk.TRUE
         quiting=1
-        self.check_dirty()
         gtk.mainquit()
         
     def on_mnuRevert_clicked(self, None):

@@ -1,5 +1,5 @@
 AC_INIT(redhat-config-services.spec.in)
-AM_INIT_AUTOMAKE(redhat-config-services, 0.8.4)
+AM_INIT_AUTOMAKE(redhat-config-services, 0.8.5)
 
 PYTHON=python2.2
 AC_SUBST(PYTHON)
