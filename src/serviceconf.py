@@ -33,6 +33,15 @@ import checklist
 import servicemethods
 from translate import _, N_, cat
 
+##
+## I18N
+## 
+import gettext
+gettext.bindtextdomain (domain, "/usr/share/locale")
+gettext.textdomain (domain)
+_=gettext.gettext
+
+
 VERSION = "0.8.1"
 
 def find_browser():
