@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
 "POT-Creation-Date: 2003-12-04 17:18-0500\n"
-"PO-Revision-Date: 2003-12-05 09:59+1000\n"
+"PO-Revision-Date: 2003-12-09 10:44+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Traditional Chinese <i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -137,7 +137,7 @@ msgstr ""
 
 #: src/serviceconf.py:451
 msgid "translator_credits"
-msgstr "翻譯"
+msgstr "翻譯者: 吳宏彬 (hpwu@redhat.com)"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
