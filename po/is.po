@@ -135,9 +135,8 @@ msgid ""
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
-"Þessum hugbúnaði má dreyfa samkvæmt skilmálum GPL.\n"
-"Vinsamlegast tilkynntu um þá galla í þessu forriti sem þú finnur á Red Hat "
-"villuvefnum:\n"
+"Þessum hugbúnaði má dreifa samkvæmt skilmálum GPL leyfisins.\n"
+"Vinsamlegast tilkynnið villur á villuvef Red Hat:\n"
 "http://bugzilla.redhat.com"
 
 #. ----------------------------------------------------------------------------
