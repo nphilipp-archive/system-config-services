@@ -132,7 +132,6 @@ class ServiceMethods:
         """returns the current runlevel, uses /sbin/runlevel"""
         runlevel_output = getstatusoutput("/sbin/runlevel", self.uicallback)
         # This is the current runlevel
-        print runlevel_output
         return runlevel_output[-1][2]
 
 
