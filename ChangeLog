@@ -1,3 +1,29 @@
+2004-10-11  nphilipp  <nphilipp@redhat.com>
+
+	* aclocal.m4, configure.in, intltool-extract.in, intltool-merge.in, intltool-update.in:
+	up version
+
+	* Makefile.am: don't force tagging
+
+	* src/nonblockingreader.py, src/serviceconf.py, src/servicemethods.py, system-config-services.spec.in:
+	really update UI when reading from pipes (#120579, #135215)
+
+2004-10-10  nphilipp  <nphilipp@redhat.com>
+
+	* src/serviceconf.py: fix typo (#135215, Eamonn Sullivan)
+
+2004-10-08  nphilipp  <nphilipp@redhat.com>
+
+	* ChangeLog, po/system-config-services.pot: release 0.8.11
+
+	* aclocal.m4, intltool-extract.in, intltool-merge.in, intltool-update.in, mkinstalldirs:
+	pick up autofoo related script updates
+
+	* configure.in: bump version
+
+	* src/serviceconf.py, src/servicemethods.py, system-config-services.spec.in:
+	fix gtk.main*() related DeprecationWarnings (#134978)
+
 2004-10-08  nphilipp  <nphilipp@redhat.com>
 
 	* aclocal.m4, intltool-extract.in, intltool-merge.in, intltool-update.in, mkinstalldirs:
