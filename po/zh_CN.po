@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf1.1\n"
-"POT-Creation-Date: 2002-12-06 11:52-0500\n"
+"POT-Creation-Date: 2002-12-06 11:57-0500\n"
 "PO-Revision-Date: 2002-10-03 10:49GMT+10:00\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"

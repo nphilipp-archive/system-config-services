@@ -28,7 +28,7 @@ except RuntimeError,e:
     print "Unable to initialize graphical environment. Most likely cause of failure"
     print "is that the tool was not run using a graphical environment. Please either"
     print "start your graphical user interface or set your DISPLAY variable."
-    print "Caught exception %s" % e
+    print "Caught exception: %s" % e
     sys.exit(-1)
 
 import gnome

@@ -1,4 +1,4 @@
-# $Id: cs.po,v 1.28 2002/12/06 16:45:18 dwalsh Exp $
+# $Id: cs.po,v 1.29 2002/12/06 16:50:40 dwalsh Exp $
 #
 # Czech translation for serviceconf
 # Copyright (C) 2001 Free Software Foundation, Inc.
@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf 1.0\n"
-"POT-Creation-Date: 2002-12-06 11:52-0500\n"
+"POT-Creation-Date: 2002-12-06 11:57-0500\n"
 "PO-Revision-Date: 2002-10-10 19:52+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
