@@ -190,39 +190,32 @@ class Gui:
         #toolbars
         self.tbrSave = self.xml.get_widget("tbrSave")
 
-        icon = gtk.Image()
-        icon.set_from_stock("gtk-go-forward", gtk.ICON_SIZE_BUTTON)
-        self.btnStart = self.tbrSave.append_item(_("Start"), _("Start"), None, icon, self.on_btnStart_clicked, None)
+        self.btnStart = self.xml.get_widget ('btnStart')
+        self.xml.signal_connect ('on_btnStart_clicked', self.on_btnStart_clicked)
 
-        icon = gtk.Image()
-        icon.set_from_stock("gtk-stop", gtk.ICON_SIZE_BUTTON)
-        self.btnStop = self.tbrSave.append_item(_("Stop"), _("Stop"), None, icon, self.on_btnStop_clicked, None)
+        self.btnStop = self.xml.get_widget ('btnStop')
+        self.xml.signal_connect ('on_btnStop_clicked', self.on_btnStop_clicked)
 
-        icon = gtk.Image()
-        icon.set_from_stock("gtk-refresh", gtk.ICON_SIZE_BUTTON)
-        self.btnRestart = self.tbrSave.append_item(_("Restart"), _("Restart"), None, icon, self.on_btnRestart_clicked, None)
+        self.btnRestart = self.xml.get_widget ('btnRestart')
+        self.xml.signal_connect ('on_btnRestart_clicked', self.on_btnRestart_clicked)
 
-        self.tbrSave.insert_space(3)
-
-        icon = gtk.Image()
-        icon.set_from_stock("gtk-save", gtk.ICON_SIZE_BUTTON)
-        self.btnSave = self.tbrSave.append_item(_("_Save"), _("Save"), None, icon, self.on_mnuSave_clicked, None)
-        self.btnSave.get_children()[0].get_children()[1].set_use_underline(gtk.TRUE)
+        self.btnSave = self.xml.get_widget ('btnSave')
+        self.xml.signal_connect ('on_btnSave_clicked', self.on_mnuSave_clicked)
+        self.btnSave.get_children ()[0].get_children ()[0].get_children ()[1].set_use_underline(gtk.TRUE)
         
-        icon = gtk.Image()
-        icon.set_from_stock("gtk-revert-to-saved", gtk.ICON_SIZE_BUTTON)
-        self.btnRevert = self.tbrSave.append_item(_("_Revert"), _("Revert"), None, icon, self.on_mnuRevert_clicked, None)
-        self.btnRevert.get_children()[0].get_children()[1].set_use_underline(gtk.TRUE)        
+        self.btnRevert = self.xml.get_widget ('btnRevert')
+        self.xml.signal_connect ('on_btnRevert_clicked', self.on_mnuRevert_clicked)
+        self.btnRevert.get_children ()[0].get_children ()[0].get_children ()[1].set_use_underline(gtk.TRUE)        
 
         # the textbox
         self.txtDesc = self.xml.get_widget("txtDesc")
-	self.txtBuffer = gtk.TextBuffer(None)
-	self.txtDesc.set_buffer(self.txtBuffer)
+        self.txtBuffer = gtk.TextBuffer(None)
+        self.txtDesc.set_buffer(self.txtBuffer)
 
         # the statusbox
         self.txtStatus = self.xml.get_widget("StatusView")
-	self.txtStatusBuffer = gtk.TextBuffer(None)
-	self.txtStatus.set_buffer(self.txtStatusBuffer)
+        self.txtStatusBuffer = gtk.TextBuffer(None)
+        self.txtStatus.set_buffer(self.txtStatusBuffer)
 
         self.lblRunlevel = self.xml.get_widget("lblRunlevel")
         self.lblEditing = self.xml.get_widget("lblEditing")
@@ -358,8 +351,8 @@ class Gui:
         # set the text in txtDesc
         if self.ServiceMethods.dict_services.has_key(self.text_in_row):
             x = self.ServiceMethods.dict_services[self.text_in_row]
-	    self.txtBuffer.set_text(string.strip(x[2]))
-	# if an xinetd service is selected, disable these,
+        self.txtBuffer.set_text(string.strip(x[2]))
+        # if an xinetd service is selected, disable these,
         # they'll do nothing
         if self.ServiceMethods.dict_services[self.text_in_row][1] == 1:
             self.action_widgets_sensitive(0)
@@ -635,14 +628,14 @@ class Gui:
 
         if int(results[0]) != 0:
             dlg = gtk.MessageDialog(self.winMain, 0, gtk.MESSAGE_ERROR,
-	    	gtk.BUTTONS_OK, results[1])
+            gtk.BUTTONS_OK, results[1])
         else:
             dlg = gtk.MessageDialog(self.winMain, 0, gtk.MESSAGE_INFO,
-	    	gtk.BUTTONS_OK, results[1])
+            gtk.BUTTONS_OK, results[1])
         dlg.set_position(gtk.WIN_POS_CENTER_ON_PARENT)
-	dlg.show_all()
-	rc = dlg.run()
-	dlg.destroy()
+        dlg.show_all()
+        rc = dlg.run()
+        dlg.destroy()
         self.set_text_status()
         self.winMain.window.set_cursor(gtk.gdk.Cursor(gtk.gdk.LEFT_PTR))
 
