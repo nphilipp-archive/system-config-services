@@ -48,7 +48,7 @@ rm -rf %{buildroot}
 %config %{_sysconfdir}/pam.d/serviceconf
 
 %changelog
-* Thu Oct 34 2002 Dan Walsh <dwalsh@redhat.com> 0.8.3-3
+* Thu Oct 24 2002 Dan Walsh <dwalsh@redhat.com> 0.8.3-3
 - Fix internal handling of version number.
 
 * Thu Oct 10 2002 Dan Walsh <dwalsh@redhat.com> 0.8.3-2

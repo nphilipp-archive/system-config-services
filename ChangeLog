@@ -1,4 +1,23 @@
+2002-10-24  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po:
+	release 0.8.3
+
+	* redhat-config-services.spec.in, src/Makefile.am, src/serviceconf.py:
+	fix internal version number
+
+2002-10-14  morais  <morais@redhat.com>
+
+	* po/pt.po: *** empty log message ***
+
+2002-10-10  mitr  <mitr@redhat.com>
+
+	* po/cs.po: Update Czech translation
+
 2002-10-10  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po:
+	release 0.8.3
 
 	* redhat-config-services.spec.in, src/serviceconf.glade, src/serviceconf.py:
 	Update to match GNOME standards
