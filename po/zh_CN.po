@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf1.1\n"
 "POT-Creation-Date: 2002-10-02 11:21-0400\n"
-"PO-Revision-Date: 2002-09-04 09:39GMT+10:00\n"
+"PO-Revision-Date: 2002-10-03 10:49GMT+10:00\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -109,11 +109,11 @@ msgstr "编辑运行级别："
 #. set the text in StatusView
 #: src/serviceconf.py:289
 msgid "Unknown"
-msgstr ""
+msgstr "未知"
 
 #: src/serviceconf.py:292
 msgid "xinetd service"
-msgstr ""
+msgstr "xinetd 服务"
 
 #: src/serviceconf.py:360
 msgid ""
@@ -250,7 +250,7 @@ msgstr "目前活跃的运行级别："
 
 #: src/serviceconf.glade.h:3
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
@@ -290,7 +290,7 @@ msgstr "运行级别 _5"
 
 #: src/serviceconf.glade.h:13
 msgid "S_top Service"
-msgstr "停止服务(_t)"
+msgstr "停止服务(_T)"
 
 #: src/serviceconf.glade.h:14
 msgid "Save"
@@ -313,9 +313,8 @@ msgid "Start the selected service"
 msgstr "启动选定的服务"
 
 #: src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "开始"
+msgstr "状态"
 
 #: src/serviceconf.glade.h:20
 msgid "Stop"
@@ -566,3 +565,4 @@ msgstr "开始服务(_S)"
 
 #~ msgid "Exit"
 #~ msgstr "退出"
+
