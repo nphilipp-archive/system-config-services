@@ -105,7 +105,7 @@ msgstr "Przywróć"
 #. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:248
 msgid "Currently Running in Runlevel: "
-msgstr "Aktualny poziom uruchamiania:"
+msgstr "Aktualny poziom uruchamiania: "
 
 #: ../src/serviceconf.py:261
 msgid "Services"
@@ -115,7 +115,7 @@ msgstr "Usługi"
 #: ../src/serviceconf.py:464 ../src/serviceconf.py:486
 #: ../src/serviceconf.py:508
 msgid "Editing Runlevel: "
-msgstr "Edycja poziomu uruchamiania:"
+msgstr "Edycja poziomu uruchamiania: "
 
 #: ../src/serviceconf.py:379
 msgid "Unknown"
@@ -178,11 +178,11 @@ msgstr ""
 #  if it's toggled off
 #: ../src/servicemethods.py:319
 msgid "xinetd failed to reload for "
-msgstr "xinetd nie przeładował się"
+msgstr "xinetd nie przeładował się "
 
 #: ../src/servicemethods.py:320
 msgid ". The error was: "
-msgstr ". Błąd:"
+msgstr ". Błąd: "
 
 #: ../src/servicemethods.py:322
 #, python-format
@@ -213,7 +213,7 @@ msgstr "Dodaj usługę"
 
 #: ../src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
-msgstr "Aktywny poziom uruchamiania:"
+msgstr "Aktualny poziom uruchamiania: "
 
 #: ../src/serviceconf.glade.h:4
 msgid "Delete Service"
