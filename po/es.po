@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "POT-Creation-Date: 2003-12-11 07:34-0500\n"
-"PO-Revision-Date: 2003-12-01 22:38+0100\n"
+"PO-Revision-Date: 2003-12-13 18:49+0100\n"
 "Last-Translator: Luis Mayoral <mayoral@linuxadicto.org>\n"
 "Language-Team: Español <es@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -138,7 +138,7 @@ msgstr "Desconocido"
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:446
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Copyright (c) 2001 Red Hat, Inc. Todos los derechos reservados."
+msgstr "Copyright (c) 2002 Red Hat, Inc. Todos los derechos reservados."
 
 # ../serviceconf.py:312
 # ../serviceconf.py:312
@@ -149,14 +149,14 @@ msgid ""
 "http://bugzilla.redhat.com"
 msgstr ""
 "Este software puede ser redistribuido libremente bajo los términos GPL.\n"
-"                                  \n"
-"Por favor, informe de todos los fallos que encuentre al sistema de "
-"seguimiento\n"
-"de fallos de Red Hat: http://bugzilla.redhat.com"
+"Por favor, informe de todos los fallos que encuentre al sistema de seguimiento de fallos de Red Hat:\n"
+"http://bugzilla.redhat.com"
 
 #: src/serviceconf.py:451
 msgid "translator_credits"
-msgstr "_traductores"
+msgstr ""
+"Yelitza Louzé <ylouze@redhat.com>\n"
+"Luis Mayoral <mayoral@linuxadcito.org>"
 
 # ../serviceconf.py:432
 # ../serviceconf.py:432
@@ -178,9 +178,8 @@ msgstr "_traductores"
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:595
-#, fuzzy
 msgid "You must run system-config-services as root."
-msgstr "Debe ejecutar redhat-config-services como root."
+msgstr "Debe ejecutar system-config-services como root."
 
 # ../servicemethods.py:261
 # ../servicemethods.py:261
@@ -478,3 +477,4 @@ msgstr "_Vista"
 # serviceconf.gladestrings:17 serviceconf.gladestrings:39
 #~ msgid "Save the changes you have made"
 #~ msgstr "Guardar los cambios que ha hecho"
+
