@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: service conf\n"
-"POT-Creation-Date: 2003-01-09 10:22-0500\n"
+"POT-Creation-Date: 2003-01-14 11:21-0500\n"
 "PO-Revision-Date: 2003-01-10 19:48+1000\n"
 "Last-Translator: Jean-Paul AUBRY <jpaubry@redhat.com>\n"
 "Language-Team: French <fr@li.org>\n"
@@ -394,4 +394,3 @@ msgstr "_Démarrer le service"
 
 #~ msgid "Exit"
 #~ msgstr "Fermer"
-

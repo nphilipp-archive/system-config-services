@@ -1,4 +1,72 @@
+2003-01-14  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* redhat-config-services.spec.in: update docs
+
+2003-01-14  tfox  <tfox@redhat.com>
+
+	* docs/html/figs/serviceconf.png: with new gtk2 bluecurve icons
+
+2003-01-12  olympia  <olympia@redhat.com>
+
+	* po/it.po: minor modifications
+
+2003-01-12  keld  <keld@redhat.com>
+
+	* po/da.po: Updates
+	redhat-config-samba/po/da.po redhat-config-services/po/da.po
+	redhat-config-soundcard/po/da.po redhat-config-users/po/da.po
+	redhat-config-xfree/po/da.po
+
+2003-01-11  mitr  <mitr@redhat.com>
+
+	* po/cs.po: Update Czech translation
+
+2003-01-10  morais  <morais@redhat.com>
+
+	* po/pt.po: update
+
+2003-01-10  ylouze  <ylouze@redhat.com>
+
+	* po/es.po: spanish translation
+
+2003-01-10  nrichter  <nrichter@redhat.com>
+
+	* po/de.po: updated
+
+2003-01-09  jpaubry  <jpaubry@redhat.com>
+
+	* po/fr.po: updated
+
+2003-01-09  mkim  <mkim@redhat.com>
+
+	* po/ko.po: updated translation
+
+2003-01-09  hpwu  <hpwu@redhat.com>
+
+	* po/zh_TW.po: Updated.
+
+2003-01-09  khashida  <khashida@redhat.com>
+
+	* po/ja.po: update
+
+2003-01-09  menthos  <menthos@redhat.com>
+
+	* po/sv.po: 2003-01-09  Christian Rose  <menthos@menthos.com>
+
+		* sv.po: Updated Swedish translation.
+
+2003-01-09  sarahs  <sarahs@redhat.com>
+
+	* po/zh_CN.po: updated merged po
+
+2003-01-09  mitr  <mitr@redhat.com>
+
+	* po/cs.po: Update Czech translation
+
 2003-01-09  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* po/zh_TW.po, ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po:
+	release 0.8.3
 
 	* redhat-config-services.desktop.in, redhat-config-services.spec.in, src/serviceconf.glade:
 	Add accellerators

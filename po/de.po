@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf 7.2\n"
-"POT-Creation-Date: 2003-01-09 10:22-0500\n"
+"POT-Creation-Date: 2003-01-14 11:21-0500\n"
 "PO-Revision-Date: 2003-01-10 12:22+1000\n"
 "Last-Translator: Nadine Richter <nrichter@redhat.com>\n"
 "Language-Team: German <de@li.org>\n"
@@ -392,4 +392,3 @@ msgstr "_Starte Dienst"
 
 #~ msgid "Exit"
 #~ msgstr "Beenden"
-
