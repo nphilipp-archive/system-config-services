@@ -218,9 +218,12 @@ class ServiceMethods:
                 if re.match('\A\#', line):
                     initscript.append(line)
                     line = f.readline()
-                else:
-                    f.close()
-                    break
+                    continue
+                if line.strip()=="":
+                    line = f.readline()
+                    continue
+                f.close()
+                break
                 
             runlevels = dict[servicename]
             for i in range(0, len(runlevels)):
