@@ -2,13 +2,17 @@
 # Copyright (C) 2002 Taco Witte
 # This file is distributed under the same license as the redhat-config-services package.
 # Taco Witte <T.C.Witte@phys.uu.nl>, 2002.
+# Tino Meinen <a.t.meinen@chello.nl>, 2003.
+# --
+# Misschien is 'voorzieningen' toch wat te belegen/vergezocht
+# en moeten we het gewoon bij services houden.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
 "POT-Creation-Date: 2003-10-06 10:40-0400\n"
-"PO-Revision-Date: 2002-08-26 20:02+0200\n"
-"Last-Translator: Taco Witte <T.C.Witte@phys.uu.nl>\n"
+"PO-Revision-Date: 2003-10-22 19:02+0200\n"
+"Last-Translator: Tino Meinen <a.t.meinen@chello.nl>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -62,7 +66,7 @@ msgstr ""
 #: src/serviceconf.py:62
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "Weet u zeker dat u %s wilt verwijderen?"
 
 #. make sure threading is disabled
 #. map the event signals to specific methods
@@ -113,7 +117,7 @@ msgstr "Runlevel dat wordt bewerkt: "
 #. set the text in StatusView
 #: src/serviceconf.py:318
 msgid "Unknown"
-msgstr ""
+msgstr "Onbekend"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -136,6 +140,8 @@ msgstr ""
 #: src/serviceconf.py:451
 msgid "translator_credits"
 msgstr ""
+"Taco Witte <T.C.Witte@phys.uu.nl>\n"
+"Tino Meinen <a.t.meinen@chello.nl>"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -192,15 +198,11 @@ msgstr "U moet redhat-config-services als root starten."
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
 #: src/servicemethods.py:286
-#, fuzzy
 msgid ""
 "\n"
 "\n"
 "xinetd is required for this service."
-msgstr ""
-"\n"
-"\n"
-"U moet xinetd aanzetten om deze voorziening te gebruiken."
+msgstr "\n\nVoor deze dienst is xinetd benodigd."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -233,35 +235,34 @@ msgstr "xinetd moet worden aangezet om %s te kunnen starten"
 msgid "%s failed. The error was: %s"
 msgstr "%s mislukt. De fout was: %s"
 
+# gelukt
 #: src/servicemethods.py:345
 msgid " successful"
 msgstr " succesvol"
 
 #: src/serviceconf.glade.h:1
 msgid "*"
-msgstr ""
+msgstr "*"
 
 #: src/serviceconf.glade.h:2
-#, fuzzy
 msgid "Add Service"
-msgstr "Voorzieningen"
+msgstr "Voorziening toevoegen"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Huidige actieve runlevel: "
 
 #: src/serviceconf.glade.h:4
-#, fuzzy
 msgid "Delete Service"
-msgstr "Voorziening s_toppen"
+msgstr "Voorziening verwijderen"
 
 #: src/serviceconf.glade.h:5
 msgid "Description"
-msgstr ""
+msgstr "Beschrijving"
 
 #: src/serviceconf.glade.h:6
 msgid "Don't Save"
-msgstr ""
+msgstr "Niet opslaan"
 
 #: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
@@ -280,9 +281,8 @@ msgid "Restart the selected service"
 msgstr "De geselecteerde voorziening opnieuw starten"
 
 #: src/serviceconf.glade.h:11
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "_Terugkeren naar laatst opgeslagen"
+msgstr "_Terugkeren naar laatst opgeslan"
 
 #: src/serviceconf.glade.h:12
 msgid "Runlevel _3"
@@ -302,16 +302,15 @@ msgstr "Voorziening s_toppen"
 
 #: src/serviceconf.glade.h:16
 msgid "Save Dialog"
-msgstr ""
+msgstr "Opslaan dialoogvenster"
 
 #: src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "Voorziening configuratie"
 
 #: src/serviceconf.glade.h:18
-#, fuzzy
 msgid "Service Name: "
-msgstr "Voorzieningen"
+msgstr "Voorzieningnaam: "
 
 #: src/serviceconf.glade.h:19
 msgid "Start"
@@ -322,9 +321,8 @@ msgid "Start the selected service"
 msgstr "De geselecteerde voorziening starten"
 
 #: src/serviceconf.glade.h:21
-#, fuzzy
 msgid "Status"
-msgstr "Starten"
+msgstr "Status"
 
 #: src/serviceconf.glade.h:22
 msgid "Stop"
@@ -380,19 +378,4 @@ msgstr "Voorziening _starten"
 
 #: src/serviceconf.glade.h:35
 msgid "_View"
-msgstr ""
-
-#~ msgid "Cancel"
-#~ msgstr "Annuleren"
-
-#~ msgid "Quit"
-#~ msgstr "Afsluiten"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Terugkeren naar laatst opgeslagen wijziging"
-
-#~ msgid "Save"
-#~ msgstr "Opslaan"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "De veranderingen die u heeft gemaakt opslaan"
+msgstr "Beel_d"
