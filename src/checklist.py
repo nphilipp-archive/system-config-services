@@ -44,20 +44,20 @@ class CheckList (gtk.TreeView):
             column = gtk.TreeViewColumn(title % i, self.checkboxrenderer[i], active=i)
             column.set_sizing(gtk.TREE_VIEW_COLUMN_FIXED)
             column.set_fixed_width(40)
-            column.set_clickable(gtk.TRUE)
+            column.set_clickable(True)
             self.checkboxrenderer[i].connect ("toggled", self.toggled_item, i)
             self.append_column(column)
             
 
         renderer = gtk.CellRendererText()
         column = gtk.TreeViewColumn('Text', renderer, text=7)
-        column.set_clickable(gtk.FALSE)
+        column.set_clickable(False)
         self.append_column(column)
 
-        self.set_rules_hint(gtk.FALSE)
-        self.set_headers_visible(gtk.FALSE)
+        self.set_rules_hint(False)
+        self.set_headers_visible(False)
         self.columns_autosize()
-        self.set_enable_search(gtk.FALSE)
+        self.set_enable_search(False)
 
         # keep track of the number of rows we have so we can
         # iterate over them all
@@ -183,9 +183,9 @@ class CheckList (gtk.TreeView):
         "Set the column visibility"
 
         if visible != 0:
-            gtk.TreeView.set_headers_visible(self, gtk.TRUE)
+            gtk.TreeView.set_headers_visible(self, True)
         else:
-            gtk.TreeView.set_headers_visible(self, gtk.FALSE)
+            gtk.TreeView.set_headers_visible(self, False)
 
     def set_column_sort_id(self, column, id):
         "Set the sort id of column to id"

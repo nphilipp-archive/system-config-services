@@ -201,11 +201,11 @@ class Gui:
 
         self.btnSave = self.xml.get_widget ('btnSave')
         self.xml.signal_connect ('on_btnSave_clicked', self.on_mnuSave_clicked)
-        self.btnSave.get_children ()[0].get_children ()[0].get_children ()[1].set_use_underline(gtk.TRUE)
+        self.btnSave.get_children ()[0].get_children ()[0].get_children ()[1].set_use_underline(True)
         
         self.btnRevert = self.xml.get_widget ('btnRevert')
         self.xml.signal_connect ('on_btnRevert_clicked', self.on_mnuRevert_clicked)
-        self.btnRevert.get_children ()[0].get_children ()[0].get_children ()[1].set_use_underline(gtk.TRUE)        
+        self.btnRevert.get_children ()[0].get_children ()[0].get_children ()[1].set_use_underline(True)        
 
         # the textbox
         self.txtDesc = self.xml.get_widget("txtDesc")
@@ -402,12 +402,12 @@ class Gui:
     def set_editing_runlevels (self, button, title, runlevels):
         if self.previous==button:
             return
-        if button.get_active() != gtk.TRUE:
+        if button.get_active() != True:
             self.previous=button
             return
         if self.check_dirty() == gtk.RESPONSE_CANCEL:
             self.previous.set_active(1)
-            return gtk.TRUE
+            return True
 
         self.editing_runlevel = title
         self.lblEditing.set_text(_("Editing Runlevel: ") + title)
@@ -481,7 +481,7 @@ class Gui:
         dlg.set_default_size(100, 100)
         dlg.set_position (gtk.WIN_POS_CENTER)
         dlg.set_border_width(2)
-        dlg.set_modal(gtk.TRUE)
+        dlg.set_modal(True)
         dlg.set_transient_for(self.winMain)
 
         iconPixbuf = None
@@ -539,7 +539,7 @@ class Gui:
     def quit(self,arg1=None,arg2=None):
         global quitting
         if self.check_dirty() == gtk.RESPONSE_CANCEL:
-            return  gtk.TRUE
+            return  True
         quitting=1
         if gtk.__dict__.has_key ("main_quit"):
             gtk.main_quit()
