@@ -24,7 +24,8 @@ import sys
 import gtk
 import gnome
 import gnome.ui
-gnome.program_init("redhat-config-services", "0.1")
+domain = "redhat-config-services"
+gnome.program_init(domain, "0.1")
 import gtk.glade
 import os
 import string
@@ -67,8 +68,8 @@ class Gui:
 
         self.ServiceMethods = servicemethods.ServiceMethods()
 
-        gtk.glade.bindtextdomain("redhat-config-service", "/usr/share/locale")
-        self.xml = gtk.glade.XML("/usr/share/redhat-config-services/serviceconf.glade", None, domain="serviceconf")
+        gtk.glade.bindtextdomain(domain)
+        self.xml = gtk.glade.XML("/usr/share/redhat-config-services/serviceconf.glade", domain=domain)
         # map the event signals to specific methods
         self.xml.signal_autoconnect(
             { "on_mainwin_delete_event" : self.quit,
