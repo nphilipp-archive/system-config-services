@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-27 09:35+0200\n"
+"POT-Creation-Date: 2004-10-20 13:01+0200\n"
 "PO-Revision-Date: 2004-09-13 12:36+0530\n"
 "Last-Translator: Jayaradha N <jaya@pune.redhat.com>\n"
 "Language-Team: Tamil <zhakanini@yahoogroups.com>\n"
@@ -23,58 +23,58 @@ msgstr ""
 msgid "Are you sure you want to delete the %s?"
 msgstr "%s ஐ நீக்க வேண்டுமா?"
 
-#: src/serviceconf.py:187 src/serviceconf.glade.h:18
+#: src/serviceconf.py:197 src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "துவக்கு"
 
-#: src/serviceconf.py:191 src/serviceconf.glade.h:20
+#: src/serviceconf.py:201 src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "நிறுத்து"
 
-#: src/serviceconf.py:195 src/serviceconf.glade.h:9
+#: src/serviceconf.py:205 src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "மீண்டும் துவக்கு"
 
-#: src/serviceconf.py:201
+#: src/serviceconf.py:211
 msgid "_Save"
 msgstr "(_S)சேமி"
 
-#: src/serviceconf.py:201
+#: src/serviceconf.py:211
 msgid "Save"
 msgstr "சேமி"
 
-#: src/serviceconf.py:206
+#: src/serviceconf.py:216
 msgid "_Revert"
 msgstr "(_R)பழைய நிலைக்கு செல்"
 
-#: src/serviceconf.py:206
+#: src/serviceconf.py:216
 msgid "Revert"
 msgstr "பழைய நிலைக்கு செல்"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:240
+#: src/serviceconf.py:250
 msgid "Currently Running in Runlevel: "
 msgstr "இப்போது இயக்க நிலையில் உள்ளது."
 
-#: src/serviceconf.py:251
+#: src/serviceconf.py:261
 msgid "Start at Boot"
 msgstr "துவங்கும் போது துவக்கு"
 
-#: src/serviceconf.py:252
+#: src/serviceconf.py:262
 msgid "Services"
 msgstr "சேவைகள்"
 
-#: src/serviceconf.py:307 src/serviceconf.py:413 src/serviceconf.py:430
-#: src/serviceconf.py:449
+#: src/serviceconf.py:320 src/serviceconf.py:426 src/serviceconf.py:443
+#: src/serviceconf.py:462
 msgid "Editing Runlevel: "
 msgstr "இயக்க நிலையில் திருத்தம்:"
 
-#: src/serviceconf.py:350
+#: src/serviceconf.py:363
 msgid "Unknown"
 msgstr "தெரியாத"
 
-#: src/serviceconf.py:478
+#: src/serviceconf.py:491
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -92,15 +92,15 @@ msgstr ""
 " ப்ரென்ட் ஃபாக்ஸ் <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:482
+#: src/serviceconf.py:495
 msgid "About"
 msgstr "அறிமுகம்"
 
-#: src/serviceconf.py:511
+#: src/serviceconf.py:524
 msgid "Help is not available."
 msgstr "உதவி கிடைக்கவில்லை"
 
-#: src/serviceconf.py:658
+#: src/serviceconf.py:677
 msgid "You must run system-config-services as root."
 msgstr "system-config-services ஐ ரூட்டில் இயக்க வேண்டும்"
 

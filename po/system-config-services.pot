@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-11 17:10+0200\n"
+"POT-Creation-Date: 2004-10-20 13:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,37 +98,37 @@ msgstr ""
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:290
+#: src/servicemethods.py:289
 msgid ""
 "\n"
 "\n"
 "xinetd is required for this service."
 msgstr ""
 
-#: src/servicemethods.py:336
+#: src/servicemethods.py:335
 msgid "xinetd failed to reload for "
 msgstr ""
 
-#: src/servicemethods.py:337
+#: src/servicemethods.py:336
 msgid ". The error was: "
 msgstr ""
 
-#: src/servicemethods.py:339
+#: src/servicemethods.py:338
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr ""
 
-#: src/servicemethods.py:342
+#: src/servicemethods.py:341
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr ""
 
-#: src/servicemethods.py:347
+#: src/servicemethods.py:346
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr ""
 
-#: src/servicemethods.py:349
+#: src/servicemethods.py:348
 msgid " successful"
 msgstr ""
 

@@ -1,14 +1,14 @@
 # SLOVENIAN TRANSLATION OF REDHAT-CONFIG-SERVICES.
 # Copyright (C) 2003 Free Software Foundation.
 # Roman Maurer <roman@lugos.si>, 2003.
-# $Id: sl.po,v 1.12 2004/09/27 07:28:46 nphilipp Exp $
+# $Id: sl.po,v 1.13 2004/10/20 10:52:18 nphilipp Exp $
 # $Source: /home/fedora/mmcgrath/elvis/cvs/redhat-config-services/po/sl.po,v $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services 0.8.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-27 09:35+0200\n"
+"POT-Creation-Date: 2004-10-20 13:01+0200\n"
 "PO-Revision-Date: 2004-03-31 22:19+0200\n"
 "Last-Translator: Roman Maurer <roman@lugos.si>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
@@ -21,58 +21,58 @@ msgstr ""
 msgid "Are you sure you want to delete the %s?"
 msgstr "Ali ste prepričani, da želite zbrisati %s?"
 
-#: src/serviceconf.py:187 src/serviceconf.glade.h:18
+#: src/serviceconf.py:197 src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Zaženi"
 
-#: src/serviceconf.py:191 src/serviceconf.glade.h:20
+#: src/serviceconf.py:201 src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "Ustavi"
 
-#: src/serviceconf.py:195 src/serviceconf.glade.h:9
+#: src/serviceconf.py:205 src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Znova zaženi"
 
-#: src/serviceconf.py:201
+#: src/serviceconf.py:211
 msgid "_Save"
 msgstr "_Shrani"
 
-#: src/serviceconf.py:201
+#: src/serviceconf.py:211
 msgid "Save"
 msgstr "Shrani"
 
-#: src/serviceconf.py:206
+#: src/serviceconf.py:216
 msgid "_Revert"
 msgstr "_Obnovi"
 
-#: src/serviceconf.py:206
+#: src/serviceconf.py:216
 msgid "Revert"
 msgstr "Obnovi"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:240
+#: src/serviceconf.py:250
 msgid "Currently Running in Runlevel: "
 msgstr "Trenutno teče v ravni teka: "
 
-#: src/serviceconf.py:251
+#: src/serviceconf.py:261
 msgid "Start at Boot"
 msgstr "Zaženi ob zagonu"
 
-#: src/serviceconf.py:252
+#: src/serviceconf.py:262
 msgid "Services"
 msgstr "Storitve"
 
-#: src/serviceconf.py:307 src/serviceconf.py:413 src/serviceconf.py:430
-#: src/serviceconf.py:449
+#: src/serviceconf.py:320 src/serviceconf.py:426 src/serviceconf.py:443
+#: src/serviceconf.py:462
 msgid "Editing Runlevel: "
 msgstr "Ureja se raven teka: "
 
-#: src/serviceconf.py:350
+#: src/serviceconf.py:363
 msgid "Unknown"
 msgstr "Neznana"
 
-#: src/serviceconf.py:478
+#: src/serviceconf.py:491
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -90,15 +90,15 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:482
+#: src/serviceconf.py:495
 msgid "About"
 msgstr "O programu"
 
-#: src/serviceconf.py:511
+#: src/serviceconf.py:524
 msgid "Help is not available."
 msgstr "Pomoč ni na voljo."
 
-#: src/serviceconf.py:658
+#: src/serviceconf.py:677
 msgid "You must run system-config-services as root."
 msgstr "Program system-config-services morate zagnati kot root."
 

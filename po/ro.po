@@ -9,71 +9,71 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-24 22:48-0500\n"
+"POT-Creation-Date: 2004-10-20 13:01+0200\n"
 "PO-Revision-Date: 2004-06-22 15:33+0300\n"
 "Last-Translator: Răzvan Corneliu VILT <razvan.vilt@linux360.ro>\n"
 "Language-Team: Romanian <ro_team@linux360.ro>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
 #: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Sunteţi sigur că vreţi să ştergeţi %s?"
 
-#: src/serviceconf.py:185 src/serviceconf.glade.h:18
+#: src/serviceconf.py:197 src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Porniţi"
 
-#: src/serviceconf.py:189 src/serviceconf.glade.h:20
+#: src/serviceconf.py:201 src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "Opriţi"
 
-#: src/serviceconf.py:193 src/serviceconf.glade.h:9
+#: src/serviceconf.py:205 src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Restartaţi"
 
-#: src/serviceconf.py:199
+#: src/serviceconf.py:211
 msgid "_Save"
 msgstr "_Salvaţi"
 
-#: src/serviceconf.py:199
+#: src/serviceconf.py:211
 msgid "Save"
 msgstr "Salvaţi"
 
-#: src/serviceconf.py:204
+#: src/serviceconf.py:216
 msgid "_Revert"
 msgstr "_Renunţaţi"
 
-#: src/serviceconf.py:204
+#: src/serviceconf.py:216
 msgid "Revert"
 msgstr "Renunţaţi"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:238
+#: src/serviceconf.py:250
 msgid "Currently Running in Runlevel: "
 msgstr "Se rulează în Runlevel: "
 
-#: src/serviceconf.py:249
+#: src/serviceconf.py:261
 msgid "Start at Boot"
 msgstr "Pornesc la bootare"
 
-#: src/serviceconf.py:250
+#: src/serviceconf.py:262
 msgid "Services"
 msgstr "Servicii"
 
-#: src/serviceconf.py:305 src/serviceconf.py:411 src/serviceconf.py:428
-#: src/serviceconf.py:447
+#: src/serviceconf.py:320 src/serviceconf.py:426 src/serviceconf.py:443
+#: src/serviceconf.py:462
 msgid "Editing Runlevel: "
 msgstr "Editaţi Runlevel:"
 
-#: src/serviceconf.py:348
+#: src/serviceconf.py:363
 msgid "Unknown"
 msgstr "Necunoscut"
 
-#: src/serviceconf.py:476
+#: src/serviceconf.py:491
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -91,22 +91,22 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:480
+#: src/serviceconf.py:495
 msgid "About"
 msgstr "Despre"
 
-#: src/serviceconf.py:509
+#: src/serviceconf.py:524
 msgid "Help is not available."
 msgstr "Nu este disponibil ajutor"
 
-#: src/serviceconf.py:653
+#: src/serviceconf.py:677
 msgid "You must run system-config-services as root."
 msgstr "Trebuie să rulaţi system-config-services ca root."
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:290
+#: src/servicemethods.py:289
 msgid ""
 "\n"
 "\n"
@@ -116,30 +116,30 @@ msgstr ""
 "\n"
 "xinetd este necesar pentru acest serviciu."
 
-#: src/servicemethods.py:336
+#: src/servicemethods.py:335
 msgid "xinetd failed to reload for "
 msgstr "xinetd nu s-a incărcat pentru "
 
-#: src/servicemethods.py:337
+#: src/servicemethods.py:336
 msgid ". The error was: "
 msgstr ". Eroarea a fost: "
 
-#: src/servicemethods.py:339
+#: src/servicemethods.py:338
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd a reîncărcat cu succes %s"
 
-#: src/servicemethods.py:342
+#: src/servicemethods.py:341
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd trebuie să fie disponibil ca să ruleze %s"
 
-#: src/servicemethods.py:347
+#: src/servicemethods.py:346
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s a dat eroare. Aceasta este: %s"
 
-#: src/servicemethods.py:349
+#: src/servicemethods.py:348
 msgid " successful"
 msgstr "succes"
 
@@ -262,4 +262,3 @@ msgstr "_Porniţi serviciul"
 #: src/serviceconf.glade.h:33
 msgid "_View"
 msgstr "_Afişează"
-

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop files\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-27 09:35+0200\n"
+"POT-Creation-Date: 2004-10-20 13:01+0200\n"
 "PO-Revision-Date: 2001-09-09 18:28GMT\n"
 "Last-Translator: Amila Akagiæ <bono@lugbih.org>\n"
 "Language-Team: Bosnian <lokal-subscribe@lugbih.org>\n"
@@ -21,37 +21,37 @@ msgid "Are you sure you want to delete the %s?"
 msgstr ""
 
 # serviceconf.gladestrings:9 serviceconf.gladestrings:46
-#: src/serviceconf.py:187 src/serviceconf.glade.h:18
+#: src/serviceconf.py:197 src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Pokreni"
 
 # serviceconf.gladestrings:11 serviceconf.gladestrings:48
-#: src/serviceconf.py:191 src/serviceconf.glade.h:20
+#: src/serviceconf.py:201 src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "Zaustavi"
 
 # serviceconf.gladestrings:13 serviceconf.gladestrings:50
-#: src/serviceconf.py:195 src/serviceconf.glade.h:9
+#: src/serviceconf.py:205 src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Ponovo pokreni"
 
 # serviceconf.gladestrings:40
-#: src/serviceconf.py:201
+#: src/serviceconf.py:211
 #, fuzzy
 msgid "_Save"
 msgstr "Saèuvaj"
 
 # serviceconf.gladestrings:40
-#: src/serviceconf.py:201
+#: src/serviceconf.py:211
 msgid "Save"
 msgstr "Saèuvaj"
 
-#: src/serviceconf.py:206
+#: src/serviceconf.py:216
 msgid "_Revert"
 msgstr ""
 
 # serviceconf.gladestrings:13 serviceconf.gladestrings:50
-#: src/serviceconf.py:206
+#: src/serviceconf.py:216
 #, fuzzy
 msgid "Revert"
 msgstr "Ponovo pokreni"
@@ -59,32 +59,32 @@ msgstr "Ponovo pokreni"
 # ../serviceconf.py:134
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:240
+#: src/serviceconf.py:250
 msgid "Currently Running in Runlevel: "
 msgstr "Trenutno podi¾em u runlevel-u: "
 
 # ../serviceconf.py:143
-#: src/serviceconf.py:251
+#: src/serviceconf.py:261
 msgid "Start at Boot"
 msgstr "Pokreni prilikom boot-anja"
 
 # ../serviceconf.py:144
-#: src/serviceconf.py:252
+#: src/serviceconf.py:262
 msgid "Services"
 msgstr "Servisi"
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
-#: src/serviceconf.py:307 src/serviceconf.py:413 src/serviceconf.py:430
-#: src/serviceconf.py:449
+#: src/serviceconf.py:320 src/serviceconf.py:426 src/serviceconf.py:443
+#: src/serviceconf.py:462
 msgid "Editing Runlevel: "
 msgstr "Ureðujem runlevel: "
 
-#: src/serviceconf.py:350
+#: src/serviceconf.py:363
 msgid "Unknown"
 msgstr ""
 
-#: src/serviceconf.py:478
+#: src/serviceconf.py:491
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -95,16 +95,16 @@ msgid ""
 " "
 msgstr ""
 
-#: src/serviceconf.py:482
+#: src/serviceconf.py:495
 msgid "About"
 msgstr ""
 
-#: src/serviceconf.py:511
+#: src/serviceconf.py:524
 msgid "Help is not available."
 msgstr ""
 
 # ../serviceconf.py:432
-#: src/serviceconf.py:658
+#: src/serviceconf.py:677
 #, fuzzy
 msgid "You must run system-config-services as root."
 msgstr "Morate pokrenuti serviceconf kao root."

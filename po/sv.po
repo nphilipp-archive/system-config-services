@@ -1,13 +1,13 @@
 # Swedish messages for system-config-services.
 # Copyright (C) 2001, 2003, 2004 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.55 2004/09/27 07:28:46 nphilipp Exp $
+# $Id: sv.po,v 1.56 2004/10/20 10:52:18 nphilipp Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-27 09:35+0200\n"
+"POT-Creation-Date: 2004-10-20 13:01+0200\n"
 "PO-Revision-Date: 2004-03-17 18:40+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -20,58 +20,58 @@ msgstr ""
 msgid "Are you sure you want to delete the %s?"
 msgstr "Är du säker på att du vill ta bort %s?"
 
-#: src/serviceconf.py:187 src/serviceconf.glade.h:18
+#: src/serviceconf.py:197 src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Starta"
 
-#: src/serviceconf.py:191 src/serviceconf.glade.h:20
+#: src/serviceconf.py:201 src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "Stoppa"
 
-#: src/serviceconf.py:195 src/serviceconf.glade.h:9
+#: src/serviceconf.py:205 src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Starta om"
 
-#: src/serviceconf.py:201
+#: src/serviceconf.py:211
 msgid "_Save"
 msgstr "_Spara"
 
-#: src/serviceconf.py:201
+#: src/serviceconf.py:211
 msgid "Save"
 msgstr "Spara"
 
-#: src/serviceconf.py:206
+#: src/serviceconf.py:216
 msgid "_Revert"
 msgstr "_Återställ"
 
-#: src/serviceconf.py:206
+#: src/serviceconf.py:216
 msgid "Revert"
 msgstr "Återställ"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:240
+#: src/serviceconf.py:250
 msgid "Currently Running in Runlevel: "
 msgstr "Kör för närvarande i körnivå: "
 
-#: src/serviceconf.py:251
+#: src/serviceconf.py:261
 msgid "Start at Boot"
 msgstr "Starta vid uppstart"
 
-#: src/serviceconf.py:252
+#: src/serviceconf.py:262
 msgid "Services"
 msgstr "Tjänster"
 
-#: src/serviceconf.py:307 src/serviceconf.py:413 src/serviceconf.py:430
-#: src/serviceconf.py:449
+#: src/serviceconf.py:320 src/serviceconf.py:426 src/serviceconf.py:443
+#: src/serviceconf.py:462
 msgid "Editing Runlevel: "
 msgstr "Redigerar körnivå: "
 
-#: src/serviceconf.py:350
+#: src/serviceconf.py:363
 msgid "Unknown"
 msgstr "Okänd"
 
-#: src/serviceconf.py:478
+#: src/serviceconf.py:491
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -89,15 +89,15 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:482
+#: src/serviceconf.py:495
 msgid "About"
 msgstr "Om"
 
-#: src/serviceconf.py:511
+#: src/serviceconf.py:524
 msgid "Help is not available."
 msgstr "Hjälp är inte tillgänglig."
 
-#: src/serviceconf.py:658
+#: src/serviceconf.py:677
 msgid "You must run system-config-services as root."
 msgstr "Du måste köra system-config-services som root."
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-09-27 09:35+0200\n"
+"POT-Creation-Date: 2004-10-20 13:01+0200\n"
 "PO-Revision-Date: 2004-09-29 10:41+0530\n"
 "Last-Translator: Indranil Das Gupta <indradg@icbic.com>\n"
 "Language-Team: Bangla <redhat-translation@bengalinux.org>\n"
@@ -57,64 +57,63 @@ msgstr ""
 msgid "Are you sure you want to delete the %s?"
 msgstr "আপনি নিশ্চিত, আপনি %s মুছতে চাচ্ছেন?"
 
-#: src/serviceconf.py:187 src/serviceconf.glade.h:18
+#: src/serviceconf.py:197 src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "আরম্ভ"
 
-#: src/serviceconf.py:191 src/serviceconf.glade.h:20
+#: src/serviceconf.py:201 src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "থামো"
 
-#: src/serviceconf.py:195 src/serviceconf.glade.h:9
+#: src/serviceconf.py:205 src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "রিস্টার্ট"
 
-#msgstr "সংরক্ষন (_স)"--old version, spelling error
-#: src/serviceconf.py:201
+# msgstr "সংরক্ষন (_স)"--old version, spelling error
+#: src/serviceconf.py:211
 msgid "_Save"
 msgstr "সংরক্ষণ (_স)"
 
-#msgstr "সংরক্ষন"--old version, spelling error
-#: src/serviceconf.py:201
+# msgstr "সংরক্ষন"--old version, spelling error
+#: src/serviceconf.py:211
 msgid "Save"
 msgstr "সংরক্ষণ"
 
-#: src/serviceconf.py:206
+#: src/serviceconf.py:216
 msgid "_Revert"
 msgstr "পুর্বাবস্থায় (_প)"
 
-#: src/serviceconf.py:206
+#: src/serviceconf.py:216
 msgid "Revert"
 msgstr "পুর্বাবস্থায়"
 
-#not sure if Runlevel is to be translated
+# not sure if Runlevel is to be translated
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:240
+#: src/serviceconf.py:250
 msgid "Currently Running in Runlevel: "
 msgstr "বর্তমানে যে রান-লেভেলে চলছে: "
 
-#: src/serviceconf.py:251
+#: src/serviceconf.py:261
 msgid "Start at Boot"
 msgstr "বুট করার সময় শুরু করো"
 
-
-#msgstr "সার্ভিসগুলো"--old version, changed by RB
-#: src/serviceconf.py:252
+# msgstr "সার্ভিসগুলো"--old version, changed by RB
+#: src/serviceconf.py:262
 msgid "Services"
 msgstr "সার্ভিসসমূহ"
 
-#: src/serviceconf.py:307 src/serviceconf.py:413 src/serviceconf.py:430
-#: src/serviceconf.py:449
+#: src/serviceconf.py:320 src/serviceconf.py:426 src/serviceconf.py:443
+#: src/serviceconf.py:462
 msgid "Editing Runlevel: "
 msgstr "রান-লেভেল সম্পাদন করা হচ্ছে: "
 
-#: src/serviceconf.py:350
+#: src/serviceconf.py:363
 msgid "Unknown"
 msgstr "অজ্ঞাত"
 
-#"সিষ্টম সার্ভিস কনফিগারেশন টুল VERSION\n"--spelling of "system" is wrong, changed by RB
-#: src/serviceconf.py:478
+# "সিষ্টম সার্ভিস কনফিগারেশন টুল VERSION\n"--spelling of "system" is wrong, changed by RB
+#: src/serviceconf.py:491
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -132,15 +131,15 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:482
+#: src/serviceconf.py:495
 msgid "About"
 msgstr "পরিচিতি"
 
-#: src/serviceconf.py:511
+#: src/serviceconf.py:524
 msgid "Help is not available."
 msgstr "সহায়িকা পাওয়া যাচ্ছে না।"
 
-#: src/serviceconf.py:658
+#: src/serviceconf.py:677
 msgid "You must run system-config-services as root."
 msgstr "system-config-services চালাবার জন্যে আপনার root হওয়া আবশ্যিক"
 
@@ -157,8 +156,8 @@ msgstr ""
 "\n"
 "এই সার্ভিসটি ব্যবহার করতে হলে, অবশ্যই xinetd সক্রিয় করতে হবে।"
 
-#xinetd has not been transliterated in the earlier string, changing this to maintain consistency as of now.
-#msgstr "জন্যে এক্স্‌আইনেটডী (xinetd) রি-লোড করতে ব্যর্থ হয়েছে"--old version
+# xinetd has not been transliterated in the earlier string, changing this to maintain consistency as of now.
+# msgstr "জন্যে এক্স্‌আইনেটডী (xinetd) রি-লোড করতে ব্যর্থ হয়েছে"--old version
 #: src/servicemethods.py:335
 msgid "xinetd failed to reload for "
 msgstr "জন্যে xinetd রি-লোড করতে ব্যর্থ হয়েছে"
@@ -167,17 +166,17 @@ msgstr "জন্যে xinetd রি-লোড করতে ব্যর্থ 
 msgid ". The error was: "
 msgstr "। ভ্রান্তিটি হল: "
 
-#not sure if xinetd is to be translated,
-#in this string xinetd was transliterated, without the en in brackets as done in the previous string.
+# not sure if xinetd is to be translated,
+# in this string xinetd was transliterated, without the en in brackets as done in the previous string.
 # same as before, changing to en to maintain consistency as of now,
-#msgstr "এক্সআইনেটডী সাফল্যের সঙ্গে %s রি-লোড করেছে"--old version
+# msgstr "এক্সআইনেটডী সাফল্যের সঙ্গে %s রি-লোড করেছে"--old version
 #: src/servicemethods.py:338
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd সাফল্যের সঙ্গে %s রি-লোড করেছে"
 
 # same as before, changing to en to maintain consistency as of now,
-#msgstr "%s চলবার জন্যে এক্স্‌আইনেটডীর সক্রিয় থাকা আবশ্যিক"--old version
+# msgstr "%s চলবার জন্যে এক্স্‌আইনেটডীর সক্রিয় থাকা আবশ্যিক"--old version
 #: src/servicemethods.py:341
 #, python-format
 msgid "xinetd must be enabled for %s to run"
@@ -196,7 +195,7 @@ msgstr " সফল"
 msgid "*"
 msgstr "*"
 
-#msgstr "সার্ভিস যোগ"--old version
+# msgstr "সার্ভিস যোগ"--old version
 #: src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "সার্ভিস যোগ করো"
@@ -205,7 +204,7 @@ msgstr "সার্ভিস যোগ করো"
 msgid "Current Active Runlevel: "
 msgstr "বর্তমানে সক্রিয় রান-লেভেল: "
 
-#msgstr "সার্ভিস মুছা"---old version
+# msgstr "সার্ভিস মুছা"---old version
 #: src/serviceconf.glade.h:4
 msgid "Delete Service"
 msgstr "সার্ভিস মুছে ফেলো"
@@ -214,7 +213,7 @@ msgstr "সার্ভিস মুছে ফেলো"
 msgid "Description"
 msgstr "বিবরণ"
 
-#msgstr "সেভ করা হবে না"--old version, সংরক্ষণ has been used in an earlier string
+# msgstr "সেভ করা হবে না"--old version, সংরক্ষণ has been used in an earlier string
 #: src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "সংরক্ষণ করা হবে না"
@@ -227,7 +226,7 @@ msgstr "রান-লেভেল সম্পাদনা: "
 msgid "None"
 msgstr "কোনটাই নয়"
 
-#msgstr "শেষ সেভ করা অবস্থায় ফেরত যাও"--old version
+# msgstr "শেষ সেভ করা অবস্থায় ফেরত যাও"--old version
 #: src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
 msgstr "শেষ সংরক্ষিত অবস্থায় ফেরত যাও (_শ)"
@@ -244,12 +243,12 @@ msgstr "রান-লেভেল _৪"
 msgid "Runlevel _5"
 msgstr "রান-লেভেল _৫"
 
-#msgstr "সার্ভিস বন্ধ"--old version
+# msgstr "সার্ভিস বন্ধ"--old version
 #: src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "সার্ভিস বন্ধ করো (_ব)"
 
-#msgstr "ডায়লগ সেভ কর"--old version, "save"
+# msgstr "ডায়লগ সেভ কর"--old version, "save"
 #: src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "ডায়লগ সংরক্ষণ করো"
@@ -258,8 +257,8 @@ msgstr "ডায়লগ সংরক্ষণ করো"
 msgid "Service Configuration"
 msgstr "সার্ভিস কনফিগারেশন"
 
-#msgstr "সার্ভিসের নাম: "--suggestion
-#msgstr "সার্ভিস এর নাম: "--old version, changed as of now
+# msgstr "সার্ভিসের নাম: "--suggestion
+# msgstr "সার্ভিস এর নাম: "--old version, changed as of now
 #: src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "সার্ভিসের নাম: "
@@ -268,8 +267,8 @@ msgstr "সার্ভিসের নাম: "
 msgid "Status"
 msgstr "অবস্থা"
 
-#"বর্তমান রানলেভেলে আপনি পরিবর্তন করেছেন।\n"
-#"আপনি কি পরিবর্তনগুলি সেভ করতে চান ?"--old version
+# "বর্তমান রানলেভেলে আপনি পরিবর্তন করেছেন।\n"
+# "আপনি কি পরিবর্তনগুলি সেভ করতে চান ?"--old version
 #: src/serviceconf.glade.h:21
 msgid ""
 "You have made changes to the current runlevel.\n"
@@ -286,7 +285,7 @@ msgstr "কাজ (_ক)"
 msgid "_Contents"
 msgstr "বিষয়বস্তু (_ব)"
 
-#msgstr "রানলেভেল সম্পাদন (_র)"--old version
+# msgstr "রানলেভেল সম্পাদন (_র)"--old version
 # written in earlier strings as "রান-লেভেল", changed by RB to maintain consistency
 #: src/serviceconf.glade.h:25
 msgid "_Edit Runlevel"
@@ -296,34 +295,34 @@ msgstr "রান-লেভেল সম্পাদন (_র)"
 msgid "_File"
 msgstr "ফাইল (_ফ)"
 
-#msgstr "সহায়ক তথ্য (_স)"--mostly সহায়িকা is used
+# msgstr "সহায়ক তথ্য (_স)"--mostly সহায়িকা is used
 #: src/serviceconf.glade.h:27
 msgid "_Help"
 msgstr "সহায়ক তথ্য (_স)"
 
-#msgstr "বন্ধ (_ব)"--old version, this was changed to প্রস্থান sometime back
+# msgstr "বন্ধ (_ব)"--old version, this was changed to প্রস্থান sometime back
 #: src/serviceconf.glade.h:28
 msgid "_Quit"
 msgstr "প্রস্থান (_প)"
 
-#msgstr "রিফ্রশ সার্ভিস তালিকা (_র)"--not sure abt translation, changed the spelling in refresh--old version
-#msgstr "রিফ্রেশ সার্ভিস তালিকা (_র)"--post review version, changed the string as of now to maintain consistency with the other files
+# msgstr "রিফ্রশ সার্ভিস তালিকা (_র)"--not sure abt translation, changed the spelling in refresh--old version
+# msgstr "রিফ্রেশ সার্ভিস তালিকা (_র)"--post review version, changed the string as of now to maintain consistency with the other files
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
 msgstr "সার্ভিস তালিকা রিফ্রেশ করো(_র)"
 
-#msgstr "সার্ভিস পুনরায় আরম্ভ করো (_ভ)"--suggestion
-#msgstr "রিস্টার্ট সার্ভিস (_ভ)"--old version, changed as of now to maintain consistency with the other files
+# msgstr "সার্ভিস পুনরায় আরম্ভ করো (_ভ)"--suggestion
+# msgstr "রিস্টার্ট সার্ভিস (_ভ)"--old version, changed as of now to maintain consistency with the other files
 #: src/serviceconf.glade.h:30
 msgid "_Restart Service"
 msgstr "সার্ভিস পুনরায় আরম্ভ করো (_ভ)"
 
-#msgstr "সেভ পরিবর্তনগুলি (_স)"--old version
+# msgstr "সেভ পরিবর্তনগুলি (_স)"--old version
 #: src/serviceconf.glade.h:31
 msgid "_Save Changes"
 msgstr "পরিবর্তনগুলি সংরক্ষণ করুন(_স)"
 
-#msgstr "সার্ভিস আরম্ভ করো (_আ)"--suggestion
+# msgstr "সার্ভিস আরম্ভ করো (_আ)"--suggestion
 #: src/serviceconf.glade.h:32
 msgid "_Start Service"
 msgstr "সার্ভিস আরম্ভ (_আ)"
