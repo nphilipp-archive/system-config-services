@@ -1,12 +1,12 @@
 # Swedish messages for serviceconf.
 # Copyright (C) 2001, 2003 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.42 2003/08/15 12:18:34 menthos Exp $
+# $Id: sv.po,v 1.43 2003/09/05 19:37:03 dwalsh Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2003-08-05 13:35-0400\n"
+"POT-Creation-Date: 2003-09-05 15:44-0400\n"
 "PO-Revision-Date: 2003-08-15 14:24+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -64,9 +64,6 @@ msgstr ""
 msgid "Are you sure you want to delete the %s?"
 msgstr "Är du säker på att du vill ta bort %s?"
 
-msgid "Are you sure you want to delete %s?"
-msgstr "Är du säker på att du vill ta bort %s?"
-
 #. make sure threading is disabled
 #. map the event signals to specific methods
 #. main window
@@ -94,9 +91,6 @@ msgstr "Starta vid uppstart"
 msgid "Services"
 msgstr "Tjänster"
 
-msgid "Service"
-msgstr "Tjänst"
-
 #. self.clstServices.set_column_justification(0,GTK.JUSTIFY_CENTER)
 #. self.clstServices.set_column_justification(1,GTK.JUSTIFY_LEFT)
 #. self.clstServices.set_column_auto_resize(0,1)
@@ -108,8 +102,8 @@ msgstr "Tjänst"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:275 src/serviceconf.py:382 src/serviceconf.py:399
-#: src/serviceconf.py:418
+#: src/serviceconf.py:275 src/serviceconf.py:381 src/serviceconf.py:398
+#: src/serviceconf.py:417
 msgid "Editing Runlevel: "
 msgstr "Redigerar körnivå: "
 
@@ -117,7 +111,7 @@ msgstr "Redigerar körnivå: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:319
+#: src/serviceconf.py:318
 msgid "Unknown"
 msgstr "Okänd"
 
@@ -125,11 +119,11 @@ msgstr "Okänd"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:447
+#: src/serviceconf.py:446
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright © 2002 Red Hat, Inc. Alla rättigheter förbehållna."
 
-#: src/serviceconf.py:448
+#: src/serviceconf.py:447
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -156,7 +150,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:597
+#: src/serviceconf.py:596
 msgid "You must run redhat-config-services as root."
 msgstr "Du måste köra redhat-config-services som root."
 
@@ -310,9 +304,6 @@ msgstr "Konfiguration av tjänst"
 msgid "Service Name: "
 msgstr "Namn på tjänst: "
 
-msgid "Service Name:"
-msgstr "Namn på tjänst:"
-
 #: src/serviceconf.glade.h:19
 msgid "Start"
 msgstr "Starta"
@@ -380,6 +371,15 @@ msgstr "_Starta tjänst"
 #: src/serviceconf.glade.h:35
 msgid "_View"
 msgstr "_Visa"
+
+#~ msgid "Are you sure you want to delete %s?"
+#~ msgstr "Är du säker på att du vill ta bort %s?"
+
+#~ msgid "Service"
+#~ msgstr "Tjänst"
+
+#~ msgid "Service Name:"
+#~ msgstr "Namn på tjänst:"
 
 #~ msgid "xinetd service"
 #~ msgstr "xinetd-tjänst"

@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
-"POT-Creation-Date: 2003-08-05 13:35-0400\n"
+"POT-Creation-Date: 2003-09-05 15:44-0400\n"
 "PO-Revision-Date: 2003-08-01 13:20+1000\n"
 "Last-Translator: Yelitza Louze <ylouze@redhat.com>\n"
 "Language-Team:  <es@li.org>\n"
@@ -115,8 +115,8 @@ msgstr "Servicios"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:275 src/serviceconf.py:382 src/serviceconf.py:399
-#: src/serviceconf.py:418
+#: src/serviceconf.py:275 src/serviceconf.py:381 src/serviceconf.py:398
+#: src/serviceconf.py:417
 msgid "Editing Runlevel: "
 msgstr "Editando nivel de ejecución: "
 
@@ -124,7 +124,7 @@ msgstr "Editando nivel de ejecución: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:319
+#: src/serviceconf.py:318
 msgid "Unknown"
 msgstr "Desconocido"
 
@@ -134,13 +134,13 @@ msgstr "Desconocido"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:447
+#: src/serviceconf.py:446
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright (c) 2001 Red Hat, Inc. Todos los derechos reservados."
 
 # ../serviceconf.py:312
 # ../serviceconf.py:312
-#: src/serviceconf.py:448
+#: src/serviceconf.py:447
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -171,7 +171,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:597
+#: src/serviceconf.py:596
 msgid "You must run redhat-config-services as root."
 msgstr "Debe ejecutar redhat-config-services como root."
 
