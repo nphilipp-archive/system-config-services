@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-04-06 14:50-0400\n"
+"POT-Creation-Date: 2004-09-27 09:35+0200\n"
 "PO-Revision-Date: 2003-12-15 22:30+CET\n"
 "Last-Translator: auto\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -14,62 +14,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: TransDict server\n"
 
-#.
-#. checklist.py: A class (derived from GtkTreeView) that provides a list of
-#. checkbox / text string pairs
-#.
-#. Brent Fox <bfox@redhat.com>
-#. Jeremy Katz <katzj@redhat.com>
-#.
-#. Copyright 2000-2002 Red Hat, Inc.
-#.
-#. This software may be freely redistributed under the terms of the GNU
-#. library public license.
-#.
-#. You should have received a copy of the GNU Library Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
-#. override this to make your own columns if necessary
-#. add the string columns to the tree view widget
-#. XXX need to handle the multicolumn case better still....
-#. XXX we only handle two text columns right now
-#. keep track of the number of rows we have so we can
-#. iterate over them all
-#. add the text for the number of columns we have
-#. !/usr/bin/python
-#. serviceconf.py
-#. Copyright (C) 2002 Red Hat, Inc.
-#. Authors: Tim Powers <timp@redhat.com>
-#. Bill Nottingham <notting@redhat.com>
-#. Dan Walsh <dwalsh@redhat.com>
-#.
-#. This program is free software; you can redistribute it and/or modify
-#. it under the terms of the GNU General Public License as published by
-#. the Free Software Foundation; either version 2 of the License, or
-#. (at your option) any later version.
-#.
-#. This program is distributed in the hope that it will be useful,
-#. but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. GNU General Public License for more details.
-#.
-#. You should have received a copy of the GNU General Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-#. #
-#. # I18N
-#. #
 #: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Sigurni ste da želite obrisati %s?"
 
-#. make sure threading is disabled
-#. map the event signals to specific methods
-#. main window
-#. menu items
-#. toolbars
 #: src/serviceconf.py:187 src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Započni"
@@ -99,17 +48,12 @@ msgstr ""
 msgid "Revert"
 msgstr "Pokreni ponovo"
 
-#. the textbox
-#. the statusbox
-#. the CheckCList which will display whether the service
-#. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:240
 msgid "Currently Running in Runlevel: "
 msgstr "Trenutno izvršavam u razini izvršavanja: "
 
-#. This is a sentry
 #: src/serviceconf.py:251
 msgid "Start at Boot"
 msgstr "Pokreni kod pokretanja sustava"
@@ -118,34 +62,15 @@ msgstr "Pokreni kod pokretanja sustava"
 msgid "Services"
 msgstr "Servisi"
 
-#. self.clstServices.set_column_justification(0,GTK.JUSTIFY_CENTER)
-#. self.clstServices.set_column_justification(1,GTK.JUSTIFY_LEFT)
-#. self.clstServices.set_column_auto_resize(0,1)
-#. self.clstServices.column_titles_show()
-#. -----------------------------------------------------------------------------
-#. Methods assiciated with populating the checklist
-#. -----------------------------------------------------------------------------
-#. sentinal so that we don't have selected rows while we are updating
-#. this is passed to ServiceMethods.get_service_list as an
-#. argument. We don't want to import gtk there, so we have
-#. the actual function here
 #: src/serviceconf.py:307 src/serviceconf.py:413 src/serviceconf.py:430
 #: src/serviceconf.py:449
 msgid "Editing Runlevel: "
 msgstr "Uređujem razinu pokretanja: "
 
-#. set the text in txtDesc
-#. if an xinetd service is selected, disable these,
-#. they'll do nothing
-#. set the text in StatusView
 #: src/serviceconf.py:350
 msgid "Unknown"
 msgstr "Napoznato"
 
-#. ----------------------------------------------------------------------------
-#. Methods pertaining to the "Help" menu items, there will be more here
-#. once I have "real" help :)
-#. ----------------------------------------------------------------------------
 #: src/serviceconf.py:478
 msgid ""
 "System Services Configuration Tool VERSION\n"
@@ -161,60 +86,14 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#. ----------------------------------------------------------------------------
-#. Methods pertaining to the "Help" menu items, there will be more here
-#. once I have "real" help :)
-#. ----------------------------------------------------------------------------
 #: src/serviceconf.py:511
 msgid "Help is not available."
 msgstr ""
 
-#. ----------------------------------------------------------------------------
-#. Methods pertaining to the toolbar items
-#. The menu and popup menu items for "Start", "Stop", and "Restart" are
-#. handled by on_btnStart_clicked(), on_btnStop_clicked(), and
-#. on_btnRestart_clicked()
-#. ----------------------------------------------------------------------------
-#. ----------------------------------------------------------------------------
-#. Methods for everything else
-#. ----------------------------------------------------------------------------
-#. get rid of the tearoff from the popup menu
-#. set the label text to be the current selected servicename for pmnBlank
-#. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:655
+#: src/serviceconf.py:658
 msgid "You must run system-config-services as root."
 msgstr "system-config-services morate pokrenuti kao root korisnik."
 
-#. serviceactions.py
-#. Copyright (C) 2002 Red Hat, Inc.
-#. Author: Tim Powers <timp@redhat.com>
-#.
-#. This program is free software; you can redistribute it and/or modify
-#. it under the terms of the GNU General Public License as published by
-#. the Free Software Foundation; either version 2 of the License, or
-#. (at your option) any later version.
-#.
-#. This program is distributed in the hope that it will be useful,
-#. but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. GNU General Public License for more details.
-#.
-#. You should have received a copy of the GNU General Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-#. runlevel = self.get_runlevel()
-#. for i in range(0,len(dirlist)):
-#. check for start links only, we don't care if there is a kill link
-#. no match
-#. This is the current runlevel
-#. for xinetd services, set the dictionary to show that it's disabled in all runlevels
-#. this will be an unmodified self.dict_services
-#. read each initscript
-#. configured = 1 if configured already
-#. configured = self.check_if_on(servicename, editing_runlevel)
-#. look through the first 25 lines to see if we have "hide: true" in there.
-#. if it's there, remove the service from the dictionary
-#. read each file for xinetd.d
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
@@ -228,14 +107,6 @@ msgstr ""
 "\n"
 "za rad ovog servisa potreban je xinetd."
 
-#. an unmodified dictionary. Needed to compare for saving etc.
-#. only save changes
-#. check to make sure we are an initscript and not an xinetd service
-#. if it's toggled on
-#. if it's toggled off
-#. for xinetd services
-#. if it's toggled on
-#. if it's toggled off
 #: src/servicemethods.py:335
 msgid "xinetd failed to reload for "
 msgstr "xinetd nike uspio ponovo učitati "

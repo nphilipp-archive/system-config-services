@@ -1,10 +1,10 @@
 AC_INIT(system-config-services.spec.in)
-AM_INIT_AUTOMAKE(system-config-services, 0.8.8.1)
+AM_INIT_AUTOMAKE(system-config-services, 0.8.9)
 
 PYTHON=python
 AC_SUBST(PYTHON)
 
-ALL_LINGUAS="bn bs ca cs cy da de el es et fa fi fr hi hr hu is it ja ko ms nl no pa pl pt_BR pt ru sk sl sv ta tr uk vi zh_CN zh_TW"
+ALL_LINGUAS="ar bn bs ca cs cy da de el es et fa fi fr hi hr hu is it ja ko ms nl no pa pl pt_BR pt ru sk sl sv ta tr uk vi zh_CN zh_TW"
 
 paths=`python <<EOF
 import sys;
