@@ -107,11 +107,11 @@ msgstr "Breyti keyrsluþrepi: "
 #. set the text in StatusView
 #: src/serviceconf.py:289
 msgid "Unknown"
-msgstr ""
+msgstr "Óþekkt"
 
 #: src/serviceconf.py:292
 msgid "xinetd service"
-msgstr ""
+msgstr "xinetd þjónusta"
 
 #: src/serviceconf.py:360
 msgid ""
@@ -249,7 +249,7 @@ msgstr "Núverandi keyrsluþrep:"
 
 #: src/serviceconf.glade.h:3
 msgid "Description"
-msgstr ""
+msgstr "Lýsing"
 
 #: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
@@ -312,9 +312,8 @@ msgid "Start the selected service"
 msgstr "Ræsa valda þjónustu"
 
 #: src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "Ræsa"
+msgstr "Staða"
 
 #: src/serviceconf.glade.h:20
 msgid "Stop"
@@ -363,6 +362,3 @@ msgstr "_Vista breytingum"
 #: src/serviceconf.glade.h:31
 msgid "_Start Service"
 msgstr "_Ræsa þjónustu"
-
-#~ msgid "Help is not available."
-#~ msgstr "Hjálp er ekki tiltæk."
