@@ -1,4 +1,4 @@
-# $Id: cs.po,v 1.16 2002/09/06 03:53:24 mitr Exp $
+# $Id: cs.po,v 1.17 2002/09/14 16:22:31 mitr Exp $
 #
 # Czech translation for serviceconf
 # Copyright (C) 2001 Free Software Foundation, Inc.
@@ -12,7 +12,7 @@ msgstr ""
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
 #.
@@ -79,16 +79,16 @@ msgstr ""
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:179
 msgid "Currently Running in Runlevel: "
-msgstr "Systém je právì v runlevelu: "
+msgstr "SystÃ©m je prÃ¡vÄ› v runlevelu: "
 
 #. This is a sentry
 #: src/serviceconf.py:190
 msgid "Start at Boot"
-msgstr "Spustit pøi startu"
+msgstr "Spustit pÅ™i startu"
 
 #: src/serviceconf.py:191
 msgid "Services"
-msgstr "Slu¾by"
+msgstr "SluÅ¾by"
 
 #. self.clstServices.set_column_justification(0,GTK.JUSTIFY_CENTER)
 #. self.clstServices.set_column_justification(1,GTK.JUSTIFY_LEFT)
@@ -104,15 +104,15 @@ msgstr "Slu¾by"
 #: src/serviceconf.py:246 src/serviceconf.py:346 src/serviceconf.py:355
 #: src/serviceconf.py:379
 msgid "Editing Runlevel: "
-msgstr "Mìnìnı runlevel: "
+msgstr "MÄ›nÄ›nÃ½ runlevel: "
 
 #: src/serviceconf.py:361
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
-"Provedli jste zmìny v aktuálním runlevelu.\n"
-"Chcete je ulo¾it?"
+"Provedli jste zmÄ›ny v aktuÃ¡lnÃ­m runlevelu.\n"
+"Chcete je uloÅ¾it?"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -120,7 +120,9 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:391
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved. V¹echna práva vyhrazena."
+msgstr ""
+"Copyright (c) 2002 Red Hat, Inc. All rights reserved. VÅ¡echna prÃ¡va "
+"vyhrazena."
 
 #: src/serviceconf.py:392
 msgid ""
@@ -128,8 +130,8 @@ msgid ""
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
-"Tento program mù¾e bıt volnì ¹íøen pod licencí GPL.\n"
-"V¹echny nalezené chyby prosím hlaste do systému Red Hat pro sledování chyb:\n"
+"Tento program mÅ¯Å¾e bÃ½t volnÄ› Å¡Ã­Å™en pod licencÃ­ GPL.\n"
+"VÅ¡echny nalezenÃ© chyby prosÃ­m hlaste do systÃ©mu Red Hat pro sledovÃ¡nÃ­ chyb:\n"
 "http://bugzilla.redhat.com"
 
 #. ----------------------------------------------------------------------------
@@ -151,7 +153,7 @@ msgstr ""
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:525
 msgid "You must run redhat-config-services as root."
-msgstr "redhat-config-services musíte spustit jako root."
+msgstr "redhat-config-services musÃ­te spustit jako root."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -192,7 +194,10 @@ msgid ""
 "\n"
 "\n"
 "You must enable xinetd to use this service."
-msgstr "\n\nPro pou¾ití této slu¾by musíte povolit xinetd."
+msgstr ""
+"\n"
+"\n"
+"Pro pouÅ¾itÃ­ tÃ©to sluÅ¾by musÃ­te povolit xinetd."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -213,12 +218,12 @@ msgstr ". Chyba byla: "
 #: src/servicemethods.py:351
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "xinetd reloadoval %s úspì¹nì"
+msgstr "xinetd reloadoval %s ÃºspÄ›Å¡nÄ›"
 
 #: src/servicemethods.py:354
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "Aby slu¾ba %s mohla bì¾et, musí bıt povolen xinetd"
+msgstr "Aby sluÅ¾ba %s mohla bÄ›Å¾et, musÃ­ bÃ½t povolen xinetd"
 
 #: src/servicemethods.py:359
 #, python-format
@@ -227,23 +232,23 @@ msgstr "%s selhal. Chyba byla: %s"
 
 #: src/servicemethods.py:361
 msgid " successful"
-msgstr " úspì¹nı"
+msgstr " ÃºspÄ›Å¡nÃ½"
 
 #: src/serviceconf.glade.h:1
 msgid "Cancel"
-msgstr "Zru¹it"
+msgstr "ZruÅ¡it"
 
 #: src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
-msgstr "Aktuální runlevel: "
+msgstr "AktuÃ¡lnÃ­ runlevel: "
 
 #: src/serviceconf.glade.h:3
 msgid "Editing Runlevel:"
-msgstr "Mìnìnı runlevel:"
+msgstr "MÄ›nÄ›nÃ½ runlevel:"
 
 #: src/serviceconf.glade.h:4
 msgid "None"
-msgstr "®ádnı"
+msgstr "Å½Ã¡dnÃ½"
 
 #: src/serviceconf.glade.h:5
 msgid "Quit"
@@ -255,11 +260,11 @@ msgstr "Restartovat"
 
 #: src/serviceconf.glade.h:7
 msgid "Restart the selected service"
-msgstr "Restartovat vybrané slu¾by"
+msgstr "Restartovat vybranÃ© sluÅ¾by"
 
 #: src/serviceconf.glade.h:8
 msgid "Revert to the last saved change"
-msgstr "Návrat k poslednímu ulo¾enému stavu"
+msgstr "NÃ¡vrat k poslednÃ­mu uloÅ¾enÃ©mu stavu"
 
 #: src/serviceconf.glade.h:9
 msgid "Runlevel _3"
@@ -275,19 +280,19 @@ msgstr "Runlevel _5"
 
 #: src/serviceconf.glade.h:12
 msgid "S_top Service"
-msgstr "U_konèit slu¾bu"
+msgstr "U_konÄit sluÅ¾bu"
 
 #: src/serviceconf.glade.h:13
 msgid "Save"
-msgstr "Ulo¾it"
+msgstr "UloÅ¾it"
 
 #: src/serviceconf.glade.h:14
 msgid "Save the changes you have made"
-msgstr "Ulo¾it provedené zmìny"
+msgstr "UloÅ¾it provedenÃ© zmÄ›ny"
 
 #: src/serviceconf.glade.h:15
 msgid "Service Configuration"
-msgstr "Nastavení slu¾eb"
+msgstr "NastavenÃ­ sluÅ¾eb"
 
 #: src/serviceconf.glade.h:16
 msgid "Start"
@@ -295,15 +300,15 @@ msgstr "Spustit"
 
 #: src/serviceconf.glade.h:17
 msgid "Start the selected service"
-msgstr "Spustit vybrané slu¾by"
+msgstr "Spustit vybranÃ© sluÅ¾by"
 
 #: src/serviceconf.glade.h:18
 msgid "Stop"
-msgstr "Ukonèit"
+msgstr "UkonÄit"
 
 #: src/serviceconf.glade.h:19
 msgid "Stop the selected service"
-msgstr "Ukonèit vybrané slu¾by"
+msgstr "UkonÄit vybranÃ© sluÅ¾by"
 
 #: src/serviceconf.glade.h:20
 msgid "_Actions"
@@ -315,7 +320,7 @@ msgstr "_Obsah"
 
 #: src/serviceconf.glade.h:22
 msgid "_Edit Runlevel"
-msgstr "_Zmìnit runlevel"
+msgstr "_ZmÄ›nit runlevel"
 
 #: src/serviceconf.glade.h:23
 msgid "_File"
@@ -323,48 +328,48 @@ msgstr "_Soubor"
 
 #: src/serviceconf.glade.h:24
 msgid "_Help"
-msgstr "Nápovìd_a"
+msgstr "NÃ¡povÄ›d_a"
 
 #: src/serviceconf.glade.h:25
 msgid "_Refresh Service List"
-msgstr "_Obnovit seznam slu¾eb"
+msgstr "_Obnovit seznam sluÅ¾eb"
 
 #: src/serviceconf.glade.h:26
 msgid "_Restart Service"
-msgstr "_Restartovat slu¾bu"
+msgstr "_Restartovat sluÅ¾bu"
 
 #: src/serviceconf.glade.h:27
 msgid "_Revert To Last Save"
-msgstr "_Návrat k ulo¾enému"
+msgstr "_NÃ¡vrat k uloÅ¾enÃ©mu"
 
 #: src/serviceconf.glade.h:28
 msgid "_Save Changes"
-msgstr "_Ulo¾it zmìny"
+msgstr "_UloÅ¾it zmÄ›ny"
 
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
-msgstr "_Spustit slu¾bu"
+msgstr "_Spustit sluÅ¾bu"
 
 #~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr "Akce (spu¹tìní, ukonèení nebo restart zvolené slu¾by)"
+#~ msgstr "Akce (spuÅ¡tÄ›nÃ­, ukonÄenÃ­ nebo restart zvolenÃ© sluÅ¾by)"
 
 #~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Zvolte runlevel, kterı chcete modifikovat"
+#~ msgstr "Zvolte runlevel, kterÃ½ chcete modifikovat"
 
 #~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "Runlevel 3 je víceu¾ivatelskı se sí»ovımi slu¾bami"
+#~ msgstr "Runlevel 3 je vÃ­ceuÅ¾ivatelskÃ½ se sÃ­Å¥ovÃ½mi sluÅ¾bami"
 
 #~ msgid ""
 #~ "Runlevel 4 is reserved for local customization, and is not usually used"
 #~ msgstr ""
-#~ "Runlevel 4 je rezervovanı pro místní nastavení a obvykle není pou¾it"
+#~ "Runlevel 4 je rezervovanÃ½ pro mÃ­stnÃ­ nastavenÃ­ a obvykle nenÃ­ pouÅ¾it"
 
 #~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
 #~ msgstr ""
-#~ "Runlevel 5 je víceu¾ivatelskı re¾im se sí»ovımi slu¾bami a X Windows"
+#~ "Runlevel 5 je vÃ­ceuÅ¾ivatelskÃ½ reÅ¾im se sÃ­Å¥ovÃ½mi sluÅ¾bami a X Windows"
 
 #~ msgid "Read Manual"
-#~ msgstr "Pøeèíst návod"
+#~ msgstr "PÅ™eÄÃ­st nÃ¡vod"
 
 #~ msgid "Exit"
 #~ msgstr "Konec"
