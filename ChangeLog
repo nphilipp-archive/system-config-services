@@ -1,66 +1,68 @@
 2002-07-26  Daniel J Walsh  <dwalsh@redhat.com>
 
-	* redhat-config-services.spec.in:
+	* /usr/local/CVS/redhat-config-services/ChangeLog: release 0.8.1
+
+	* /usr/local/CVS/redhat-config-services/redhat-config-services.spec.in:
 	update changelog
 
-	* ChangeLog, po/pt.po:
+	* /usr/local/CVS/redhat-config-services/ChangeLog, /usr/local/CVS/redhat-config-services/po/pt.po:
 	release 0.8.1
 
-	* redhat-config-services.pam:
+	* /usr/local/CVS/redhat-config-services/redhat-config-services.pam:
 	add pam_timestanp
 
 2002-07-25  Daniel J Walsh  <dwalsh@redhat.com>
 
-	* ChangeLog, po/ja.po, po/ko.po, po/messages.mo:
+	* /usr/local/CVS/redhat-config-services/ChangeLog, /usr/local/CVS/redhat-config-services/po/ja.po, /usr/local/CVS/redhat-config-services/po/ko.po, /usr/local/CVS/redhat-config-services/po/messages.mo:
 	release 0.8.1
 
-	* docs/html/index.html:
+	* /usr/local/CVS/redhat-config-services/docs/html/index.html:
 	update to latest from serviceconf directory
 
-	* po/cs.po, po/is.po, po/ja.po, po/ko.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po:
+	* /usr/local/CVS/redhat-config-services/po/cs.po, /usr/local/CVS/redhat-config-services/po/is.po, /usr/local/CVS/redhat-config-services/po/ja.po, /usr/local/CVS/redhat-config-services/po/ko.po, /usr/local/CVS/redhat-config-services/po/sv.po, /usr/local/CVS/redhat-config-services/po/tr.po, /usr/local/CVS/redhat-config-services/po/zh_CN.po, /usr/local/CVS/redhat-config-services/po/zh_TW.po:
 	latest translations
 
-	* ChangeLog: release 0.8.1
+	* /usr/local/CVS/redhat-config-services/ChangeLog: release 0.8.1
 
-	* redhat-config-services.spec.in:
+	* /usr/local/CVS/redhat-config-services/redhat-config-services.spec.in:
 	update changelog
 
-	* Makefile.am, ChangeLog, redhat-config-services.spec.in, src/Makefile.am:
+	* /usr/local/CVS/redhat-config-services/Makefile.am, /usr/local/CVS/redhat-config-services/ChangeLog, /usr/local/CVS/redhat-config-services/redhat-config-services.spec.in, /usr/local/CVS/redhat-config-services/src/Makefile.am:
 	release 0.8.1
 
 2002-07-24  Daniel J Walsh  <dwalsh@redhat.com>
 
-	* ChangeLog, src/Makefile.am:
+	* /usr/local/CVS/redhat-config-services/ChangeLog, /usr/local/CVS/redhat-config-services/src/Makefile.am:
 	release 0.8.1
 
-	* redhat-config-services.sh, src/redhat-config-services.sh:
+	* /usr/local/CVS/redhat-config-services/redhat-config-services.sh, /usr/local/CVS/redhat-config-services/src/redhat-config-services.sh:
 	move from toplevel
 
-	* ChangeLog, redhat-config-services.spec.in:
+	* /usr/local/CVS/redhat-config-services/ChangeLog, /usr/local/CVS/redhat-config-services/redhat-config-services.spec.in:
 	release 0.8.1
 
-	* src/Makefile.am: add all files
+	* /usr/local/CVS/redhat-config-services/src/Makefile.am: add all files
 
-	* ChangeLog, Makefile.am, redhat-config-services.spec.in, man/Makefile.am:
+	* /usr/local/CVS/redhat-config-services/ChangeLog, /usr/local/CVS/redhat-config-services/Makefile.am, /usr/local/CVS/redhat-config-services/redhat-config-services.spec.in, /usr/local/CVS/redhat-config-services/man/Makefile.am:
 	release 0.8.1
 
-	* man/Makefile.am:
+	* /usr/local/CVS/redhat-config-services/man/Makefile.am:
 	convert to use configure
 
-	* ChangeLog, config.status, configure.in, Makefile.am:
+	* /usr/local/CVS/redhat-config-services/ChangeLog, /usr/local/CVS/redhat-config-services/config.status, /usr/local/CVS/redhat-config-services/configure.in, /usr/local/CVS/redhat-config-services/Makefile.am:
 	release 0.8.1
 
-	* man/Makefile:
+	* /usr/local/CVS/redhat-config-services/man/Makefile:
 	change to use configure
 
-	* ChangeLog, redhat-config-services.spec.in, Makefile.am:
+	* /usr/local/CVS/redhat-config-services/ChangeLog, /usr/local/CVS/redhat-config-services/redhat-config-services.spec.in, /usr/local/CVS/redhat-config-services/Makefile.am:
 	release 0.8.1
 
-	* Makefile.am, redhat-config-services.console:
+	* /usr/local/CVS/redhat-config-services/Makefile.am, /usr/local/CVS/redhat-config-services/redhat-config-services.console:
 	add console
 
-	* ChangeLog: release 0.8.1
+	* /usr/local/CVS/redhat-config-services/ChangeLog: release 0.8.1
 
-	* pixmaps/rhlogo.png, pixmaps/serviceconf.xpm, man/Makefile, man/redhat-config-services.8, docs/html/index.html, docs/html/legalnotice.html, docs/html/warning.png, docs/html/figs/serviceconf.png, redhat-config-services.desktop.in, redhat-config-services.pam, redhat-config-services.sh, redhat-config-services.spec.in, po/ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/Makefile.in.in, po/messages.mo, po/no.po, po/POTFILES.in, po/pt.po, po/pygettext.py, po/redhat-config-services.gladestrings, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po, intltool-extract.in, intltool-merge.in, intltool.patch, intltool-update.in, aclocal.m4, AUTHORS, autogen.sh, ChangeLog, config.status, configure.in, COPYING, Makefile.am, pycheckrc, src/checklist.py, src/dnsdata_base.py, src/dnsdata.py, src/FwdZone.py, src/Makefile.am, src/serviceconf.glade, src/serviceconf.png, src/serviceconf.py, src/serviceconf.xpm, src/servicemethods.py:
+	* /usr/local/CVS/redhat-config-services/pixmaps/rhlogo.png, /usr/local/CVS/redhat-config-services/pixmaps/serviceconf.xpm, /usr/local/CVS/redhat-config-services/man/Makefile, /usr/local/CVS/redhat-config-services/man/redhat-config-services.8, /usr/local/CVS/redhat-config-services/docs/html/index.html, /usr/local/CVS/redhat-config-services/docs/html/legalnotice.html, /usr/local/CVS/redhat-config-services/docs/html/warning.png, /usr/local/CVS/redhat-config-services/docs/html/figs/serviceconf.png, /usr/local/CVS/redhat-config-services/redhat-config-services.desktop.in, /usr/local/CVS/redhat-config-services/redhat-config-services.pam, /usr/local/CVS/redhat-config-services/redhat-config-services.sh, /usr/local/CVS/redhat-config-services/redhat-config-services.spec.in, /usr/local/CVS/redhat-config-services/po/ChangeLog, /usr/local/CVS/redhat-config-services/po/cs.po, /usr/local/CVS/redhat-config-services/po/da.po, /usr/local/CVS/redhat-config-services/po/de.po, /usr/local/CVS/redhat-config-services/po/es.po, /usr/local/CVS/redhat-config-services/po/fr.po, /usr/local/CVS/redhat-config-services/po/is.po, /usr/local/CVS/redhat-config-services/po/it.po, /usr/local/CVS/redhat-config-services/po/ja.po, /usr/local/CVS/redhat-config-services/po/ko.po, /usr/local/CVS/redhat-config-services/po/Makefile.in.in, /usr/local/CVS/redhat-config-services/po/messages.mo, /usr/local/CVS/redhat-config-services/po/no.po, /usr/local/CVS/redhat-config-services/po/POTFILES.in, /usr/local/CVS/redhat-config-services/po/pt.po, /usr/local/CVS/redhat-config-services/po/pygettext.py, /usr/local/CVS/redhat-config-services/po/redhat-config-services.gladestrings, /usr/local/CVS/redhat-config-services/po/redhat-config-services.pot, /usr/local/CVS/redhat-config-services/po/ru.po, /usr/local/CVS/redhat-config-services/po/sv.po, /usr/local/CVS/redhat-config-services/po/tr.po, /usr/local/CVS/redhat-config-services/po/zh_CN.po, /usr/local/CVS/redhat-config-services/po/zh_TW.po, /usr/local/CVS/redhat-config-services/intltool-extract.in, /usr/local/CVS/redhat-config-services/intltool-merge.in, /usr/local/CVS/redhat-config-services/intltool.patch, /usr/local/CVS/redhat-config-services/intltool-update.in, /usr/local/CVS/redhat-config-services/aclocal.m4, /usr/local/CVS/redhat-config-services/AUTHORS, /usr/local/CVS/redhat-config-services/autogen.sh, /usr/local/CVS/redhat-config-services/ChangeLog, /usr/local/CVS/redhat-config-services/config.status, /usr/local/CVS/redhat-config-services/configure.in, /usr/local/CVS/redhat-config-services/COPYING, /usr/local/CVS/redhat-config-services/Makefile.am, /usr/local/CVS/redhat-config-services/pycheckrc, /usr/local/CVS/redhat-config-services/src/checklist.py, /usr/local/CVS/redhat-config-services/src/dnsdata_base.py, /usr/local/CVS/redhat-config-services/src/dnsdata.py, /usr/local/CVS/redhat-config-services/src/FwdZone.py, /usr/local/CVS/redhat-config-services/src/Makefile.am, /usr/local/CVS/redhat-config-services/src/serviceconf.glade, /usr/local/CVS/redhat-config-services/src/serviceconf.png, /usr/local/CVS/redhat-config-services/src/serviceconf.py, /usr/local/CVS/redhat-config-services/src/serviceconf.xpm, /usr/local/CVS/redhat-config-services/src/servicemethods.py:
 	renaming serviceconf redhat-config-services
 

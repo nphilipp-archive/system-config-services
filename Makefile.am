@@ -27,7 +27,7 @@ applicationsdir=$(datadir)/applications
 applications_DATA=redhat-config-services.desktop
 applications_in_files=$(applications_DATA:.desktop=.desktop.in)
 
-install-data-local:
+install-data-hook:
 	$(mkinstalldirs) $(DESTDIR)$(datadir)/pixmaps
 	$(mkinstalldirs) $(DESTDIR)$(sysconfdir)/security/console.apps
 	$(mkinstalldirs) $(DESTDIR)$(sysconfdir)/pam.d
