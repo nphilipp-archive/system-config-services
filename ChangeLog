@@ -1,5 +1,15 @@
 2003-01-28  Daniel J Walsh  <dwalsh@redhat.com>
 
+	* Makefile.am, redhat-config-services.spec.in, src/serviceconf.glade:
+	fix icon
+
+	* pixmaps/redhat-config-services.png: new bluecurve icon
+
+	* src/servicemethods.py: change to LC_ALL only
+
+	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po:
+	release 0.8.3
+
 	* redhat-config-services.spec.in, src/servicemethods.py:
 	Fix language problems
 
