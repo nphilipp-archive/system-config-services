@@ -553,6 +553,7 @@ class Gui:
     def get_service_action_results(self, servicename, action_type):
         """calls ServiceMethods.service_action_results and displays the results in a dialog box"""
 
+        self.winMain.window.set_cursor(gtk.gdk.Cursor(gtk.gdk.WATCH))
         results = self.ServiceMethods.service_action_results(servicename, action_type, self.editing_runlevel)
 
         if int(results[0]) != 0:
@@ -566,6 +567,7 @@ class Gui:
 	rc = dlg.run()
 	dlg.destroy()
         self.set_text_status()
+        self.winMain.window.set_cursor(gtk.gdk.Cursor(gtk.gdk.LEFT_PTR))
 
     def on_add_service_clicked(self,args):
         dlg = self.xml.get_widget ("serviceNameDialog")
