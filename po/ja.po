@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2002-12-02 11:17-0500\n"
+"POT-Creation-Date: 2002-12-03 17:19-0500\n"
 "PO-Revision-Date: 2002-10-03 10:41GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
@@ -160,7 +160,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:520
+#: src/serviceconf.py:517
 msgid "You must run redhat-config-services as root."
 msgstr "redhat-config-services は root で実行しなければなりません"
 
