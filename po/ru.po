@@ -2,6 +2,7 @@
 # translation of ru.po to
 # translation of ru.po to
 # translation of ru.po to
+# translation of ru.po to
 # translation of ru.po to Russian
 # Copyright (C) YEAR ORGANIZATION
 # Leonid Kanter <leon@geon.donetsk.ua>, 2003
@@ -10,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "POT-Creation-Date: 2003-07-30 09:38-0400\n"
-"PO-Revision-Date: 2003-07-16 17:01+0300\n"
+"PO-Revision-Date: 2003-08-01 17:43+0300\n"
 "Last-Translator: Leonid Kanter <leon@geon.donetsk.ua>\n"
 "Language-Team:  <ru@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -193,7 +194,6 @@ msgstr "redhat-config-services должен выполняться от поль
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
 #: src/servicemethods.py:286
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -201,7 +201,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Для использования этого сервиса необходимо разрешить xinetd."
+"Для этой службы необходим xinetd."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -248,7 +248,7 @@ msgstr "Добавить службу"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
-msgstr "Активный уровень запуска:"
+msgstr "Текуущий уровень запуска:"
 
 #: src/serviceconf.glade.h:4
 msgid "Delete Service"
@@ -600,3 +600,4 @@ msgstr "_Вид"
 
 #~ msgid "Exit"
 #~ msgstr "Выход"
+
