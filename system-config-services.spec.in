@@ -2,7 +2,7 @@
 Summary: redhat-config-services is an initscript and xinetd configuration utility
 Name: @PACKAGE@
 Version: @VERSION@
-Release: 7
+Release: 8
 URL: http://www.redhat.com/ 
 Source0: %{name}-%{version}.tar.gz
 License: GPL
@@ -10,7 +10,7 @@ Group: Applications/System
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 Requires: /sbin/chkconfig
-Requires: gnome-python2, pygtk2, pygtk2-libglade
+Requires: gnome-python2, pygtk2, pygtk2-libglade, gnome-python2-canvas, rhpl
 Requires: usermode >= 1.36, usermode-gtk
 Obsoletes: serviceconf
 
@@ -48,6 +48,9 @@ rm -rf %{buildroot}
 %config %{_sysconfdir}/pam.d/serviceconf
 
 %changelog
+
+* Wed Aug 7 2002 Dan Walsh <dwalsh@redhat.com> 0.8.1-8
+- Update dependencies
 
 * Mon Aug 5 2002 Dan Walsh <dwalsh@redhat.com> 0.8.1-7
 - Updated internationalization stuff
