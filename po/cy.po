@@ -209,7 +209,7 @@ msgstr "Roedd xinetd wedi methu ail-lwythio o "
 #: src/servicemethods.py:333
 # Pain - should be %s yw'r nam but the string handling is wrong
 msgid ". The error was: "
-msgstr ". Roedd y name: "
+msgstr ". Roedd y nam: "
 
 #: src/servicemethods.py:335
 #, python-format
@@ -252,7 +252,7 @@ msgstr "Disgrifiad"
 
 #: src/serviceconf.glade.h:6
 msgid "Don't Save"
-msgstr "Peidio Cadw"
+msgstr "Peidio â Chadw"
 
 #: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
@@ -327,7 +327,7 @@ msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr 
-"Newidoch chi'r lefel-rhedeg cyfredol.\n"
+"Newidoch chi i'r lefel-rhedeg cyfredol.\n"
 "Cadw yr newidiadau rhain ?"
 
 #: src/serviceconf.glade.h:26
@@ -356,7 +356,7 @@ msgstr "Adnewyddu _Rhestr Gwasanaethau"
 
 #: src/serviceconf.glade.h:32
 msgid "_Restart Service"
-msgstr "_Ail-gychwyn Gwasanaeth"
+msgstr "_Ailgychwyn Gwasanaeth"
 
 #: src/serviceconf.glade.h:33
 msgid "_Save Changes"
