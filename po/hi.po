@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hi\n"
-"POT-Creation-Date: 2003-10-06 10:40-0400\n"
+"POT-Creation-Date: 2004-03-02 15:33-0500\n"
 "PO-Revision-Date: 2003-10-14 04:39+0530\n"
 "Last-Translator: Jatin Nansi <jnansi@redhat.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,7 @@ msgstr ""
 #. keep track of the number of rows we have so we can
 #. iterate over them all
 #. add the text for the number of columns we have
+#. !/usr/bin/python
 #. serviceconf.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Authors: Tim Powers <timp@redhat.com>
@@ -59,7 +60,7 @@ msgstr ""
 #. #
 #. # I18N
 #. #
-#: src/serviceconf.py:62
+#: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "क्या आप %s को विलोपित करने के लिए निश्चित हैं?"
@@ -78,16 +79,16 @@ msgstr "क्या आप %s को विलोपित करने के 
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:208
+#: src/serviceconf.py:224
 msgid "Currently Running in Runlevel: "
 msgstr "वर्तमान में धावस्तर में चल रहा हैः "
 
 #. This is a sentry
-#: src/serviceconf.py:219
+#: src/serviceconf.py:235
 msgid "Start at Boot"
 msgstr "बूट पर आरंभ करें"
 
-#: src/serviceconf.py:220
+#: src/serviceconf.py:236
 msgid "Services"
 msgstr "सेवा"
 
@@ -102,8 +103,8 @@ msgstr "सेवा"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:275 src/serviceconf.py:381 src/serviceconf.py:398
-#: src/serviceconf.py:417
+#: src/serviceconf.py:291 src/serviceconf.py:397 src/serviceconf.py:414
+#: src/serviceconf.py:433
 msgid "Editing Runlevel: "
 msgstr "धावस्तर का संपादन कर रहाः"
 
@@ -111,7 +112,7 @@ msgstr "धावस्तर का संपादन कर रहाः"
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:318
+#: src/serviceconf.py:334
 msgid "Unknown"
 msgstr "अग्यात"
 
@@ -119,29 +120,29 @@ msgstr "अग्यात"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:446
-msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "प्रतिलिपि अधिकार (c) २००२ रेड हेट,निगमन। सभी अधिकार सुरक्षित है।"
-
-#: src/serviceconf.py:447
+#: src/serviceconf.py:462
 msgid ""
-"This software may be freely redistributed under the terms of the GPL.\n"
-"Please report all bugs you find at the Red Hat bug tracking system:\n"
-"http://bugzilla.redhat.com"
+"System Services Configuration Tool VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 msgstr ""
-"GPL की शर्तों के अनुसार यह प्रक्रिया सामग्री बिल्कुल मुफ्त में पुनःवितरित की जा सकती है।\n"
-"कृपया आपको मिलने वाले सभी दोषों की सूचना, रेड हैट दोष खोज तंञ पर दें:\n"
-"http://bugzilla.redhat.com"
 
-#: src/serviceconf.py:451
-msgid "translator_credits"
+#: src/serviceconf.py:466
+msgid "About"
 msgstr ""
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#. gnome.help_display_uri(page)
+#: src/serviceconf.py:495
+msgid "Help is not available."
+msgstr ""
+
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
 #. The menu and popup menu items for "Start", "Stop", and "Restart" are
@@ -154,8 +155,9 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:595
-msgid "You must run redhat-config-services as root."
+#: src/serviceconf.py:639
+#, fuzzy
+msgid "You must run system-config-services as root."
 msgstr "आपको redhat-config-services को root जैसा चलाना है।"
 
 #. serviceactions.py
@@ -191,7 +193,7 @@ msgstr "आपको redhat-config-services को root जैसा चला�
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:286
+#: src/servicemethods.py:290
 msgid ""
 "\n"
 "\n"
@@ -209,30 +211,30 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:332
+#: src/servicemethods.py:336
 msgid "xinetd failed to reload for "
 msgstr "इसके लिए xinetd पुनःभारित करने में असफल"
 
-#: src/servicemethods.py:333
+#: src/servicemethods.py:337
 msgid ". The error was: "
 msgstr ". दोष थाः"
 
-#: src/servicemethods.py:335
+#: src/servicemethods.py:339
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd ने %s को सफलतापूर्वक पुनःभारित किया"
 
-#: src/servicemethods.py:338
+#: src/servicemethods.py:342
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s को चलाने के लिए xinetd  को अवश्य समर्थ करना है"
 
-#: src/servicemethods.py:343
+#: src/servicemethods.py:347
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s विफल। दोष थाः %s"
 
-#: src/servicemethods.py:345
+#: src/servicemethods.py:349
 msgid " successful"
 msgstr " सफलतापूर्वक"
 
@@ -375,3 +377,16 @@ msgstr "सेवा को आरंभ करें"
 #: src/serviceconf.glade.h:35
 msgid "_View"
 msgstr "देखें"
+
+#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
+#~ msgstr "प्रतिलिपि अधिकार (c) २००२ रेड हेट,निगमन। सभी अधिकार सुरक्षित है।"
+
+#~ msgid ""
+#~ "This software may be freely redistributed under the terms of the GPL.\n"
+#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
+#~ "http://bugzilla.redhat.com"
+#~ msgstr ""
+#~ "GPL की शर्तों के अनुसार यह प्रक्रिया सामग्री बिल्कुल मुफ्त में पुनःवितरित की जा सकती "
+#~ "है।\n"
+#~ "कृपया आपको मिलने वाले सभी दोषों की सूचना, रेड हैट दोष खोज तंञ पर दें:\n"
+#~ "http://bugzilla.redhat.com"
