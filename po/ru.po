@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
-"POT-Creation-Date: 2003-03-04 14:02-0500\n"
+"POT-Creation-Date: 2003-05-27 10:26-0400\n"
 "PO-Revision-Date: 2003-02-04 13:41+0200\n"
 "Last-Translator: Leonid Kanter <leon@geon.donetsk.ua>\n"
 "Language-Team: Russian <ru@li.org>\n"

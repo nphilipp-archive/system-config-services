@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
-"POT-Creation-Date: 2003-03-04 14:02-0500\n"
+"POT-Creation-Date: 2003-05-27 10:26-0400\n"
 "PO-Revision-Date: 2003-03-26 14:37+1000\n"
 "Last-Translator: Nadine Richter <nrichter@redhat.com>\n"
 "Language-Team: German <de@li.org>\n"
@@ -401,4 +401,3 @@ msgstr "Dienst _starten"
 
 #~ msgid "Exit"
 #~ msgstr "Beenden"
-

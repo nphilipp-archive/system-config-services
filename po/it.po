@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2003-03-04 14:02-0500\n"
+"POT-Creation-Date: 2003-05-27 10:26-0400\n"
 "PO-Revision-Date: 2003-03-26 19:58+1000\n"
 "Last-Translator: Francesco Valente <fvalen@redhat.com>\n"
 "Language-Team: Italian <i18n-list@redhat.com>\n"
@@ -366,4 +366,3 @@ msgstr "_Avvia servizio"
 
 #~ msgid "Save the changes you have made"
 #~ msgstr "Salvare le modifiche effettuate"
-
