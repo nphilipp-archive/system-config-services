@@ -487,13 +487,13 @@ s,@INSTALL_DATA@,${INSTALL} -m 644,;t t
 s,@CYGPATH_W@,echo,;t t
 s,@PACKAGE@,system-config-services,;t t
 s,@VERSION@,0.8.7,;t t
-s,@ACLOCAL@,${SHELL} /tmp/system-config-services/missing --run aclocal-1.7,;t t
-s,@AUTOCONF@,${SHELL} /tmp/system-config-services/missing --run autoconf,;t t
-s,@AUTOMAKE@,${SHELL} /tmp/system-config-services/missing --run automake-1.7,;t t
-s,@AUTOHEADER@,${SHELL} /tmp/system-config-services/missing --run autoheader,;t t
-s,@MAKEINFO@,${SHELL} /tmp/system-config-services/missing --run makeinfo,;t t
-s,@AMTAR@,${SHELL} /tmp/system-config-services/missing --run tar,;t t
-s,@install_sh@,/tmp/system-config-services/install-sh,;t t
+s,@ACLOCAL@,${SHELL} /tmp/foo/system-config-services/missing --run aclocal-1.7,;t t
+s,@AUTOCONF@,${SHELL} /tmp/foo/system-config-services/missing --run autoconf,;t t
+s,@AUTOMAKE@,${SHELL} /tmp/foo/system-config-services/missing --run automake-1.7,;t t
+s,@AUTOHEADER@,${SHELL} /tmp/foo/system-config-services/missing --run autoheader,;t t
+s,@MAKEINFO@,${SHELL} /tmp/foo/system-config-services/missing --run makeinfo,;t t
+s,@AMTAR@,${SHELL} /tmp/foo/system-config-services/missing --run tar,;t t
+s,@install_sh@,/tmp/foo/system-config-services/install-sh,;t t
 s,@STRIP@,,;t t
 s,@ac_ct_STRIP@,,;t t
 s,@INSTALL_STRIP_PROGRAM@,${SHELL} $(install_sh) -c -s,;t t
