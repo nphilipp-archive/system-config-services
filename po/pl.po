@@ -1,19 +1,22 @@
+# translation of pl.po to Polish
 # translation of pl.po to POLISH
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Radosław Zawartko <radzaw@radzaw.one.pl>, 2003.
+# Tom Berner <tom@lodz.pl>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-10-20 13:01+0200\n"
-"PO-Revision-Date: 2004-07-27 23:29+0200\n"
-"Last-Translator: Andrzej Olszewski <andrzej.olszewski@ifj.edu.pl>\n"
-"Language-Team: POLISH <pl@li.org>\n"
+"POT-Creation-Date: 2005-02-17 17:34-0500\n"
+"PO-Revision-Date: 2005-02-24 15:20+0100\n"
+"Last-Translator: Tom Berner <tom@lodz.pl>\n"
+"Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
 
 #  checklist.py: A class (derived from GtkTreeView) that provides a list of
 #  checkbox / text string pairs
@@ -51,36 +54,36 @@ msgstr ""
 #  #
 #  # I18N
 #  #
-#: src/serviceconf.py:73
+#: ../src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Czy aby napewno chcesz usunąć %s ?"
 
-#: src/serviceconf.py:197 src/serviceconf.glade.h:18
+#: ../src/serviceconf.py:195 ../src/serviceconf.glade.h:19
 msgid "Start"
 msgstr "Uruchom"
 
-#: src/serviceconf.py:201 src/serviceconf.glade.h:20
+#: ../src/serviceconf.py:199 ../src/serviceconf.glade.h:21
 msgid "Stop"
 msgstr "Zatrzymaj"
 
-#: src/serviceconf.py:205 src/serviceconf.glade.h:9
+#: ../src/serviceconf.py:203 ../src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Restart"
 
-#: src/serviceconf.py:211
+#: ../src/serviceconf.py:209
 msgid "_Save"
 msgstr "Zapisz"
 
-#: src/serviceconf.py:211
+#: ../src/serviceconf.py:209
 msgid "Save"
 msgstr "Zapisz"
 
-#: src/serviceconf.py:216
+#: ../src/serviceconf.py:214
 msgid "_Revert"
 msgstr "Przywróć"
 
-#: src/serviceconf.py:216
+#: ../src/serviceconf.py:214
 msgid "Revert"
 msgstr "Przywróć"
 
@@ -100,28 +103,29 @@ msgstr "Przywróć"
 #  change when one of the optRL[3-6] are selected
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:250
+#: ../src/serviceconf.py:248
 msgid "Currently Running in Runlevel: "
 msgstr "Aktualnie uruchomiony Runlevel:"
 
-#: src/serviceconf.py:261
-msgid "Start at Boot"
-msgstr "Uruchom przy starcie systemu"
-
-#: src/serviceconf.py:262
+#: ../src/serviceconf.py:261
 msgid "Services"
 msgstr "Usługi"
 
-#: src/serviceconf.py:320 src/serviceconf.py:426 src/serviceconf.py:443
-#: src/serviceconf.py:462
+#: ../src/serviceconf.py:336 ../src/serviceconf.py:439
+#: ../src/serviceconf.py:464 ../src/serviceconf.py:486
+#: ../src/serviceconf.py:508
 msgid "Editing Runlevel: "
 msgstr "Edycja Runlevel:"
 
-#: src/serviceconf.py:363
+#: ../src/serviceconf.py:379
 msgid "Unknown"
 msgstr "Nieznana"
 
-#: src/serviceconf.py:491
+#: ../src/serviceconf.py:508
+msgid "All"
+msgstr ""
+
+#: ../src/serviceconf.py:551
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -139,22 +143,22 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:495
+#: ../src/serviceconf.py:555
 msgid "About"
 msgstr "O programie"
 
-#: src/serviceconf.py:524
+#: ../src/serviceconf.py:584
 msgid "Help is not available."
 msgstr "Pomoc nie jest dostępna"
 
-#: src/serviceconf.py:677
+#: ../src/serviceconf.py:738
 msgid "You must run system-config-services as root."
 msgstr "Musisz uruchomić system-config-services jako root."
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:289
+#: ../src/servicemethods.py:283
 msgid ""
 "\n"
 "\n"
@@ -172,102 +176,106 @@ msgstr ""
 #  for xinetd services
 #  if it's toggled on
 #  if it's toggled off
-#: src/servicemethods.py:335
+#: ../src/servicemethods.py:319
 msgid "xinetd failed to reload for "
 msgstr "xinetd nie przeładował się"
 
-#: src/servicemethods.py:336
+#: ../src/servicemethods.py:320
 msgid ". The error was: "
 msgstr ". Błąd:"
 
-#: src/servicemethods.py:338
+#: ../src/servicemethods.py:322
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd przeładowany %s poprawnie"
 
-#: src/servicemethods.py:341
+#: ../src/servicemethods.py:325
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd musi być włączony aby uruchomić %s"
 
-#: src/servicemethods.py:346
+#: ../src/servicemethods.py:330
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s nie powiodło się. Błąd: %s"
 
-#: src/servicemethods.py:348
+#: ../src/servicemethods.py:332
 msgid " successful"
 msgstr " wykonano pomyślnie"
 
-#: src/serviceconf.glade.h:1
+#: ../src/serviceconf.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: src/serviceconf.glade.h:2
+#: ../src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "Dodaj usługę"
 
-#: src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Aktywny Runlevel:"
 
-#: src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:4
 msgid "Delete Service"
 msgstr "Usuń usługę"
 
-#: src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "Opis"
 
-#: src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "Nie zapisuj"
 
-#: src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "Edycja Runlevel:"
 
-#: src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:8
 msgid "None"
 msgstr "Żaden"
 
-#: src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
 msgstr "Przywróć do ostatniego zapisu"
 
-#: src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "Runlevel _3"
 
-#: src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "Runlevel _4"
 
-#: src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "Runlevel _5"
 
-#: src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:14
+msgid "Runlevel _All"
+msgstr "Runlevel _Wszystkie"
+
+#: ../src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "Zatrzymaj usługę"
 
-#: src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:16
 msgid "Save Dialog"
 msgstr "Zapisz"
 
-#: src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "Konfiguracja usług"
 
-#: src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:18
 msgid "Service Name: "
 msgstr "Nazwa usługi: "
 
-#: src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:20
 msgid "Status"
 msgstr "Status"
 
-#: src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:22
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -275,71 +283,47 @@ msgstr ""
 "Dokonałeś zmian w obecnym runlevel.\n"
 "Czy chcesz zapisać dokonane zmiany?"
 
-#: src/serviceconf.glade.h:23
+#: ../src/serviceconf.glade.h:24
 msgid "_Actions"
 msgstr "Operacje"
 
-#: src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:25
 msgid "_Contents"
 msgstr "Zawartość"
 
-#: src/serviceconf.glade.h:25
+#: ../src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
 msgstr "Edituj Runlevel"
 
-#: src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:27
 msgid "_File"
 msgstr "Plik"
 
-#: src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:28
 msgid "_Help"
 msgstr "Pomoc"
 
-#: src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:29
 msgid "_Quit"
 msgstr "Porzuć"
 
-#: src/serviceconf.glade.h:29
+#: ../src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
 msgstr "Odśwież listę usług"
 
-#: src/serviceconf.glade.h:30
+#: ../src/serviceconf.glade.h:31
 msgid "_Restart Service"
 msgstr "Restart usługi"
 
-#: src/serviceconf.glade.h:31
+#: ../src/serviceconf.glade.h:32
 msgid "_Save Changes"
 msgstr "Zapisz zmiany"
 
-#: src/serviceconf.glade.h:32
+#: ../src/serviceconf.glade.h:33
 msgid "_Start Service"
 msgstr "Uruchom usługę"
 
-#: src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:34
 msgid "_View"
 msgstr "Widok"
 
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "To oprogramowanie może być dowolnie rozprowadzane zgodnie z licencją "
-#~ "GPL.\n"
-#~ "Proszę zgłaszać wszystkie błędy do systemu śledzenia błędów Red Hat:\n"
-#~ "http://bugzilla.redhat.com"
-
-#~ msgid "translator_credits"
-#~ msgstr "Radosław Zawartko <radzaw@lnet.szn.pl>"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "Zrestartuj wybraną usługę"
-
-#~ msgid "Start the selected service"
-#~ msgstr "Uruchom wybraną usługę"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "Zatrzymaj wybraną usługę"
