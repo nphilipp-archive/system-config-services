@@ -39,6 +39,11 @@ from translate import _, N_, cat
 import gettext
 gettext.bindtextdomain (domain, "/usr/share/locale")
 gettext.textdomain (domain)
+try:
+    gettext.install(domain, "/usr/share/locale", 1)
+except IOError:
+    import __builtin__
+    __builtin__.__dict__['_'] = unicode
 _=gettext.gettext
 
 quiting = 0
