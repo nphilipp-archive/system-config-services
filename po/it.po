@@ -213,17 +213,15 @@ msgid ". The error was: "
 msgstr ". L'errore è stato: "
 
 #: src/servicemethods.py:336
-#, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd è riuscito a ricaricare %s"
 
 #: src/servicemethods.py:339
-#, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd deve essere attivato perché %s possa funzionare"
 
 #: src/servicemethods.py:344
-#, fuzzy, python-format
+#, fuzzy
 msgid "%s failed. The error was: %s"
 msgstr "%s non è riuscito a %s. L'errore è stato: %s"
 

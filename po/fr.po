@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: service conf\n"
 "POT-Creation-Date: 2002-08-26 16:34-0400\n"
-"PO-Revision-Date: 2002-07-17 16:28+0200\n"
+"PO-Revision-Date: 2002-08-27 14:48+0200\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -111,6 +111,8 @@ msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"Vous avez effectué des modifications sur le niveau d'exécution en cours.\n"
+"Voulez-vous sauvegarder ces modifications ?"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -121,14 +123,12 @@ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright (c) 2002 Red Hat, Inc. Tous droits réservés."
 
 #: src/serviceconf.py:391
-#, fuzzy
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
 "Ce logiciel peut être redistribué librement selon les termes de la GPL.\n"
-"                                  \n"
 "Envoyez un rapport sur les bogues trouvés au système de contrôle des\n"
 "bogues Red Hat à l'adresse http://bugzilla.redhat.com"
 
@@ -213,19 +213,16 @@ msgid ". The error was: "
 msgstr ". L'erreur était : "
 
 #: src/servicemethods.py:336
-#, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "rechargement de xinetd pour %s réussi"
 
 #: src/servicemethods.py:339
-#, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd doit être activé pour que %s puisse être exécuté."
 
 #: src/servicemethods.py:344
-#, fuzzy, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s n'a pas réussi à %s. L'erreur était : %s"
+msgstr "%s n'a pas réussi. L'erreur était : %s"
 
 #: src/servicemethods.py:346
 msgid " successful"
@@ -313,7 +310,7 @@ msgstr "_Actions"
 
 #: src/serviceconf.glade.h:21
 msgid "_Contents"
-msgstr ""
+msgstr "_Contenu"
 
 #: src/serviceconf.glade.h:22
 msgid "_Edit Runlevel"
@@ -321,11 +318,11 @@ msgstr "_Modifier le niveau d'exécution"
 
 #: src/serviceconf.glade.h:23
 msgid "_File"
-msgstr ""
+msgstr "_Fichier"
 
 #: src/serviceconf.glade.h:24
 msgid "_Help"
-msgstr ""
+msgstr "_Aide"
 
 #: src/serviceconf.glade.h:25
 msgid "_Refresh Service List"
@@ -367,8 +364,8 @@ msgstr "_Démarrer le service"
 
 #~ msgid "Runlevel 3 is multiuser mode with networking"
 #~ msgstr ""
-#~ "Le niveau d'exécution 3 est multi-utilisateurs et il est doté d'un "
-#~ "support réseau"
+#~ "Le niveau d'exécution 3 est multi-utilisateurs et il est doté d'un support "
+#~ "réseau"
 
 #~ msgid ""
 #~ "Runlevel 4 is reserved for local customization, and is not usually used"
@@ -378,11 +375,12 @@ msgstr "_Démarrer le service"
 
 #~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
 #~ msgstr ""
-#~ "Le niveau d'exécution 5 est multi-utilisateurs et il est doté d'un "
-#~ "support réseau et de X Window"
+#~ "Le niveau d'exécution 5 est multi-utilisateurs et il est doté d'un support "
+#~ "réseau et de X Window"
 
 #~ msgid "Read Manual"
 #~ msgstr "Lire le manuel"
 
 #~ msgid "Exit"
 #~ msgstr "Fermer"
+

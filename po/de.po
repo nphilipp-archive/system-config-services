@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf 7.2\n"
 "POT-Creation-Date: 2002-08-26 16:34-0400\n"
-"PO-Revision-Date: 2002-07-15 10:22+0000\n"
+"PO-Revision-Date: 2002-08-27 09:31+0000\n"
 "Last-Translator:  <claudia@redhat.it>\n"
 "Language-Team:  <de@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -110,6 +110,8 @@ msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"Der aktuelle Runlevel wurde geändert.\n"
+"Möchten Sie die Änderungen speichern?"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -120,15 +122,13 @@ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright (c) 2002 Red Hat, Inc. Alle Rechte vorbehalten."
 
 #: src/serviceconf.py:391
-#, fuzzy
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
-"Die Weitergabe dieser Software ist unter den Bedingungen der \n"
+"Die kostenlose Weitergabe dieser Software ist unter den Bedingungen der \n"
 "GNU Public License erlaubt.\n"
-"                                  \n"
 "Bitte melden Sie alle Fehler dem Red Hat Bug Tracking-System:\n"
 "http://bugzilla.redhat.com"
 
@@ -213,19 +213,16 @@ msgid ". The error was: "
 msgstr ". Folgender Fehler ist aufgetreten: "
 
 #: src/servicemethods.py:336
-#, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd wurde für %s erfolgreich neu geladen"
 
 #: src/servicemethods.py:339
-#, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd muss aktiviert werden, damit %s ausgeführt werden kann"
 
 #: src/servicemethods.py:344
-#, fuzzy, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s konnte nicht %s. Folgender Fehler ist aufgetreten: %s"
+msgstr "%s ist fehlgeschlagen. Der Fehler war: %s"
 
 #: src/servicemethods.py:346
 msgid " successful"
@@ -313,7 +310,7 @@ msgstr "_Aktionen"
 
 #: src/serviceconf.glade.h:21
 msgid "_Contents"
-msgstr ""
+msgstr "_Inhalt"
 
 #: src/serviceconf.glade.h:22
 msgid "_Edit Runlevel"
@@ -321,11 +318,11 @@ msgstr "Runlevel _bearbeiten"
 
 #: src/serviceconf.glade.h:23
 msgid "_File"
-msgstr ""
+msgstr "_Datei"
 
 #: src/serviceconf.glade.h:24
 msgid "_Help"
-msgstr ""
+msgstr "_Hilfe"
 
 #: src/serviceconf.glade.h:25
 msgid "_Refresh Service List"

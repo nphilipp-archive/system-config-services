@@ -235,21 +235,19 @@ msgstr ". El error fue: "
 # ../servicemethods.py:310
 # ../servicemethods.py:310
 #: src/servicemethods.py:336
-#, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "recarga de xinetd para %s satisfactoria"
 
 # ../servicemethods.py:313
 # ../servicemethods.py:313
 #: src/servicemethods.py:339
-#, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd debe estar activo para poder ejecutar %s"
 
 # ../servicemethods.py:318
 # ../servicemethods.py:318
 #: src/servicemethods.py:344
-#, fuzzy, python-format
+#, fuzzy
 msgid "%s failed. The error was: %s"
 msgstr "%s falló a %s. El error fue: %s"
 
@@ -431,8 +429,7 @@ msgstr "Comenzar _Servicio"
 # serviceconf.gladestrings:21
 #~ msgid "Actions such as start, stop, and restart on the selected service"
 #~ msgstr ""
-#~ "Acciones tales como comenzar, parar y reiniciar en el servicio "
-#~ "seleccionado"
+#~ "Acciones tales como comenzar, parar y reiniciar en el servicio seleccionado"
 
 # serviceconf.gladestrings:29
 #~ msgid "Select the runlevel you would like to edit"
