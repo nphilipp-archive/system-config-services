@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: 2002-08-05 11:09-0400\n"
+"POT-Creation-Date: 2002-08-07 16:44-0400\n"
 "PO-Revision-Date: 2002-07-17 10:52GMT\n"
 "Last-Translator: Nuria Soriano <nuria@redhat.es>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -647,25 +647,24 @@ msgstr "Parar el servicio seleccionado"
 msgid "_Actions"
 msgstr "_Acciones"
 
+#: src/serviceconf.glade.h:21
+msgid "_Contents"
+msgstr ""
+
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
 # serviceconf.gladestrings:30
-#: src/serviceconf.glade.h:21
+#: src/serviceconf.glade.h:22
 msgid "_Edit Runlevel"
 msgstr "_Editar nivel de ejecución"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:23
 msgid "_File"
 msgstr ""
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:24
 msgid "_Help"
 msgstr ""
-
-# serviceconf.gladestrings:38
-#: src/serviceconf.glade.h:24
-msgid "_Manual"
-msgstr "_Manual"
 
 # serviceconf.gladestrings:16
 #: src/serviceconf.glade.h:25
@@ -692,6 +691,10 @@ msgstr "_Guardar Cambios"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "Comenzar _Servicio"
+
+# serviceconf.gladestrings:38
+#~ msgid "_Manual"
+#~ msgstr "_Manual"
 
 # serviceconf.gladestrings:15
 #~ msgid "Refresh the list of services"

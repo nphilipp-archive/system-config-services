@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf 1.1\n"
-"POT-Creation-Date: 2002-08-05 11:09-0400\n"
+"POT-Creation-Date: 2002-08-07 16:44-0400\n"
 "PO-Revision-Date: 2001-08-16 22:43+0000\n"
 "Last-Translator: Richard Allen <ra@hp.is>\n"
 "Language-Team: is <kde-isl@mmedia.is>\n"
@@ -586,20 +586,20 @@ msgid "_Actions"
 msgstr "_Aðgerðir"
 
 #: src/serviceconf.glade.h:21
+msgid "_Contents"
+msgstr ""
+
+#: src/serviceconf.glade.h:22
 msgid "_Edit Runlevel"
 msgstr "_Breyta keyrslustigi"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:23
 msgid "_File"
 msgstr ""
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:24
 msgid "_Help"
 msgstr ""
-
-#: src/serviceconf.glade.h:24
-msgid "_Manual"
-msgstr "_Handbók"
 
 #: src/serviceconf.glade.h:25
 msgid "_Refresh Service List"
@@ -620,6 +620,9 @@ msgstr "_Vista breytingum"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "_Ræsa þjónustu"
+
+#~ msgid "_Manual"
+#~ msgstr "_Handbók"
 
 #~ msgid "Configure which services will be running when the system starts"
 #~ msgstr "Stýra hvaða þjónustur eru keyrandi þegar vélin ræsir"

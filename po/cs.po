@@ -1,4 +1,4 @@
-# $Id: cs.po,v 1.6 2002/08/05 15:03:33 dwalsh Exp $
+# $Id: cs.po,v 1.7 2002/08/08 15:11:49 dwalsh Exp $
 #
 # Czech translation for serviceconf
 # Copyright (C) 2001 Free Software Foundation, Inc.
@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf 1.0\n"
-"POT-Creation-Date: 2002-08-05 11:09-0400\n"
+"POT-Creation-Date: 2002-08-07 16:44-0400\n"
 "PO-Revision-Date: 2001-08-18 10:44+0100\n"
 "Last-Translator: Milan Kerslager <kerslage@linux.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -592,20 +592,20 @@ msgid "_Actions"
 msgstr "_Akce"
 
 #: src/serviceconf.glade.h:21
+msgid "_Contents"
+msgstr ""
+
+#: src/serviceconf.glade.h:22
 msgid "_Edit Runlevel"
 msgstr "_Zmìnit runlevel"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:23
 msgid "_File"
 msgstr ""
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:24
 msgid "_Help"
 msgstr ""
-
-#: src/serviceconf.glade.h:24
-msgid "_Manual"
-msgstr "_Návod"
 
 #: src/serviceconf.glade.h:25
 msgid "_Refresh Service List"
@@ -626,6 +626,9 @@ msgstr "_Ulo¾it zmìny"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "_Spustit slu¾bu"
+
+#~ msgid "_Manual"
+#~ msgstr "_Návod"
 
 #~ msgid "Refresh the list of services"
 #~ msgstr "Obnovit seznam slu¾eb"

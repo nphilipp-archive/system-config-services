@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
-"POT-Creation-Date: 2002-08-05 11:09-0400\n"
+"POT-Creation-Date: 2002-08-07 16:44-0400\n"
 "PO-Revision-Date: 2001-08-21 10:16+0200\n"
 "Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
@@ -590,20 +590,20 @@ msgid "_Actions"
 msgstr "H_andlinger"
 
 #: src/serviceconf.glade.h:21
+msgid "_Contents"
+msgstr ""
+
+#: src/serviceconf.glade.h:22
 msgid "_Edit Runlevel"
 msgstr "Redigerer kjøringsnivå"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:23
 msgid "_File"
 msgstr ""
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:24
 msgid "_Help"
 msgstr ""
-
-#: src/serviceconf.glade.h:24
-msgid "_Manual"
-msgstr "_Håndbok"
 
 #: src/serviceconf.glade.h:25
 msgid "_Refresh Service List"
@@ -624,6 +624,9 @@ msgstr "_Lagre endringer"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "_Start tjenester"
+
+#~ msgid "_Manual"
+#~ msgstr "_Håndbok"
 
 #~ msgid "Refresh the list of services"
 #~ msgstr "Oppdater listen over tjenester"

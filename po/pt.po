@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2002-08-05 11:09-0400\n"
+"POT-Creation-Date: 2002-08-07 16:44-0400\n"
 "PO-Revision-Date: 2002-07-28 20:39+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
@@ -586,20 +586,20 @@ msgid "_Actions"
 msgstr "_Acções"
 
 #: src/serviceconf.glade.h:21
+msgid "_Contents"
+msgstr ""
+
+#: src/serviceconf.glade.h:22
 msgid "_Edit Runlevel"
 msgstr "_Editar Nível de Execução"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:23
 msgid "_File"
 msgstr ""
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:24
 msgid "_Help"
 msgstr ""
-
-#: src/serviceconf.glade.h:24
-msgid "_Manual"
-msgstr "_Manual"
 
 #: src/serviceconf.glade.h:25
 msgid "_Refresh Service List"
@@ -620,6 +620,9 @@ msgstr "Gravar Alteraçõe_s"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "Iniciar _Serviço"
+
+#~ msgid "_Manual"
+#~ msgstr "_Manual"
 
 #~ msgid "Configure which services will be running when the system starts"
 #~ msgstr ""

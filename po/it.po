@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2002-08-05 11:09-0400\n"
+"POT-Creation-Date: 2002-08-07 16:44-0400\n"
 "PO-Revision-Date: 2002-07-15 14:12GMT\n"
 "Last-Translator: Marisa <marisa@redhat.it>\n"
 "Language-Team:  <it@li.org>\n"
@@ -588,20 +588,20 @@ msgid "_Actions"
 msgstr "_Azioni"
 
 #: src/serviceconf.glade.h:21
+msgid "_Contents"
+msgstr ""
+
+#: src/serviceconf.glade.h:22
 msgid "_Edit Runlevel"
 msgstr "_Modifica runlevel"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:23
 msgid "_File"
 msgstr ""
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:24
 msgid "_Help"
 msgstr ""
-
-#: src/serviceconf.glade.h:24
-msgid "_Manual"
-msgstr "_Manuale"
 
 #: src/serviceconf.glade.h:25
 msgid "_Refresh Service List"
@@ -622,6 +622,9 @@ msgstr "_Salva modifiche"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "_Avvia servizio"
+
+#~ msgid "_Manual"
+#~ msgstr "_Manuale"
 
 #~ msgid "Refresh the list of services"
 #~ msgstr "Aggiornare elenco servizi"

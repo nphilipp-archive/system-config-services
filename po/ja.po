@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
-"POT-Creation-Date: 2002-08-05 11:09-0400\n"
+"POT-Creation-Date: 2002-08-07 16:44-0400\n"
 "PO-Revision-Date: 2002-07-25 12:57GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
@@ -589,20 +589,20 @@ msgid "_Actions"
 msgstr "操作"
 
 #: src/serviceconf.glade.h:21
+msgid "_Contents"
+msgstr ""
+
+#: src/serviceconf.glade.h:22
 msgid "_Edit Runlevel"
 msgstr "ランレベルの編集(_E)"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:23
 msgid "_File"
 msgstr "ファイル (_F)"
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:24
 msgid "_Help"
 msgstr "ヘルプ(_H)"
-
-#: src/serviceconf.glade.h:24
-msgid "_Manual"
-msgstr "マニュアル(_M)"
 
 #: src/serviceconf.glade.h:25
 msgid "_Refresh Service List"
@@ -623,6 +623,9 @@ msgstr "変更を保存(_S)"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "サービスを開始(_S)"
+
+#~ msgid "_Manual"
+#~ msgstr "マニュアル(_M)"
 
 #~ msgid "Refresh the list of services"
 #~ msgstr "サービスリストを更新"

@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
-"POT-Creation-Date: 2002-08-05 11:09-0400\n"
+"POT-Creation-Date: 2002-08-07 16:44-0400\n"
 "PO-Revision-Date: 2002-07-25 11:32+1000\n"
 "Last-Translator: Michelle Kim <mkim@brisbane.redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -586,20 +586,20 @@ msgid "_Actions"
 msgstr "명령 (_A)"
 
 #: src/serviceconf.glade.h:21
+msgid "_Contents"
+msgstr ""
+
+#: src/serviceconf.glade.h:22
 msgid "_Edit Runlevel"
 msgstr "런레벨 편집 (_E)"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:23
 msgid "_File"
 msgstr "파일(_F)"
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:24
 msgid "_Help"
 msgstr "도움말(_H)"
-
-#: src/serviceconf.glade.h:24
-msgid "_Manual"
-msgstr "사용법 (_M)"
 
 #: src/serviceconf.glade.h:25
 msgid "_Refresh Service List"
@@ -620,6 +620,9 @@ msgstr "변동 사항 저장 (_S)"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "서비스 시작 (_S)"
+
+#~ msgid "_Manual"
+#~ msgstr "사용법 (_M)"
 
 #~ msgid "Refresh the list of services"
 #~ msgstr "서비스 목록 재정리"
