@@ -19,8 +19,6 @@ install-exec-local:
 	mkdir -p $(DESTDIR)$(sbindir) $(DESTDIR)$(bindir) $(DESTDIR)$(pkgdatadir)
 	sed -e 's/\@VERSION\@/@VERSION@/g' $(srcdir)/serviceconf.py > $(DESTDIR)$(pkgdatadir)/serviceconf.py
 	chmod 755 $(DESTDIR)$(pkgdatadir)/serviceconf.py
-
-	install -m 0755 $(srcdir)/serviceconf.py $(DESTDIR)$(pkgdatadir)/
 	install -m 0755 $(srcdir)/checklist.py $(DESTDIR)$(pkgdatadir)/
 	install -m 0755 $(srcdir)/servicemethods.py $(DESTDIR)$(pkgdatadir)/
 	install -m 0755 $(srcdir)/redhat-config-services.sh $(DESTDIR)$(pkgdatadir)/redhat-config-services
