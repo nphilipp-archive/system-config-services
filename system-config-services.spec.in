@@ -58,6 +58,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Fri Oct 1 2004 Daniel J Walsh <dwalsh@redhat.com> 0.8.10-1
+- Update translations
+
 * Mon Sep 27 2004 Nils Philippsen <nphilipp@redhat.com> - 0.8.9-1
 - enable Arabic translation (#133722)
 
