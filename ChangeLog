@@ -1,3 +1,27 @@
+2005-02-17  dwalsh  <dwalsh@redhat.com>
+
+	* configure.in, src/checklist.py, src/serviceconf.glade, src/serviceconf.py, src/servicemethods.py, system-config-services.spec.in:
+	add Charlie Brej patch
+
+	* po/.cvsignore: eliminate cvs errors
+
+2005-02-17  sarahs  <sarahs@redhat.com>
+
+	* po/bn.po, po/gu.po, po/hi.po, po/ta.po, po/ca.po, po/bg.po, po/ar.po, po/cs.po, po/da.po, po/ru.po, po/es.po, po/pt_BR.po, po/mk.po, po/de.po, po/ko.po, po/ja.po, po/fr.po, po/zh_TW.po, po/pt.po:
+	merged with pot file
+
+2005-02-16  sarahs  <sarahs@redhat.com>
+
+	* po/it.po, po/pa.po, po/zh_CN.po: merged with pot file
+
+2005-01-28  nphilipp  <nphilipp@redhat.com>
+
+	* ChangeLog, configure.in, po/system-config-services.pot, system-config-services.spec.in:
+	release 0.8.18
+
+	* src/serviceconf.py, system-config-services.spec.in:
+	fix off-by-one which prevented saving changes to the last service in the list (#139456)
+
 2005-01-28  nphilipp  <nphilipp@redhat.com>
 
 	* src/serviceconf.py, system-config-services.spec.in:
