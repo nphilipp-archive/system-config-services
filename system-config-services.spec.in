@@ -2,7 +2,7 @@
 Summary: redhat-config-services is an initscript and xinetd configuration utility
 Name: @PACKAGE@
 Version: @VERSION@
-Release: 9
+Release: 10
 URL: http://www.redhat.com/ 
 Source0: %{name}-%{version}.tar.gz
 License: GPL
@@ -48,6 +48,11 @@ rm -rf %{buildroot}
 %config %{_sysconfdir}/pam.d/serviceconf
 
 %changelog
+
+* Mon Aug 19 2002 Dan Walsh <dwalsh@redhat.com> 0.8.1-10
+- Fix word wrap
+- Fix initial startup to select first row
+- Update languages
 
 * Sat Aug 10 2002 Dan Walsh <dwalsh@redhat.com> 0.8.1-9
 - eliminate extra python files not intended for release
