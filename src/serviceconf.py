@@ -556,11 +556,12 @@ class Gui:
         results = self.ServiceMethods.service_action_results(servicename, action_type, self.editing_runlevel)
 
         if int(results[0]) != 0:
-            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR,
+            dlg = gtk.MessageDialog(self.winMain, 0, gtk.MESSAGE_ERROR,
 	    	gtk.BUTTONS_OK, results[1])
         else:
-            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_INFO,
+            dlg = gtk.MessageDialog(self.winMain, 0, gtk.MESSAGE_INFO,
 	    	gtk.BUTTONS_OK, results[1])
+        dlg.set_position(gtk.WIN_POS_CENTER_ON_PARENT)
 	dlg.show_all()
 	rc = dlg.run()
 	dlg.destroy()
