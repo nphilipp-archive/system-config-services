@@ -1,4 +1,31 @@
+2002-08-10  dwalsh  <dwalsh@redhat.com>
+
+	* src/FwdZone.py, src/Makefile.am, src/dnsdata.py, src/dnsdata_base.py:
+	these were accidently added to this pool when converting to new method
+
+2002-08-09  menthos  <menthos@redhat.com>
+
+	* po/sv.po: 2002-08-09  Christian Rose  <menthos@menthos.com>
+
+		* sv.po: Updated Swedish translation.
+
+2002-08-09  leon  <leon@redhat.com>
+
+	* po/ru.po: fix typo
+
+	* po/ru.po: update translation
+
+2002-08-09  morais  <morais@redhat.com>
+
+	* po/pt.po: update
+
+2002-08-08  khashida  <khashida@redhat.com>
+
+	* po/ja.po: update
+
 2002-08-08  dwalsh  <dwalsh@redhat.com>
+
+	* ChangeLog: release 0.8.1
 
 	* po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	updated po files

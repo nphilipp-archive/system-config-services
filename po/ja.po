@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
-"POT-Creation-Date: 2002-08-07 16:44-0400\n"
+"POT-Creation-Date: 2002-08-10 07:45-0400\n"
 "PO-Revision-Date: 2002-08-09 09:12GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
@@ -40,194 +40,6 @@ msgstr ""
 #. keep track of the number of rows we have so we can
 #. iterate over them all
 #. add the text for the number of columns we have
-#. Hmm is this really needed?
-#. raise Error("Here with args" + args)
-#. def __str__(self):
-#. return Exception.__str__(self)
-#. print len(nums), " matching groups!", nums
-#. add more TTL checking code here
-#: src/dnsdata.py:90 src/dnsdata.py:92
-msgid "Directory "
-msgstr "ディレクトリ"
-
-#: src/dnsdata.py:90
-msgid " does not begin with a slash!"
-msgstr " スラッシュで始まりません!"
-
-#: src/dnsdata.py:92
-msgid " is not an existing directory!"
-msgstr "既存のディレクトリではありません!"
-
-#. FIXME
-#. more checks for valid path here
-#: src/dnsdata.py:113 src/dnsdata.py:125
-msgid "Master "
-msgstr "マスター"
-
-#: src/dnsdata.py:113 src/dnsdata.py:294
-msgid " is not a valid IP address."
-msgstr "有効なIPアドレスではありません。"
-
-#: src/dnsdata.py:125 src/dnsdata.py:279 src/dnsdata.py:383 src/dnsdata.py:433
-#: src/dnsdata.py:470 src/dnsdata.py:511
-msgid " is defined twice."
-msgstr "2回定義されています。"
-
-#: src/dnsdata.py:133
-msgid "Slave zone name "
-msgstr "スレーブゾーン名"
-
-#: src/dnsdata.py:133 src/dnsdata.py:414 src/dnsdata.py:487
-msgid " is not a valid domain name."
-msgstr "有効なドメイン名ではありません。"
-
-#: src/dnsdata.py:148
-msgid "Forwarder "
-msgstr "転送元"
-
-#: src/dnsdata.py:148
-msgid " is not a valid Ip address."
-msgstr "有効なIpアドレスではありません。"
-
-#: src/dnsdata.py:174
-msgid "Primary Nameserver not defined."
-msgstr "プライマリネームサーバーは定義されていません。"
-
-#. print "testPNS on " + value
-#: src/dnsdata.py:181 src/dnsdata.py:183
-msgid "Primary Nameserver `"
-msgstr "プライマリネームサーバー"
-
-#: src/dnsdata.py:181 src/dnsdata.py:249 src/FwdZone.py:444
-msgid "' has no . at the end. You must use a full hostname."
-msgstr "最後に番号があります。ホスト名は完結する必要があります。"
-
-#: src/dnsdata.py:183
-msgid "' is not a valid hostname or IP address."
-msgstr "有効なホスト名又はIPアドレスではありません。"
-
-#: src/dnsdata.py:197
-msgid "Refresh value should be bigger than Retry"
-msgstr "リフレッシュ値はリトライよりも大きくなければなりません。"
-
-#. FIXME
-#. add more tests here
-#: src/dnsdata.py:204
-msgid "Serial number must be >= 1."
-msgstr "シリアル番号は 1より大きい必要があります。"
-
-#: src/dnsdata.py:208
-msgid "Refresh value must be >= 0."
-msgstr "リフレッシュ値は 0より大きい必要があります。"
-
-#: src/dnsdata.py:212
-msgid "Retry value must be >= 0."
-msgstr "リトライ値は 0より大きい必要があります。"
-
-#: src/dnsdata.py:216
-msgid "Expire value must be >= 0."
-msgstr "満期値は 0より大きい必要があります。"
-
-#: src/dnsdata.py:220
-msgid "Minimum value must be >= 0."
-msgstr "最低値は 0より大きい必要があります。"
-
-#. num = self.getNumA()
-#. if num:
-#. names = []
-#. for i in xrange(0, num):
-#. item = self.getA(i)
-#. item.test()
-#. names.append(item.getHost())
-#. for i in xrange(0, num-1):
-#. for j in xrange(i+1, num):
-#. if names[j] == names[i]:
-#. raise TestError, _("Hostname ") + names[i] + _(" is defined twice.")
-#: src/dnsdata.py:241 src/dnsdata.py:285 src/dnsdata.py:319 src/dnsdata.py:390
-msgid "NewHost"
-msgstr "新規ホスト"
-
-#: src/dnsdata.py:246
-msgid "PTR hostname not defined"
-msgstr "PTRホスト名は定義されていません"
-
-#: src/dnsdata.py:249
-msgid "PTR hostname `"
-msgstr "PTRホスト名"
-
-#: src/dnsdata.py:252 src/dnsdata.py:290 src/dnsdata.py:325 src/dnsdata.py:360
-#: src/dnsdata.py:364 src/dnsdata.py:395
-msgid " is not a valid hostname."
-msgstr "有効なホスト名ではありません。"
-
-#: src/dnsdata.py:260
-msgid " must be in the range 0..255."
-msgstr "0から255の間でなければなりません。"
-
-#: src/dnsdata.py:279
-msgid "IP "
-msgstr "IP "
-
-#: src/dnsdata.py:325 src/dnsdata.py:349
-msgid "Nameserver "
-msgstr "ネームサーバ"
-
-#: src/dnsdata.py:330
-msgid " is not a valid host or domain name."
-msgstr "有効なホスト名又はドメイン名ではありません。"
-
-#: src/dnsdata.py:349
-msgid " is defined twice for "
-msgstr "次項目用に2回定義されています。"
-
-#: src/dnsdata.py:355 src/dnsdata.py:356
-msgid "New"
-msgstr "新規"
-
-#: src/dnsdata.py:383
-msgid "Alias "
-msgstr "エイリアス(使用名)"
-
-#: src/dnsdata.py:409
-msgid "<New Forward Zone>"
-msgstr "<新規 転送 ゾーン>"
-
-#: src/dnsdata.py:414 src/dnsdata.py:487
-msgid "Forward zone name "
-msgstr "新規転送ゾーン"
-
-#: src/dnsdata.py:433 src/dnsdata.py:511
-msgid "Zone "
-msgstr "ゾーン"
-
-#: src/dnsdata.py:442
-msgid "<New Reverse Zone>"
-msgstr "<新規 逆行 ゾーン>"
-
-#: src/dnsdata.py:446
-msgid "Reverse zone name `"
-msgstr "逆行ゾーン名`"
-
-#: src/dnsdata.py:446
-msgid "' is not the end of a reverse IP address."
-msgstr "`逆行IPアドレスの最後ではありません。"
-
-#: src/dnsdata.py:451
-msgid "Reverse zone `"
-msgstr "逆行ゾーン`"
-
-#: src/dnsdata.py:451 src/FwdZone.py:657
-msgid "' must list at least one name server"
-msgstr "` 最低1つのネームサーバを記入する必要があります。"
-
-#: src/dnsdata.py:470
-msgid "Reverse zone "
-msgstr "逆行ゾーン"
-
-#: src/dnsdata.py:482
-msgid "<New Zone>"
-msgstr "<新規ゾーン>"
-
 #. serviceconf.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Authors: Tim Powers <timp@redhat.com>
@@ -341,95 +153,6 @@ msgstr "ヘルプは利用できません。"
 msgid "You must run redhat-config-services as root."
 msgstr "redhat-config-services は root で実行しなければなりません"
 
-#. import gnome.ui
-#. Columns for "a_treeview"
-#. #
-#. # I18N stuff
-#. #
-#. Columns for "bindconf_treeview"
-#. columns for "rev_zone_treeview", "fwd_zone_treeview"
-#. if isinstance (broken_widget, gtk.Entry):
-#. #FIXME: supposedly deprecated?
-#. broken_widget.select_region (0, -1)
-#. try:
-#. fwdzone.zone.test()
-#. except TestError, e:
-#. def callback (*args):
-#. pass
-#. qa = gnome.ui.GnomeQuestionDialog (_("The following error occured due to host %s\n%s\nAre you sure you want to add this host?") % (host, e.args), callback, dialog)
-#. button = qa.run ()
-#. if button != 0:
-#. continue
-#: src/FwdZone.py:236
-msgid " aliased to "
-msgstr "次の項目へエイリアスになっています。"
-
-#: src/FwdZone.py:265 src/FwdZone.py:362 src/FwdZone.py:433
-msgid "You must enter a host name."
-msgstr "ホスト名を入力する必要があります。"
-
-#: src/FwdZone.py:268
-msgid "You must enter an alias."
-msgstr "エイリアスを入力する必要があります。"
-
-#: src/FwdZone.py:288
-msgid "An alias with this name already exists."
-msgstr "この名前用のエイリアスはすでに存在します。"
-
-#: src/FwdZone.py:312
-msgid " at priority "
-msgstr "優先的に"
-
-#: src/FwdZone.py:338 src/FwdZone.py:340
-#, python-format
-msgid "Mail Exchanger for %s"
-msgstr "%s用のMail Exchanger"
-
-#: src/FwdZone.py:345
-msgid "Edit Mail Exchanger"
-msgstr "Mail Exchangerを編集"
-
-#: src/FwdZone.py:349
-msgid "Add a Mail Exchanger"
-msgstr "Mail Exchangerを追加"
-
-#: src/FwdZone.py:365
-msgid "You must enter an priority."
-msgstr "優先順を入力する必要があります。"
-
-#: src/FwdZone.py:394
-msgid " served by "
-msgstr "次によりサービスされます。"
-
-#: src/FwdZone.py:436
-msgid "You must enter a resolution address."
-msgstr "決定用アドレスを入力する必要があります。"
-
-#: src/FwdZone.py:444
-msgid "NS hostname `"
-msgstr "NSホスト名 `"
-
-#. slurp from the zone
-#. test_soa_values
-#: src/FwdZone.py:637
-msgid "SOA Refresh value should be bigger than Retry"
-msgstr "SOA リフレッシュ値は リトライよりも大きくなければなりません。"
-
-#. test_a_list
-#. test_ns_list
-#. test_cname_list
-#. test_mx_list
-#: src/FwdZone.py:657
-msgid "Forward zone `"
-msgstr "転送ゾーン"
-
-#. ####
-#: src/FwdZone.py:724
-#, python-format
-msgid "Settings for %s"
-msgstr "%s用のセッティング"
-
-#. FIXME: put checks in here.
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Author: Tim Powers <timp@redhat.com>
@@ -624,6 +347,174 @@ msgstr "変更を保存(_S)"
 msgid "_Start Service"
 msgstr "サービスを開始(_S)"
 
+#~ msgid "Directory "
+#~ msgstr "ディレクトリ"
+
+#~ msgid " does not begin with a slash!"
+#~ msgstr " スラッシュで始まりません!"
+
+#~ msgid " is not an existing directory!"
+#~ msgstr "既存のディレクトリではありません!"
+
+#~ msgid "Master "
+#~ msgstr "マスター"
+
+#~ msgid " is not a valid IP address."
+#~ msgstr "有効なIPアドレスではありません。"
+
+#~ msgid " is defined twice."
+#~ msgstr "2回定義されています。"
+
+#~ msgid "Slave zone name "
+#~ msgstr "スレーブゾーン名"
+
+#~ msgid " is not a valid domain name."
+#~ msgstr "有効なドメイン名ではありません。"
+
+#~ msgid "Forwarder "
+#~ msgstr "転送元"
+
+#~ msgid " is not a valid Ip address."
+#~ msgstr "有効なIpアドレスではありません。"
+
+#~ msgid "Primary Nameserver not defined."
+#~ msgstr "プライマリネームサーバーは定義されていません。"
+
+#~ msgid "Primary Nameserver `"
+#~ msgstr "プライマリネームサーバー"
+
+#~ msgid "' has no . at the end. You must use a full hostname."
+#~ msgstr "最後に番号があります。ホスト名は完結する必要があります。"
+
+#~ msgid "' is not a valid hostname or IP address."
+#~ msgstr "有効なホスト名又はIPアドレスではありません。"
+
+#~ msgid "Refresh value should be bigger than Retry"
+#~ msgstr "リフレッシュ値はリトライよりも大きくなければなりません。"
+
+#~ msgid "Serial number must be >= 1."
+#~ msgstr "シリアル番号は 1より大きい必要があります。"
+
+#~ msgid "Refresh value must be >= 0."
+#~ msgstr "リフレッシュ値は 0より大きい必要があります。"
+
+#~ msgid "Retry value must be >= 0."
+#~ msgstr "リトライ値は 0より大きい必要があります。"
+
+#~ msgid "Expire value must be >= 0."
+#~ msgstr "満期値は 0より大きい必要があります。"
+
+#~ msgid "Minimum value must be >= 0."
+#~ msgstr "最低値は 0より大きい必要があります。"
+
+#~ msgid "NewHost"
+#~ msgstr "新規ホスト"
+
+#~ msgid "PTR hostname not defined"
+#~ msgstr "PTRホスト名は定義されていません"
+
+#~ msgid "PTR hostname `"
+#~ msgstr "PTRホスト名"
+
+#~ msgid " is not a valid hostname."
+#~ msgstr "有効なホスト名ではありません。"
+
+#~ msgid " must be in the range 0..255."
+#~ msgstr "0から255の間でなければなりません。"
+
+#~ msgid "IP "
+#~ msgstr "IP "
+
+#~ msgid "Nameserver "
+#~ msgstr "ネームサーバ"
+
+#~ msgid " is not a valid host or domain name."
+#~ msgstr "有効なホスト名又はドメイン名ではありません。"
+
+#~ msgid " is defined twice for "
+#~ msgstr "次項目用に2回定義されています。"
+
+#~ msgid "New"
+#~ msgstr "新規"
+
+#~ msgid "Alias "
+#~ msgstr "エイリアス(使用名)"
+
+#~ msgid "<New Forward Zone>"
+#~ msgstr "<新規 転送 ゾーン>"
+
+#~ msgid "Forward zone name "
+#~ msgstr "新規転送ゾーン"
+
+#~ msgid "Zone "
+#~ msgstr "ゾーン"
+
+#~ msgid "<New Reverse Zone>"
+#~ msgstr "<新規 逆行 ゾーン>"
+
+#~ msgid "Reverse zone name `"
+#~ msgstr "逆行ゾーン名`"
+
+#~ msgid "' is not the end of a reverse IP address."
+#~ msgstr "`逆行IPアドレスの最後ではありません。"
+
+#~ msgid "Reverse zone `"
+#~ msgstr "逆行ゾーン`"
+
+#~ msgid "' must list at least one name server"
+#~ msgstr "` 最低1つのネームサーバを記入する必要があります。"
+
+#~ msgid "Reverse zone "
+#~ msgstr "逆行ゾーン"
+
+#~ msgid "<New Zone>"
+#~ msgstr "<新規ゾーン>"
+
+#~ msgid " aliased to "
+#~ msgstr "次の項目へエイリアスになっています。"
+
+#~ msgid "You must enter a host name."
+#~ msgstr "ホスト名を入力する必要があります。"
+
+#~ msgid "You must enter an alias."
+#~ msgstr "エイリアスを入力する必要があります。"
+
+#~ msgid "An alias with this name already exists."
+#~ msgstr "この名前用のエイリアスはすでに存在します。"
+
+#~ msgid " at priority "
+#~ msgstr "優先的に"
+
+#~ msgid "Mail Exchanger for %s"
+#~ msgstr "%s用のMail Exchanger"
+
+#~ msgid "Edit Mail Exchanger"
+#~ msgstr "Mail Exchangerを編集"
+
+#~ msgid "Add a Mail Exchanger"
+#~ msgstr "Mail Exchangerを追加"
+
+#~ msgid "You must enter an priority."
+#~ msgstr "優先順を入力する必要があります。"
+
+#~ msgid " served by "
+#~ msgstr "次によりサービスされます。"
+
+#~ msgid "You must enter a resolution address."
+#~ msgstr "決定用アドレスを入力する必要があります。"
+
+#~ msgid "NS hostname `"
+#~ msgstr "NSホスト名 `"
+
+#~ msgid "SOA Refresh value should be bigger than Retry"
+#~ msgstr "SOA リフレッシュ値は リトライよりも大きくなければなりません。"
+
+#~ msgid "Forward zone `"
+#~ msgstr "転送ゾーン"
+
+#~ msgid "Settings for %s"
+#~ msgstr "%s用のセッティング"
+
 #~ msgid "_Manual"
 #~ msgstr "マニュアル(_M)"
 
@@ -670,4 +561,3 @@ msgstr "サービスを開始(_S)"
 
 #~ msgid "Cancel Changes"
 #~ msgstr "変更を取り消し"
-

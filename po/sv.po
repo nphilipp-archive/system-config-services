@@ -1,12 +1,12 @@
 # Swedish messages for serviceconf.
 # Copyright (C) 2001 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.8 2002/08/09 21:54:35 menthos Exp $
+# $Id: sv.po,v 1.9 2002/08/10 11:41:39 dwalsh Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2002-08-07 16:44-0400\n"
+"POT-Creation-Date: 2002-08-10 07:45-0400\n"
 "PO-Revision-Date: 2002-08-09 23:55+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -37,194 +37,6 @@ msgstr ""
 #. keep track of the number of rows we have so we can
 #. iterate over them all
 #. add the text for the number of columns we have
-#. Hmm is this really needed?
-#. raise Error("Here with args" + args)
-#. def __str__(self):
-#. return Exception.__str__(self)
-#. print len(nums), " matching groups!", nums
-#. add more TTL checking code here
-#: src/dnsdata.py:90 src/dnsdata.py:92
-msgid "Directory "
-msgstr "Katalog "
-
-#: src/dnsdata.py:90
-msgid " does not begin with a slash!"
-msgstr " börjar inte med ett snedstreck!"
-
-#: src/dnsdata.py:92
-msgid " is not an existing directory!"
-msgstr " är inte en befintlig katalog!"
-
-#. FIXME
-#. more checks for valid path here
-#: src/dnsdata.py:113 src/dnsdata.py:125
-msgid "Master "
-msgstr "Primärzon "
-
-#: src/dnsdata.py:113 src/dnsdata.py:294
-msgid " is not a valid IP address."
-msgstr " är inte en giltig IP-adress."
-
-#: src/dnsdata.py:125 src/dnsdata.py:279 src/dnsdata.py:383 src/dnsdata.py:433
-#: src/dnsdata.py:470 src/dnsdata.py:511
-msgid " is defined twice."
-msgstr " är definierad två gånger."
-
-#: src/dnsdata.py:133
-msgid "Slave zone name "
-msgstr "Sekundärzonsnamn "
-
-#: src/dnsdata.py:133 src/dnsdata.py:414 src/dnsdata.py:487
-msgid " is not a valid domain name."
-msgstr " är inte ett giltigt domännamn."
-
-#: src/dnsdata.py:148
-msgid "Forwarder "
-msgstr "Framvänd zon "
-
-#: src/dnsdata.py:148
-msgid " is not a valid Ip address."
-msgstr " är inte en giltig IP-adress."
-
-#: src/dnsdata.py:174
-msgid "Primary Nameserver not defined."
-msgstr "Primär namnserver är inte definierad."
-
-#. print "testPNS on " + value
-#: src/dnsdata.py:181 src/dnsdata.py:183
-msgid "Primary Nameserver `"
-msgstr "Primär namnserver \""
-
-#: src/dnsdata.py:181 src/dnsdata.py:249 src/FwdZone.py:444
-msgid "' has no . at the end. You must use a full hostname."
-msgstr "\" har ingen . på slutet. Du måste ange ett fullständigt värdnamn."
-
-#: src/dnsdata.py:183
-msgid "' is not a valid hostname or IP address."
-msgstr "\" är inget giltigt värdnamn eller IP-adress."
-
-#: src/dnsdata.py:197
-msgid "Refresh value should be bigger than Retry"
-msgstr "Uppdateringsvärdet bör vara större än omförsöksvärdet"
-
-#. FIXME
-#. add more tests here
-#: src/dnsdata.py:204
-msgid "Serial number must be >= 1."
-msgstr "Serienumret måste vara >= 1."
-
-#: src/dnsdata.py:208
-msgid "Refresh value must be >= 0."
-msgstr "Uppdateringsvärdet måste vara >=0."
-
-#: src/dnsdata.py:212
-msgid "Retry value must be >= 0."
-msgstr "Omförsöksvärdet måste vara >= 0."
-
-#: src/dnsdata.py:216
-msgid "Expire value must be >= 0."
-msgstr "Upphörvärdet måste vara >= 0."
-
-#: src/dnsdata.py:220
-msgid "Minimum value must be >= 0."
-msgstr "Minimumvärdet måste vara >= 0."
-
-#. num = self.getNumA()
-#. if num:
-#. names = []
-#. for i in xrange(0, num):
-#. item = self.getA(i)
-#. item.test()
-#. names.append(item.getHost())
-#. for i in xrange(0, num-1):
-#. for j in xrange(i+1, num):
-#. if names[j] == names[i]:
-#. raise TestError, _("Hostname ") + names[i] + _(" is defined twice.")
-#: src/dnsdata.py:241 src/dnsdata.py:285 src/dnsdata.py:319 src/dnsdata.py:390
-msgid "NewHost"
-msgstr "NyVärd"
-
-#: src/dnsdata.py:246
-msgid "PTR hostname not defined"
-msgstr "PTR-värdnamn är inte definierat"
-
-#: src/dnsdata.py:249
-msgid "PTR hostname `"
-msgstr "PTR-värdnamn \""
-
-#: src/dnsdata.py:252 src/dnsdata.py:290 src/dnsdata.py:325 src/dnsdata.py:360
-#: src/dnsdata.py:364 src/dnsdata.py:395
-msgid " is not a valid hostname."
-msgstr " är inte ett giltigt värdnamn."
-
-#: src/dnsdata.py:260
-msgid " must be in the range 0..255."
-msgstr " måste vara i intervallet 0..255."
-
-#: src/dnsdata.py:279
-msgid "IP "
-msgstr "IP "
-
-#: src/dnsdata.py:325 src/dnsdata.py:349
-msgid "Nameserver "
-msgstr "Namnserver "
-
-#: src/dnsdata.py:330
-msgid " is not a valid host or domain name."
-msgstr " är inte ett giltigt värdnamn eller domännamn."
-
-#: src/dnsdata.py:349
-msgid " is defined twice for "
-msgstr " är definierad två gånger för "
-
-#: src/dnsdata.py:355 src/dnsdata.py:356
-msgid "New"
-msgstr "Ny"
-
-#: src/dnsdata.py:383
-msgid "Alias "
-msgstr "Alias "
-
-#: src/dnsdata.py:409
-msgid "<New Forward Zone>"
-msgstr "<Ny framvänd zon>"
-
-#: src/dnsdata.py:414 src/dnsdata.py:487
-msgid "Forward zone name "
-msgstr "Namn på framvänd zon "
-
-#: src/dnsdata.py:433 src/dnsdata.py:511
-msgid "Zone "
-msgstr "Zon "
-
-#: src/dnsdata.py:442
-msgid "<New Reverse Zone>"
-msgstr "<Ny omvänd zon>"
-
-#: src/dnsdata.py:446
-msgid "Reverse zone name `"
-msgstr "Namn på omvänd zon \""
-
-#: src/dnsdata.py:446
-msgid "' is not the end of a reverse IP address."
-msgstr "\" är inte slutet på en omvänd IP-adress."
-
-#: src/dnsdata.py:451
-msgid "Reverse zone `"
-msgstr "Omvänd zon \""
-
-#: src/dnsdata.py:451 src/FwdZone.py:657
-msgid "' must list at least one name server"
-msgstr "\" måste lista minst en namnserver"
-
-#: src/dnsdata.py:470
-msgid "Reverse zone "
-msgstr "Omvänd zon "
-
-#: src/dnsdata.py:482
-msgid "<New Zone>"
-msgstr "<Ny zon>"
-
 #. serviceconf.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Authors: Tim Powers <timp@redhat.com>
@@ -338,95 +150,6 @@ msgstr "Hjälp är inte tillgänglig."
 msgid "You must run redhat-config-services as root."
 msgstr "Du måste köra redhat-config-services som root."
 
-#. import gnome.ui
-#. Columns for "a_treeview"
-#. #
-#. # I18N stuff
-#. #
-#. Columns for "bindconf_treeview"
-#. columns for "rev_zone_treeview", "fwd_zone_treeview"
-#. if isinstance (broken_widget, gtk.Entry):
-#. #FIXME: supposedly deprecated?
-#. broken_widget.select_region (0, -1)
-#. try:
-#. fwdzone.zone.test()
-#. except TestError, e:
-#. def callback (*args):
-#. pass
-#. qa = gnome.ui.GnomeQuestionDialog (_("The following error occured due to host %s\n%s\nAre you sure you want to add this host?") % (host, e.args), callback, dialog)
-#. button = qa.run ()
-#. if button != 0:
-#. continue
-#: src/FwdZone.py:236
-msgid " aliased to "
-msgstr " alias till "
-
-#: src/FwdZone.py:265 src/FwdZone.py:362 src/FwdZone.py:433
-msgid "You must enter a host name."
-msgstr "Du måste ange ett värdnamn."
-
-#: src/FwdZone.py:268
-msgid "You must enter an alias."
-msgstr "Du måste ange ett alias."
-
-#: src/FwdZone.py:288
-msgid "An alias with this name already exists."
-msgstr "Det finns redan ett alias med detta namn."
-
-#: src/FwdZone.py:312
-msgid " at priority "
-msgstr " med prioritet "
-
-#: src/FwdZone.py:338 src/FwdZone.py:340
-#, python-format
-msgid "Mail Exchanger for %s"
-msgstr "E-posthanterare (MX) för %s"
-
-#: src/FwdZone.py:345
-msgid "Edit Mail Exchanger"
-msgstr "Redigera e-posthanterare (MX)"
-
-#: src/FwdZone.py:349
-msgid "Add a Mail Exchanger"
-msgstr "Lägg till en e-posthanterare (MX)"
-
-#: src/FwdZone.py:365
-msgid "You must enter an priority."
-msgstr "Du måste ange en prioritet."
-
-#: src/FwdZone.py:394
-msgid " served by "
-msgstr " betjänad av "
-
-#: src/FwdZone.py:436
-msgid "You must enter a resolution address."
-msgstr "Du måste ange en upplösningsadress."
-
-#: src/FwdZone.py:444
-msgid "NS hostname `"
-msgstr "NS-värdnamnet \""
-
-#. slurp from the zone
-#. test_soa_values
-#: src/FwdZone.py:637
-msgid "SOA Refresh value should be bigger than Retry"
-msgstr "SOA-uppdateringsvärdet bör vara större än värdet för omförsök"
-
-#. test_a_list
-#. test_ns_list
-#. test_cname_list
-#. test_mx_list
-#: src/FwdZone.py:657
-msgid "Forward zone `"
-msgstr "Framvända zonen \""
-
-#. ####
-#: src/FwdZone.py:724
-#, python-format
-msgid "Settings for %s"
-msgstr "Inställningar för %s"
-
-#. FIXME: put checks in here.
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Author: Tim Powers <timp@redhat.com>
@@ -620,6 +343,174 @@ msgstr "_Spara ändringar"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "_Starta tjänst"
+
+#~ msgid "Directory "
+#~ msgstr "Katalog "
+
+#~ msgid " does not begin with a slash!"
+#~ msgstr " börjar inte med ett snedstreck!"
+
+#~ msgid " is not an existing directory!"
+#~ msgstr " är inte en befintlig katalog!"
+
+#~ msgid "Master "
+#~ msgstr "Primärzon "
+
+#~ msgid " is not a valid IP address."
+#~ msgstr " är inte en giltig IP-adress."
+
+#~ msgid " is defined twice."
+#~ msgstr " är definierad två gånger."
+
+#~ msgid "Slave zone name "
+#~ msgstr "Sekundärzonsnamn "
+
+#~ msgid " is not a valid domain name."
+#~ msgstr " är inte ett giltigt domännamn."
+
+#~ msgid "Forwarder "
+#~ msgstr "Framvänd zon "
+
+#~ msgid " is not a valid Ip address."
+#~ msgstr " är inte en giltig IP-adress."
+
+#~ msgid "Primary Nameserver not defined."
+#~ msgstr "Primär namnserver är inte definierad."
+
+#~ msgid "Primary Nameserver `"
+#~ msgstr "Primär namnserver \""
+
+#~ msgid "' has no . at the end. You must use a full hostname."
+#~ msgstr "\" har ingen . på slutet. Du måste ange ett fullständigt värdnamn."
+
+#~ msgid "' is not a valid hostname or IP address."
+#~ msgstr "\" är inget giltigt värdnamn eller IP-adress."
+
+#~ msgid "Refresh value should be bigger than Retry"
+#~ msgstr "Uppdateringsvärdet bör vara större än omförsöksvärdet"
+
+#~ msgid "Serial number must be >= 1."
+#~ msgstr "Serienumret måste vara >= 1."
+
+#~ msgid "Refresh value must be >= 0."
+#~ msgstr "Uppdateringsvärdet måste vara >=0."
+
+#~ msgid "Retry value must be >= 0."
+#~ msgstr "Omförsöksvärdet måste vara >= 0."
+
+#~ msgid "Expire value must be >= 0."
+#~ msgstr "Upphörvärdet måste vara >= 0."
+
+#~ msgid "Minimum value must be >= 0."
+#~ msgstr "Minimumvärdet måste vara >= 0."
+
+#~ msgid "NewHost"
+#~ msgstr "NyVärd"
+
+#~ msgid "PTR hostname not defined"
+#~ msgstr "PTR-värdnamn är inte definierat"
+
+#~ msgid "PTR hostname `"
+#~ msgstr "PTR-värdnamn \""
+
+#~ msgid " is not a valid hostname."
+#~ msgstr " är inte ett giltigt värdnamn."
+
+#~ msgid " must be in the range 0..255."
+#~ msgstr " måste vara i intervallet 0..255."
+
+#~ msgid "IP "
+#~ msgstr "IP "
+
+#~ msgid "Nameserver "
+#~ msgstr "Namnserver "
+
+#~ msgid " is not a valid host or domain name."
+#~ msgstr " är inte ett giltigt värdnamn eller domännamn."
+
+#~ msgid " is defined twice for "
+#~ msgstr " är definierad två gånger för "
+
+#~ msgid "New"
+#~ msgstr "Ny"
+
+#~ msgid "Alias "
+#~ msgstr "Alias "
+
+#~ msgid "<New Forward Zone>"
+#~ msgstr "<Ny framvänd zon>"
+
+#~ msgid "Forward zone name "
+#~ msgstr "Namn på framvänd zon "
+
+#~ msgid "Zone "
+#~ msgstr "Zon "
+
+#~ msgid "<New Reverse Zone>"
+#~ msgstr "<Ny omvänd zon>"
+
+#~ msgid "Reverse zone name `"
+#~ msgstr "Namn på omvänd zon \""
+
+#~ msgid "' is not the end of a reverse IP address."
+#~ msgstr "\" är inte slutet på en omvänd IP-adress."
+
+#~ msgid "Reverse zone `"
+#~ msgstr "Omvänd zon \""
+
+#~ msgid "' must list at least one name server"
+#~ msgstr "\" måste lista minst en namnserver"
+
+#~ msgid "Reverse zone "
+#~ msgstr "Omvänd zon "
+
+#~ msgid "<New Zone>"
+#~ msgstr "<Ny zon>"
+
+#~ msgid " aliased to "
+#~ msgstr " alias till "
+
+#~ msgid "You must enter a host name."
+#~ msgstr "Du måste ange ett värdnamn."
+
+#~ msgid "You must enter an alias."
+#~ msgstr "Du måste ange ett alias."
+
+#~ msgid "An alias with this name already exists."
+#~ msgstr "Det finns redan ett alias med detta namn."
+
+#~ msgid " at priority "
+#~ msgstr " med prioritet "
+
+#~ msgid "Mail Exchanger for %s"
+#~ msgstr "E-posthanterare (MX) för %s"
+
+#~ msgid "Edit Mail Exchanger"
+#~ msgstr "Redigera e-posthanterare (MX)"
+
+#~ msgid "Add a Mail Exchanger"
+#~ msgstr "Lägg till en e-posthanterare (MX)"
+
+#~ msgid "You must enter an priority."
+#~ msgstr "Du måste ange en prioritet."
+
+#~ msgid " served by "
+#~ msgstr " betjänad av "
+
+#~ msgid "You must enter a resolution address."
+#~ msgstr "Du måste ange en upplösningsadress."
+
+#~ msgid "NS hostname `"
+#~ msgstr "NS-värdnamnet \""
+
+#~ msgid "SOA Refresh value should be bigger than Retry"
+#~ msgstr "SOA-uppdateringsvärdet bör vara större än värdet för omförsök"
+
+#~ msgid "Forward zone `"
+#~ msgstr "Framvända zonen \""
+
+#~ msgid "Settings for %s"
+#~ msgstr "Inställningar för %s"
 
 #~ msgid "_Manual"
 #~ msgstr "_Manual"

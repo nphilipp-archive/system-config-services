@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
-"POT-Creation-Date: 2002-08-07 16:44-0400\n"
+"POT-Creation-Date: 2002-08-10 07:45-0400\n"
 "PO-Revision-Date: 2002-07-25 11:32+1000\n"
 "Last-Translator: Michelle Kim <mkim@brisbane.redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -36,194 +36,6 @@ msgstr ""
 #. keep track of the number of rows we have so we can
 #. iterate over them all
 #. add the text for the number of columns we have
-#. Hmm is this really needed?
-#. raise Error("Here with args" + args)
-#. def __str__(self):
-#. return Exception.__str__(self)
-#. print len(nums), " matching groups!", nums
-#. add more TTL checking code here
-#: src/dnsdata.py:90 src/dnsdata.py:92
-msgid "Directory "
-msgstr "디렉토리"
-
-#: src/dnsdata.py:90
-msgid " does not begin with a slash!"
-msgstr " 은(는) 슬래시로 시작하지 않습니다!"
-
-#: src/dnsdata.py:92
-msgid " is not an existing directory!"
-msgstr " 디렉토리는 존재하지 않습니다!"
-
-#. FIXME
-#. more checks for valid path here
-#: src/dnsdata.py:113 src/dnsdata.py:125
-msgid "Master "
-msgstr "마스터 "
-
-#: src/dnsdata.py:113 src/dnsdata.py:294
-msgid " is not a valid IP address."
-msgstr " 은(는) 잘못된 IP 주소입니다."
-
-#: src/dnsdata.py:125 src/dnsdata.py:279 src/dnsdata.py:383 src/dnsdata.py:433
-#: src/dnsdata.py:470 src/dnsdata.py:511
-msgid " is defined twice."
-msgstr " 은(는) 중복 정의되었습니다."
-
-#: src/dnsdata.py:133
-msgid "Slave zone name "
-msgstr "슬레이브 영역명"
-
-#: src/dnsdata.py:133 src/dnsdata.py:414 src/dnsdata.py:487
-msgid " is not a valid domain name."
-msgstr " 은(는) 잘못된 도메인명입니다."
-
-#: src/dnsdata.py:148
-msgid "Forwarder "
-msgstr "전달 서버"
-
-#: src/dnsdata.py:148
-msgid " is not a valid Ip address."
-msgstr " 은(는) 잘못된 IP 주소입니다."
-
-#: src/dnsdata.py:174
-msgid "Primary Nameserver not defined."
-msgstr "주 이름서버가 정의되지 않았습니다."
-
-#. print "testPNS on " + value
-#: src/dnsdata.py:181 src/dnsdata.py:183
-msgid "Primary Nameserver `"
-msgstr "주 이름서버 "
-
-#: src/dnsdata.py:181 src/dnsdata.py:249 src/FwdZone.py:444
-msgid "' has no . at the end. You must use a full hostname."
-msgstr "'은(는) . 로 끝나지 않습니다. 완전한 호스트명을 사용해 주십시오."
-
-#: src/dnsdata.py:183
-msgid "' is not a valid hostname or IP address."
-msgstr "' 은(는) 잘못된 호스트명 또는 IP 주소입니다."
-
-#: src/dnsdata.py:197
-msgid "Refresh value should be bigger than Retry"
-msgstr "갱신값 (refresh value)는 재시도값 (retry value)보다 커야 합니다."
-
-#. FIXME
-#. add more tests here
-#: src/dnsdata.py:204
-msgid "Serial number must be >= 1."
-msgstr "일련 번호는 반드시 1보다 크거나 같아야 합니다. ( >= 1)"
-
-#: src/dnsdata.py:208
-msgid "Refresh value must be >= 0."
-msgstr "재생값은 반드시 0보다 크거나 같아야 합니다. ( >= 0)"
-
-#: src/dnsdata.py:212
-msgid "Retry value must be >= 0."
-msgstr "재시도값은 0보다 크거나 같아야 합니다. ( >= 0)"
-
-#: src/dnsdata.py:216
-msgid "Expire value must be >= 0."
-msgstr "만료값 (expire value)는 0보다 크거나 같아야 합니다. ( >= 0)"
-
-#: src/dnsdata.py:220
-msgid "Minimum value must be >= 0."
-msgstr "최소값은 반드시 0보다 크거나 같아야 합니다. ( >= 0)"
-
-#. num = self.getNumA()
-#. if num:
-#. names = []
-#. for i in xrange(0, num):
-#. item = self.getA(i)
-#. item.test()
-#. names.append(item.getHost())
-#. for i in xrange(0, num-1):
-#. for j in xrange(i+1, num):
-#. if names[j] == names[i]:
-#. raise TestError, _("Hostname ") + names[i] + _(" is defined twice.")
-#: src/dnsdata.py:241 src/dnsdata.py:285 src/dnsdata.py:319 src/dnsdata.py:390
-msgid "NewHost"
-msgstr "새호스트"
-
-#: src/dnsdata.py:246
-msgid "PTR hostname not defined"
-msgstr "PTR 호스트명이 정의되지 않았습니다."
-
-#: src/dnsdata.py:249
-msgid "PTR hostname `"
-msgstr "PTR 호스트명"
-
-#: src/dnsdata.py:252 src/dnsdata.py:290 src/dnsdata.py:325 src/dnsdata.py:360
-#: src/dnsdata.py:364 src/dnsdata.py:395
-msgid " is not a valid hostname."
-msgstr " 은(는) 잘못된 호스트명입니다."
-
-#: src/dnsdata.py:260
-msgid " must be in the range 0..255."
-msgstr " (은)는 0..255 범위내여야 합니다."
-
-#: src/dnsdata.py:279
-msgid "IP "
-msgstr "IP "
-
-#: src/dnsdata.py:325 src/dnsdata.py:349
-msgid "Nameserver "
-msgstr "이름서버 "
-
-#: src/dnsdata.py:330
-msgid " is not a valid host or domain name."
-msgstr " 은(는) 잘못된 호스트명 또는 도메인명입니다."
-
-#: src/dnsdata.py:349
-msgid " is defined twice for "
-msgstr " 는 "
-
-#: src/dnsdata.py:355 src/dnsdata.py:356
-msgid "New"
-msgstr "새로운"
-
-#: src/dnsdata.py:383
-msgid "Alias "
-msgstr "별칭"
-
-#: src/dnsdata.py:409
-msgid "<New Forward Zone>"
-msgstr "<새 전달 영역>"
-
-#: src/dnsdata.py:414 src/dnsdata.py:487
-msgid "Forward zone name "
-msgstr "전달 영역명"
-
-#: src/dnsdata.py:433 src/dnsdata.py:511
-msgid "Zone "
-msgstr "영역"
-
-#: src/dnsdata.py:442
-msgid "<New Reverse Zone>"
-msgstr "<새 역방향 영역>"
-
-#: src/dnsdata.py:446
-msgid "Reverse zone name `"
-msgstr "역방향 영역명 "
-
-#: src/dnsdata.py:446
-msgid "' is not the end of a reverse IP address."
-msgstr "' 은(는) 역방향 IP 주소의 끝이 아닙니다."
-
-#: src/dnsdata.py:451
-msgid "Reverse zone `"
-msgstr "역방향 영역 "
-
-#: src/dnsdata.py:451 src/FwdZone.py:657
-msgid "' must list at least one name server"
-msgstr " 목록은 최소한 한 개의 이름 서버를 제공해야 합니다."
-
-#: src/dnsdata.py:470
-msgid "Reverse zone "
-msgstr "역방향 영역"
-
-#: src/dnsdata.py:482
-msgid "<New Zone>"
-msgstr "<새 영역>"
-
 #. serviceconf.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Authors: Tim Powers <timp@redhat.com>
@@ -337,95 +149,6 @@ msgstr "도움말이 없습니다."
 msgid "You must run redhat-config-services as root."
 msgstr "redhat-config-services는 루트로 실행하셔야 합니다."
 
-#. import gnome.ui
-#. Columns for "a_treeview"
-#. #
-#. # I18N stuff
-#. #
-#. Columns for "bindconf_treeview"
-#. columns for "rev_zone_treeview", "fwd_zone_treeview"
-#. if isinstance (broken_widget, gtk.Entry):
-#. #FIXME: supposedly deprecated?
-#. broken_widget.select_region (0, -1)
-#. try:
-#. fwdzone.zone.test()
-#. except TestError, e:
-#. def callback (*args):
-#. pass
-#. qa = gnome.ui.GnomeQuestionDialog (_("The following error occured due to host %s\n%s\nAre you sure you want to add this host?") % (host, e.args), callback, dialog)
-#. button = qa.run ()
-#. if button != 0:
-#. continue
-#: src/FwdZone.py:236
-msgid " aliased to "
-msgstr "다음과 같은 별칭으로 "
-
-#: src/FwdZone.py:265 src/FwdZone.py:362 src/FwdZone.py:433
-msgid "You must enter a host name."
-msgstr "호스트명을 입력해 주십시오."
-
-#: src/FwdZone.py:268
-msgid "You must enter an alias."
-msgstr "별칭 (alias)를 입력해 주십시오."
-
-#: src/FwdZone.py:288
-msgid "An alias with this name already exists."
-msgstr "이 이름에는 별칭이 이미 존재합니다."
-
-#: src/FwdZone.py:312
-msgid " at priority "
-msgstr "우선적으로"
-
-#: src/FwdZone.py:338 src/FwdZone.py:340
-#, python-format
-msgid "Mail Exchanger for %s"
-msgstr "%s에 사용되는 메일 교환기 (Mail Exchanger)"
-
-#: src/FwdZone.py:345
-msgid "Edit Mail Exchanger"
-msgstr "메일 교환기 편집"
-
-#: src/FwdZone.py:349
-msgid "Add a Mail Exchanger"
-msgstr "메일 교환기 추가"
-
-#: src/FwdZone.py:365
-msgid "You must enter an priority."
-msgstr "우선 순위를 입력해 주십시오."
-
-#: src/FwdZone.py:394
-msgid " served by "
-msgstr "은(는) 다음으로 구축되었습니다: "
-
-#: src/FwdZone.py:436
-msgid "You must enter a resolution address."
-msgstr "호스트명 주소 변환에 사용될 주소를 입력해 주십시오."
-
-#: src/FwdZone.py:444
-msgid "NS hostname `"
-msgstr "NS 호스트명"
-
-#. slurp from the zone
-#. test_soa_values
-#: src/FwdZone.py:637
-msgid "SOA Refresh value should be bigger than Retry"
-msgstr "SOA 갱신값은 재시도값보다 커야합니다."
-
-#. test_a_list
-#. test_ns_list
-#. test_cname_list
-#. test_mx_list
-#: src/FwdZone.py:657
-msgid "Forward zone `"
-msgstr "전달 영역"
-
-#. ####
-#: src/FwdZone.py:724
-#, python-format
-msgid "Settings for %s"
-msgstr "%s 설정"
-
-#. FIXME: put checks in here.
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Author: Tim Powers <timp@redhat.com>
@@ -620,6 +343,174 @@ msgstr "변동 사항 저장 (_S)"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "서비스 시작 (_S)"
+
+#~ msgid "Directory "
+#~ msgstr "디렉토리"
+
+#~ msgid " does not begin with a slash!"
+#~ msgstr " 은(는) 슬래시로 시작하지 않습니다!"
+
+#~ msgid " is not an existing directory!"
+#~ msgstr " 디렉토리는 존재하지 않습니다!"
+
+#~ msgid "Master "
+#~ msgstr "마스터 "
+
+#~ msgid " is not a valid IP address."
+#~ msgstr " 은(는) 잘못된 IP 주소입니다."
+
+#~ msgid " is defined twice."
+#~ msgstr " 은(는) 중복 정의되었습니다."
+
+#~ msgid "Slave zone name "
+#~ msgstr "슬레이브 영역명"
+
+#~ msgid " is not a valid domain name."
+#~ msgstr " 은(는) 잘못된 도메인명입니다."
+
+#~ msgid "Forwarder "
+#~ msgstr "전달 서버"
+
+#~ msgid " is not a valid Ip address."
+#~ msgstr " 은(는) 잘못된 IP 주소입니다."
+
+#~ msgid "Primary Nameserver not defined."
+#~ msgstr "주 이름서버가 정의되지 않았습니다."
+
+#~ msgid "Primary Nameserver `"
+#~ msgstr "주 이름서버 "
+
+#~ msgid "' has no . at the end. You must use a full hostname."
+#~ msgstr "'은(는) . 로 끝나지 않습니다. 완전한 호스트명을 사용해 주십시오."
+
+#~ msgid "' is not a valid hostname or IP address."
+#~ msgstr "' 은(는) 잘못된 호스트명 또는 IP 주소입니다."
+
+#~ msgid "Refresh value should be bigger than Retry"
+#~ msgstr "갱신값 (refresh value)는 재시도값 (retry value)보다 커야 합니다."
+
+#~ msgid "Serial number must be >= 1."
+#~ msgstr "일련 번호는 반드시 1보다 크거나 같아야 합니다. ( >= 1)"
+
+#~ msgid "Refresh value must be >= 0."
+#~ msgstr "재생값은 반드시 0보다 크거나 같아야 합니다. ( >= 0)"
+
+#~ msgid "Retry value must be >= 0."
+#~ msgstr "재시도값은 0보다 크거나 같아야 합니다. ( >= 0)"
+
+#~ msgid "Expire value must be >= 0."
+#~ msgstr "만료값 (expire value)는 0보다 크거나 같아야 합니다. ( >= 0)"
+
+#~ msgid "Minimum value must be >= 0."
+#~ msgstr "최소값은 반드시 0보다 크거나 같아야 합니다. ( >= 0)"
+
+#~ msgid "NewHost"
+#~ msgstr "새호스트"
+
+#~ msgid "PTR hostname not defined"
+#~ msgstr "PTR 호스트명이 정의되지 않았습니다."
+
+#~ msgid "PTR hostname `"
+#~ msgstr "PTR 호스트명"
+
+#~ msgid " is not a valid hostname."
+#~ msgstr " 은(는) 잘못된 호스트명입니다."
+
+#~ msgid " must be in the range 0..255."
+#~ msgstr " (은)는 0..255 범위내여야 합니다."
+
+#~ msgid "IP "
+#~ msgstr "IP "
+
+#~ msgid "Nameserver "
+#~ msgstr "이름서버 "
+
+#~ msgid " is not a valid host or domain name."
+#~ msgstr " 은(는) 잘못된 호스트명 또는 도메인명입니다."
+
+#~ msgid " is defined twice for "
+#~ msgstr " 는 "
+
+#~ msgid "New"
+#~ msgstr "새로운"
+
+#~ msgid "Alias "
+#~ msgstr "별칭"
+
+#~ msgid "<New Forward Zone>"
+#~ msgstr "<새 전달 영역>"
+
+#~ msgid "Forward zone name "
+#~ msgstr "전달 영역명"
+
+#~ msgid "Zone "
+#~ msgstr "영역"
+
+#~ msgid "<New Reverse Zone>"
+#~ msgstr "<새 역방향 영역>"
+
+#~ msgid "Reverse zone name `"
+#~ msgstr "역방향 영역명 "
+
+#~ msgid "' is not the end of a reverse IP address."
+#~ msgstr "' 은(는) 역방향 IP 주소의 끝이 아닙니다."
+
+#~ msgid "Reverse zone `"
+#~ msgstr "역방향 영역 "
+
+#~ msgid "' must list at least one name server"
+#~ msgstr " 목록은 최소한 한 개의 이름 서버를 제공해야 합니다."
+
+#~ msgid "Reverse zone "
+#~ msgstr "역방향 영역"
+
+#~ msgid "<New Zone>"
+#~ msgstr "<새 영역>"
+
+#~ msgid " aliased to "
+#~ msgstr "다음과 같은 별칭으로 "
+
+#~ msgid "You must enter a host name."
+#~ msgstr "호스트명을 입력해 주십시오."
+
+#~ msgid "You must enter an alias."
+#~ msgstr "별칭 (alias)를 입력해 주십시오."
+
+#~ msgid "An alias with this name already exists."
+#~ msgstr "이 이름에는 별칭이 이미 존재합니다."
+
+#~ msgid " at priority "
+#~ msgstr "우선적으로"
+
+#~ msgid "Mail Exchanger for %s"
+#~ msgstr "%s에 사용되는 메일 교환기 (Mail Exchanger)"
+
+#~ msgid "Edit Mail Exchanger"
+#~ msgstr "메일 교환기 편집"
+
+#~ msgid "Add a Mail Exchanger"
+#~ msgstr "메일 교환기 추가"
+
+#~ msgid "You must enter an priority."
+#~ msgstr "우선 순위를 입력해 주십시오."
+
+#~ msgid " served by "
+#~ msgstr "은(는) 다음으로 구축되었습니다: "
+
+#~ msgid "You must enter a resolution address."
+#~ msgstr "호스트명 주소 변환에 사용될 주소를 입력해 주십시오."
+
+#~ msgid "NS hostname `"
+#~ msgstr "NS 호스트명"
+
+#~ msgid "SOA Refresh value should be bigger than Retry"
+#~ msgstr "SOA 갱신값은 재시도값보다 커야합니다."
+
+#~ msgid "Forward zone `"
+#~ msgstr "전달 영역"
+
+#~ msgid "Settings for %s"
+#~ msgstr "%s 설정"
 
 #~ msgid "_Manual"
 #~ msgstr "사용법 (_M)"

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2002-08-07 16:44-0400\n"
+"POT-Creation-Date: 2002-08-10 07:45-0400\n"
 "PO-Revision-Date: 2002-08-09 11:10+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
@@ -36,194 +36,6 @@ msgstr ""
 #. keep track of the number of rows we have so we can
 #. iterate over them all
 #. add the text for the number of columns we have
-#. Hmm is this really needed?
-#. raise Error("Here with args" + args)
-#. def __str__(self):
-#. return Exception.__str__(self)
-#. print len(nums), " matching groups!", nums
-#. add more TTL checking code here
-#: src/dnsdata.py:90 src/dnsdata.py:92
-msgid "Directory "
-msgstr "Directoria "
-
-#: src/dnsdata.py:90
-msgid " does not begin with a slash!"
-msgstr " não começa com uma barra!"
-
-#: src/dnsdata.py:92
-msgid " is not an existing directory!"
-msgstr " não é uma directoria existente!"
-
-#. FIXME
-#. more checks for valid path here
-#: src/dnsdata.py:113 src/dnsdata.py:125
-msgid "Master "
-msgstr "Mestre "
-
-#: src/dnsdata.py:113 src/dnsdata.py:294
-msgid " is not a valid IP address."
-msgstr " não é uma endereço IP válido."
-
-#: src/dnsdata.py:125 src/dnsdata.py:279 src/dnsdata.py:383 src/dnsdata.py:433
-#: src/dnsdata.py:470 src/dnsdata.py:511
-msgid " is defined twice."
-msgstr " está definido duas vezes."
-
-#: src/dnsdata.py:133
-msgid "Slave zone name "
-msgstr "Nome da zona-escrava "
-
-#: src/dnsdata.py:133 src/dnsdata.py:414 src/dnsdata.py:487
-msgid " is not a valid domain name."
-msgstr " não é um nome de domínio válido."
-
-#: src/dnsdata.py:148
-msgid "Forwarder "
-msgstr "Encaminhador "
-
-#: src/dnsdata.py:148
-msgid " is not a valid Ip address."
-msgstr " não é um endereço IP válido."
-
-#: src/dnsdata.py:174
-msgid "Primary Nameserver not defined."
-msgstr "O Servidor de Nomes Primário não está definido."
-
-#. print "testPNS on " + value
-#: src/dnsdata.py:181 src/dnsdata.py:183
-msgid "Primary Nameserver `"
-msgstr "Servidor de Nomes Primário `"
-
-#: src/dnsdata.py:181 src/dnsdata.py:249 src/FwdZone.py:444
-msgid "' has no . at the end. You must use a full hostname."
-msgstr "' não tem um . no fim. Deve indicar um nome de máquina completo."
-
-#: src/dnsdata.py:183
-msgid "' is not a valid hostname or IP address."
-msgstr "' não é um nome de máquina ou um endereço IP válido."
-
-#: src/dnsdata.py:197
-msgid "Refresh value should be bigger than Retry"
-msgstr "O valor do Refresh deve ser maior que o do Retry"
-
-#. FIXME
-#. add more tests here
-#: src/dnsdata.py:204
-msgid "Serial number must be >= 1."
-msgstr "O número de série deve ser >= 1."
-
-#: src/dnsdata.py:208
-msgid "Refresh value must be >= 0."
-msgstr "O valor de actualização deve ser >= 0."
-
-#: src/dnsdata.py:212
-msgid "Retry value must be >= 0."
-msgstr "O valor de repetição tem que ser >= 0."
-
-#: src/dnsdata.py:216
-msgid "Expire value must be >= 0."
-msgstr "O valor de tempo de validade deve ser >= 0."
-
-#: src/dnsdata.py:220
-msgid "Minimum value must be >= 0."
-msgstr "O valor mínimo deve ser >= 0."
-
-#. num = self.getNumA()
-#. if num:
-#. names = []
-#. for i in xrange(0, num):
-#. item = self.getA(i)
-#. item.test()
-#. names.append(item.getHost())
-#. for i in xrange(0, num-1):
-#. for j in xrange(i+1, num):
-#. if names[j] == names[i]:
-#. raise TestError, _("Hostname ") + names[i] + _(" is defined twice.")
-#: src/dnsdata.py:241 src/dnsdata.py:285 src/dnsdata.py:319 src/dnsdata.py:390
-msgid "NewHost"
-msgstr "NovaMaquina"
-
-#: src/dnsdata.py:246
-msgid "PTR hostname not defined"
-msgstr "O nome da máquina PTR não está definido"
-
-#: src/dnsdata.py:249
-msgid "PTR hostname `"
-msgstr "O nome da máquina PTR `"
-
-#: src/dnsdata.py:252 src/dnsdata.py:290 src/dnsdata.py:325 src/dnsdata.py:360
-#: src/dnsdata.py:364 src/dnsdata.py:395
-msgid " is not a valid hostname."
-msgstr " não é um nome válido."
-
-#: src/dnsdata.py:260
-msgid " must be in the range 0..255."
-msgstr " tem que estar na gama 0..255."
-
-#: src/dnsdata.py:279
-msgid "IP "
-msgstr "IP "
-
-#: src/dnsdata.py:325 src/dnsdata.py:349
-msgid "Nameserver "
-msgstr "Servidor de nomes "
-
-#: src/dnsdata.py:330
-msgid " is not a valid host or domain name."
-msgstr " não é um nome válido de máquina ou domínio."
-
-#: src/dnsdata.py:349
-msgid " is defined twice for "
-msgstr " está definido duas vezes para "
-
-#: src/dnsdata.py:355 src/dnsdata.py:356
-msgid "New"
-msgstr "Novo"
-
-#: src/dnsdata.py:383
-msgid "Alias "
-msgstr "'Alias' "
-
-#: src/dnsdata.py:409
-msgid "<New Forward Zone>"
-msgstr "<Nova Zona de Encaminhamento>"
-
-#: src/dnsdata.py:414 src/dnsdata.py:487
-msgid "Forward zone name "
-msgstr "O nome da zona de encaminhamento "
-
-#: src/dnsdata.py:433 src/dnsdata.py:511
-msgid "Zone "
-msgstr "Zona"
-
-#: src/dnsdata.py:442
-msgid "<New Reverse Zone>"
-msgstr "<Nova Zona Inversa>"
-
-#: src/dnsdata.py:446
-msgid "Reverse zone name `"
-msgstr "Nome da zona inversa `"
-
-#: src/dnsdata.py:446
-msgid "' is not the end of a reverse IP address."
-msgstr "' não é o fim de um endereço IP inverso."
-
-#: src/dnsdata.py:451
-msgid "Reverse zone `"
-msgstr "Zona inversa `"
-
-#: src/dnsdata.py:451 src/FwdZone.py:657
-msgid "' must list at least one name server"
-msgstr "' deve listar pelo menos um servidor de nomes"
-
-#: src/dnsdata.py:470
-msgid "Reverse zone "
-msgstr "Zona inversa "
-
-#: src/dnsdata.py:482
-msgid "<New Zone>"
-msgstr "<Nova Zona>"
-
 #. serviceconf.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Authors: Tim Powers <timp@redhat.com>
@@ -338,95 +150,6 @@ msgstr "A ajuda não está disponível."
 msgid "You must run redhat-config-services as root."
 msgstr "Deve correr o redhat-config-services como root."
 
-#. import gnome.ui
-#. Columns for "a_treeview"
-#. #
-#. # I18N stuff
-#. #
-#. Columns for "bindconf_treeview"
-#. columns for "rev_zone_treeview", "fwd_zone_treeview"
-#. if isinstance (broken_widget, gtk.Entry):
-#. #FIXME: supposedly deprecated?
-#. broken_widget.select_region (0, -1)
-#. try:
-#. fwdzone.zone.test()
-#. except TestError, e:
-#. def callback (*args):
-#. pass
-#. qa = gnome.ui.GnomeQuestionDialog (_("The following error occured due to host %s\n%s\nAre you sure you want to add this host?") % (host, e.args), callback, dialog)
-#. button = qa.run ()
-#. if button != 0:
-#. continue
-#: src/FwdZone.py:236
-msgid " aliased to "
-msgstr " com associação a "
-
-#: src/FwdZone.py:265 src/FwdZone.py:362 src/FwdZone.py:433
-msgid "You must enter a host name."
-msgstr "Deve inserir um nome de máquina."
-
-#: src/FwdZone.py:268
-msgid "You must enter an alias."
-msgstr "Deve indicar um nome alternativo."
-
-#: src/FwdZone.py:288
-msgid "An alias with this name already exists."
-msgstr "Já existe um nome alternativo igual a este."
-
-#: src/FwdZone.py:312
-msgid " at priority "
-msgstr " com a prioridade "
-
-#: src/FwdZone.py:338 src/FwdZone.py:340
-#, python-format
-msgid "Mail Exchanger for %s"
-msgstr "Encaminhador de Email para o %s"
-
-#: src/FwdZone.py:345
-msgid "Edit Mail Exchanger"
-msgstr "Editar o Encaminhador de Email"
-
-#: src/FwdZone.py:349
-msgid "Add a Mail Exchanger"
-msgstr "Adicionar um Encaminhador de Email"
-
-#: src/FwdZone.py:365
-msgid "You must enter an priority."
-msgstr "Deve correr inserir uma prioridade."
-
-#: src/FwdZone.py:394
-msgid " served by "
-msgstr " servido por "
-
-#: src/FwdZone.py:436
-msgid "You must enter a resolution address."
-msgstr "Tem que inserir um endereço de resolução."
-
-#: src/FwdZone.py:444
-msgid "NS hostname `"
-msgstr "Nome da máquina NS `"
-
-#. slurp from the zone
-#. test_soa_values
-#: src/FwdZone.py:637
-msgid "SOA Refresh value should be bigger than Retry"
-msgstr "O valor do SOA Refresh deve ser maior que o Retry"
-
-#. test_a_list
-#. test_ns_list
-#. test_cname_list
-#. test_mx_list
-#: src/FwdZone.py:657
-msgid "Forward zone `"
-msgstr "Zona de encaminhamento `"
-
-#. ####
-#: src/FwdZone.py:724
-#, python-format
-msgid "Settings for %s"
-msgstr "Configuração para %s"
-
-#. FIXME: put checks in here.
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Author: Tim Powers <timp@redhat.com>
@@ -620,6 +343,174 @@ msgstr "Gravar Alteraçõe_s"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "Iniciar _Serviço"
+
+#~ msgid "Directory "
+#~ msgstr "Directoria "
+
+#~ msgid " does not begin with a slash!"
+#~ msgstr " não começa com uma barra!"
+
+#~ msgid " is not an existing directory!"
+#~ msgstr " não é uma directoria existente!"
+
+#~ msgid "Master "
+#~ msgstr "Mestre "
+
+#~ msgid " is not a valid IP address."
+#~ msgstr " não é uma endereço IP válido."
+
+#~ msgid " is defined twice."
+#~ msgstr " está definido duas vezes."
+
+#~ msgid "Slave zone name "
+#~ msgstr "Nome da zona-escrava "
+
+#~ msgid " is not a valid domain name."
+#~ msgstr " não é um nome de domínio válido."
+
+#~ msgid "Forwarder "
+#~ msgstr "Encaminhador "
+
+#~ msgid " is not a valid Ip address."
+#~ msgstr " não é um endereço IP válido."
+
+#~ msgid "Primary Nameserver not defined."
+#~ msgstr "O Servidor de Nomes Primário não está definido."
+
+#~ msgid "Primary Nameserver `"
+#~ msgstr "Servidor de Nomes Primário `"
+
+#~ msgid "' has no . at the end. You must use a full hostname."
+#~ msgstr "' não tem um . no fim. Deve indicar um nome de máquina completo."
+
+#~ msgid "' is not a valid hostname or IP address."
+#~ msgstr "' não é um nome de máquina ou um endereço IP válido."
+
+#~ msgid "Refresh value should be bigger than Retry"
+#~ msgstr "O valor do Refresh deve ser maior que o do Retry"
+
+#~ msgid "Serial number must be >= 1."
+#~ msgstr "O número de série deve ser >= 1."
+
+#~ msgid "Refresh value must be >= 0."
+#~ msgstr "O valor de actualização deve ser >= 0."
+
+#~ msgid "Retry value must be >= 0."
+#~ msgstr "O valor de repetição tem que ser >= 0."
+
+#~ msgid "Expire value must be >= 0."
+#~ msgstr "O valor de tempo de validade deve ser >= 0."
+
+#~ msgid "Minimum value must be >= 0."
+#~ msgstr "O valor mínimo deve ser >= 0."
+
+#~ msgid "NewHost"
+#~ msgstr "NovaMaquina"
+
+#~ msgid "PTR hostname not defined"
+#~ msgstr "O nome da máquina PTR não está definido"
+
+#~ msgid "PTR hostname `"
+#~ msgstr "O nome da máquina PTR `"
+
+#~ msgid " is not a valid hostname."
+#~ msgstr " não é um nome válido."
+
+#~ msgid " must be in the range 0..255."
+#~ msgstr " tem que estar na gama 0..255."
+
+#~ msgid "IP "
+#~ msgstr "IP "
+
+#~ msgid "Nameserver "
+#~ msgstr "Servidor de nomes "
+
+#~ msgid " is not a valid host or domain name."
+#~ msgstr " não é um nome válido de máquina ou domínio."
+
+#~ msgid " is defined twice for "
+#~ msgstr " está definido duas vezes para "
+
+#~ msgid "New"
+#~ msgstr "Novo"
+
+#~ msgid "Alias "
+#~ msgstr "'Alias' "
+
+#~ msgid "<New Forward Zone>"
+#~ msgstr "<Nova Zona de Encaminhamento>"
+
+#~ msgid "Forward zone name "
+#~ msgstr "O nome da zona de encaminhamento "
+
+#~ msgid "Zone "
+#~ msgstr "Zona"
+
+#~ msgid "<New Reverse Zone>"
+#~ msgstr "<Nova Zona Inversa>"
+
+#~ msgid "Reverse zone name `"
+#~ msgstr "Nome da zona inversa `"
+
+#~ msgid "' is not the end of a reverse IP address."
+#~ msgstr "' não é o fim de um endereço IP inverso."
+
+#~ msgid "Reverse zone `"
+#~ msgstr "Zona inversa `"
+
+#~ msgid "' must list at least one name server"
+#~ msgstr "' deve listar pelo menos um servidor de nomes"
+
+#~ msgid "Reverse zone "
+#~ msgstr "Zona inversa "
+
+#~ msgid "<New Zone>"
+#~ msgstr "<Nova Zona>"
+
+#~ msgid " aliased to "
+#~ msgstr " com associação a "
+
+#~ msgid "You must enter a host name."
+#~ msgstr "Deve inserir um nome de máquina."
+
+#~ msgid "You must enter an alias."
+#~ msgstr "Deve indicar um nome alternativo."
+
+#~ msgid "An alias with this name already exists."
+#~ msgstr "Já existe um nome alternativo igual a este."
+
+#~ msgid " at priority "
+#~ msgstr " com a prioridade "
+
+#~ msgid "Mail Exchanger for %s"
+#~ msgstr "Encaminhador de Email para o %s"
+
+#~ msgid "Edit Mail Exchanger"
+#~ msgstr "Editar o Encaminhador de Email"
+
+#~ msgid "Add a Mail Exchanger"
+#~ msgstr "Adicionar um Encaminhador de Email"
+
+#~ msgid "You must enter an priority."
+#~ msgstr "Deve correr inserir uma prioridade."
+
+#~ msgid " served by "
+#~ msgstr " servido por "
+
+#~ msgid "You must enter a resolution address."
+#~ msgstr "Tem que inserir um endereço de resolução."
+
+#~ msgid "NS hostname `"
+#~ msgstr "Nome da máquina NS `"
+
+#~ msgid "SOA Refresh value should be bigger than Retry"
+#~ msgstr "O valor do SOA Refresh deve ser maior que o Retry"
+
+#~ msgid "Forward zone `"
+#~ msgstr "Zona de encaminhamento `"
+
+#~ msgid "Settings for %s"
+#~ msgstr "Configuração para %s"
 
 #~ msgid "Configure which services will be running when the system starts"
 #~ msgstr ""

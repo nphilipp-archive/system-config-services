@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
-"POT-Creation-Date: 2002-08-07 16:44-0400\n"
+"POT-Creation-Date: 2002-08-10 07:45-0400\n"
 "PO-Revision-Date: 2002-08-09 17:01+0300\n"
 "Last-Translator: Leon Kanter <leon@blackcatlinux.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
@@ -38,194 +38,6 @@ msgstr ""
 #. keep track of the number of rows we have so we can
 #. iterate over them all
 #. add the text for the number of columns we have
-#. Hmm is this really needed?
-#. raise Error("Here with args" + args)
-#. def __str__(self):
-#. return Exception.__str__(self)
-#. print len(nums), " matching groups!", nums
-#. add more TTL checking code here
-#: src/dnsdata.py:90 src/dnsdata.py:92
-msgid "Directory "
-msgstr "Каталог "
-
-#: src/dnsdata.py:90
-msgid " does not begin with a slash!"
-msgstr " не начинается с \"/\"!"
-
-#: src/dnsdata.py:92
-msgid " is not an existing directory!"
-msgstr " не существует!"
-
-#. FIXME
-#. more checks for valid path here
-#: src/dnsdata.py:113 src/dnsdata.py:125
-msgid "Master "
-msgstr "Мастер "
-
-#: src/dnsdata.py:113 src/dnsdata.py:294
-msgid " is not a valid IP address."
-msgstr " не является действительным адресом IP."
-
-#: src/dnsdata.py:125 src/dnsdata.py:279 src/dnsdata.py:383 src/dnsdata.py:433
-#: src/dnsdata.py:470 src/dnsdata.py:511
-msgid " is defined twice."
-msgstr " определен дважды."
-
-#: src/dnsdata.py:133
-msgid "Slave zone name "
-msgstr "Имя вторичной зоны "
-
-#: src/dnsdata.py:133 src/dnsdata.py:414 src/dnsdata.py:487
-msgid " is not a valid domain name."
-msgstr " не является действительным доменным именем."
-
-#: src/dnsdata.py:148
-msgid "Forwarder "
-msgstr "Forwarder "
-
-#: src/dnsdata.py:148
-msgid " is not a valid Ip address."
-msgstr " Не является действительным адресом IP."
-
-#: src/dnsdata.py:174
-msgid "Primary Nameserver not defined."
-msgstr "Первичный сервер DNS не определен."
-
-#. print "testPNS on " + value
-#: src/dnsdata.py:181 src/dnsdata.py:183
-msgid "Primary Nameserver `"
-msgstr "Первичный сервер DNS `"
-
-#: src/dnsdata.py:181 src/dnsdata.py:249 src/FwdZone.py:444
-msgid "' has no . at the end. You must use a full hostname."
-msgstr "' не имеет . в конце. Вы должны использовать полное имя узла."
-
-#: src/dnsdata.py:183
-msgid "' is not a valid hostname or IP address."
-msgstr "' не является действительным адресом IP или именем узла."
-
-#: src/dnsdata.py:197
-msgid "Refresh value should be bigger than Retry"
-msgstr "Значение Refresh должно быть больше, чем Retry"
-
-#. FIXME
-#. add more tests here
-#: src/dnsdata.py:204
-msgid "Serial number must be >= 1."
-msgstr "Serial number должен быть >= 1."
-
-#: src/dnsdata.py:208
-msgid "Refresh value must be >= 0."
-msgstr "Значение Refresh должно быть >= 0."
-
-#: src/dnsdata.py:212
-msgid "Retry value must be >= 0."
-msgstr "Значение Retry должно быть >= 0."
-
-#: src/dnsdata.py:216
-msgid "Expire value must be >= 0."
-msgstr "Значение Expire должно быть >= 0."
-
-#: src/dnsdata.py:220
-msgid "Minimum value must be >= 0."
-msgstr "Минимальное значение должно быть >=0"
-
-#. num = self.getNumA()
-#. if num:
-#. names = []
-#. for i in xrange(0, num):
-#. item = self.getA(i)
-#. item.test()
-#. names.append(item.getHost())
-#. for i in xrange(0, num-1):
-#. for j in xrange(i+1, num):
-#. if names[j] == names[i]:
-#. raise TestError, _("Hostname ") + names[i] + _(" is defined twice.")
-#: src/dnsdata.py:241 src/dnsdata.py:285 src/dnsdata.py:319 src/dnsdata.py:390
-msgid "NewHost"
-msgstr "NewHost"
-
-#: src/dnsdata.py:246
-msgid "PTR hostname not defined"
-msgstr "PTR hostname не определено"
-
-#: src/dnsdata.py:249
-msgid "PTR hostname `"
-msgstr "PTR hostname `"
-
-#: src/dnsdata.py:252 src/dnsdata.py:290 src/dnsdata.py:325 src/dnsdata.py:360
-#: src/dnsdata.py:364 src/dnsdata.py:395
-msgid " is not a valid hostname."
-msgstr " не является действительным именем узла."
-
-#: src/dnsdata.py:260
-msgid " must be in the range 0..255."
-msgstr " должен быть в диапазоне 0..255"
-
-#: src/dnsdata.py:279
-msgid "IP "
-msgstr "IP "
-
-#: src/dnsdata.py:325 src/dnsdata.py:349
-msgid "Nameserver "
-msgstr "Сервер DNS "
-
-#: src/dnsdata.py:330
-msgid " is not a valid host or domain name."
-msgstr " не является действительным адресом узла или домена."
-
-#: src/dnsdata.py:349
-msgid " is defined twice for "
-msgstr " определен дважды для "
-
-#: src/dnsdata.py:355 src/dnsdata.py:356
-msgid "New"
-msgstr "Создать"
-
-#: src/dnsdata.py:383
-msgid "Alias "
-msgstr "Псевдоним "
-
-#: src/dnsdata.py:409
-msgid "<New Forward Zone>"
-msgstr "<New Forward Zone>"
-
-#: src/dnsdata.py:414 src/dnsdata.py:487
-msgid "Forward zone name "
-msgstr "Forward zone name "
-
-#: src/dnsdata.py:433 src/dnsdata.py:511
-msgid "Zone "
-msgstr "Зона "
-
-#: src/dnsdata.py:442
-msgid "<New Reverse Zone>"
-msgstr "<New Reverse Zone>"
-
-#: src/dnsdata.py:446
-msgid "Reverse zone name `"
-msgstr "Имя обратной зоны `"
-
-#: src/dnsdata.py:446
-msgid "' is not the end of a reverse IP address."
-msgstr "' не является завершением обратного адреса IP."
-
-#: src/dnsdata.py:451
-msgid "Reverse zone `"
-msgstr "Обратная зона '"
-
-#: src/dnsdata.py:451 src/FwdZone.py:657
-msgid "' must list at least one name server"
-msgstr "' должна включать хотя бы один сервер DNS"
-
-#: src/dnsdata.py:470
-msgid "Reverse zone "
-msgstr "Обратная зона "
-
-#: src/dnsdata.py:482
-msgid "<New Zone>"
-msgstr "<New Zone>"
-
 #. serviceconf.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Authors: Tim Powers <timp@redhat.com>
@@ -339,95 +151,6 @@ msgstr "Справка недоступна."
 msgid "You must run redhat-config-services as root."
 msgstr "redhat-config-services должен выполняться от пользователя root."
 
-#. import gnome.ui
-#. Columns for "a_treeview"
-#. #
-#. # I18N stuff
-#. #
-#. Columns for "bindconf_treeview"
-#. columns for "rev_zone_treeview", "fwd_zone_treeview"
-#. if isinstance (broken_widget, gtk.Entry):
-#. #FIXME: supposedly deprecated?
-#. broken_widget.select_region (0, -1)
-#. try:
-#. fwdzone.zone.test()
-#. except TestError, e:
-#. def callback (*args):
-#. pass
-#. qa = gnome.ui.GnomeQuestionDialog (_("The following error occured due to host %s\n%s\nAre you sure you want to add this host?") % (host, e.args), callback, dialog)
-#. button = qa.run ()
-#. if button != 0:
-#. continue
-#: src/FwdZone.py:236
-msgid " aliased to "
-msgstr " является ссылкой на "
-
-#: src/FwdZone.py:265 src/FwdZone.py:362 src/FwdZone.py:433
-msgid "You must enter a host name."
-msgstr "Необходимо указать имя узла."
-
-#: src/FwdZone.py:268
-msgid "You must enter an alias."
-msgstr "Необходимо указать псевдоним"
-
-#: src/FwdZone.py:288
-msgid "An alias with this name already exists."
-msgstr "Псевдоним с таким именем уже существует"
-
-#: src/FwdZone.py:312
-msgid " at priority "
-msgstr " с приоритетом "
-
-#: src/FwdZone.py:338 src/FwdZone.py:340
-#, python-format
-msgid "Mail Exchanger for %s"
-msgstr "Mail Exchanger для %s"
-
-#: src/FwdZone.py:345
-msgid "Edit Mail Exchanger"
-msgstr "Изменить Mail Exchanger"
-
-#: src/FwdZone.py:349
-msgid "Add a Mail Exchanger"
-msgstr "Добавить Mail Exchanger"
-
-#: src/FwdZone.py:365
-msgid "You must enter an priority."
-msgstr "Вы должны указать приоритет."
-
-#: src/FwdZone.py:394
-msgid " served by "
-msgstr " обслуживается "
-
-#: src/FwdZone.py:436
-msgid "You must enter a resolution address."
-msgstr "You must enter a resolution address."
-
-#: src/FwdZone.py:444
-msgid "NS hostname `"
-msgstr "NS hostname `"
-
-#. slurp from the zone
-#. test_soa_values
-#: src/FwdZone.py:637
-msgid "SOA Refresh value should be bigger than Retry"
-msgstr "Величина SOA Refresh должна быть больше чем Retry"
-
-#. test_a_list
-#. test_ns_list
-#. test_cname_list
-#. test_mx_list
-#: src/FwdZone.py:657
-msgid "Forward zone `"
-msgstr "Зона Forward `"
-
-#. ####
-#: src/FwdZone.py:724
-#, python-format
-msgid "Settings for %s"
-msgstr "Параметры для %s"
-
-#. FIXME: put checks in here.
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Author: Tim Powers <timp@redhat.com>
@@ -622,6 +345,174 @@ msgstr "_Сохранить изменения"
 msgid "_Start Service"
 msgstr "_Запустить службу"
 
+#~ msgid "Directory "
+#~ msgstr "Каталог "
+
+#~ msgid " does not begin with a slash!"
+#~ msgstr " не начинается с \"/\"!"
+
+#~ msgid " is not an existing directory!"
+#~ msgstr " не существует!"
+
+#~ msgid "Master "
+#~ msgstr "Мастер "
+
+#~ msgid " is not a valid IP address."
+#~ msgstr " не является действительным адресом IP."
+
+#~ msgid " is defined twice."
+#~ msgstr " определен дважды."
+
+#~ msgid "Slave zone name "
+#~ msgstr "Имя вторичной зоны "
+
+#~ msgid " is not a valid domain name."
+#~ msgstr " не является действительным доменным именем."
+
+#~ msgid "Forwarder "
+#~ msgstr "Forwarder "
+
+#~ msgid " is not a valid Ip address."
+#~ msgstr " Не является действительным адресом IP."
+
+#~ msgid "Primary Nameserver not defined."
+#~ msgstr "Первичный сервер DNS не определен."
+
+#~ msgid "Primary Nameserver `"
+#~ msgstr "Первичный сервер DNS `"
+
+#~ msgid "' has no . at the end. You must use a full hostname."
+#~ msgstr "' не имеет . в конце. Вы должны использовать полное имя узла."
+
+#~ msgid "' is not a valid hostname or IP address."
+#~ msgstr "' не является действительным адресом IP или именем узла."
+
+#~ msgid "Refresh value should be bigger than Retry"
+#~ msgstr "Значение Refresh должно быть больше, чем Retry"
+
+#~ msgid "Serial number must be >= 1."
+#~ msgstr "Serial number должен быть >= 1."
+
+#~ msgid "Refresh value must be >= 0."
+#~ msgstr "Значение Refresh должно быть >= 0."
+
+#~ msgid "Retry value must be >= 0."
+#~ msgstr "Значение Retry должно быть >= 0."
+
+#~ msgid "Expire value must be >= 0."
+#~ msgstr "Значение Expire должно быть >= 0."
+
+#~ msgid "Minimum value must be >= 0."
+#~ msgstr "Минимальное значение должно быть >=0"
+
+#~ msgid "NewHost"
+#~ msgstr "NewHost"
+
+#~ msgid "PTR hostname not defined"
+#~ msgstr "PTR hostname не определено"
+
+#~ msgid "PTR hostname `"
+#~ msgstr "PTR hostname `"
+
+#~ msgid " is not a valid hostname."
+#~ msgstr " не является действительным именем узла."
+
+#~ msgid " must be in the range 0..255."
+#~ msgstr " должен быть в диапазоне 0..255"
+
+#~ msgid "IP "
+#~ msgstr "IP "
+
+#~ msgid "Nameserver "
+#~ msgstr "Сервер DNS "
+
+#~ msgid " is not a valid host or domain name."
+#~ msgstr " не является действительным адресом узла или домена."
+
+#~ msgid " is defined twice for "
+#~ msgstr " определен дважды для "
+
+#~ msgid "New"
+#~ msgstr "Создать"
+
+#~ msgid "Alias "
+#~ msgstr "Псевдоним "
+
+#~ msgid "<New Forward Zone>"
+#~ msgstr "<New Forward Zone>"
+
+#~ msgid "Forward zone name "
+#~ msgstr "Forward zone name "
+
+#~ msgid "Zone "
+#~ msgstr "Зона "
+
+#~ msgid "<New Reverse Zone>"
+#~ msgstr "<New Reverse Zone>"
+
+#~ msgid "Reverse zone name `"
+#~ msgstr "Имя обратной зоны `"
+
+#~ msgid "' is not the end of a reverse IP address."
+#~ msgstr "' не является завершением обратного адреса IP."
+
+#~ msgid "Reverse zone `"
+#~ msgstr "Обратная зона '"
+
+#~ msgid "' must list at least one name server"
+#~ msgstr "' должна включать хотя бы один сервер DNS"
+
+#~ msgid "Reverse zone "
+#~ msgstr "Обратная зона "
+
+#~ msgid "<New Zone>"
+#~ msgstr "<New Zone>"
+
+#~ msgid " aliased to "
+#~ msgstr " является ссылкой на "
+
+#~ msgid "You must enter a host name."
+#~ msgstr "Необходимо указать имя узла."
+
+#~ msgid "You must enter an alias."
+#~ msgstr "Необходимо указать псевдоним"
+
+#~ msgid "An alias with this name already exists."
+#~ msgstr "Псевдоним с таким именем уже существует"
+
+#~ msgid " at priority "
+#~ msgstr " с приоритетом "
+
+#~ msgid "Mail Exchanger for %s"
+#~ msgstr "Mail Exchanger для %s"
+
+#~ msgid "Edit Mail Exchanger"
+#~ msgstr "Изменить Mail Exchanger"
+
+#~ msgid "Add a Mail Exchanger"
+#~ msgstr "Добавить Mail Exchanger"
+
+#~ msgid "You must enter an priority."
+#~ msgstr "Вы должны указать приоритет."
+
+#~ msgid " served by "
+#~ msgstr " обслуживается "
+
+#~ msgid "You must enter a resolution address."
+#~ msgstr "You must enter a resolution address."
+
+#~ msgid "NS hostname `"
+#~ msgstr "NS hostname `"
+
+#~ msgid "SOA Refresh value should be bigger than Retry"
+#~ msgstr "Величина SOA Refresh должна быть больше чем Retry"
+
+#~ msgid "Forward zone `"
+#~ msgstr "Зона Forward `"
+
+#~ msgid "Settings for %s"
+#~ msgstr "Параметры для %s"
+
 #~ msgid "_Manual"
 #~ msgstr "_Руководство"
 
@@ -655,4 +546,3 @@ msgstr "_Запустить службу"
 
 #~ msgid "Exit"
 #~ msgstr "Выход"
-

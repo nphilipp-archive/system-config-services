@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
-"POT-Creation-Date: 2002-08-07 16:44-0400\n"
+"POT-Creation-Date: 2002-08-10 07:45-0400\n"
 "PO-Revision-Date: 2002-08-01 12:30:57+0200\n"
 "Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
@@ -38,194 +38,6 @@ msgstr ""
 #. keep track of the number of rows we have so we can
 #. iterate over them all
 #. add the text for the number of columns we have
-#. Hmm is this really needed?
-#. raise Error("Here with args" + args)
-#. def __str__(self):
-#. return Exception.__str__(self)
-#. print len(nums), " matching groups!", nums
-#. add more TTL checking code here
-#: src/dnsdata.py:90 src/dnsdata.py:92
-msgid "Directory "
-msgstr "Katalog "
-
-#: src/dnsdata.py:90
-msgid " does not begin with a slash!"
-msgstr " begynder ikke med en skråstreg!"
-
-#: src/dnsdata.py:92
-msgid " is not an existing directory!"
-msgstr " er ikke et eksisterende katalog!"
-
-#. FIXME
-#. more checks for valid path here
-#: src/dnsdata.py:113 src/dnsdata.py:125
-msgid "Master "
-msgstr "Herre "
-
-#: src/dnsdata.py:113 src/dnsdata.py:294
-msgid " is not a valid IP address."
-msgstr " er ikke en gyldig IP-adresse."
-
-#: src/dnsdata.py:125 src/dnsdata.py:279 src/dnsdata.py:383 src/dnsdata.py:433
-#: src/dnsdata.py:470 src/dnsdata.py:511
-msgid " is defined twice."
-msgstr " er defineret to gange."
-
-#: src/dnsdata.py:133
-msgid "Slave zone name "
-msgstr "Navn på slave-zone"
-
-#: src/dnsdata.py:133 src/dnsdata.py:414 src/dnsdata.py:487
-msgid " is not a valid domain name."
-msgstr " er ikke et gyldigt domænenavn."
-
-#: src/dnsdata.py:148
-msgid "Forwarder "
-msgstr "Viderebringer "
-
-#: src/dnsdata.py:148
-msgid " is not a valid Ip address."
-msgstr " er ikke en gyldig Ip-adresse."
-
-#: src/dnsdata.py:174
-msgid "Primary Nameserver not defined."
-msgstr "Primær navneserver ikke defineret."
-
-#. print "testPNS on " + value
-#: src/dnsdata.py:181 src/dnsdata.py:183
-msgid "Primary Nameserver `"
-msgstr "Primær navneserver '"
-
-#: src/dnsdata.py:181 src/dnsdata.py:249 src/FwdZone.py:444
-msgid "' has no . at the end. You must use a full hostname."
-msgstr "' har ikke '.' ved slutningen. Du skal bruge et fuldt værtsnavn."
-
-#: src/dnsdata.py:183
-msgid "' is not a valid hostname or IP address."
-msgstr "' er ikke et gyldigt værtsnavn eller IP-adresse."
-
-#: src/dnsdata.py:197
-msgid "Refresh value should be bigger than Retry"
-msgstr "Genopfriskningsværdi bør være større end Genprøv"
-
-#. FIXME
-#. add more tests here
-#: src/dnsdata.py:204
-msgid "Serial number must be >= 1."
-msgstr "Serienummer skal være >= 1."
-
-#: src/dnsdata.py:208
-msgid "Refresh value must be >= 0."
-msgstr "Genopfriskningsværdi skal være >= 0."
-
-#: src/dnsdata.py:212
-msgid "Retry value must be >= 0."
-msgstr "Genprøveværdi skal være >= 0."
-
-#: src/dnsdata.py:216
-msgid "Expire value must be >= 0."
-msgstr "Udløbsværdi skal være >= 0."
-
-#: src/dnsdata.py:220
-msgid "Minimum value must be >= 0."
-msgstr "Mindsteværdi skal være >= 0."
-
-#. num = self.getNumA()
-#. if num:
-#. names = []
-#. for i in xrange(0, num):
-#. item = self.getA(i)
-#. item.test()
-#. names.append(item.getHost())
-#. for i in xrange(0, num-1):
-#. for j in xrange(i+1, num):
-#. if names[j] == names[i]:
-#. raise TestError, _("Hostname ") + names[i] + _(" is defined twice.")
-#: src/dnsdata.py:241 src/dnsdata.py:285 src/dnsdata.py:319 src/dnsdata.py:390
-msgid "NewHost"
-msgstr "NyVært"
-
-#: src/dnsdata.py:246
-msgid "PTR hostname not defined"
-msgstr "PTR-værtsnavn ikke defineret"
-
-#: src/dnsdata.py:249
-msgid "PTR hostname `"
-msgstr "PTR-værtsnavn '"
-
-#: src/dnsdata.py:252 src/dnsdata.py:290 src/dnsdata.py:325 src/dnsdata.py:360
-#: src/dnsdata.py:364 src/dnsdata.py:395
-msgid " is not a valid hostname."
-msgstr " er ikke et gyldigt værtsnavn."
-
-#: src/dnsdata.py:260
-msgid " must be in the range 0..255."
-msgstr " skal være i området 0..255."
-
-#: src/dnsdata.py:279
-msgid "IP "
-msgstr "IP "
-
-#: src/dnsdata.py:325 src/dnsdata.py:349
-msgid "Nameserver "
-msgstr "Navneserver "
-
-#: src/dnsdata.py:330
-msgid " is not a valid host or domain name."
-msgstr " er ikke et gyldigt værts- eller domænenavn."
-
-#: src/dnsdata.py:349
-msgid " is defined twice for "
-msgstr " er defineret to gange for "
-
-#: src/dnsdata.py:355 src/dnsdata.py:356
-msgid "New"
-msgstr "Ny"
-
-#: src/dnsdata.py:383
-msgid "Alias "
-msgstr "Alias "
-
-#: src/dnsdata.py:409
-msgid "<New Forward Zone>"
-msgstr "<Ny Viderebring-zone>"
-
-#: src/dnsdata.py:414 src/dnsdata.py:487
-msgid "Forward zone name "
-msgstr "Navn på viderebring-zone"
-
-#: src/dnsdata.py:433 src/dnsdata.py:511
-msgid "Zone "
-msgstr "Zone "
-
-#: src/dnsdata.py:442
-msgid "<New Reverse Zone>"
-msgstr "<Ny omvendt zone>"
-
-#: src/dnsdata.py:446
-msgid "Reverse zone name `"
-msgstr "Navn på omvendt zone '"
-
-#: src/dnsdata.py:446
-msgid "' is not the end of a reverse IP address."
-msgstr " er ikke slutningen på en omvendt IP-adresse."
-
-#: src/dnsdata.py:451
-msgid "Reverse zone `"
-msgstr "Omvendt zone '"
-
-#: src/dnsdata.py:451 src/FwdZone.py:657
-msgid "' must list at least one name server"
-msgstr "' skal angive mindst en navneserver"
-
-#: src/dnsdata.py:470
-msgid "Reverse zone "
-msgstr "Omvendt zone "
-
-#: src/dnsdata.py:482
-msgid "<New Zone>"
-msgstr "<Ny zone>"
-
 #. serviceconf.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Authors: Tim Powers <timp@redhat.com>
@@ -341,95 +153,6 @@ msgstr "Hjælp er ikke tilgængelig."
 msgid "You must run redhat-config-services as root."
 msgstr "Du skal køre redhat-config-services som root."
 
-#. import gnome.ui
-#. Columns for "a_treeview"
-#. #
-#. # I18N stuff
-#. #
-#. Columns for "bindconf_treeview"
-#. columns for "rev_zone_treeview", "fwd_zone_treeview"
-#. if isinstance (broken_widget, gtk.Entry):
-#. #FIXME: supposedly deprecated?
-#. broken_widget.select_region (0, -1)
-#. try:
-#. fwdzone.zone.test()
-#. except TestError, e:
-#. def callback (*args):
-#. pass
-#. qa = gnome.ui.GnomeQuestionDialog (_("The following error occured due to host %s\n%s\nAre you sure you want to add this host?") % (host, e.args), callback, dialog)
-#. button = qa.run ()
-#. if button != 0:
-#. continue
-#: src/FwdZone.py:236
-msgid " aliased to "
-msgstr " med alias til "
-
-#: src/FwdZone.py:265 src/FwdZone.py:362 src/FwdZone.py:433
-msgid "You must enter a host name."
-msgstr "Du skal angive et værtsnavn."
-
-#: src/FwdZone.py:268
-msgid "You must enter an alias."
-msgstr "Du skal angive et alias."
-
-#: src/FwdZone.py:288
-msgid "An alias with this name already exists."
-msgstr "Et alias med dette navn eksisterer allerede."
-
-#: src/FwdZone.py:312
-msgid " at priority "
-msgstr " på prioritet "
-
-#: src/FwdZone.py:338 src/FwdZone.py:340
-#, python-format
-msgid "Mail Exchanger for %s"
-msgstr "Postudveksler for %s"
-
-#: src/FwdZone.py:345
-msgid "Edit Mail Exchanger"
-msgstr "redigér postudveksler"
-
-#: src/FwdZone.py:349
-msgid "Add a Mail Exchanger"
-msgstr "Tilføj en postudveksler"
-
-#: src/FwdZone.py:365
-msgid "You must enter an priority."
-msgstr "Du skal angive en prioritet."
-
-#: src/FwdZone.py:394
-msgid " served by "
-msgstr " betjent af "
-
-#: src/FwdZone.py:436
-msgid "You must enter a resolution address."
-msgstr "Du skal angive en løsningsadresse."
-
-#: src/FwdZone.py:444
-msgid "NS hostname `"
-msgstr "NS værtsnavn '"
-
-#. slurp from the zone
-#. test_soa_values
-#: src/FwdZone.py:637
-msgid "SOA Refresh value should be bigger than Retry"
-msgstr "SOA genopfriskningsværdi bør være større end Genprøv"
-
-#. test_a_list
-#. test_ns_list
-#. test_cname_list
-#. test_mx_list
-#: src/FwdZone.py:657
-msgid "Forward zone `"
-msgstr "Viderebring zone '"
-
-#. ####
-#: src/FwdZone.py:724
-#, python-format
-msgid "Settings for %s"
-msgstr "Indstillinger for %s"
-
-#. FIXME: put checks in here.
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Author: Tim Powers <timp@redhat.com>
@@ -623,6 +346,174 @@ msgstr "_Gem ændringer"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "_Start tjeneste"
+
+#~ msgid "Directory "
+#~ msgstr "Katalog "
+
+#~ msgid " does not begin with a slash!"
+#~ msgstr " begynder ikke med en skråstreg!"
+
+#~ msgid " is not an existing directory!"
+#~ msgstr " er ikke et eksisterende katalog!"
+
+#~ msgid "Master "
+#~ msgstr "Herre "
+
+#~ msgid " is not a valid IP address."
+#~ msgstr " er ikke en gyldig IP-adresse."
+
+#~ msgid " is defined twice."
+#~ msgstr " er defineret to gange."
+
+#~ msgid "Slave zone name "
+#~ msgstr "Navn på slave-zone"
+
+#~ msgid " is not a valid domain name."
+#~ msgstr " er ikke et gyldigt domænenavn."
+
+#~ msgid "Forwarder "
+#~ msgstr "Viderebringer "
+
+#~ msgid " is not a valid Ip address."
+#~ msgstr " er ikke en gyldig Ip-adresse."
+
+#~ msgid "Primary Nameserver not defined."
+#~ msgstr "Primær navneserver ikke defineret."
+
+#~ msgid "Primary Nameserver `"
+#~ msgstr "Primær navneserver '"
+
+#~ msgid "' has no . at the end. You must use a full hostname."
+#~ msgstr "' har ikke '.' ved slutningen. Du skal bruge et fuldt værtsnavn."
+
+#~ msgid "' is not a valid hostname or IP address."
+#~ msgstr "' er ikke et gyldigt værtsnavn eller IP-adresse."
+
+#~ msgid "Refresh value should be bigger than Retry"
+#~ msgstr "Genopfriskningsværdi bør være større end Genprøv"
+
+#~ msgid "Serial number must be >= 1."
+#~ msgstr "Serienummer skal være >= 1."
+
+#~ msgid "Refresh value must be >= 0."
+#~ msgstr "Genopfriskningsværdi skal være >= 0."
+
+#~ msgid "Retry value must be >= 0."
+#~ msgstr "Genprøveværdi skal være >= 0."
+
+#~ msgid "Expire value must be >= 0."
+#~ msgstr "Udløbsværdi skal være >= 0."
+
+#~ msgid "Minimum value must be >= 0."
+#~ msgstr "Mindsteværdi skal være >= 0."
+
+#~ msgid "NewHost"
+#~ msgstr "NyVært"
+
+#~ msgid "PTR hostname not defined"
+#~ msgstr "PTR-værtsnavn ikke defineret"
+
+#~ msgid "PTR hostname `"
+#~ msgstr "PTR-værtsnavn '"
+
+#~ msgid " is not a valid hostname."
+#~ msgstr " er ikke et gyldigt værtsnavn."
+
+#~ msgid " must be in the range 0..255."
+#~ msgstr " skal være i området 0..255."
+
+#~ msgid "IP "
+#~ msgstr "IP "
+
+#~ msgid "Nameserver "
+#~ msgstr "Navneserver "
+
+#~ msgid " is not a valid host or domain name."
+#~ msgstr " er ikke et gyldigt værts- eller domænenavn."
+
+#~ msgid " is defined twice for "
+#~ msgstr " er defineret to gange for "
+
+#~ msgid "New"
+#~ msgstr "Ny"
+
+#~ msgid "Alias "
+#~ msgstr "Alias "
+
+#~ msgid "<New Forward Zone>"
+#~ msgstr "<Ny Viderebring-zone>"
+
+#~ msgid "Forward zone name "
+#~ msgstr "Navn på viderebring-zone"
+
+#~ msgid "Zone "
+#~ msgstr "Zone "
+
+#~ msgid "<New Reverse Zone>"
+#~ msgstr "<Ny omvendt zone>"
+
+#~ msgid "Reverse zone name `"
+#~ msgstr "Navn på omvendt zone '"
+
+#~ msgid "' is not the end of a reverse IP address."
+#~ msgstr " er ikke slutningen på en omvendt IP-adresse."
+
+#~ msgid "Reverse zone `"
+#~ msgstr "Omvendt zone '"
+
+#~ msgid "' must list at least one name server"
+#~ msgstr "' skal angive mindst en navneserver"
+
+#~ msgid "Reverse zone "
+#~ msgstr "Omvendt zone "
+
+#~ msgid "<New Zone>"
+#~ msgstr "<Ny zone>"
+
+#~ msgid " aliased to "
+#~ msgstr " med alias til "
+
+#~ msgid "You must enter a host name."
+#~ msgstr "Du skal angive et værtsnavn."
+
+#~ msgid "You must enter an alias."
+#~ msgstr "Du skal angive et alias."
+
+#~ msgid "An alias with this name already exists."
+#~ msgstr "Et alias med dette navn eksisterer allerede."
+
+#~ msgid " at priority "
+#~ msgstr " på prioritet "
+
+#~ msgid "Mail Exchanger for %s"
+#~ msgstr "Postudveksler for %s"
+
+#~ msgid "Edit Mail Exchanger"
+#~ msgstr "redigér postudveksler"
+
+#~ msgid "Add a Mail Exchanger"
+#~ msgstr "Tilføj en postudveksler"
+
+#~ msgid "You must enter an priority."
+#~ msgstr "Du skal angive en prioritet."
+
+#~ msgid " served by "
+#~ msgstr " betjent af "
+
+#~ msgid "You must enter a resolution address."
+#~ msgstr "Du skal angive en løsningsadresse."
+
+#~ msgid "NS hostname `"
+#~ msgstr "NS værtsnavn '"
+
+#~ msgid "SOA Refresh value should be bigger than Retry"
+#~ msgstr "SOA genopfriskningsværdi bør være større end Genprøv"
+
+#~ msgid "Forward zone `"
+#~ msgstr "Viderebring zone '"
+
+#~ msgid "Settings for %s"
+#~ msgstr "Indstillinger for %s"
 
 #~ msgid "_Manual"
 #~ msgstr "_Manual"

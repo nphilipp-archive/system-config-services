@@ -1,7 +1,4 @@
 src/checklist.py
-src/dnsdata.py  
 src/serviceconf.py
-src/dnsdata_base.py  
-src/FwdZone.py
 src/servicemethods.py
 src/serviceconf.glade

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2002-08-07 16:44-0400\n"
+"POT-Creation-Date: 2002-08-10 07:45-0400\n"
 "PO-Revision-Date: 2002-07-25 11:01+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Chinese (traditional) <i18n-list@redhat.com>\n"
@@ -38,194 +38,6 @@ msgstr ""
 #. keep track of the number of rows we have so we can
 #. iterate over them all
 #. add the text for the number of columns we have
-#. Hmm is this really needed?
-#. raise Error("Here with args" + args)
-#. def __str__(self):
-#. return Exception.__str__(self)
-#. print len(nums), " matching groups!", nums
-#. add more TTL checking code here
-#: src/dnsdata.py:90 src/dnsdata.py:92
-msgid "Directory "
-msgstr "目錄 "
-
-#: src/dnsdata.py:90
-msgid " does not begin with a slash!"
-msgstr " 沒有以一個斜線開頭！"
-
-#: src/dnsdata.py:92
-msgid " is not an existing directory!"
-msgstr " 不是一個既有的目錄！"
-
-#. FIXME
-#. more checks for valid path here
-#: src/dnsdata.py:113 src/dnsdata.py:125
-msgid "Master "
-msgstr "Master "
-
-#: src/dnsdata.py:113 src/dnsdata.py:294
-msgid " is not a valid IP address."
-msgstr " 不是一個有效的 IP 位址。"
-
-#: src/dnsdata.py:125 src/dnsdata.py:279 src/dnsdata.py:383 src/dnsdata.py:433
-#: src/dnsdata.py:470 src/dnsdata.py:511
-msgid " is defined twice."
-msgstr " 已重複定義。"
-
-#: src/dnsdata.py:133
-msgid "Slave zone name "
-msgstr "Slave zone 名稱 "
-
-#: src/dnsdata.py:133 src/dnsdata.py:414 src/dnsdata.py:487
-msgid " is not a valid domain name."
-msgstr " 不是一個有效的網域名稱。"
-
-#: src/dnsdata.py:148
-msgid "Forwarder "
-msgstr "Forwarder "
-
-#: src/dnsdata.py:148
-msgid " is not a valid Ip address."
-msgstr " 不是一個有效的 IP 位址。"
-
-#: src/dnsdata.py:174
-msgid "Primary Nameserver not defined."
-msgstr "未定義主名稱伺服器。"
-
-#. print "testPNS on " + value
-#: src/dnsdata.py:181 src/dnsdata.py:183
-msgid "Primary Nameserver `"
-msgstr "主名稱伺服器 `"
-
-#: src/dnsdata.py:181 src/dnsdata.py:249 src/FwdZone.py:444
-msgid "' has no . at the end. You must use a full hostname."
-msgstr "' 沒有 . 在最後。 您必須使用一個完整的主機名稱。"
-
-#: src/dnsdata.py:183
-msgid "' is not a valid hostname or IP address."
-msgstr "' 不是一個有效的主機名稱或 IP 位址。"
-
-#: src/dnsdata.py:197
-msgid "Refresh value should be bigger than Retry"
-msgstr "重新整理的值必須大於重試的值"
-
-#. FIXME
-#. add more tests here
-#: src/dnsdata.py:204
-msgid "Serial number must be >= 1."
-msgstr "序號必須 >= 1。"
-
-#: src/dnsdata.py:208
-msgid "Refresh value must be >= 0."
-msgstr "重新整理的值必須 >= 0。"
-
-#: src/dnsdata.py:212
-msgid "Retry value must be >= 0."
-msgstr "重試的值必須 >= 0。"
-
-#: src/dnsdata.py:216
-msgid "Expire value must be >= 0."
-msgstr "過期失效的值必須 >= 0。"
-
-#: src/dnsdata.py:220
-msgid "Minimum value must be >= 0."
-msgstr "最小的值必須 >= 0。"
-
-#. num = self.getNumA()
-#. if num:
-#. names = []
-#. for i in xrange(0, num):
-#. item = self.getA(i)
-#. item.test()
-#. names.append(item.getHost())
-#. for i in xrange(0, num-1):
-#. for j in xrange(i+1, num):
-#. if names[j] == names[i]:
-#. raise TestError, _("Hostname ") + names[i] + _(" is defined twice.")
-#: src/dnsdata.py:241 src/dnsdata.py:285 src/dnsdata.py:319 src/dnsdata.py:390
-msgid "NewHost"
-msgstr "NewHost"
-
-#: src/dnsdata.py:246
-msgid "PTR hostname not defined"
-msgstr "未定義 PTR 主機名稱"
-
-#: src/dnsdata.py:249
-msgid "PTR hostname `"
-msgstr "PTR 主機名稱 `"
-
-#: src/dnsdata.py:252 src/dnsdata.py:290 src/dnsdata.py:325 src/dnsdata.py:360
-#: src/dnsdata.py:364 src/dnsdata.py:395
-msgid " is not a valid hostname."
-msgstr " 不是一個有效的主機名稱。"
-
-#: src/dnsdata.py:260
-msgid " must be in the range 0..255."
-msgstr " 必須在 0..255 之間。"
-
-#: src/dnsdata.py:279
-msgid "IP "
-msgstr "IP "
-
-#: src/dnsdata.py:325 src/dnsdata.py:349
-msgid "Nameserver "
-msgstr "名稱伺服器 "
-
-#: src/dnsdata.py:330
-msgid " is not a valid host or domain name."
-msgstr " 不是一個有效的主機或網域名稱。"
-
-#: src/dnsdata.py:349
-msgid " is defined twice for "
-msgstr " 以重複定義了 "
-
-#: src/dnsdata.py:355 src/dnsdata.py:356
-msgid "New"
-msgstr "新增"
-
-#: src/dnsdata.py:383
-msgid "Alias "
-msgstr "別名 "
-
-#: src/dnsdata.py:409
-msgid "<New Forward Zone>"
-msgstr "<New Forward Zone>"
-
-#: src/dnsdata.py:414 src/dnsdata.py:487
-msgid "Forward zone name "
-msgstr "Forward zone 名稱 "
-
-#: src/dnsdata.py:433 src/dnsdata.py:511
-msgid "Zone "
-msgstr "Zone "
-
-#: src/dnsdata.py:442
-msgid "<New Reverse Zone>"
-msgstr "<New Reverse Zone>"
-
-#: src/dnsdata.py:446
-msgid "Reverse zone name `"
-msgstr "Reverse zone 名稱 `"
-
-#: src/dnsdata.py:446
-msgid "' is not the end of a reverse IP address."
-msgstr "' 不是一個 reverse IP 位址的最後。"
-
-#: src/dnsdata.py:451
-msgid "Reverse zone `"
-msgstr "Reverse zone `"
-
-#: src/dnsdata.py:451 src/FwdZone.py:657
-msgid "' must list at least one name server"
-msgstr "' 必須至少列出一個名稱伺服器"
-
-#: src/dnsdata.py:470
-msgid "Reverse zone "
-msgstr "Reverse zone "
-
-#: src/dnsdata.py:482
-msgid "<New Zone>"
-msgstr "<New Zone>"
-
 #. serviceconf.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Authors: Tim Powers <timp@redhat.com>
@@ -339,95 +151,6 @@ msgstr "輔助說明無法使用。"
 msgid "You must run redhat-config-services as root."
 msgstr "您必須是 root 才能執行 redhat-config-services。"
 
-#. import gnome.ui
-#. Columns for "a_treeview"
-#. #
-#. # I18N stuff
-#. #
-#. Columns for "bindconf_treeview"
-#. columns for "rev_zone_treeview", "fwd_zone_treeview"
-#. if isinstance (broken_widget, gtk.Entry):
-#. #FIXME: supposedly deprecated?
-#. broken_widget.select_region (0, -1)
-#. try:
-#. fwdzone.zone.test()
-#. except TestError, e:
-#. def callback (*args):
-#. pass
-#. qa = gnome.ui.GnomeQuestionDialog (_("The following error occured due to host %s\n%s\nAre you sure you want to add this host?") % (host, e.args), callback, dialog)
-#. button = qa.run ()
-#. if button != 0:
-#. continue
-#: src/FwdZone.py:236
-msgid " aliased to "
-msgstr " 別名為 "
-
-#: src/FwdZone.py:265 src/FwdZone.py:362 src/FwdZone.py:433
-msgid "You must enter a host name."
-msgstr "您必須輸入一個主機名稱。"
-
-#: src/FwdZone.py:268
-msgid "You must enter an alias."
-msgstr "您必須輸入一個別名。"
-
-#: src/FwdZone.py:288
-msgid "An alias with this name already exists."
-msgstr "這個別名已經存在。"
-
-#: src/FwdZone.py:312
-msgid " at priority "
-msgstr " 的優先次序為 "
-
-#: src/FwdZone.py:338 src/FwdZone.py:340
-#, python-format
-msgid "Mail Exchanger for %s"
-msgstr "%s 的郵件交換機(MX)"
-
-#: src/FwdZone.py:345
-msgid "Edit Mail Exchanger"
-msgstr "編輯郵件交換機(MX)"
-
-#: src/FwdZone.py:349
-msgid "Add a Mail Exchanger"
-msgstr "新增一個郵件交換機(MX)"
-
-#: src/FwdZone.py:365
-msgid "You must enter an priority."
-msgstr "您必須輸入一個優先次序。"
-
-#: src/FwdZone.py:394
-msgid " served by "
-msgstr " 伺服由 "
-
-#: src/FwdZone.py:436
-msgid "You must enter a resolution address."
-msgstr "您必須輸入一個要解析的位址。"
-
-#: src/FwdZone.py:444
-msgid "NS hostname `"
-msgstr "NS 主機名稱 `"
-
-#. slurp from the zone
-#. test_soa_values
-#: src/FwdZone.py:637
-msgid "SOA Refresh value should be bigger than Retry"
-msgstr "SOA 重新整理值必須大於重試值"
-
-#. test_a_list
-#. test_ns_list
-#. test_cname_list
-#. test_mx_list
-#: src/FwdZone.py:657
-msgid "Forward zone `"
-msgstr "Forward zone `"
-
-#. ####
-#: src/FwdZone.py:724
-#, python-format
-msgid "Settings for %s"
-msgstr "%s 的設定"
-
-#. FIXME: put checks in here.
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Author: Tim Powers <timp@redhat.com>
@@ -621,6 +344,174 @@ msgstr "儲存更改(_S)"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "啟動系統服務(_S)"
+
+#~ msgid "Directory "
+#~ msgstr "目錄 "
+
+#~ msgid " does not begin with a slash!"
+#~ msgstr " 沒有以一個斜線開頭！"
+
+#~ msgid " is not an existing directory!"
+#~ msgstr " 不是一個既有的目錄！"
+
+#~ msgid "Master "
+#~ msgstr "Master "
+
+#~ msgid " is not a valid IP address."
+#~ msgstr " 不是一個有效的 IP 位址。"
+
+#~ msgid " is defined twice."
+#~ msgstr " 已重複定義。"
+
+#~ msgid "Slave zone name "
+#~ msgstr "Slave zone 名稱 "
+
+#~ msgid " is not a valid domain name."
+#~ msgstr " 不是一個有效的網域名稱。"
+
+#~ msgid "Forwarder "
+#~ msgstr "Forwarder "
+
+#~ msgid " is not a valid Ip address."
+#~ msgstr " 不是一個有效的 IP 位址。"
+
+#~ msgid "Primary Nameserver not defined."
+#~ msgstr "未定義主名稱伺服器。"
+
+#~ msgid "Primary Nameserver `"
+#~ msgstr "主名稱伺服器 `"
+
+#~ msgid "' has no . at the end. You must use a full hostname."
+#~ msgstr "' 沒有 . 在最後。 您必須使用一個完整的主機名稱。"
+
+#~ msgid "' is not a valid hostname or IP address."
+#~ msgstr "' 不是一個有效的主機名稱或 IP 位址。"
+
+#~ msgid "Refresh value should be bigger than Retry"
+#~ msgstr "重新整理的值必須大於重試的值"
+
+#~ msgid "Serial number must be >= 1."
+#~ msgstr "序號必須 >= 1。"
+
+#~ msgid "Refresh value must be >= 0."
+#~ msgstr "重新整理的值必須 >= 0。"
+
+#~ msgid "Retry value must be >= 0."
+#~ msgstr "重試的值必須 >= 0。"
+
+#~ msgid "Expire value must be >= 0."
+#~ msgstr "過期失效的值必須 >= 0。"
+
+#~ msgid "Minimum value must be >= 0."
+#~ msgstr "最小的值必須 >= 0。"
+
+#~ msgid "NewHost"
+#~ msgstr "NewHost"
+
+#~ msgid "PTR hostname not defined"
+#~ msgstr "未定義 PTR 主機名稱"
+
+#~ msgid "PTR hostname `"
+#~ msgstr "PTR 主機名稱 `"
+
+#~ msgid " is not a valid hostname."
+#~ msgstr " 不是一個有效的主機名稱。"
+
+#~ msgid " must be in the range 0..255."
+#~ msgstr " 必須在 0..255 之間。"
+
+#~ msgid "IP "
+#~ msgstr "IP "
+
+#~ msgid "Nameserver "
+#~ msgstr "名稱伺服器 "
+
+#~ msgid " is not a valid host or domain name."
+#~ msgstr " 不是一個有效的主機或網域名稱。"
+
+#~ msgid " is defined twice for "
+#~ msgstr " 以重複定義了 "
+
+#~ msgid "New"
+#~ msgstr "新增"
+
+#~ msgid "Alias "
+#~ msgstr "別名 "
+
+#~ msgid "<New Forward Zone>"
+#~ msgstr "<New Forward Zone>"
+
+#~ msgid "Forward zone name "
+#~ msgstr "Forward zone 名稱 "
+
+#~ msgid "Zone "
+#~ msgstr "Zone "
+
+#~ msgid "<New Reverse Zone>"
+#~ msgstr "<New Reverse Zone>"
+
+#~ msgid "Reverse zone name `"
+#~ msgstr "Reverse zone 名稱 `"
+
+#~ msgid "' is not the end of a reverse IP address."
+#~ msgstr "' 不是一個 reverse IP 位址的最後。"
+
+#~ msgid "Reverse zone `"
+#~ msgstr "Reverse zone `"
+
+#~ msgid "' must list at least one name server"
+#~ msgstr "' 必須至少列出一個名稱伺服器"
+
+#~ msgid "Reverse zone "
+#~ msgstr "Reverse zone "
+
+#~ msgid "<New Zone>"
+#~ msgstr "<New Zone>"
+
+#~ msgid " aliased to "
+#~ msgstr " 別名為 "
+
+#~ msgid "You must enter a host name."
+#~ msgstr "您必須輸入一個主機名稱。"
+
+#~ msgid "You must enter an alias."
+#~ msgstr "您必須輸入一個別名。"
+
+#~ msgid "An alias with this name already exists."
+#~ msgstr "這個別名已經存在。"
+
+#~ msgid " at priority "
+#~ msgstr " 的優先次序為 "
+
+#~ msgid "Mail Exchanger for %s"
+#~ msgstr "%s 的郵件交換機(MX)"
+
+#~ msgid "Edit Mail Exchanger"
+#~ msgstr "編輯郵件交換機(MX)"
+
+#~ msgid "Add a Mail Exchanger"
+#~ msgstr "新增一個郵件交換機(MX)"
+
+#~ msgid "You must enter an priority."
+#~ msgstr "您必須輸入一個優先次序。"
+
+#~ msgid " served by "
+#~ msgstr " 伺服由 "
+
+#~ msgid "You must enter a resolution address."
+#~ msgstr "您必須輸入一個要解析的位址。"
+
+#~ msgid "NS hostname `"
+#~ msgstr "NS 主機名稱 `"
+
+#~ msgid "SOA Refresh value should be bigger than Retry"
+#~ msgstr "SOA 重新整理值必須大於重試值"
+
+#~ msgid "Forward zone `"
+#~ msgstr "Forward zone `"
+
+#~ msgid "Settings for %s"
+#~ msgstr "%s 的設定"
 
 #~ msgid "_Manual"
 #~ msgstr "說明手冊(_M)"
