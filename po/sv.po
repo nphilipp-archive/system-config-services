@@ -1,13 +1,13 @@
 # Swedish messages for serviceconf.
 # Copyright (C) 2001, 2003 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.41 2003/08/05 17:29:02 dwalsh Exp $
+# $Id: sv.po,v 1.42 2003/08/15 12:18:34 menthos Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
 "POT-Creation-Date: 2003-08-05 13:35-0400\n"
-"PO-Revision-Date: 2003-03-04 22:28+0100\n"
+"PO-Revision-Date: 2003-08-15 14:24+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -62,7 +62,10 @@ msgstr ""
 #: src/serviceconf.py:62
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "Är du säker på att du vill ta bort %s?"
+
+msgid "Are you sure you want to delete %s?"
+msgstr "Är du säker på att du vill ta bort %s?"
 
 #. make sure threading is disabled
 #. map the event signals to specific methods
@@ -90,6 +93,9 @@ msgstr "Starta vid uppstart"
 #: src/serviceconf.py:220
 msgid "Services"
 msgstr "Tjänster"
+
+msgid "Service"
+msgstr "Tjänst"
 
 #. self.clstServices.set_column_justification(0,GTK.JUSTIFY_CENTER)
 #. self.clstServices.set_column_justification(1,GTK.JUSTIFY_LEFT)
@@ -188,7 +194,6 @@ msgstr "Du måste köra redhat-config-services som root."
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
 #: src/servicemethods.py:286
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -196,7 +201,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Du måste aktivera xinetd för att kunna använda denna tjänst."
+"xinetd krävs för denna tjänst."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -235,21 +240,19 @@ msgstr " lyckades"
 
 #: src/serviceconf.glade.h:1
 msgid "*"
-msgstr ""
+msgstr "*"
 
 #: src/serviceconf.glade.h:2
-#, fuzzy
 msgid "Add Service"
-msgstr "Tjänster"
+msgstr "Lägg till tjänst"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Aktiv körnivå just nu: "
 
 #: src/serviceconf.glade.h:4
-#, fuzzy
 msgid "Delete Service"
-msgstr "S_toppa tjänst"
+msgstr "Ta bort tjänst"
 
 #: src/serviceconf.glade.h:5
 msgid "Description"
@@ -304,9 +307,11 @@ msgid "Service Configuration"
 msgstr "Konfiguration av tjänst"
 
 #: src/serviceconf.glade.h:18
-#, fuzzy
 msgid "Service Name: "
-msgstr "Serienummer:"
+msgstr "Namn på tjänst: "
+
+msgid "Service Name:"
+msgstr "Namn på tjänst:"
 
 #: src/serviceconf.glade.h:19
 msgid "Start"
@@ -374,7 +379,7 @@ msgstr "_Starta tjänst"
 
 #: src/serviceconf.glade.h:35
 msgid "_View"
-msgstr ""
+msgstr "_Visa"
 
 #~ msgid "xinetd service"
 #~ msgstr "xinetd-tjänst"
