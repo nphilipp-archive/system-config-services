@@ -208,6 +208,7 @@ class Gui:
         self.save_revert_sensitive(0)
         
         self.clstServices.get_selection().select_path ((0,))
+        self.changed(self.clstServices.get_selection(), None)
         self.current_selected_service = self.clstServices.get_text(0,1)
 
         self.winMain.show()
