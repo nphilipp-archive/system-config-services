@@ -345,9 +345,6 @@ msgstr "_Sauvegarder les modifications"
 msgid "_Start Service"
 msgstr "_Démarrer le service"
 
-#, fuzzy
-#~ msgid "Zone "
-#~ msgstr "Aucun"
 
 #~ msgid "_Manual"
 #~ msgstr "_Manuel"
