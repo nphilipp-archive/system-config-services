@@ -3,6 +3,7 @@
 # translation of ru.po to
 # translation of ru.po to
 # translation of ru.po to
+# translation of ru.po to
 # translation of ru.po to Russian
 # Copyright (C) YEAR ORGANIZATION
 # Leonid Kanter <leon@geon.donetsk.ua>, 2003
@@ -11,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "POT-Creation-Date: 2003-10-06 10:40-0400\n"
-"PO-Revision-Date: 2003-08-01 17:43+0300\n"
+"PO-Revision-Date: 2003-10-20 15:43+0300\n"
 "Last-Translator: Leonid Kanter <leon@geon.donetsk.ua>\n"
 "Language-Team:  <ru@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -141,7 +142,7 @@ msgstr ""
 
 #: src/serviceconf.py:451
 msgid "translator_credits"
-msgstr ""
+msgstr "Leonid Kanter <leon@asplinux.ru>"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -604,3 +605,4 @@ msgstr "_Вид"
 
 #~ msgid "Exit"
 #~ msgstr "Выход"
+
