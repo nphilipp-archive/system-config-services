@@ -214,17 +214,14 @@ msgid ". The error was: "
 msgstr ". L'erreur était : "
 
 #: src/servicemethods.py:351
-#, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "rechargement de xinetd pour %s réussi"
 
 #: src/servicemethods.py:354
-#, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd doit être activé pour que %s puisse être exécuté."
 
 #: src/servicemethods.py:359
-#, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s n'a pas réussi. L'erreur était : %s"
 
@@ -368,8 +365,8 @@ msgstr "_Démarrer le service"
 
 #~ msgid "Runlevel 3 is multiuser mode with networking"
 #~ msgstr ""
-#~ "Le niveau d'exécution 3 est multi-utilisateurs et il est doté d'un "
-#~ "support réseau"
+#~ "Le niveau d'exécution 3 est multi-utilisateurs et il est doté d'un support "
+#~ "réseau"
 
 #~ msgid ""
 #~ "Runlevel 4 is reserved for local customization, and is not usually used"
@@ -379,8 +376,8 @@ msgstr "_Démarrer le service"
 
 #~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
 #~ msgstr ""
-#~ "Le niveau d'exécution 5 est multi-utilisateurs et il est doté d'un "
-#~ "support réseau et de X Window"
+#~ "Le niveau d'exécution 5 est multi-utilisateurs et il est doté d'un support "
+#~ "réseau et de X Window"
 
 #~ msgid "Read Manual"
 #~ msgstr "Lire le manuel"

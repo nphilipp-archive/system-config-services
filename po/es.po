@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "POT-Creation-Date: 2002-08-27 17:27-0400\n"
-"PO-Revision-Date: 2002-07-17 10:52GMT\n"
+"PO-Revision-Date: 2002-08-28 15:14GMT\n"
 "Last-Translator: Nuria Soriano <nuria@redhat.es>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -119,6 +119,8 @@ msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"Ha efectuado cambios en el nivel de ejecucion actual.\n"
+"¿Desea guardar los cambios?"
 
 # ../serviceconf.py:309
 # ../serviceconf.py:309
@@ -133,7 +135,6 @@ msgstr "Copyright (c) 2001 Red Hat, Inc. Todos los derechos reservados."
 # ../serviceconf.py:312
 # ../serviceconf.py:312
 #: src/serviceconf.py:392
-#, fuzzy
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -141,7 +142,7 @@ msgid ""
 msgstr ""
 "Este software puede ser redistribuido libremente bajo los términos GPL.\n"
 "                                  \n"
-"Por favor, informe todos los fallos que encuentre al sistema de seguimiento\n"
+"Por favor, informe de todos los fallos que encuentre al sistema de seguimiento\n"
 "de fallos de Red Hat: http://bugzilla.redhat.com"
 
 # ../serviceconf.py:432
@@ -236,23 +237,20 @@ msgstr ". El error fue: "
 # ../servicemethods.py:310
 # ../servicemethods.py:310
 #: src/servicemethods.py:351
-#, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "recarga de xinetd para %s satisfactoria"
 
 # ../servicemethods.py:313
 # ../servicemethods.py:313
 #: src/servicemethods.py:354
-#, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd debe estar activo para poder ejecutar %s"
 
 # ../servicemethods.py:318
 # ../servicemethods.py:318
 #: src/servicemethods.py:359
-#, fuzzy, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s falló a %s. El error fue: %s"
+msgstr "%s falló. El error fue: %s"
 
 # ../servicemethods.py:320
 # ../servicemethods.py:320
@@ -373,7 +371,7 @@ msgstr "_Acciones"
 
 #: src/serviceconf.glade.h:21
 msgid "_Contents"
-msgstr ""
+msgstr "_Contenido"
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
@@ -384,11 +382,11 @@ msgstr "_Editar nivel de ejecución"
 
 #: src/serviceconf.glade.h:23
 msgid "_File"
-msgstr ""
+msgstr "_Fichero"
 
 #: src/serviceconf.glade.h:24
 msgid "_Help"
-msgstr ""
+msgstr "_Ayuda"
 
 # serviceconf.gladestrings:16
 #: src/serviceconf.glade.h:25
@@ -416,48 +414,3 @@ msgstr "_Guardar Cambios"
 msgid "_Start Service"
 msgstr "Comenzar _Servicio"
 
-# serviceconf.gladestrings:7
-#, fuzzy
-#~ msgid "Zone "
-#~ msgstr "Ninguno"
-
-# serviceconf.gladestrings:38
-#~ msgid "_Manual"
-#~ msgstr "_Manual"
-
-# serviceconf.gladestrings:15
-#~ msgid "Refresh the list of services"
-#~ msgstr "Refrescar la lista de servicios"
-
-# serviceconf.gladestrings:21
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr ""
-#~ "Acciones tales como comenzar, parar y reiniciar en el servicio "
-#~ "seleccionado"
-
-# serviceconf.gladestrings:29
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Seleccionar el nivel de ejecución que quiere editar"
-
-# serviceconf.gladestrings:31
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "El nivel de ejecución 3 es en modo multiusuario con red"
-
-# serviceconf.gladestrings:33
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr ""
-#~ "El nivel de ejecución 4 está reservado para la personalización local, y "
-#~ "normalmente no se usa"
-
-# serviceconf.gladestrings:35
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr "El nivel de ejecución 5 es en modo multiusuario con red y X Window"
-
-# serviceconf.gladestrings:37
-#~ msgid "Read Manual"
-#~ msgstr "Leer Manual"
-
-# serviceconf.gladestrings:44
-#~ msgid "Exit"
-#~ msgstr "Salir"
