@@ -1,5 +1,6 @@
 # translation of es.po to 
 # translation of es.po to
+# translation of es.po to
 # translation of es.po to Español
 # translation of es.po to
 # translation of es.po to
@@ -15,7 +16,7 @@ msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-04-06 14:50-0400\n"
-"PO-Revision-Date: 2004-08-26 11:16+1000\n"
+"PO-Revision-Date: 2004-09-03 13:46+1000\n"
 "Last-Translator: Yelitza Louze <ylouze@redhat.com>\n"
 "Language-Team:  <es@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -83,7 +84,7 @@ msgstr "¿Está seguro de que desea eliminar el %s?"
 #. toolbars
 #: src/serviceconf.py:187 src/serviceconf.glade.h:18
 msgid "Start"
-msgstr "Arrancar"
+msgstr "Iniciar"
 
 # serviceconf.gladestrings:11 serviceconf.gladestrings:48
 #: src/serviceconf.py:191 src/serviceconf.glade.h:20
@@ -124,14 +125,14 @@ msgstr "Revertir"
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:240
 msgid "Currently Running in Runlevel: "
-msgstr "Actualmente corriendo en el nivel de ejecución: "
+msgstr "Ejecutándose en el nivel de ejecución: "
 
 # ../serviceconf.py:143
 # ../serviceconf.py:143
 #. This is a sentry
 #: src/serviceconf.py:251
 msgid "Start at Boot"
-msgstr "Comenzar al arrancar"
+msgstr "Comenzar al iniciar"
 
 # ../serviceconf.py:144
 # ../serviceconf.py:144
@@ -458,7 +459,7 @@ msgstr "_Guardar Cambios"
 # serviceconf.gladestrings:24
 #: src/serviceconf.glade.h:32
 msgid "_Start Service"
-msgstr "Arrancar _Servicio"
+msgstr "Iniciar _Servicio"
 
 #: src/serviceconf.glade.h:33
 msgid "_View"
