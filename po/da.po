@@ -66,7 +66,7 @@ msgstr ""
 #: src/serviceconf.py:76
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr "Er du sikker på at du ønsker at slette %s?"
+msgstr "Er du sikker pÃ¥ at du Ã¸nsker at slette %s?"
 
 #. make sure threading is disabled
 #. map the event signals to specific methods
@@ -84,7 +84,7 @@ msgstr "Er du sikker på at du ønsker at slette %s?"
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:222
 msgid "Currently Running in Runlevel: "
-msgstr "Kører øjeblikkeligt i kørselsniveau: "
+msgstr "KÃ¸rer Ã¸jeblikkeligt i kÃ¸rselsniveau: "
 
 #. This is a sentry
 #: src/serviceconf.py:233
@@ -109,7 +109,7 @@ msgstr "Tjenester"
 #: src/serviceconf.py:289 src/serviceconf.py:395 src/serviceconf.py:412
 #: src/serviceconf.py:431
 msgid "Editing Runlevel: "
-msgstr "Ændrer kørselsniveau: "
+msgstr "Ã†ndrer kÃ¸rselsniveau: "
 
 #. set the text in txtDesc
 #. if an xinetd service is selected, disable these,
@@ -126,7 +126,7 @@ msgstr "Ukendt"
 #: src/serviceconf.py:460
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr ""
-"Ophavsret (c) 2002 tilhørende Red Hat, Inc. Alle rettigheder forbeholdes."
+"Ophavsret (c) 2002 tilhÃ¸rende Red Hat, Inc. Alle rettigheder forbeholdes."
 
 #: src/serviceconf.py:461
 msgid ""
@@ -134,14 +134,14 @@ msgid ""
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
-"Dette programmel må distribueres frit under betingelserne i GPL.\n"
-"Rapportér venligst alle fejl du finder med Red Hat "
+"Dette programmel mÃ¥ distribueres frit under betingelserne i GPL.\n"
+"RapportÃ©r venligst alle fejl du finder med Red Hat "
 "fejlrapporteringssystemet:\n"
 "http://bugzilla.redhat.com"
 
 #: src/serviceconf.py:465
 msgid "translator_credits"
-msgstr "oversættelses_merit"
+msgstr "oversÃ¦ttelses_merit"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -162,7 +162,7 @@ msgstr "oversættelses_merit"
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:609
 msgid "You must run system-config-services as root."
-msgstr "Du skal køre system-config-services som root."
+msgstr "Du skal kÃ¸re system-config-services som root."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -205,7 +205,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"xinetd er krævet til denne tjeneste."
+"xinetd er krÃ¦vet til denne tjeneste."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -217,7 +217,7 @@ msgstr ""
 #. if it's toggled off
 #: src/servicemethods.py:336
 msgid "xinetd failed to reload for "
-msgstr "xinetd genindlæsning mislykkedes for "
+msgstr "xinetd genindlÃ¦sning mislykkedes for "
 
 #: src/servicemethods.py:337
 msgid ". The error was: "
@@ -226,12 +226,12 @@ msgstr ". Fejlen var: "
 #: src/servicemethods.py:339
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "xinetd genindlæste %s uden problemer"
+msgstr "xinetd genindlÃ¦ste %s uden problemer"
 
 #: src/servicemethods.py:342
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "xinetd skal aktiveres for at %s kan køre"
+msgstr "xinetd skal aktiveres for at %s kan kÃ¸re"
 
 #: src/servicemethods.py:347
 #, python-format
@@ -240,7 +240,7 @@ msgstr "%s mislykkedes. Fejlen var: %s"
 
 #: src/servicemethods.py:349
 msgid " successful"
-msgstr " med succés"
+msgstr " med succÃ©s"
 
 #: src/serviceconf.glade.h:1
 msgid "*"
@@ -248,11 +248,11 @@ msgstr "*"
 
 #: src/serviceconf.glade.h:2
 msgid "Add Service"
-msgstr "Tilføj tjeneste"
+msgstr "TilfÃ¸j tjeneste"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
-msgstr "Nuværende aktive kørselsniveau: "
+msgstr "NuvÃ¦rende aktive kÃ¸rselsniveau: "
 
 #: src/serviceconf.glade.h:4
 msgid "Delete Service"
@@ -268,7 +268,7 @@ msgstr "Gem ikke"
 
 #: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
-msgstr "Ændrer kørselsniveau:"
+msgstr "Ã†ndrer kÃ¸rselsniveau:"
 
 #: src/serviceconf.glade.h:8
 msgid "None"
@@ -288,15 +288,15 @@ msgstr "Tilbage til _sidste gemning"
 
 #: src/serviceconf.glade.h:12
 msgid "Runlevel _3"
-msgstr "Kørselsniveau _3"
+msgstr "KÃ¸rselsniveau _3"
 
 #: src/serviceconf.glade.h:13
 msgid "Runlevel _4"
-msgstr "Kørselsniveau _4"
+msgstr "KÃ¸rselsniveau _4"
 
 #: src/serviceconf.glade.h:14
 msgid "Runlevel _5"
-msgstr "Kørselsniveau _5"
+msgstr "KÃ¸rselsniveau _5"
 
 #: src/serviceconf.glade.h:15
 msgid "S_top Service"
@@ -339,8 +339,8 @@ msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
-"Du har lavet ændringer til det aktuelle kørselsniveau.\n"
-"Ønsker du at gemme ændringerne?"
+"Du har lavet Ã¦ndringer til det aktuelle kÃ¸rselsniveau.\n"
+"Ã˜nsker du at gemme Ã¦ndringerne?"
 
 #: src/serviceconf.glade.h:26
 msgid "_Actions"
@@ -352,7 +352,7 @@ msgstr "_Indhold"
 
 #: src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
-msgstr "_Ændr kørselsniveau"
+msgstr "_Ã†ndr kÃ¸rselsniveau"
 
 #: src/serviceconf.glade.h:29
 msgid "_File"
@@ -360,11 +360,11 @@ msgstr "_Filer"
 
 #: src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr "_Hjælp"
+msgstr "_HjÃ¦lp"
 
 #: src/serviceconf.glade.h:31
 msgid "_Refresh Service List"
-msgstr "_Opdatér tjenestelisten"
+msgstr "_OpdatÃ©r tjenestelisten"
 
 #: src/serviceconf.glade.h:32
 msgid "_Restart Service"
@@ -372,7 +372,7 @@ msgstr "Gensta_rt tjeneste"
 
 #: src/serviceconf.glade.h:33
 msgid "_Save Changes"
-msgstr "_Gem ændringer"
+msgstr "_Gem Ã¦ndringer"
 
 #: src/serviceconf.glade.h:34
 msgid "_Start Service"
@@ -386,28 +386,28 @@ msgstr "_Visning"
 #~ msgstr "xinetd-tjeneste"
 
 #~ msgid "Cancel"
-#~ msgstr "Annullér"
+#~ msgstr "AnnullÃ©r"
 
 #~ msgid "Quit"
 #~ msgstr "Afslut"
 
 #~ msgid "Revert to the last saved change"
-#~ msgstr "Gå tilbage til den sidst gemte ændring"
+#~ msgstr "GÃ¥ tilbage til den sidst gemte Ã¦ndring"
 
 #~ msgid "Save"
 #~ msgstr "Gem"
 
 #~ msgid "Save the changes you have made"
-#~ msgstr "Gem ændringerne du har foretaget"
+#~ msgstr "Gem Ã¦ndringerne du har foretaget"
 
 #~ msgid "Help is not available."
-#~ msgstr "Hjælp er ikke tilgængelig."
+#~ msgstr "HjÃ¦lp er ikke tilgÃ¦ngelig."
 
 #~ msgid "Directory "
 #~ msgstr "Katalog "
 
 #~ msgid " does not begin with a slash!"
-#~ msgstr " begynder ikke med en skråstreg!"
+#~ msgstr " begynder ikke med en skrÃ¥streg!"
 
 #~ msgid " is not an existing directory!"
 #~ msgstr " er ikke et eksisterende katalog!"
@@ -422,10 +422,10 @@ msgstr "_Visning"
 #~ msgstr " er defineret to gange."
 
 #~ msgid "Slave zone name "
-#~ msgstr "Navn på slave-zone"
+#~ msgstr "Navn pÃ¥ slave-zone"
 
 #~ msgid " is not a valid domain name."
-#~ msgstr " er ikke et gyldigt domænenavn."
+#~ msgstr " er ikke et gyldigt domÃ¦nenavn."
 
 #~ msgid "Forwarder "
 #~ msgstr "Viderebringer "
@@ -434,49 +434,49 @@ msgstr "_Visning"
 #~ msgstr " er ikke en gyldig Ip-adresse."
 
 #~ msgid "Primary Nameserver not defined."
-#~ msgstr "Primær navneserver ikke defineret."
+#~ msgstr "PrimÃ¦r navneserver ikke defineret."
 
 #~ msgid "Primary Nameserver `"
-#~ msgstr "Primær navneserver '"
+#~ msgstr "PrimÃ¦r navneserver '"
 
 #~ msgid "' has no . at the end. You must use a full hostname."
-#~ msgstr "' har ikke '.' ved slutningen. Du skal bruge et fuldt værtsnavn."
+#~ msgstr "' har ikke '.' ved slutningen. Du skal bruge et fuldt vÃ¦rtsnavn."
 
 #~ msgid "' is not a valid hostname or IP address."
-#~ msgstr "' er ikke et gyldigt værtsnavn eller IP-adresse."
+#~ msgstr "' er ikke et gyldigt vÃ¦rtsnavn eller IP-adresse."
 
 #~ msgid "Refresh value should be bigger than Retry"
-#~ msgstr "Genopfriskningsværdi bør være større end Genprøv"
+#~ msgstr "GenopfriskningsvÃ¦rdi bÃ¸r vÃ¦re stÃ¸rre end GenprÃ¸v"
 
 #~ msgid "Serial number must be >= 1."
-#~ msgstr "Serienummer skal være >= 1."
+#~ msgstr "Serienummer skal vÃ¦re >= 1."
 
 #~ msgid "Refresh value must be >= 0."
-#~ msgstr "Genopfriskningsværdi skal være >= 0."
+#~ msgstr "GenopfriskningsvÃ¦rdi skal vÃ¦re >= 0."
 
 #~ msgid "Retry value must be >= 0."
-#~ msgstr "Genprøveværdi skal være >= 0."
+#~ msgstr "GenprÃ¸vevÃ¦rdi skal vÃ¦re >= 0."
 
 #~ msgid "Expire value must be >= 0."
-#~ msgstr "Udløbsværdi skal være >= 0."
+#~ msgstr "UdlÃ¸bsvÃ¦rdi skal vÃ¦re >= 0."
 
 #~ msgid "Minimum value must be >= 0."
-#~ msgstr "Mindsteværdi skal være >= 0."
+#~ msgstr "MindstevÃ¦rdi skal vÃ¦re >= 0."
 
 #~ msgid "NewHost"
-#~ msgstr "NyVært"
+#~ msgstr "NyVÃ¦rt"
 
 #~ msgid "PTR hostname not defined"
-#~ msgstr "PTR-værtsnavn ikke defineret"
+#~ msgstr "PTR-vÃ¦rtsnavn ikke defineret"
 
 #~ msgid "PTR hostname `"
-#~ msgstr "PTR-værtsnavn '"
+#~ msgstr "PTR-vÃ¦rtsnavn '"
 
 #~ msgid " is not a valid hostname."
-#~ msgstr " er ikke et gyldigt værtsnavn."
+#~ msgstr " er ikke et gyldigt vÃ¦rtsnavn."
 
 #~ msgid " must be in the range 0..255."
-#~ msgstr " skal være i området 0..255."
+#~ msgstr " skal vÃ¦re i omrÃ¥det 0..255."
 
 #~ msgid "IP "
 #~ msgstr "IP "
@@ -485,7 +485,7 @@ msgstr "_Visning"
 #~ msgstr "Navneserver "
 
 #~ msgid " is not a valid host or domain name."
-#~ msgstr " er ikke et gyldigt værts- eller domænenavn."
+#~ msgstr " er ikke et gyldigt vÃ¦rts- eller domÃ¦nenavn."
 
 #~ msgid " is defined twice for "
 #~ msgstr " er defineret to gange for "
@@ -500,7 +500,7 @@ msgstr "_Visning"
 #~ msgstr "<Ny Viderebring-zone>"
 
 #~ msgid "Forward zone name "
-#~ msgstr "Navn på viderebring-zone"
+#~ msgstr "Navn pÃ¥ viderebring-zone"
 
 #~ msgid "Zone "
 #~ msgstr "Zone "
@@ -509,10 +509,10 @@ msgstr "_Visning"
 #~ msgstr "<Ny omvendt zone>"
 
 #~ msgid "Reverse zone name `"
-#~ msgstr "Navn på omvendt zone '"
+#~ msgstr "Navn pÃ¥ omvendt zone '"
 
 #~ msgid "' is not the end of a reverse IP address."
-#~ msgstr " er ikke slutningen på en omvendt IP-adresse."
+#~ msgstr " er ikke slutningen pÃ¥ en omvendt IP-adresse."
 
 #~ msgid "Reverse zone `"
 #~ msgstr "Omvendt zone '"
@@ -530,7 +530,7 @@ msgstr "_Visning"
 #~ msgstr " med alias til "
 
 #~ msgid "You must enter a host name."
-#~ msgstr "Du skal angive et værtsnavn."
+#~ msgstr "Du skal angive et vÃ¦rtsnavn."
 
 #~ msgid "You must enter an alias."
 #~ msgstr "Du skal angive et alias."
@@ -539,16 +539,16 @@ msgstr "_Visning"
 #~ msgstr "Et alias med dette navn eksisterer allerede."
 
 #~ msgid " at priority "
-#~ msgstr " på prioritet "
+#~ msgstr " pÃ¥ prioritet "
 
 #~ msgid "Mail Exchanger for %s"
 #~ msgstr "Postudveksler for %s"
 
 #~ msgid "Edit Mail Exchanger"
-#~ msgstr "redigér postudveksler"
+#~ msgstr "redigÃ©r postudveksler"
 
 #~ msgid "Add a Mail Exchanger"
-#~ msgstr "Tilføj en postudveksler"
+#~ msgstr "TilfÃ¸j en postudveksler"
 
 #~ msgid "You must enter an priority."
 #~ msgstr "Du skal angive en prioritet."
@@ -557,13 +557,13 @@ msgstr "_Visning"
 #~ msgstr " betjent af "
 
 #~ msgid "You must enter a resolution address."
-#~ msgstr "Du skal angive en løsningsadresse."
+#~ msgstr "Du skal angive en lÃ¸sningsadresse."
 
 #~ msgid "NS hostname `"
-#~ msgstr "NS værtsnavn '"
+#~ msgstr "NS vÃ¦rtsnavn '"
 
 #~ msgid "SOA Refresh value should be bigger than Retry"
-#~ msgstr "SOA genopfriskningsværdi bør være større end Genprøv"
+#~ msgstr "SOA genopfriskningsvÃ¦rdi bÃ¸r vÃ¦re stÃ¸rre end GenprÃ¸v"
 
 #~ msgid "Forward zone `"
 #~ msgstr "Viderebring zone '"
@@ -575,31 +575,31 @@ msgstr "_Visning"
 #~ msgstr "_Manual"
 
 #~ msgid "Configure which services will be running when the system starts"
-#~ msgstr "Konfigurér hvilke tjenester som skal køre når systemet starter"
+#~ msgstr "KonfigurÃ©r hvilke tjenester som skal kÃ¸re nÃ¥r systemet starter"
 
 #~ msgid "Refresh the list of services"
-#~ msgstr "Opdatér listen af tjenester"
+#~ msgstr "OpdatÃ©r listen af tjenester"
 
 #~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr "Handlinger såsom start, afbryd og genstart på den valgte tjeneste"
+#~ msgstr "Handlinger sÃ¥som start, afbryd og genstart pÃ¥ den valgte tjeneste"
 
 #~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Vælg kørselsniveauet du ønsker af ændre"
+#~ msgstr "VÃ¦lg kÃ¸rselsniveauet du Ã¸nsker af Ã¦ndre"
 
 #~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "Kørselsniveau 3 er flerbrugertilstand med netværk"
+#~ msgstr "KÃ¸rselsniveau 3 er flerbrugertilstand med netvÃ¦rk"
 
 #~ msgid ""
 #~ "Runlevel 4 is reserved for local customization, and is not usually used"
 #~ msgstr ""
-#~ "Kørselsniveau 4 er reserveret for egen opsætning, og normalt ikke brugt"
+#~ "KÃ¸rselsniveau 4 er reserveret for egen opsÃ¦tning, og normalt ikke brugt"
 
 #~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
 #~ msgstr ""
-#~ "Kørselsniveau 5 er flerbrugertilstand med netværk og X-vinduessystemet"
+#~ "KÃ¸rselsniveau 5 er flerbrugertilstand med netvÃ¦rk og X-vinduessystemet"
 
 #~ msgid "Read Manual"
-#~ msgstr "Læs manualen"
+#~ msgstr "LÃ¦s manualen"
 
 #~ msgid "Exit"
 #~ msgstr "Afslut"
