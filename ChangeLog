@@ -1,3 +1,8 @@
+2003-06-17  dwalsh  <dwalsh@redhat.com>
+
+	* ChangeLog, po/messages.mo, po/redhat-config-services.pot, redhat-config-services.spec.in, src/serviceconf.glade:
+	fix to match style guide
+
 2003-06-17  lkanter  <lkanter@redhat.com>
 
 	* po/ru.po: update
