@@ -1,19 +1,21 @@
+# translation of da.po to 
 # Danish Translation of Red Hat Service Conf
-# Copyright (C) YEAR ORGANIZATION
+# Copyright (C) YEAR ORGANIZATION.
 # Kenneth Christiansen <kenneth@gnu.org>, 2001.
-# Keld Simonsen <keld@dkuug.dk>, 2001-2003
+# Keld Simonsen <keld@dkuug.dk>, 2001-2003.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: serviceconf VERSION\n"
+"Project-Id-Version: da\n"
 "POT-Creation-Date: 2003-12-11 07:34-0500\n"
-"PO-Revision-Date: 2003-03-08 12:30:57+0100\n"
+"PO-Revision-Date: 2003-12-24 00:17+0100\n"
 "Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
-"Language-Team: Danish <dansk@klid.dk>\n"
+"Language-Team:  <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
+"X-Generator: KBabel 1.0.2\n"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -63,7 +65,7 @@ msgstr ""
 #: src/serviceconf.py:62
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "Er du sikker på at du ønsker at slette %s?"
 
 #. make sure threading is disabled
 #. map the event signals to specific methods
@@ -122,8 +124,7 @@ msgstr "Ukendt"
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:446
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr ""
-"Ophavsret (c) 2002 tilhørende Red Hat, Inc. Alle rettigheder forbeholdes."
+msgstr "Ophavsret (c) 2002 tilhørende Red Hat, Inc. Alle rettigheder forbeholdes."
 
 #: src/serviceconf.py:447
 msgid ""
@@ -138,7 +139,7 @@ msgstr ""
 
 #: src/serviceconf.py:451
 msgid "translator_credits"
-msgstr ""
+msgstr "oversættelses_merit"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -158,9 +159,8 @@ msgstr ""
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:595
-#, fuzzy
 msgid "You must run system-config-services as root."
-msgstr "Du skal køre redhat-config-services som root."
+msgstr "Du skal køre system-config-services som root."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -196,7 +196,6 @@ msgstr "Du skal køre redhat-config-services som root."
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
 #: src/servicemethods.py:290
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -204,7 +203,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Du skal aktivere xinetd for at bruge denne tjeneste."
+"xinetd er krævet til denne tjeneste."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -243,21 +242,19 @@ msgstr " med succés"
 
 #: src/serviceconf.glade.h:1
 msgid "*"
-msgstr ""
+msgstr "*"
 
 #: src/serviceconf.glade.h:2
-#, fuzzy
 msgid "Add Service"
-msgstr "Tjenester"
+msgstr "Tilføj tjeneste"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Nuværende aktive kørselsniveau: "
 
 #: src/serviceconf.glade.h:4
-#, fuzzy
 msgid "Delete Service"
-msgstr "Afbryd tjeneste"
+msgstr "Fjern tjeneste"
 
 #: src/serviceconf.glade.h:5
 msgid "Description"
@@ -312,9 +309,8 @@ msgid "Service Configuration"
 msgstr "Tjenestekonfiguration"
 
 #: src/serviceconf.glade.h:18
-#, fuzzy
 msgid "Service Name: "
-msgstr "Tjenester"
+msgstr "Tjenestenavn: "
 
 #: src/serviceconf.glade.h:19
 msgid "Start"
@@ -382,7 +378,7 @@ msgstr "_Start tjeneste"
 
 #: src/serviceconf.glade.h:35
 msgid "_View"
-msgstr ""
+msgstr "_Visning"
 
 #~ msgid "xinetd service"
 #~ msgstr "xinetd-tjeneste"
@@ -605,3 +601,4 @@ msgstr ""
 
 #~ msgid "Exit"
 #~ msgstr "Afslut"
+
