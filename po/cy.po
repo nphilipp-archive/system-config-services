@@ -1,13 +1,16 @@
+# translation of system-config-services.pot to Cymraeg
+# Owain Green <owaing@oceanfree.net>, 2004.
 msgid ""
 msgstr ""
-"Project-Id-Version: redhat-config-services\n"
-"POT-Creation-Date: 2004-02-05 18:31-0500\n"
-"PO-Revision-Date: 2003-10-19 00:07+0100\n"
-"Last-Translator: Alan Cox <alan@redhat.com>\n"
-"Language-Team: Cymraeg <gnome-cy@pengwyn.linux.org.uk>\n"
+"Project-Id-Version: system-config-services.cy\n"
+"POT-Creation-Date: 2003-12-11 07:34-0500\n"
+"PO-Revision-Date: 2004-02-24 12:44+0000\n"
+"Last-Translator: Owain Green <owaing@oceanfree.net>\n"
+"Language-Team: Cymraeg <Cy@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.2\n"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -32,7 +35,6 @@ msgstr ""
 #. keep track of the number of rows we have so we can
 #. iterate over them all
 #. add the text for the number of columns we have
-#. !/usr/bin/python
 #. serviceconf.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Authors: Tim Powers <timp@redhat.com>
@@ -55,10 +57,10 @@ msgstr ""
 #. #
 #. # I18N
 #. #
-#: src/serviceconf.py:76
+#: src/serviceconf.py:62
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr "Ydych chi'n siwr eich bod am ddileu'r %s?"
+msgstr "A ydych chi'n sicr eich bod am ddileu'r %s?"
 
 # Sigh also needs %s use to translate properly!
 #. make sure threading is disabled
@@ -75,16 +77,16 @@ msgstr "Ydych chi'n siwr eich bod am ddileu'r %s?"
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:222
+#: src/serviceconf.py:208
 msgid "Currently Running in Runlevel: "
-msgstr "Lefel-Rhedeg yn cyfredol yw: "
+msgstr "Yn Rhedeg yn Gyfredol ar Lefel-Rhedeg: "
 
 #. This is a sentry
-#: src/serviceconf.py:233
+#: src/serviceconf.py:219
 msgid "Start at Boot"
-msgstr "Cychwyn am Gychwyn y Peiriant"
+msgstr "Dechrau ar Gychwyny Peiriant"
 
-#: src/serviceconf.py:234
+#: src/serviceconf.py:220
 msgid "Services"
 msgstr "Gwasanaethau"
 
@@ -99,8 +101,8 @@ msgstr "Gwasanaethau"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:289 src/serviceconf.py:395 src/serviceconf.py:412
-#: src/serviceconf.py:431
+#: src/serviceconf.py:275 src/serviceconf.py:381 src/serviceconf.py:398
+#: src/serviceconf.py:417
 msgid "Editing Runlevel: "
 msgstr "Yn Golygu Lefel-Rhedeg: "
 
@@ -108,7 +110,7 @@ msgstr "Yn Golygu Lefel-Rhedeg: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:332
+#: src/serviceconf.py:318
 msgid "Unknown"
 msgstr "Anhysbys"
 
@@ -116,20 +118,23 @@ msgstr "Anhysbys"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:460
+#: src/serviceconf.py:446
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Hawlfraint © 2002 Red Hat, Inc. Cedwir Pob hawl."
+msgstr "Hawlfraint (h)(c) 2002 Red Hat, Inc. Cedwir pob hawl."
 
-#: src/serviceconf.py:461
+#: src/serviceconf.py:447
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
+"Gellir ailddosbarthu'r feddalwedd hon yn rhydd o dan dermau'r GPL.\n"
+"Adroddwch pob nam y canfyddwch at system olrhain namau Red Hat:\n"
+"http://bugzilla.redhat.com"
 
-#: src/serviceconf.py:465
+#: src/serviceconf.py:451
 msgid "translator_credits"
-msgstr "Cyfieithwyd gan Alan Cox"
+msgstr "Cyfieithwyd gan Owain Green"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -148,10 +153,9 @@ msgstr "Cyfieithwyd gan Alan Cox"
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:609
-#, fuzzy
+#: src/serviceconf.py:595
 msgid "You must run system-config-services as root."
-msgstr "Rhaid i chi rhedeg redhat-config-services fel root."
+msgstr "Rhaid i chi redeg redhat-config-services fel gwraidd."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -194,7 +198,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Mae angen xinetd ar y gwasanaeth 'ma."
+"Mae angen xinetd ar y wasanaeth hon."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -206,27 +210,27 @@ msgstr ""
 #. if it's toggled off
 #: src/servicemethods.py:336
 msgid "xinetd failed to reload for "
-msgstr "Roedd xinetd wedi methu ail-lwythio o "
+msgstr "methodd xinetd ail-lwytho ar gyfer "
 
 # Pain - should be %s yw'r nam but the string handling is wrong
 #: src/servicemethods.py:337
 msgid ". The error was: "
-msgstr ". Roedd y nam: "
+msgstr ". Dyma'r gwall: "
 
 #: src/servicemethods.py:339
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "Mae xinetd wedi ail-lwythwio %s yn llwyddiannus"
+msgstr "ail-lwythodd xinetd  %s yn llwyddiannus"
 
 #: src/servicemethods.py:342
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "Rhaid i chi alluogi xinetd i rhedeg %s"
+msgstr "rhaid bod xinetd yn alluog er mwyn i %s redeg"
 
 #: src/servicemethods.py:347
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr "Methu %s. Roedd y nam: %s"
+msgstr "Methodd %s. Dyma'r gwall: %s"
 
 #: src/servicemethods.py:349
 msgid " successful"
@@ -242,7 +246,7 @@ msgstr "Ychwanegu Gwasanaeth"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
-msgstr "Lefel-Rhedeg Gweithredol yn Gyfredol: "
+msgstr "Lefel-Rhedeg Gweithredol Cyfredol: "
 
 #: src/serviceconf.glade.h:4
 msgid "Delete Service"
@@ -262,7 +266,7 @@ msgstr "Yn Golygu Lefel-Rhedeg:"
 
 #: src/serviceconf.glade.h:8
 msgid "None"
-msgstr "Dim"
+msgstr "Dim Un"
 
 #: src/serviceconf.glade.h:9
 msgid "Restart"
@@ -270,11 +274,11 @@ msgstr "Ailgychwyn"
 
 #: src/serviceconf.glade.h:10
 msgid "Restart the selected service"
-msgstr "Ailgychwyn y gwasanaeth yn dewis"
+msgstr "Ailgychwyn y gwasanaeth dewisiedig"
 
 #: src/serviceconf.glade.h:11
 msgid "Revert To _Last Save"
-msgstr "_Dychwelyd I Ffurfwedd Blaenorol"
+msgstr "Dychwelyd at y Cadw _Diwethaf"
 
 #: src/serviceconf.glade.h:12
 msgid "Runlevel _3"
@@ -290,19 +294,19 @@ msgstr "Lefel-Rhedeg _5"
 
 #: src/serviceconf.glade.h:15
 msgid "S_top Service"
-msgstr "_Aros Gwasanaeth"
+msgstr "A_tal Gwasanaeth"
 
 #: src/serviceconf.glade.h:16
 msgid "Save Dialog"
-msgstr "Cadw Ymgom"
+msgstr "Ymgom Gadw"
 
 #: src/serviceconf.glade.h:17
 msgid "Service Configuration"
-msgstr "Ffurfwedd Gwasanaeth"
+msgstr "Cyfluniad Gwasanaeth"
 
 #: src/serviceconf.glade.h:18
 msgid "Service Name: "
-msgstr "Enw o'r Gwasanaeth: "
+msgstr "Enw'r Gwasanaeth: "
 
 #: src/serviceconf.glade.h:19
 msgid "Start"
@@ -310,7 +314,7 @@ msgstr "Cychwyn"
 
 #: src/serviceconf.glade.h:20
 msgid "Start the selected service"
-msgstr "Cychwyn y gwasanaeth yn dewis"
+msgstr "Cychwyn y wasanaeth ddewisiedig"
 
 #: src/serviceconf.glade.h:21
 msgid "Status"
@@ -318,19 +322,19 @@ msgstr "Statws"
 
 #: src/serviceconf.glade.h:22
 msgid "Stop"
-msgstr "Aros"
+msgstr "Atal"
 
 #: src/serviceconf.glade.h:23
 msgid "Stop the selected service"
-msgstr "Arosith y gwasanaeth yn dewis"
+msgstr "Atal y wasanaeth ddewisiedig"
 
 #: src/serviceconf.glade.h:24
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
-"Newidoch chi i'r lefel-rhedeg cyfredol.\n"
-"Cadw yr newidiadau rhain ?"
+"Fe wnaethoch newidiadau i'r lefel rhedeg cyfredol.\n"
+"A ydych am gadw'r newidiadau hyn?"
 
 #: src/serviceconf.glade.h:26
 msgid "_Actions"
@@ -342,7 +346,7 @@ msgstr "_Cynnwys"
 
 #: src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
-msgstr "Golygu _Lefel-Rhedeg"
+msgstr "_Golygu Lefel-Rhedeg"
 
 #: src/serviceconf.glade.h:29
 msgid "_File"
@@ -354,7 +358,7 @@ msgstr "_Cymorth"
 
 #: src/serviceconf.glade.h:31
 msgid "_Refresh Service List"
-msgstr "Adnewyddu _Rhestr Gwasanaethau"
+msgstr "_Ailfywio Rhestr Gwasanaethau"
 
 #: src/serviceconf.glade.h:32
 msgid "_Restart Service"
@@ -371,3 +375,4 @@ msgstr "_Cychwyn Gwasanaeth"
 #: src/serviceconf.glade.h:35
 msgid "_View"
 msgstr "_Golwg"
+
