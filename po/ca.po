@@ -1,0 +1,380 @@
+# Catalan translation of system-config-services by Softcatalà
+# Copyright (C) 2004 Free Software Foundation
+# This file is distributed under the same license as the
+#  system-config-services package.
+# Xavier Conde Rueda <xaviconde@eresmas.com>, 2004
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-services\n"
+"POT-Creation-Date: 2004-01-06 10:23-0500\n"
+"PO-Revision-Date: 2004-02-10 03:18+0100\n"
+"Last-Translator: Xavier Conde Rueda <xaviconde@eresmas.com>\n"
+"Language-Team: Catalan <tradgnome@softcatala.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#.
+#. checklist.py: A class (derived from GtkTreeView) that provides a list of
+#. checkbox / text string pairs
+#.
+#. Brent Fox <bfox@redhat.com>
+#. Jeremy Katz <katzj@redhat.com>
+#.
+#. Copyright 2000-2002 Red Hat, Inc.
+#.
+#. This software may be freely redistributed under the terms of the GNU
+#. library public license.
+#.
+#. You should have received a copy of the GNU Library Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#. override this to make your own columns if necessary
+#. add the string columns to the tree view widget
+#. XXX need to handle the multicolumn case better still....
+#. XXX we only handle two text columns right now
+#. keep track of the number of rows we have so we can
+#. iterate over them all
+#. add the text for the number of columns we have
+#. !/usr/bin/python
+#. serviceconf.py
+#. Copyright (C) 2002 Red Hat, Inc.
+#. Authors: Tim Powers <timp@redhat.com>
+#. Bill Nottingham <notting@redhat.com>
+#. Dan Walsh <dwalsh@redhat.com>
+#.
+#. This program is free software; you can redistribute it and/or modify
+#. it under the terms of the GNU General Public License as published by
+#. the Free Software Foundation; either version 2 of the License, or
+#. (at your option) any later version.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#. #
+#. # I18N
+#. #
+#: src/serviceconf.py:76
+#, python-format
+msgid "Are you sure you want to delete the %s?"
+msgstr "Esteu segur que voleu suprimir el %s?"
+
+#. make sure threading is disabled
+#. map the event signals to specific methods
+#. main window
+#. menu items
+#. buttons
+#. toolbars
+#. self.tbrSave.set_style(GTK.TOOLBAR_ICONS)
+#. self.tbrSave.set_button_relief(GTK.RELIEF_NORMAL)
+#. the textbox
+#. the statusbox
+#. the CheckCList which will display whether the service
+#. is enabled, and the service names
+#. initialize this to the runlevel we are running in. It will
+#. change when one of the optRL[3-6] are selected
+#: src/serviceconf.py:222
+msgid "Currently Running in Runlevel: "
+msgstr "S'està executant el nivell: "
+
+#. This is a sentry
+#: src/serviceconf.py:233
+msgid "Start at Boot"
+msgstr "Inicia en arrencar"
+
+#: src/serviceconf.py:234
+msgid "Services"
+msgstr "Serveis"
+
+#. self.clstServices.set_column_justification(0,GTK.JUSTIFY_CENTER)
+#. self.clstServices.set_column_justification(1,GTK.JUSTIFY_LEFT)
+#. self.clstServices.set_column_auto_resize(0,1)
+#. self.clstServices.column_titles_show()
+#. -----------------------------------------------------------------------------
+#. Methods assiciated with populating the checklist
+#. -----------------------------------------------------------------------------
+#. sentinal so that we don't have selected rows while we are updating
+#. this is passed to ServiceMethods.get_service_list as an
+#. argument. We don't want to import gtk there, so we have
+#. the actual function here
+#: src/serviceconf.py:289 src/serviceconf.py:395 src/serviceconf.py:412
+#: src/serviceconf.py:431
+msgid "Editing Runlevel: "
+msgstr "S'està editant el nivell: "
+
+#. set the text in txtDesc
+#. if an xinetd service is selected, disable these,
+#. they'll do nothing
+#. set the text in StatusView
+#: src/serviceconf.py:332
+msgid "Unknown"
+msgstr "Desconegut"
+
+#. ----------------------------------------------------------------------------
+#. Methods pertaining to the "Help" menu items, there will be more here
+#. once I have "real" help :)
+#. ----------------------------------------------------------------------------
+#: src/serviceconf.py:460
+msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
+msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
+
+#: src/serviceconf.py:461
+msgid ""
+"This software may be freely redistributed under the terms of the GPL.\n"
+"Please report all bugs you find at the Red Hat bug tracking system:\n"
+"http://bugzilla.redhat.com"
+msgstr ""
+"Aquest programari es pot redistribuir lliurement sota els termes de la GPL.\n"
+"Informeu de tots els errors que trobeu al sistema de seguiment d'errors de "
+"Red Hat:\n"
+"http://bugzilla.redhat.com"
+
+#: src/serviceconf.py:465
+msgid "translator_credits"
+msgstr "Xavier Conde Rueda <xaviconde@eresmas.com>"
+
+#. ----------------------------------------------------------------------------
+#. Methods pertaining to the "Help" menu items, there will be more here
+#. once I have "real" help :)
+#. ----------------------------------------------------------------------------
+#. gnome.help_display_uri(page)
+#. ----------------------------------------------------------------------------
+#. Methods pertaining to the toolbar items
+#. The menu and popup menu items for "Start", "Stop", and "Restart" are
+#. handled by on_btnStart_clicked(), on_btnStop_clicked(), and
+#. on_btnRestart_clicked()
+#. ----------------------------------------------------------------------------
+#. ----------------------------------------------------------------------------
+#. Methods for everything else
+#. ----------------------------------------------------------------------------
+#. get rid of the tearoff from the popup menu
+#. set the label text to be the current selected servicename for pmnBlank
+#. if you quit during initialization exceptions can be raised
+#: src/serviceconf.py:609
+msgid "You must run system-config-services as root."
+msgstr "Heu d'executar el system-config-services com a superusuari."
+
+#. serviceactions.py
+#. Copyright (C) 2002 Red Hat, Inc.
+#. Author: Tim Powers <timp@redhat.com>
+#.
+#. This program is free software; you can redistribute it and/or modify
+#. it under the terms of the GNU General Public License as published by
+#. the Free Software Foundation; either version 2 of the License, or
+#. (at your option) any later version.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#. runlevel = self.get_runlevel()
+#. for i in range(0,len(dirlist)):
+#. check for start links only, we don't care if there is a kill link
+#. no match
+#. This is the current runlevel
+#. for xinetd services, set the dictionary to show that it's disabled in all runlevels
+#. this will be an unmodified self.dict_services
+#. read each initscript
+#. configured = 1 if configured already
+#. configured = self.check_if_on(servicename, editing_runlevel)
+#. look through the first 25 lines to see if we have "hide: true" in there.
+#. if it's there, remove the service from the dictionary
+#. read each file for xinetd.d
+#. configured=1 if the service is configured already
+#. configured = self.xinetd_check_if_on(servicename)
+#. the list corresponding to the key is: [configured, is it an xinetd serv., description]
+#: src/servicemethods.py:290
+msgid ""
+"\n"
+"\n"
+"xinetd is required for this service."
+msgstr ""
+"\n"
+"\n"
+"Aquest servei necessita l'xinetd."
+
+#. an unmodified dictionary. Needed to compare for saving etc.
+#. only save changes
+#. check to make sure we are an initscript and not an xinetd service
+#. if it's toggled on
+#. if it's toggled off
+#. for xinetd services
+#. if it's toggled on
+#. if it's toggled off
+#: src/servicemethods.py:336
+msgid "xinetd failed to reload for "
+msgstr "No s'ha pogut tornar a carregar l'xinetd per a "
+
+#: src/servicemethods.py:337
+msgid ". The error was: "
+msgstr ". L'error era:"
+
+#: src/servicemethods.py:339
+#, python-format
+msgid "xinetd reloaded %s successfully"
+msgstr "L'xinetd ha tornat a carregar %s correctament"
+
+#: src/servicemethods.py:342
+#, python-format
+msgid "xinetd must be enabled for %s to run"
+msgstr "S'ha d'habilitar l'xinetd per executar el %s"
+
+#: src/servicemethods.py:347
+#, python-format
+msgid "%s failed. The error was: %s"
+msgstr "El %s ha fallat. L'error era: %s"
+
+#: src/servicemethods.py:349
+msgid " successful"
+msgstr " correctament"
+
+#: src/serviceconf.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: src/serviceconf.glade.h:2
+msgid "Add Service"
+msgstr "Afegeix un servei"
+
+#: src/serviceconf.glade.h:3
+msgid "Current Active Runlevel: "
+msgstr "Nivell d'execució actual: "
+
+#: src/serviceconf.glade.h:4
+msgid "Delete Service"
+msgstr "Suprimeix el servei"
+
+#: src/serviceconf.glade.h:5
+msgid "Description"
+msgstr "Descripció"
+
+#: src/serviceconf.glade.h:6
+msgid "Don't Save"
+msgstr "No ho desis"
+
+#: src/serviceconf.glade.h:7
+msgid "Editing Runlevel:"
+msgstr "S'està editant el nivell d'execució:"
+
+#: src/serviceconf.glade.h:8
+msgid "None"
+msgstr "Cap"
+
+#: src/serviceconf.glade.h:9
+msgid "Restart"
+msgstr "Reinicia"
+
+#: src/serviceconf.glade.h:10
+msgid "Restart the selected service"
+msgstr "Reinicia el servei seleccionat"
+
+#: src/serviceconf.glade.h:11
+msgid "Revert To _Last Save"
+msgstr "Torna a _l'estat ja desat"
+
+#: src/serviceconf.glade.h:12
+msgid "Runlevel _3"
+msgstr "Nivell d'execució _3"
+
+#: src/serviceconf.glade.h:13
+msgid "Runlevel _4"
+msgstr "Nivell d'execució _4"
+
+#: src/serviceconf.glade.h:14
+msgid "Runlevel _5"
+msgstr "Nivell d'execució _5"
+
+#: src/serviceconf.glade.h:15
+msgid "S_top Service"
+msgstr "A_tura el servei"
+
+#: src/serviceconf.glade.h:16
+msgid "Save Dialog"
+msgstr "Diàleg per desar"
+
+#: src/serviceconf.glade.h:17
+msgid "Service Configuration"
+msgstr "Configuració dels serveis"
+
+#: src/serviceconf.glade.h:18
+msgid "Service Name: "
+msgstr "Nom del servei: "
+
+#: src/serviceconf.glade.h:19
+msgid "Start"
+msgstr "Inicia"
+
+#: src/serviceconf.glade.h:20
+msgid "Start the selected service"
+msgstr "Inicia el servei seleccionat"
+
+#: src/serviceconf.glade.h:21
+msgid "Status"
+msgstr "Estat"
+
+#: src/serviceconf.glade.h:22
+msgid "Stop"
+msgstr "Atura"
+
+#: src/serviceconf.glade.h:23
+msgid "Stop the selected service"
+msgstr "Atura el servei seleccionat"
+
+#: src/serviceconf.glade.h:24
+msgid ""
+"You have made changes to the current runlevel.\n"
+"Do you want to save the changes?"
+msgstr ""
+"Heu fet canvis al nivell d'execució actual.\n"
+"Voleu desar els canvis?"
+
+#: src/serviceconf.glade.h:26
+msgid "_Actions"
+msgstr "_Accions"
+
+#: src/serviceconf.glade.h:27
+msgid "_Contents"
+msgstr "_Contingut"
+
+#: src/serviceconf.glade.h:28
+msgid "_Edit Runlevel"
+msgstr "_Edita el nivell"
+
+#: src/serviceconf.glade.h:29
+msgid "_File"
+msgstr "_Fitxer"
+
+#: src/serviceconf.glade.h:30
+msgid "_Help"
+msgstr "_Ajuda"
+
+#: src/serviceconf.glade.h:31
+msgid "_Refresh Service List"
+msgstr "_Actualitza els serveis"
+
+#: src/serviceconf.glade.h:32
+msgid "_Restart Service"
+msgstr "_Reinicia el servei"
+
+#: src/serviceconf.glade.h:33
+msgid "_Save Changes"
+msgstr "De_sa els canvis"
+
+#: src/serviceconf.glade.h:34
+msgid "_Start Service"
+msgstr "Inicia el _servei"
+
+#: src/serviceconf.glade.h:35
+msgid "_View"
+msgstr "_Visualitza"
