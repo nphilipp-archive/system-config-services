@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services 0\n"
-"POT-Creation-Date: 2004-01-06 10:23-0500\n"
+"POT-Creation-Date: 2004-02-05 18:31-0500\n"
 "PO-Revision-Date: 2003-12-15 22:30+CET\n"
 "Last-Translator: auto\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"

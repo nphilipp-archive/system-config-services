@@ -1,13 +1,13 @@
 # 
 # translation of tr.po to Turkish
-# $Id: tr.po,v 1.46 2004/02/05 22:10:28 dwalsh Exp $
+# $Id: tr.po,v 1.47 2004/02/05 23:29:06 dwalsh Exp $
 # Nilgün Belma Bugüner <nilgun@superonline.com>, 2003
 # Erçin EKER <erc.caldera@gmx.net>, 2003
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services \n"
-"POT-Creation-Date: 2004-01-06 10:23-0500\n"
+"POT-Creation-Date: 2004-02-05 18:31-0500\n"
 "PO-Revision-Date: 2003-08-03 13:53+0300\n"
 "Last-Translator: Nilgün Belma Bugüner <nilgun@superonline.com>\n"
 "Language-Team: Turkish <gnu-tr-u12a@lists.sourceforge.net>\n"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf 1.1\n"
-"POT-Creation-Date: 2003-12-11 07:34-0500\n"
+"POT-Creation-Date: 2004-02-05 18:31-0500\n"
 "PO-Revision-Date: 2001-08-16 22:43+0000\n"
 "Last-Translator: Richard Allen <ra@ra.is>\n"
 "Language-Team: is <kde-isl@mmedia.is>\n"
@@ -36,6 +36,7 @@ msgstr ""
 #. keep track of the number of rows we have so we can
 #. iterate over them all
 #. add the text for the number of columns we have
+#. !/usr/bin/python
 #. serviceconf.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Authors: Tim Powers <timp@redhat.com>
@@ -58,7 +59,7 @@ msgstr ""
 #. #
 #. # I18N
 #. #
-#: src/serviceconf.py:62
+#: src/serviceconf.py:76
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Ertu viss um að þú viljir eyða %s?"
@@ -77,16 +78,16 @@ msgstr "Ertu viss um að þú viljir eyða %s?"
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:208
+#: src/serviceconf.py:222
 msgid "Currently Running in Runlevel: "
 msgstr "Þegar ræst í keyrslustigi: "
 
 #. This is a sentry
-#: src/serviceconf.py:219
+#: src/serviceconf.py:233
 msgid "Start at Boot"
 msgstr "Ræsa þegar vélin ræsir"
 
-#: src/serviceconf.py:220
+#: src/serviceconf.py:234
 msgid "Services"
 msgstr "Þjónustur"
 
@@ -101,8 +102,8 @@ msgstr "Þjónustur"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:275 src/serviceconf.py:381 src/serviceconf.py:398
-#: src/serviceconf.py:417
+#: src/serviceconf.py:289 src/serviceconf.py:395 src/serviceconf.py:412
+#: src/serviceconf.py:431
 msgid "Editing Runlevel: "
 msgstr "Breyti keyrsluþrepi: "
 
@@ -110,7 +111,7 @@ msgstr "Breyti keyrsluþrepi: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:318
+#: src/serviceconf.py:332
 msgid "Unknown"
 msgstr "Óþekkt"
 
@@ -118,11 +119,11 @@ msgstr "Óþekkt"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:446
+#: src/serviceconf.py:460
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Höfundarréttur (c) 2002 Red Hat, Inc. Allur réttur áskilinn."
 
-#: src/serviceconf.py:447
+#: src/serviceconf.py:461
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -132,7 +133,7 @@ msgstr ""
 "Vinsamlegast tilkynnið villur á villuvef Red Hat:\n"
 "http://bugzilla.redhat.com"
 
-#: src/serviceconf.py:451
+#: src/serviceconf.py:465
 msgid "translator_credits"
 msgstr "Þýtt af Richard Allen <ra@ra.is>"
 
@@ -153,7 +154,7 @@ msgstr "Þýtt af Richard Allen <ra@ra.is>"
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:595
+#: src/serviceconf.py:609
 msgid "You must run system-config-services as root."
 msgstr "Þú verður að keyra system-config-services sem rót."
 
