@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-04-06 14:50-0400\n"
-"PO-Revision-Date: 2004-02-10 03:18+0100\n"
+"PO-Revision-Date: 2004-04-08 04:56+0200\n"
 "Last-Translator: Xavier Conde Rueda <xaviconde@eresmas.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
@@ -86,20 +86,19 @@ msgstr "Reinicia"
 
 #: src/serviceconf.py:201
 msgid "_Save"
-msgstr ""
+msgstr "De_sa"
 
 #: src/serviceconf.py:201
 msgid "Save"
-msgstr ""
+msgstr "Desa"
 
 #: src/serviceconf.py:206
 msgid "_Revert"
-msgstr ""
+msgstr "_Reverteix"
 
 #: src/serviceconf.py:206
-#, fuzzy
 msgid "Revert"
-msgstr "Reinicia"
+msgstr "Reverteix"
 
 #. the textbox
 #. the statusbox
@@ -158,10 +157,17 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"Eina de configuració dels serveis del sistema VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 
 #: src/serviceconf.py:482
 msgid "About"
-msgstr ""
+msgstr "Quant a"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -169,7 +175,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:511
 msgid "Help is not available."
-msgstr ""
+msgstr "No hi ha ajuda disponible."
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -363,7 +369,7 @@ msgstr "_Ajuda"
 
 #: src/serviceconf.glade.h:28
 msgid "_Quit"
-msgstr ""
+msgstr "S_urt"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
