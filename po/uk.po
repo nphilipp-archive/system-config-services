@@ -4,7 +4,6 @@
 # Maxim Dubovoy <max@mylinux.com.ua>, 2003.
 # Maxim Dziumanenko <mvd@mylinux.com.ua>, 2003.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
