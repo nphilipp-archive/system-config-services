@@ -2,7 +2,7 @@
 Summary: redhat-config-services is an initscript and xinetd configuration utility
 Name: @PACKAGE@
 Version: @VERSION@
-Release: 19
+Release: 20
 URL: http://www.redhat.com/ 
 Source0: %{name}-%{version}.tar.gz
 License: GPL
@@ -48,6 +48,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/redhat-config-services.8*
 
 %changelog
+* Wed Oct 1 2003 Daniel J Walsh <dwalsh@redhat.com> 0.8.5-20
+- bump
+
 * Wed Oct 1 2003 Daniel J Walsh <dwalsh@redhat.com> 0.8.5-19
 - Fix pathing problem on Hammer
 
