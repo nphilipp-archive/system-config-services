@@ -1,3 +1,20 @@
+2005-01-04  nphilipp  <nphilipp@redhat.com>
+
+	* configure.in, src/servicemethods.py, system-config-services.spec.in:
+	throw away stderr to not be confused by error messages (#142983)
+
+2004-12-16  erwien  <erwien@redhat.com>
+
+	* po/id.po: *** empty log message ***
+
+2004-12-08  nphilipp  <nphilipp@redhat.com>
+
+	* ChangeLog: release 0.8.16
+
+	* configure.in, system-config-services.spec.in:
+	don't hardcode python 2.3 (#142246)
+	remove some cruft from configure.in
+
 2004-12-08  nphilipp  <nphilipp@redhat.com>
 
 	* configure.in, system-config-services.spec.in:
