@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
 "POT-Creation-Date: 2003-12-11 07:34-0500\n"
-"PO-Revision-Date: 2003-10-15 00:20+0200\n"
+"PO-Revision-Date: 2003-12-18 00:33+0100\n"
 "Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -154,9 +154,8 @@ msgstr "Kjartan Maraas <kmaraas@gnome.org>"
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:595
-#, fuzzy
 msgid "You must run system-config-services as root."
-msgstr "Du må kjøre redhat-config-services som root."
+msgstr "Du må kjøre system-config-services som root."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
