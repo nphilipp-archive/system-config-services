@@ -59,6 +59,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Fri Mar 18 2005 Nils Philippsen <nphilipp@redhat.com>
+- don't read from /dev/null when restarting xinetd/services to prevent hangs
+
 * Thu Feb 17 2005 Daniel J Walsh <dwalsh@redhat.com> 0.8.19-1
 - Added patch from Charlie Brej 
 

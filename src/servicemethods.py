@@ -313,7 +313,7 @@ class ServiceMethods:
         if self.dict_services.has_key(servicename):
             if int(self.dict_services[servicename][1]) == 1:
                 if int(self.dict_services["xinetd"][0][int(runlevel)]) == 1:
-                    action_results = getstatusoutput("/sbin/service xinetd reload < /dev/null ", self.uicallback)
+                    action_results = getstatusoutput("/sbin/service xinetd reload", self.uicallback)
 
                     if action_results[0] != 0:
                         return (1,_("xinetd failed to reload for ") + servicename +
@@ -325,7 +325,7 @@ class ServiceMethods:
                     return (1, _("xinetd must be enabled for %s to run") % servicename)
 
             if int(self.dict_services[servicename][1]) == 0:
-                action_results = getstatusoutput("/sbin/service %s %s < /dev/null" % (servicename, action_type), self.uicallback)
+                action_results = getstatusoutput("/sbin/service %s %s" % (servicename, action_type), self.uicallback)
                 if action_results[0] != 0:
                     return (1, _("%s failed. The error was: %s") % (servicename,action_results[1]))
                 else:
