@@ -1,19 +1,20 @@
-# SOME DESCRIPTIVE TITLE.
+# translation of fr.po to french
 # Copyright (C) 2001 Red Hat, Inc.
 # Bettina De Monti <bdemonti@redhat.it>, 2001.
+# Audrey Simons <asimons@redhat.com>, 2003
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: service conf\n"
+"Project-Id-Version: fr\n"
 "POT-Creation-Date: 2003-07-09 10:10-0400\n"
-"PO-Revision-Date: 2003-03-19 14:41+0100\n"
+"PO-Revision-Date: 2003-07-10 09:16+1000\n"
 "Last-Translator: Audrey Simons <asimons@redhat.com>\n"
 "Language-Team: french <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
-"X-Generator: KBabel 0.9.6\n"
+"X-Generator: KBabel 1.0\n"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -63,7 +64,7 @@ msgstr ""
 #: src/serviceconf.py:62
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "Souhaitez-vous vraiment supprimer %s&nbsp;?"
 
 #. make sure threading is disabled
 #. map the event signals to specific methods
@@ -239,21 +240,19 @@ msgstr " réussi"
 
 #: src/serviceconf.glade.h:1
 msgid "*"
-msgstr ""
+msgstr "*"
 
 #: src/serviceconf.glade.h:2
-#, fuzzy
 msgid "Add Service"
-msgstr "Services"
+msgstr "Ajouter un service"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Niveau d'exécution actif&nbsp;:"
 
 #: src/serviceconf.glade.h:4
-#, fuzzy
 msgid "Delete Service"
-msgstr "Arrêter le _service"
+msgstr "Supprimer un service"
 
 #: src/serviceconf.glade.h:5
 msgid "Description"
@@ -308,9 +307,8 @@ msgid "Service Configuration"
 msgstr "Configuration du service"
 
 #: src/serviceconf.glade.h:18
-#, fuzzy
 msgid "Service Name: "
-msgstr "Services"
+msgstr "Nom de service&nbsp;:"
 
 #: src/serviceconf.glade.h:19
 msgid "Start"
@@ -378,7 +376,7 @@ msgstr "_Démarrer le service"
 
 #: src/serviceconf.glade.h:35
 msgid "_View"
-msgstr ""
+msgstr "_Vue"
 
 #~ msgid "Cancel"
 #~ msgstr "Effacer"
@@ -430,3 +428,4 @@ msgstr ""
 
 #~ msgid "Exit"
 #~ msgstr "Fermer"
+
