@@ -1,6 +1,8 @@
 2004-01-06  dwalsh  <dwalsh@redhat.com>
 
-	* ChangeLog, system-config-services.spec.in, Makefile.am, config.status:
+	* src/serviceconf.py: add python startup
+
+	* ChangeLog, aclocal.m4, intltool-extract.in, intltool-merge.in, intltool-update.in, po/system-config-services.pot, system-config-services.spec.in, Makefile.am, config.status:
 	release 0.8.6
 
 	* aclocal.m4, configure.in, intltool-extract.in, intltool-merge.in, intltool-update.in, po/Makefile.in.in, src/Makefile.am, src/serviceconf.py, src/system-config-services.sh, system-config-services.spec.in:
