@@ -75,7 +75,7 @@ CVSTAG=r$(subst .,-,$(VERSION))
 
 archive: distcheck changelog
 	cvs ci -m "release $(VERSION)"
-	cvs tag -cFR $(CVSTAG) .
+	cvs tag -cR $(CVSTAG) .
 	@rm -rf /tmp/${PKGNAME}-$(VERSION) /tmp/${PKGNAME}
 	@CVSROOT=`cat CVS/Root`; cd /tmp; cvs -d $$CVSROOT export -r$(CVSTAG) ${PKGNAME}
 	@cd /tmp/${PKGNAME};./autogen.sh
