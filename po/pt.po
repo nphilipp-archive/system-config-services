@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
 "POT-Creation-Date: 2003-07-30 09:38-0400\n"
-"PO-Revision-Date: 2003-07-10 10:15+0100\n"
+"PO-Revision-Date: 2003-07-30 15:10+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -187,15 +187,11 @@ msgstr "Deve correr o redhat-config-services como root."
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
 #: src/servicemethods.py:286
-#, fuzzy
 msgid ""
 "\n"
 "\n"
 "xinetd is required for this service."
-msgstr ""
-"\n"
-"\n"
-"Tem que activar o xinetd para utilizar este serviço."
+msgstr "\n\nÉ necessário o xinetd para utilizar este serviço."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -371,6 +367,3 @@ msgstr "Iniciar _Serviço"
 #: src/serviceconf.glade.h:35
 msgid "_View"
 msgstr "_Ver"
-
-#~ msgid "xinetd service"
-#~ msgstr "Serviço xinetd"
