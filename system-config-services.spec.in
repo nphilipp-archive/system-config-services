@@ -49,7 +49,7 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
-* Tue Jan 6 2003 Daniel J Walsh <dwalsh@redhat.com> 0.8.6-2
+* Tue Jan 6 2004 Daniel J Walsh <dwalsh@redhat.com> 0.8.6-2
 - remove requirement for 2.2
 
 * Thu Nov 11 2003 Daniel J Walsh <dwalsh@redhat.com> 0.8.6-1
