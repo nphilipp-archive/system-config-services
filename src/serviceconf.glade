@@ -393,8 +393,8 @@ Do you want to save the changes?</property>
 </widget>
 
 <widget class="GtkWindow" id="winMain">
-  <property name="width_request">475</property>
-  <property name="height_request">400</property>
+  <property name="width_request">550</property>
+  <property name="height_request">450</property>
   <property name="visible">True</property>
   <property name="title" translatable="yes">Service Configuration</property>
   <property name="type">GTK_WINDOW_TOPLEVEL</property>
