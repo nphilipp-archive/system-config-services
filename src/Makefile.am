@@ -1,4 +1,4 @@
-PYTHON_FILES = checklist.py dnsdata.py serviceconf.py dnsdata_base.py  FwdZone.py  servicemethods.py
+PYTHON_FILES = checklist.py serviceconf.py servicemethods.py
 
 GLADE_FILES = serviceconf.glade
 
@@ -19,9 +19,6 @@ install-exec-local:
 	mkdir -p $(DESTDIR)$(sbindir) $(DESTDIR)$(bindir) $(DESTDIR)$(pkgdatadir)
 	install -m 0755 $(srcdir)/serviceconf.py $(DESTDIR)$(pkgdatadir)/
 	install -m 0755 $(srcdir)/checklist.py $(DESTDIR)$(pkgdatadir)/
-	install -m 0755 $(srcdir)/dnsdata.py $(DESTDIR)$(pkgdatadir)/
-	install -m 0755 $(srcdir)/dnsdata_base.py $(DESTDIR)$(pkgdatadir)/
-	install -m 0755 $(srcdir)/FwdZone.py $(DESTDIR)$(pkgdatadir)/
 	install -m 0755 $(srcdir)/servicemethods.py $(DESTDIR)$(pkgdatadir)/
 	install -m 0755 $(srcdir)/redhat-config-services.sh $(DESTDIR)$(pkgdatadir)/redhat-config-services
 	softdir=$(pkgdatadir); \
