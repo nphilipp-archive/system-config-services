@@ -1,4 +1,4 @@
-# $Id: cs.po,v 1.20 2002/10/02 21:27:03 mitr Exp $
+# $Id: cs.po,v 1.21 2002/10/10 13:17:15 dwalsh Exp $
 #
 # Czech translation for serviceconf
 # Copyright (C) 2001 Free Software Foundation, Inc.
@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf 1.0\n"
-"POT-Creation-Date: 2002-10-02 11:21-0400\n"
+"POT-Creation-Date: 2002-10-10 05:21-0400\n"
 "PO-Revision-Date: 2002-10-02 23:32+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -75,16 +75,16 @@ msgstr ""
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:179
+#: src/serviceconf.py:173
 msgid "Currently Running in Runlevel: "
 msgstr "Systém je právě v runlevelu: "
 
 #. This is a sentry
-#: src/serviceconf.py:190
+#: src/serviceconf.py:184
 msgid "Start at Boot"
 msgstr "Spustit při startu"
 
-#: src/serviceconf.py:191
+#: src/serviceconf.py:185
 msgid "Services"
 msgstr "Služby"
 
@@ -99,8 +99,8 @@ msgstr "Služby"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:246 src/serviceconf.py:345 src/serviceconf.py:354
-#: src/serviceconf.py:378
+#: src/serviceconf.py:240 src/serviceconf.py:339 src/serviceconf.py:348
+#: src/serviceconf.py:372
 msgid "Editing Runlevel: "
 msgstr "Měněný runlevel: "
 
@@ -108,15 +108,15 @@ msgstr "Měněný runlevel: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:289
+#: src/serviceconf.py:283
 msgid "Unknown"
 msgstr "Neznámý"
 
-#: src/serviceconf.py:292
+#: src/serviceconf.py:286
 msgid "xinetd service"
 msgstr "služba xinetd"
 
-#: src/serviceconf.py:360
+#: src/serviceconf.py:354
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -128,13 +128,13 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:390
+#: src/serviceconf.py:384
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr ""
 "Copyright (c) 2002 Red Hat, Inc. All rights reserved. Všechna práva "
 "vyhrazena."
 
-#: src/serviceconf.py:391
+#: src/serviceconf.py:385
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -161,7 +161,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:524
+#: src/serviceconf.py:516
 msgid "You must run redhat-config-services as root."
 msgstr "redhat-config-services musíte spustit jako root."
 
@@ -244,128 +244,123 @@ msgid " successful"
 msgstr " úspěšný"
 
 #: src/serviceconf.glade.h:1
-msgid "Cancel"
-msgstr "Zrušit"
-
-#: src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "Aktuální runlevel: "
 
-#: src/serviceconf.glade.h:3
+#: src/serviceconf.glade.h:2
 msgid "Description"
 msgstr "Popis"
 
-#: src/serviceconf.glade.h:4
+#: src/serviceconf.glade.h:3
 msgid "Editing Runlevel:"
 msgstr "Měněný runlevel:"
 
-#: src/serviceconf.glade.h:5
+#: src/serviceconf.glade.h:4
 msgid "None"
 msgstr "Žádný"
 
-#: src/serviceconf.glade.h:6
-msgid "Quit"
-msgstr "Konec"
-
-#: src/serviceconf.glade.h:7
+#: src/serviceconf.glade.h:5
 msgid "Restart"
 msgstr "Restartovat"
 
-#: src/serviceconf.glade.h:8
+#: src/serviceconf.glade.h:6
 msgid "Restart the selected service"
 msgstr "Restartovat vybrané služby"
 
-#: src/serviceconf.glade.h:9
-msgid "Revert to the last saved change"
-msgstr "Návrat k poslednímu uloženému stavu"
-
-#: src/serviceconf.glade.h:10
+#: src/serviceconf.glade.h:7
 msgid "Runlevel _3"
 msgstr "Runlevel _3"
 
-#: src/serviceconf.glade.h:11
+#: src/serviceconf.glade.h:8
 msgid "Runlevel _4"
 msgstr "Runlevel _4"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:9
 msgid "Runlevel _5"
 msgstr "Runlevel _5"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:10
 msgid "S_top Service"
 msgstr "U_končit službu"
 
-#: src/serviceconf.glade.h:14
-msgid "Save"
-msgstr "Uložit"
-
-#: src/serviceconf.glade.h:15
-msgid "Save the changes you have made"
-msgstr "Uložit provedené změny"
-
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:11
 msgid "Service Configuration"
 msgstr "Nastavení služeb"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:12
 msgid "Start"
 msgstr "Spustit"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:13
 msgid "Start the selected service"
 msgstr "Spustit vybrané služby"
 
-#: src/serviceconf.glade.h:19
+#: src/serviceconf.glade.h:14
 msgid "Status"
 msgstr "Stav"
 
-#: src/serviceconf.glade.h:20
+#: src/serviceconf.glade.h:15
 msgid "Stop"
 msgstr "Ukončit"
 
-#: src/serviceconf.glade.h:21
+#: src/serviceconf.glade.h:16
 msgid "Stop the selected service"
 msgstr "Ukončit vybrané služby"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:17
 msgid "_Actions"
 msgstr "_Akce"
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:18
 msgid "_Contents"
 msgstr "_Obsah"
 
-#: src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:19
 msgid "_Edit Runlevel"
 msgstr "_Změnit runlevel"
 
-#: src/serviceconf.glade.h:25
+#: src/serviceconf.glade.h:20
 msgid "_File"
 msgstr "_Soubor"
 
-#: src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:21
 msgid "_Help"
 msgstr "Nápověd_a"
 
-#: src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:22
 msgid "_Refresh Service List"
 msgstr "_Obnovit seznam služeb"
 
-#: src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:23
 msgid "_Restart Service"
 msgstr "_Restartovat službu"
 
-#: src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:24
 msgid "_Revert To Last Save"
 msgstr "_Návrat k uloženému"
 
-#: src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:25
 msgid "_Save Changes"
 msgstr "_Uložit změny"
 
-#: src/serviceconf.glade.h:31
+#: src/serviceconf.glade.h:26
 msgid "_Start Service"
 msgstr "_Spustit službu"
+
+#~ msgid "Cancel"
+#~ msgstr "Zrušit"
+
+#~ msgid "Quit"
+#~ msgstr "Konec"
+
+#~ msgid "Revert to the last saved change"
+#~ msgstr "Návrat k poslednímu uloženému stavu"
+
+#~ msgid "Save"
+#~ msgstr "Uložit"
+
+#~ msgid "Save the changes you have made"
+#~ msgstr "Uložit provedené změny"
 
 #~ msgid "Actions such as start, stop, and restart on the selected service"
 #~ msgstr "Akce (spuštění, ukončení nebo restart zvolené služby)"

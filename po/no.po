@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
-"POT-Creation-Date: 2002-10-02 11:21-0400\n"
+"POT-Creation-Date: 2002-10-10 05:21-0400\n"
 "PO-Revision-Date: 2002-08-24 21:12+0200\n"
 "Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
@@ -72,16 +72,16 @@ msgstr ""
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:179
+#: src/serviceconf.py:173
 msgid "Currently Running in Runlevel: "
 msgstr "Aktiv runlevel: "
 
 #. This is a sentry
-#: src/serviceconf.py:190
+#: src/serviceconf.py:184
 msgid "Start at Boot"
 msgstr "Aktiv ved oppstart"
 
-#: src/serviceconf.py:191
+#: src/serviceconf.py:185
 msgid "Services"
 msgstr "Tjenester"
 
@@ -96,8 +96,8 @@ msgstr "Tjenester"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:246 src/serviceconf.py:345 src/serviceconf.py:354
-#: src/serviceconf.py:378
+#: src/serviceconf.py:240 src/serviceconf.py:339 src/serviceconf.py:348
+#: src/serviceconf.py:372
 msgid "Editing Runlevel: "
 msgstr "Redigerer runlevel: "
 
@@ -105,15 +105,15 @@ msgstr "Redigerer runlevel: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:289
+#: src/serviceconf.py:283
 msgid "Unknown"
 msgstr ""
 
-#: src/serviceconf.py:292
+#: src/serviceconf.py:286
 msgid "xinetd service"
 msgstr ""
 
-#: src/serviceconf.py:360
+#: src/serviceconf.py:354
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -125,11 +125,11 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:390
+#: src/serviceconf.py:384
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Opphavsrett © 2002 Red Hat, Inc. Alle rettigheter reserveres."
 
-#: src/serviceconf.py:391
+#: src/serviceconf.py:385
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -156,7 +156,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:524
+#: src/serviceconf.py:516
 msgid "You must run redhat-config-services as root."
 msgstr "Du må kjøre redhat-config-services som root."
 
@@ -239,126 +239,121 @@ msgid " successful"
 msgstr " suksess"
 
 #: src/serviceconf.glade.h:1
-msgid "Cancel"
-msgstr "Avbryt"
-
-#: src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "Aktivt kjøringsnivå: "
 
-#: src/serviceconf.glade.h:3
+#: src/serviceconf.glade.h:2
 msgid "Description"
 msgstr ""
 
-#: src/serviceconf.glade.h:4
+#: src/serviceconf.glade.h:3
 msgid "Editing Runlevel:"
 msgstr "Redigerer kjøringsnivå:"
 
-#: src/serviceconf.glade.h:5
+#: src/serviceconf.glade.h:4
 msgid "None"
 msgstr "Ingen"
 
-#: src/serviceconf.glade.h:6
-msgid "Quit"
-msgstr "Avslutt"
-
-#: src/serviceconf.glade.h:7
+#: src/serviceconf.glade.h:5
 msgid "Restart"
 msgstr "Start på nytt"
 
-#: src/serviceconf.glade.h:8
+#: src/serviceconf.glade.h:6
 msgid "Restart the selected service"
 msgstr "Start valgt tjeneste på nytt"
 
-#: src/serviceconf.glade.h:9
-msgid "Revert to the last saved change"
-msgstr "Gå tilbake til forrige lagrede endring"
-
-#: src/serviceconf.glade.h:10
+#: src/serviceconf.glade.h:7
 msgid "Runlevel _3"
 msgstr "Kjøringsnivå _3"
 
-#: src/serviceconf.glade.h:11
+#: src/serviceconf.glade.h:8
 msgid "Runlevel _4"
 msgstr "Kjøringsnivå _4"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:9
 msgid "Runlevel _5"
 msgstr "Kjøringsnivå _5"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:10
 msgid "S_top Service"
 msgstr "S_topp tjenesten"
 
-#: src/serviceconf.glade.h:14
-msgid "Save"
-msgstr "Lagre"
-
-#: src/serviceconf.glade.h:15
-msgid "Save the changes you have made"
-msgstr "Lagre endringene du har gjort"
-
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:11
 msgid "Service Configuration"
 msgstr "Tjenestekonfigurasjon"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:12
 msgid "Start"
 msgstr "Start"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:13
 msgid "Start the selected service"
 msgstr "Start valgt tjeneste"
 
-#: src/serviceconf.glade.h:19
+#: src/serviceconf.glade.h:14
 #, fuzzy
 msgid "Status"
 msgstr "Start"
 
-#: src/serviceconf.glade.h:20
+#: src/serviceconf.glade.h:15
 msgid "Stop"
 msgstr "Stopp"
 
-#: src/serviceconf.glade.h:21
+#: src/serviceconf.glade.h:16
 msgid "Stop the selected service"
 msgstr "Stopp valgt tjeneste"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:17
 msgid "_Actions"
 msgstr "H_andlinger"
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:18
 msgid "_Contents"
 msgstr "_Innhold"
 
-#: src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:19
 msgid "_Edit Runlevel"
 msgstr "Redigerer kjøringsnivå"
 
-#: src/serviceconf.glade.h:25
+#: src/serviceconf.glade.h:20
 msgid "_File"
 msgstr "_Fil"
 
-#: src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:21
 msgid "_Help"
 msgstr "_Hjelp"
 
-#: src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:22
 msgid "_Refresh Service List"
 msgstr "_Oppdater tjenestelisten"
 
-#: src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:23
 msgid "_Restart Service"
 msgstr "Sta_rt tjenesten på nytt"
 
-#: src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:24
 msgid "_Revert To Last Save"
 msgstr "Gå tilbake til fo_rrige lagring"
 
-#: src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:25
 msgid "_Save Changes"
 msgstr "_Lagre endringer"
 
-#: src/serviceconf.glade.h:31
+#: src/serviceconf.glade.h:26
 msgid "_Start Service"
 msgstr "_Start tjenester"
+
+#~ msgid "Cancel"
+#~ msgstr "Avbryt"
+
+#~ msgid "Quit"
+#~ msgstr "Avslutt"
+
+#~ msgid "Revert to the last saved change"
+#~ msgstr "Gå tilbake til forrige lagrede endring"
+
+#~ msgid "Save"
+#~ msgstr "Lagre"
+
+#~ msgid "Save the changes you have made"
+#~ msgstr "Lagre endringene du har gjort"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf 1.1\n"
-"POT-Creation-Date: 2002-10-02 11:21-0400\n"
+"POT-Creation-Date: 2002-10-10 05:21-0400\n"
 "PO-Revision-Date: 2001-08-16 22:43+0000\n"
 "Last-Translator: Richard Allen <ra@hp.is>\n"
 "Language-Team: is <kde-isl@mmedia.is>\n"
@@ -72,16 +72,16 @@ msgstr ""
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:179
+#: src/serviceconf.py:173
 msgid "Currently Running in Runlevel: "
 msgstr "Þegar ræst í keyrslustigi: "
 
 #. This is a sentry
-#: src/serviceconf.py:190
+#: src/serviceconf.py:184
 msgid "Start at Boot"
 msgstr "Ræsa þegar vélin ræsir"
 
-#: src/serviceconf.py:191
+#: src/serviceconf.py:185
 msgid "Services"
 msgstr "Þjónustur"
 
@@ -96,8 +96,8 @@ msgstr "Þjónustur"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:246 src/serviceconf.py:345 src/serviceconf.py:354
-#: src/serviceconf.py:378
+#: src/serviceconf.py:240 src/serviceconf.py:339 src/serviceconf.py:348
+#: src/serviceconf.py:372
 msgid "Editing Runlevel: "
 msgstr "Breyti keyrsluþrepi: "
 
@@ -105,15 +105,15 @@ msgstr "Breyti keyrsluþrepi: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:289
+#: src/serviceconf.py:283
 msgid "Unknown"
 msgstr "Óþekkt"
 
-#: src/serviceconf.py:292
+#: src/serviceconf.py:286
 msgid "xinetd service"
 msgstr "xinetd þjónusta"
 
-#: src/serviceconf.py:360
+#: src/serviceconf.py:354
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -125,11 +125,11 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:390
+#: src/serviceconf.py:384
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Höfundarréttur (c) 2002 Red Hat, Inc. Allur réttur áskilinn."
 
-#: src/serviceconf.py:391
+#: src/serviceconf.py:385
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -157,7 +157,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:524
+#: src/serviceconf.py:516
 msgid "You must run redhat-config-services as root."
 msgstr "Þú verður að keyra redhat-config-services sem rót."
 
@@ -240,125 +240,120 @@ msgid " successful"
 msgstr " tókst"
 
 #: src/serviceconf.glade.h:1
-msgid "Cancel"
-msgstr "Hætta við"
-
-#: src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "Núverandi keyrsluþrep:"
 
-#: src/serviceconf.glade.h:3
+#: src/serviceconf.glade.h:2
 msgid "Description"
 msgstr "Lýsing"
 
-#: src/serviceconf.glade.h:4
+#: src/serviceconf.glade.h:3
 msgid "Editing Runlevel:"
 msgstr "Breyti keyrsluþrepi:"
 
-#: src/serviceconf.glade.h:5
+#: src/serviceconf.glade.h:4
 msgid "None"
 msgstr "Engin"
 
-#: src/serviceconf.glade.h:6
-msgid "Quit"
-msgstr "Hætta"
-
-#: src/serviceconf.glade.h:7
+#: src/serviceconf.glade.h:5
 msgid "Restart"
 msgstr "Endurræsa"
 
-#: src/serviceconf.glade.h:8
+#: src/serviceconf.glade.h:6
 msgid "Restart the selected service"
 msgstr "Endurræsa valda þjónustu"
 
-#: src/serviceconf.glade.h:9
-msgid "Revert to the last saved change"
-msgstr "Fara aftur í þær stillingar sem síðast var vistað"
-
-#: src/serviceconf.glade.h:10
+#: src/serviceconf.glade.h:7
 msgid "Runlevel _3"
 msgstr "Keyrslustig _3"
 
-#: src/serviceconf.glade.h:11
+#: src/serviceconf.glade.h:8
 msgid "Runlevel _4"
 msgstr "Keyrslustig _4"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:9
 msgid "Runlevel _5"
 msgstr "Keyrslustig _5"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:10
 msgid "S_top Service"
 msgstr "S_öðva þjónustu"
 
-#: src/serviceconf.glade.h:14
-msgid "Save"
-msgstr "Vista"
-
-#: src/serviceconf.glade.h:15
-msgid "Save the changes you have made"
-msgstr "Vista breytingum sem er búið að gera"
-
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:11
 msgid "Service Configuration"
 msgstr "Stillingar þjónustna"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:12
 msgid "Start"
 msgstr "Ræsa"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:13
 msgid "Start the selected service"
 msgstr "Ræsa valda þjónustu"
 
-#: src/serviceconf.glade.h:19
+#: src/serviceconf.glade.h:14
 msgid "Status"
 msgstr "Staða"
 
-#: src/serviceconf.glade.h:20
+#: src/serviceconf.glade.h:15
 msgid "Stop"
 msgstr "Stöðva"
 
-#: src/serviceconf.glade.h:21
+#: src/serviceconf.glade.h:16
 msgid "Stop the selected service"
 msgstr "Stöðva valda þjónustu"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:17
 msgid "_Actions"
 msgstr "_Aðgerðir"
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:18
 msgid "_Contents"
 msgstr "_Innihald"
 
-#: src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:19
 msgid "_Edit Runlevel"
 msgstr "_Breyta keyrslustigi"
 
-#: src/serviceconf.glade.h:25
+#: src/serviceconf.glade.h:20
 msgid "_File"
 msgstr "_Skrá"
 
-#: src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:21
 msgid "_Help"
 msgstr "_Hjálp"
 
-#: src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:22
 msgid "_Refresh Service List"
 msgstr "_Uppfæra þjónustulistann"
 
-#: src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:23
 msgid "_Restart Service"
 msgstr "_Endurræsa þjónustu"
 
-#: src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:24
 msgid "_Revert To Last Save"
 msgstr "_Fara í fyrri stillingar"
 
-#: src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:25
 msgid "_Save Changes"
 msgstr "_Vista breytingum"
 
-#: src/serviceconf.glade.h:31
+#: src/serviceconf.glade.h:26
 msgid "_Start Service"
 msgstr "_Ræsa þjónustu"
+
+#~ msgid "Cancel"
+#~ msgstr "Hætta við"
+
+#~ msgid "Quit"
+#~ msgstr "Hætta"
+
+#~ msgid "Revert to the last saved change"
+#~ msgstr "Fara aftur í þær stillingar sem síðast var vistað"
+
+#~ msgid "Save"
+#~ msgstr "Vista"
+
+#~ msgid "Save the changes you have made"
+#~ msgstr "Vista breytingum sem er búið að gera"
