@@ -37,15 +37,14 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc COPYING
 %doc docs/html/*
-%{_mandir}/man8/redhat-config-services.8
 %{_bindir}/*
 %{_datadir}/applications/redhat-config-services.desktop
 %{_datadir}/redhat-config-services
 %{_datadir}/pixmaps/serviceconf.xpm
 %config %{_sysconfdir}/pam.d/redhat-config-services
-%config %{_sysconfdir}/pam.d/serviceconf
 %config %{_sysconfdir}/security/console.apps/redhat-config-services
-%config %{_sysconfdir}/security/console.apps/serviceconf
+#%config %{_sysconfdir}/security/console.apps/serviceconf
+#%config %{_sysconfdir}/pam.d/serviceconf
 
 %changelog
 
