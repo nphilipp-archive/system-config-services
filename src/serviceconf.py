@@ -449,18 +449,15 @@ http://bugzilla.redhat.com"""),
 	dlg.show_all()
 	rc = dlg.run()
 	dlg.destroy()
+        self.set_text_status()
 
     def on_btnStart_clicked(self,None):
         """calls get_service_action_results to start the selected initscript"""
         self.get_service_action_results(self.text_in_row, "start")
 
-
-
     def on_btnStop_clicked(self,None):
         """calls get_service_action_results to stop the selected initscript"""
         self.get_service_action_results(self.text_in_row, "stop")
-
-
 
     def on_btnRestart_clicked(self,None):
         """calls get_service_action_results to restart the selected initscript"""

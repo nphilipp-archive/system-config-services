@@ -49,8 +49,11 @@ rm -rf %{buildroot}
 %{_mandir}/*/redhat-config-services.8*
 
 %changelog
-* Mon Dec  2 2002 Daniel J Walsh <dwalsh@redhat.com> 0.8.3-6
+* Tue Dec  3 2002 Daniel J Walsh <dwalsh@redhat.com> 0.8.3-6
 - Fix DISPLAY error handling
+- Stretch Screen size
+- Update status box after Start/Stop/Restart
+- Fix Icon error
 
 * Thu Nov 14 2002 Dan Walsh <dwalsh@redhat.com> 0.8.3-5
 - Fix reading of descriptions from startup scripts to ignore blank lines
