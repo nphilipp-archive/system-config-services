@@ -6,6 +6,7 @@ EXTRA_DIST = \
 	redhat-config-services.spec		\
 	redhat-config-services.desktop.in 	\
 	redhat-config-services.desktop	 	\
+	redhat-config-services.console		\
 	redhat-config-services.pam		\
 	pycheckrc				\
 	intltool-extract.in			\
@@ -27,14 +28,15 @@ applications_in_files=$(applications_DATA:.desktop=.desktop.in)
 
 
 install-data-local:
+	$(mkinstalldirs) $(DESTDIR)$(sysconfdir)/security/console.apps
 	$(mkinstalldirs) $(DESTDIR)$(sysconfdir)/pam.d
 	$(mkinstalldirs) $(DESTDIR)$(prefix)/bin/
 
+	$(INSTALL_DATA) $(srcdir)/redhat-config-services.console $(DESTDIR)$(sysconfdir)/security/console.apps/redhat-config-services
 	$(INSTALL_DATA) $(srcdir)/redhat-config-services.pam $(DESTDIR)$(sysconfdir)/pam.d/redhat-config-services
 	ln -fs consolehelper $(DESTDIR)$(prefix)/bin/redhat-config-services
 
 uninstall-local:
-	rm -f $(DESTDIR)$(sysconfdir)usr/share/applications/redhat-config-services
 	rm -f $(DESTDIR)$(sysconfdir)/pam.d/redhat-config-services
 	rm -f $(DESTDIR)$(prefix)/bin/redhat-config-services
 
