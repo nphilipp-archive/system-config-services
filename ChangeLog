@@ -1,5 +1,13 @@
 2002-07-25  Daniel J Walsh  <dwalsh@redhat.com>
 
+	* /usr/local/CVS/redhat-config-services/docs/html/index.html:
+	update to latest from serviceconf directory
+
+	* /usr/local/CVS/redhat-config-services/po/cs.po, /usr/local/CVS/redhat-config-services/po/is.po, /usr/local/CVS/redhat-config-services/po/ja.po, /usr/local/CVS/redhat-config-services/po/ko.po, /usr/local/CVS/redhat-config-services/po/sv.po, /usr/local/CVS/redhat-config-services/po/tr.po, /usr/local/CVS/redhat-config-services/po/zh_CN.po, /usr/local/CVS/redhat-config-services/po/zh_TW.po:
+	latest translations
+
+	* /usr/local/CVS/redhat-config-services/ChangeLog: release 0.8.1
+
 	* /usr/local/CVS/redhat-config-services/redhat-config-services.spec.in:
 	update changelog
 
