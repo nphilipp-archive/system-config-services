@@ -1,19 +1,20 @@
 # translation of tr.po to Turkish
-# $Id: tr.po,v 1.36 2003/07/09 14:06:09 dwalsh Exp $
+# $Id: tr.po,v 1.37 2003/07/09 14:17:09 caldera Exp $
 # Nilgün Belma Bugüner <nilgun@superonline.com>, 2003
+# Erçin EKER <erc.caldera@gmx.net>, 2003
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tr\n"
 "POT-Creation-Date: 2003-07-09 10:10-0400\n"
-"PO-Revision-Date: 2003-07-06 16:03+0300\n"
-"Last-Translator: Nilgün Belma Bugüner <nilgun@superonline.com>\n"
-"Language-Team: Turkish <gnu-tr-u12a@lists.sourceforge.net>\n"
+"PO-Revision-Date: 2003-07-09 17:20+0300\n"
+"Last-Translator: Erçin EKER <erc.caldera@gmx.net>\n"
+"Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
-"X-Generator: KBabel 1.0\n"
+"X-Generator: KBabel 1.2\n"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -63,7 +64,7 @@ msgstr ""
 #: src/serviceconf.py:62
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "%s'i silmek istediğinizden emin misiniz?"
 
 #. make sure threading is disabled
 #. map the event signals to specific methods
@@ -239,21 +240,19 @@ msgstr " başarılı"
 
 #: src/serviceconf.glade.h:1
 msgid "*"
-msgstr ""
+msgstr "*"
 
 #: src/serviceconf.glade.h:2
-#, fuzzy
 msgid "Add Service"
-msgstr "Servisler"
+msgstr "Hizmet Ekle"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Şu an Etkin olan Çalışma Seviyesi: "
 
 #: src/serviceconf.glade.h:4
-#, fuzzy
 msgid "Delete Service"
-msgstr "Hizmeti _Durdur"
+msgstr "Hizmeti Sil"
 
 #: src/serviceconf.glade.h:5
 msgid "Description"
@@ -308,9 +307,8 @@ msgid "Service Configuration"
 msgstr "Hizmet Yapılandırması"
 
 #: src/serviceconf.glade.h:18
-#, fuzzy
 msgid "Service Name: "
-msgstr "Servisler"
+msgstr "Hizmet Adı: "
 
 #: src/serviceconf.glade.h:19
 msgid "Start"
@@ -378,224 +376,5 @@ msgstr "Hizmeti _Başlat"
 
 #: src/serviceconf.glade.h:35
 msgid "_View"
-msgstr ""
+msgstr "_Görünüm"
 
-#~ msgid "Cancel"
-#~ msgstr "İptal"
-
-#~ msgid "Quit"
-#~ msgstr "Çık"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Son kayıtlı duruma döner"
-
-#~ msgid "Save"
-#~ msgstr "Kaydet"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "Yapılan değişiklikleri kaydeder"
-
-#~ msgid "Help is not available."
-#~ msgstr "Bu konuda yardım bulunmuyor."
-
-#~ msgid "Directory "
-#~ msgstr "Dizin "
-
-#~ msgid " does not begin with a slash!"
-#~ msgstr " bir / ile başlamıyor!"
-
-#~ msgid " is not an existing directory!"
-#~ msgstr " bir mevcut dizin değil!"
-
-#~ msgid "Master "
-#~ msgstr "Asıl "
-
-#~ msgid " is not a valid IP address."
-#~ msgstr " geçerli bir IP adresi değil."
-
-#~ msgid " is defined twice."
-#~ msgstr " iki kere tanımlı."
-
-#~ msgid "Slave zone name "
-#~ msgstr "Yardımcı bölge ismi "
-
-#~ msgid " is not a valid domain name."
-#~ msgstr " geçerli alan ismi değil."
-
-#~ msgid "Forwarder "
-#~ msgstr "İlerletici "
-
-#~ msgid " is not a valid Ip address."
-#~ msgstr " geçerli IP adresi değil."
-
-#~ msgid "Primary Nameserver not defined."
-#~ msgstr "Birincil İsim Sunucusu tanımlanmadı."
-
-#~ msgid "Primary Nameserver `"
-#~ msgstr "Birincil İsim sunucusu `"
-
-#~ msgid "' has no . at the end. You must use a full hostname."
-#~ msgstr "' sonunda bir . olmalı. Tam makina ismi kullanmalısınız."
-
-#~ msgid "' is not a valid hostname or IP address."
-#~ msgstr "' geçerli makina ismi ya da IP adresi değil."
-
-#~ msgid "Refresh value should be bigger than Retry"
-#~ msgstr "Refresh değeri, Retry değerinden büyük olmalıdır"
-
-#~ msgid "Serial number must be >= 1."
-#~ msgstr "Seri numarası >= 1 olmalıdır."
-
-#~ msgid "Refresh value must be >= 0."
-#~ msgstr "Refresh değeri >= 0 olmalıdır."
-
-#~ msgid "Retry value must be >= 0."
-#~ msgstr "Retry değeri >= 0 olmalıdır."
-
-#~ msgid "Expire value must be >= 0."
-#~ msgstr "Zaman aşımı değeri >= 0 olmalıdır."
-
-#~ msgid "Minimum value must be >= 0."
-#~ msgstr "En küçük değer >= 0 olmalıdır."
-
-#~ msgid "NewHost"
-#~ msgstr "Yeni Makina"
-
-#~ msgid "PTR hostname not defined"
-#~ msgstr "PTR makina adı tanımlanmadı"
-
-#~ msgid "PTR hostname `"
-#~ msgstr "PTR makina adı `"
-
-#~ msgid " is not a valid hostname."
-#~ msgstr " geçerli makina ismi değil."
-
-#~ msgid " must be in the range 0..255."
-#~ msgstr " 0..255 arasında olmalıdır."
-
-#~ msgid "IP "
-#~ msgstr "IP "
-
-#~ msgid "Nameserver "
-#~ msgstr "İsim sunucusu "
-
-#~ msgid " is not a valid host or domain name."
-#~ msgstr " geçerli makina ya da alan adı değil."
-
-#~ msgid " is defined twice for "
-#~ msgstr " bunun için iki kere tanımlanmış: "
-
-#~ msgid "New"
-#~ msgstr "Yeni"
-
-#~ msgid "Alias "
-#~ msgstr "Rumuz "
-
-#~ msgid "<New Forward Zone>"
-#~ msgstr "<Yeni İleri Bölge>"
-
-#~ msgid "Forward zone name "
-#~ msgstr "İleri bölge ismi "
-
-#~ msgid "Zone "
-#~ msgstr "Bölge "
-
-#~ msgid "<New Reverse Zone>"
-#~ msgstr "<Yeni Tersinir Bölge>"
-
-#~ msgid "Reverse zone name `"
-#~ msgstr "Tersinir bölge ismi `"
-
-#~ msgid "' is not the end of a reverse IP address."
-#~ msgstr "' tersinir IP adresinin sonu değil."
-
-#~ msgid "Reverse zone `"
-#~ msgstr "Tersinir bölge `"
-
-#~ msgid "' must list at least one name server"
-#~ msgstr "' en az bir isim sunucusu içermeli"
-
-#~ msgid "Reverse zone "
-#~ msgstr "Tersinir bölge "
-
-#~ msgid "<New Zone>"
-#~ msgstr "<Yeni Bölge>"
-
-#~ msgid " aliased to "
-#~ msgstr " buna rumuz:"
-
-#~ msgid "You must enter a host name."
-#~ msgstr "Bir makina ismi girmelisiniz."
-
-#~ msgid "You must enter an alias."
-#~ msgstr "Bir rumuz girmelisiniz."
-
-#~ msgid "An alias with this name already exists."
-#~ msgstr "Bu isimde bir rumuz zaten var."
-
-#~ msgid " at priority "
-#~ msgstr " önceliği: "
-
-#~ msgid "Mail Exchanger for %s"
-#~ msgstr "%s Posta Sunucusu"
-
-#~ msgid "Edit Mail Exchanger"
-#~ msgstr "Posta Sunucu kaydını Düzenle"
-
-#~ msgid "Add a Mail Exchanger"
-#~ msgstr "Bir Posta Sunucusu Ekle"
-
-#~ msgid "You must enter an priority."
-#~ msgstr "Bir öncelik girmelisiniz."
-
-#~ msgid " served by "
-#~ msgstr " bununla sunuluyor: "
-
-#~ msgid "You must enter a resolution address."
-#~ msgstr "Bir çözünür adres girmelisiniz."
-
-#~ msgid "NS hostname `"
-#~ msgstr "NS makina adı `"
-
-#~ msgid "SOA Refresh value should be bigger than Retry"
-#~ msgstr "SOA Refresh değeri, Retry değerinden büyük olmalıdır"
-
-#~ msgid "Forward zone `"
-#~ msgstr "İleri bölge `"
-
-#~ msgid "Settings for %s"
-#~ msgstr "%s ayarları"
-
-#~ msgid "_Manual"
-#~ msgstr "_Kılavuz"
-
-#~ msgid "Configure which services will be running when the system starts"
-#~ msgstr "Sistem açılışında hangi hizmetlerin başlatılacağını ayarlar"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "Hizmet listesini tazeler"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr ""
-#~ "Seçilen hizmet üzerinde başlat, durdur, yeniden başlat gibi eylemler"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Düzenlemek istediğiniz çalışma seviyesini seçiniz"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "Çalışma seviyesi 3, ağ ile çok kullanıcılı kiptir"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr "Çalışma Seviyesi 4, yerel özelleştirme içindir ve pek kullanılmaz"
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr ""
-#~ "Çalışma Seviyesi 5, X pencere sistemi üzerinden giriş yapılan, ağ ile çok "
-#~ "kullanıcılı kiptir."
-
-#~ msgid "Read Manual"
-#~ msgstr "Kılavuzu Okuyun"
-
-#~ msgid "Exit"
-#~ msgstr "Çıkış"
