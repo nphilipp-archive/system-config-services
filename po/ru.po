@@ -1,19 +1,19 @@
-# SOME DESCRIPTIVE TITLE.
+# translation of ru.po to Russian
 # Copyright (C) YEAR ORGANIZATION
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Leonid Kanter <leon@geon.donetsk.ua>, 2003
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: serviceconf VERSION\n"
+"Project-Id-Version: ru\n"
 "POT-Creation-Date: 2003-01-28 14:41-0500\n"
-"PO-Revision-Date: 2002-08-09 17:01+0300\n"
-"Last-Translator: Leon Kanter <leon@blackcatlinux.com>\n"
+"PO-Revision-Date: 2003-02-04 13:41+0200\n"
+"Last-Translator: Leonid Kanter <leon@geon.donetsk.ua>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
-"X-Generator: KBabel 0.9.6\n"
+"X-Generator: KBabel 1.0\n"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -109,11 +109,11 @@ msgstr "Редактируется уровень запуска:"
 #. set the text in StatusView
 #: src/serviceconf.py:292
 msgid "Unknown"
-msgstr ""
+msgstr "Неизвестно"
 
 #: src/serviceconf.py:295
 msgid "xinetd service"
-msgstr ""
+msgstr "служба xinetd"
 
 #: src/serviceconf.py:363
 msgid ""
@@ -246,7 +246,7 @@ msgstr "Активный уровень запуска:"
 
 #: src/serviceconf.glade.h:2
 msgid "Description"
-msgstr ""
+msgstr "Описание"
 
 #: src/serviceconf.glade.h:3
 msgid "Editing Runlevel:"
@@ -265,7 +265,6 @@ msgid "Restart the selected service"
 msgstr "Перезапустить выбранную службу"
 
 #: src/serviceconf.glade.h:7
-#, fuzzy
 msgid "Revert To _Last Save"
 msgstr "Откат к последнему сохранению"
 
@@ -298,9 +297,8 @@ msgid "Start the selected service"
 msgstr "Запустить выбранную службу"
 
 #: src/serviceconf.glade.h:15
-#, fuzzy
 msgid "Status"
-msgstr "Запустить"
+msgstr "Состояние"
 
 #: src/serviceconf.glade.h:16
 msgid "Stop"
@@ -565,3 +563,4 @@ msgstr "_Запустить службу"
 
 #~ msgid "Exit"
 #~ msgstr "Выход"
+
