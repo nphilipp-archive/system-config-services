@@ -1,6 +1,6 @@
 2002-07-26  dwalsh  <dwalsh@redhat.com>
 
-	* ChangeLog, aclocal.m4, config.status, autogen.sh, Makefile.am:
+	* ChangeLog, Makefile.am, aclocal.m4, config.status, intltool-extract.in, intltool-merge.in, intltool-update.in, autogen.sh:
 	release 0.8.1
 
 	* redhat-config-services.spec.in: update changelog
