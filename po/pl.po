@@ -192,7 +192,7 @@ msgstr "xinetd przeładowany %s poprawnie"
 #: ../src/servicemethods.py:325
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "xinetd musi być włączony aby uruchomić %s"
+msgstr "xinetd musi być włączony, aby uruchomić %s"
 
 #: ../src/servicemethods.py:330
 #, python-format
