@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
 "POT-Creation-Date: 2004-02-05 18:31-0500\n"
-"PO-Revision-Date: 2003-02-19 11:11+0100\n"
+"PO-Revision-Date: 2004-02-12 11:11+0100\n"
 "Last-Translator: Tamas Szanto <tszanto@mol.hu>\n"
 "Language-Team: Hungarian\n"
 "MIME-Version: 1.0\n"
@@ -63,7 +63,7 @@ msgstr ""
 #: src/serviceconf.py:76
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "Biztosan törölni szeretné ezt: %s?"
 
 #. make sure threading is disabled
 #. map the event signals to specific methods
@@ -136,7 +136,7 @@ msgstr ""
 
 #: src/serviceconf.py:465
 msgid "translator_credits"
-msgstr ""
+msgstr "Tamas Szanto <tszanto@mol.hu>"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -156,7 +156,6 @@ msgstr ""
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:609
-#, fuzzy
 msgid "You must run system-config-services as root."
 msgstr "A program csak rendszergazdai jogosultsággal futtatható."
 
@@ -194,7 +193,6 @@ msgstr "A program csak rendszergazdai jogosultsággal futtatható."
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
 #: src/servicemethods.py:290
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -241,21 +239,19 @@ msgstr " sikerült"
 
 #: src/serviceconf.glade.h:1
 msgid "*"
-msgstr ""
+msgstr "*"
 
 #: src/serviceconf.glade.h:2
-#, fuzzy
 msgid "Add Service"
-msgstr "Szolgáltatások"
+msgstr "Szolgáltatás hozzáadása"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "A jelenlegi aktív futási szint: "
 
 #: src/serviceconf.glade.h:4
-#, fuzzy
 msgid "Delete Service"
-msgstr "A szolgáltatás _leállítása"
+msgstr "A szolgáltatás törlése"
 
 #: src/serviceconf.glade.h:5
 msgid "Description"
@@ -263,7 +259,7 @@ msgstr "Leírás"
 
 #: src/serviceconf.glade.h:6
 msgid "Don't Save"
-msgstr ""
+msgstr "Mentés nélkül"
 
 #: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
@@ -303,16 +299,15 @@ msgstr "A szolgáltatás _leállítása"
 
 #: src/serviceconf.glade.h:16
 msgid "Save Dialog"
-msgstr ""
+msgstr "Mentési párbeszédablak"
 
 #: src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "A szolgáltatás beállításai"
 
 #: src/serviceconf.glade.h:18
-#, fuzzy
 msgid "Service Name: "
-msgstr "Szolgáltatások"
+msgstr "A szolgáltatás neve: "
 
 #: src/serviceconf.glade.h:19
 msgid "Start"
@@ -380,7 +375,5 @@ msgstr "A szol_gáltatás elindítása"
 
 #: src/serviceconf.glade.h:35
 msgid "_View"
-msgstr ""
+msgstr "_Nézet"
 
-#~ msgid "xinetd service"
-#~ msgstr "xinetd szolgáltatás"
