@@ -49,7 +49,7 @@ rm -rf %{buildroot}
 %{_sbindir}/*
 %{_bindir}/*
 %{_datadir}/applications/system-config-services.desktop
-%attr(0644,root,root) %{_datadir}/icons/hicolor/48x48/apps/system-config-services.png
+%{_datadir}/icons/hicolor/48x48/apps/system-config-services.png
 %{_datadir}/system-config-services
 %config %{_sysconfdir}/pam.d/system-config-services
 %config %{_sysconfdir}/security/console.apps/system-config-services
