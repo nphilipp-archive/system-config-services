@@ -1,5 +1,9 @@
 2002-07-31  dwalsh  <dwalsh@redhat.com>
 
+	* redhat-config-services.spec.in: update changelog
+
+	* ChangeLog: release 0.8.1
+
 	* po/de.po, po/es.po, po/fr.po, po/it.po, po/pt.po: update po files
 
 	* ChangeLog: release 0.8.1
