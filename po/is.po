@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf 1.1\n"
-"POT-Creation-Date: 2003-12-04 17:18-0500\n"
+"POT-Creation-Date: 2003-12-11 07:34-0500\n"
 "PO-Revision-Date: 2001-08-16 22:43+0000\n"
 "Last-Translator: Richard Allen <ra@ra.is>\n"
 "Language-Team: is <kde-isl@mmedia.is>\n"
@@ -191,7 +191,7 @@ msgstr "Þú verður að keyra redhat-config-services sem rót."
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:286
+#: src/servicemethods.py:290
 msgid ""
 "\n"
 "\n"
@@ -209,30 +209,30 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:332
+#: src/servicemethods.py:336
 msgid "xinetd failed to reload for "
 msgstr "Ekki tókst að endurræsa xinetd fyrir "
 
-#: src/servicemethods.py:333
+#: src/servicemethods.py:337
 msgid ". The error was: "
 msgstr ". Villan var: "
 
-#: src/servicemethods.py:335
+#: src/servicemethods.py:339
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd endurræsti %s vandræðalaust"
 
-#: src/servicemethods.py:338
+#: src/servicemethods.py:342
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd verður að vera virkt svo %s geti keyrt"
 
-#: src/servicemethods.py:343
+#: src/servicemethods.py:347
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s brást. Villan var: %s"
 
-#: src/servicemethods.py:345
+#: src/servicemethods.py:349
 msgid " successful"
 msgstr " tókst"
 

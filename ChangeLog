@@ -1,4 +1,44 @@
+2003-12-11  Dan Walsh  <dwalsh@redhat.com>
+
+	* configure.in, src/servicemethods.py, system-config-services.spec.in:
+	add patch and complete rename
+
+2003-12-09  Hung-Pin Wu  <hpwu@redhat.com>
+
+	* po/zh_TW.po: Updated
+
+2003-12-09  Michelle Kim  <mkim@redhat.com>
+
+	* po/ko.po: updated
+
+2003-12-07  pve-nl  <pve-nl@redhat.com>
+
+	* po/nl.po: some fixes for system-config-services nl.po
+
+2003-12-05  mitr  <mitr@redhat.com>
+
+	* po/cs.po: Update Czech translation
+
+2003-12-05  morais  <morais@redhat.com>
+
+	* po/pt.po: update
+
+2003-12-05  Sarah Smith  <sarahs@redhat.com>
+
+	* po/zh_CN.po: updated the changes
+
+2003-12-05  Hung-Pin Wu  <hpwu@redhat.com>
+
+	* po/zh_TW.po: Updated
+
+2003-12-04  Jean Paul Aubrey  <jpaubry@redhat.com>
+
+	* po/fr.po: post-release modifications
+
 2003-12-04  Dan Walsh  <dwalsh@redhat.com>
+
+	* po/sv.po, po/system-config-services.pot, po/tr.po, po/uk.po, po/vi.po, po/zh_CN.po, po/zh_TW.po, ChangeLog, aclocal.m4, config.status, intltool-extract.in, intltool-merge.in, intltool-update.in, po/Makefile.in.in, po/bn.po, po/bs.po, po/cs.po, po/cy.po, po/da.po, po/de.po, po/el.po, po/es.po, po/fi.po, po/fr.po, po/hr.po, po/hu.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/ms.po, po/nl.po, po/no.po, po/pt.po, po/pt_BR.po, po/ru.po, po/sl.po:
+	release 0.8.5
 
 	* ChangeLog, Makefile.am, aclocal.m4, autogen.sh, config.status, configure.in, docs/html/index.html, docs/html/legalnotice.html, intltool-extract.in, intltool-merge.in, intltool-update.in, man/Makefile.am, man/system-config-services.8, src/Makefile.am, src/serviceconf.glade, src/serviceconf.py, src/servicemethods.py, src/system-config-services.sh, system-config-services.console, system-config-services.desktop.in, system-config-services.spec.in:
 	change redhat-config-services to system-config-services

@@ -1,13 +1,13 @@
 # SLOVENIAN TRANSLATION OF REDHAT-CONFIG-SERVICES.
 # Copyright (C) 2003 Free Software Foundation.
 # Roman Maurer <roman@lugos.si>, 2003.
-# $Id: sl.po,v 1.3 2003/12/04 22:18:27 dwalsh Exp $
+# $Id: sl.po,v 1.4 2003/12/11 12:34:21 dwalsh Exp $
 # $Source: /home/fedora/mmcgrath/elvis/cvs/redhat-config-services/po/sl.po,v $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services 0.8.4\n"
-"POT-Creation-Date: 2003-12-04 17:18-0500\n"
+"POT-Creation-Date: 2003-12-11 07:34-0500\n"
 "PO-Revision-Date: 2003-09-26 22:59+0200\n"
 "Last-Translator: Roman Maurer <roman@lugos.si>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
@@ -193,7 +193,7 @@ msgstr "Program redhat-config-services morate zagnati kot root."
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:286
+#: src/servicemethods.py:290
 #, fuzzy
 msgid ""
 "\n"
@@ -212,30 +212,30 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:332
+#: src/servicemethods.py:336
 msgid "xinetd failed to reload for "
 msgstr "xinetd se ni mogel znova naložiti za "
 
-#: src/servicemethods.py:333
+#: src/servicemethods.py:337
 msgid ". The error was: "
 msgstr ". Napaka je bila: "
 
-#: src/servicemethods.py:335
+#: src/servicemethods.py:339
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd je uspešno znova naložil %s"
 
-#: src/servicemethods.py:338
+#: src/servicemethods.py:342
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd mora biti omogočen, če naj %s teče"
 
-#: src/servicemethods.py:343
+#: src/servicemethods.py:347
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s spodletelo. Napaka je bila: %s"
 
-#: src/servicemethods.py:345
+#: src/servicemethods.py:349
 msgid " successful"
 msgstr " uspešno"
 
