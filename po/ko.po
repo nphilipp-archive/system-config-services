@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
-"POT-Creation-Date: 2003-05-27 10:26-0400\n"
+"POT-Creation-Date: 2003-07-09 10:10-0400\n"
 "PO-Revision-Date: 2003-03-18 11:05+1000\n"
 "Last-Translator: Michelle Kim <mkim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -58,6 +58,11 @@ msgstr ""
 #. #
 #. # I18N
 #. #
+#: src/serviceconf.py:62
+#, python-format
+msgid "Are you sure you want to delete the %s?"
+msgstr ""
+
 #. make sure threading is disabled
 #. map the event signals to specific methods
 #. main window
@@ -72,16 +77,16 @@ msgstr ""
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:185
+#: src/serviceconf.py:208
 msgid "Currently Running in Runlevel: "
 msgstr "런레벨에서 현재 실행 중임: "
 
 #. This is a sentry
-#: src/serviceconf.py:196
+#: src/serviceconf.py:219
 msgid "Start at Boot"
 msgstr "부팅시 시작"
 
-#: src/serviceconf.py:197
+#: src/serviceconf.py:220
 msgid "Services"
 msgstr "서비스"
 
@@ -96,8 +101,8 @@ msgstr "서비스"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:252 src/serviceconf.py:357 src/serviceconf.py:374
-#: src/serviceconf.py:393
+#: src/serviceconf.py:275 src/serviceconf.py:380 src/serviceconf.py:397
+#: src/serviceconf.py:416
 msgid "Editing Runlevel: "
 msgstr "런레벨 편집: "
 
@@ -105,11 +110,11 @@ msgstr "런레벨 편집: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:295
+#: src/serviceconf.py:318
 msgid "Unknown"
 msgstr "알 수 없음"
 
-#: src/serviceconf.py:298
+#: src/serviceconf.py:321
 msgid "xinetd service"
 msgstr "xinetd 서비스"
 
@@ -117,11 +122,11 @@ msgstr "xinetd 서비스"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:422
+#: src/serviceconf.py:445
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 
-#: src/serviceconf.py:423
+#: src/serviceconf.py:446
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -148,7 +153,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:551
+#: src/serviceconf.py:595
 msgid "You must run redhat-config-services as root."
 msgstr "redhat-config-services는 루트로 실행하셔야 합니다."
 
@@ -185,7 +190,7 @@ msgstr "redhat-config-services는 루트로 실행하셔야 합니다."
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:277
+#: src/servicemethods.py:285
 msgid ""
 "\n"
 "\n"
@@ -203,111 +208,130 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:323
+#: src/servicemethods.py:331
 msgid "xinetd failed to reload for "
 msgstr "xinetd가 다음을 다시 읽어오는데 실패했습니다: "
 
-#: src/servicemethods.py:324
+#: src/servicemethods.py:332
 msgid ". The error was: "
 msgstr ". 오류는 다음과 같습니다: "
 
-#: src/servicemethods.py:326
+#: src/servicemethods.py:334
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd가 %s (을)를 성공적으로 다시 읽어들였습니다"
 
-#: src/servicemethods.py:329
+#: src/servicemethods.py:337
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s (을)를 실행하기 위해서는 반드시 xinetd가 활성화 되어야 합니다"
 
-#: src/servicemethods.py:334
+#: src/servicemethods.py:342
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s에 실패했습니다. 오류는 다음과 같습니다: %s"
 
 # ../servicemethods.py:320"
-#: src/servicemethods.py:336
+#: src/servicemethods.py:344
 msgid " successful"
 msgstr " 성공"
 
 #: src/serviceconf.glade.h:1
+msgid "*"
+msgstr ""
+
+#: src/serviceconf.glade.h:2
+#, fuzzy
+msgid "Add Service"
+msgstr "서비스"
+
+#: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "현재 실행 중인 런레벨: "
 
-#: src/serviceconf.glade.h:2
+#: src/serviceconf.glade.h:4
+#, fuzzy
+msgid "Delete Service"
+msgstr "서비스 정지 (_T)"
+
+#: src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "설명"
 
-#: src/serviceconf.glade.h:3
+#: src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "저장하지 않음"
 
-#: src/serviceconf.glade.h:4
+#: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "런레벨 편집:"
 
-#: src/serviceconf.glade.h:5
+#: src/serviceconf.glade.h:8
 msgid "None"
 msgstr "없음"
 
-#: src/serviceconf.glade.h:6
+#: src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "재시작"
 
-#: src/serviceconf.glade.h:7
+#: src/serviceconf.glade.h:10
 msgid "Restart the selected service"
 msgstr "선택된 서비스 재시작"
 
-#: src/serviceconf.glade.h:8
+#: src/serviceconf.glade.h:11
 msgid "Revert To _Last Save"
 msgstr "마지막 변동 사항 취소 (_L)"
 
-#: src/serviceconf.glade.h:9
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _3"
 msgstr "런레벨 3 (_3)"
 
-#: src/serviceconf.glade.h:10
+#: src/serviceconf.glade.h:13
 msgid "Runlevel _4"
 msgstr "런레벨 4 (_4)"
 
-#: src/serviceconf.glade.h:11
+#: src/serviceconf.glade.h:14
 msgid "Runlevel _5"
 msgstr "런레벨 5 (_5)"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "서비스 정지 (_T)"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:16
 msgid "Save Dialog"
 msgstr "대화 상자 저장"
 
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "서비스 설정"
 
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:18
+#, fuzzy
+msgid "Service Name: "
+msgstr "서비스"
+
+#: src/serviceconf.glade.h:19
 msgid "Start"
 msgstr "시작"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:20
 msgid "Start the selected service"
 msgstr "선택된 서비스 시작"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:21
 msgid "Status"
 msgstr "상태"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:22
 msgid "Stop"
 msgstr "중지"
 
-#: src/serviceconf.glade.h:19
+#: src/serviceconf.glade.h:23
 msgid "Stop the selected service"
 msgstr "선택된 서비스 중지"
 
-#: src/serviceconf.glade.h:20
+#: src/serviceconf.glade.h:24
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -315,41 +339,45 @@ msgstr ""
 "현재 런레벨을 수정하셨습니다.\n"
 "변경 사항을 저장하시겠습니까?"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:26
 msgid "_Actions"
 msgstr "명령 (_A)"
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:27
 msgid "_Contents"
 msgstr "내용(_C)"
 
-#: src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
 msgstr "런레벨 편집 (_E)"
 
-#: src/serviceconf.glade.h:25
+#: src/serviceconf.glade.h:29
 msgid "_File"
 msgstr "파일(_F)"
 
-#: src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:30
 msgid "_Help"
 msgstr "도움말(_H)"
 
-#: src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:31
 msgid "_Refresh Service List"
 msgstr "서비스 목록 재정리 (_R)"
 
-#: src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:32
 msgid "_Restart Service"
 msgstr "서비스 재시작 (_R)"
 
-#: src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:33
 msgid "_Save Changes"
 msgstr "변동 사항 저장 (_S)"
 
-#: src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:34
 msgid "_Start Service"
 msgstr "서비스 시작 (_S)"
+
+#: src/serviceconf.glade.h:35
+msgid "_View"
+msgstr ""
 
 #~ msgid "Cancel"
 #~ msgstr "취소"

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
-"POT-Creation-Date: 2003-05-27 10:26-0400\n"
+"POT-Creation-Date: 2003-07-09 10:10-0400\n"
 "PO-Revision-Date: 2003-06-17 12:40+1000\n"
 "Last-Translator: \n"
 "Language-Team:  <de@li.org>\n"
@@ -61,6 +61,11 @@ msgstr ""
 #. #
 #. # I18N
 #. #
+#: src/serviceconf.py:62
+#, python-format
+msgid "Are you sure you want to delete the %s?"
+msgstr ""
+
 #. make sure threading is disabled
 #. map the event signals to specific methods
 #. main window
@@ -75,16 +80,16 @@ msgstr ""
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:185
+#: src/serviceconf.py:208
 msgid "Currently Running in Runlevel: "
 msgstr "Folgender Runlevel wird gerade ausgeführt: "
 
 #. This is a sentry
-#: src/serviceconf.py:196
+#: src/serviceconf.py:219
 msgid "Start at Boot"
 msgstr "Beim Booten starten"
 
-#: src/serviceconf.py:197
+#: src/serviceconf.py:220
 msgid "Services"
 msgstr "Dienste"
 
@@ -99,8 +104,8 @@ msgstr "Dienste"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:252 src/serviceconf.py:357 src/serviceconf.py:374
-#: src/serviceconf.py:393
+#: src/serviceconf.py:275 src/serviceconf.py:380 src/serviceconf.py:397
+#: src/serviceconf.py:416
 msgid "Editing Runlevel: "
 msgstr "Bearbeite Runlevel: "
 
@@ -108,11 +113,11 @@ msgstr "Bearbeite Runlevel: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:295
+#: src/serviceconf.py:318
 msgid "Unknown"
 msgstr "Unbekannt"
 
-#: src/serviceconf.py:298
+#: src/serviceconf.py:321
 msgid "xinetd service"
 msgstr "xinetd Dienst"
 
@@ -120,11 +125,11 @@ msgstr "xinetd Dienst"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:422
+#: src/serviceconf.py:445
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright (c) 2002 Red Hat, Inc. Alle Rechte vorbehalten."
 
-#: src/serviceconf.py:423
+#: src/serviceconf.py:446
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -152,7 +157,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:551
+#: src/serviceconf.py:595
 msgid "You must run redhat-config-services as root."
 msgstr "Sie müssen redhat-config-services als Root ausführen."
 
@@ -189,7 +194,7 @@ msgstr "Sie müssen redhat-config-services als Root ausführen."
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:277
+#: src/servicemethods.py:285
 msgid ""
 "\n"
 "\n"
@@ -207,110 +212,129 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:323
+#: src/servicemethods.py:331
 msgid "xinetd failed to reload for "
 msgstr "xinetd konnte nicht neu laden wegen "
 
-#: src/servicemethods.py:324
+#: src/servicemethods.py:332
 msgid ". The error was: "
 msgstr ". Folgender Fehler ist aufgetreten: "
 
-#: src/servicemethods.py:326
+#: src/servicemethods.py:334
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd wurde für %s erfolgreich neu geladen"
 
-#: src/servicemethods.py:329
+#: src/servicemethods.py:337
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd muss aktiviert werden, damit %s ausgeführt werden kann"
 
-#: src/servicemethods.py:334
+#: src/servicemethods.py:342
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s ist fehlgeschlagen. Der Fehler war: %s"
 
-#: src/servicemethods.py:336
+#: src/servicemethods.py:344
 msgid " successful"
 msgstr " erfolgreich"
 
 #: src/serviceconf.glade.h:1
+msgid "*"
+msgstr ""
+
+#: src/serviceconf.glade.h:2
+#, fuzzy
+msgid "Add Service"
+msgstr "Dienste"
+
+#: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Momentan aktiver Runlevel: "
 
-#: src/serviceconf.glade.h:2
+#: src/serviceconf.glade.h:4
+#, fuzzy
+msgid "Delete Service"
+msgstr "Dienst anhal_ten"
+
+#: src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "Beschreibung"
 
-#: src/serviceconf.glade.h:3
+#: src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "Nicht speichern"
 
-#: src/serviceconf.glade.h:4
+#: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "Bearbeite Runlevel:"
 
-#: src/serviceconf.glade.h:5
+#: src/serviceconf.glade.h:8
 msgid "None"
 msgstr "Keiner"
 
-#: src/serviceconf.glade.h:6
+#: src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Neustart"
 
-#: src/serviceconf.glade.h:7
+#: src/serviceconf.glade.h:10
 msgid "Restart the selected service"
 msgstr "Neustart des ausgewählten Dienstes"
 
-#: src/serviceconf.glade.h:8
+#: src/serviceconf.glade.h:11
 msgid "Revert To _Last Save"
 msgstr "Zum _letzten Speicherpunkt zurückkehren"
 
-#: src/serviceconf.glade.h:9
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _3"
 msgstr "Runlevel _3"
 
-#: src/serviceconf.glade.h:10
+#: src/serviceconf.glade.h:13
 msgid "Runlevel _4"
 msgstr "Runlevel _4"
 
-#: src/serviceconf.glade.h:11
+#: src/serviceconf.glade.h:14
 msgid "Runlevel _5"
 msgstr "Runlevel _5"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "Dienst anhal_ten"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:16
 msgid "Save Dialog"
 msgstr "Dialog speichern"
 
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "Dienste-Konfiguration"
 
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:18
+#, fuzzy
+msgid "Service Name: "
+msgstr "Dienste"
+
+#: src/serviceconf.glade.h:19
 msgid "Start"
 msgstr "Starten"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:20
 msgid "Start the selected service"
 msgstr "Den ausgewählten Dienst starten"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:21
 msgid "Status"
 msgstr "Status"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:22
 msgid "Stop"
 msgstr "Stop"
 
-#: src/serviceconf.glade.h:19
+#: src/serviceconf.glade.h:23
 msgid "Stop the selected service"
 msgstr "Stoppt den ausgewählten Dienst"
 
-#: src/serviceconf.glade.h:20
+#: src/serviceconf.glade.h:24
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -318,41 +342,45 @@ msgstr ""
 "Der aktuelle Runlevel wurde geändert.\n"
 "Möchten Sie die Änderungen speichern?"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:26
 msgid "_Actions"
 msgstr "_Aktionen"
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:27
 msgid "_Contents"
 msgstr "_Inhalt"
 
-#: src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
 msgstr "Runlevel b_earbeiten"
 
-#: src/serviceconf.glade.h:25
+#: src/serviceconf.glade.h:29
 msgid "_File"
 msgstr "_Datei"
 
-#: src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:30
 msgid "_Help"
 msgstr "_Hilfe"
 
-#: src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:31
 msgid "_Refresh Service List"
 msgstr "Liste de_r Dienste neuladen"
 
-#: src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:32
 msgid "_Restart Service"
 msgstr "Dienst neu sta_rten"
 
-#: src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:33
 msgid "_Save Changes"
 msgstr "Änderungen _speichern"
 
-#: src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:34
 msgid "_Start Service"
 msgstr "Dienst _starten"
+
+#: src/serviceconf.glade.h:35
+msgid "_View"
+msgstr ""
 
 #~ msgid "Cancel"
 #~ msgstr "Abbrechen"
@@ -402,4 +430,3 @@ msgstr "Dienst _starten"
 
 #~ msgid "Exit"
 #~ msgstr "Beenden"
-
