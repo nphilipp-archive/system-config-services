@@ -378,7 +378,7 @@ class Gui:
 
             # enables and disables the save and revert buttons/menus
             # if something has been changed from it's orig setting
-            for i in range(0,len(self.ServiceMethods.dict_services_orig)-1):
+            for i in range(0,len(self.ServiceMethods.dict_services_orig)):
                 self.checking_service = self.clstServices.get_text(i,1)
                 service_enabled = int("%d" % self.clstServices.get_active(i))
                 
