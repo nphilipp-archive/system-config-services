@@ -1,4 +1,37 @@
+2003-10-17  Dan Walsh  <dwalsh@redhat.com>
+
+	* aclocal.m4, config.status, intltool-extract.in, intltool-merge.in, intltool-update.in, po/Makefile.in.in:
+	update for latest tools
+
+	* redhat-config-services.spec.in, src/servicemethods.py:
+	eliminae /dev/null from status
+
+2003-10-14  kmaraas  <kmaraas@redhat.com>
+
+	* po/no.po: Update
+
+2003-10-10  ra  <ra@redhat.com>
+
+	* po/is.po: *** empty log message ***
+
+2003-10-09  menthos  <menthos@redhat.com>
+
+	* po/sv.po: 2003-10-10  Christian Rose  <menthos@menthos.com>
+
+		* sv.po: Updated Swedish translation.
+
+2003-10-07  mitr  <mitr@redhat.com>
+
+	* po/cs.po: Update Czech translation
+
+2003-10-07  morais  <morais@redhat.com>
+
+	* po/pt.po: updates
+
 2003-10-06  Dan Walsh  <dwalsh@redhat.com>
+
+	* po/zh_CN.po, po/zh_TW.po, ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po:
+	release 0.8.5
 
 	* redhat-config-services.spec.in, src/serviceconf.py:
 	fix help about crash
