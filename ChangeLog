@@ -1,6 +1,16 @@
+2003-08-15  menthos  <menthos@redhat.com>
+
+	* po/sv.po: 2003-08-15  Christian Rose  <menthos@menthos.com>
+
+		* sv.po: Updated Swedish translation.
+
+2003-08-11  jamil  <jamil@redhat.com>
+
+	* po/bn.po: Updated on Aug 11, 2003
+
 2003-08-05  Daniel Walsh  <dwalsh@redhat.com>
 
-	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po, redhat-config-services.spec.in:
+	* ChangeLog, po/messages.mo, redhat-config-services.spec.in, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	release 0.8.5
 
 	* src/serviceconf.py: eliminate unsupported calls
@@ -13,7 +23,7 @@
 
 	* po/el.po: fixes for el.po
 
-2003-08-04  Bernd Groh  <bgroh@redhat.com>
+2003-08-04  bgroh  <bgroh@redhat.com>
 
 	* po/de.po: daily update
 
@@ -41,7 +51,7 @@
 
 	* po/zh_CN.po: updated.
 
-2003-07-30  Audrey Simons  <asimons@redhat.com>
+2003-07-30  asimons  <asimons@redhat.com>
 
 	* po/fr.po: Software updates
 
@@ -84,7 +94,7 @@
 
 	* po/is.po: *** empty log message ***
 
-2003-07-18  Audrey Simons  <asimons@redhat.com>
+2003-07-18  asimons  <asimons@redhat.com>
 
 	* po/fr.po: Software &nbsp removed
 
@@ -96,7 +106,7 @@
 
 	* po/zh_TW.po: updated translation
 
-2003-07-11  Bernd Groh  <bgroh@redhat.com>
+2003-07-11  bgroh  <bgroh@redhat.com>
 
 	* po/de.po: daily update
 
@@ -112,7 +122,7 @@
 
 	* po/ko.po: updated translation.
 
-2003-07-09  Audrey Simons  <asimons@redhat.com>
+2003-07-09  asimons  <asimons@redhat.com>
 
 	* po/fr.po: Software updates
 
@@ -153,7 +163,7 @@
 
 	* po/fi.po: Added Finnish translation.
 
-2003-06-24  Audrey Simons  <asimons@redhat.com>
+2003-06-24  asimons  <asimons@redhat.com>
 
 	* po/fr.po: Updated
 
@@ -161,7 +171,7 @@
 
 	* po/vi.po: update vi.po
 
-2003-06-18  Bernd Groh  <bgroh@redhat.com>
+2003-06-18  bgroh  <bgroh@redhat.com>
 
 	* po/de.po: software translation update
 
@@ -221,7 +231,7 @@
 
 	* po/zh_TW.po: Updated translation.
 
-2003-03-19  Audrey Simons  <asimons@redhat.com>
+2003-03-19  asimons  <asimons@redhat.com>
 
 	* po/fr.po: Checked
 
@@ -281,7 +291,7 @@
 	* configure.in, redhat-config-services.spec.in, src/serviceconf.glade, src/serviceconf.py:
 	Fix swiching runlevels on modified screens.
 
-2003-02-26  David Barzilay  <barzilay@redhat.com>
+2003-02-26  barzilay  <barzilay@redhat.com>
 
 	* po/pt_BR.po: updatedheaderspt_BR2502
 
@@ -301,7 +311,7 @@
 	* po/hu.po: CVS_SILENT
 	Tamas Szanto
 
-2003-02-14  David Barzilay  <barzilay@redhat.com>
+2003-02-14  barzilay  <barzilay@redhat.com>
 
 	* po/pt_BR.po: updated1402
 
@@ -349,7 +359,7 @@
 
 	* ChangeLog, po/messages.mo: release 0.8.3
 
-2003-01-22  Bernd Groh  <bgroh@redhat.com>
+2003-01-22  bgroh  <bgroh@redhat.com>
 
 	* po/de.po: first round of _-fixes
 
@@ -442,7 +452,7 @@
 	* redhat-config-services.desktop.in, redhat-config-services.spec.in, src/serviceconf.glade:
 	Add accellerators
 
-2002-12-24  David Barzilay  <barzilay@redhat.com>
+2002-12-24  barzilay  <barzilay@redhat.com>
 
 	* po/pt_BR.po: updated2412
 
@@ -569,7 +579,7 @@
 
 	* po/ja.po: update
 
-2002-10-03  Bernd Groh  <bgroh@redhat.com>
+2002-10-03  bgroh  <bgroh@redhat.com>
 
 	* po/de.po: bindconf, printconf, redhat-config-services updated.
 
