@@ -1,13 +1,13 @@
 # Swedish messages for serviceconf.
 # Copyright (C) 2001 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.18 2002/10/02 15:17:48 dwalsh Exp $
+# $Id: sv.po,v 1.19 2002/10/03 12:17:02 menthos Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
 "POT-Creation-Date: 2002-10-02 11:21-0400\n"
-"PO-Revision-Date: 2002-08-09 23:55+0200\n"
+"PO-Revision-Date: 2002-10-03 14:20+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -108,11 +108,11 @@ msgstr "Redigerar körnivå: "
 #. set the text in StatusView
 #: src/serviceconf.py:289
 msgid "Unknown"
-msgstr ""
+msgstr "Okänd"
 
 #: src/serviceconf.py:292
 msgid "xinetd service"
-msgstr ""
+msgstr "xinetd-tjänst"
 
 #: src/serviceconf.py:360
 msgid ""
@@ -249,7 +249,7 @@ msgstr "Aktiv körnivå just nu: "
 
 #: src/serviceconf.glade.h:3
 msgid "Description"
-msgstr ""
+msgstr "Beskrivning"
 
 #: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
@@ -312,9 +312,8 @@ msgid "Start the selected service"
 msgstr "Starta den markerade tjänsten"
 
 #: src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "Starta"
+msgstr "Status"
 
 #: src/serviceconf.glade.h:20
 msgid "Stop"
