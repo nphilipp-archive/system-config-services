@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-02-17 17:34-0500\n"
-"PO-Revision-Date: 2005-02-24 15:20+0100\n"
+"PO-Revision-Date: 2005-02-24 15:45+0100\n"
 "Last-Translator: Tom Berner <tom@lodz.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -57,7 +57,7 @@ msgstr ""
 #: ../src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr "Czy aby napewno chcesz usunąć %s ?"
+msgstr "Czy aby na pewno chcesz usunąć %s ?"
 
 #: ../src/serviceconf.py:195 ../src/serviceconf.glade.h:19
 msgid "Start"
@@ -123,7 +123,7 @@ msgstr "Nieznana"
 
 #: ../src/serviceconf.py:508
 msgid "All"
-msgstr ""
+msgstr "Wszystko"
 
 #: ../src/serviceconf.py:551
 msgid ""
@@ -293,7 +293,7 @@ msgstr "Zawartość"
 
 #: ../src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
-msgstr "Edituj Runlevel"
+msgstr "_Edytuj Runlevel"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_File"
