@@ -1,5 +1,8 @@
 2002-07-26  Daniel J Walsh  <dwalsh@redhat.com>
 
+	* redhat-config-services.spec.in:
+	update changelog
+
 	* ChangeLog, po/pt.po:
 	release 0.8.1
 
