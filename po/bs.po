@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: desktop files\n"
-"POT-Creation-Date: 2003-10-06 10:40-0400\n"
+"POT-Creation-Date: 2003-12-04 17:18-0500\n"
 "PO-Revision-Date: 2001-09-09 18:28GMT\n"
 "Last-Translator: Amila Akagiæ <bono@lugbih.org>\n"
 "Language-Team: Bosnian <lokal-subscribe@lugbih.org>\n"
@@ -168,7 +168,7 @@ msgstr ""
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:595
 #, fuzzy
-msgid "You must run redhat-config-services as root."
+msgid "You must run system-config-services as root."
 msgstr "Morate pokrenuti serviceconf kao root."
 
 # ../servicemethods.py:261

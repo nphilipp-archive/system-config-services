@@ -1,12 +1,12 @@
 # Swedish messages for serviceconf.
 # Copyright (C) 2001, 2003 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.45 2003/10/09 23:22:58 menthos Exp $
+# $Id: sv.po,v 1.46 2003/12/04 22:18:28 dwalsh Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2003-10-06 10:40-0400\n"
+"POT-Creation-Date: 2003-12-04 17:18-0500\n"
 "PO-Revision-Date: 2003-10-10 01:24+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -157,7 +157,8 @@ msgstr ""
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:595
-msgid "You must run redhat-config-services as root."
+#, fuzzy
+msgid "You must run system-config-services as root."
 msgstr "Du måste köra redhat-config-services som root."
 
 #. serviceactions.py

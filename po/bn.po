@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
-"POT-Creation-Date: 2003-10-06 10:40-0400\n"
+"POT-Creation-Date: 2003-12-04 17:18-0500\n"
 "PO-Revision-Date: 2003-06-26 12:00+0600\n"
 "Last-Translator: Indranil Das Gupta <indradg@cal.vsnl.net.in>\n"
 "Language-Team: Bangla <redhat-translation@bengalinux.org>\n"
@@ -156,7 +156,8 @@ msgstr ""
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:595
-msgid "You must run redhat-config-services as root."
+#, fuzzy
+msgid "You must run system-config-services as root."
 msgstr "রেডহ্যাট-কোনফিগ-সার্ভিসেস চালাবার জন্যে আপনার রুট হওয়া আবশ্যিক"
 
 #. serviceactions.py

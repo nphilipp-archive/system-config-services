@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services VERSION\n"
-"POT-Creation-Date: 2003-07-09 10:10-0400\n"
+"POT-Creation-Date: 2003-12-04 17:18-0500\n"
 "PO-Revision-Date: 2003-10-19 01:06+0700\n"
 "Last-Translator: pclouds <pclouds@gmx.net>\n"
 "Language-Team: GnomeVI <gnomevi-list@lists.sourceforge.net>\n"
@@ -102,8 +102,8 @@ msgstr "Dịch vụ"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:275 src/serviceconf.py:380 src/serviceconf.py:397
-#: src/serviceconf.py:416
+#: src/serviceconf.py:275 src/serviceconf.py:381 src/serviceconf.py:398
+#: src/serviceconf.py:417
 msgid "Editing Runlevel: "
 msgstr "Runlevel hiệu chỉnh: "
 
@@ -115,19 +115,15 @@ msgstr "Runlevel hiệu chỉnh: "
 msgid "Unknown"
 msgstr "Không biết"
 
-#: src/serviceconf.py:321
-msgid "xinetd service"
-msgstr "dịch vụ xinetd"
-
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:445
+#: src/serviceconf.py:446
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 
-#: src/serviceconf.py:446
+#: src/serviceconf.py:447
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -136,6 +132,10 @@ msgstr ""
 "Phần mềm này có thể được phân phối tự do theo những điều khoản của GPL.\n"
 "Vui lòng thông báo các lỗi bạn tìm thấy cho hệ thống dò lỗi Red Hat:\n"
 "http://bugzilla.redhat.com>"
+
+#: src/serviceconf.py:451
+msgid "translator_credits"
+msgstr ""
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -155,7 +155,8 @@ msgstr ""
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:595
-msgid "You must run redhat-config-services as root."
+#, fuzzy
+msgid "You must run system-config-services as root."
 msgstr "Bạn chỉ có thể chạy redhat-config-services nếu là root."
 
 #. serviceactions.py
@@ -191,11 +192,12 @@ msgstr "Bạn chỉ có thể chạy redhat-config-services nếu là root."
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:285
+#: src/servicemethods.py:286
+#, fuzzy
 msgid ""
 "\n"
 "\n"
-"You must enable xinetd to use this service."
+"xinetd is required for this service."
 msgstr ""
 "\n"
 "\n"
@@ -209,30 +211,30 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:331
+#: src/servicemethods.py:332
 msgid "xinetd failed to reload for "
 msgstr "lỗi nạp lại xinetd cho "
 
-#: src/servicemethods.py:332
+#: src/servicemethods.py:333
 msgid ". The error was: "
 msgstr ". Lỗi là: "
 
-#: src/servicemethods.py:334
+#: src/servicemethods.py:335
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd đã nạp lại %s thành công"
 
-#: src/servicemethods.py:337
+#: src/servicemethods.py:338
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd phải bật để chạy %s"
 
-#: src/servicemethods.py:342
+#: src/servicemethods.py:343
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s gặp lỗi. Lỗi là: %s"
 
-#: src/servicemethods.py:344
+#: src/servicemethods.py:345
 msgid " successful"
 msgstr " thành công"
 
@@ -375,3 +377,6 @@ msgstr "_Khởi động dịch vụ"
 #: src/serviceconf.glade.h:35
 msgid "_View"
 msgstr "_Xem"
+
+#~ msgid "xinetd service"
+#~ msgstr "dịch vụ xinetd"

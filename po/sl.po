@@ -1,13 +1,13 @@
 # SLOVENIAN TRANSLATION OF REDHAT-CONFIG-SERVICES.
 # Copyright (C) 2003 Free Software Foundation.
 # Roman Maurer <roman@lugos.si>, 2003.
-# $Id: sl.po,v 1.2 2003/10/22 14:02:09 dwalsh Exp $
+# $Id: sl.po,v 1.3 2003/12/04 22:18:27 dwalsh Exp $
 # $Source: /home/fedora/mmcgrath/elvis/cvs/redhat-config-services/po/sl.po,v $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services 0.8.4\n"
-"POT-Creation-Date: 2003-10-06 10:40-0400\n"
+"POT-Creation-Date: 2003-12-04 17:18-0500\n"
 "PO-Revision-Date: 2003-09-26 22:59+0200\n"
 "Last-Translator: Roman Maurer <roman@lugos.si>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
@@ -156,7 +156,8 @@ msgstr ""
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:595
-msgid "You must run redhat-config-services as root."
+#, fuzzy
+msgid "You must run system-config-services as root."
 msgstr "Program redhat-config-services morate zagnati kot root."
 
 #. serviceactions.py

@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
-"POT-Creation-Date: 2003-10-06 10:40-0400\n"
+"POT-Creation-Date: 2003-12-04 17:18-0500\n"
 "PO-Revision-Date: 2003-12-01 22:38+0100\n"
 "Last-Translator: Luis Mayoral <mayoral@linuxadicto.org>\n"
 "Language-Team: Español <es@li.org>\n"
@@ -178,7 +178,8 @@ msgstr "_traductores"
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:595
-msgid "You must run redhat-config-services as root."
+#, fuzzy
+msgid "You must run system-config-services as root."
 msgstr "Debe ejecutar redhat-config-services como root."
 
 # ../servicemethods.py:261
@@ -477,4 +478,3 @@ msgstr "_Vista"
 # serviceconf.gladestrings:17 serviceconf.gladestrings:39
 #~ msgid "Save the changes you have made"
 #~ msgstr "Guardar los cambios que ha hecho"
-

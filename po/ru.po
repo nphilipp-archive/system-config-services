@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
-"POT-Creation-Date: 2003-10-06 10:40-0400\n"
+"POT-Creation-Date: 2003-12-04 17:18-0500\n"
 "PO-Revision-Date: 2003-10-20 15:43+0300\n"
 "Last-Translator: Leonid Kanter <leon@geon.donetsk.ua>\n"
 "Language-Team:  <ru@li.org>\n"
@@ -162,7 +162,8 @@ msgstr "Leonid Kanter <leon@asplinux.ru>"
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:595
-msgid "You must run redhat-config-services as root."
+#, fuzzy
+msgid "You must run system-config-services as root."
 msgstr "redhat-config-services должен выполняться от пользователя root."
 
 #. serviceactions.py
@@ -605,4 +606,3 @@ msgstr "_Вид"
 
 #~ msgid "Exit"
 #~ msgstr "Выход"
-
