@@ -1,5 +1,6 @@
 # translation of bg.po to 
-# translation of system-config-services.po to 
+# translation of bg.po to
+# translation of system-config-services.po to
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Николай Сърмаджиев,преносим <nikolayds@msn.com>, 2004.
@@ -9,7 +10,7 @@ msgstr ""
 "Project-Id-Version: bg\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-04-06 14:50-0400\n"
-"PO-Revision-Date: 2004-07-21 16:50-0700\n"
+"PO-Revision-Date: 2004-09-02 16:48-0700\n"
 "Last-Translator: Николай Сърмаджиев,преносим <nikolayds@msn.com>\n"
 "Language-Team:  <bg@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -66,7 +67,7 @@ msgstr ""
 #: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr "Сигурни ли сте, че искате да премахнете %s?"
+msgstr "Сигурни ли сте, че желаете да премахнете %s?"
 
 #. make sure threading is disabled
 #. map the event signals to specific methods
@@ -75,15 +76,15 @@ msgstr "Сигурни ли сте, че искате да премахнете 
 #. toolbars
 #: src/serviceconf.py:187 src/serviceconf.glade.h:18
 msgid "Start"
-msgstr "Старт"
+msgstr "Стартиране"
 
 #: src/serviceconf.py:191 src/serviceconf.glade.h:20
 msgid "Stop"
-msgstr "Стоп"
+msgstr "Спиране"
 
 #: src/serviceconf.py:195 src/serviceconf.glade.h:9
 msgid "Restart"
-msgstr "Рестарт"
+msgstr "Рестартиране"
 
 #: src/serviceconf.py:201
 msgid "_Save"
@@ -95,11 +96,11 @@ msgstr "Запис"
 
 #: src/serviceconf.py:206
 msgid "_Revert"
-msgstr "Връщам"
+msgstr "Обръщане"
 
 #: src/serviceconf.py:206
 msgid "Revert"
-msgstr "Връщам"
+msgstr "Обръщане"
 
 #. the textbox
 #. the statusbox
@@ -109,12 +110,12 @@ msgstr "Връщам"
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:240
 msgid "Currently Running in Runlevel: "
-msgstr "За момента се Изпълнява в Runlevel: "
+msgstr "В момента се изпълнява в Runlevel: "
 
 #. This is a sentry
 #: src/serviceconf.py:251
 msgid "Start at Boot"
-msgstr "Стартиване при Зареждането"
+msgstr "Стартиране при зареждането"
 
 #: src/serviceconf.py:252
 msgid "Services"
@@ -158,7 +159,7 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
-"Инструмент за Конфигуриране на Услугите ВЕРСИЯ\n"
+"Инструмент за конфигурирането на услугите ВЕРСИЯ\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat>\n"
 " Bill Nottingham <notting@redhat>\n"
@@ -168,7 +169,7 @@ msgstr ""
 
 #: src/serviceconf.py:482
 msgid "About"
-msgstr "За Програмата"
+msgstr "За програмата"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -176,7 +177,7 @@ msgstr "За Програмата"
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:511
 msgid "Help is not available."
-msgstr "Помоща не е налична."
+msgstr "Помощна информация не е налична."
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -235,7 +236,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"xinetd е необходим за тази услуга."
+"xinetd е необходим за услугата."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -247,26 +248,26 @@ msgstr ""
 #. if it's toggled off
 #: src/servicemethods.py:335
 msgid "xinetd failed to reload for "
-msgstr "xinetd неможа да презареди "
+msgstr "xinetd не можа да се презареди за "
 
 #: src/servicemethods.py:336
 msgid ". The error was: "
-msgstr ". Грешката беше: "
+msgstr ". Грешката: "
 
 #: src/servicemethods.py:338
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "xinetd презареди %s успешно"
+msgstr "xinetd се презареди %s успешно"
 
 #: src/servicemethods.py:341
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "xinetd трябва да е активиран за стартирането на %s"
+msgstr "xinetd трябва да е включен за стартирането на %s"
 
 #: src/servicemethods.py:346
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s се провали. Грешката e: %s"
+msgstr "%s се провали. Грешката: %s"
 
 #: src/servicemethods.py:348
 msgid " successful"
@@ -278,15 +279,15 @@ msgstr "*"
 
 #: src/serviceconf.glade.h:2
 msgid "Add Service"
-msgstr "Добави Услуга"
+msgstr "Добавяне на услуга"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
-msgstr "Текущо Активно Runlevel: "
+msgstr "Текущо активно Runlevel: "
 
 #: src/serviceconf.glade.h:4
 msgid "Delete Service"
-msgstr "Премахни Услуга"
+msgstr "Премахване на услуга"
 
 #: src/serviceconf.glade.h:5
 msgid "Description"
@@ -294,7 +295,7 @@ msgstr "Описание"
 
 #: src/serviceconf.glade.h:6
 msgid "Don't Save"
-msgstr "Не Записвай"
+msgstr "Без записване"
 
 #: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
@@ -302,11 +303,11 @@ msgstr "Редактиране на Runlevel:"
 
 #: src/serviceconf.glade.h:8
 msgid "None"
-msgstr "Нищо"
+msgstr "Никакъв"
 
 #: src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
-msgstr "Върни До Последния Запис"
+msgstr "Връщане към последния записан"
 
 #: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
@@ -322,19 +323,19 @@ msgstr "Runlevel _5"
 
 #: src/serviceconf.glade.h:14
 msgid "S_top Service"
-msgstr "Спри Услуга"
+msgstr "Спиране на услугата"
 
 #: src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr "Запис Диалог"
+msgstr "Запис"
 
 #: src/serviceconf.glade.h:16
 msgid "Service Configuration"
-msgstr "Конфигурация на Услуга"
+msgstr "Конфигуриране на услугата"
 
 #: src/serviceconf.glade.h:17
 msgid "Service Name: "
-msgstr "Име на Услуга: "
+msgstr "Име на услугата: "
 
 #: src/serviceconf.glade.h:19
 msgid "Status"
@@ -374,19 +375,19 @@ msgstr "Изход"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
-msgstr "Опресни Списъка с Услуги"
+msgstr "Опресняване на списъка с услугите"
 
 #: src/serviceconf.glade.h:30
 msgid "_Restart Service"
-msgstr "Рестартирай Услуга"
+msgstr "Рестартиране на услугата"
 
 #: src/serviceconf.glade.h:31
 msgid "_Save Changes"
-msgstr "Запази Промените"
+msgstr "Запазване на промените"
 
 #: src/serviceconf.glade.h:32
 msgid "_Start Service"
-msgstr "Стартирай Услуга"
+msgstr "Стартиране на услугата"
 
 #: src/serviceconf.glade.h:33
 msgid "_View"
