@@ -1,3 +1,16 @@
+2002-11-14  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* redhat-config-services.spec.in, src/serviceconf.glade:
+	add scrollbars to description and status
+
+2002-11-09  kmaraas  <kmaraas@redhat.com>
+
+	* po/no.po: Update
+
+2002-10-25  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* ChangeLog: release 0.8.3
+
 2002-10-24  Daniel J Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, redhat-config-services.spec.in: release 0.8.3
@@ -32,7 +45,7 @@
 	bindconf/da.po printconf/da.po rhn-applet/da.po
 	redhat-config-mouse/po/da.po redhat-config-services/po/da.po
 
-2002-10-03  Francesco Valente  <fvalen@redhat.com>
+2002-10-03  fvalen  <fvalen@redhat.com>
 
 	* po/it.po: updated messages
 
@@ -42,11 +55,11 @@
 
 		* sv.po:  Updated Swedish translation.
 
-2002-10-03  Jean Paul Aubrey  <jpaubry@redhat.com>
+2002-10-03  jpaubry  <jpaubry@redhat.com>
 
 	* po/fr.po: updated
 
-2002-10-03  Hung-Pin Wu  <hpwu@redhat.com>
+2002-10-03  hpwu  <hpwu@redhat.com>
 
 	* po/zh_TW.po: Updated translation.
 
@@ -54,23 +67,23 @@
 
 	* po/is.po: *** empty log message ***
 
-2002-10-03  Sarah Smith  <sarahs@redhat.com>
+2002-10-03  sarahs  <sarahs@redhat.com>
 
 	* po/zh_CN.po: updated
 
-2002-10-03  James Hashida  <khashida@redhat.com>
+2002-10-03  khashida  <khashida@redhat.com>
 
 	* po/ja.po: update
 
-2002-10-03  Bernd Groh  <bgroh@redhat.com>
+2002-10-03  bgroh  <bgroh@redhat.com>
 
 	* po/de.po: bindconf, printconf, redhat-config-services updated.
 
-2002-10-02  Michelle Kim  <mkim@redhat.com>
+2002-10-02  mkim  <mkim@redhat.com>
 
 	* po/ko.po: Updated translation.
 
-2002-10-02  Yelitza Louze  <ylouze@redhat.com>
+2002-10-02  ylouze  <ylouze@redhat.com>
 
 	* po/es.po: Updated translation
 
@@ -107,7 +120,7 @@
 
 	* po/cs.po: Update Czech translation
 
-2002-09-05  Bill Nottingham  <notting@redhat.com>
+2002-09-05  notting  <notting@redhat.com>
 
 	* ChangeLog, aclocal.m4, config.status, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	release 0.8.2
@@ -121,7 +134,7 @@
 
 	* po/pt.po: cleanups
 
-2002-09-04  Sarah Smith  <sarahs@redhat.com>
+2002-09-04  sarahs  <sarahs@redhat.com>
 
 	* po/zh_CN.po: sorry, last minute fix
 
@@ -130,19 +143,19 @@
 	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po, redhat-config-services.spec.in:
 	release 0.8.1
 
-2002-09-02  Federico Musto  <federico@redhat.com>
+2002-09-02  federico  <federico@redhat.com>
 
 	* po/fr.po: "/mnt/traduzioni/RH8.0/translate/redhat-config-services"
 
-2002-08-30  Federico Musto  <federico@redhat.com>
+2002-08-30  federico  <federico@redhat.com>
 
 	* po/it.po: "/mnt/traduzioni/RH8.0/translate/redhat-config-services"
 
-2002-08-29  Federico Musto  <federico@redhat.com>
+2002-08-29  federico  <federico@redhat.com>
 
 	* po/es.po: "/mnt/traduzioni/RH8.0/translate/redhat-config-services"
 
-2002-08-28  Federico Musto  <federico@redhat.com>
+2002-08-28  federico  <federico@redhat.com>
 
 	* po/de.po, po/es.po, po/fr.po, po/it.po:
 	"/mnt/traduzioni/RH8.0/translate/redhat-config-services"
@@ -165,7 +178,7 @@
 
 	* po/nl.po: Added dutch support from Taco Witte <T.C.Witte@phys.uu.nl>
 
-2002-08-27  Federico Musto  <federico@redhat.com>
+2002-08-27  federico  <federico@redhat.com>
 
 	* po/de.po, po/es.po, po/fr.po, po/it.po:
 	"/mnt/traduzioni/RH8.0/translate/redhat-config-services"
@@ -179,7 +192,7 @@
 
 	* po/ms.po: added malay tranlation for this module
 
-2002-08-25  James Hashida  <khashida@redhat.com>
+2002-08-25  khashida  <khashida@redhat.com>
 
 	* po/ja.po: update
 
@@ -199,7 +212,7 @@
 
 	* src/serviceconf.py: fix internationalization code
 
-2002-08-21  James Hashida  <khashida@redhat.com>
+2002-08-21  khashida  <khashida@redhat.com>
 
 	* po/ja.po: update
 
@@ -243,15 +256,15 @@
 
 	* po/is.po: *** empty log message ***
 
-2002-08-12  Sarah Smith  <sarahs@redhat.com>
+2002-08-12  sarahs  <sarahs@redhat.com>
 
 	* po/zh_CN.po: another update
 
-2002-08-12  Michelle Kim  <mkim@redhat.com>
+2002-08-12  mkim  <mkim@redhat.com>
 
 	* po/ko.po: Updated translation.
 
-2002-08-12  Hung-Pin Wu  <hpwu@redhat.com>
+2002-08-12  hpwu  <hpwu@redhat.com>
 
 	* po/zh_TW.po: Updated translation.
 
@@ -283,7 +296,7 @@
 
 	* po/pt.po: update
 
-2002-08-08  James Hashida  <khashida@redhat.com>
+2002-08-08  khashida  <khashida@redhat.com>
 
 	* po/ja.po: update
 
