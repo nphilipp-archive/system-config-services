@@ -59,7 +59,7 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
-* Fri Jan 28 2005 Nils Philippsen <nphilipp@redhat.com>
+* Fri Jan 28 2005 Nils Philippsen <nphilipp@redhat.com> 0.8.18-1
 - fix off-by-one which prevented saving changes to the last service in the list
   (#139456)
 

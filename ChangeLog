@@ -1,3 +1,19 @@
+2005-01-28  nphilipp  <nphilipp@redhat.com>
+
+	* src/serviceconf.py, system-config-services.spec.in:
+	fix off-by-one which prevented saving changes to the last service in the list (#139456)
+
+2005-01-11  erwien  <erwien@redhat.com>
+
+	* po/id.po: update, for consistency translation !
+
+2005-01-04  nphilipp  <nphilipp@redhat.com>
+
+	* ChangeLog, po/system-config-services.pot: release 0.8.17
+
+	* configure.in, src/servicemethods.py, system-config-services.spec.in:
+	throw away stderr to not be confused by error messages (#142983)
+
 2005-01-04  nphilipp  <nphilipp@redhat.com>
 
 	* configure.in, src/servicemethods.py, system-config-services.spec.in:
