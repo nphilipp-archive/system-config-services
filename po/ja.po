@@ -1,15 +1,15 @@
 # translation of ja.po to Japanese
 # serviceconf ja.po
-# Copyright (C) 2001 Red Hat, Inc.
+# Copyright (C) Red Hat, Inc. 2002
 # SATO Satoru <ssato@redhat.com>, 2001.
 # Yukihiro Nakai <ynakai@redhat.com>, 2001.
 # James Hashida <khashida@redhat.com>, 2002
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: serviceconf VERSION\n"
+"Project-Id-Version: serviceconf\n"
 "POT-Creation-Date: 2002-08-20 15:37-0400\n"
-"PO-Revision-Date: 2002-08-09 09:12GMT+10:00\n"
+"PO-Revision-Date: 2002-08-21 10:20GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -319,7 +319,7 @@ msgstr "ランレベルの編集(_E)"
 
 #: src/serviceconf.glade.h:23
 msgid "_File"
-msgstr "ファイル (_F)"
+msgstr "ファイル(_F)"
 
 #: src/serviceconf.glade.h:24
 msgid "_Help"
@@ -562,3 +562,4 @@ msgstr "サービスを開始(_S)"
 
 #~ msgid "Cancel Changes"
 #~ msgstr "変更を取り消し"
+
