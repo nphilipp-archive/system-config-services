@@ -318,7 +318,8 @@ class Gui:
                 message = _("Unknown")
         else:
             status=self.ServiceMethods.UNKNOWN
-            message = _("xinetd service")
+            result = self.ServiceMethods.get_status("xinetd")
+            message=result[1]
         self.txtStatusBuffer.set_text(string.strip(message),len(string.strip(message)))
 
     def toggled_service(self, data, row):

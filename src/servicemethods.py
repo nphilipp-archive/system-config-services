@@ -283,7 +283,7 @@ class ServiceMethods:
             # configured = self.xinetd_check_if_on(servicename)
             
             # the list corresponding to the key is: [configured, is it an xinetd serv., description]
-            self.dict_services[servicename] = [runlevels, 1, "%s" % self.get_descriptions(xinetd_script) + _("\n\nYou must enable xinetd to use this service.")]
+            self.dict_services[servicename] = [runlevels, 1, "%s" % self.get_descriptions(xinetd_script) + _("\n\nxinetd is required for this service.")]
             self.dict_services_orig[servicename] = [runlevels, 1]
             
         self.allservices = self.dict_services.keys()
