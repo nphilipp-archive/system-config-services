@@ -37,7 +37,7 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc COPYING
 %doc docs/html/*
-%{_mandir}/man8/redhat-config-services*
+%{_mandir}/man8/redhat-config-services.8
 %{_bindir}/*
 %{_datadir}/applications/redhat-config-services.desktop
 %{_datadir}/redhat-config-services
