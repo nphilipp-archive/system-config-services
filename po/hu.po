@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: redhat-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
-"PO-Revision-Date: 2004-02-12 11:11+0100\n"
+"PO-Revision-Date: 2004-03-17 11:11+0100\n"
 "Last-Translator: Tamas Szanto <tszanto@mol.hu>\n"
 "Language-Team: Hungarian\n"
 "MIME-Version: 1.0\n"
@@ -85,20 +85,19 @@ msgstr "Újraindítás"
 
 #: src/serviceconf.py:195
 msgid "_Save"
-msgstr ""
+msgstr "Men_tés"
 
 #: src/serviceconf.py:195
 msgid "Save"
-msgstr ""
+msgstr "Mentés"
 
 #: src/serviceconf.py:200
 msgid "_Revert"
-msgstr ""
+msgstr "_Visszavonás"
 
 #: src/serviceconf.py:200
-#, fuzzy
 msgid "Revert"
-msgstr "Újraindítás"
+msgstr "Visszavonás"
 
 #. the textbox
 #. the statusbox
@@ -157,10 +156,17 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"Szolgáltatásbeállító VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 
 #: src/serviceconf.py:476
 msgid "About"
-msgstr ""
+msgstr "Névjegy"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -168,7 +174,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:505
 msgid "Help is not available."
-msgstr ""
+msgstr "Nem érhető el segítség."
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -362,7 +368,7 @@ msgstr "_Segítség"
 
 #: src/serviceconf.glade.h:28
 msgid "_Quit"
-msgstr ""
+msgstr "_Kilépés"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
@@ -384,26 +390,3 @@ msgstr "A szol_gáltatás elindítása"
 msgid "_View"
 msgstr "_Nézet"
 
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "Copyright (c) Red Hat, Inc., 2002. Minden jog fenntartva."
-
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "Ez a szoftver szabadon továbbadható a GPL feltételeinek betartásával.\n"
-#~ "Kérjük jelentse be a talált hibákat a Red Hat hibakövető rendszerében:\n"
-#~ "http://bugzilla.redhat.com"
-
-#~ msgid "translator_credits"
-#~ msgstr "Tamas Szanto <tszanto@mol.hu>"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "A kijelölt szolgáltatás újraindítása"
-
-#~ msgid "Start the selected service"
-#~ msgstr "A kijelölt szolgáltatás elindítása"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "A kijelölt szolgáltatás leállítása"
