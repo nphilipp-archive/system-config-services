@@ -128,9 +128,10 @@ class Gui:
         self.ServiceMethods = servicemethods.ServiceMethods()
 
         gtk.glade.bindtextdomain(domain)
-        try:
+
+        if os.access("serviceconf.glade", os.R_OK) == 1:
             self.xml = gtk.glade.XML("serviceconf.glade", domain=domain)
-        except:
+        else:
             self.xml = gtk.glade.XML("/usr/share/system-config-services/serviceconf.glade", domain=domain)
         # map the event signals to specific methods
         self.xml.signal_autoconnect(
