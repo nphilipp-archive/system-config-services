@@ -2,20 +2,20 @@
 # Copyright (C) 2001, Red Hat, Inc.
 # Valentina Besi <valentina@redhat.it>, 2001.
 # Luca Ferrari <alexluca@inwind.it>, 2004.
-#
+# Luca Ferrari <alexluca@inwind.it>, 2004.
+# 
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: service config\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-02 15:33-0500\n"
-"PO-Revision-Date: 2004-02-18 18:08+0100\n"
-"Last-Translator: Luca Ferrari <alexluca@inwind.it>\n"
-"Language-Team: italiano <fedora-trans-it@redhat.com>\n"
+"PO-Revision-Date: 2004-03-08 18:54+0100\n"
+"Last-Translator: Federico Bernardi <fbernardi@bbros.it>\n"
+"Language-Team: Italian\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.1\n"
-"X-Generator: KBabel 1.3\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -133,10 +133,17 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"System·Services·Configuration·Tool·VERSION\n"
+"·Copyright·(c)·2002-2004·Red·Hat,·Inc.\n"
+"·Tim·Powers·<timp@redhat>\n"
+"·Bill·Nottingham·<notting@redhat>\n"
+"·Dan·Walsh·<dwalsh@redhat.com>\n"
+"·Brent·Fox·<bfox@redhat.com>\n"
+"·"
 
 #: src/serviceconf.py:466
 msgid "About"
-msgstr ""
+msgstr "Informazioni"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -144,7 +151,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:495
 msgid "Help is not available."
-msgstr ""
+msgstr "La guida non è disponibile."
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -215,26 +222,26 @@ msgstr ""
 #. if it's toggled off
 #: src/servicemethods.py:336
 msgid "xinetd failed to reload for "
-msgstr "xinetd non Ã¨ riuscito a ripartire a causa di"
+msgstr "xinetd non è riuscito a ripartire a causa di"
 
 #: src/servicemethods.py:337
 msgid ". The error was: "
-msgstr ". L'errore Ã¨ stato: "
+msgstr ". L'errore è stato: "
 
 #: src/servicemethods.py:339
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "xinetd Ã¨ riuscito a ricaricare %s"
+msgstr "xinetd è riuscito a ricaricare %s"
 
 #: src/servicemethods.py:342
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "xinetd deve essere attivato perchÃ© %s possa funzionare"
+msgstr "xinetd deve essere attivato perché %s possa funzionare"
 
 #: src/servicemethods.py:347
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s non Ã¨ riuscito. L'errore Ã¨ stato: %s"
+msgstr "%s non è riuscito. L'errore è stato: %s"
 
 #: src/servicemethods.py:349
 msgid " successful"
