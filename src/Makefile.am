@@ -1,4 +1,4 @@
-PYTHON_FILES = checklist.py serviceconf.py servicemethods.py
+PYTHON_FILES = checklist.py nonblockingreader.py serviceconf.py servicemethods.py
 
 GLADE_FILES = serviceconf.glade
 
