@@ -21,7 +21,11 @@
 
 import signal
 import sys
-import gtk
+try:
+    import gtk
+except:
+    print e
+    sys.exit(-1)
 import gnome
 import gnome.ui
 domain = "redhat-config-services"
