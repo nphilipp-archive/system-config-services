@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
-"POT-Creation-Date: 2002-10-02 06:17-0400\n"
+"POT-Creation-Date: 2002-10-02 11:21-0400\n"
 "PO-Revision-Date: 2002-08-12 10:52+1000\n"
 "Last-Translator: Michelle Kim <mkim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -193,7 +193,7 @@ msgstr "redhat-config-services는 루트로 실행하셔야 합니다."
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:287
+#: src/servicemethods.py:274
 msgid ""
 "\n"
 "\n"
@@ -211,31 +211,31 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:333
+#: src/servicemethods.py:320
 msgid "xinetd failed to reload for "
 msgstr "xinetd가 다음을 다시 로드하는데 실패했습니다: "
 
-#: src/servicemethods.py:334
+#: src/servicemethods.py:321
 msgid ". The error was: "
 msgstr ". 오류는 다음과 같습니다: "
 
-#: src/servicemethods.py:336
+#: src/servicemethods.py:323
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd가 %s (을)를 성공적으로 다시 로드했습니다"
 
-#: src/servicemethods.py:339
+#: src/servicemethods.py:326
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s (을)를 실행하기 위해서는 반드시 xinetd가 활성화 되어야 합니다"
 
-#: src/servicemethods.py:344
+#: src/servicemethods.py:331
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s에 실패했습니다. 오류는 다음과 같습니다: %s"
 
 # ../servicemethods.py:320"
-#: src/servicemethods.py:346
+#: src/servicemethods.py:333
 msgid " successful"
 msgstr " 성공"
 
