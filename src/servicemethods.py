@@ -199,7 +199,8 @@ class ServiceMethods:
         dict={}
         for i in chkconfig_list:
             x=re.split(r"\t", i.strip())
-            name=x[0].strip().split(":")[0]
+            end= x[0].rfind(":")
+            name=x[0][:end].strip()
             if name != "xinetd based services":
                 runlevel=x[1:]
                 if len(runlevel) > 1:
