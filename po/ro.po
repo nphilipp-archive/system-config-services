@@ -1,0 +1,265 @@
+# translation of system-config-services to Romanian
+# Copyright (C) 2004 linux360
+# This file is distributed under the same license as the system-config-services package.
+# Răzvan Corneliu VILT <razvan.vilt@linux360.ro>, 2004.
+# Razvan VILT <razvan.vilt@linux360.ro>, 2004.
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-services VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-03-24 22:48-0500\n"
+"PO-Revision-Date: 2004-06-22 15:33+0300\n"
+"Last-Translator: Răzvan Corneliu VILT <razvan.vilt@linux360.ro>\n"
+"Language-Team: Romanian <ro_team@linux360.ro>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: src/serviceconf.py:73
+#, python-format
+msgid "Are you sure you want to delete the %s?"
+msgstr "Sunteţi sigur că vreţi să ştergeţi %s?"
+
+#: src/serviceconf.py:185 src/serviceconf.glade.h:18
+msgid "Start"
+msgstr "Porniţi"
+
+#: src/serviceconf.py:189 src/serviceconf.glade.h:20
+msgid "Stop"
+msgstr "Opriţi"
+
+#: src/serviceconf.py:193 src/serviceconf.glade.h:9
+msgid "Restart"
+msgstr "Restartaţi"
+
+#: src/serviceconf.py:199
+msgid "_Save"
+msgstr "_Salvaţi"
+
+#: src/serviceconf.py:199
+msgid "Save"
+msgstr "Salvaţi"
+
+#: src/serviceconf.py:204
+msgid "_Revert"
+msgstr "_Renunţaţi"
+
+#: src/serviceconf.py:204
+msgid "Revert"
+msgstr "Renunţaţi"
+
+#. initialize this to the runlevel we are running in. It will
+#. change when one of the optRL[3-6] are selected
+#: src/serviceconf.py:238
+msgid "Currently Running in Runlevel: "
+msgstr "Se rulează în Runlevel: "
+
+#: src/serviceconf.py:249
+msgid "Start at Boot"
+msgstr "Pornesc la bootare"
+
+#: src/serviceconf.py:250
+msgid "Services"
+msgstr "Servicii"
+
+#: src/serviceconf.py:305 src/serviceconf.py:411 src/serviceconf.py:428
+#: src/serviceconf.py:447
+msgid "Editing Runlevel: "
+msgstr "Editaţi Runlevel:"
+
+#: src/serviceconf.py:348
+msgid "Unknown"
+msgstr "Necunoscut"
+
+#: src/serviceconf.py:476
+msgid ""
+"System Services Configuration Tool VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
+msgstr ""
+"Utilitarul de configurare a serviciilor VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat.com>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
+
+#: src/serviceconf.py:480
+msgid "About"
+msgstr "Despre"
+
+#: src/serviceconf.py:509
+msgid "Help is not available."
+msgstr "Nu este disponibil ajutor"
+
+#: src/serviceconf.py:653
+msgid "You must run system-config-services as root."
+msgstr "Trebuie să rulaţi system-config-services ca root."
+
+#. configured=1 if the service is configured already
+#. configured = self.xinetd_check_if_on(servicename)
+#. the list corresponding to the key is: [configured, is it an xinetd serv., description]
+#: src/servicemethods.py:290
+msgid ""
+"\n"
+"\n"
+"xinetd is required for this service."
+msgstr ""
+"\n"
+"\n"
+"xinetd este necesar pentru acest serviciu."
+
+#: src/servicemethods.py:336
+msgid "xinetd failed to reload for "
+msgstr "xinetd nu s-a incărcat pentru "
+
+#: src/servicemethods.py:337
+msgid ". The error was: "
+msgstr ". Eroarea a fost: "
+
+#: src/servicemethods.py:339
+#, python-format
+msgid "xinetd reloaded %s successfully"
+msgstr "xinetd a reîncărcat cu succes %s"
+
+#: src/servicemethods.py:342
+#, python-format
+msgid "xinetd must be enabled for %s to run"
+msgstr "xinetd trebuie să fie disponibil ca să ruleze %s"
+
+#: src/servicemethods.py:347
+#, python-format
+msgid "%s failed. The error was: %s"
+msgstr "%s a dat eroare. Aceasta este: %s"
+
+#: src/servicemethods.py:349
+msgid " successful"
+msgstr "succes"
+
+#: src/serviceconf.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: src/serviceconf.glade.h:2
+msgid "Add Service"
+msgstr "Adăugaţi un serviciu"
+
+#: src/serviceconf.glade.h:3
+msgid "Current Active Runlevel: "
+msgstr "Runlevel-ul activ momentan: "
+
+#: src/serviceconf.glade.h:4
+msgid "Delete Service"
+msgstr "Ştergeţi serviciu"
+
+#: src/serviceconf.glade.h:5
+msgid "Description"
+msgstr "Descriere"
+
+#: src/serviceconf.glade.h:6
+msgid "Don't Save"
+msgstr "Nu salvaţi"
+
+#: src/serviceconf.glade.h:7
+msgid "Editing Runlevel:"
+msgstr "Editează Runlevel:"
+
+#: src/serviceconf.glade.h:8
+msgid "None"
+msgstr "Nu este"
+
+#: src/serviceconf.glade.h:10
+msgid "Revert To _Last Save"
+msgstr "Reincarcă la _Ultima Salvare"
+
+#: src/serviceconf.glade.h:11
+msgid "Runlevel _3"
+msgstr "Runlevel _3"
+
+#: src/serviceconf.glade.h:12
+msgid "Runlevel _4"
+msgstr "Runlevel _4"
+
+#: src/serviceconf.glade.h:13
+msgid "Runlevel _5"
+msgstr "Runlevel _5"
+
+#: src/serviceconf.glade.h:14
+msgid "S_top Service"
+msgstr "Opri_ţi Serviciul"
+
+#: src/serviceconf.glade.h:15
+msgid "Save Dialog"
+msgstr "Fereastră de Salvare"
+
+#: src/serviceconf.glade.h:16
+msgid "Service Configuration"
+msgstr "Configurarea serviciului"
+
+#: src/serviceconf.glade.h:17
+msgid "Service Name: "
+msgstr "Numele serviciului: "
+
+#: src/serviceconf.glade.h:19
+msgid "Status"
+msgstr "Stare"
+
+#: src/serviceconf.glade.h:21
+msgid ""
+"You have made changes to the current runlevel.\n"
+"Do you want to save the changes?"
+msgstr ""
+"Aţi făcut schimbări la Runlevel-ul actual.\n"
+"Doriţi să salvaţi schimbările?"
+
+#: src/serviceconf.glade.h:23
+msgid "_Actions"
+msgstr "_Acţiuni"
+
+#: src/serviceconf.glade.h:24
+msgid "_Contents"
+msgstr "_Conţinut"
+
+#: src/serviceconf.glade.h:25
+msgid "_Edit Runlevel"
+msgstr "_Editează Runlevel"
+
+#: src/serviceconf.glade.h:26
+msgid "_File"
+msgstr "_Fişier"
+
+#: src/serviceconf.glade.h:27
+msgid "_Help"
+msgstr "_Ajutor"
+
+#: src/serviceconf.glade.h:28
+msgid "_Quit"
+msgstr "_Ieşire"
+
+#: src/serviceconf.glade.h:29
+msgid "_Refresh Service List"
+msgstr "_Reactualizaţi lista de servicii"
+
+#: src/serviceconf.glade.h:30
+msgid "_Restart Service"
+msgstr "_Restartează serviciu"
+
+#: src/serviceconf.glade.h:31
+msgid "_Save Changes"
+msgstr "_Salvaţi schimbările"
+
+#: src/serviceconf.glade.h:32
+msgid "_Start Service"
+msgstr "_Porniţi serviciul"
+
+#: src/serviceconf.glade.h:33
+msgid "_View"
+msgstr "_Afişează"
+
