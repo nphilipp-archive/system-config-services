@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"POT-Creation-Date: 2005-01-28 17:02+0100\n"
-"PO-Revision-Date: 2004-03-17 19:25+0000\n"
+"POT-Creation-Date: 2005-02-17 17:34-0500\n"
+"PO-Revision-Date: 2005-02-18 09:50+0000\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -13,63 +13,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Report-Msgid-Bugs-To: \n"
 
-#: src/serviceconf.py:73
+#: ../src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Tem a certeza que deseja apagar o %s?"
 
-#: src/serviceconf.py:197 src/serviceconf.glade.h:18
+#: ../src/serviceconf.py:195 ../src/serviceconf.glade.h:19
 msgid "Start"
 msgstr "Iniciar"
 
-#: src/serviceconf.py:201 src/serviceconf.glade.h:20
+#: ../src/serviceconf.py:199 ../src/serviceconf.glade.h:21
 msgid "Stop"
 msgstr "Parar"
 
-#: src/serviceconf.py:205 src/serviceconf.glade.h:9
+#: ../src/serviceconf.py:203 ../src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Reiniciar"
 
-#: src/serviceconf.py:211
+#: ../src/serviceconf.py:209
 msgid "_Save"
 msgstr "_Gravar"
 
-#: src/serviceconf.py:211
+#: ../src/serviceconf.py:209
 msgid "Save"
 msgstr "Gravar"
 
-#: src/serviceconf.py:216
+#: ../src/serviceconf.py:214
 msgid "_Revert"
 msgstr "_Reverter"
 
-#: src/serviceconf.py:216
+#: ../src/serviceconf.py:214
 msgid "Revert"
 msgstr "Reverter"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:250
+#: ../src/serviceconf.py:248
 msgid "Currently Running in Runlevel: "
 msgstr "Actualmente a Executar-se no Nível: "
 
-#: src/serviceconf.py:261
-msgid "Start at Boot"
-msgstr "Iniciar no Arranque"
-
-#: src/serviceconf.py:262
+#: ../src/serviceconf.py:261
 msgid "Services"
 msgstr "Serviços"
 
-#: src/serviceconf.py:320 src/serviceconf.py:426 src/serviceconf.py:443
-#: src/serviceconf.py:462
+#: ../src/serviceconf.py:336 ../src/serviceconf.py:439
+#: ../src/serviceconf.py:464 ../src/serviceconf.py:486
+#: ../src/serviceconf.py:508
 msgid "Editing Runlevel: "
 msgstr "Editar Nível de Execução: "
 
-#: src/serviceconf.py:363
+#: ../src/serviceconf.py:379
 msgid "Unknown"
 msgstr "Desconhecido"
 
-#: src/serviceconf.py:491
+#: ../src/serviceconf.py:508
+msgid "All"
+msgstr "Todos"
+
+#: ../src/serviceconf.py:551
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -87,22 +88,22 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:495
+#: ../src/serviceconf.py:555
 msgid "About"
 msgstr "Acerca"
 
-#: src/serviceconf.py:524
+#: ../src/serviceconf.py:584
 msgid "Help is not available."
 msgstr "A ajuda não está disponível."
 
-#: src/serviceconf.py:677
+#: ../src/serviceconf.py:738
 msgid "You must run system-config-services as root."
 msgstr "Deve correr o system-config-services como root."
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:289
+#: ../src/servicemethods.py:283
 msgid ""
 "\n"
 "\n"
@@ -112,102 +113,106 @@ msgstr ""
 "\n"
 "É necessário o xinetd para utilizar este serviço."
 
-#: src/servicemethods.py:335
+#: ../src/servicemethods.py:319
 msgid "xinetd failed to reload for "
 msgstr "xinetd não conseguiu voltar a carregar "
 
-#: src/servicemethods.py:336
+#: ../src/servicemethods.py:320
 msgid ". The error was: "
 msgstr ". O erro foi: "
 
-#: src/servicemethods.py:338
+#: ../src/servicemethods.py:322
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "O xinetd recarregou o %s com sucesso"
 
-#: src/servicemethods.py:341
+#: ../src/servicemethods.py:325
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "O xinetd tem que estar activo para que se possa executar o %s"
 
-#: src/servicemethods.py:346
+#: ../src/servicemethods.py:330
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s falhou. O erro foi: %s"
 
-#: src/servicemethods.py:348
+#: ../src/servicemethods.py:332
 msgid " successful"
 msgstr " sucesso"
 
-#: src/serviceconf.glade.h:1
+#: ../src/serviceconf.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: src/serviceconf.glade.h:2
+#: ../src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "Adicionar Serviço"
 
-#: src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Nível de Execução Actualmente Activo: "
 
-#: src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:4
 msgid "Delete Service"
 msgstr "Apagar Serviço"
 
-#: src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "Descrição"
 
-#: src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "Não Gravar"
 
-#: src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "A Editar Nível de Execução:"
 
-#: src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:8
 msgid "None"
 msgstr "Nenhum"
 
-#: src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
 msgstr "Reverter para a Ú_ltima Gravação"
 
-#: src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "Nível de Execução _3"
 
-#: src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "Nível de Execução _4"
 
-#: src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "Nível de Execução _4"
 
-#: src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:14
+msgid "Runlevel _All"
+msgstr "_Todos os Níveis de Execução"
+
+#: ../src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "_Parar Serviço"
 
-#: src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:16
 msgid "Save Dialog"
 msgstr "Diálogo de Gravação"
 
-#: src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "Configuração do Serviço"
 
-#: src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:18
 msgid "Service Name: "
 msgstr "Nome do Serviço: "
 
-#: src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:20
 msgid "Status"
 msgstr "Estado"
 
-#: src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:22
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -215,49 +220,52 @@ msgstr ""
 "O utilizador efectuou alterações ao 'runlevel' actual.\n"
 "Deseja gravar as modificações?"
 
-#: src/serviceconf.glade.h:23
+#: ../src/serviceconf.glade.h:24
 msgid "_Actions"
 msgstr "_Acções"
 
-#: src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:25
 msgid "_Contents"
 msgstr "_Conteúdo"
 
-#: src/serviceconf.glade.h:25
+#: ../src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
 msgstr "_Editar Nível de Execução"
 
-#: src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:27
 msgid "_File"
 msgstr "_Ficheiro"
 
-#: src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:28
 msgid "_Help"
 msgstr "_Ajuda"
 
-#: src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:29
 msgid "_Quit"
 msgstr "_Sair"
 
-#: src/serviceconf.glade.h:29
+#: ../src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
 msgstr "Actualiza_r a Lista de Serviços"
 
-#: src/serviceconf.glade.h:30
+#: ../src/serviceconf.glade.h:31
 msgid "_Restart Service"
 msgstr "_Reiniciar Serviço"
 
-#: src/serviceconf.glade.h:31
+#: ../src/serviceconf.glade.h:32
 msgid "_Save Changes"
 msgstr "Gravar Alteraçõe_s"
 
-#: src/serviceconf.glade.h:32
+#: ../src/serviceconf.glade.h:33
 msgid "_Start Service"
 msgstr "Iniciar _Serviço"
 
-#: src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:34
 msgid "_View"
 msgstr "_Ver"
+
+#~ msgid "Start at Boot"
+#~ msgstr "Iniciar no Arranque"
 
 #~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 #~ msgstr "Copyright (c) 2002 Red Hat, Inc. Todos os direitos reservados."
