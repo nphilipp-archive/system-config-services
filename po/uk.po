@@ -162,7 +162,8 @@ msgstr ""
 #: src/serviceconf.py:595
 msgid "You must run redhat-config-services as root."
 msgstr ""
-"Необхідно запускати програму redhat-config-services з правами користувача root."
+"Необхідно запускати програму redhat-config-services з правами користувача "
+"root."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
