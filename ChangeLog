@@ -1,4 +1,57 @@
+2004-02-05  dwalsh  <dwalsh@redhat.com>
+
+	* src/serviceconf.py, system-config-services.console, system-config-services.spec.in:
+	fix console app to lauch correctly
+
+2004-02-03  sarahs  <sarahs@redhat.com>
+
+	* po/zh_CN.po: changed name in header
+
+2004-02-02  frolix68  <frolix68@redhat.com>
+
+	* po/el.po: Consistency fixes
+
+2004-01-24  bart  <bart@redhat.com>
+
+	* po/de.po: changed redhat-config-services to system-config-services
+
+2004-01-19  hedayat  <hedayat@redhat.com>
+
+	* po/fa.po: Some new Persian Translations
+
+2004-01-16  danpeig  <danpeig@redhat.com>
+
+	* po/pt_BR.po: Translation revised
+
+2004-01-15  jamil  <jamil@redhat.com>
+
+	* po/bn.po: Updated on Jan 15, 2004
+
+2004-01-15  lanurmi  <lanurmi@redhat.com>
+
+	* po/fi.po: Updated Finnish translation.
+
+2004-01-15  hedayat  <hedayat@redhat.com>
+
+	* po/fa.po: Move here
+
+	* po/fa.po: Move to po
+
+2004-01-13  hedayat  <hedayat@redhat.com>
+
+	* po/fa.po: Small Addition
+
+2004-01-08  hedayat  <hedayat@redhat.com>
+
+	* po/fa.po: Some fixes in Persian translation
+
+2004-01-08  ra  <ra@redhat.com>
+
+	* po/is.po: *** empty log message ***
+
 2004-01-06  dwalsh  <dwalsh@redhat.com>
+
+	* ChangeLog: release 0.8.6
 
 	* system-config-services.console: change location for serviceconf
 

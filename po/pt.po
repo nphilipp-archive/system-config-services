@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
-"POT-Creation-Date: 2003-12-11 07:34-0500\n"
+"POT-Creation-Date: 2004-01-06 10:23-0500\n"
 "PO-Revision-Date: 2003-12-05 09:29+0000\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
@@ -35,6 +35,7 @@ msgstr ""
 #. keep track of the number of rows we have so we can
 #. iterate over them all
 #. add the text for the number of columns we have
+#. !/usr/bin/python
 #. serviceconf.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Authors: Tim Powers <timp@redhat.com>
@@ -57,7 +58,7 @@ msgstr ""
 #. #
 #. # I18N
 #. #
-#: src/serviceconf.py:62
+#: src/serviceconf.py:76
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Tem a certeza que deseja apagar o %s?"
@@ -76,16 +77,16 @@ msgstr "Tem a certeza que deseja apagar o %s?"
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:208
+#: src/serviceconf.py:222
 msgid "Currently Running in Runlevel: "
 msgstr "Actualmente a Executar-se no Nível: "
 
 #. This is a sentry
-#: src/serviceconf.py:219
+#: src/serviceconf.py:233
 msgid "Start at Boot"
 msgstr "Iniciar no Arranque"
 
-#: src/serviceconf.py:220
+#: src/serviceconf.py:234
 msgid "Services"
 msgstr "Serviços"
 
@@ -100,8 +101,8 @@ msgstr "Serviços"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:275 src/serviceconf.py:381 src/serviceconf.py:398
-#: src/serviceconf.py:417
+#: src/serviceconf.py:289 src/serviceconf.py:395 src/serviceconf.py:412
+#: src/serviceconf.py:431
 msgid "Editing Runlevel: "
 msgstr "Editar Nível de Execução: "
 
@@ -109,7 +110,7 @@ msgstr "Editar Nível de Execução: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:318
+#: src/serviceconf.py:332
 msgid "Unknown"
 msgstr "Desconhecido"
 
@@ -117,11 +118,11 @@ msgstr "Desconhecido"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:446
+#: src/serviceconf.py:460
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright (c) 2002 Red Hat, Inc. Todos os direitos reservados."
 
-#: src/serviceconf.py:447
+#: src/serviceconf.py:461
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -132,7 +133,7 @@ msgstr ""
 "de erros da Red Hat:\n"
 "http://bugzilla.redhat.com"
 
-#: src/serviceconf.py:451
+#: src/serviceconf.py:465
 msgid "translator_credits"
 msgstr "Pedro Morais <morais@kde.org>, José Nuno Pires <jncp@netcabo.pt>"
 
@@ -153,7 +154,7 @@ msgstr "Pedro Morais <morais@kde.org>, José Nuno Pires <jncp@netcabo.pt>"
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:595
+#: src/serviceconf.py:609
 msgid "You must run system-config-services as root."
 msgstr "Deve correr o system-config-services como root."
 
