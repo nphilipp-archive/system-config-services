@@ -1,5 +1,5 @@
 AC_INIT(system-config-services.spec.in)
-AM_INIT_AUTOMAKE(system-config-services, 0.8.19)
+AM_INIT_AUTOMAKE(system-config-services, 0.8.20)
 
 #ALL_LINGUAS="ar bn bs ca cs cy da de el es et fa fi fr hi hr hu is it ja ko ms nl no pa pl pt_BR pt ru sk sl sv ta tr uk vi zh_CN zh_TW"
 ALL_LINGUAS="ar bg bn bs ca cs cy da de el es et fa fi fr gu he hi hr hu id is it ja ka ko ku lo lt mk mr ms nb nl no pa pl pt_BR pt ro ru si sk sl sq sv ta tr uk ur vi zh_CN zh_TW" 
