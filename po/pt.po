@@ -83,20 +83,19 @@ msgstr "Reiniciar"
 
 #: src/serviceconf.py:195
 msgid "_Save"
-msgstr ""
+msgstr "_Gravar"
 
 #: src/serviceconf.py:195
 msgid "Save"
-msgstr ""
+msgstr "Gravar"
 
 #: src/serviceconf.py:200
 msgid "_Revert"
-msgstr ""
+msgstr "_Reverter"
 
 #: src/serviceconf.py:200
-#, fuzzy
 msgid "Revert"
-msgstr "Reiniciar"
+msgstr "Reverter"
 
 #. the textbox
 #. the statusbox
@@ -158,7 +157,7 @@ msgstr ""
 
 #: src/serviceconf.py:476
 msgid "About"
-msgstr ""
+msgstr "Acerca"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -166,7 +165,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:505
 msgid "Help is not available."
-msgstr ""
+msgstr "A ajuda não está disponível."
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -360,7 +359,7 @@ msgstr "_Ajuda"
 
 #: src/serviceconf.glade.h:28
 msgid "_Quit"
-msgstr ""
+msgstr "_Sair"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
