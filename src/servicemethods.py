@@ -82,21 +82,6 @@ class ServiceMethods:
 
 
 
-    def check_if_chkconfiged(self, service_list):
-       """Makes sure that these are initscripts recognized by chkconfig, if they
-       aren't chkconfig compatible we remove them from the list"""
-       services = []
-       for servicename in service_list:
-	    if servicename[-1:] == '~' or servicename[-1:] == ',' or \
-	      servicename[-8:] == '.rpmsave' or servicename[-7:] == '.rpmnew' or \
-	      servicename[-4:] == '.swp' or servicename[-8:] == '.rpmorig':
-		  continue
-	    configured_list = getstatusoutput("LANG=C /sbin/chkconfig --list " + servicename)
-	    if configured_list[0] != 0:
-		continue
-	    services.append(servicename)
-       return services
-
     def check_if_on(self, servicename, editing_runlevel):
         """returns 0 if the service is not configured, and 1 if it is"""
         #runlevel = self.get_runlevel()
@@ -197,8 +182,8 @@ class ServiceMethods:
 
         
         idle_func ()
-        list_xinetd_services = self.check_if_chkconfiged(os.listdir("/etc/xinetd.d"))
-        idle_func ()
+
+        list_xinetd_services = []
         self.allservices = []
         
         chkconfig_list = getstatusoutput("LANG=C /sbin/chkconfig --list")[1]
@@ -212,6 +197,8 @@ class ServiceMethods:
                 if len(runlevel) > 1:
                     for i in xrange(0,len(runlevel)):
                         runlevel[i]=runlevel[i].split(":")[1]
+                else:
+                    list_xinetd_services.append(name)
                 dict[name]=runlevel
 
         for servicename in dict.keys():
