@@ -1,16 +1,19 @@
+# translation of tr.po to Turkish
+# $Id: tr.po,v 1.34 2003/07/06 12:30:08 nilgun Exp $
+# Nilgün Belma Bugüner <nilgun@superonline.com>, 2003
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: serviceconf\n"
+"Project-Id-Version: tr\n"
 "POT-Creation-Date: 2003-05-27 10:26-0400\n"
-"PO-Revision-Date: 2002-07-25 18:24+0300\n"
+"PO-Revision-Date: 2003-07-06 15:18+0300\n"
 "Last-Translator: Nilgün Belma Bugüner <nilgun@superonline.com>\n"
 "Language-Team: Turkish <gnu-tr-u12a@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
-"X-Generator: KBabel 0.9.6\n"
+"X-Generator: KBabel 1.0\n"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -73,7 +76,7 @@ msgstr ""
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:185
 msgid "Currently Running in Runlevel: "
-msgstr "Şu an Çalıştığı Çalışma Seviyesi:"
+msgstr "Şu an Etkin Olan Çalışma Seviyesi:"
 
 #. This is a sentry
 #: src/serviceconf.py:196
@@ -106,11 +109,11 @@ msgstr "Düzenlenen Çalışma Seviyesi: "
 #. set the text in StatusView
 #: src/serviceconf.py:295
 msgid "Unknown"
-msgstr ""
+msgstr "Bilinmeyen"
 
 #: src/serviceconf.py:298
 msgid "xinetd service"
-msgstr ""
+msgstr "xinetd servisi"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -235,11 +238,11 @@ msgstr "Şu an Etkin olan Çalışma Seviyesi: "
 
 #: src/serviceconf.glade.h:2
 msgid "Description"
-msgstr ""
+msgstr "Açıklama"
 
 #: src/serviceconf.glade.h:3
 msgid "Don't Save"
-msgstr ""
+msgstr "Kaydetme"
 
 #: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
@@ -258,7 +261,6 @@ msgid "Restart the selected service"
 msgstr "Seçilen hizmeti yeniden başlatır"
 
 #: src/serviceconf.glade.h:8
-#, fuzzy
 msgid "Revert To _Last Save"
 msgstr "Son Kayıtlı Duruma _Dön"
 
@@ -280,7 +282,7 @@ msgstr "Hizmeti _Durdur"
 
 #: src/serviceconf.glade.h:13
 msgid "Save Dialog"
-msgstr ""
+msgstr "Kayıt Diyaloğu"
 
 #: src/serviceconf.glade.h:14
 msgid "Service Configuration"
@@ -295,9 +297,8 @@ msgid "Start the selected service"
 msgstr "Seçilen hizmeti başlatır"
 
 #: src/serviceconf.glade.h:17
-#, fuzzy
 msgid "Status"
-msgstr "Başlat"
+msgstr "Durum"
 
 #: src/serviceconf.glade.h:18
 msgid "Stop"
@@ -570,3 +571,4 @@ msgstr "Hizmeti _Başlat"
 
 #~ msgid "Exit"
 #~ msgstr "Çıkış"
+
