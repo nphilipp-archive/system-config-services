@@ -502,7 +502,7 @@ class Gui:
 # once I have "real" help :)
 #----------------------------------------------------------------------------
     def on_mnuManual_activate(self,args):
-        help_page = "file:///usr/share/doc/system-config-services-" + VERSION + "/index.html"
+        help_page = "file:///usr/share/doc/system-config-services-" + VERSION + "/html/index.html"
 
         path = "/usr/bin/htmlview"
          
