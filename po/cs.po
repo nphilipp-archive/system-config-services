@@ -1,9 +1,9 @@
 # Miloslav Trmac <mitr@volny.cz>, 2002, 2003.
 msgid ""
 msgstr ""
-"Project-Id-Version: redhat-config-samba\n"
+"Project-Id-Version: redhat-config-services\n"
 "POT-Creation-Date: 2003-01-14 11:21-0500\n"
-"PO-Revision-Date: 2003-01-11 01:19+0100\n"
+"PO-Revision-Date: 2003-01-17 10:20+0100\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -72,17 +72,16 @@ msgstr ""
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:182
 msgid "Currently Running in Runlevel: "
-msgstr ""
+msgstr "Momentálně používám runlevel: "
 
 #. This is a sentry
 #: src/serviceconf.py:193
 msgid "Start at Boot"
-msgstr ""
+msgstr "Spustit při startu"
 
 #: src/serviceconf.py:194
-#, fuzzy
 msgid "Services"
-msgstr "Server"
+msgstr "Služby"
 
 #. self.clstServices.set_column_justification(0,GTK.JUSTIFY_CENTER)
 #. self.clstServices.set_column_justification(1,GTK.JUSTIFY_LEFT)
@@ -98,7 +97,7 @@ msgstr "Server"
 #: src/serviceconf.py:249 src/serviceconf.py:348 src/serviceconf.py:357
 #: src/serviceconf.py:381
 msgid "Editing Runlevel: "
-msgstr ""
+msgstr "Upravuji runlevel:"
 
 #. set the text in txtDesc
 #. if an xinetd service is selected, disable these,
@@ -106,17 +105,19 @@ msgstr ""
 #. set the text in StatusView
 #: src/serviceconf.py:292
 msgid "Unknown"
-msgstr ""
+msgstr "Neznámý"
 
 #: src/serviceconf.py:295
 msgid "xinetd service"
-msgstr ""
+msgstr "služba xinetd"
 
 #: src/serviceconf.py:363
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"Provedli jste změny aktuálního runlevel.\n"
+"Chcete změny uložit?"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -124,7 +125,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:393
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr ""
+msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 
 #: src/serviceconf.py:394
 msgid ""
@@ -132,6 +133,9 @@ msgid ""
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
+"Tento software může být volně šířen za podmínek GPL.\n"
+"Ohlaste prosím všechny chyby, které najdete, v systému pro sledování chyb\n"
+"Red Hat: http://bugzilla.redhat.com"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -152,7 +156,7 @@ msgstr ""
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:522
 msgid "You must run redhat-config-services as root."
-msgstr ""
+msgstr "redhat-config-services musíte spustit jako root."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -193,6 +197,9 @@ msgid ""
 "\n"
 "You must enable xinetd to use this service."
 msgstr ""
+"\n"
+"\n"
+"Pro použití této služby musíte povolit xinetd."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -204,34 +211,34 @@ msgstr ""
 #. if it's toggled off
 #: src/servicemethods.py:323
 msgid "xinetd failed to reload for "
-msgstr ""
+msgstr "Selhalo opětovné načtení xinetd pro "
 
 #: src/servicemethods.py:324
 msgid ". The error was: "
-msgstr ""
+msgstr ". Chyba byla: "
 
 #: src/servicemethods.py:326
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr ""
+msgstr "xinetd úspěšně opětovně načetl %s"
 
 #: src/servicemethods.py:329
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr ""
+msgstr "Pro běh %s musí být povolen xinetd"
 
 #: src/servicemethods.py:334
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr ""
+msgstr "%s selhalo. Chyba byla: %s"
 
 #: src/servicemethods.py:336
 msgid " successful"
-msgstr ""
+msgstr " úspěšný"
 
 #: src/serviceconf.glade.h:1
 msgid "Current Active Runlevel: "
-msgstr ""
+msgstr "Momentálně aktivní runlevel: "
 
 #: src/serviceconf.glade.h:2
 msgid "Description"
@@ -239,457 +246,96 @@ msgstr "Popis"
 
 #: src/serviceconf.glade.h:3
 msgid "Editing Runlevel:"
-msgstr ""
+msgstr "Upravovaný runlevel:"
 
 #: src/serviceconf.glade.h:4
-#, fuzzy
 msgid "None"
-msgstr "Ne"
+msgstr "Žádný"
 
 #: src/serviceconf.glade.h:5
 msgid "Restart"
-msgstr ""
+msgstr "Restartovat"
 
 #: src/serviceconf.glade.h:6
-#, fuzzy
 msgid "Restart the selected service"
-msgstr "Odstranit vybraný adresář"
+msgstr "Restartovat vybranou službu"
 
 #: src/serviceconf.glade.h:7
 msgid "Revert To _Last Save"
-msgstr ""
+msgstr "Vrátit se k _poslednímu uloženému"
 
 #: src/serviceconf.glade.h:8
 msgid "Runlevel _3"
-msgstr ""
+msgstr "Runlevel _3"
 
 #: src/serviceconf.glade.h:9
 msgid "Runlevel _4"
-msgstr ""
+msgstr "Runlevel _4"
 
 #: src/serviceconf.glade.h:10
 msgid "Runlevel _5"
-msgstr ""
+msgstr "Runlevel _5"
 
 #: src/serviceconf.glade.h:11
 msgid "S_top Service"
-msgstr ""
+msgstr "_Zastavit službu"
 
 #: src/serviceconf.glade.h:12
-#, fuzzy
 msgid "Service Configuration"
-msgstr "Nastavení serveru samba"
+msgstr "Nastavení služeb"
 
 #: src/serviceconf.glade.h:13
 msgid "Start"
-msgstr ""
+msgstr "Spustit"
 
 #: src/serviceconf.glade.h:14
-#, fuzzy
 msgid "Start the selected service"
-msgstr "Odstranit vybraný adresář"
+msgstr "Spustit vybranou službu"
 
 #: src/serviceconf.glade.h:15
 msgid "Status"
-msgstr ""
+msgstr "Stav"
 
 #: src/serviceconf.glade.h:16
 msgid "Stop"
-msgstr ""
+msgstr "Zastavit"
 
 #: src/serviceconf.glade.h:17
-#, fuzzy
 msgid "Stop the selected service"
-msgstr "Odstranit vybraný adresář"
+msgstr "Zastavit vybranou službu"
 
 #: src/serviceconf.glade.h:18
 msgid "_Actions"
-msgstr ""
+msgstr "_Akce"
 
 #: src/serviceconf.glade.h:19
-#, fuzzy
 msgid "_Contents"
-msgstr "/Nápověd_a/_Obsah"
+msgstr "O_bsah"
 
 #: src/serviceconf.glade.h:20
 msgid "_Edit Runlevel"
-msgstr ""
+msgstr "_Upravit runlevel"
 
 #: src/serviceconf.glade.h:21
-#, fuzzy
 msgid "_File"
-msgstr "/_Soubor"
+msgstr "_Soubor"
 
 #: src/serviceconf.glade.h:22
-#, fuzzy
 msgid "_Help"
-msgstr "/Nápověd_a"
+msgstr "_Nápověda"
 
 #: src/serviceconf.glade.h:23
 msgid "_Refresh Service List"
-msgstr ""
+msgstr "_Obnovit seznam služeb"
 
 #: src/serviceconf.glade.h:24
 msgid "_Restart Service"
-msgstr ""
+msgstr "_Restartovat službu"
 
 #: src/serviceconf.glade.h:25
 msgid "_Save Changes"
-msgstr ""
+msgstr "_Uložit změny"
 
 #: src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Start Service"
-msgstr "Server samba"
-
-#~ msgid "The passwords do not match.  Please try again."
-#~ msgstr "Hesla nesouhlasí. Zadejte je prosím znovu."
-
-#~ msgid "Please enter an existing local username."
-#~ msgstr "Zadejte prosím jméno existujícího místního uživatele."
-
-#~ msgid ""
-#~ "A local user account for '%s' does not exist.  Please enter an existing "
-#~ "local username."
-#~ msgstr ""
-#~ "Místní účet pro '%s' neexistuje. Zadejte prosím jméno existujícího "
-#~ "místního uživatele."
-
-#~ msgid "Please enter a Windows username."
-#~ msgstr "Zadejte prosím jméno uživatele ve Windows."
-
-#~ msgid "An account for this user already exists.  Please try again."
-#~ msgstr "Účet pro tohoto uživatele již existuje. Zkuste to prosím znovu."
-
-#~ msgid "Domain"
-#~ msgstr "Doména"
-
-#~ msgid "Share"
-#~ msgstr "Share"
-
-#~ msgid "User"
-#~ msgstr "Uživatel"
-
-#~ msgid "Yes"
-#~ msgstr "Ano"
-
-#~ msgid "No guest account"
-#~ msgstr "Žádný účet hosta"
-
-#~ msgid "You must specify a workgroup."
-#~ msgstr "Musíte určit pracovní skupinu."
-
-#~ msgid "Create, modify, and delete samba shares"
-#~ msgstr "Vytvořit, upravit a odstranit samba share"
-
-#~ msgid "Directory"
-#~ msgstr "Adresář"
-
-#~ msgid "Permissions"
-#~ msgstr "Oprávnění"
-
-#~ msgid "/_File/_Add Share"
-#~ msgstr "/_Soubor/_Přidat share"
-
-#~ msgid "/_File/_Properties"
-#~ msgstr "/_Soubor/_Vlastnosti"
-
-#~ msgid "/_File/_Delete"
-#~ msgstr "/_Soubor/_Odstranit"
-
-#~ msgid "/_File/_Quit"
-#~ msgstr "/_Soubor/_Konec"
-
-#~ msgid "/_Preferences"
-#~ msgstr "/_Nastavení"
-
-#~ msgid "/_Preferences/_Server Settings..."
-#~ msgstr "/_Nastavení/_Nastavení serveru..."
-
-#~ msgid "/_Preferences/Samba _Users..."
-#~ msgstr "/_Nastavení/_Uživatelé samby"
-
-#~ msgid "/_Help/_About"
-#~ msgstr "/Nápověd_a/O _programu"
-
-#~ msgid "Add a samba share"
-#~ msgstr "Přidat samba share"
-
-#~ msgid "Edit the properties of the selected directory"
-#~ msgstr "Upravit vlastnosti vybraného adresáře"
-
-#~ msgid "View help"
-#~ msgstr "Zobrazit nápovědu"
-
-#~ msgid "Read Only"
-#~ msgstr "Jen pro čtení"
-
-#~ msgid "Read/Write"
-#~ msgstr "Čtení/zápis"
-
-#~ msgid ""
-#~ "The Samba service is not currently running.  Do you wish to start it?"
-#~ msgstr "Služba samba momentálně neběží. Chcete ji spustit?"
-
-#~ msgid ""
-#~ "Samba Server Configuration Tool @VERSION@\n"
-#~ " Copyright (c) 2002 Red Hat, Inc.\n"
-#~ " Copyright (c) 2002 Brent Fox <bfox@redhat.com>\n"
-#~ " Copyright (c) 2002 Tammy Fox <tfox@redhat.com>\n"
-#~ " A graphical interface for configuring SMB shares"
-#~ msgstr ""
-#~ "Nástroj pro nastavení serveru samba @VERSION@\n"
-#~ " Copyright (c) 2002 Red Hat, Inc.\n"
-#~ " Copyright (c) 2002 Brent Fox <bfox@redhat.com>\n"
-#~ " Copyright (c) 2002 Tammy Fox <tfox@redhat.com>\n"
-#~ " Grafické rozhraní pro nastavení SMB sharu"
-
-#~ msgid "About"
-#~ msgstr "O programu"
-
-#~ msgid "Cannot read %s.  Program will now exit."
-#~ msgstr "Nemohu číst %s. Program bude ukončen."
-
-#~ msgid "Cannot write to %s.  Program will now exit."
-#~ msgstr "Nemohu zapisovat do %s. Program bude ukončen."
-
-#~ msgid "You do not have permission to read %s."
-#~ msgstr "Nemáte oprávnění číst %s."
-
-#~ msgid "You do not have permission to write to %s.  Program will now exit."
-#~ msgstr "Nemáte oprávnění zapisovat do %s. Program bude ukončen."
-
-#~ msgid "Create Samba Share"
-#~ msgstr "Vytvořit samba share"
-
-#~ msgid "Edit Samba Share"
-#~ msgstr "Upravit samba share"
-
-#~ msgid ""
-#~ "You must specify a directory to share.  \n"
-#~ "\n"
-#~ "Click \"OK\" to continue."
-#~ msgstr ""
-#~ "Musíte určit sdílený adresář.\n"
-#~ "\n"
-#~ "Pokračujte kliknutím na \"OK\"."
-
-#~ msgid ""
-#~ "The directory \"%s\" does not exist.  Please specify an existing "
-#~ "directory. \n"
-#~ "\n"
-#~ "Click \"OK\" to continue."
-#~ msgstr ""
-#~ "Adresář \"%s\" neexistuje. Zadejte prosím existující adresář.\n"
-#~ "\n"
-#~ "Pokračujte kliknutím na \"OK\"."
-
-#~ msgid "Read / Write"
-#~ msgstr "Čtení / zápis"
-
-#~ msgid "Select Directory"
-#~ msgstr "Vyberte adresář"
-
-#~ msgid "Advanced Samba Server Settings"
-#~ msgstr "Pokročilá nastavení serveru samba"
-
-#~ msgid "label30"
-#~ msgstr "label30"
-
-#~ msgid "Basic"
-#~ msgstr "Základní"
-
-#~ msgid "label31"
-#~ msgstr "label31"
-
-#~ msgid "Security"
-#~ msgstr "Bezpečnost"
-
-#~ msgid "label32"
-#~ msgstr "label32"
-
-#~ msgid "Logging"
-#~ msgstr "Záznamy"
-
-#~ msgid "label33"
-#~ msgstr "label33"
-
-#~ msgid "Protocol"
-#~ msgstr "Protokol"
-
-#~ msgid "label34"
-#~ msgstr "label34"
-
-#~ msgid "Tuning"
-#~ msgstr "Ladění"
-
-#~ msgid "label35"
-#~ msgstr "label35"
-
-#~ msgid "Printing"
-#~ msgstr "Tisk"
-
-#~ msgid "label36"
-#~ msgstr "label36"
-
-#~ msgid "Filename"
-#~ msgstr "Jméno souboru"
-
-#~ msgid "label37"
-#~ msgstr "label37"
-
-#~ msgid "label38"
-#~ msgstr "label38"
-
-#~ msgid "Logon"
-#~ msgstr "Přihlášení"
-
-#~ msgid "label39"
-#~ msgstr "label39"
-
-#~ msgid "Browse"
-#~ msgstr "Procházet"
-
-#~ msgid "label40"
-#~ msgstr "label40"
-
-#~ msgid "WINS"
-#~ msgstr "WINS"
-
-#~ msgid "label41"
-#~ msgstr "label41"
-
-#~ msgid "Locking"
-#~ msgstr "Zamykání"
-
-#~ msgid "label42"
-#~ msgstr "label42"
-
-#~ msgid "Miscellaneous"
-#~ msgstr "Různé"
-
-#~ msgid "label43"
-#~ msgstr "label43"
-
-#~ msgid "VFS"
-#~ msgstr "VFS"
-
-#~ msgid "label44"
-#~ msgstr "label44"
-
-#~ msgid "Winbind"
-#~ msgstr "Winbind"
-
-#~ msgid "Server Settings"
-#~ msgstr "Nastavení serveru"
-
-#~ msgid "Workgroup:"
-#~ msgstr "Pracovní skupina:"
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid "Description:"
-#~ msgstr "Popis:"
-
-#~ msgid "Authentication Mode:"
-#~ msgstr "Mód autentizace:"
-
-#~ msgid "Encrypt Passwords:"
-#~ msgstr "Šifrovat hesla:"
-
-#~ msgid "Update Encrypted:"
-#~ msgstr "Aktualizovat šifrované heslo:"
-
-#~ msgid "Guest Account:"
-#~ msgstr "Účet hosta:"
-
-#~ msgid "Samba Users"
-#~ msgstr "Uživatelé pro sambu"
-
-#~ msgid "_Add User"
-#~ msgstr "_Přidat uživatele"
-
-#~ msgid "_Edit User"
-#~ msgstr "_Upravit uživatele"
-
-#~ msgid "_Delete User"
-#~ msgstr "_Odstranit uživatele"
-
-#~ msgid "Create New Samba User"
-#~ msgstr "Vytvořit nového uživatele pro sambu"
-
-#~ msgid "Unix Username:"
-#~ msgstr "Jméno uživatele v Unixu:"
-
-#~ msgid "Windows Username:"
-#~ msgstr "Jméno uživatele ve Windows:"
-
-#~ msgid "Samba Password:"
-#~ msgstr "Heslo pro sambu:"
-
-#~ msgid "Confirm Samba Password:"
-#~ msgstr "Potvrďte heslo pro sambu:"
-
-#~ msgid "window1"
-#~ msgstr "window1"
-
-#~ msgid "Browse..."
-#~ msgstr "Procházet..."
-
-#~ msgid "Directory:"
-#~ msgstr "Adresář:"
-
-#~ msgid "Basic Permissions:"
-#~ msgstr "Základní oprávnění:"
-
-#~ msgid "Read-only"
-#~ msgstr "Jen pro čtení"
-
-#~ msgid "Only allow access to specific users"
-#~ msgstr "Povolit přístup jen zadaným uživatelům"
-
-#~ msgid "Allow access to everyone"
-#~ msgstr "Povolit přístup všem"
-
-#~ msgid "Access"
-#~ msgstr "Přístup"
-
-#~ msgid "Permissions:"
-#~ msgstr "Oprávnění:"
-
-#~ msgid "User Permissions:"
-#~ msgstr "Oprávnění uživatele:"
-
-#~ msgid "Group Permissions:"
-#~ msgstr "Oprávnění skupiny:"
-
-#~ msgid "World Permissions:"
-#~ msgstr "Oprávnění ostatních:"
-
-#~ msgid "Read"
-#~ msgstr "Čtení"
-
-#~ msgid "Write"
-#~ msgstr "Zápis"
-
-#~ msgid "Execute"
-#~ msgstr "Spuštění"
-
-#~ msgid "Server Name:"
-#~ msgstr "Jméno serveru:"
-
-#~ msgid "NetBIOS Name:"
-#~ msgstr "Jméno NetBIOS:"
-
-#~ msgid "Change..."
-#~ msgstr "Změnit..."
-
-#~ msgid "Default directory creation permissions:"
-#~ msgstr "Implicitní oprávnění při vytváření adresáře:"
-
-#~ msgid "Default file creation permissions:"
-#~ msgstr "Implicitní oprávnění při vytváření souboru:"
-
-#~ msgid "General Options"
-#~ msgstr "Obecná nastavení"
+msgstr "_Spustit službu"
