@@ -58,7 +58,7 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
-* Tue Oct 12 2004 Nils Philippsen <nphilipp@redhat.com> 0.8.13-1
+* Tue Oct 12 2004 Nils Philippsen <nphilipp@redhat.com> 0.8.14-1
 - actually install nonblockingreader module (#135445)
 
 * Mon Oct 11 2004 Nils Philippsen <nphilipp@redhat.com> 0.8.12-1
