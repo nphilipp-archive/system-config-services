@@ -11,7 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
-"POT-Creation-Date: 2004-02-05 18:31-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-03-16 16:00-0500\n"
 "PO-Revision-Date: 2003-12-13 18:49+0100\n"
 "Last-Translator: Luis Mayoral <mayoral@linuxadicto.org>\n"
 "Language-Team: Español <es@li.org>\n"
@@ -67,41 +68,74 @@ msgstr ""
 #. #
 #. # I18N
 #. #
-#: src/serviceconf.py:76
+#: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "¿Está seguro de que desea eliminar el %s?"
 
-# ../serviceconf.py:134
-# ../serviceconf.py:134
+# serviceconf.gladestrings:9 serviceconf.gladestrings:46
 #. make sure threading is disabled
 #. map the event signals to specific methods
 #. main window
 #. menu items
-#. buttons
 #. toolbars
-#. self.tbrSave.set_style(GTK.TOOLBAR_ICONS)
-#. self.tbrSave.set_button_relief(GTK.RELIEF_NORMAL)
+#: src/serviceconf.py:181 src/serviceconf.glade.h:18
+msgid "Start"
+msgstr "Comenzar"
+
+# serviceconf.gladestrings:11 serviceconf.gladestrings:48
+#: src/serviceconf.py:185 src/serviceconf.glade.h:20
+msgid "Stop"
+msgstr "Parar"
+
+# serviceconf.gladestrings:13 serviceconf.gladestrings:50
+#: src/serviceconf.py:189 src/serviceconf.glade.h:9
+msgid "Restart"
+msgstr "Reiniciar"
+
+# serviceconf.gladestrings:40
+#: src/serviceconf.py:195
+#, fuzzy
+msgid "_Save"
+msgstr "Guardar"
+
+# serviceconf.gladestrings:40
+#: src/serviceconf.py:195
+msgid "Save"
+msgstr "Guardar"
+
+#: src/serviceconf.py:200
+msgid "_Revert"
+msgstr ""
+
+# serviceconf.gladestrings:13 serviceconf.gladestrings:50
+#: src/serviceconf.py:200
+#, fuzzy
+msgid "Revert"
+msgstr "Reiniciar"
+
+# ../serviceconf.py:134
+# ../serviceconf.py:134
 #. the textbox
 #. the statusbox
 #. the CheckCList which will display whether the service
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:222
+#: src/serviceconf.py:234
 msgid "Currently Running in Runlevel: "
 msgstr "Actualmente corriendo en el nivel de ejecución: "
 
 # ../serviceconf.py:143
 # ../serviceconf.py:143
 #. This is a sentry
-#: src/serviceconf.py:233
+#: src/serviceconf.py:245
 msgid "Start at Boot"
 msgstr "Comenzar al arrancar"
 
 # ../serviceconf.py:144
 # ../serviceconf.py:144
-#: src/serviceconf.py:234
+#: src/serviceconf.py:246
 msgid "Services"
 msgstr "Servicios"
 
@@ -118,8 +152,8 @@ msgstr "Servicios"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:289 src/serviceconf.py:395 src/serviceconf.py:412
-#: src/serviceconf.py:431
+#: src/serviceconf.py:301 src/serviceconf.py:407 src/serviceconf.py:424
+#: src/serviceconf.py:443
 msgid "Editing Runlevel: "
 msgstr "Editando nivel de ejecución: "
 
@@ -127,46 +161,39 @@ msgstr "Editando nivel de ejecución: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:332
+#: src/serviceconf.py:344
 msgid "Unknown"
 msgstr "Desconocido"
 
-# ../serviceconf.py:309
-# ../serviceconf.py:309
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:460
-msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Copyright (c) 2002 Red Hat, Inc. Todos los derechos reservados."
-
-# ../serviceconf.py:312
-# ../serviceconf.py:312
-#: src/serviceconf.py:461
+#: src/serviceconf.py:472
 msgid ""
-"This software may be freely redistributed under the terms of the GPL.\n"
-"Please report all bugs you find at the Red Hat bug tracking system:\n"
-"http://bugzilla.redhat.com"
+"System Services Configuration Tool VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 msgstr ""
-"Este software puede ser redistribuido libremente bajo los términos GPL.\n"
-"Por favor, informe de todos los fallos que encuentre al sistema de "
-"seguimiento de fallos de Red Hat:\n"
-"http://bugzilla.redhat.com"
 
-#: src/serviceconf.py:465
-msgid "translator_credits"
+#: src/serviceconf.py:476
+msgid "About"
 msgstr ""
-"Yelitza Louzé <ylouze@redhat.com>\n"
-"Luis Mayoral <mayoral@linuxadcito.org>"
 
-# ../serviceconf.py:432
-# ../serviceconf.py:432
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#. gnome.help_display_uri(page)
+#: src/serviceconf.py:505
+msgid "Help is not available."
+msgstr ""
+
+# ../serviceconf.py:432
+# ../serviceconf.py:432
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
 #. The menu and popup menu items for "Start", "Stop", and "Restart" are
@@ -179,7 +206,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:609
+#: src/serviceconf.py:649
 msgid "You must run system-config-services as root."
 msgstr "Debe ejecutar system-config-services como root."
 
@@ -316,91 +343,59 @@ msgstr "Editando nivel de ejecución:"
 msgid "None"
 msgstr "Ninguno"
 
-# serviceconf.gladestrings:13 serviceconf.gladestrings:50
-#: src/serviceconf.glade.h:9
-msgid "Restart"
-msgstr "Reiniciar"
-
-# serviceconf.gladestrings:12 serviceconf.gladestrings:27
-# serviceconf.gladestrings:49
-#: src/serviceconf.glade.h:10
-msgid "Restart the selected service"
-msgstr "Reiniciar el servicio seleccionado"
-
 # serviceconf.gladestrings:20
-#: src/serviceconf.glade.h:11
+#: src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
 msgstr "Volver a _lo último guardado"
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
 # serviceconf.gladestrings:32
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "Nivel de ejecución _3"
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
 # serviceconf.gladestrings:34
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "Nivel de ejecución _4"
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
 # serviceconf.gladestrings:36
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "Nivel de ejecución _5"
 
 # ../serviceconf.py:144
 # serviceconf.gladestrings:26
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "_Parar Servicio"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "Guardar diálogo"
 
 # serviceconf.gladestrings:14
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "Configuración del servicio"
 
 # ../serviceconf.py:144
 # ../serviceconf.py:144
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "Nombre de servicio:"
 
 # serviceconf.gladestrings:9 serviceconf.gladestrings:46
 #: src/serviceconf.glade.h:19
-msgid "Start"
-msgstr "Comenzar"
-
-# serviceconf.gladestrings:8 serviceconf.gladestrings:23
-# serviceconf.gladestrings:45
-#: src/serviceconf.glade.h:20
-msgid "Start the selected service"
-msgstr "Comenzar el servicio seleccionado"
-
-# serviceconf.gladestrings:9 serviceconf.gladestrings:46
-#: src/serviceconf.glade.h:21
 msgid "Status"
 msgstr "Estatus"
 
-# serviceconf.gladestrings:11 serviceconf.gladestrings:48
-#: src/serviceconf.glade.h:22
-msgid "Stop"
-msgstr "Parar"
-
-# serviceconf.gladestrings:10 serviceconf.gladestrings:25
-#: src/serviceconf.glade.h:23
-msgid "Stop the selected service"
-msgstr "Parar el servicio seleccionado"
-
-#: src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:21
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -409,53 +404,95 @@ msgstr ""
 "¿Desea guardar los cambios?"
 
 # serviceconf.gladestrings:22
-#: src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:23
 msgid "_Actions"
 msgstr "_Acciones"
 
-#: src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:24
 msgid "_Contents"
 msgstr "_Contenido"
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
 # serviceconf.gladestrings:30
-#: src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:25
 msgid "_Edit Runlevel"
 msgstr "_Editar nivel de ejecución"
 
-#: src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:26
 msgid "_File"
 msgstr "_Fichero"
 
-#: src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:27
 msgid "_Help"
 msgstr "_Ayuda"
 
+# serviceconf.gladestrings:43
+#: src/serviceconf.glade.h:28
+#, fuzzy
+msgid "_Quit"
+msgstr "Quitar"
+
 # serviceconf.gladestrings:16
-#: src/serviceconf.glade.h:31
+#: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
 msgstr "_Refrescar la lista de servicios"
 
 # serviceconf.gladestrings:28
-#: src/serviceconf.glade.h:32
+#: src/serviceconf.glade.h:30
 msgid "_Restart Service"
 msgstr "_Reiniciar Servicio"
 
 # serviceconf.gladestrings:18
-#: src/serviceconf.glade.h:33
+#: src/serviceconf.glade.h:31
 msgid "_Save Changes"
 msgstr "_Guardar Cambios"
 
 # ../serviceconf.py:144
 # serviceconf.gladestrings:24
-#: src/serviceconf.glade.h:34
+#: src/serviceconf.glade.h:32
 msgid "_Start Service"
 msgstr "Comenzar _Servicio"
 
-#: src/serviceconf.glade.h:35
+#: src/serviceconf.glade.h:33
 msgid "_View"
 msgstr "_Vista"
+
+# ../serviceconf.py:309
+# ../serviceconf.py:309
+#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
+#~ msgstr "Copyright (c) 2002 Red Hat, Inc. Todos los derechos reservados."
+
+# ../serviceconf.py:312
+# ../serviceconf.py:312
+#~ msgid ""
+#~ "This software may be freely redistributed under the terms of the GPL.\n"
+#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
+#~ "http://bugzilla.redhat.com"
+#~ msgstr ""
+#~ "Este software puede ser redistribuido libremente bajo los términos GPL.\n"
+#~ "Por favor, informe de todos los fallos que encuentre al sistema de "
+#~ "seguimiento de fallos de Red Hat:\n"
+#~ "http://bugzilla.redhat.com"
+
+#~ msgid "translator_credits"
+#~ msgstr ""
+#~ "Yelitza Louzé <ylouze@redhat.com>\n"
+#~ "Luis Mayoral <mayoral@linuxadcito.org>"
+
+# serviceconf.gladestrings:12 serviceconf.gladestrings:27
+# serviceconf.gladestrings:49
+#~ msgid "Restart the selected service"
+#~ msgstr "Reiniciar el servicio seleccionado"
+
+# serviceconf.gladestrings:8 serviceconf.gladestrings:23
+# serviceconf.gladestrings:45
+#~ msgid "Start the selected service"
+#~ msgstr "Comenzar el servicio seleccionado"
+
+# serviceconf.gladestrings:10 serviceconf.gladestrings:25
+#~ msgid "Stop the selected service"
+#~ msgstr "Parar el servicio seleccionado"
 
 #~ msgid "xinetd service"
 #~ msgstr "servicio xinetd"
@@ -464,17 +501,9 @@ msgstr "_Vista"
 #~ msgid "Cancel"
 #~ msgstr "Cancelar"
 
-# serviceconf.gladestrings:43
-#~ msgid "Quit"
-#~ msgstr "Quitar"
-
 # serviceconf.gladestrings:19 serviceconf.gladestrings:41
 #~ msgid "Revert to the last saved change"
 #~ msgstr "Volver a los últimos cambios guardados"
-
-# serviceconf.gladestrings:40
-#~ msgid "Save"
-#~ msgstr "Guardar"
 
 # serviceconf.gladestrings:17 serviceconf.gladestrings:39
 #~ msgid "Save the changes you have made"

@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
-"POT-Creation-Date: 2004-02-05 18:31-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-03-16 16:00-0500\n"
 "PO-Revision-Date: 2003-12-09 10:44+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Traditional Chinese <i18n-list@redhat.com>\n"
@@ -62,7 +63,7 @@ msgstr ""
 #. #
 #. # I18N
 #. #
-#: src/serviceconf.py:76
+#: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "您確定要刪除 %s 嗎？"
@@ -71,26 +72,53 @@ msgstr "您確定要刪除 %s 嗎？"
 #. map the event signals to specific methods
 #. main window
 #. menu items
-#. buttons
 #. toolbars
-#. self.tbrSave.set_style(GTK.TOOLBAR_ICONS)
-#. self.tbrSave.set_button_relief(GTK.RELIEF_NORMAL)
+#: src/serviceconf.py:181 src/serviceconf.glade.h:18
+msgid "Start"
+msgstr "開始"
+
+#: src/serviceconf.py:185 src/serviceconf.glade.h:20
+msgid "Stop"
+msgstr "停止"
+
+#: src/serviceconf.py:189 src/serviceconf.glade.h:9
+msgid "Restart"
+msgstr "重新啟動"
+
+#: src/serviceconf.py:195
+#, fuzzy
+msgid "_Save"
+msgstr "儲存"
+
+#: src/serviceconf.py:195
+msgid "Save"
+msgstr "儲存"
+
+#: src/serviceconf.py:200
+msgid "_Revert"
+msgstr ""
+
+#: src/serviceconf.py:200
+#, fuzzy
+msgid "Revert"
+msgstr "重新啟動"
+
 #. the textbox
 #. the statusbox
 #. the CheckCList which will display whether the service
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:222
+#: src/serviceconf.py:234
 msgid "Currently Running in Runlevel: "
 msgstr "目前執行等級是: "
 
 #. This is a sentry
-#: src/serviceconf.py:233
+#: src/serviceconf.py:245
 msgid "Start at Boot"
 msgstr "開機時啟動"
 
-#: src/serviceconf.py:234
+#: src/serviceconf.py:246
 msgid "Services"
 msgstr "服務"
 
@@ -105,8 +133,8 @@ msgstr "服務"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:289 src/serviceconf.py:395 src/serviceconf.py:412
-#: src/serviceconf.py:431
+#: src/serviceconf.py:301 src/serviceconf.py:407 src/serviceconf.py:424
+#: src/serviceconf.py:443
 msgid "Editing Runlevel: "
 msgstr "編輯執行等級: "
 
@@ -114,7 +142,7 @@ msgstr "編輯執行等級: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:332
+#: src/serviceconf.py:344
 msgid "Unknown"
 msgstr "未知的"
 
@@ -122,29 +150,29 @@ msgstr "未知的"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:460
-msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-
-#: src/serviceconf.py:461
+#: src/serviceconf.py:472
 msgid ""
-"This software may be freely redistributed under the terms of the GPL.\n"
-"Please report all bugs you find at the Red Hat bug tracking system:\n"
-"http://bugzilla.redhat.com"
+"System Services Configuration Tool VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 msgstr ""
-"這個軟體在遵循 GPL 的條款下可以被自由散佈。\n"
-"請回報您發現的程式問題到 Red Hat 程式問題追蹤系統：\n"
-"http://bugzilla.redhat.com"
 
-#: src/serviceconf.py:465
-msgid "translator_credits"
-msgstr "翻譯者: 吳宏彬 (hpwu@redhat.com)"
+#: src/serviceconf.py:476
+msgid "About"
+msgstr ""
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#. gnome.help_display_uri(page)
+#: src/serviceconf.py:505
+msgid "Help is not available."
+msgstr "輔助說明無法使用。"
+
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
 #. The menu and popup menu items for "Start", "Stop", and "Restart" are
@@ -157,7 +185,7 @@ msgstr "翻譯者: 吳宏彬 (hpwu@redhat.com)"
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:609
+#: src/serviceconf.py:649
 msgid "You must run system-config-services as root."
 msgstr "您必須是 root 才能執行 system-config-services。"
 
@@ -271,67 +299,43 @@ msgstr "編輯執行等級:"
 msgid "None"
 msgstr "沒有"
 
-#: src/serviceconf.glade.h:9
-msgid "Restart"
-msgstr "重新啟動"
-
 #: src/serviceconf.glade.h:10
-msgid "Restart the selected service"
-msgstr "重新啟動選取的服務"
-
-#: src/serviceconf.glade.h:11
 msgid "Revert To _Last Save"
 msgstr "返回到上一次的儲存(_L)"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "執行等級 _3"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "執行等級 _4"
 
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "執行等級 _5"
 
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "停止系統服務(_t)"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "儲存對話窗"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "服務組態設定"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "服務名稱: "
 
 #: src/serviceconf.glade.h:19
-msgid "Start"
-msgstr "開始"
-
-#: src/serviceconf.glade.h:20
-msgid "Start the selected service"
-msgstr "啟動選取的服務"
-
-#: src/serviceconf.glade.h:21
 msgid "Status"
 msgstr "狀態"
 
-#: src/serviceconf.glade.h:22
-msgid "Stop"
-msgstr "停止"
-
-#: src/serviceconf.glade.h:23
-msgid "Stop the selected service"
-msgstr "停止選取的服務"
-
-#: src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:21
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -339,45 +343,74 @@ msgstr ""
 "您已更改目前的執行等級。\n"
 "您想要儲存變更嗎？"
 
-#: src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:23
 msgid "_Actions"
 msgstr "動作(_A)"
 
-#: src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:24
 msgid "_Contents"
 msgstr "內容(_C)"
 
-#: src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:25
 msgid "_Edit Runlevel"
 msgstr "編輯執行等級(_E)"
 
-#: src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:26
 msgid "_File"
 msgstr "檔案(_F)"
 
-#: src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:27
 msgid "_Help"
 msgstr "說明(_H)"
 
-#: src/serviceconf.glade.h:31
+#: src/serviceconf.glade.h:28
+#, fuzzy
+msgid "_Quit"
+msgstr "離開"
+
+#: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
 msgstr "重新整理系統服務選單(_R)"
 
-#: src/serviceconf.glade.h:32
+#: src/serviceconf.glade.h:30
 msgid "_Restart Service"
 msgstr "重新啟動系統服務(_R)"
 
-#: src/serviceconf.glade.h:33
+#: src/serviceconf.glade.h:31
 msgid "_Save Changes"
 msgstr "儲存變更(_S)"
 
-#: src/serviceconf.glade.h:34
+#: src/serviceconf.glade.h:32
 msgid "_Start Service"
 msgstr "啟動系統服務(_S)"
 
-#: src/serviceconf.glade.h:35
+#: src/serviceconf.glade.h:33
 msgid "_View"
 msgstr "檢視(_V)"
+
+#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
+#~ msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
+
+#~ msgid ""
+#~ "This software may be freely redistributed under the terms of the GPL.\n"
+#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
+#~ "http://bugzilla.redhat.com"
+#~ msgstr ""
+#~ "這個軟體在遵循 GPL 的條款下可以被自由散佈。\n"
+#~ "請回報您發現的程式問題到 Red Hat 程式問題追蹤系統：\n"
+#~ "http://bugzilla.redhat.com"
+
+#~ msgid "translator_credits"
+#~ msgstr "翻譯者: 吳宏彬 (hpwu@redhat.com)"
+
+#~ msgid "Restart the selected service"
+#~ msgstr "重新啟動選取的服務"
+
+#~ msgid "Start the selected service"
+#~ msgstr "啟動選取的服務"
+
+#~ msgid "Stop the selected service"
+#~ msgstr "停止選取的服務"
 
 #~ msgid "xinetd service"
 #~ msgstr "xinetd 服務"
@@ -385,20 +418,11 @@ msgstr "檢視(_V)"
 #~ msgid "Cancel"
 #~ msgstr "取消"
 
-#~ msgid "Quit"
-#~ msgstr "離開"
-
 #~ msgid "Revert to the last saved change"
 #~ msgstr "返回到上一次儲存的更改"
 
-#~ msgid "Save"
-#~ msgstr "儲存"
-
 #~ msgid "Save the changes you have made"
 #~ msgstr "儲存您做的更改"
-
-#~ msgid "Help is not available."
-#~ msgstr "輔助說明無法使用。"
 
 #~ msgid "Directory "
 #~ msgstr "目錄 "

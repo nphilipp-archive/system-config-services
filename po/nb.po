@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
-"POT-Creation-Date: 2004-02-05 18:31-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-03-16 16:00-0500\n"
 "PO-Revision-Date: 2003-12-18 00:33+0100\n"
 "Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
@@ -59,7 +60,7 @@ msgstr ""
 #. #
 #. # I18N
 #. #
-#: src/serviceconf.py:76
+#: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Er du sikker på at du ønsker å slette %s?"
@@ -68,26 +69,52 @@ msgstr "Er du sikker på at du ønsker å slette %s?"
 #. map the event signals to specific methods
 #. main window
 #. menu items
-#. buttons
 #. toolbars
-#. self.tbrSave.set_style(GTK.TOOLBAR_ICONS)
-#. self.tbrSave.set_button_relief(GTK.RELIEF_NORMAL)
+#: src/serviceconf.py:181 src/serviceconf.glade.h:18
+msgid "Start"
+msgstr "Start"
+
+#: src/serviceconf.py:185 src/serviceconf.glade.h:20
+msgid "Stop"
+msgstr "Stopp"
+
+#: src/serviceconf.py:189 src/serviceconf.glade.h:9
+msgid "Restart"
+msgstr "Start på nytt"
+
+#: src/serviceconf.py:195
+msgid "_Save"
+msgstr ""
+
+#: src/serviceconf.py:195
+msgid "Save"
+msgstr ""
+
+#: src/serviceconf.py:200
+msgid "_Revert"
+msgstr ""
+
+#: src/serviceconf.py:200
+#, fuzzy
+msgid "Revert"
+msgstr "Start på nytt"
+
 #. the textbox
 #. the statusbox
 #. the CheckCList which will display whether the service
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:222
+#: src/serviceconf.py:234
 msgid "Currently Running in Runlevel: "
 msgstr "Aktiv runlevel: "
 
 #. This is a sentry
-#: src/serviceconf.py:233
+#: src/serviceconf.py:245
 msgid "Start at Boot"
 msgstr "Aktiv ved oppstart"
 
-#: src/serviceconf.py:234
+#: src/serviceconf.py:246
 msgid "Services"
 msgstr "Tjenester"
 
@@ -102,8 +129,8 @@ msgstr "Tjenester"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:289 src/serviceconf.py:395 src/serviceconf.py:412
-#: src/serviceconf.py:431
+#: src/serviceconf.py:301 src/serviceconf.py:407 src/serviceconf.py:424
+#: src/serviceconf.py:443
 msgid "Editing Runlevel: "
 msgstr "Redigerer runlevel: "
 
@@ -111,7 +138,7 @@ msgstr "Redigerer runlevel: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:332
+#: src/serviceconf.py:344
 msgid "Unknown"
 msgstr "Ukjent"
 
@@ -119,29 +146,29 @@ msgstr "Ukjent"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:460
-msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Opphavsrett © 2002 Red Hat, Inc. Alle rettigheter reserveres."
-
-#: src/serviceconf.py:461
+#: src/serviceconf.py:472
 msgid ""
-"This software may be freely redistributed under the terms of the GPL.\n"
-"Please report all bugs you find at the Red Hat bug tracking system:\n"
-"http://bugzilla.redhat.com"
+"System Services Configuration Tool VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 msgstr ""
-"Dette programmet kan fritt redistribueres under betingelsene gitt i GPL.\n"
-"Vennligst rapporter alle feil du finner i Red Hats feildatabase:\n"
-"https://bugzilla.redhat.com/bugzilla/"
 
-#: src/serviceconf.py:465
-msgid "translator_credits"
-msgstr "Kjartan Maraas <kmaraas@gnome.org>"
+#: src/serviceconf.py:476
+msgid "About"
+msgstr ""
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#. gnome.help_display_uri(page)
+#: src/serviceconf.py:505
+msgid "Help is not available."
+msgstr ""
+
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
 #. The menu and popup menu items for "Start", "Stop", and "Restart" are
@@ -154,7 +181,7 @@ msgstr "Kjartan Maraas <kmaraas@gnome.org>"
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:609
+#: src/serviceconf.py:649
 msgid "You must run system-config-services as root."
 msgstr "Du må kjøre system-config-services som root."
 
@@ -268,67 +295,43 @@ msgstr "Redigerer kjøringsnivå:"
 msgid "None"
 msgstr "Ingen"
 
-#: src/serviceconf.glade.h:9
-msgid "Restart"
-msgstr "Start på nytt"
-
 #: src/serviceconf.glade.h:10
-msgid "Restart the selected service"
-msgstr "Start valgt tjeneste på nytt"
-
-#: src/serviceconf.glade.h:11
 msgid "Revert To _Last Save"
 msgstr "Gå ti_lbake til forrige lagring"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "Kjøringsnivå _3"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "Kjøringsnivå _4"
 
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "Kjøringsnivå _5"
 
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "S_topp tjenesten"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "Lagre dialog"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "Tjenestekonfigurasjon"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "Navn på tjeneste: "
 
 #: src/serviceconf.glade.h:19
-msgid "Start"
-msgstr "Start"
-
-#: src/serviceconf.glade.h:20
-msgid "Start the selected service"
-msgstr "Start valgt tjeneste"
-
-#: src/serviceconf.glade.h:21
 msgid "Status"
 msgstr "Status"
 
-#: src/serviceconf.glade.h:22
-msgid "Stop"
-msgstr "Stopp"
-
-#: src/serviceconf.glade.h:23
-msgid "Stop the selected service"
-msgstr "Stopp valgt tjeneste"
-
-#: src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:21
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -336,42 +339,70 @@ msgstr ""
 "Du har gjort endringer i aktivt kjøringsnivå.\n"
 "Vil du lagre endringene?"
 
-#: src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:23
 msgid "_Actions"
 msgstr "H_andlinger"
 
-#: src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:24
 msgid "_Contents"
 msgstr "_Innhold"
 
-#: src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:25
 msgid "_Edit Runlevel"
 msgstr "Redigerer kjøringsnivå"
 
-#: src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:26
 msgid "_File"
 msgstr "_Fil"
 
-#: src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:27
 msgid "_Help"
 msgstr "_Hjelp"
 
-#: src/serviceconf.glade.h:31
+#: src/serviceconf.glade.h:28
+msgid "_Quit"
+msgstr ""
+
+#: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
 msgstr "_Oppdater tjenestelisten"
 
-#: src/serviceconf.glade.h:32
+#: src/serviceconf.glade.h:30
 msgid "_Restart Service"
 msgstr "Sta_rt tjenesten på nytt"
 
-#: src/serviceconf.glade.h:33
+#: src/serviceconf.glade.h:31
 msgid "_Save Changes"
 msgstr "_Lagre endringer"
 
-#: src/serviceconf.glade.h:34
+#: src/serviceconf.glade.h:32
 msgid "_Start Service"
 msgstr "_Start tjenester"
 
-#: src/serviceconf.glade.h:35
+#: src/serviceconf.glade.h:33
 msgid "_View"
 msgstr "_Vis"
+
+#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
+#~ msgstr "Opphavsrett © 2002 Red Hat, Inc. Alle rettigheter reserveres."
+
+#~ msgid ""
+#~ "This software may be freely redistributed under the terms of the GPL.\n"
+#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
+#~ "http://bugzilla.redhat.com"
+#~ msgstr ""
+#~ "Dette programmet kan fritt redistribueres under betingelsene gitt i GPL.\n"
+#~ "Vennligst rapporter alle feil du finner i Red Hats feildatabase:\n"
+#~ "https://bugzilla.redhat.com/bugzilla/"
+
+#~ msgid "translator_credits"
+#~ msgstr "Kjartan Maraas <kmaraas@gnome.org>"
+
+#~ msgid "Restart the selected service"
+#~ msgstr "Start valgt tjeneste på nytt"
+
+#~ msgid "Start the selected service"
+#~ msgstr "Start valgt tjeneste"
+
+#~ msgid "Stop the selected service"
+#~ msgstr "Stopp valgt tjeneste"

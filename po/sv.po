@@ -1,12 +1,13 @@
 # Swedish messages for redhat-config-services.
 # Copyright (C) 2001, 2003, 2004 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.50 2004/03/10 22:48:08 menthos Exp $
+# $Id: sv.po,v 1.51 2004/03/16 21:15:25 bfox Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
-"POT-Creation-Date: 2004-02-05 18:31-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-03-16 16:00-0500\n"
 "PO-Revision-Date: 2004-03-10 23:52+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -60,7 +61,7 @@ msgstr ""
 #. #
 #. # I18N
 #. #
-#: src/serviceconf.py:76
+#: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Är du säker på att du vill ta bort %s?"
@@ -69,26 +70,53 @@ msgstr "Är du säker på att du vill ta bort %s?"
 #. map the event signals to specific methods
 #. main window
 #. menu items
-#. buttons
 #. toolbars
-#. self.tbrSave.set_style(GTK.TOOLBAR_ICONS)
-#. self.tbrSave.set_button_relief(GTK.RELIEF_NORMAL)
+#: src/serviceconf.py:181 src/serviceconf.glade.h:18
+msgid "Start"
+msgstr "Starta"
+
+#: src/serviceconf.py:185 src/serviceconf.glade.h:20
+msgid "Stop"
+msgstr "Stoppa"
+
+#: src/serviceconf.py:189 src/serviceconf.glade.h:9
+msgid "Restart"
+msgstr "Starta om"
+
+#: src/serviceconf.py:195
+#, fuzzy
+msgid "_Save"
+msgstr "Spara"
+
+#: src/serviceconf.py:195
+msgid "Save"
+msgstr "Spara"
+
+#: src/serviceconf.py:200
+msgid "_Revert"
+msgstr ""
+
+#: src/serviceconf.py:200
+#, fuzzy
+msgid "Revert"
+msgstr "Starta om"
+
 #. the textbox
 #. the statusbox
 #. the CheckCList which will display whether the service
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:222
+#: src/serviceconf.py:234
 msgid "Currently Running in Runlevel: "
 msgstr "Kör för närvarande i körnivå: "
 
 #. This is a sentry
-#: src/serviceconf.py:233
+#: src/serviceconf.py:245
 msgid "Start at Boot"
 msgstr "Starta vid uppstart"
 
-#: src/serviceconf.py:234
+#: src/serviceconf.py:246
 msgid "Services"
 msgstr "Tjänster"
 
@@ -103,8 +131,8 @@ msgstr "Tjänster"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:289 src/serviceconf.py:395 src/serviceconf.py:412
-#: src/serviceconf.py:431
+#: src/serviceconf.py:301 src/serviceconf.py:407 src/serviceconf.py:424
+#: src/serviceconf.py:443
 msgid "Editing Runlevel: "
 msgstr "Redigerar körnivå: "
 
@@ -112,7 +140,7 @@ msgstr "Redigerar körnivå: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:332
+#: src/serviceconf.py:344
 msgid "Unknown"
 msgstr "Okänd"
 
@@ -120,31 +148,29 @@ msgstr "Okänd"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:460
-msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Copyright © 2002 Red Hat, Inc. Alla rättigheter förbehållna."
-
-#: src/serviceconf.py:461
+#: src/serviceconf.py:472
 msgid ""
-"This software may be freely redistributed under the terms of the GPL.\n"
-"Please report all bugs you find at the Red Hat bug tracking system:\n"
-"http://bugzilla.redhat.com"
+"System Services Configuration Tool VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 msgstr ""
-"Denna programvara kan distribueras fritt under de villkor som finns i GPL.\n"
-"Rapportera alla fel du hittar i Red Hats felrapporteringssystem:\n"
-"http://bugzilla.redhat.com"
 
-#: src/serviceconf.py:465
-msgid "translator_credits"
+#: src/serviceconf.py:476
+msgid "About"
 msgstr ""
-"Christian Rose\n"
-"Skicka synpunkter på översättningen till sv@li.org"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#. gnome.help_display_uri(page)
+#: src/serviceconf.py:505
+msgid "Help is not available."
+msgstr "Hjälp är inte tillgänglig."
+
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
 #. The menu and popup menu items for "Start", "Stop", and "Restart" are
@@ -157,7 +183,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:609
+#: src/serviceconf.py:649
 msgid "You must run system-config-services as root."
 msgstr "Du måste köra system-config-services som root."
 
@@ -271,67 +297,43 @@ msgstr "Redigerar körnivå:"
 msgid "None"
 msgstr "Ingen"
 
-#: src/serviceconf.glade.h:9
-msgid "Restart"
-msgstr "Starta om"
-
 #: src/serviceconf.glade.h:10
-msgid "Restart the selected service"
-msgstr "Starta om den markerade tjänsten"
-
-#: src/serviceconf.glade.h:11
 msgid "Revert To _Last Save"
 msgstr "Återgå till _senast sparade"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "Körnivå _3"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "Körnivå _4"
 
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "Körnivå _5"
 
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "S_toppa tjänst"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "Spara dialog"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "Konfiguration av tjänst"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "Namn på tjänst: "
 
 #: src/serviceconf.glade.h:19
-msgid "Start"
-msgstr "Starta"
-
-#: src/serviceconf.glade.h:20
-msgid "Start the selected service"
-msgstr "Starta den markerade tjänsten"
-
-#: src/serviceconf.glade.h:21
 msgid "Status"
 msgstr "Status"
 
-#: src/serviceconf.glade.h:22
-msgid "Stop"
-msgstr "Stoppa"
-
-#: src/serviceconf.glade.h:23
-msgid "Stop the selected service"
-msgstr "Stoppa den markerade tjänsten"
-
-#: src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:21
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -339,45 +341,77 @@ msgstr ""
 "Du har gjort ändringar i aktuell körnivå.\n"
 "Vill du spara ändringarna?"
 
-#: src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:23
 msgid "_Actions"
 msgstr "_Åtgärder"
 
-#: src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:24
 msgid "_Contents"
 msgstr "_Innehåll"
 
-#: src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:25
 msgid "_Edit Runlevel"
 msgstr "_Redigera körnivå"
 
-#: src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:26
 msgid "_File"
 msgstr "_Arkiv"
 
-#: src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:27
 msgid "_Help"
 msgstr "_Hjälp"
 
-#: src/serviceconf.glade.h:31
+#: src/serviceconf.glade.h:28
+#, fuzzy
+msgid "_Quit"
+msgstr "Avsluta"
+
+#: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
 msgstr "_Uppdatera tjänstelistan"
 
-#: src/serviceconf.glade.h:32
+#: src/serviceconf.glade.h:30
 msgid "_Restart Service"
 msgstr "Starta _om tjänst"
 
-#: src/serviceconf.glade.h:33
+#: src/serviceconf.glade.h:31
 msgid "_Save Changes"
 msgstr "_Spara ändringar"
 
-#: src/serviceconf.glade.h:34
+#: src/serviceconf.glade.h:32
 msgid "_Start Service"
 msgstr "_Starta tjänst"
 
-#: src/serviceconf.glade.h:35
+#: src/serviceconf.glade.h:33
 msgid "_View"
 msgstr "_Visa"
+
+#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
+#~ msgstr "Copyright © 2002 Red Hat, Inc. Alla rättigheter förbehållna."
+
+#~ msgid ""
+#~ "This software may be freely redistributed under the terms of the GPL.\n"
+#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
+#~ "http://bugzilla.redhat.com"
+#~ msgstr ""
+#~ "Denna programvara kan distribueras fritt under de villkor som finns i "
+#~ "GPL.\n"
+#~ "Rapportera alla fel du hittar i Red Hats felrapporteringssystem:\n"
+#~ "http://bugzilla.redhat.com"
+
+#~ msgid "translator_credits"
+#~ msgstr ""
+#~ "Christian Rose\n"
+#~ "Skicka synpunkter på översättningen till sv@li.org"
+
+#~ msgid "Restart the selected service"
+#~ msgstr "Starta om den markerade tjänsten"
+
+#~ msgid "Start the selected service"
+#~ msgstr "Starta den markerade tjänsten"
+
+#~ msgid "Stop the selected service"
+#~ msgstr "Stoppa den markerade tjänsten"
 
 #~ msgid "Are you sure you want to delete %s?"
 #~ msgstr "Är du säker på att du vill ta bort %s?"
@@ -394,20 +428,11 @@ msgstr "_Visa"
 #~ msgid "Cancel"
 #~ msgstr "Avbryt"
 
-#~ msgid "Quit"
-#~ msgstr "Avsluta"
-
 #~ msgid "Revert to the last saved change"
 #~ msgstr "Återgå till den senast sparade ändringen"
 
-#~ msgid "Save"
-#~ msgstr "Spara"
-
 #~ msgid "Save the changes you have made"
 #~ msgstr "Spara de ändringar du har gjort"
-
-#~ msgid "Help is not available."
-#~ msgstr "Hjälp är inte tillgänglig."
 
 #~ msgid "Directory "
 #~ msgstr "Katalog "

@@ -4,7 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
-"POT-Creation-Date: 2004-02-05 18:31-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-03-16 16:00-0500\n"
 "PO-Revision-Date: 2003-12-05 09:29+0000\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
@@ -58,7 +59,7 @@ msgstr ""
 #. #
 #. # I18N
 #. #
-#: src/serviceconf.py:76
+#: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Tem a certeza que deseja apagar o %s?"
@@ -67,26 +68,52 @@ msgstr "Tem a certeza que deseja apagar o %s?"
 #. map the event signals to specific methods
 #. main window
 #. menu items
-#. buttons
 #. toolbars
-#. self.tbrSave.set_style(GTK.TOOLBAR_ICONS)
-#. self.tbrSave.set_button_relief(GTK.RELIEF_NORMAL)
+#: src/serviceconf.py:181 src/serviceconf.glade.h:18
+msgid "Start"
+msgstr "Iniciar"
+
+#: src/serviceconf.py:185 src/serviceconf.glade.h:20
+msgid "Stop"
+msgstr "Parar"
+
+#: src/serviceconf.py:189 src/serviceconf.glade.h:9
+msgid "Restart"
+msgstr "Reiniciar"
+
+#: src/serviceconf.py:195
+msgid "_Save"
+msgstr ""
+
+#: src/serviceconf.py:195
+msgid "Save"
+msgstr ""
+
+#: src/serviceconf.py:200
+msgid "_Revert"
+msgstr ""
+
+#: src/serviceconf.py:200
+#, fuzzy
+msgid "Revert"
+msgstr "Reiniciar"
+
 #. the textbox
 #. the statusbox
 #. the CheckCList which will display whether the service
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:222
+#: src/serviceconf.py:234
 msgid "Currently Running in Runlevel: "
 msgstr "Actualmente a Executar-se no Nível: "
 
 #. This is a sentry
-#: src/serviceconf.py:233
+#: src/serviceconf.py:245
 msgid "Start at Boot"
 msgstr "Iniciar no Arranque"
 
-#: src/serviceconf.py:234
+#: src/serviceconf.py:246
 msgid "Services"
 msgstr "Serviços"
 
@@ -101,8 +128,8 @@ msgstr "Serviços"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:289 src/serviceconf.py:395 src/serviceconf.py:412
-#: src/serviceconf.py:431
+#: src/serviceconf.py:301 src/serviceconf.py:407 src/serviceconf.py:424
+#: src/serviceconf.py:443
 msgid "Editing Runlevel: "
 msgstr "Editar Nível de Execução: "
 
@@ -110,7 +137,7 @@ msgstr "Editar Nível de Execução: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:332
+#: src/serviceconf.py:344
 msgid "Unknown"
 msgstr "Desconhecido"
 
@@ -118,30 +145,29 @@ msgstr "Desconhecido"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:460
-msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Copyright (c) 2002 Red Hat, Inc. Todos os direitos reservados."
-
-#: src/serviceconf.py:461
+#: src/serviceconf.py:472
 msgid ""
-"This software may be freely redistributed under the terms of the GPL.\n"
-"Please report all bugs you find at the Red Hat bug tracking system:\n"
-"http://bugzilla.redhat.com"
+"System Services Configuration Tool VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 msgstr ""
-"Este software pode ser redistribuído livremente nos termos da GPL.\n"
-"Por favor comunique todos os erros encontrados no sistema de gestão\n"
-"de erros da Red Hat:\n"
-"http://bugzilla.redhat.com"
 
-#: src/serviceconf.py:465
-msgid "translator_credits"
-msgstr "Pedro Morais <morais@kde.org>, José Nuno Pires <jncp@netcabo.pt>"
+#: src/serviceconf.py:476
+msgid "About"
+msgstr ""
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#. gnome.help_display_uri(page)
+#: src/serviceconf.py:505
+msgid "Help is not available."
+msgstr ""
+
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
 #. The menu and popup menu items for "Start", "Stop", and "Restart" are
@@ -154,7 +180,7 @@ msgstr "Pedro Morais <morais@kde.org>, José Nuno Pires <jncp@netcabo.pt>"
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:609
+#: src/serviceconf.py:649
 msgid "You must run system-config-services as root."
 msgstr "Deve correr o system-config-services como root."
 
@@ -268,67 +294,43 @@ msgstr "A Editar Nível de Execução:"
 msgid "None"
 msgstr "Nenhum"
 
-#: src/serviceconf.glade.h:9
-msgid "Restart"
-msgstr "Reiniciar"
-
 #: src/serviceconf.glade.h:10
-msgid "Restart the selected service"
-msgstr "Reiniciar o servidor seleccionado"
-
-#: src/serviceconf.glade.h:11
 msgid "Revert To _Last Save"
 msgstr "Reverter para a Ú_ltima Gravação"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "Nível de Execução _3"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "Nível de Execução _4"
 
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "Nível de Execução _4"
 
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "_Parar Serviço"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "Diálogo de Gravação"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "Configuração do Serviço"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "Nome do Serviço: "
 
 #: src/serviceconf.glade.h:19
-msgid "Start"
-msgstr "Iniciar"
-
-#: src/serviceconf.glade.h:20
-msgid "Start the selected service"
-msgstr "Iniciar o serviço seleccionado"
-
-#: src/serviceconf.glade.h:21
 msgid "Status"
 msgstr "Estado"
 
-#: src/serviceconf.glade.h:22
-msgid "Stop"
-msgstr "Parar"
-
-#: src/serviceconf.glade.h:23
-msgid "Stop the selected service"
-msgstr "Parar o serviço seleccionado"
-
-#: src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:21
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -336,42 +338,71 @@ msgstr ""
 "O utilizador efectuou alterações ao 'runlevel' actual.\n"
 "Deseja gravar as modificações?"
 
-#: src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:23
 msgid "_Actions"
 msgstr "_Acções"
 
-#: src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:24
 msgid "_Contents"
 msgstr "_Conteúdo"
 
-#: src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:25
 msgid "_Edit Runlevel"
 msgstr "_Editar Nível de Execução"
 
-#: src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:26
 msgid "_File"
 msgstr "_Ficheiro"
 
-#: src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:27
 msgid "_Help"
 msgstr "_Ajuda"
 
-#: src/serviceconf.glade.h:31
+#: src/serviceconf.glade.h:28
+msgid "_Quit"
+msgstr ""
+
+#: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
 msgstr "Actualiza_r a Lista de Serviços"
 
-#: src/serviceconf.glade.h:32
+#: src/serviceconf.glade.h:30
 msgid "_Restart Service"
 msgstr "_Reiniciar Serviço"
 
-#: src/serviceconf.glade.h:33
+#: src/serviceconf.glade.h:31
 msgid "_Save Changes"
 msgstr "Gravar Alteraçõe_s"
 
-#: src/serviceconf.glade.h:34
+#: src/serviceconf.glade.h:32
 msgid "_Start Service"
 msgstr "Iniciar _Serviço"
 
-#: src/serviceconf.glade.h:35
+#: src/serviceconf.glade.h:33
 msgid "_View"
 msgstr "_Ver"
+
+#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
+#~ msgstr "Copyright (c) 2002 Red Hat, Inc. Todos os direitos reservados."
+
+#~ msgid ""
+#~ "This software may be freely redistributed under the terms of the GPL.\n"
+#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
+#~ "http://bugzilla.redhat.com"
+#~ msgstr ""
+#~ "Este software pode ser redistribuído livremente nos termos da GPL.\n"
+#~ "Por favor comunique todos os erros encontrados no sistema de gestão\n"
+#~ "de erros da Red Hat:\n"
+#~ "http://bugzilla.redhat.com"
+
+#~ msgid "translator_credits"
+#~ msgstr "Pedro Morais <morais@kde.org>, José Nuno Pires <jncp@netcabo.pt>"
+
+#~ msgid "Restart the selected service"
+#~ msgstr "Reiniciar o servidor seleccionado"
+
+#~ msgid "Start the selected service"
+#~ msgstr "Iniciar o serviço seleccionado"
+
+#~ msgid "Stop the selected service"
+#~ msgstr "Parar o serviço seleccionado"

@@ -9,13 +9,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: service config\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-02 15:33-0500\n"
+"POT-Creation-Date: 2004-03-16 16:00-0500\n"
 "PO-Revision-Date: 2004-03-08 18:54+0100\n"
 "Last-Translator: Federico Bernardi <fbernardi@bbros.it>\n"
 "Language-Team: Italian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-1\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -72,26 +72,53 @@ msgstr "Sei sicuro di voler eliminare %s?"
 #. map the event signals to specific methods
 #. main window
 #. menu items
-#. buttons
 #. toolbars
-#. self.tbrSave.set_style(GTK.TOOLBAR_ICONS)
-#. self.tbrSave.set_button_relief(GTK.RELIEF_NORMAL)
+#: src/serviceconf.py:181 src/serviceconf.glade.h:18
+msgid "Start"
+msgstr "Avviare"
+
+#: src/serviceconf.py:185 src/serviceconf.glade.h:20
+msgid "Stop"
+msgstr "Arrestare"
+
+#: src/serviceconf.py:189 src/serviceconf.glade.h:9
+msgid "Restart"
+msgstr "Riavviare"
+
+#: src/serviceconf.py:195
+#, fuzzy
+msgid "_Save"
+msgstr "Salva"
+
+#: src/serviceconf.py:195
+msgid "Save"
+msgstr "Salva"
+
+#: src/serviceconf.py:200
+msgid "_Revert"
+msgstr ""
+
+#: src/serviceconf.py:200
+#, fuzzy
+msgid "Revert"
+msgstr "Riavviare"
+
 #. the textbox
 #. the statusbox
 #. the CheckCList which will display whether the service
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:224
+#: src/serviceconf.py:234
 msgid "Currently Running in Runlevel: "
 msgstr "Attualmente in esecuzione nel runlevel: "
 
 #. This is a sentry
-#: src/serviceconf.py:235
+#: src/serviceconf.py:245
 msgid "Start at Boot"
 msgstr "Abilitare all'avvio"
 
-#: src/serviceconf.py:236
+#: src/serviceconf.py:246
 msgid "Services"
 msgstr "Servizi"
 
@@ -106,8 +133,8 @@ msgstr "Servizi"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:291 src/serviceconf.py:397 src/serviceconf.py:414
-#: src/serviceconf.py:433
+#: src/serviceconf.py:301 src/serviceconf.py:407 src/serviceconf.py:424
+#: src/serviceconf.py:443
 msgid "Editing Runlevel: "
 msgstr "Modifica del runlevel: "
 
@@ -115,7 +142,7 @@ msgstr "Modifica del runlevel: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:334
+#: src/serviceconf.py:344
 msgid "Unknown"
 msgstr "Sconosciuto"
 
@@ -123,7 +150,7 @@ msgstr "Sconosciuto"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:462
+#: src/serviceconf.py:472
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -141,7 +168,7 @@ msgstr ""
 "·Brent·Fox·<bfox@redhat.com>\n"
 "·"
 
-#: src/serviceconf.py:466
+#: src/serviceconf.py:476
 msgid "About"
 msgstr "Informazioni"
 
@@ -149,7 +176,7 @@ msgstr "Informazioni"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:495
+#: src/serviceconf.py:505
 msgid "Help is not available."
 msgstr "La guida non è disponibile."
 
@@ -165,7 +192,7 @@ msgstr "La guida non è disponibile."
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:639
+#: src/serviceconf.py:649
 msgid "You must run system-config-services as root."
 msgstr "Devi essere root per eseguire system-config-service."
 
@@ -279,67 +306,43 @@ msgstr "Modifica del runlevel:"
 msgid "None"
 msgstr "Nessuno"
 
-#: src/serviceconf.glade.h:9
-msgid "Restart"
-msgstr "Riavviare"
-
 #: src/serviceconf.glade.h:10
-msgid "Restart the selected service"
-msgstr "Riavviare il servizio selezionato"
-
-#: src/serviceconf.glade.h:11
 msgid "Revert To _Last Save"
 msgstr "_Ritorna all'ultimo salvataggio"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "Runlevel _3"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "Runlevel _4"
 
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "Runlevel _5"
 
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "A_rresta servizio"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "Salvare il programma Dialog"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "Configurazione del servizio"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "Nome Servizio: "
 
 #: src/serviceconf.glade.h:19
-msgid "Start"
-msgstr "Avviare"
-
-#: src/serviceconf.glade.h:20
-msgid "Start the selected service"
-msgstr "Avviare il servizio selezionato"
-
-#: src/serviceconf.glade.h:21
 msgid "Status"
 msgstr "Stato"
 
-#: src/serviceconf.glade.h:22
-msgid "Stop"
-msgstr "Arrestare"
-
-#: src/serviceconf.glade.h:23
-msgid "Stop the selected service"
-msgstr "Arrestare il servizio selezionato"
-
-#: src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:21
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -347,45 +350,59 @@ msgstr ""
 "Sono state apportate modifiche al runlevel corrente.\n"
 "Salvare le modifiche?"
 
-#: src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:23
 msgid "_Actions"
 msgstr "_Azioni"
 
-#: src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:24
 msgid "_Contents"
 msgstr "_Contenuto"
 
-#: src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:25
 msgid "_Edit Runlevel"
 msgstr "_Modifica runlevel"
 
-#: src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:26
 msgid "_File"
 msgstr "_File"
 
-#: src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:27
 msgid "_Help"
 msgstr "_Help"
 
-#: src/serviceconf.glade.h:31
+#: src/serviceconf.glade.h:28
+#, fuzzy
+msgid "_Quit"
+msgstr "Abbandona"
+
+#: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
 msgstr "_Aggiorna elenco servizi"
 
-#: src/serviceconf.glade.h:32
+#: src/serviceconf.glade.h:30
 msgid "_Restart Service"
 msgstr "_Riavvia servizio"
 
-#: src/serviceconf.glade.h:33
+#: src/serviceconf.glade.h:31
 msgid "_Save Changes"
 msgstr "_Salva modifiche"
 
-#: src/serviceconf.glade.h:34
+#: src/serviceconf.glade.h:32
 msgid "_Start Service"
 msgstr "_Avvia servizio"
 
-#: src/serviceconf.glade.h:35
+#: src/serviceconf.glade.h:33
 msgid "_View"
 msgstr "_Vista"
+
+#~ msgid "Restart the selected service"
+#~ msgstr "Riavviare il servizio selezionato"
+
+#~ msgid "Start the selected service"
+#~ msgstr "Avviare il servizio selezionato"
+
+#~ msgid "Stop the selected service"
+#~ msgstr "Arrestare il servizio selezionato"
 
 #~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 #~ msgstr "Copyright (C) 2002 Red Hat, Inc. Tutti i diritti riservati."
@@ -409,14 +426,8 @@ msgstr "_Vista"
 #~ msgid "Cancel"
 #~ msgstr "Annulla"
 
-#~ msgid "Quit"
-#~ msgstr "Abbandona"
-
 #~ msgid "Revert to the last saved change"
 #~ msgstr "Tornare all'ultima modifica salvata"
-
-#~ msgid "Save"
-#~ msgstr "Salva"
 
 #~ msgid "Save the changes you have made"
 #~ msgstr "Salvare le modifiche effettuate"
