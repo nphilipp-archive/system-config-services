@@ -1,4 +1,24 @@
+2003-01-22  bgroh  <bgroh@redhat.com>
+
+	* po/de.po: first round of _-fixes
+
+2003-01-17  mitr  <mitr@redhat.com>
+
+	* po/cs.po:
+	Recreate Czech translation. I commited r-c-samba translation last time :-(
+
+2003-01-17  ra  <ra@redhat.com>
+
+	* po/is.po: *** empty log message ***
+
+2003-01-15  kmaraas  <kmaraas@redhat.com>
+
+	* po/no.po: Update
+
 2003-01-14  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po:
+	release 0.8.3
 
 	* redhat-config-services.spec.in: update docs
 
