@@ -1,4 +1,7 @@
-2002-07-24  Daniel J Walsh  <dwalsh@localhost.localdomain>
+2002-07-24  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* /usr/local/CVS/redhat-config-services/ChangeLog, /usr/local/CVS/redhat-config-services/src/Makefile.am:
+	release 0.8.1
 
 	* /usr/local/CVS/redhat-config-services/redhat-config-services.sh, /usr/local/CVS/redhat-config-services/src/redhat-config-services.sh:
 	move from toplevel

@@ -37,6 +37,7 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc COPYING
 %doc docs/html/*
+%{_sbindir}/*
 %{_bindir}/*
 %{_datadir}/applications/redhat-config-services.desktop
 %{_datadir}/redhat-config-services
