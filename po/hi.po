@@ -1,19 +1,20 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# translation of hi.po to Hindi
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Rajesh Ranjan <rranjan@redhat.com>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hi\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-04-06 14:50-0400\n"
-"PO-Revision-Date: 2003-10-14 04:39+0530\n"
-"Last-Translator: Jatin Nansi <jnansi@redhat.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2004-09-01 14:00+0530\n"
+"Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
+"Language-Team: Hindi <Indlinux-hindi@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3.1\n"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -85,18 +86,17 @@ msgstr "पुनःआरंभ करें"
 
 #: src/serviceconf.py:201
 msgid "_Save"
-msgstr ""
+msgstr "संग्रहित करें (_S)"
 
 #: src/serviceconf.py:201
 msgid "Save"
-msgstr ""
+msgstr "संग्रहित करें"
 
 #: src/serviceconf.py:206
 msgid "_Revert"
-msgstr ""
+msgstr "पुनःआरंभ करें (_R)"
 
 #: src/serviceconf.py:206
-#, fuzzy
 msgid "Revert"
 msgstr "पुनःआरंभ करें"
 
@@ -157,10 +157,17 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"सिस्टम सेवा विन्यास उपकरण संस्करण\n"
+" कापीराइट (c) 2002-2004 Red Hat, Inc.\n"
+" टिम पावर्स <timp@redhat>\n"
+" बिल नोटिंघम <notting@redhat>\n"
+" डैन वाल्श <dwalsh@redhat.com>\n"
+" ब्रेंट फाक्स <bfox@redhat.com>\n"
+" "
 
 #: src/serviceconf.py:482
 msgid "About"
-msgstr ""
+msgstr "गिर्द"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -168,7 +175,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:511
 msgid "Help is not available."
-msgstr ""
+msgstr "सहायता उपलब्ध नहीं है."
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -183,7 +190,6 @@ msgstr ""
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:655
-#, fuzzy
 msgid "You must run system-config-services as root."
 msgstr "आपको system-config-services को root जैसा चलाना है।"
 
@@ -363,7 +369,7 @@ msgstr "सहायता"
 
 #: src/serviceconf.glade.h:28
 msgid "_Quit"
-msgstr ""
+msgstr "त्यागें (_Q)"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
@@ -385,24 +391,3 @@ msgstr "सेवा को आरंभ करें"
 msgid "_View"
 msgstr "देखें"
 
-#~ msgid "Restart the selected service"
-#~ msgstr "चयनित सेवा को पुनःप्रारंभ करें"
-
-#~ msgid "Start the selected service"
-#~ msgstr "चयनित सेवा आरंभ करें"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "चयनित सेवा को रोकें"
-
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "प्रतिलिपि अधिकार (c) २००२ रेड हेट,निगमन। सभी अधिकार सुरक्षित है।"
-
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "GPL की शर्तों के अनुसार यह प्रक्रिया सामग्री बिल्कुल मुफ्त में पुनःवितरित की जा सकती "
-#~ "है।\n"
-#~ "कृपया आपको मिलने वाले सभी दोषों की सूचना, रेड हैट दोष खोज तंञ पर दें:\n"
-#~ "http://bugzilla.redhat.com"
