@@ -1,12 +1,12 @@
 # Swedish messages for serviceconf.
 # Copyright (C) 2001 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.11 2002/08/20 19:31:53 dwalsh Exp $
+# $Id: sv.po,v 1.12 2002/08/26 20:33:10 dwalsh Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2002-08-20 15:37-0400\n"
+"POT-Creation-Date: 2002-08-26 16:34-0400\n"
 "PO-Revision-Date: 2002-08-09 23:55+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -68,20 +68,24 @@ msgstr ""
 #. self.tbrSave.set_style(GTK.TOOLBAR_ICONS)
 #. self.tbrSave.set_button_relief(GTK.RELIEF_NORMAL)
 #. the textbox
+#. the statusbox
+#. self.txtStatus = self.xml.get_widget("StatusView")
+#. self.txtStatusBuffer = gtk.TextBuffer(None)
+#. self.txtStatus.set_buffer(self.txtStatusBuffer)
 #. the CheckCList which will display whether the service
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:169
+#: src/serviceconf.py:179
 msgid "Currently Running in Runlevel: "
 msgstr "Kör för närvarande i körnivå: "
 
 #. This is a sentry
-#: src/serviceconf.py:180
+#: src/serviceconf.py:190
 msgid "Start at Boot"
 msgstr "Starta vid uppstart"
 
-#: src/serviceconf.py:181
+#: src/serviceconf.py:191
 msgid "Services"
 msgstr "Tjänster"
 
@@ -96,12 +100,12 @@ msgstr "Tjänster"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:228 src/serviceconf.py:310 src/serviceconf.py:319
-#: src/serviceconf.py:343
+#: src/serviceconf.py:245 src/serviceconf.py:345 src/serviceconf.py:354
+#: src/serviceconf.py:378
 msgid "Editing Runlevel: "
 msgstr "Redigerar körnivå: "
 
-#: src/serviceconf.py:325
+#: src/serviceconf.py:360
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -113,11 +117,11 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:355
+#: src/serviceconf.py:390
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright © 2002 Red Hat, Inc. Alla rättigheter förbehållna."
 
-#: src/serviceconf.py:356
+#: src/serviceconf.py:391
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -144,7 +148,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:488
+#: src/serviceconf.py:524
 msgid "You must run redhat-config-services as root."
 msgstr "Du måste köra redhat-config-services som root."
 
@@ -181,7 +185,7 @@ msgstr "Du måste köra redhat-config-services som root."
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:271
+#: src/servicemethods.py:287
 msgid ""
 "\n"
 "\n"
@@ -199,30 +203,30 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:317
+#: src/servicemethods.py:333
 msgid "xinetd failed to reload for "
 msgstr "xinetd misslyckades att läsa om för "
 
-#: src/servicemethods.py:318
+#: src/servicemethods.py:334
 msgid ". The error was: "
 msgstr ". Felet var: "
 
-#: src/servicemethods.py:320
+#: src/servicemethods.py:336
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd läste om %s utan problem"
 
-#: src/servicemethods.py:323
+#: src/servicemethods.py:339
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd måste vara aktiverat för att %s ska kunna köras"
 
-#: src/servicemethods.py:328
+#: src/servicemethods.py:344
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s misslyckades. Felet var: %s"
 
-#: src/servicemethods.py:330
+#: src/servicemethods.py:346
 msgid " successful"
 msgstr " lyckades"
 

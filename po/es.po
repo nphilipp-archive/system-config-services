@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: 2002-08-20 15:37-0400\n"
+"POT-Creation-Date: 2002-08-26 16:34-0400\n"
 "PO-Revision-Date: 2002-07-17 10:52GMT\n"
 "Last-Translator: Nuria Soriano <nuria@redhat.es>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -71,24 +71,28 @@ msgstr ""
 #. self.tbrSave.set_style(GTK.TOOLBAR_ICONS)
 #. self.tbrSave.set_button_relief(GTK.RELIEF_NORMAL)
 #. the textbox
+#. the statusbox
+#. self.txtStatus = self.xml.get_widget("StatusView")
+#. self.txtStatusBuffer = gtk.TextBuffer(None)
+#. self.txtStatus.set_buffer(self.txtStatusBuffer)
 #. the CheckCList which will display whether the service
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:169
+#: src/serviceconf.py:179
 msgid "Currently Running in Runlevel: "
 msgstr "Actualmente corriendo en el nivel de ejecución: "
 
 # ../serviceconf.py:143
 # ../serviceconf.py:143
 #. This is a sentry
-#: src/serviceconf.py:180
+#: src/serviceconf.py:190
 msgid "Start at Boot"
 msgstr "Comenzar al arrancar"
 
 # ../serviceconf.py:144
 # ../serviceconf.py:144
-#: src/serviceconf.py:181
+#: src/serviceconf.py:191
 msgid "Services"
 msgstr "Servicios"
 
@@ -105,12 +109,12 @@ msgstr "Servicios"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:228 src/serviceconf.py:310 src/serviceconf.py:319
-#: src/serviceconf.py:343
+#: src/serviceconf.py:245 src/serviceconf.py:345 src/serviceconf.py:354
+#: src/serviceconf.py:378
 msgid "Editing Runlevel: "
 msgstr "Editando nivel de ejecución: "
 
-#: src/serviceconf.py:325
+#: src/serviceconf.py:360
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -122,13 +126,13 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:355
+#: src/serviceconf.py:390
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright (c) 2001 Red Hat, Inc. Todos los derechos reservados."
 
 # ../serviceconf.py:312
 # ../serviceconf.py:312
-#: src/serviceconf.py:356
+#: src/serviceconf.py:391
 #, fuzzy
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
@@ -159,7 +163,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:488
+#: src/serviceconf.py:524
 msgid "You must run redhat-config-services as root."
 msgstr "Debe ejecutar redhat-config-services como root."
 
@@ -198,7 +202,7 @@ msgstr "Debe ejecutar redhat-config-services como root."
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:271
+#: src/servicemethods.py:287
 msgid ""
 "\n"
 "\n"
@@ -218,40 +222,40 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:317
+#: src/servicemethods.py:333
 msgid "xinetd failed to reload for "
 msgstr "xinetd falló su recarga por "
 
 # ../servicemethods.py:308
 # ../servicemethods.py:308
-#: src/servicemethods.py:318
+#: src/servicemethods.py:334
 msgid ". The error was: "
 msgstr ". El error fue: "
 
 # ../servicemethods.py:310
 # ../servicemethods.py:310
-#: src/servicemethods.py:320
+#: src/servicemethods.py:336
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "recarga de xinetd para %s satisfactoria"
 
 # ../servicemethods.py:313
 # ../servicemethods.py:313
-#: src/servicemethods.py:323
+#: src/servicemethods.py:339
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd debe estar activo para poder ejecutar %s"
 
 # ../servicemethods.py:318
 # ../servicemethods.py:318
-#: src/servicemethods.py:328
+#: src/servicemethods.py:344
 #, fuzzy, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s falló a %s. El error fue: %s"
 
 # ../servicemethods.py:320
 # ../servicemethods.py:320
-#: src/servicemethods.py:330
+#: src/servicemethods.py:346
 msgid " successful"
 msgstr " satisfactorio"
 
