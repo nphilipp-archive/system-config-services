@@ -387,7 +387,7 @@ fi
 
 AMDEP_TRUE="" ac_aux_dir="."
 
-INTLTOOL_PERL=/usr/bin/perl
+INTLTOOL_PERL=/usr/bin/perl ac_aux_dir=.
 
 for ac_config_target in $ac_config_targets
 do
@@ -488,17 +488,16 @@ s,@INSTALL_DATA@,${INSTALL} -m 644,;t t
 s,@CYGPATH_W@,echo,;t t
 s,@PACKAGE@,system-config-services,;t t
 s,@VERSION@,0.8.8,;t t
-s,@ACLOCAL@,${SHELL} /home/devel/bfox/fedora/system-config-services/missing --run aclocal-1.8,;t t
-s,@AUTOCONF@,${SHELL} /home/devel/bfox/fedora/system-config-services/missing --run autoconf,;t t
-s,@AUTOMAKE@,${SHELL} /home/devel/bfox/fedora/system-config-services/missing --run automake-1.8,;t t
-s,@AUTOHEADER@,${SHELL} /home/devel/bfox/fedora/system-config-services/missing --run autoheader,;t t
-s,@MAKEINFO@,${SHELL} /home/devel/bfox/fedora/system-config-services/missing --run makeinfo,;t t
-s,@AMTAR@,${SHELL} /home/devel/bfox/fedora/system-config-services/missing --run tar,;t t
-s,@install_sh@,/home/devel/bfox/fedora/system-config-services/install-sh,;t t
+s,@ACLOCAL@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run aclocal-1.7,;t t
+s,@AUTOCONF@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run autoconf,;t t
+s,@AUTOMAKE@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run automake-1.7,;t t
+s,@AUTOHEADER@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run autoheader,;t t
+s,@MAKEINFO@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run makeinfo,;t t
+s,@AMTAR@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run tar,;t t
+s,@install_sh@,/home/dwalsh/src/redhat/system-config-services/install-sh,;t t
 s,@STRIP@,,;t t
 s,@ac_ct_STRIP@,,;t t
 s,@INSTALL_STRIP_PROGRAM@,${SHELL} $(install_sh) -c -s,;t t
-s,@mkdir_p@,mkdir -p -- .,;t t
 s,@AWK@,gawk,;t t
 s,@SET_MAKE@,,;t t
 s,@am__leading_dot@,.,;t t
@@ -528,15 +527,15 @@ s,@USE_NLS@,yes,;t t
 s,@MSGFMT@,/usr/bin/msgfmt,;t t
 s,@GMSGFMT@,/usr/bin/msgfmt,;t t
 s,@XGETTEXT@,/usr/bin/xgettext,;t t
-s,@CATALOGS@, bn.gmo bs.gmo cs.gmo cy.gmo da.gmo de.gmo el.gmo es.gmo fi.gmo fr.gmo hr.gmo hu.gmo is.gmo it.gmo ja.gmo ko.gmo ms.gmo nl.gmo no.gmo pt_BR.gmo pt.gmo ru.gmo sl.gmo sv.gmo tr.gmo uk.gmo vi.gmo zh_CN.gmo zh_TW.gmo,;t t
+s,@CATALOGS@, bn.gmo bs.gmo ca.gmo cs.gmo cy.gmo da.gmo de.gmo el.gmo es.gmo et.gmo fa.gmo fi.gmo fr.gmo hi.gmo hr.gmo hu.gmo is.gmo it.gmo ja.gmo ko.gmo ms.gmo nl.gmo no.gmo pa.gmo pl.gmo pt_BR.gmo pt.gmo ru.gmo sk.gmo sl.gmo sv.gmo ta.gmo tr.gmo uk.gmo vi.gmo zh_CN.gmo zh_TW.gmo,;t t
 s,@CATOBJEXT@,.gmo,;t t
 s,@DATADIRNAME@,share,;t t
-s,@GMOFILES@, bn.gmo bs.gmo cs.gmo cy.gmo da.gmo de.gmo el.gmo es.gmo fi.gmo fr.gmo hr.gmo hu.gmo is.gmo it.gmo ja.gmo ko.gmo ms.gmo nl.gmo no.gmo pt_BR.gmo pt.gmo ru.gmo sl.gmo sv.gmo tr.gmo uk.gmo vi.gmo zh_CN.gmo zh_TW.gmo,;t t
+s,@GMOFILES@, bn.gmo bs.gmo ca.gmo cs.gmo cy.gmo da.gmo de.gmo el.gmo es.gmo et.gmo fa.gmo fi.gmo fr.gmo hi.gmo hr.gmo hu.gmo is.gmo it.gmo ja.gmo ko.gmo ms.gmo nl.gmo no.gmo pa.gmo pl.gmo pt_BR.gmo pt.gmo ru.gmo sk.gmo sl.gmo sv.gmo ta.gmo tr.gmo uk.gmo vi.gmo zh_CN.gmo zh_TW.gmo,;t t
 s,@INSTOBJEXT@,.mo,;t t
 s,@INTLLIBS@,,;t t
 s,@PO_IN_DATADIR_TRUE@,,;t t
 s,@PO_IN_DATADIR_FALSE@,,;t t
-s,@POFILES@, bn.po bs.po cs.po cy.po da.po de.po el.po es.po fi.po fr.po hr.po hu.po is.po it.po ja.po ko.po ms.po nl.po no.po pt_BR.po pt.po ru.po sl.po sv.po tr.po uk.po vi.po zh_CN.po zh_TW.po,;t t
+s,@POFILES@, bn.po bs.po ca.po cs.po cy.po da.po de.po el.po es.po et.po fa.po fi.po fr.po hi.po hr.po hu.po is.po it.po ja.po ko.po ms.po nl.po no.po pa.po pl.po pt_BR.po pt.po ru.po sk.po sl.po sv.po ta.po tr.po uk.po vi.po zh_CN.po zh_TW.po,;t t
 s,@POSUB@,po,;t t
 s,@MKINSTALLDIRS@,./mkinstalldirs,;t t
 s,@INTLTOOL_DESKTOP_RULE@,%.desktop:   %.desktop.in   $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
@@ -550,6 +549,7 @@ s,@INTLTOOL_SHEET_RULE@,%.sheet:     %.sheet.in     $(INTLTOOL_MERGE) $(wildcard
 s,@INTLTOOL_SOUNDLIST_RULE@,%.soundlist: %.soundlist.in $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
 s,@INTLTOOL_UI_RULE@,%.ui:        %.ui.in        $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -x -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
 s,@INTLTOOL_XAM_RULE@,%.xam:       %.xml.in       $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -x -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
+s,@INTLTOOL_KBD_RULE@,%.kbd:       %.kbd.in       $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -x -u -m -c $(top_builddir)/po/.intltool-merge-cache,;t t
 s,@INTLTOOL_XML_RULE@,%.xml:       %.xml.in       $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -x -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
 s,@INTLTOOL_CAVES_RULE@,%.caves:     %.caves.in     $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
 s,@INTLTOOL_SCHEMAS_RULE@,%.schemas:   %.schemas.in   $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -s -u -c $(top_builddir)/po/.intltool-merge-cache,;t t
@@ -1005,7 +1005,7 @@ done
       esac ;;
     default-2 )
 
-sed -e "s:@INTLTOOL_PERL@:${INTLTOOL_PERL}:;" < ${srcdir}/intltool-extract.in > intltool-extract.out
+sed -e "s:@INTLTOOL_PERL@:${INTLTOOL_PERL}:;" < ${ac_aux_dir}/intltool-extract.in > intltool-extract.out
 if cmp -s intltool-extract intltool-extract.out 2>/dev/null; then
   rm -f intltool-extract.out
 else
@@ -1014,7 +1014,8 @@ fi
 chmod ugo+x intltool-extract
 chmod u+w intltool-extract
 
-sed -e "s:@INTLTOOL_PERL@:${INTLTOOL_PERL}:;" < ${srcdir}/intltool-merge.in > intltool-merge.out
+sed -e "s:@INTLTOOL_PERL@:${INTLTOOL_PERL}:;" \
+    < ${ac_aux_dir}/intltool-merge.in > intltool-merge.out
 if cmp -s intltool-merge intltool-merge.out 2>/dev/null; then
   rm -f intltool-merge.out
 else
@@ -1023,7 +1024,7 @@ fi
 chmod ugo+x intltool-merge
 chmod u+w intltool-merge
 
-sed -e "s:@INTLTOOL_PERL@:${INTLTOOL_PERL}:;" < ${srcdir}/intltool-update.in > intltool-update.out
+sed -e "s:@INTLTOOL_PERL@:${INTLTOOL_PERL}:;" < ${ac_aux_dir}/intltool-update.in > intltool-update.out
 if cmp -s intltool-update intltool-update.out 2>/dev/null; then
   rm -f intltool-update.out
 else
