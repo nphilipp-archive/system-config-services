@@ -7,12 +7,12 @@ msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-04-06 14:50-0400\n"
-"PO-Revision-Date: 2004-03-22 23:05+0530\n"
+"PO-Revision-Date: 2004-04-07 05:25+0530\n"
 "Last-Translator: Amanpreet Singh Alam <amanlinux@netscape.net>\n"
 "Language-Team: Punjabi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -84,20 +84,19 @@ msgstr "ਮੁੜ ਚਾਲੂ"
 
 #: src/serviceconf.py:201
 msgid "_Save"
-msgstr ""
+msgstr "ਸੰਭਾਲੋ"
 
 #: src/serviceconf.py:201
 msgid "Save"
-msgstr ""
+msgstr "ਸੰਭਾਲੋ"
 
 #: src/serviceconf.py:206
 msgid "_Revert"
-msgstr ""
+msgstr "ਵਾਪਿਸ"
 
 #: src/serviceconf.py:206
-#, fuzzy
 msgid "Revert"
-msgstr "ਮੁੜ ਚਾਲੂ"
+msgstr "ਵਾਪਿਸ"
 
 #. the textbox
 #. the statusbox
@@ -368,7 +367,7 @@ msgstr "ਸਹਾੲਿਤਾ"
 
 #: src/serviceconf.glade.h:28
 msgid "_Quit"
-msgstr ""
+msgstr "ਬਾਹਰ"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
@@ -390,11 +389,3 @@ msgstr "ਸੇਵਾ ਚਾਲੂ ਕਰੋ"
 msgid "_View"
 msgstr "ਵੇਖੋ"
 
-#~ msgid "Restart the selected service"
-#~ msgstr "ਚੁਣੀ ਸੇਵਾ ਮੁੜ ਚਾਲੂ ਕਰੋ"
-
-#~ msgid "Start the selected service"
-#~ msgstr "ਚੁਣੀ ਸੇਵਾ ਚਾਲੂ ਕਰੋ"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "ਚੁਣੀ ਸੇਵਾ ਰੋਕੋ"
