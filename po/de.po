@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf 7.2\n"
 "POT-Creation-Date: 2003-01-09 10:22-0500\n"
-"PO-Revision-Date: 2002-10-03 10:04+0200\n"
-"Last-Translator: Bernd Groh <bgroh@redhat.com>\n"
-"Language-Team: Deutsch <de@li.org>\n"
+"PO-Revision-Date: 2003-01-10 12:22+1000\n"
+"Last-Translator: Nadine Richter <nrichter@redhat.com>\n"
+"Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -265,9 +265,8 @@ msgid "Restart the selected service"
 msgstr "Neustart des ausgewählten Dienstes"
 
 #: src/serviceconf.glade.h:7
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "Zur letzten Speicherung zurückkehren"
+msgstr "Zum _letzten Speicherpunkt zurückkehren"
 
 #: src/serviceconf.glade.h:8
 msgid "Runlevel _3"
@@ -393,3 +392,4 @@ msgstr "_Starte Dienst"
 
 #~ msgid "Exit"
 #~ msgstr "Beenden"
+
