@@ -1,5 +1,10 @@
 2003-10-22  Dan Walsh  <dwalsh@redhat.com>
 
+	* redhat-config-services.spec.in: add additional languages
+
+	* ChangeLog, config.status, po/bn.po, po/bs.po, po/el.po, po/fi.po, po/hu.po, po/messages.mo, po/ms.po, po/nl.po, po/pt_BR.po, po/sl.po:
+	release 0.8.5
+
 	* configure.in: add missing languages
 
 2003-10-20  maxik  <maxik@redhat.com>
