@@ -41,7 +41,7 @@ rm -rf %{buildroot}
 %{_bindir}/*
 %{_datadir}/applications/redhat-config-services.desktop
 %{_datadir}/redhat-config-services
-%{_datadir}/pixmaps/serviceconf.xpm
+%{_datadir}/pixmaps/redhat-config-services.png
 %config %{_sysconfdir}/pam.d/redhat-config-services
 %config %{_sysconfdir}/security/console.apps/redhat-config-services
 %config %{_sysconfdir}/security/console.apps/serviceconf
