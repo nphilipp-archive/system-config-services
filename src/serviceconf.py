@@ -370,7 +370,7 @@ class Gui:
 # elsewhere by on_mnuSave_clicked(), on_mnuRevert_clicked(), and
 # "Exit" just calls gtk.mainquit()
 #----------------------------------------------------------------------------    
-    def on_mnuRescan_activate(self,None):
+    def on_mnuRescan_activate(self,args):
         """clears clstServices, and reruns populateList()"""
 
         # set the cursor while we are busy
@@ -474,7 +474,7 @@ http://bugzilla.redhat.com"""),
 #        gnome.help_display_uri(page)
         gnome.url_show(page)
 
-    def on_selectCursor(self,None):
+    def on_selectCursor(self,args):
         """calls get_service_action_results to start the selected initscript"""
         print "on_selectCursor"
 
@@ -484,7 +484,7 @@ http://bugzilla.redhat.com"""),
 # handled by on_btnStart_clicked(), on_btnStop_clicked(), and 
 # on_btnRestart_clicked()
 #----------------------------------------------------------------------------
-    def on_mnuSave_clicked(self, None):
+    def on_mnuSave_clicked(self, args):
         """Commits the changes made for each service"""
         for i in range(0,len(self.ServiceMethods.dict_services)):
             servicename = self.clstServices.get_text(i,1)
@@ -500,7 +500,7 @@ http://bugzilla.redhat.com"""),
         quiting=1
         gtk.mainquit()
         
-    def on_mnuRevert_clicked(self, None):
+    def on_mnuRevert_clicked(self, args):
         """calls populateList() to repopulate the checklist"""
         self.populateList()
         self.save_revert_sensitive(0)
@@ -522,7 +522,7 @@ http://bugzilla.redhat.com"""),
 	dlg.destroy()
         self.set_text_status()
 
-    def on_add_service_clicked(self,None):
+    def on_add_service_clicked(self,args):
         dlg = self.xml.get_widget ("serviceNameDialog")
         rc = dlg.run()
         dlg.hide()
@@ -535,7 +535,7 @@ http://bugzilla.redhat.com"""),
             else:
                 self.on_mnuRescan_activate(None)
 
-    def on_delete_service_clicked(self,None):
+    def on_delete_service_clicked(self,args):
         if verify_delete(self.current_selected) == gtk.RESPONSE_YES:
             response=self.ServiceMethods.chkconfig_delete_service(self.current_selected)
             if response[0]!=0:
@@ -543,15 +543,15 @@ http://bugzilla.redhat.com"""),
             else:
                 self.on_mnuRescan_activate(None)
             
-    def on_btnStart_clicked(self,None):
+    def on_btnStart_clicked(self,args):
         """calls get_service_action_results to start the selected initscript"""
         self.get_service_action_results(self.text_in_row, "start")
 
-    def on_btnStop_clicked(self,None):
+    def on_btnStop_clicked(self,args):
         """calls get_service_action_results to stop the selected initscript"""
         self.get_service_action_results(self.text_in_row, "stop")
 
-    def on_btnRestart_clicked(self,None):
+    def on_btnRestart_clicked(self,args):
         """calls get_service_action_results to restart the selected initscript"""
         self.get_service_action_results(self.text_in_row, "restart")
 
