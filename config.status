@@ -488,9 +488,9 @@ s,@INSTALL_DATA@,${INSTALL} -m 644,;t t
 s,@CYGPATH_W@,echo,;t t
 s,@PACKAGE@,system-config-services,;t t
 s,@VERSION@,0.8.8,;t t
-s,@ACLOCAL@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run aclocal-1.7,;t t
+s,@ACLOCAL@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run aclocal-1.8,;t t
 s,@AUTOCONF@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run autoconf,;t t
-s,@AUTOMAKE@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run automake-1.7,;t t
+s,@AUTOMAKE@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run automake-1.8,;t t
 s,@AUTOHEADER@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run autoheader,;t t
 s,@MAKEINFO@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run makeinfo,;t t
 s,@AMTAR@,${SHELL} /home/dwalsh/src/redhat/system-config-services/missing --run tar,;t t
