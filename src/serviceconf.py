@@ -125,7 +125,10 @@ class Gui:
         self.ServiceMethods = servicemethods.ServiceMethods()
 
         gtk.glade.bindtextdomain(domain)
-        self.xml = gtk.glade.XML("/usr/share/system-config-services/serviceconf.glade", domain=domain)
+        try:
+            self.xml = gtk.glade.XML("serviceconf.glade", domain=domain)
+        except:
+            self.xml = gtk.glade.XML("/usr/share/system-config-services/serviceconf.glade", domain=domain)
         # map the event signals to specific methods
         self.xml.signal_autoconnect(
             {
@@ -179,6 +182,8 @@ class Gui:
         self.btnStart = self.xml.get_widget("btnStart")
         self.btnRestart = self.xml.get_widget("btnRestart")
         self.btnStop = self.xml.get_widget("btnStop")
+        self.btnSave = self.xml.get_widget("btnSave")
+        self.btnRevert = self.xml.get_widget("btnRevert")
 
         #toolbars
         self.tbrSave = self.xml.get_widget("tbrSave")
@@ -604,6 +609,8 @@ class Gui:
         """sets the save and revert buttons and menus to be sensitive or not, sensitive is a 1 or 0"""
         self.mnuSave.set_sensitive(sensitive)
         self.mnuRevert.set_sensitive(sensitive)
+        self.btnSave.set_sensitive(sensitive)
+        self.btnRevert.set_sensitive(sensitive)
         self.dirty=sensitive
 
     def action_widgets_sensitive(self, sensitive):

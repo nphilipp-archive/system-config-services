@@ -508,7 +508,7 @@
 	      </child>
 
 	      <child>
-		<widget class="button" id="saveButton">
+		<widget class="button" id="btnSave">
 		  <property name="visible">True</property>
 		  <property name="tooltip" translatable="yes">Restart the selected service</property>
 		  <property name="label">gtk-save</property>
@@ -518,7 +518,7 @@
 	      </child>
 
 	      <child>
-		<widget class="button" id="button6">
+		<widget class="button" id="btnRevert">
 		  <property name="visible">True</property>
 		  <property name="tooltip" translatable="yes">Restart the selected service</property>
 		  <property name="label">gtk-revert-to-saved</property>
