@@ -47,7 +47,7 @@ rm -rf %{buildroot}
 %doc COPYING
 %doc docs/*
 %{_sbindir}/*
-%{_bindir}/*
+%{_bindir}/system-config-services
 %{_datadir}/applications/system-config-services.desktop
 %{_datadir}/icons/hicolor/48x48/apps/system-config-services.png
 %{_datadir}/system-config-services
