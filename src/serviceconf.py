@@ -297,7 +297,6 @@ class Gui:
         # set the text in txtDesc
         if self.ServiceMethods.dict_services.has_key(self.text_in_row):
             x = self.ServiceMethods.dict_services[self.text_in_row]
-            print x[2]
 	    self.txtBuffer.set_text(string.strip(x[2]))
 	# if an xinetd service is selected, disable these,
         # they'll do nothing
