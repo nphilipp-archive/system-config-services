@@ -1,0 +1,146 @@
+# -*- RPM-SPEC -*-
+Summary: redhat-config-services is an initscript and xinetd configuration utility
+Name: @PACKAGE@
+Version: @VERSION@
+Release: 3
+URL: http://www.redhat.com/ 
+Source0: %{name}-%{version}.tar.gz
+License: GPL
+Group: Applications/System
+BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}-root
+Requires: /sbin/chkconfig
+Requires: gnome-python2, pygtk2, pygtk2-libglade
+Requires: usermode >= 1.36, usermode-gtk
+Obsoletes: serviceconf
+
+%description
+rehat-config-services is a utility which allows you to configure which services
+should be enabled on your machine.
+
+%prep
+%setup -q
+
+%build
+make
+
+%install
+rm -rf %{buildroot}
+%makeinstall
+
+%find_lang %name
+
+%clean
+rm -rf %{buildroot}
+
+%files -f %{name}.lang
+%defattr(-,root,root)
+%doc COPYING
+%doc docs/html/*
+%{_mandir}/man8/redhat-config-services*
+%{_bindir}/*
+%{_datadir}/applications/redhat-config-services.desktop
+%{_datadir}/redhat-config-services
+%{_datadir}/pixmaps/serviceconf.xpm
+%config %{_sysconfdir}/pam.d/redhat-config-services
+%config %{_sysconfdir}/pam.d/serviceconf
+%config %{_sysconfdir}/security/console.apps/redhat-config-services
+%config %{_sysconfdir}/security/console.apps/serviceconf
+
+%changelog
+
+* Tue Jul 23 2002 Dan Walsh <dwalsh@redhat.com>
+- Fix the desktop file, using new naming standards.
+- Fix the error outpur
+
+* Mon Jul 22 2002 Dan Walsh <dwalsh@redhat.com>
+- Fix clock cursor, set app insensitive until services loaded"
+
+* Mon Jul 22 2002 Tammy Fox <tfox@redhat.com>
+- Updated docs
+
+* Wed Jul  17 2002 Dan Walsh <dwalsh@redhat.com> 0.8.1-1
+- Fix internationalization problems.  Clean up glade port.
+
+* Thu Jul  11 2002 Dan Walsh <dwalsh@redhat.com> 0.8.1-1
+- complete rename to redhat-config-services
+
+* Tue Jul  9 2002 Dan Walsh <dwalsh@redhat.com> 0.8.1-1
+- complete gtk2 port, Fix Help, About, fix minor bugs
+
+* Wed May 29 2002 Bill Nottingham <notting@redhat.com> 0.8.0-1
+- initial hack gtk2 port
+
+* Mon Apr 15 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.7.0-3
+- Update translations
+
+* Wed Apr 10 2002 Bill Nottingham <notting@redhat.com> 0.7.0-2
+- fix docs (#63179)
+
+* Tue Apr  9 2002 Bill Nottingham <notting@redhat.com>
+- add some more cases to #60384 fix
+
+* Sun Apr  7 2002 Jeremy Katz <katzj@redhat.com>
+- don't show rpmsave, rpmnew, rpmorig, or .swp files (#60384)
+
+* Tue Apr  2 2002 Nalin Dahyabhai <nalin@redhat.com>
+- set up userhelper for redhat-config-services
+
+* Fri Jan 25 2002 Bill Nottingham <notting@redhat.com>
+- add patch to fix startup when there are services with 'hide' set
+
+* Fri Aug 24 2001 Tim Powers <timp@redhat.com>
+- fixed typo in Requires /;sbin/chkconfig
+
+* Fri Aug 24 2001 Bill Nottingham <notting@redhat.com>
+- build with new translations
+- move redhat-config-services link to /usr/bin
+
+* Fri Aug 17 2001 Bill Nottingham <notting@redhat.com>
+- translation typos (#51774, #51776)
+- add redhat-config-services link
+- if we're using find_lang, don't specify the .mo files explicitly
+
+* Mon Aug 13 2001 Tim Powers <timp@redhat.com>
+- updated serviceconf.gladestrings
+
+* Fri Aug 10 2001 Tim Powers <timp@redhat.com>
+- languified specfile for additional translations
+
+* Thu Aug  9 2001 Alexander Larsson <alexl@redhat.com> 0.6.1-1
+- Add an icon
+
+* Thu Aug  9 2001 Alexander Larsson <alexl@redhat.com>
+- Install in sysconfig.
+
+* Tue Aug  7 2001 Tim Powers <timp@redhat.com>
+- gnomified
+- work around parsing languified chkconfig output so that we can get accurate information displayed
+
+* Tue Jul 31 2001 Tim Powers <timp@redhat.com>
+- languified since we now serve multiple languages
+
+* Mon Jul 30 2001 Yukihiro Nakai <ynakai@redhat.com>
+- User %%fine_lang
+- Add Japanese translation.
+
+* Mon Jul 30 2001 Preston Brown <pbrown@redhat.com>
+- clean up title display
+- make sure initial highlighted entry also displays description info
+
+* Wed Jul 18 2001 Tammy Fox <tfox@redhat.com>
+- added help doc
+- moved man page into man directory
+- added Makefile for man page
+- added man page to spec file
+
+* Mon Jul  9 2001 Tim Powers <timp@redhat.com>
+- languify to shutup rpmlint
+
+* Thu Jul  5 2001 Tim Powers <timp@redhat.com>
+- removed TODO and README, added COPYING file to docs
+
+* Tue May 15 2001 Tim Powers <timp@redhat.com>
+- Initial build.
+
+

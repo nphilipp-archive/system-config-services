@@ -1,0 +1,649 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: serviceconf\n"
+"POT-Creation-Date: 2002-07-24 07:01-0400\n"
+"PO-Revision-Date: 2001-08-16 10:15+0900\n"
+"Last-Translator: Michelle Kim <mkim@redhat.com>\n"
+"Language-Team: Red Hat Asia-Pacific\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=EUC-KR\n"
+"Content-Transfer-Encoding: 8-bit\n"
+"Generated-By: pygettext.py 1.1\n"
+
+#.
+#. checklist.py: A class (derived from GtkTreeView) that provides a list of
+#. checkbox / text string pairs
+#.
+#. Brent Fox <bfox@redhat.com>
+#. Jeremy Katz <katzj@redhat.com>
+#.
+#. Copyright 2000-2002 Red Hat, Inc.
+#.
+#. This software may be freely redistributed under the terms of the GNU
+#. library public license.
+#.
+#. You should have received a copy of the GNU Library Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#.
+#. override this to make your own columns if necessary
+#. add the string columns to the tree view widget
+#. XXX need to handle the multicolumn case better still....
+#. XXX we only handle two text columns right now
+#. keep track of the number of rows we have so we can
+#. iterate over them all
+#. add the text for the number of columns we have
+#. Hmm is this really needed?
+#. raise Error("Here with args" + args)
+#. def __str__(self):
+#. return Exception.__str__(self)
+#. print len(nums), " matching groups!", nums
+#. add more TTL checking code here
+#: src/dnsdata.py:90 src/dnsdata.py:92
+msgid "Directory "
+msgstr ""
+
+#: src/dnsdata.py:90
+msgid " does not begin with a slash!"
+msgstr ""
+
+#: src/dnsdata.py:92
+msgid " is not an existing directory!"
+msgstr ""
+
+#. FIXME
+#. more checks for valid path here
+#: src/dnsdata.py:113 src/dnsdata.py:125
+msgid "Master "
+msgstr ""
+
+#: src/dnsdata.py:113 src/dnsdata.py:294
+msgid " is not a valid IP address."
+msgstr ""
+
+#: src/dnsdata.py:125 src/dnsdata.py:279 src/dnsdata.py:383 src/dnsdata.py:433
+#: src/dnsdata.py:470 src/dnsdata.py:511
+msgid " is defined twice."
+msgstr ""
+
+#: src/dnsdata.py:133
+msgid "Slave zone name "
+msgstr ""
+
+#: src/dnsdata.py:133 src/dnsdata.py:414 src/dnsdata.py:487
+msgid " is not a valid domain name."
+msgstr ""
+
+#: src/dnsdata.py:148
+msgid "Forwarder "
+msgstr ""
+
+#: src/dnsdata.py:148
+msgid " is not a valid Ip address."
+msgstr ""
+
+#: src/dnsdata.py:174
+msgid "Primary Nameserver not defined."
+msgstr ""
+
+#. print "testPNS on " + value
+#: src/dnsdata.py:181 src/dnsdata.py:183
+msgid "Primary Nameserver `"
+msgstr ""
+
+#: src/dnsdata.py:181 src/dnsdata.py:249 src/FwdZone.py:444
+msgid "' has no . at the end. You must use a full hostname."
+msgstr ""
+
+#: src/dnsdata.py:183
+msgid "' is not a valid hostname or IP address."
+msgstr ""
+
+#: src/dnsdata.py:197
+msgid "Refresh value should be bigger than Retry"
+msgstr ""
+
+#. FIXME
+#. add more tests here
+#: src/dnsdata.py:204
+msgid "Serial number must be >= 1."
+msgstr ""
+
+#: src/dnsdata.py:208
+msgid "Refresh value must be >= 0."
+msgstr ""
+
+#: src/dnsdata.py:212
+msgid "Retry value must be >= 0."
+msgstr ""
+
+#: src/dnsdata.py:216
+msgid "Expire value must be >= 0."
+msgstr ""
+
+#: src/dnsdata.py:220
+msgid "Minimum value must be >= 0."
+msgstr ""
+
+#. num = self.getNumA()
+#. if num:
+#. names = []
+#. for i in xrange(0, num):
+#. item = self.getA(i)
+#. item.test()
+#. names.append(item.getHost())
+#. for i in xrange(0, num-1):
+#. for j in xrange(i+1, num):
+#. if names[j] == names[i]:
+#. raise TestError, _("Hostname ") + names[i] + _(" is defined twice.")
+#: src/dnsdata.py:241 src/dnsdata.py:285 src/dnsdata.py:319 src/dnsdata.py:390
+msgid "NewHost"
+msgstr ""
+
+#: src/dnsdata.py:246
+msgid "PTR hostname not defined"
+msgstr ""
+
+#: src/dnsdata.py:249
+msgid "PTR hostname `"
+msgstr ""
+
+#: src/dnsdata.py:252 src/dnsdata.py:290 src/dnsdata.py:325 src/dnsdata.py:360
+#: src/dnsdata.py:364 src/dnsdata.py:395
+msgid " is not a valid hostname."
+msgstr ""
+
+#: src/dnsdata.py:260
+msgid " must be in the range 0..255."
+msgstr ""
+
+#: src/dnsdata.py:279
+msgid "IP "
+msgstr ""
+
+#: src/dnsdata.py:325 src/dnsdata.py:349
+msgid "Nameserver "
+msgstr ""
+
+#: src/dnsdata.py:330
+msgid " is not a valid host or domain name."
+msgstr ""
+
+#: src/dnsdata.py:349
+msgid " is defined twice for "
+msgstr ""
+
+#: src/dnsdata.py:355 src/dnsdata.py:356
+msgid "New"
+msgstr ""
+
+#: src/dnsdata.py:383
+msgid "Alias "
+msgstr ""
+
+#: src/dnsdata.py:409
+msgid "<New Forward Zone>"
+msgstr ""
+
+#: src/dnsdata.py:414 src/dnsdata.py:487
+msgid "Forward zone name "
+msgstr ""
+
+#: src/dnsdata.py:433 src/dnsdata.py:511
+#, fuzzy
+msgid "Zone "
+msgstr "없음"
+
+#: src/dnsdata.py:442
+msgid "<New Reverse Zone>"
+msgstr ""
+
+#: src/dnsdata.py:446
+msgid "Reverse zone name `"
+msgstr ""
+
+#: src/dnsdata.py:446
+msgid "' is not the end of a reverse IP address."
+msgstr ""
+
+#: src/dnsdata.py:451
+msgid "Reverse zone `"
+msgstr ""
+
+#: src/dnsdata.py:451 src/FwdZone.py:657
+msgid "' must list at least one name server"
+msgstr ""
+
+#: src/dnsdata.py:470
+msgid "Reverse zone "
+msgstr ""
+
+#: src/dnsdata.py:482
+msgid "<New Zone>"
+msgstr ""
+
+#. serviceconf.py
+#. Copyright (C) 2002 Red Hat, Inc.
+#. Authors: Tim Powers <timp@redhat.com>
+#. Bill Nottingham <notting@redhat.com>
+#. Dan Walsh <dwalsh@redhat.com>
+#.
+#. This program is free software; you can redistribute it and/or modify
+#. it under the terms of the GNU General Public License as published by
+#. the Free Software Foundation; either version 2 of the License, or
+#. (at your option) any later version.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#. make sure threading is disabled
+#. map the event signals to specific methods
+#. main window
+#. menu items
+#. buttons
+#. toolbars
+#. self.tbrSave.set_style(GTK.TOOLBAR_ICONS)
+#. self.tbrSave.set_button_relief(GTK.RELIEF_NORMAL)
+#. the textbox
+#. the CheckCList which will display whether the service
+#. is enabled, and the service names
+#. initialize this to the runlevel we are running in. It will
+#. change when one of the optRL[3-6] are selected
+#: src/serviceconf.py:160
+msgid "Currently Running in Runlevel: "
+msgstr "런레벨에서 현재 실행 중임: "
+
+#. This is a sentry
+#: src/serviceconf.py:171
+msgid "Start at Boot"
+msgstr "부팅시 시작"
+
+#: src/serviceconf.py:172
+msgid "Services"
+msgstr "서비스"
+
+#. self.clstServices.set_column_justification(0,GTK.JUSTIFY_CENTER)
+#. self.clstServices.set_column_justification(1,GTK.JUSTIFY_LEFT)
+#. self.clstServices.set_column_auto_resize(0,1)
+#. self.clstServices.column_titles_show()
+#. -----------------------------------------------------------------------------
+#. Methods assiciated with populating the checklist
+#. -----------------------------------------------------------------------------
+#. sentinal so that we don't have selected rows while we are updating
+#. this is passed to ServiceMethods.get_service_list as an
+#. argument. We don't want to import gtk there, so we have
+#. the actual function here
+#: src/serviceconf.py:217 src/serviceconf.py:299 src/serviceconf.py:308
+#: src/serviceconf.py:332
+msgid "Editing Runlevel: "
+msgstr "런레벨 편집: "
+
+#: src/serviceconf.py:314
+msgid ""
+"You have made changes to the current runlevel.\n"
+"Do you want to save the changes?"
+msgstr ""
+
+#. ----------------------------------------------------------------------------
+#. Methods pertaining to the "Help" menu items, there will be more here
+#. once I have "real" help :)
+#. ----------------------------------------------------------------------------
+#: src/serviceconf.py:344
+#, fuzzy
+msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
+msgstr "Copyright (c) 2001 Red Hat, Inc. All rights reserved."
+
+#: src/serviceconf.py:345
+#, fuzzy
+msgid ""
+"This software may be freely redistributed under the terms of the GPL.\n"
+"Please report all bugs you find at the Red Hat bug tracking system:\n"
+"http://bugzilla.redhat.com"
+msgstr ""
+"이 프로그램은 General Public License 내에서 자유롭게 재배포될 수 있습니다.\n"
+"                                  \n"
+"여러분이 발견하신 버그의 모든 내용은 Red Hat 버그 추적 시스템에 보고해 주시"
+"기 바랍니다:\n"
+"http://bugzilla.redhat.com"
+
+#. ----------------------------------------------------------------------------
+#. Methods pertaining to the "Help" menu items, there will be more here
+#. once I have "real" help :)
+#. ----------------------------------------------------------------------------
+#: src/serviceconf.py:363
+msgid "Help is not available."
+msgstr ""
+
+#. ----------------------------------------------------------------------------
+#. Methods pertaining to the toolbar items
+#. The menu and popup menu items for "Start", "Stop", and "Restart" are
+#. handled by on_btnStart_clicked(), on_btnStop_clicked(), and
+#. on_btnRestart_clicked()
+#. ----------------------------------------------------------------------------
+#. ----------------------------------------------------------------------------
+#. Methods for everything else
+#. ----------------------------------------------------------------------------
+#. get rid of the tearoff from the popup menu
+#. set the label text to be the current selected servicename for pmnBlank
+#: src/serviceconf.py:481
+#, fuzzy
+msgid "You must run redhat-config-services as root."
+msgstr "serviceconf는 root 계정으로 실행해야 합니다."
+
+#. import gnome.ui
+#. Columns for "a_treeview"
+#. #
+#. # I18N stuff
+#. #
+#. Columns for "bindconf_treeview"
+#. columns for "rev_zone_treeview", "fwd_zone_treeview"
+#. if isinstance (broken_widget, gtk.Entry):
+#. #FIXME: supposedly deprecated?
+#. broken_widget.select_region (0, -1)
+#. try:
+#. fwdzone.zone.test()
+#. except TestError, e:
+#. def callback (*args):
+#. pass
+#. qa = gnome.ui.GnomeQuestionDialog (_("The following error occured due to host %s\n%s\nAre you sure you want to add this host?") % (host, e.args), callback, dialog)
+#. button = qa.run ()
+#. if button != 0:
+#. continue
+#: src/FwdZone.py:236
+msgid " aliased to "
+msgstr ""
+
+#: src/FwdZone.py:265 src/FwdZone.py:362 src/FwdZone.py:433
+#, fuzzy
+msgid "You must enter a host name."
+msgstr "serviceconf는 root 계정으로 실행해야 합니다."
+
+#: src/FwdZone.py:268
+msgid "You must enter an alias."
+msgstr ""
+
+#: src/FwdZone.py:288
+msgid "An alias with this name already exists."
+msgstr ""
+
+#: src/FwdZone.py:312
+msgid " at priority "
+msgstr ""
+
+#: src/FwdZone.py:338 src/FwdZone.py:340
+#, python-format
+msgid "Mail Exchanger for %s"
+msgstr ""
+
+#: src/FwdZone.py:345
+msgid "Edit Mail Exchanger"
+msgstr ""
+
+#: src/FwdZone.py:349
+msgid "Add a Mail Exchanger"
+msgstr ""
+
+#: src/FwdZone.py:365
+#, fuzzy
+msgid "You must enter an priority."
+msgstr "serviceconf는 root 계정으로 실행해야 합니다."
+
+#: src/FwdZone.py:394
+msgid " served by "
+msgstr ""
+
+#: src/FwdZone.py:436
+msgid "You must enter a resolution address."
+msgstr ""
+
+#: src/FwdZone.py:444
+msgid "NS hostname `"
+msgstr ""
+
+#. slurp from the zone
+#. test_soa_values
+#: src/FwdZone.py:637
+msgid "SOA Refresh value should be bigger than Retry"
+msgstr ""
+
+#. test_a_list
+#. test_ns_list
+#. test_cname_list
+#. test_mx_list
+#: src/FwdZone.py:657
+msgid "Forward zone `"
+msgstr ""
+
+#. ####
+#: src/FwdZone.py:724
+#, python-format
+msgid "Settings for %s"
+msgstr ""
+
+#. FIXME: put checks in here.
+#. serviceactions.py
+#. Copyright (C) 2002 Red Hat, Inc.
+#. Author: Tim Powers <timp@redhat.com>
+#.
+#. This program is free software; you can redistribute it and/or modify
+#. it under the terms of the GNU General Public License as published by
+#. the Free Software Foundation; either version 2 of the License, or
+#. (at your option) any later version.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, write to the Free Software
+#. Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#. runlevel = self.get_runlevel()
+#. for i in range(0,len(dirlist)):
+#. check for start links only, we don't care if there is a kill link
+#. no match
+#. This is the current runlevel
+#. for xinetd services, set the dictionary to show that it's disabled in all runlevels
+#. this will be an unmodified self.dict_services
+#. read each initscript
+#. configured = 1 if configured already
+#. configured = self.check_if_on(servicename, editing_runlevel)
+#. look through the first 25 lines to see if we have "hide: true" in there.
+#. if it's there, remove the service from the dictionary
+#. read each file for xinetd.d
+#. configured=1 if the service is configured already
+#. configured = self.xinetd_check_if_on(servicename)
+#. the list corresponding to the key is: [configured, is it an xinetd serv., description]
+#: src/servicemethods.py:271
+msgid ""
+"\n"
+"\n"
+"You must enable xinetd to use this service."
+msgstr ""
+"\n"
+"\n"
+"이 서비스를 사용하시려면, 반드시 xinetd를 활성화 시켜야 합니다."
+
+#. an unmodified dictionary. Needed to compare for saving etc.
+#. only save changes
+#. check to make sure we are an initscript and not an xinetd service
+#. if it's toggled on
+#. if it's toggled off
+#. for xinetd services
+#. if it's toggled on
+#. if it's toggled off
+#: src/servicemethods.py:317
+msgid "xinetd failed to reload for "
+msgstr "xinetd가 다음을 다시 로드하는데 실패했습니다: "
+
+#: src/servicemethods.py:318
+msgid ". The error was: "
+msgstr ". 오류는 다음과 같습니다: "
+
+#: src/servicemethods.py:320
+#, python-format
+msgid "xinetd reloaded %s successfully"
+msgstr "xinetd가 %s (을)를 성공적으로 다시 로드했습니다"
+
+#: src/servicemethods.py:323
+#, python-format
+msgid "xinetd must be enabled for %s to run"
+msgstr "%s (을)를 실행하기 위해서는 반드시 xinetd가 활성화 되어야 합니다"
+
+#: src/servicemethods.py:328
+#, fuzzy, python-format
+msgid "%s failed. The error was: %s"
+msgstr "%s (이)가 %s 하는데 실패했습니다. 오류는 다음과 같습니다: %s"
+
+# ../servicemethods.py:320"
+#: src/servicemethods.py:330
+msgid " successful"
+msgstr " 성공"
+
+#: src/serviceconf.glade.h:1
+msgid "Cancel"
+msgstr "취소"
+
+#: src/serviceconf.glade.h:2
+msgid "Current Active Runlevel: "
+msgstr "현재 실행 중인 런레벨: "
+
+#: src/serviceconf.glade.h:3
+msgid "Editing Runlevel:"
+msgstr "런레벨 편집:"
+
+#: src/serviceconf.glade.h:4
+msgid "None"
+msgstr "없음"
+
+#: src/serviceconf.glade.h:5
+msgid "Quit"
+msgstr "종료"
+
+#: src/serviceconf.glade.h:6
+msgid "Restart"
+msgstr "재시작"
+
+#: src/serviceconf.glade.h:7
+msgid "Restart the selected service"
+msgstr "선택된 서비스 재시작"
+
+#: src/serviceconf.glade.h:8
+msgid "Revert to the last saved change"
+msgstr "마지막 변동 사항 취소"
+
+#: src/serviceconf.glade.h:9
+msgid "Runlevel _3"
+msgstr "런레벨 3 (_3)"
+
+#: src/serviceconf.glade.h:10
+msgid "Runlevel _4"
+msgstr "런레벨 4 (_4)"
+
+#: src/serviceconf.glade.h:11
+msgid "Runlevel _5"
+msgstr "런레벨 5 (_5)"
+
+#: src/serviceconf.glade.h:12
+msgid "S_top Service"
+msgstr "서비스 정지 (_T)"
+
+#: src/serviceconf.glade.h:13
+msgid "Save"
+msgstr "저장"
+
+#: src/serviceconf.glade.h:14
+msgid "Save the changes you have made"
+msgstr "변동 사항 저장"
+
+#: src/serviceconf.glade.h:15
+msgid "Service Configuration"
+msgstr "서비스 설정"
+
+#: src/serviceconf.glade.h:16
+msgid "Start"
+msgstr "시작"
+
+#: src/serviceconf.glade.h:17
+msgid "Start the selected service"
+msgstr "선택된 서비스 시작"
+
+#: src/serviceconf.glade.h:18
+msgid "Stop"
+msgstr "중지"
+
+#: src/serviceconf.glade.h:19
+msgid "Stop the selected service"
+msgstr "선택된 서비스 중지"
+
+#: src/serviceconf.glade.h:20
+msgid "_Actions"
+msgstr "명령 (_A)"
+
+#: src/serviceconf.glade.h:21
+msgid "_Edit Runlevel"
+msgstr "런레벨 편집 (_E)"
+
+#: src/serviceconf.glade.h:22
+msgid "_File"
+msgstr ""
+
+#: src/serviceconf.glade.h:23
+msgid "_Help"
+msgstr ""
+
+#: src/serviceconf.glade.h:24
+msgid "_Manual"
+msgstr "사용법 (_M)"
+
+#: src/serviceconf.glade.h:25
+msgid "_Refresh Service List"
+msgstr "서비스 목록 재정리 (_R)"
+
+#: src/serviceconf.glade.h:26
+msgid "_Restart Service"
+msgstr "서비스 재시작 (_R)"
+
+#: src/serviceconf.glade.h:27
+msgid "_Revert To Last Save"
+msgstr "마지막 변동 사항 취소 (_R)"
+
+#: src/serviceconf.glade.h:28
+msgid "_Save Changes"
+msgstr "변동 사항 저장 (_S)"
+
+#: src/serviceconf.glade.h:29
+msgid "_Start Service"
+msgstr "서비스 시작 (_S)"
+
+#~ msgid "Refresh the list of services"
+#~ msgstr "서비스 목록 재정리"
+
+#~ msgid "Actions such as start, stop, and restart on the selected service"
+#~ msgstr "선택된 서비스의 시작, 정지, 재시작과 같은 명령 수행"
+
+#~ msgid "Select the runlevel you would like to edit"
+#~ msgstr "편집할 런레벨을 선택해 주십시요"
+
+#~ msgid "Runlevel 3 is multiuser mode with networking"
+#~ msgstr "런레벨 3은 네트워크 사용의 다중 사용자 모드 입니다"
+
+#~ msgid ""
+#~ "Runlevel 4 is reserved for local customization, and is not usually used"
+#~ msgstr ""
+#~ "런레벨 4는 로컬 사용자를 위해 예약되어 있는 것입니다, 일반적으로 사용되지 "
+#~ "않습니다"
+
+#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
+#~ msgstr "런레벨 5는 네트워크 및 X 윈도우 사용의 다중 사용자 모드 입니다"
+
+#~ msgid "Read Manual"
+#~ msgstr "사용법 읽기"
+
+#~ msgid "Exit"
+#~ msgstr "종료"

@@ -1,0 +1,55 @@
+AC_INIT(redhat-config-services.spec.in)
+AM_INIT_AUTOMAKE(redhat-config-services, 0.8.1)
+
+PYTHON=python2.2
+AC_SUBST(PYTHON)
+
+ALL_LINGUAS="cs da de es fr is it ja ko no pt ru sv tr zh_CN zh_TW"
+
+paths=`python2.2 <<EOF
+import sys;
+for p in sys.path:
+   if len(p): print p
+EOF`
+
+AC_MSG_CHECKING([for your python path])
+AC_SUBST(PY_PYTHONPATH)
+PY_PYTHONPATH=`python2.2 <<EOF
+import sys;
+path=""
+for p in sys.path:
+   if len(p): 
+	if path: path=path + p + ":" 
+	else: path=p
+print path;
+EOF`
+AC_MSG_RESULT([$PY_PYTHONPATH]);
+
+
+AC_MSG_CHECKING([for compileall])
+
+AC_SUBST(PY_COMPILEALL)
+PY_COMPILEALL="/usr/lib/python2.2/compileall.pyc"
+for p in $paths;do test -f "$p/compileall.pyc" && PY_COMPILEALL="$p/compileall.pyc" && break;done
+
+if ! test -f $PY_COMPILEALL;then
+	AC_MSG_ERROR([compileall.pyc not found in $PY_PYTHONPATH]);
+else
+	AC_MSG_RESULT([$PY_COMPILEALL]);
+fi
+
+
+
+dnl prevent to copy po/Makefile.in.in
+GETTEXT_PACKAGE=redhat-config-services
+AC_SUBST(GETTEXT_PACKAGE)
+AM_GLIB_GNU_GETTEXT
+AC_PROG_INTLTOOL
+AC_PROG_LN_S
+
+AC_OUTPUT([
+Makefile
+src/Makefile
+po/Makefile.in
+redhat-config-services.spec
+])

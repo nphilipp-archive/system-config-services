@@ -1,0 +1,826 @@
+2002-07-24  Daniel J Walsh  <dwalsh@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/AUTHORS, /usr/local/CVS/serviceconf/Makefile, /usr/local/CVS/serviceconf/po/ja.po, /usr/local/CVS/serviceconf/po/ko.po, /usr/local/CVS/serviceconf/po/Makefile, /usr/local/CVS/serviceconf/po/zh_TW.po:
+	release 0.8.1
+
+	* /usr/local/CVS/serviceconf/redhat-config-services.desktop:
+	update with translations
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: update changelog
+
+	* /usr/local/CVS/serviceconf/serviceconf.sh: fix typo
+
+	* /usr/local/CVS/serviceconf/po/cs.po, /usr/local/CVS/serviceconf/po/da.po, /usr/local/CVS/serviceconf/po/de.po, /usr/local/CVS/serviceconf/po/es.po, /usr/local/CVS/serviceconf/po/fr.po, /usr/local/CVS/serviceconf/po/is.po, /usr/local/CVS/serviceconf/po/it.po, /usr/local/CVS/serviceconf/po/ja.po, /usr/local/CVS/serviceconf/po/ko.po, /usr/local/CVS/serviceconf/po/Makefile, /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/pt.po, /usr/local/CVS/serviceconf/po/redhat-config-services.pot, /usr/local/CVS/serviceconf/po/ru.po, /usr/local/CVS/serviceconf/po/sv.po, /usr/local/CVS/serviceconf/po/tr.po, /usr/local/CVS/serviceconf/po/zh_CN.po, /usr/local/CVS/serviceconf/po/zh_TW.po:
+	update with latest changes
+
+	* /usr/local/CVS/serviceconf/po/it.po, /usr/local/CVS/serviceconf/po/ja.po, /usr/local/CVS/serviceconf/po/ko.po, /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/pt.po, /usr/local/CVS/serviceconf/po/redhat-config-services.pot, /usr/local/CVS/serviceconf/po/ru.po, /usr/local/CVS/serviceconf/po/sv.po, /usr/local/CVS/serviceconf/po/tr.po, /usr/local/CVS/serviceconf/po/zh_CN.po, /usr/local/CVS/serviceconf/po/zh_TW.po, /usr/local/CVS/serviceconf/po/cs.po, /usr/local/CVS/serviceconf/po/da.po, /usr/local/CVS/serviceconf/po/de.po, /usr/local/CVS/serviceconf/po/es.po, /usr/local/CVS/serviceconf/po/fr.po, /usr/local/CVS/serviceconf/po/is.po:
+	Update po files
+
+2002-07-23  Daniel J Walsh  <dwalsh@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: add changelog
+
+	* /usr/local/CVS/serviceconf/servicemethods.py: fix error output
+
+	* /usr/local/CVS/serviceconf/Makefile, /usr/local/CVS/serviceconf/serviceconf.spec, /usr/local/CVS/serviceconf/redhat-config-services.desktop, /usr/local/CVS/serviceconf/redhat-serviceconf.desktop:
+	 rename redhat-serviceconf.desktop redhat-config-services.desktop
+
+	* /usr/local/CVS/serviceconf/Makefile, /usr/local/CVS/serviceconf/serviceconf.spec, /usr/local/CVS/serviceconf/redhat-serviceconf.desktop, /usr/local/CVS/serviceconf/serviceconf.desktop:
+	rename serviceconf.desktop to redhat-serviceconf.desktop
+
+	* /usr/local/CVS/serviceconf/serviceconf.desktop:
+	change name to match current standards
+
+2002-07-22  Daniel J Walsh  <dwalsh@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/Makefile: cleanup Makefile
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: update version/release
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: update version
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: update changelog
+
+	* /usr/local/CVS/serviceconf/serviceconf.py:
+	Fix clock cursor, set app insensitive until services loaded
+
+2002-07-22  tfox  <tfox@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: update changelog
+
+	* /usr/local/CVS/serviceconf/docs/html/warning.png: new warning icon
+
+	* /usr/local/CVS/serviceconf/docs/html/figs/serviceconf.gif, /usr/local/CVS/serviceconf/docs/html/figs/serviceconf.png, /usr/local/CVS/serviceconf/docs/html/docbook.css, /usr/local/CVS/serviceconf/docs/html/index.html, /usr/local/CVS/serviceconf/docs/html/legalnotice.html, /usr/local/CVS/serviceconf/docs/html/ln14.html, /usr/local/CVS/serviceconf/docs/html/warning.gif:
+	fixed path to menu item, fixed app name, updated screenshot, updated bookdate on legalnotice
+
+2002-07-19  menthos  <menthos@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/sv.po:
+	2002-07-19  Christian Rose  <menthos@menthos.com>
+
+		* sv.po: Converted to UTF-8.
+
+2002-07-19  federico  <federico@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/es.po, /usr/local/CVS/serviceconf/po/fr.po, /usr/local/CVS/serviceconf/po/it.po, /usr/local/CVS/serviceconf/po/de.po:
+	"/mnt/traduzioni/RH8.0/translate/serviceconf"
+
+2002-07-17  Daniel J Walsh  <dwalsh@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.sh: add rhpl directory
+
+	* /usr/local/CVS/serviceconf/Makefile, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/translate.py:
+	remove translate.py
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: update log file
+
+	* /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.py:
+	fix some glade problems
+
+	* /usr/local/CVS/serviceconf/serviceconf.py:
+	fix internationization problems
+
+2002-07-16  Daniel J Walsh  <dwalsh@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.glade: fix glade
+
+	* /usr/local/CVS/serviceconf/serviceconf.py: fix version
+
+2002-07-12  Daniel J Walsh  <dwalsh@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/servicemethods.py, /usr/local/CVS/serviceconf/translate.py:
+	switch names to redhat-config-services
+
+	* /usr/local/CVS/serviceconf/po/Makefile, /usr/local/CVS/serviceconf/po/redhat-config-services.pot, /usr/local/CVS/serviceconf/po/serviceconf.pot:
+	rename serviceconf to redhat-config-service
+
+	* /usr/local/CVS/serviceconf/checklist.py, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/servicemethods.py:
+	change date to 2002
+
+	* /usr/local/CVS/serviceconf/po/redhat-config-services.gladestrings, /usr/local/CVS/serviceconf/po/redhat-config-services.pot:
+	rename serviceconf to redhat-config-services
+
+2002-07-11  Daniel J Walsh  <dwalsh@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: add changelog
+
+	* /usr/local/CVS/serviceconf/docs/html/index.html, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/Makefile, /usr/local/CVS/serviceconf/serviceconf.spec, /usr/local/CVS/serviceconf/serviceconf.console, /usr/local/CVS/serviceconf/serviceconf.sh:
+	change name to redhat-config-services
+
+	* /usr/local/CVS/serviceconf/serviceconf.glade: correct icon
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec:
+	changeing name to redhat-config-services
+
+	* /usr/local/CVS/serviceconf/man/Makefile, /usr/local/CVS/serviceconf/man/serviceconf.8:
+	change name to redhat-config-services
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: add Obsoletes
+
+	* /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/serviceconf.spec:
+	change serviceconf to redhat-config-services
+
+2002-07-09  Daniel J Walsh  <dwalsh@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: complete port to gtk
+
+	* /usr/local/CVS/serviceconf/serviceconf.py: Fix manual help
+
+2002-07-08  Daniel J Walsh  <dwalsh@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/Makefile: fix handling of png file
+
+	* /usr/local/CVS/serviceconf/Makefile: add srpm build to Makefile
+
+	* /usr/local/CVS/serviceconf/Makefile: add serviceconf.png
+
+	* /usr/local/CVS/serviceconf/serviceconf.glade: Add logo.
+
+	* /usr/local/CVS/serviceconf/serviceconf.png: logo for serviceconf
+
+	* /usr/local/CVS/serviceconf/serviceconf.py:
+	update version and fix about box
+
+	* /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/serviceconf.spec:
+	change Exit to quit
+
+2002-07-01  hpwu  <hpwu@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/zh_TW.po: Change charset to UTF-8
+
+2002-06-28  sarahs  <sarahs@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/zh_CN.po:
+	changed encode from GBK/GB18030 to UTF-8
+
+	* /usr/local/CVS/serviceconf/po/zh_CN.GB2312.po:
+	changed to zh_CN locale
+
+2002-06-28  hpwu  <hpwu@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/zh_TW.Big5.po: Remove zh_TW.Big5.po
+
+2002-06-26  Daniel J Walsh  <dwalsh@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/servicemethods.py: Fix language problem
+
+2002-06-26  hpwu  <hpwu@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/zh_TW.po, /usr/local/CVS/serviceconf/po/zh_TW.Big5.po:
+	Updated.
+
+2002-06-25  Daniel J Walsh  <dwalsh@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.py:
+	added internationalization patch
+
+2002-06-24  Daniel J Walsh  <dwalsh@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.py: put gnome.ui back in
+
+2002-06-12  Daniel J Walsh  <dwalsh@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/servicemethods.py:
+	Fix crash problem when same name is used in /etc/init.d and /etc/xinet.d
+
+2002-06-04  Daniel J Walsh  <dwalsh@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.py:
+	add checking to make sure user saved changes.  Also fix selection to show information properly
+
+2002-05-31  Daniel J Walsh  <dwalsh@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/servicemethods.py:
+	add try catch block to stop showing IOError because the command completes without any output
+
+	* /usr/local/CVS/serviceconf/serviceconf.glade: Fix display
+
+	* /usr/local/CVS/serviceconf/serviceconf.py:
+	ported to gtk2, fix bugs reported when changing run levels
+
+2002-05-31  sarahs  <sarahs@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/zh_CN.GB2312.po, /usr/local/CVS/serviceconf/po/zh_CN.po:
+	reviewed.
+
+2002-05-30  notting  <notting@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.py: some more gtk2 port tweaks
+
+	* /usr/local/CVS/serviceconf/serviceconf.py: some other minor cleanups
+
+2002-05-29  notting  <notting@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: fix requirements
+
+	* /usr/local/CVS/serviceconf/Makefile: more minor cleanup
+
+	* /usr/local/CVS/serviceconf/Makefile: fix ref to old file
+
+	* /usr/local/CVS/serviceconf/CheckList.py: kill old version
+
+	* /usr/local/CVS/serviceconf/checklist.py, /usr/local/CVS/serviceconf/CheckList.py, /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/serviceconf.sh, /usr/local/CVS/serviceconf/serviceconf.spec:
+	initial port to gtk2. woefully incomplete
+
+2002-05-20  tfox  <tfox@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/docs/html/index.html:
+	update copyright year
+
+	* /usr/local/CVS/serviceconf/docs/html/index.html:
+	remove Red Hat from path to guimenu in KDE
+
+2002-04-15  teg  <teg@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: Bump
+
+2002-04-15  federico  <federico@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/de.po:
+	"/mnt/traduzioni/RH8.0/translate/serviceconf"
+
+2002-04-11  notting  <notting@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/serviceconf.spec:
+	duh
+
+2002-04-09  notting  <notting@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec, /usr/local/CVS/serviceconf/servicemethods.py:
+	tweak check slightly, add more cases
+
+2002-04-07  katzj  <katzj@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.py:
+	make sure threading in gdk gets disabled
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec, /usr/local/CVS/serviceconf/servicemethods.py:
+	avoid display of rpmnew, rpmsave, rpmorig, and swp files (#60384)
+
+2002-04-06  leon  <leon@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/ru.po: update
+
+2002-04-04  nilgun  <nilgun@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/tr.po: ok
+
+2002-04-04  hpwu  <hpwu@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/zh_TW.po: Newly added translation.
+
+2002-04-03  sarahs  <sarahs@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/zh_CN.GB2312.po: fixed some mistakes.
+
+2002-04-02  nalin  <nalin@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/Makefile, /usr/local/CVS/serviceconf/serviceconf.spec:
+	set up userhelper for redhat-config-services
+
+2002-03-27  federico  <federico@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/fr.po, /usr/local/CVS/serviceconf/po/it.po:
+	"/mnt/traduzioni/RH8.0/translate/serviceconf"
+
+2002-03-27  sarahs  <sarahs@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/zh_CN.GB2312.po:
+	modified headers and added more translation.
+
+2002-03-25  sarahs  <sarahs@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/zh_CN.GB2312.po:
+	updated against the lastest master copies
+
+2002-03-22  hpwu  <hpwu@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/zh_TW.Big5.po: updated translation
+
+2002-03-21  mkim  <mkim@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/ko.po: translation updated.
+
+2002-03-15  federico  <federico@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/fr.po, /usr/local/CVS/serviceconf/po/it.po:
+	"/mnt/traduzioni/RH8.0/translate/serviceconf"
+
+2002-02-25  morais  <morais@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/pt.po: add credit messages
+
+2002-02-13  morais  <morais@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/pt.po: *** empty log message ***
+
+2002-01-26  notting  <notting@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.py: fix python2.2 build
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec, /usr/local/CVS/serviceconf/servicemethods.py:
+	add patch to fix startup with 'hide' services (<timp@redhat.com>)
+
+2001-10-13  redhat4u  <redhat4u@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/ko.po: *** empty log message ***
+
+2001-09-05  federico  <federico@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/fr.po: *** empty log message ***
+
+2001-09-04  federico  <federico@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/de.po:
+	"/mnt/traduzioni/RH7.2/translate/serviceconf"
+
+2001-08-30  tfox  <tfox@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/docs/html/index.html, /usr/local/CVS/serviceconf/docs/html/ln14.html:
+	minor edits
+
+2001-08-25  ssato  <ssato@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/ja.po: specspo/ja.po: follow updates.
+
+2001-08-24  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/serviceconf.spec:
+	fixed typo in requires
+
+2001-08-24  notting  <notting@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: fix filelist
+
+	* /usr/local/CVS/serviceconf/po/Makefile:
+	do NOT update the pot file on make. WTF is that there?
+
+	* /usr/local/CVS/serviceconf/Makefile, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/serviceconf.spec:
+	bump to 0.6.5, move symlink
+
+2001-08-23  keld  <keld@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/da.po: Various danish updates
+	apacheconf/da.po authconfig/da.po initscripts/da.po
+	netcfg/da.po redhat-config-users/da.po serviceconf/da.po
+	Xconfigurator/da.po
+
+2001-08-21  leon  <leon@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/ru.po: small fix
+
+	* /usr/local/CVS/serviceconf/po/ru.po: update russian translation
+
+2001-08-21  kmaraas  <kmaraas@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/no.po: Update
+
+2001-08-20  keld  <keld@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/da.po: new danish po for serviceconf
+	serviceconf/da.po
+
+2001-08-18  ra  <ra@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/is.po: fixing fuzzies
+
+2001-08-18  kerslage  <kerslage@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/cs.po: Korekce novych fuzzy
+
+2001-08-18  redhat4u  <redhat4u@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/ko.po: *** empty log message ***
+
+2001-08-17  menthos  <menthos@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/sv.po:
+	2001-08-18  Christian Rose  <menthos@menthos.com>
+
+		* sv.po: Updated Swedish translation.
+
+2001-08-17  federico  <federico@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/de.po, /usr/local/CVS/serviceconf/po/es.po, /usr/local/CVS/serviceconf/po/fr.po, /usr/local/CVS/serviceconf/po/it.po:
+	"/mnt/traduzioni/RH7.2/translate/serviceconf"
+
+2001-08-17  notting  <notting@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/Makefile: more sanitizing
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: fix double files
+
+	* /usr/local/CVS/serviceconf/Makefile: clean up makefile crud
+
+	* /usr/local/CVS/serviceconf/Makefile: *** empty log message ***
+
+	* /usr/local/CVS/serviceconf/Makefile, /usr/local/CVS/serviceconf/serviceconf.spec:
+	bump version
+
+	* /usr/local/CVS/serviceconf/Makefile, /usr/local/CVS/serviceconf/po/cs.po, /usr/local/CVS/serviceconf/po/de.po, /usr/local/CVS/serviceconf/po/es.po, /usr/local/CVS/serviceconf/po/fr.po, /usr/local/CVS/serviceconf/po/is.po, /usr/local/CVS/serviceconf/po/it.po, /usr/local/CVS/serviceconf/po/ja.po, /usr/local/CVS/serviceconf/po/ko.po, /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/ru.po, /usr/local/CVS/serviceconf/po/serviceconf.gladestrings, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/po/sv.po, /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/serviceconf.spec, /usr/local/CVS/serviceconf/servicemethods.py:
+	update translation stuff. add redhat-config-services link
+
+2001-08-17  kerslage  <kerslage@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/cs.po:
+	Nove PO soubory pro projekty, ktere je vubec nemely
+
+	* /usr/local/CVS/serviceconf/po/cs.po:
+	Nove (prazdne) preklady pro projekty, ktere cs.po vubec nemely
+
+2001-08-17  ra  <ra@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/is.po: finished serviceconf/is.po
+
+2001-08-16  ra  <ra@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/is.po: Added serviceconf/is.po
+
+2001-08-16  redhat4u  <redhat4u@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/ko.po: *** empty log message ***
+
+2001-08-16  djoo  <djoo@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/ko.po: Devo's edition
+
+2001-08-15  menthos  <menthos@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/sv.po:
+	2001-08-15  Christian Rose  <menthos@menthos.com>
+
+		* sv.po: Fixed Swedish translation.
+
+2001-08-14  menthos  <menthos@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/sv.po:
+	2001-08-15  Christian Rose  <menthos@menthos.com>
+
+		* sv.po: Added Swedish translation.
+
+2001-08-13  teg  <teg@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/serviceconf.pot:
+	Remove duplicate message
+
+	* /usr/local/CVS/serviceconf/po/serviceconf.pot:
+	Fix it a little...  ;) Let's see if it survives.
+
+2001-08-13  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/serviceconf.gladestrings, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/serviceconf.spec:
+	updated serviceconf.gladestrings, version 0.6.3
+
+	* /usr/local/CVS/serviceconf/po/de.po, /usr/local/CVS/serviceconf/po/es.po, /usr/local/CVS/serviceconf/po/fr.po, /usr/local/CVS/serviceconf/po/it.po, /usr/local/CVS/serviceconf/po/ko.po, /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/ru.po, /usr/local/CVS/serviceconf/po/serviceconf.pot:
+	*** empty log message ***
+
+2001-08-11  leon  <leon@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/ru.po: initial Russian translation
+
+2001-08-11  redhat4u  <redhat4u@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/ko.po: *** empty log message ***
+
+2001-08-10  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.py: bump version
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec:
+	languified specfile some more
+
+2001-08-10  federico  <federico@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/de.po, /usr/local/CVS/serviceconf/po/es.po, /usr/local/CVS/serviceconf/po/fr.po, /usr/local/CVS/serviceconf/po/it.po:
+	serviceconf
+
+2001-08-10  teg  <teg@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/no.po: Update date.
+
+	* /usr/local/CVS/serviceconf/po/no.po: *** empty log message ***
+
+2001-08-10  redhat4u  <redhat4u@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/ko.po: *** empty log message ***
+
+2001-08-10  alexl  <alexl@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec:
+	Another try. Why wasn't the icon in the rpm?
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec:
+	oops, need icon in specfile
+
+	* /usr/local/CVS/serviceconf/Makefile: oops:
+
+	* /usr/local/CVS/serviceconf/Makefile, /usr/local/CVS/serviceconf/serviceconf.desktop, /usr/local/CVS/serviceconf/serviceconf.spec, /usr/local/CVS/serviceconf/serviceconf.xpm:
+	Added an icon. Bumped version to 0.6.1
+
+2001-08-09  tfox  <tfox@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec:
+	increased version and added comment to make sure VERISON in serviceconf.py is increased when version is increased in spec file
+
+	* /usr/local/CVS/serviceconf/serviceconf.py: update VERSION
+
+2001-08-09  alexl  <alexl@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/Makefile, /usr/local/CVS/serviceconf/serviceconf.desktop, /usr/local/CVS/serviceconf/serviceconf.spec:
+	install desktop file in sysconfig:
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: updated version to 0.5
+
+2001-08-07  tfox  <tfox@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec:
+	bumped release after changing VERSION in src file
+
+	* /usr/local/CVS/serviceconf/serviceconf.py:
+	updated VERSION to match spec file
+
+2001-08-07  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.spec, /usr/local/CVS/serviceconf/servicemethods.py:
+	work around chkconfig being run in other langs than english
+
+2001-08-06  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/ja.po, /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.py:
+	gnomeified by Jonathan
+
+2001-07-31  ynakai  <ynakai@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.desktop:
+	Add Japanese translation.
+
+2001-07-31  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: languified specfile
+
+2001-07-30  ynakai  <ynakai@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec:
+	Add Japanese translation.
+
+	* /usr/local/CVS/serviceconf/po/ja.po: Small fix.
+
+	* /usr/local/CVS/serviceconf/po/ja.po: Update Japanese translation.
+
+	* /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/po/serviceconf.gladestrings:
+	Update.
+
+	* /usr/local/CVS/serviceconf/po/ja.po: Update Japanese translation.
+
+2001-07-30  pbrown  <pbrown@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.desktop, /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/serviceconf.spec, /usr/local/CVS/serviceconf/servicemethods.py:
+	fixups
+
+2001-07-30  ssato  <ssato@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/ja.po: added ja.po
+
+2001-07-18  tfox  <tfox@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: added requires usermode
+
+	* /usr/local/CVS/serviceconf/AUTHORS: added tfox
+
+	* /usr/local/CVS/serviceconf/docs/html/figs/serviceconf.gif, /usr/local/CVS/serviceconf/docs/html/index.html:
+	added image of serviceconf to docs
+
+	* /usr/local/CVS/serviceconf/serviceconf.py:
+	typed too many 3's in VERSION
+
+	* /usr/local/CVS/serviceconf/Makefile: added man to subdirs
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec:
+	make archive keeps changing the version back!
+
+	* /usr/local/CVS/serviceconf/Makefile:
+	grab version from spec file instead of hard coding it into Makefile
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: updated version to 0.2
+
+	* /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/serviceconf.spec:
+	increased version
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: updated version to 0.2
+
+	* /usr/local/CVS/serviceconf/serviceconf.py: updated VERSION variable
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec:
+	bumped version so cvs tag would work after moving man page file
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: updated changelog
+
+	* /usr/local/CVS/serviceconf/docs/Makefile, /usr/local/CVS/serviceconf/docs/serviceconf.8, /usr/local/CVS/serviceconf/man/Makefile, /usr/local/CVS/serviceconf/man/serviceconf.8:
+	moved man page into its own dir
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec:
+	added man page to list of files
+
+	* /usr/local/CVS/serviceconf/Makefile: added docs to subdirs
+
+	* /usr/local/CVS/serviceconf/docs/Makefile:
+	adding Makefile for man page
+
+	* /usr/local/CVS/serviceconf/serviceconf.py:
+	changed value of VERSION so docs dir is correct
+
+	* /usr/local/CVS/serviceconf/serviceconf.py:
+	misnamed function to open manual
+
+	* /usr/local/CVS/serviceconf/serviceconf.py:
+	added gnome.help to open html help file
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: updated version to 0.2
+
+	* /usr/local/CVS/serviceconf/serviceconf.glade: added Manual menuitem
+
+	* /usr/local/CVS/serviceconf/docs/html/docbook.css, /usr/local/CVS/serviceconf/docs/html/index.html, /usr/local/CVS/serviceconf/docs/html/ln14.html, /usr/local/CVS/serviceconf/docs/html/warning.gif:
+	serviceconf docs
+
+	* /usr/local/CVS/serviceconf/docs/serviceconf.8:
+	fixed some misspelled words
+
+2001-07-17  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/servicemethods.py:
+	fixed some spelling errors that were visible to the user
+
+2001-07-10  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: languify specfile
+
+2001-07-05  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: updated spec
+
+	* /usr/local/CVS/serviceconf/README, /usr/local/CVS/serviceconf/TODO:
+	removed README and TODO
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: misspelling in specfile
+
+	* /usr/local/CVS/serviceconf/serviceconf.spec: updated version to 0.2
+
+	* /usr/local/CVS/serviceconf/Makefile:
+	woops, tab instead of spaces in the makefile
+
+	* /usr/local/CVS/serviceconf/Makefile, /usr/local/CVS/serviceconf/serviceconf.desktop, /usr/local/CVS/serviceconf/serviceconf.spec:
+	- fixed makefile and specfile to install serviceconf.spec
+	- added text to serviceconf.desktop
+
+	* /usr/local/CVS/serviceconf/serviceconf.desktop: added desktop file
+
+2001-06-01  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.py:
+	- fix traceback where action_widgets_sensitive() is called instead of self.action_widgets_sensitive()
+	- fix problem where save/cancel widgets aren't disabled when the cancel button is selected
+	- fix so that window can grow
+
+2001-05-31  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/TODO: updated TODO list
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.py:
+	created save_revert_sensitive() and action_widgets_sensitive() in
+	serviceconf.Gui() since there was duplication of functionality in many
+	of the other methods.
+
+2001-05-30  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/Makefile, /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.py:
+	fixed stuff I broke when moving it around
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.py:
+	more code cleanups, getting ready for Bill to start working on it too
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.py:
+	reorganized some of the code so that I can keep my sanity.
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.py:
+	changed some of Jonathan's widget names to be more in line with my system
+
+2001-05-30  jrb  <jrb@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.py:
+	more fun for tim
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.py:
+	 fun for tim
+
+2001-05-30  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.py:
+	more work on the popup menu
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/servicemethods.py:
+	added some exception handling to servicemethods.py. Otherwise just removed modules which aren't used, and added some documentation to the modules/classes/methods
+
+2001-05-29  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.py:
+	more test code for the popup menus. They do nothing and are useless right now
+
+2001-05-29  jrb  <jrb@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/serviceconf.py: fix for tim
+
+2001-05-29  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/CheckList.py, /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.py:
+	starting to add the popup menu items
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/servicemethods.py:
+	fixed servicemethods.get_service_list() so that we aren't having to use a patched chkconfig anymore.
+
+	That patch was rejected for chkconfig which would allow us to avoid internationalizing the parsing of the service status (off vs. on). Bill said that we will be working on some bindings for chkconfig, so the patch won't be needed.
+
+2001-05-25  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.py:
+	the save and rever buttons/menus are now enabled and disabled depending on whether there is anything to save or revert to
+
+2001-05-24  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/CheckList.py, /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/servicemethods.py:
+	- fixed problem with window not refreshing when the rescan menu item is clicked.
+	- changes cursor when we are rescanning
+	- winMain no longer handles the events while we are rescanning
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.py:
+	added "Save Changes" and "Cancel Changes" menu items
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/servicemethods.py:
+	- enabled the start/stop/restart menu items (finally)
+	- moved the last of the stuff over to servicemethods.py from serviceconf.py which was not graphical in nature (specifically the get_service_action_results method now calls ServiceMethods.service_action_results method.
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.py:
+	removed self.clstServices.thaw() by accident. Fixed
+
+2001-05-23  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/Makefile, /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/serviceconf.sh, /usr/local/CVS/serviceconf/servicemethods.py:
+	makefile changes
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/servicemethods.py:
+	.
+
+2001-05-22  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/servicemethods.py:
+	moved the code for saving to servicemethods.ServiceMethods.save_changes
+	so that it can be reused in the TUI if it's needed
+
+	* /usr/local/CVS/serviceconf/TODO: updated TODO
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/servicemethods.py:
+	fixed saving so that it only saves the changes, not everything else
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/servicemethods.py:
+	fixed up the initial initscript parsing a bit so that we don't read in the whole initscript
+
+2001-05-21  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.py:
+	for some reason I wasn't setting the label for self.lblEditing at startup. Fixed.
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/servicemethods.py:
+	fixed parsing so that we are only parsing at startup. When switching runlevels we no longer parse files, but read the contents of the dictionary.
+
+2001-05-17  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/TODO:
+	added TODO so that I don't lose track again :P
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/serviceconf.pot, /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/servicemethods.py:
+	- changed the way we enable services. I was mistaken with the orig. way I was doing it. Now we use the correct chkconfig --level [3-5] <servicename> <on|off>
+	- added Edit Runlevel menu items, lblEditing so that we can have some way to edit runlevels we aren't currently running in.
+
+2001-05-16  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/docs/serviceconf.8:
+	*** empty log message ***
+
+	* /usr/local/CVS/serviceconf/docs/serviceconf.8: added manpage
+
+	* /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/servicemethods.py:
+	fixed length of search for hide: in the initscripts
+
+	* /usr/local/CVS/serviceconf/Makefile:
+	removed "main" from the list of files in the Makefile
+
+2001-05-15  timp  <timp@localhost.localdomain>
+
+	* /usr/local/CVS/serviceconf/Makefile:
+	fixed cvs tag for Makefile - archive
+
+	* /usr/local/CVS/serviceconf/po/Makefile, /usr/local/CVS/serviceconf/po/no.po, /usr/local/CVS/serviceconf/po/pygettext.py, /usr/local/CVS/serviceconf/po/serviceconf.gladestrings, /usr/local/CVS/serviceconf/po/serviceconf.pot:
+	added po files
+
+	* /usr/local/CVS/serviceconf/Makefile, /usr/local/CVS/serviceconf/README, /usr/local/CVS/serviceconf/serviceconf.console, /usr/local/CVS/serviceconf/serviceconf.glade, /usr/local/CVS/serviceconf/serviceconf.pam, /usr/local/CVS/serviceconf/serviceconf.py, /usr/local/CVS/serviceconf/serviceconf.sh, /usr/local/CVS/serviceconf/serviceconf.spec, /usr/local/CVS/serviceconf/servicemethods.py, /usr/local/CVS/serviceconf/translate.py, /usr/local/CVS/serviceconf/AUTHORS, /usr/local/CVS/serviceconf/CheckList.py, /usr/local/CVS/serviceconf/COPYING:
+	initial checkin - Tim
+

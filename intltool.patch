@@ -1,0 +1,82 @@
+--- po/Makefile.in.in.old	Tue Jun  4 17:00:23 2002
++++ po/Makefile.in.in	Tue Jun  4 17:04:40 2002
+@@ -77,11 +77,18 @@
+ 	$(MSGMERGE) $< $(srcdir)/$(GETTEXT_PACKAGE).pot -o $*.pox
+ 
+ .po.mo:
+-	$(MSGFMT) -o $@ $<
++	#$(MSGFMT) -o $@ $<
++	tt=conv$$$$; \
++	msgconv -t utf-8 -o $<.$$tt $<;\
++	$(MSGFMT) -o $@ $<.$$tt; \
++	rm -f $<.$$tt
+ 
+ .po.gmo:
++#	file=$(srcdir)/`echo $* | sed 's,.*/,,'`.gmo \
++#	  && rm -f $$file && $(GMSGFMT) -o $$file $<
++	tt=conv$$$$; \
+ 	file=$(srcdir)/`echo $* | sed 's,.*/,,'`.gmo \
+-	  && rm -f $$file && $(GMSGFMT) -o $$file $<
++	  && rm -f $$file && (msgconv -t utf-8 -o $<.$$tt $<;$(GMSGFMT) -o $$file $<.$$tt; rm -f $<.$$tt)
+ 
+ .po.cat:
+ 	sed -f ../intl/po2msg.sed < $< > $*.msg \
+
+--- po/Makefile.in.in	2002-07-22 17:12:12.000000000 +0200
++++ po/Makefile.in.in	2002-07-22 17:12:08.000000000 +0200
+@@ -97,8 +97,8 @@
+ 
+ all: all-@USE_NLS@
+ 
+-all-yes: $(CATALOGS)
+-all-no:
++all-yes: $(CATALOGS) Makefile
++all-no: Makefile
+ 
+ $(srcdir)/$(GETTEXT_PACKAGE).pot: $(POTFILES)
+ 	$(GENPOT)
+@@ -188,6 +188,8 @@
+ 
+ distclean: clean
+ 	rm -f Makefile Makefile.in POTFILES *.mo *.msg *.cat *.cat.m
++	rm -f po2tbl.sed
++	rm -f .intltool-merge-cache
+ 
+ maintainer-clean: distclean
+ 	@echo "This command is intended for maintainers to use;"
+@@ -195,7 +197,7 @@
+ 	rm -f $(GMOFILES)
+ 
+ distdir = ../$(GETTEXT_PACKAGE)-$(VERSION)/$(subdir)
+-dist distdir: update-po $(DISTFILES)
++dist distdir: $(DISTFILES)
+ 	dists="$(DISTFILES)"; \
+ 	for file in $$dists; do \
+ 	  ln $(srcdir)/$$file $(distdir) 2> /dev/null \
+@@ -203,7 +205,7 @@
+ 	done
+ 
+ update-po: Makefile
+-	$(MAKE) $(GETTEXT_PACKAGE).pot
++	$(GENPOT)
+ 	PATH=`pwd`/../src:$$PATH; \
+ 	cd $(srcdir); \
+ 	catalogs='$(CATALOGS)'; \
+@@ -221,8 +223,7 @@
+ 	  fi; \
+ 	done
+ 
+-.po: Makefile
+-	$(MAKE)  $(PACKAGE).pot;
++%.po: $(srcdir)/$(GETTEXT_PACKAGE).pot
+ 	PATH=`pwd`/../src:$$PATH; \
+ 	echo; printf "$*: "; \
+ 	if $(MSGMERGE) $*; then \
+@@ -251,6 +252,7 @@
+ 		| sed -e '$$s/\\$$//') > $@-t \
+ 	    && chmod a-w $@-t \
+ 	    && mv $@-t $@ )
++	$(MAKE) update-po
+ 
+ Makefile: Makefile.in.in ../config.status POTFILES
+ 	cd .. \
