@@ -187,7 +187,6 @@ msgstr "Þú verður að keyra redhat-config-services sem rót."
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
 #: src/servicemethods.py:286
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -195,7 +194,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Þú verður að virkja xinetd til að nota þessa þjónustu."
+"Nota þarf xinetd fyrir þessa þjónustu."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -371,6 +370,3 @@ msgstr "_Ræsa þjónustu"
 #: src/serviceconf.glade.h:35
 msgid "_View"
 msgstr "_Birta"
-
-#~ msgid "xinetd service"
-#~ msgstr "xinetd þjónusta"
