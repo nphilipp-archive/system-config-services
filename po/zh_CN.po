@@ -7,14 +7,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
 "POT-Creation-Date: 2004-03-02 15:33-0500\n"
-"PO-Revision-Date: 2004-02-11 16:23+1000\n"
-"Last-Translator: Sarah Wang <sarahs@redhat.com>\n"
+"PO-Revision-Date: 2004-03-11 10:55+0800\n"
+"Last-Translator: hutuworm <hutuworm@hutuworm.org>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.1\n"
-"X-Generator: KBabel 1.0\n"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -105,7 +103,9 @@ msgstr "服务"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:291 src/serviceconf.py:397 src/serviceconf.py:414
+#: src/serviceconf.py:291
+#: src/serviceconf.py:397
+#: src/serviceconf.py:414
 #: src/serviceconf.py:433
 msgid "Editing Runlevel: "
 msgstr "编辑运行级别："
@@ -132,10 +132,17 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"系统服务配置工具 VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+"  "
 
 #: src/serviceconf.py:466
 msgid "About"
-msgstr ""
+msgstr "关于"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -143,7 +150,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:495
 msgid "Help is not available."
-msgstr ""
+msgstr "帮助不存在"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -379,17 +386,3 @@ msgstr "开始服务(_S)"
 msgid "_View"
 msgstr "查看(_V)"
 
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "版权 (c) 2002 Red Hat, Inc. 保留所有权利。"
-
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "在 GPL 的条款下，该软件可被自由发行。\n"
-#~ "请向红帽错误跟踪系统：\n"
-#~ "http://bugzilla.redhat.com 报告您所发现的错误。"
-
-#~ msgid "translator_credits"
-#~ msgstr "翻译人员(_C)"
