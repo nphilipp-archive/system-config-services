@@ -1,13 +1,13 @@
 # Swedish messages for serviceconf.
 # Copyright (C) 2001, 2003 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.35 2003/03/04 18:50:07 dwalsh Exp $
+# $Id: sv.po,v 1.36 2003/03/04 21:15:45 menthos Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
 "POT-Creation-Date: 2003-03-04 14:02-0500\n"
-"PO-Revision-Date: 2003-01-09 23:59+0100\n"
+"PO-Revision-Date: 2003-03-04 22:28+0100\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -241,7 +241,7 @@ msgstr "Beskrivning"
 
 #: src/serviceconf.glade.h:3
 msgid "Don't Save"
-msgstr ""
+msgstr "Spara inte"
 
 #: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
@@ -281,7 +281,7 @@ msgstr "S_toppa tjänst"
 
 #: src/serviceconf.glade.h:13
 msgid "Save Dialog"
-msgstr ""
+msgstr "Spara dialog"
 
 #: src/serviceconf.glade.h:14
 msgid "Service Configuration"
