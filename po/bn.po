@@ -112,7 +112,7 @@ msgstr "অজ্ঞাত"
 
 #: src/serviceconf.py:298
 msgid "xinetd service"
-msgstr "এক্স্‌আইনেটডী সার্ভিস"
+msgstr "এক্সআইনেটডী সার্ভিস"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -120,7 +120,7 @@ msgstr "এক্স্‌আইনেটডী সার্ভিস"
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:422
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "কপিরাইট (ক) ২০০২ রেড হ্যাট, ইনক.। সর্বসত্ব সংরক্ষিত।"
+msgstr "কপিরাইট (ক) ২০০২ রেড হ্যাট, ইঙ্ক। সর্বসত্ব সংরক্ষিত।"
 
 #: src/serviceconf.py:423
 msgid ""
@@ -129,8 +129,7 @@ msgid ""
 "http://bugzilla.redhat.com"
 msgstr ""
 "এই সফ্‌টওয়ারটি জীপীএলের শর্তসাপেক্ষে স্বাধীন ভাবে পুনঃর্বিতরণ-যোগ্য।\n"
-"আপনার পাওয়া প্রোগ্রাম ত্রুটিগুলি দয়া করে রেড হ্যাটের প্রোগ্রাম ত্রুটি-সমীক্ষণ ব্যবস্থাকে "
-"জানান:\n"
+"আপনার পাওয়া প্রোগ্রাম ত্রুটিগুলি দয়া করে রেড হ্যাটের প্রোগ্রাম ত্রুটি-সমীক্ষণ ব্যবস্থাকে জানান:\n"
 "http://bugzilla.redhat.com"
 
 #. ----------------------------------------------------------------------------
@@ -211,12 +210,12 @@ msgstr "জন্যে এক্স্‌আইনেটডী রি-লোড
 
 #: src/servicemethods.py:324
 msgid ". The error was: "
-msgstr "ভ্রান্তিটি হল: "
+msgstr "। ভ্রান্তিটি হল: "
 
 #: src/servicemethods.py:326
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "এক্স্‌আইনেটডী সাফল্যের সঙ্গে %s রি-লোড করেছে"
+msgstr "এক্সআইনেটডী সাফল্যের সঙ্গে %s রি-লোড করেছে"
 
 #: src/servicemethods.py:329
 #, python-format
@@ -230,7 +229,7 @@ msgstr "%s ব্যর্থ। ভ্রান্তিটি হল: "
 
 #: src/servicemethods.py:336
 msgid " successful"
-msgstr "সফল"
+msgstr " সফল"
 
 #: src/serviceconf.glade.h:1
 msgid "Current Active Runlevel: "
@@ -242,7 +241,7 @@ msgstr "বিবরণ"
 
 #: src/serviceconf.glade.h:3
 msgid "Don't Save"
-msgstr "সেভ কর না"
+msgstr "সেভ করা হবে না"
 
 #: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
@@ -278,12 +277,11 @@ msgstr "রান-লেভেল_৫"
 
 #: src/serviceconf.glade.h:12
 msgid "S_top Service"
-msgstr "স_টপ সার্ভিস"
+msgstr "সার্ভিস বন্ধ"
 
 #: src/serviceconf.glade.h:13
 msgid "Save Dialog"
-msgstr "সেভ ডায়লগ"
-# msgstr "ডায়লগ সেভ কর"
+msgstr "ডায়লগ সেভ কর"
 
 #: src/serviceconf.glade.h:14
 msgid "Service Configuration"
@@ -295,7 +293,7 @@ msgstr "আরম্ভ"
 
 #: src/serviceconf.glade.h:16
 msgid "Start the selected service"
-msgstr "নির্বাচিত সার্ভিসগুলিকে আরম্ভ কর"
+msgstr "নির্বাচিত সার্ভিসগুলিকে চালু কর"
 
 #: src/serviceconf.glade.h:17
 msgid "Status"
@@ -315,15 +313,15 @@ msgid ""
 "Do you want to save the changes?"
 msgstr ""
 "বর্তমান রানলেভেলে আপনি পরিবর্তন করেছেন।\n"
-" আপনি কি পরিবর্তনগুলি সেভ করতে চান ?"
+"আপনি কি পরিবর্তনগুলি সেভ করতে চান ?"
 
 #: src/serviceconf.glade.h:22
 msgid "_Actions"
-msgstr "_কাজগুলো"
+msgstr "_কাজ"
 
 #: src/serviceconf.glade.h:23
 msgid "_Contents"
-msgstr "_বিষয়বস্তগুলো"
+msgstr "_বিষয়বস্তু"
 
 #: src/serviceconf.glade.h:24
 msgid "_Edit Runlevel"
@@ -335,7 +333,7 @@ msgstr "_ফাইল"
 
 #: src/serviceconf.glade.h:26
 msgid "_Help"
-msgstr "_সহায়ক_তথ্য"
+msgstr "_সহায়ক তথ্য"
 
 #: src/serviceconf.glade.h:27
 msgid "_Refresh Service List"
@@ -351,7 +349,7 @@ msgstr "_সেভ পরিবর্তনগুলি"
 
 #: src/serviceconf.glade.h:30
 msgid "_Start Service"
-msgstr "_আরম্ভ সার্ভিস"
+msgstr "সার্ভিস আরম্ভ"
 
 #: src/serviceconf.glade.h:31
 msgid "_View"
