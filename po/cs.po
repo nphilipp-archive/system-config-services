@@ -1,4 +1,4 @@
-# $Id: cs.po,v 1.15 2002/09/05 05:32:46 notting Exp $
+# $Id: cs.po,v 1.16 2002/09/06 03:53:24 mitr Exp $
 #
 # Czech translation for serviceconf
 # Copyright (C) 2001 Free Software Foundation, Inc.
@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf 1.0\n"
 "POT-Creation-Date: 2002-09-05 01:28-0400\n"
-"PO-Revision-Date: 2001-08-18 10:44+0100\n"
-"Last-Translator: Milan Kerslager <kerslage@linux.cz>\n"
+"PO-Revision-Date: 2002-09-06 04:46+0200\n"
+"Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-2\n"
@@ -111,26 +111,25 @@ msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"Provedli jste zmìny v aktuálním runlevelu.\n"
+"Chcete je ulo¾it?"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:391
-#, fuzzy
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Copyright (c) 2001 Red Hat, Inc. All rights reserved."
+msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved. V¹echna práva vyhrazena."
 
 #: src/serviceconf.py:392
-#, fuzzy
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
 "Tento program mù¾e být volnì ¹íøen pod licencí GPL.\n"
-"                                  \n"
-"V¹echny chyby hlaste do systému Bugzilla na adrese:\n"
+"V¹echny nalezené chyby prosím hlaste do systému Red Hat pro sledování chyb:\n"
 "http://bugzilla.redhat.com"
 
 #. ----------------------------------------------------------------------------
@@ -151,9 +150,8 @@ msgstr ""
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:525
-#, fuzzy
 msgid "You must run redhat-config-services as root."
-msgstr "Serviceconf musíte spustit jako root."
+msgstr "redhat-config-services musíte spustit jako root."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -194,10 +192,7 @@ msgid ""
 "\n"
 "\n"
 "You must enable xinetd to use this service."
-msgstr ""
-"\n"
-"\n"
-"Pro pou¾ití této slu¾by musíte spustit slu¾bu xinetd."
+msgstr "\n\nPro pou¾ití této slu¾by musíte povolit xinetd."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -226,9 +221,9 @@ msgid "xinetd must be enabled for %s to run"
 msgstr "Aby slu¾ba %s mohla bì¾et, musí být povolen xinetd"
 
 #: src/servicemethods.py:359
-#, fuzzy, python-format
+#, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s selhal pøi %s. Chyba byla: %s"
+msgstr "%s selhal. Chyba byla: %s"
 
 #: src/servicemethods.py:361
 msgid " successful"
@@ -236,7 +231,7 @@ msgstr " úspì¹ný"
 
 #: src/serviceconf.glade.h:1
 msgid "Cancel"
-msgstr "Zruèit"
+msgstr "Zru¹it"
 
 #: src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
@@ -252,7 +247,7 @@ msgstr "®ádný"
 
 #: src/serviceconf.glade.h:5
 msgid "Quit"
-msgstr "Odejít"
+msgstr "Konec"
 
 #: src/serviceconf.glade.h:6
 msgid "Restart"
@@ -316,7 +311,7 @@ msgstr "_Akce"
 
 #: src/serviceconf.glade.h:21
 msgid "_Contents"
-msgstr ""
+msgstr "_Obsah"
 
 #: src/serviceconf.glade.h:22
 msgid "_Edit Runlevel"
@@ -324,11 +319,11 @@ msgstr "_Zmìnit runlevel"
 
 #: src/serviceconf.glade.h:23
 msgid "_File"
-msgstr ""
+msgstr "_Soubor"
 
 #: src/serviceconf.glade.h:24
 msgid "_Help"
-msgstr ""
+msgstr "Nápovìd_a"
 
 #: src/serviceconf.glade.h:25
 msgid "_Refresh Service List"
@@ -349,24 +344,6 @@ msgstr "_Ulo¾it zmìny"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "_Spustit slu¾bu"
-
-#, fuzzy
-#~ msgid "Zone "
-#~ msgstr "®ádný"
-
-#, fuzzy
-#~ msgid "You must enter a host name."
-#~ msgstr "Serviceconf musíte spustit jako root."
-
-#, fuzzy
-#~ msgid "You must enter an priority."
-#~ msgstr "Serviceconf musíte spustit jako root."
-
-#~ msgid "_Manual"
-#~ msgstr "_Návod"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "Obnovit seznam slu¾eb"
 
 #~ msgid "Actions such as start, stop, and restart on the selected service"
 #~ msgstr "Akce (spu¹tìní, ukonèení nebo restart zvolené slu¾by)"
@@ -390,4 +367,4 @@ msgstr "_Spustit slu¾bu"
 #~ msgstr "Pøeèíst návod"
 
 #~ msgid "Exit"
-#~ msgstr "Ukonèit"
+#~ msgstr "Konec"
