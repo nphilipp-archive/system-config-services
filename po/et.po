@@ -1,4 +1,5 @@
 # 
+#
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Allan Sims <allsi@eau.ee>, 2004.
@@ -8,7 +9,7 @@ msgstr ""
 "Project-Id-Version: et\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-04-06 14:50-0400\n"
-"PO-Revision-Date: 2004-02-10 18:40+0200\n"
+"PO-Revision-Date: 2004-04-07 15:06+0300\n"
 "Last-Translator: Allan Sims <allsi@eau.ee>\n"
 "Language-Team: Estonian <Eesti>\n"
 "MIME-Version: 1.0\n"
@@ -86,20 +87,19 @@ msgstr "Taaslae"
 
 #: src/serviceconf.py:201
 msgid "_Save"
-msgstr ""
+msgstr "_Salvesta"
 
 #: src/serviceconf.py:201
 msgid "Save"
-msgstr ""
+msgstr "Salvesta"
 
 #: src/serviceconf.py:206
 msgid "_Revert"
-msgstr ""
+msgstr "_Pöödu tagasi"
 
 #: src/serviceconf.py:206
-#, fuzzy
 msgid "Revert"
-msgstr "Taaslae"
+msgstr "Pöördu tagasi"
 
 #. the textbox
 #. the statusbox
@@ -158,10 +158,17 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"Süsteemi Teenuste Seadistamise Vahebd VERSION\n"
+"Autoriõigus (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 
 #: src/serviceconf.py:482
 msgid "About"
-msgstr ""
+msgstr "Tiitelandmed"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -169,7 +176,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:511
 msgid "Help is not available."
-msgstr ""
+msgstr "Abi ei ole kättesaadav."
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -363,7 +370,7 @@ msgstr "_Abi"
 
 #: src/serviceconf.glade.h:28
 msgid "_Quit"
-msgstr ""
+msgstr "_Välju"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
@@ -410,3 +417,4 @@ msgstr "_Vaade"
 
 #~ msgid "Stop the selected service"
 #~ msgstr "Seiska valitud teenus"
+
