@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "POT-Creation-Date: 2003-03-04 14:02-0500\n"
-"PO-Revision-Date: 2003-01-10 09:28+1000\n"
+"PO-Revision-Date: 2003-03-18 11:05+1000\n"
 "Last-Translator: Michelle Kim <mkim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -205,7 +205,7 @@ msgstr ""
 #. if it's toggled off
 #: src/servicemethods.py:323
 msgid "xinetd failed to reload for "
-msgstr "xinetd가 다음을 다시 로드하는데 실패했습니다: "
+msgstr "xinetd가 다음을 다시 읽어오는데 실패했습니다: "
 
 #: src/servicemethods.py:324
 msgid ". The error was: "
@@ -214,7 +214,7 @@ msgstr ". 오류는 다음과 같습니다: "
 #: src/servicemethods.py:326
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "xinetd가 %s (을)를 성공적으로 다시 로드했습니다"
+msgstr "xinetd가 %s (을)를 성공적으로 다시 읽어들였습니다"
 
 #: src/servicemethods.py:329
 #, python-format
@@ -241,7 +241,7 @@ msgstr "설명"
 
 #: src/serviceconf.glade.h:3
 msgid "Don't Save"
-msgstr ""
+msgstr "저장하지 않음"
 
 #: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
@@ -281,7 +281,7 @@ msgstr "서비스 정지 (_T)"
 
 #: src/serviceconf.glade.h:13
 msgid "Save Dialog"
-msgstr ""
+msgstr "대화 상자 저장"
 
 #: src/serviceconf.glade.h:14
 msgid "Service Configuration"
@@ -566,3 +566,4 @@ msgstr "서비스 시작 (_S)"
 
 #~ msgid "Exit"
 #~ msgstr "종료"
+
