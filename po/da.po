@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
 "POT-Creation-Date: 2003-03-04 14:02-0500\n"
-"PO-Revision-Date: 2003-01-11 12:30:57+0100\n"
+"PO-Revision-Date: 2003-03-08 12:30:57+0100\n"
 "Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
 "Language-Team: Danish <dansk@klid.dk>\n"
 "MIME-Version: 1.0\n"
@@ -244,7 +244,7 @@ msgstr "Beskrivelse"
 
 #: src/serviceconf.glade.h:3
 msgid "Don't Save"
-msgstr ""
+msgstr "Gem ikke"
 
 #: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
@@ -284,7 +284,7 @@ msgstr "Afbryd tjeneste"
 
 #: src/serviceconf.glade.h:13
 msgid "Save Dialog"
-msgstr ""
+msgstr "Gem dialog"
 
 #: src/serviceconf.glade.h:14
 msgid "Service Configuration"
