@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
 "POT-Creation-Date: 2003-08-05 13:35-0400\n"
-"PO-Revision-Date: 2003-01-15 02:13+0100\n"
+"PO-Revision-Date: 2003-08-29 19:25+0200\n"
 "Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -61,7 +61,7 @@ msgstr ""
 #: src/serviceconf.py:62
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "Er du sikker på at du ønsker å slette %s?"
 
 #. make sure threading is disabled
 #. map the event signals to specific methods
@@ -187,15 +187,11 @@ msgstr "Du må kjøre redhat-config-services som root."
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
 #: src/servicemethods.py:286
-#, fuzzy
 msgid ""
 "\n"
 "\n"
 "xinetd is required for this service."
-msgstr ""
-"\n"
-"\n"
-"Du må slå på xinetd for å bruke denne tjenesten."
+msgstr "\n\nxinetd kreves for denne tjenesten."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -234,21 +230,19 @@ msgstr " suksess"
 
 #: src/serviceconf.glade.h:1
 msgid "*"
-msgstr ""
+msgstr "*"
 
 #: src/serviceconf.glade.h:2
-#, fuzzy
 msgid "Add Service"
-msgstr "Tjenester"
+msgstr "Legg til tjeneste"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Aktivt kjøringsnivå: "
 
 #: src/serviceconf.glade.h:4
-#, fuzzy
 msgid "Delete Service"
-msgstr "S_topp tjenesten"
+msgstr "Slett tjeneste"
 
 #: src/serviceconf.glade.h:5
 msgid "Description"
@@ -256,7 +250,7 @@ msgstr "Beskrivelse"
 
 #: src/serviceconf.glade.h:6
 msgid "Don't Save"
-msgstr ""
+msgstr "Ikke lagre"
 
 #: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
@@ -296,16 +290,15 @@ msgstr "S_topp tjenesten"
 
 #: src/serviceconf.glade.h:16
 msgid "Save Dialog"
-msgstr ""
+msgstr "Lagre dialog"
 
 #: src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "Tjenestekonfigurasjon"
 
 #: src/serviceconf.glade.h:18
-#, fuzzy
 msgid "Service Name: "
-msgstr "Tjenester"
+msgstr "Navn på tjeneste: "
 
 #: src/serviceconf.glade.h:19
 msgid "Start"
@@ -373,7 +366,4 @@ msgstr "_Start tjenester"
 
 #: src/serviceconf.glade.h:35
 msgid "_View"
-msgstr ""
-
-#~ msgid "xinetd service"
-#~ msgstr "xinetd-tjeneste"
+msgstr "_Vis"
