@@ -1,14 +1,17 @@
+# translation of ko.po to Korean
+# Michelle Kim <mkim@brisbane.redhat.com>, 2002
 msgid ""
 msgstr ""
-"Project-Id-Version: serviceconf\n"
+"Project-Id-Version: ko\n"
 "POT-Creation-Date: 2002-07-24 07:01-0400\n"
-"PO-Revision-Date: 2001-08-16 10:15+0900\n"
-"Last-Translator: Michelle Kim <mkim@redhat.com>\n"
-"Language-Team: Red Hat Asia-Pacific\n"
+"PO-Revision-Date: 2002-07-25 11:32+1000\n"
+"Last-Translator: Michelle Kim <mkim@brisbane.redhat.com>\n"
+"Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=EUC-KR\n"
-"Content-Transfer-Encoding: 8-bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
+"X-Generator: KBabel 1.0beta1\n"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -41,89 +44,89 @@ msgstr ""
 #. add more TTL checking code here
 #: src/dnsdata.py:90 src/dnsdata.py:92
 msgid "Directory "
-msgstr ""
+msgstr "ë””ë ‰í† ë¦¬"
 
 #: src/dnsdata.py:90
 msgid " does not begin with a slash!"
-msgstr ""
+msgstr " ì€(ëŠ”) ìŠ¬ë˜ì‹œë¡œ ì‹œì‘í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤!"
 
 #: src/dnsdata.py:92
 msgid " is not an existing directory!"
-msgstr ""
+msgstr " ë””ë ‰í† ë¦¬ëŠ” ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤!"
 
 #. FIXME
 #. more checks for valid path here
 #: src/dnsdata.py:113 src/dnsdata.py:125
 msgid "Master "
-msgstr ""
+msgstr "ë§ˆìŠ¤í„° "
 
 #: src/dnsdata.py:113 src/dnsdata.py:294
 msgid " is not a valid IP address."
-msgstr ""
+msgstr " ì€(ëŠ”) ì˜ëª»ëœ IP ì£¼ì†Œì…ë‹ˆë‹¤."
 
 #: src/dnsdata.py:125 src/dnsdata.py:279 src/dnsdata.py:383 src/dnsdata.py:433
 #: src/dnsdata.py:470 src/dnsdata.py:511
 msgid " is defined twice."
-msgstr ""
+msgstr " ì€(ëŠ”) ì¤‘ë³µ ì •ì˜ë˜ì—ˆìŠµë‹ˆë‹¤."
 
 #: src/dnsdata.py:133
 msgid "Slave zone name "
-msgstr ""
+msgstr "ìŠ¬ë ˆì´ë¸Œ ì˜ì—­ëª…"
 
 #: src/dnsdata.py:133 src/dnsdata.py:414 src/dnsdata.py:487
 msgid " is not a valid domain name."
-msgstr ""
+msgstr " ì€(ëŠ”) ì˜ëª»ëœ ë„ë©”ì¸ëª…ì…ë‹ˆë‹¤."
 
 #: src/dnsdata.py:148
 msgid "Forwarder "
-msgstr ""
+msgstr "ì „ë‹¬ ì„œë²„"
 
 #: src/dnsdata.py:148
 msgid " is not a valid Ip address."
-msgstr ""
+msgstr " ì€(ëŠ”) ì˜ëª»ëœ IP ì£¼ì†Œì…ë‹ˆë‹¤."
 
 #: src/dnsdata.py:174
 msgid "Primary Nameserver not defined."
-msgstr ""
+msgstr "ì£¼ ì´ë¦„ì„œë²„ê°€ ì •ì˜ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤."
 
 #. print "testPNS on " + value
 #: src/dnsdata.py:181 src/dnsdata.py:183
 msgid "Primary Nameserver `"
-msgstr ""
+msgstr "ì£¼ ì´ë¦„ì„œë²„ "
 
 #: src/dnsdata.py:181 src/dnsdata.py:249 src/FwdZone.py:444
 msgid "' has no . at the end. You must use a full hostname."
-msgstr ""
+msgstr "'ì€(ëŠ”) . ë¡œ ëë‚˜ì§€ ì•ŠìŠµë‹ˆë‹¤. ì™„ì „í•œ í˜¸ìŠ¤íŠ¸ëª…ì„ ì‚¬ìš©í•´ ì£¼ì‹­ì‹œì˜¤."
 
 #: src/dnsdata.py:183
 msgid "' is not a valid hostname or IP address."
-msgstr ""
+msgstr "' ì€(ëŠ”) ì˜ëª»ëœ í˜¸ìŠ¤íŠ¸ëª… ë˜ëŠ” IP ì£¼ì†Œì…ë‹ˆë‹¤."
 
 #: src/dnsdata.py:197
 msgid "Refresh value should be bigger than Retry"
-msgstr ""
+msgstr "ê°±ì‹ ê°’ (refresh value)ëŠ” ì¬ì‹œë„ê°’ (retry value)ë³´ë‹¤ ì»¤ì•¼ í•©ë‹ˆë‹¤."
 
 #. FIXME
 #. add more tests here
 #: src/dnsdata.py:204
 msgid "Serial number must be >= 1."
-msgstr ""
+msgstr "ì¼ë ¨ ë²ˆí˜¸ëŠ” ë°˜ë“œì‹œ 1ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ì•„ì•¼ í•©ë‹ˆë‹¤. ( >= 1)"
 
 #: src/dnsdata.py:208
 msgid "Refresh value must be >= 0."
-msgstr ""
+msgstr "ì¬ìƒê°’ì€ ë°˜ë“œì‹œ 0ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ì•„ì•¼ í•©ë‹ˆë‹¤. ( >= 0)"
 
 #: src/dnsdata.py:212
 msgid "Retry value must be >= 0."
-msgstr ""
+msgstr "ì¬ì‹œë„ê°’ì€ 0ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ì•„ì•¼ í•©ë‹ˆë‹¤. ( >= 0)"
 
 #: src/dnsdata.py:216
 msgid "Expire value must be >= 0."
-msgstr ""
+msgstr "ë§Œë£Œê°’ (expire value)ëŠ” 0ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ì•„ì•¼ í•©ë‹ˆë‹¤. ( >= 0)"
 
 #: src/dnsdata.py:220
 msgid "Minimum value must be >= 0."
-msgstr ""
+msgstr "ìµœì†Œê°’ì€ ë°˜ë“œì‹œ 0ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ì•„ì•¼ í•©ë‹ˆë‹¤. ( >= 0)"
 
 #. num = self.getNumA()
 #. if num:
@@ -138,89 +141,88 @@ msgstr ""
 #. raise TestError, _("Hostname ") + names[i] + _(" is defined twice.")
 #: src/dnsdata.py:241 src/dnsdata.py:285 src/dnsdata.py:319 src/dnsdata.py:390
 msgid "NewHost"
-msgstr ""
+msgstr "ìƒˆí˜¸ìŠ¤íŠ¸"
 
 #: src/dnsdata.py:246
 msgid "PTR hostname not defined"
-msgstr ""
+msgstr "PTR í˜¸ìŠ¤íŠ¸ëª…ì´ ì •ì˜ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤."
 
 #: src/dnsdata.py:249
 msgid "PTR hostname `"
-msgstr ""
+msgstr "PTR í˜¸ìŠ¤íŠ¸ëª…"
 
 #: src/dnsdata.py:252 src/dnsdata.py:290 src/dnsdata.py:325 src/dnsdata.py:360
 #: src/dnsdata.py:364 src/dnsdata.py:395
 msgid " is not a valid hostname."
-msgstr ""
+msgstr " ì€(ëŠ”) ì˜ëª»ëœ í˜¸ìŠ¤íŠ¸ëª…ì…ë‹ˆë‹¤."
 
 #: src/dnsdata.py:260
 msgid " must be in the range 0..255."
-msgstr ""
+msgstr " (ì€)ëŠ” 0..255 ë²”ìœ„ë‚´ì—¬ì•¼ í•©ë‹ˆë‹¤."
 
 #: src/dnsdata.py:279
 msgid "IP "
-msgstr ""
+msgstr "IP "
 
 #: src/dnsdata.py:325 src/dnsdata.py:349
 msgid "Nameserver "
-msgstr ""
+msgstr "ì´ë¦„ì„œë²„ "
 
 #: src/dnsdata.py:330
 msgid " is not a valid host or domain name."
-msgstr ""
+msgstr " ì€(ëŠ”) ì˜ëª»ëœ í˜¸ìŠ¤íŠ¸ëª… ë˜ëŠ” ë„ë©”ì¸ëª…ì…ë‹ˆë‹¤."
 
 #: src/dnsdata.py:349
 msgid " is defined twice for "
-msgstr ""
+msgstr " ëŠ” "
 
 #: src/dnsdata.py:355 src/dnsdata.py:356
 msgid "New"
-msgstr ""
+msgstr "ìƒˆë¡œìš´"
 
 #: src/dnsdata.py:383
 msgid "Alias "
-msgstr ""
+msgstr "ë³„ì¹­"
 
 #: src/dnsdata.py:409
 msgid "<New Forward Zone>"
-msgstr ""
+msgstr "<ìƒˆ ì „ë‹¬ ì˜ì—­>"
 
 #: src/dnsdata.py:414 src/dnsdata.py:487
 msgid "Forward zone name "
-msgstr ""
+msgstr "ì „ë‹¬ ì˜ì—­ëª…"
 
 #: src/dnsdata.py:433 src/dnsdata.py:511
-#, fuzzy
 msgid "Zone "
-msgstr "¾øÀ½"
+msgstr "ì˜ì—­"
 
 #: src/dnsdata.py:442
 msgid "<New Reverse Zone>"
-msgstr ""
+msgstr "<ìƒˆ ì—­ë°©í–¥ ì˜ì—­>"
 
 #: src/dnsdata.py:446
 msgid "Reverse zone name `"
-msgstr ""
+msgstr "ì—­ë°©í–¥ ì˜ì—­ëª… "
 
 #: src/dnsdata.py:446
 msgid "' is not the end of a reverse IP address."
-msgstr ""
+msgstr "' ì€(ëŠ”) ì—­ë°©í–¥ IP ì£¼ì†Œì˜ ëì´ ì•„ë‹™ë‹ˆë‹¤."
 
 #: src/dnsdata.py:451
 msgid "Reverse zone `"
-msgstr ""
+msgstr "ì—­ë°©í–¥ ì˜ì—­ "
 
 #: src/dnsdata.py:451 src/FwdZone.py:657
 msgid "' must list at least one name server"
-msgstr ""
+msgstr " ëª©ë¡ì€ ìµœì†Œí•œ í•œ ê°œì˜ ì´ë¦„ ì„œë²„ë¥¼ ì œê³µí•´ì•¼ í•©ë‹ˆë‹¤."
 
 #: src/dnsdata.py:470
 msgid "Reverse zone "
-msgstr ""
+msgstr "ì—­ë°©í–¥ ì˜ì—­"
 
 #: src/dnsdata.py:482
 msgid "<New Zone>"
-msgstr ""
+msgstr "<ìƒˆ ì˜ì—­>"
 
 #. serviceconf.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -256,16 +258,16 @@ msgstr ""
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:160
 msgid "Currently Running in Runlevel: "
-msgstr "·±·¹º§¿¡¼­ ÇöÀç ½ÇÇà ÁßÀÓ: "
+msgstr "ëŸ°ë ˆë²¨ì—ì„œ í˜„ì¬ ì‹¤í–‰ ì¤‘ì„: "
 
 #. This is a sentry
 #: src/serviceconf.py:171
 msgid "Start at Boot"
-msgstr "ºÎÆÃ½Ã ½ÃÀÛ"
+msgstr "ë¶€íŒ…ì‹œ ì‹œì‘"
 
 #: src/serviceconf.py:172
 msgid "Services"
-msgstr "¼­ºñ½º"
+msgstr "ì„œë¹„ìŠ¤"
 
 #. self.clstServices.set_column_justification(0,GTK.JUSTIFY_CENTER)
 #. self.clstServices.set_column_justification(1,GTK.JUSTIFY_LEFT)
@@ -281,34 +283,32 @@ msgstr "¼­ºñ½º"
 #: src/serviceconf.py:217 src/serviceconf.py:299 src/serviceconf.py:308
 #: src/serviceconf.py:332
 msgid "Editing Runlevel: "
-msgstr "·±·¹º§ ÆíÁı: "
+msgstr "ëŸ°ë ˆë²¨ í¸ì§‘: "
 
 #: src/serviceconf.py:314
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"í˜„ì¬ ëŸ°ë ˆë²¨ì„ ìˆ˜ì •í•˜ì…¨ìŠµë‹ˆë‹¤.\n"
+"ë³€ê²½ ì‚¬í•­ì„ ì €ì¥í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:344
-#, fuzzy
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Copyright (c) 2001 Red Hat, Inc. All rights reserved."
+msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 
 #: src/serviceconf.py:345
-#, fuzzy
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
-"ÀÌ ÇÁ·Î±×·¥Àº General Public License ³»¿¡¼­ ÀÚÀ¯·Ó°Ô Àç¹èÆ÷µÉ ¼ö ÀÖ½À´Ï´Ù.\n"
-"                                  \n"
-"¿©·¯ºĞÀÌ ¹ß°ßÇÏ½Å ¹ö±×ÀÇ ¸ğµç ³»¿ëÀº Red Hat ¹ö±× ÃßÀû ½Ã½ºÅÛ¿¡ º¸°íÇØ ÁÖ½Ã"
-"±â ¹Ù¶ø´Ï´Ù:\n"
+"ì´ í”„ë¡œê·¸ë¨ì€ GPLì˜ ê·œì • í•˜ì—ì„œ ììœ ë¡­ê²Œ ì¬ë°°í¬ë  ìˆ˜ ìˆìŠµë‹ˆë‹¤.\n"
+"ë²„ê·¸ë¥¼ ë°œê²¬í•˜ì‹œë©´ Red Hat ë²„ê·¸ ì¶”ì  ì‹œìŠ¤í…œì— ë³´ê³ í•´ ì£¼ì‹œê¸° ë°”ëë‹ˆë‹¤:\n"
 "http://bugzilla.redhat.com"
 
 #. ----------------------------------------------------------------------------
@@ -317,7 +317,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:363
 msgid "Help is not available."
-msgstr ""
+msgstr "ë„ì›€ë§ì´ ì—†ìŠµë‹ˆë‹¤."
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -331,9 +331,8 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #: src/serviceconf.py:481
-#, fuzzy
 msgid "You must run redhat-config-services as root."
-msgstr "serviceconf´Â root °èÁ¤À¸·Î ½ÇÇàÇØ¾ß ÇÕ´Ï´Ù."
+msgstr "redhat-config-servicesëŠ” ë£¨íŠ¸ë¡œ ì‹¤í–‰í•˜ì…”ì•¼ í•©ë‹ˆë‹¤."
 
 #. import gnome.ui
 #. Columns for "a_treeview"
@@ -356,60 +355,58 @@ msgstr "serviceconf´Â root °èÁ¤À¸·Î ½ÇÇàÇØ¾ß ÇÕ´Ï´Ù."
 #. continue
 #: src/FwdZone.py:236
 msgid " aliased to "
-msgstr ""
+msgstr "ë‹¤ìŒê³¼ ê°™ì€ ë³„ì¹­ìœ¼ë¡œ "
 
 #: src/FwdZone.py:265 src/FwdZone.py:362 src/FwdZone.py:433
-#, fuzzy
 msgid "You must enter a host name."
-msgstr "serviceconf´Â root °èÁ¤À¸·Î ½ÇÇàÇØ¾ß ÇÕ´Ï´Ù."
+msgstr "í˜¸ìŠ¤íŠ¸ëª…ì„ ì…ë ¥í•´ ì£¼ì‹­ì‹œì˜¤."
 
 #: src/FwdZone.py:268
 msgid "You must enter an alias."
-msgstr ""
+msgstr "ë³„ì¹­ (alias)ë¥¼ ì…ë ¥í•´ ì£¼ì‹­ì‹œì˜¤."
 
 #: src/FwdZone.py:288
 msgid "An alias with this name already exists."
-msgstr ""
+msgstr "ì´ ì´ë¦„ì—ëŠ” ë³„ì¹­ì´ ì´ë¯¸ ì¡´ì¬í•©ë‹ˆë‹¤."
 
 #: src/FwdZone.py:312
 msgid " at priority "
-msgstr ""
+msgstr "ìš°ì„ ì ìœ¼ë¡œ"
 
 #: src/FwdZone.py:338 src/FwdZone.py:340
 #, python-format
 msgid "Mail Exchanger for %s"
-msgstr ""
+msgstr "%sì— ì‚¬ìš©ë˜ëŠ” ë©”ì¼ êµí™˜ê¸° (Mail Exchanger)"
 
 #: src/FwdZone.py:345
 msgid "Edit Mail Exchanger"
-msgstr ""
+msgstr "ë©”ì¼ êµí™˜ê¸° í¸ì§‘"
 
 #: src/FwdZone.py:349
 msgid "Add a Mail Exchanger"
-msgstr ""
+msgstr "ë©”ì¼ êµí™˜ê¸° ì¶”ê°€"
 
 #: src/FwdZone.py:365
-#, fuzzy
 msgid "You must enter an priority."
-msgstr "serviceconf´Â root °èÁ¤À¸·Î ½ÇÇàÇØ¾ß ÇÕ´Ï´Ù."
+msgstr "ìš°ì„  ìˆœìœ„ë¥¼ ì…ë ¥í•´ ì£¼ì‹­ì‹œì˜¤."
 
 #: src/FwdZone.py:394
 msgid " served by "
-msgstr ""
+msgstr "ì€(ëŠ”) ë‹¤ìŒìœ¼ë¡œ êµ¬ì¶•ë˜ì—ˆìŠµë‹ˆë‹¤: "
 
 #: src/FwdZone.py:436
 msgid "You must enter a resolution address."
-msgstr ""
+msgstr "í˜¸ìŠ¤íŠ¸ëª… ì£¼ì†Œ ë³€í™˜ì— ì‚¬ìš©ë  ì£¼ì†Œë¥¼ ì…ë ¥í•´ ì£¼ì‹­ì‹œì˜¤."
 
 #: src/FwdZone.py:444
 msgid "NS hostname `"
-msgstr ""
+msgstr "NS í˜¸ìŠ¤íŠ¸ëª…"
 
 #. slurp from the zone
 #. test_soa_values
 #: src/FwdZone.py:637
 msgid "SOA Refresh value should be bigger than Retry"
-msgstr ""
+msgstr "SOA ê°±ì‹ ê°’ì€ ì¬ì‹œë„ê°’ë³´ë‹¤ ì»¤ì•¼í•©ë‹ˆë‹¤."
 
 #. test_a_list
 #. test_ns_list
@@ -417,13 +414,13 @@ msgstr ""
 #. test_mx_list
 #: src/FwdZone.py:657
 msgid "Forward zone `"
-msgstr ""
+msgstr "ì „ë‹¬ ì˜ì—­"
 
 #. ####
 #: src/FwdZone.py:724
 #, python-format
 msgid "Settings for %s"
-msgstr ""
+msgstr "%s ì„¤ì •"
 
 #. FIXME: put checks in here.
 #. serviceactions.py
@@ -467,7 +464,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"ÀÌ ¼­ºñ½º¸¦ »ç¿ëÇÏ½Ã·Á¸é, ¹İµå½Ã xinetd¸¦ È°¼ºÈ­ ½ÃÄÑ¾ß ÇÕ´Ï´Ù."
+"ì´ ì„œë¹„ìŠ¤ë¥¼ ì‚¬ìš©í•˜ì‹œë ¤ë©´, ë°˜ë“œì‹œ xinetdë¥¼ í™œì„±í™” ì‹œì¼œì•¼ í•©ë‹ˆë‹¤."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -479,171 +476,172 @@ msgstr ""
 #. if it's toggled off
 #: src/servicemethods.py:317
 msgid "xinetd failed to reload for "
-msgstr "xinetd°¡ ´ÙÀ½À» ´Ù½Ã ·ÎµåÇÏ´Âµ¥ ½ÇÆĞÇß½À´Ï´Ù: "
+msgstr "xinetdê°€ ë‹¤ìŒì„ ë‹¤ì‹œ ë¡œë“œí•˜ëŠ”ë° ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤: "
 
 #: src/servicemethods.py:318
 msgid ". The error was: "
-msgstr ". ¿À·ù´Â ´ÙÀ½°ú °°½À´Ï´Ù: "
+msgstr ". ì˜¤ë¥˜ëŠ” ë‹¤ìŒê³¼ ê°™ìŠµë‹ˆë‹¤: "
 
 #: src/servicemethods.py:320
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "xinetd°¡ %s (À»)¸¦ ¼º°øÀûÀ¸·Î ´Ù½Ã ·ÎµåÇß½À´Ï´Ù"
+msgstr "xinetdê°€ %s (ì„)ë¥¼ ì„±ê³µì ìœ¼ë¡œ ë‹¤ì‹œ ë¡œë“œí–ˆìŠµë‹ˆë‹¤"
 
 #: src/servicemethods.py:323
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "%s (À»)¸¦ ½ÇÇàÇÏ±â À§ÇØ¼­´Â ¹İµå½Ã xinetd°¡ È°¼ºÈ­ µÇ¾î¾ß ÇÕ´Ï´Ù"
+msgstr "%s (ì„)ë¥¼ ì‹¤í–‰í•˜ê¸° ìœ„í•´ì„œëŠ” ë°˜ë“œì‹œ xinetdê°€ í™œì„±í™” ë˜ì–´ì•¼ í•©ë‹ˆë‹¤"
 
 #: src/servicemethods.py:328
-#, fuzzy, python-format
+#, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s (ÀÌ)°¡ %s ÇÏ´Âµ¥ ½ÇÆĞÇß½À´Ï´Ù. ¿À·ù´Â ´ÙÀ½°ú °°½À´Ï´Ù: %s"
+msgstr "%sì— ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤. ì˜¤ë¥˜ëŠ” ë‹¤ìŒê³¼ ê°™ìŠµë‹ˆë‹¤: %s"
 
 # ../servicemethods.py:320"
 #: src/servicemethods.py:330
 msgid " successful"
-msgstr " ¼º°ø"
+msgstr " ì„±ê³µ"
 
 #: src/serviceconf.glade.h:1
 msgid "Cancel"
-msgstr "Ãë¼Ò"
+msgstr "ì·¨ì†Œ"
 
 #: src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
-msgstr "ÇöÀç ½ÇÇà ÁßÀÎ ·±·¹º§: "
+msgstr "í˜„ì¬ ì‹¤í–‰ ì¤‘ì¸ ëŸ°ë ˆë²¨: "
 
 #: src/serviceconf.glade.h:3
 msgid "Editing Runlevel:"
-msgstr "·±·¹º§ ÆíÁı:"
+msgstr "ëŸ°ë ˆë²¨ í¸ì§‘:"
 
 #: src/serviceconf.glade.h:4
 msgid "None"
-msgstr "¾øÀ½"
+msgstr "ì—†ìŒ"
 
 #: src/serviceconf.glade.h:5
 msgid "Quit"
-msgstr "Á¾·á"
+msgstr "ì¢…ë£Œ"
 
 #: src/serviceconf.glade.h:6
 msgid "Restart"
-msgstr "Àç½ÃÀÛ"
+msgstr "ì¬ì‹œì‘"
 
 #: src/serviceconf.glade.h:7
 msgid "Restart the selected service"
-msgstr "¼±ÅÃµÈ ¼­ºñ½º Àç½ÃÀÛ"
+msgstr "ì„ íƒëœ ì„œë¹„ìŠ¤ ì¬ì‹œì‘"
 
 #: src/serviceconf.glade.h:8
 msgid "Revert to the last saved change"
-msgstr "¸¶Áö¸· º¯µ¿ »çÇ× Ãë¼Ò"
+msgstr "ë§ˆì§€ë§‰ ë³€ë™ ì‚¬í•­ ì·¨ì†Œ"
 
 #: src/serviceconf.glade.h:9
 msgid "Runlevel _3"
-msgstr "·±·¹º§ 3 (_3)"
+msgstr "ëŸ°ë ˆë²¨ 3 (_3)"
 
 #: src/serviceconf.glade.h:10
 msgid "Runlevel _4"
-msgstr "·±·¹º§ 4 (_4)"
+msgstr "ëŸ°ë ˆë²¨ 4 (_4)"
 
 #: src/serviceconf.glade.h:11
 msgid "Runlevel _5"
-msgstr "·±·¹º§ 5 (_5)"
+msgstr "ëŸ°ë ˆë²¨ 5 (_5)"
 
 #: src/serviceconf.glade.h:12
 msgid "S_top Service"
-msgstr "¼­ºñ½º Á¤Áö (_T)"
+msgstr "ì„œë¹„ìŠ¤ ì •ì§€ (_T)"
 
 #: src/serviceconf.glade.h:13
 msgid "Save"
-msgstr "ÀúÀå"
+msgstr "ì €ì¥"
 
 #: src/serviceconf.glade.h:14
 msgid "Save the changes you have made"
-msgstr "º¯µ¿ »çÇ× ÀúÀå"
+msgstr "ë³€ë™ ì‚¬í•­ ì €ì¥"
 
 #: src/serviceconf.glade.h:15
 msgid "Service Configuration"
-msgstr "¼­ºñ½º ¼³Á¤"
+msgstr "ì„œë¹„ìŠ¤ ì„¤ì •"
 
 #: src/serviceconf.glade.h:16
 msgid "Start"
-msgstr "½ÃÀÛ"
+msgstr "ì‹œì‘"
 
 #: src/serviceconf.glade.h:17
 msgid "Start the selected service"
-msgstr "¼±ÅÃµÈ ¼­ºñ½º ½ÃÀÛ"
+msgstr "ì„ íƒëœ ì„œë¹„ìŠ¤ ì‹œì‘"
 
 #: src/serviceconf.glade.h:18
 msgid "Stop"
-msgstr "ÁßÁö"
+msgstr "ì¤‘ì§€"
 
 #: src/serviceconf.glade.h:19
 msgid "Stop the selected service"
-msgstr "¼±ÅÃµÈ ¼­ºñ½º ÁßÁö"
+msgstr "ì„ íƒëœ ì„œë¹„ìŠ¤ ì¤‘ì§€"
 
 #: src/serviceconf.glade.h:20
 msgid "_Actions"
-msgstr "¸í·É (_A)"
+msgstr "ëª…ë ¹ (_A)"
 
 #: src/serviceconf.glade.h:21
 msgid "_Edit Runlevel"
-msgstr "·±·¹º§ ÆíÁı (_E)"
+msgstr "ëŸ°ë ˆë²¨ í¸ì§‘ (_E)"
 
 #: src/serviceconf.glade.h:22
 msgid "_File"
-msgstr ""
+msgstr "íŒŒì¼(_F)"
 
 #: src/serviceconf.glade.h:23
 msgid "_Help"
-msgstr ""
+msgstr "ë„ì›€ë§(_H)"
 
 #: src/serviceconf.glade.h:24
 msgid "_Manual"
-msgstr "»ç¿ë¹ı (_M)"
+msgstr "ì‚¬ìš©ë²• (_M)"
 
 #: src/serviceconf.glade.h:25
 msgid "_Refresh Service List"
-msgstr "¼­ºñ½º ¸ñ·Ï ÀçÁ¤¸® (_R)"
+msgstr "ì„œë¹„ìŠ¤ ëª©ë¡ ì¬ì •ë¦¬ (_R)"
 
 #: src/serviceconf.glade.h:26
 msgid "_Restart Service"
-msgstr "¼­ºñ½º Àç½ÃÀÛ (_R)"
+msgstr "ì„œë¹„ìŠ¤ ì¬ì‹œì‘ (_R)"
 
 #: src/serviceconf.glade.h:27
 msgid "_Revert To Last Save"
-msgstr "¸¶Áö¸· º¯µ¿ »çÇ× Ãë¼Ò (_R)"
+msgstr "ë§ˆì§€ë§‰ ë³€ë™ ì‚¬í•­ ì·¨ì†Œ (_R)"
 
 #: src/serviceconf.glade.h:28
 msgid "_Save Changes"
-msgstr "º¯µ¿ »çÇ× ÀúÀå (_S)"
+msgstr "ë³€ë™ ì‚¬í•­ ì €ì¥ (_S)"
 
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
-msgstr "¼­ºñ½º ½ÃÀÛ (_S)"
+msgstr "ì„œë¹„ìŠ¤ ì‹œì‘ (_S)"
 
 #~ msgid "Refresh the list of services"
-#~ msgstr "¼­ºñ½º ¸ñ·Ï ÀçÁ¤¸®"
+#~ msgstr "ì„œë¹„ìŠ¤ ëª©ë¡ ì¬ì •ë¦¬"
 
 #~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr "¼±ÅÃµÈ ¼­ºñ½ºÀÇ ½ÃÀÛ, Á¤Áö, Àç½ÃÀÛ°ú °°Àº ¸í·É ¼öÇà"
+#~ msgstr "ì„ íƒëœ ì„œë¹„ìŠ¤ì˜ ì‹œì‘, ì •ì§€, ì¬ì‹œì‘ê³¼ ê°™ì€ ëª…ë ¹ ìˆ˜í–‰"
 
 #~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "ÆíÁıÇÒ ·±·¹º§À» ¼±ÅÃÇØ ÁÖ½Ê½Ã¿ä"
+#~ msgstr "í¸ì§‘í•  ëŸ°ë ˆë²¨ì„ ì„ íƒí•´ ì£¼ì‹­ì‹œìš”"
 
 #~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "·±·¹º§ 3Àº ³×Æ®¿öÅ© »ç¿ëÀÇ ´ÙÁß »ç¿ëÀÚ ¸ğµå ÀÔ´Ï´Ù"
+#~ msgstr "ëŸ°ë ˆë²¨ 3ì€ ë„¤íŠ¸ì›Œí¬ ì‚¬ìš©ì˜ ë‹¤ì¤‘ ì‚¬ìš©ì ëª¨ë“œ ì…ë‹ˆë‹¤"
 
 #~ msgid ""
 #~ "Runlevel 4 is reserved for local customization, and is not usually used"
 #~ msgstr ""
-#~ "·±·¹º§ 4´Â ·ÎÄÃ »ç¿ëÀÚ¸¦ À§ÇØ ¿¹¾àµÇ¾î ÀÖ´Â °ÍÀÔ´Ï´Ù, ÀÏ¹İÀûÀ¸·Î »ç¿ëµÇÁö "
-#~ "¾Ê½À´Ï´Ù"
+#~ "ëŸ°ë ˆë²¨ 4ëŠ” ë¡œì»¬ ì‚¬ìš©ìë¥¼ ìœ„í•´ ì˜ˆì•½ë˜ì–´ ìˆëŠ” ê²ƒì…ë‹ˆë‹¤, ì¼ë°˜ì ìœ¼ë¡œ ì‚¬ìš©ë˜ì§€ "
+#~ "ì•ŠìŠµë‹ˆë‹¤"
 
 #~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr "·±·¹º§ 5´Â ³×Æ®¿öÅ© ¹× X À©µµ¿ì »ç¿ëÀÇ ´ÙÁß »ç¿ëÀÚ ¸ğµå ÀÔ´Ï´Ù"
+#~ msgstr "ëŸ°ë ˆë²¨ 5ëŠ” ë„¤íŠ¸ì›Œí¬ ë° X ìœˆë„ìš° ì‚¬ìš©ì˜ ë‹¤ì¤‘ ì‚¬ìš©ì ëª¨ë“œ ì…ë‹ˆë‹¤"
 
 #~ msgid "Read Manual"
-#~ msgstr "»ç¿ë¹ı ÀĞ±â"
+#~ msgstr "ì‚¬ìš©ë²• ì½ê¸°"
 
 #~ msgid "Exit"
-#~ msgstr "Á¾·á"
+#~ msgstr "ì¢…ë£Œ"
+

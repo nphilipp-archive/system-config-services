@@ -1,4 +1,4 @@
-# $Id: cs.po,v 1.1 2002/07/24 17:29:26 dwalsh Exp $
+# $Id: cs.po,v 1.2 2002/07/25 20:36:48 dwalsh Exp $
 #
 # Czech translation for serviceconf
 # Copyright (C) 2001 Free Software Foundation, Inc.

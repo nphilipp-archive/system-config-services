@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
 "POT-Creation-Date: 2002-07-24 07:01-0400\n"
-"PO-Revision-Date: 2002-07-01 09:30+1000\n"
+"PO-Revision-Date: 2002-07-25 11:01+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Chinese (traditional) <i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -46,89 +46,89 @@ msgstr ""
 #. add more TTL checking code here
 #: src/dnsdata.py:90 src/dnsdata.py:92
 msgid "Directory "
-msgstr ""
+msgstr "目錄 "
 
 #: src/dnsdata.py:90
 msgid " does not begin with a slash!"
-msgstr ""
+msgstr " 沒有以一個斜線開頭！"
 
 #: src/dnsdata.py:92
 msgid " is not an existing directory!"
-msgstr ""
+msgstr " 不是一個既有的目錄！"
 
 #. FIXME
 #. more checks for valid path here
 #: src/dnsdata.py:113 src/dnsdata.py:125
 msgid "Master "
-msgstr ""
+msgstr "Master "
 
 #: src/dnsdata.py:113 src/dnsdata.py:294
 msgid " is not a valid IP address."
-msgstr ""
+msgstr " 不是一個有效的 IP 位址。"
 
 #: src/dnsdata.py:125 src/dnsdata.py:279 src/dnsdata.py:383 src/dnsdata.py:433
 #: src/dnsdata.py:470 src/dnsdata.py:511
 msgid " is defined twice."
-msgstr ""
+msgstr " 已重複定義。"
 
 #: src/dnsdata.py:133
 msgid "Slave zone name "
-msgstr ""
+msgstr "Slave zone 名稱 "
 
 #: src/dnsdata.py:133 src/dnsdata.py:414 src/dnsdata.py:487
 msgid " is not a valid domain name."
-msgstr ""
+msgstr " 不是一個有效的網域名稱。"
 
 #: src/dnsdata.py:148
 msgid "Forwarder "
-msgstr ""
+msgstr "Forwarder "
 
 #: src/dnsdata.py:148
 msgid " is not a valid Ip address."
-msgstr ""
+msgstr " 不是一個有效的 IP 位址。"
 
 #: src/dnsdata.py:174
 msgid "Primary Nameserver not defined."
-msgstr ""
+msgstr "未定義主名稱伺服器。"
 
 #. print "testPNS on " + value
 #: src/dnsdata.py:181 src/dnsdata.py:183
 msgid "Primary Nameserver `"
-msgstr ""
+msgstr "主名稱伺服器 `"
 
 #: src/dnsdata.py:181 src/dnsdata.py:249 src/FwdZone.py:444
 msgid "' has no . at the end. You must use a full hostname."
-msgstr ""
+msgstr "' 沒有 . 在最後。 您必須使用一個完整的主機名稱。"
 
 #: src/dnsdata.py:183
 msgid "' is not a valid hostname or IP address."
-msgstr ""
+msgstr "' 不是一個有效的主機名稱或 IP 位址。"
 
 #: src/dnsdata.py:197
 msgid "Refresh value should be bigger than Retry"
-msgstr ""
+msgstr "重新整理的值必須大於重試的值"
 
 #. FIXME
 #. add more tests here
 #: src/dnsdata.py:204
 msgid "Serial number must be >= 1."
-msgstr ""
+msgstr "序號必須 >= 1。"
 
 #: src/dnsdata.py:208
 msgid "Refresh value must be >= 0."
-msgstr ""
+msgstr "重新整理的值必須 >= 0。"
 
 #: src/dnsdata.py:212
 msgid "Retry value must be >= 0."
-msgstr ""
+msgstr "重試的值必須 >= 0。"
 
 #: src/dnsdata.py:216
 msgid "Expire value must be >= 0."
-msgstr ""
+msgstr "過期失效的值必須 >= 0。"
 
 #: src/dnsdata.py:220
 msgid "Minimum value must be >= 0."
-msgstr ""
+msgstr "最小的值必須 >= 0。"
 
 #. num = self.getNumA()
 #. if num:
@@ -143,89 +143,88 @@ msgstr ""
 #. raise TestError, _("Hostname ") + names[i] + _(" is defined twice.")
 #: src/dnsdata.py:241 src/dnsdata.py:285 src/dnsdata.py:319 src/dnsdata.py:390
 msgid "NewHost"
-msgstr ""
+msgstr "NewHost"
 
 #: src/dnsdata.py:246
 msgid "PTR hostname not defined"
-msgstr ""
+msgstr "未定義 PTR 主機名稱"
 
 #: src/dnsdata.py:249
 msgid "PTR hostname `"
-msgstr ""
+msgstr "PTR 主機名稱 `"
 
 #: src/dnsdata.py:252 src/dnsdata.py:290 src/dnsdata.py:325 src/dnsdata.py:360
 #: src/dnsdata.py:364 src/dnsdata.py:395
 msgid " is not a valid hostname."
-msgstr ""
+msgstr " 不是一個有效的主機名稱。"
 
 #: src/dnsdata.py:260
 msgid " must be in the range 0..255."
-msgstr ""
+msgstr " 必須在 0..255 之間。"
 
 #: src/dnsdata.py:279
 msgid "IP "
-msgstr ""
+msgstr "IP "
 
 #: src/dnsdata.py:325 src/dnsdata.py:349
 msgid "Nameserver "
-msgstr ""
+msgstr "名稱伺服器 "
 
 #: src/dnsdata.py:330
 msgid " is not a valid host or domain name."
-msgstr ""
+msgstr " 不是一個有效的主機或網域名稱。"
 
 #: src/dnsdata.py:349
 msgid " is defined twice for "
-msgstr ""
+msgstr " 以重複定義了 "
 
 #: src/dnsdata.py:355 src/dnsdata.py:356
 msgid "New"
-msgstr ""
+msgstr "新增"
 
 #: src/dnsdata.py:383
 msgid "Alias "
-msgstr ""
+msgstr "別名 "
 
 #: src/dnsdata.py:409
 msgid "<New Forward Zone>"
-msgstr ""
+msgstr "<New Forward Zone>"
 
 #: src/dnsdata.py:414 src/dnsdata.py:487
 msgid "Forward zone name "
-msgstr ""
+msgstr "Forward zone 名稱 "
 
 #: src/dnsdata.py:433 src/dnsdata.py:511
-#, fuzzy
 msgid "Zone "
-msgstr "沒有"
+msgstr "Zone "
 
 #: src/dnsdata.py:442
 msgid "<New Reverse Zone>"
-msgstr ""
+msgstr "<New Reverse Zone>"
 
 #: src/dnsdata.py:446
 msgid "Reverse zone name `"
-msgstr ""
+msgstr "Reverse zone 名稱 `"
 
 #: src/dnsdata.py:446
 msgid "' is not the end of a reverse IP address."
-msgstr ""
+msgstr "' 不是一個 reverse IP 位址的最後。"
 
 #: src/dnsdata.py:451
 msgid "Reverse zone `"
-msgstr ""
+msgstr "Reverse zone `"
 
 #: src/dnsdata.py:451 src/FwdZone.py:657
 msgid "' must list at least one name server"
-msgstr ""
+msgstr "' 必須至少列出一個名稱伺服器"
 
 #: src/dnsdata.py:470
 msgid "Reverse zone "
-msgstr ""
+msgstr "Reverse zone "
 
 #: src/dnsdata.py:482
 msgid "<New Zone>"
-msgstr ""
+msgstr "<New Zone>"
 
 #. serviceconf.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -261,7 +260,7 @@ msgstr ""
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:160
 msgid "Currently Running in Runlevel: "
-msgstr "目前執行等級(Runlevel)是： "
+msgstr "目前執行等級是： "
 
 #. This is a sentry
 #: src/serviceconf.py:171
@@ -286,33 +285,32 @@ msgstr "服務"
 #: src/serviceconf.py:217 src/serviceconf.py:299 src/serviceconf.py:308
 #: src/serviceconf.py:332
 msgid "Editing Runlevel: "
-msgstr "編輯執行等級(Runlevel)： "
+msgstr "編輯執行等級： "
 
 #: src/serviceconf.py:314
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"您已更改目前的執行等級。\n"
+"您想要儲存變更嗎？"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:344
-#, fuzzy
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Copyright (c) 2001 Red Hat, Inc. All rights reserved."
+msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 
 #: src/serviceconf.py:345
-#, fuzzy
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
 "這個軟體在遵循 GPL 的條款下可以被自由散佈。\n"
-"                                  \n"
-"請回報您發現的程式問題到 Red Hat 程式問題追蹤系統:\n"
+"請回報您發現的程式問題到 Red Hat 程式問題追蹤系統：\n"
 "http://bugzilla.redhat.com"
 
 #. ----------------------------------------------------------------------------
@@ -321,7 +319,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:363
 msgid "Help is not available."
-msgstr ""
+msgstr "輔助說明無法使用。"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -335,9 +333,8 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #: src/serviceconf.py:481
-#, fuzzy
 msgid "You must run redhat-config-services as root."
-msgstr "您必須是 root 才能執行 serviceconf。"
+msgstr "您必須是 root 才能執行 redhat-config-services。"
 
 #. import gnome.ui
 #. Columns for "a_treeview"
@@ -360,60 +357,58 @@ msgstr "您必須是 root 才能執行 serviceconf。"
 #. continue
 #: src/FwdZone.py:236
 msgid " aliased to "
-msgstr ""
+msgstr " 別名為 "
 
 #: src/FwdZone.py:265 src/FwdZone.py:362 src/FwdZone.py:433
-#, fuzzy
 msgid "You must enter a host name."
-msgstr "您必須是 root 才能執行 serviceconf。"
+msgstr "您必須輸入一個主機名稱。"
 
 #: src/FwdZone.py:268
 msgid "You must enter an alias."
-msgstr ""
+msgstr "您必須輸入一個別名。"
 
 #: src/FwdZone.py:288
 msgid "An alias with this name already exists."
-msgstr ""
+msgstr "這個別名已經存在。"
 
 #: src/FwdZone.py:312
 msgid " at priority "
-msgstr ""
+msgstr " 的優先次序為 "
 
 #: src/FwdZone.py:338 src/FwdZone.py:340
 #, python-format
 msgid "Mail Exchanger for %s"
-msgstr ""
+msgstr "%s 的郵件交換機(MX)"
 
 #: src/FwdZone.py:345
 msgid "Edit Mail Exchanger"
-msgstr ""
+msgstr "編輯郵件交換機(MX)"
 
 #: src/FwdZone.py:349
 msgid "Add a Mail Exchanger"
-msgstr ""
+msgstr "新增一個郵件交換機(MX)"
 
 #: src/FwdZone.py:365
-#, fuzzy
 msgid "You must enter an priority."
-msgstr "您必須是 root 才能執行 serviceconf。"
+msgstr "您必須輸入一個優先次序。"
 
 #: src/FwdZone.py:394
 msgid " served by "
-msgstr ""
+msgstr " 伺服由 "
 
 #: src/FwdZone.py:436
 msgid "You must enter a resolution address."
-msgstr ""
+msgstr "您必須輸入一個要解析的位址。"
 
 #: src/FwdZone.py:444
 msgid "NS hostname `"
-msgstr ""
+msgstr "NS 主機名稱 `"
 
 #. slurp from the zone
 #. test_soa_values
 #: src/FwdZone.py:637
 msgid "SOA Refresh value should be bigger than Retry"
-msgstr ""
+msgstr "SOA 重新整理值必須大於重試值"
 
 #. test_a_list
 #. test_ns_list
@@ -421,13 +416,13 @@ msgstr ""
 #. test_mx_list
 #: src/FwdZone.py:657
 msgid "Forward zone `"
-msgstr ""
+msgstr "Forward zone `"
 
 #. ####
 #: src/FwdZone.py:724
 #, python-format
 msgid "Settings for %s"
-msgstr ""
+msgstr "%s 的設定"
 
 #. FIXME: put checks in here.
 #. serviceactions.py
@@ -500,9 +495,9 @@ msgid "xinetd must be enabled for %s to run"
 msgstr "必須啟動 xinetd 才能執行 %s"
 
 #: src/servicemethods.py:328
-#, fuzzy, python-format
+#, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s 無法 %s. 錯誤是: %s"
+msgstr "%s 失敗。 錯誤是: %s"
 
 #: src/servicemethods.py:330
 msgid " successful"
@@ -594,15 +589,15 @@ msgstr "編輯執行等級(Runlevel)(_E)"
 
 #: src/serviceconf.glade.h:22
 msgid "_File"
-msgstr ""
+msgstr "檔案(_F)"
 
 #: src/serviceconf.glade.h:23
 msgid "_Help"
-msgstr ""
+msgstr "說明(_H)"
 
 #: src/serviceconf.glade.h:24
 msgid "_Manual"
-msgstr "手冊(_M)"
+msgstr "說明手冊(_M)"
 
 #: src/serviceconf.glade.h:25
 msgid "_Refresh Service List"
@@ -648,3 +643,4 @@ msgstr "啟動系統服務(_S)"
 
 #~ msgid "Exit"
 #~ msgstr "離開"
+

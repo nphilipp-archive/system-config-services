@@ -1,18 +1,21 @@
+# translation of ja.po to Japanese
 # serviceconf ja.po
 # Copyright (C) 2001 Red Hat, Inc.
 # SATO Satoru <ssato@redhat.com>, 2001.
 # Yukihiro Nakai <ynakai@redhat.com>, 2001.
+# James Hashida <khashida@redhat.com>, 2002
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
 "POT-Creation-Date: 2002-07-24 07:01-0400\n"
-"PO-Revision-Date: 2001-07-30 13:30+0900\n"
-"Last-Translator: Yukihiro Nakai <ynakai@redhat.com>\n"
-"Language-Team: Japanese\n"
+"PO-Revision-Date: 2002-07-25 12:57GMT+10:00\n"
+"Last-Translator: James Hashida <khashida@redhat.com>\n"
+"Language-Team: Japanese <i18-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=euc-jp\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0beta1\n"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -45,89 +48,89 @@ msgstr ""
 #. add more TTL checking code here
 #: src/dnsdata.py:90 src/dnsdata.py:92
 msgid "Directory "
-msgstr ""
+msgstr "ディレクトリ"
 
 #: src/dnsdata.py:90
 msgid " does not begin with a slash!"
-msgstr ""
+msgstr " スラッシュで始まりません!"
 
 #: src/dnsdata.py:92
 msgid " is not an existing directory!"
-msgstr ""
+msgstr "既存のディレクトリではありません!"
 
 #. FIXME
 #. more checks for valid path here
 #: src/dnsdata.py:113 src/dnsdata.py:125
 msgid "Master "
-msgstr ""
+msgstr "マスター"
 
 #: src/dnsdata.py:113 src/dnsdata.py:294
 msgid " is not a valid IP address."
-msgstr ""
+msgstr "有効なIPアドレスではありません。"
 
 #: src/dnsdata.py:125 src/dnsdata.py:279 src/dnsdata.py:383 src/dnsdata.py:433
 #: src/dnsdata.py:470 src/dnsdata.py:511
 msgid " is defined twice."
-msgstr ""
+msgstr "2回定義されています。"
 
 #: src/dnsdata.py:133
 msgid "Slave zone name "
-msgstr ""
+msgstr "スレーブゾーン名"
 
 #: src/dnsdata.py:133 src/dnsdata.py:414 src/dnsdata.py:487
 msgid " is not a valid domain name."
-msgstr ""
+msgstr "有効なドメイン名ではありません。"
 
 #: src/dnsdata.py:148
 msgid "Forwarder "
-msgstr ""
+msgstr "転送元"
 
 #: src/dnsdata.py:148
 msgid " is not a valid Ip address."
-msgstr ""
+msgstr "有効なIpアドレスではありません。"
 
 #: src/dnsdata.py:174
 msgid "Primary Nameserver not defined."
-msgstr ""
+msgstr "プライマリネームサーバーは定義されていません。"
 
 #. print "testPNS on " + value
 #: src/dnsdata.py:181 src/dnsdata.py:183
 msgid "Primary Nameserver `"
-msgstr ""
+msgstr "プライマリネームサーバー"
 
 #: src/dnsdata.py:181 src/dnsdata.py:249 src/FwdZone.py:444
 msgid "' has no . at the end. You must use a full hostname."
-msgstr ""
+msgstr "最後に番号があります。ホスト名は完結する必要があります。"
 
 #: src/dnsdata.py:183
 msgid "' is not a valid hostname or IP address."
-msgstr ""
+msgstr "有効なホスト名又はIPアドレスではありません。"
 
 #: src/dnsdata.py:197
 msgid "Refresh value should be bigger than Retry"
-msgstr ""
+msgstr "リフレッシュ値はリトライよりも大きくなければなりません。"
 
 #. FIXME
 #. add more tests here
 #: src/dnsdata.py:204
 msgid "Serial number must be >= 1."
-msgstr ""
+msgstr "シリアル番号は 1より大きい必要があります。"
 
 #: src/dnsdata.py:208
 msgid "Refresh value must be >= 0."
-msgstr ""
+msgstr "リフレッシュ値は 0より大きい必要があります。"
 
 #: src/dnsdata.py:212
 msgid "Retry value must be >= 0."
-msgstr ""
+msgstr "リトライ値は 0より大きい必要があります。"
 
 #: src/dnsdata.py:216
 msgid "Expire value must be >= 0."
-msgstr ""
+msgstr "満期値は 0より大きい必要があります。"
 
 #: src/dnsdata.py:220
 msgid "Minimum value must be >= 0."
-msgstr ""
+msgstr "最低値は 0より大きい必要があります。"
 
 #. num = self.getNumA()
 #. if num:
@@ -142,89 +145,88 @@ msgstr ""
 #. raise TestError, _("Hostname ") + names[i] + _(" is defined twice.")
 #: src/dnsdata.py:241 src/dnsdata.py:285 src/dnsdata.py:319 src/dnsdata.py:390
 msgid "NewHost"
-msgstr ""
+msgstr "新規ホスト"
 
 #: src/dnsdata.py:246
 msgid "PTR hostname not defined"
-msgstr ""
+msgstr "PTRホスト名は定義されていません"
 
 #: src/dnsdata.py:249
 msgid "PTR hostname `"
-msgstr ""
+msgstr "PTRホスト名"
 
 #: src/dnsdata.py:252 src/dnsdata.py:290 src/dnsdata.py:325 src/dnsdata.py:360
 #: src/dnsdata.py:364 src/dnsdata.py:395
 msgid " is not a valid hostname."
-msgstr ""
+msgstr "有効なホスト名ではありません。"
 
 #: src/dnsdata.py:260
 msgid " must be in the range 0..255."
-msgstr ""
+msgstr "0から255の間でなければなりません。"
 
 #: src/dnsdata.py:279
 msgid "IP "
-msgstr ""
+msgstr "IP "
 
 #: src/dnsdata.py:325 src/dnsdata.py:349
 msgid "Nameserver "
-msgstr ""
+msgstr "ネームサーバ"
 
 #: src/dnsdata.py:330
 msgid " is not a valid host or domain name."
-msgstr ""
+msgstr "有効なホスト名又はドメイン名ではありません。"
 
 #: src/dnsdata.py:349
 msgid " is defined twice for "
-msgstr ""
+msgstr "次項目用に2回定義されています。"
 
 #: src/dnsdata.py:355 src/dnsdata.py:356
 msgid "New"
-msgstr ""
+msgstr "新規"
 
 #: src/dnsdata.py:383
 msgid "Alias "
-msgstr ""
+msgstr "エイリアス(使用名)"
 
 #: src/dnsdata.py:409
 msgid "<New Forward Zone>"
-msgstr ""
+msgstr "<新規 転送 ゾーン>"
 
 #: src/dnsdata.py:414 src/dnsdata.py:487
 msgid "Forward zone name "
-msgstr ""
+msgstr "新規転送ゾーン"
 
 #: src/dnsdata.py:433 src/dnsdata.py:511
-#, fuzzy
 msgid "Zone "
-msgstr "�ʤ�"
+msgstr "ゾーン"
 
 #: src/dnsdata.py:442
 msgid "<New Reverse Zone>"
-msgstr ""
+msgstr "<新規 逆行 ゾーン>"
 
 #: src/dnsdata.py:446
 msgid "Reverse zone name `"
-msgstr ""
+msgstr "逆行ゾーン名`"
 
 #: src/dnsdata.py:446
 msgid "' is not the end of a reverse IP address."
-msgstr ""
+msgstr "`逆行IPアドレスの最後ではありません。"
 
 #: src/dnsdata.py:451
 msgid "Reverse zone `"
-msgstr ""
+msgstr "逆行ゾーン`"
 
 #: src/dnsdata.py:451 src/FwdZone.py:657
 msgid "' must list at least one name server"
-msgstr ""
+msgstr "` 最低1つのネームサーバを記入する必要があります。"
 
 #: src/dnsdata.py:470
 msgid "Reverse zone "
-msgstr ""
+msgstr "逆行ゾーン"
 
 #: src/dnsdata.py:482
 msgid "<New Zone>"
-msgstr ""
+msgstr "<新規ゾーン>"
 
 #. serviceconf.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -260,16 +262,16 @@ msgstr ""
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:160
 msgid "Currently Running in Runlevel: "
-msgstr "���Υ���٥�: "
+msgstr "現在実行中のランレベル: "
 
 #. This is a sentry
 #: src/serviceconf.py:171
 msgid "Start at Boot"
-msgstr "��ư���˳���"
+msgstr "起動時に開始"
 
 #: src/serviceconf.py:172
 msgid "Services"
-msgstr "�����ӥ�"
+msgstr "サービス"
 
 #. self.clstServices.set_column_justification(0,GTK.JUSTIFY_CENTER)
 #. self.clstServices.set_column_justification(1,GTK.JUSTIFY_LEFT)
@@ -285,34 +287,33 @@ msgstr "�����ӥ�"
 #: src/serviceconf.py:217 src/serviceconf.py:299 src/serviceconf.py:308
 #: src/serviceconf.py:332
 msgid "Editing Runlevel: "
-msgstr "����٥���Խ�"
+msgstr "ランレベルの編集"
 
 #: src/serviceconf.py:314
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"現在のランレベルが変更されています。\n "
+"この変更を保存しますか?"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:344
-#, fuzzy
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Copyright (c) 2001 Red Hat, Inc. All rights reserved."
+msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 
 #: src/serviceconf.py:345
-#, fuzzy
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
-"���Υ��եȥ������� GPL �Τ�ȤǼ�ͳ�˺����ۤǤ��ޤ���\n"
-"\n"
-"�Զ��ʤɤ�����С�Red Hat�Х��ȥ�å��󥰥����ƥ�\n"
-"(http://bugzilla.redhat.com)�ޤ���𤷤Ʋ�����"
+"このソフトウェアは GPLの規則のもとで自由に再配布できます。\n"
+"不具合などが見付かれば全てを、Red Hatバグトラッキングシステム\n"
+"(http://bugzilla.redhat.com)まで報告して下さい。"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -320,7 +321,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:363
 msgid "Help is not available."
-msgstr ""
+msgstr "ヘルプは利用できません。"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -334,9 +335,8 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #: src/serviceconf.py:481
-#, fuzzy
 msgid "You must run redhat-config-services as root."
-msgstr "serviceconf �� root �Ǽ¹Ԥ��ʤ���Фʤ�ޤ���"
+msgstr "redhat-config-services は root で実行しなければなりません"
 
 #. import gnome.ui
 #. Columns for "a_treeview"
@@ -359,60 +359,58 @@ msgstr "serviceconf �� root �Ǽ¹Ԥ��ʤ���Фʤ�ޤ���"
 #. continue
 #: src/FwdZone.py:236
 msgid " aliased to "
-msgstr ""
+msgstr "次の項目へエイリアスになっています。"
 
 #: src/FwdZone.py:265 src/FwdZone.py:362 src/FwdZone.py:433
-#, fuzzy
 msgid "You must enter a host name."
-msgstr "serviceconf �� root �Ǽ¹Ԥ��ʤ���Фʤ�ޤ���"
+msgstr "ホスト名を入力する必要があります。"
 
 #: src/FwdZone.py:268
 msgid "You must enter an alias."
-msgstr ""
+msgstr "エイリアスを入力する必要があります。"
 
 #: src/FwdZone.py:288
 msgid "An alias with this name already exists."
-msgstr ""
+msgstr "この名前用のエイリアスはすでに存在します。"
 
 #: src/FwdZone.py:312
 msgid " at priority "
-msgstr ""
+msgstr "優先的に"
 
 #: src/FwdZone.py:338 src/FwdZone.py:340
 #, python-format
 msgid "Mail Exchanger for %s"
-msgstr ""
+msgstr "%s用のMail Exchanger"
 
 #: src/FwdZone.py:345
 msgid "Edit Mail Exchanger"
-msgstr ""
+msgstr "Mail Exchangerを編集"
 
 #: src/FwdZone.py:349
 msgid "Add a Mail Exchanger"
-msgstr ""
+msgstr "Mail Exchangerを追加"
 
 #: src/FwdZone.py:365
-#, fuzzy
 msgid "You must enter an priority."
-msgstr "serviceconf �� root �Ǽ¹Ԥ��ʤ���Фʤ�ޤ���"
+msgstr "優先順を入力する必要があります。"
 
 #: src/FwdZone.py:394
 msgid " served by "
-msgstr ""
+msgstr "次によりサービスされます。"
 
 #: src/FwdZone.py:436
 msgid "You must enter a resolution address."
-msgstr ""
+msgstr "決定用アドレスを入力する必要があります。"
 
 #: src/FwdZone.py:444
 msgid "NS hostname `"
-msgstr ""
+msgstr "NSホスト名 `"
 
 #. slurp from the zone
 #. test_soa_values
 #: src/FwdZone.py:637
 msgid "SOA Refresh value should be bigger than Retry"
-msgstr ""
+msgstr "SOA リフレッシュ値は リトライよりも大きくなければなりません。"
 
 #. test_a_list
 #. test_ns_list
@@ -420,13 +418,13 @@ msgstr ""
 #. test_mx_list
 #: src/FwdZone.py:657
 msgid "Forward zone `"
-msgstr ""
+msgstr "転送ゾーン"
 
 #. ####
 #: src/FwdZone.py:724
 #, python-format
 msgid "Settings for %s"
-msgstr ""
+msgstr "%s用のセッティング"
 
 #. FIXME: put checks in here.
 #. serviceactions.py
@@ -470,7 +468,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"���Υ����ӥ������Ѥ��뤿��ˤ� xinetd ��ͭ���ˤ��ʤ���Фʤ�ޤ���"
+"このサービスを利用するためには xinetd を有効にしなければなりません。"
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -482,187 +480,188 @@ msgstr ""
 #. if it's toggled off
 #: src/servicemethods.py:317
 msgid "xinetd failed to reload for "
-msgstr "xinetd ��"
+msgstr "xinetd は"
 
 #: src/servicemethods.py:318
 msgid ". The error was: "
-msgstr "�κ��ɤ߹��ߤ˼��Ԥ��ޤ��������顼: "
+msgstr "の再読み込みに失敗しました。エラー: "
 
 #: src/servicemethods.py:320
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "xinetd �� %s �κ��ɤ߹��ߤ��������ޤ���"
+msgstr "xinetd は %s の再読み込みに成功しました"
 
 #: src/servicemethods.py:323
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "%s �μ¹ԤΤ���ˤ� xinetd ��ͭ���ˤ��Ƥ����ʤ���Фʤ�ޤ���"
+msgstr "%s の実行のためには xinetd を有効にしておかなければなりません"
 
 #: src/servicemethods.py:328
-#, fuzzy, python-format
+#, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s �� %s �˼���. ���顼: %s"
+msgstr "%s は 失敗. エラーは: %sです。"
 
 #: src/servicemethods.py:330
 msgid " successful"
-msgstr " ����"
+msgstr " 成功"
 
 #: src/serviceconf.glade.h:1
 msgid "Cancel"
-msgstr "���ä�"
+msgstr "取り消し"
 
 #: src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
-msgstr "���Υ���٥�: "
+msgstr "今のランレベル: "
 
 #: src/serviceconf.glade.h:3
 msgid "Editing Runlevel:"
-msgstr "����٥���Խ�:"
+msgstr "ランレベルの編集:"
 
 #: src/serviceconf.glade.h:4
 msgid "None"
-msgstr "�ʤ�"
+msgstr "なし"
 
 #: src/serviceconf.glade.h:5
 msgid "Quit"
-msgstr "��λ"
+msgstr "終了"
 
 #: src/serviceconf.glade.h:6
 msgid "Restart"
-msgstr "�Ƶ�ư"
+msgstr "再起動"
 
 #: src/serviceconf.glade.h:7
 msgid "Restart the selected service"
-msgstr "���򤷤������ӥ���Ƶ�ư"
+msgstr "選択したサービスを再起動"
 
 #: src/serviceconf.glade.h:8
 msgid "Revert to the last saved change"
-msgstr "������¸�����ѹ��򸵤��᤹"
+msgstr "前回保存した変更を元に戻す"
 
 #: src/serviceconf.glade.h:9
 msgid "Runlevel _3"
-msgstr "����٥� _3"
+msgstr "ランレベル _3"
 
 #: src/serviceconf.glade.h:10
 msgid "Runlevel _4"
-msgstr "����٥� _4"
+msgstr "ランレベル _4"
 
 #: src/serviceconf.glade.h:11
 msgid "Runlevel _5"
-msgstr "����٥� _5"
+msgstr "ランレベル _5"
 
 #: src/serviceconf.glade.h:12
 msgid "S_top Service"
-msgstr "�����ӥ������(_T)"
+msgstr "サービスを停止(_T)"
 
 #: src/serviceconf.glade.h:13
 msgid "Save"
-msgstr "��¸"
+msgstr "保存"
 
 #: src/serviceconf.glade.h:14
 msgid "Save the changes you have made"
-msgstr "�ѹ�����¸"
+msgstr "変更を保存"
 
 #: src/serviceconf.glade.h:15
 msgid "Service Configuration"
-msgstr "�����ӥ�������"
+msgstr "サービスの設定"
 
 #: src/serviceconf.glade.h:16
 msgid "Start"
-msgstr "����"
+msgstr "開始"
 
 #: src/serviceconf.glade.h:17
 msgid "Start the selected service"
-msgstr "���򤷤������ӥ��򳫻�"
+msgstr "選択したサービスを開始"
 
 #: src/serviceconf.glade.h:18
 msgid "Stop"
-msgstr "���"
+msgstr "停止"
 
 #: src/serviceconf.glade.h:19
 msgid "Stop the selected service"
-msgstr "���򤷤������ӥ������"
+msgstr "選択したサービスを停止"
 
 #: src/serviceconf.glade.h:20
 msgid "_Actions"
-msgstr "���"
+msgstr "操作"
 
 #: src/serviceconf.glade.h:21
 msgid "_Edit Runlevel"
-msgstr "����٥���Խ�(_E)"
+msgstr "ランレベルの編集(_E)"
 
 #: src/serviceconf.glade.h:22
 msgid "_File"
-msgstr ""
+msgstr "ファイル (_F)"
 
 #: src/serviceconf.glade.h:23
 msgid "_Help"
-msgstr ""
+msgstr "ヘルプ(_H)"
 
 #: src/serviceconf.glade.h:24
 msgid "_Manual"
-msgstr "�ޥ˥奢��(_M)"
+msgstr "マニュアル(_M)"
 
 #: src/serviceconf.glade.h:25
 msgid "_Refresh Service List"
-msgstr "�����ӥ��ꥹ�Ȥ򹹿�(_R)"
+msgstr "サービスリストを更新(_R)"
 
 #: src/serviceconf.glade.h:26
 msgid "_Restart Service"
-msgstr "�����ӥ���Ƶ�ư(_R)"
+msgstr "サービスを再起動(_R)"
 
 #: src/serviceconf.glade.h:27
 msgid "_Revert To Last Save"
-msgstr "�������¸����ä�(_R)"
+msgstr "前回の保存を取り消す(_R)"
 
 #: src/serviceconf.glade.h:28
 msgid "_Save Changes"
-msgstr "�ѹ�����¸(_S)"
+msgstr "変更を保存(_S)"
 
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
-msgstr "�����ӥ��򳫻�(_S)"
+msgstr "サービスを開始(_S)"
 
 #~ msgid "Refresh the list of services"
-#~ msgstr "�����ӥ��ꥹ�Ȥ򹹿�"
+#~ msgstr "サービスリストを更新"
 
 #~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr "���򤷤������ӥ����Ф������(start, stop, restart �ʤ�)"
+#~ msgstr "選択したサービスに対する操作(start, stop, restart など)"
 
 #~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "�Խ�����������٥�����򤷤Ƥ�������"
+#~ msgstr "編集したいランレベルを選択してください"
 
 #~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "����٥� 3 �ϥͥåȥ����ͭ���ʥޥ���桼���⡼�ɤǤ�"
+#~ msgstr "ランレベル 3 はネットワークが有効なマルチユーザモードです"
 
 #~ msgid ""
 #~ "Runlevel 4 is reserved for local customization, and is not usually used"
 #~ msgstr ""
-#~ "����٥� 4�ϥ�������ʥ������ޥ�����ͽ�󤵤�Ƥ��ꡢ�̾�Ȥ��ޤ���"
+#~ "ランレベル 4はローカルなカスタマイズに予約されており、通常使いません"
 
 #~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr "����٥� 5 �ϥͥåȥ����X��ͭ���ʥޥ���桼���⡼�ɤǤ�"
+#~ msgstr "ランレベル 5 はネットワークとXが有効なマルチユーザモードです"
 
 #~ msgid "Read Manual"
-#~ msgstr "�ޥ˥奢����ɤ�"
+#~ msgstr "マニュアルを読む"
 
 #~ msgid "Exit"
-#~ msgstr "��λ"
+#~ msgstr "終了"
 
 #~ msgid "Restart Service"
-#~ msgstr "�����ӥ���Ƶ�ư"
+#~ msgstr "サービスを再起動"
 
 #~ msgid "Save Changes"
-#~ msgstr "�ѹ�����¸"
+#~ msgstr "変更を保存"
 
 #~ msgid "Start Service"
-#~ msgstr "�����ӥ��򳫻�"
+#~ msgstr "サービスを開始"
 
 #~ msgid "Stop the slected service"
-#~ msgstr "���򤷤������ӥ������"
+#~ msgstr "選択したサービスを停止"
 
 #~ msgid "Stop Service"
-#~ msgstr "�����ӥ������"
+#~ msgstr "サービスを停止"
 
 #~ msgid "Cancel Changes"
-#~ msgstr "�ѹ�����ä�"
+#~ msgstr "変更を取り消し"
+
