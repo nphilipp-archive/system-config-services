@@ -151,9 +151,9 @@ class Gui:
 	self.txtDesc.set_buffer(self.txtBuffer)
 
         # the statusbox
-#        self.txtStatus = self.xml.get_widget("StatusView")
-#	self.txtStatusBuffer = gtk.TextBuffer(None)
-#	self.txtStatus.set_buffer(self.txtStatusBuffer)
+        self.txtStatus = self.xml.get_widget("StatusView")
+	self.txtStatusBuffer = gtk.TextBuffer(None)
+	self.txtStatus.set_buffer(self.txtStatusBuffer)
 
         self.lblRunlevel = self.xml.get_widget("lblRunlevel")
         self.lblEditing = self.xml.get_widget("lblEditing")
@@ -278,20 +278,19 @@ class Gui:
             
     def set_text_status(self):
         # set the text in StatusView
-        pass
-#        if self.ServiceMethods.dict_services[self.text_in_row][1] != 1:
-#            if self.ServiceMethods.dict_services.has_key(self.text_in_row):
-#                result = self.ServiceMethods.get_status(self.text_in_row)
-#                message=result[1]
-#                status=result[0]
-#            else:
-#                status=self.ServiceMethods.UNKNOWN
-#                message = _("Unknown")
-#        else:
-#            status=self.ServiceMethods.UNKNOWN
-#            message = _("xinetd service")
-#        self.txtStatusBuffer.set_text(string.strip(message),len(string.strip(message)))
-
+        message=""
+        if self.ServiceMethods.dict_services[self.text_in_row][1] != 1:
+            if self.ServiceMethods.dict_services.has_key(self.text_in_row):
+                result = self.ServiceMethods.get_status(self.text_in_row)
+                message=result[1]
+                status=result[0]
+            else:
+                status=self.ServiceMethods.UNKNOWN
+                message = _("Unknown")
+        else:
+            status=self.ServiceMethods.UNKNOWN
+            message = _("xinetd service")
+        self.txtStatusBuffer.set_text(string.strip(message),len(string.strip(message)))
 
     def toggled_service(self, data, row):
         """Populates txtDesc with the service description of the service selected in clstServices"""

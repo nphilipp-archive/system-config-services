@@ -108,7 +108,7 @@
   <property name="default_height">350</property>
   <property name="resizable">True</property>
   <property name="destroy_with_parent">False</property>
-  <property name="icon">serviceconf.xpm</property>
+  <property name="icon">/usr/share/pixmaps/serviceconf.xpm</property>
   <property name="enable_layout_config">True</property>
 
   <child internal-child="dock">

@@ -33,7 +33,6 @@ def getstatusoutput(cmd):
         text = pipe.read()
     except IOError,v:
         text = pipe.read()
-#        print v[0],cmd,text
         
     sts = pipe.close()
     if sts is None: sts = 0
@@ -52,9 +51,10 @@ class ServiceMethods:
     def get_status(self,servicename):
         status = self.UNKNOWN
         try:
-            message = getoutput("LANG=C /sbin/service " + servicename + " status < /dev/null")
+            message = getstatusoutput("LANG=C /sbin/service " + servicename + " status < /dev/null")[1]
         except:
-            pass
+            return (self.UNKNOWN,"")
+
         if string.find(message,"running")!=-1:
             status=self.RUNNING
         if string.find(message,"stopped")!=-1:
@@ -200,28 +200,23 @@ class ServiceMethods:
         list_xinetd_services = self.check_if_chkconfiged(os.listdir("/etc/xinetd.d"))
         idle_func ()
         self.allservices = []
-
         
         chkconfig_list = getstatusoutput("LANG=C /sbin/chkconfig --list")[1]
         chkconfig_list = re.split('\n', chkconfig_list)
+        dict={}
+        for i in chkconfig_list:
+            x=re.split(r"\t", i.strip())
+            name=x[0].strip().split(":")[0]
+            if name != "xinetd based services":
+                runlevel=x[1:]
+                if len(runlevel) > 1:
+                    for i in xrange(0,len(runlevel)):
+                        runlevel[i]=runlevel[i].split(":")[1]
+                dict[name]=runlevel
 
-        for i in range(0, len(chkconfig_list)):
-            chkconfig_list[i] = re.split(" ", chkconfig_list[i])
-
-        for i in range(0, len(chkconfig_list)):
-            chkconfig_list[i] = chkconfig_list[i][0]
-
-        elements_to_remove = []
-        for i in range(0, len(chkconfig_list)):
-            if re.search("\\011", chkconfig_list[i]):
-                elements_to_remove.append(i)
-
-        elements_to_remove.reverse()
-
-        for i in range(0, len(elements_to_remove)):
-            chkconfig_list.pop(elements_to_remove[i])
-
-        for servicename in chkconfig_list:
+        for servicename in dict.keys():
+            if len(dict[servicename]) == 1:
+                continue
             idle_func ()
             # read each initscript
             initscript = []
@@ -229,7 +224,7 @@ class ServiceMethods:
                 f = open("/etc/init.d/" + servicename)
             except IOError, msg:
                 print "/etc/init.d/" + servicename , msg
-                sys.exit(1)
+                raise
                 
             line = f.readline()
             while line:
@@ -240,11 +235,7 @@ class ServiceMethods:
                     f.close()
                     break
                 
-            runlevels = []
-            runlevels = getstatusoutput("LANG=C /sbin/chkconfig --list " + servicename)[1]
-            runlevels = re.sub("\\011", " ", runlevels)
-            runlevels = re.split(r'[0-6]\:', runlevels)
-            del runlevels[0]
+            runlevels = dict[servicename]
             for i in range(0, len(runlevels)):
                 runlevels[i] = string.strip(runlevels[i])
                 if runlevels[i] == "off" :
@@ -276,13 +267,7 @@ class ServiceMethods:
             xinetd_script = f.readlines()
             f.close()
 
-            runlevels = []
-            runlevels = getstatusoutput("LANG=C /sbin/chkconfig --list " + servicename)[1]
-            runlevels = re.split("", runlevels)
-            runlevels = re.split('\\011', runlevels[0])
-            del runlevels[0]
-            
-            runlevels[0] = string.strip(runlevels[0])
+            runlevels = dict[servicename]
 
             if runlevels[0] == "off":
                 del runlevels[0]
