@@ -6,9 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
-"PO-Revision-Date: 2003-08-04 17:32-0200\n"
+"PO-Revision-Date: 2004-03-20 20:46-0200\n"
 "Last-Translator: Nikos Charonitakis <charosn@her.fothnet.gr>\n"
 "Language-Team: Greek <nls@hellug.gr>\n"
 "MIME-Version: 1.0\n"
@@ -64,29 +63,31 @@ msgstr ""
 #: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "Είστε σίγουρος ότι θέλετε να διαγραφεί το %s;"
 
 #. make sure threading is disabled
 #. map the event signals to specific methods
 #. main window
 #. menu items
 #. toolbars
-#: src/serviceconf.py:181 src/serviceconf.glade.h:18
+#: src/serviceconf.py:181
+#: src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Έναρξη"
 
-#: src/serviceconf.py:185 src/serviceconf.glade.h:20
+#: src/serviceconf.py:185
+#: src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "Διακοπή"
 
-#: src/serviceconf.py:189 src/serviceconf.glade.h:9
+#: src/serviceconf.py:189
+#: src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Επανεκκίνηση"
 
 #: src/serviceconf.py:195
-#, fuzzy
 msgid "_Save"
-msgstr "Αποθήκευση"
+msgstr "_Αποθήκευση"
 
 #: src/serviceconf.py:195
 msgid "Save"
@@ -131,7 +132,9 @@ msgstr "Υπηρεσίες"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:301 src/serviceconf.py:407 src/serviceconf.py:424
+#: src/serviceconf.py:301
+#: src/serviceconf.py:407
+#: src/serviceconf.py:424
 #: src/serviceconf.py:443
 msgid "Editing Runlevel: "
 msgstr ""
@@ -161,7 +164,7 @@ msgstr ""
 
 #: src/serviceconf.py:476
 msgid "About"
-msgstr ""
+msgstr "Περί"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -184,10 +187,8 @@ msgstr "Η βοήθεια δεν είναι διαθέσιμη."
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:649
-#, fuzzy
 msgid "You must run system-config-services as root."
-msgstr ""
-"Πρέπει να τρέξετε το redhat-config-services ως διαχειριστής συστήματος."
+msgstr "Πρέπει να τρέξετε το system-config-services ως διαχειριστής συστήματος."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -228,6 +229,9 @@ msgid ""
 "\n"
 "xinetd is required for this service."
 msgstr ""
+"\n"
+"\n"
+"απαιτείται το xinetd για αυτή την υπηρεσία."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -269,18 +273,16 @@ msgid "*"
 msgstr "*"
 
 #: src/serviceconf.glade.h:2
-#, fuzzy
 msgid "Add Service"
-msgstr "Υπηρεσίες"
+msgstr "Προσθήκη Υπηρεσίας"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr ""
 
 #: src/serviceconf.glade.h:4
-#, fuzzy
 msgid "Delete Service"
-msgstr "_Διακοπή Υπηρεσίας"
+msgstr "Διαγραφή Υπηρεσίας"
 
 #: src/serviceconf.glade.h:5
 msgid "Description"
@@ -288,7 +290,7 @@ msgstr "Περιγραφή"
 
 #: src/serviceconf.glade.h:6
 msgid "Don't Save"
-msgstr ""
+msgstr "Να μην Αποθηκευτεί"
 
 #: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
@@ -320,19 +322,17 @@ msgstr "_Διακοπή Υπηρεσίας"
 
 #: src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "Διάλογος Αποθήκευσης"
 
 #: src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "Ρύθμιση Υπηρεσίας"
 
 #: src/serviceconf.glade.h:17
-#, fuzzy
 msgid "Service Name: "
-msgstr "Υπηρεσίες"
+msgstr "Όνομα Υπηρεσίας:"
 
 #: src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
 msgstr "Κατάσταση"
 
@@ -363,13 +363,12 @@ msgid "_Help"
 msgstr "_Βοήθεια"
 
 #: src/serviceconf.glade.h:28
-#, fuzzy
 msgid "_Quit"
-msgstr "Έξοδος"
+msgstr "Έ_ξοδος"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
-msgstr ""
+msgstr "_Ανανέωση Λίστας Υπηρεσιών"
 
 #: src/serviceconf.glade.h:30
 msgid "_Restart Service"
@@ -385,23 +384,5 @@ msgstr "_Εκκίνηση Υπηρεσίας"
 
 #: src/serviceconf.glade.h:33
 msgid "_View"
-msgstr ""
+msgstr "_Προβολή"
 
-#, fuzzy
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "Πνευματικά Δικαιώματα (c) 2002 Red Hat, Inc."
-
-#~ msgid "translator_credits"
-#~ msgstr "Νίκος Χαρωνιτάκης <charosn@her.forthnet.gr>"
-
-#~ msgid "Start the selected service"
-#~ msgstr "Εκκίνηση επιλεγμένης υπηρεσίας"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "Διακοπή επιλεγμένης υπηρεσίας"
-
-#~ msgid "Cancel"
-#~ msgstr "Ακύρωση"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "Αποθήκευση αλλαγών που έχετε κάνει"
