@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf 7.2\n"
 "POT-Creation-Date: 2002-10-02 11:21-0400\n"
-"PO-Revision-Date: 2002-08-27 09:31+0000\n"
-"Last-Translator:  <claudia@redhat.it>\n"
-"Language-Team:  <de@li.org>\n"
+"PO-Revision-Date: 2002-10-03 10:04+0200\n"
+"Last-Translator: Bernd Groh <bgroh@redhat.com>\n"
+"Language-Team: Deutsch <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -108,11 +108,11 @@ msgstr "Bearbeite Runlevel: "
 #. set the text in StatusView
 #: src/serviceconf.py:289
 msgid "Unknown"
-msgstr ""
+msgstr "Unbekannt"
 
 #: src/serviceconf.py:292
 msgid "xinetd service"
-msgstr ""
+msgstr "xinetd Dienst"
 
 #: src/serviceconf.py:360
 msgid ""
@@ -250,7 +250,7 @@ msgstr "Momentan aktiver Runlevel: "
 
 #: src/serviceconf.glade.h:3
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
@@ -313,9 +313,8 @@ msgid "Start the selected service"
 msgstr "Den ausgewählten Dienst starten"
 
 #: src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "Starten"
+msgstr "Status"
 
 #: src/serviceconf.glade.h:20
 msgid "Stop"
@@ -398,3 +397,4 @@ msgstr "_Starte Dienst"
 
 #~ msgid "Exit"
 #~ msgstr "Beenden"
+
