@@ -32,10 +32,7 @@ except RuntimeError,e:
     print "Caught exception: %s" % e
     sys.exit(-1)
 
-import gnome
-import gnome.ui
 domain = "system-config-services"
-gnome.program_init(domain, "0.1")
 
 appPath="/usr/share/%s" % domain
 if not appPath in sys.path:
@@ -456,23 +453,49 @@ class Gui:
 #----------------------------------------------------------------------------
     def on_mnuAbout_activate(self,Dummy):
         """Just a silly about dialog"""
-        dlg = gnome.ui.About("system-config-services ",VERSION,
-                             _("Copyright (c) 2002 Red Hat, Inc. All rights reserved."),
-                             _("""This software may be freely redistributed under the terms of the GPL.
-Please report all bugs you find at the Red Hat bug tracking system:
-http://bugzilla.redhat.com"""),
-                             ["Tim Powers <timp@redhat.com>" ,
-                                  "Bill Nottingham <notting@redhat.com>", "Dan Walsh <dwalsh@redhat.com"],[ 'Tammy Fox <tfox@redhat.com>'],_("translator_credits"))
-        dlg.show()
+        dlg = gtk.MessageDialog (None, 0, gtk.MESSAGE_INFO, gtk.BUTTONS_OK,
+                                 _("System Services Configuration Tool VERSION\n Copyright (c) 2002-2004 "
+                                   "Red Hat, Inc.\n Tim Powers <timp@redhat>\n "
+                                   "Bill Nottingham <notting@redhat>\n Dan Walsh <dwalsh@redhat.com>\n "
+                                   "Brent Fox <bfox@redhat.com>\n "))
+        dlg.set_title(_("About"))
+        dlg.set_default_size(100, 100)
+        dlg.set_position (gtk.WIN_POS_CENTER)
+        dlg.set_border_width(2)
+        dlg.set_modal(gtk.TRUE)
+        dlg.set_transient_for(self.winMain)
+
+        iconPixbuf = None
+        try:
+            iconPixbuf = gtk.gdk.pixbuf_new_from_file("/usr/share/system-config-services/system-config-services.png")
+        except:
+            pass
+        
+        if iconPixbuf:
+            dlg.set_icon(iconPixbuf)
+        rc = dlg.run()
+        dlg.destroy()
 
 #----------------------------------------------------------------------------
 # Methods pertaining to the "Help" menu items, there will be more here
 # once I have "real" help :)
 #----------------------------------------------------------------------------
     def on_mnuManual_activate(self,args):
-        page = "file:///usr/share/doc/system-config-services-" + VERSION + "/index.html"
-#        gnome.help_display_uri(page)
-        gnome.url_show(page)
+        help_page = "file:///usr/share/doc/system-config-services-" + VERSION + "/index.html"
+
+        path = "/usr/bin/htmlview"
+         
+        if path == None:
+            dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_WARNING, gtk.BUTTONS_OK,
+                                    (_("Help is not available.")))
+            dlg.set_position(gtk.WIN_POS_CENTER)
+            dlg.run()
+            dlg.destroy()
+            return
+                 
+        pid = os.fork()
+        if not pid:
+            os.execv(path, [path, help_page])
 
     def on_selectCursor(self,args):
         """calls get_service_action_results to start the selected initscript"""
