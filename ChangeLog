@@ -1,3 +1,39 @@
+2005-03-24  nphilipp  <nphilipp@redhat.com>
+
+	* configure.in, src/checklist.py, src/serviceconf.glade, src/serviceconf.py, system-config-services.spec.in:
+	connect toggled signals of service/runlevel checkboxes to enable saving again (#151982)
+	consolidate on_optRL*_toggled
+	connect delete_event of mainWindow to ask whether things should be saved
+	before quitting
+	tab -> space indentation to avoid ambiguity
+	change some typos
+
+2005-03-21  runab  <runab@redhat.com>
+
+	* po/bn_IN.po: Added file for locale Bengali (IN):21/03
+
+2005-03-19  raven  <raven@redhat.com>
+
+	* po/pl.po: Small fixes
+
+2005-03-18  nphilipp  <nphilipp@redhat.com>
+
+	* system-config-services.spec.in: mention version in changelog
+
+	* ChangeLog, po/system-config-services.pot: release 0.8.20
+
+	* aclocal.m4, configure.in, intltool-extract.in, intltool-merge.in, intltool-update.in, po/Makefile.in.in:
+	bump version
+
+	* src/checklist.py, src/serviceconf.py, system-config-services.spec.in:
+	dynamic, translated column titles for runlevel columns
+
+	* src/serviceconf.glade, src/serviceconf.py, system-config-services.spec.in:
+	build toolbar in glade to avoid DeprecationWarnings (#134978)
+
+	* src/servicemethods.py, system-config-services.spec.in:
+	don't read from /dev/null when restarting xinetd/services to prevent hangs
+
 2005-03-18  nphilipp  <nphilipp@redhat.com>
 
 	* aclocal.m4, configure.in, intltool-extract.in, intltool-merge.in, intltool-update.in, po/Makefile.in.in:

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-03-18 15:03+0100\n"
+"POT-Creation-Date: 2005-03-24 14:42+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/checklist.py:40 src/checklist.py:166
+#: src/checklist.py:40 src/checklist.py:171
 #, python-format
 msgid "Runlevel %d"
 msgstr ""
@@ -32,20 +32,19 @@ msgstr ""
 msgid "Currently Running in Runlevel: "
 msgstr ""
 
-#: src/serviceconf.py:310 src/serviceconf.py:413 src/serviceconf.py:438
-#: src/serviceconf.py:460 src/serviceconf.py:482
+#: src/serviceconf.py:312 src/serviceconf.py:413
 msgid "Editing Runlevel: "
 msgstr ""
 
-#: src/serviceconf.py:353
+#: src/serviceconf.py:355
 msgid "Unknown"
 msgstr ""
 
-#: src/serviceconf.py:482
+#: src/serviceconf.py:442
 msgid "All"
 msgstr ""
 
-#: src/serviceconf.py:525
+#: src/serviceconf.py:476
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -56,15 +55,15 @@ msgid ""
 " "
 msgstr ""
 
-#: src/serviceconf.py:529
+#: src/serviceconf.py:480
 msgid "About"
 msgstr ""
 
-#: src/serviceconf.py:558
+#: src/serviceconf.py:509
 msgid "Help is not available."
 msgstr ""
 
-#: src/serviceconf.py:712
+#: src/serviceconf.py:663
 msgid "You must run system-config-services as root."
 msgstr ""
 
