@@ -6,11 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
 "POT-Creation-Date: 2002-08-07 16:44-0400\n"
-"PO-Revision-Date: 2002-04-07 01:59EET\n"
+"PO-Revision-Date: 2002-08-09 16:58+0300\n"
 "Last-Translator: Leon Kanter <leon@blackcatlinux.com>\n"
-"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=KOI8-R\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
 "X-Generator: KBabel 0.9.6\n"
@@ -46,89 +46,89 @@ msgstr ""
 #. add more TTL checking code here
 #: src/dnsdata.py:90 src/dnsdata.py:92
 msgid "Directory "
-msgstr ""
+msgstr "п п╟я┌п╟п╩п╬пЁ "
 
 #: src/dnsdata.py:90
 msgid " does not begin with a slash!"
-msgstr ""
+msgstr " п╫п╣ п╫п╟я┤п╦п╫п╟п╣я┌я│я▐ я│ \"/\"!"
 
 #: src/dnsdata.py:92
 msgid " is not an existing directory!"
-msgstr ""
+msgstr " п╫п╣ я│я┐я┴п╣я│я┌п╡я┐п╣я┌!"
 
 #. FIXME
 #. more checks for valid path here
 #: src/dnsdata.py:113 src/dnsdata.py:125
 msgid "Master "
-msgstr ""
+msgstr "п°п╟я│я┌п╣я─ "
 
 #: src/dnsdata.py:113 src/dnsdata.py:294
 msgid " is not a valid IP address."
-msgstr ""
+msgstr " п╫п╣ я▐п╡п╩я▐п╣я┌я│я▐ п╢п╣п╧я│я┌п╡п╦я┌п╣п╩я▄п╫я▀п╪ п╟п╢я─п╣я│п╬п╪ IP."
 
 #: src/dnsdata.py:125 src/dnsdata.py:279 src/dnsdata.py:383 src/dnsdata.py:433
 #: src/dnsdata.py:470 src/dnsdata.py:511
 msgid " is defined twice."
-msgstr ""
+msgstr " п╬п©я─п╣п╢п╣п╩п╣п╫ п╢п╡п╟п╤п╢я▀."
 
 #: src/dnsdata.py:133
 msgid "Slave zone name "
-msgstr ""
+msgstr "п≤п╪я▐ п╡я┌п╬я─п╦я┤п╫п╬п╧ п╥п╬п╫я▀ "
 
 #: src/dnsdata.py:133 src/dnsdata.py:414 src/dnsdata.py:487
 msgid " is not a valid domain name."
-msgstr ""
+msgstr " п╫п╣ я▐п╡п╩я▐п╣я┌я│я▐ п╢п╣п╧я│я┌п╡п╦я┌п╣п╩я▄п╫я▀п╪ п╢п╬п╪п╣п╫п╫я▀п╪ п╦п╪п╣п╫п╣п╪."
 
 #: src/dnsdata.py:148
 msgid "Forwarder "
-msgstr ""
+msgstr "Forwarder "
 
 #: src/dnsdata.py:148
 msgid " is not a valid Ip address."
-msgstr ""
+msgstr " п²п╣ я▐п╡п╩я▐п╣я┌я│я▐ п╢п╣п╧я│я┌п╡п╦я┌п╣п╩я▄п╫я▀п╪ п╟п╢я─п╣я│п╬п╪ IP."
 
 #: src/dnsdata.py:174
 msgid "Primary Nameserver not defined."
-msgstr ""
+msgstr "п÷п╣я─п╡п╦я┤п╫я▀п╧ я│п╣я─п╡п╣я─ DNS п╫п╣ п╬п©я─п╣п╢п╣п╩п╣п╫."
 
 #. print "testPNS on " + value
 #: src/dnsdata.py:181 src/dnsdata.py:183
 msgid "Primary Nameserver `"
-msgstr ""
+msgstr "п÷п╣я─п╡п╦я┤п╫я▀п╧ я│п╣я─п╡п╣я─ DNS `"
 
 #: src/dnsdata.py:181 src/dnsdata.py:249 src/FwdZone.py:444
 msgid "' has no . at the end. You must use a full hostname."
-msgstr ""
+msgstr "' п╫п╣ п╦п╪п╣п╣я┌ . п╡ п╨п╬п╫я├п╣. п▓я▀ п╢п╬п╩п╤п╫я▀ п╦я│п©п╬п╩я▄п╥п╬п╡п╟я┌я▄ п©п╬п╩п╫п╬п╣ п╦п╪я▐ я┐п╥п╩п╟."
 
 #: src/dnsdata.py:183
 msgid "' is not a valid hostname or IP address."
-msgstr ""
+msgstr "' п╫п╣ я▐п╡п╩я▐п╣я┌я│я▐ п╢п╣п╧я│я┌п╡п╦я┌п╣п╩я▄п╫я▀п╪ п╟п╢я─п╣я│п╬п╪ IP п╦п╩п╦ п╦п╪п╣п╫п╣п╪ я┐п╥п╩п╟."
 
 #: src/dnsdata.py:197
 msgid "Refresh value should be bigger than Retry"
-msgstr ""
+msgstr "п≈п╫п╟я┤п╣п╫п╦п╣ Refresh п╢п╬п╩п╤п╫п╬ п╠я▀я┌я▄ п╠п╬п╩я▄я┬п╣, я┤п╣п╪ Retry"
 
 #. FIXME
 #. add more tests here
 #: src/dnsdata.py:204
 msgid "Serial number must be >= 1."
-msgstr ""
+msgstr "Serial number п╢п╬п╩п╤п╣п╫ п╠я▀я┌я▄ >= 1."
 
 #: src/dnsdata.py:208
 msgid "Refresh value must be >= 0."
-msgstr ""
+msgstr "п≈п╫п╟я┤п╣п╫п╦п╣ Refresh п╢п╬п╩п╤п╫п╬ п╠я▀я┌я▄ >= 0."
 
 #: src/dnsdata.py:212
 msgid "Retry value must be >= 0."
-msgstr ""
+msgstr "п≈п╫п╟я┤п╣п╫п╦п╣ Retry п╢п╬п╩п╤п╫п╬ п╠я▀я┌я▄ >= 0."
 
 #: src/dnsdata.py:216
 msgid "Expire value must be >= 0."
-msgstr ""
+msgstr "п≈п╫п╟я┤п╣п╫п╦п╣ Expire п╢п╬п╩п╤п╫п╬ п╠я▀я┌я▄ >= 0."
 
 #: src/dnsdata.py:220
 msgid "Minimum value must be >= 0."
-msgstr ""
+msgstr "п°п╦п╫п╦п╪п╟п╩я▄п╫п╬п╣ п╥п╫п╟я┤п╣п╫п╦п╣ п╢п╬п╩п╤п╫п╬ п╠я▀я┌я▄ >=0"
 
 #. num = self.getNumA()
 #. if num:
@@ -143,89 +143,88 @@ msgstr ""
 #. raise TestError, _("Hostname ") + names[i] + _(" is defined twice.")
 #: src/dnsdata.py:241 src/dnsdata.py:285 src/dnsdata.py:319 src/dnsdata.py:390
 msgid "NewHost"
-msgstr ""
+msgstr "NewHost"
 
 #: src/dnsdata.py:246
 msgid "PTR hostname not defined"
-msgstr ""
+msgstr "PTR hostname п╫п╣ п╬п©я─п╣п╢п╣п╩п╣п╫п╬"
 
 #: src/dnsdata.py:249
 msgid "PTR hostname `"
-msgstr ""
+msgstr "PTR hostname `"
 
 #: src/dnsdata.py:252 src/dnsdata.py:290 src/dnsdata.py:325 src/dnsdata.py:360
 #: src/dnsdata.py:364 src/dnsdata.py:395
 msgid " is not a valid hostname."
-msgstr ""
+msgstr " п╫п╣ я▐п╡п╩я▐п╣я┌я│я▐ п╢п╣п╧я│я┌п╡п╦я┌п╣п╩я▄п╫я▀п╪ п╦п╪п╣п╫п╣п╪ я┐п╥п╩п╟."
 
 #: src/dnsdata.py:260
 msgid " must be in the range 0..255."
-msgstr ""
+msgstr " п╢п╬п╩п╤п╣п╫ п╠я▀я┌я▄ п╡ п╢п╦п╟п©п╟п╥п╬п╫п╣ 0..255"
 
 #: src/dnsdata.py:279
 msgid "IP "
-msgstr ""
+msgstr "IP "
 
 #: src/dnsdata.py:325 src/dnsdata.py:349
 msgid "Nameserver "
-msgstr ""
+msgstr "п║п╣я─п╡п╣я─ DNS "
 
 #: src/dnsdata.py:330
 msgid " is not a valid host or domain name."
-msgstr ""
+msgstr " п╫п╣ я▐п╡п╩я▐п╣я┌я│я▐ п╢п╣п╧я│я┌п╡п╦я┌п╣п╩я▄п╫я▀п╪ п╟п╢я─п╣я│п╬п╪ я┐п╥п╩п╟ п╦п╩п╦ п╢п╬п╪п╣п╫п╟."
 
 #: src/dnsdata.py:349
 msgid " is defined twice for "
-msgstr ""
+msgstr " п╬п©я─п╣п╢п╣п╩п╣п╫ п╢п╡п╟п╤п╢я▀ п╢п╩я▐ "
 
 #: src/dnsdata.py:355 src/dnsdata.py:356
 msgid "New"
-msgstr ""
+msgstr "п║п╬п╥п╢п╟я┌я▄"
 
 #: src/dnsdata.py:383
 msgid "Alias "
-msgstr ""
+msgstr "п÷я│п╣п╡п╢п╬п╫п╦п╪ "
 
 #: src/dnsdata.py:409
 msgid "<New Forward Zone>"
-msgstr ""
+msgstr "<New Forward Zone>"
 
 #: src/dnsdata.py:414 src/dnsdata.py:487
 msgid "Forward zone name "
-msgstr ""
+msgstr "Forward zone name "
 
 #: src/dnsdata.py:433 src/dnsdata.py:511
-#, fuzzy
 msgid "Zone "
-msgstr "Нет"
+msgstr "п≈п╬п╫п╟ "
 
 #: src/dnsdata.py:442
 msgid "<New Reverse Zone>"
-msgstr ""
+msgstr "<New Reverse Zone>"
 
 #: src/dnsdata.py:446
 msgid "Reverse zone name `"
-msgstr ""
+msgstr "п≤п╪я▐ п╬п╠я─п╟я┌п╫п╬п╧ п╥п╬п╫я▀ `"
 
 #: src/dnsdata.py:446
 msgid "' is not the end of a reverse IP address."
-msgstr ""
+msgstr "' п╫п╣ я▐п╡п╩я▐п╣я┌я│я▐ п╥п╟п╡п╣я─я┬п╣п╫п╦п╣п╪ п╬п╠я─п╟я┌п╫п╬пЁп╬ п╟п╢я─п╣я│п╟ IP."
 
 #: src/dnsdata.py:451
 msgid "Reverse zone `"
-msgstr ""
+msgstr "п·п╠я─п╟я┌п╫п╟я▐ п╥п╬п╫п╟ '"
 
 #: src/dnsdata.py:451 src/FwdZone.py:657
 msgid "' must list at least one name server"
-msgstr ""
+msgstr "' п╢п╬п╩п╤п╫п╟ п╡п╨п╩я▌я┤п╟я┌я▄ я┘п╬я┌я▐ п╠я▀ п╬п╢п╦п╫ я│п╣я─п╡п╣я─ DNS"
 
 #: src/dnsdata.py:470
 msgid "Reverse zone "
-msgstr ""
+msgstr "п·п╠я─п╟я┌п╫п╟я▐ п╥п╬п╫п╟ "
 
 #: src/dnsdata.py:482
 msgid "<New Zone>"
-msgstr ""
+msgstr "<New Zone>"
 
 #. serviceconf.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -264,16 +263,16 @@ msgstr ""
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:170
 msgid "Currently Running in Runlevel: "
-msgstr "Текущий уровень запуска:"
+msgstr "п╒п╣п╨я┐я┴п╦п╧ я┐я─п╬п╡п╣п╫я▄ п╥п╟п©я┐я│п╨п╟:"
 
 #. This is a sentry
 #: src/serviceconf.py:181
 msgid "Start at Boot"
-msgstr "Запускать при загрузке"
+msgstr "п≈п╟п©я┐я│п╨п╟я┌я▄ п©я─п╦ п╥п╟пЁя─я┐п╥п╨п╣"
 
 #: src/serviceconf.py:182
 msgid "Services"
-msgstr "Сервисы"
+msgstr "п║п╣я─п╡п╦я│я▀"
 
 #. self.clstServices.set_column_justification(0,GTK.JUSTIFY_CENTER)
 #. self.clstServices.set_column_justification(1,GTK.JUSTIFY_LEFT)
@@ -289,33 +288,32 @@ msgstr "Сервисы"
 #: src/serviceconf.py:227 src/serviceconf.py:309 src/serviceconf.py:318
 #: src/serviceconf.py:342
 msgid "Editing Runlevel: "
-msgstr "Редактируется уровень запуска:"
+msgstr "п═п╣п╢п╟п╨я┌п╦я─я┐п╣я┌я│я▐ я┐я─п╬п╡п╣п╫я▄ п╥п╟п©я┐я│п╨п╟:"
 
 #: src/serviceconf.py:324
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"п▒я▀п╩п╦ я│п╢п╣п╩п╟п╫я▀ п╦п╥п╪п╣п╫п╣п╫п╦я▐ я┌п╣п╨я┐я┴п╣пЁп╬ я┐я─п╬п╡п╫я▐ п╥п╟п©я┐я│п╨п╟.\n"
+"п║п╬я┘я─п╟п╫п╦я┌я▄ п╦п╥п╪п╣п╫п╣п╫п╦я▐?"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:354
-#, fuzzy
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Copyright (c) 2001 Red Hat, Inc. Все права защищены."
+msgstr "Copyright (c) 2002 Red Hat, Inc. п▓я│п╣ п©я─п╟п╡п╟ п╥п╟я┴п╦я┴п╣п╫я▀."
 
 #: src/serviceconf.py:355
-#, fuzzy
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
-"Это ПО может свободно распространяться на условиях GPL.\n"
-"                                  \n"
-"Сообщайте о всех найденных ошибках системе обработки ошибок Red Hat:\n"
+"п╜я┌п╬ п÷п· п╪п╬п╤п╣я┌ я│п╡п╬п╠п╬п╢п╫п╬ я─п╟я│п©я─п╬я│я┌я─п╟п╫я▐я┌я▄я│я▐ п╫п╟ я┐я│п╩п╬п╡п╦я▐я┘ GPL.\n"
+"п║п╬п╬п╠я┴п╟п╧я┌п╣ п╬ п╡я│п╣я┘ п╫п╟п╧п╢п╣п╫п╫я▀я┘ п╬я┬п╦п╠п╨п╟я┘ я│п╦я│я┌п╣п╪п╣ п╬п╠я─п╟п╠п╬я┌п╨п╦ п╬я┬п╦п╠п╬п╨ Red Hat:\n"
 "http://bugzilla.redhat.com"
 
 #. ----------------------------------------------------------------------------
@@ -324,7 +322,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:373
 msgid "Help is not available."
-msgstr ""
+msgstr "п║п©я─п╟п╡п╨п╟ п╫п╣п╢п╬я│я┌я┐п©п╫п╟."
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -338,9 +336,8 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #: src/serviceconf.py:491
-#, fuzzy
 msgid "You must run redhat-config-services as root."
-msgstr "Serviceconf должен выполняться от имени пользователя root"
+msgstr "redhat-config-services п╢п╬п╩п╤п╣п╫ п╡я▀п©п╬п╩п╫я▐я┌я▄я│я▐ п╬я┌ п©п╬п╩я▄п╥п╬п╡п╟я┌п╣п╩я▐ root."
 
 #. import gnome.ui
 #. Columns for "a_treeview"
@@ -363,60 +360,58 @@ msgstr "Serviceconf должен выполняться от имени пользователя root"
 #. continue
 #: src/FwdZone.py:236
 msgid " aliased to "
-msgstr ""
+msgstr " я▐п╡п╩я▐п╣я┌я│я▐ я│я│я▀п╩п╨п╬п╧ п╫п╟ "
 
 #: src/FwdZone.py:265 src/FwdZone.py:362 src/FwdZone.py:433
-#, fuzzy
 msgid "You must enter a host name."
-msgstr "Serviceconf должен выполняться от имени пользователя root"
+msgstr "п²п╣п╬п╠я┘п╬п╢п╦п╪п╬ я┐п╨п╟п╥п╟я┌я▄ п╦п╪я▐ я┐п╥п╩п╟."
 
 #: src/FwdZone.py:268
 msgid "You must enter an alias."
-msgstr ""
+msgstr "п²п╣п╬п╠я┘п╬п╢п╦п╪п╬ я┐п╨п╟п╥п╟я┌я▄ п©я│п╣п╡п╢п╬п╫п╦п╪"
 
 #: src/FwdZone.py:288
 msgid "An alias with this name already exists."
-msgstr ""
+msgstr "п÷я│п╣п╡п╢п╬п╫п╦п╪ я│ я┌п╟п╨п╦п╪ п╦п╪п╣п╫п╣п╪ я┐п╤п╣ я│я┐я┴п╣я│я┌п╡я┐п╣я┌"
 
 #: src/FwdZone.py:312
 msgid " at priority "
-msgstr ""
+msgstr " я│ п©я─п╦п╬я─п╦я┌п╣я┌п╬п╪ "
 
 #: src/FwdZone.py:338 src/FwdZone.py:340
 #, python-format
 msgid "Mail Exchanger for %s"
-msgstr ""
+msgstr "Mail Exchanger п╢п╩я▐ %s"
 
 #: src/FwdZone.py:345
 msgid "Edit Mail Exchanger"
-msgstr ""
+msgstr "п≤п╥п╪п╣п╫п╦я┌я▄ Mail Exchanger"
 
 #: src/FwdZone.py:349
 msgid "Add a Mail Exchanger"
-msgstr ""
+msgstr "п■п╬п╠п╟п╡п╦я┌я▄ Mail Exchanger"
 
 #: src/FwdZone.py:365
-#, fuzzy
 msgid "You must enter an priority."
-msgstr "Serviceconf должен выполняться от имени пользователя root"
+msgstr "п▓я▀ п╢п╬п╩п╤п╫я▀ я┐п╨п╟п╥п╟я┌я▄ п©я─п╦п╬я─п╦я┌п╣я┌."
 
 #: src/FwdZone.py:394
 msgid " served by "
-msgstr ""
+msgstr " п╬п╠я│п╩я┐п╤п╦п╡п╟п╣я┌я│я▐ "
 
 #: src/FwdZone.py:436
 msgid "You must enter a resolution address."
-msgstr ""
+msgstr "You must enter a resolution address."
 
 #: src/FwdZone.py:444
 msgid "NS hostname `"
-msgstr ""
+msgstr "NS hostname `"
 
 #. slurp from the zone
 #. test_soa_values
 #: src/FwdZone.py:637
 msgid "SOA Refresh value should be bigger than Retry"
-msgstr ""
+msgstr "п▓п╣п╩п╦я┤п╦п╫п╟ SOA Refresh п╢п╬п╩п╤п╫п╟ п╠я▀я┌я▄ п╠п╬п╩я▄я┬п╣ я┤п╣п╪ Retry"
 
 #. test_a_list
 #. test_ns_list
@@ -424,13 +419,13 @@ msgstr ""
 #. test_mx_list
 #: src/FwdZone.py:657
 msgid "Forward zone `"
-msgstr ""
+msgstr "п≈п╬п╫п╟ Forward `"
 
 #. ####
 #: src/FwdZone.py:724
 #, python-format
 msgid "Settings for %s"
-msgstr ""
+msgstr "п÷п╟я─п╟п╪п╣я┌я─я▀ п╢п╩я▐ %s"
 
 #. FIXME: put checks in here.
 #. serviceactions.py
@@ -474,7 +469,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Для использования этого сервиса необходимо разрешить xinetd."
+"п■п╩я▐ п╦я│п©п╬п╩я▄п╥п╬п╡п╟п╫п╦я▐ я█я┌п╬пЁп╬ я│п╣я─п╡п╦я│п╟ п╫п╣п╬п╠я┘п╬п╢п╦п╪п╬ я─п╟п╥я─п╣я┬п╦я┌я▄ xinetd."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -486,177 +481,178 @@ msgstr ""
 #. if it's toggled off
 #: src/servicemethods.py:317
 msgid "xinetd failed to reload for "
-msgstr "Ошибка перезапуска xinetd для "
+msgstr "п·я┬п╦п╠п╨п╟ п©п╣я─п╣п╥п╟п©я┐я│п╨п╟ xinetd п╢п╩я▐ "
 
 #: src/servicemethods.py:318
 msgid ". The error was: "
-msgstr ". Ошибка была:"
+msgstr ". п·я┬п╦п╠п╨п╟ п╠я▀п╩п╟:"
 
 #: src/servicemethods.py:320
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "xinetd перезагрузил %s успешно."
+msgstr "xinetd п©п╣я─п╣п╥п╟пЁя─я┐п╥п╦п╩ %s я┐я│п©п╣я┬п╫п╬."
 
 #: src/servicemethods.py:323
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "xinetd должен быть разрешен для запуска %s"
+msgstr "xinetd п╢п╬п╩п╤п╣п╫ п╠я▀я┌я▄ я─п╟п╥я─п╣я┬п╣п╫ п╢п╩я▐ п╥п╟п©я┐я│п╨п╟ %s"
 
 #: src/servicemethods.py:328
-#, fuzzy, python-format
+#, python-format
 msgid "%s failed. The error was: %s"
-msgstr "Сбой %s для %s. Ошибка была: %s"
+msgstr "п║п╠п╬п╧ %s. п·я┬п╦п╠п╨п╟ п╠я▀п╩п╟: %s"
 
 #: src/servicemethods.py:330
 msgid " successful"
-msgstr " успешно"
+msgstr " я┐я│п©п╣я┬п╫п╬"
 
 #: src/serviceconf.glade.h:1
 msgid "Cancel"
-msgstr "Отмена"
+msgstr "п·я┌п╪п╣п╫п╟"
 
 #: src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
-msgstr "Активный уровень запуска:"
+msgstr "п░п╨я┌п╦п╡п╫я▀п╧ я┐я─п╬п╡п╣п╫я▄ п╥п╟п©я┐я│п╨п╟:"
 
 #: src/serviceconf.glade.h:3
 msgid "Editing Runlevel:"
-msgstr "Редактируется уровень запуска:"
+msgstr "п═п╣п╢п╟п╨я┌п╦я─я┐п╣я┌я│я▐ я┐я─п╬п╡п╣п╫я▄ п╥п╟п©я┐я│п╨п╟:"
 
 #: src/serviceconf.glade.h:4
 msgid "None"
-msgstr "Нет"
+msgstr "п²п╣я┌"
 
 #: src/serviceconf.glade.h:5
 msgid "Quit"
-msgstr "Выход"
+msgstr "п▓я▀я┘п╬п╢"
 
 #: src/serviceconf.glade.h:6
 msgid "Restart"
-msgstr "Перезапустить"
+msgstr "п÷п╣я─п╣п╥п╟п©я┐я│я┌п╦я┌я▄"
 
 #: src/serviceconf.glade.h:7
 msgid "Restart the selected service"
-msgstr "Перезапустить выбранную службу"
+msgstr "п÷п╣я─п╣п╥п╟п©я┐я│я┌п╦я┌я▄ п╡я▀п╠я─п╟п╫п╫я┐я▌ я│п╩я┐п╤п╠я┐"
 
 #: src/serviceconf.glade.h:8
 msgid "Revert to the last saved change"
-msgstr "Вернуться к последнему сохраненному состоянию"
+msgstr "п▓п╣я─п╫я┐я┌я▄я│я▐ п╨ п©п╬я│п╩п╣п╢п╫п╣п╪я┐ я│п╬я┘я─п╟п╫п╣п╫п╫п╬п╪я┐ я│п╬я│я┌п╬я▐п╫п╦я▌"
 
 #: src/serviceconf.glade.h:9
 msgid "Runlevel _3"
-msgstr "Уровень запуска _3"
+msgstr "пёя─п╬п╡п╣п╫я▄ п╥п╟п©я┐я│п╨п╟ _3"
 
 #: src/serviceconf.glade.h:10
 msgid "Runlevel _4"
-msgstr "Уровень запуска _4"
+msgstr "пёя─п╬п╡п╣п╫я▄ п╥п╟п©я┐я│п╨п╟ _4"
 
 #: src/serviceconf.glade.h:11
 msgid "Runlevel _5"
-msgstr "Уровень запуска _5"
+msgstr "пёя─п╬п╡п╣п╫я▄ п╥п╟п©я┐я│п╨п╟ _5"
 
 #: src/serviceconf.glade.h:12
 msgid "S_top Service"
-msgstr "_Остановить службу"
+msgstr "_п·я│я┌п╟п╫п╬п╡п╦я┌я▄ я│п╩я┐п╤п╠я┐"
 
 #: src/serviceconf.glade.h:13
 msgid "Save"
-msgstr "Сохранить"
+msgstr "п║п╬я┘я─п╟п╫п╦я┌я▄"
 
 #: src/serviceconf.glade.h:14
 msgid "Save the changes you have made"
-msgstr "Сохранить сделанные изменения"
+msgstr "п║п╬я┘я─п╟п╫п╦я┌я▄ я│п╢п╣п╩п╟п╫п╫я▀п╣ п╦п╥п╪п╣п╫п╣п╫п╦я▐"
 
 #: src/serviceconf.glade.h:15
 msgid "Service Configuration"
-msgstr "Настройка служб"
+msgstr "п²п╟я│я┌я─п╬п╧п╨п╟ я│п╩я┐п╤п╠"
 
 #: src/serviceconf.glade.h:16
 msgid "Start"
-msgstr "Запустить"
+msgstr "п≈п╟п©я┐я│я┌п╦я┌я▄"
 
 #: src/serviceconf.glade.h:17
 msgid "Start the selected service"
-msgstr "Запустить выбранную службу"
+msgstr "п≈п╟п©я┐я│я┌п╦я┌я▄ п╡я▀п╠я─п╟п╫п╫я┐я▌ я│п╩я┐п╤п╠я┐"
 
 #: src/serviceconf.glade.h:18
 msgid "Stop"
-msgstr "Остановить"
+msgstr "п·я│я┌п╟п╫п╬п╡п╦я┌я▄"
 
 #: src/serviceconf.glade.h:19
 msgid "Stop the selected service"
-msgstr "Остановить выбранную службу"
+msgstr "п·я│я┌п╟п╫п╬п╡п╦я┌я▄ п╡я▀п╠я─п╟п╫п╫я┐я▌ я│п╩я┐п╤п╠я┐"
 
 #: src/serviceconf.glade.h:20
 msgid "_Actions"
-msgstr "_Действия"
+msgstr "_п■п╣п╧я│я┌п╡п╦я▐"
 
 #: src/serviceconf.glade.h:21
 msgid "_Contents"
-msgstr ""
+msgstr "п║п╬п╢п╣я─п╤п╦п╪п╬п╣"
 
 #: src/serviceconf.glade.h:22
 msgid "_Edit Runlevel"
-msgstr "_Изменить уровень"
+msgstr "_п≤п╥п╪п╣п╫п╦я┌я▄ я┐я─п╬п╡п╣п╫я▄"
 
 #: src/serviceconf.glade.h:23
 msgid "_File"
-msgstr ""
+msgstr "_п╓п╟п╧п╩"
 
 #: src/serviceconf.glade.h:24
 msgid "_Help"
-msgstr ""
+msgstr "_п║п©я─п╟п╡п╨п╟"
 
 #: src/serviceconf.glade.h:25
 msgid "_Refresh Service List"
-msgstr "_Обновить список служб"
+msgstr "_п·п╠п╫п╬п╡п╦я┌я▄ я│п©п╦я│п╬п╨ я│п╩я┐п╤п╠"
 
 #: src/serviceconf.glade.h:26
 msgid "_Restart Service"
-msgstr "_Перезапустить службу"
+msgstr "_п÷п╣я─п╣п╥п╟п©я┐я│я┌п╦я┌я▄ я│п╩я┐п╤п╠я┐"
 
 #: src/serviceconf.glade.h:27
 msgid "_Revert To Last Save"
-msgstr "Откат к последнему сохранению"
+msgstr "п·я┌п╨п╟я┌ п╨ п©п╬я│п╩п╣п╢п╫п╣п╪я┐ я│п╬я┘я─п╟п╫п╣п╫п╦я▌"
 
 #: src/serviceconf.glade.h:28
 msgid "_Save Changes"
-msgstr "_Сохранить измения"
+msgstr "_п║п╬я┘я─п╟п╫п╦я┌я▄ п╦п╥п╪п╣п╫п╦я▐"
 
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
-msgstr "_Запустить службу"
+msgstr "_п≈п╟п©я┐я│я┌п╦я┌я▄ я│п╩я┐п╤п╠я┐"
 
 #~ msgid "_Manual"
-#~ msgstr "_Руководство"
+#~ msgstr "_п═я┐п╨п╬п╡п╬п╢я│я┌п╡п╬"
 
 #~ msgid "Refresh the list of services"
-#~ msgstr "Обновить список служб"
+#~ msgstr "п·п╠п╫п╬п╡п╦я┌я▄ я│п©п╦я│п╬п╨ я│п╩я┐п╤п╠"
 
 #~ msgid "Actions such as start, stop, and restart on the selected service"
 #~ msgstr ""
-#~ "Произвести действия, такие как start, stop и restart, над выбранной "
-#~ "службой"
+#~ "п÷я─п╬п╦п╥п╡п╣я│я┌п╦ п╢п╣п╧я│я┌п╡п╦я▐, я┌п╟п╨п╦п╣ п╨п╟п╨ start, stop п╦ restart, п╫п╟п╢ п╡я▀п╠я─п╟п╫п╫п╬п╧ "
+#~ "я│п╩я┐п╤п╠п╬п╧"
 
 #~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Выберите уровень запуска, который вы собираетесь изменить"
+#~ msgstr "п▓я▀п╠п╣я─п╦я┌п╣ я┐я─п╬п╡п╣п╫я▄ п╥п╟п©я┐я│п╨п╟, п╨п╬я┌п╬я─я▀п╧ п╡я▀ я│п╬п╠п╦я─п╟п╣я┌п╣я│я▄ п╦п╥п╪п╣п╫п╦я┌я▄"
 
 #~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "Уровень запуска 3 - это многопользовательский режим с сетью"
+#~ msgstr "пёя─п╬п╡п╣п╫я▄ п╥п╟п©я┐я│п╨п╟ 3 - я█я┌п╬ п╪п╫п╬пЁп╬п©п╬п╩я▄п╥п╬п╡п╟я┌п╣п╩я▄я│п╨п╦п╧ я─п╣п╤п╦п╪ я│ я│п╣я┌я▄я▌"
 
 #~ msgid ""
 #~ "Runlevel 4 is reserved for local customization, and is not usually used"
 #~ msgstr ""
-#~ "Уровень запуска 4 зарезервирован для локального уточнения и как правило "
-#~ "не используется."
+#~ "пёя─п╬п╡п╣п╫я▄ п╥п╟п©я┐я│п╨п╟ 4 п╥п╟я─п╣п╥п╣я─п╡п╦я─п╬п╡п╟п╫ п╢п╩я▐ п╩п╬п╨п╟п╩я▄п╫п╬пЁп╬ я┐я┌п╬я┤п╫п╣п╫п╦я▐ п╦ п╨п╟п╨ п©я─п╟п╡п╦п╩п╬ "
+#~ "п╫п╣ п╦я│п©п╬п╩я▄п╥я┐п╣я┌я│я▐."
 
 #~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
 #~ msgstr ""
-#~ "Уровень запуска 5 - это многопользовательский режим с сетью и системой X "
+#~ "пёя─п╬п╡п╣п╫я▄ п╥п╟п©я┐я│п╨п╟ 5 - я█я┌п╬ п╪п╫п╬пЁп╬п©п╬п╩я▄п╥п╬п╡п╟я┌п╣п╩я▄я│п╨п╦п╧ я─п╣п╤п╦п╪ я│ я│п╣я┌я▄я▌ п╦ я│п╦я│я┌п╣п╪п╬п╧ X "
 #~ "Window"
 
 #~ msgid "Read Manual"
-#~ msgstr "Чтение руководства"
+#~ msgstr "п╖я┌п╣п╫п╦п╣ я─я┐п╨п╬п╡п╬п╢я│я┌п╡п╟"
 
 #~ msgid "Exit"
-#~ msgstr "Выход"
+#~ msgstr "п▓я▀я┘п╬п╢"
+
