@@ -1,4 +1,11 @@
+2003-10-06  Dan Walsh  <dwalsh@redhat.com>
+
+	* redhat-config-services.spec.in, src/serviceconf.py:
+	fix help about crash
+
 2003-10-01  Dan Walsh  <dwalsh@redhat.com>
+
+	* ChangeLog: release 0.8.5
 
 	* redhat-config-services.spec.in: bump
 

@@ -1,12 +1,12 @@
 # Swedish messages for serviceconf.
 # Copyright (C) 2001, 2003 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.43 2003/09/05 19:37:03 dwalsh Exp $
+# $Id: sv.po,v 1.44 2003/10/06 14:39:09 dwalsh Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2003-09-05 15:44-0400\n"
+"POT-Creation-Date: 2003-10-06 10:40-0400\n"
 "PO-Revision-Date: 2003-08-15 14:24+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -133,6 +133,10 @@ msgstr ""
 "Rapportera alla fel du hittar i Red Hats felrapporteringssystem:\n"
 "http://bugzilla.redhat.com"
 
+#: src/serviceconf.py:451
+msgid "translator_credits"
+msgstr ""
+
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
@@ -150,7 +154,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:596
+#: src/serviceconf.py:595
 msgid "You must run redhat-config-services as root."
 msgstr "Du måste köra redhat-config-services som root."
 

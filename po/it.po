@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2003-09-05 15:44-0400\n"
+"POT-Creation-Date: 2003-10-06 10:40-0400\n"
 "PO-Revision-Date: 2003-03-26 19:58+1000\n"
 "Last-Translator: Francesco Valente <fvalen@redhat.com>\n"
 "Language-Team: Italian <i18n-list@redhat.com>\n"
@@ -134,6 +134,10 @@ msgstr ""
 "Inviare gli eventuali bug trovati al sistema di rilevamento bug di Red Hat:\n"
 "http://bugzilla.redhat.com"
 
+#: src/serviceconf.py:451
+msgid "translator_credits"
+msgstr ""
+
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
@@ -151,7 +155,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:596
+#: src/serviceconf.py:595
 msgid "You must run redhat-config-services as root."
 msgstr "Eseguire redhat-config-services come root."
 
