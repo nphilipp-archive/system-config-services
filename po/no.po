@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
-"PO-Revision-Date: 2003-12-18 00:33+0100\n"
+"PO-Revision-Date: 2004-04-01 22:10+0200\n"
 "Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -84,20 +84,19 @@ msgstr "Start på nytt"
 
 #: src/serviceconf.py:195
 msgid "_Save"
-msgstr ""
+msgstr "_Lagre"
 
 #: src/serviceconf.py:195
 msgid "Save"
-msgstr ""
+msgstr "Lagre"
 
 #: src/serviceconf.py:200
 msgid "_Revert"
-msgstr ""
+msgstr "_Forkast"
 
 #: src/serviceconf.py:200
-#, fuzzy
 msgid "Revert"
-msgstr "Start på nytt"
+msgstr "Forkast"
 
 #. the textbox
 #. the statusbox
@@ -156,10 +155,17 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"Konfigurasjonsverktøy for systemtjenester VERSJON\n"
+" Opphavsrett © 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 
 #: src/serviceconf.py:476
 msgid "About"
-msgstr ""
+msgstr "Om"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -167,7 +173,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:505
 msgid "Help is not available."
-msgstr ""
+msgstr "Hjelp er ikke tilgjengelig."
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -361,7 +367,7 @@ msgstr "_Hjelp"
 
 #: src/serviceconf.glade.h:28
 msgid "_Quit"
-msgstr ""
+msgstr "A_vslutt"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
