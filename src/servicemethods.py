@@ -21,7 +21,7 @@ import string
 import re
 import os
 import sys
-from translate import _, N_, cat
+from rhpl.translate import _, N_, cat
 
 
 def getstatusoutput(cmd):

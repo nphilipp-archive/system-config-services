@@ -40,7 +40,7 @@ import os
 import string
 import checklist
 import servicemethods
-from translate import _, N_, cat
+from rhpl.translate import _, N_, cat
 
 ##
 ## I18N
