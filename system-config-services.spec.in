@@ -2,7 +2,7 @@
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: @PACKAGE@
 Version: @VERSION@
-Release: 8
+Release: 9
 URL: http://www.redhat.com/ 
 Source0: %{name}-%{version}.tar.gz
 License: GPL
@@ -58,6 +58,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Wed Jun 16 2004 Brent Fox <bfox@redhat.com> - 0.8.8-9
+- use watch cursor when starting and stopping services (bug #122425)
+
 * Mon Apr 12 2004 Brent Fox <bfox@redhat.com> 0.8.8-8
 - fix icon path (bug #120184)
 
