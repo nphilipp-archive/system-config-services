@@ -1,3 +1,72 @@
+2005-03-18  nphilipp  <nphilipp@redhat.com>
+
+	* aclocal.m4, configure.in, intltool-extract.in, intltool-merge.in, intltool-update.in, po/Makefile.in.in:
+	bump version
+
+	* src/checklist.py, src/serviceconf.py, system-config-services.spec.in:
+	dynamic, translated column titles for runlevel columns
+
+	* src/serviceconf.glade, src/serviceconf.py, system-config-services.spec.in:
+	build toolbar in glade to avoid DeprecationWarnings (#134978)
+
+	* src/servicemethods.py, system-config-services.spec.in:
+	don't read from /dev/null when restarting xinetd/services to prevent hangs
+
+2005-03-10  raven  <raven@redhat.com>
+
+	* po/pl.po: Small fixes
+
+2005-03-05  raven  <raven@redhat.com>
+
+	* po/pl.po: Poprawione literowki
+
+2005-03-03  h  <h@redhat.com>
+
+	* po/zh_TW.po: By hil
+
+2005-02-25  sarahs  <sarahs@redhat.com>
+
+	* po/zh_CN.po: kudzu/zh_CN.po
+
+2005-02-24  tom  <tom@redhat.com>
+
+	* po/pl.po: CVS_SILENT
+
+2005-02-21  ccheng  <ccheng@redhat.com>
+
+	* po/zh_TW.po: *** empty log message ***
+
+2005-02-20  sarahs  <sarahs@redhat.com>
+
+	* po/zh_CN.po: merged with pot file
+
+2005-02-18  marcel  <marcel@redhat.com>
+
+	* po/sk.po: Updated Slovak translation.
+
+2005-02-18  morais  <morais@redhat.com>
+
+	* po/pt.po: update
+
+2005-02-17  dwalsh  <dwalsh@redhat.com>
+
+	* ChangeLog, aclocal.m4, intltool-extract.in, intltool-merge.in, intltool-update.in, po/Makefile.in.in, po/system-config-services.pot:
+	release 0.8.19
+
+	* configure.in, src/checklist.py, src/serviceconf.glade, src/serviceconf.py, src/servicemethods.py, system-config-services.spec.in:
+	add Charlie Brej patch
+
+	* po/.cvsignore: eliminate cvs errors
+
+2005-02-17  sarahs  <sarahs@redhat.com>
+
+	* po/bn.po, po/gu.po, po/hi.po, po/ta.po, po/ca.po, po/bg.po, po/ar.po, po/cs.po, po/da.po, po/ru.po, po/es.po, po/pt_BR.po, po/mk.po, po/de.po, po/ko.po, po/ja.po, po/fr.po, po/zh_TW.po, po/pt.po:
+	merged with pot file
+
+2005-02-16  sarahs  <sarahs@redhat.com>
+
+	* po/it.po: merged with pot file
+
 2005-02-17  dwalsh  <dwalsh@redhat.com>
 
 	* configure.in, src/checklist.py, src/serviceconf.glade, src/serviceconf.py, src/servicemethods.py, system-config-services.spec.in:
