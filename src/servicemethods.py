@@ -24,11 +24,27 @@ import os
 import sys
 from translate import _, N_, cat
 
+
 class ServiceMethods:
     """Includes methods used to find services, and information about them such
     as the description, whether or not it is configured etc."""
-
-
+        
+    def __init__(self):
+        self.UNKNOWN=0
+        self.RUNNING=1
+        self.STOPPED=2
+        
+    def get_status(self,servicename):
+        status = self.UNKNOWN
+        try:
+            message = commands.getoutput("LANG=en_US /sbin/service " + servicename + " status < /dev/null")
+        except:
+            pass
+        if string.find(message,"running")!=-1:
+            status=self.RUNNING
+        if string.find(message,"stopped")!=-1:
+            status=self.STOPPED
+        return (status,message)
         
     def get_descriptions(self, service_script):
         """Gets the description for the given initscript or xinet.d script"""
