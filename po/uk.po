@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
-"PO-Revision-Date: 2003-10-20 20:20+0200\n"
+"PO-Revision-Date: 2004-04-06 17:57+0200\n"
 "Last-Translator: Maxim Dziumanenko <mvd@mylinux.com.ua>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -86,20 +86,19 @@ msgstr "Перезавантажити"
 
 #: src/serviceconf.py:195
 msgid "_Save"
-msgstr ""
+msgstr "З_берегти"
 
 #: src/serviceconf.py:195
 msgid "Save"
-msgstr ""
+msgstr "Зберегти"
 
 #: src/serviceconf.py:200
 msgid "_Revert"
-msgstr ""
+msgstr "_Повернути"
 
 #: src/serviceconf.py:200
-#, fuzzy
 msgid "Revert"
-msgstr "Перезавантажити"
+msgstr "Повернути"
 
 #. the textbox
 #. the statusbox
@@ -158,10 +157,17 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"Утиліта налаштовування конфігурації служб VERSION\n"
+" Авторські права (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 
 #: src/serviceconf.py:476
 msgid "About"
-msgstr ""
+msgstr "Про програму"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -169,7 +175,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:505
 msgid "Help is not available."
-msgstr ""
+msgstr "Довідка недоступна."
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -345,15 +351,15 @@ msgstr ""
 
 #: src/serviceconf.glade.h:23
 msgid "_Actions"
-msgstr "_Дії"
+msgstr "Д_ії"
 
 #: src/serviceconf.glade.h:24
 msgid "_Contents"
-msgstr "_Вміст"
+msgstr "_Зміст"
 
 #: src/serviceconf.glade.h:25
 msgid "_Edit Runlevel"
-msgstr "_Змінити рівень"
+msgstr "_Правка рівня"
 
 #: src/serviceconf.glade.h:26
 msgid "_File"
@@ -361,11 +367,11 @@ msgstr "_Файл"
 
 #: src/serviceconf.glade.h:27
 msgid "_Help"
-msgstr "Д_овідка"
+msgstr "_Довідка"
 
 #: src/serviceconf.glade.h:28
 msgid "_Quit"
-msgstr ""
+msgstr "Ви_йти"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
@@ -377,7 +383,7 @@ msgstr "_Перезапустити службу"
 
 #: src/serviceconf.glade.h:31
 msgid "_Save Changes"
-msgstr "_Зберегти зміни"
+msgstr "З_берегти зміни"
 
 #: src/serviceconf.glade.h:32
 msgid "_Start Service"
@@ -386,30 +392,3 @@ msgstr "_Запустити службу"
 #: src/serviceconf.glade.h:33
 msgid "_View"
 msgstr "_Вигляд"
-
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "Авторські права належать Red Hat, Inc."
-
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "Цей продукт може вільно розповсюджуватись за умовами GPL.\n"
-#~ "Будь ласка, доповідайте про помилки в програмі в систему слідкування за "
-#~ "помилками Red Hat:\n"
-#~ "http://bugzilla.redhat.com"
-
-#~ msgid "translator_credits"
-#~ msgstr ""
-#~ "Максим Дубовий <max@mylinux.com.ua>\n"
-#~ "Максим Дзюманенко <max@mylinux.com.ua>"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "Перезавантажити вибрану службу"
-
-#~ msgid "Start the selected service"
-#~ msgstr "Запустити вибрану службу"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "Зупинити вибрану службу"
