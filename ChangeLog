@@ -1,6 +1,6 @@
 2003-01-28  Daniel J Walsh  <dwalsh@redhat.com>
 
-	* ChangeLog: release 0.8.4
+	* ChangeLog, redhat-config-services.desktop.in: release 0.8.4
 
 	* redhat-config-services.desktop.in: update icon
 
