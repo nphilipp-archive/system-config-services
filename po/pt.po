@@ -263,9 +263,8 @@ msgid "Restart the selected service"
 msgstr "Reiniciar o servidor seleccionado"
 
 #: src/serviceconf.glade.h:7
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "_Reverter para Última Gravação"
+msgstr "Reverter para a Ú_ltima Gravação"
 
 #: src/serviceconf.glade.h:8
 msgid "Runlevel _3"
