@@ -1,4 +1,14 @@
+2003-06-17  lkanter  <lkanter@redhat.com>
+
+	* po/ru.po: update
+
+2003-06-12  ylouze  <ylouze@redhat.com>
+
+	* po/es.po: Updated spanish translation
+
 2003-05-27  dwalsh  <dwalsh@redhat.com>
+
+	* ChangeLog: release 0.8.5
 
 	* redhat-config-services.spec.in: bump version for rhel
 
