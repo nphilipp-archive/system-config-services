@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-03-24 14:42+0100\n"
+"POT-Creation-Date: 2005-04-01 13:21+0200\n"
 "PO-Revision-Date: 2005-03-31 10:35+1000\n"
 "Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
 "Language-Team: Chinese Traditional <zh_TW@li.org>\n"
@@ -252,4 +252,3 @@ msgstr "啟動系統服務(_S)"
 #: src/serviceconf.glade.h:34
 msgid "_View"
 msgstr "檢視(_V)"
-
