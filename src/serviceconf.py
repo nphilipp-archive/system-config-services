@@ -164,6 +164,7 @@ class Gui:
               "on_optRL3_toggled" : self.on_optRL3_toggled,
               "on_optRL4_toggled" : self.on_optRL4_toggled,
               "on_optRL5_toggled" : self.on_optRL5_toggled ,
+              "on_optRLA_toggled" : self.on_optRLA_toggled ,
               "on_pmnStart_activate" : self.on_btnStart_clicked,
               "on_pmnStop_activate" : self.on_btnStop_clicked,
               "on_pmnRestart_activate" : self.on_btnRestart_clicked } )
@@ -184,10 +185,7 @@ class Gui:
         self.optRL3 = self.xml.get_widget("optRL3")
         self.optRL4 = self.xml.get_widget("optRL4")
         self.optRL5 = self.xml.get_widget("optRL5")
-        
-        self.optRL3= self.xml.get_widget("optRL3")
-        self.optRL4= self.xml.get_widget("optRL4")
-        self.optRL5= self.xml.get_widget("optRL5")
+        self.optRLA = self.xml.get_widget("optRLA")
 
         #toolbars
         self.tbrSave = self.xml.get_widget("tbrSave")
@@ -257,9 +255,10 @@ class Gui:
         self.clstServices.get_selection ().connect ("changed", self.changed,None)
 
         self.clstServices.connect("button_press_event", self.local_button_press_cb)
-        self.clstServices.checkboxrenderer.connect("toggled", self.toggled_service)
-        self.clstServices.set_column_title(0,_("Start at Boot"))
-        self.clstServices.set_column_title(1,_("Services"))
+        for i in range(0, 7):
+            self.clstServices.checkboxrenderer[i].connect("toggled", self.toggled_service)
+            self.clstServices.set_column_title(i,"Init" " %d" % i)
+        self.clstServices.set_column_title(7,_("Services"))
         #self.clstServices.set_column_justification(0,GTK.JUSTIFY_CENTER)
         #self.clstServices.set_column_justification(1,GTK.JUSTIFY_LEFT)
         #self.clstServices.set_column_auto_resize(0,1)
@@ -267,20 +266,37 @@ class Gui:
 
         self.popup_menu = gtk.MenuItem()
 
+
+
+        self.optRL3.set_active(0)
+        self.optRL4.set_active(0)
+        self.optRL5.set_active(0)
+        self.optRLA.set_active(0)
+        
+        self.clstServices.set_column_visible(0, 0)
+        self.clstServices.set_column_visible(1, 0)
+        self.clstServices.set_column_visible(2, 0)
+        self.clstServices.set_column_visible(3, 0)
+        self.clstServices.set_column_visible(4, 0)
+        self.clstServices.set_column_visible(5, 0)
+        self.clstServices.set_column_visible(6, 0)
         if self.editing_runlevel == "3" or self.editing_runlevel == "2" or self.editing_runlevel == "1":
+            self.clstServices.set_column_visible(3, 1)
             self.optRL3.set_active(1)
 
-        elif self.editing_runlevel == "5" :
-            self.optRL5.set_active(1)
-
         elif self.editing_runlevel == "4" :
+            self.clstServices.set_column_visible(4, 1)
             self.optRL4.set_active(1)
+
+        else:
+            self.clstServices.set_column_visible(5, 1)
+            self.optRL5.set_active(1)
 
         self.save_revert_sensitive(0)
         
         self.clstServices.get_selection().select_path ((0,))
         self.changed(self.clstServices.get_selection(), None)
-        self.current_selected_service = self.clstServices.get_text(0,1)
+        self.current_selected_service = self.clstServices.get_text(0,7)
 
         self.winMain.show()
 
@@ -315,13 +331,13 @@ class Gui:
                         gtk.main_iteration()
                     else:
                         gtk.mainiteration()
-            self.allservices, self.dict_services = self.ServiceMethods.get_service_list(self.editing_runlevel, idle_func)
+            self.allservices, self.dict_services = self.ServiceMethods.get_service_list(idle_func)
             self.dict_services_orig = self.ServiceMethods.dict_services_orig
             self.lblEditing.set_text(_("Editing Runlevel: ") + self.editing_runlevel)
             self.already_init = 1
         
         for servicename in self.allservices:
-            self.clstServices.append_row((servicename, ""), int(self.dict_services[servicename][0][int(self.editing_runlevel)]))
+                self.clstServices.append_row(servicename, self.dict_services[servicename][0])
 
         self.winMain.set_sensitive(1)
         self.winMain.get_toplevel().window.set_cursor(gtk.gdk.Cursor(gtk.gdk.LEFT_PTR))
@@ -334,7 +350,7 @@ class Gui:
             (model, iter) = result
             if iter != None:
                 row = model.get_path(iter)[0]
-                self.text_in_row = self.clstServices.get_text(int(row),1)
+                self.text_in_row = self.clstServices.get_text(int(row),7)
                 self.set_text_buffer()
                 self.set_text_status()
         
@@ -367,28 +383,25 @@ class Gui:
             message=result[1]
         self.txtStatusBuffer.set_text(message.strip())
 
-    def toggled_service(self, data, row):
+    def toggled_service(self, column, row):
         """Populates txtDesc with the service description of the service selected in clstServices"""
-        self.text_in_row = self.clstServices.get_text(int(row),1)
-        current_runlevel = int(self.editing_runlevel)
-        self.current_selected = self.clstServices.get_text(int(row),1)
+        self.text_in_row = self.clstServices.get_text(int(row),7)
+        self.current_selected = self.clstServices.get_text(int(row),7)
 
         #make sure we aren't updating
         if self.am_updating != 1:
 
             # enables and disables the save and revert buttons/menus
             # if something has been changed from it's orig setting
+            self.save_revert_sensitive(0)
             for i in range(0,len(self.ServiceMethods.dict_services_orig)):
-                self.checking_service = self.clstServices.get_text(i,1)
-                service_enabled = int("%d" % self.clstServices.get_active(i))
+                self.checking_service = self.clstServices.get_text(i,7)
                 
-
-                if service_enabled == self.ServiceMethods.dict_services_orig[self.checking_service][0][current_runlevel]:
-                    self.save_revert_sensitive(0)
-                    
-                elif service_enabled != self.ServiceMethods.dict_services_orig[self.checking_service][0][current_runlevel]:
-                    self.save_revert_sensitive(1)
-                    break
+                for level in range(0, 7):
+                    service_enabled = int("%d" % self.clstServices.get_active(i, level))
+                    if service_enabled != self.ServiceMethods.dict_services_orig[self.checking_service][0][level]:
+                        self.save_revert_sensitive(1)
+                        return self.text_in_row
 
 
         return self.text_in_row
@@ -424,6 +437,14 @@ class Gui:
             return gtk.TRUE
         self.editing_runlevel = "3"
         self.lblEditing.set_text(_("Editing Runlevel: ") + self.editing_runlevel)
+        self.clstServices.set_column_visible(0, 0)
+        self.clstServices.set_column_visible(1, 0)
+        self.clstServices.set_column_visible(2, 0)
+        self.clstServices.set_column_visible(3, 1)
+        self.clstServices.set_column_visible(4, 0)
+        self.clstServices.set_column_visible(5, 0)
+        self.clstServices.set_column_visible(6, 0)
+        self.clstServices.set_headers_visible(0)        
         self.populateList()
 
 
@@ -441,13 +462,16 @@ class Gui:
             return gtk.TRUE
         self.editing_runlevel = "4"
         self.lblEditing.set_text(_("Editing Runlevel: ") + self.editing_runlevel)
+        self.clstServices.set_column_visible(0, 0)
+        self.clstServices.set_column_visible(1, 0)
+        self.clstServices.set_column_visible(2, 0)
+        self.clstServices.set_column_visible(3, 0)
+        self.clstServices.set_column_visible(4, 1)
+        self.clstServices.set_column_visible(5, 0)
+        self.clstServices.set_column_visible(6, 0)
+        self.clstServices.set_headers_visible(0)        
         self.populateList()
 
-    def on_edit_runlevel(self, button):
-        self.optRL3.set_sensitive(not self.dirty)
-        self.optRL4.set_sensitive(not self.dirty)
-        self.optRL5.set_sensitive(not self.dirty)
-        
     def on_optRL5_toggled(self, button):
         """calls populateList() to repopulate the checklist for runlevel 5"""
         if self.previous==button:
@@ -460,7 +484,43 @@ class Gui:
             return gtk.TRUE
         self.editing_runlevel = "5"
         self.lblEditing.set_text(_("Editing Runlevel: ") + self.editing_runlevel)
+        self.clstServices.set_column_visible(0, 0)
+        self.clstServices.set_column_visible(1, 0)
+        self.clstServices.set_column_visible(2, 0)
+        self.clstServices.set_column_visible(3, 0)
+        self.clstServices.set_column_visible(4, 0)
+        self.clstServices.set_column_visible(5, 1)
+        self.clstServices.set_column_visible(6, 0)
+        self.clstServices.set_headers_visible(0)        
         self.populateList()
+
+    def on_optRLA_toggled(self, button):
+        """calls populateList() to repopulate the checklist for all runlevels"""
+        if self.previous==button:
+            return
+        if button.get_active() != gtk.TRUE:
+            self.previous=button
+            return
+        if self.check_dirty() == gtk.RESPONSE_CANCEL:
+            self.previous.set_active(1)
+            return gtk.TRUE
+        self.editing_runlevel = "All"
+        self.lblEditing.set_text(_("Editing Runlevel: ") + _("All"))
+        self.clstServices.set_column_visible(0, 0)
+        self.clstServices.set_column_visible(1, 0)
+        self.clstServices.set_column_visible(2, 0)
+        self.clstServices.set_column_visible(3, 1)
+        self.clstServices.set_column_visible(4, 1)
+        self.clstServices.set_column_visible(5, 1)
+        self.clstServices.set_column_visible(6, 0)
+        self.clstServices.set_headers_visible(1)
+        self.populateList()
+
+    def on_edit_runlevel(self, button):
+        self.optRL3.set_sensitive(not self.dirty)
+        self.optRL4.set_sensitive(not self.dirty)
+        self.optRL5.set_sensitive(not self.dirty)
+        self.optRLA.set_sensitive(not self.dirty)
 
     def check_dirty(self):
         rc=gtk.RESPONSE_YES
@@ -544,10 +604,11 @@ class Gui:
     def on_mnuSave_clicked(self, args):
         """Commits the changes made for each service"""
         for i in range(0,len(self.ServiceMethods.dict_services)):
-            servicename = self.clstServices.get_text(i,1)
-            service_enabled = "%d" % self.clstServices.get_active(i)
-            self.ServiceMethods.save_changes(servicename, service_enabled, self.editing_runlevel)
-
+            servicename = self.clstServices.get_text(i,7)
+            for level in range(0, 7):
+                service_enabled = int("%d" % self.clstServices.get_active(i, level))
+                if service_enabled != self.ServiceMethods.dict_services_orig[servicename][0][level]:
+                    self.ServiceMethods.save_changes(servicename, service_enabled, level)
         self.save_revert_sensitive(0)
 
     def quit(self,arg1=None,arg2=None):
@@ -570,7 +631,7 @@ class Gui:
         """calls ServiceMethods.service_action_results and displays the results in a dialog box"""
 
         self.winMain.window.set_cursor(gtk.gdk.Cursor(gtk.gdk.WATCH))
-        results = self.ServiceMethods.service_action_results(servicename, action_type, self.editing_runlevel)
+        results = self.ServiceMethods.service_action_results(servicename, action_type, self.ServiceMethods.get_runlevel())
 
         if int(results[0]) != 0:
             dlg = gtk.MessageDialog(self.winMain, 0, gtk.MESSAGE_ERROR,
@@ -626,8 +687,8 @@ class Gui:
     def local_button_press_cb (self, clist, event):
         """checks to see if the third mouse button was clicked. If it was, then bring up the popup menu"""
         row=clist.get_path_at_pos (int(event.x),int(event.y))[0][0]
-        self.text_in_row = self.clstServices.get_text(int(row),1)
-        self.current_selected = self.clstServices.get_text(int(row),1)
+        self.text_in_row = self.clstServices.get_text(int(row),7)
+        self.current_selected = self.clstServices.get_text(int(row),7)
         self.set_text_buffer()
         self.set_text_status()
         if (event.button == 3):

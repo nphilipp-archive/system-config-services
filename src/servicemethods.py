@@ -87,19 +87,15 @@ class ServiceMethods:
         #runlevel = self.get_runlevel()
         dirlist = os.listdir("/etc/rc.d/rc%s" % editing_runlevel + ".d")
 
-        have_match = -1
+        have_match = 0
 
-        while have_match == -1:
-            #for i in range(0,len(dirlist)):
-            for direntry in dirlist:
-                # check for start links only, we don't care if there is a kill link
-                if re.match(r'^[S][0-9][0-9]' + servicename, direntry ):
-                    have_match = 1
-                    break
-            # no match    
-            if have_match != 1:
-               have_match = 0
-               
+         #for i in range(0,len(dirlist)):
+        for direntry in dirlist:
+            # check for start links only, we don't care if there is a kill link
+            if re.match(r'^[S][0-9][0-9]' + servicename, direntry ):
+                have_match = 1
+                break
+              
         return have_match
 
 
@@ -182,7 +178,7 @@ class ServiceMethods:
 
             
                 
-    def get_service_list(self, editing_runlevel, idle_func):
+    def get_service_list(self, idle_func):
         """populates the self.dict_services, self.dict_services_orig dictionaries and the self.allservices list with service information including whether or not a service is configured to start in runlevels 0-6, as well as whether it is an xinetd service, as well as service descriptions."""
         self.dict_services= {}
         # this will be an unmodified self.dict_services
@@ -244,8 +240,6 @@ class ServiceMethods:
                     runlevels[i] = 0
                 else:
                     runlevels[i] = 1
-            # configured = 1 if configured already
-            # configured = self.check_if_on(servicename, editing_runlevel)
 
             self.dict_services[servicename] = [runlevels, 0, self.get_descriptions(initscript)]
             self.dict_services_orig[servicename] = [runlevels, 0]
@@ -264,7 +258,7 @@ class ServiceMethods:
                 f = open("/etc/xinetd.d/%s" % servicename)
             except IOError, msg:
                 print "/etc/xinetd.d/" + servicename, msg
-                sys.exit(1)
+                continue
                 
             xinetd_script = f.readlines()
             f.close()
@@ -307,20 +301,10 @@ class ServiceMethods:
                 
                 #check to make sure we are an initscript and not an xinetd service
                 if int(self.dict_services[servicename][1]) == 0:
-                    # if it's toggled on
-                    if self.dict_services[servicename][0][int(editing_runlevel)] == "1":
-                        self.chkconfig_add_del(servicename, 1, editing_runlevel)
-                    # if it's toggled off
-                    elif self.dict_services[servicename][0][int(editing_runlevel)] == "0":
-                        self.chkconfig_add_del(servicename, 0, editing_runlevel)
+                    self.chkconfig_add_del(servicename, service_enabled, editing_runlevel)
                 # for xinetd services
-                elif int(self.dict_services[servicename][1]) == 1:
-                    # if it's toggled on
-                    if self.dict_services[servicename][0][int(editing_runlevel)] == "1":
-                        self.xinet_add_del(servicename, 1)
-                    # if it's toggled off
-                    elif self.dict_services[servicename][0][int(editing_runlevel)] == "0":
-                        self.xinet_add_del(servicename, 0)
+                else:
+                    self.xinet_add_del(servicename, service_enabled)
 
 
 

@@ -22,42 +22,33 @@ class CheckList (gtk.TreeView):
     """A class (derived from gtk.TreeView) that provides a list of
     checkbox / text string pairs"""
 
-    # override this to make your own columns if necessary
-    def create_columns(self, columns):
-        # add the string columns to the tree view widget
-        for i in range(1, columns + 1):
-            renderer = gtk.CellRendererText()
-            column = gtk.TreeViewColumn('Text', renderer, text=i)
-            column.set_clickable(gtk.FALSE)
-            self.append_column(column)
-
     # XXX need to handle the multicolumn case better still....
-    def __init__ (self, columns = 1, custom_store=None):
+    def __init__ (self, custom_store=None):
 
 	if not custom_store:
-	    self.store = gtk.TreeStore(gobject.TYPE_BOOLEAN,
-				       gobject.TYPE_STRING,
-				       gobject.TYPE_STRING)
+	    self.store = gtk.TreeStore(gobject.TYPE_BOOLEAN,gobject.TYPE_BOOLEAN,gobject.TYPE_BOOLEAN,gobject.TYPE_BOOLEAN,
+                                   gobject.TYPE_BOOLEAN,gobject.TYPE_BOOLEAN,gobject.TYPE_BOOLEAN,gobject.TYPE_STRING)
 	else:
 	    self.store = custom_store
-	    
+
         gtk.TreeView.__init__ (self, self.store)
         
-        # XXX we only handle two text columns right now
-        if custom_store == None and columns > 2:
-            raise RuntimeError, "CheckList supports a maximum of 2 columns"
-	
-        self.columns = columns
-	
-        self.checkboxrenderer = gtk.CellRendererToggle()
-        column = gtk.TreeViewColumn('', self.checkboxrenderer, active=0)
-        column.set_sizing(gtk.TREE_VIEW_COLUMN_FIXED)
-        column.set_fixed_width(40)
-        column.set_clickable(gtk.TRUE)
-        self.checkboxrenderer.connect ("toggled", self.toggled_item)        
-        self.append_column(column)
+        self.checkboxrenderer = [None,None,None,None,None,None,None,None]
+        
+        for i in range(0, 7):
+            self.checkboxrenderer[i] = gtk.CellRendererToggle()
+            column = gtk.TreeViewColumn("Init %d" % i, self.checkboxrenderer[i], active=i)
+            column.set_sizing(gtk.TREE_VIEW_COLUMN_FIXED)
+            column.set_fixed_width(40)
+            column.set_clickable(gtk.TRUE)
+            self.checkboxrenderer[i].connect ("toggled", self.toggled_item, i)
+            self.append_column(column)
+            
 
-	self.create_columns(columns)
+        renderer = gtk.CellRendererText()
+        column = gtk.TreeViewColumn('Text', renderer, text=7)
+        column.set_clickable(gtk.FALSE)
+        self.append_column(column)
 
         self.set_rules_hint(gtk.FALSE)
         self.set_headers_visible(gtk.FALSE)
@@ -68,32 +59,29 @@ class CheckList (gtk.TreeView):
         # iterate over them all
         self.num_rows = 0
 
-    def append_row (self, textList, init_value):
+    def append_row (self, text, init_valueList):
         """Add a row to the list.
         text: text to display in the row
         init_value: initial state of the indicator"""
 
-        textList = ("",) + textList        
         iter = self.store.append(None)
-        self.store.set_value(iter, 0, init_value)
+        for i in range(0, 7):
+            self.store.set_value(iter, i, int(init_valueList[i]))
 
         # add the text for the number of columns we have
-        i = 1
-        for text in textList[1:self.columns + 1]:
-            self.store.set_value(iter, i, textList[i])
-            i = i + 1
+        self.store.set_value(iter, 7, text)
 
         self.num_rows = self.num_rows + 1
 
 
-    def toggled_item(self, data, row):
+    def toggled_item(self, data, row, column):
         """Set a function to be called when the value of a row is toggled.
         The  function will be called with two arguments, the clicked item
         in the row and a string for which row was clicked."""
         
         iter = self.store.get_iter((int(row),))
-        val = self.store.get_value(iter, 0)
-        self.store.set_value(iter, 0, not val)
+        val = self.store.get_value(iter, column)
+        self.store.set_value(iter, column, not val)
 
 
     def clear (self):
@@ -102,12 +90,12 @@ class CheckList (gtk.TreeView):
         self.num_rows = 0
 
 
-    def get_active(self, row):
+    def get_active(self, row, column):
         """Return FALSE or TRUE as to whether or not the row is toggled
         similar to GtkToggleButtons"""
 
         iter = self.store.get_iter((row,))
-        return self.store.get_value(iter, 0)
+        return self.store.get_value(iter, column)
 
 
     def set_active(self, row, is_active):
@@ -121,7 +109,7 @@ class CheckList (gtk.TreeView):
         "Get the text from row and column"
 
         iter = self.store.get_iter((row,))
-        return self.store.get_value(iter, column)
+        return self.store.get_value(iter, 7)
 
 
     def set_column_title(self, column, title):
@@ -154,6 +142,21 @@ class CheckList (gtk.TreeView):
         col = self.get_column(column)
         if col:
             col.set_sizing(sizing)
+
+    def set_column_visible(self, column, visible):
+        "Set the column visibility"
+
+        col = self.get_column(column)
+        if col:
+            col.set_visible(visible)
+
+    def set_headers_visible(self, visible):
+        "Set the column visibility"
+
+        if visible != 0:
+            gtk.TreeView.set_headers_visible(self, gtk.TRUE)
+        else:
+            gtk.TreeView.set_headers_visible(self, gtk.FALSE)
 
     def set_column_sort_id(self, column, id):
         "Set the sort id of column to id"
