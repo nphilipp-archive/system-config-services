@@ -1,6 +1,19 @@
+2002-08-08  dwalsh  <dwalsh@redhat.com>
+
+	* po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po:
+	updated po files
+
+	* src/serviceconf.glade: change Manual to Contents
+
+	* autogen.sh: change netconf to redhat-config-services
+
+2002-08-07  dwalsh  <dwalsh@redhat.com>
+
+	* redhat-config-services.spec.in: update dependencies
+
 2002-08-05  dwalsh  <dwalsh@redhat.com>
 
-	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po:
+	* ChangeLog, po/messages.mo, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po:
 	release 0.8.1
 
 	* src/serviceconf.py: fix language support
