@@ -240,7 +240,7 @@ msgstr "Lýsing"
 
 #: src/serviceconf.glade.h:3
 msgid "Don't Save"
-msgstr ""
+msgstr "Ekki vista"
 
 #: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
@@ -280,7 +280,7 @@ msgstr "S_öðva þjónustu"
 
 #: src/serviceconf.glade.h:13
 msgid "Save Dialog"
-msgstr ""
+msgstr "Vista"
 
 #: src/serviceconf.glade.h:14
 msgid "Service Configuration"
