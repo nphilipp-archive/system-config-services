@@ -240,7 +240,7 @@ msgstr "Descrição"
 
 #: src/serviceconf.glade.h:3
 msgid "Don't Save"
-msgstr ""
+msgstr "Não Gravar"
 
 #: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
@@ -280,7 +280,7 @@ msgstr "_Parar Serviço"
 
 #: src/serviceconf.glade.h:13
 msgid "Save Dialog"
-msgstr ""
+msgstr "Diálogo de Gravação"
 
 #: src/serviceconf.glade.h:14
 msgid "Service Configuration"
