@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf1.1\n"
 "POT-Creation-Date: 2003-03-04 14:02-0500\n"
-"PO-Revision-Date: 2003-01-10 08:21GMT+10:00\n"
+"PO-Revision-Date: 2003-03-19 11:35GMT+10:00\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -242,7 +242,7 @@ msgstr "描述"
 
 #: src/serviceconf.glade.h:3
 msgid "Don't Save"
-msgstr ""
+msgstr "不保存"
 
 #: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
@@ -282,7 +282,7 @@ msgstr "停止服务(_T)"
 
 #: src/serviceconf.glade.h:13
 msgid "Save Dialog"
-msgstr ""
+msgstr "保存对话"
 
 #: src/serviceconf.glade.h:14
 msgid "Service Configuration"
@@ -568,3 +568,4 @@ msgstr "开始服务(_S)"
 
 #~ msgid "Exit"
 #~ msgstr "退出"
+
