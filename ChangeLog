@@ -1,4 +1,27 @@
+2003-10-01  Dan Walsh  <dwalsh@redhat.com>
+
+	* redhat-config-services.spec.in, src/serviceconf.py, src/servicemethods.py:
+	fix pathing problem on hammer
+
+2003-09-26  romanm  <romanm@redhat.com>
+
+	* po/sl.po: translated version 0.8.4
+
+2003-09-26  delacko  <delacko@redhat.com>
+
+	* po/hr.po: new translations update
+
+2003-09-17  delacko  <delacko@redhat.com>
+
+	* po/hr.po: fix
+
+2003-09-15  delacko  <delacko@redhat.com>
+
+	* po/hr.po: initial croatian translation import
+
 2003-09-05  Dan Walsh  <dwalsh@redhat.com>
+
+	* ChangeLog: release 0.8.5
 
 	* redhat-config-services.spec.in: bump again
 
