@@ -2,7 +2,7 @@
 Summary: redhat-config-services is an initscript and xinetd configuration utility
 Name: @PACKAGE@
 Version: @VERSION@
-Release: 6
+Release: 7
 URL: http://www.redhat.com/ 
 Source0: %{name}-%{version}.tar.gz
 License: GPL
@@ -49,6 +49,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/redhat-config-services.8*
 
 %changelog
+* Fri Dec  6 2002 Daniel J Walsh <dwalsh@redhat.com> 0.8.3-7
+- Fix error catching on invalid display
+
 * Tue Dec  3 2002 Daniel J Walsh <dwalsh@redhat.com> 0.8.3-6
 - Fix DISPLAY error handling
 - Stretch Screen size
