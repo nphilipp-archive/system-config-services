@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
-"POT-Creation-Date: 2002-08-20 09:01-0400\n"
+"POT-Creation-Date: 2002-08-20 15:37-0400\n"
 "PO-Revision-Date: 2002-08-12 10:52+1000\n"
 "Last-Translator: Michelle Kim <mkim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -130,10 +130,7 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:374
-msgid "Help is not available."
-msgstr "도움말이 없습니다."
-
+#. gnome.help_display_uri(page)
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
 #. The menu and popup menu items for "Start", "Stop", and "Restart" are
@@ -146,7 +143,7 @@ msgstr "도움말이 없습니다."
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:499
+#: src/serviceconf.py:488
 msgid "You must run redhat-config-services as root."
 msgstr "redhat-config-services는 루트로 실행하셔야 합니다."
 
@@ -344,6 +341,9 @@ msgstr "변동 사항 저장 (_S)"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "서비스 시작 (_S)"
+
+#~ msgid "Help is not available."
+#~ msgstr "도움말이 없습니다."
 
 #~ msgid "Directory "
 #~ msgstr "디렉토리"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
-"POT-Creation-Date: 2002-08-20 09:01-0400\n"
+"POT-Creation-Date: 2002-08-20 15:37-0400\n"
 "PO-Revision-Date: 2002-08-09 17:01+0300\n"
 "Last-Translator: Leon Kanter <leon@blackcatlinux.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
@@ -132,10 +132,7 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:374
-msgid "Help is not available."
-msgstr "Справка недоступна."
-
+#. gnome.help_display_uri(page)
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
 #. The menu and popup menu items for "Start", "Stop", and "Restart" are
@@ -148,7 +145,7 @@ msgstr "Справка недоступна."
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:499
+#: src/serviceconf.py:488
 msgid "You must run redhat-config-services as root."
 msgstr "redhat-config-services должен выполняться от пользователя root."
 
@@ -345,6 +342,9 @@ msgstr "_Сохранить изменения"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "_Запустить службу"
+
+#~ msgid "Help is not available."
+#~ msgstr "Справка недоступна."
 
 #~ msgid "Directory "
 #~ msgstr "Каталог "
