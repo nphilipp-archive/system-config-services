@@ -90,8 +90,8 @@ class Gui:
             { "on_mainwin_delete_event" : self.quit,
               "on_mainwin_hide" : self.quit,
               "on_mnuRescan_activate" : self.on_mnuRescan_activate,
-              "on_mnuSave_activate" : self.on_btnSave_clicked,
-              "on_mnuRevert_activate" : self.on_btnRevert_clicked,
+              "on_mnuSave_activate" : self.on_mnuSave_clicked,
+              "on_mnuRevert_activate" : self.on_mnuRevert_clicked,
               "on_mnuExit_activate" : self.quit,
               "on_mnuStart_activate" : self.on_btnStart_clicked,
               "on_mnuStop_activate" : self.on_btnStop_clicked,
@@ -99,9 +99,6 @@ class Gui:
               "on_pmnStart_activate" : self.on_btnStart_clicked,
               "on_pmnStop_activate" : self.on_btnStop_clicked,
               "on_pmnRestart_activate" : self.on_btnRestart_clicked,
-              "on_btnSave_clicked" : self.on_btnSave_clicked,
-              "on_btnRevert_clicked" : self.on_btnRevert_clicked,
-              "on_btnExit_clicked" : self.quit,
               "on_btnStart_clicked" : self.on_btnStart_clicked,
               "on_btnRestart_clicked" : self.on_btnRestart_clicked,
               "on_btnStop_clicked" : self.on_btnStop_clicked,
@@ -133,9 +130,6 @@ class Gui:
         self.optRL5 = self.xml.get_widget("optRL5")
         
         # buttons
-        self.btnSave = self.xml.get_widget("btnSave")
-        self.btnRevert = self.xml.get_widget("btnRevert")
-        self.btnExit = self.xml.get_widget("btnExit")
         self.btnStart = self.xml.get_widget("btnStart")
         self.btnRestart = self.xml.get_widget("btnRestart")
         self.btnStop = self.xml.get_widget("btnStop")
@@ -324,7 +318,7 @@ class Gui:
 #----------------------------------------------------------------------------
 # Methods pertaining to the "File" menu items
 # The "Save Changes", "Revert to Last Save" and "Quit" menu items are handled
-# elsewhere by on_btnSave_clicked(), on_btnRevert_clicked(), and
+# elsewhere by on_mnuSave_clicked(), on_mnuRevert_clicked(), and
 # "Exit" just calls gtk.mainquit()
 #----------------------------------------------------------------------------    
     def on_mnuRescan_activate(self,None):
@@ -366,7 +360,7 @@ class Gui:
             dlg.destroy()
             if rc==gtk.RESPONSE_YES:
                 try:
-                    self.on_btnSave_clicked(None)
+                    self.on_mnuSave_clicked(None)
                 except IOError:
                     pass
             self.dirty=0
@@ -415,7 +409,7 @@ http://bugzilla.redhat.com"""),
 # handled by on_btnStart_clicked(), on_btnStop_clicked(), and 
 # on_btnRestart_clicked()
 #----------------------------------------------------------------------------
-    def on_btnSave_clicked(self, None):
+    def on_mnuSave_clicked(self, None):
         """Commits the changes made for each service"""
         for i in range(0,len(self.ServiceMethods.dict_services)):
             servicename = self.clstServices.get_text(i,1)
@@ -431,7 +425,7 @@ http://bugzilla.redhat.com"""),
         self.check_dirty()
         gtk.mainquit()
         
-    def on_btnRevert_clicked(self, None):
+    def on_mnuRevert_clicked(self, None):
         """calls populateList() to repopulate the checklist"""
         self.populateList()
         self.save_revert_sensitive(0)
@@ -492,8 +486,6 @@ http://bugzilla.redhat.com"""),
 
     def save_revert_sensitive(self, sensitive):
         """sets the save and revert buttons and menus to be sensitive or not, sensitive is a 1 or 0"""
-        self.btnSave.set_sensitive(sensitive)
-        self.btnRevert.set_sensitive(sensitive)
         self.mnuSave.set_sensitive(sensitive)
         self.mnuRevert.set_sensitive(sensitive)
         self.dirty=sensitive

@@ -158,7 +158,7 @@
 			  <signal name="activate" handler="on_mnuSave_activate"/>
 
 			  <child internal-child="image">
-			    <widget class="GtkImage" id="image1">
+			    <widget class="GtkImage" id="image6">
 			      <property name="visible">True</property>
 			      <property name="stock">gtk-save</property>
 			      <property name="icon_size">1</property>
@@ -179,7 +179,7 @@
 			  <signal name="activate" handler="on_mnuRevert_activate"/>
 
 			  <child internal-child="image">
-			    <widget class="GtkImage" id="image2">
+			    <widget class="GtkImage" id="image7">
 			      <property name="visible">True</property>
 			      <property name="stock">gtk-undo</property>
 			      <property name="icon_size">1</property>
@@ -199,10 +199,9 @@
 		      </child>
 
 		      <child>
-			<widget class="GtkMenuItem" id="mnuExit">
+			<widget class="GtkImageMenuItem" id="mnuExit">
 			  <property name="visible">True</property>
-			  <property name="label" translatable="yes">Quit</property>
-			  <property name="use_underline">True</property>
+			  <property name="stock_item">GNOMEUIINFO_MENU_EXIT_ITEM</property>
 			  <signal name="activate" handler="on_mnuExit_activate"/>
 			</widget>
 		      </child>
@@ -228,7 +227,7 @@
 			  <signal name="activate" handler="on_mnuStart_activate"/>
 
 			  <child internal-child="image">
-			    <widget class="GtkImage" id="image3">
+			    <widget class="GtkImage" id="image8">
 			      <property name="visible">True</property>
 			      <property name="stock">gtk-go-forward</property>
 			      <property name="icon_size">1</property>
@@ -249,7 +248,7 @@
 			  <signal name="activate" handler="on_mnuStop_activate"/>
 
 			  <child internal-child="image">
-			    <widget class="GtkImage" id="image4">
+			    <widget class="GtkImage" id="image9">
 			      <property name="visible">True</property>
 			      <property name="stock">gtk-stop</property>
 			      <property name="icon_size">1</property>
@@ -270,7 +269,7 @@
 			  <signal name="activate" handler="on_mnuRestart_activate"/>
 
 			  <child internal-child="image">
-			    <widget class="GtkImage" id="image5">
+			    <widget class="GtkImage" id="image10">
 			      <property name="visible">True</property>
 			      <property name="stock">gtk-refresh</property>
 			      <property name="icon_size">1</property>
@@ -349,7 +348,7 @@
 			  <signal name="activate" handler="on_mnuManual_activate"/>
 
 			  <child internal-child="image">
-			    <widget class="GtkImage" id="image6">
+			    <widget class="GtkImage" id="image11">
 			      <property name="visible">True</property>
 			      <property name="stock">gnome-stock-book-red</property>
 			      <property name="icon_size">1</property>
@@ -396,39 +395,6 @@
 	      <property name="orientation">GTK_ORIENTATION_HORIZONTAL</property>
 	      <property name="toolbar_style">GTK_TOOLBAR_BOTH</property>
 	      <property name="tooltips">True</property>
-
-	      <child>
-		<widget class="button" id="btnSave">
-		  <property name="visible">True</property>
-		  <property name="tooltip" translatable="yes">Save the changes you have made</property>
-		  <property name="label" translatable="yes">Save</property>
-		  <property name="use_underline">True</property>
-		  <property name="stock_pixmap">gtk-save</property>
-		  <signal name="clicked" handler="on_btnSave_clicked"/>
-		</widget>
-	      </child>
-
-	      <child>
-		<widget class="button" id="btnRevert">
-		  <property name="visible">True</property>
-		  <property name="tooltip" translatable="yes">Revert to the last saved change</property>
-		  <property name="label" translatable="yes">Cancel</property>
-		  <property name="use_underline">True</property>
-		  <property name="stock_pixmap">gtk-undo</property>
-		  <signal name="clicked" handler="on_btnRevert_clicked"/>
-		</widget>
-	      </child>
-
-	      <child>
-		<widget class="button" id="btnExit">
-		  <property name="visible">True</property>
-		  <property name="tooltip" translatable="yes">Quit</property>
-		  <property name="label" translatable="yes">Quit</property>
-		  <property name="use_underline">True</property>
-		  <property name="stock_pixmap">gtk-quit</property>
-		  <signal name="clicked" handler="on_btnExit_clicked"/>
-		</widget>
-	      </child>
 
 	      <child>
 		<widget class="button" id="btnStart">
