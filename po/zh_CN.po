@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf1.1\n"
-"POT-Creation-Date: 2002-08-26 16:34-0400\n"
+"POT-Creation-Date: 2002-08-27 17:19-0400\n"
 "PO-Revision-Date: 2002-08-12 12:15GMT+10:00\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
@@ -170,6 +170,7 @@ msgstr "你必须作为根用户才能运行 redhat-config-services。"
 #. You should have received a copy of the GNU General Public License
 #. along with this program; if not, write to the Free Software
 #. Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#. print v[0],cmd,text
 #. runlevel = self.get_runlevel()
 #. for i in range(0,len(dirlist)):
 #. check for start links only, we don't care if there is a kill link
@@ -186,7 +187,7 @@ msgstr "你必须作为根用户才能运行 redhat-config-services。"
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:287
+#: src/servicemethods.py:302
 msgid ""
 "\n"
 "\n"
@@ -204,30 +205,30 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:333
+#: src/servicemethods.py:348
 msgid "xinetd failed to reload for "
 msgstr "重载 xinetd 失败"
 
-#: src/servicemethods.py:334
+#: src/servicemethods.py:349
 msgid ". The error was: "
 msgstr "错误是："
 
-#: src/servicemethods.py:336
+#: src/servicemethods.py:351
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xined 重载 %s 成功"
 
-#: src/servicemethods.py:339
+#: src/servicemethods.py:354
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "一定要启用 xinetd 才可运行 %s"
 
-#: src/servicemethods.py:344
+#: src/servicemethods.py:359
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s 失败，错误是：%s"
 
-#: src/servicemethods.py:346
+#: src/servicemethods.py:361
 msgid " successful"
 msgstr "成功"
 

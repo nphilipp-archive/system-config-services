@@ -1,3 +1,23 @@
+2002-08-27  dwalsh  <dwalsh@redhat.com>
+
+	* redhat-config-services.spec.in: update changelog
+
+	* src/servicemethods.py: eliminate popen error on multi-processors
+
+2002-08-27  teg  <teg@redhat.com>
+
+	* po/nl.po: Added dutch support from Taco Witte <T.C.Witte@phys.uu.nl>
+
+2002-08-27  federico  <federico@redhat.com>
+
+	* po/de.po, po/es.po, po/fr.po, po/it.po:
+	"/mnt/traduzioni/RH8.0/translate/redhat-config-services"
+
+2002-08-26  dwalsh  <dwalsh@redhat.com>
+
+	* ChangeLog, po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po, redhat-config-services.spec.in:
+	release 0.8.1
+
 2002-08-26  sebol  <sebol@redhat.com>
 
 	* po/ms.po: added malay tranlation for this module

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: 2002-08-26 16:34-0400\n"
+"POT-Creation-Date: 2002-08-27 17:19-0400\n"
 "PO-Revision-Date: 2002-07-17 10:52GMT\n"
 "Last-Translator: Nuria Soriano <nuria@redhat.es>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -186,6 +186,7 @@ msgstr "Debe ejecutar redhat-config-services como root."
 #. You should have received a copy of the GNU General Public License
 #. along with this program; if not, write to the Free Software
 #. Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#. print v[0],cmd,text
 #. runlevel = self.get_runlevel()
 #. for i in range(0,len(dirlist)):
 #. check for start links only, we don't care if there is a kill link
@@ -202,7 +203,7 @@ msgstr "Debe ejecutar redhat-config-services como root."
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:287
+#: src/servicemethods.py:302
 msgid ""
 "\n"
 "\n"
@@ -222,38 +223,40 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:333
+#: src/servicemethods.py:348
 msgid "xinetd failed to reload for "
 msgstr "xinetd falló su recarga por "
 
 # ../servicemethods.py:308
 # ../servicemethods.py:308
-#: src/servicemethods.py:334
+#: src/servicemethods.py:349
 msgid ". The error was: "
 msgstr ". El error fue: "
 
 # ../servicemethods.py:310
 # ../servicemethods.py:310
-#: src/servicemethods.py:336
+#: src/servicemethods.py:351
+#, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "recarga de xinetd para %s satisfactoria"
 
 # ../servicemethods.py:313
 # ../servicemethods.py:313
-#: src/servicemethods.py:339
+#: src/servicemethods.py:354
+#, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd debe estar activo para poder ejecutar %s"
 
 # ../servicemethods.py:318
 # ../servicemethods.py:318
-#: src/servicemethods.py:344
-#, fuzzy
+#: src/servicemethods.py:359
+#, fuzzy, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s falló a %s. El error fue: %s"
 
 # ../servicemethods.py:320
 # ../servicemethods.py:320
-#: src/servicemethods.py:346
+#: src/servicemethods.py:361
 msgid " successful"
 msgstr " satisfactorio"
 
@@ -429,7 +432,8 @@ msgstr "Comenzar _Servicio"
 # serviceconf.gladestrings:21
 #~ msgid "Actions such as start, stop, and restart on the selected service"
 #~ msgstr ""
-#~ "Acciones tales como comenzar, parar y reiniciar en el servicio seleccionado"
+#~ "Acciones tales como comenzar, parar y reiniciar en el servicio "
+#~ "seleccionado"
 
 # serviceconf.gladestrings:29
 #~ msgid "Select the runlevel you would like to edit"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: service conf\n"
-"POT-Creation-Date: 2002-08-26 16:34-0400\n"
+"POT-Creation-Date: 2002-08-27 17:19-0400\n"
 "PO-Revision-Date: 2002-08-27 14:48+0200\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
@@ -170,6 +170,7 @@ msgstr "Vous devez exécuter redhat-config-services en tant que root."
 #. You should have received a copy of the GNU General Public License
 #. along with this program; if not, write to the Free Software
 #. Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#. print v[0],cmd,text
 #. runlevel = self.get_runlevel()
 #. for i in range(0,len(dirlist)):
 #. check for start links only, we don't care if there is a kill link
@@ -186,7 +187,7 @@ msgstr "Vous devez exécuter redhat-config-services en tant que root."
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:287
+#: src/servicemethods.py:302
 msgid ""
 "\n"
 "\n"
@@ -204,27 +205,30 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:333
+#: src/servicemethods.py:348
 msgid "xinetd failed to reload for "
 msgstr "xinetd n'est pas reparti à cause de "
 
-#: src/servicemethods.py:334
+#: src/servicemethods.py:349
 msgid ". The error was: "
 msgstr ". L'erreur était : "
 
-#: src/servicemethods.py:336
+#: src/servicemethods.py:351
+#, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "rechargement de xinetd pour %s réussi"
 
-#: src/servicemethods.py:339
+#: src/servicemethods.py:354
+#, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd doit être activé pour que %s puisse être exécuté."
 
-#: src/servicemethods.py:344
+#: src/servicemethods.py:359
+#, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s n'a pas réussi. L'erreur était : %s"
 
-#: src/servicemethods.py:346
+#: src/servicemethods.py:361
 msgid " successful"
 msgstr " réussi"
 
@@ -364,8 +368,8 @@ msgstr "_Démarrer le service"
 
 #~ msgid "Runlevel 3 is multiuser mode with networking"
 #~ msgstr ""
-#~ "Le niveau d'exécution 3 est multi-utilisateurs et il est doté d'un support "
-#~ "réseau"
+#~ "Le niveau d'exécution 3 est multi-utilisateurs et il est doté d'un "
+#~ "support réseau"
 
 #~ msgid ""
 #~ "Runlevel 4 is reserved for local customization, and is not usually used"
@@ -375,12 +379,11 @@ msgstr "_Démarrer le service"
 
 #~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
 #~ msgstr ""
-#~ "Le niveau d'exécution 5 est multi-utilisateurs et il est doté d'un support "
-#~ "réseau et de X Window"
+#~ "Le niveau d'exécution 5 est multi-utilisateurs et il est doté d'un "
+#~ "support réseau et de X Window"
 
 #~ msgid "Read Manual"
 #~ msgstr "Lire le manuel"
 
 #~ msgid "Exit"
 #~ msgstr "Fermer"
-
