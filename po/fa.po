@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"POT-Creation-Date: 2003-10-06 10:40-0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-04-06 14:50-0400\n"
 "PO-Revision-Date: 2004-03-07 10:40+0330\n"
 "Last-Translator: Hedayat Vatankhah <hedavat@mail15.com>\n"
 "MIME-Version: 1.0\n"
@@ -36,6 +37,7 @@ msgstr ""
 #. keep track of the number of rows we have so we can
 #. iterate over them all
 #. add the text for the number of columns we have
+#. !/usr/bin/python
 #. serviceconf.py
 #. Copyright (C) 2002 Red Hat, Inc.
 #. Authors: Tim Powers <timp@redhat.com>
@@ -58,7 +60,7 @@ msgstr ""
 #. #
 #. # I18N
 #. #
-#: src/serviceconf.py:62
+#: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "مطمئنید که می‌خواهید %s را حذف کنید؟"
@@ -67,26 +69,52 @@ msgstr "مطمئنید که می‌خواهید %s را حذف کنید؟"
 #. map the event signals to specific methods
 #. main window
 #. menu items
-#. buttons
 #. toolbars
-#. self.tbrSave.set_style(GTK.TOOLBAR_ICONS)
-#. self.tbrSave.set_button_relief(GTK.RELIEF_NORMAL)
+#: src/serviceconf.py:187 src/serviceconf.glade.h:18
+msgid "Start"
+msgstr "آغاز"
+
+#: src/serviceconf.py:191 src/serviceconf.glade.h:20
+msgid "Stop"
+msgstr "توقف"
+
+#: src/serviceconf.py:195 src/serviceconf.glade.h:9
+msgid "Restart"
+msgstr "راه‌اندازی مجدد"
+
+#: src/serviceconf.py:201
+msgid "_Save"
+msgstr ""
+
+#: src/serviceconf.py:201
+msgid "Save"
+msgstr ""
+
+#: src/serviceconf.py:206
+msgid "_Revert"
+msgstr ""
+
+#: src/serviceconf.py:206
+#, fuzzy
+msgid "Revert"
+msgstr "راه‌اندازی مجدد"
+
 #. the textbox
 #. the statusbox
 #. the CheckCList which will display whether the service
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:208
+#: src/serviceconf.py:240
 msgid "Currently Running in Runlevel: "
 msgstr "درحال اجرا در سطح اجرایی: "
 
 #. This is a sentry
-#: src/serviceconf.py:219
+#: src/serviceconf.py:251
 msgid "Start at Boot"
 msgstr "آغاز هنگام راه‌اندازی"
 
-#: src/serviceconf.py:220
+#: src/serviceconf.py:252
 msgid "Services"
 msgstr "خدمات"
 
@@ -101,8 +129,8 @@ msgstr "خدمات"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:275 src/serviceconf.py:381 src/serviceconf.py:398
-#: src/serviceconf.py:417
+#: src/serviceconf.py:307 src/serviceconf.py:413 src/serviceconf.py:430
+#: src/serviceconf.py:449
 msgid "Editing Runlevel: "
 msgstr "ویرایش سطح اجرایی: "
 
@@ -110,7 +138,7 @@ msgstr "ویرایش سطح اجرایی: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:318
+#: src/serviceconf.py:350
 msgid "Unknown"
 msgstr "ناشناخته"
 
@@ -118,29 +146,29 @@ msgstr "ناشناخته"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:446
-msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "حق نشر ۲۰۰۲ (c) شرکت ردهت. همه‌ی حقوق محفوظ است."
-
-#: src/serviceconf.py:447
+#: src/serviceconf.py:478
 msgid ""
-"This software may be freely redistributed under the terms of the GPL.\n"
-"Please report all bugs you find at the Red Hat bug tracking system:\n"
-"http://bugzilla.redhat.com"
+"System Services Configuration Tool VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 msgstr ""
-"این نرم‌افزار می‌تواند تحت شرایط جی‌پی‌ال به صورت آزاد دوباره توزیع شود.\n"
-"لطفاً همه‌ی اشکال‌هایی را که پیدا می‌کنید در سیستم پیگیری اشکال ردهت گزارش دهید:\n"
-"http://bugzilla.redhat.com"
 
-#: src/serviceconf.py:451
-msgid "translator_credits"
-msgstr "هدایت وطن‌خواه <hedavat@mail15.com>"
+#: src/serviceconf.py:482
+msgid "About"
+msgstr ""
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#. gnome.help_display_uri(page)
+#: src/serviceconf.py:511
+msgid "Help is not available."
+msgstr ""
+
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
 #. The menu and popup menu items for "Start", "Stop", and "Restart" are
@@ -153,7 +181,7 @@ msgstr "هدایت وطن‌خواه <hedavat@mail15.com>"
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:595
+#: src/serviceconf.py:655
 msgid "You must run system-config-services as root."
 msgstr "شما باید system-config-services را به‌عنوان root اجرا کنید."
 
@@ -190,7 +218,7 @@ msgstr "شما باید system-config-services را به‌عنوان root اج�
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:286
+#: src/servicemethods.py:289
 msgid ""
 "\n"
 "\n"
@@ -208,30 +236,30 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:332
+#: src/servicemethods.py:335
 msgid "xinetd failed to reload for "
 msgstr ""
 
-#: src/servicemethods.py:333
+#: src/servicemethods.py:336
 msgid ". The error was: "
 msgstr ". خطا این بود: "
 
-#: src/servicemethods.py:335
+#: src/servicemethods.py:338
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd %s را با موفقیت دوباره بارکرد"
 
-#: src/servicemethods.py:338
+#: src/servicemethods.py:341
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd باید برای اجرای %s به‌کار انداخته شود"
 
-#: src/servicemethods.py:343
+#: src/servicemethods.py:346
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s شکست خورد. خطا %s بود."
 
-#: src/servicemethods.py:345
+#: src/servicemethods.py:348
 msgid " successful"
 msgstr " موفق"
 
@@ -267,67 +295,43 @@ msgstr "ویرایش سطح اجرایی:"
 msgid "None"
 msgstr "هیچ‌کدام"
 
-#: src/serviceconf.glade.h:9
-msgid "Restart"
-msgstr "راه‌اندازی مجدد"
-
 #: src/serviceconf.glade.h:10
-msgid "Restart the selected service"
-msgstr "راه‌اندازی مجدد خدمت انتخاب شده"
-
-#: src/serviceconf.glade.h:11
 msgid "Revert To _Last Save"
 msgstr "بازگشت به _آخرین ذخیره"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "سطح اجرایی _۳"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "سطح اجرایی _۴"
 
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "سطح اجرایی _۵"
 
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "_توقف خدمت"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "محاوره‌ی ذخیره"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "پیکربندی خدمت"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "نام خدمت: "
 
 #: src/serviceconf.glade.h:19
-msgid "Start"
-msgstr "آغاز"
-
-#: src/serviceconf.glade.h:20
-msgid "Start the selected service"
-msgstr "آغاز خدمت انتخاب شده"
-
-#: src/serviceconf.glade.h:21
 msgid "Status"
 msgstr "وضعیت"
 
-#: src/serviceconf.glade.h:22
-msgid "Stop"
-msgstr "توقف"
-
-#: src/serviceconf.glade.h:23
-msgid "Stop the selected service"
-msgstr "توقف خدمت انتخاب شده"
-
-#: src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:21
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -335,43 +339,71 @@ msgstr ""
 "شما در سطح اجرایی جاری تغییراتی داده‌اید.\n"
 "آیا می‌خواهید تغییرات را ذخیره کنید؟"
 
-#: src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:23
 msgid "_Actions"
 msgstr "_عمل‌ها"
 
-#: src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:24
 msgid "_Contents"
 msgstr "_محتوا"
 
-#: src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:25
 msgid "_Edit Runlevel"
 msgstr "_ویرایش سطح اجرایی"
 
-#: src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:26
 msgid "_File"
 msgstr "_پرونده"
 
-#: src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:27
 msgid "_Help"
 msgstr "_راهنما"
 
-#: src/serviceconf.glade.h:31
+#: src/serviceconf.glade.h:28
+msgid "_Quit"
+msgstr ""
+
+#: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
 msgstr "_نوسازی فهرست خدمت"
 
-#: src/serviceconf.glade.h:32
+#: src/serviceconf.glade.h:30
 msgid "_Restart Service"
 msgstr "_راه‌اندازی مجدد خدمت"
 
-#: src/serviceconf.glade.h:33
+#: src/serviceconf.glade.h:31
 msgid "_Save Changes"
 msgstr "_ذخیره‌ی تغییرات"
 
-#: src/serviceconf.glade.h:34
+#: src/serviceconf.glade.h:32
 msgid "_Start Service"
 msgstr "_آغاز خدمت"
 
-#: src/serviceconf.glade.h:35
+#: src/serviceconf.glade.h:33
 msgid "_View"
 msgstr "_نما"
 
+#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
+#~ msgstr "حق نشر ۲۰۰۲ (c) شرکت ردهت. همه‌ی حقوق محفوظ است."
+
+#~ msgid ""
+#~ "This software may be freely redistributed under the terms of the GPL.\n"
+#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
+#~ "http://bugzilla.redhat.com"
+#~ msgstr ""
+#~ "این نرم‌افزار می‌تواند تحت شرایط جی‌پی‌ال به صورت آزاد دوباره توزیع شود.\n"
+#~ "لطفاً همه‌ی اشکال‌هایی را که پیدا می‌کنید در سیستم پیگیری اشکال ردهت گزارش "
+#~ "دهید:\n"
+#~ "http://bugzilla.redhat.com"
+
+#~ msgid "translator_credits"
+#~ msgstr "هدایت وطن‌خواه <hedavat@mail15.com>"
+
+#~ msgid "Restart the selected service"
+#~ msgstr "راه‌اندازی مجدد خدمت انتخاب شده"
+
+#~ msgid "Start the selected service"
+#~ msgstr "آغاز خدمت انتخاب شده"
+
+#~ msgid "Stop the selected service"
+#~ msgstr "توقف خدمت انتخاب شده"

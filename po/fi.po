@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-16 16:00-0500\n"
+"POT-Creation-Date: 2004-04-06 14:50-0400\n"
 "PO-Revision-Date: 2004-03-17 00:19+0200\n"
 "Last-Translator: Lauri Nurmi <lanurmi@iki.fi>\n"
 "Language-Team: Gnome Finnish Translation Team <gnome-fi-laatu@lists."
@@ -73,31 +73,31 @@ msgstr "Haluatko varmasti poistaa %s?"
 #. main window
 #. menu items
 #. toolbars
-#: src/serviceconf.py:181 src/serviceconf.glade.h:18
+#: src/serviceconf.py:187 src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Käynnistä"
 
-#: src/serviceconf.py:185 src/serviceconf.glade.h:20
+#: src/serviceconf.py:191 src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "Sammuta"
 
-#: src/serviceconf.py:189 src/serviceconf.glade.h:9
+#: src/serviceconf.py:195 src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Käynnistä uudelleen"
 
-#: src/serviceconf.py:195
+#: src/serviceconf.py:201
 msgid "_Save"
 msgstr "_Tallenna"
 
-#: src/serviceconf.py:195
+#: src/serviceconf.py:201
 msgid "Save"
 msgstr "Tallenna"
 
-#: src/serviceconf.py:200
+#: src/serviceconf.py:206
 msgid "_Revert"
 msgstr "_Palauta"
 
-#: src/serviceconf.py:200
+#: src/serviceconf.py:206
 msgid "Revert"
 msgstr "Palauta"
 
@@ -107,16 +107,16 @@ msgstr "Palauta"
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:234
+#: src/serviceconf.py:240
 msgid "Currently Running in Runlevel: "
 msgstr "Nykyinen käytössä oleva ajotaso: "
 
 #. This is a sentry
-#: src/serviceconf.py:245
+#: src/serviceconf.py:251
 msgid "Start at Boot"
 msgstr "Käynnistä koneen käynnistyksen yhteydessä"
 
-#: src/serviceconf.py:246
+#: src/serviceconf.py:252
 msgid "Services"
 msgstr "Palvelut"
 
@@ -131,8 +131,8 @@ msgstr "Palvelut"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:301 src/serviceconf.py:407 src/serviceconf.py:424
-#: src/serviceconf.py:443
+#: src/serviceconf.py:307 src/serviceconf.py:413 src/serviceconf.py:430
+#: src/serviceconf.py:449
 msgid "Editing Runlevel: "
 msgstr "Muokattava ajotaso: "
 
@@ -140,7 +140,7 @@ msgstr "Muokattava ajotaso: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:344
+#: src/serviceconf.py:350
 msgid "Unknown"
 msgstr "Tuntematon"
 
@@ -148,7 +148,7 @@ msgstr "Tuntematon"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:472
+#: src/serviceconf.py:478
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -166,7 +166,7 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:476
+#: src/serviceconf.py:482
 msgid "About"
 msgstr "Tietoja"
 
@@ -174,7 +174,7 @@ msgstr "Tietoja"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:505
+#: src/serviceconf.py:511
 msgid "Help is not available."
 msgstr "Ohjetta ei ole saatavilla."
 
@@ -190,7 +190,7 @@ msgstr "Ohjetta ei ole saatavilla."
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:649
+#: src/serviceconf.py:655
 msgid "You must run system-config-services as root."
 msgstr "Ohjelma system-config-services on ajettava pääkäyttäjänä."
 
@@ -227,7 +227,7 @@ msgstr "Ohjelma system-config-services on ajettava pääkäyttäjänä."
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:290
+#: src/servicemethods.py:289
 msgid ""
 "\n"
 "\n"
@@ -245,30 +245,30 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:336
+#: src/servicemethods.py:335
 msgid "xinetd failed to reload for "
 msgstr "xinetd:n uudelleenlataus ei onnistunut palvelulle "
 
-#: src/servicemethods.py:337
+#: src/servicemethods.py:336
 msgid ". The error was: "
 msgstr ". Virhe oli: "
 
-#: src/servicemethods.py:339
+#: src/servicemethods.py:338
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd uudelleenlatasi palvelun %s onnistuneesti"
 
-#: src/servicemethods.py:342
+#: src/servicemethods.py:341
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd:n on oltava käytössä palvelun %s käyttämistä varten"
 
-#: src/servicemethods.py:347
+#: src/servicemethods.py:346
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s epäonnistui. Virhe oli: %s"
 
-#: src/servicemethods.py:349
+#: src/servicemethods.py:348
 msgid " successful"
 msgstr " onnistui"
 

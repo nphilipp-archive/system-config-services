@@ -6,13 +6,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-02 15:33-0500\n"
+"POT-Creation-Date: 2004-04-06 14:50-0400\n"
 "PO-Revision-Date: 2004-03-22 23:05+0530\n"
 "Last-Translator: Amanpreet Singh Alam <amanlinux@netscape.net>\n"
 "Language-Team: Punjabi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -69,26 +69,52 @@ msgstr "ਕੀ ਤੁਸੀ ਯਕੀਨਨ ਹੀ  %s ਨੰੂ ਖਤਮ ਕ�
 #. map the event signals to specific methods
 #. main window
 #. menu items
-#. buttons
 #. toolbars
-#. self.tbrSave.set_style(GTK.TOOLBAR_ICONS)
-#. self.tbrSave.set_button_relief(GTK.RELIEF_NORMAL)
+#: src/serviceconf.py:187 src/serviceconf.glade.h:18
+msgid "Start"
+msgstr "ਸ਼ੁਰੂ"
+
+#: src/serviceconf.py:191 src/serviceconf.glade.h:20
+msgid "Stop"
+msgstr "ਰੋਕੋ"
+
+#: src/serviceconf.py:195 src/serviceconf.glade.h:9
+msgid "Restart"
+msgstr "ਮੁੜ ਚਾਲੂ"
+
+#: src/serviceconf.py:201
+msgid "_Save"
+msgstr ""
+
+#: src/serviceconf.py:201
+msgid "Save"
+msgstr ""
+
+#: src/serviceconf.py:206
+msgid "_Revert"
+msgstr ""
+
+#: src/serviceconf.py:206
+#, fuzzy
+msgid "Revert"
+msgstr "ਮੁੜ ਚਾਲੂ"
+
 #. the textbox
 #. the statusbox
 #. the CheckCList which will display whether the service
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:224
+#: src/serviceconf.py:240
 msgid "Currently Running in Runlevel: "
 msgstr "ੲਿਸ ਵੇਲੇ ਰਨਲੈਵਲ ਵਿਚ ਚੱਲ ਰਿਹਾ: "
 
 #. This is a sentry
-#: src/serviceconf.py:235
+#: src/serviceconf.py:251
 msgid "Start at Boot"
 msgstr "ਬੂਟ ਵੇਲੇ ਸ਼ੁਰੂ ਕਰੋ"
 
-#: src/serviceconf.py:236
+#: src/serviceconf.py:252
 msgid "Services"
 msgstr "ਸੇਵਾਵਾਂ"
 
@@ -103,8 +129,8 @@ msgstr "ਸੇਵਾਵਾਂ"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:291 src/serviceconf.py:397 src/serviceconf.py:414
-#: src/serviceconf.py:433
+#: src/serviceconf.py:307 src/serviceconf.py:413 src/serviceconf.py:430
+#: src/serviceconf.py:449
 msgid "Editing Runlevel: "
 msgstr "ਰਨਲੈਵਲ ਸੋਧੋ"
 
@@ -112,7 +138,7 @@ msgstr "ਰਨਲੈਵਲ ਸੋਧੋ"
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:334
+#: src/serviceconf.py:350
 msgid "Unknown"
 msgstr "ਅਣਪਛਾਤੀ ਸਥਿਤੀ"
 
@@ -120,7 +146,7 @@ msgstr "ਅਣਪਛਾਤੀ ਸਥਿਤੀ"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:462
+#: src/serviceconf.py:478
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -138,7 +164,7 @@ msgstr ""
 "ਬਰਨਿਟ ਫਾਕਸ <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:466
+#: src/serviceconf.py:482
 msgid "About"
 msgstr "ੲਿਸ ਬਾਰੇ"
 
@@ -146,7 +172,7 @@ msgstr "ੲਿਸ ਬਾਰੇ"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:495
+#: src/serviceconf.py:511
 msgid "Help is not available."
 msgstr "ਸਹਾੲਿਤਾ ੳੁਪਲੱਬਧ ਨਹੀ ਹੈ ੤"
 
@@ -162,7 +188,7 @@ msgstr "ਸਹਾੲਿਤਾ ੳੁਪਲੱਬਧ ਨਹੀ ਹੈ ੤"
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:639
+#: src/serviceconf.py:655
 msgid "You must run system-config-services as root."
 msgstr "ਤੁਹਾਨੰੂ system-config-services ਰੂਟ(root) ਦੇ ਤੌਰ ਤੇ ਚਲਾੳੁਣੀ ਪਵੇਗੀ ੤"
 
@@ -199,7 +225,7 @@ msgstr "ਤੁਹਾਨੰੂ system-config-services ਰੂਟ(root) ਦੇ ਤ�
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:290
+#: src/servicemethods.py:289
 msgid ""
 "\n"
 "\n"
@@ -217,30 +243,30 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:336
+#: src/servicemethods.py:335
 msgid "xinetd failed to reload for "
 msgstr "xinetd ੲਿਸ ਦੇ ਲੲੀ ਫਿਰ ਲੋਡ ਕਰਨ ਵਿਚ ਅਸਫਲ ਰਿਹਾ ਹੈ"
 
-#: src/servicemethods.py:337
+#: src/servicemethods.py:336
 msgid ". The error was: "
 msgstr "ਗਲਤੀ ੲਿਹ ਸੀ: "
 
-#: src/servicemethods.py:339
+#: src/servicemethods.py:338
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd ਨੇ %s ਨੰੂ ਸਫਲਤਾਪੂਰਕ ਫਿਰ ਚਾਲੂ ਕਰ ਲਿਅਾ ਹੈ"
 
-#: src/servicemethods.py:342
+#: src/servicemethods.py:341
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s ਚਲਾੳੁਣ ਲੲੀ xinetd ਨੂੰ ਚਾਲੂ ਕਰਨਾ ਪਵੇਗਾ"
 
-#: src/servicemethods.py:347
+#: src/servicemethods.py:346
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s ਅਸਫਲ ੤ ਗਲਤੀ ੲਿਹ ਹੈ: %s"
 
-#: src/servicemethods.py:349
+#: src/servicemethods.py:348
 msgid " successful"
 msgstr "ਸਫਲਤਾਪੂਰਕ"
 
@@ -276,67 +302,43 @@ msgstr "ਰਨਲੈਵਲ ਸੋਧੋ:"
 msgid "None"
 msgstr "ਕੁਝ ਨਹੀ"
 
-#: src/serviceconf.glade.h:9
-msgid "Restart"
-msgstr "ਮੁੜ ਚਾਲੂ"
-
 #: src/serviceconf.glade.h:10
-msgid "Restart the selected service"
-msgstr "ਚੁਣੀ ਸੇਵਾ ਮੁੜ ਚਾਲੂ ਕਰੋ"
-
-#: src/serviceconf.glade.h:11
 msgid "Revert To _Last Save"
 msgstr "ਅਖੀਰੀ ਸੰਭਾਲ ਖੋਲੋ੏"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "ਰਨਲੈਵਲ_3"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "ਰਨਲੈਵਲ_4"
 
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "ਰਨਲੈਵਲ_5"
 
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "ਸੇਵਾ ਰੋਕੋ"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "ਤੱਖਤੀ ਸੰਭਾਲੋ"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "ਸੇਵਾ ਸੰਰਚਨਾ"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "ਸੇਵਾ ਦਾ ਨਾੳੁਃ"
 
 #: src/serviceconf.glade.h:19
-msgid "Start"
-msgstr "ਸ਼ੁਰੂ"
-
-#: src/serviceconf.glade.h:20
-msgid "Start the selected service"
-msgstr "ਚੁਣੀ ਸੇਵਾ ਚਾਲੂ ਕਰੋ"
-
-#: src/serviceconf.glade.h:21
 msgid "Status"
 msgstr "ਸਥਿਤੀ"
 
-#: src/serviceconf.glade.h:22
-msgid "Stop"
-msgstr "ਰੋਕੋ"
-
-#: src/serviceconf.glade.h:23
-msgid "Stop the selected service"
-msgstr "ਚੁਣੀ ਸੇਵਾ ਰੋਕੋ"
-
-#: src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:21
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -344,43 +346,55 @@ msgstr ""
 "ਤੁਸੀ ੲਿਸ ਰਨ-ਲੈਵਲ ਵਿਚ ਤਬਦੀਲੀਅਾ ਕੀਤੀਅਾ ਹਨ \n"
 "ਕੀ ਤੁਸੀ ੲਿਹਨਾਂ ਸੰਭਾਲਣਾ ਚਾਹੁੰਦੇ ਹੋ ?"
 
-#: src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:23
 msgid "_Actions"
 msgstr "ਕਾਰਵਾੲੀਅ੾"
 
-#: src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:24
 msgid "_Contents"
 msgstr "ਭਾਗ"
 
-#: src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:25
 msgid "_Edit Runlevel"
 msgstr "ਰਨਲੈਵਲ ਸੋਧੋ"
 
-#: src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:26
 msgid "_File"
 msgstr "ਫਾੲਿਲ"
 
-#: src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:27
 msgid "_Help"
 msgstr "ਸਹਾੲਿਤਾ"
 
-#: src/serviceconf.glade.h:31
+#: src/serviceconf.glade.h:28
+msgid "_Quit"
+msgstr ""
+
+#: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
 msgstr "ਸੇਵਾ ਸੂਚੀ ਨੂੰ ਨਿਵਅਾੳੁ"
 
-#: src/serviceconf.glade.h:32
+#: src/serviceconf.glade.h:30
 msgid "_Restart Service"
 msgstr "ਸੇਵਾ ਮੁੜ ਚਾਲੂ ਕਰੋ"
 
-#: src/serviceconf.glade.h:33
+#: src/serviceconf.glade.h:31
 msgid "_Save Changes"
 msgstr "ਤਬਦੀਲੀਅ੾ ਨੂੰ ਸੰਭਾਲੋ"
 
-#: src/serviceconf.glade.h:34
+#: src/serviceconf.glade.h:32
 msgid "_Start Service"
 msgstr "ਸੇਵਾ ਚਾਲੂ ਕਰੋ"
 
-#: src/serviceconf.glade.h:35
+#: src/serviceconf.glade.h:33
 msgid "_View"
 msgstr "ਵੇਖੋ"
 
+#~ msgid "Restart the selected service"
+#~ msgstr "ਚੁਣੀ ਸੇਵਾ ਮੁੜ ਚਾਲੂ ਕਰੋ"
+
+#~ msgid "Start the selected service"
+#~ msgstr "ਚੁਣੀ ਸੇਵਾ ਚਾਲੂ ਕਰੋ"
+
+#~ msgid "Stop the selected service"
+#~ msgstr "ਚੁਣੀ ਸੇਵਾ ਰੋਕੋ"

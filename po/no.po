@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-03-16 16:00-0500\n"
+"POT-Creation-Date: 2004-04-06 14:50-0400\n"
 "PO-Revision-Date: 2004-04-01 22:10+0200\n"
 "Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
@@ -70,31 +70,31 @@ msgstr "Er du sikker på at du ønsker å slette %s?"
 #. main window
 #. menu items
 #. toolbars
-#: src/serviceconf.py:181 src/serviceconf.glade.h:18
+#: src/serviceconf.py:187 src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Start"
 
-#: src/serviceconf.py:185 src/serviceconf.glade.h:20
+#: src/serviceconf.py:191 src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "Stopp"
 
-#: src/serviceconf.py:189 src/serviceconf.glade.h:9
+#: src/serviceconf.py:195 src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Start på nytt"
 
-#: src/serviceconf.py:195
+#: src/serviceconf.py:201
 msgid "_Save"
 msgstr "_Lagre"
 
-#: src/serviceconf.py:195
+#: src/serviceconf.py:201
 msgid "Save"
 msgstr "Lagre"
 
-#: src/serviceconf.py:200
+#: src/serviceconf.py:206
 msgid "_Revert"
 msgstr "_Forkast"
 
-#: src/serviceconf.py:200
+#: src/serviceconf.py:206
 msgid "Revert"
 msgstr "Forkast"
 
@@ -104,16 +104,16 @@ msgstr "Forkast"
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:234
+#: src/serviceconf.py:240
 msgid "Currently Running in Runlevel: "
 msgstr "Aktiv runlevel: "
 
 #. This is a sentry
-#: src/serviceconf.py:245
+#: src/serviceconf.py:251
 msgid "Start at Boot"
 msgstr "Aktiv ved oppstart"
 
-#: src/serviceconf.py:246
+#: src/serviceconf.py:252
 msgid "Services"
 msgstr "Tjenester"
 
@@ -128,8 +128,8 @@ msgstr "Tjenester"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:301 src/serviceconf.py:407 src/serviceconf.py:424
-#: src/serviceconf.py:443
+#: src/serviceconf.py:307 src/serviceconf.py:413 src/serviceconf.py:430
+#: src/serviceconf.py:449
 msgid "Editing Runlevel: "
 msgstr "Redigerer runlevel: "
 
@@ -137,7 +137,7 @@ msgstr "Redigerer runlevel: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:344
+#: src/serviceconf.py:350
 msgid "Unknown"
 msgstr "Ukjent"
 
@@ -145,7 +145,7 @@ msgstr "Ukjent"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:472
+#: src/serviceconf.py:478
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -163,7 +163,7 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:476
+#: src/serviceconf.py:482
 msgid "About"
 msgstr "Om"
 
@@ -171,7 +171,7 @@ msgstr "Om"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:505
+#: src/serviceconf.py:511
 msgid "Help is not available."
 msgstr "Hjelp er ikke tilgjengelig."
 
@@ -187,7 +187,7 @@ msgstr "Hjelp er ikke tilgjengelig."
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:649
+#: src/serviceconf.py:655
 msgid "You must run system-config-services as root."
 msgstr "Du må kjøre system-config-services som root."
 
@@ -224,7 +224,7 @@ msgstr "Du må kjøre system-config-services som root."
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:290
+#: src/servicemethods.py:289
 msgid ""
 "\n"
 "\n"
@@ -242,30 +242,30 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:336
+#: src/servicemethods.py:335
 msgid "xinetd failed to reload for "
 msgstr "xinetd kunne ikke laste konfigurasjonsfilen for "
 
-#: src/servicemethods.py:337
+#: src/servicemethods.py:336
 msgid ". The error was: "
 msgstr ". Feilen var: "
 
-#: src/servicemethods.py:339
+#: src/servicemethods.py:338
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd fullførte gjenlasting av %s"
 
-#: src/servicemethods.py:342
+#: src/servicemethods.py:341
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd må kjøre for å kunne bruke %s"
 
-#: src/servicemethods.py:347
+#: src/servicemethods.py:346
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s feilet. Feilen var: %s"
 
-#: src/servicemethods.py:349
+#: src/servicemethods.py:348
 msgid " successful"
 msgstr " suksess"
 

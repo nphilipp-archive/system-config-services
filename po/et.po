@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: et\n"
-"POT-Creation-Date: 2004-02-05 18:31-0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-04-06 14:50-0400\n"
 "PO-Revision-Date: 2004-02-10 18:40+0200\n"
 "Last-Translator: Allan Sims <allsi@eau.ee>\n"
 "Language-Team: Estonian <Eesti>\n"
@@ -61,7 +62,7 @@ msgstr ""
 #. #
 #. # I18N
 #. #
-#: src/serviceconf.py:76
+#: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Oled sa kindel, et soovid kustutada %s?"
@@ -70,26 +71,52 @@ msgstr "Oled sa kindel, et soovid kustutada %s?"
 #. map the event signals to specific methods
 #. main window
 #. menu items
-#. buttons
 #. toolbars
-#. self.tbrSave.set_style(GTK.TOOLBAR_ICONS)
-#. self.tbrSave.set_button_relief(GTK.RELIEF_NORMAL)
+#: src/serviceconf.py:187 src/serviceconf.glade.h:18
+msgid "Start"
+msgstr "Käivita"
+
+#: src/serviceconf.py:191 src/serviceconf.glade.h:20
+msgid "Stop"
+msgstr "Seiska"
+
+#: src/serviceconf.py:195 src/serviceconf.glade.h:9
+msgid "Restart"
+msgstr "Taaslae"
+
+#: src/serviceconf.py:201
+msgid "_Save"
+msgstr ""
+
+#: src/serviceconf.py:201
+msgid "Save"
+msgstr ""
+
+#: src/serviceconf.py:206
+msgid "_Revert"
+msgstr ""
+
+#: src/serviceconf.py:206
+#, fuzzy
+msgid "Revert"
+msgstr "Taaslae"
+
 #. the textbox
 #. the statusbox
 #. the CheckCList which will display whether the service
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:222
+#: src/serviceconf.py:240
 msgid "Currently Running in Runlevel: "
 msgstr "Käesolev käivitustase: "
 
 #. This is a sentry
-#: src/serviceconf.py:233
+#: src/serviceconf.py:251
 msgid "Start at Boot"
 msgstr "Käivita laadimisel"
 
-#: src/serviceconf.py:234
+#: src/serviceconf.py:252
 msgid "Services"
 msgstr "Teenused"
 
@@ -104,8 +131,8 @@ msgstr "Teenused"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:289 src/serviceconf.py:395 src/serviceconf.py:412
-#: src/serviceconf.py:431
+#: src/serviceconf.py:307 src/serviceconf.py:413 src/serviceconf.py:430
+#: src/serviceconf.py:449
 msgid "Editing Runlevel: "
 msgstr "Redigeeritav käivitustase: "
 
@@ -113,7 +140,7 @@ msgstr "Redigeeritav käivitustase: "
 #. if an xinetd service is selected, disable these,
 #. they'll do nothing
 #. set the text in StatusView
-#: src/serviceconf.py:332
+#: src/serviceconf.py:350
 msgid "Unknown"
 msgstr "Tundmatu"
 
@@ -121,31 +148,29 @@ msgstr "Tundmatu"
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:460
-msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Autoriõigus (c) 2002 Red Hat, Inc. Kõik õigused reserveeritud."
-
-#: src/serviceconf.py:461
+#: src/serviceconf.py:478
 msgid ""
-"This software may be freely redistributed under the terms of the GPL.\n"
-"Please report all bugs you find at the Red Hat bug tracking system:\n"
-"http://bugzilla.redhat.com"
+"System Services Configuration Tool VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 msgstr ""
-"See tarkvara peab olema vabalt taas välja antud GPL litsensi tingimuste "
-"alusel.\n"
-"Palun teata kõikidest vigadest, mis sa leiad, Red Hat vigade jälituse "
-"süsteemi kaudu:\n"
-"http://bugzilla.redhat.com"
 
-#: src/serviceconf.py:465
-msgid "translator_credits"
-msgstr "Allan Sims <allsi@eau.ee>"
+#: src/serviceconf.py:482
+msgid "About"
+msgstr ""
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#. gnome.help_display_uri(page)
+#: src/serviceconf.py:511
+msgid "Help is not available."
+msgstr ""
+
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
 #. The menu and popup menu items for "Start", "Stop", and "Restart" are
@@ -158,7 +183,7 @@ msgstr "Allan Sims <allsi@eau.ee>"
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:609
+#: src/serviceconf.py:655
 msgid "You must run system-config-services as root."
 msgstr "system-config-services tuleb käivitada juurkasutajana."
 
@@ -195,7 +220,7 @@ msgstr "system-config-services tuleb käivitada juurkasutajana."
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:290
+#: src/servicemethods.py:289
 msgid ""
 "\n"
 "\n"
@@ -213,30 +238,30 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:336
+#: src/servicemethods.py:335
 msgid "xinetd failed to reload for "
 msgstr "xinetd-i taaslaadimine ebaõnnestus "
 
-#: src/servicemethods.py:337
+#: src/servicemethods.py:336
 msgid ". The error was: "
 msgstr ". Viga oli:"
 
-#: src/servicemethods.py:339
+#: src/servicemethods.py:338
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd taaslaadimine %s õnnestus"
 
-#: src/servicemethods.py:342
+#: src/servicemethods.py:341
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd peab olema lubatud %s käivitamiseks"
 
-#: src/servicemethods.py:347
+#: src/servicemethods.py:346
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s ebaõnnestus. Viga oli: %s"
 
-#: src/servicemethods.py:349
+#: src/servicemethods.py:348
 msgid " successful"
 msgstr " õnnestus"
 
@@ -272,67 +297,43 @@ msgstr "Redigeeritav käivitustase:"
 msgid "None"
 msgstr "Mitte ühtegi"
 
-#: src/serviceconf.glade.h:9
-msgid "Restart"
-msgstr "Taaslae"
-
 #: src/serviceconf.glade.h:10
-msgid "Restart the selected service"
-msgstr "Taaslae valitud teenus"
-
-#: src/serviceconf.glade.h:11
 msgid "Revert To _Last Save"
 msgstr "Taasta viimati salvestatud"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "Käivitustase _3"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "Käivitustase _4"
 
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "Käivitustase _5"
 
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "Seiska _teenus"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "Salvestamise dialoog"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "Teenuse seadistus"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "Teenuse nimi:"
 
 #: src/serviceconf.glade.h:19
-msgid "Start"
-msgstr "Käivita"
-
-#: src/serviceconf.glade.h:20
-msgid "Start the selected service"
-msgstr "Käivita valitud teenus"
-
-#: src/serviceconf.glade.h:21
 msgid "Status"
 msgstr "Seisund"
 
-#: src/serviceconf.glade.h:22
-msgid "Stop"
-msgstr "Seiska"
-
-#: src/serviceconf.glade.h:23
-msgid "Stop the selected service"
-msgstr "Seiska valitud teenus"
-
-#: src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:21
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -340,43 +341,72 @@ msgstr ""
 "Sa oled muutnud käesolevat käivitustased.\n"
 "Kas sa soovid muutusi salvestada?"
 
-#: src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:23
 msgid "_Actions"
 msgstr "_Tegevused"
 
-#: src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:24
 msgid "_Contents"
 msgstr "_Sisu"
 
-#: src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:25
 msgid "_Edit Runlevel"
 msgstr "_Redigeeri käivitustaset"
 
-#: src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:26
 msgid "_File"
 msgstr "_Fail"
 
-#: src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:27
 msgid "_Help"
 msgstr "_Abi"
 
-#: src/serviceconf.glade.h:31
+#: src/serviceconf.glade.h:28
+msgid "_Quit"
+msgstr ""
+
+#: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
 msgstr "Vä_rskenda teenuste loendit"
 
-#: src/serviceconf.glade.h:32
+#: src/serviceconf.glade.h:30
 msgid "_Restart Service"
 msgstr "Taaslae teenus"
 
-#: src/serviceconf.glade.h:33
+#: src/serviceconf.glade.h:31
 msgid "_Save Changes"
 msgstr "_Salvesta muutused"
 
-#: src/serviceconf.glade.h:34
+#: src/serviceconf.glade.h:32
 msgid "_Start Service"
 msgstr "_Käivita teenus"
 
-#: src/serviceconf.glade.h:35
+#: src/serviceconf.glade.h:33
 msgid "_View"
 msgstr "_Vaade"
 
+#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
+#~ msgstr "Autoriõigus (c) 2002 Red Hat, Inc. Kõik õigused reserveeritud."
+
+#~ msgid ""
+#~ "This software may be freely redistributed under the terms of the GPL.\n"
+#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
+#~ "http://bugzilla.redhat.com"
+#~ msgstr ""
+#~ "See tarkvara peab olema vabalt taas välja antud GPL litsensi tingimuste "
+#~ "alusel.\n"
+#~ "Palun teata kõikidest vigadest, mis sa leiad, Red Hat vigade jälituse "
+#~ "süsteemi kaudu:\n"
+#~ "http://bugzilla.redhat.com"
+
+#~ msgid "translator_credits"
+#~ msgstr "Allan Sims <allsi@eau.ee>"
+
+#~ msgid "Restart the selected service"
+#~ msgstr "Taaslae valitud teenus"
+
+#~ msgid "Start the selected service"
+#~ msgstr "Käivita valitud teenus"
+
+#~ msgid "Stop the selected service"
+#~ msgstr "Seiska valitud teenus"
