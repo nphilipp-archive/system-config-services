@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
 "POT-Creation-Date: 2003-12-04 17:18-0500\n"
-"PO-Revision-Date: 2003-11-21 09:33+1000\n"
+"PO-Revision-Date: 2003-12-05 09:59+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Traditional Chinese <i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -157,9 +157,8 @@ msgstr "翻譯"
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:595
-#, fuzzy
 msgid "You must run system-config-services as root."
-msgstr "您必須是 root 才能執行 redhat-config-services。"
+msgstr "您必須是 root 才能執行 system-config-services。"
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -595,3 +594,4 @@ msgstr "檢視(_V)"
 
 #~ msgid "Exit"
 #~ msgstr "離開"
+
