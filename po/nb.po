@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
 "POT-Creation-Date: 2002-10-24 16:22-0400\n"
-"PO-Revision-Date: 2002-08-24 21:12+0200\n"
+"PO-Revision-Date: 2002-11-09 21:34+0100\n"
 "Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -107,11 +107,11 @@ msgstr "Redigerer runlevel: "
 #. set the text in StatusView
 #: src/serviceconf.py:283
 msgid "Unknown"
-msgstr ""
+msgstr "Ukjent"
 
 #: src/serviceconf.py:286
 msgid "xinetd service"
-msgstr ""
+msgstr "xinetd-tjeneste"
 
 #: src/serviceconf.py:354
 msgid ""
@@ -244,7 +244,7 @@ msgstr "Aktivt kjøringsnivå: "
 
 #: src/serviceconf.glade.h:2
 msgid "Description"
-msgstr ""
+msgstr "Beskrivelse"
 
 #: src/serviceconf.glade.h:3
 msgid "Editing Runlevel:"
@@ -291,9 +291,8 @@ msgid "Start the selected service"
 msgstr "Start valgt tjeneste"
 
 #: src/serviceconf.glade.h:14
-#, fuzzy
 msgid "Status"
-msgstr "Start"
+msgstr "Status"
 
 #: src/serviceconf.glade.h:15
 msgid "Stop"
@@ -342,18 +341,3 @@ msgstr "_Lagre endringer"
 #: src/serviceconf.glade.h:26
 msgid "_Start Service"
 msgstr "_Start tjenester"
-
-#~ msgid "Cancel"
-#~ msgstr "Avbryt"
-
-#~ msgid "Quit"
-#~ msgstr "Avslutt"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Gå tilbake til forrige lagrede endring"
-
-#~ msgid "Save"
-#~ msgstr "Lagre"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "Lagre endringene du har gjort"
