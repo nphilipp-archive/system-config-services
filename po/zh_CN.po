@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf1.1\n"
-"POT-Creation-Date: 2002-08-05 10:43-0400\n"
+"POT-Creation-Date: 2002-08-05 10:59-0400\n"
 "PO-Revision-Date: 2002-07-25 13:54+1000\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <i18n@redhat.com>\n"
@@ -258,16 +258,16 @@ msgstr "<新区块>"
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:160
+#: src/serviceconf.py:161
 msgid "Currently Running in Runlevel: "
 msgstr "目前运行级别是："
 
 #. This is a sentry
-#: src/serviceconf.py:171
+#: src/serviceconf.py:172
 msgid "Start at Boot"
 msgstr "在引导时启动"
 
-#: src/serviceconf.py:172
+#: src/serviceconf.py:173
 msgid "Services"
 msgstr "服务"
 
@@ -282,12 +282,12 @@ msgstr "服务"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:217 src/serviceconf.py:299 src/serviceconf.py:308
-#: src/serviceconf.py:332
+#: src/serviceconf.py:218 src/serviceconf.py:300 src/serviceconf.py:309
+#: src/serviceconf.py:333
 msgid "Editing Runlevel: "
 msgstr "编辑运行级别："
 
-#: src/serviceconf.py:314
+#: src/serviceconf.py:315
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -299,11 +299,11 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:344
+#: src/serviceconf.py:345
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "版权 (c) 2002 Red Hat, Inc. 保留所有权利。"
 
-#: src/serviceconf.py:345
+#: src/serviceconf.py:346
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -317,7 +317,7 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:363
+#: src/serviceconf.py:364
 msgid "Help is not available."
 msgstr "没有帮助。"
 
@@ -332,7 +332,7 @@ msgstr "没有帮助。"
 #. ----------------------------------------------------------------------------
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
-#: src/serviceconf.py:481
+#: src/serviceconf.py:482
 msgid "You must run redhat-config-services as root."
 msgstr "你必须作为根用户才能运行 redhat-config-services。"
 
