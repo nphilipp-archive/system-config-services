@@ -297,7 +297,8 @@ class Gui:
         # set the text in txtDesc
         if self.ServiceMethods.dict_services.has_key(self.text_in_row):
             x = self.ServiceMethods.dict_services[self.text_in_row]
-	    self.txtBuffer.set_text(string.strip(x[2]),len(string.strip(x[2])))
+            print x[2]
+	    self.txtBuffer.set_text(string.strip(x[2]))
 	# if an xinetd service is selected, disable these,
         # they'll do nothing
         if self.ServiceMethods.dict_services[self.text_in_row][1] == 1:
@@ -320,7 +321,7 @@ class Gui:
             status=self.ServiceMethods.UNKNOWN
             result = self.ServiceMethods.get_status("xinetd")
             message=result[1]
-        self.txtStatusBuffer.set_text(string.strip(message),len(string.strip(message)))
+        self.txtStatusBuffer.set_text(message.strip())
 
     def toggled_service(self, data, row):
         """Populates txtDesc with the service description of the service selected in clstServices"""
