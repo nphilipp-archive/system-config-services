@@ -57,7 +57,7 @@ msgstr ""
 #: ../src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr "Czy aby na pewno chcesz usunąć %s ?"
+msgstr "Czy aby na pewno chcesz usunąć %s?"
 
 #: ../src/serviceconf.py:195 ../src/serviceconf.glade.h:19
 msgid "Start"
@@ -73,7 +73,7 @@ msgstr "Restart"
 
 #: ../src/serviceconf.py:209
 msgid "_Save"
-msgstr "Zapisz"
+msgstr "Zapi_sz"
 
 #: ../src/serviceconf.py:209
 msgid "Save"
@@ -81,7 +81,7 @@ msgstr "Zapisz"
 
 #: ../src/serviceconf.py:214
 msgid "_Revert"
-msgstr "Przywróć"
+msgstr "P_rzywróć"
 
 #: ../src/serviceconf.py:214
 msgid "Revert"
@@ -105,7 +105,7 @@ msgstr "Przywróć"
 #. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:248
 msgid "Currently Running in Runlevel: "
-msgstr "Aktualnie uruchomiony Runlevel:"
+msgstr "Aktualnie uruchomiony runlevel:"
 
 #: ../src/serviceconf.py:261
 msgid "Services"
@@ -115,7 +115,7 @@ msgstr "Usługi"
 #: ../src/serviceconf.py:464 ../src/serviceconf.py:486
 #: ../src/serviceconf.py:508
 msgid "Editing Runlevel: "
-msgstr "Edycja Runlevel:"
+msgstr "Edycja runlevelu:"
 
 #: ../src/serviceconf.py:379
 msgid "Unknown"
@@ -135,7 +135,7 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
-"Narzędzie Konfiguracji Usług Systemowych VERSION\n"
+"Narzędzie konfiguracji usług systemowych VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat>\n"
 " Bill Nottingham <notting@redhat>\n"
@@ -145,7 +145,7 @@ msgstr ""
 
 #: ../src/serviceconf.py:555
 msgid "About"
-msgstr "O programie"
+msgstr "Informacje o"
 
 #: ../src/serviceconf.py:584
 msgid "Help is not available."
@@ -166,7 +166,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"wymagany jest xinetd dla tej usługi."
+"dla tej usługi wymagany jest xinetd."
 
 #  an unmodified dictionary. Needed to compare for saving etc.
 #  only save changes
@@ -213,7 +213,7 @@ msgstr "Dodaj usługę"
 
 #: ../src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
-msgstr "Aktywny Runlevel:"
+msgstr "Aktywny runlevel:"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Delete Service"
@@ -229,7 +229,7 @@ msgstr "Nie zapisuj"
 
 #: ../src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
-msgstr "Edycja Runlevel:"
+msgstr "Edycja runlevelu:"
 
 #: ../src/serviceconf.glade.h:8
 msgid "None"
@@ -280,32 +280,32 @@ msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
-"Dokonałeś zmian w obecnym runlevel.\n"
+"Dokonałeś zmian w obecnym runlevelu.\n"
 "Czy chcesz zapisać dokonane zmiany?"
 
 #: ../src/serviceconf.glade.h:24
 msgid "_Actions"
-msgstr "Operacje"
+msgstr "Oper_acje"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Contents"
-msgstr "Zawartość"
+msgstr "_Zawartość"
 
 #: ../src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
-msgstr "_Edytuj Runlevel"
+msgstr "_Edytuj runlevel"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_File"
-msgstr "Plik"
+msgstr "_Plik"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Help"
-msgstr "Pomoc"
+msgstr "_Pomoc"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_Quit"
-msgstr "Porzuć"
+msgstr "_Wyjście"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
@@ -313,17 +313,16 @@ msgstr "Odśwież listę usług"
 
 #: ../src/serviceconf.glade.h:31
 msgid "_Restart Service"
-msgstr "Restart usługi"
+msgstr "_Restart usługi"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Save Changes"
-msgstr "Zapisz zmiany"
+msgstr "Zapi_sz zmiany"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Start Service"
-msgstr "Uruchom usługę"
+msgstr "Uruchom u_sługę"
 
 #: ../src/serviceconf.glade.h:34
 msgid "_View"
-msgstr "Widok"
-
+msgstr "_Widok"
