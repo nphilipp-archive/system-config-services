@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
 "POT-Creation-Date: 2002-12-06 11:57-0500\n"
-"PO-Revision-Date: 2002-12-23 16:05+1000\n"
+"PO-Revision-Date: 2003-02-13 06:52+1000\n"
 "Last-Translator: David Barzilay <barzilay@redhat.com>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -159,7 +159,7 @@ msgstr ""
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:522
 msgid "You must run redhat-config-services as root."
-msgstr "Você deve executar redhat-config-services como 'root'."
+msgstr "Você deve executar redhat-config-services como root."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
