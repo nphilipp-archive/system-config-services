@@ -1,6 +1,10 @@
 2002-07-24  Daniel J Walsh  <dwalsh@localhost.localdomain>
 
-	* /usr/local/CVS/redhat-config-services/ChangeLog: release 0.8.1
+	* /usr/local/CVS/redhat-config-services/redhat-config-services.sh, /usr/local/CVS/redhat-config-services/src/redhat-config-services.sh:
+	move from toplevel
+
+	* /usr/local/CVS/redhat-config-services/ChangeLog, /usr/local/CVS/redhat-config-services/redhat-config-services.spec.in:
+	release 0.8.1
 
 	* /usr/local/CVS/redhat-config-services/src/Makefile.am: add all files
 

@@ -2,7 +2,9 @@ PYTHON_FILES = checklist.py dnsdata.py serviceconf.py dnsdata_base.py  FwdZone.p
 
 GLADE_FILES = serviceconf.glade
 
-EXTRA_DIST = $(PYTHON_FILES) $(GLADE_FILES) 
+SCRIPT_FILES = redhat-config-services.sh
+
+EXTRA_DIST = $(PYTHON_FILES) $(GLADE_FILES) $(SCRIPT_FILES)
 
 execdir = $(sbindir)
 
@@ -21,6 +23,7 @@ install-exec-local:
 	install -m 0755 $(srcdir)/dnsdata_base.py $(DESTDIR)$(pkgdatadir)/
 	install -m 0755 $(srcdir)/FwdZone.py $(DESTDIR)$(pkgdatadir)/
 	install -m 0755 $(srcdir)/servicemethods.py $(DESTDIR)$(pkgdatadir)/
+	install -m 0755 $(srcdir)/redhat-config-services.sh $(DESTDIR)$(pkgdatadir)/redhat-config-services
 	softdir=$(pkgdatadir); \
 	p=$(DESTDIR) ; \
 	softdir=$${softdir/#$$p} ; \
