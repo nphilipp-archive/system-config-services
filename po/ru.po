@@ -1,4 +1,4 @@
-# 
+#
 # translation of ru.po to
 # translation of ru.po to
 # translation of ru.po to
@@ -9,20 +9,21 @@
 # Copyright (C) YEAR ORGANIZATION.
 # Leonid Kanter <leon@geon.donetsk.ua>, 2003.
 # Leonid Kanter <leon@asplinux.ru>, 2004.
+# Andrew Martynov <andrewm@inventa.ru>, 2004.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-04-06 14:50-0400\n"
-"PO-Revision-Date: 2004-03-11 16:33+0200\n"
-"Last-Translator: Leonid Kanter <leon@asplinux.ru>\n"
-"Language-Team:  <ru@li.org>\n"
+"PO-Revision-Date: 2004-04-11 17:43+0400\n"
+"Last-Translator: Andrew Martynov <andrewm@inventa.ru>\n"
+"Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
-"X-Generator: KBabel 1.3.1\n"
+"X-Generator: KBabel 1.3\n"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -93,9 +94,8 @@ msgid "Restart"
 msgstr "Перезапустить"
 
 #: src/serviceconf.py:201
-#, fuzzy
 msgid "_Save"
-msgstr "Сохранить"
+msgstr "Со_хранить"
 
 #: src/serviceconf.py:201
 msgid "Save"
@@ -103,12 +103,11 @@ msgstr "Сохранить"
 
 #: src/serviceconf.py:206
 msgid "_Revert"
-msgstr ""
+msgstr "Во_сстановить"
 
 #: src/serviceconf.py:206
-#, fuzzy
 msgid "Revert"
-msgstr "Перезапустить"
+msgstr "Восстановить"
 
 #. the textbox
 #. the statusbox
@@ -123,7 +122,7 @@ msgstr "Текущий уровень запуска:"
 #. This is a sentry
 #: src/serviceconf.py:251
 msgid "Start at Boot"
-msgstr "Запускать при загрузке"
+msgstr "Запускать при загрузке системы"
 
 #: src/serviceconf.py:252
 msgid "Services"
@@ -167,10 +166,18 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"Утилита настройки системных сервисов\n"
+"System Services Configuration Tool VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 
 #: src/serviceconf.py:482
 msgid "About"
-msgstr ""
+msgstr "О программе"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -284,7 +291,7 @@ msgstr "Добавить службу"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
-msgstr "Текуущий уровень запуска:"
+msgstr "Текущий уровень запуска:"
 
 #: src/serviceconf.glade.h:4
 msgid "Delete Service"
@@ -347,7 +354,7 @@ msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
-"Были сделаны изменения текущего уровня запуска.\n"
+"Были сделаны изменения текущего уровня выполнения.\n"
 "Сохранить изменения?"
 
 #: src/serviceconf.glade.h:23
@@ -371,7 +378,6 @@ msgid "_Help"
 msgstr "_Справка"
 
 #: src/serviceconf.glade.h:28
-#, fuzzy
 msgid "_Quit"
 msgstr "Выход"
 
@@ -395,240 +401,3 @@ msgstr "_Запустить службу"
 msgid "_View"
 msgstr "_Вид"
 
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "Copyright (c) 2002 Red Hat, Inc. Все права защищены."
-
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "Это ПО может свободно распространяться на условиях GPL.\n"
-#~ "Сообщайте о всех найденных ошибках системе обработки ошибок Red Hat:\n"
-#~ "http://bugzilla.redhat.com"
-
-#~ msgid "translator_credits"
-#~ msgstr "Leonid Kanter <leon@asplinux.ru>"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "Перезапустить выбранную службу"
-
-#~ msgid "Start the selected service"
-#~ msgstr "Запустить выбранную службу"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "Остановить выбранную службу"
-
-#~ msgid "xinetd service"
-#~ msgstr "служба xinetd"
-
-#~ msgid "Cancel"
-#~ msgstr "Отмена"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Вернуться к последнему сохраненному состоянию"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "Сохранить сделанные изменения"
-
-#~ msgid "Directory "
-#~ msgstr "Каталог "
-
-#~ msgid " does not begin with a slash!"
-#~ msgstr " не начинается с \"/\"!"
-
-#~ msgid " is not an existing directory!"
-#~ msgstr " не существует!"
-
-#~ msgid "Master "
-#~ msgstr "Мастер "
-
-#~ msgid " is not a valid IP address."
-#~ msgstr " не является действительным адресом IP."
-
-#~ msgid " is defined twice."
-#~ msgstr " определен дважды."
-
-#~ msgid "Slave zone name "
-#~ msgstr "Имя вторичной зоны "
-
-#~ msgid " is not a valid domain name."
-#~ msgstr " не является действительным доменным именем."
-
-#~ msgid "Forwarder "
-#~ msgstr "Forwarder "
-
-#~ msgid " is not a valid Ip address."
-#~ msgstr " Не является действительным адресом IP."
-
-#~ msgid "Primary Nameserver not defined."
-#~ msgstr "Первичный сервер DNS не определен."
-
-#~ msgid "Primary Nameserver `"
-#~ msgstr "Первичный сервер DNS `"
-
-#~ msgid "' has no . at the end. You must use a full hostname."
-#~ msgstr "' не имеет . в конце. Вы должны использовать полное имя узла."
-
-#~ msgid "' is not a valid hostname or IP address."
-#~ msgstr "' не является действительным адресом IP или именем узла."
-
-#~ msgid "Refresh value should be bigger than Retry"
-#~ msgstr "Значение Refresh должно быть больше, чем Retry"
-
-#~ msgid "Serial number must be >= 1."
-#~ msgstr "Serial number должен быть >= 1."
-
-#~ msgid "Refresh value must be >= 0."
-#~ msgstr "Значение Refresh должно быть >= 0."
-
-#~ msgid "Retry value must be >= 0."
-#~ msgstr "Значение Retry должно быть >= 0."
-
-#~ msgid "Expire value must be >= 0."
-#~ msgstr "Значение Expire должно быть >= 0."
-
-#~ msgid "Minimum value must be >= 0."
-#~ msgstr "Минимальное значение должно быть >=0"
-
-#~ msgid "NewHost"
-#~ msgstr "NewHost"
-
-#~ msgid "PTR hostname not defined"
-#~ msgstr "PTR hostname не определено"
-
-#~ msgid "PTR hostname `"
-#~ msgstr "PTR hostname `"
-
-#~ msgid " is not a valid hostname."
-#~ msgstr " не является действительным именем узла."
-
-#~ msgid " must be in the range 0..255."
-#~ msgstr " должен быть в диапазоне 0..255"
-
-#~ msgid "IP "
-#~ msgstr "IP "
-
-#~ msgid "Nameserver "
-#~ msgstr "Сервер DNS "
-
-#~ msgid " is not a valid host or domain name."
-#~ msgstr " не является действительным адресом узла или домена."
-
-#~ msgid " is defined twice for "
-#~ msgstr " определен дважды для "
-
-#~ msgid "New"
-#~ msgstr "Создать"
-
-#~ msgid "Alias "
-#~ msgstr "Псевдоним "
-
-#~ msgid "<New Forward Zone>"
-#~ msgstr "<New Forward Zone>"
-
-#~ msgid "Forward zone name "
-#~ msgstr "Forward zone name "
-
-#~ msgid "Zone "
-#~ msgstr "Зона "
-
-#~ msgid "<New Reverse Zone>"
-#~ msgstr "<New Reverse Zone>"
-
-#~ msgid "Reverse zone name `"
-#~ msgstr "Имя обратной зоны `"
-
-#~ msgid "' is not the end of a reverse IP address."
-#~ msgstr "' не является завершением обратного адреса IP."
-
-#~ msgid "Reverse zone `"
-#~ msgstr "Обратная зона '"
-
-#~ msgid "' must list at least one name server"
-#~ msgstr "' должна включать хотя бы один сервер DNS"
-
-#~ msgid "Reverse zone "
-#~ msgstr "Обратная зона "
-
-#~ msgid "<New Zone>"
-#~ msgstr "<New Zone>"
-
-#~ msgid " aliased to "
-#~ msgstr " является ссылкой на "
-
-#~ msgid "You must enter a host name."
-#~ msgstr "Необходимо указать имя узла."
-
-#~ msgid "You must enter an alias."
-#~ msgstr "Необходимо указать псевдоним"
-
-#~ msgid "An alias with this name already exists."
-#~ msgstr "Псевдоним с таким именем уже существует"
-
-#~ msgid " at priority "
-#~ msgstr " с приоритетом "
-
-#~ msgid "Mail Exchanger for %s"
-#~ msgstr "Mail Exchanger для %s"
-
-#~ msgid "Edit Mail Exchanger"
-#~ msgstr "Изменить Mail Exchanger"
-
-#~ msgid "Add a Mail Exchanger"
-#~ msgstr "Добавить Mail Exchanger"
-
-#~ msgid "You must enter an priority."
-#~ msgstr "Вы должны указать приоритет."
-
-#~ msgid " served by "
-#~ msgstr " обслуживается "
-
-#~ msgid "You must enter a resolution address."
-#~ msgstr "You must enter a resolution address."
-
-#~ msgid "NS hostname `"
-#~ msgstr "NS hostname `"
-
-#~ msgid "SOA Refresh value should be bigger than Retry"
-#~ msgstr "Величина SOA Refresh должна быть больше чем Retry"
-
-#~ msgid "Forward zone `"
-#~ msgstr "Зона Forward `"
-
-#~ msgid "Settings for %s"
-#~ msgstr "Параметры для %s"
-
-#~ msgid "_Manual"
-#~ msgstr "_Руководство"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "Обновить список служб"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr ""
-#~ "Произвести действия, такие как start, stop и restart, над выбранной "
-#~ "службой"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Выберите уровень запуска, который вы собираетесь изменить"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "Уровень запуска 3 - это многопользовательский режим с сетью"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr ""
-#~ "Уровень запуска 4 зарезервирован для локального уточнения и как правило "
-#~ "не используется."
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr ""
-#~ "Уровень запуска 5 - это многопользовательский режим с сетью и системой X "
-#~ "Window"
-
-#~ msgid "Read Manual"
-#~ msgstr "Чтение руководства"
-
-#~ msgid "Exit"
-#~ msgstr "Выход"
