@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf1.1\n"
-"POT-Creation-Date: 2002-12-06 11:57-0500\n"
+"POT-Creation-Date: 2003-01-09 10:22-0500\n"
 "PO-Revision-Date: 2002-10-03 10:49GMT+10:00\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
@@ -265,76 +265,77 @@ msgid "Restart the selected service"
 msgstr "重启选定的服务"
 
 #: src/serviceconf.glade.h:7
+#, fuzzy
+msgid "Revert To _Last Save"
+msgstr "还原到上一次储存"
+
+#: src/serviceconf.glade.h:8
 msgid "Runlevel _3"
 msgstr "运行级别 _3"
 
-#: src/serviceconf.glade.h:8
+#: src/serviceconf.glade.h:9
 msgid "Runlevel _4"
 msgstr "运行级别 _4"
 
-#: src/serviceconf.glade.h:9
+#: src/serviceconf.glade.h:10
 msgid "Runlevel _5"
 msgstr "运行级别 _5"
 
-#: src/serviceconf.glade.h:10
+#: src/serviceconf.glade.h:11
 msgid "S_top Service"
 msgstr "停止服务(_T)"
 
-#: src/serviceconf.glade.h:11
+#: src/serviceconf.glade.h:12
 msgid "Service Configuration"
 msgstr "服务配置"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:13
 msgid "Start"
 msgstr "开始"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:14
 msgid "Start the selected service"
 msgstr "启动选定的服务"
 
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:15
 msgid "Status"
 msgstr "状态"
 
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:16
 msgid "Stop"
 msgstr "停止"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:17
 msgid "Stop the selected service"
 msgstr "停运选定的服务"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:18
 msgid "_Actions"
 msgstr "行动(_A)"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:19
 msgid "_Contents"
 msgstr "内容(_C)"
 
-#: src/serviceconf.glade.h:19
+#: src/serviceconf.glade.h:20
 msgid "_Edit Runlevel"
 msgstr "编辑运行级别(_E)"
 
-#: src/serviceconf.glade.h:20
+#: src/serviceconf.glade.h:21
 msgid "_File"
 msgstr "文件(_F)"
 
-#: src/serviceconf.glade.h:21
+#: src/serviceconf.glade.h:22
 msgid "_Help"
 msgstr "帮助(_H)"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:23
 msgid "_Refresh Service List"
 msgstr "刷新服务列表(_R)"
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:24
 msgid "_Restart Service"
 msgstr "重启服务(_R)"
-
-#: src/serviceconf.glade.h:24
-msgid "_Revert To Last Save"
-msgstr "还原到上一次储存"
 
 #: src/serviceconf.glade.h:25
 msgid "_Save Changes"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: 2002-12-06 11:57-0500\n"
+"POT-Creation-Date: 2003-01-09 10:22-0500\n"
 "PO-Revision-Date: 2002-10-03 09:06+1000\n"
 "Last-Translator: Yelitza Louze <ylouze@redhat.com>\n"
 "Language-Team:  <es@li.org>\n"
@@ -302,102 +302,103 @@ msgstr "Reiniciar"
 msgid "Restart the selected service"
 msgstr "Reiniciar el servicio seleccionado"
 
+# serviceconf.gladestrings:20
+#: src/serviceconf.glade.h:7
+#, fuzzy
+msgid "Revert To _Last Save"
+msgstr "_Volver a lo último guardado"
+
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
 # serviceconf.gladestrings:32
-#: src/serviceconf.glade.h:7
+#: src/serviceconf.glade.h:8
 msgid "Runlevel _3"
 msgstr "Nivel de ejecución _3"
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
 # serviceconf.gladestrings:34
-#: src/serviceconf.glade.h:8
+#: src/serviceconf.glade.h:9
 msgid "Runlevel _4"
 msgstr "Nivel de ejecución _4"
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
 # serviceconf.gladestrings:36
-#: src/serviceconf.glade.h:9
+#: src/serviceconf.glade.h:10
 msgid "Runlevel _5"
 msgstr "Nivel de ejecución _5"
 
 # ../serviceconf.py:144
 # serviceconf.gladestrings:26
-#: src/serviceconf.glade.h:10
+#: src/serviceconf.glade.h:11
 msgid "S_top Service"
 msgstr "_Parar Servicio"
 
 # serviceconf.gladestrings:14
-#: src/serviceconf.glade.h:11
+#: src/serviceconf.glade.h:12
 msgid "Service Configuration"
 msgstr "Configuración del servicio"
 
 # serviceconf.gladestrings:9 serviceconf.gladestrings:46
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:13
 msgid "Start"
 msgstr "Comenzar"
 
 # serviceconf.gladestrings:8 serviceconf.gladestrings:23
 # serviceconf.gladestrings:45
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:14
 msgid "Start the selected service"
 msgstr "Comenzar el servicio seleccionado"
 
 # serviceconf.gladestrings:9 serviceconf.gladestrings:46
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:15
 msgid "Status"
 msgstr "Estatus"
 
 # serviceconf.gladestrings:11 serviceconf.gladestrings:48
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:16
 msgid "Stop"
 msgstr "Parar"
 
 # serviceconf.gladestrings:10 serviceconf.gladestrings:25
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:17
 msgid "Stop the selected service"
 msgstr "Parar el servicio seleccionado"
 
 # serviceconf.gladestrings:22
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:18
 msgid "_Actions"
 msgstr "_Acciones"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:19
 msgid "_Contents"
 msgstr "_Contenido"
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
 # serviceconf.gladestrings:30
-#: src/serviceconf.glade.h:19
+#: src/serviceconf.glade.h:20
 msgid "_Edit Runlevel"
 msgstr "_Editar nivel de ejecución"
 
-#: src/serviceconf.glade.h:20
+#: src/serviceconf.glade.h:21
 msgid "_File"
 msgstr "_Fichero"
 
-#: src/serviceconf.glade.h:21
+#: src/serviceconf.glade.h:22
 msgid "_Help"
 msgstr "_Ayuda"
 
 # serviceconf.gladestrings:16
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:23
 msgid "_Refresh Service List"
 msgstr "_Refrescar la lista de servicios"
 
 # serviceconf.gladestrings:28
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:24
 msgid "_Restart Service"
 msgstr "_Reiniciar Servicio"
-
-# serviceconf.gladestrings:20
-#: src/serviceconf.glade.h:24
-msgid "_Revert To Last Save"
-msgstr "_Volver a lo último guardado"
 
 # serviceconf.gladestrings:18
 #: src/serviceconf.glade.h:25

@@ -1,4 +1,15 @@
+2003-01-09  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* redhat-config-services.desktop.in, redhat-config-services.spec.in, src/serviceconf.glade:
+	Add accellerators
+
+2002-12-24  barzilay  <barzilay@redhat.com>
+
+	* po/pt_BR.po: updated2412
+
 2002-12-12  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* ChangeLog, po/messages.mo: release 0.8.3
 
 	* redhat-config-services.spec.in: Update to latest docs
 

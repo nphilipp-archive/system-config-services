@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2002-12-06 11:57-0500\n"
+"POT-Creation-Date: 2003-01-09 10:22-0500\n"
 "PO-Revision-Date: 2002-10-03 09:37+1000\n"
 "Last-Translator: Francesco Valente <fvalen@redhat.com>\n"
 "Language-Team: Italian <i18n-list@redhat.com>\n"
@@ -265,76 +265,77 @@ msgid "Restart the selected service"
 msgstr "Riavviare il servizio selezionato"
 
 #: src/serviceconf.glade.h:7
+#, fuzzy
+msgid "Revert To _Last Save"
+msgstr "_Torna all'ultimo salvataggio"
+
+#: src/serviceconf.glade.h:8
 msgid "Runlevel _3"
 msgstr "Runlevel _3"
 
-#: src/serviceconf.glade.h:8
+#: src/serviceconf.glade.h:9
 msgid "Runlevel _4"
 msgstr "Runlevel _4"
 
-#: src/serviceconf.glade.h:9
+#: src/serviceconf.glade.h:10
 msgid "Runlevel _5"
 msgstr "Runlevel _5"
 
-#: src/serviceconf.glade.h:10
+#: src/serviceconf.glade.h:11
 msgid "S_top Service"
 msgstr "A_rresta servizio"
 
-#: src/serviceconf.glade.h:11
+#: src/serviceconf.glade.h:12
 msgid "Service Configuration"
 msgstr "Configurazione del servizio"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:13
 msgid "Start"
 msgstr "Avviare"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:14
 msgid "Start the selected service"
 msgstr "Avviare il servizio selezionato"
 
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:15
 msgid "Status"
 msgstr "Stato"
 
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:16
 msgid "Stop"
 msgstr "Arrestare"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:17
 msgid "Stop the selected service"
 msgstr "Arrestare il servizio selezionato"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:18
 msgid "_Actions"
 msgstr "_Azioni"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:19
 msgid "_Contents"
 msgstr "_Contenuto"
 
-#: src/serviceconf.glade.h:19
+#: src/serviceconf.glade.h:20
 msgid "_Edit Runlevel"
 msgstr "_Modifica runlevel"
 
-#: src/serviceconf.glade.h:20
+#: src/serviceconf.glade.h:21
 msgid "_File"
 msgstr "_File"
 
-#: src/serviceconf.glade.h:21
+#: src/serviceconf.glade.h:22
 msgid "_Help"
 msgstr "_Help"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:23
 msgid "_Refresh Service List"
 msgstr "_Aggiorna elenco servizi"
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:24
 msgid "_Restart Service"
 msgstr "_Riavvia servizio"
-
-#: src/serviceconf.glade.h:24
-msgid "_Revert To Last Save"
-msgstr "_Torna all'ultimo salvataggio"
 
 #: src/serviceconf.glade.h:25
 msgid "_Save Changes"

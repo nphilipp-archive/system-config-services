@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2002-12-06 11:57-0500\n"
+"POT-Creation-Date: 2003-01-09 10:22-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -257,75 +257,75 @@ msgid "Restart the selected service"
 msgstr ""
 
 #: src/serviceconf.glade.h:7
-msgid "Runlevel _3"
+msgid "Revert To _Last Save"
 msgstr ""
 
 #: src/serviceconf.glade.h:8
-msgid "Runlevel _4"
+msgid "Runlevel _3"
 msgstr ""
 
 #: src/serviceconf.glade.h:9
-msgid "Runlevel _5"
+msgid "Runlevel _4"
 msgstr ""
 
 #: src/serviceconf.glade.h:10
-msgid "S_top Service"
+msgid "Runlevel _5"
 msgstr ""
 
 #: src/serviceconf.glade.h:11
-msgid "Service Configuration"
+msgid "S_top Service"
 msgstr ""
 
 #: src/serviceconf.glade.h:12
-msgid "Start"
+msgid "Service Configuration"
 msgstr ""
 
 #: src/serviceconf.glade.h:13
-msgid "Start the selected service"
+msgid "Start"
 msgstr ""
 
 #: src/serviceconf.glade.h:14
-msgid "Status"
+msgid "Start the selected service"
 msgstr ""
 
 #: src/serviceconf.glade.h:15
-msgid "Stop"
+msgid "Status"
 msgstr ""
 
 #: src/serviceconf.glade.h:16
-msgid "Stop the selected service"
+msgid "Stop"
 msgstr ""
 
 #: src/serviceconf.glade.h:17
-msgid "_Actions"
+msgid "Stop the selected service"
 msgstr ""
 
 #: src/serviceconf.glade.h:18
-msgid "_Contents"
+msgid "_Actions"
 msgstr ""
 
 #: src/serviceconf.glade.h:19
-msgid "_Edit Runlevel"
+msgid "_Contents"
 msgstr ""
 
 #: src/serviceconf.glade.h:20
-msgid "_File"
+msgid "_Edit Runlevel"
 msgstr ""
 
 #: src/serviceconf.glade.h:21
-msgid "_Help"
+msgid "_File"
 msgstr ""
 
 #: src/serviceconf.glade.h:22
-msgid "_Refresh Service List"
+msgid "_Help"
 msgstr ""
 
 #: src/serviceconf.glade.h:23
-msgid "_Restart Service"
+msgid "_Refresh Service List"
 msgstr ""
 
 #: src/serviceconf.glade.h:24
-msgid "_Revert To Last Save"
+msgid "_Restart Service"
 msgstr ""
 
 #: src/serviceconf.glade.h:25

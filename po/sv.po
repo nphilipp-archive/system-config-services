@@ -1,12 +1,12 @@
 # Swedish messages for serviceconf.
 # Copyright (C) 2001 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.27 2002/12/06 16:50:40 dwalsh Exp $
+# $Id: sv.po,v 1.28 2003/01/09 15:13:44 dwalsh Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2002-12-06 11:57-0500\n"
+"POT-Creation-Date: 2003-01-09 10:22-0500\n"
 "PO-Revision-Date: 2002-10-03 14:20+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -264,76 +264,77 @@ msgid "Restart the selected service"
 msgstr "Starta om den markerade tjänsten"
 
 #: src/serviceconf.glade.h:7
+#, fuzzy
+msgid "Revert To _Last Save"
+msgstr "_Återgå till senast sparade"
+
+#: src/serviceconf.glade.h:8
 msgid "Runlevel _3"
 msgstr "Körnivå _3"
 
-#: src/serviceconf.glade.h:8
+#: src/serviceconf.glade.h:9
 msgid "Runlevel _4"
 msgstr "Körnivå _4"
 
-#: src/serviceconf.glade.h:9
+#: src/serviceconf.glade.h:10
 msgid "Runlevel _5"
 msgstr "Körnivå _5"
 
-#: src/serviceconf.glade.h:10
+#: src/serviceconf.glade.h:11
 msgid "S_top Service"
 msgstr "S_toppa tjänst"
 
-#: src/serviceconf.glade.h:11
+#: src/serviceconf.glade.h:12
 msgid "Service Configuration"
 msgstr "Konfiguration av tjänst"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:13
 msgid "Start"
 msgstr "Starta"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:14
 msgid "Start the selected service"
 msgstr "Starta den markerade tjänsten"
 
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:15
 msgid "Status"
 msgstr "Status"
 
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:16
 msgid "Stop"
 msgstr "Stoppa"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:17
 msgid "Stop the selected service"
 msgstr "Stoppa den markerade tjänsten"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:18
 msgid "_Actions"
 msgstr "_Åtgärder"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:19
 msgid "_Contents"
 msgstr "_Innehåll"
 
-#: src/serviceconf.glade.h:19
+#: src/serviceconf.glade.h:20
 msgid "_Edit Runlevel"
 msgstr "_Redigera körnivå"
 
-#: src/serviceconf.glade.h:20
+#: src/serviceconf.glade.h:21
 msgid "_File"
 msgstr "_Arkiv"
 
-#: src/serviceconf.glade.h:21
+#: src/serviceconf.glade.h:22
 msgid "_Help"
 msgstr "_Hjälp"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:23
 msgid "_Refresh Service List"
 msgstr "_Uppdatera tjänstelistan"
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:24
 msgid "_Restart Service"
 msgstr "Starta _om tjänst"
-
-#: src/serviceconf.glade.h:24
-msgid "_Revert To Last Save"
-msgstr "_Återgå till senast sparade"
 
 #: src/serviceconf.glade.h:25
 msgid "_Save Changes"
