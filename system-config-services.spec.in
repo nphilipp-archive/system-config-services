@@ -2,7 +2,7 @@
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: @PACKAGE@
 Version: @VERSION@
-Release: 7
+Release: 8
 URL: http://www.redhat.com/ 
 Source0: %{name}-%{version}.tar.gz
 License: GPL
@@ -49,6 +49,7 @@ rm -rf %{buildroot}
 %{_sbindir}/*
 %{_bindir}/*
 %{_datadir}/applications/system-config-services.desktop
+%attr(0644,root,root) %{_datadir}/icons/hicolor/48x48/apps/system-config-services.png
 %{_datadir}/system-config-services
 %config %{_sysconfdir}/pam.d/system-config-services
 %config %{_sysconfdir}/security/console.apps/system-config-services
@@ -57,6 +58,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Apr 12 2004 Brent Fox <bfox@redhat.com> 0.8.8-8
+- fix icon path (bug #120184)
+
 * Tue Apr  6 2004 Brent Fox <bfox@redhat.com> 0.8.8-7
 - remove extra strip (bug #119624)
 
