@@ -1,15 +1,15 @@
-# $Id: cs.po,v 1.30 2003/01/09 15:13:44 dwalsh Exp $
+# $Id: cs.po,v 1.31 2003/01/09 16:21:00 mitr Exp $
 #
 # Czech translation for serviceconf
 # Copyright (C) 2001 Free Software Foundation, Inc.
 # Milan Kerslager <kerslage@linux.cz>, 2001
-# Miloslav Trmac <mitr@volny.cz>, 2002
+# Miloslav Trmac <mitr@volny.cz>, 2002, 2003
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf 1.0\n"
 "POT-Creation-Date: 2003-01-09 10:22-0500\n"
-"PO-Revision-Date: 2002-10-10 19:52+0200\n"
+"PO-Revision-Date: 2003-01-09 17:30+0100\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -268,9 +268,8 @@ msgid "Restart the selected service"
 msgstr "Restartovat vybrané služby"
 
 #: src/serviceconf.glade.h:7
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "_Návrat k uloženému"
+msgstr "Vrátit se k _poslednímu uloženému stavu"
 
 #: src/serviceconf.glade.h:8
 msgid "Runlevel _3"
@@ -347,15 +346,6 @@ msgstr "_Uložit změny"
 #: src/serviceconf.glade.h:26
 msgid "_Start Service"
 msgstr "_Spustit službu"
-
-#~ msgid "Quit"
-#~ msgstr "Konec"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Návrat k poslednímu uloženému stavu"
-
-#~ msgid "Save"
-#~ msgstr "Uložit"
 
 #~ msgid "Save the changes you have made"
 #~ msgstr "Uložit provedené změny"
