@@ -1,12 +1,12 @@
 # SLOVENIAN TRANSLATION OF REDHAT-CONFIG-SERVICES.
 # Copyright (C) 2003 Free Software Foundation.
 # Roman Maurer <roman@lugos.si>, 2003.
-# $Id: sl.po,v 1.7 2004/03/16 21:15:25 bfox Exp $
+# $Id: sl.po,v 1.8 2004/03/22 21:03:25 bfox Exp $
 # $Source: /home/fedora/mmcgrath/elvis/cvs/redhat-config-services/po/sl.po,v $
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: redhat-config-services 0.8.4\n"
+"Project-Id-Version: system-config-services 0.8.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
 "PO-Revision-Date: 2003-09-26 22:59+0200\n"
@@ -186,7 +186,7 @@ msgstr ""
 #: src/serviceconf.py:649
 #, fuzzy
 msgid "You must run system-config-services as root."
-msgstr "Program redhat-config-services morate zagnati kot root."
+msgstr "Program system-config-services morate zagnati kot root."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.

@@ -1,10 +1,10 @@
-# Copyright (C) 2002, 2003, 2004 redhat-config-services' COPYRIGHT HOLDER
+# Copyright (C) 2002, 2003, 2004 system-config-services' COPYRIGHT HOLDER
 # Copyright (C) 2004 Miloslav Trmac <mitr@volny.cz>
 #
 # Miloslav Trmac <mitr@volny.cz>, 2002, 2003, 2004.
 msgid ""
 msgstr ""
-"Project-Id-Version: redhat-config-services\n"
+"Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
 "PO-Revision-Date: 2004-03-17 20:54+0100\n"

@@ -3,7 +3,7 @@
 # José Nuno Pires <jncp@netcabo.pt>
 msgid ""
 msgstr ""
-"Project-Id-Version: redhat-config-services\n"
+"Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
 "PO-Revision-Date: 2004-03-17 19:25+0000\n"

@@ -1,11 +1,11 @@
-# Malay Translation of redhat-config-services
+# Malay Translation of system-config-services
 # Copyright (C) 2002 Projek Gabai http://gabai.sf.net
 # Hasbullah Bin Pit <sebol@ikhlas.com>, 2002. Merlimau.
 # Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>, 2004
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: redhat-config-services\n"
+"Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
 "PO-Revision-Date: 2004-03-17 14:19+0800\n"

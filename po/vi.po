@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: redhat-config-services VERSION\n"
+"Project-Id-Version: system-config-services VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
 "PO-Revision-Date: 2003-10-19 01:06+0700\n"
@@ -185,7 +185,7 @@ msgstr ""
 #: src/serviceconf.py:649
 #, fuzzy
 msgid "You must run system-config-services as root."
-msgstr "Bạn chỉ có thể chạy redhat-config-services nếu là root."
+msgstr "Bạn chỉ có thể chạy system-config-services nếu là root."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.

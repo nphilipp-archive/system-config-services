@@ -1,11 +1,11 @@
-# greek translation of redhat-config-services
+# greek translation of system-config-services
 # Copyright (C) 2002 Nikos Charonitakis
 # This file is distributed under the same license as the PACKAGE package.
 # Nikos Charonitakis <charosn@her.forthnet.gr>, 2002.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: redhat-config-services\n"
+"Project-Id-Version: system-config-services\n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
 "PO-Revision-Date: 2004-03-20 20:46-0200\n"
 "Last-Translator: Nikos Charonitakis <charosn@her.fothnet.gr>\n"

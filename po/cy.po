@@ -183,7 +183,7 @@ msgstr ""
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:649
 msgid "You must run system-config-services as root."
-msgstr "Rhaid i chi redeg redhat-config-services fel gwraidd."
+msgstr "Rhaid i chi redeg system-config-services fel gwraidd."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.

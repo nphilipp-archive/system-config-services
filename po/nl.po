@@ -1,6 +1,6 @@
-# Translation of redhat-config-services to Dutch.
+# Translation of system-config-services to Dutch.
 # Copyright (C) 2002 Taco Witte
-# This file is distributed under the same license as the redhat-config-services package.
+# This file is distributed under the same license as the system-config-services package.
 # Taco Witte <T.C.Witte@phys.uu.nl>, 2002.
 # Tino Meinen <a.t.meinen@chello.nl>, 2003.
 # Peter van Egdom <p.van.egdom@chello.nl>, 2003, 2004.

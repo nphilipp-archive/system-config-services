@@ -1,11 +1,11 @@
-# translation of redhat-config-services.po to Simplified Chinese
+# translation of system-config-services.po to Simplified Chinese
 # Simplified Chinese Version of serviceconf.
 # Copyright (C) 2002 Red Hat, Inc.
 # Sarah Wang <sarahs@redhat.com>, 2003,2004
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: redhat-config-services\n"
+"Project-Id-Version: system-config-services\n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
 "PO-Revision-Date: 2004-03-17 14:12+0800\n"
 "Last-Translator: hutuworm <hutuworm@hutuworm.org>\n"

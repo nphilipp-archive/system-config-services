@@ -158,7 +158,7 @@ msgstr ""
 #: src/serviceconf.py:639
 #, fuzzy
 msgid "You must run system-config-services as root."
-msgstr "आपको redhat-config-services को root जैसा चलाना है।"
+msgstr "आपको system-config-services को root जैसा चलाना है।"
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.

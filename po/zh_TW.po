@@ -1,5 +1,5 @@
 # Translation of zh_TW.po to Traditional Chinese
-# Translation of redhat-config-services to Chinese (traditional)
+# Translation of system-config-services to Chinese (traditional)
 # Copyright (C) 2002 Red Hat Inc.
 # Ben Wu <hpwu@redhat.com>, 2002,2003, 2004.
 #

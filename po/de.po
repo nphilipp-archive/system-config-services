@@ -1,7 +1,7 @@
 # translation of de.po to German
 # translation of de.po to
-# translation of redhat-config-services.po to Deutsch
-# translation of redhat-config-services.po to
+# translation of system-config-services.po to Deutsch
+# translation of system-config-services.po to
 # translation of de.po to Deutsch
 # Copyright (C) 2001 Red Hat, Inc.
 # Claudia Krug <fhonig@redhat.it>, 2001.
