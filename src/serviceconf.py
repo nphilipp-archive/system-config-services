@@ -112,7 +112,7 @@ class Gui:
     def destroy(self, args):
         if gtk.__dict__.has_key ("main_quit"):
             gtk.main_quit()
-        else
+        else:
             gtk.mainquit()
 
     """This class handles everything gui for the system-config-services application"""
