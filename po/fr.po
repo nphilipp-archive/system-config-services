@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "POT-Creation-Date: 2003-07-30 09:38-0400\n"
-"PO-Revision-Date: 2003-07-10 09:16+1000\n"
+"PO-Revision-Date: 2003-07-31 09:47+1000\n"
 "Last-Translator: Audrey Simons <asimons@redhat.com>\n"
 "Language-Team: french <fr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -190,7 +190,6 @@ msgstr "Vous devez exécuter redhat-config-services en tant que root."
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
 #: src/servicemethods.py:286
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -198,7 +197,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Vous devez activer xinetd de façon à ce qu'il utilise ce service."
+"xinetd est requis pour ce service."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -428,3 +427,4 @@ msgstr "_Vue"
 
 #~ msgid "Exit"
 #~ msgstr "Fermer"
+
