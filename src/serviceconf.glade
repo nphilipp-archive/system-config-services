@@ -141,6 +141,7 @@
 			  <property name="label" translatable="yes">_Refresh Service List</property>
 			  <property name="use_underline">True</property>
 			  <signal name="activate" handler="on_mnuRescan_activate"/>
+			  <accelerator key="r" modifiers="GDK_CONTROL_MASK" signal="activate"/>
 			</widget>
 		      </child>
 
@@ -156,9 +157,10 @@
 			  <property name="label" translatable="yes">_Save Changes</property>
 			  <property name="use_underline">True</property>
 			  <signal name="activate" handler="on_mnuSave_activate"/>
+			  <accelerator key="s" modifiers="GDK_CONTROL_MASK" signal="activate"/>
 
 			  <child internal-child="image">
-			    <widget class="GtkImage" id="image6">
+			    <widget class="GtkImage" id="image36">
 			      <property name="visible">True</property>
 			      <property name="stock">gtk-save</property>
 			      <property name="icon_size">1</property>
@@ -174,12 +176,13 @@
 		      <child>
 			<widget class="GtkImageMenuItem" id="mnuRevert">
 			  <property name="visible">True</property>
-			  <property name="label" translatable="yes">_Revert To Last Save</property>
+			  <property name="label" translatable="yes">Revert To _Last Save</property>
 			  <property name="use_underline">True</property>
 			  <signal name="activate" handler="on_mnuRevert_activate"/>
+			  <accelerator key="l" modifiers="GDK_CONTROL_MASK" signal="activate"/>
 
 			  <child internal-child="image">
-			    <widget class="GtkImage" id="image7">
+			    <widget class="GtkImage" id="image37">
 			      <property name="visible">True</property>
 			      <property name="stock">gtk-undo</property>
 			      <property name="icon_size">1</property>
@@ -225,9 +228,10 @@
 			  <property name="label" translatable="yes">_Start Service</property>
 			  <property name="use_underline">True</property>
 			  <signal name="activate" handler="on_mnuStart_activate"/>
+			  <accelerator key="s" modifiers="GDK_CONTROL_MASK | GDK_MOD1_MASK" signal="activate"/>
 
 			  <child internal-child="image">
-			    <widget class="GtkImage" id="image8">
+			    <widget class="GtkImage" id="image38">
 			      <property name="visible">True</property>
 			      <property name="stock">gtk-go-forward</property>
 			      <property name="icon_size">1</property>
@@ -246,9 +250,10 @@
 			  <property name="label" translatable="yes">S_top Service</property>
 			  <property name="use_underline">True</property>
 			  <signal name="activate" handler="on_mnuStop_activate"/>
+			  <accelerator key="t" modifiers="GDK_CONTROL_MASK | GDK_MOD1_MASK" signal="activate"/>
 
 			  <child internal-child="image">
-			    <widget class="GtkImage" id="image9">
+			    <widget class="GtkImage" id="image39">
 			      <property name="visible">True</property>
 			      <property name="stock">gtk-stop</property>
 			      <property name="icon_size">1</property>
@@ -267,9 +272,10 @@
 			  <property name="label" translatable="yes">_Restart Service</property>
 			  <property name="use_underline">True</property>
 			  <signal name="activate" handler="on_mnuRestart_activate"/>
+			  <accelerator key="r" modifiers="GDK_CONTROL_MASK | GDK_MOD1_MASK" signal="activate"/>
 
 			  <child internal-child="image">
-			    <widget class="GtkImage" id="image10">
+			    <widget class="GtkImage" id="image40">
 			      <property name="visible">True</property>
 			      <property name="stock">gtk-refresh</property>
 			      <property name="icon_size">1</property>
@@ -302,6 +308,7 @@
 			  <property name="use_underline">True</property>
 			  <property name="active">False</property>
 			  <signal name="activate" handler="on_optRL3_activate"/>
+			  <accelerator key="3" modifiers="GDK_CONTROL_MASK" signal="activate"/>
 			</widget>
 		      </child>
 
@@ -313,6 +320,7 @@
 			  <property name="active">False</property>
 			  <property name="group">optRL3</property>
 			  <signal name="activate" handler="on_optRL4_activate"/>
+			  <accelerator key="4" modifiers="GDK_CONTROL_MASK" signal="activate"/>
 			</widget>
 		      </child>
 
@@ -324,6 +332,7 @@
 			  <property name="active">True</property>
 			  <property name="group">optRL3</property>
 			  <signal name="activate" handler="on_optRL5_activate"/>
+			  <accelerator key="5" modifiers="GDK_CONTROL_MASK" signal="activate"/>
 			</widget>
 		      </child>
 		    </widget>
@@ -348,7 +357,7 @@
 			  <signal name="activate" handler="on_mnuManual_activate"/>
 
 			  <child internal-child="image">
-			    <widget class="GtkImage" id="image11">
+			    <widget class="GtkImage" id="image41">
 			      <property name="visible">True</property>
 			      <property name="stock">gnome-stock-book-red</property>
 			      <property name="icon_size">1</property>
