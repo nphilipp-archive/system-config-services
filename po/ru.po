@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
-"POT-Creation-Date: 2003-07-29 16:25-0400\n"
+"POT-Creation-Date: 2003-07-30 09:38-0400\n"
 "PO-Revision-Date: 2003-07-16 17:01+0300\n"
 "Last-Translator: Leonid Kanter <leon@geon.donetsk.ua>\n"
 "Language-Team:  <ru@li.org>\n"
@@ -107,8 +107,8 @@ msgstr "Службы"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:275 src/serviceconf.py:380 src/serviceconf.py:397
-#: src/serviceconf.py:416
+#: src/serviceconf.py:275 src/serviceconf.py:381 src/serviceconf.py:398
+#: src/serviceconf.py:417
 msgid "Editing Runlevel: "
 msgstr "Редактируется уровень запуска:"
 
@@ -120,19 +120,15 @@ msgstr "Редактируется уровень запуска:"
 msgid "Unknown"
 msgstr "Неизвестно"
 
-#: src/serviceconf.py:321
-msgid "xinetd service"
-msgstr "служба xinetd"
-
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:445
+#: src/serviceconf.py:446
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright (c) 2002 Red Hat, Inc. Все права защищены."
 
-#: src/serviceconf.py:446
+#: src/serviceconf.py:447
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -159,7 +155,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:595
+#: src/serviceconf.py:596
 msgid "You must run redhat-config-services as root."
 msgstr "redhat-config-services должен выполняться от пользователя root."
 
@@ -197,10 +193,11 @@ msgstr "redhat-config-services должен выполняться от поль
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
 #: src/servicemethods.py:286
+#, fuzzy
 msgid ""
 "\n"
 "\n"
-"You must enable xinetd to use this service."
+"xinetd is required for this service."
 msgstr ""
 "\n"
 "\n"
@@ -380,6 +377,9 @@ msgstr "_Запустить службу"
 #: src/serviceconf.glade.h:35
 msgid "_View"
 msgstr "_Вид"
+
+#~ msgid "xinetd service"
+#~ msgstr "служба xinetd"
 
 #~ msgid "Cancel"
 #~ msgstr "Отмена"

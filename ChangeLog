@@ -1,3 +1,11 @@
+2003-07-30  Daniel Walsh  <dwalsh@dhcppc0>
+
+	* redhat-config-services.spec.in, src/serviceconf.py, src/servicemethods.py:
+	handle xinetd services better
+
+	* ChangeLog, po/messages.mo, redhat-config-services.spec.in:
+	release 0.8.5
+
 2003-07-29  Daniel Walsh  <dwalsh@dhcppc0>
 
 	* po/cs.po, po/da.po, po/de.po, po/es.po, po/fr.po, po/is.po, po/it.po, po/ja.po, po/ko.po, po/messages.mo, po/no.po, po/pt.po, po/redhat-config-services.pot, po/ru.po, po/sv.po, po/tr.po, po/zh_CN.po, po/zh_TW.po, ChangeLog:
