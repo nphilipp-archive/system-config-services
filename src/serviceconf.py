@@ -1,4 +1,4 @@
-""" redhat-config-services: This module contains the Gui() class which contains the methods pertaining to the gui only """
+""" system-config-services: This module contains the Gui() class which contains the methods pertaining to the gui only """
 # serviceconf.py
 # Copyright (C) 2002 Red Hat, Inc.
 # Authors: Tim Powers <timp@redhat.com>
@@ -33,7 +33,7 @@ except RuntimeError,e:
 
 import gnome
 import gnome.ui
-domain = "redhat-config-services"
+domain = "system-config-services"
 gnome.program_init(domain, "0.1")
 import gtk.glade
 import os
@@ -98,7 +98,7 @@ def find_browser():
                 return None
         
 class Gui:
-    """This class handles everything gui for the redhat-config-services application"""
+    """This class handles everything gui for the system-config-services application"""
     def __init__(self):
 
         signal.signal (signal.SIGINT, signal.SIG_DFL)
@@ -114,7 +114,7 @@ class Gui:
         self.ServiceMethods = servicemethods.ServiceMethods()
 
         gtk.glade.bindtextdomain(domain)
-        self.xml = gtk.glade.XML("/usr/share/redhat-config-services/serviceconf.glade", domain=domain)
+        self.xml = gtk.glade.XML("/usr/share/system-config-services/serviceconf.glade", domain=domain)
         # map the event signals to specific methods
         self.xml.signal_autoconnect(
             {
@@ -442,7 +442,7 @@ class Gui:
 #----------------------------------------------------------------------------
     def on_mnuAbout_activate(self,Dummy):
         """Just a silly about dialog"""
-        dlg = gnome.ui.About("redhat-config-services ",VERSION,
+        dlg = gnome.ui.About("system-config-services ",VERSION,
                              _("Copyright (c) 2002 Red Hat, Inc. All rights reserved."),
                              _("""This software may be freely redistributed under the terms of the GPL.
 Please report all bugs you find at the Red Hat bug tracking system:
@@ -456,7 +456,7 @@ http://bugzilla.redhat.com"""),
 # once I have "real" help :)
 #----------------------------------------------------------------------------
     def on_mnuManual_activate(self,args):
-        page = "file:///usr/share/doc/redhat-config-services-" + VERSION + "/index.html"
+        page = "file:///usr/share/doc/system-config-services-" + VERSION + "/index.html"
 #        gnome.help_display_uri(page)
         gnome.url_show(page)
 
@@ -592,7 +592,7 @@ def main():
             if not quiting:
                 raise
     else:
-        print _("You must run redhat-config-services as root.")
+        print _("You must run system-config-services as root.")
         sys.exit(-1)
 
 

@@ -1,4 +1,4 @@
-"""The servicemethods module handles all the backend processesing for the redhat-config-services application."""
+"""The servicemethods module handles all the backend processesing for the system-config-services application."""
 # serviceactions.py
 # Copyright (C) 2002 Red Hat, Inc.
 # Author: Tim Powers <timp@redhat.com>

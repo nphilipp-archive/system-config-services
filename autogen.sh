@@ -54,4 +54,4 @@ cd $THEDIR
 $srcdir/configure --enable-maintainer-mode "$@"
 
 echo 
-echo "Now type 'make' to compile redhat-config-services."
+echo "Now type 'make' to compile system-config-services."

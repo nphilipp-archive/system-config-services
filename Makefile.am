@@ -3,13 +3,13 @@ AUTOMAKE_OPTIONS = foreign 1.4
 SUBDIRS = src po man
 
 EXTRA_DIST = \
-	redhat-config-services.spec		\
-	redhat-config-services.desktop.in 	\
-	redhat-config-services.desktop	 	\
-	redhat-config-services.console		\
-	redhat-config-services.pam		\
+	system-config-services.spec		\
+	system-config-services.desktop.in 	\
+	system-config-services.desktop	 	\
+	system-config-services.console		\
+	system-config-services.pam		\
 	pycheckrc				\
-	pixmaps/redhat-config-services.png	\
+	pixmaps/system-config-services.png	\
 	intltool-extract.in			\
 	intltool-merge.in			\
 	intltool-update.in			\
@@ -24,33 +24,33 @@ MAINTAINERCLEANFILES=ChangeLog
 .PHONY: changelog srpm
 
 applicationsdir=$(datadir)/applications
-applications_DATA=redhat-config-services.desktop
+applications_DATA=system-config-services.desktop
 applications_in_files=$(applications_DATA:.desktop=.desktop.in)
 
 install-data-hook:
 	$(mkinstalldirs) $(DESTDIR)$(sysconfdir)/security/console.apps
 	$(mkinstalldirs) $(DESTDIR)$(sysconfdir)/pam.d
 	$(mkinstalldirs) $(DESTDIR)$(prefix)/bin/
-	$(INSTALL_DATA) $(srcdir)/redhat-config-services.console $(DESTDIR)$(sysconfdir)/security/console.apps/redhat-config-services
-	$(INSTALL_DATA) $(srcdir)/redhat-config-services.pam $(DESTDIR)$(sysconfdir)/pam.d/redhat-config-services
-	$(INSTALL_DATA) $(srcdir)/pixmaps/redhat-config-services.png $(DESTDIR)$(pkgdatadir)/
-	ln -fs consolehelper $(DESTDIR)$(prefix)/bin/redhat-config-services
+	$(INSTALL_DATA) $(srcdir)/system-config-services.console $(DESTDIR)$(sysconfdir)/security/console.apps/system-config-services
+	$(INSTALL_DATA) $(srcdir)/system-config-services.pam $(DESTDIR)$(sysconfdir)/pam.d/system-config-services
+	$(INSTALL_DATA) $(srcdir)/pixmaps/system-config-services.png $(DESTDIR)$(pkgdatadir)/
+	ln -fs consolehelper $(DESTDIR)$(prefix)/bin/system-config-services
 	ln -fs consolehelper $(DESTDIR)$(prefix)/bin/serviceconf
-	ln -fs redhat-config-services $(DESTDIR)$(sysconfdir)/security/console.apps/serviceconf
-	ln -fs redhat-config-services $(DESTDIR)$(sysconfdir)/pam.d/serviceconf
+	ln -fs system-config-services $(DESTDIR)$(sysconfdir)/security/console.apps/serviceconf
+	ln -fs system-config-services $(DESTDIR)$(sysconfdir)/pam.d/serviceconf
 
 uninstall-local:
-	rm -f $(DESTDIR)$(sysconfdir)/pam.d/redhat-config-services
-	rm -f $(DESTDIR)$(prefix)/bin/redhat-config-services
-	rm -f $(DESTDIR)$(pkgdatadir)/redhat-config-service.png
+	rm -f $(DESTDIR)$(sysconfdir)/pam.d/system-config-services
+	rm -f $(DESTDIR)$(prefix)/bin/system-config-services
+	rm -f $(DESTDIR)$(pkgdatadir)/system-config-service.png
 	ln -f $(DESTDIR)$(prefix)/bin/serviceconf
 
 changelog:
-	rcs2log | sed -e 's|/usr/local/CVS/redhat-config-network/||g' \
+	rcs2log | sed -e 's|/usr/local/CVS/system-config-network/||g' \
 		-e 's|@.*\.redhat\.com|@redhat.com|g' > ChangeLog
 
 clean:
-	rm -f redhat-config-services.desktop
+	rm -f system-config-services.desktop
 	rm -f *~
 
 PKGNAME=${PACKAGE}

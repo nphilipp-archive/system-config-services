@@ -2,15 +2,15 @@ PYTHON_FILES = checklist.py serviceconf.py servicemethods.py
 
 GLADE_FILES = serviceconf.glade
 
-SCRIPT_FILES = redhat-config-services.sh
+SCRIPT_FILES = system-config-services.sh
 
 EXTRA_DIST = $(PYTHON_FILES) $(GLADE_FILES) $(SCRIPT_FILES)
 
 execdir = $(sbindir)
 
 all-local: 
-	rm -f redhat-config-services
-	ln -s serviceconf.py redhat-config-services
+	rm -f system-config-services
+	ln -s serviceconf.py system-config-services
 
 gladedir = $(pkgdatadir)
 glade_DATA = $(GLADE_FILES)
@@ -21,19 +21,19 @@ install-exec-local:
 	chmod 755 $(DESTDIR)$(pkgdatadir)/serviceconf.py
 	install -m 0755 $(srcdir)/checklist.py $(DESTDIR)$(pkgdatadir)/
 	install -m 0755 $(srcdir)/servicemethods.py $(DESTDIR)$(pkgdatadir)/
-	install -m 0755 $(srcdir)/redhat-config-services.sh $(DESTDIR)$(pkgdatadir)/redhat-config-services
+	install -m 0755 $(srcdir)/system-config-services.sh $(DESTDIR)$(pkgdatadir)/system-config-services
 	softdir=$(pkgdatadir); \
 	p=$(DESTDIR) ; \
 	softdir=$${softdir/#$$p} ; \
 	p=$(prefix) ; \
 	softdir=$${softdir/#$$p} ; \
 	softdir=$${softdir/#\/} ; \
-	ln  -fs ../$${softdir}/redhat-config-services $(DESTDIR)$(sbindir)/redhat-config-services; \
-	ln  -fs ../$${softdir}/redhat-config-services $(DESTDIR)$(sbindir)/serviceconf;
+	ln  -fs ../$${softdir}/system-config-services $(DESTDIR)$(sbindir)/system-config-services; \
+	ln  -fs ../$${softdir}/system-config-services $(DESTDIR)$(sbindir)/serviceconf;
 
 uninstall-local:
 	rm -fr $(DESTDIR)$(pkgdatadir)
-	rm -f  $(DESTDIR)$(sbindir)/redhat-config-services
+	rm -f  $(DESTDIR)$(sbindir)/system-config-services
 	rm -f  $(DESTDIR)$(sbindir)/serviceconf
 
 docs:

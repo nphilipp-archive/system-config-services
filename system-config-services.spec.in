@@ -1,5 +1,5 @@
 # -*- RPM-SPEC -*-
-Summary: redhat-config-services is an initscript and xinetd configuration utility
+Summary: system-config-services is an initscript and xinetd configuration utility
 Name: @PACKAGE@
 Version: @VERSION@
 Release: 23
@@ -39,13 +39,13 @@ rm -rf %{buildroot}
 %doc docs/html/*
 %{_sbindir}/*
 %{_bindir}/*
-%{_datadir}/applications/redhat-config-services.desktop
-%{_datadir}/redhat-config-services
-%config %{_sysconfdir}/pam.d/redhat-config-services
-%config %{_sysconfdir}/security/console.apps/redhat-config-services
+%{_datadir}/applications/system-config-services.desktop
+%{_datadir}/system-config-services
+%config %{_sysconfdir}/pam.d/system-config-services
+%config %{_sysconfdir}/security/console.apps/system-config-services
 %config %{_sysconfdir}/security/console.apps/serviceconf
 %config %{_sysconfdir}/pam.d/serviceconf
-%{_mandir}/*/redhat-config-services.8*
+%{_mandir}/*/system-config-services.8*
 
 %changelog
 * Wed Oct 17 2003 Daniel J Walsh <dwalsh@redhat.com> 0.8.5-23
@@ -108,7 +108,7 @@ rm -rf %{buildroot}
 - Bumped version for rhel
 
 * Tue May  27 2003 Daniel J Walsh <dwalsh@redhat.com> 0.8.5-3
-- Moved redhat-config-service.png to /usr/share/redhat-config-services
+- Moved system-config-service.png to /usr/share/system-config-services
 
 * Fri Mar  7 2003 Daniel J Walsh <dwalsh@redhat.com> 0.8.5-2
 - Bumped version for rhel
@@ -213,7 +213,7 @@ rm -rf %{buildroot}
 - Fix internationalization problems.  Clean up glade port.
 
 * Thu Jul  11 2002 Dan Walsh <dwalsh@redhat.com> 0.8.1-1
-- complete rename to redhat-config-services
+- complete rename to system-config-services
 
 * Tue Jul  9 2002 Dan Walsh <dwalsh@redhat.com> 0.8.1-1
 - complete gtk2 port, Fix Help, About, fix minor bugs
@@ -234,7 +234,7 @@ rm -rf %{buildroot}
 - don't show rpmsave, rpmnew, rpmorig, or .swp files (#60384)
 
 * Tue Apr  2 2002 Nalin Dahyabhai <nalin@redhat.com>
-- set up userhelper for redhat-config-services
+- set up userhelper for system-config-services
 
 * Fri Jan 25 2002 Bill Nottingham <notting@redhat.com>
 - add patch to fix startup when there are services with 'hide' set
@@ -244,11 +244,11 @@ rm -rf %{buildroot}
 
 * Fri Aug 24 2001 Bill Nottingham <notting@redhat.com>
 - build with new translations
-- move redhat-config-services link to /usr/bin
+- move system-config-services link to /usr/bin
 
 * Fri Aug 17 2001 Bill Nottingham <notting@redhat.com>
 - translation typos (#51774, #51776)
-- add redhat-config-services link
+- add system-config-services link
 - if we're using find_lang, don't specify the .mo files explicitly
 
 * Mon Aug 13 2001 Tim Powers <timp@redhat.com>
