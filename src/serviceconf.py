@@ -1,3 +1,4 @@
+#!/usr/bin/python
 """ system-config-services: This module contains the Gui() class which contains the methods pertaining to the gui only """
 # serviceconf.py
 # Copyright (C) 2002 Red Hat, Inc.
