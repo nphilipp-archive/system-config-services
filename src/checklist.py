@@ -36,8 +36,12 @@ class CheckList (gtk.TreeView):
         self.checkboxrenderer = [None,None,None,None,None,None,None,None]
         
         for i in range(0, 7):
+            if i == 0:
+                title = _('Runlevel %d')
+            else:
+                title = '%d'
             self.checkboxrenderer[i] = gtk.CellRendererToggle()
-            column = gtk.TreeViewColumn("Init %d" % i, self.checkboxrenderer[i], active=i)
+            column = gtk.TreeViewColumn(title % i, self.checkboxrenderer[i], active=i)
             column.set_sizing(gtk.TREE_VIEW_COLUMN_FIXED)
             column.set_fixed_width(40)
             column.set_clickable(gtk.TRUE)
@@ -149,6 +153,26 @@ class CheckList (gtk.TreeView):
         col = self.get_column(column)
         if col:
             col.set_visible(visible)
+
+        not_visible_before = True
+        for i in range (0, 7):
+            acol = self.get_column (i)
+            if acol:
+                if not_visible_before:
+                    acol.set_sizing (gtk.TREE_VIEW_COLUMN_AUTOSIZE)
+                    acol.set_alignment (1.0)
+                    for cr in acol.get_cell_renderers ():
+                        cr.set_property ('xalign', 0.7)
+                    self.set_column_title (i, _('Runlevel %d') % i)
+                else:
+                    acol.set_sizing (gtk.TREE_VIEW_COLUMN_FIXED)
+                    acol.set_alignment (0.5)
+                    for cr in acol.get_cell_renderers ():
+                        cr.set_property ('xalign', 0.5)
+                    self.set_column_title (i, '%d' % i)
+
+                if acol.get_visible ():
+                    not_visible_before = False
 
     def set_headers_visible(self, visible):
         "Set the column visibility"

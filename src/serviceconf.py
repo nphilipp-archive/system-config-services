@@ -248,31 +248,14 @@ class Gui:
         self.clstServices.get_selection ().connect ("changed", self.changed,None)
 
         self.clstServices.connect("button_press_event", self.local_button_press_cb)
-        for i in range(0, 7):
-            self.clstServices.checkboxrenderer[i].connect("toggled", self.toggled_service)
-            self.clstServices.set_column_title(i,"Init" " %d" % i)
-        self.clstServices.set_column_title(7,_("Services"))
-        #self.clstServices.set_column_justification(0,GTK.JUSTIFY_CENTER)
-        #self.clstServices.set_column_justification(1,GTK.JUSTIFY_LEFT)
-        #self.clstServices.set_column_auto_resize(0,1)
-        #self.clstServices.column_titles_show()
-
         self.popup_menu = gtk.MenuItem()
-
-
 
         self.optRL3.set_active(0)
         self.optRL4.set_active(0)
         self.optRL5.set_active(0)
         self.optRLA.set_active(0)
         
-        self.clstServices.set_column_visible(0, 0)
-        self.clstServices.set_column_visible(1, 0)
-        self.clstServices.set_column_visible(2, 0)
-        self.clstServices.set_column_visible(3, 0)
-        self.clstServices.set_column_visible(4, 0)
-        self.clstServices.set_column_visible(5, 0)
-        self.clstServices.set_column_visible(6, 0)
+        map (lambda x: self.clstServices.set_column_visible (x, 0), range (0, 7))
         if self.editing_runlevel == "3" or self.editing_runlevel == "2" or self.editing_runlevel == "1":
             self.clstServices.set_column_visible(3, 1)
             self.optRL3.set_active(1)
@@ -292,8 +275,6 @@ class Gui:
         self.current_selected_service = self.clstServices.get_text(0,7)
 
         self.winMain.show()
-
-
 
 #-----------------------------------------------------------------------------
 # Methods assiciated with populating the checklist
