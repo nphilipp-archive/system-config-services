@@ -25,53 +25,15 @@ import select
 import gtk
 from rhpl.translate import _, N_, cat
 
+import nonblockingreader
 
-def getstatusoutput(cmd):
+def getstatusoutput(cmd, callback):
     """Return (status, output) of executing cmd in a shell."""
-    print "getstatusoutput (%s)" % (cmd)
-    import os
-    text=""
-    #pipe = os.popen('{ ' + cmd + '; } 2>&1', 'r')
-    (pr, pw) = os.pipe ()
-    pid = os.fork ()
-    if pid == 0:
-        # close open fds except write end of the pipe
-        for fd in range (0, 1024):
-            if fd != pw:
-                os.close (fd)
-        pipe = os.popen('{ ' + cmd + '; } 2>&1', 'r')
-        try:
-            text = pipe.read()
-        except IOError,v:
-            text = pipe.read()
-        sts = pipe.close()
-        if sts is None: sts = 0
-        pw.write (text)
-        os._exit (sts)
-    elif pid > 0:
-        cpid = 0
-        text = ''
-        while cpid == 0:
-            (cpid, sts) = os.waitpid (pid, os.WNOHANG)
-            (readers, dummy, dummy) = select.select ([pr], [], [], 0.1)
-            if pr in readers:
-                ptext = os.read (pr, 1024)
-                text += ptext
-                while len (ptext) == 1024:
-                    (readers, dummy, dummy) = select.select ([pr], [], [], 0.1)
-                    if pr in readers:
-                        ptext = os.read (pr, 1024)
-                        text += ptext
-                    else:
-                        break
-
-            while gtk.events_pending ():
-                if gtk.__dict__.has_key ("main_iteration"):
-                    gtk.main_iteration ()
-                else:
-                    gtk.mainiteration ()
-        os.close (pw)
-        if sts is None: sts = 0
+    pipe = os.popen('{ ' + cmd + '; } 2>&1', 'r')
+    output = nonblockingreader.Reader ().run ([pipe], callback)
+    text = output[pipe]
+    sts = pipe.close ()
+    if sts is None: sts = 0
         
     if text[-1:] == '\n': text = text[:-1]
     return sts, text
@@ -80,15 +42,16 @@ class ServiceMethods:
     """Includes methods used to find services, and information about them such
     as the description, whether or not it is configured etc."""
         
-    def __init__(self):
+    def __init__(self, uicallback = None):
         self.UNKNOWN=0
         self.RUNNING=1
         self.STOPPED=2
+        self.uicallback = uicallback
         
     def get_status(self,servicename):
         status = self.UNKNOWN
         try:
-            message = getstatusoutput("LC_ALL=C /sbin/service " + servicename + " status")[1]
+            message = getstatusoutput("LC_ALL=C /sbin/service " + servicename + " status", self.uicallback)[1]
         except:
             return (self.UNKNOWN,"")
 
@@ -167,7 +130,7 @@ class ServiceMethods:
 
     def get_runlevel(self):
         """returns the current runlevel, uses /sbin/runlevel"""
-        runlevel_output = getstatusoutput("/sbin/runlevel")
+        runlevel_output = getstatusoutput("/sbin/runlevel", self.uicallback)
         # This is the current runlevel
         print runlevel_output
         return runlevel_output[-1][2]
@@ -176,11 +139,11 @@ class ServiceMethods:
 
     def chkconfig_add_service(self, servicename):
         """calls chkconfig --add servicename"""
-        return getstatusoutput("LC_ALL=C /sbin/chkconfig --add %s" % (servicename))
+        return getstatusoutput("LC_ALL=C /sbin/chkconfig --add %s" % (servicename), self.uicallback)
         
     def chkconfig_delete_service(self, servicename):
         """calls chkconfig --del servicename"""
-        return getstatusoutput("LC_ALL=C /sbin/chkconfig --del %s" % (servicename))
+        return getstatusoutput("LC_ALL=C /sbin/chkconfig --del %s" % (servicename), self.uicallback)
         
     def chkconfig_add_del(self, servicename, add_or_del, editing_runlevel):
         """calls chkconfig --level , on if add_or_del == 1, off if add_or_del == 0"""
@@ -191,7 +154,7 @@ class ServiceMethods:
 
         if add_or_del == 1 or add_or_del == 0:
             try:
-                getstatusoutput("LC_ALL=C /sbin/chkconfig --level %s %s %s" % (editing_runlevel, servicename, chkconfig_action))
+                getstatusoutput("LC_ALL=C /sbin/chkconfig --level %s %s %s" % (editing_runlevel, servicename, chkconfig_action), self.uicallback)
             except IOError:
                 pass
             self.dict_services[servicename][0][int(editing_runlevel)] = add_or_del
@@ -209,7 +172,7 @@ class ServiceMethods:
 
         if add_or_del == 1 or add_or_del == 0:
             try:
-                getstatusoutput("LC_ALL=C /sbin/chkconfig %s %s" % (xinetd_servicename , disable_option))
+                getstatusoutput("LC_ALL=C /sbin/chkconfig %s %s" % (xinetd_servicename , disable_option), self.uicallback)
             except:
                 pass
             # for xinetd services, set the dictionary to show that it's disabled in all runlevels
@@ -232,7 +195,7 @@ class ServiceMethods:
         list_xinetd_services = []
         self.allservices = []
         
-        chkconfig_list = getstatusoutput("LC_ALL=C /sbin/chkconfig --list")[1]
+        chkconfig_list = getstatusoutput("LC_ALL=C /sbin/chkconfig --list", self.uicallback)[1]
         chkconfig_list = re.split('\n', chkconfig_list)
         dict={}
         for i in chkconfig_list:
@@ -367,7 +330,7 @@ class ServiceMethods:
         if self.dict_services.has_key(servicename):
             if int(self.dict_services[servicename][1]) == 1:
                 if int(self.dict_services["xinetd"][0][int(runlevel)]) == 1:
-                    action_results = getstatusoutput("/sbin/service xinetd reload < /dev/null ")
+                    action_results = getstatusoutput("/sbin/service xinetd reload < /dev/null ", self.uicallback)
 
                     if action_results[0] != 0:
                         return (1,_("xinetd failed to reload for ") + servicename +
@@ -379,7 +342,7 @@ class ServiceMethods:
                     return (1, _("xinetd must be enabled for %s to run") % servicename)
 
             if int(self.dict_services[servicename][1]) == 0:
-                action_results = getstatusoutput("/sbin/service %s %s < /dev/null" % (servicename, action_type))
+                action_results = getstatusoutput("/sbin/service %s %s < /dev/null" % (servicename, action_type), self.uicallback)
                 if action_results[0] != 0:
                     return (1, _("%s failed. The error was: %s") % (servicename,action_results[1]))
                 else:

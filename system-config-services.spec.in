@@ -58,6 +58,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Oct 11 2004 Nils Philippsen <nphilipp@redhat.com> 0.8.12-1
+- really update UI when reading from pipes (#120579, #135215)
+
 * Fri Oct 08 2004 Nils Philippsen <nphilipp@redhat.com> 0.8.11-1
 - fix gtk.main*() related DeprecationWarnings (#134978)
 

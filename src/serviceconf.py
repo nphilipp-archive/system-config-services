@@ -115,6 +115,13 @@ class Gui:
         else:
             gtk.mainquit()
 
+    def uicallback (self):
+        while gtk.events_pending ():
+            if gtk.__dict__.has_key ("main_iteration"):
+                gtk.main_iteration ()
+            else:
+                gtk.mainiteration () 
+
     """This class handles everything gui for the system-config-services application"""
     def __init__(self):
 
@@ -128,7 +135,7 @@ class Gui:
             pass
         self.dirty=0
         self.previous=None
-        self.ServiceMethods = servicemethods.ServiceMethods()
+        self.ServiceMethods = servicemethods.ServiceMethods(self.uicallback)
 
         gtk.glade.bindtextdomain(domain)
 
@@ -235,7 +242,7 @@ class Gui:
         self.xml.get_widget("swindow").add(self.clstServices)
 
         self.clstServices.show()
-        self.ServiceMethods = servicemethods.ServiceMethods()
+        self.ServiceMethods = servicemethods.ServiceMethods(self.uicallback)
 
         # initialize this to the runlevel we are running in. It will
         # change when one of the optRL[3-6] are selected
