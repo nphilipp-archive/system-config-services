@@ -153,7 +153,7 @@ msgstr ""
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:595
-msgid "You must run redhat-config-services as root."
+msgid "You must run system-config-services as root."
 msgstr ""
 
 #. serviceactions.py
