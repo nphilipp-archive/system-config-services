@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2002-09-05 01:28-0400\n"
+"POT-Creation-Date: 2002-10-02 06:17-0400\n"
 "PO-Revision-Date: 2002-08-26 09:46GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"
@@ -72,9 +72,6 @@ msgstr ""
 #. self.tbrSave.set_button_relief(GTK.RELIEF_NORMAL)
 #. the textbox
 #. the statusbox
-#. self.txtStatus = self.xml.get_widget("StatusView")
-#. self.txtStatusBuffer = gtk.TextBuffer(None)
-#. self.txtStatus.set_buffer(self.txtStatusBuffer)
 #. the CheckCList which will display whether the service
 #. is enabled, and the service names
 #. initialize this to the runlevel we are running in. It will
@@ -103,12 +100,25 @@ msgstr "サービス"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:246 src/serviceconf.py:346 src/serviceconf.py:355
-#: src/serviceconf.py:379
+#: src/serviceconf.py:246 src/serviceconf.py:345 src/serviceconf.py:354
+#: src/serviceconf.py:378
 msgid "Editing Runlevel: "
 msgstr "ランレベルの編集"
 
-#: src/serviceconf.py:361
+#. set the text in txtDesc
+#. if an xinetd service is selected, disable these,
+#. they'll do nothing
+#. set the text in StatusView
+#: src/serviceconf.py:289
+msgid "Unknown"
+msgstr ""
+
+#: src/serviceconf.py:292
+#, fuzzy
+msgid "xinetd service"
+msgstr "サービスを再起動"
+
+#: src/serviceconf.py:360
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -120,11 +130,11 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:391
+#: src/serviceconf.py:390
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 
-#: src/serviceconf.py:392
+#: src/serviceconf.py:391
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -151,7 +161,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:525
+#: src/serviceconf.py:524
 msgid "You must run redhat-config-services as root."
 msgstr "redhat-config-services は root で実行しなければなりません"
 
@@ -172,7 +182,6 @@ msgstr "redhat-config-services は root で実行しなければなりません"
 #. You should have received a copy of the GNU General Public License
 #. along with this program; if not, write to the Free Software
 #. Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-#. print v[0],cmd,text
 #. runlevel = self.get_runlevel()
 #. for i in range(0,len(dirlist)):
 #. check for start links only, we don't care if there is a kill link
@@ -189,7 +198,7 @@ msgstr "redhat-config-services は root で実行しなければなりません"
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:302
+#: src/servicemethods.py:287
 msgid ""
 "\n"
 "\n"
@@ -207,30 +216,30 @@ msgstr ""
 #. for xinetd services
 #. if it's toggled on
 #. if it's toggled off
-#: src/servicemethods.py:348
+#: src/servicemethods.py:333
 msgid "xinetd failed to reload for "
 msgstr "xinetdは再読み込みに失敗"
 
-#: src/servicemethods.py:349
+#: src/servicemethods.py:334
 msgid ". The error was: "
 msgstr "エラー: "
 
-#: src/servicemethods.py:351
+#: src/servicemethods.py:336
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetdは%sを正常に再読み込みしました"
 
-#: src/servicemethods.py:354
+#: src/servicemethods.py:339
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%sの実行にはxinetdを有効にする必要があります"
 
-#: src/servicemethods.py:359
+#: src/servicemethods.py:344
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s は 失敗. エラーは: %sです。"
 
-#: src/servicemethods.py:361
+#: src/servicemethods.py:346
 msgid " successful"
 msgstr " 成功"
 
@@ -243,110 +252,119 @@ msgid "Current Active Runlevel: "
 msgstr "今のランレベル: "
 
 #: src/serviceconf.glade.h:3
+msgid "Description"
+msgstr ""
+
+#: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
 msgstr "ランレベルの編集:"
 
-#: src/serviceconf.glade.h:4
+#: src/serviceconf.glade.h:5
 msgid "None"
 msgstr "なし"
 
-#: src/serviceconf.glade.h:5
+#: src/serviceconf.glade.h:6
 msgid "Quit"
 msgstr "終了"
 
-#: src/serviceconf.glade.h:6
+#: src/serviceconf.glade.h:7
 msgid "Restart"
 msgstr "再起動"
 
-#: src/serviceconf.glade.h:7
+#: src/serviceconf.glade.h:8
 msgid "Restart the selected service"
 msgstr "選択したサービスを再起動"
 
-#: src/serviceconf.glade.h:8
+#: src/serviceconf.glade.h:9
 msgid "Revert to the last saved change"
 msgstr "前回保存した変更を元に戻す"
 
-#: src/serviceconf.glade.h:9
+#: src/serviceconf.glade.h:10
 msgid "Runlevel _3"
 msgstr "ランレベル _3"
 
-#: src/serviceconf.glade.h:10
+#: src/serviceconf.glade.h:11
 msgid "Runlevel _4"
 msgstr "ランレベル _4"
 
-#: src/serviceconf.glade.h:11
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _5"
 msgstr "ランレベル _5"
 
-#: src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:13
 msgid "S_top Service"
 msgstr "サービスを停止(_t)"
 
-#: src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:14
 msgid "Save"
 msgstr "保存"
 
-#: src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:15
 msgid "Save the changes you have made"
 msgstr "変更を保存"
 
-#: src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "サービスの設定"
 
-#: src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:17
 msgid "Start"
 msgstr "開始"
 
-#: src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:18
 msgid "Start the selected service"
 msgstr "選択したサービスを開始"
 
-#: src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:19
+#, fuzzy
+msgid "Status"
+msgstr "開始"
+
+#: src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "停止"
 
-#: src/serviceconf.glade.h:19
+#: src/serviceconf.glade.h:21
 msgid "Stop the selected service"
 msgstr "選択したサービスを停止"
 
-#: src/serviceconf.glade.h:20
+#: src/serviceconf.glade.h:22
 msgid "_Actions"
 msgstr "操作(_A)"
 
-#: src/serviceconf.glade.h:21
+#: src/serviceconf.glade.h:23
 msgid "_Contents"
 msgstr "目次(_C)"
 
-#: src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:24
 msgid "_Edit Runlevel"
 msgstr "ランレベルの編集(_E)"
 
-#: src/serviceconf.glade.h:23
+#: src/serviceconf.glade.h:25
 msgid "_File"
 msgstr "ファイル(_F)"
 
-#: src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:26
 msgid "_Help"
 msgstr "ヘルプ(_H)"
 
-#: src/serviceconf.glade.h:25
+#: src/serviceconf.glade.h:27
 msgid "_Refresh Service List"
 msgstr "サービスリストを更新(_R)"
 
-#: src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:28
 msgid "_Restart Service"
 msgstr "サービスを再起動(_R)"
 
-#: src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:29
 msgid "_Revert To Last Save"
 msgstr "前回の保存を取り消す(_R)"
 
-#: src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:30
 msgid "_Save Changes"
 msgstr "変更を保存(_S)"
 
-#: src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:31
 msgid "_Start Service"
 msgstr "サービスを開始(_S)"
 
@@ -549,9 +567,6 @@ msgstr "サービスを開始(_S)"
 
 #~ msgid "Exit"
 #~ msgstr "終了"
-
-#~ msgid "Restart Service"
-#~ msgstr "サービスを再起動"
 
 #~ msgid "Save Changes"
 #~ msgstr "変更を保存"

@@ -1,4 +1,11 @@
+2002-10-02  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* src/serviceconf.glade, src/serviceconf.py, src/servicemethods.py:
+	fix get status, speedup startup
+
 2002-10-01  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* ChangeLog, config.status, po/messages.mo: release 0.8.3
 
 	* configure.in, redhat-config-services.spec.in, src/serviceconf.glade, src/serviceconf.glade.new:
 	Move to new interface
