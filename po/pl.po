@@ -105,7 +105,7 @@ msgstr "Przywróć"
 #. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:248
 msgid "Currently Running in Runlevel: "
-msgstr "Aktualnie uruchomiony runlevel:"
+msgstr "Aktualny poziom uruchamiania:"
 
 #: ../src/serviceconf.py:261
 msgid "Services"
@@ -115,7 +115,7 @@ msgstr "Usługi"
 #: ../src/serviceconf.py:464 ../src/serviceconf.py:486
 #: ../src/serviceconf.py:508
 msgid "Editing Runlevel: "
-msgstr "Edycja runlevelu:"
+msgstr "Edycja poziomu uruchamiania:"
 
 #: ../src/serviceconf.py:379
 msgid "Unknown"
@@ -213,7 +213,7 @@ msgstr "Dodaj usługę"
 
 #: ../src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
-msgstr "Aktywny runlevel:"
+msgstr "Aktywny poziom uruchamiania:"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Delete Service"
@@ -229,7 +229,7 @@ msgstr "Nie zapisuj"
 
 #: ../src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
-msgstr "Edycja runlevelu:"
+msgstr "Edycja poziomu uruchamiania:"
 
 #: ../src/serviceconf.glade.h:8
 msgid "None"
@@ -241,19 +241,19 @@ msgstr "Przywróć do ostatniego zapisu"
 
 #: ../src/serviceconf.glade.h:11
 msgid "Runlevel _3"
-msgstr "Runlevel _3"
+msgstr "Poziom _3"
 
 #: ../src/serviceconf.glade.h:12
 msgid "Runlevel _4"
-msgstr "Runlevel _4"
+msgstr "Poziom _4"
 
 #: ../src/serviceconf.glade.h:13
 msgid "Runlevel _5"
-msgstr "Runlevel _5"
+msgstr "Poziom _5"
 
 #: ../src/serviceconf.glade.h:14
 msgid "Runlevel _All"
-msgstr "Runlevel _Wszystkie"
+msgstr "_Wszystkie poziomy"
 
 #: ../src/serviceconf.glade.h:15
 msgid "S_top Service"
@@ -280,7 +280,7 @@ msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
-"Dokonałeś zmian w obecnym runlevelu.\n"
+"Dokonałeś zmian w obecnym poziomie uruchamiania.\n"
 "Czy chcesz zapisać dokonane zmiany?"
 
 #: ../src/serviceconf.glade.h:24
@@ -293,7 +293,7 @@ msgstr "_Zawartość"
 
 #: ../src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
-msgstr "_Edytuj runlevel"
+msgstr "_Modyfikuj poziom uruchamiania"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_File"
@@ -305,7 +305,7 @@ msgstr "_Pomoc"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_Quit"
-msgstr "_Wyjście"
+msgstr "_Zakończ"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
