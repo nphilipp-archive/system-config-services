@@ -140,7 +140,7 @@ msgstr "ਸਹਾਇਤਾ ਉਪਲੱਬਧ ਨਹੀ ਹੈ।"
 
 #: src/serviceconf.py:677
 msgid "You must run system-config-services as root."
-msgstr "ਤੁਹਾਨੂੰ system-config-services ਪ੍ਰੂਬੰਧਕ(root) ਦੇ ਤੌਰ ਤੇ ਚਲਾਉਣੀ ਪਵੇਗੀ।"
+msgstr "ਤੁਹਾਨੂੰ system-config-services ਪ੍ਰੰਧਕ(root) ਦੇ ਤੌਰ ਤੇ ਚਲਾਉਣੀ ਪਵੇਗੀ।"
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
@@ -188,7 +188,7 @@ msgstr "*"
 
 #: src/serviceconf.glade.h:2
 msgid "Add Service"
-msgstr "ਸੇਵਾਵਾਂ ਜੋਡ਼ੋ"
+msgstr "ਸੇਵਾਵਾਂ ਸ਼ਾਮਿਲ"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
@@ -208,7 +208,7 @@ msgstr "ਨਾ ਸੰਭਾਲੋ"
 
 #: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
-msgstr "ਰਨਲੈਵਲ ਸੋਧੋ:"
+msgstr "ਰਨਲੈਵਲ ਸੋਧ:"
 
 #: src/serviceconf.glade.h:8
 msgid "None"
@@ -216,7 +216,7 @@ msgstr "ਕੁਝ ਨਹੀ"
 
 #: src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
-msgstr "ਅਖੀਰੀ ਸੰਭਾਲ ਖੋਲੋ"
+msgstr "ਆਖਰੀ ਸੰਭਾਲ ਖੋਲੋ"
 
 #: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
@@ -236,7 +236,7 @@ msgstr "ਸੇਵਾ ਰੋਕੋ(_t)"
 
 #: src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr "ਤਖਤੀ ਸੰਭਾਲੋ"
+msgstr "ਵਾਰਤਾਲਾਪ ਸੰਭਾਲੋ"
 
 #: src/serviceconf.glade.h:16
 msgid "Service Configuration"
@@ -255,12 +255,12 @@ msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
-"ਤੁਸੀ ਇਸ ਰਨ-ਲੈਵਲ ਵਿਚ ਤਬਦੀਲੀਆਂ ਕੀਤੀਆ ਹਨ।\n"
+"ਤੁਸੀ ਇਸ ਰਨ-ਲੈਵਲ ਵਿਚ ਤਬਦੀਲੀਆਂ ਕੀਤੀਆਂ ਹਨ।\n"
 "ਕੀ ਤੁਸੀ ਇਹਨਾਂ ਸੰਭਾਲਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: src/serviceconf.glade.h:23
 msgid "_Actions"
-msgstr "ਕਾਰਵਾਈਆਂ(_A)"
+msgstr "ਕਾਰਵਾਈ(_A)"
 
 #: src/serviceconf.glade.h:24
 msgid "_Contents"
@@ -268,7 +268,7 @@ msgstr "ਭਾਗ(_C)"
 
 #: src/serviceconf.glade.h:25
 msgid "_Edit Runlevel"
-msgstr "ਰਨਲੈਵਲ ਸੋਧੋ(_E)"
+msgstr "ਰਨਲੈਵਲ ਸੋਧ(_E)"
 
 #: src/serviceconf.glade.h:26
 msgid "_File"
@@ -301,3 +301,4 @@ msgstr "ਸੇਵਾ ਚਾਲੂ ਕਰੋ(_S)"
 #: src/serviceconf.glade.h:33
 msgid "_View"
 msgstr "ਵੇਖੋ(_V)"
+
