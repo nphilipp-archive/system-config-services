@@ -142,7 +142,8 @@ msgid ""
 msgstr ""
 "Este software puede ser redistribuido libremente bajo los términos GPL.\n"
 "                                  \n"
-"Por favor, informe de todos los fallos que encuentre al sistema de seguimiento\n"
+"Por favor, informe de todos los fallos que encuentre al sistema de "
+"seguimiento\n"
 "de fallos de Red Hat: http://bugzilla.redhat.com"
 
 # ../serviceconf.py:432
@@ -413,4 +414,3 @@ msgstr "_Guardar Cambios"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "Comenzar _Servicio"
-
