@@ -25,6 +25,12 @@ should be enabled on your machine.
 %setup -q
 #autoconf
 
+CFLAGS="$RPM_OPT_FLAGS" ./configure \
+    $MYARCH_FLAGS --enable-more-warnings=no \
+    --prefix=%{_prefix} --datadir=%{_datadir} \
+    --sysconfdir=%{_sysconfdir} --includedir=%{_includedir} \
+    --libdir=%{_libdir} --bindir=%{_bindir}
+
 %build
 make
 
