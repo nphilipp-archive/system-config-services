@@ -110,7 +110,10 @@ def find_browser():
         
 class Gui:
     def destroy(self, args):
-        gtk.mainquit()
+        if gtk.__dict__.has_key ("main_quit"):
+            gtk.main_quit()
+        else
+            gtk.mainquit()
 
     """This class handles everything gui for the system-config-services application"""
     def __init__(self):
@@ -301,7 +304,10 @@ class Gui:
             # the actual function here
             def idle_func():
                 while gtk.events_pending():
-                    gtk.mainiteration()
+                    if gtk.__dict__.has_key ("main_iteration"):
+                        gtk.main_iteration()
+                    else:
+                        gtk.mainiteration()
             self.allservices, self.dict_services = self.ServiceMethods.get_service_list(self.editing_runlevel, idle_func)
             self.dict_services_orig = self.ServiceMethods.dict_services_orig
             self.lblEditing.set_text(_("Editing Runlevel: ") + self.editing_runlevel)
@@ -386,7 +392,7 @@ class Gui:
 # Methods pertaining to the "File" menu items
 # The "Save Changes", "Revert to Last Save" and "Quit" menu items are handled
 # elsewhere by on_mnuSave_clicked(), on_mnuRevert_clicked(), and
-# "Exit" just calls gtk.mainquit()
+# "Exit" just calls gtk.main_quit()
 #----------------------------------------------------------------------------    
     def on_mnuRescan_activate(self,args):
         """clears clstServices, and reruns populateList()"""
@@ -542,7 +548,10 @@ class Gui:
         if self.check_dirty() == gtk.RESPONSE_CANCEL:
             return  gtk.TRUE
         quiting=1
-        gtk.mainquit()
+        if gtk.__dict__.has_key ("main_quit"):
+            gtk.main_quit()
+        else:
+            gtk.mainquit()
         
     def on_mnuRevert_clicked(self, args):
         """calls populateList() to repopulate the checklist"""
@@ -649,7 +658,10 @@ def main():
     if os.geteuid() == 0:
         try:
             Gui()
-            gtk.mainloop()
+            if gtk.__dict__.has_key ("main"):
+                gtk.main ()
+            else:
+                gtk.mainloop ()
         except:
             # if you quit during initialization exceptions can be raised
             if not quiting:

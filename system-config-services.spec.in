@@ -58,7 +58,10 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
-* Fri Oct 1 2004 Daniel J Walsh <dwalsh@redhat.com> 0.8.10-1
+* Fri Oct 08 2004 Nils Philippsen <nphilipp@redhat.com> 0.8.11-1
+- fix gtk.main*() related DeprecationWarnings (#134978)
+
+* Fri Oct 01 2004 Daniel J Walsh <dwalsh@redhat.com> 0.8.10-1
 - Update translations
 
 * Mon Sep 27 2004 Nils Philippsen <nphilipp@redhat.com> - 0.8.9-1

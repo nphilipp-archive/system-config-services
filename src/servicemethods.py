@@ -21,21 +21,58 @@ import string
 import re
 import os
 import sys
+import select
+import gtk
 from rhpl.translate import _, N_, cat
 
 
 def getstatusoutput(cmd):
     """Return (status, output) of executing cmd in a shell."""
+    print "getstatusoutput (%s)" % (cmd)
     import os
     text=""
-    pipe = os.popen('{ ' + cmd + '; } 2>&1', 'r')
-    try:
-        text = pipe.read()
-    except IOError,v:
-        text = pipe.read()
+    #pipe = os.popen('{ ' + cmd + '; } 2>&1', 'r')
+    (pr, pw) = os.pipe ()
+    pid = os.fork ()
+    if pid == 0:
+        # close open fds except write end of the pipe
+        for fd in range (0, 1024):
+            if fd != pw:
+                os.close (fd)
+        pipe = os.popen('{ ' + cmd + '; } 2>&1', 'r')
+        try:
+            text = pipe.read()
+        except IOError,v:
+            text = pipe.read()
+        sts = pipe.close()
+        if sts is None: sts = 0
+        pw.write (text)
+        os._exit (sts)
+    elif pid > 0:
+        cpid = 0
+        text = ''
+        while cpid == 0:
+            (cpid, sts) = os.waitpid (pid, os.WNOHANG)
+            (readers, dummy, dummy) = select.select ([pr], [], [], 0.1)
+            if pr in readers:
+                ptext = os.read (pr, 1024)
+                text += ptext
+                while len (ptext) == 1024:
+                    (readers, dummy, dummy) = select.select ([pr], [], [], 0.1)
+                    if pr in readers:
+                        ptext = os.read (pr, 1024)
+                        text += ptext
+                    else:
+                        break
+
+            while gtk.events_pending ():
+                if gtk.__dict__.has_key ("main_iteration"):
+                    gtk.main_iteration ()
+                else:
+                    gtk.mainiteration ()
+        os.close (pw)
+        if sts is None: sts = 0
         
-    sts = pipe.close()
-    if sts is None: sts = 0
     if text[-1:] == '\n': text = text[:-1]
     return sts, text
 
@@ -132,7 +169,8 @@ class ServiceMethods:
         """returns the current runlevel, uses /sbin/runlevel"""
         runlevel_output = getstatusoutput("/sbin/runlevel")
         # This is the current runlevel
-        return runlevel_output[len(runlevel_output)-1][2]
+        print runlevel_output
+        return runlevel_output[-1][2]
 
 
 
