@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
-"POT-Creation-Date: 2003-01-14 11:21-0500\n"
+"POT-Creation-Date: 2003-01-28 09:45-0500\n"
 "PO-Revision-Date: 2003-01-10 09:12GMT+10:00\n"
 "Last-Translator: James Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <i18-list@redhat.com>\n"

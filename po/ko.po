@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
-"POT-Creation-Date: 2003-01-14 11:21-0500\n"
+"POT-Creation-Date: 2003-01-28 09:45-0500\n"
 "PO-Revision-Date: 2003-01-10 09:28+1000\n"
 "Last-Translator: Michelle Kim <mkim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
