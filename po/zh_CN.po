@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf1.1\n"
 "POT-Creation-Date: 2002-09-03 11:39-0400\n"
-"PO-Revision-Date: 2002-08-12 12:15GMT+10:00\n"
+"PO-Revision-Date: 2002-09-04 09:39GMT+10:00\n"
 "Last-Translator: Sarah Smith <sarahs@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -111,8 +111,8 @@ msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
-"你已改变了当前的运行级别。\n"
-"你想保存这些改变吗？"
+"您已改变了当前的运行级别。\n"
+"您想保存这些改变吗？"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -130,7 +130,7 @@ msgid ""
 msgstr ""
 "在 GPL 的条款下，该软件可被自由发行。\n"
 "请向 Red Hat 错误跟踪系统：\n"
-"http://bugzilla.redhat.com 报告你所发现的错误。"
+"http://bugzilla.redhat.com 报告您所发现的错误。"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -151,7 +151,7 @@ msgstr ""
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:525
 msgid "You must run redhat-config-services as root."
-msgstr "你必须作为根用户才能运行 redhat-config-services。"
+msgstr "您必须作为根用户才能运行 redhat-config-services。"
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -195,7 +195,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"你必须启用 xinetd 来使用这一服务。"
+"您必须启用 xinetd 来使用这一服务。"
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -286,7 +286,7 @@ msgstr "储存"
 
 #: src/serviceconf.glade.h:14
 msgid "Save the changes you have made"
-msgstr "储存你所作的改变"
+msgstr "储存您所作的改变"
 
 #: src/serviceconf.glade.h:15
 msgid "Service Configuration"
@@ -549,3 +549,4 @@ msgstr "开始服务(_S)"
 
 #~ msgid "Exit"
 #~ msgstr "退出"
+
