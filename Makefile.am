@@ -36,8 +36,8 @@ install-data-local:
 	$(INSTALL_DATA) $(srcdir)/redhat-config-services.pam $(DESTDIR)$(sysconfdir)/pam.d/redhat-config-services
 	$(INSTALL_DATA) $(srcdir)/pixmaps/serviceconf.xpm $(DESTDIR)$(datadir)/pixmaps
 	ln -fs consolehelper $(DESTDIR)$(prefix)/bin/redhat-config-services
-	ln -fs $(DESTDIR)$(sysconfdir)/security/console.apps/redhat-config-services serviceconf
-	ln -fs $(DESTDIR)$(sysconfdir)/pam.d/redhat-config-packages serviceconf
+	ln -fs redhat-config-packages $(DESTDIR)$(sysconfdir)/security/console.apps/serviceconf
+	ln -fs redhat-config-packages $(DESTDIR)$(sysconfdir)/pam.d/serviceconf
 
 uninstall-local:
 	rm -f $(DESTDIR)$(sysconfdir)/pam.d/redhat-config-services
