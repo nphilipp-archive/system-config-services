@@ -1,7 +1,7 @@
 # SLOVENIAN TRANSLATION OF REDHAT-CONFIG-SERVICES.
 # Copyright (C) 2003 Free Software Foundation.
 # Roman Maurer <roman@lugos.si>, 2003.
-# $Id: sl.po,v 1.9 2004/03/25 03:42:16 dwalsh Exp $
+# $Id: sl.po,v 1.10 2004/03/31 20:15:49 romanm Exp $
 # $Source: /home/fedora/mmcgrath/elvis/cvs/redhat-config-services/po/sl.po,v $
 #
 msgid ""
@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: system-config-services 0.8.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-03-16 16:00-0500\n"
-"PO-Revision-Date: 2003-09-26 22:59+0200\n"
+"PO-Revision-Date: 2004-03-31 22:19+0200\n"
 "Last-Translator: Roman Maurer <roman@lugos.si>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -65,7 +65,7 @@ msgstr ""
 #: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "Ali ste prepričani, da želite zbrisati %s?"
 
 #. make sure threading is disabled
 #. map the event signals to specific methods
@@ -86,20 +86,19 @@ msgstr "Znova zaženi"
 
 #: src/serviceconf.py:195
 msgid "_Save"
-msgstr ""
+msgstr "_Shrani"
 
 #: src/serviceconf.py:195
 msgid "Save"
-msgstr ""
+msgstr "Shrani"
 
 #: src/serviceconf.py:200
 msgid "_Revert"
-msgstr ""
+msgstr "_Obnovi"
 
 #: src/serviceconf.py:200
-#, fuzzy
 msgid "Revert"
-msgstr "Znova zaženi"
+msgstr "Obnovi"
 
 #. the textbox
 #. the statusbox
@@ -158,10 +157,17 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"Orodje za prikrojitev storitev v sistemu VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 
 #: src/serviceconf.py:476
 msgid "About"
-msgstr ""
+msgstr "O programu"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -169,7 +175,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:505
 msgid "Help is not available."
-msgstr ""
+msgstr "Pomoč ni na voljo."
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -184,7 +190,6 @@ msgstr ""
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:649
-#, fuzzy
 msgid "You must run system-config-services as root."
 msgstr "Program system-config-services morate zagnati kot root."
 
@@ -222,15 +227,11 @@ msgstr "Program system-config-services morate zagnati kot root."
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
 #: src/servicemethods.py:290
-#, fuzzy
 msgid ""
 "\n"
 "\n"
 "xinetd is required for this service."
-msgstr ""
-"\n"
-"\n"
-"Za rabo te storitve morate omogočiti xinetd."
+msgstr "\n\nZa rabo te storitve se zahteva xinetd."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -269,21 +270,19 @@ msgstr " uspešno"
 
 #: src/serviceconf.glade.h:1
 msgid "*"
-msgstr ""
+msgstr "*"
 
 #: src/serviceconf.glade.h:2
-#, fuzzy
 msgid "Add Service"
-msgstr "Storitve"
+msgstr "Dodaj storitev"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Trenutno dejavna raven teka: "
 
 #: src/serviceconf.glade.h:4
-#, fuzzy
 msgid "Delete Service"
-msgstr "U_stavi storitev"
+msgstr "Zbriši storitev"
 
 #: src/serviceconf.glade.h:5
 msgid "Description"
@@ -291,7 +290,7 @@ msgstr "Opis"
 
 #: src/serviceconf.glade.h:6
 msgid "Don't Save"
-msgstr ""
+msgstr "Ne shrani"
 
 #: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
@@ -323,16 +322,15 @@ msgstr "U_stavi storitev"
 
 #: src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "Shrani pogovor"
 
 #: src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "Prikrojitev storitve"
 
 #: src/serviceconf.glade.h:17
-#, fuzzy
 msgid "Service Name: "
-msgstr "Storitve"
+msgstr "Ime storitve: "
 
 #: src/serviceconf.glade.h:19
 msgid "Status"
@@ -368,7 +366,7 @@ msgstr "_Pomoč"
 
 #: src/serviceconf.glade.h:28
 msgid "_Quit"
-msgstr ""
+msgstr "_Končaj"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
@@ -388,28 +386,4 @@ msgstr "_Zaženi storitev"
 
 #: src/serviceconf.glade.h:33
 msgid "_View"
-msgstr ""
-
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "Pravna zaščita (c) 2002 Red Hat, Inc. Vse pravice pridržane."
-
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "To programje lahko prosto razširjate pod pogoji licence GPL.  Prosimo,\n"
-#~ "o morebitnih hroščih poročajte prek sistema zasledovanja hroščev\n"
-#~ "podjetja Red Hat: http://bugzilla.redhat.com"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "Znova zaženi izbrano storitev"
-
-#~ msgid "Start the selected service"
-#~ msgstr "Zaženi izbrano storitev"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "Ustavi izbrano storitev"
-
-#~ msgid "xinetd service"
-#~ msgstr "storitev xinetd"
+msgstr "_Pogled"
