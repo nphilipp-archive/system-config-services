@@ -297,7 +297,6 @@ class Gui:
 
     def toggled_service(self, data, row):
         """Populates txtDesc with the service description of the service selected in clstServices"""
-        self.txtBuffer.set_text("", 0)
         self.text_in_row = self.clstServices.get_text(int(row),1)
         current_runlevel = int(self.editing_runlevel)
         self.current_selected = self.clstServices.get_text(int(row),1)
