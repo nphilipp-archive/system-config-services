@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-02-17 17:34-0500\n"
-"PO-Revision-Date: 2004-03-18 10:23+1000\n"
+"PO-Revision-Date: 2005-03-03 10:07-0800\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
 "Language-Team: Traditional Chinese <fedora-trans-zh_tw@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -72,7 +72,7 @@ msgstr "未知的"
 
 #: ../src/serviceconf.py:508
 msgid "All"
-msgstr ""
+msgstr "全部"
 
 #: ../src/serviceconf.py:551
 msgid ""
@@ -193,9 +193,8 @@ msgid "Runlevel _5"
 msgstr "執行等級 _5"
 
 #: ../src/serviceconf.glade.h:14
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "執行等級 _3"
+msgstr "全部執行等級(_A)"
 
 #: ../src/serviceconf.glade.h:15
 msgid "S_top Service"
