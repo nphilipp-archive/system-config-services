@@ -1,5 +1,6 @@
 # translation of es.po to 
 # translation of es.po to
+# translation of es.po to
 # translation of es.po to spanish
 # Copyright (C) 2001 ORGANIZATION
 # Yelitza Louze <ylouze@redhat.com>
@@ -9,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "POT-Creation-Date: 2003-07-30 09:38-0400\n"
-"PO-Revision-Date: 2003-07-11 11:54+1000\n"
+"PO-Revision-Date: 2003-08-01 13:20+1000\n"
 "Last-Translator: Yelitza Louze <ylouze@redhat.com>\n"
 "Language-Team:  <es@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -210,7 +211,6 @@ msgstr "Debe ejecutar redhat-config-services como root."
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
 #: src/servicemethods.py:286
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -218,7 +218,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Debe activar xinetd para usar este servicio."
+"Se requiere xinetd para usar este servicio."
 
 # ../servicemethods.py:307
 # ../servicemethods.py:307
@@ -471,3 +471,4 @@ msgstr "_Vista"
 # serviceconf.gladestrings:17 serviceconf.gladestrings:39
 #~ msgid "Save the changes you have made"
 #~ msgstr "Guardar los cambios que ha hecho"
+
