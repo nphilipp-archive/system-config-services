@@ -1,5 +1,9 @@
 2003-10-01  Dan Walsh  <dwalsh@redhat.com>
 
+	* redhat-config-services.spec.in: bump
+
+	* ChangeLog, po/messages.mo: release 0.8.5
+
 	* redhat-config-services.spec.in, src/serviceconf.py, src/servicemethods.py:
 	fix pathing problem on hammer
 
