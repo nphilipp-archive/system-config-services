@@ -51,7 +51,7 @@ class ServiceMethods:
     def get_status(self,servicename):
         status = self.UNKNOWN
         try:
-            message = getstatusoutput("LC_ALL=C /sbin/service " + servicename + " status < /dev/null")[1]
+            message = getstatusoutput("LC_ALL=C /sbin/service " + servicename + " status")[1]
         except:
             return (self.UNKNOWN,"")
 
