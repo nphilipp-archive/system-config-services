@@ -16,6 +16,11 @@ glade_DATA = $(GLADE_FILES)
 install-exec-local:
 	mkdir -p $(DESTDIR)$(sbindir) $(DESTDIR)$(bindir) $(DESTDIR)$(pkgdatadir)
 	install -m 0755 $(srcdir)/serviceconf.py $(DESTDIR)$(pkgdatadir)/
+	install -m 0755 $(srcdir)/checklist.py $(DESTDIR)$(pkgdatadir)/
+	install -m 0755 $(srcdir)/dnsdata.py $(DESTDIR)$(pkgdatadir)/
+	install -m 0755 $(srcdir)/dnsdata_base.py $(DESTDIR)$(pkgdatadir)/
+	install -m 0755 $(srcdir)/FwdZone.py $(DESTDIR)$(pkgdatadir)/
+	install -m 0755 $(srcdir)/servicemethods.py $(DESTDIR)$(pkgdatadir)/
 	softdir=$(pkgdatadir); \
 	p=$(DESTDIR) ; \
 	softdir=$${softdir/#$$p} ; \
