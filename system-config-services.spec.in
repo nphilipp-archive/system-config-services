@@ -49,8 +49,10 @@ rm -rf %{buildroot}
 
 %changelog
 
-* Thu Jul 25 2002 Dan Walsh <dwalsh@redhat.com> 0.8.1-5
+* Fri Jul 26 2002 Dan Walsh <dwalsh@redhat.com> 0.8.1-5
 - Updated to use intltool and new build environment.
+- Added with pam changes for timestamp
+- New internationalization stuff
 
 * Tue Jul 23 2002 Dan Walsh <dwalsh@redhat.com>
 - Fix the desktop file, using new naming standards.
