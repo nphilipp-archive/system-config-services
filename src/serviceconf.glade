@@ -344,7 +344,7 @@
 		      <child>
 			<widget class="GtkImageMenuItem" id="mnuManual">
 			  <property name="visible">True</property>
-			  <property name="label" translatable="yes">_Manual</property>
+			  <property name="label" translatable="yes">_Contents</property>
 			  <property name="use_underline">True</property>
 			  <signal name="activate" handler="on_mnuManual_activate"/>
 
