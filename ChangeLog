@@ -1,6 +1,10 @@
+2004-03-03  Brent Fox  <bfox@redhat.com>
+
+	* system-config-services.spec.in: add BuildRequires on automake17
+
 2004-03-02  Brent Fox  <bfox@redhat.com>
 
-	* ChangeLog, config.status, aclocal.m4, intltool-extract.in, intltool-merge.in, intltool-update.in, po/Makefile.in.in, po/system-config-services.pot:
+	* config.status, ChangeLog, aclocal.m4, intltool-extract.in, intltool-merge.in, intltool-update.in, po/Makefile.in.in, po/system-config-services.pot:
 	release 0.8.7
 
 	* po/da.po, po/bs.po: convert to UTF-8
