@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf\n"
-"POT-Creation-Date: 2002-08-27 17:27-0400\n"
+"POT-Creation-Date: 2002-09-03 11:39-0400\n"
 "PO-Revision-Date: 2002-08-30 12:46GMT\n"
 "Last-Translator: Marisa <marisa@redhat.it>\n"
 "Language-Team:  <it@li.org>\n"
@@ -214,14 +214,17 @@ msgid ". The error was: "
 msgstr ". L'errore è stato: "
 
 #: src/servicemethods.py:351
+#, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd è riuscito a ricaricare %s"
 
 #: src/servicemethods.py:354
+#, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd deve essere attivato perché %s possa funzionare"
 
 #: src/servicemethods.py:359
+#, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s non è riuscito. L'errore è stato: %s"
 
