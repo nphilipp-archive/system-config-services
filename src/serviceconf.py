@@ -47,7 +47,7 @@ except IOError:
 _=gettext.gettext
 
 quiting = 0
-VERSION = "0.8.2"
+VERSION = "@VERSION@"
 
 def find_browser():
     try:
