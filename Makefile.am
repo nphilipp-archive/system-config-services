@@ -1,6 +1,6 @@
 AUTOMAKE_OPTIONS = foreign 1.4
 
-SUBDIRS = src po man
+SUBDIRS = src po man docs
 
 EXTRA_DIST = \
 	system-config-services.spec		\
