@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
 "POT-Creation-Date: 2003-01-14 11:21-0500\n"
-"PO-Revision-Date: 2002-11-09 21:34+0100\n"
+"PO-Revision-Date: 2003-01-15 02:13+0100\n"
 "Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -263,9 +263,8 @@ msgid "Restart the selected service"
 msgstr "Start valgt tjeneste på nytt"
 
 #: src/serviceconf.glade.h:7
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "Gå tilbake til fo_rrige lagring"
+msgstr "Gå ti_lbake til forrige lagring"
 
 #: src/serviceconf.glade.h:8
 msgid "Runlevel _3"
