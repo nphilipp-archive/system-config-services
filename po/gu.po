@@ -1,19 +1,21 @@
-# Gujarati translations for PACKAGE package.
-# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
+# translation of system-config-services.po to Gujarati
 # This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2004.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Ankit Patel <ankit@redhat.com>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-04-06 14:50-0400\n"
-"PO-Revision-Date: 2004-04-06 14:50-0400\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2004-08-13 16:47+0530\n"
+"Last-Translator: Ankit Patel <ankit@redhat.com>\n"
+"Language-Team: Gujarati\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3.1\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -64,7 +66,7 @@ msgstr ""
 #: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "શું તમે ખરેખર %s ને કાઢી નાંખવા માંગો છો?"
 
 #. make sure threading is disabled
 #. map the event signals to specific methods
@@ -73,31 +75,31 @@ msgstr ""
 #. toolbars
 #: src/serviceconf.py:187 src/serviceconf.glade.h:18
 msgid "Start"
-msgstr ""
+msgstr "શરુ"
 
 #: src/serviceconf.py:191 src/serviceconf.glade.h:20
 msgid "Stop"
-msgstr ""
+msgstr "બંધ"
 
 #: src/serviceconf.py:195 src/serviceconf.glade.h:9
 msgid "Restart"
-msgstr ""
+msgstr "ફરી શરુ"
 
 #: src/serviceconf.py:201
 msgid "_Save"
-msgstr ""
+msgstr "સંગ્રહો (_S)"
 
 #: src/serviceconf.py:201
 msgid "Save"
-msgstr ""
+msgstr "સંગ્રહો"
 
 #: src/serviceconf.py:206
 msgid "_Revert"
-msgstr ""
+msgstr "ફેરવો (_R)"
 
 #: src/serviceconf.py:206
 msgid "Revert"
-msgstr ""
+msgstr "ફેરવો"
 
 #. the textbox
 #. the statusbox
@@ -107,16 +109,16 @@ msgstr ""
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:240
 msgid "Currently Running in Runlevel: "
-msgstr ""
+msgstr "વર્તમાનમાં ચાલતું રનલેવલ: "
 
 #. This is a sentry
 #: src/serviceconf.py:251
 msgid "Start at Boot"
-msgstr ""
+msgstr "બુટ વખતે શરુ કરો"
 
 #: src/serviceconf.py:252
 msgid "Services"
-msgstr ""
+msgstr "સેવાઓ"
 
 #. self.clstServices.set_column_justification(0,GTK.JUSTIFY_CENTER)
 #. self.clstServices.set_column_justification(1,GTK.JUSTIFY_LEFT)
@@ -132,7 +134,7 @@ msgstr ""
 #: src/serviceconf.py:307 src/serviceconf.py:413 src/serviceconf.py:430
 #: src/serviceconf.py:449
 msgid "Editing Runlevel: "
-msgstr ""
+msgstr "રનલેવલમાં ફેરફાર કરી રહ્યા છીએ: "
 
 #. set the text in txtDesc
 #. if an xinetd service is selected, disable these,
@@ -140,7 +142,7 @@ msgstr ""
 #. set the text in StatusView
 #: src/serviceconf.py:350
 msgid "Unknown"
-msgstr ""
+msgstr "અજ્ઞાત"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -156,10 +158,17 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"સિસ્ટમ સેવાઓ રુપરેખાંકન સાધન આવૃૃત્તિ\n"
+" મુદ્રણાધિકાર (c) ૨૦૦૨-૨૦૦૪ રેડ હેટ, ઈન્ક.\n"
+" ટીમ પાવર્સ <timp@redhat>\n"
+" બિલ નોટિંગહામ <notting@redhat>\n"
+" ડેન વોલ્શ <dwalsh@redhat.com>\n"
+" બ્રેન્ટ ફોક્સ <bfox@redhat.com>\n"
+" "
 
 #: src/serviceconf.py:482
 msgid "About"
-msgstr ""
+msgstr "વિશે"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
@@ -167,7 +176,7 @@ msgstr ""
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:511
 msgid "Help is not available."
-msgstr ""
+msgstr "મદદ ઉપ્લબ્ધ નથી."
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the toolbar items
@@ -183,7 +192,7 @@ msgstr ""
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:655
 msgid "You must run system-config-services as root."
-msgstr ""
+msgstr "તમારે રુટ તરીકે જ system-config-services ચલાવવું પડશે."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -224,6 +233,9 @@ msgid ""
 "\n"
 "xinetd is required for this service."
 msgstr ""
+"\n"
+"\n"
+"xinetd એ આ સેવા માટે જરુરી છે."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -235,145 +247,148 @@ msgstr ""
 #. if it's toggled off
 #: src/servicemethods.py:335
 msgid "xinetd failed to reload for "
-msgstr ""
+msgstr "xinetd એ માટે ફરીથી લાવવામાં નિષ્ફળ "
 
 #: src/servicemethods.py:336
 msgid ". The error was: "
-msgstr ""
+msgstr ". ભૂલ આ હતી: "
 
 #: src/servicemethods.py:338
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr ""
+msgstr "xinetd ફરીથી લવાયેલ %s સફળતાપૂર્વક"
 
 #: src/servicemethods.py:341
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr ""
+msgstr "xinetd એ %s ને ચલાવવા માટે સક્રિય કરેલું જ હોવું જોઈએ"
 
 #: src/servicemethods.py:346
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr ""
+msgstr "%s નિષ્ફળ. ભૂલ આ હતી: %s"
 
 #: src/servicemethods.py:348
 msgid " successful"
-msgstr ""
+msgstr " સફળતાપૂર્વક"
 
 #: src/serviceconf.glade.h:1
 msgid "*"
-msgstr ""
+msgstr "*"
 
 #: src/serviceconf.glade.h:2
 msgid "Add Service"
-msgstr ""
+msgstr "સેવા ઉમેરો"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
-msgstr ""
+msgstr "વર્તમાન સક્રિય રનલેવલ: "
 
 #: src/serviceconf.glade.h:4
 msgid "Delete Service"
-msgstr ""
+msgstr "સેવા કાઢી નાંખો"
 
 #: src/serviceconf.glade.h:5
 msgid "Description"
-msgstr ""
+msgstr "વર્ણન"
 
 #: src/serviceconf.glade.h:6
 msgid "Don't Save"
-msgstr ""
+msgstr "સંગ્રહો નહિં"
 
 #: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
-msgstr ""
+msgstr "રનલેવલમાં ફેરફાર કરી રહ્યા છીએ:"
 
 #: src/serviceconf.glade.h:8
 msgid "None"
-msgstr ""
+msgstr "કંઈ નહિં"
 
 #: src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
-msgstr ""
+msgstr "છેલ્લા સંગ્રહમાં પાછા ફરો (_L)"
 
 #: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
-msgstr ""
+msgstr "રનલેવલ _૩"
 
 #: src/serviceconf.glade.h:12
 msgid "Runlevel _4"
-msgstr ""
+msgstr "રનલેવલ _૪"
 
 #: src/serviceconf.glade.h:13
 msgid "Runlevel _5"
-msgstr ""
+msgstr "રનલેવલ _૫"
 
 #: src/serviceconf.glade.h:14
 msgid "S_top Service"
-msgstr ""
+msgstr "સેવા અટકાવો (_t)"
 
 #: src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "સંવાદ સંગ્રહો"
 
 #: src/serviceconf.glade.h:16
 msgid "Service Configuration"
-msgstr ""
+msgstr "સેવા રુપરેખાંકન"
 
 #: src/serviceconf.glade.h:17
 msgid "Service Name: "
-msgstr ""
+msgstr "સેવાનું નામ: "
 
 #: src/serviceconf.glade.h:19
 msgid "Status"
-msgstr ""
+msgstr "સ્થિતિ"
 
 #: src/serviceconf.glade.h:21
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"તમે વર્તમાન રનલેવલમાં બદલાવો કરેલા છે.\n"
+"શું તમે આ બદલાવો સંગ્રહવા માંગો છો?"
 
 #: src/serviceconf.glade.h:23
 msgid "_Actions"
-msgstr ""
+msgstr "ક્રિયાઓ (_A)"
 
 #: src/serviceconf.glade.h:24
 msgid "_Contents"
-msgstr ""
+msgstr "સમાવિષ્ટો (_C)"
 
 #: src/serviceconf.glade.h:25
 msgid "_Edit Runlevel"
-msgstr ""
+msgstr "રનલેવલમાં ફેરફાર કરો (_E)"
 
 #: src/serviceconf.glade.h:26
 msgid "_File"
-msgstr ""
+msgstr "ફાઈલ (_F)"
 
 #: src/serviceconf.glade.h:27
 msgid "_Help"
-msgstr ""
+msgstr "મદદ (_H)"
 
 #: src/serviceconf.glade.h:28
 msgid "_Quit"
-msgstr ""
+msgstr "બહાર નીકળો (_Q)"
 
 #: src/serviceconf.glade.h:29
 msgid "_Refresh Service List"
-msgstr ""
+msgstr "સેવાની યાદી ફરી તાજી કરો (_R)"
 
 #: src/serviceconf.glade.h:30
 msgid "_Restart Service"
-msgstr ""
+msgstr "સેવા ફરીથી શરુ કરો (_R)"
 
 #: src/serviceconf.glade.h:31
 msgid "_Save Changes"
-msgstr ""
+msgstr "બદલાવો સંગ્રહો (_S)"
 
 #: src/serviceconf.glade.h:32
 msgid "_Start Service"
-msgstr ""
+msgstr "સેવા શરુ કરો (_S)"
 
 #: src/serviceconf.glade.h:33
 msgid "_View"
-msgstr ""
+msgstr "જુઓ (_V)"
+
