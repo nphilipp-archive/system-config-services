@@ -1,5 +1,9 @@
 2002-07-24  Daniel J Walsh  <dwalsh@localhost.localdomain>
 
+	* /usr/local/CVS/redhat-config-services/ChangeLog: release 0.8.1
+
+	* /usr/local/CVS/redhat-config-services/src/Makefile.am: add all files
+
 	* /usr/local/CVS/redhat-config-services/ChangeLog, /usr/local/CVS/redhat-config-services/Makefile.am, /usr/local/CVS/redhat-config-services/redhat-config-services.spec.in, /usr/local/CVS/redhat-config-services/man/Makefile.am:
 	release 0.8.1
 
