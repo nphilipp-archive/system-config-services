@@ -1,3 +1,28 @@
+2003-02-25  Daniel J Walsh  <dwalsh@redhat.com>
+
+	* src/serviceconf.py: fix dissappearing description
+
+2003-02-22  ra  <ra@redhat.com>
+
+	* po/is.po: *** empty log message ***
+
+2003-02-19  tszanto  <tszanto@redhat.com>
+
+	* po/hu.po: CVS_SILENT
+	Tamas Szanto
+
+2003-02-14  barzilay  <barzilay@redhat.com>
+
+	* po/pt_BR.po: updated1402
+
+2003-02-10  frolix68  <frolix68@redhat.com>
+
+	* po/el.po: update el.po
+
+2003-02-04  leon  <leon@redhat.com>
+
+	* po/ru.po: update
+
 2003-01-28  Daniel J Walsh  <dwalsh@redhat.com>
 
 	* ChangeLog, redhat-config-services.desktop.in: release 0.8.4

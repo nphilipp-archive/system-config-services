@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
-"POT-Creation-Date: 2003-01-28 14:41-0500\n"
+"POT-Creation-Date: 2003-02-25 16:01-0500\n"
 "PO-Revision-Date: 2003-01-10 09:28+1000\n"
 "Last-Translator: Michelle Kim <mkim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -96,8 +96,8 @@ msgstr "서비스"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:249 src/serviceconf.py:348 src/serviceconf.py:357
-#: src/serviceconf.py:381
+#: src/serviceconf.py:249 src/serviceconf.py:347 src/serviceconf.py:356
+#: src/serviceconf.py:380
 msgid "Editing Runlevel: "
 msgstr "런레벨 편집: "
 
@@ -113,7 +113,7 @@ msgstr "알 수 없음"
 msgid "xinetd service"
 msgstr "xinetd 서비스"
 
-#: src/serviceconf.py:363
+#: src/serviceconf.py:362
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -125,11 +125,11 @@ msgstr ""
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
-#: src/serviceconf.py:393
+#: src/serviceconf.py:392
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 
-#: src/serviceconf.py:394
+#: src/serviceconf.py:393
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
@@ -156,7 +156,7 @@ msgstr ""
 #. get rid of the tearoff from the popup menu
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
-#: src/serviceconf.py:522
+#: src/serviceconf.py:521
 msgid "You must run redhat-config-services as root."
 msgstr "redhat-config-services는 루트로 실행하셔야 합니다."
 
