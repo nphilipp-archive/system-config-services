@@ -9,6 +9,7 @@ EXTRA_DIST = \
 	redhat-config-services.console		\
 	redhat-config-services.pam		\
 	pycheckrc				\
+	pixmaps/serviceconf.xpm 		\
 	intltool-extract.in			\
 	intltool-merge.in			\
 	intltool-update.in			\
@@ -26,14 +27,16 @@ applicationsdir=$(datadir)/applications
 applications_DATA=redhat-config-services.desktop
 applications_in_files=$(applications_DATA:.desktop=.desktop.in)
 
-
 install-data-local:
+	$(mkinstalldirs) $(DESTDIR)$(datadir)/pixmaps
 	$(mkinstalldirs) $(DESTDIR)$(sysconfdir)/security/console.apps
 	$(mkinstalldirs) $(DESTDIR)$(sysconfdir)/pam.d
 	$(mkinstalldirs) $(DESTDIR)$(prefix)/bin/
-
 	$(INSTALL_DATA) $(srcdir)/redhat-config-services.console $(DESTDIR)$(sysconfdir)/security/console.apps/redhat-config-services
+	ln -fs $(DESTDIR)$(sysconfdir)/security/console.apps/redhat-config-services $(DESTDIR)$(sysconfdir)/security/console.apps/serviceconf
 	$(INSTALL_DATA) $(srcdir)/redhat-config-services.pam $(DESTDIR)$(sysconfdir)/pam.d/redhat-config-services
+	$(INSTALL_DATA) $(srcdir)/pixmaps/serviceconf.xpm $(DESTDIR)$(datadir)/pixmaps
+	ln -fs $(DESTDIR)$(sysconfdir)/pam.d/redhat-config-packages $(DESTDIR)$(sysconfdir)/pam.d/serviceconf
 	ln -fs consolehelper $(DESTDIR)$(prefix)/bin/redhat-config-services
 
 uninstall-local:
