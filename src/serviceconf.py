@@ -66,7 +66,7 @@ except IOError:
     __builtin__.__dict__['_'] = unicode
 _=gettext.gettext
 
-quiting = 0
+quitting = 0
 VERSION = "@VERSION@"
 
 def verify_delete(arg):
@@ -248,6 +248,8 @@ class Gui:
         self.clstServices.get_selection ().connect ("changed", self.changed,None)
 
         self.clstServices.connect("button_press_event", self.local_button_press_cb)
+        for i in range (0, 7):
+            self.clstServices.checkboxrenderer[i].connect("toggled", self.toggled_service)
         self.popup_menu = gtk.MenuItem()
 
         self.optRL3.set_active(0)
@@ -380,8 +382,6 @@ class Gui:
 
         return self.text_in_row
 
-
-            
 #----------------------------------------------------------------------------
 # Methods pertaining to the "File" menu items
 # The "Save Changes", "Revert to Last Save" and "Quit" menu items are handled
@@ -399,8 +399,7 @@ class Gui:
 #----------------------------------------------------------------------------
 # Methods pertaining to the "Edit Runlevel" menu items 
 #----------------------------------------------------------------------------
-    def on_optRL3_toggled(self, button):
-        """calls  populateList() to repopulate the checklist for runlevel 3"""
+    def set_editing_runlevels (self, button, title, runlevels):
         if self.previous==button:
             return
         if button.get_active() != gtk.TRUE:
@@ -409,86 +408,38 @@ class Gui:
         if self.check_dirty() == gtk.RESPONSE_CANCEL:
             self.previous.set_active(1)
             return gtk.TRUE
-        self.editing_runlevel = "3"
-        self.lblEditing.set_text(_("Editing Runlevel: ") + self.editing_runlevel)
-        self.clstServices.set_column_visible(0, 0)
-        self.clstServices.set_column_visible(1, 0)
-        self.clstServices.set_column_visible(2, 0)
-        self.clstServices.set_column_visible(3, 1)
-        self.clstServices.set_column_visible(4, 0)
-        self.clstServices.set_column_visible(5, 0)
-        self.clstServices.set_column_visible(6, 0)
-        self.clstServices.set_headers_visible(0)        
+
+        self.editing_runlevel = title
+        self.lblEditing.set_text(_("Editing Runlevel: ") + title)
+
+        if isinstance (runlevels, int):
+            runlevels = [runlevels]
+            self.clstServices.set_headers_visible (0)        
+        else:
+            self.clstServices.set_headers_visible (1)
+        rl_map = map (lambda x: 0, range (0,7))
+        for rl in runlevels:
+            rl_map[rl] = 1
+        for i in range (0,7):
+            if self.clstServices.get_column_visible (i) != rl_map[i]:
+                self.clstServices.set_column_visible (i, rl_map[i])
         self.populateList()
 
-
+    def on_optRL3_toggled(self, button):
+        """calls  populateList() to repopulate the checklist for runlevel 3"""
+        return self.set_editing_runlevels (button, "3", 3)
 
     def on_optRL4_toggled(self, button):
         """calls populateList() to repopulate the checklist for runlevel 4"""
-        if self.previous==button:
-            return
-        if button.get_active() != gtk.TRUE:
-            self.previous=button
-            return
-
-        if self.check_dirty() == gtk.RESPONSE_CANCEL:
-            self.previous.set_active(1)
-            return gtk.TRUE
-        self.editing_runlevel = "4"
-        self.lblEditing.set_text(_("Editing Runlevel: ") + self.editing_runlevel)
-        self.clstServices.set_column_visible(0, 0)
-        self.clstServices.set_column_visible(1, 0)
-        self.clstServices.set_column_visible(2, 0)
-        self.clstServices.set_column_visible(3, 0)
-        self.clstServices.set_column_visible(4, 1)
-        self.clstServices.set_column_visible(5, 0)
-        self.clstServices.set_column_visible(6, 0)
-        self.clstServices.set_headers_visible(0)        
-        self.populateList()
+        return self.set_editing_runlevels (button, "4", 4)
 
     def on_optRL5_toggled(self, button):
         """calls populateList() to repopulate the checklist for runlevel 5"""
-        if self.previous==button:
-            return
-        if button.get_active() != gtk.TRUE:
-            self.previous=button
-            return
-        if self.check_dirty() == gtk.RESPONSE_CANCEL:
-            self.previous.set_active(1)
-            return gtk.TRUE
-        self.editing_runlevel = "5"
-        self.lblEditing.set_text(_("Editing Runlevel: ") + self.editing_runlevel)
-        self.clstServices.set_column_visible(0, 0)
-        self.clstServices.set_column_visible(1, 0)
-        self.clstServices.set_column_visible(2, 0)
-        self.clstServices.set_column_visible(3, 0)
-        self.clstServices.set_column_visible(4, 0)
-        self.clstServices.set_column_visible(5, 1)
-        self.clstServices.set_column_visible(6, 0)
-        self.clstServices.set_headers_visible(0)        
-        self.populateList()
+        return self.set_editing_runlevels (button, "5", 5)
 
     def on_optRLA_toggled(self, button):
         """calls populateList() to repopulate the checklist for all runlevels"""
-        if self.previous==button:
-            return
-        if button.get_active() != gtk.TRUE:
-            self.previous=button
-            return
-        if self.check_dirty() == gtk.RESPONSE_CANCEL:
-            self.previous.set_active(1)
-            return gtk.TRUE
-        self.editing_runlevel = "All"
-        self.lblEditing.set_text(_("Editing Runlevel: ") + _("All"))
-        self.clstServices.set_column_visible(0, 0)
-        self.clstServices.set_column_visible(1, 0)
-        self.clstServices.set_column_visible(2, 0)
-        self.clstServices.set_column_visible(3, 1)
-        self.clstServices.set_column_visible(4, 1)
-        self.clstServices.set_column_visible(5, 1)
-        self.clstServices.set_column_visible(6, 0)
-        self.clstServices.set_headers_visible(1)
-        self.populateList()
+        return self.set_editing_runlevels (button, _("All"), [3, 4, 5])
 
     def on_edit_runlevel(self, button):
         self.optRL3.set_sensitive(not self.dirty)
@@ -586,10 +537,10 @@ class Gui:
         self.save_revert_sensitive(0)
 
     def quit(self,arg1=None,arg2=None):
-        global quiting
+        global quitting
         if self.check_dirty() == gtk.RESPONSE_CANCEL:
             return  gtk.TRUE
-        quiting=1
+        quitting=1
         if gtk.__dict__.has_key ("main_quit"):
             gtk.main_quit()
         else:
@@ -706,7 +657,7 @@ def main():
                 gtk.mainloop ()
         except:
             # if you quit during initialization exceptions can be raised
-            if not quiting:
+            if not quitting:
                 raise
     else:
         print _("You must run system-config-services as root.")

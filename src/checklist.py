@@ -25,11 +25,11 @@ class CheckList (gtk.TreeView):
     # XXX need to handle the multicolumn case better still....
     def __init__ (self, custom_store=None):
 
-	if not custom_store:
-	    self.store = gtk.TreeStore(gobject.TYPE_BOOLEAN,gobject.TYPE_BOOLEAN,gobject.TYPE_BOOLEAN,gobject.TYPE_BOOLEAN,
-                                   gobject.TYPE_BOOLEAN,gobject.TYPE_BOOLEAN,gobject.TYPE_BOOLEAN,gobject.TYPE_STRING)
-	else:
-	    self.store = custom_store
+        if not custom_store:
+            self.store = gtk.TreeStore(gobject.TYPE_BOOLEAN,gobject.TYPE_BOOLEAN,gobject.TYPE_BOOLEAN,gobject.TYPE_BOOLEAN,
+                                       gobject.TYPE_BOOLEAN,gobject.TYPE_BOOLEAN,gobject.TYPE_BOOLEAN,gobject.TYPE_STRING)
+        else:
+            self.store = custom_store
 
         gtk.TreeView.__init__ (self, self.store)
         
@@ -146,6 +146,11 @@ class CheckList (gtk.TreeView):
         col = self.get_column(column)
         if col:
             col.set_sizing(sizing)
+
+    def get_column_visible (self, column):
+        col = self.get_column(column)
+        if col:
+            return col.get_visible ()
 
     def set_column_visible(self, column, visible):
         "Set the column visibility"
