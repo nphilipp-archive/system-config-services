@@ -149,6 +149,7 @@ class Gui:
               "on_pmnStart_activate" : self.on_btnStart_clicked,
               "on_pmnStop_activate" : self.on_btnStop_clicked,
               "on_pmnRestart_activate" : self.on_btnRestart_clicked,
+              "on_mnuManual_activate" : self.on_mnuManual_activate,
               "on_edit_runlevel" : self.on_edit_runlevel,
               "on_optRL3_toggled" : self.on_optRL3_toggled,
               "on_optRL4_toggled" : self.on_optRL4_toggled,
