@@ -6,11 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
 "POT-Creation-Date: 2002-08-20 15:37-0400\n"
-"PO-Revision-Date: 2001-08-21 10:16+0200\n"
-"Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
+"PO-Revision-Date: 2002-08-24 21:12+0200\n"
+"Last-Translator: Trond Eivind GlomsrÃ¸d <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #.
@@ -105,26 +105,25 @@ msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"Du har gjort endringer i aktivt kjÃ¸ringsnivÃ¥.\n"
+"Vil du lagre endringene?"
 
 #. ----------------------------------------------------------------------------
 #. Methods pertaining to the "Help" menu items, there will be more here
 #. once I have "real" help :)
 #. ----------------------------------------------------------------------------
 #: src/serviceconf.py:355
-#, fuzzy
 msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-msgstr "Copyright (c) 2001 Red Hat, Inc. All rights reserved."
+msgstr "Opphavsrett Â© 2002 Red Hat, Inc. Alle rettigheter reserveres."
 
 #: src/serviceconf.py:356
-#, fuzzy
 msgid ""
 "This software may be freely redistributed under the terms of the GPL.\n"
 "Please report all bugs you find at the Red Hat bug tracking system:\n"
 "http://bugzilla.redhat.com"
 msgstr ""
-"Dette programmet kan fritt redistribueres under betingelsene i GPL.\n"
-"\n"
-"Rapporter feil til Red Hats feildatabase:\n"
+"Dette programmet kan fritt redistribueres under betingelsene gitt i GPL.\n"
+"Vennligst rapporter alle feil du finner i Red Hats feildatabase:\n"
 "https://bugzilla.redhat.com/bugzilla/"
 
 #. ----------------------------------------------------------------------------
@@ -145,9 +144,8 @@ msgstr ""
 #. set the label text to be the current selected servicename for pmnBlank
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:488
-#, fuzzy
 msgid "You must run redhat-config-services as root."
-msgstr "Du må kjøre serviceconf som root."
+msgstr "Du mÃ¥ kjÃ¸re redhat-config-services som root."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -190,7 +188,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Du må slå på xinetd for å bruke denne tjenesten."
+"Du mÃ¥ slÃ¥ pÃ¥ xinetd for Ã¥ bruke denne tjenesten."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
@@ -211,17 +209,17 @@ msgstr ". Feilen var: "
 #: src/servicemethods.py:320
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "xinetd fullførte gjenlasting av %s"
+msgstr "xinetd fullfÃ¸rte gjenlasting av %s"
 
 #: src/servicemethods.py:323
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "xinetd må kjøre for å kunne bruke %s"
+msgstr "xinetd mÃ¥ kjÃ¸re for Ã¥ kunne bruke %s"
 
 #: src/servicemethods.py:328
-#, fuzzy, python-format
+#, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s kunne ikke %s. Feilen var: %s"
+msgstr "%s feilet. Feilen var: %s"
 
 #: src/servicemethods.py:330
 msgid " successful"
@@ -233,11 +231,11 @@ msgstr "Avbryt"
 
 #: src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
-msgstr "Aktivt kjøringsnivå: "
+msgstr "Aktivt kjÃ¸ringsnivÃ¥: "
 
 #: src/serviceconf.glade.h:3
 msgid "Editing Runlevel:"
-msgstr "Redigerer kjøringsnivå:"
+msgstr "Redigerer kjÃ¸ringsnivÃ¥:"
 
 #: src/serviceconf.glade.h:4
 msgid "None"
@@ -249,27 +247,27 @@ msgstr "Avslutt"
 
 #: src/serviceconf.glade.h:6
 msgid "Restart"
-msgstr "Start på nytt"
+msgstr "Start pÃ¥ nytt"
 
 #: src/serviceconf.glade.h:7
 msgid "Restart the selected service"
-msgstr "Start valgt tjeneste på nytt"
+msgstr "Start valgt tjeneste pÃ¥ nytt"
 
 #: src/serviceconf.glade.h:8
 msgid "Revert to the last saved change"
-msgstr "Gå tilbake til forrige lagrede endring"
+msgstr "GÃ¥ tilbake til forrige lagrede endring"
 
 #: src/serviceconf.glade.h:9
 msgid "Runlevel _3"
-msgstr "Kjøringsnivå _3"
+msgstr "KjÃ¸ringsnivÃ¥ _3"
 
 #: src/serviceconf.glade.h:10
 msgid "Runlevel _4"
-msgstr "Kjøringsnivå _4"
+msgstr "KjÃ¸ringsnivÃ¥ _4"
 
 #: src/serviceconf.glade.h:11
 msgid "Runlevel _5"
-msgstr "Kjøringsnivå _5"
+msgstr "KjÃ¸ringsnivÃ¥ _5"
 
 #: src/serviceconf.glade.h:12
 msgid "S_top Service"
@@ -309,19 +307,19 @@ msgstr "H_andlinger"
 
 #: src/serviceconf.glade.h:21
 msgid "_Contents"
-msgstr ""
+msgstr "_Innhold"
 
 #: src/serviceconf.glade.h:22
 msgid "_Edit Runlevel"
-msgstr "Redigerer kjøringsnivå"
+msgstr "Redigerer kjÃ¸ringsnivÃ¥"
 
 #: src/serviceconf.glade.h:23
 msgid "_File"
-msgstr ""
+msgstr "_Fil"
 
 #: src/serviceconf.glade.h:24
 msgid "_Help"
-msgstr ""
+msgstr "_Hjelp"
 
 #: src/serviceconf.glade.h:25
 msgid "_Refresh Service List"
@@ -329,11 +327,11 @@ msgstr "_Oppdater tjenestelisten"
 
 #: src/serviceconf.glade.h:26
 msgid "_Restart Service"
-msgstr "Sta_rt tjenesten på nytt"
+msgstr "Sta_rt tjenesten pÃ¥ nytt"
 
 #: src/serviceconf.glade.h:27
 msgid "_Revert To Last Save"
-msgstr "Gå tilbake til fo_rrige lagring"
+msgstr "GÃ¥ tilbake til fo_rrige lagring"
 
 #: src/serviceconf.glade.h:28
 msgid "_Save Changes"
@@ -342,45 +340,3 @@ msgstr "_Lagre endringer"
 #: src/serviceconf.glade.h:29
 msgid "_Start Service"
 msgstr "_Start tjenester"
-
-#, fuzzy
-#~ msgid "Zone "
-#~ msgstr "Ingen"
-
-#, fuzzy
-#~ msgid "You must enter a host name."
-#~ msgstr "Du må kjøre serviceconf som root."
-
-#, fuzzy
-#~ msgid "You must enter an priority."
-#~ msgstr "Du må kjøre serviceconf som root."
-
-#~ msgid "_Manual"
-#~ msgstr "_Håndbok"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "Oppdater listen over tjenester"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr "Handlinger som start, stopp, og omstart av valgt tjeneste"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Velg kjøringsnivå du ønsker å redigere"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "Kjøringsnivå 3 er flerbrukermodus med nettverk"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr ""
-#~ "Kjøringsnivå 4 er reservert for lokale tilpasninger, og er ikke vanligvis "
-#~ "brukt"
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr "Kjøringsnivå 5 er flerbrukermodus med nettverk og X Windows"
-
-#~ msgid "Read Manual"
-#~ msgstr "Les håndbok"
-
-#~ msgid "Exit"
-#~ msgstr "Avslutt"
