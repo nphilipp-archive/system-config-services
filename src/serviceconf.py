@@ -41,7 +41,7 @@ gettext.bindtextdomain (domain, "/usr/share/locale")
 gettext.textdomain (domain)
 _=gettext.gettext
 
-
+quiting = 0
 VERSION = "0.8.1"
 
 def find_browser():
@@ -74,6 +74,7 @@ class Gui:
             _disable_gdk_threading()
         except ImportError:
             pass
+        self.dirty=0
 
         self.ServiceMethods = servicemethods.ServiceMethods()
 
@@ -82,7 +83,7 @@ class Gui:
         # map the event signals to specific methods
         self.xml.signal_autoconnect(
             { "on_mainwin_delete_event" : self.quit,
-              "on_mainwin_hide" : gtk.mainquit,
+              "on_mainwin_hide" : self.quit,
               "on_mnuRescan_activate" : self.on_mnuRescan_activate,
               "on_mnuSave_activate" : self.on_btnSave_clicked,
               "on_mnuRevert_activate" : self.on_btnRevert_clicked,
@@ -141,7 +142,6 @@ class Gui:
         
         # the textbox
         self.txtDesc = self.xml.get_widget("txtDesc")
-        self.txtDesc.set_wrap_mode(1)
 	self.txtBuffer = gtk.TextBuffer(None)
 	self.txtDesc.set_buffer(self.txtBuffer)
 
@@ -161,7 +161,6 @@ class Gui:
         self.xml.get_widget("swindow").add(self.clstServices)
 
         self.clstServices.show()
-
         self.ServiceMethods = servicemethods.ServiceMethods()
 
         # initialize this to the runlevel we are running in. It will
@@ -198,8 +197,10 @@ class Gui:
 
         self.save_revert_sensitive(0)
         
-        self.current_selected_service = self.clstServices.get_text(0,1)
+        self.clstServices.get_selection().select_path ((0,))
         
+        self.current_selected_service = self.clstServices.get_text(0,1)
+
         self.winMain.show()
 
 
@@ -400,6 +401,9 @@ http://bugzilla.redhat.com"""),
         self.save_revert_sensitive(0)
 
     def quit(self,arg1=None,arg2=None):
+
+        global quiting
+        quiting=1
         self.check_dirty()
         gtk.mainquit()
         
@@ -484,9 +488,13 @@ http://bugzilla.redhat.com"""),
         
 def main():
     if os.geteuid() == 0:
-        Gui()
-        
-        gtk.mainloop()
+        try:
+            Gui()
+            gtk.mainloop()
+        except:
+            # if you quit during initialization exceptions can be raised
+            if not quiting:
+                raise
     else:
         print _("You must run redhat-config-services as root.")
         sys.exit(-1)
