@@ -2,11 +2,11 @@
 <HTML
 ><HEAD
 ><TITLE
->Red Hat Services Configuration Tool</TITLE
+>Services Configuration Tool</TITLE
 ><META
 NAME="GENERATOR"
-CONTENT="Modular DocBook HTML Stylesheet Version 1.64
-"></HEAD
+CONTENT="Modular DocBook HTML Stylesheet Version 1.76b+
+"></HEAD><link rel="stylesheet" type="text/css" href="rhdocs-man.css"
 ><BODY
 CLASS="ARTICLE"
 BGCOLOR="#FFFFFF"
@@ -22,17 +22,14 @@ CLASS="TITLEPAGE"
 CLASS="TITLE"
 ><A
 NAME="AEN2"
-><B
-CLASS="APPLICATION"
->Red Hat Services Configuration Tool</B
 ></A
-></H1
-><H3
+>Services Configuration Tool</H1
+><H4
 CLASS="AUTHOR"
 ><A
-NAME="AEN6"
+NAME="AEN4"
 >Tammy Fox</A
-></H3
+></H4
 ><DIV
 CLASS="AFFILIATION"
 ><DIV
@@ -47,25 +44,16 @@ CLASS="COPYRIGHT"
 ><A
 HREF="legalnotice.html"
 >Copyright</A
-> &copy; 2001, 2002 by Red Hat, Inc.</P
+> &copy; 2002 by Red Hat, Inc.</P
 ><HR
 WIDTH="75%"
 ALIGN="CENTER"
 COLOR="#000000"
 SIZE="1"></DIV
->
-<DIV
-CLASS="SECT1"
-><H1
-CLASS="SECT1"
-><A
-NAME="USING"
-></A
-></H1
 ><P
->	<B
+>	The <B
 CLASS="APPLICATION"
->Red Hat Services Configuration Tool</B
+>Services Configuration Tool</B
 > is a graphical application
 	developed by Red Hat to configure which SysV services in
 	<TT
@@ -83,135 +71,156 @@ CLASS="COMMAND"
 >.
       </P
 ><P
->	To start the application, go to the <B
+>	To start the <B
+CLASS="APPLICATION"
+>Services Configuration Tool</B
+> from the desktop, go to
+	the <B
 CLASS="GUIMENU"
 >Main Menu Button</B
->
-	    (on the Panel) =&#62; 
-	    <B
+> (on the Panel) =&#62;
+	<B
 CLASS="GUIMENU"
->System Tools </B
-> =&#62; <B
+>Server Settings</B
+> =&#62;
+	<B
 CLASS="GUIMENUITEM"
 >Services</B
-> or type the command <TT
+> or type the command
+	<TT
 CLASS="COMMAND"
 >redhat-config-services</TT
-> at a shell prompt
-	    (for example, in an XTerm or a GNOME terminal).
-	  </P
-></LI
-></UL
+> at a shell prompt (for
+	example, in an <B
+CLASS="APPLICATION"
+>XTerm</B
+> or a <B
+CLASS="APPLICATION"
+>GNOME
+	terminal</B
+>).
+      </P
 ><DIV
 CLASS="FIGURE"
 ><A
-NAME="SERVICECONF-FIG"
+NAME="FIG-SERVICECONF"
 ></A
+><DIV
+CLASS="MEDIAOBJECT"
 ><P
 ><IMG
 SRC="./figs/serviceconf.png"></P
+></DIV
 ><P
 ><B
 >Figure 1. <B
 CLASS="APPLICATION"
->redhat-config-services</B
+>Services Configuration Tool</B
 ></B
 ></P
 ></DIV
 ><P
->	<B
+>	The <B
 CLASS="APPLICATION"
->redhat-config-services</B
+>Services Configuration Tool</B
 > displays the current runlevel as
-	well as which runlevel you are currently editing. To edit a different
+	well as the runlevel you are currently editing. To edit a different
 	runlevel, select <B
 CLASS="GUIMENU"
 >Edit Runlevel</B
 > from the pulldown menu
-	and select runlevel 3, 4, or 5. 
+	and select runlevel 3, 4, or 5.
       </P
 ><P
->
-<B
+>	The <B
 CLASS="APPLICATION"
->redhat-config-services</B
-> lists
-	the services from <TT
+>Services Configuration Tool</B
+> lists the services from
+	<TT
 CLASS="FILENAME"
 >/etc/rc.d/init.d</TT
-> as well as the
-	services controlled by <TT
+> as well as the services controlled
+	by <TT
 CLASS="COMMAND"
 >xinetd</TT
+>.  Click on the name of the service from the
+	list on the left-hand side of the application to display a brief
+	description of that service as well as the status of the service. If the
+	service is not an <TT
+CLASS="COMMAND"
+>xinetd</TT
+> service, the status window
+	shows whether or not the service is currently running. If the service is
+	controlled by <TT
+CLASS="COMMAND"
+>xinetd</TT
+>, the status window displays the
+	phrase <B
+CLASS="GUILABEL"
+>xinetd service</B
 >.
-     	Click on a service to display a brief description of that service at
-	the bottom of the window. 
-</P>
-<P
->	To start, stop, or restart a service immediately, select the service and
-	choose the action from the <B
+      </P
+><P
+>	To start, stop, or restart a service immediately, select the service
+	from the list and click the appropriate button on the toolbar (or choose
+	the action from the <B
 CLASS="GUIMENU"
 >Actions</B
-> pulldown menu. You
-	can also select the service and click the start, stop, or restart button
-	on the toolbar. 
+> pulldown menu). If the
+	service is an <TT
+CLASS="COMMAND"
+>xinetd</TT
+> service, the action buttons are
+	disabled because they can not be started or stopped individually.
       </P
 ><P
->	If you select an <TT
+>	If you enable/disable an <TT
 CLASS="COMMAND"
 >xinetd</TT
-> service such as telnet, the
+> service by checking
+	or unchecking the checkbox next to the service name, you must select
 	<B
-CLASS="GUIBUTTON"
->Start</B
->, <B
-CLASS="GUIBUTTON"
->Stop</B
->, and
-	<B
-CLASS="GUIBUTTON"
->Restart</B
-> buttons will not be active. If you 
-	change the <B
-CLASS="GUILABEL"
->Start at Boot</B
-> value of an
-	<TT
-CLASS="COMMAND"
->xinetd</TT
-> service, you must
-	click the <B
-CLASS="GUIBUTTON"
->Save Changes</B
-> button to restart
-	<TT
-CLASS="COMMAND"
->xinetd</TT
-> and disable/enable the
-	<TT
-CLASS="COMMAND"
->xinetd</TT
-> services that you changed.
-      </P
-><P
->	To enable a service at boot time for the currently selected runlevel,
-	check the checkbox beside the name of the service under the
-	<B
-CLASS="GUILABEL"
->Start at Boot</B
-> column. After configuring the
-	runlevel, you must apply the changes. Select <B
 CLASS="GUIMENU"
 >File</B
-> =&#62;
-	<B
+> =&#62; <B
 CLASS="GUIMENUITEM"
 >Save Changes</B
-> from the pulldown menu or click the
-	<B
-CLASS="GUIBUTTON"
->Save Changes</B
-> button.
+> from
+	the pull-down menu to restart <TT
+CLASS="COMMAND"
+>xinetd</TT
+> and immediately
+	enable/disable the <TT
+CLASS="COMMAND"
+>xinetd</TT
+> service that you
+	changed. <TT
+CLASS="COMMAND"
+>xinetd</TT
+> is also configured to remember the
+	setting. You can enable/disable more than one <TT
+CLASS="COMMAND"
+>xinetd</TT
+>
+	service at a time and save the changes when you are finished.
+      </P
+><P
+>	For example, assume you check <TT
+CLASS="COMMAND"
+>rsync</TT
+> to enable it in
+	runlevel 3 and then save the changes. The <TT
+CLASS="COMMAND"
+>rsync</TT
+>
+	service is immediately enabled. The next time <TT
+CLASS="COMMAND"
+>xinetd</TT
+>
+	is started, <TT
+CLASS="COMMAND"
+>rsync</TT
+> is still enabled.
       </P
 ><DIV
 CLASS="WARNING"
@@ -251,50 +260,52 @@ CLASS="COMMAND"
 	  <TT
 CLASS="COMMAND"
 >xinetd</TT
-> is restarted. When you save changes to other
-	  services, the runlevel is reconfigured, but the changes do not take
-	  effect immediately. 
+> is restarted, and the changes take place
+	  immediately. When you save changes to other services, the runlevel is
+	  reconfigured, but the changes do not take effect immediately.
 	</P
 ></TD
 ></TR
 ></TABLE
 ></DIV
 ><P
->	If you check or uncheck the <B
-CLASS="GUILABEL"
->Start at Boot</B
-> value for
-	a service in <TT
-CLASS="FILENAME"
->/etc/rc.d/init.d</TT
->, the <B
-CLASS="GUIBUTTON"
+>	To enable a non-<TT
+CLASS="COMMAND"
+>xinetd</TT
+> service to start at boot time
+	for the currently selected runlevel, check the checkbox beside the name
+	of the service in the list. After configuring the runlevel, apply the
+	changes by selecting <B
+CLASS="GUIMENU"
+>File</B
+> =&#62; <B
+CLASS="GUIMENUITEM"
 >Save
 	Changes</B
-> button will become active. Click it to reconfigure
-	the currently selected runlevel. The changes do not affect the system
-	immediately. For example, assume you are configuring runlevel 3.  If you
-	change the <B
-CLASS="GUILABEL"
->Start at Boot</B
-> value for the
-	<TT
+> from the pulldown menu. The runlevel configuration
+	is changed, but the runlevel is not restarted; thus, the changes do not
+	take place immediately.
+      </P
+><P
+> 
+	For example, assume you are configuring runlevel 3.  If you
+	change the value for the <TT
 CLASS="COMMAND"
 >anacron</TT
-> service from checked to unchecked and then
-	click the <B
-CLASS="GUIBUTTON"
+> service from checked
+	to unchecked and then select <B
+CLASS="GUIMENUITEM"
 >Save Changes</B
-> button, the runlevel 3
-	configuration changes so that <TT
+>,
+	the runlevel 3 configuration changes so that <TT
 CLASS="COMMAND"
 >anacron</TT
-> is not started
-	at boot time. However, runlevel 3 is not reinitialized, so
-	<TT
+>
+	is not started at boot time. However, runlevel 3 is not reinitialized,
+	so <TT
 CLASS="COMMAND"
 >anacron</TT
-> is still running. Select one of the following
+> is still running. Select one of following
 	options at this point:
       </P
 ><P
@@ -303,14 +314,14 @@ CLASS="COMMAND"
 TYPE="1"
 ><LI
 ><P
->	    Stop the <TT
+>Stop the <TT
 CLASS="COMMAND"
 >anacron</TT
 > service &#8212; Stop the
 	    service by selecting it from the list and clicking the
 	    <B
 CLASS="GUIBUTTON"
->Stop the selected service</B
+>Stop</B
 > button. A message
 	    will be displayed stating that the service was stopped
 	    successfully.
@@ -318,29 +329,29 @@ CLASS="GUIBUTTON"
 ></LI
 ><LI
 ><P
->	    Reinitialize the runlevel &#8212; Reinitialize the runlevel by
-	    going to a shell prompt (such as an XTerm or GNOME-terminal) and
-	    typing the command <TT
+>Reinitialize the runlevel &#8212; Reinitialize the runlevel by
+	    going to a shell prompt and typing the command <TT
 CLASS="COMMAND"
->telinit 3</TT
-> (where 3 is the
-	    runlevel number). This option is recommended if you change the
-	    <B
+>telinit
+	    3</TT
+> (where 3 is the runlevel number). This option is
+	    recommended if you change the <B
 CLASS="GUILABEL"
 >Start at Boot</B
-> value of more than one service
-	    and want to activate the changes immediately.
+>
+	    value of more than one service and want to activate the changes
+	    immediately.
 	  </P
 ></LI
 ><LI
 ><P
->	    Do nothing else &#8212; You do not have to stop the 
+>Do nothing else &#8212; You do not have to stop the
 	    <TT
 CLASS="COMMAND"
 >anacron</TT
-> service. You can wait until
-	    the system is rebooted for the service to stop. The next time the
-	    system is booted, the runlevel will be initialized without the
+> service. You can wait until the system is
+	    rebooted for the service to stop. The next time the system is
+	    booted, the runlevel will be initialized without the
 	    <TT
 CLASS="COMMAND"
 >anacron</TT
@@ -349,47 +360,39 @@ CLASS="COMMAND"
 ></LI
 ></OL
 ><P
->	Refer to the <I
+>    Refer to the <I
 CLASS="CITETITLE"
->Official Red Hat Linux Customization Guide</I
-> and
-	<I
+>Red Hat Linux Customization Guide</I
+> and the
+    <I
 CLASS="CITETITLE"
->Official Red Hat Linux Reference Guide</I
+>Red Hat Linux Reference Guide</I
 > for more information on runlevels,
-	<TT
+    <TT
 CLASS="COMMAND"
 >xinetd</TT
 >, and SysV.
-      </P
+  </P
 ><P
->	<B
+>    <B
 CLASS="APPLICATION"
->redhat-config-services</B
-> was written by Tim Powers
-	<TT
-CLASS="EMAIL"
->&#60;<A
-HREF="mailto:timp@redhat.com"
->timp@redhat.com</A
->&#62;</TT
-> and Bill Nottingham
-	<TT
-CLASS="EMAIL"
->&#60;<A
-HREF="mailto:notting@redhat.com"
->notting@redhat.com</A
->&#62;</TT
->. This software may be freely
-	redistributed under the terms of the GPL.
-	Please report all bugs you find at the Red Hat bug tracking system at
-	<A
+>Services Configuration Tool</B
+> was written by Tim Powers, Bill
+    Nottingham, and Dan Walsh. This software may be freely redistributed under
+    the terms of the GPL.
+  </P
+><P
+>    To submit bugs or requests for enhancements, go to <A
 HREF="http://bugzilla.redhat.com/bugzilla/"
 TARGET="_top"
->http://bugzilla.redhat.com/bugzilla/</A
+>http://bugzilla.redhat.com/bugzilla</A
+>
+    and submit a bug against the component
+    <TT
+CLASS="COMPUTEROUTPUT"
+>redhat-config-services</TT
 >.
-      </P
-></DIV
+  </P
 ></DIV
 ></BODY
 ></HTML
