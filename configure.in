@@ -1,5 +1,5 @@
 AC_INIT(system-config-services.spec.in)
-AM_INIT_AUTOMAKE(system-config-services, 0.8.6)
+AM_INIT_AUTOMAKE(system-config-services, 0.8.7)
 
 PYTHON=python
 AC_SUBST(PYTHON)
