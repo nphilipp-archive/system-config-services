@@ -51,7 +51,7 @@ class ServiceMethods:
     def get_status(self,servicename):
         status = self.UNKNOWN
         try:
-            message = getstatusoutput("LC_ALL=C LANG=C /sbin/service " + servicename + " status < /dev/null")[1]
+            message = getstatusoutput("LC_ALL=C /sbin/service " + servicename + " status < /dev/null")[1]
         except:
             return (self.UNKNOWN,"")
 
@@ -145,7 +145,7 @@ class ServiceMethods:
 
         if add_or_del == 1 or add_or_del == 0:
             try:
-                getstatusoutput("LC_ALL=C LANG=C /sbin/chkconfig --level %s %s %s" % (editing_runlevel, servicename, chkconfig_action))
+                getstatusoutput("LC_ALL=C /sbin/chkconfig --level %s %s %s" % (editing_runlevel, servicename, chkconfig_action))
             except IOError:
                 pass
             self.dict_services[servicename][0][int(editing_runlevel)] = add_or_del
@@ -163,7 +163,7 @@ class ServiceMethods:
 
         if add_or_del == 1 or add_or_del == 0:
             try:
-                getstatusoutput("LC_ALL=C LANG=C /sbin/chkconfig %s %s" % (xinetd_servicename , disable_option))
+                getstatusoutput("LC_ALL=C /sbin/chkconfig %s %s" % (xinetd_servicename , disable_option))
             except:
                 pass
             # for xinetd services, set the dictionary to show that it's disabled in all runlevels
@@ -186,7 +186,7 @@ class ServiceMethods:
         list_xinetd_services = []
         self.allservices = []
         
-        chkconfig_list = getstatusoutput("LC_ALL=C LANG=C /sbin/chkconfig --list")[1]
+        chkconfig_list = getstatusoutput("LC_ALL=C /sbin/chkconfig --list")[1]
         chkconfig_list = re.split('\n', chkconfig_list)
         dict={}
         for i in chkconfig_list:
