@@ -23,7 +23,7 @@ should be enabled on your machine.
 
 %prep
 %setup -q
-#autoconf
+autoconf
 
 CFLAGS="$RPM_OPT_FLAGS" ./configure \
     $MYARCH_FLAGS --enable-more-warnings=no \
