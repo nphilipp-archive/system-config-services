@@ -1,19 +1,19 @@
-# Translation of zh_TW.po to Chinese (traditional)
+# Translation of redhat-config-services to Chinese (traditional)
 # Copyright (C) 2002 Red Hat Inc.
-# Ben Wu <hpwu@redhat.com>, 2002.
+# Ben Wu <hpwu@redhat.com>, 2002,2003.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: serviceconf\n"
+"Project-Id-Version: redhat-config-services\n"
 "POT-Creation-Date: 2003-03-04 14:02-0500\n"
-"PO-Revision-Date: 2003-01-10 09:10+1000\n"
+"PO-Revision-Date: 2003-03-20 14:50+1000\n"
 "Last-Translator: Ben Wu <hpwu@redhat.com>\n"
-"Language-Team: Chinese (Traditional) <i18n-list@redhat.com>\n"
+"Language-Team: Traditional Chinese <i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
-"X-Generator: KBabel 0.9.6\n"
+"X-Generator: KBabel 1.0\n"
 
 #.
 #. checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -242,7 +242,7 @@ msgstr "說明"
 
 #: src/serviceconf.glade.h:3
 msgid "Don't Save"
-msgstr ""
+msgstr "不儲存變更"
 
 #: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
@@ -282,7 +282,7 @@ msgstr "停止系統服務(_t)"
 
 #: src/serviceconf.glade.h:13
 msgid "Save Dialog"
-msgstr ""
+msgstr "儲存對話窗"
 
 #: src/serviceconf.glade.h:14
 msgid "Service Configuration"
@@ -565,3 +565,4 @@ msgstr "啟動系統服務(_S)"
 
 #~ msgid "Exit"
 #~ msgstr "離開"
+
