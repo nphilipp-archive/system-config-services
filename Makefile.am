@@ -31,9 +31,11 @@ install-data-hook:
 	$(mkinstalldirs) $(DESTDIR)$(sysconfdir)/security/console.apps
 	$(mkinstalldirs) $(DESTDIR)$(sysconfdir)/pam.d
 	$(mkinstalldirs) $(DESTDIR)$(prefix)/bin/
+	$(mkinstalldirs) $(DESTDIR)$/usr/share/doc/system-config-services-$(VERSION)/
 	$(INSTALL_DATA) $(srcdir)/system-config-services.console $(DESTDIR)$(sysconfdir)/security/console.apps/system-config-services
 	$(INSTALL_DATA) $(srcdir)/system-config-services.pam $(DESTDIR)$(sysconfdir)/pam.d/system-config-services
 	$(INSTALL_DATA) $(srcdir)/pixmaps/system-config-services.png $(DESTDIR)$(pkgdatadir)/
+	$(INSTALL_DATA) $docs/html/* $(DESTDIR)/usr/share/doc/system-config-services-$(VERSION)
 	ln -fs consolehelper $(DESTDIR)$(prefix)/bin/system-config-services
 	ln -fs consolehelper $(DESTDIR)$(prefix)/bin/serviceconf
 	ln -fs system-config-services $(DESTDIR)$(sysconfdir)/security/console.apps/serviceconf
