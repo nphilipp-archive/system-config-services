@@ -1,14 +1,15 @@
-# $Id: cs.po,v 1.19 2002/10/02 15:17:48 dwalsh Exp $
+# $Id: cs.po,v 1.20 2002/10/02 21:27:03 mitr Exp $
 #
 # Czech translation for serviceconf
 # Copyright (C) 2001 Free Software Foundation, Inc.
 # Milan Kerslager <kerslage@linux.cz>, 2001
+# Miloslav Trmac <mitr@volny.cz>, 2002
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf 1.0\n"
 "POT-Creation-Date: 2002-10-02 11:21-0400\n"
-"PO-Revision-Date: 2002-09-06 04:46+0200\n"
+"PO-Revision-Date: 2002-10-02 23:32+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -109,11 +110,11 @@ msgstr "Měněný runlevel: "
 #. set the text in StatusView
 #: src/serviceconf.py:289
 msgid "Unknown"
-msgstr ""
+msgstr "Neznámý"
 
 #: src/serviceconf.py:292
 msgid "xinetd service"
-msgstr ""
+msgstr "služba xinetd"
 
 #: src/serviceconf.py:360
 msgid ""
@@ -252,7 +253,7 @@ msgstr "Aktuální runlevel: "
 
 #: src/serviceconf.glade.h:3
 msgid "Description"
-msgstr ""
+msgstr "Popis"
 
 #: src/serviceconf.glade.h:4
 msgid "Editing Runlevel:"
@@ -315,9 +316,8 @@ msgid "Start the selected service"
 msgstr "Spustit vybrané služby"
 
 #: src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "Spustit"
+msgstr "Stav"
 
 #: src/serviceconf.glade.h:20
 msgid "Stop"
@@ -384,9 +384,3 @@ msgstr "_Spustit službu"
 #~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
 #~ msgstr ""
 #~ "Runlevel 5 je víceuživatelský režim se síťovými službami a X Windows"
-
-#~ msgid "Read Manual"
-#~ msgstr "Přečíst návod"
-
-#~ msgid "Exit"
-#~ msgstr "Konec"
