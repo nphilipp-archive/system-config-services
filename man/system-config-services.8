@@ -1,0 +1,47 @@
+.TH serviceconf 8 "Wed May 16 2001"
+.SH "NAME"
+redhat-config-services \- Service Configuration Utility
+.SH "SYNTAX"
+redhat-config-services
+.SH "DESCRIPTION"
+This is a graphical tool for enabling and disabling services
+(including xinetd services). Functionality to start, stop, and restart
+services is also included.
+.SH "OPTIONS"
+None
+.SH "FILES"
+\fI/usr/bin/redhat-config-services\fP
+.br 
+\fI/usr/share/serviceconf/*\fP
+.br 
+.SH "EXAMPLES"
+To run this program simply type:
+.LP 
+redhat-config-services
+.LP 
+.SH "LIMITATIONS"
+This utility currently execs chkconfig --add/--del <servicename> when
+enabling and disabling services. This means that it does not have the
+same default behaviour as ntsysv.
+
+.SH "SEE ALSO"
+.IR chkconfig(8)
+.IR ntsysv(8)
+
+.SH "BUGS"
+\- Some services will not start or stop properly if started anywhere
+but the console (redhat-config-services will appear to hang in these
+instances). This is not a bug in redhat-config-services, but in the individual
+services.
+
+\- Some services are incredibly hard to detect if they are running or
+not. Starting, stopping and restarting initscripts may give mixed
+results (ie. may fail if you are stopping a service that's already
+stopped, etc). This will be fixed; until then it's a bug.
+
+.SH "AUTHORS"
+Tim Powers <timp@redhat.com>
+.br
+Bill Nottingham <notting@redhat.com>
+.br
+Dan Walsh <dwalsh@redhat.com>
