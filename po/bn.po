@@ -6,61 +6,51 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-04-06 14:50-0400\n"
-"PO-Revision-Date: 2003-06-26 12:00+0600\n"
+"PO-Revision-Date: 2004-07-22 18:56+0600\n"
 "Last-Translator: Indranil Das Gupta <indradg@cal.vsnl.net.in>\n"
 "Language-Team: Bangla <redhat-translation@bengalinux.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#.
-#. checklist.py: A class (derived from GtkTreeView) that provides a list of
-#. checkbox / text string pairs
-#.
-#. Brent Fox <bfox@redhat.com>
-#. Jeremy Katz <katzj@redhat.com>
-#.
-#. Copyright 2000-2002 Red Hat, Inc.
-#.
-#. This software may be freely redistributed under the terms of the GNU
-#. library public license.
-#.
-#. You should have received a copy of the GNU Library Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
-#. override this to make your own columns if necessary
-#. add the string columns to the tree view widget
-#. XXX need to handle the multicolumn case better still....
-#. XXX we only handle two text columns right now
-#. keep track of the number of rows we have so we can
-#. iterate over them all
-#. add the text for the number of columns we have
-#. !/usr/bin/python
-#. serviceconf.py
-#. Copyright (C) 2002 Red Hat, Inc.
-#. Authors: Tim Powers <timp@redhat.com>
-#. Bill Nottingham <notting@redhat.com>
-#. Dan Walsh <dwalsh@redhat.com>
-#.
-#. This program is free software; you can redistribute it and/or modify
-#. it under the terms of the GNU General Public License as published by
-#. the Free Software Foundation; either version 2 of the License, or
-#. (at your option) any later version.
-#.
-#. This program is distributed in the hope that it will be useful,
-#. but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#. GNU General Public License for more details.
-#.
-#. You should have received a copy of the GNU General Public License
-#. along with this program; if not, write to the Free Software
-#. Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-#. #
-#. # I18N
-#. #
+#  checklist.py: A class (derived from GtkTreeView) that provides a list of
+#  checkbox / text string pairs
+#  Brent Fox <bfox@redhat.com>
+#  Jeremy Katz <katzj@redhat.com>
+#  Copyright 2000-2002 Red Hat, Inc.
+#  This software may be freely redistributed under the terms of the GNU
+#  library public license.
+#  You should have received a copy of the GNU Library Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#  override this to make your own columns if necessary
+#  add the string columns to the tree view widget
+#  XXX need to handle the multicolumn case better still....
+#  XXX we only handle two text columns right now
+#  keep track of the number of rows we have so we can
+#  iterate over them all
+#  add the text for the number of columns we have
+#  !/usr/bin/python
+#  serviceconf.py
+#  Copyright (C) 2002 Red Hat, Inc.
+#  Authors: Tim Powers <timp@redhat.com>
+#  Bill Nottingham <notting@redhat.com>
+#  Dan Walsh <dwalsh@redhat.com>
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#  #
+#  # I18N
+#  #
 #: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
@@ -71,15 +61,18 @@ msgstr "আপনি নিশ্চিত, আপনি %s মুছতে চ�
 #. main window
 #. menu items
 #. toolbars
-#: src/serviceconf.py:187 src/serviceconf.glade.h:18
+#: src/serviceconf.py:187
+#: src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "আরম্ভ"
 
-#: src/serviceconf.py:191 src/serviceconf.glade.h:20
+#: src/serviceconf.py:191
+#: src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "থামো"
 
-#: src/serviceconf.py:195 src/serviceconf.glade.h:9
+#: src/serviceconf.py:195
+#: src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "রিস্টার্ট"
 
@@ -129,7 +122,9 @@ msgstr "সার্ভিসগুলো"
 #. this is passed to ServiceMethods.get_service_list as an
 #. argument. We don't want to import gtk there, so we have
 #. the actual function here
-#: src/serviceconf.py:307 src/serviceconf.py:413 src/serviceconf.py:430
+#: src/serviceconf.py:307
+#: src/serviceconf.py:413
+#: src/serviceconf.py:430
 #: src/serviceconf.py:449
 msgid "Editing Runlevel: "
 msgstr "রান-লেভেল সম্পাদন করা হচ্ছে: "
@@ -264,7 +259,7 @@ msgstr "%s চলবার জন্যে এক্স্‌আইনেটড�
 #: src/servicemethods.py:346
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s ব্যর্থ। ভ্রান্তিটি হল: "
+msgstr "%s ব্যর্থ। সমস্যাটি হল: %s"
 
 #: src/servicemethods.py:348
 msgid " successful"
@@ -390,30 +385,3 @@ msgstr "সার্ভিস আরম্ভ (_আ)"
 msgid "_View"
 msgstr "প্রদর্শন (_দ)"
 
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "কপিরাইট (ক) ২০০২ রেড হ্যাট, ইঙ্ক। সর্বসত্ব সংরক্ষিত।"
-
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "এই সফ্‌টওয়ারটি জীপীএলের শর্তসাপেক্ষে স্বাধীন ভাবে পুনঃর্বিতরণ-যোগ্য।\n"
-#~ "আপনার পাওয়া প্রোগ্রাম ত্রুটিগুলি দয়া করে রেড হ্যাটের প্রোগ্রাম ত্রুটি-সমীক্ষণ "
-#~ "ব্যবস্থাকে জানান:\n"
-#~ "http://bugzilla.redhat.com"
-
-#~ msgid "translator_credits"
-#~ msgstr "অনুবাদকারীর স্বীকৃতি"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "নির্বাচিত সার্ভিসটি রিস্টার্ট কর"
-
-#~ msgid "Start the selected service"
-#~ msgstr "নির্বাচিত সার্ভিসগুলিকে চালু কর"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "নির্বাচিত সার্ভিসগুলিকে থামাও"
-
-#~ msgid "xinetd service"
-#~ msgstr "এক্সআইনেটডী সার্ভিস"
