@@ -191,7 +191,10 @@ msgid ""
 "\n"
 "\n"
 "xinetd is required for this service."
-msgstr "\n\nxinetd kreves for denne tjenesten."
+msgstr ""
+"\n"
+"\n"
+"xinetd kreves for denne tjenesten."
 
 #. an unmodified dictionary. Needed to compare for saving etc.
 #. only save changes
