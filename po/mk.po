@@ -136,7 +136,7 @@ msgstr "Сервиси"
 #: src/serviceconf.py:307 src/serviceconf.py:413 src/serviceconf.py:430
 #: src/serviceconf.py:449
 msgid "Editing Runlevel: "
-msgstr "Уредувам нивоа на извршување:"
+msgstr "Уредувам ниво на извршување: "
 
 #. set the text in txtDesc
 #. if an xinetd service is selected, disable these,
@@ -194,7 +194,7 @@ msgstr "Помошта не е достапна."
 #. if you quit during initialization exceptions can be raised
 #: src/serviceconf.py:655
 msgid "You must run system-config-services as root."
-msgstr "Морате да го извршите system-config-services како root."
+msgstr "Мора да го извршите system-config-services како root."
 
 #. serviceactions.py
 #. Copyright (C) 2002 Red Hat, Inc.
@@ -280,7 +280,7 @@ msgstr "*"
 
 #: src/serviceconf.glade.h:2
 msgid "Add Service"
-msgstr "Додади сервис"
+msgstr "Додаj сервис"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
