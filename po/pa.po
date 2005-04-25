@@ -1,6 +1,11 @@
 # translation of pa.po to Punjabi
 # <kbstpunjab@netscape.net>
 # Amanpreet Singh Alam <aalam@redhat.com>, 2004.
+# Amanpreet Singh Alam[ਆਲਮ] <amanpreetalam@yahoo.com>, 2005.
+# Amanpreet Singh Alam[ਆਲਮ] <amanpreetalam@yahoo.com>, 2005.
+# Amanpreet Singh Alam[ਆਲਮ] <amanpreetalam@yahoo.com>, 2005.
+# Amanpreet Singh Alam[ਆਲਮ] <amanpreetalam@yahoo.com>, 2005.
+# Amanpreet Singh Alam[ਆਲਮ] <amanpreetalam@yahoo.com>, 2005.
 #
 #
 msgid ""
@@ -8,21 +13,21 @@ msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-04-01 13:21+0200\n"
-"PO-Revision-Date: 2004-09-29 17:59+0530\n"
+"PO-Revision-Date: 2005-04-25 12:30+0530\n"
 "Last-Translator: Amanpreet Singh Alam <aalam@redhat.com>\n"
-"Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
+"Language-Team: Punjabi <punlinux-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.3.1\n"
+"X-Generator: KBabel 1.9.1\n"
 "Plural-Forms: Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "\n"
 "\n"
 
 #: src/checklist.py:40 src/checklist.py:171
-#, fuzzy, python-format
+#, python-format
 msgid "Runlevel %d"
-msgstr "ਰਨਲੈਵਲ_3"
+msgstr "ਰਨਲੈਵਲ %d"
 
 #  checklist.py: A class (derived from GtkTreeView) that provides a list of
 #  checkbox / text string pairs
@@ -74,15 +79,15 @@ msgstr "ਇਸ ਵੇਲੇ ਰਨਲੈਵਲ ਵਿਚ ਚੱਲ ਰਿਹਾ:
 
 #: src/serviceconf.py:312 src/serviceconf.py:413
 msgid "Editing Runlevel: "
-msgstr "ਰਨਲੈਵਲ ਸੋਧ"
+msgstr "ਰਨਲੈਵਲ ਸੋਧ: "
 
 #: src/serviceconf.py:355
 msgid "Unknown"
-msgstr "ਅਣਪਛਾਤੀ ਸਥਿਤੀ"
+msgstr "ਅਣਜਾਣ"
 
 #: src/serviceconf.py:442
 msgid "All"
-msgstr ""
+msgstr "ਸਭ"
 
 #: src/serviceconf.py:476
 msgid ""
@@ -112,7 +117,7 @@ msgstr "ਸਹਾਇਤਾ ਉਪਲੱਬਧ ਨਹੀ ਹੈ।"
 
 #: src/serviceconf.py:663
 msgid "You must run system-config-services as root."
-msgstr "ਤੁਹਾਨੂੰ system-config-services ਪ੍ਰੰਧਕ(root) ਦੇ ਤੌਰ ਤੇ ਚਲਾਉਣੀ ਪਵੇਗੀ।"
+msgstr "ਤੁਹਾਨੂੰ system-config-services ਪ੍ਰਬੰਧਕ(root) ਦੇ ਤੌਰ ਤੇ ਚਲਾਉਣੀ ਪਵੇਗੀ।"
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
@@ -192,7 +197,7 @@ msgstr "ਮੁਡ਼ ਚਾਲੂ"
 
 #: src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
-msgstr "ਆਖਰੀ ਸੰਭਾਲ ਖੋਲੋ"
+msgstr "ਆਖਰੀ ਸੰਭਾਲ ਖੋਲੋ(_L)"
 
 #: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
@@ -207,9 +212,8 @@ msgid "Runlevel _5"
 msgstr "ਰਨਲੈਵਲ_5"
 
 #: src/serviceconf.glade.h:14
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "ਰਨਲੈਵਲ_3"
+msgstr "ਰਨਲੈਵਲ_ਸਭ"
 
 #: src/serviceconf.glade.h:15
 msgid "S_top Service"
@@ -291,20 +295,3 @@ msgstr "ਸੇਵਾ ਚਾਲੂ ਕਰੋ(_S)"
 msgid "_View"
 msgstr "ਵੇਖੋ(_V)"
 
-#~ msgid "_Save"
-#~ msgstr "ਸੰਭਾਲੋ(_S)"
-
-#~ msgid "Save"
-#~ msgstr "ਸੰਭਾਲੋ"
-
-#~ msgid "_Revert"
-#~ msgstr "ਵਾਪਿਸ(_R)"
-
-#~ msgid "Revert"
-#~ msgstr "ਵਾਪਿਸ"
-
-#~ msgid "Start at Boot"
-#~ msgstr "ਬੂਟ ਵੇਲੇ ਸ਼ੁਰੂ ਕਰੋ"
-
-#~ msgid "Services"
-#~ msgstr "ਸੇਵਾਵਾਂ"
