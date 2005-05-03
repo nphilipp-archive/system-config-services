@@ -294,4 +294,3 @@ msgstr "ਸੇਵਾ ਚਾਲੂ ਕਰੋ(_S)"
 #: src/serviceconf.glade.h:34
 msgid "_View"
 msgstr "ਵੇਖੋ(_V)"
-
