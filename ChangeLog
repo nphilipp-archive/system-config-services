@@ -1,5 +1,16 @@
 2005-05-06  nphilipp  <nphilipp@redhat.com>
 
+	* ChangeLog: release 0.8.23
+
+	* system-config-services.spec.in: fix release
+
+	* ChangeLog: release 0.8.23
+
+	* aclocal.m4, configure.in, intltool-extract.in, intltool-merge.in, intltool-update.in, intltool.patch, po/Makefile.in.in, system-config-services.spec.in:
+	pick up new translations
+
+2005-05-06  nphilipp  <nphilipp@redhat.com>
+
 	* system-config-services.spec.in: fix release
 
 	* ChangeLog: release 0.8.23
