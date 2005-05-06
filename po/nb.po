@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: serviceconf VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-06 13:53+0200\n"
-"PO-Revision-Date: 2004-04-01 22:10+0200\n"
+"PO-Revision-Date: 2005-05-06 14:45+0200\n"
 "Last-Translator: Trond Eivind Glomsrød <teg@redhat.com>\n"
 "Language-Team: Norwegian <no@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -15,9 +15,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../src/checklist.py:40 ../src/checklist.py:171
-#, fuzzy, python-format
+#, python-format
 msgid "Runlevel %d"
-msgstr "Kjøringsnivå _3"
+msgstr "Kjøringsnivå %d"
 
 #: ../src/serviceconf.py:73
 #, python-format
@@ -40,7 +40,7 @@ msgstr "Ukjent"
 
 #: ../src/serviceconf.py:442
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 #: ../src/serviceconf.py:476
 msgid ""
@@ -165,9 +165,8 @@ msgid "Runlevel _5"
 msgstr "Kjøringsnivå _5"
 
 #: ../src/serviceconf.glade.h:14
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "Kjøringsnivå _3"
+msgstr "Kjøringsnivå _alle"
 
 #: ../src/serviceconf.glade.h:15
 msgid "S_top Service"
@@ -251,52 +250,12 @@ msgstr "_Vis"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "Konfigurer tjenester som skal startes ved oppstart av systemet"
 
 #: ../system-config-services.desktop.in.h:2
-#, fuzzy
 msgid "Service Management"
-msgstr "Navn på tjeneste: "
+msgstr "Tjenestehåndtering"
 
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Tjenester"
-
-#~ msgid "_Save"
-#~ msgstr "_Lagre"
-
-#~ msgid "Save"
-#~ msgstr "Lagre"
-
-#~ msgid "_Revert"
-#~ msgstr "_Forkast"
-
-#~ msgid "Revert"
-#~ msgstr "Forkast"
-
-#~ msgid "Start at Boot"
-#~ msgstr "Aktiv ved oppstart"
-
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "Opphavsrett © 2002 Red Hat, Inc. Alle rettigheter reserveres."
-
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "Dette programmet kan fritt redistribueres under betingelsene gitt i GPL.\n"
-#~ "Vennligst rapporter alle feil du finner i Red Hats feildatabase:\n"
-#~ "https://bugzilla.redhat.com/bugzilla/"
-
-#~ msgid "translator_credits"
-#~ msgstr "Kjartan Maraas <kmaraas@gnome.org>"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "Start valgt tjeneste på nytt"
-
-#~ msgid "Start the selected service"
-#~ msgstr "Start valgt tjeneste"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "Stopp valgt tjeneste"
