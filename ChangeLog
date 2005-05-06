@@ -1,3 +1,42 @@
+2005-05-06  nphilipp  <nphilipp@redhat.com>
+
+	* aclocal.m4, configure.in, intltool-extract.in, intltool-merge.in, intltool-update.in, intltool.patch, po/Makefile.in.in, system-config-services.spec.in:
+	pick up new translations
+
+2005-05-03  aalam  <aalam@redhat.com>
+
+	* po/pa.po: update by alam
+
+2005-04-28  nphilipp  <nphilipp@redhat.com>
+
+	* system-config-services.spec.in: silence %post
+
+2005-04-27  runab  <runab@redhat.com>
+
+	* po/bn_IN.po: Updated Bengali INDIA (bn_IN) translation:27/04
+
+2005-04-25  aalam  <aalam@redhat.com>
+
+	* po/pa.po: update by amanpreetalam@yahoo.com
+
+2005-04-05  ccheng  <ccheng@redhat.com>
+
+	* po/zh_TW.po: Automerge by snowlet
+
+2005-04-04  marcel  <marcel@redhat.com>
+
+	* po/sk.po: Updated Slovak translation.
+
+2005-04-01  nphilipp  <nphilipp@redhat.com>
+
+	* ChangeLog: release 0.8.22
+
+	* system-config-services.spec.in:
+	update the GTK+ theme icon cache on (un)install (Christopher Aillon)
+
+	* configure.in, po/system-config-services.pot, src/checklist.py, src/serviceconf.py, system-config-services.spec.in:
+	fix deprecation warnings (#153052) with patch by Colin Charles
+
 2005-04-01  nphilipp  <nphilipp@redhat.com>
 
 	* system-config-services.spec.in:
