@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-04-01 13:21+0200\n"
+"POT-Creation-Date: 2005-05-06 13:53+0200\n"
 "PO-Revision-Date: 2005-03-31 10:35+1000\n"
 "Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
 "Language-Team: Chinese Traditional <zh_TW@li.org>\n"
@@ -19,35 +19,35 @@ msgstr ""
 "Generated-By: pygettext.py 1.1\n"
 "X-Generator: KBabel 1.9.1\n"
 
-#: src/checklist.py:40 src/checklist.py:171
+#: ../src/checklist.py:40 ../src/checklist.py:171
 #, python-format
 msgid "Runlevel %d"
 msgstr "執行等級 %d"
 
-#: src/serviceconf.py:73
+#: ../src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "您確定要刪除 %s 嗎？"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:241
+#: ../src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
 msgstr "目前執行等級是: "
 
-#: src/serviceconf.py:312 src/serviceconf.py:413
+#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
 msgid "Editing Runlevel: "
 msgstr "編輯執行等級: "
 
-#: src/serviceconf.py:355
+#: ../src/serviceconf.py:355
 msgid "Unknown"
 msgstr "未知的"
 
-#: src/serviceconf.py:442
+#: ../src/serviceconf.py:442
 msgid "All"
 msgstr "全部"
 
-#: src/serviceconf.py:476
+#: ../src/serviceconf.py:476
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -65,22 +65,22 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:480
+#: ../src/serviceconf.py:480
 msgid "About"
 msgstr "關於"
 
-#: src/serviceconf.py:509
+#: ../src/serviceconf.py:509
 msgid "Help is not available."
 msgstr "輔助說明無法使用。"
 
-#: src/serviceconf.py:663
+#: ../src/serviceconf.py:663
 msgid "You must run system-config-services as root."
 msgstr "您必須是 root 才能執行 system-config-services。"
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:283
+#: ../src/servicemethods.py:283
 msgid ""
 "\n"
 "\n"
@@ -90,118 +90,118 @@ msgstr ""
 "\n"
 "您必須啟動 xinetd 才能使用這個服務。"
 
-#: src/servicemethods.py:319
+#: ../src/servicemethods.py:319
 msgid "xinetd failed to reload for "
 msgstr "xinetd 無法重新載入給 "
 
-#: src/servicemethods.py:320
+#: ../src/servicemethods.py:320
 msgid ". The error was: "
 msgstr "。 錯誤是: "
 
-#: src/servicemethods.py:322
+#: ../src/servicemethods.py:322
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd 重新載入 %s 成功"
 
-#: src/servicemethods.py:325
+#: ../src/servicemethods.py:325
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "必須啟動 xinetd 才能執行 %s"
 
-#: src/servicemethods.py:330
+#: ../src/servicemethods.py:330
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s 失敗。 錯誤是: %s"
 
-#: src/servicemethods.py:332
+#: ../src/servicemethods.py:332
 msgid " successful"
 msgstr " 成功"
 
-#: src/serviceconf.glade.h:1
+#: ../src/serviceconf.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: src/serviceconf.glade.h:2
+#: ../src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "新增服務"
 
-#: src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "現行的執行等級:"
 
-#: src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:4
 msgid "Delete Service"
 msgstr "刪除服務"
 
-#: src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "說明"
 
-#: src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "不儲存變更"
 
-#: src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "編輯執行等級:"
 
-#: src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:8
 msgid "None"
 msgstr "沒有"
 
-#: src/serviceconf.glade.h:9
+#: ../src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "重新啟動"
 
-#: src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
 msgstr "返回到上一次的儲存(_L)"
 
-#: src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "執行等級 _3"
 
-#: src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "執行等級 _4"
 
-#: src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "執行等級 _5"
 
-#: src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:14
 msgid "Runlevel _All"
 msgstr "全部執行等級(_A)"
 
-#: src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "停止系統服務(_t)"
 
-#: src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:16
 msgid "Save Dialog"
 msgstr "儲存對話窗"
 
-#: src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "服務組態設定"
 
-#: src/serviceconf.glade.h:18
+#: ../src/serviceconf.glade.h:18
 msgid "Service Name: "
 msgstr "服務名稱: "
 
-#: src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:19
 msgid "Start"
 msgstr "開始"
 
-#: src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:20
 msgid "Status"
 msgstr "狀態"
 
-#: src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:21
 msgid "Stop"
 msgstr "停止"
 
-#: src/serviceconf.glade.h:22
+#: ../src/serviceconf.glade.h:22
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -209,46 +209,60 @@ msgstr ""
 "您已更改目前的執行等級。\n"
 "您想要儲存變更嗎？"
 
-#: src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:24
 msgid "_Actions"
 msgstr "動作(_A)"
 
-#: src/serviceconf.glade.h:25
+#: ../src/serviceconf.glade.h:25
 msgid "_Contents"
 msgstr "內容(_C)"
 
-#: src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
 msgstr "編輯執行等級(_E)"
 
-#: src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:27
 msgid "_File"
 msgstr "檔案(_F)"
 
-#: src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:28
 msgid "_Help"
 msgstr "說明(_H)"
 
-#: src/serviceconf.glade.h:29
+#: ../src/serviceconf.glade.h:29
 msgid "_Quit"
 msgstr "離開(_Q)"
 
-#: src/serviceconf.glade.h:30
+#: ../src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
 msgstr "重新整理系統服務選單(_R)"
 
-#: src/serviceconf.glade.h:31
+#: ../src/serviceconf.glade.h:31
 msgid "_Restart Service"
 msgstr "重新啟動系統服務(_R)"
 
-#: src/serviceconf.glade.h:32
+#: ../src/serviceconf.glade.h:32
 msgid "_Save Changes"
 msgstr "儲存變更(_S)"
 
-#: src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:33
 msgid "_Start Service"
 msgstr "啟動系統服務(_S)"
 
-#: src/serviceconf.glade.h:34
+#: ../src/serviceconf.glade.h:34
 msgid "_View"
 msgstr "檢視(_V)"
+
+#: ../system-config-services.desktop.in.h:1
+msgid "Configure which services will be running when the system starts"
+msgstr ""
+
+#: ../system-config-services.desktop.in.h:2
+#, fuzzy
+msgid "Service Management"
+msgstr "服務名稱: "
+
+#: ../system-config-services.desktop.in.h:3
+#, fuzzy
+msgid "Services"
+msgstr "新增服務"

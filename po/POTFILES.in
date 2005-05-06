@@ -2,3 +2,4 @@ src/checklist.py
 src/serviceconf.py
 src/servicemethods.py
 src/serviceconf.glade
+system-config-services.desktop.in

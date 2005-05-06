@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-02-17 17:34-0500\n"
+"POT-Creation-Date: 2005-05-06 13:53+0200\n"
 "PO-Revision-Date: 2005-02-24 15:45+0100\n"
 "Last-Translator: Tom Berner <tom@lodz.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -17,6 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
+
+#: ../src/checklist.py:40 ../src/checklist.py:171
+#, fuzzy, python-format
+msgid "Runlevel %d"
+msgstr "Poziom _3"
 
 #  checklist.py: A class (derived from GtkTreeView) that provides a list of
 #  checkbox / text string pairs
@@ -59,34 +64,6 @@ msgstr ""
 msgid "Are you sure you want to delete the %s?"
 msgstr "Czy aby na pewno chcesz usunąć %s?"
 
-#: ../src/serviceconf.py:195 ../src/serviceconf.glade.h:19
-msgid "Start"
-msgstr "Uruchom"
-
-#: ../src/serviceconf.py:199 ../src/serviceconf.glade.h:21
-msgid "Stop"
-msgstr "Zatrzymaj"
-
-#: ../src/serviceconf.py:203 ../src/serviceconf.glade.h:9
-msgid "Restart"
-msgstr "Restart"
-
-#: ../src/serviceconf.py:209
-msgid "_Save"
-msgstr "Zapi_sz"
-
-#: ../src/serviceconf.py:209
-msgid "Save"
-msgstr "Zapisz"
-
-#: ../src/serviceconf.py:214
-msgid "_Revert"
-msgstr "P_rzywróć"
-
-#: ../src/serviceconf.py:214
-msgid "Revert"
-msgstr "Przywróć"
-
 #  make sure threading is disabled
 #  map the event signals to specific methods
 #  main window
@@ -103,29 +80,23 @@ msgstr "Przywróć"
 #  change when one of the optRL[3-6] are selected
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:248
+#: ../src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
 msgstr "Aktualny poziom uruchamiania: "
 
-#: ../src/serviceconf.py:261
-msgid "Services"
-msgstr "Usługi"
-
-#: ../src/serviceconf.py:336 ../src/serviceconf.py:439
-#: ../src/serviceconf.py:464 ../src/serviceconf.py:486
-#: ../src/serviceconf.py:508
+#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
 msgid "Editing Runlevel: "
 msgstr "Edycja poziomu uruchamiania: "
 
-#: ../src/serviceconf.py:379
+#: ../src/serviceconf.py:355
 msgid "Unknown"
 msgstr "Nieznana"
 
-#: ../src/serviceconf.py:508
+#: ../src/serviceconf.py:442
 msgid "All"
 msgstr "Wszystko"
 
-#: ../src/serviceconf.py:551
+#: ../src/serviceconf.py:476
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -143,15 +114,15 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:555
+#: ../src/serviceconf.py:480
 msgid "About"
 msgstr "Informacje o"
 
-#: ../src/serviceconf.py:584
+#: ../src/serviceconf.py:509
 msgid "Help is not available."
 msgstr "Pomoc nie jest dostępna."
 
-#: ../src/serviceconf.py:738
+#: ../src/serviceconf.py:663
 msgid "You must run system-config-services as root."
 msgstr "Musisz uruchomić system-config-services jako root."
 
@@ -235,6 +206,10 @@ msgstr "Edycja poziomu uruchamiania:"
 msgid "None"
 msgstr "Żaden"
 
+#: ../src/serviceconf.glade.h:9
+msgid "Restart"
+msgstr "Restart"
+
 #: ../src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
 msgstr "Przywróć do ostatniego zapisu"
@@ -271,9 +246,17 @@ msgstr "Konfiguracja usług"
 msgid "Service Name: "
 msgstr "Nazwa usługi: "
 
+#: ../src/serviceconf.glade.h:19
+msgid "Start"
+msgstr "Uruchom"
+
 #: ../src/serviceconf.glade.h:20
 msgid "Status"
 msgstr "Status"
+
+#: ../src/serviceconf.glade.h:21
+msgid "Stop"
+msgstr "Zatrzymaj"
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
@@ -326,3 +309,28 @@ msgstr "Uruchom u_sługę"
 #: ../src/serviceconf.glade.h:34
 msgid "_View"
 msgstr "_Widok"
+
+#: ../system-config-services.desktop.in.h:1
+msgid "Configure which services will be running when the system starts"
+msgstr ""
+
+#: ../system-config-services.desktop.in.h:2
+#, fuzzy
+msgid "Service Management"
+msgstr "Nazwa usługi: "
+
+#: ../system-config-services.desktop.in.h:3
+msgid "Services"
+msgstr "Usługi"
+
+#~ msgid "_Save"
+#~ msgstr "Zapi_sz"
+
+#~ msgid "Save"
+#~ msgstr "Zapisz"
+
+#~ msgid "_Revert"
+#~ msgstr "P_rzywróć"
+
+#~ msgid "Revert"
+#~ msgstr "Przywróć"

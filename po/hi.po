@@ -6,73 +6,45 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hi\n"
-"POT-Creation-Date: 2005-01-28 17:02+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-05-06 13:53+0200\n"
 "PO-Revision-Date: 2005-03-28 11:51+0530\n"
 "Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "X-Generator: KBabel 1.9.1\n"
 
-#: src/serviceconf.py:73
+#: ../src/checklist.py:40 ../src/checklist.py:171
+#, fuzzy, python-format
+msgid "Runlevel %d"
+msgstr "रनलेवल _3"
+
+#: ../src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "क्या आप %s को विलोपित करने के लिए निश्चित हैं?"
 
-#: src/serviceconf.py:197 src/serviceconf.glade.h:18
-msgid "Start"
-msgstr "आरंभ करें"
-
-#: src/serviceconf.py:201 src/serviceconf.glade.h:20
-msgid "Stop"
-msgstr "रोकें"
-
-#: src/serviceconf.py:205 src/serviceconf.glade.h:9
-msgid "Restart"
-msgstr "पुनःआरंभ करें"
-
-#: src/serviceconf.py:211
-msgid "_Save"
-msgstr "सहेजें (_S)"
-
-#: src/serviceconf.py:211
-msgid "Save"
-msgstr "सहेजें"
-
-#: src/serviceconf.py:216
-msgid "_Revert"
-msgstr "पुनःआरंभ करें (_R)"
-
-#: src/serviceconf.py:216
-msgid "Revert"
-msgstr "पुनःआरंभ करें"
-
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:250
+#: ../src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
 msgstr "वर्तमान में रनलेवल में चल रहा हैः "
 
-#: src/serviceconf.py:261
-msgid "Start at Boot"
-msgstr "बूट पर आरंभ करें"
-
-#: src/serviceconf.py:262
-msgid "Services"
-msgstr "सेवा"
-
-#: src/serviceconf.py:320 src/serviceconf.py:426 src/serviceconf.py:443
-#: src/serviceconf.py:462
+#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
 msgid "Editing Runlevel: "
 msgstr "रनलेवल का संपादन कर रहाः"
 
-#: src/serviceconf.py:363
+#: ../src/serviceconf.py:355
 msgid "Unknown"
 msgstr "अज्ञात"
 
-#: src/serviceconf.py:491
+#: ../src/serviceconf.py:442
+msgid "All"
+msgstr ""
+
+#: ../src/serviceconf.py:476
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -90,22 +62,22 @@ msgstr ""
 " ब्रेंट फाक्स <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:495
+#: ../src/serviceconf.py:480
 msgid "About"
 msgstr "के बारे में"
 
-#: src/serviceconf.py:524
+#: ../src/serviceconf.py:509
 msgid "Help is not available."
 msgstr "सहायता उपलब्ध नहीं है."
 
-#: src/serviceconf.py:677
+#: ../src/serviceconf.py:663
 msgid "You must run system-config-services as root."
 msgstr "आपको system-config-services को रूट जैसा चलाना है."
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:289
+#: ../src/servicemethods.py:283
 msgid ""
 "\n"
 "\n"
@@ -115,102 +87,119 @@ msgstr ""
 "\n"
 "इस सेवा के लिए xinetd की आवश्यकता है."
 
-#: src/servicemethods.py:335
+#: ../src/servicemethods.py:319
 msgid "xinetd failed to reload for "
 msgstr "इसके लिए xinetd पुनःभारित करने में असफल"
 
-#: src/servicemethods.py:336
+#: ../src/servicemethods.py:320
 msgid ". The error was: "
 msgstr ". त्रुटि थाः"
 
-#: src/servicemethods.py:338
+#: ../src/servicemethods.py:322
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd ने %s को सफलतापूर्वक पुनःभारित किया"
 
-#: src/servicemethods.py:341
+#: ../src/servicemethods.py:325
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s को चलाने के लिए xinetd  को अवश्य समर्थ करना है"
 
-#: src/servicemethods.py:346
+#: ../src/servicemethods.py:330
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s विफल. दोष थाः %s"
 
-#: src/servicemethods.py:348
+#: ../src/servicemethods.py:332
 msgid " successful"
 msgstr " सफल"
 
-#: src/serviceconf.glade.h:1
+#: ../src/serviceconf.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: src/serviceconf.glade.h:2
+#: ../src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "सेवा जोड़ें"
 
-#: src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "वर्तमान सक्रिय रनलेवलः"
 
-#: src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:4
 msgid "Delete Service"
 msgstr "सेवा विलोपित करें"
 
-#: src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "विवरण"
 
-#: src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "मत सहेजें"
 
-#: src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "रनलेवल का संपादन कर रहा हैः"
 
-#: src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:8
 msgid "None"
 msgstr "कुछ नहीं"
 
-#: src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:9
+msgid "Restart"
+msgstr "पुनःआरंभ करें"
+
+#: ../src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
 msgstr "अंतिम सहेजे गये पर पुनःजाएँ"
 
-#: src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "रनलेवल _3"
 
-#: src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "रनलेवल _4"
 
-#: src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "रनलेवल _5"
 
-#: src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:14
+#, fuzzy
+msgid "Runlevel _All"
+msgstr "रनलेवल _3"
+
+#: ../src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "सेवा रोकें"
 
-#: src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:16
 msgid "Save Dialog"
 msgstr "संवाद सहेजें"
 
-#: src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "सेवा विन्यास"
 
-#: src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:18
 msgid "Service Name: "
 msgstr "सेवा नामः"
 
-#: src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:19
+msgid "Start"
+msgstr "आरंभ करें"
+
+#: ../src/serviceconf.glade.h:20
 msgid "Status"
 msgstr "स्थिति"
 
-#: src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:21
+msgid "Stop"
+msgstr "रोकें"
+
+#: ../src/serviceconf.glade.h:22
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -218,47 +207,74 @@ msgstr ""
 "वर्तमान रनलेवल को आपने बदला हैं.\n"
 "क्या आप बदलावों को सुरक्षित करना चाहते हैं?"
 
-#: src/serviceconf.glade.h:23
+#: ../src/serviceconf.glade.h:24
 msgid "_Actions"
 msgstr "क्रिया"
 
-#: src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:25
 msgid "_Contents"
 msgstr "सामग्री (_C)"
 
-#: src/serviceconf.glade.h:25
+#: ../src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
 msgstr "रनलेवल का संपादन करें (_E)"
 
-#: src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:27
 msgid "_File"
 msgstr "फाइल (_F)"
 
-#: src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:28
 msgid "_Help"
 msgstr "सहायता (_H)"
 
-#: src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:29
 msgid "_Quit"
 msgstr "त्यागें (_Q)"
 
-#: src/serviceconf.glade.h:29
+#: ../src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
 msgstr "सेवा सुची का पुनर्जनन करें (_R)"
 
-#: src/serviceconf.glade.h:30
+#: ../src/serviceconf.glade.h:31
 msgid "_Restart Service"
 msgstr "सेवा को पुनःआरंभ करें (_R)"
 
-#: src/serviceconf.glade.h:31
+#: ../src/serviceconf.glade.h:32
 msgid "_Save Changes"
 msgstr "बदलावों को सहेजें (_S)"
 
-#: src/serviceconf.glade.h:32
+#: ../src/serviceconf.glade.h:33
 msgid "_Start Service"
 msgstr "सेवा को आरंभ करें (_S)"
 
-#: src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:34
 msgid "_View"
 msgstr "देखें (_V)"
 
+#: ../system-config-services.desktop.in.h:1
+msgid "Configure which services will be running when the system starts"
+msgstr ""
+
+#: ../system-config-services.desktop.in.h:2
+#, fuzzy
+msgid "Service Management"
+msgstr "सेवा नामः"
+
+#: ../system-config-services.desktop.in.h:3
+msgid "Services"
+msgstr "सेवा"
+
+#~ msgid "_Save"
+#~ msgstr "सहेजें (_S)"
+
+#~ msgid "Save"
+#~ msgstr "सहेजें"
+
+#~ msgid "_Revert"
+#~ msgstr "पुनःआरंभ करें (_R)"
+
+#~ msgid "Revert"
+#~ msgstr "पुनःआरंभ करें"
+
+#~ msgid "Start at Boot"
+#~ msgstr "बूट पर आरंभ करें"

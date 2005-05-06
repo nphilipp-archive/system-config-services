@@ -14,74 +14,46 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
-"POT-Creation-Date: 2005-01-28 17:02+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-05-06 13:53+0200\n"
 "PO-Revision-Date: 2004-04-11 17:43+0400\n"
 "Last-Translator: Andrew Martynov <andrewm@inventa.ru>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "Generated-By: pygettext.py 1.1\n"
 "X-Generator: KBabel 1.3\n"
 
-#: src/serviceconf.py:73
+#: ../src/checklist.py:40 ../src/checklist.py:171
+#, fuzzy, python-format
+msgid "Runlevel %d"
+msgstr "Уровень запуска _3"
+
+#: ../src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Вы действиительно хотите удалить %s?"
 
-#: src/serviceconf.py:197 src/serviceconf.glade.h:18
-msgid "Start"
-msgstr "Запустить"
-
-#: src/serviceconf.py:201 src/serviceconf.glade.h:20
-msgid "Stop"
-msgstr "Остановить"
-
-#: src/serviceconf.py:205 src/serviceconf.glade.h:9
-msgid "Restart"
-msgstr "Перезапустить"
-
-#: src/serviceconf.py:211
-msgid "_Save"
-msgstr "Со_хранить"
-
-#: src/serviceconf.py:211
-msgid "Save"
-msgstr "Сохранить"
-
-#: src/serviceconf.py:216
-msgid "_Revert"
-msgstr "Во_сстановить"
-
-#: src/serviceconf.py:216
-msgid "Revert"
-msgstr "Восстановить"
-
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:250
+#: ../src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
 msgstr "Текущий уровень запуска:"
 
-#: src/serviceconf.py:261
-msgid "Start at Boot"
-msgstr "Запускать при загрузке системы"
-
-#: src/serviceconf.py:262
-msgid "Services"
-msgstr "Службы"
-
-#: src/serviceconf.py:320 src/serviceconf.py:426 src/serviceconf.py:443
-#: src/serviceconf.py:462
+#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
 msgid "Editing Runlevel: "
 msgstr "Редактируется уровень запуска:"
 
-#: src/serviceconf.py:363
+#: ../src/serviceconf.py:355
 msgid "Unknown"
 msgstr "Неизвестно"
 
-#: src/serviceconf.py:491
+#: ../src/serviceconf.py:442
+msgid "All"
+msgstr ""
+
+#: ../src/serviceconf.py:476
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -100,22 +72,22 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:495
+#: ../src/serviceconf.py:480
 msgid "About"
 msgstr "О программе"
 
-#: src/serviceconf.py:524
+#: ../src/serviceconf.py:509
 msgid "Help is not available."
 msgstr "Справка недоступна."
 
-#: src/serviceconf.py:677
+#: ../src/serviceconf.py:663
 msgid "You must run system-config-services as root."
 msgstr "system-config-services должен выполняться с правами пользователя root."
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:289
+#: ../src/servicemethods.py:283
 msgid ""
 "\n"
 "\n"
@@ -125,102 +97,119 @@ msgstr ""
 "\n"
 "Для этой службы необходим xinetd."
 
-#: src/servicemethods.py:335
+#: ../src/servicemethods.py:319
 msgid "xinetd failed to reload for "
 msgstr "Ошибка перезапуска xinetd для "
 
-#: src/servicemethods.py:336
+#: ../src/servicemethods.py:320
 msgid ". The error was: "
 msgstr ". Ошибка была:"
 
-#: src/servicemethods.py:338
+#: ../src/servicemethods.py:322
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd перезагрузил %s успешно."
 
-#: src/servicemethods.py:341
+#: ../src/servicemethods.py:325
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd должен быть разрешен для запуска %s"
 
-#: src/servicemethods.py:346
+#: ../src/servicemethods.py:330
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "Сбой %s. Ошибка была: %s"
 
-#: src/servicemethods.py:348
+#: ../src/servicemethods.py:332
 msgid " successful"
 msgstr " успешно"
 
-#: src/serviceconf.glade.h:1
+#: ../src/serviceconf.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: src/serviceconf.glade.h:2
+#: ../src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "Добавить службу"
 
-#: src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Текущий уровень запуска:"
 
-#: src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:4
 msgid "Delete Service"
 msgstr "Удалить службу"
 
-#: src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "Описание"
 
-#: src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "Не сохранять"
 
-#: src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "Редактируется уровень запуска:"
 
-#: src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:8
 msgid "None"
 msgstr "Нет"
 
-#: src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:9
+msgid "Restart"
+msgstr "Перезапустить"
+
+#: ../src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
 msgstr "Откат к последнему сохранению"
 
-#: src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "Уровень запуска _3"
 
-#: src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "Уровень запуска _4"
 
-#: src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "Уровень запуска _5"
 
-#: src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:14
+#, fuzzy
+msgid "Runlevel _All"
+msgstr "Уровень запуска _3"
+
+#: ../src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "_Остановить службу"
 
-#: src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:16
 msgid "Save Dialog"
 msgstr "Сохранить диалог"
 
-#: src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "Настройка служб"
 
-#: src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:18
 msgid "Service Name: "
 msgstr "Имя службы: "
 
-#: src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:19
+msgid "Start"
+msgstr "Запустить"
+
+#: ../src/serviceconf.glade.h:20
 msgid "Status"
 msgstr "Состояние"
 
-#: src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:21
+msgid "Stop"
+msgstr "Остановить"
+
+#: ../src/serviceconf.glade.h:22
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -228,46 +217,74 @@ msgstr ""
 "Были сделаны изменения текущего уровня выполнения.\n"
 "Сохранить изменения?"
 
-#: src/serviceconf.glade.h:23
+#: ../src/serviceconf.glade.h:24
 msgid "_Actions"
 msgstr "_Действия"
 
-#: src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:25
 msgid "_Contents"
 msgstr "Содержимое"
 
-#: src/serviceconf.glade.h:25
+#: ../src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
 msgstr "_Изменить уровень"
 
-#: src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:27
 msgid "_File"
 msgstr "_Файл"
 
-#: src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:28
 msgid "_Help"
 msgstr "_Справка"
 
-#: src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:29
 msgid "_Quit"
 msgstr "Выход"
 
-#: src/serviceconf.glade.h:29
+#: ../src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
 msgstr "_Обновить список служб"
 
-#: src/serviceconf.glade.h:30
+#: ../src/serviceconf.glade.h:31
 msgid "_Restart Service"
 msgstr "_Перезапустить службу"
 
-#: src/serviceconf.glade.h:31
+#: ../src/serviceconf.glade.h:32
 msgid "_Save Changes"
 msgstr "_Сохранить изменения"
 
-#: src/serviceconf.glade.h:32
+#: ../src/serviceconf.glade.h:33
 msgid "_Start Service"
 msgstr "_Запустить службу"
 
-#: src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:34
 msgid "_View"
 msgstr "_Вид"
+
+#: ../system-config-services.desktop.in.h:1
+msgid "Configure which services will be running when the system starts"
+msgstr ""
+
+#: ../system-config-services.desktop.in.h:2
+#, fuzzy
+msgid "Service Management"
+msgstr "Имя службы: "
+
+#: ../system-config-services.desktop.in.h:3
+msgid "Services"
+msgstr "Службы"
+
+#~ msgid "_Save"
+#~ msgstr "Со_хранить"
+
+#~ msgid "Save"
+#~ msgstr "Сохранить"
+
+#~ msgid "_Revert"
+#~ msgstr "Во_сстановить"
+
+#~ msgid "Revert"
+#~ msgstr "Восстановить"
+
+#~ msgid "Start at Boot"
+#~ msgstr "Запускать при загрузке системы"

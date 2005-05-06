@@ -8,74 +8,46 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: da\n"
-"POT-Creation-Date: 2005-01-28 17:02+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-05-06 13:53+0200\n"
 "PO-Revision-Date: 2004-03-25 21:54+0100\n"
 "Last-Translator: Keld Simonsen <keld@dkuug.dk>\n"
 "Language-Team: Danish <<dansk@klid.dk>>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "Generated-By: pygettext.py 1.1\n"
 "X-Generator: KBabel 1.0.2\n"
 
-#: src/serviceconf.py:73
+#: ../src/checklist.py:40 ../src/checklist.py:171
+#, fuzzy, python-format
+msgid "Runlevel %d"
+msgstr "Kørselsniveau _3"
+
+#: ../src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Er du sikker på at du ønsker at slette %s?"
 
-#: src/serviceconf.py:197 src/serviceconf.glade.h:18
-msgid "Start"
-msgstr "Start"
-
-#: src/serviceconf.py:201 src/serviceconf.glade.h:20
-msgid "Stop"
-msgstr "Afbryd"
-
-#: src/serviceconf.py:205 src/serviceconf.glade.h:9
-msgid "Restart"
-msgstr "Genstart"
-
-#: src/serviceconf.py:211
-msgid "_Save"
-msgstr "_Gem"
-
-#: src/serviceconf.py:211
-msgid "Save"
-msgstr "Gem"
-
-#: src/serviceconf.py:216
-msgid "_Revert"
-msgstr "_Gendan"
-
-#: src/serviceconf.py:216
-msgid "Revert"
-msgstr "Gendan"
-
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:250
+#: ../src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
 msgstr "Kører øjeblikkeligt i kørselsniveau: "
 
-#: src/serviceconf.py:261
-msgid "Start at Boot"
-msgstr "Start ved opstart af maskinen"
-
-#: src/serviceconf.py:262
-msgid "Services"
-msgstr "Tjenester"
-
-#: src/serviceconf.py:320 src/serviceconf.py:426 src/serviceconf.py:443
-#: src/serviceconf.py:462
+#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
 msgid "Editing Runlevel: "
 msgstr "Ændrer kørselsniveau: "
 
-#: src/serviceconf.py:363
+#: ../src/serviceconf.py:355
 msgid "Unknown"
 msgstr "Ukendt"
 
-#: src/serviceconf.py:491
+#: ../src/serviceconf.py:442
+msgid "All"
+msgstr ""
+
+#: ../src/serviceconf.py:476
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -93,22 +65,22 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:495
+#: ../src/serviceconf.py:480
 msgid "About"
 msgstr "Om"
 
-#: src/serviceconf.py:524
+#: ../src/serviceconf.py:509
 msgid "Help is not available."
 msgstr "Hjælp er ikke tilgængelig."
 
-#: src/serviceconf.py:677
+#: ../src/serviceconf.py:663
 msgid "You must run system-config-services as root."
 msgstr "Du skal køre system-config-services som root."
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:289
+#: ../src/servicemethods.py:283
 msgid ""
 "\n"
 "\n"
@@ -118,102 +90,119 @@ msgstr ""
 "\n"
 "xinetd er krævet til denne tjeneste."
 
-#: src/servicemethods.py:335
+#: ../src/servicemethods.py:319
 msgid "xinetd failed to reload for "
 msgstr "xinetd genindlæsning mislykkedes for "
 
-#: src/servicemethods.py:336
+#: ../src/servicemethods.py:320
 msgid ". The error was: "
 msgstr ". Fejlen var: "
 
-#: src/servicemethods.py:338
+#: ../src/servicemethods.py:322
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd genindlæste %s uden problemer"
 
-#: src/servicemethods.py:341
+#: ../src/servicemethods.py:325
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd skal aktiveres for at %s kan køre"
 
-#: src/servicemethods.py:346
+#: ../src/servicemethods.py:330
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s mislykkedes. Fejlen var: %s"
 
-#: src/servicemethods.py:348
+#: ../src/servicemethods.py:332
 msgid " successful"
 msgstr " med succés"
 
-#: src/serviceconf.glade.h:1
+#: ../src/serviceconf.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: src/serviceconf.glade.h:2
+#: ../src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "Tilføj tjeneste"
 
-#: src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Nuværende aktive kørselsniveau: "
 
-#: src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:4
 msgid "Delete Service"
 msgstr "Fjern tjeneste"
 
-#: src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "Beskrivelse"
 
-#: src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "Gem ikke"
 
-#: src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "Ændrer kørselsniveau:"
 
-#: src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:8
 msgid "None"
 msgstr "Ingen"
 
-#: src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:9
+msgid "Restart"
+msgstr "Genstart"
+
+#: ../src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
 msgstr "Tilbage til _sidste gemning"
 
-#: src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "Kørselsniveau _3"
 
-#: src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "Kørselsniveau _4"
 
-#: src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "Kørselsniveau _5"
 
-#: src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:14
+#, fuzzy
+msgid "Runlevel _All"
+msgstr "Kørselsniveau _3"
+
+#: ../src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "Afbryd tjeneste"
 
-#: src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:16
 msgid "Save Dialog"
 msgstr "Gem dialog"
 
-#: src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "Tjenestekonfiguration"
 
-#: src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:18
 msgid "Service Name: "
 msgstr "Tjenestenavn: "
 
-#: src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:19
+msgid "Start"
+msgstr "Start"
+
+#: ../src/serviceconf.glade.h:20
 msgid "Status"
 msgstr "Status"
 
-#: src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:21
+msgid "Stop"
+msgstr "Afbryd"
+
+#: ../src/serviceconf.glade.h:22
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -221,49 +210,77 @@ msgstr ""
 "Du har lavet ændringer til det aktuelle kørselsniveau.\n"
 "Ønsker du at gemme ændringerne?"
 
-#: src/serviceconf.glade.h:23
+#: ../src/serviceconf.glade.h:24
 msgid "_Actions"
 msgstr "_Handlinger"
 
-#: src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:25
 msgid "_Contents"
 msgstr "_Indhold"
 
-#: src/serviceconf.glade.h:25
+#: ../src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
 msgstr "_Ændr kørselsniveau"
 
-#: src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:27
 msgid "_File"
 msgstr "_Filer"
 
-#: src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:28
 msgid "_Help"
 msgstr "_Hjælp"
 
-#: src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:29
 msgid "_Quit"
 msgstr "_Afslut"
 
-#: src/serviceconf.glade.h:29
+#: ../src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
 msgstr "_Opdatér tjenestelisten"
 
-#: src/serviceconf.glade.h:30
+#: ../src/serviceconf.glade.h:31
 msgid "_Restart Service"
 msgstr "Gensta_rt tjeneste"
 
-#: src/serviceconf.glade.h:31
+#: ../src/serviceconf.glade.h:32
 msgid "_Save Changes"
 msgstr "_Gem ændringer"
 
-#: src/serviceconf.glade.h:32
+#: ../src/serviceconf.glade.h:33
 msgid "_Start Service"
 msgstr "_Start tjeneste"
 
-#: src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:34
 msgid "_View"
 msgstr "_Visning"
+
+#: ../system-config-services.desktop.in.h:1
+msgid "Configure which services will be running when the system starts"
+msgstr "Konfigurér hvilke tjenester som skal køre når systemet starter"
+
+#: ../system-config-services.desktop.in.h:2
+#, fuzzy
+msgid "Service Management"
+msgstr "Tjenestenavn: "
+
+#: ../system-config-services.desktop.in.h:3
+msgid "Services"
+msgstr "Tjenester"
+
+#~ msgid "_Save"
+#~ msgstr "_Gem"
+
+#~ msgid "Save"
+#~ msgstr "Gem"
+
+#~ msgid "_Revert"
+#~ msgstr "_Gendan"
+
+#~ msgid "Revert"
+#~ msgstr "Gendan"
+
+#~ msgid "Start at Boot"
+#~ msgstr "Start ved opstart af maskinen"
 
 #~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
 #~ msgstr ""
@@ -473,9 +490,6 @@ msgstr "_Visning"
 
 #~ msgid "_Manual"
 #~ msgstr "_Manual"
-
-#~ msgid "Configure which services will be running when the system starts"
-#~ msgstr "Konfigurér hvilke tjenester som skal køre når systemet starter"
 
 #~ msgid "Refresh the list of services"
 #~ msgstr "Opdatér listen af tjenester"
