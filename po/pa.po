@@ -27,7 +27,7 @@ msgstr ""
 #: ../src/checklist.py:40 ../src/checklist.py:171
 #, python-format
 msgid "Runlevel %d"
-msgstr "ਰਨਲੈਵਲ %d"
+msgstr "ਰੰਨਲੈਵਲ %d"
 
 #  checklist.py: A class (derived from GtkTreeView) that provides a list of
 #  checkbox / text string pairs
@@ -69,17 +69,17 @@ msgstr "ਰਨਲੈਵਲ %d"
 #: ../src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr "ਕੀ ਤੁਸੀ ਯਕੀਨਨ ਹੀ %s ਨੂੰ ਖਤਮ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
+msgstr "ਕੀ ਤੁਸੀਂ ਯਕੀਨਨ ਹੀ %s ਨੂੰ ਖਤਮ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
-msgstr "ਇਸ ਵੇਲੇ ਰਨਲੈਵਲ ਵਿਚ ਚੱਲ ਰਿਹਾ: "
+msgstr "ਇਸ ਵੇਲੇ ਰੰਨਲੈਵਲ ਵਿਚ ਚੱਲ ਰਿਹਾ: "
 
 #: ../src/serviceconf.py:312 ../src/serviceconf.py:413
 msgid "Editing Runlevel: "
-msgstr "ਰਨਲੈਵਲ ਸੋਧ: "
+msgstr "ਰੰਨਲੈਵਲ ਸੋਧ: "
 
 #: ../src/serviceconf.py:355
 msgid "Unknown"
@@ -100,7 +100,7 @@ msgid ""
 " "
 msgstr ""
 "ਸਿਸਟਮ ਸੇਵਾਵਾਂ ਸੰਰਚਨਾ ਸੰਦ ਦਾ ਵਰਜਨ\n"
-" (c) ੨੦੦੨-੨੦੦੪ ਲਈ ਰੈੱਡ ਹੈਟ ਕੋਲ ਹੱਕ ਰਾਖਵੇ ਹਨ\n"
+" (c) 2002-2004 ਲਈ ਰੈੱਡ ਹੈਟ ਕੋਲ ਹੱਕ ਰਾਖਵੇਂ ਹਨ\n"
 "ਟਿਮ ਪਾਵਰਸ <timp@redhat>\n"
 "ਬਿੱਲ ਨਾਟੀਇੰਗਮ <notting@redhat>\n"
 "ਡੇਨ ਵਾਲਿਸ਼ <dwalsh@redhat.com>\n"
@@ -113,7 +113,7 @@ msgstr "ਇਸ ਬਾਰੇ"
 
 #: ../src/serviceconf.py:509
 msgid "Help is not available."
-msgstr "ਸਹਾਇਤਾ ਉਪਲੱਬਧ ਨਹੀ ਹੈ।"
+msgstr "ਸਹਾਇਤਾ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ।"
 
 #: ../src/serviceconf.py:663
 msgid "You must run system-config-services as root."
@@ -130,7 +130,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"ਇਸ ਸੇਵਾ ਲਈ xinetd ਲੋਡ਼ੀਦੀ ਹੈ।"
+"ਇਸ ਸੇਵਾ ਲਈ xinetd ਲੋਡ਼ੀਂਦੀ ਹੈ।"
 
 #: ../src/servicemethods.py:319
 msgid "xinetd failed to reload for "
@@ -153,7 +153,7 @@ msgstr "%s ਚਲਾਉਣ ਲਈ xinetd ਨੂੰ ਚਾਲੂ ਕਰਨਾ ਪ
 #: ../src/servicemethods.py:330
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s ਅਸਫਲ  ਗਲਤੀ ਇਹ ਹੈ: %s"
+msgstr "%s ਅਸਫਲ। ਗਲਤੀ ਇਹ ਹੈ: %s"
 
 #: ../src/servicemethods.py:332
 msgid " successful"
@@ -169,7 +169,7 @@ msgstr "ਸੇਵਾਵਾਂ ਸ਼ਾਮਿਲ"
 
 #: ../src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
-msgstr "ਇਸ ਵੇਲੇ ਸਰਗਰਮ ਰਨਲੈਵਲ: "
+msgstr "ਇਸ ਵੇਲੇ ਸਰਗਰਮ ਰੰਨਲੈਵਲ: "
 
 #: ../src/serviceconf.glade.h:4
 msgid "Delete Service"
@@ -185,11 +185,11 @@ msgstr "ਨਾ ਸੰਭਾਲੋ"
 
 #: ../src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
-msgstr "ਰਨਲੈਵਲ ਸੋਧ:"
+msgstr "ਰੰਨਲੈਵਲ ਸੋਧ:"
 
 #: ../src/serviceconf.glade.h:8
 msgid "None"
-msgstr "ਕੁਝ ਨਹੀ"
+msgstr "ਕੁਝ ਨਹੀਂ"
 
 #: ../src/serviceconf.glade.h:9
 msgid "Restart"
@@ -201,19 +201,19 @@ msgstr "ਆਖਰੀ ਸੰਭਾਲ ਖੋਲੋ(_L)"
 
 #: ../src/serviceconf.glade.h:11
 msgid "Runlevel _3"
-msgstr "ਰਨਲੈਵਲ_3"
+msgstr "ਰੰਨਲੈਵਲ_3"
 
 #: ../src/serviceconf.glade.h:12
 msgid "Runlevel _4"
-msgstr "ਰਨਲੈਵਲ_4"
+msgstr "ਰੰਨਲੈਵਲ_4"
 
 #: ../src/serviceconf.glade.h:13
 msgid "Runlevel _5"
-msgstr "ਰਨਲੈਵਲ_5"
+msgstr "ਰੰਨਲੈਵਲ_5"
 
 #: ../src/serviceconf.glade.h:14
 msgid "Runlevel _All"
-msgstr "ਰਨਲੈਵਲ_ਸਭ"
+msgstr "ਰੰਨਲੈਵਲ_ਸਭ"
 
 #: ../src/serviceconf.glade.h:15
 msgid "S_top Service"
@@ -248,8 +248,8 @@ msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
-"ਤੁਸੀ ਇਸ ਰਨ-ਲੈਵਲ ਵਿਚ ਤਬਦੀਲੀਆਂ ਕੀਤੀਆਂ ਹਨ।\n"
-"ਕੀ ਤੁਸੀ ਇਹਨਾਂ ਸੰਭਾਲਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+"ਤੁਸੀਂ ਇਸ ਰੰਨਲੈਵਲ ਵਿਚ ਤਬਦੀਲੀਆਂ ਕੀਤੀਆਂ ਹਨ।\n"
+"ਕੀ ਤੁਸੀਂ ਇਹਨਾਂ ਸੰਭਾਲਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: ../src/serviceconf.glade.h:24
 msgid "_Actions"
@@ -261,7 +261,7 @@ msgstr "ਭਾਗ(_C)"
 
 #: ../src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
-msgstr "ਰਨਲੈਵਲ ਸੋਧ(_E)"
+msgstr "ਰੰਨਲੈਵਲ ਸੋਧ(_E)"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_File"
@@ -277,7 +277,7 @@ msgstr "ਬਾਹਰ(_Q)"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
-msgstr "ਸੇਵਾ ਸੂਚੀ ਨੂੰ ਨਿਵਆਉ(_R)"
+msgstr "ਸੇਵਾ ਸੂਚੀ ਨੂੰ ਮੁੜ ਤਾਜ਼ਾ ਕਰੋ(_R)"
 
 #: ../src/serviceconf.glade.h:31
 msgid "_Restart Service"
@@ -297,14 +297,13 @@ msgstr "ਵੇਖੋ(_V)"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "ਸੰਰਚਨਾ ਕਰੋ ਕਿ ਸਿਸਟਮ ਚਾਲੂ ਹੋਣ ਉਪਰੰਤ ਕਿਹੜੀ ਸੇਵਾ ਚੱਲ ਰਹੀ ਹੋਵੇਗੀ"
 
 #: ../system-config-services.desktop.in.h:2
-#, fuzzy
 msgid "Service Management"
-msgstr "ਸੇਵਾ ਦਾ ਨਾਂ:"
+msgstr "ਸੇਵਾ ਪ੍ਰਬੰਧਨ:"
 
 #: ../system-config-services.desktop.in.h:3
-#, fuzzy
 msgid "Services"
-msgstr "ਸੇਵਾਵਾਂ ਸ਼ਾਮਿਲ"
+msgstr "ਸੇਵਾਵਾਂ"
+
