@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-06 13:53+0200\n"
-"PO-Revision-Date: 2005-03-31 10:35+1000\n"
+"PO-Revision-Date: 2005-05-09 09:37+1000\n"
 "Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
 "Language-Team: Chinese Traditional <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -255,14 +255,13 @@ msgstr "檢視(_V)"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "設定當系統啟動時，要執行哪些服務"
 
 #: ../system-config-services.desktop.in.h:2
-#, fuzzy
 msgid "Service Management"
-msgstr "服務名稱: "
+msgstr "服務管理"
 
 #: ../system-config-services.desktop.in.h:3
-#, fuzzy
 msgid "Services"
-msgstr "新增服務"
+msgstr "服務"
+
