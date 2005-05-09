@@ -11,17 +11,18 @@ msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-09 14:20+0200\n"
-"PO-Revision-Date: 2004-03-19 12:35+0100\n"
-"Last-Translator: Stephane Raimbault <stephane.raimbault@free.fr>\n"
+"PO-Revision-Date: 2005-05-09 19:04+0100\n"
+"Last-Translator: Philippe Villiers <philippe.villiers@wanadoo.fr>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/checklist.py:40 src/checklist.py:171
-#, fuzzy, python-format
+#: src/checklist.py:40
+#: src/checklist.py:171
+#, python-format
 msgid "Runlevel %d"
-msgstr "Niveau d'exécution _3"
+msgstr "Niveau d'exécution %d"
 
 #: src/serviceconf.py:73
 #, python-format
@@ -34,7 +35,8 @@ msgstr "Souhaitez-vous vraiment supprimer %s ?"
 msgid "Currently Running in Runlevel: "
 msgstr "Niveau d'exécution actuel : "
 
-#: src/serviceconf.py:312 src/serviceconf.py:413
+#: src/serviceconf.py:312
+#: src/serviceconf.py:413
 msgid "Editing Runlevel: "
 msgstr "Modification du niveau d'exécution : "
 
@@ -44,7 +46,7 @@ msgstr "Inconnu"
 
 #: src/serviceconf.py:442
 msgid "All"
-msgstr ""
+msgstr "Tous"
 
 #: src/serviceconf.py:476
 msgid ""
@@ -169,9 +171,8 @@ msgid "Runlevel _5"
 msgstr "Niveau d'exécution _5"
 
 #: src/serviceconf.glade.h:14
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "Niveau d'exécution _3"
+msgstr "Niveau d'exécution _Tous"
 
 #: src/serviceconf.glade.h:15
 msgid "S_top Service"
@@ -255,12 +256,11 @@ msgstr "_Vue"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "Configure quels services seront lancés au démarrage du système"
 
 #: system-config-services.desktop.in.h:2
-#, fuzzy
 msgid "Service Management"
-msgstr "Nom de service :"
+msgstr "Gestion des Services"
 
 #: system-config-services.desktop.in.h:3
 msgid "Services"
@@ -268,15 +268,12 @@ msgstr "Services"
 
 #~ msgid "_Save"
 #~ msgstr "_Enregistrer"
-
 #~ msgid "Save"
 #~ msgstr "Enregistrer"
-
 #~ msgid "_Revert"
 #~ msgstr "Annule_r"
-
 #~ msgid "Revert"
 #~ msgstr "Annuler"
-
 #~ msgid "Start at Boot"
 #~ msgstr "Activation au démarrage"
+
