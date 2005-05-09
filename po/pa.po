@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-06 13:53+0200\n"
+"POT-Creation-Date: 2005-05-09 14:20+0200\n"
 "PO-Revision-Date: 2005-04-25 12:30+0530\n"
 "Last-Translator: Amanpreet Singh Alam <aalam@redhat.com>\n"
 "Language-Team: Punjabi <punlinux-i18n@lists.sourceforge.net>\n"
@@ -24,7 +24,7 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../src/checklist.py:40 ../src/checklist.py:171
+#: src/checklist.py:40 src/checklist.py:171
 #, python-format
 msgid "Runlevel %d"
 msgstr "ਰੰਨਲੈਵਲ %d"
@@ -66,30 +66,30 @@ msgstr "ਰੰਨਲੈਵਲ %d"
 #  #
 #  # I18N
 #  #
-#: ../src/serviceconf.py:73
+#: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "ਕੀ ਤੁਸੀਂ ਯਕੀਨਨ ਹੀ %s ਨੂੰ ਖਤਮ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:241
+#: src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
 msgstr "ਇਸ ਵੇਲੇ ਰੰਨਲੈਵਲ ਵਿਚ ਚੱਲ ਰਿਹਾ: "
 
-#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
+#: src/serviceconf.py:312 src/serviceconf.py:413
 msgid "Editing Runlevel: "
 msgstr "ਰੰਨਲੈਵਲ ਸੋਧ: "
 
-#: ../src/serviceconf.py:355
+#: src/serviceconf.py:355
 msgid "Unknown"
 msgstr "ਅਣਜਾਣ"
 
-#: ../src/serviceconf.py:442
+#: src/serviceconf.py:442
 msgid "All"
 msgstr "ਸਭ"
 
-#: ../src/serviceconf.py:476
+#: src/serviceconf.py:476
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -107,22 +107,22 @@ msgstr ""
 "ਬਰਨਿਟ ਫਾਕਸ <bfox@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:480
+#: src/serviceconf.py:480
 msgid "About"
 msgstr "ਇਸ ਬਾਰੇ"
 
-#: ../src/serviceconf.py:509
+#: src/serviceconf.py:509
 msgid "Help is not available."
 msgstr "ਸਹਾਇਤਾ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ।"
 
-#: ../src/serviceconf.py:663
+#: src/serviceconf.py:663
 msgid "You must run system-config-services as root."
 msgstr "ਤੁਹਾਨੂੰ system-config-services ਪ੍ਰਬੰਧਕ(root) ਦੇ ਤੌਰ ਤੇ ਚਲਾਉਣੀ ਪਵੇਗੀ।"
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: ../src/servicemethods.py:283
+#: src/servicemethods.py:283
 msgid ""
 "\n"
 "\n"
@@ -132,118 +132,118 @@ msgstr ""
 "\n"
 "ਇਸ ਸੇਵਾ ਲਈ xinetd ਲੋਡ਼ੀਂਦੀ ਹੈ।"
 
-#: ../src/servicemethods.py:319
+#: src/servicemethods.py:319
 msgid "xinetd failed to reload for "
 msgstr "xinetd ਇਸ ਦੇ ਲਈ ਫਿਰ ਲੋਡ ਕਰਨ ਵਿਚ ਅਸਫਲ ਰਿਹਾ ਹੈ"
 
-#: ../src/servicemethods.py:320
+#: src/servicemethods.py:320
 msgid ". The error was: "
 msgstr "। ਗਲਤੀ ਇਹ ਸੀ: "
 
-#: ../src/servicemethods.py:322
+#: src/servicemethods.py:322
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd ਨੇ %s ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਫਿਰ ਚਾਲੂ ਕਰ ਲਿਆ ਹੈ"
 
-#: ../src/servicemethods.py:325
+#: src/servicemethods.py:325
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s ਚਲਾਉਣ ਲਈ xinetd ਨੂੰ ਚਾਲੂ ਕਰਨਾ ਪਵੇਗਾ"
 
-#: ../src/servicemethods.py:330
+#: src/servicemethods.py:330
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s ਅਸਫਲ। ਗਲਤੀ ਇਹ ਹੈ: %s"
 
-#: ../src/servicemethods.py:332
+#: src/servicemethods.py:332
 msgid " successful"
 msgstr " ਸਫਲਤਾਪੂਰਕ"
 
-#: ../src/serviceconf.glade.h:1
+#: src/serviceconf.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: ../src/serviceconf.glade.h:2
+#: src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "ਸੇਵਾਵਾਂ ਸ਼ਾਮਿਲ"
 
-#: ../src/serviceconf.glade.h:3
+#: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "ਇਸ ਵੇਲੇ ਸਰਗਰਮ ਰੰਨਲੈਵਲ: "
 
-#: ../src/serviceconf.glade.h:4
+#: src/serviceconf.glade.h:4
 msgid "Delete Service"
 msgstr "ਸੇਵਾ ਮੁਡ਼ ਚਾਲੂ ਕਰੋ"
 
-#: ../src/serviceconf.glade.h:5
+#: src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "ਵੇਰਵਾ"
 
-#: ../src/serviceconf.glade.h:6
+#: src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "ਨਾ ਸੰਭਾਲੋ"
 
-#: ../src/serviceconf.glade.h:7
+#: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "ਰੰਨਲੈਵਲ ਸੋਧ:"
 
-#: ../src/serviceconf.glade.h:8
+#: src/serviceconf.glade.h:8
 msgid "None"
 msgstr "ਕੁਝ ਨਹੀਂ"
 
-#: ../src/serviceconf.glade.h:9
+#: src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "ਮੁਡ਼ ਚਾਲੂ"
 
-#: ../src/serviceconf.glade.h:10
+#: src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
 msgstr "ਆਖਰੀ ਸੰਭਾਲ ਖੋਲੋ(_L)"
 
-#: ../src/serviceconf.glade.h:11
+#: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "ਰੰਨਲੈਵਲ_3"
 
-#: ../src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "ਰੰਨਲੈਵਲ_4"
 
-#: ../src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "ਰੰਨਲੈਵਲ_5"
 
-#: ../src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:14
 msgid "Runlevel _All"
 msgstr "ਰੰਨਲੈਵਲ_ਸਭ"
 
-#: ../src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "ਸੇਵਾ ਰੋਕੋ(_t)"
 
-#: ../src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:16
 msgid "Save Dialog"
 msgstr "ਵਾਰਤਾਲਾਪ ਸੰਭਾਲੋ"
 
-#: ../src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "ਸੇਵਾ ਸੰਰਚਨਾ"
 
-#: ../src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:18
 msgid "Service Name: "
 msgstr "ਸੇਵਾ ਦਾ ਨਾਂ:"
 
-#: ../src/serviceconf.glade.h:19
+#: src/serviceconf.glade.h:19
 msgid "Start"
 msgstr "ਸ਼ੁਰੂ"
 
-#: ../src/serviceconf.glade.h:20
+#: src/serviceconf.glade.h:20
 msgid "Status"
 msgstr "ਸਥਿਤੀ"
 
-#: ../src/serviceconf.glade.h:21
+#: src/serviceconf.glade.h:21
 msgid "Stop"
 msgstr "ਰੋਕੋ"
 
-#: ../src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:22
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -251,59 +251,58 @@ msgstr ""
 "ਤੁਸੀਂ ਇਸ ਰੰਨਲੈਵਲ ਵਿਚ ਤਬਦੀਲੀਆਂ ਕੀਤੀਆਂ ਹਨ।\n"
 "ਕੀ ਤੁਸੀਂ ਇਹਨਾਂ ਸੰਭਾਲਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: ../src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:24
 msgid "_Actions"
 msgstr "ਕਾਰਵਾਈ(_A)"
 
-#: ../src/serviceconf.glade.h:25
+#: src/serviceconf.glade.h:25
 msgid "_Contents"
 msgstr "ਭਾਗ(_C)"
 
-#: ../src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
 msgstr "ਰੰਨਲੈਵਲ ਸੋਧ(_E)"
 
-#: ../src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:27
 msgid "_File"
 msgstr "ਫਾਇਲ(_F)"
 
-#: ../src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:28
 msgid "_Help"
 msgstr "ਸਹਾਇਤਾ(_H)"
 
-#: ../src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:29
 msgid "_Quit"
 msgstr "ਬਾਹਰ(_Q)"
 
-#: ../src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
 msgstr "ਸੇਵਾ ਸੂਚੀ ਨੂੰ ਮੁੜ ਤਾਜ਼ਾ ਕਰੋ(_R)"
 
-#: ../src/serviceconf.glade.h:31
+#: src/serviceconf.glade.h:31
 msgid "_Restart Service"
 msgstr "ਸੇਵਾ ਮੁਡ਼ ਚਾਲੂ ਕਰੋ(_R)"
 
-#: ../src/serviceconf.glade.h:32
+#: src/serviceconf.glade.h:32
 msgid "_Save Changes"
 msgstr "ਤਬਦੀਲੀਆਂ ਨੂੰ ਸੰਭਾਲੋ(_S)"
 
-#: ../src/serviceconf.glade.h:33
+#: src/serviceconf.glade.h:33
 msgid "_Start Service"
 msgstr "ਸੇਵਾ ਚਾਲੂ ਕਰੋ(_S)"
 
-#: ../src/serviceconf.glade.h:34
+#: src/serviceconf.glade.h:34
 msgid "_View"
 msgstr "ਵੇਖੋ(_V)"
 
-#: ../system-config-services.desktop.in.h:1
+#: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "ਸੰਰਚਨਾ ਕਰੋ ਕਿ ਸਿਸਟਮ ਚਾਲੂ ਹੋਣ ਉਪਰੰਤ ਕਿਹੜੀ ਸੇਵਾ ਚੱਲ ਰਹੀ ਹੋਵੇਗੀ"
 
-#: ../system-config-services.desktop.in.h:2
+#: system-config-services.desktop.in.h:2
 msgid "Service Management"
 msgstr "ਸੇਵਾ ਪ੍ਰਬੰਧਨ:"
 
-#: ../system-config-services.desktop.in.h:3
+#: system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "ਸੇਵਾਵਾਂ"
-

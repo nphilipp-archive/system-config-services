@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-06 13:53+0200\n"
+"POT-Creation-Date: 2005-05-09 14:20+0200\n"
 "PO-Revision-Date: 2005-05-07 20:22+0900\n"
 "Last-Translator: Hirofumi Saito <hi_saito@yk.rim.or.jp>\n"
 "Language-Team: Japanese <fedora-trans-ja@redhat.com>\n"
@@ -21,35 +21,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.0\n"
 
-#: ../src/checklist.py:40 ../src/checklist.py:171
+#: src/checklist.py:40 src/checklist.py:171
 #, python-format
 msgid "Runlevel %d"
 msgstr "ランレベル %d"
 
-#: ../src/serviceconf.py:73
+#: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "本当に %s を削除しますか?"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:241
+#: src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
 msgstr "現在実行中のランレベル: "
 
-#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
+#: src/serviceconf.py:312 src/serviceconf.py:413
 msgid "Editing Runlevel: "
 msgstr "ランレベルの編集"
 
-#: ../src/serviceconf.py:355
+#: src/serviceconf.py:355
 msgid "Unknown"
 msgstr "不明"
 
-#: ../src/serviceconf.py:442
+#: src/serviceconf.py:442
 msgid "All"
 msgstr "全て"
 
-#: ../src/serviceconf.py:476
+#: src/serviceconf.py:476
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -67,22 +67,22 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:480
+#: src/serviceconf.py:480
 msgid "About"
 msgstr "情報"
 
-#: ../src/serviceconf.py:509
+#: src/serviceconf.py:509
 msgid "Help is not available."
 msgstr "ヘルプは利用できません。"
 
-#: ../src/serviceconf.py:663
+#: src/serviceconf.py:663
 msgid "You must run system-config-services as root."
 msgstr "system-config-services は root で実行しなければなりません。"
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: ../src/servicemethods.py:283
+#: src/servicemethods.py:283
 msgid ""
 "\n"
 "\n"
@@ -92,118 +92,118 @@ msgstr ""
 "\n"
 "このサービスのは xinetd が必要です。"
 
-#: ../src/servicemethods.py:319
+#: src/servicemethods.py:319
 msgid "xinetd failed to reload for "
 msgstr "xinetd は再読み込みに失敗しました。"
 
-#: ../src/servicemethods.py:320
+#: src/servicemethods.py:320
 msgid ". The error was: "
 msgstr "エラー: "
 
-#: ../src/servicemethods.py:322
+#: src/servicemethods.py:322
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd は %s を正常に再読み込みしました。"
 
-#: ../src/servicemethods.py:325
+#: src/servicemethods.py:325
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s の実行には xinetd を有効にする必要があります"
 
-#: ../src/servicemethods.py:330
+#: src/servicemethods.py:330
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s は失敗です。 エラーは: %sです。"
 
-#: ../src/servicemethods.py:332
+#: src/servicemethods.py:332
 msgid " successful"
 msgstr " 成功"
 
-#: ../src/serviceconf.glade.h:1
+#: src/serviceconf.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: ../src/serviceconf.glade.h:2
+#: src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "サービスを追加"
 
-#: ../src/serviceconf.glade.h:3
+#: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "今のランレベル: "
 
-#: ../src/serviceconf.glade.h:4
+#: src/serviceconf.glade.h:4
 msgid "Delete Service"
 msgstr "サービスを削除"
 
-#: ../src/serviceconf.glade.h:5
+#: src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "説明"
 
-#: ../src/serviceconf.glade.h:6
+#: src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "保存しない"
 
-#: ../src/serviceconf.glade.h:7
+#: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "ランレベルの編集:"
 
-#: ../src/serviceconf.glade.h:8
+#: src/serviceconf.glade.h:8
 msgid "None"
 msgstr "なし"
 
-#: ../src/serviceconf.glade.h:9
+#: src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "再起動"
 
-#: ../src/serviceconf.glade.h:10
+#: src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
 msgstr "前回の保存に戻る(_L)"
 
-#: ../src/serviceconf.glade.h:11
+#: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "ランレベル _3"
 
-#: ../src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "ランレベル _4"
 
-#: ../src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "ランレベル _5"
 
-#: ../src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:14
 msgid "Runlevel _All"
 msgstr "全てのランレベル"
 
-#: ../src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "サービスを停止(_t)"
 
-#: ../src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:16
 msgid "Save Dialog"
 msgstr "ダイアログを保存"
 
-#: ../src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "サービスの設定"
 
-#: ../src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:18
 msgid "Service Name: "
 msgstr "サービス名: "
 
-#: ../src/serviceconf.glade.h:19
+#: src/serviceconf.glade.h:19
 msgid "Start"
 msgstr "開始"
 
-#: ../src/serviceconf.glade.h:20
+#: src/serviceconf.glade.h:20
 msgid "Status"
 msgstr "状態"
 
-#: ../src/serviceconf.glade.h:21
+#: src/serviceconf.glade.h:21
 msgid "Stop"
 msgstr "停止"
 
-#: ../src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:22
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -211,59 +211,59 @@ msgstr ""
 "現在のランレベルが変更されています。\n"
 " この変更を保存しますか?"
 
-#: ../src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:24
 msgid "_Actions"
 msgstr "操作(_A)"
 
-#: ../src/serviceconf.glade.h:25
+#: src/serviceconf.glade.h:25
 msgid "_Contents"
 msgstr "目次(_C)"
 
-#: ../src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
 msgstr "ランレベルの編集(_E)"
 
-#: ../src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:27
 msgid "_File"
 msgstr "ファイル(_F)"
 
-#: ../src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:28
 msgid "_Help"
 msgstr "ヘルプ(_H)"
 
-#: ../src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:29
 msgid "_Quit"
 msgstr "終了(_Q)"
 
-#: ../src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
 msgstr "サービスリストを更新(_R)"
 
-#: ../src/serviceconf.glade.h:31
+#: src/serviceconf.glade.h:31
 msgid "_Restart Service"
 msgstr "サービスを再起動(_R)"
 
-#: ../src/serviceconf.glade.h:32
+#: src/serviceconf.glade.h:32
 msgid "_Save Changes"
 msgstr "変更を保存(_S)"
 
-#: ../src/serviceconf.glade.h:33
+#: src/serviceconf.glade.h:33
 msgid "_Start Service"
 msgstr "サービスを開始(_S)"
 
-#: ../src/serviceconf.glade.h:34
+#: src/serviceconf.glade.h:34
 msgid "_View"
 msgstr "表示(_V)"
 
-#: ../system-config-services.desktop.in.h:1
+#: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "システム起動時に実行するサービスの設定"
 
-#: ../system-config-services.desktop.in.h:2
+#: system-config-services.desktop.in.h:2
 msgid "Service Management"
 msgstr "サービス管理"
 
-#: ../system-config-services.desktop.in.h:3
+#: system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "サービス"
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-06 13:53+0200\n"
+"POT-Creation-Date: 2005-05-09 14:20+0200\n"
 "PO-Revision-Date: 2005-02-24 15:45+0100\n"
 "Last-Translator: Tom Berner <tom@lodz.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
 
-#: ../src/checklist.py:40 ../src/checklist.py:171
+#: src/checklist.py:40 src/checklist.py:171
 #, python-format
 msgid "Runlevel %d"
 msgstr "Poziom %d"
@@ -59,7 +59,7 @@ msgstr "Poziom %d"
 #  #
 #  # I18N
 #  #
-#: ../src/serviceconf.py:73
+#: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Czy aby na pewno chcesz usunąć %s?"
@@ -80,23 +80,23 @@ msgstr "Czy aby na pewno chcesz usunąć %s?"
 #  change when one of the optRL[3-6] are selected
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:241
+#: src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
 msgstr "Aktualny poziom uruchamiania: "
 
-#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
+#: src/serviceconf.py:312 src/serviceconf.py:413
 msgid "Editing Runlevel: "
 msgstr "Edycja poziomu uruchamiania: "
 
-#: ../src/serviceconf.py:355
+#: src/serviceconf.py:355
 msgid "Unknown"
 msgstr "Nieznana"
 
-#: ../src/serviceconf.py:442
+#: src/serviceconf.py:442
 msgid "All"
 msgstr "Wszystko"
 
-#: ../src/serviceconf.py:476
+#: src/serviceconf.py:476
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -114,22 +114,22 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:480
+#: src/serviceconf.py:480
 msgid "About"
 msgstr "Informacje o"
 
-#: ../src/serviceconf.py:509
+#: src/serviceconf.py:509
 msgid "Help is not available."
 msgstr "Pomoc nie jest dostępna."
 
-#: ../src/serviceconf.py:663
+#: src/serviceconf.py:663
 msgid "You must run system-config-services as root."
 msgstr "Musisz uruchomić system-config-services jako root."
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: ../src/servicemethods.py:283
+#: src/servicemethods.py:283
 msgid ""
 "\n"
 "\n"
@@ -147,118 +147,118 @@ msgstr ""
 #  for xinetd services
 #  if it's toggled on
 #  if it's toggled off
-#: ../src/servicemethods.py:319
+#: src/servicemethods.py:319
 msgid "xinetd failed to reload for "
 msgstr "xinetd nie przeładował się "
 
-#: ../src/servicemethods.py:320
+#: src/servicemethods.py:320
 msgid ". The error was: "
 msgstr ". Błąd: "
 
-#: ../src/servicemethods.py:322
+#: src/servicemethods.py:322
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd przeładowany %s poprawnie"
 
-#: ../src/servicemethods.py:325
+#: src/servicemethods.py:325
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd musi być włączony, aby uruchomić %s"
 
-#: ../src/servicemethods.py:330
+#: src/servicemethods.py:330
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s nie powiodło się. Błąd: %s"
 
-#: ../src/servicemethods.py:332
+#: src/servicemethods.py:332
 msgid " successful"
 msgstr " wykonano pomyślnie"
 
-#: ../src/serviceconf.glade.h:1
+#: src/serviceconf.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: ../src/serviceconf.glade.h:2
+#: src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "Dodaj usługę"
 
-#: ../src/serviceconf.glade.h:3
+#: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Aktualny poziom uruchamiania: "
 
-#: ../src/serviceconf.glade.h:4
+#: src/serviceconf.glade.h:4
 msgid "Delete Service"
 msgstr "Usuń usługę"
 
-#: ../src/serviceconf.glade.h:5
+#: src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "Opis"
 
-#: ../src/serviceconf.glade.h:6
+#: src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "Nie zapisuj"
 
-#: ../src/serviceconf.glade.h:7
+#: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "Edycja poziomu uruchamiania:"
 
-#: ../src/serviceconf.glade.h:8
+#: src/serviceconf.glade.h:8
 msgid "None"
 msgstr "Żaden"
 
-#: ../src/serviceconf.glade.h:9
+#: src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Restart"
 
-#: ../src/serviceconf.glade.h:10
+#: src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
 msgstr "Przywróć do ostatniego zapisu"
 
-#: ../src/serviceconf.glade.h:11
+#: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "Poziom _3"
 
-#: ../src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "Poziom _4"
 
-#: ../src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "Poziom _5"
 
-#: ../src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:14
 msgid "Runlevel _All"
 msgstr "_Wszystkie poziomy"
 
-#: ../src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "Za_trzymaj usługę"
 
-#: ../src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:16
 msgid "Save Dialog"
 msgstr "Zapisz"
 
-#: ../src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "Konfiguracja usług"
 
-#: ../src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:18
 msgid "Service Name: "
 msgstr "Nazwa usługi: "
 
-#: ../src/serviceconf.glade.h:19
+#: src/serviceconf.glade.h:19
 msgid "Start"
 msgstr "Uruchom"
 
-#: ../src/serviceconf.glade.h:20
+#: src/serviceconf.glade.h:20
 msgid "Status"
 msgstr "Status"
 
-#: ../src/serviceconf.glade.h:21
+#: src/serviceconf.glade.h:21
 msgid "Stop"
 msgstr "Zatrzymaj"
 
-#: ../src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:22
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -266,59 +266,59 @@ msgstr ""
 "Dokonałeś zmian w obecnym poziomie uruchamiania.\n"
 "Czy chcesz zapisać dokonane zmiany?"
 
-#: ../src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:24
 msgid "_Actions"
 msgstr "Oper_acje"
 
-#: ../src/serviceconf.glade.h:25
+#: src/serviceconf.glade.h:25
 msgid "_Contents"
 msgstr "_Zawartość"
 
-#: ../src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
 msgstr "_Modyfikuj poziom uruchamiania"
 
-#: ../src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:27
 msgid "_File"
 msgstr "_Plik"
 
-#: ../src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:28
 msgid "_Help"
 msgstr "_Pomoc"
 
-#: ../src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:29
 msgid "_Quit"
 msgstr "_Zakończ"
 
-#: ../src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
 msgstr "_Odśwież listę usług"
 
-#: ../src/serviceconf.glade.h:31
+#: src/serviceconf.glade.h:31
 msgid "_Restart Service"
 msgstr "_Restart usługi"
 
-#: ../src/serviceconf.glade.h:32
+#: src/serviceconf.glade.h:32
 msgid "_Save Changes"
 msgstr "Zapi_sz zmiany"
 
-#: ../src/serviceconf.glade.h:33
+#: src/serviceconf.glade.h:33
 msgid "_Start Service"
 msgstr "Uruchom u_sługę"
 
-#: ../src/serviceconf.glade.h:34
+#: src/serviceconf.glade.h:34
 msgid "_View"
 msgstr "_Widok"
 
-#: ../system-config-services.desktop.in.h:1
+#: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "Konfiguracja usług uruchamianych przy starcie systemu"
 
-#: ../system-config-services.desktop.in.h:2
+#: system-config-services.desktop.in.h:2
 msgid "Service Management"
 msgstr "Zarządzanie usługami"
 
-#: ../system-config-services.desktop.in.h:3
+#: system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Usługi"
 

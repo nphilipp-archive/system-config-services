@@ -1,3 +1,84 @@
+2005-05-09  nphilipp  <nphilipp@redhat.com>
+
+	* aclocal.m4, configure.in, intltool-extract.in, intltool-merge.in, intltool-update.in, po/Makefile.in.in, system-config-services.spec.in:
+	- pick up updated translations
+
+2005-05-09  morais  <morais@redhat.com>
+
+	* po/pt.po: update
+
+2005-05-09  jamil  <jamil@redhat.com>
+
+	* po/bn.po: Updated on May 9, 2005
+
+2005-05-08  ccheng  <ccheng@redhat.com>
+
+	* po/zh_TW.po: *** empty log message ***
+
+2005-05-08  andrmart  <andrmart@redhat.com>
+
+	* po/ru.po: Updated after FC4-test3
+
+2005-05-08  tszanto  <tszanto@redhat.com>
+
+	* po/hu.po: *** empty log message ***
+
+2005-05-07  ufo  <ufo@redhat.com>
+
+	* po/mk.po: fixed fuzzy
+
+2005-05-07  hisaito  <hisaito@redhat.com>
+
+	* po/ja.po: translation finished in system-config-service
+
+2005-05-07  jassy  <jassy@redhat.com>
+
+	* po/pa.po: update by jaswinderphulewala@yahoo.com
+
+2005-05-06  ra  <ra@redhat.com>
+
+	* po/is.po: *** empty log message ***
+
+2005-05-06  tombo  <tombo@redhat.com>
+
+	* po/it.po: *** empty log message ***
+
+2005-05-06  joseppc  <joseppc@redhat.com>
+
+	* po/ca.po: Updated Catalan translation, added notice.
+
+2005-05-06  tombo  <tombo@redhat.com>
+
+	* po/it.po: *** empty log message ***
+
+2005-05-06  ankitp  <ankitp@redhat.com>
+
+	* po/gu.po: Updated Translations
+
+2005-05-06  kmaraas  <kmaraas@redhat.com>
+
+	* po/nb.po: Update
+
+2005-05-06  raven  <raven@redhat.com>
+
+	* po/pl.po: pl/bugs.txt
+
+2005-05-06  nphilipp  <nphilipp@redhat.com>
+
+	* ChangeLog: release 0.8.24
+
+	* po/sk.po, po/sl.po, po/sq.po, po/sv.po, po/system-config-services.pot, po/ta.po, po/tr.po, po/uk.po, po/ur.po, po/vi.po, po/zh_CN.po, po/zh_TW.po, po/mr.po, po/ms.po, po/nb.po, po/nl.po, po/no.po, po/pa.po, po/pl.po, po/pt.po, po/pt_BR.po, po/ro.po, po/ru.po, po/si.po, po/cy.po, po/da.po, po/de.po, po/el.po, po/es.po, po/et.po, po/fa.po, po/fi.po, po/fr.po, po/gu.po, po/he.po, po/hi.po, po/hr.po, po/hu.po, po/id.po, po/is.po, po/it.po, po/ja.po, po/ka.po, po/ko.po, po/ku.po, po/lo.po, po/lt.po, po/mk.po, configure.in, po/POTFILES.in, po/ar.po, po/bg.po, po/bn.po, po/bs.po, po/ca.po, po/cs.po, system-config-services.spec.in:
+	make "make update-po" pick up translatable strings in desktop file (#156801)
+
+	* ChangeLog: release 0.8.23
+
+	* system-config-services.spec.in: fix release
+
+	* ChangeLog: release 0.8.23
+
+	* aclocal.m4, configure.in, intltool-extract.in, intltool-merge.in, intltool-update.in, intltool.patch, po/Makefile.in.in, system-config-services.spec.in:
+	pick up new translations
+
 2005-05-06  nphilipp  <nphilipp@redhat.com>
 
 	* po/sk.po, po/sl.po, po/sq.po, po/sv.po, po/system-config-services.pot, po/ta.po, po/tr.po, po/uk.po, po/ur.po, po/vi.po, po/zh_CN.po, po/zh_TW.po, po/mr.po, po/ms.po, po/nb.po, po/nl.po, po/no.po, po/pa.po, po/pl.po, po/pt.po, po/pt_BR.po, po/ro.po, po/ru.po, po/si.po, po/cy.po, po/da.po, po/de.po, po/el.po, po/es.po, po/et.po, po/fa.po, po/fi.po, po/fr.po, po/gu.po, po/he.po, po/hi.po, po/hr.po, po/hu.po, po/id.po, po/is.po, po/it.po, po/ja.po, po/ka.po, po/ko.po, po/ku.po, po/lo.po, po/lt.po, po/mk.po, configure.in, po/POTFILES.in, po/ar.po, po/bg.po, po/bn.po, po/bs.po, po/ca.po, po/cs.po, system-config-services.spec.in:

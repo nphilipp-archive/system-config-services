@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-06 13:53+0200\n"
+"POT-Creation-Date: 2005-05-09 14:20+0200\n"
 "PO-Revision-Date: 2004-03-18 23:27+0100\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@chello.nl>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
@@ -21,35 +21,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3.1\n"
 
-#: ../src/checklist.py:40 ../src/checklist.py:171
+#: src/checklist.py:40 src/checklist.py:171
 #, fuzzy, python-format
 msgid "Runlevel %d"
 msgstr "Runlevel _3"
 
-#: ../src/serviceconf.py:73
+#: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Weet u zeker dat u %s wilt verwijderen?"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:241
+#: src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
 msgstr "Nu lopend in runlevel: "
 
-#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
+#: src/serviceconf.py:312 src/serviceconf.py:413
 msgid "Editing Runlevel: "
 msgstr "Runlevel dat wordt bewerkt: "
 
-#: ../src/serviceconf.py:355
+#: src/serviceconf.py:355
 msgid "Unknown"
 msgstr "Onbekend"
 
-#: ../src/serviceconf.py:442
+#: src/serviceconf.py:442
 msgid "All"
 msgstr ""
 
-#: ../src/serviceconf.py:476
+#: src/serviceconf.py:476
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -67,22 +67,22 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:480
+#: src/serviceconf.py:480
 msgid "About"
 msgstr "Info"
 
-#: ../src/serviceconf.py:509
+#: src/serviceconf.py:509
 msgid "Help is not available."
 msgstr "Er is geen help beschikbaar."
 
-#: ../src/serviceconf.py:663
+#: src/serviceconf.py:663
 msgid "You must run system-config-services as root."
 msgstr "U moet system-config-services als root starten."
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: ../src/servicemethods.py:283
+#: src/servicemethods.py:283
 msgid ""
 "\n"
 "\n"
@@ -92,120 +92,120 @@ msgstr ""
 "\n"
 "Voor deze dienst is xinetd benodigd."
 
-#: ../src/servicemethods.py:319
+#: src/servicemethods.py:319
 msgid "xinetd failed to reload for "
 msgstr "xinetd kon niet herladen omdat "
 
-#: ../src/servicemethods.py:320
+#: src/servicemethods.py:320
 msgid ". The error was: "
 msgstr ". De fout was: "
 
-#: ../src/servicemethods.py:322
+#: src/servicemethods.py:322
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd herlaadde %s succesvol"
 
-#: ../src/servicemethods.py:325
+#: src/servicemethods.py:325
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd moet worden aangezet om %s te kunnen starten"
 
-#: ../src/servicemethods.py:330
+#: src/servicemethods.py:330
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s mislukt. De fout was: %s"
 
 # gelukt
-#: ../src/servicemethods.py:332
+#: src/servicemethods.py:332
 msgid " successful"
 msgstr " succesvol"
 
-#: ../src/serviceconf.glade.h:1
+#: src/serviceconf.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: ../src/serviceconf.glade.h:2
+#: src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "Voorziening toevoegen"
 
-#: ../src/serviceconf.glade.h:3
+#: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Huidige actieve runlevel: "
 
-#: ../src/serviceconf.glade.h:4
+#: src/serviceconf.glade.h:4
 msgid "Delete Service"
 msgstr "Voorziening verwijderen"
 
-#: ../src/serviceconf.glade.h:5
+#: src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "Beschrijving"
 
-#: ../src/serviceconf.glade.h:6
+#: src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "Niet opslaan"
 
-#: ../src/serviceconf.glade.h:7
+#: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "Runlevel dat wordt bewerkt:"
 
-#: ../src/serviceconf.glade.h:8
+#: src/serviceconf.glade.h:8
 msgid "None"
 msgstr "Geen"
 
-#: ../src/serviceconf.glade.h:9
+#: src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Herstarten"
 
-#: ../src/serviceconf.glade.h:10
+#: src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
 msgstr "_Terugkeren naar laatst opgeslagen"
 
-#: ../src/serviceconf.glade.h:11
+#: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "Runlevel _3"
 
-#: ../src/serviceconf.glade.h:12
+#: src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "Runlevel _4"
 
-#: ../src/serviceconf.glade.h:13
+#: src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "Runlevel _5"
 
-#: ../src/serviceconf.glade.h:14
+#: src/serviceconf.glade.h:14
 #, fuzzy
 msgid "Runlevel _All"
 msgstr "Runlevel _3"
 
-#: ../src/serviceconf.glade.h:15
+#: src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "Voorziening s_toppen"
 
-#: ../src/serviceconf.glade.h:16
+#: src/serviceconf.glade.h:16
 msgid "Save Dialog"
 msgstr "Opslaan dialoogvenster"
 
-#: ../src/serviceconf.glade.h:17
+#: src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "Voorziening configuratie"
 
-#: ../src/serviceconf.glade.h:18
+#: src/serviceconf.glade.h:18
 msgid "Service Name: "
 msgstr "Voorzieningnaam: "
 
-#: ../src/serviceconf.glade.h:19
+#: src/serviceconf.glade.h:19
 msgid "Start"
 msgstr "Starten"
 
-#: ../src/serviceconf.glade.h:20
+#: src/serviceconf.glade.h:20
 msgid "Status"
 msgstr "Status"
 
-#: ../src/serviceconf.glade.h:21
+#: src/serviceconf.glade.h:21
 msgid "Stop"
 msgstr "Stoppen"
 
-#: ../src/serviceconf.glade.h:22
+#: src/serviceconf.glade.h:22
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -213,60 +213,60 @@ msgstr ""
 "U heeft veranderingen gemaakt in het huidige runlevel.\n"
 "Wilt u deze opslaan?"
 
-#: ../src/serviceconf.glade.h:24
+#: src/serviceconf.glade.h:24
 msgid "_Actions"
 msgstr "_Acties"
 
-#: ../src/serviceconf.glade.h:25
+#: src/serviceconf.glade.h:25
 msgid "_Contents"
 msgstr "_Inhoud"
 
-#: ../src/serviceconf.glade.h:26
+#: src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
 msgstr "Runlevel _bewerken"
 
-#: ../src/serviceconf.glade.h:27
+#: src/serviceconf.glade.h:27
 msgid "_File"
 msgstr "_Bestand"
 
-#: ../src/serviceconf.glade.h:28
+#: src/serviceconf.glade.h:28
 msgid "_Help"
 msgstr "_Hulp"
 
-#: ../src/serviceconf.glade.h:29
+#: src/serviceconf.glade.h:29
 msgid "_Quit"
 msgstr "_Afsluiten"
 
-#: ../src/serviceconf.glade.h:30
+#: src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
 msgstr "Voorzieningenlijst _verversen"
 
-#: ../src/serviceconf.glade.h:31
+#: src/serviceconf.glade.h:31
 msgid "_Restart Service"
 msgstr "Voorziening _herstarten"
 
-#: ../src/serviceconf.glade.h:32
+#: src/serviceconf.glade.h:32
 msgid "_Save Changes"
 msgstr "Wijzigingen _opslaan"
 
-#: ../src/serviceconf.glade.h:33
+#: src/serviceconf.glade.h:33
 msgid "_Start Service"
 msgstr "Voorziening _starten"
 
-#: ../src/serviceconf.glade.h:34
+#: src/serviceconf.glade.h:34
 msgid "_View"
 msgstr "Beel_d"
 
-#: ../system-config-services.desktop.in.h:1
+#: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr ""
 
-#: ../system-config-services.desktop.in.h:2
+#: system-config-services.desktop.in.h:2
 #, fuzzy
 msgid "Service Management"
 msgstr "Voorzieningnaam: "
 
-#: ../system-config-services.desktop.in.h:3
+#: system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Voorzieningen"
 
