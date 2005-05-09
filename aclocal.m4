@@ -1,7 +1,7 @@
-# generated automatically by aclocal 1.9.5 -*- Autoconf -*-
+# generated automatically by aclocal 1.9.2 -*- Autoconf -*-
 
-# Copyright (C) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004,
-# 2005  Free Software Foundation, Inc.
+# Copyright (C) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004
+# Free Software Foundation, Inc.
 # This file is free software; the Free Software Foundation
 # gives unlimited permission to copy and/or distribute it,
 # with or without modifications, as long as this notice is preserved.
@@ -12,7 +12,7 @@
 # PARTICULAR PURPOSE.
 
 # Copyright (C) 1995-2002 Free Software Foundation, Inc.
-# Copyright (C) 2001-2003,2004 Red Hat, Inc.
+# Copyright (C) 2001-2003 Red Hat, Inc.
 #
 # This file is free software, distributed under the terms of the GNU
 # General Public License.  As a special exception to the GNU General
@@ -35,9 +35,7 @@
 #
 # Added better handling of ALL_LINGUAS from GNU gettext version 
 # written by Bruno Haible, Owen Taylor <otaylor.redhat.com> 5/30/3002
-#
-# Modified to require ngettext
-# Matthias Clasen <mclasen@redhat.com> 08/06/2004
+
 #
 # We need this here as well, since someone might use autoconf-2.5x
 # to configure GLib then an older version to configure a package
@@ -130,27 +128,16 @@ glib_DEFUN([GLIB_WITH_NLS],
       #
       # First check in libc
       #
-      AC_CACHE_CHECK([for ngettext in libc], gt_cv_func_ngettext_libc,
+      AC_CACHE_CHECK([for dgettext in libc], gt_cv_func_dgettext_libc,
         [AC_TRY_LINK([
 #include <libintl.h>
 ],
-         [return !ngettext ("","", 1)],
-	  gt_cv_func_ngettext_libc=yes,
-          gt_cv_func_ngettext_libc=no)
+          [return (int) dgettext ("","")],
+	  gt_cv_func_dgettext_libc=yes,
+          gt_cv_func_dgettext_libc=no)
         ])
   
-      if test "$gt_cv_func_ngettext_libc" = "yes" ; then
-	      AC_CACHE_CHECK([for dgettext in libc], gt_cv_func_dgettext_libc,
-        	[AC_TRY_LINK([
-#include <libintl.h>
-],
-	          [return !dgettext ("","")],
-		  gt_cv_func_dgettext_libc=yes,
-	          gt_cv_func_dgettext_libc=no)
-        	])
-      fi
-  
-      if test "$gt_cv_func_ngettext_libc" = "yes" ; then
+      if test "$gt_cv_func_dgettext_libc" = "yes" ; then
         AC_CHECK_FUNCS(bind_textdomain_codeset)
       fi
 
@@ -158,29 +145,25 @@ glib_DEFUN([GLIB_WITH_NLS],
       # If we don't have everything we want, check in libintl
       #
       if test "$gt_cv_func_dgettext_libc" != "yes" \
-	 || test "$gt_cv_func_ngettext_libc" != "yes" \
          || test "$ac_cv_func_bind_textdomain_codeset" != "yes" ; then
         
         AC_CHECK_LIB(intl, bindtextdomain,
-	    [AC_CHECK_LIB(intl, ngettext,
-		    [AC_CHECK_LIB(intl, dgettext,
-			          gt_cv_func_dgettext_libintl=yes)])])
+	    [AC_CHECK_LIB(intl, dgettext,
+		          gt_cv_func_dgettext_libintl=yes)])
 
 	if test "$gt_cv_func_dgettext_libintl" != "yes" ; then
 	  AC_MSG_CHECKING([if -liconv is needed to use gettext])
 	  AC_MSG_RESULT([])
-  	  AC_CHECK_LIB(intl, ngettext,
-          	[AC_CHECK_LIB(intl, dcgettext,
+          AC_CHECK_LIB(intl, dcgettext,
 		       [gt_cv_func_dgettext_libintl=yes
 			libintl_extra_libs=-liconv],
-			:,-liconv)],
-		:,-liconv)
+			:,-liconv)
         fi
 
         #
         # If we found libintl, then check in it for bind_textdomain_codeset();
         # we'll prefer libc if neither have bind_textdomain_codeset(),
-        # and both have dgettext and ngettext
+        # and both have dgettext
         #
         if test "$gt_cv_func_dgettext_libintl" = "yes" ; then
           glib_save_LIBS="$LIBS"
@@ -192,8 +175,7 @@ glib_DEFUN([GLIB_WITH_NLS],
           if test "$ac_cv_func_bind_textdomain_codeset" = "yes" ; then
             gt_cv_func_dgettext_libc=no
           else
-            if test "$gt_cv_func_dgettext_libc" = "yes" \
-		&& test "$gt_cv_func_ngettext_libc" = "yes"; then
+            if test "$gt_cv_func_dgettext_libc" = "yes"; then
               gt_cv_func_dgettext_libintl=no
             fi
           fi
@@ -410,10 +392,11 @@ AC_DEFUN([AM_GLIB_GNU_GETTEXT],[GLIB_GNU_GETTEXT($@)])
 AC_DEFUN([AM_GLIB_DEFINE_LOCALEDIR],[GLIB_DEFINE_LOCALEDIR($@)])
 ])dnl
 
+ll## intltool.m4 - Configure intltool for the target system. -*-Shell-script-*-
 
-dnl IT_PROG_INTLTOOL([MINIMUM-VERSION], [no-xml])
-# serial 2 IT_PROG_INTLTOOL
-AC_DEFUN([IT_PROG_INTLTOOL],
+dnl AC_PROG_INTLTOOL([MINIMUM-VERSION], [no-xml])
+# serial 1 AC_PROG_INTLTOOL
+AC_DEFUN([AC_PROG_INTLTOOL],
 [
 
 if test -n "$1"; then
@@ -444,7 +427,6 @@ INTLTOOL_DIRECTORY_RULE='%.directory: %.directory.in $(INTLTOOL_MERGE) $(wildcar
 INTLTOOL_SOUNDLIST_RULE='%.soundlist: %.soundlist.in $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) -d -u -c $(top_builddir)/po/.intltool-merge-cache $(top_srcdir)/po $< [$]@' 
        INTLTOOL_UI_RULE='%.ui:        %.ui.in        $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) -x -u -c $(top_builddir)/po/.intltool-merge-cache $(top_srcdir)/po $< [$]@' 
       INTLTOOL_XML_RULE='%.xml:       %.xml.in       $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) -x -u -c $(top_builddir)/po/.intltool-merge-cache $(top_srcdir)/po $< [$]@' 
-      INTLTOOL_XML_NOMERGE_RULE='%.xml:       %.xml.in       $(INTLTOOL_MERGE) ; LC_ALL=C $(INTLTOOL_MERGE) -x -u /tmp $< [$]@' 
       INTLTOOL_XAM_RULE='%.xam:       %.xml.in       $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) -x -u -c $(top_builddir)/po/.intltool-merge-cache $(top_srcdir)/po $< [$]@' 
       INTLTOOL_KBD_RULE='%.kbd:       %.kbd.in       $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) -x -u -m -c $(top_builddir)/po/.intltool-merge-cache $(top_srcdir)/po $< [$]@' 
     INTLTOOL_CAVES_RULE='%.caves:     %.caves.in     $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; LC_ALL=C $(INTLTOOL_MERGE) -d -u -c $(top_builddir)/po/.intltool-merge-cache $(top_srcdir)/po $< [$]@' 
@@ -464,7 +446,6 @@ AC_SUBST(INTLTOOL_UI_RULE)
 AC_SUBST(INTLTOOL_XAM_RULE)
 AC_SUBST(INTLTOOL_KBD_RULE)
 AC_SUBST(INTLTOOL_XML_RULE)
-AC_SUBST(INTLTOOL_XML_NOMERGE_RULE)
 AC_SUBST(INTLTOOL_CAVES_RULE)
 AC_SUBST(INTLTOOL_SCHEMAS_RULE)
 AC_SUBST(INTLTOOL_THEME_RULE)
@@ -495,11 +476,6 @@ if test "x$2" != "xno-xml"; then
    fi
 fi
 
-AC_PATH_PROG(INTLTOOL_ICONV, iconv, iconv)
-AC_PATH_PROG(INTLTOOL_MSGFMT, msgfmt, msgfmt)
-AC_PATH_PROG(INTLTOOL_MSGMERGE, msgmerge, msgmerge)
-AC_PATH_PROG(INTLTOOL_XGETTEXT, xgettext, xgettext)
-
 # Remove file type tags (using []) from po/POTFILES.
 
 ifdef([AC_DIVERSION_ICMDS],[
@@ -520,47 +496,13 @@ ifdef([AC_DIVERSION_ICMDS],[
         changequote([,])
     ])
   ])
-
-if mkdir -p --version . >/dev/null 2>&1 && test ! -d ./--version; then
-  # Keeping the `.' argument allows $(mkdir_p) to be used without
-  # argument.  Indeed, we sometimes output rules like
-  #   $(mkdir_p) $(somedir)
-  # where $(somedir) is conditionally defined.
-  # (`test -n '$(somedir)' && $(mkdir_p) $(somedir)' is a more
-  # expensive solution, as it forces Make to start a sub-shell.)
-  mkdir_p='mkdir -p -- .'
-else
-  # On NextStep and OpenStep, the `mkdir' command does not
-  # recognize any option.  It will interpret all options as
-  # directories to create, and then abort because `.' already
-  # exists.
-  for d in ./-p ./--version;
-  do
-    test -d $d && rmdir $d
-  done
-  # $(mkinstalldirs) is defined by Automake if mkinstalldirs exists.
-  if test -f "$ac_aux_dir/mkinstalldirs"; then
-    mkdir_p='$(mkinstalldirs)'
-  else
-    mkdir_p='$(install_sh) -d'
-  fi
-fi
-AC_SUBST([mkdir_p])
 ])
 
 # Manually sed perl in so people don't have to put the intltool scripts in AC_OUTPUT.
 
-AC_CONFIG_COMMANDS([intltool], [
+AC_OUTPUT_COMMANDS([
 
-intltool_edit="-e 's#@INTLTOOL_EXTRACT@#`pwd`/intltool-extract#g' \
-               -e 's#@INTLTOOL_ICONV@#${INTLTOOL_ICONV}#g' \
-               -e 's#@INTLTOOL_MSGFMT@#${INTLTOOL_MSGFMT}#g' \
-               -e 's#@INTLTOOL_MSGMERGE@#${INTLTOOL_MSGMERGE}#g' \
-               -e 's#@INTLTOOL_XGETTEXT@#${INTLTOOL_XGETTEXT}#g' \
-               -e 's#@INTLTOOL_PERL@#${INTLTOOL_PERL}#g'"
-
-eval sed ${intltool_edit} < ${ac_aux_dir}/intltool-extract.in \
-  > intltool-extract.out
+sed -e "s:@INTLTOOL_PERL@:${INTLTOOL_PERL}:;" < ${ac_aux_dir}/intltool-extract.in > intltool-extract.out
 if cmp -s intltool-extract intltool-extract.out 2>/dev/null; then
   rm -f intltool-extract.out
 else
@@ -569,8 +511,8 @@ fi
 chmod ugo+x intltool-extract
 chmod u+w intltool-extract
 
-eval sed ${intltool_edit} < ${ac_aux_dir}/intltool-merge.in \
-  > intltool-merge.out
+sed -e "s:@INTLTOOL_PERL@:${INTLTOOL_PERL}:;" \
+    < ${ac_aux_dir}/intltool-merge.in > intltool-merge.out
 if cmp -s intltool-merge intltool-merge.out 2>/dev/null; then
   rm -f intltool-merge.out
 else
@@ -579,8 +521,7 @@ fi
 chmod ugo+x intltool-merge
 chmod u+w intltool-merge
 
-eval sed ${intltool_edit} < ${ac_aux_dir}/intltool-update.in \
-  > intltool-update.out
+sed -e "s:@INTLTOOL_PERL@:${INTLTOOL_PERL}:;" < ${ac_aux_dir}/intltool-update.in > intltool-update.out
 if cmp -s intltool-update intltool-update.out 2>/dev/null; then
   rm -f intltool-update.out
 else
@@ -589,22 +530,27 @@ fi
 chmod ugo+x intltool-update
 chmod u+w intltool-update
 
-], INTLTOOL_PERL='${INTLTOOL_PERL}' ac_aux_dir=${ac_aux_dir}
-INTLTOOL_EXTRACT='${INTLTOOL_EXTRACT}' ICONV='${INTLTOOL_ICONV}'
-MSGFMT='${INTLTOOL_MSGFMT}' MSGMERGE='${INTLTOOL_MSGMERGE}'
-XGETTEXT='${INTLTOOL_XGETTEXT}')
+], INTLTOOL_PERL=${INTLTOOL_PERL} ac_aux_dir=${ac_aux_dir})
 
 ])
 
-# deprecated macros
-AC_DEFUN([AC_PROG_INTLTOOL], [IT_PROG_INTLTOOL($@)])
+#                                                        -*- Autoconf -*-
+# Copyright (C) 2002, 2003  Free Software Foundation, Inc.
+# Generated from amversion.in; do not edit by hand.
 
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
 
-# Copyright (C) 2002, 2003, 2005  Free Software Foundation, Inc.
-#
-# This file is free software; the Free Software Foundation
-# gives unlimited permission to copy and/or distribute it,
-# with or without modifications, as long as this notice is preserved.
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
 
 # AM_AUTOMAKE_VERSION(VERSION)
 # ----------------------------
@@ -617,15 +563,26 @@ AC_DEFUN([AM_AUTOMAKE_VERSION], [am__api_version="1.9"])
 # Call AM_AUTOMAKE_VERSION so it can be traced.
 # This function is AC_REQUIREd by AC_INIT_AUTOMAKE.
 AC_DEFUN([AM_SET_CURRENT_AUTOMAKE_VERSION],
-	 [AM_AUTOMAKE_VERSION([1.9.5])])
+	 [AM_AUTOMAKE_VERSION([1.9.2])])
 
-# AM_AUX_DIR_EXPAND                                         -*- Autoconf -*-
+# AM_AUX_DIR_EXPAND
 
-# Copyright (C) 2001, 2003, 2005  Free Software Foundation, Inc.
-#
-# This file is free software; the Free Software Foundation
-# gives unlimited permission to copy and/or distribute it,
-# with or without modifications, as long as this notice is preserved.
+# Copyright (C) 2001, 2003 Free Software Foundation, Inc.
+
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+# 02111-1307, USA.
 
 # For projects using AC_CONFIG_AUX_DIR([foo]), Autoconf sets
 # $ac_aux_dir to `$srcdir/foo'.  In other projects, it is set to
@@ -672,16 +629,26 @@ AC_PREREQ([2.50])dnl
 am_aux_dir=`cd $ac_aux_dir && pwd`
 ])
 
-# AM_CONDITIONAL                                            -*- Autoconf -*-
+# AM_CONDITIONAL                                              -*- Autoconf -*-
 
-# Copyright (C) 1997, 2000, 2001, 2003, 2004, 2005
-# Free Software Foundation, Inc.
-#
-# This file is free software; the Free Software Foundation
-# gives unlimited permission to copy and/or distribute it,
-# with or without modifications, as long as this notice is preserved.
+# Copyright (C) 1997, 2000, 2001, 2003, 2004 Free Software Foundation, Inc.
 
-# serial 7
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+# 02111-1307, USA.
+
+# serial 6
 
 # AM_CONDITIONAL(NAME, SHELL-CONDITION)
 # -------------------------------------
@@ -705,21 +672,33 @@ AC_CONFIG_COMMANDS_PRE(
 Usually this means the macro was only invoked conditionally.]])
 fi])])
 
+# serial 7						-*- Autoconf -*-
 
-# Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2005
+# Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004
 # Free Software Foundation, Inc.
-#
-# This file is free software; the Free Software Foundation
-# gives unlimited permission to copy and/or distribute it,
-# with or without modifications, as long as this notice is preserved.
 
-# serial 8
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+# 02111-1307, USA.
+
 
 # There are a few dirty hacks below to avoid letting `AC_PROG_CC' be
 # written in clear, in which case automake, when reading aclocal.m4,
 # will think it sees a *use*, and therefore will trigger all it's
 # C support machinery.  Also note that it means that autoscan, seeing
 # CC etc. in the Makefile, will ask for an AC_PROG_CC use...
+
 
 
 # _AM_DEPENDENCIES(NAME)
@@ -861,16 +840,27 @@ AM_CONDITIONAL([AMDEP], [test "x$enable_dependency_tracking" != xno])
 AC_SUBST([AMDEPBACKSLASH])
 ])
 
-# Generate code to set up dependency tracking.              -*- Autoconf -*-
+# Generate code to set up dependency tracking.   -*- Autoconf -*-
 
-# Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2005
-# Free Software Foundation, Inc.
-#
-# This file is free software; the Free Software Foundation
-# gives unlimited permission to copy and/or distribute it,
-# with or without modifications, as long as this notice is preserved.
+# Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004
+#   Free Software Foundation, Inc.
 
-#serial 3
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+# 02111-1307, USA.
+
+#serial 2
 
 # _AM_OUTPUT_DEPENDENCY_COMMANDS
 # ------------------------------
@@ -929,19 +919,30 @@ AC_DEFUN([AM_OUTPUT_DEPENDENCY_COMMANDS],
      [AMDEP_TRUE="$AMDEP_TRUE" ac_aux_dir="$ac_aux_dir"])
 ])
 
-# Do all the work for Automake.                             -*- Autoconf -*-
+# Do all the work for Automake.                            -*- Autoconf -*-
 
-# Copyright (C) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005
-# Free Software Foundation, Inc.
-#
-# This file is free software; the Free Software Foundation
-# gives unlimited permission to copy and/or distribute it,
-# with or without modifications, as long as this notice is preserved.
-
-# serial 12
-
-# This macro actually does too much.  Some checks are only needed if
+# This macro actually does too much some checks are only needed if
 # your package does certain things.  But this isn't really a big deal.
+
+# Copyright (C) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004
+# Free Software Foundation, Inc.
+
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+# 02111-1307, USA.
+
+# serial 11
 
 # AM_INIT_AUTOMAKE(PACKAGE, VERSION, [NO-DEFINE])
 # AM_INIT_AUTOMAKE([OPTIONS])
@@ -1043,27 +1044,51 @@ for _am_header in $config_headers :; do
 done
 echo "timestamp for $1" >`AS_DIRNAME([$1])`/stamp-h[]$_am_stamp_count])
 
-# Copyright (C) 2001, 2003, 2005  Free Software Foundation, Inc.
-#
-# This file is free software; the Free Software Foundation
-# gives unlimited permission to copy and/or distribute it,
-# with or without modifications, as long as this notice is preserved.
-
 # AM_PROG_INSTALL_SH
 # ------------------
 # Define $install_sh.
+
+# Copyright (C) 2001, 2003 Free Software Foundation, Inc.
+
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+# 02111-1307, USA.
+
 AC_DEFUN([AM_PROG_INSTALL_SH],
 [AC_REQUIRE([AM_AUX_DIR_EXPAND])dnl
 install_sh=${install_sh-"$am_aux_dir/install-sh"}
 AC_SUBST(install_sh)])
 
-# Copyright (C) 2003, 2005  Free Software Foundation, Inc.
-#
-# This file is free software; the Free Software Foundation
-# gives unlimited permission to copy and/or distribute it,
-# with or without modifications, as long as this notice is preserved.
+#                                                          -*- Autoconf -*-
+# Copyright (C) 2003  Free Software Foundation, Inc.
 
-# serial 2
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+# 02111-1307, USA.
+
+# serial 1
 
 # Check whether the underlying file-system supports filenames
 # with a leading dot.  For instance MS-DOS doesn't.
@@ -1078,15 +1103,26 @@ fi
 rmdir .tst 2>/dev/null
 AC_SUBST([am__leading_dot])])
 
-# Check to see how 'make' treats includes.	            -*- Autoconf -*-
+# Check to see how 'make' treats includes.	-*- Autoconf -*-
 
-# Copyright (C) 2001, 2002, 2003, 2005  Free Software Foundation, Inc.
-#
-# This file is free software; the Free Software Foundation
-# gives unlimited permission to copy and/or distribute it,
-# with or without modifications, as long as this notice is preserved.
+# Copyright (C) 2001, 2002, 2003 Free Software Foundation, Inc.
 
-# serial 3
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+# 02111-1307, USA.
+
+# serial 2
 
 # AM_MAKE_INCLUDE()
 # -----------------
@@ -1130,16 +1166,27 @@ AC_MSG_RESULT([$_am_result])
 rm -f confinc confmf
 ])
 
-# Fake the existence of programs that GNU maintainers use.  -*- Autoconf -*-
+#  -*- Autoconf -*-
 
-# Copyright (C) 1997, 1999, 2000, 2001, 2003, 2005
-# Free Software Foundation, Inc.
-#
-# This file is free software; the Free Software Foundation
-# gives unlimited permission to copy and/or distribute it,
-# with or without modifications, as long as this notice is preserved.
 
-# serial 4
+# Copyright (C) 1997, 1999, 2000, 2001, 2003 Free Software Foundation, Inc.
+
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+# 02111-1307, USA.
+
+# serial 3
 
 # AM_MISSING_PROG(NAME, PROGRAM)
 # ------------------------------
@@ -1165,16 +1212,27 @@ else
 fi
 ])
 
-# Copyright (C) 2003, 2004, 2005  Free Software Foundation, Inc.
-#
-# This file is free software; the Free Software Foundation
-# gives unlimited permission to copy and/or distribute it,
-# with or without modifications, as long as this notice is preserved.
-
 # AM_PROG_MKDIR_P
 # ---------------
 # Check whether `mkdir -p' is supported, fallback to mkinstalldirs otherwise.
-#
+
+# Copyright (C) 2003, 2004 Free Software Foundation, Inc.
+
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+# 02111-1307, USA.
+
 # Automake 1.8 used `mkdir -m 0755 -p --' to ensure that directories
 # created by `make install' are always world readable, even if the
 # installer happens to have an overly restrictive umask (e.g. 077).
@@ -1228,15 +1286,26 @@ else
 fi
 AC_SUBST([mkdir_p])])
 
-# Helper functions for option handling.                     -*- Autoconf -*-
+# Helper functions for option handling.                    -*- Autoconf -*-
 
-# Copyright (C) 2001, 2002, 2003, 2005  Free Software Foundation, Inc.
-#
-# This file is free software; the Free Software Foundation
-# gives unlimited permission to copy and/or distribute it,
-# with or without modifications, as long as this notice is preserved.
+# Copyright (C) 2001, 2002, 2003  Free Software Foundation, Inc.
 
-# serial 3
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+# 02111-1307, USA.
+
+# serial 2
 
 # _AM_MANGLE_OPTION(NAME)
 # -----------------------
@@ -1261,16 +1330,28 @@ AC_DEFUN([_AM_SET_OPTIONS],
 AC_DEFUN([_AM_IF_OPTION],
 [m4_ifset(_AM_MANGLE_OPTION([$1]), [$2], [$3])])
 
-# Check to make sure that the build environment is sane.    -*- Autoconf -*-
-
-# Copyright (C) 1996, 1997, 2000, 2001, 2003, 2005
-# Free Software Foundation, Inc.
 #
-# This file is free software; the Free Software Foundation
-# gives unlimited permission to copy and/or distribute it,
-# with or without modifications, as long as this notice is preserved.
+# Check to make sure that the build environment is sane.
+#
 
-# serial 4
+# Copyright (C) 1996, 1997, 2000, 2001, 2003 Free Software Foundation, Inc.
+
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+# 02111-1307, USA.
+
+# serial 3
 
 # AM_SANITY_CHECK
 # ---------------
@@ -1313,14 +1394,25 @@ Check your system clock])
 fi
 AC_MSG_RESULT(yes)])
 
-# Copyright (C) 2001, 2003, 2005  Free Software Foundation, Inc.
-#
-# This file is free software; the Free Software Foundation
-# gives unlimited permission to copy and/or distribute it,
-# with or without modifications, as long as this notice is preserved.
-
 # AM_PROG_INSTALL_STRIP
-# ---------------------
+
+# Copyright (C) 2001, 2003 Free Software Foundation, Inc.
+
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+# 02111-1307, USA.
+
 # One issue with vendor `install' (even GNU) is that you can't
 # specify the program used to strip binaries.  This is especially
 # annoying in cross-compiling environments, where the build's strip
@@ -1343,13 +1435,25 @@ AC_SUBST([INSTALL_STRIP_PROGRAM])])
 
 # Check how to create a tarball.                            -*- Autoconf -*-
 
-# Copyright (C) 2004, 2005  Free Software Foundation, Inc.
-#
-# This file is free software; the Free Software Foundation
-# gives unlimited permission to copy and/or distribute it,
-# with or without modifications, as long as this notice is preserved.
+# Copyright (C) 2004  Free Software Foundation, Inc.
 
-# serial 2
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+# 02111-1307, USA.
+
+# serial 1
+
 
 # _AM_PROG_TAR(FORMAT)
 # --------------------
