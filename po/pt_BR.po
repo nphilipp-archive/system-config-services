@@ -1,3 +1,4 @@
+# translation of pt_BR.po to 
 # translation of pt_BR.po to Portuguese
 # translation of pt_BR.po to Brazilian Portuguese
 # Brazilian Portuguese localization of Red Hat Linux
@@ -7,24 +8,25 @@
 # David Barzilay <barzilay@redhat.com>, 2003,2004.
 # Daniel Brooke Peig <daniel@brookepeig.com>, 2004.
 # Pedro Fernandes Macedo <webmaster@margo.bijoux.nom.br>, 2004.
+# Pedro Fernandes Macedo <webmaster@margo.bijoux.nom.br>, 2005.
 msgid ""
 msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-09 14:20+0200\n"
-"PO-Revision-Date: 2004-04-08 12:23+1000\n"
-"Last-Translator: David Barzilay <barzilay@redhat.com>\n"
-"Language-Team: Portuguese <gnome-l10n-br@listas.cipsga.org.br>\n"
+"PO-Revision-Date: 2005-05-19 12:36-0300\n"
+"Last-Translator: Pedro Macedo <webmaster@margo.bijoux.nom.br>\n"
+"Language-Team:  <fedora-trans-pt_BR@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "br>\n"
-"X-Generator: KBabel 1.0\n"
+"X-Generator: KBabel 1.9.1\n"
 
 #: src/checklist.py:40 src/checklist.py:171
-#, fuzzy, python-format
+#, python-format
 msgid "Runlevel %d"
-msgstr "Nível de Execução _3"
+msgstr "Nível de Execução %d"
 
 #: src/serviceconf.py:73
 #, python-format
@@ -47,7 +49,7 @@ msgstr "Desconhecido"
 
 #: src/serviceconf.py:442
 msgid "All"
-msgstr ""
+msgstr "Todos"
 
 #: src/serviceconf.py:476
 msgid ""
@@ -172,9 +174,8 @@ msgid "Runlevel _5"
 msgstr "Nível de Execução _5"
 
 #: src/serviceconf.glade.h:14
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "Nível de Execução _3"
+msgstr "Todos Níveis de Execução"
 
 #: src/serviceconf.glade.h:15
 msgid "S_top Service"
@@ -258,56 +259,13 @@ msgstr "_Ver"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "Configure quais serviços estarão rodando quando o sistema for iniciado"
 
 #: system-config-services.desktop.in.h:2
-#, fuzzy
 msgid "Service Management"
-msgstr "Nome do Serviço:"
+msgstr "Controle do Serviço"
 
 #: system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Serviços"
 
-#~ msgid "_Save"
-#~ msgstr "_Salvar"
-
-#~ msgid "Save"
-#~ msgstr "Salvar"
-
-#~ msgid "_Revert"
-#~ msgstr "_Reverter"
-
-#~ msgid "Revert"
-#~ msgstr "Reverter"
-
-#~ msgid "Start at Boot"
-#~ msgstr "Começar ao iníciar a máquina"
-
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "Copyright (c) 2002 Red Hat, Inc. Todos os direitos reservados."
-
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "Este software pode ser redistribuído livremente sob os termos da GPL.\n"
-#~ "Por favor comunique todos os erros encontrados no sistema de gestão de "
-#~ "erros da Red Hat:\n"
-#~ "http://bugzilla.redhat.com"
-
-#~ msgid "translator_credits"
-#~ msgstr "créditos_do_tradutor"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "Reiniciar o servidor selecionado"
-
-#~ msgid "Start the selected service"
-#~ msgstr "Iniciar o serviço selecionado"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "Parar o serviço selecionado"
-
-#~ msgid "xinetd service"
-#~ msgstr "serviço xinetd"
