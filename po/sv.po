@@ -1,14 +1,14 @@
 # Swedish messages for system-config-services.
-# Copyright (C) 2001, 2003, 2004 Christian Rose <menthos@menthos.com>.
+# Copyright (C) 2001, 2003, 2004, 2005 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.58 2005/05/09 12:15:21 nphilipp Exp $
+# $Id: sv.po,v 1.59 2005/05/22 09:54:02 menthos Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-09 14:20+0200\n"
-"PO-Revision-Date: 2004-03-17 18:40+0100\n"
+"PO-Revision-Date: 2005-05-22 12:01+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,9 +16,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: src/checklist.py:40 src/checklist.py:171
-#, fuzzy, python-format
+#, python-format
 msgid "Runlevel %d"
-msgstr "Körnivå _3"
+msgstr "Körnivå %d"
+
+msgid "Runlevel"
+msgstr "Körnivå"
 
 #: src/serviceconf.py:73
 #, python-format
@@ -41,7 +44,7 @@ msgstr "Okänd"
 
 #: src/serviceconf.py:442
 msgid "All"
-msgstr ""
+msgstr "Alla"
 
 #: src/serviceconf.py:476
 msgid ""
@@ -166,9 +169,8 @@ msgid "Runlevel _5"
 msgstr "Körnivå _5"
 
 #: src/serviceconf.glade.h:14
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "Körnivå _3"
+msgstr "Körnivå _alla"
 
 #: src/serviceconf.glade.h:15
 msgid "S_top Service"
@@ -232,7 +234,7 @@ msgstr "_Avsluta"
 
 #: src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
-msgstr "_Uppdatera tjänstelistan"
+msgstr "_Uppdatera tjänstlistan"
 
 #: src/serviceconf.glade.h:31
 msgid "_Restart Service"
@@ -255,9 +257,8 @@ msgid "Configure which services will be running when the system starts"
 msgstr "Konfigurera vilka tjänster som kommer att köras då systemet startar"
 
 #: system-config-services.desktop.in.h:2
-#, fuzzy
 msgid "Service Management"
-msgstr "Namn på tjänst:"
+msgstr "Tjänsthantering"
 
 #: system-config-services.desktop.in.h:3
 msgid "Services"
