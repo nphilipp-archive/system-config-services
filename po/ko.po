@@ -1,24 +1,25 @@
 # translation of ko.po to Korean
-# Michelle Kim <mkim@redhat.com>, 2002
-# Michelle J Kim <mkim@redhat.com>, 2003,2004
+# Michelle Kim <mkim@redhat.com>, 2002.
+# Michelle J Kim <mkim@redhat.com>, 2003,2004.
+# Michelle Ji Yeen Kim <mkim@redhat.com>, 2005.
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-09 14:20+0200\n"
-"PO-Revision-Date: 2004-03-25 09:50+1000\n"
-"Last-Translator: Michelle J Kim <mkim@redhat.com>\n"
-"Language-Team:  <ko@li.org>\n"
+"PO-Revision-Date: 2005-06-16 14:40+1000\n"
+"Last-Translator: Michelle Ji Yeen Kim <mkim@redhat.com>\n"
+"Language-Team: Korean\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
-"X-Generator: KBabel 1.0\n"
+"X-Generator: KBabel 1.9.1\n"
 
 #: src/checklist.py:40 src/checklist.py:171
-#, fuzzy, python-format
+#, python-format
 msgid "Runlevel %d"
-msgstr "런레벨 3 (_3)"
+msgstr "런레벨 %d"
 
 #: src/serviceconf.py:73
 #, python-format
@@ -41,7 +42,7 @@ msgstr "알 수 없음"
 
 #: src/serviceconf.py:442
 msgid "All"
-msgstr ""
+msgstr "모두"
 
 #: src/serviceconf.py:476
 msgid ""
@@ -167,9 +168,8 @@ msgid "Runlevel _5"
 msgstr "런레벨 5 (_5)"
 
 #: src/serviceconf.glade.h:14
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "런레벨 3 (_3)"
+msgstr "모든 런레벨(_A)"
 
 #: src/serviceconf.glade.h:15
 msgid "S_top Service"
@@ -253,262 +253,13 @@ msgstr "보기(_V)"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "시스템 시작시 실행될 서비스를 설정"
 
 #: system-config-services.desktop.in.h:2
-#, fuzzy
 msgid "Service Management"
-msgstr "서비스 이름: "
+msgstr "서비스 관리"
 
 #: system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "서비스"
 
-#~ msgid "_Save"
-#~ msgstr "저장(_S)"
-
-#~ msgid "Save"
-#~ msgstr "저장"
-
-#~ msgid "_Revert"
-#~ msgstr "되돌아가기(_R)"
-
-#~ msgid "Revert"
-#~ msgstr "되돌아가기"
-
-#~ msgid "Start at Boot"
-#~ msgstr "부팅시 시작"
-
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "이 프로그램은 GPL의 규정 하에서 자유롭게 재배포될 수 있습니다.\n"
-#~ "버그를 발견하시면 Red Hat 버그 추적 시스템에 보고해 주시기 바랍니다:\n"
-#~ "http://bugzilla.redhat.com"
-
-#~ msgid "translator_credits"
-#~ msgstr "번역자: 김지은"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "선택된 서비스 재시작"
-
-#~ msgid "Start the selected service"
-#~ msgstr "선택된 서비스 시작"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "선택된 서비스 중지"
-
-#~ msgid "xinetd service"
-#~ msgstr "xinetd 서비스"
-
-#~ msgid "Cancel"
-#~ msgstr "취소"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "마지막 변동 사항 취소"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "변동 사항 저장"
-
-#~ msgid "Directory "
-#~ msgstr "디렉토리"
-
-#~ msgid " does not begin with a slash!"
-#~ msgstr " 은(는) 슬래시로 시작하지 않습니다!"
-
-#~ msgid " is not an existing directory!"
-#~ msgstr " 디렉토리는 존재하지 않습니다!"
-
-#~ msgid "Master "
-#~ msgstr "마스터 "
-
-#~ msgid " is not a valid IP address."
-#~ msgstr " 은(는) 잘못된 IP 주소입니다."
-
-#~ msgid " is defined twice."
-#~ msgstr " 은(는) 중복 정의되었습니다."
-
-#~ msgid "Slave zone name "
-#~ msgstr "슬레이브 영역명"
-
-#~ msgid " is not a valid domain name."
-#~ msgstr " 은(는) 잘못된 도메인명입니다."
-
-#~ msgid "Forwarder "
-#~ msgstr "전달 서버"
-
-#~ msgid " is not a valid Ip address."
-#~ msgstr " 은(는) 잘못된 IP 주소입니다."
-
-#~ msgid "Primary Nameserver not defined."
-#~ msgstr "주 이름서버가 정의되지 않았습니다."
-
-#~ msgid "Primary Nameserver `"
-#~ msgstr "주 이름서버 "
-
-#~ msgid "' has no . at the end. You must use a full hostname."
-#~ msgstr "'은(는) . 로 끝나지 않습니다. 완전한 호스트명을 사용해 주십시오."
-
-#~ msgid "' is not a valid hostname or IP address."
-#~ msgstr "' 은(는) 잘못된 호스트명 또는 IP 주소입니다."
-
-#~ msgid "Refresh value should be bigger than Retry"
-#~ msgstr "갱신값 (refresh value)는 재시도값 (retry value)보다 커야 합니다."
-
-#~ msgid "Serial number must be >= 1."
-#~ msgstr "일련 번호는 반드시 1보다 크거나 같아야 합니다. ( >= 1)"
-
-#~ msgid "Refresh value must be >= 0."
-#~ msgstr "재생값은 반드시 0보다 크거나 같아야 합니다. ( >= 0)"
-
-#~ msgid "Retry value must be >= 0."
-#~ msgstr "재시도값은 0보다 크거나 같아야 합니다. ( >= 0)"
-
-#~ msgid "Expire value must be >= 0."
-#~ msgstr "만료값 (expire value)는 0보다 크거나 같아야 합니다. ( >= 0)"
-
-#~ msgid "Minimum value must be >= 0."
-#~ msgstr "최소값은 반드시 0보다 크거나 같아야 합니다. ( >= 0)"
-
-#~ msgid "NewHost"
-#~ msgstr "새호스트"
-
-#~ msgid "PTR hostname not defined"
-#~ msgstr "PTR 호스트명이 정의되지 않았습니다."
-
-#~ msgid "PTR hostname `"
-#~ msgstr "PTR 호스트명"
-
-#~ msgid " is not a valid hostname."
-#~ msgstr " 은(는) 잘못된 호스트명입니다."
-
-#~ msgid " must be in the range 0..255."
-#~ msgstr " (은)는 0..255 범위내여야 합니다."
-
-#~ msgid "IP "
-#~ msgstr "IP "
-
-#~ msgid "Nameserver "
-#~ msgstr "이름서버 "
-
-#~ msgid " is not a valid host or domain name."
-#~ msgstr " 은(는) 잘못된 호스트명 또는 도메인명입니다."
-
-#~ msgid " is defined twice for "
-#~ msgstr " 는 "
-
-#~ msgid "New"
-#~ msgstr "새로운"
-
-#~ msgid "Alias "
-#~ msgstr "별칭"
-
-#~ msgid "<New Forward Zone>"
-#~ msgstr "<새 전달 영역>"
-
-#~ msgid "Forward zone name "
-#~ msgstr "전달 영역명"
-
-#~ msgid "Zone "
-#~ msgstr "영역"
-
-#~ msgid "<New Reverse Zone>"
-#~ msgstr "<새 역방향 영역>"
-
-#~ msgid "Reverse zone name `"
-#~ msgstr "역방향 영역명 "
-
-#~ msgid "' is not the end of a reverse IP address."
-#~ msgstr "' 은(는) 역방향 IP 주소의 끝이 아닙니다."
-
-#~ msgid "Reverse zone `"
-#~ msgstr "역방향 영역 "
-
-#~ msgid "' must list at least one name server"
-#~ msgstr " 목록은 최소한 한 개의 이름 서버를 제공해야 합니다."
-
-#~ msgid "Reverse zone "
-#~ msgstr "역방향 영역"
-
-#~ msgid "<New Zone>"
-#~ msgstr "<새 영역>"
-
-#~ msgid " aliased to "
-#~ msgstr "다음과 같은 별칭으로 "
-
-#~ msgid "You must enter a host name."
-#~ msgstr "호스트명을 입력해 주십시오."
-
-#~ msgid "You must enter an alias."
-#~ msgstr "별칭 (alias)를 입력해 주십시오."
-
-#~ msgid "An alias with this name already exists."
-#~ msgstr "이 이름에는 별칭이 이미 존재합니다."
-
-#~ msgid " at priority "
-#~ msgstr "우선적으로"
-
-#~ msgid "Mail Exchanger for %s"
-#~ msgstr "%s에 사용되는 메일 교환기 (Mail Exchanger)"
-
-#~ msgid "Edit Mail Exchanger"
-#~ msgstr "메일 교환기 편집"
-
-#~ msgid "Add a Mail Exchanger"
-#~ msgstr "메일 교환기 추가"
-
-#~ msgid "You must enter an priority."
-#~ msgstr "우선 순위를 입력해 주십시오."
-
-#~ msgid " served by "
-#~ msgstr "은(는) 다음으로 구축되었습니다: "
-
-#~ msgid "You must enter a resolution address."
-#~ msgstr "호스트명 주소 변환에 사용될 주소를 입력해 주십시오."
-
-#~ msgid "NS hostname `"
-#~ msgstr "NS 호스트명"
-
-#~ msgid "SOA Refresh value should be bigger than Retry"
-#~ msgstr "SOA 갱신값은 재시도값보다 커야합니다."
-
-#~ msgid "Forward zone `"
-#~ msgstr "전달 영역"
-
-#~ msgid "Settings for %s"
-#~ msgstr "%s 설정"
-
-#~ msgid "_Manual"
-#~ msgstr "사용법 (_M)"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "서비스 목록 재정리"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr "선택된 서비스의 시작, 정지, 재시작과 같은 명령 수행"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "편집할 런레벨을 선택해 주십시요"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "런레벨 3은 네트워크 사용의 다중 사용자 모드 입니다"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr ""
-#~ "런레벨 4는 로컬 사용자를 위해 예약되어 있는 것입니다, 일반적으로 사용되지 "
-#~ "않습니다"
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr "런레벨 5는 네트워크 및 X 윈도우 사용의 다중 사용자 모드 입니다"
-
-#~ msgid "Read Manual"
-#~ msgstr "사용법 읽기"
-
-#~ msgid "Exit"
-#~ msgstr "종료"
