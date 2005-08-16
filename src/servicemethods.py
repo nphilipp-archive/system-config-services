@@ -1,7 +1,11 @@
-"""The servicemethods module handles all the backend processesing for the system-config-services application."""
+"""The servicemethods module handles all the backend processing for the system-config-services application."""
 # serviceactions.py
-# Copyright (C) 2002 Red Hat, Inc.
-# Author: Tim Powers <timp@redhat.com>
+# Copyright (C) 2002 - 2005 Red Hat, Inc.
+# Authors:
+# Tim Powers <timp@redhat.com>
+# Dan Walsh <dwalsh@redhat.com>
+# Brent Fox <bfox@redhat.com>
+# Nils Philippsen <nphilipp@redhat.com>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -29,13 +33,14 @@ import nonblockingreader
 
 def getstatusoutput(cmd, callback):
     """Return (status, output) of executing cmd in a shell."""
-    pipe = os.popen('{ ' + cmd + '; } 2>/dev/null', 'r')
+    pipe = os.popen("{ %s ; } 2>&1" % (cmd), 'r')
     output = nonblockingreader.Reader ().run ([pipe], callback)
     text = output[pipe]
     sts = pipe.close ()
     if sts is None: sts = 0
-        
-    if text[-1:] == '\n': text = text[:-1]
+
+    if text[-1:] == '\n':
+        text = text[:-1]
     return sts, text
 
 class ServiceMethods:
@@ -190,11 +195,14 @@ class ServiceMethods:
         list_xinetd_services = []
         self.allservices = []
         
-        chkconfig_list = getstatusoutput("LC_ALL=C /sbin/chkconfig --list", self.uicallback)[1]
+        chkconfig_list = getstatusoutput("LC_ALL=C /sbin/chkconfig --list 2>/dev/null", self.uicallback)[1]
         chkconfig_list = re.split('\n', chkconfig_list)
         dict={}
         for i in chkconfig_list:
-            x=re.split(r"\t", i.strip())
+            i = i.strip ()
+            if len(i) == 0:
+                continue
+            x=re.split(r"\t", i)
             end= x[0].rfind(":")
             if end >= 0:
                 name = x[0][:end].strip()

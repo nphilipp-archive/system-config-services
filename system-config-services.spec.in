@@ -71,6 +71,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Tue Aug 16 2005 Nils Philippsen <nphilipp@redhat.com>
+- revamp getting output from external commands (#162884)
+
 * Mon May 09 2005 Nils Philippsen <nphilipp@redhat.com> - 0.8.25
 - pick up updated translations
 
