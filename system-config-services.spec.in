@@ -60,7 +60,7 @@ rm -rf %{buildroot}
 %doc COPYING
 %doc docs/*
 %{_sbindir}/*
-%{_bindir}/system-config-services
+%{_bindir}/*
 %{_datadir}/applications/system-config-services.desktop
 %{_datadir}/icons/hicolor/48x48/apps/system-config-services.png
 %{_datadir}/system-config-services
@@ -71,8 +71,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
-* Tue Aug 16 2005 Nils Philippsen <nphilipp@redhat.com>
+* Tue Aug 16 2005 Nils Philippsen <nphilipp@redhat.com> - 0.8.26
 - revamp getting output from external commands (#162884)
+- package %{_bindir}/serviceconf symlink (#165099)
 
 * Mon May 09 2005 Nils Philippsen <nphilipp@redhat.com> - 0.8.25
 - pick up updated translations
