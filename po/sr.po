@@ -7,47 +7,47 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2005-07-10 18:55-0000\n"
+"POT-Creation-Date: 2005-08-16 16:55+0200\n"
+"PO-Revision-Date: 2005-08-17 16:30-0000\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian (sr) <fedora@prevod.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/checklist.py:40
-#: src/checklist.py:171
+#: ../src/checklist.py:40
+#: ../src/checklist.py:171
 #, python-format
 msgid "Runlevel %d"
 msgstr "Извршни ниво %d"
 
-#: src/serviceconf.py:73
+#: ../src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Сигурно желите да обришете %s?"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:241
+#: ../src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
 msgstr "Тренутно извршавање у извршном нивоу: "
 
-#: src/serviceconf.py:312
-#: src/serviceconf.py:413
+#: ../src/serviceconf.py:312
+#: ../src/serviceconf.py:413
 msgid "Editing Runlevel: "
 msgstr "Уређујем извршни ниво: "
 
-#: src/serviceconf.py:355
+#: ../src/serviceconf.py:355
 #, fuzzy
 msgid "Unknown"
 msgstr "Непознато"
 
-#: src/serviceconf.py:442
+#: ../src/serviceconf.py:442
 #, fuzzy
 msgid "All"
 msgstr "Све"
 
-#: src/serviceconf.py:476
+#: ../src/serviceconf.py:476
 #, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
@@ -66,22 +66,22 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:480
+#: ../src/serviceconf.py:480
 msgid "About"
 msgstr "О програму"
 
-#: src/serviceconf.py:509
+#: ../src/serviceconf.py:509
 msgid "Help is not available."
 msgstr "Помоћ није доступна."
 
-#: src/serviceconf.py:663
+#: ../src/serviceconf.py:663
 msgid "You must run system-config-services as root."
 msgstr "Морате покренути system-config-services као root."
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:283
+#: ../src/servicemethods.py:291
 msgid ""
 "\n"
 "\n"
@@ -91,120 +91,120 @@ msgstr ""
 "\n"
 "xinetd је непходан за овај сервис."
 
-#: src/servicemethods.py:319
+#: ../src/servicemethods.py:327
 msgid "xinetd failed to reload for "
 msgstr "xinetd није успело поновно учитавање за "
 
-#: src/servicemethods.py:320
+#: ../src/servicemethods.py:328
 msgid ". The error was: "
 msgstr ". Грешка је била: "
 
-#: src/servicemethods.py:322
+#: ../src/servicemethods.py:330
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd је изнова учитао %s успешно"
 
-#: src/servicemethods.py:325
+#: ../src/servicemethods.py:333
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd мора бити укључен да би се %s покренуо"
 
-#: src/servicemethods.py:330
+#: ../src/servicemethods.py:338
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s неуспело. Грешка је била: %s"
 
-#: src/servicemethods.py:332
+#: ../src/servicemethods.py:340
 msgid " successful"
 msgstr " успешно"
 
-#: src/serviceconf.glade.h:1
+#: ../src/serviceconf.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: src/serviceconf.glade.h:2
+#: ../src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "Додај сервис"
 
-#: src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Тренутно активни извршни ниво: "
 
-#: src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:4
 msgid "Delete Service"
 msgstr "Обриши сервис"
 
-#: src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "Опис"
 
-#: src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "Не сачувати"
 
-#: src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "Уреди извршни ниво:"
 
-#: src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:8
 #, fuzzy
 msgid "None"
 msgstr "Ништа"
 
-#: src/serviceconf.glade.h:9
+#: ../src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Покрени поново"
 
-#: src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
 msgstr "Поврати на пос_ледње сачувано"
 
-#: src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "Извршни ниво _3"
 
-#: src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "Извршни ниво _4"
 
-#: src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "Извршни ниво _5"
 
-#: src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:14
 #, fuzzy
 msgid "Runlevel _All"
 msgstr "Извршни ниво _сви"
 
-#: src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "_Заустави сервис"
 
-#: src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:16
 msgid "Save Dialog"
 msgstr "Прозорче чувања"
 
-#: src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "Подешавање сервиса"
 
-#: src/serviceconf.glade.h:18
+#: ../src/serviceconf.glade.h:18
 msgid "Service Name: "
 msgstr "Име сервиса: "
 
-#: src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:19
 msgid "Start"
 msgstr "Покрени"
 
-#: src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:20
 msgid "Status"
 msgstr "Стање"
 
-#: src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:21
 msgid "Stop"
 msgstr "Заустави"
 
-#: src/serviceconf.glade.h:22
+#: ../src/serviceconf.glade.h:22
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -212,59 +212,59 @@ msgstr ""
 "Направили сте промене у текућем извршном нивоу.\n"
 "Желите ли да сачувате те промене?"
 
-#: src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:24
 msgid "_Actions"
 msgstr "_Акције"
 
-#: src/serviceconf.glade.h:25
+#: ../src/serviceconf.glade.h:25
 msgid "_Contents"
 msgstr "_Садржај"
 
-#: src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
 msgstr "У_реди извршни ниво"
 
-#: src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:27
 msgid "_File"
 msgstr "Да_тотека"
 
-#: src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:28
 msgid "_Help"
 msgstr "_Помоћ"
 
-#: src/serviceconf.glade.h:29
+#: ../src/serviceconf.glade.h:29
 msgid "_Quit"
 msgstr "_Излаз"
 
-#: src/serviceconf.glade.h:30
+#: ../src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
 msgstr "_Освежи списак сервиса"
 
-#: src/serviceconf.glade.h:31
+#: ../src/serviceconf.glade.h:31
 msgid "_Restart Service"
 msgstr "Пон_ово покрени сервис"
 
-#: src/serviceconf.glade.h:32
+#: ../src/serviceconf.glade.h:32
 msgid "_Save Changes"
 msgstr "Сачу_вај промене"
 
-#: src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:33
 msgid "_Start Service"
 msgstr "По_крени сервис"
 
-#: src/serviceconf.glade.h:34
+#: ../src/serviceconf.glade.h:34
 msgid "_View"
 msgstr "Пре_глед"
 
-#: system-config-services.desktop.in.h:1
+#: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "Подесите који ће сервиси бити покренути када се систем подигне"
 
-#: system-config-services.desktop.in.h:2
+#: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
 msgstr "Управљање сервисима"
 
-#: system-config-services.desktop.in.h:3
+#: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Сервиси"
 
