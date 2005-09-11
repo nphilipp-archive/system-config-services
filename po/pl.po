@@ -1,7 +1,4 @@
 # translation of pl.po to Polish
-# translation of pl.po to POLISH
-# This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Radosław Zawartko <radzaw@radzaw.one.pl>, 2003.
 # Tom Berner <tom@lodz.pl>, 2005.
 #
@@ -10,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-09 14:20+0200\n"
-"PO-Revision-Date: 2005-02-24 15:45+0100\n"
+"PO-Revision-Date: 2005-09-10 00:46+0200\n"
 "Last-Translator: Tom Berner <tom@lodz.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -23,70 +20,18 @@ msgstr ""
 msgid "Runlevel %d"
 msgstr "Poziom %d"
 
-#  checklist.py: A class (derived from GtkTreeView) that provides a list of
-#  checkbox / text string pairs
-#  Brent Fox <bfox@redhat.com>
-#  Jeremy Katz <katzj@redhat.com>
-#  Copyright 2000-2002 Red Hat, Inc.
-#  This software may be freely redistributed under the terms of the GNU
-#  library public license.
-#  You should have received a copy of the GNU Library Public License
-#  along with this program; if not, write to the Free Software
-#  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#  override this to make your own columns if necessary
-#  add the string columns to the tree view widget
-#  XXX need to handle the multicolumn case better still....
-#  XXX we only handle two text columns right now
-#  keep track of the number of rows we have so we can
-#  iterate over them all
-#  add the text for the number of columns we have
-#  serviceconf.py
-#  Copyright (C) 2002 Red Hat, Inc.
-#  Authors: Tim Powers <timp@redhat.com>
-#  Bill Nottingham <notting@redhat.com>
-#  Dan Walsh <dwalsh@redhat.com>
-#  This program is free software; you can redistribute it and/or modify
-#  it under the terms of the GNU General Public License as published by
-#  the Free Software Foundation; either version 2 of the License, or
-#  (at your option) any later version.
-#  This program is distributed in the hope that it will be useful,
-#  but WITHOUT ANY WARRANTY; without even the implied warranty of
-#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#  GNU General Public License for more details.
-#  You should have received a copy of the GNU General Public License
-#  along with this program; if not, write to the Free Software
-#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-#  #
-#  # I18N
-#  #
 #: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr "Czy aby na pewno chcesz usunąć %s?"
+msgstr "Czy na pewno chcesz usunąć %s?"
 
-#  make sure threading is disabled
-#  map the event signals to specific methods
-#  main window
-#  menu items
-#  buttons
-#  toolbars
-#  self.tbrSave.set_style(GTK.TOOLBAR_ICONS)
-#  self.tbrSave.set_button_relief(GTK.RELIEF_NORMAL)
-#  the textbox
-#  the statusbox
-#  the CheckCList which will display whether the service
-#  is enabled, and the service names
-#  initialize this to the runlevel we are running in. It will
-#  change when one of the optRL[3-6] are selected
-#. initialize this to the runlevel we are running in. It will
-#. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
-msgstr "Aktualny poziom uruchamiania: "
+msgstr "Bieżący poziom uruchamiania: "
 
 #: src/serviceconf.py:312 src/serviceconf.py:413
 msgid "Editing Runlevel: "
-msgstr "Edycja poziomu uruchamiania: "
+msgstr "Modyfikowanie poziomu uruchamiania: "
 
 #: src/serviceconf.py:355
 msgid "Unknown"
@@ -120,15 +65,12 @@ msgstr "Informacje o"
 
 #: src/serviceconf.py:509
 msgid "Help is not available."
-msgstr "Pomoc nie jest dostępna."
+msgstr "Pomoc jest niedostępna."
 
 #: src/serviceconf.py:663
 msgid "You must run system-config-services as root."
 msgstr "Musisz uruchomić system-config-services jako root."
 
-#. configured=1 if the service is configured already
-#. configured = self.xinetd_check_if_on(servicename)
-#. the list corresponding to the key is: [configured, is it an xinetd serv., description]
 #: src/servicemethods.py:283
 msgid ""
 "\n"
@@ -139,17 +81,9 @@ msgstr ""
 "\n"
 "dla tej usługi wymagany jest xinetd."
 
-#  an unmodified dictionary. Needed to compare for saving etc.
-#  only save changes
-#  check to make sure we are an initscript and not an xinetd service
-#  if it's toggled on
-#  if it's toggled off
-#  for xinetd services
-#  if it's toggled on
-#  if it's toggled off
 #: src/servicemethods.py:319
 msgid "xinetd failed to reload for "
-msgstr "xinetd nie przeładował się "
+msgstr "xinetd nie przeładował się dla "
 
 #: src/servicemethods.py:320
 msgid ". The error was: "
@@ -184,7 +118,7 @@ msgstr "Dodaj usługę"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
-msgstr "Aktualny poziom uruchamiania: "
+msgstr "Bieżący poziom uruchamiania: "
 
 #: src/serviceconf.glade.h:4
 msgid "Delete Service"
@@ -200,7 +134,7 @@ msgstr "Nie zapisuj"
 
 #: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
-msgstr "Edycja poziomu uruchamiania:"
+msgstr "Modyfikowanie poziomu uruchamiania:"
 
 #: src/serviceconf.glade.h:8
 msgid "None"
@@ -208,7 +142,7 @@ msgstr "Żaden"
 
 #: src/serviceconf.glade.h:9
 msgid "Restart"
-msgstr "Restart"
+msgstr "Przeładuj"
 
 #: src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
@@ -252,7 +186,7 @@ msgstr "Uruchom"
 
 #: src/serviceconf.glade.h:20
 msgid "Status"
-msgstr "Status"
+msgstr "Stan"
 
 #: src/serviceconf.glade.h:21
 msgid "Stop"
@@ -263,8 +197,8 @@ msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
-"Dokonałeś zmian w obecnym poziomie uruchamiania.\n"
-"Czy chcesz zapisać dokonane zmiany?"
+"Dokonałeś zmian w bieżącym poziomie uruchamiania.\n"
+"Czy chcesz zapisać zmiany?"
 
 #: src/serviceconf.glade.h:24
 msgid "_Actions"
@@ -276,7 +210,7 @@ msgstr "_Zawartość"
 
 #: src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
-msgstr "_Modyfikuj poziom uruchamiania"
+msgstr "_Edytuj poziom uruchamiania"
 
 #: src/serviceconf.glade.h:27
 msgid "_File"
@@ -296,7 +230,7 @@ msgstr "_Odśwież listę usług"
 
 #: src/serviceconf.glade.h:31
 msgid "_Restart Service"
-msgstr "_Restart usługi"
+msgstr "P_rzeładuj usługę"
 
 #: src/serviceconf.glade.h:32
 msgid "_Save Changes"
@@ -321,15 +255,3 @@ msgstr "Zarządzanie usługami"
 #: system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Usługi"
-
-#~ msgid "_Save"
-#~ msgstr "Zapi_sz"
-
-#~ msgid "Save"
-#~ msgstr "Zapisz"
-
-#~ msgid "_Revert"
-#~ msgstr "P_rzywróć"
-
-#~ msgid "Revert"
-#~ msgstr "Przywróć"
