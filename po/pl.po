@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-09 14:20+0200\n"
-"PO-Revision-Date: 2005-09-10 00:46+0200\n"
+"PO-Revision-Date: 2005-10-08 12:53+0200\n"
 "Last-Translator: Tom Berner <tom@lodz.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -138,11 +138,11 @@ msgstr "Modyfikowanie poziomu uruchamiania:"
 
 #: src/serviceconf.glade.h:8
 msgid "None"
-msgstr "Żaden"
+msgstr "Brak"
 
 #: src/serviceconf.glade.h:9
 msgid "Restart"
-msgstr "Przeładuj"
+msgstr "Uruchom ponownie"
 
 #: src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
@@ -230,7 +230,7 @@ msgstr "_Odśwież listę usług"
 
 #: src/serviceconf.glade.h:31
 msgid "_Restart Service"
-msgstr "P_rzeładuj usługę"
+msgstr "U_ruchom ponownie usługę"
 
 #: src/serviceconf.glade.h:32
 msgid "_Save Changes"
