@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: system-config-services-0.8.15-1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-09 14:20+0200\n"
-"PO-Revision-Date: 2005-01-09 16:22+0700\n"
-"Last-Translator: Erwien Samantha Y <erwiensamantha@sederhana.or.id>\n"
-"Language-Team: BlankOn <http:/www.blankonlinux.or.id>\n"
+"PO-Revision-Date: 2005-10-27 01:10+0700\n"
+"Last-Translator: Teguh DC <dheche@bradjamoesti.or.id>\n"
+"Language-Team: Linux Indonesia <http:/www.linux.or.id>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -18,9 +18,9 @@ msgstr ""
 "X-Poedit-Country: INDONESIA\n"
 
 #: src/checklist.py:40 src/checklist.py:171
-#, fuzzy, python-format
+#, python-format
 msgid "Runlevel %d"
-msgstr "Runlevel _3"
+msgstr "Runlevel %d"
 
 #: src/serviceconf.py:73
 #, python-format
@@ -31,7 +31,7 @@ msgstr "Apakah anda yakin ingin menghapus %s?"
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
-msgstr "Yang berjalan saat ini di Runlevel: "
+msgstr "Yang saat ini berjalan di Runlevel: "
 
 #: src/serviceconf.py:312 src/serviceconf.py:413
 msgid "Editing Runlevel: "
@@ -43,7 +43,7 @@ msgstr "Tidak diketahui"
 
 #: src/serviceconf.py:442
 msgid "All"
-msgstr ""
+msgstr "Semua"
 
 #: src/serviceconf.py:476
 msgid ""
@@ -170,11 +170,11 @@ msgstr "Runlevel _5"
 #: src/serviceconf.glade.h:14
 #, fuzzy
 msgid "Runlevel _All"
-msgstr "Runlevel _3"
+msgstr "Semu_a Runlevel"
 
 #: src/serviceconf.glade.h:15
 msgid "S_top Service"
-msgstr "Hentikan Layanan"
+msgstr "Hen_tikan Layanan"
 
 #: src/serviceconf.glade.h:16
 msgid "Save Dialog"
@@ -254,12 +254,11 @@ msgstr "_Lihat"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "Konfigur layanan mana yang akan berjalan ketika sistem mulai"
 
 #: system-config-services.desktop.in.h:2
-#, fuzzy
 msgid "Service Management"
-msgstr "Nama Layanan: "
+msgstr "Menejemen Layanan: "
 
 #: system-config-services.desktop.in.h:3
 msgid "Services"
