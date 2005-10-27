@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: system-config-services-0.8.15-1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-09 14:20+0200\n"
-"PO-Revision-Date: 2005-10-27 01:10+0700\n"
+"PO-Revision-Date: 2005-10-28 05:25+0700\n"
 "Last-Translator: Teguh DC <dheche@bradjamoesti.or.id>\n"
 "Language-Team: Linux Indonesia <http:/www.linux.or.id>\n"
 "MIME-Version: 1.0\n"
@@ -168,7 +168,6 @@ msgid "Runlevel _5"
 msgstr "Runlevel _5"
 
 #: src/serviceconf.glade.h:14
-#, fuzzy
 msgid "Runlevel _All"
 msgstr "Semu_a Runlevel"
 
