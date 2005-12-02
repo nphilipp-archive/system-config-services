@@ -12,6 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-POFile-SpellExtra: Hat Fox system VERSION Walsh Brent runlevel services\n"
+"X-POFile-SpellExtra: xinetd config Powers Red Inc\n"
 
 #: src/checklist.py:40 src/checklist.py:171
 #, python-format
