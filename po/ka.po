@@ -1,47 +1,50 @@
+# translation of ka.po to Georgian
 # Georgian translations for PACKAGE package.
 # Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2004.
 #
+# Automatically generated, 2004.
+# George Machitidze <giomac@gmail.com>, 2005.
 msgid ""
 msgstr ""
-"Project-Id-Version: package\n"
+"Project-Id-Version: ka\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-05-09 14:20+0200\n"
-"PO-Revision-Date: 2004-04-06 14:50-0400\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2005-12-20 01:55+0300\n"
+"Last-Translator: George Machitidze <giomac@gmail.com>\n"
+"Language-Team: Georgian <guiasher@mes.gov.ge>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11\n"
 
 #: src/checklist.py:40 src/checklist.py:171
 #, python-format
 msgid "Runlevel %d"
-msgstr ""
+msgstr "გაშვების დონე %d"
 
 #: src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "ნამდვილად გსურთ %s-ის წაშლა?"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
 #: src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
-msgstr ""
+msgstr "მიმდინარე გაშვების დონე:"
 
 #: src/serviceconf.py:312 src/serviceconf.py:413
 msgid "Editing Runlevel: "
-msgstr ""
+msgstr "რედაქტირებადი გაშვების დონე:"
 
 #: src/serviceconf.py:355
 msgid "Unknown"
-msgstr ""
+msgstr "უცნობი"
 
 #: src/serviceconf.py:442
 msgid "All"
-msgstr ""
+msgstr "ყველა"
 
 #: src/serviceconf.py:476
 msgid ""
@@ -53,18 +56,26 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"სისტემური სერვისების კონფიგურირების ინსტრუმენტი VERSION\n"
+"System Services Configuration Tool VERSION\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 
 #: src/serviceconf.py:480
 msgid "About"
-msgstr ""
+msgstr "პროგრამის შესახებ"
 
 #: src/serviceconf.py:509
 msgid "Help is not available."
-msgstr ""
+msgstr "დახმარება არ არის ხელმისაწვდომი"
 
 #: src/serviceconf.py:663
 msgid "You must run system-config-services as root."
-msgstr ""
+msgstr "System-config-services უნდა გაიშვას root-მომხმარებლის მიერ."
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
@@ -75,176 +86,182 @@ msgid ""
 "\n"
 "xinetd is required for this service."
 msgstr ""
+"\n"
+"\n"
+"ამ სერვისისთვის საჭიროა xinetd."
 
 #: src/servicemethods.py:319
 msgid "xinetd failed to reload for "
-msgstr ""
+msgstr "xinetd-ის გადატვირვა შეუძლებელია "
 
 #: src/servicemethods.py:320
 msgid ". The error was: "
-msgstr ""
+msgstr "სერვისისთვის. შეცდომა:"
 
 #: src/servicemethods.py:322
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr ""
+msgstr "xinetd-მა %s წარმატებით გადატვირთა"
 
 #: src/servicemethods.py:325
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr ""
+msgstr "%s-ის გასაშვებად xinetd უნდა იყოს ჩართული"
 
 #: src/servicemethods.py:330
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr ""
+msgstr "%s სერვისისთვის შეუძლებელია. შეცდომა: %s"
 
 #: src/servicemethods.py:332
 msgid " successful"
-msgstr ""
+msgstr "წარმატებით დასრულდა"
 
 #: src/serviceconf.glade.h:1
 msgid "*"
-msgstr ""
+msgstr "*"
 
 #: src/serviceconf.glade.h:2
 msgid "Add Service"
-msgstr ""
+msgstr "_სერვისის დამატება"
 
 #: src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
-msgstr ""
+msgstr "მიმდინარე აქტიური გაშვების დონე:"
 
 #: src/serviceconf.glade.h:4
 msgid "Delete Service"
-msgstr ""
+msgstr "სერვისის _წაშლა"
 
 #: src/serviceconf.glade.h:5
 msgid "Description"
-msgstr ""
+msgstr "განმარტება"
 
 #: src/serviceconf.glade.h:6
 msgid "Don't Save"
-msgstr ""
+msgstr "შენახვის გარეშე"
 
 #: src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
-msgstr ""
+msgstr "რედაქტირებადი გაშვების დონე:"
 
 #: src/serviceconf.glade.h:8
 msgid "None"
-msgstr ""
+msgstr "არ არის"
 
 #: src/serviceconf.glade.h:9
 msgid "Restart"
-msgstr ""
+msgstr "გადატვირთვა"
 
 #: src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
-msgstr ""
+msgstr "დაბ_რუნება"
 
 #: src/serviceconf.glade.h:11
 msgid "Runlevel _3"
-msgstr ""
+msgstr "გაშვების დონე _3"
 
 #: src/serviceconf.glade.h:12
 msgid "Runlevel _4"
-msgstr ""
+msgstr "გაშვების დონე _4"
 
 #: src/serviceconf.glade.h:13
 msgid "Runlevel _5"
-msgstr ""
+msgstr "გაშვების დონე _5"
 
 #: src/serviceconf.glade.h:14
 msgid "Runlevel _All"
-msgstr ""
+msgstr "_ყველა გაშვების დონე"
 
 #: src/serviceconf.glade.h:15
 msgid "S_top Service"
-msgstr ""
+msgstr "სერვისის _შეჩერება"
 
 #: src/serviceconf.glade.h:16
 msgid "Save Dialog"
-msgstr ""
+msgstr "შენახვის დიალოგი"
 
 #: src/serviceconf.glade.h:17
 msgid "Service Configuration"
-msgstr ""
+msgstr "სერვისების კონფიგურაცია"
 
 #: src/serviceconf.glade.h:18
 msgid "Service Name: "
-msgstr ""
+msgstr "სერვისის სახელი:"
 
 #: src/serviceconf.glade.h:19
 msgid "Start"
-msgstr ""
+msgstr "გაშვება"
 
 #: src/serviceconf.glade.h:20
 msgid "Status"
-msgstr ""
+msgstr "მდგომარეობა"
 
 #: src/serviceconf.glade.h:21
 msgid "Stop"
-msgstr ""
+msgstr "შეჩერება"
 
 #: src/serviceconf.glade.h:22
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"თქვენ შეცვალეთ მიმდინარე გაშვების დონე.\n"
+"გსურთ ცვლილებების შენახვა?"
 
 #: src/serviceconf.glade.h:24
 msgid "_Actions"
-msgstr ""
+msgstr "_მოქმედებები"
 
 #: src/serviceconf.glade.h:25
 msgid "_Contents"
-msgstr ""
+msgstr "_შიგთaვსი"
 
 #: src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
-msgstr ""
+msgstr "გაშვების დონის _რედაქტირება"
 
 #: src/serviceconf.glade.h:27
 msgid "_File"
-msgstr ""
+msgstr "_ფაილი"
 
 #: src/serviceconf.glade.h:28
 msgid "_Help"
-msgstr ""
+msgstr "_დახმარება"
 
 #: src/serviceconf.glade.h:29
 msgid "_Quit"
-msgstr ""
+msgstr "_გასვლა"
 
 #: src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
-msgstr ""
+msgstr "_სერვისების სიის განახება"
 
 #: src/serviceconf.glade.h:31
 msgid "_Restart Service"
-msgstr ""
+msgstr "სერვისის გა_დატვირთვა"
 
 #: src/serviceconf.glade.h:32
 msgid "_Save Changes"
-msgstr ""
+msgstr "ცვლილებების _შენახვა"
 
 #: src/serviceconf.glade.h:33
 msgid "_Start Service"
-msgstr ""
+msgstr "სერვისის _გაშვება"
 
 #: src/serviceconf.glade.h:34
 msgid "_View"
-msgstr ""
+msgstr "_ხედი"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "აირჩიეთ სერვისები, რომლებიც გაიშვებს სისტემის ჩართვისას"
 
 #: system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr ""
+msgstr "სერვისების მართვა"
 
 #: system-config-services.desktop.in.h:3
 msgid "Services"
-msgstr ""
+msgstr "სერვისები"
+
