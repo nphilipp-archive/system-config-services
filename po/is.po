@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: serviceconf 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-09 14:20+0200\n"
+"POT-Creation-Date: 2005-12-22 17:51+0100\n"
 "PO-Revision-Date: 2005-05-06 22:43+0000\n"
 "Last-Translator: Richard Allen <ra@ra.is>\n"
 "Language-Team: is <kde-isl@molar.is>\n"
@@ -14,35 +14,35 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: src/checklist.py:40 src/checklist.py:171
+#: ../src/checklist.py:40 ../src/checklist.py:171
 #, python-format
 msgid "Runlevel %d"
 msgstr "Keyrslustig %d"
 
-#: src/serviceconf.py:73
+#: ../src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Ertu viss um að þú viljir eyða %s?"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:241
+#: ../src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
 msgstr "Þegar ræst í keyrslustigi: "
 
-#: src/serviceconf.py:312 src/serviceconf.py:413
+#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
 msgid "Editing Runlevel: "
 msgstr "Breyti keyrslustigi: "
 
-#: src/serviceconf.py:355
+#: ../src/serviceconf.py:355
 msgid "Unknown"
 msgstr "Óþekkt"
 
-#: src/serviceconf.py:442
+#: ../src/serviceconf.py:442
 msgid "All"
 msgstr "Allar"
 
-#: src/serviceconf.py:476
+#: ../src/serviceconf.py:476
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -60,22 +60,22 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:480
+#: ../src/serviceconf.py:480
 msgid "About"
 msgstr "Um"
 
-#: src/serviceconf.py:509
+#: ../src/serviceconf.py:509
 msgid "Help is not available."
 msgstr "Hjálpin er ekki tiltæk."
 
-#: src/serviceconf.py:663
+#: ../src/serviceconf.py:663
 msgid "You must run system-config-services as root."
 msgstr "Þú verður að keyra system-config-services sem rót."
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:283
+#: ../src/servicemethods.py:291
 msgid ""
 "\n"
 "\n"
@@ -85,118 +85,118 @@ msgstr ""
 "\n"
 "Nota þarf xinetd fyrir þessa þjónustu."
 
-#: src/servicemethods.py:319
+#: ../src/servicemethods.py:327
 msgid "xinetd failed to reload for "
 msgstr "Ekki tókst að endurræsa xinetd fyrir "
 
-#: src/servicemethods.py:320
+#: ../src/servicemethods.py:328
 msgid ". The error was: "
 msgstr ". Villan var: "
 
-#: src/servicemethods.py:322
+#: ../src/servicemethods.py:330
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd endurræsti %s vandræðalaust"
 
-#: src/servicemethods.py:325
+#: ../src/servicemethods.py:333
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd verður að vera virkt svo %s geti keyrt"
 
-#: src/servicemethods.py:330
+#: ../src/servicemethods.py:338
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s brást. Villan var: %s"
 
-#: src/servicemethods.py:332
+#: ../src/servicemethods.py:340
 msgid " successful"
 msgstr " tókst"
 
-#: src/serviceconf.glade.h:1
+#: ../src/serviceconf.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: src/serviceconf.glade.h:2
+#: ../src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "Bæta við þjónustu"
 
-#: src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Núverandi keyrsluþrep:"
 
-#: src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:4
 msgid "Delete Service"
 msgstr "Eyða þjónustu"
 
-#: src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "Lýsing"
 
-#: src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "Ekki vista"
 
-#: src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "Breyti keyrsluþrepi:"
 
-#: src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:8
 msgid "None"
 msgstr "Engin"
 
-#: src/serviceconf.glade.h:9
+#: ../src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Endurræsa"
 
-#: src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
 msgstr "_Fara í síðustu vistuðu stillingar"
 
-#: src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "Keyrslustig _3"
 
-#: src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "Keyrslustig _4"
 
-#: src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "Keyrslustig _5"
 
-#: src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:14
 msgid "Runlevel _All"
 msgstr "Keyrslustig ö_ll"
 
-#: src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "S_öðva þjónustu"
 
-#: src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:16
 msgid "Save Dialog"
 msgstr "Vista"
 
-#: src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "Stillingar þjónustna"
 
-#: src/serviceconf.glade.h:18
+#: ../src/serviceconf.glade.h:18
 msgid "Service Name: "
 msgstr "Heiti þjónustu: "
 
-#: src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:19
 msgid "Start"
 msgstr "Ræsa"
 
-#: src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:20
 msgid "Status"
 msgstr "Staða"
 
-#: src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:21
 msgid "Stop"
 msgstr "Stöðva"
 
-#: src/serviceconf.glade.h:22
+#: ../src/serviceconf.glade.h:22
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -204,58 +204,58 @@ msgstr ""
 "Þú hefur gert breytingar á núverandi keyrslustigi.\n"
 "Viltu vista breytingunum?"
 
-#: src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:24
 msgid "_Actions"
 msgstr "_Aðgerðir"
 
-#: src/serviceconf.glade.h:25
+#: ../src/serviceconf.glade.h:25
 msgid "_Contents"
 msgstr "_Innihald"
 
-#: src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
 msgstr "_Breyta keyrslustigi"
 
-#: src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:27
 msgid "_File"
 msgstr "_Skrá"
 
-#: src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:28
 msgid "_Help"
 msgstr "_Hjálp"
 
-#: src/serviceconf.glade.h:29
+#: ../src/serviceconf.glade.h:29
 msgid "_Quit"
 msgstr "_Hætta"
 
-#: src/serviceconf.glade.h:30
+#: ../src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
 msgstr "_Uppfæra þjónustulistann"
 
-#: src/serviceconf.glade.h:31
+#: ../src/serviceconf.glade.h:31
 msgid "_Restart Service"
 msgstr "_Endurræsa þjónustu"
 
-#: src/serviceconf.glade.h:32
+#: ../src/serviceconf.glade.h:32
 msgid "_Save Changes"
 msgstr "_Vista breytingum"
 
-#: src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:33
 msgid "_Start Service"
 msgstr "_Ræsa þjónustu"
 
-#: src/serviceconf.glade.h:34
+#: ../src/serviceconf.glade.h:34
 msgid "_View"
 msgstr "_Birta"
 
-#: system-config-services.desktop.in.h:1
+#: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "Stilla hvaða þjónustur eru keyrandi þegar vélin ræsir"
 
-#: system-config-services.desktop.in.h:2
+#: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
 msgstr "Þjónustustýring"
 
-#: system-config-services.desktop.in.h:3
+#: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Þjónustur"

@@ -1,13 +1,13 @@
 # Swedish messages for system-config-services.
 # Copyright (C) 2001, 2003, 2004, 2005 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.59 2005/05/22 09:54:02 menthos Exp $
+# $Id: sv.po,v 1.60 2005/12/22 16:47:17 nphilipp Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-05-09 14:20+0200\n"
+"POT-Creation-Date: 2005-12-22 17:51+0100\n"
 "PO-Revision-Date: 2005-05-22 12:01+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -15,38 +15,35 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/checklist.py:40 src/checklist.py:171
+#: ../src/checklist.py:40 ../src/checklist.py:171
 #, python-format
 msgid "Runlevel %d"
 msgstr "Körnivå %d"
 
-msgid "Runlevel"
-msgstr "Körnivå"
-
-#: src/serviceconf.py:73
+#: ../src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Är du säker på att du vill ta bort %s?"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:241
+#: ../src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
 msgstr "Kör för närvarande i körnivå: "
 
-#: src/serviceconf.py:312 src/serviceconf.py:413
+#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
 msgid "Editing Runlevel: "
 msgstr "Redigerar körnivå: "
 
-#: src/serviceconf.py:355
+#: ../src/serviceconf.py:355
 msgid "Unknown"
 msgstr "Okänd"
 
-#: src/serviceconf.py:442
+#: ../src/serviceconf.py:442
 msgid "All"
 msgstr "Alla"
 
-#: src/serviceconf.py:476
+#: ../src/serviceconf.py:476
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
@@ -64,22 +61,22 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:480
+#: ../src/serviceconf.py:480
 msgid "About"
 msgstr "Om"
 
-#: src/serviceconf.py:509
+#: ../src/serviceconf.py:509
 msgid "Help is not available."
 msgstr "Hjälp är inte tillgänglig."
 
-#: src/serviceconf.py:663
+#: ../src/serviceconf.py:663
 msgid "You must run system-config-services as root."
 msgstr "Du måste köra system-config-services som root."
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
 #. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:283
+#: ../src/servicemethods.py:291
 msgid ""
 "\n"
 "\n"
@@ -89,118 +86,118 @@ msgstr ""
 "\n"
 "xinetd krävs för denna tjänst."
 
-#: src/servicemethods.py:319
+#: ../src/servicemethods.py:327
 msgid "xinetd failed to reload for "
 msgstr "xinetd misslyckades att läsa om för "
 
-#: src/servicemethods.py:320
+#: ../src/servicemethods.py:328
 msgid ". The error was: "
 msgstr ". Felet var: "
 
-#: src/servicemethods.py:322
+#: ../src/servicemethods.py:330
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd läste om %s utan problem"
 
-#: src/servicemethods.py:325
+#: ../src/servicemethods.py:333
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd måste vara aktiverat för att %s ska kunna köras"
 
-#: src/servicemethods.py:330
+#: ../src/servicemethods.py:338
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s misslyckades. Felet var: %s"
 
-#: src/servicemethods.py:332
+#: ../src/servicemethods.py:340
 msgid " successful"
 msgstr " lyckades"
 
-#: src/serviceconf.glade.h:1
+#: ../src/serviceconf.glade.h:1
 msgid "*"
 msgstr "*"
 
-#: src/serviceconf.glade.h:2
+#: ../src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "Lägg till tjänst"
 
-#: src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:3
 msgid "Current Active Runlevel: "
 msgstr "Aktiv körnivå just nu: "
 
-#: src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:4
 msgid "Delete Service"
 msgstr "Ta bort tjänst"
 
-#: src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:5
 msgid "Description"
 msgstr "Beskrivning"
 
-#: src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:6
 msgid "Don't Save"
 msgstr "Spara inte"
 
-#: src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:7
 msgid "Editing Runlevel:"
 msgstr "Redigerar körnivå:"
 
-#: src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:8
 msgid "None"
 msgstr "Ingen"
 
-#: src/serviceconf.glade.h:9
+#: ../src/serviceconf.glade.h:9
 msgid "Restart"
 msgstr "Starta om"
 
-#: src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:10
 msgid "Revert To _Last Save"
 msgstr "Återgå till _senast sparade"
 
-#: src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _3"
 msgstr "Körnivå _3"
 
-#: src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _4"
 msgstr "Körnivå _4"
 
-#: src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:13
 msgid "Runlevel _5"
 msgstr "Körnivå _5"
 
-#: src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:14
 msgid "Runlevel _All"
 msgstr "Körnivå _alla"
 
-#: src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:15
 msgid "S_top Service"
 msgstr "S_toppa tjänst"
 
-#: src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:16
 msgid "Save Dialog"
 msgstr "Spara dialog"
 
-#: src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:17
 msgid "Service Configuration"
 msgstr "Konfiguration av tjänst"
 
-#: src/serviceconf.glade.h:18
+#: ../src/serviceconf.glade.h:18
 msgid "Service Name: "
 msgstr "Namn på tjänst: "
 
-#: src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:19
 msgid "Start"
 msgstr "Starta"
 
-#: src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:20
 msgid "Status"
 msgstr "Status"
 
-#: src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:21
 msgid "Stop"
 msgstr "Stoppa"
 
-#: src/serviceconf.glade.h:22
+#: ../src/serviceconf.glade.h:22
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -208,61 +205,64 @@ msgstr ""
 "Du har gjort ändringar i aktuell körnivå.\n"
 "Vill du spara ändringarna?"
 
-#: src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:24
 msgid "_Actions"
 msgstr "_Åtgärder"
 
-#: src/serviceconf.glade.h:25
+#: ../src/serviceconf.glade.h:25
 msgid "_Contents"
 msgstr "_Innehåll"
 
-#: src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:26
 msgid "_Edit Runlevel"
 msgstr "_Redigera körnivå"
 
-#: src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:27
 msgid "_File"
 msgstr "_Arkiv"
 
-#: src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:28
 msgid "_Help"
 msgstr "_Hjälp"
 
-#: src/serviceconf.glade.h:29
+#: ../src/serviceconf.glade.h:29
 msgid "_Quit"
 msgstr "_Avsluta"
 
-#: src/serviceconf.glade.h:30
+#: ../src/serviceconf.glade.h:30
 msgid "_Refresh Service List"
 msgstr "_Uppdatera tjänstlistan"
 
-#: src/serviceconf.glade.h:31
+#: ../src/serviceconf.glade.h:31
 msgid "_Restart Service"
 msgstr "Starta _om tjänst"
 
-#: src/serviceconf.glade.h:32
+#: ../src/serviceconf.glade.h:32
 msgid "_Save Changes"
 msgstr "_Spara ändringar"
 
-#: src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:33
 msgid "_Start Service"
 msgstr "_Starta tjänst"
 
-#: src/serviceconf.glade.h:34
+#: ../src/serviceconf.glade.h:34
 msgid "_View"
 msgstr "_Visa"
 
-#: system-config-services.desktop.in.h:1
+#: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "Konfigurera vilka tjänster som kommer att köras då systemet startar"
 
-#: system-config-services.desktop.in.h:2
+#: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
 msgstr "Tjänsthantering"
 
-#: system-config-services.desktop.in.h:3
+#: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Tjänster"
+
+#~ msgid "Runlevel"
+#~ msgstr "Körnivå"
 
 #~ msgid "_Save"
 #~ msgstr "_Spara"
