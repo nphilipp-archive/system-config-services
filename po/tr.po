@@ -1,6 +1,6 @@
 #
 # translation of tr.po to Turkish
-# $Id: tr.po,v 1.55 2005/12/22 16:47:17 nphilipp Exp $
+# $Id: tr.po,v 1.56 2006/01/09 10:39:56 nphilipp Exp $
 # Nilgün Belma Bugüner <nilgun@superonline.com>, 2003.
 # Erçin EKER <erc.caldera@gmx.net>, 2003.
 # Bahadir Yagan <bahadir.yagan@mentorsystem.com>, 2004.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-12-22 17:51+0100\n"
+"POT-Creation-Date: 2006-01-09 11:47+0100\n"
 "PO-Revision-Date: 2004-03-18 00:35+0200\n"
 "Last-Translator: Nilgün Belma Bugüner <nilgun@superonline.com>\n"
 "Language-Team: Turkish <fedora-trans-tr@redhat.com>\n"
@@ -118,91 +118,99 @@ msgid " successful"
 msgstr " başarılı"
 
 #: ../src/serviceconf.glade.h:1
-msgid "*"
-msgstr "*"
-
-#: ../src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "Hizmet Ekle"
 
-#: ../src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "Şu an Etkin olan Çalışma Seviyesi: "
 
-#: ../src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:3
 msgid "Delete Service"
 msgstr "Hizmeti Sil"
 
-#: ../src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:4
 msgid "Description"
 msgstr "Açıklama"
 
-#: ../src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
 msgstr "Kaydetme"
 
-#: ../src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
 msgstr "Düzenlenen Çalışma Seviyesi:"
 
-#: ../src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:7
 msgid "None"
 msgstr "Hiçbiri"
 
-#: ../src/serviceconf.glade.h:9
+#: ../src/serviceconf.glade.h:8
 msgid "Restart"
 msgstr "Yeniden Başlat"
 
-#: ../src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
 msgstr "Son Kayıtlı Duruma _Dön"
 
-#: ../src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
 msgstr "Çalışma Seviyesi _3"
 
-#: ../src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
 msgstr "Çalışma Seviyesi _4"
 
-#: ../src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
 msgstr "Çalışma Seviyesi _5"
 
-#: ../src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:13
 #, fuzzy
 msgid "Runlevel _All"
 msgstr "Çalışma Seviyesi _3"
 
-#: ../src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "Hizmeti _Durdur"
 
-#: ../src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "Kayıt Diyaloğu"
 
-#: ../src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "Hizmet Yapılandırması"
 
-#: ../src/serviceconf.glade.h:18
+#: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "Hizmet Adı: "
 
-#: ../src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Başlat"
 
-#: ../src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:19
 msgid "Status"
 msgstr "Durum"
 
-#: ../src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "Dur"
 
+#: ../src/serviceconf.glade.h:21
+msgid ""
+"These services are started on demand and end when there is nothing more to "
+"do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr ""
+
 #: ../src/serviceconf.glade.h:22
+msgid ""
+"These services are started once and run in the background. You can specify "
+"in which runlevels they are started."
+msgstr ""
+
+#: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -210,47 +218,57 @@ msgstr ""
 "Şu anki çalışma seviyesinde değişklik yaptınız.\n"
 "Bu değişikliklerin kaydedilmesini ister misiniz?"
 
-#: ../src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:25
 msgid "_Actions"
 msgstr "_Eylemler"
 
-#: ../src/serviceconf.glade.h:25
+#: ../src/serviceconf.glade.h:26
+#, fuzzy
+msgid "_Background Services"
+msgstr "Hizmeti _Başlat"
+
+#: ../src/serviceconf.glade.h:27
 msgid "_Contents"
 msgstr "İçi_ndekiler"
 
-#: ../src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
 msgstr "Çalışma _Seviyesini Düzenle"
 
-#: ../src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:29
 msgid "_File"
 msgstr "_Dosya"
 
-#: ../src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:30
 msgid "_Help"
 msgstr "_Yardım"
 
-#: ../src/serviceconf.glade.h:29
-msgid "_Quit"
-msgstr "K_apat"
-
-#: ../src/serviceconf.glade.h:30
-msgid "_Refresh Service List"
-msgstr "Hizmet Listesini _Tazele"
-
 #: ../src/serviceconf.glade.h:31
-msgid "_Restart Service"
+#, fuzzy
+msgid "_On Demand Services"
 msgstr "Hizmeti _Yeniden Başlat"
 
 #: ../src/serviceconf.glade.h:32
+msgid "_Quit"
+msgstr "K_apat"
+
+#: ../src/serviceconf.glade.h:33
+msgid "_Refresh Service List"
+msgstr "Hizmet Listesini _Tazele"
+
+#: ../src/serviceconf.glade.h:34
+msgid "_Restart Service"
+msgstr "Hizmeti _Yeniden Başlat"
+
+#: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
 msgstr "Değişiklikleri _Kaydet"
 
-#: ../src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
 msgstr "Hizmeti _Başlat"
 
-#: ../src/serviceconf.glade.h:34
+#: ../src/serviceconf.glade.h:37
 msgid "_View"
 msgstr "_Görünüm"
 
@@ -266,6 +284,9 @@ msgstr "Hizmet Adı: "
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Servisler"
+
+#~ msgid "*"
+#~ msgstr "*"
 
 #~ msgid "_Save"
 #~ msgstr "_Kaydet"

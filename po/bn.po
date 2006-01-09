@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-12-22 17:51+0100\n"
+"POT-Creation-Date: 2006-01-09 11:47+0100\n"
 "PO-Revision-Date: 2005-05-09 10:33+0600\n"
 "Last-Translator: \n"
 "Language-Team: Bangla <redhat-translation@bengalinux.org>\n"
@@ -160,101 +160,109 @@ msgstr "%s ব্যর্থ। সমস্যাটি হল: %s"
 msgid " successful"
 msgstr " সফল"
 
-#: ../src/serviceconf.glade.h:1
-msgid "*"
-msgstr "*"
-
 # msgstr "সার্ভিস যোগ"--old version
-#: ../src/serviceconf.glade.h:2
+#: ../src/serviceconf.glade.h:1
 msgid "Add Service"
 msgstr "সার্ভিস যোগ করো"
 
-#: ../src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "বর্তমানে সক্রিয় রান-লেভেল: "
 
 # msgstr "সার্ভিস মুছা"---old version
-#: ../src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:3
 msgid "Delete Service"
 msgstr "সার্ভিস মুছে ফেলো"
 
-#: ../src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:4
 msgid "Description"
 msgstr "বিবরণ"
 
 # msgstr "সেভ করা হবে না"--old version, সংরক্ষণ has been used in an earlier string
-#: ../src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
 msgstr "সংরক্ষণ করা হবে না"
 
-#: ../src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
 msgstr "রান-লেভেল সম্পাদনা: "
 
-#: ../src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:7
 msgid "None"
 msgstr "কোনটি নয়"
 
-#: ../src/serviceconf.glade.h:9
+#: ../src/serviceconf.glade.h:8
 msgid "Restart"
 msgstr "রিস্টার্ট"
 
 # msgstr "শেষ সেভ করা অবস্থায় ফেরত যাও"--old version
-#: ../src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
 msgstr "শেষ সংরক্ষিত অবস্থায় ফেরত যাও (_শ)"
 
-#: ../src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
 msgstr "রান-লেভেল _৩ "
 
-#: ../src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
 msgstr "রান-লেভেল _৪"
 
-#: ../src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
 msgstr "রান-লেভেল _৫"
 
-#: ../src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:13
 msgid "Runlevel _All"
 msgstr "রান-লেভেল সব (_স)"
 
 # msgstr "সার্ভিস বন্ধ"--old version
-#: ../src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "সার্ভিস বন্ধ করো (_ব)"
 
 # msgstr "ডায়লগ সেভ কর"--old version, "save"
-#: ../src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "ডায়ালগ সংরক্ষণ করো"
 
-#: ../src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "সার্ভিস কনফিগারেশন"
 
 # msgstr "সার্ভিসের নাম: "--suggestion
 # msgstr "সার্ভিস এর নাম: "--old version, changed as of now
-#: ../src/serviceconf.glade.h:18
+#: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "সার্ভিসের নাম: "
 
-#: ../src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "আরম্ভ"
 
-#: ../src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:19
 msgid "Status"
 msgstr "অবস্থা"
 
-#: ../src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "থামো"
 
+#: ../src/serviceconf.glade.h:21
+msgid ""
+"These services are started on demand and end when there is nothing more to "
+"do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr ""
+
+#: ../src/serviceconf.glade.h:22
+msgid ""
+"These services are started once and run in the background. You can specify "
+"in which runlevels they are started."
+msgstr ""
+
 # "বর্তমান রানলেভেলে আপনি পরিবর্তন করেছেন।\n"
 # "আপনি কি পরিবর্তনগুলি সেভ করতে চান ?"--old version
-#: ../src/serviceconf.glade.h:22
+#: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -262,57 +270,70 @@ msgstr ""
 "বর্তমান রান‌‌-লেভেলে আপনি পরিবর্তন করেছেন।\n"
 "আপনি কি পরিবর্তনগুলি সংরক্ষণ করতে চান ?"
 
-#: ../src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:25
 msgid "_Actions"
 msgstr "কাজ (_ক)"
 
-#: ../src/serviceconf.glade.h:25
+# msgstr "সার্ভিস আরম্ভ করো (_আ)"--suggestion
+#: ../src/serviceconf.glade.h:26
+#, fuzzy
+msgid "_Background Services"
+msgstr "সার্ভিস আরম্ভ করো (_আ)"
+
+#: ../src/serviceconf.glade.h:27
 msgid "_Contents"
 msgstr "বিষয়বস্তু (_ব)"
 
 # msgstr "রানলেভেল সম্পাদন (_র)"--old version
 # written in earlier strings as "রান-লেভেল", changed by RB to maintain consistency
-#: ../src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
 msgstr "রান-লেভেল সম্পাদন (_র)"
 
-#: ../src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:29
 msgid "_File"
 msgstr "ফাইল (_ফ)"
 
 # msgstr "সহায়ক তথ্য (_স)"--mostly সহায়িকা is used
-#: ../src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:30
 msgid "_Help"
 msgstr "সহায়ক তথ্য (_স)"
 
+# msgstr "সার্ভিস পুনরায় আরম্ভ করো (_ভ)"--suggestion
+# msgstr "রিস্টার্ট সার্ভিস (_ভ)"--old version, changed as of now to maintain consistency with the other files
+#: ../src/serviceconf.glade.h:31
+#, fuzzy
+msgid "_On Demand Services"
+msgstr "সার্ভিস পুনরায় আরম্ভ করো (_ভ)"
+
 # msgstr "বন্ধ (_ব)"--old version, this was changed to প্রস্থান sometime back
-#: ../src/serviceconf.glade.h:29
+#: ../src/serviceconf.glade.h:32
 msgid "_Quit"
 msgstr "প্রস্থান (_প)"
 
 # msgstr "রিফ্রশ সার্ভিস তালিকা (_র)"--not sure abt translation, changed the spelling in refresh--old version
 # msgstr "রিফ্রেশ সার্ভিস তালিকা (_র)"--post review version, changed the string as of now to maintain consistency with the other files
-#: ../src/serviceconf.glade.h:30
+#: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
 msgstr "সার্ভিস তালিকা রিফ্রেশ করো (_র)"
 
 # msgstr "সার্ভিস পুনরায় আরম্ভ করো (_ভ)"--suggestion
 # msgstr "রিস্টার্ট সার্ভিস (_ভ)"--old version, changed as of now to maintain consistency with the other files
-#: ../src/serviceconf.glade.h:31
+#: ../src/serviceconf.glade.h:34
 msgid "_Restart Service"
 msgstr "সার্ভিস পুনরায় আরম্ভ করো (_ভ)"
 
 # msgstr "সেভ পরিবর্তনগুলি (_স)"--old version
-#: ../src/serviceconf.glade.h:32
+#: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
 msgstr "পরিবর্তনগুলি সংরক্ষণ করো (_স)"
 
 # msgstr "সার্ভিস আরম্ভ করো (_আ)"--suggestion
-#: ../src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
 msgstr "সার্ভিস আরম্ভ করো (_আ)"
 
-#: ../src/serviceconf.glade.h:34
+#: ../src/serviceconf.glade.h:37
 msgid "_View"
 msgstr "প্রদর্শন (_দ)"
 
@@ -330,3 +351,6 @@ msgstr "সার্ভিস ব্যবস্থাপনা"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "সার্ভিসসমূহ"
+
+#~ msgid "*"
+#~ msgstr "*"

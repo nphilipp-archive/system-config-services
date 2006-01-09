@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_CN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-12-22 17:51+0100\n"
+"POT-Creation-Date: 2006-01-09 11:47+0100\n"
 "PO-Revision-Date: 2005-08-04 15:31+1000\n"
 "Last-Translator: Leah Liu <weliu@redhat.com>\n"
 "Language-Team: Chinese, Simplified <zh@li.org>\n"
@@ -118,90 +118,98 @@ msgid " successful"
 msgstr "成功"
 
 #: ../src/serviceconf.glade.h:1
-msgid "*"
-msgstr "*"
-
-#: ../src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "添加服务"
 
-#: ../src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "目前活跃的运行级别："
 
-#: ../src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:3
 msgid "Delete Service"
 msgstr "删除服务"
 
-#: ../src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:4
 msgid "Description"
 msgstr "描述"
 
-#: ../src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
 msgstr "不保存"
 
-#: ../src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
 msgstr "编辑运行级别："
 
-#: ../src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:7
 msgid "None"
 msgstr "无"
 
-#: ../src/serviceconf.glade.h:9
+#: ../src/serviceconf.glade.h:8
 msgid "Restart"
 msgstr "重启"
 
-#: ../src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
 msgstr "还原到上一次保存(_L)"
 
-#: ../src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
 msgstr "运行级别 _3"
 
-#: ../src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
 msgstr "运行级别 _4"
 
-#: ../src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
 msgstr "运行级别 _5"
 
-#: ../src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:13
 msgid "Runlevel _All"
 msgstr "所有运行级别(_A)"
 
-#: ../src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "停止服务(_T)"
 
-#: ../src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "保存对话"
 
-#: ../src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "服务配置"
 
-#: ../src/serviceconf.glade.h:18
+#: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "服务名称："
 
-#: ../src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "开始"
 
-#: ../src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:19
 msgid "Status"
 msgstr "状态"
 
-#: ../src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "停止"
 
+#: ../src/serviceconf.glade.h:21
+msgid ""
+"These services are started on demand and end when there is nothing more to "
+"do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr ""
+
 #: ../src/serviceconf.glade.h:22
+msgid ""
+"These services are started once and run in the background. You can specify "
+"in which runlevels they are started."
+msgstr ""
+
+#: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -209,47 +217,57 @@ msgstr ""
 "您对当前的运行级别已做了些改变。\n"
 "您想保存这些改变吗？"
 
-#: ../src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:25
 msgid "_Actions"
 msgstr "行动(_A)"
 
-#: ../src/serviceconf.glade.h:25
+#: ../src/serviceconf.glade.h:26
+#, fuzzy
+msgid "_Background Services"
+msgstr "开始服务(_S)"
+
+#: ../src/serviceconf.glade.h:27
 msgid "_Contents"
 msgstr "内容(_C)"
 
-#: ../src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
 msgstr "编辑运行级别(_E)"
 
-#: ../src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:29
 msgid "_File"
 msgstr "文件(_F)"
 
-#: ../src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:30
 msgid "_Help"
 msgstr "帮助(_H)"
 
-#: ../src/serviceconf.glade.h:29
-msgid "_Quit"
-msgstr "退出(_Q)"
-
-#: ../src/serviceconf.glade.h:30
-msgid "_Refresh Service List"
-msgstr "刷新服务列表(_R)"
-
 #: ../src/serviceconf.glade.h:31
-msgid "_Restart Service"
+#, fuzzy
+msgid "_On Demand Services"
 msgstr "重启服务(_R)"
 
 #: ../src/serviceconf.glade.h:32
+msgid "_Quit"
+msgstr "退出(_Q)"
+
+#: ../src/serviceconf.glade.h:33
+msgid "_Refresh Service List"
+msgstr "刷新服务列表(_R)"
+
+#: ../src/serviceconf.glade.h:34
+msgid "_Restart Service"
+msgstr "重启服务(_R)"
+
+#: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
 msgstr "保存改变(_S)"
 
-#: ../src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
 msgstr "开始服务(_S)"
 
-#: ../src/serviceconf.glade.h:34
+#: ../src/serviceconf.glade.h:37
 msgid "_View"
 msgstr "查看(_V)"
 
@@ -264,3 +282,6 @@ msgstr "服务程序管理："
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "服务"
+
+#~ msgid "*"
+#~ msgstr "*"

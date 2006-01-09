@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-12-22 17:51+0100\n"
+"POT-Creation-Date: 2006-01-09 11:47+0100\n"
 "PO-Revision-Date: 2004-03-17 00:19+0200\n"
 "Last-Translator: Lauri Nurmi <lanurmi@iki.fi>\n"
 "Language-Team: Gnome Finnish Translation Team <gnome-fi-laatu@lists."
@@ -116,91 +116,99 @@ msgid " successful"
 msgstr " onnistui"
 
 #: ../src/serviceconf.glade.h:1
-msgid "*"
-msgstr "*"
-
-#: ../src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "Lisää palvelu"
 
-#: ../src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "Nykyinen aktiivinen ajotaso: "
 
-#: ../src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:3
 msgid "Delete Service"
 msgstr "Poista palvelu"
 
-#: ../src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:4
 msgid "Description"
 msgstr "Kuvaus"
 
-#: ../src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
 msgstr "Älä tallenna"
 
-#: ../src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
 msgstr "Muokattava ajotaso:"
 
-#: ../src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:7
 msgid "None"
 msgstr "Ei mikään"
 
-#: ../src/serviceconf.glade.h:9
+#: ../src/serviceconf.glade.h:8
 msgid "Restart"
 msgstr "Käynnistä uudelleen"
 
-#: ../src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
 msgstr "Palauta _edellisen tallennuksen tilanne"
 
-#: ../src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
 msgstr "Ajotaso _3"
 
-#: ../src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
 msgstr "Ajotaso _4"
 
-#: ../src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
 msgstr "Ajotaso _5"
 
-#: ../src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:13
 #, fuzzy
 msgid "Runlevel _All"
 msgstr "Ajotaso _3"
 
-#: ../src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "_Pysäytä palvelu"
 
-#: ../src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "Tallennusikkuna"
 
-#: ../src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "Palvelujen asetus"
 
-#: ../src/serviceconf.glade.h:18
+#: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "Palvelun nimi: "
 
-#: ../src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Käynnistä"
 
-#: ../src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:19
 msgid "Status"
 msgstr "Tila"
 
-#: ../src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "Sammuta"
 
+#: ../src/serviceconf.glade.h:21
+msgid ""
+"These services are started on demand and end when there is nothing more to "
+"do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr ""
+
 #: ../src/serviceconf.glade.h:22
+msgid ""
+"These services are started once and run in the background. You can specify "
+"in which runlevels they are started."
+msgstr ""
+
+#: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -208,47 +216,57 @@ msgstr ""
 "Nykyiseen ajotasoon on tehty muutoksia.\n"
 "Tallennetaanko ne?"
 
-#: ../src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:25
 msgid "_Actions"
 msgstr "T_oiminnot"
 
-#: ../src/serviceconf.glade.h:25
+#: ../src/serviceconf.glade.h:26
+#, fuzzy
+msgid "_Background Services"
+msgstr "_Käynnistä palvelu"
+
+#: ../src/serviceconf.glade.h:27
 msgid "_Contents"
 msgstr "_Sisältö"
 
-#: ../src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
 msgstr "_Muokkaa ajotasoa"
 
-#: ../src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:29
 msgid "_File"
 msgstr "_Tiedosto"
 
-#: ../src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:30
 msgid "_Help"
 msgstr "_Ohje"
 
-#: ../src/serviceconf.glade.h:29
-msgid "_Quit"
-msgstr "_Lopeta"
-
-#: ../src/serviceconf.glade.h:30
-msgid "_Refresh Service List"
-msgstr "_Virkistä palveluluettelo"
-
 #: ../src/serviceconf.glade.h:31
-msgid "_Restart Service"
+#, fuzzy
+msgid "_On Demand Services"
 msgstr "_Käynnistä palvelu uudelleen"
 
 #: ../src/serviceconf.glade.h:32
+msgid "_Quit"
+msgstr "_Lopeta"
+
+#: ../src/serviceconf.glade.h:33
+msgid "_Refresh Service List"
+msgstr "_Virkistä palveluluettelo"
+
+#: ../src/serviceconf.glade.h:34
+msgid "_Restart Service"
+msgstr "_Käynnistä palvelu uudelleen"
+
+#: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
 msgstr "_Tallenna muutokset"
 
-#: ../src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
 msgstr "_Käynnistä palvelu"
 
-#: ../src/serviceconf.glade.h:34
+#: ../src/serviceconf.glade.h:37
 msgid "_View"
 msgstr "_Näytä"
 
@@ -264,6 +282,9 @@ msgstr "Palvelun nimi: "
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Palvelut"
+
+#~ msgid "*"
+#~ msgstr "*"
 
 #~ msgid "_Save"
 #~ msgstr "_Tallenna"

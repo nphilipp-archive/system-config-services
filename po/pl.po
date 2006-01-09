@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-12-22 17:51+0100\n"
+"POT-Creation-Date: 2006-01-09 11:47+0100\n"
 "PO-Revision-Date: 2005-10-08 12:53+0200\n"
 "Last-Translator: Tom Berner <tom@lodz.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -114,90 +114,98 @@ msgid " successful"
 msgstr " wykonano pomyślnie"
 
 #: ../src/serviceconf.glade.h:1
-msgid "*"
-msgstr "*"
-
-#: ../src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "Dodaj usługę"
 
-#: ../src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "Bieżący poziom uruchamiania: "
 
-#: ../src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:3
 msgid "Delete Service"
 msgstr "Usuń usługę"
 
-#: ../src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:4
 msgid "Description"
 msgstr "Opis"
 
-#: ../src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
 msgstr "Nie zapisuj"
 
-#: ../src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
 msgstr "Modyfikowanie poziomu uruchamiania:"
 
-#: ../src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:7
 msgid "None"
 msgstr "Brak"
 
-#: ../src/serviceconf.glade.h:9
+#: ../src/serviceconf.glade.h:8
 msgid "Restart"
 msgstr "Uruchom ponownie"
 
-#: ../src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
 msgstr "Przywróć do ostatniego zapisu"
 
-#: ../src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
 msgstr "Poziom _3"
 
-#: ../src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
 msgstr "Poziom _4"
 
-#: ../src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
 msgstr "Poziom _5"
 
-#: ../src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:13
 msgid "Runlevel _All"
 msgstr "_Wszystkie poziomy"
 
-#: ../src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "Za_trzymaj usługę"
 
-#: ../src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "Zapisz"
 
-#: ../src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "Konfiguracja usług"
 
-#: ../src/serviceconf.glade.h:18
+#: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "Nazwa usługi: "
 
-#: ../src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Uruchom"
 
-#: ../src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:19
 msgid "Status"
 msgstr "Stan"
 
-#: ../src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "Zatrzymaj"
 
+#: ../src/serviceconf.glade.h:21
+msgid ""
+"These services are started on demand and end when there is nothing more to "
+"do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr ""
+
 #: ../src/serviceconf.glade.h:22
+msgid ""
+"These services are started once and run in the background. You can specify "
+"in which runlevels they are started."
+msgstr ""
+
+#: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -205,47 +213,57 @@ msgstr ""
 "Dokonałeś zmian w bieżącym poziomie uruchamiania.\n"
 "Czy chcesz zapisać zmiany?"
 
-#: ../src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:25
 msgid "_Actions"
 msgstr "Oper_acje"
 
-#: ../src/serviceconf.glade.h:25
+#: ../src/serviceconf.glade.h:26
+#, fuzzy
+msgid "_Background Services"
+msgstr "Uruchom u_sługę"
+
+#: ../src/serviceconf.glade.h:27
 msgid "_Contents"
 msgstr "_Zawartość"
 
-#: ../src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
 msgstr "_Edytuj poziom uruchamiania"
 
-#: ../src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:29
 msgid "_File"
 msgstr "_Plik"
 
-#: ../src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:30
 msgid "_Help"
 msgstr "_Pomoc"
 
-#: ../src/serviceconf.glade.h:29
-msgid "_Quit"
-msgstr "_Zakończ"
-
-#: ../src/serviceconf.glade.h:30
-msgid "_Refresh Service List"
-msgstr "_Odśwież listę usług"
-
 #: ../src/serviceconf.glade.h:31
-msgid "_Restart Service"
+#, fuzzy
+msgid "_On Demand Services"
 msgstr "U_ruchom ponownie usługę"
 
 #: ../src/serviceconf.glade.h:32
+msgid "_Quit"
+msgstr "_Zakończ"
+
+#: ../src/serviceconf.glade.h:33
+msgid "_Refresh Service List"
+msgstr "_Odśwież listę usług"
+
+#: ../src/serviceconf.glade.h:34
+msgid "_Restart Service"
+msgstr "U_ruchom ponownie usługę"
+
+#: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
 msgstr "Zapi_sz zmiany"
 
-#: ../src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
 msgstr "Uruchom u_sługę"
 
-#: ../src/serviceconf.glade.h:34
+#: ../src/serviceconf.glade.h:37
 msgid "_View"
 msgstr "_Widok"
 
@@ -260,3 +278,6 @@ msgstr "Zarządzanie usługami"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Usługi"
+
+#~ msgid "*"
+#~ msgstr "*"

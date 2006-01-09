@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-12-22 17:51+0100\n"
+"POT-Creation-Date: 2006-01-09 11:47+0100\n"
 "PO-Revision-Date: 2005-06-16 14:40+1000\n"
 "Last-Translator: Michelle Ji Yeen Kim <mkim@redhat.com>\n"
 "Language-Team: Korean\n"
@@ -116,90 +116,98 @@ msgid " successful"
 msgstr " 성공"
 
 #: ../src/serviceconf.glade.h:1
-msgid "*"
-msgstr "*"
-
-#: ../src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "서비스 추가"
 
-#: ../src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "현재 실행 중인 런레벨: "
 
-#: ../src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:3
 msgid "Delete Service"
 msgstr "서비스 삭제"
 
-#: ../src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:4
 msgid "Description"
 msgstr "설명"
 
-#: ../src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
 msgstr "저장하지 않음"
 
-#: ../src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
 msgstr "런레벨 편집:"
 
-#: ../src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:7
 msgid "None"
 msgstr "없음"
 
-#: ../src/serviceconf.glade.h:9
+#: ../src/serviceconf.glade.h:8
 msgid "Restart"
 msgstr "재시작"
 
-#: ../src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
 msgstr "마지막 변동 사항 취소 (_L)"
 
-#: ../src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
 msgstr "런레벨 3 (_3)"
 
-#: ../src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
 msgstr "런레벨 4 (_4)"
 
-#: ../src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
 msgstr "런레벨 5 (_5)"
 
-#: ../src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:13
 msgid "Runlevel _All"
 msgstr "모든 런레벨(_A)"
 
-#: ../src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "서비스 정지 (_T)"
 
-#: ../src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "대화 상자 저장"
 
-#: ../src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "서비스 설정"
 
-#: ../src/serviceconf.glade.h:18
+#: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "서비스 이름: "
 
-#: ../src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "시작"
 
-#: ../src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:19
 msgid "Status"
 msgstr "상태"
 
-#: ../src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "중지"
 
+#: ../src/serviceconf.glade.h:21
+msgid ""
+"These services are started on demand and end when there is nothing more to "
+"do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr ""
+
 #: ../src/serviceconf.glade.h:22
+msgid ""
+"These services are started once and run in the background. You can specify "
+"in which runlevels they are started."
+msgstr ""
+
+#: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -207,47 +215,57 @@ msgstr ""
 "현재 런레벨을 수정하셨습니다.\n"
 "변경 사항을 저장하시겠습니까?"
 
-#: ../src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:25
 msgid "_Actions"
 msgstr "명령 (_A)"
 
-#: ../src/serviceconf.glade.h:25
+#: ../src/serviceconf.glade.h:26
+#, fuzzy
+msgid "_Background Services"
+msgstr "서비스 시작 (_S)"
+
+#: ../src/serviceconf.glade.h:27
 msgid "_Contents"
 msgstr "내용(_C)"
 
-#: ../src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
 msgstr "런레벨 편집 (_E)"
 
-#: ../src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:29
 msgid "_File"
 msgstr "파일(_F)"
 
-#: ../src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:30
 msgid "_Help"
 msgstr "도움말(_H)"
 
-#: ../src/serviceconf.glade.h:29
-msgid "_Quit"
-msgstr "종료(_Q)"
-
-#: ../src/serviceconf.glade.h:30
-msgid "_Refresh Service List"
-msgstr "서비스 목록 재정리 (_R)"
-
 #: ../src/serviceconf.glade.h:31
-msgid "_Restart Service"
+#, fuzzy
+msgid "_On Demand Services"
 msgstr "서비스 재시작 (_R)"
 
 #: ../src/serviceconf.glade.h:32
+msgid "_Quit"
+msgstr "종료(_Q)"
+
+#: ../src/serviceconf.glade.h:33
+msgid "_Refresh Service List"
+msgstr "서비스 목록 재정리 (_R)"
+
+#: ../src/serviceconf.glade.h:34
+msgid "_Restart Service"
+msgstr "서비스 재시작 (_R)"
+
+#: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
 msgstr "변동 사항 저장 (_S)"
 
-#: ../src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
 msgstr "서비스 시작 (_S)"
 
-#: ../src/serviceconf.glade.h:34
+#: ../src/serviceconf.glade.h:37
 msgid "_View"
 msgstr "보기(_V)"
 
@@ -262,3 +280,6 @@ msgstr "서비스 관리"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "서비스"
+
+#~ msgid "*"
+#~ msgstr "*"

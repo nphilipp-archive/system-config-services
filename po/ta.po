@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-12-22 17:51+0100\n"
+"POT-Creation-Date: 2006-01-09 11:47+0100\n"
 "PO-Revision-Date: 2004-10-25 18:37+0530\n"
 "Last-Translator: Jayaradha N <njaya@redhat.com>\n"
 "Language-Team: Tamil <zhakanini@yahoogroups.com>\n"
@@ -119,91 +119,99 @@ msgid " successful"
 msgstr "வெற்றி"
 
 #: ../src/serviceconf.glade.h:1
-msgid "*"
-msgstr "*"
-
-#: ../src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "சேவையை சேர்"
 
-#: ../src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "தற்போது செயலில்உள்ள இயக்க மட்டம்"
 
-#: ../src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:3
 msgid "Delete Service"
 msgstr "சேவையை நீக்கு"
 
-#: ../src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:4
 msgid "Description"
 msgstr "விளக்கம்"
 
-#: ../src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
 msgstr "சேமிக்காதே"
 
-#: ../src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
 msgstr "இயக்கமட்டத்தில் திருத்தம்:"
 
-#: ../src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:7
 msgid "None"
 msgstr "எதுவுமில்லை"
 
-#: ../src/serviceconf.glade.h:9
+#: ../src/serviceconf.glade.h:8
 msgid "Restart"
 msgstr "மீண்டும் துவக்கு"
 
-#: ../src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
 msgstr "(_L)கடைசியாக சேமிக்கப்பட்ட நிலைக்கு செல்"
 
-#: ../src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
 msgstr "(_3)இயக்க நிலை 3"
 
-#: ../src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
 msgstr "(_4)இயக்க நிலை 4`"
 
-#: ../src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
 msgstr "(_5)இயக்க நிலை 5"
 
-#: ../src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:13
 #, fuzzy
 msgid "Runlevel _All"
 msgstr "(_3)இயக்க நிலை 3"
 
-#: ../src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "(_t)சேவையை நிறுத்து"
 
-#: ../src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "உரையாடலை சேமி"
 
-#: ../src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "சேவை அமைப்பு"
 
-#: ../src/serviceconf.glade.h:18
+#: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "சேவையின் பெயர்:"
 
-#: ../src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "துவக்கு"
 
-#: ../src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:19
 msgid "Status"
 msgstr "நிலை"
 
-#: ../src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "நிறுத்து"
 
+#: ../src/serviceconf.glade.h:21
+msgid ""
+"These services are started on demand and end when there is nothing more to "
+"do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr ""
+
 #: ../src/serviceconf.glade.h:22
+msgid ""
+"These services are started once and run in the background. You can specify "
+"in which runlevels they are started."
+msgstr ""
+
+#: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -211,47 +219,57 @@ msgstr ""
 "தற்போதைய இயக்க நிலையில் மாற்றம் செய்திருக்கிறீர்கள் \n"
 "மாற்றங்களை சேமிக்கவேண்டுமா?"
 
-#: ../src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:25
 msgid "_Actions"
 msgstr "(_A)செயல்"
 
-#: ../src/serviceconf.glade.h:25
+#: ../src/serviceconf.glade.h:26
+#, fuzzy
+msgid "_Background Services"
+msgstr "(_S)சேவையை துவக்கு"
+
+#: ../src/serviceconf.glade.h:27
 msgid "_Contents"
 msgstr "(_C)உள்ளடக்கம்"
 
-#: ../src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
 msgstr "(_E)இயக்க நிலையை திருத்து"
 
-#: ../src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:29
 msgid "_File"
 msgstr "(_F)கோப்பு"
 
-#: ../src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:30
 msgid "_Help"
 msgstr "(_H)உதவி"
 
-#: ../src/serviceconf.glade.h:29
-msgid "_Quit"
-msgstr "(_Q)வெளியேறு"
-
-#: ../src/serviceconf.glade.h:30
-msgid "_Refresh Service List"
-msgstr "(_R)சேவைப்பட்டியலை புதுப்பி"
-
 #: ../src/serviceconf.glade.h:31
-msgid "_Restart Service"
+#, fuzzy
+msgid "_On Demand Services"
 msgstr "(_R)சேவையை மீண்டும் துவக்கு"
 
 #: ../src/serviceconf.glade.h:32
+msgid "_Quit"
+msgstr "(_Q)வெளியேறு"
+
+#: ../src/serviceconf.glade.h:33
+msgid "_Refresh Service List"
+msgstr "(_R)சேவைப்பட்டியலை புதுப்பி"
+
+#: ../src/serviceconf.glade.h:34
+msgid "_Restart Service"
+msgstr "(_R)சேவையை மீண்டும் துவக்கு"
+
+#: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
 msgstr "(_S)மாற்றங்களை சேமி"
 
-#: ../src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
 msgstr "(_S)சேவையை துவக்கு"
 
-#: ../src/serviceconf.glade.h:34
+#: ../src/serviceconf.glade.h:37
 msgid "_View"
 msgstr "(_V)பார்"
 
@@ -267,6 +285,9 @@ msgstr "சேவையின் பெயர்:"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "சேவைகள்"
+
+#~ msgid "*"
+#~ msgstr "*"
 
 #~ msgid "_Save"
 #~ msgstr "(_S)சேமி"

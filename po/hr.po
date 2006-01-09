@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-12-22 17:51+0100\n"
+"POT-Creation-Date: 2006-01-09 11:47+0100\n"
 "PO-Revision-Date: 2003-12-15 22:30+CET\n"
 "Last-Translator: auto\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -106,91 +106,99 @@ msgid " successful"
 msgstr " uspješno"
 
 #: ../src/serviceconf.glade.h:1
-msgid "*"
-msgstr "*"
-
-#: ../src/serviceconf.glade.h:2
 msgid "Add Service"
 msgstr "Dodaj servis"
 
-#: ../src/serviceconf.glade.h:3
+#: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "Trenutno aktivna razina pokretanja: "
 
-#: ../src/serviceconf.glade.h:4
+#: ../src/serviceconf.glade.h:3
 msgid "Delete Service"
 msgstr "Obriši servis"
 
-#: ../src/serviceconf.glade.h:5
+#: ../src/serviceconf.glade.h:4
 msgid "Description"
 msgstr "Opis"
 
-#: ../src/serviceconf.glade.h:6
+#: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
 msgstr "Nemoj spremiti"
 
-#: ../src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
 msgstr "Uredi razinu pokretanja:"
 
-#: ../src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:7
 msgid "None"
 msgstr "Nijedan"
 
-#: ../src/serviceconf.glade.h:9
+#: ../src/serviceconf.glade.h:8
 msgid "Restart"
 msgstr "Pokreni ponovo"
 
-#: ../src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
 msgstr "Vrati na _zadnje spremljeno"
 
-#: ../src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
 msgstr "Razina pokretanja _3"
 
-#: ../src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
 msgstr "Razina pokretanja _4"
 
-#: ../src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
 msgstr "Razina pokretanja _5"
 
-#: ../src/serviceconf.glade.h:14
+#: ../src/serviceconf.glade.h:13
 #, fuzzy
 msgid "Runlevel _All"
 msgstr "Razina pokretanja _3"
 
-#: ../src/serviceconf.glade.h:15
+#: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
 msgstr "_Zaustavi servis"
 
-#: ../src/serviceconf.glade.h:16
+#: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
 msgstr "_Spremi dijalog"
 
-#: ../src/serviceconf.glade.h:17
+#: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
 msgstr "Postavljanje servisa"
 
-#: ../src/serviceconf.glade.h:18
+#: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
 msgstr "Ime servisa: "
 
-#: ../src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Započni"
 
-#: ../src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:19
 msgid "Status"
 msgstr "Status"
 
-#: ../src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "Zaustavi"
 
+#: ../src/serviceconf.glade.h:21
+msgid ""
+"These services are started on demand and end when there is nothing more to "
+"do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr ""
+
 #: ../src/serviceconf.glade.h:22
+msgid ""
+"These services are started once and run in the background. You can specify "
+"in which runlevels they are started."
+msgstr ""
+
+#: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -198,47 +206,57 @@ msgstr ""
 "Napravili ste promjene na trenutnom runlevelu.\n"
 "Želite li sačuvati promijene?"
 
-#: ../src/serviceconf.glade.h:24
+#: ../src/serviceconf.glade.h:25
 msgid "_Actions"
 msgstr "_Akcije"
 
-#: ../src/serviceconf.glade.h:25
+#: ../src/serviceconf.glade.h:26
+#, fuzzy
+msgid "_Background Services"
+msgstr "_Pokreni servis"
+
+#: ../src/serviceconf.glade.h:27
 msgid "_Contents"
 msgstr "_Sadržaj"
 
-#: ../src/serviceconf.glade.h:26
+#: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
 msgstr "_Uredi razinu izvršavanja"
 
-#: ../src/serviceconf.glade.h:27
+#: ../src/serviceconf.glade.h:29
 msgid "_File"
 msgstr "_Datoteka"
 
-#: ../src/serviceconf.glade.h:28
+#: ../src/serviceconf.glade.h:30
 msgid "_Help"
 msgstr "_Pomoć"
 
-#: ../src/serviceconf.glade.h:29
-msgid "_Quit"
-msgstr ""
-
-#: ../src/serviceconf.glade.h:30
-msgid "_Refresh Service List"
-msgstr "_Osvježi popis servisa"
-
 #: ../src/serviceconf.glade.h:31
-msgid "_Restart Service"
+#, fuzzy
+msgid "_On Demand Services"
 msgstr "_Ponovo pokreni servis"
 
 #: ../src/serviceconf.glade.h:32
+msgid "_Quit"
+msgstr ""
+
+#: ../src/serviceconf.glade.h:33
+msgid "_Refresh Service List"
+msgstr "_Osvježi popis servisa"
+
+#: ../src/serviceconf.glade.h:34
+msgid "_Restart Service"
+msgstr "_Ponovo pokreni servis"
+
+#: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
 msgstr "_Spremi izmjene"
 
-#: ../src/serviceconf.glade.h:33
+#: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
 msgstr "_Pokreni servis"
 
-#: ../src/serviceconf.glade.h:34
+#: ../src/serviceconf.glade.h:37
 msgid "_View"
 msgstr "P_ogled"
 
@@ -254,6 +272,9 @@ msgstr "Ime servisa: "
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Servisi"
+
+#~ msgid "*"
+#~ msgstr "*"
 
 #, fuzzy
 #~ msgid "Revert"
