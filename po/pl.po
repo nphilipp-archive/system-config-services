@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-09 15:41+0100\n"
-"PO-Revision-Date: 2005-10-08 12:53+0200\n"
+"PO-Revision-Date: 2006-01-09 22:17+0200\n"
 "Last-Translator: Tom Berner <tom@lodz.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -25,8 +25,6 @@ msgstr "Poziom %d"
 msgid "Are you sure you want to delete the %s?"
 msgstr "Czy na pewno chcesz usunąć %s?"
 
-#. initialize this to the runlevel we are running in. It will
-#. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
 msgstr "Bieżący poziom uruchamiania: "
@@ -198,12 +196,17 @@ msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
+"Te usługi uruchamiane są na żądanie i kończą działanie, gdy nie ma nic więcej "
+"do zrobienia. Usługa <b>xinetd</b> musi być uruchomiona, aby mogły być "
+"używane."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
 msgstr ""
+"Te usługi są raz uruchamiane w tle. Można określić, w których poziomach są "
+"uruchamiane."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -218,9 +221,8 @@ msgid "_Actions"
 msgstr "Oper_acje"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "Uruchom u_sługę"
+msgstr "_Usługi w tle"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
@@ -239,9 +241,8 @@ msgid "_Help"
 msgstr "_Pomoc"
 
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "U_ruchom ponownie usługę"
+msgstr "U_sługi na żądanie"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
@@ -278,6 +279,3 @@ msgstr "Zarządzanie usługami"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Usługi"
-
-#~ msgid "*"
-#~ msgstr "*"
