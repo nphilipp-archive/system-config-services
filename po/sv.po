@@ -1,13 +1,13 @@
 # Swedish messages for system-config-services.
 # Copyright (C) 2001, 2003, 2004, 2005 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.61 2006/01/09 10:39:56 nphilipp Exp $
+# $Id: sv.po,v 1.62 2006/01/09 14:32:32 nphilipp Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-09 11:47+0100\n"
+"POT-Creation-Date: 2006-01-09 15:41+0100\n"
 "PO-Revision-Date: 2005-05-22 12:01+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"

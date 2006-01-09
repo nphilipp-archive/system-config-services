@@ -73,6 +73,7 @@ rm -rf %{buildroot}
 %changelog
 * Mon Jan 09 2006 Nils Philippsen <nphilipp@redhat.com>
 - separate daemons and xinetd based services
+- enable Serbian translation files
 
 * Fri Oct 14 2005 Nils Philippsen <nphilipp@redhat.com>
 - don't use pam_stack (#170645)

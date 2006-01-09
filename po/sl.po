@@ -1,14 +1,14 @@
 # SLOVENIAN TRANSLATION OF REDHAT-CONFIG-SERVICES.
 # Copyright (C) 2003 Free Software Foundation.
 # Roman Maurer <roman@lugos.si>, 2003.
-# $Id: sl.po,v 1.17 2006/01/09 10:39:56 nphilipp Exp $
+# $Id: sl.po,v 1.18 2006/01/09 14:32:32 nphilipp Exp $
 # $Source: /home/fedora/mmcgrath/elvis/cvs/redhat-config-services/po/sl.po,v $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services 0.8.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-09 11:47+0100\n"
+"POT-Creation-Date: 2006-01-09 15:41+0100\n"
 "PO-Revision-Date: 2004-03-31 22:19+0200\n"
 "Last-Translator: Roman Maurer <roman@lugos.si>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
