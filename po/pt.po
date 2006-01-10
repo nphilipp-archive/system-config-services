@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-09 15:41+0100\n"
-"PO-Revision-Date: 2006-01-10 16:13+0000\n"
+"PO-Revision-Date: 2006-01-10 23:01+0000\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -204,14 +204,14 @@ msgstr "Estes serviços são iniciados a pedido e terminam quando não há nada 
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr "Estes serviços são lançados uma vez e ficam em segundo plano. Poderá indicar os 'runlevels' em que eles são iniciados."
+msgstr "Estes serviços são lançados uma vez e ficam em segundo plano. Poderá indicar os níveis de execução em que eles são iniciados."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
-"O utilizador efectuou alterações ao 'runlevel' actual.\n"
+"O utilizador efectuou alterações ao nível de execução actual.\n"
 "Deseja gravar as modificações?"
 
 #: ../src/serviceconf.glade.h:25
