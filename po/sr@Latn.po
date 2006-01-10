@@ -1,46 +1,49 @@
 # Serbian Latin translations for system-config-services
 # Copyright (C) 2005 Red Hat, Inc.
 # This file is distributed under the same license as the system-config-services package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Miloš Komarčević <kmilos@gmail.com>, 2005.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-09 15:41+0100\n"
-"PO-Revision-Date: 2005-12-22 17:51+0100\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2006-01-09 16:05-0000\n"
+"Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
+"Language-Team: Serbian (sr) <fedora@prevod.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/checklist.py:40 ../src/checklist.py:171
+#: ../src/checklist.py:40
+#: ../src/checklist.py:171
 #, python-format
 msgid "Runlevel %d"
-msgstr ""
+msgstr "Izvršni nivo %d"
 
 #: ../src/serviceconf.py:73
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "Sigurno želite da obrišete %s?"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:241
 msgid "Currently Running in Runlevel: "
-msgstr ""
+msgstr "Trenutno se radi u izvršnom nivou: "
 
-#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
+#: ../src/serviceconf.py:312
+#: ../src/serviceconf.py:413
 msgid "Editing Runlevel: "
-msgstr ""
+msgstr "Uređivanje izvršnog nivoa: "
 
 #: ../src/serviceconf.py:355
 msgid "Unknown"
-msgstr ""
+msgstr "Nepoznato"
 
 #: ../src/serviceconf.py:442
 msgid "All"
-msgstr ""
+msgstr "Sve"
 
 #: ../src/serviceconf.py:476
 msgid ""
@@ -52,18 +55,25 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
+"Alat za podešavanje sistemskih servisa @VERSION@\n"
+" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat>\n"
+" Bill Nottingham <notting@redhat>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" "
 
 #: ../src/serviceconf.py:480
 msgid "About"
-msgstr ""
+msgstr "O programu"
 
 #: ../src/serviceconf.py:509
 msgid "Help is not available."
-msgstr ""
+msgstr "Pomoć nije dostupna."
 
 #: ../src/serviceconf.py:663
 msgid "You must run system-config-services as root."
-msgstr ""
+msgstr "Morate pokrenuti system-config-services kao root."
 
 #. configured=1 if the service is configured already
 #. configured = self.xinetd_check_if_on(servicename)
@@ -74,192 +84,194 @@ msgid ""
 "\n"
 "xinetd is required for this service."
 msgstr ""
+"\n"
+"\n"
+"xinetd je neophodan za ovaj servis."
 
 #: ../src/servicemethods.py:327
 msgid "xinetd failed to reload for "
-msgstr ""
+msgstr "nije uspelo ponovno xinetd učitavanje za "
 
 #: ../src/servicemethods.py:328
 msgid ". The error was: "
-msgstr ""
+msgstr ". Greška je bila: "
 
 #: ../src/servicemethods.py:330
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr ""
+msgstr "xinetd je iznova učitao %s uspešno"
 
 #: ../src/servicemethods.py:333
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr ""
+msgstr "xinetd mora biti uključen da bi se %s pokrenuo"
 
 #: ../src/servicemethods.py:338
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr ""
+msgstr "%s neuspelo. Greška je bila: %s"
 
 #: ../src/servicemethods.py:340
 msgid " successful"
-msgstr ""
+msgstr " uspešno"
 
 #: ../src/serviceconf.glade.h:1
 msgid "Add Service"
-msgstr ""
+msgstr "Dodaj servis"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
-msgstr ""
+msgstr "Trenutno aktivan izvršni nivo: "
 
 #: ../src/serviceconf.glade.h:3
 msgid "Delete Service"
-msgstr ""
+msgstr "Obriši servis"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
 #: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
-msgstr ""
+msgstr "Ne sačuvaj"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
-msgstr ""
+msgstr "Uređivanje izvršnog nivoa:"
 
 #: ../src/serviceconf.glade.h:7
 msgid "None"
-msgstr ""
+msgstr "Ništa"
 
 #: ../src/serviceconf.glade.h:8
 msgid "Restart"
-msgstr ""
+msgstr "Pokreni ponovo"
 
 #: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
-msgstr ""
+msgstr "Vrati na pos_lednje sačuvano"
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
-msgstr ""
+msgstr "Izvršni nivo _3"
 
 #: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
-msgstr ""
+msgstr "Izvršni nivo _4"
 
 #: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
-msgstr ""
+msgstr "Izvršni nivo _5"
 
 #: ../src/serviceconf.glade.h:13
 msgid "Runlevel _All"
-msgstr ""
+msgstr "_Svi izvršni nivoi "
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
-msgstr ""
+msgstr "_Zaustavi servis"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "Prozorče čuvanja"
 
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
-msgstr ""
+msgstr "Podešavanje servisa"
 
 #: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
-msgstr ""
+msgstr "Ime servisa: "
 
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
-msgstr ""
+msgstr "Pokreni"
 
 #: ../src/serviceconf.glade.h:19
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: ../src/serviceconf.glade.h:20
 msgid "Stop"
-msgstr ""
+msgstr "Zaustavi"
 
 #: ../src/serviceconf.glade.h:21
-msgid ""
-"These services are started on demand and end when there is nothing more to "
-"do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
+msgid "These services are started on demand and end when there is nothing more to do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr "Ovi servisi se pokreću na zahtev i završavaju se kada nema više šta da se radi. Servis <b>xinetd</b> mora biti pokrenut da bi se oni koristili."
 
 #: ../src/serviceconf.glade.h:22
-msgid ""
-"These services are started once and run in the background. You can specify "
-"in which runlevels they are started."
-msgstr ""
+msgid "These services are started once and run in the background. You can specify in which runlevels they are started."
+msgstr "Ovi servisi se pokreću jednom i rade u pozadini. Možete da navedete u kojim se izvršnim nivoima pokreću."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"Napravili ste promene u tekućem izvršnom nivou.\n"
+"Želite li da sačuvate te promene?"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
-msgstr ""
+msgstr "_Akcije"
 
 #: ../src/serviceconf.glade.h:26
 msgid "_Background Services"
-msgstr ""
+msgstr "Pozadins_ki servisi"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr ""
+msgstr "_Sadržaj"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
-msgstr ""
+msgstr "U_redi izvršni nivo"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr ""
+msgstr "Da_toteka"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr ""
+msgstr "_Pomoć"
 
 #: ../src/serviceconf.glade.h:31
 msgid "_On Demand Services"
-msgstr ""
+msgstr "Servisi na zahte_v"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
-msgstr ""
+msgstr "_Izađi"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
-msgstr ""
+msgstr "Osv_eži spisak servisa"
 
 #: ../src/serviceconf.glade.h:34
 msgid "_Restart Service"
-msgstr ""
+msgstr "Pon_ovo pokreni servis"
 
 #: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
-msgstr ""
+msgstr "Saču_vaj promene"
 
 #: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
-msgstr ""
+msgstr "Po_kreni servis"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr ""
+msgstr "Pre_gled"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "Podešava koji će servisi biti pokrenuti kada se sistem podigne"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr ""
+msgstr "Upravljanje servisima"
 
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
-msgstr ""
+msgstr "Servisi"
+
