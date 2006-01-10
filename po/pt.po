@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-09 15:41+0100\n"
-"PO-Revision-Date: 2005-05-09 09:32+0100\n"
+"PO-Revision-Date: 2006-01-10 16:13+0000\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -193,17 +193,18 @@ msgstr "Estado"
 msgid "Stop"
 msgstr "Parar"
 
+# u
 #: ../src/serviceconf.glade.h:21
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
+msgstr "Estes serviços são iniciados a pedido e terminam quando não há nada mais a fazer. O serviço <b>xinetd</b> deverá estar a correr para que eles possam ser usados."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr ""
+msgstr "Estes serviços são lançados uma vez e ficam em segundo plano. Poderá indicar os 'runlevels' em que eles são iniciados."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -218,9 +219,8 @@ msgid "_Actions"
 msgstr "_Acções"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "Iniciar _Serviço"
+msgstr "_Serviços em Segundo Plano"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
@@ -239,9 +239,8 @@ msgid "_Help"
 msgstr "_Ajuda"
 
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "_Reiniciar Serviço"
+msgstr "Serviç_os a Pedido"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
