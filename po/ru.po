@@ -1,4 +1,3 @@
-#
 # translation of ru.po to
 # translation of ru.po to
 # translation of ru.po to
@@ -10,7 +9,7 @@
 # Leonid Kanter <leon@geon.donetsk.ua>, 2003.
 # Leonid Kanter <leon@asplinux.ru>, 2004.
 # Andrew Martynov <andrewm@inventa.ru>, 2004, 2005.
-#
+# Ivan Kukharchuk <wedge@inbox.ru>, 2006
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
@@ -63,7 +62,7 @@ msgid ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 msgstr ""
-"Утилита настройки системных сервисов\n"
+"Утилита настройки системных служб\n"
 "System Services Configuration Tool VERSION\n"
 " Copyright (c) 2002-2004 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat>\n"
@@ -113,7 +112,7 @@ msgstr "xinetd перезагрузил %s успешно."
 #: ../src/servicemethods.py:333
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "xinetd должен быть разрешен для запуска %s"
+msgstr "xinetd должен быть включен для запуска %s"
 
 #: ../src/servicemethods.py:338
 #, python-format
@@ -182,7 +181,7 @@ msgstr "_Остановить службу"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr "Сохранить диалог"
+msgstr "Диалог сохранения"
 
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
@@ -208,20 +207,22 @@ msgstr "Остановить"
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
+msgstr "Данные службы запускаются по запросу и останавлюваются, когда больше "
+"нет работы. Для их работы необхоим сервис <b>xinetd</b>."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr ""
+msgstr "Данные службы стартуют и работают в фоне. Вы можете установить для них "
+"уровни запуска."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
-"Были сделаны изменения текущего уровня выполнения.\n"
+"Были сделаны изменения текущего уровня запуска.\n"
 "Сохранить изменения?"
 
 #: ../src/serviceconf.glade.h:25
@@ -229,9 +230,8 @@ msgid "_Actions"
 msgstr "_Действия"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "_Запустить службу"
+msgstr "_Фоновые службы"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
