@@ -235,7 +235,7 @@ msgstr "_Фоновые службы"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr "Содержимое"
+msgstr "Содержание"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
@@ -250,9 +250,8 @@ msgid "_Help"
 msgstr "_Справка"
 
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "_Перезапустить службу"
+msgstr "_Запускаемые по запросу"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
