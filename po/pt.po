@@ -14,6 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-POFile-SpellExtra: Hat Fox system VERSION Walsh Brent runlevel services\n"
 "X-POFile-SpellExtra: xinetd config Powers Red Inc\n"
+"X-POFile-IgnoreConsistency: Start\n"
 
 #: ../src/checklist.py:40 ../src/checklist.py:171
 #, python-format
