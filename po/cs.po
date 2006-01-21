@@ -198,12 +198,16 @@ msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
+"Tyto služby jsou spouštěny na požádání a končí ve chvíli, kdy již nemají nic "
+"na práci. Aby je bylo možné použít, musí být spuštěna služba <b>xinetd</b>."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
 msgstr ""
+"Tyto služby jsou spuštěny jednorázově a běží na pozadí. Můžete zadat, ve "
+"kterých runlevelech se mají spouštět."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -218,9 +222,8 @@ msgid "_Actions"
 msgstr "_Akce"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "_Spustit službu"
+msgstr "Služby na _pozadí"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
@@ -239,9 +242,8 @@ msgid "_Help"
 msgstr "_Nápověda"
 
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "_Restartovat službu"
+msgstr "Služby na požá_dání"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
