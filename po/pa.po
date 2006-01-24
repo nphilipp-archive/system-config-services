@@ -244,13 +244,17 @@ msgstr "ਰੋਕੋ"
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr "ਇਹ ਸੇਵਾਵਾਂ ਬੇਨਤੀ ਉਪਰੰਤ ਹੀ ਸ਼ੁਰੂ ਹੁੰਦੀਆਂ ਹਨ ਅਤੇ ਜਦੋਂ ਕੁਝ ਹੋਰ ਕਰਨ ਨੂੰ ਨਾ ਹੋਵੇ ਬੰਦ ਹੋ ਜਾਂਦੀਆਂ ਹਨ। <b>xinetd</b> ਸੇਵਾ ਜਰੂਰ ਚੱਲ ਰਹੀ ਹੋਵੇ ਤਾਂ ਕਿ ਉਹ ਵਰਤੀਆਂ ਜਾ ਸਕਣ।"
+msgstr ""
+"ਇਹ ਸੇਵਾਵਾਂ ਬੇਨਤੀ ਉਪਰੰਤ ਹੀ ਸ਼ੁਰੂ ਹੁੰਦੀਆਂ ਹਨ ਅਤੇ ਜਦੋਂ ਕੁਝ ਹੋਰ ਕਰਨ ਨੂੰ ਨਾ ਹੋਵੇ ਬੰਦ ਹੋ ਜਾਂਦੀਆਂ ਹਨ। "
+"<b>xinetd</b> ਸੇਵਾ ਜਰੂਰ ਚੱਲ ਰਹੀ ਹੋਵੇ ਤਾਂ ਕਿ ਉਹ ਵਰਤੀਆਂ ਜਾ ਸਕਣ।"
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr "ਇਹ ਸੇਵਾਵਾਂ ਇੱਕ ਵਾਰ ਚਲਦੀਆਂ ਹਨ ਅਤੇ ਪਿੱਠਭੂਮੀ ਵਿੱਚ ਚਲਦੀਆਂ ਹਨ। ਤੁਸੀਂ ਦਰਸਾ ਸਕਦੇ ਹੋ ਕਿ ਕਿਸ ਰੰਨਲੈਵਲ ਵਿੱਚ ਚਲਾਉਣੀਆਂ ਹਨ।"
+msgstr ""
+"ਇਹ ਸੇਵਾਵਾਂ ਇੱਕ ਵਾਰ ਚਲਦੀਆਂ ਹਨ ਅਤੇ ਪਿੱਠਭੂਮੀ ਵਿੱਚ ਚਲਦੀਆਂ ਹਨ। ਤੁਸੀਂ ਦਰਸਾ ਸਕਦੇ ਹੋ ਕਿ ਕਿਸ ਰੰਨਲੈਵਲ "
+"ਵਿੱਚ ਚਲਾਉਣੀਆਂ ਹਨ।"
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -323,4 +327,3 @@ msgstr "ਸੇਵਾ ਪ੍ਰਬੰਧਨ:"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "ਸੇਵਾਵਾਂ"
-
