@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-09 15:41+0100\n"
+"POT-Creation-Date: 2006-01-27 12:24+0100\n"
 "PO-Revision-Date: 2004-04-06 17:57+0200\n"
 "Last-Translator: Maxim Dziumanenko <mvd@mylinux.com.ua>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
@@ -16,42 +16,44 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/checklist.py:40 ../src/checklist.py:171
-#, fuzzy, python-format
-msgid "Runlevel %d"
-msgstr "Рівень запуску _3"
-
-#: ../src/serviceconf.py:73
+#: ../src/serviceconf.py:75
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Ви впевнені, що хочете видалити %s?"
 
+#: ../src/serviceconf.py:130
+#, fuzzy, python-format
+msgid "Runlevel %d"
+msgstr "Рівень запуску _3"
+
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:241
+#: ../src/serviceconf.py:271
 msgid "Currently Running in Runlevel: "
 msgstr "поточний рівень запуску:"
 
-#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:489
 msgid "Editing Runlevel: "
 msgstr "Редагування рівня запуску:"
 
-#: ../src/serviceconf.py:355
+#: ../src/serviceconf.py:430
 msgid "Unknown"
 msgstr "Невідомий"
 
-#: ../src/serviceconf.py:442
+#: ../src/serviceconf.py:518
 msgid "All"
 msgstr ""
 
-#: ../src/serviceconf.py:476
+#: ../src/serviceconf.py:552
+#, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright (c) 2002-2004 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat>\n"
-" Bill Nottingham <notting@redhat>\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
 "Утиліта налаштовування конфігурації служб VERSION\n"
@@ -62,57 +64,44 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:480
+#: ../src/serviceconf.py:556
 msgid "About"
 msgstr "Про програму"
 
-#: ../src/serviceconf.py:509
+#: ../src/serviceconf.py:585
 msgid "Help is not available."
 msgstr "Довідка недоступна."
 
-#: ../src/serviceconf.py:663
+#: ../src/serviceconf.py:741
 msgid "You must run system-config-services as root."
 msgstr ""
 "Необхідно запускати програму system-config-services з правами користувача "
 "root."
 
-#. configured=1 if the service is configured already
-#. configured = self.xinetd_check_if_on(servicename)
-#. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: ../src/servicemethods.py:291
-msgid ""
-"\n"
-"\n"
-"xinetd is required for this service."
-msgstr ""
-"\n"
-"\n"
-"Для цієї служби необхідно ввімкнути xinetd."
-
-#: ../src/servicemethods.py:327
+#: ../src/servicemethods.py:321
 msgid "xinetd failed to reload for "
 msgstr "Помилка перезавантаження xinetd для "
 
-#: ../src/servicemethods.py:328
+#: ../src/servicemethods.py:322
 msgid ". The error was: "
 msgstr ". Трапилась помилка:"
 
-#: ../src/servicemethods.py:330
+#: ../src/servicemethods.py:324
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd перезавантажив %s успішно"
 
-#: ../src/servicemethods.py:333
+#: ../src/servicemethods.py:327
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "Щоб запустити службу %s потрібно увімкнути xinetd"
 
-#: ../src/servicemethods.py:338
+#: ../src/servicemethods.py:332
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "Помилка запуску %s. Трапилась помилка: %s"
 
-#: ../src/servicemethods.py:340
+#: ../src/servicemethods.py:334
 msgid " successful"
 msgstr " успішно"
 
@@ -283,6 +272,15 @@ msgstr "Назва служби: "
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Служби"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "xinetd is required for this service."
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "Для цієї служби необхідно ввімкнути xinetd."
 
 #~ msgid "*"
 #~ msgstr "*"

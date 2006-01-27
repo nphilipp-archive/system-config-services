@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-09 15:41+0100\n"
+"POT-Creation-Date: 2006-01-27 12:24+0100\n"
 "PO-Revision-Date: 2006-01-19 00:27+0100\n"
 "Last-Translator: Xavier Conde Rueda <xaviconde@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
@@ -28,42 +28,44 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/checklist.py:40 ../src/checklist.py:171
-#, python-format
-msgid "Runlevel %d"
-msgstr "Nivell d'execució %d"
-
-#: ../src/serviceconf.py:73
+#: ../src/serviceconf.py:75
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Esteu segur que voleu suprimir el %s?"
 
+#: ../src/serviceconf.py:130
+#, python-format
+msgid "Runlevel %d"
+msgstr "Nivell d'execució %d"
+
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:241
+#: ../src/serviceconf.py:271
 msgid "Currently Running in Runlevel: "
 msgstr "S'està executant el nivell: "
 
-#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:489
 msgid "Editing Runlevel: "
 msgstr "S'està editant el nivell: "
 
-#: ../src/serviceconf.py:355
+#: ../src/serviceconf.py:430
 msgid "Unknown"
 msgstr "Desconegut"
 
-#: ../src/serviceconf.py:442
+#: ../src/serviceconf.py:518
 msgid "All"
 msgstr "Tots"
 
-#: ../src/serviceconf.py:476
+#: ../src/serviceconf.py:552
+#, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright (c) 2002-2004 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat>\n"
-" Bill Nottingham <notting@redhat>\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
 "Eina de configuració dels serveis del sistema VERSION\n"
@@ -74,55 +76,42 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:480
+#: ../src/serviceconf.py:556
 msgid "About"
 msgstr "Quant a"
 
-#: ../src/serviceconf.py:509
+#: ../src/serviceconf.py:585
 msgid "Help is not available."
 msgstr "No hi ha ajuda disponible."
 
-#: ../src/serviceconf.py:663
+#: ../src/serviceconf.py:741
 msgid "You must run system-config-services as root."
 msgstr "Heu d'executar el system-config-services com a superusuari."
 
-#. configured=1 if the service is configured already
-#. configured = self.xinetd_check_if_on(servicename)
-#. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: ../src/servicemethods.py:291
-msgid ""
-"\n"
-"\n"
-"xinetd is required for this service."
-msgstr ""
-"\n"
-"\n"
-"Aquest servei necessita l'xinetd."
-
-#: ../src/servicemethods.py:327
+#: ../src/servicemethods.py:321
 msgid "xinetd failed to reload for "
 msgstr "No s'ha pogut tornar a carregar l'xinetd per a "
 
-#: ../src/servicemethods.py:328
+#: ../src/servicemethods.py:322
 msgid ". The error was: "
 msgstr ". L'error era:"
 
-#: ../src/servicemethods.py:330
+#: ../src/servicemethods.py:324
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "L'xinetd ha tornat a carregar %s correctament"
 
-#: ../src/servicemethods.py:333
+#: ../src/servicemethods.py:327
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "S'ha d'habilitar l'xinetd per executar el %s"
 
-#: ../src/servicemethods.py:338
+#: ../src/servicemethods.py:332
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "El %s ha fallat. L'error era: %s"
 
-#: ../src/servicemethods.py:340
+#: ../src/servicemethods.py:334
 msgid " successful"
 msgstr " correctament"
 
@@ -294,6 +283,15 @@ msgstr "Gestió de serveis"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Serveis"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "xinetd is required for this service."
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "Aquest servei necessita l'xinetd."
 
 #~ msgid "*"
 #~ msgstr "*"

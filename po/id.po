@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services-0.8.15-1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-09 15:41+0100\n"
+"POT-Creation-Date: 2006-01-27 12:24+0100\n"
 "PO-Revision-Date: 2005-10-28 05:25+0700\n"
 "Last-Translator: Teguh DC <dheche@bradjamoesti.or.id>\n"
 "Language-Team: Linux Indonesia <http:/www.linux.or.id>\n"
@@ -17,42 +17,44 @@ msgstr ""
 "X-Poedit-Language: Indonesian\n"
 "X-Poedit-Country: INDONESIA\n"
 
-#: ../src/checklist.py:40 ../src/checklist.py:171
-#, python-format
-msgid "Runlevel %d"
-msgstr "Runlevel %d"
-
-#: ../src/serviceconf.py:73
+#: ../src/serviceconf.py:75
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Apakah anda yakin ingin menghapus %s?"
 
+#: ../src/serviceconf.py:130
+#, python-format
+msgid "Runlevel %d"
+msgstr "Runlevel %d"
+
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:241
+#: ../src/serviceconf.py:271
 msgid "Currently Running in Runlevel: "
 msgstr "Yang saat ini berjalan di Runlevel: "
 
-#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:489
 msgid "Editing Runlevel: "
 msgstr "Mengubah Runlevel: "
 
-#: ../src/serviceconf.py:355
+#: ../src/serviceconf.py:430
 msgid "Unknown"
 msgstr "Tidak diketahui"
 
-#: ../src/serviceconf.py:442
+#: ../src/serviceconf.py:518
 msgid "All"
 msgstr "Semua"
 
-#: ../src/serviceconf.py:476
+#: ../src/serviceconf.py:552
+#, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright (c) 2002-2004 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat>\n"
-" Bill Nottingham <notting@redhat>\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
 "System Services Configuration Tool VERSION\n"
@@ -63,55 +65,42 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:480
+#: ../src/serviceconf.py:556
 msgid "About"
 msgstr "Tentang"
 
-#: ../src/serviceconf.py:509
+#: ../src/serviceconf.py:585
 msgid "Help is not available."
 msgstr "Bantuan tidak tersedia."
 
-#: ../src/serviceconf.py:663
+#: ../src/serviceconf.py:741
 msgid "You must run system-config-services as root."
 msgstr "Anda harus menjalankan system-config-services sebagai root."
 
-#. configured=1 if the service is configured already
-#. configured = self.xinetd_check_if_on(servicename)
-#. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: ../src/servicemethods.py:291
-msgid ""
-"\n"
-"\n"
-"xinetd is required for this service."
-msgstr ""
-"\n"
-"\n"
-"xinetd dibutuhkan oleh layanan ini."
-
-#: ../src/servicemethods.py:327
+#: ../src/servicemethods.py:321
 msgid "xinetd failed to reload for "
 msgstr "xinetd gagal dipanggil ulang untuk "
 
-#: ../src/servicemethods.py:328
+#: ../src/servicemethods.py:322
 msgid ". The error was: "
 msgstr ". Kesalahannya adalah: "
 
-#: ../src/servicemethods.py:330
+#: ../src/servicemethods.py:324
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd memanggil ulang %s dengan sukses"
 
-#: ../src/servicemethods.py:333
+#: ../src/servicemethods.py:327
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd harus diaktifkan agar %s dapat berjalan"
 
-#: ../src/servicemethods.py:338
+#: ../src/servicemethods.py:332
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s gagal. Kesalahannya adalah: %s"
 
-#: ../src/servicemethods.py:340
+#: ../src/servicemethods.py:334
 msgid " successful"
 msgstr " dengan sukses"
 
@@ -280,6 +269,15 @@ msgstr "Menejemen Layanan: "
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Layanan"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "xinetd is required for this service."
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "xinetd dibutuhkan oleh layanan ini."
 
 #~ msgid "*"
 #~ msgstr "*"

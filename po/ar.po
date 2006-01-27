@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ar\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-09 15:41+0100\n"
+"POT-Creation-Date: 2006-01-27 12:24+0100\n"
 "PO-Revision-Date: 2005-05-26 00:04+0300\n"
 "Last-Translator: Munzir Taha <munzirtaha@newhorizons.com.sa>\n"
 "Language-Team:  Arabic <fedora-trans-ar@redhat.com>\n"
@@ -17,42 +17,44 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
 
-#: ../src/checklist.py:40 ../src/checklist.py:171
-#, python-format
-msgid "Runlevel %d"
-msgstr "مستوى التشغيل %d"
-
-#: ../src/serviceconf.py:73
+#: ../src/serviceconf.py:75
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "هل تريد بالتأكيد حذف %s؟"
 
+#: ../src/serviceconf.py:130
+#, python-format
+msgid "Runlevel %d"
+msgstr "مستوى التشغيل %d"
+
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:241
+#: ../src/serviceconf.py:271
 msgid "Currently Running in Runlevel: "
 msgstr "يعمل حاليّاً في مستوى التّشغيل: "
 
-#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:489
 msgid "Editing Runlevel: "
 msgstr "تحرير مستوى التّشغيل: "
 
-#: ../src/serviceconf.py:355
+#: ../src/serviceconf.py:430
 msgid "Unknown"
 msgstr "مجهول"
 
-#: ../src/serviceconf.py:442
+#: ../src/serviceconf.py:518
 msgid "All"
 msgstr "الكل"
 
-#: ../src/serviceconf.py:476
+#: ../src/serviceconf.py:552
+#, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright (c) 2002-2004 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat>\n"
-" Bill Nottingham <notting@redhat>\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
 "أداة تهيئة خدمات النّظام VERSION\n"
@@ -63,55 +65,42 @@ msgstr ""
 " بْرِنْت فوكْس <bfox@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:480
+#: ../src/serviceconf.py:556
 msgid "About"
 msgstr "حَوْل"
 
-#: ../src/serviceconf.py:509
+#: ../src/serviceconf.py:585
 msgid "Help is not available."
 msgstr "المُساعدة غير متوفّرة."
 
-#: ../src/serviceconf.py:663
+#: ../src/serviceconf.py:741
 msgid "You must run system-config-services as root."
 msgstr "يجب أن تُشغّل system-config-services كمستخدم root."
 
-#. configured=1 if the service is configured already
-#. configured = self.xinetd_check_if_on(servicename)
-#. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: ../src/servicemethods.py:291
-msgid ""
-"\n"
-"\n"
-"xinetd is required for this service."
-msgstr ""
-"\n"
-"\n"
-"xinetd مطلوب لهذه الخدمة."
-
-#: ../src/servicemethods.py:327
+#: ../src/servicemethods.py:321
 msgid "xinetd failed to reload for "
 msgstr "فشل xinetd في إعادة تحميل "
 
-#: ../src/servicemethods.py:328
+#: ../src/servicemethods.py:322
 msgid ". The error was: "
 msgstr ". كان الخطأ: "
 
-#: ../src/servicemethods.py:330
+#: ../src/servicemethods.py:324
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "قام xinetd بإعادة تحميل %s بنجاح"
 
-#: ../src/servicemethods.py:333
+#: ../src/servicemethods.py:327
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "يجب أن يكون xinetd مُمكّنا كييتعمل %s"
 
-#: ../src/servicemethods.py:338
+#: ../src/servicemethods.py:332
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "فشل %s. كان الخطأ: %s"
 
-#: ../src/servicemethods.py:340
+#: ../src/servicemethods.py:334
 msgid " successful"
 msgstr " بنجاح"
 
@@ -280,6 +269,15 @@ msgstr "إدارة الخدمة"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "الخدمات"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "xinetd is required for this service."
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "xinetd مطلوب لهذه الخدمة."
 
 #~ msgid "*"
 #~ msgstr "*"

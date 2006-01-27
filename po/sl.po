@@ -1,14 +1,14 @@
 # SLOVENIAN TRANSLATION OF REDHAT-CONFIG-SERVICES.
 # Copyright (C) 2003 Free Software Foundation.
 # Roman Maurer <roman@lugos.si>, 2003.
-# $Id: sl.po,v 1.18 2006/01/09 14:32:32 nphilipp Exp $
+# $Id: sl.po,v 1.19 2006/01/27 11:13:00 nphilipp Exp $
 # $Source: /home/fedora/mmcgrath/elvis/cvs/redhat-config-services/po/sl.po,v $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services 0.8.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-09 15:41+0100\n"
+"POT-Creation-Date: 2006-01-27 12:24+0100\n"
 "PO-Revision-Date: 2004-03-31 22:19+0200\n"
 "Last-Translator: Roman Maurer <roman@lugos.si>\n"
 "Language-Team: Slovenian <translation-team-sl@lists.sourceforge.net>\n"
@@ -16,42 +16,44 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/checklist.py:40 ../src/checklist.py:171
-#, fuzzy, python-format
-msgid "Runlevel %d"
-msgstr "Raven teka _3"
-
-#: ../src/serviceconf.py:73
+#: ../src/serviceconf.py:75
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Ali ste prepričani, da želite zbrisati %s?"
 
+#: ../src/serviceconf.py:130
+#, fuzzy, python-format
+msgid "Runlevel %d"
+msgstr "Raven teka _3"
+
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:241
+#: ../src/serviceconf.py:271
 msgid "Currently Running in Runlevel: "
 msgstr "Trenutno teče v ravni teka: "
 
-#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:489
 msgid "Editing Runlevel: "
 msgstr "Ureja se raven teka: "
 
-#: ../src/serviceconf.py:355
+#: ../src/serviceconf.py:430
 msgid "Unknown"
 msgstr "Neznana"
 
-#: ../src/serviceconf.py:442
+#: ../src/serviceconf.py:518
 msgid "All"
 msgstr ""
 
-#: ../src/serviceconf.py:476
+#: ../src/serviceconf.py:552
+#, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright (c) 2002-2004 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat>\n"
-" Bill Nottingham <notting@redhat>\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
 "Orodje za prikrojitev storitev v sistemu VERSION\n"
@@ -62,55 +64,42 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:480
+#: ../src/serviceconf.py:556
 msgid "About"
 msgstr "O programu"
 
-#: ../src/serviceconf.py:509
+#: ../src/serviceconf.py:585
 msgid "Help is not available."
 msgstr "Pomoč ni na voljo."
 
-#: ../src/serviceconf.py:663
+#: ../src/serviceconf.py:741
 msgid "You must run system-config-services as root."
 msgstr "Program system-config-services morate zagnati kot root."
 
-#. configured=1 if the service is configured already
-#. configured = self.xinetd_check_if_on(servicename)
-#. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: ../src/servicemethods.py:291
-msgid ""
-"\n"
-"\n"
-"xinetd is required for this service."
-msgstr ""
-"\n"
-"\n"
-"Za rabo te storitve se zahteva xinetd."
-
-#: ../src/servicemethods.py:327
+#: ../src/servicemethods.py:321
 msgid "xinetd failed to reload for "
 msgstr "xinetd se ni mogel znova naložiti za "
 
-#: ../src/servicemethods.py:328
+#: ../src/servicemethods.py:322
 msgid ". The error was: "
 msgstr ". Napaka je bila: "
 
-#: ../src/servicemethods.py:330
+#: ../src/servicemethods.py:324
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd je uspešno znova naložil %s"
 
-#: ../src/servicemethods.py:333
+#: ../src/servicemethods.py:327
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd mora biti omogočen, če naj %s teče"
 
-#: ../src/servicemethods.py:338
+#: ../src/servicemethods.py:332
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s spodletelo. Napaka je bila: %s"
 
-#: ../src/servicemethods.py:340
+#: ../src/servicemethods.py:334
 msgid " successful"
 msgstr " uspešno"
 
@@ -281,6 +270,15 @@ msgstr "Ime storitve: "
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Storitve"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "xinetd is required for this service."
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "Za rabo te storitve se zahteva xinetd."
 
 #~ msgid "*"
 #~ msgstr "*"

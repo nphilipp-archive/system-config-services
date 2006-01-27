@@ -12,111 +12,100 @@ msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-09 15:41+0100\n"
+"POT-Creation-Date: 2006-01-27 12:24+0100\n"
 "PO-Revision-Date: 2006-01-10 07:05+0100\n"
 "Last-Translator: Francesco Tombolini <tombo@adamantio.net>\n"
 "Language-Team: Italiano <Fedora-trans-it@redhat.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
-#: ../src/checklist.py:40 ../src/checklist.py:171
-#, python-format
-msgid "Runlevel %d"
-msgstr "Runlevel %d"
-
-#: ../src/serviceconf.py:73
+#: ../src/serviceconf.py:75
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Sei sicuro di voler eliminare %s?"
 
+#: ../src/serviceconf.py:130
+#, python-format
+msgid "Runlevel %d"
+msgstr "Runlevel %d"
+
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:241
+#: ../src/serviceconf.py:271
 msgid "Currently Running in Runlevel: "
 msgstr "Attualmente in esecuzione nel runlevel: "
 
-#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:489
 msgid "Editing Runlevel: "
 msgstr "Modifica del runlevel: "
 
-#: ../src/serviceconf.py:355
+#: ../src/serviceconf.py:430
 msgid "Unknown"
 msgstr "Sconosciuto"
 
-#: ../src/serviceconf.py:442
+#: ../src/serviceconf.py:518
 msgid "All"
 msgstr "Tutti"
 
-#: ../src/serviceconf.py:476
+#: ../src/serviceconf.py:552
+#, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright (c) 2002-2004 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat>\n"
-" Bill Nottingham <notting@redhat>\n"
+" Copyright Ã‚Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
-"System·Services·Configuration·Tool·VERSION\n"
-"·Copyright·(c)·2002-2004·Red·Hat,·Inc.\n"
-"·Tim·Powers·<timp@redhat>\n"
-"·Bill·Nottingham·<notting@redhat>\n"
-"·Dan·Walsh·<dwalsh@redhat.com>\n"
-"·Brent·Fox·<bfox@redhat.com>\n"
-"·"
+"SystemÂ·ServicesÂ·ConfigurationÂ·ToolÂ·VERSION\n"
+"Â·CopyrightÂ·(c)Â·2002-2004Â·RedÂ·Hat,Â·Inc.\n"
+"Â·TimÂ·PowersÂ·<timp@redhat>\n"
+"Â·BillÂ·NottinghamÂ·<notting@redhat>\n"
+"Â·DanÂ·WalshÂ·<dwalsh@redhat.com>\n"
+"Â·BrentÂ·FoxÂ·<bfox@redhat.com>\n"
+"Â·"
 
-#: ../src/serviceconf.py:480
+#: ../src/serviceconf.py:556
 msgid "About"
 msgstr "Informazioni"
 
-#: ../src/serviceconf.py:509
+#: ../src/serviceconf.py:585
 msgid "Help is not available."
-msgstr "La guida non è disponibile."
+msgstr "La guida non Ã¨ disponibile."
 
-#: ../src/serviceconf.py:663
+#: ../src/serviceconf.py:741
 msgid "You must run system-config-services as root."
 msgstr "Devi essere root per eseguire system-config-service."
 
-#. configured=1 if the service is configured already
-#. configured = self.xinetd_check_if_on(servicename)
-#. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: ../src/servicemethods.py:291
-msgid ""
-"\n"
-"\n"
-"xinetd is required for this service."
-msgstr ""
-"\n"
-"\n"
-"Abilitare xinetd per usare questo servizio."
-
-#: ../src/servicemethods.py:327
+#: ../src/servicemethods.py:321
 msgid "xinetd failed to reload for "
-msgstr "xinetd non è riuscito a ripartire a causa di"
+msgstr "xinetd non Ã¨ riuscito a ripartire a causa di"
 
-#: ../src/servicemethods.py:328
+#: ../src/servicemethods.py:322
 msgid ". The error was: "
-msgstr ". L'errore è stato: "
+msgstr ". L'errore Ã¨ stato: "
 
-#: ../src/servicemethods.py:330
+#: ../src/servicemethods.py:324
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "xinetd è riuscito a ricaricare %s"
+msgstr "xinetd Ã¨ riuscito a ricaricare %s"
 
-#: ../src/servicemethods.py:333
+#: ../src/servicemethods.py:327
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "xinetd deve essere attivato perché %s possa funzionare"
+msgstr "xinetd deve essere attivato perchÃ© %s possa funzionare"
 
-#: ../src/servicemethods.py:338
+#: ../src/servicemethods.py:332
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s non è riuscito. L'errore è stato: %s"
+msgstr "%s non Ã¨ riuscito. L'errore Ã¨ stato: %s"
 
-#: ../src/servicemethods.py:340
+#: ../src/servicemethods.py:334
 msgid " successful"
 msgstr " eseguito"
 
@@ -205,16 +194,17 @@ msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
-"Questi servizi sono avviati a richiesta e terminano quando non c'é più nulla da fare. "
-"Il servizio <b>xinetd</b> deve essere in esecuzione affinché possano essere utilizzati."
+"Questi servizi sono avviati a richiesta e terminano quando non c'Ã© piÃ¹ nulla "
+"da fare. Il servizio <b>xinetd</b> deve essere in esecuzione affinchÃ© "
+"possano essere utilizzati."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
 msgstr ""
-"Questi servizi sono avviati una sola volta e vengono eseguiti in background. Puoi "
-"specificare in quale runlevels sono avviati."
+"Questi servizi sono avviati una sola volta e vengono eseguiti in background. "
+"Puoi specificare in quale runlevels sono avviati."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -288,3 +278,11 @@ msgstr "Amministrazione Servizio"
 msgid "Services"
 msgstr "Servizi"
 
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "xinetd is required for this service."
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "Abilitare xinetd per usare questo servizio."

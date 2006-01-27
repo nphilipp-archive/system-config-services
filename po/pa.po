@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-09 15:41+0100\n"
+"POT-Creation-Date: 2006-01-27 12:24+0100\n"
 "PO-Revision-Date: 2006-01-10 11:29+0530\n"
 "Last-Translator: Jaswinder Singh Phulewala <jaswinderphulewala@yahoo.com>\n"
 "Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
@@ -24,11 +24,6 @@ msgstr ""
 "Plural-Forms: Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "\n"
 "\n"
-
-#: ../src/checklist.py:40 ../src/checklist.py:171
-#, python-format
-msgid "Runlevel %d"
-msgstr "ਰੰਨਲੈਵਲ %d"
 
 #  checklist.py: A class (derived from GtkTreeView) that provides a list of
 #  checkbox / text string pairs
@@ -67,37 +62,44 @@ msgstr "ਰੰਨਲੈਵਲ %d"
 #  #
 #  # I18N
 #  #
-#: ../src/serviceconf.py:73
+#: ../src/serviceconf.py:75
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "ਕੀ ਤੁਸੀਂ ਯਕੀਨਨ ਹੀ %s ਨੂੰ ਖਤਮ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
+#: ../src/serviceconf.py:130
+#, python-format
+msgid "Runlevel %d"
+msgstr "ਰੰਨਲੈਵਲ %d"
+
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:241
+#: ../src/serviceconf.py:271
 msgid "Currently Running in Runlevel: "
 msgstr "ਇਸ ਵੇਲੇ ਰੰਨਲੈਵਲ ਵਿਚ ਚੱਲ ਰਿਹਾ: "
 
-#: ../src/serviceconf.py:312 ../src/serviceconf.py:413
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:489
 msgid "Editing Runlevel: "
 msgstr "ਰੰਨਲੈਵਲ ਸੋਧ: "
 
-#: ../src/serviceconf.py:355
+#: ../src/serviceconf.py:430
 msgid "Unknown"
 msgstr "ਅਣਜਾਣ"
 
-#: ../src/serviceconf.py:442
+#: ../src/serviceconf.py:518
 msgid "All"
 msgstr "ਸਭ"
 
-#: ../src/serviceconf.py:476
+#: ../src/serviceconf.py:552
+#, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright (c) 2002-2004 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat>\n"
-" Bill Nottingham <notting@redhat>\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
 "ਸਿਸਟਮ ਸੇਵਾਵਾਂ ਸੰਰਚਨਾ ਸੰਦ ਦਾ ਵਰਜਨ\n"
@@ -108,55 +110,42 @@ msgstr ""
 "ਬਰਨਿਟ ਫਾਕਸ <bfox@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:480
+#: ../src/serviceconf.py:556
 msgid "About"
 msgstr "ਇਸ ਬਾਰੇ"
 
-#: ../src/serviceconf.py:509
+#: ../src/serviceconf.py:585
 msgid "Help is not available."
 msgstr "ਸਹਾਇਤਾ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ।"
 
-#: ../src/serviceconf.py:663
+#: ../src/serviceconf.py:741
 msgid "You must run system-config-services as root."
 msgstr "ਤੁਹਾਨੂੰ system-config-services ਪ੍ਰਬੰਧਕ(root) ਦੇ ਤੌਰ ਤੇ ਚਲਾਉਣੀ ਪਵੇਗੀ।"
 
-#. configured=1 if the service is configured already
-#. configured = self.xinetd_check_if_on(servicename)
-#. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: ../src/servicemethods.py:291
-msgid ""
-"\n"
-"\n"
-"xinetd is required for this service."
-msgstr ""
-"\n"
-"\n"
-"ਇਸ ਸੇਵਾ ਲਈ xinetd ਲੋਡ਼ੀਂਦੀ ਹੈ।"
-
-#: ../src/servicemethods.py:327
+#: ../src/servicemethods.py:321
 msgid "xinetd failed to reload for "
 msgstr "xinetd ਇਸ ਦੇ ਲਈ ਫਿਰ ਲੋਡ ਕਰਨ ਵਿਚ ਅਸਫਲ ਰਿਹਾ ਹੈ"
 
-#: ../src/servicemethods.py:328
+#: ../src/servicemethods.py:322
 msgid ". The error was: "
 msgstr "। ਗਲਤੀ ਇਹ ਸੀ: "
 
-#: ../src/servicemethods.py:330
+#: ../src/servicemethods.py:324
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd ਨੇ %s ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਫਿਰ ਚਾਲੂ ਕਰ ਲਿਆ ਹੈ"
 
-#: ../src/servicemethods.py:333
+#: ../src/servicemethods.py:327
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s ਚਲਾਉਣ ਲਈ xinetd ਨੂੰ ਚਾਲੂ ਕਰਨਾ ਪਵੇਗਾ"
 
-#: ../src/servicemethods.py:338
+#: ../src/servicemethods.py:332
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s ਅਸਫਲ। ਗਲਤੀ ਇਹ ਹੈ: %s"
 
-#: ../src/servicemethods.py:340
+#: ../src/servicemethods.py:334
 msgid " successful"
 msgstr " ਸਫਲਤਾਪੂਰਕ"
 
@@ -327,3 +316,12 @@ msgstr "ਸੇਵਾ ਪ੍ਰਬੰਧਨ:"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "ਸੇਵਾਵਾਂ"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "xinetd is required for this service."
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "ਇਸ ਸੇਵਾ ਲਈ xinetd ਲੋਡ਼ੀਂਦੀ ਹੈ।"
