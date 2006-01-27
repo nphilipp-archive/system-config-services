@@ -165,7 +165,7 @@ class Gui:
             pass
         self.dirty=0
         self.previous=None
-        self.ServiceMethods = servicemethods.ServiceMethods (self.uicallback)
+        self.servicemethods = servicemethods.ServiceMethods (self.uicallback)
 
         gtk.glade.bindtextdomain (domain)
 
@@ -252,7 +252,7 @@ class Gui:
         self.lblRunlevel = self.xml.get_widget ("lblRunlevel")
         self.lblEditing = self.xml.get_widget ("lblEditing")
         
-        self.editing_runlevel = self.ServiceMethods.get_runlevel ()
+        self.editing_runlevel = self.servicemethods.get_runlevel ()
 
         self.pmnStart = self.xml.get_widget ("pmnStart")
         self.pmnStop = self.xml.get_widget ("pmnStop")
@@ -264,7 +264,7 @@ class Gui:
         self.xml.get_widget ("bgScrolledWindow").add (self.bgListServices)
 
         self.bgListServices.show ()
-        self.ServiceMethods = servicemethods.ServiceMethods (self.uicallback)
+        self.servicemethods = servicemethods.ServiceMethods (self.uicallback)
 
         # initialize this to the runlevel we are running in. It will
         # change when one of the optRL[3-6] are selected
@@ -298,8 +298,6 @@ class Gui:
         # is enabled, and the service names        
         self.odListServices = checklist.CheckList ()
         self.xml.get_widget ("odScrolledWindow").add (self.odListServices)
-
-        self.odListServices.checkboxrenderer[0].connect ("toggled", self.toggled_service, self.odListServices)
 
         self.odListServices.get_selection ().connect ("changed", self.changed, self.odListServices)
         self.odListServices.show ()
@@ -372,7 +370,7 @@ class Gui:
                         gtk.main_iteration ()
                     else:
                         gtk.mainiteration ()
-            self.bgServices, self.dict_bgServices, self.odServices, self.dict_odServices = self.ServiceMethods.get_service_lists (idle_func)
+            self.bgServices, self.dict_bgServices, self.odServices, self.dict_odServices = self.servicemethods.get_service_lists (idle_func)
             self.lblEditing.set_text (_("Editing Runlevel: ") + self.editing_runlevel)
             self.already_init = 1
         
@@ -405,7 +403,7 @@ class Gui:
         
     def set_desc_buffer (self, buf):
         # set the text in {bg,od}TxtDesc
-        dict, dict_orig = self.ServiceMethods.get_dicts (self.text_in_row)
+        dict, dict_orig = self.servicemethods.get_dicts (self.text_in_row)
         x = dict[self.text_in_row]
         buf.set_text (string.strip (x[2]))
         # if an xinetd service is selected, disable these,
@@ -418,25 +416,26 @@ class Gui:
     def set_status_buffer (self, buf):
         # set the text in {bg,od}TxtStatus
         message=""
-        dict, dict_orig = self.ServiceMethods.get_dicts (self.text_in_row)
+        dict, dict_orig = self.servicemethods.get_dicts (self.text_in_row)
         if dict[self.text_in_row][1] != 1:
             # background service/daemon
             if dict.has_key (self.text_in_row):
-                result = self.ServiceMethods.get_status (self.text_in_row)
+                result = self.servicemethods.get_status (self.text_in_row)
                 message=result[1]
                 status=result[0]
             else:
-                status=self.ServiceMethods.UNKNOWN
+                status=self.servicemethods.UNKNOWN
                 message = _("Unknown")
         else:
             # on demand/xinetd service
-            status=self.ServiceMethods.UNKNOWN
-            result = self.ServiceMethods.get_status ("xinetd")
+            status=self.servicemethods.UNKNOWN
+            result = self.servicemethods.get_status ("xinetd")
             message=result[1]
         buf.set_text (message.strip ())
 
     def toggled_service (self, column, row, list):
         """Populates {bg,od}TxtDesc with the service description of the service selected in {bg,od}ListServices"""
+        #print "toggled_service (%s, %s, %s, %s)" % (self, column, row, list)
         self.text_in_row = list.get_text (int (row), list.num_checkboxes)
         self.current_selected = list.get_text (int (row), list.num_checkboxes)
 
@@ -446,12 +445,15 @@ class Gui:
             # enables and disables the save and revert buttons/menus
             # if something has been changed from it's orig setting
             self.save_revert_sensitive (0)
-            dict, dict_orig = self.ServiceMethods.get_dicts (self.text_in_row)
+            dict, dict_orig = self.servicemethods.get_dicts (self.text_in_row)
             for i in range (0, len (dict_orig)):
                 self.checking_service = list.get_text (i, list.num_checkboxes)
+                #print "self.checking_service =", self.checking_service
                 
                 for level in range (0, list.num_checkboxes):
                     service_enabled = int ("%d" % list.get_active (i, level))
+                    #print "   service_enabled =", service_enabled
+                    #print "   dict_orig[self.checking_service][0][level] =", dict_orig[self.checking_service][0][level]
                     if service_enabled != dict_orig[self.checking_service][0][level]:
                         self.save_revert_sensitive (1)
                         return self.text_in_row
@@ -604,13 +606,16 @@ class Gui:
 #----------------------------------------------------------------------------
     def on_mnuSave_clicked (self, args):
         """Commits the changes made for each service"""
-        for dict, dict_orig, list in ((self.ServiceMethods.dict_bgServices, self.ServiceMethods.dict_bgServices_orig, self.bgListServices), (self.ServiceMethods.dict_odServices, self.ServiceMethods.dict_odServices_orig, self.odListServices)):
+        for dict, dict_orig, list in ((self.servicemethods.dict_bgServices, self.servicemethods.dict_bgServices_orig, self.bgListServices), (self.servicemethods.dict_odServices, self.servicemethods.dict_odServices_orig, self.odListServices)):
+            #print "dict, dict_orig, list:", dict, dict_orig, list
+            self.servicemethods.save_begin ()
             for i in range (0,len (dict)):
                 servicename = list.get_text (i, list.num_checkboxes)
                 for level in range (0, list.num_checkboxes):
-                    service_enabled = int ("%d" % self.bgListServices.get_active (i, level))
+                    service_enabled = int ("%d" % list.get_active (i, level))
                     if service_enabled != dict_orig[servicename][0][level]:
-                        self.ServiceMethods.save_changes (servicename, service_enabled, level)
+                        self.servicemethods.save_changes (servicename, service_enabled, level)
+            self.servicemethods.save_end ()
         self.save_revert_sensitive (0)
 
     def quit (self,arg1=None,arg2=None):
@@ -633,7 +638,7 @@ class Gui:
         """calls ServiceMethods.service_action_results and displays the results in a dialog box"""
 
         self.winMain.window.set_cursor (gtk.gdk.Cursor (gtk.gdk.WATCH))
-        results = self.ServiceMethods.service_action_results (servicename, action_type, self.ServiceMethods.get_runlevel ())
+        results = self.servicemethods.service_action_results (servicename, action_type, self.servicemethods.get_runlevel ())
 
         if int (results[0]) != 0:
             dlg = gtk.MessageDialog (self.winMain, 0, gtk.MESSAGE_ERROR,
@@ -656,7 +661,7 @@ class Gui:
             
         if rc==gtk.RESPONSE_OK:
             service=self.xml.get_widget ("serviceNameEntry").get_text ()
-            response=self.ServiceMethods.chkconfig_add_service (service)
+            response=self.servicemethods.chkconfig_add_service (service)
             if response[0]!=0:
                 error_dialog (response[1])
             else:
@@ -664,7 +669,7 @@ class Gui:
 
     def on_delete_service_clicked (self,args):
         if verify_delete (self.current_selected) == gtk.RESPONSE_YES:
-            response=self.ServiceMethods.chkconfig_delete_service (self.current_selected)
+            response=self.servicemethods.chkconfig_delete_service (self.current_selected)
             if response[0]!=0:
                 error_dialog (response[1])
             else:

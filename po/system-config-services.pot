@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-27 12:24+0100\n"
+"POT-Creation-Date: 2006-01-27 17:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,19 +32,19 @@ msgstr ""
 msgid "Currently Running in Runlevel: "
 msgstr ""
 
-#: ../src/serviceconf.py:376 ../src/serviceconf.py:489
+#: ../src/serviceconf.py:374 ../src/serviceconf.py:491
 msgid "Editing Runlevel: "
 msgstr ""
 
-#: ../src/serviceconf.py:430
+#: ../src/serviceconf.py:428
 msgid "Unknown"
 msgstr ""
 
-#: ../src/serviceconf.py:518
+#: ../src/serviceconf.py:520
 msgid "All"
 msgstr ""
 
-#: ../src/serviceconf.py:552
+#: ../src/serviceconf.py:554
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -56,42 +56,42 @@ msgid ""
 " "
 msgstr ""
 
-#: ../src/serviceconf.py:556
+#: ../src/serviceconf.py:558
 msgid "About"
 msgstr ""
 
-#: ../src/serviceconf.py:585
+#: ../src/serviceconf.py:587
 msgid "Help is not available."
 msgstr ""
 
-#: ../src/serviceconf.py:741
+#: ../src/serviceconf.py:746
 msgid "You must run system-config-services as root."
 msgstr ""
 
-#: ../src/servicemethods.py:321
+#: ../src/servicemethods.py:329
 msgid "xinetd failed to reload for "
 msgstr ""
 
-#: ../src/servicemethods.py:322
+#: ../src/servicemethods.py:330
 msgid ". The error was: "
-msgstr ""
-
-#: ../src/servicemethods.py:324
-#, python-format
-msgid "xinetd reloaded %s successfully"
-msgstr ""
-
-#: ../src/servicemethods.py:327
-#, python-format
-msgid "xinetd must be enabled for %s to run"
 msgstr ""
 
 #: ../src/servicemethods.py:332
 #, python-format
+msgid "xinetd reloaded %s successfully"
+msgstr ""
+
+#: ../src/servicemethods.py:335
+#, python-format
+msgid "xinetd must be enabled for %s to run"
+msgstr ""
+
+#: ../src/servicemethods.py:340
+#, python-format
 msgid "%s failed. The error was: %s"
 msgstr ""
 
-#: ../src/servicemethods.py:334
+#: ../src/servicemethods.py:342
 msgid " successful"
 msgstr ""
 

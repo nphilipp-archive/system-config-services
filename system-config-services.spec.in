@@ -71,6 +71,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Fri Jan 27 2006 Nils Philippsen <nphilipp@redhat.com> - 0.8.99.2
+- fix saving xinetd services
+
 * Fri Jan 27 2006 Nils Philippsen <nphilipp@redhat.com> - 0.8.99.1
 - implement daemons and xinetd services on separate tabs
 

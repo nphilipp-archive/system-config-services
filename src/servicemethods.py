@@ -167,13 +167,12 @@ class ServiceMethods:
             disable_option = "off"
 
         if add_or_del == 1 or add_or_del == 0:
-            try:
-                getstatusoutput("LC_ALL=C /sbin/chkconfig %s %s" % (xinetd_servicename , disable_option), self.uicallback)
-            except:
-                pass
-            # for xinetd services, set the dictionary to show that it's disabled in all runlevels
-            for i in range(0,7):
-                self.dict_odServices[xinetd_servicename][0][i] = add_or_del
+            #try:
+            #print 'getstatusoutput("LC_ALL=C /sbin/chkconfig %s %s", %s)' % (xinetd_servicename, disable_option, self.uicallback)
+            getstatusoutput("LC_ALL=C /sbin/chkconfig %s %s" % (xinetd_servicename , disable_option), self.uicallback)
+            #except:
+            #    pass
+            self.dict_odServices[xinetd_servicename][0][0] = add_or_del
 
     def get_service_lists (self, idle_func):
         """populates the self.dict_bgServices, self.dict_bgServices_orig, self.dict_odServices, self.dict_odServices_orig dictionaries and the self.bgServices, self.odServices lists with service information including whether or not a service is configured to start (in runlevels 0-6), as well as whether it is an xinetd service, as well as service descriptions."""
@@ -296,6 +295,7 @@ class ServiceMethods:
 
     def save_changes(self, servicename, service_enabled, editing_runlevel):
         """when this method is used it saves the change to disk"""
+        #print "save_changes (%s, %s, %s, %s)" % (self, servicename, service_enabled, editing_runlevel)
         dict, dict_orig = self.get_dicts (servicename)
         if dict[servicename]:
             # only save changes
@@ -308,6 +308,14 @@ class ServiceMethods:
                 # for xinetd services
                 else:
                     self.xinet_add_del(servicename, service_enabled)
+                    self.reload_xinetd = True
+
+    def save_begin (self):
+        self.reload_xinetd = False
+
+    def save_end (self):
+        if self.reload_xinetd:
+            getstatusoutput("/sbin/service xinetd reload", self.uicallback)
 
     def service_action_results(self, servicename, action_type, runlevel):
         """starts, stops, and restarts the service. returns the error if the service failed in any of the actions"""
