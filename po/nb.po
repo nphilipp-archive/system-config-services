@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: system-config-services 0.8.26\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-27 12:24+0100\n"
-"PO-Revision-Date: 2006-01-11 00:20+0100\n"
+"PO-Revision-Date: 2006-01-27 15:25+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -43,7 +43,6 @@ msgid "All"
 msgstr "Alle"
 
 #: ../src/serviceconf.py:552
-#, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -60,6 +59,7 @@ msgstr ""
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen nphilipp@redhat.com>\n"
 " "
 
 #: ../src/serviceconf.py:556
@@ -268,12 +268,3 @@ msgstr "Tjenestehåndtering"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Tjenester"
-
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd is required for this service."
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd kreves for denne tjenesten."
