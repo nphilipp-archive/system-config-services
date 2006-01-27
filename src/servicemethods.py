@@ -157,11 +157,7 @@ class ServiceMethods:
                 getstatusoutput("LC_ALL=C /sbin/chkconfig --level %s %s %s" % (editing_runlevel, servicename, chkconfig_action), self.uicallback)
             except IOError:
                 pass
-            self.dict_services[servicename][0][int(editing_runlevel)] = add_or_del
-            
-        return self.dict_services
-
-
+            self.dict_bgServices[servicename][0][int(editing_runlevel)] = add_or_del
 
     def xinet_add_del(self, xinetd_servicename, add_or_del):
         """adds and removes 'disable = yes' from xinetd service scripts"""
@@ -177,23 +173,21 @@ class ServiceMethods:
                 pass
             # for xinetd services, set the dictionary to show that it's disabled in all runlevels
             for i in range(0,7):
-                self.dict_services[xinetd_servicename][0][i] = add_or_del
+                self.dict_odServices[xinetd_servicename][0][i] = add_or_del
 
-        return self.dict_services
-
-            
-                
-    def get_service_list(self, idle_func):
-        """populates the self.dict_services, self.dict_services_orig dictionaries and the self.allservices list with service information including whether or not a service is configured to start in runlevels 0-6, as well as whether it is an xinetd service, as well as service descriptions."""
-        self.dict_services= {}
-        # this will be an unmodified self.dict_services
-        self.dict_services_orig = {}
+    def get_service_lists (self, idle_func):
+        """populates the self.dict_bgServices, self.dict_bgServices_orig, self.dict_odServices, self.dict_odServices_orig dictionaries and the self.bgServices, self.odServices lists with service information including whether or not a service is configured to start (in runlevels 0-6), as well as whether it is an xinetd service, as well as service descriptions."""
+        self.dict_bgServices= {}
+        self.dict_odServices= {}
+        # these will be unmodified self.dict_{bg,od}Services
+        self.dict_bgServices_orig = {}
+        self.dict_odServices_orig = {}
 
         
         idle_func ()
 
-        list_xinetd_services = []
-        self.allservices = []
+        self.bgServices = []
+        self.odServices = []
         
         chkconfig_list = getstatusoutput("LC_ALL=C /sbin/chkconfig --list 2>/dev/null", self.uicallback)[1]
         chkconfig_list = re.split('\n', chkconfig_list)
@@ -214,7 +208,7 @@ class ServiceMethods:
                     for i in xrange(0,len(runlevel)):
                         runlevel[i]=runlevel[i].split(":")[1]
                 else:
-                    list_xinetd_services.append(name)
+                    self.odServices.append(name)
                 dict[name]=runlevel
 
         for servicename in dict.keys():
@@ -249,18 +243,18 @@ class ServiceMethods:
                 else:
                     runlevels[i] = 1
 
-            self.dict_services[servicename] = [runlevels, 0, self.get_descriptions(initscript)]
-            self.dict_services_orig[servicename] = [runlevels, 0]
+            self.dict_bgServices[servicename] = [runlevels, 0, self.get_descriptions(initscript)]
+            self.dict_bgServices_orig[servicename] = [runlevels, 0]
             
             # look through the first 25 lines to see if we have "hide: true" in there.
             # if it's there, remove the service from the dictionary
             for i in range(0, len(initscript)):
                 if (string.find("%s" % initscript[i], "hide:") != -1) and \
                    (string.find("%s" % initscript[i], "true") != -1):
-                    del self.dict_services[servicename]
-                    del self.dict_services_orig[servicename]
+                    del self.dict_bgServices[servicename]
+                    del self.dict_bgServices_orig[servicename]
                 
-        for servicename in list_xinetd_services:
+        for servicename in self.odServices:
             # read each file for xinetd.d
             try:
                 f = open("/etc/xinetd.d/%s" % servicename)
@@ -274,13 +268,9 @@ class ServiceMethods:
             runlevels = dict[servicename]
 
             if runlevels[0] == "off":
-                del runlevels[0]
-                for i in range(0,7):
-                    runlevels.append(0)
+                runlevels = [0]
             elif runlevels[0] == "on":
-                del runlevels[0]
-                for i in range(0,7):
-                    runlevels.append(1)
+                runlevels = [1]
             else:
                 continue
 
@@ -288,39 +278,43 @@ class ServiceMethods:
             # configured = self.xinetd_check_if_on(servicename)
             
             # the list corresponding to the key is: [configured, is it an xinetd serv., description]
-            self.dict_services[servicename] = [runlevels, 1, "%s" % self.get_descriptions(xinetd_script) + _("\n\nxinetd is required for this service.")]
-            self.dict_services_orig[servicename] = [runlevels, 1]
+            self.dict_odServices[servicename] = [runlevels, 1, "%s" % self.get_descriptions(xinetd_script)]
+            self.dict_odServices_orig[servicename] = [runlevels, 1]
             
-        self.allservices = self.dict_services.keys()
-        self.allservices.sort()
+        self.bgServices = self.dict_bgServices.keys()
+        self.bgServices.sort()
 
         # an unmodified dictionary. Needed to compare for saving etc.
                 
-        return self.allservices , self.dict_services
+        return self.bgServices, self.dict_bgServices, self.odServices, self.dict_odServices
 
-
+    def get_dicts (self, servicename):
+        if self.dict_bgServices.has_key (servicename):
+            return self.dict_bgServices, self.dict_bgServices_orig
+        elif self.dict_odServices.has_key (servicename):
+            return self.dict_odServices, self.dict_odServices_orig
 
     def save_changes(self, servicename, service_enabled, editing_runlevel):
         """when this method is used it saves the change to disk"""
-        if self.dict_services[servicename]:
+        dict, dict_orig = self.get_dicts (servicename)
+        if dict[servicename]:
             # only save changes
-            if int(self.dict_services_orig[servicename][0][int(editing_runlevel)]) != int(service_enabled):
-                self.dict_services[servicename][0][int(editing_runlevel)] = service_enabled
+            if int(dict_orig[servicename][0][int(editing_runlevel)]) != int(service_enabled):
+                dict[servicename][0][int(editing_runlevel)] = service_enabled
                 
                 #check to make sure we are an initscript and not an xinetd service
-                if int(self.dict_services[servicename][1]) == 0:
+                if int(dict[servicename][1]) == 0:
                     self.chkconfig_add_del(servicename, service_enabled, editing_runlevel)
                 # for xinetd services
                 else:
                     self.xinet_add_del(servicename, service_enabled)
 
-
-
     def service_action_results(self, servicename, action_type, runlevel):
         """starts, stops, and restarts the service. returns the error if the service failed in any of the actions"""
-        if self.dict_services.has_key(servicename):
-            if int(self.dict_services[servicename][1]) == 1:
-                if int(self.dict_services["xinetd"][0][int(runlevel)]) == 1:
+        dict, dict_orig = self.get_dicts (servicename)
+        if dict.has_key(servicename):
+            if int(dict[servicename][1]) == 1:
+                if int(self.dict_bgServices["xinetd"][0][int(runlevel)]) == 1:
                     action_results = getstatusoutput("/sbin/service xinetd reload", self.uicallback)
 
                     if action_results[0] != 0:
@@ -332,7 +326,7 @@ class ServiceMethods:
                 else:
                     return (1, _("xinetd must be enabled for %s to run") % servicename)
 
-            if int(self.dict_services[servicename][1]) == 0:
+            if int(dict[servicename][1]) == 0:
                 action_results = getstatusoutput("/sbin/service %s %s" % (servicename, action_type), self.uicallback)
                 if action_results[0] != 0:
                     return (1, _("%s failed. The error was: %s") % (servicename,action_results[1]))

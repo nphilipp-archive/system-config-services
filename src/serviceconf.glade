@@ -803,69 +803,6 @@ Do you want to save the changes?</property>
 	  <property name="show_arrow">True</property>
 
 	  <child>
-	    <widget class="GtkToolButton" id="btnStart">
-	      <property name="visible">True</property>
-	      <property name="label" translatable="yes">Start</property>
-	      <property name="use_underline">True</property>
-	      <property name="stock_id">gtk-go-forward</property>
-	      <property name="visible_horizontal">True</property>
-	      <property name="visible_vertical">True</property>
-	      <property name="is_important">False</property>
-	      <signal name="clicked" handler="on_btnStart_clicked" last_modification_time="Fri, 18 Mar 2005 12:09:14 GMT"/>
-	    </widget>
-	    <packing>
-	      <property name="expand">False</property>
-	      <property name="homogeneous">True</property>
-	    </packing>
-	  </child>
-
-	  <child>
-	    <widget class="GtkToolButton" id="btnStop">
-	      <property name="visible">True</property>
-	      <property name="stock_id">gtk-stop</property>
-	      <property name="visible_horizontal">True</property>
-	      <property name="visible_vertical">True</property>
-	      <property name="is_important">False</property>
-	      <signal name="clicked" handler="on_btnStop_clicked" last_modification_time="Fri, 18 Mar 2005 12:12:07 GMT"/>
-	    </widget>
-	    <packing>
-	      <property name="expand">False</property>
-	      <property name="homogeneous">True</property>
-	    </packing>
-	  </child>
-
-	  <child>
-	    <widget class="GtkToolButton" id="btnRestart">
-	      <property name="visible">True</property>
-	      <property name="label" translatable="yes">Restart</property>
-	      <property name="use_underline">True</property>
-	      <property name="stock_id">gtk-refresh</property>
-	      <property name="visible_horizontal">True</property>
-	      <property name="visible_vertical">True</property>
-	      <property name="is_important">False</property>
-	      <signal name="clicked" handler="on_btnRestart_clicked" last_modification_time="Fri, 18 Mar 2005 12:12:15 GMT"/>
-	    </widget>
-	    <packing>
-	      <property name="expand">False</property>
-	      <property name="homogeneous">True</property>
-	    </packing>
-	  </child>
-
-	  <child>
-	    <widget class="GtkSeparatorToolItem" id="separatortoolitem1">
-	      <property name="border_width">3</property>
-	      <property name="visible">True</property>
-	      <property name="draw">True</property>
-	      <property name="visible_horizontal">True</property>
-	      <property name="visible_vertical">True</property>
-	    </widget>
-	    <packing>
-	      <property name="expand">False</property>
-	      <property name="homogeneous">False</property>
-	    </packing>
-	  </child>
-
-	  <child>
 	    <widget class="GtkToolButton" id="btnSave">
 	      <property name="visible">True</property>
 	      <property name="stock_id">gtk-save</property>
@@ -1018,18 +955,95 @@ Do you want to save the changes?</property>
 		      <property name="position">0</property>
 
 		      <child>
-			<widget class="GtkScrolledWindow" id="swindow">
-			  <property name="border_width">2</property>
-			  <property name="width_request">220</property>
+			<widget class="GtkVBox" id="vbox6">
 			  <property name="visible">True</property>
-			  <property name="hscrollbar_policy">GTK_POLICY_NEVER</property>
-			  <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
-			  <property name="shadow_type">GTK_SHADOW_NONE</property>
-			  <property name="window_placement">GTK_CORNER_TOP_LEFT</property>
+			  <property name="homogeneous">False</property>
+			  <property name="spacing">0</property>
+
+			  <child>
+			    <widget class="GtkToolbar" id="toolbar1">
+			      <property name="visible">True</property>
+			      <property name="orientation">GTK_ORIENTATION_HORIZONTAL</property>
+			      <property name="toolbar_style">GTK_TOOLBAR_BOTH</property>
+			      <property name="tooltips">True</property>
+			      <property name="show_arrow">True</property>
+
+			      <child>
+				<widget class="GtkToolButton" id="btnStart">
+				  <property name="visible">True</property>
+				  <property name="label" translatable="yes">Start</property>
+				  <property name="use_underline">True</property>
+				  <property name="stock_id">gtk-go-forward</property>
+				  <property name="visible_horizontal">True</property>
+				  <property name="visible_vertical">True</property>
+				  <property name="is_important">False</property>
+				  <signal name="clicked" handler="on_btnStart_clicked" last_modification_time="Fri, 18 Mar 2005 12:09:14 GMT"/>
+				</widget>
+				<packing>
+				  <property name="expand">False</property>
+				  <property name="homogeneous">True</property>
+				</packing>
+			      </child>
+
+			      <child>
+				<widget class="GtkToolButton" id="btnStop">
+				  <property name="visible">True</property>
+				  <property name="stock_id">gtk-stop</property>
+				  <property name="visible_horizontal">True</property>
+				  <property name="visible_vertical">True</property>
+				  <property name="is_important">False</property>
+				  <signal name="clicked" handler="on_btnStop_clicked" last_modification_time="Fri, 18 Mar 2005 12:12:07 GMT"/>
+				</widget>
+				<packing>
+				  <property name="expand">False</property>
+				  <property name="homogeneous">True</property>
+				</packing>
+			      </child>
+
+			      <child>
+				<widget class="GtkToolButton" id="btnRestart">
+				  <property name="visible">True</property>
+				  <property name="label" translatable="yes">Restart</property>
+				  <property name="use_underline">True</property>
+				  <property name="stock_id">gtk-refresh</property>
+				  <property name="visible_horizontal">True</property>
+				  <property name="visible_vertical">True</property>
+				  <property name="is_important">False</property>
+				  <signal name="clicked" handler="on_btnRestart_clicked" last_modification_time="Fri, 18 Mar 2005 12:12:15 GMT"/>
+				</widget>
+				<packing>
+				  <property name="expand">False</property>
+				  <property name="homogeneous">True</property>
+				</packing>
+			      </child>
+			    </widget>
+			    <packing>
+			      <property name="padding">0</property>
+			      <property name="expand">False</property>
+			      <property name="fill">False</property>
+			    </packing>
+			  </child>
+
+			  <child>
+			    <widget class="GtkScrolledWindow" id="bgScrolledWindow">
+			      <property name="border_width">2</property>
+			      <property name="width_request">220</property>
+			      <property name="visible">True</property>
+			      <property name="hscrollbar_policy">GTK_POLICY_NEVER</property>
+			      <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+			      <property name="shadow_type">GTK_SHADOW_NONE</property>
+			      <property name="window_placement">GTK_CORNER_TOP_LEFT</property>
+			    </widget>
+			    <packing>
+			      <property name="padding">0</property>
+			      <property name="expand">True</property>
+			      <property name="fill">True</property>
+			    </packing>
+			  </child>
 			</widget>
 			<packing>
 			  <property name="shrink">False</property>
-			  <property name="resize">True</property>
+			  <property name="resize">False</property>
 			</packing>
 		      </child>
 
@@ -1062,7 +1076,7 @@ Do you want to save the changes?</property>
 				      <property name="window_placement">GTK_CORNER_TOP_LEFT</property>
 
 				      <child>
-					<widget class="GtkTextView" id="txtDesc">
+					<widget class="GtkTextView" id="bgTxtDesc">
 					  <property name="border_width">2</property>
 					  <property name="visible">True</property>
 					  <property name="editable">False</property>
@@ -1107,13 +1121,14 @@ Do you want to save the changes?</property>
 				  </child>
 				</widget>
 				<packing>
-				  <property name="shrink">True</property>
+				  <property name="shrink">False</property>
 				  <property name="resize">False</property>
 				</packing>
 			      </child>
 
 			      <child>
 				<widget class="GtkFrame" id="frame1">
+				  <property name="height_request">50</property>
 				  <property name="visible">True</property>
 				  <property name="label_xalign">0</property>
 				  <property name="label_yalign">0.5</property>
@@ -1129,7 +1144,7 @@ Do you want to save the changes?</property>
 				      <property name="window_placement">GTK_CORNER_TOP_LEFT</property>
 
 				      <child>
-					<widget class="GtkTextView" id="StatusView">
+					<widget class="GtkTextView" id="bgTxtStatus">
 					  <property name="border_width">2</property>
 					  <property name="visible">True</property>
 					  <property name="editable">False</property>
@@ -1174,7 +1189,7 @@ Do you want to save the changes?</property>
 				  </child>
 				</widget>
 				<packing>
-				  <property name="shrink">True</property>
+				  <property name="shrink">False</property>
 				  <property name="resize">True</property>
 				</packing>
 			      </child>
@@ -1284,7 +1299,7 @@ Do you want to save the changes?</property>
 		      <property name="position">0</property>
 
 		      <child>
-			<widget class="GtkScrolledWindow" id="swindow2">
+			<widget class="GtkScrolledWindow" id="odScrolledWindow">
 			  <property name="border_width">2</property>
 			  <property name="width_request">220</property>
 			  <property name="visible">True</property>
@@ -1309,6 +1324,7 @@ Do you want to save the changes?</property>
 			    <widget class="GtkVPaned" id="vpaned2">
 			      <property name="visible">True</property>
 			      <property name="can_focus">True</property>
+			      <property name="position">0</property>
 
 			      <child>
 				<widget class="GtkFrame" id="frame3">
@@ -1327,7 +1343,7 @@ Do you want to save the changes?</property>
 				      <property name="window_placement">GTK_CORNER_TOP_LEFT</property>
 
 				      <child>
-					<widget class="GtkTextView" id="txtDesc2">
+					<widget class="GtkTextView" id="odTxtDesc">
 					  <property name="border_width">2</property>
 					  <property name="visible">True</property>
 					  <property name="editable">False</property>
@@ -1372,7 +1388,7 @@ Do you want to save the changes?</property>
 				  </child>
 				</widget>
 				<packing>
-				  <property name="shrink">True</property>
+				  <property name="shrink">False</property>
 				  <property name="resize">False</property>
 				</packing>
 			      </child>
@@ -1394,7 +1410,7 @@ Do you want to save the changes?</property>
 				      <property name="window_placement">GTK_CORNER_TOP_LEFT</property>
 
 				      <child>
-					<widget class="GtkTextView" id="StatusView2">
+					<widget class="GtkTextView" id="odTxtStatus">
 					  <property name="border_width">2</property>
 					  <property name="visible">True</property>
 					  <property name="editable">False</property>
