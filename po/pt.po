@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-POFile-SpellExtra: Hat Fox system VERSION Walsh Brent runlevel services\n"
-"X-POFile-SpellExtra: xinetd config Powers Red Inc\n"
+"X-POFile-SpellExtra: xinetd config Powers Red Inc Nils Philippsen\n"
 "X-POFile-IgnoreConsistency: Start\n"
 
 #: ../src/serviceconf.py:75
