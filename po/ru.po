@@ -2,14 +2,14 @@
 # Copyright (C) YEAR ORGANIZATION.
 # Leonid Kanter <leon@geon.donetsk.ua>, 2003.
 # Leonid Kanter <leon@asplinux.ru>, 2004.
-# Andrew Martynov <andrewm@inventa.ru>, 2004, 2005.
-# Ivan Kukharchuk <wedge@inbox.ru>, 2006
+# Andrew Martynov <andrewm@inventa.ru>, 2004, 2005, 2006.
+# Ivan Kukharchuk <wedge@inbox.ru>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-27 12:24+0100\n"
-"PO-Revision-Date: 2006-01-23 00:15+0400\n"
+"PO-Revision-Date: 2006-01-29 00:30+0300\n"
 "Last-Translator: Andrew Martynov <andrewm@inventa.ru>\n"
 "Language-Team: Russian <fedora-trans-ru@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -47,7 +47,6 @@ msgid "All"
 msgstr "Все"
 
 #: ../src/serviceconf.py:552
-#, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -59,12 +58,12 @@ msgid ""
 " "
 msgstr ""
 "Утилита настройки системных служб\n"
-"System Services Configuration Tool VERSION\n"
-" Copyright (c) 2002-2004 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat>\n"
-" Bill Nottingham <notting@redhat>\n"
+" Copyright © 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
 #: ../src/serviceconf.py:556
@@ -300,3 +299,4 @@ msgstr "Службы"
 
 #~ msgid "Start at Boot"
 #~ msgstr "Запускать при загрузке системы"
+
