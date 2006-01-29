@@ -1,6 +1,7 @@
 # Translation of system-config-services to Dutch.
 # Copyright (C) 2002 Taco Witte
 # This file is distributed under the same license as the system-config-services package.
+#
 # Taco Witte <T.C.Witte@phys.uu.nl>, 2002.
 # Tino Meinen <a.t.meinen@chello.nl>, 2003.
 # Peter van Egdom <p.van.egdom@gmail.com>, 2003, 2004, 2005, 2006.
@@ -13,7 +14,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-27 12:24+0100\n"
-"PO-Revision-Date: 2006-01-10 23:16+0100\n"
+"PO-Revision-Date: 2006-01-29 11:12+0100\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@gmail.com>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
 "MIME-Version: 1.0\n"
@@ -50,7 +51,6 @@ msgid "All"
 msgstr "Alles"
 
 #: ../src/serviceconf.py:552
-#, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -62,11 +62,12 @@ msgid ""
 " "
 msgstr ""
 "System Services Configuratie Tool VERSION\n"
-" Copyright (c) 2002-2004 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat>\n"
-" Bill Nottingham <notting@redhat>\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
 #: ../src/serviceconf.py:556
