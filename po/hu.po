@@ -1,21 +1,23 @@
+# translation of hu.po to hungarian
 # translation of hu.po to Hungarian
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Tamas Szanto <tszanto@mol.hu>, 2003.
 # Arpad Biro <biro_arpad@yahoo.com>, 2005.
+# Szentiványi Gábor <szentivanyi.gabor@ulx.hu>, 2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services\n"
+"Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-27 12:24+0100\n"
-"PO-Revision-Date: 2005-05-08 14:31+0200\n"
-"Last-Translator: Arpad Biro <biro_arpad@yahoo.com>\n"
-"Language-Team: Hungarian\n"
+"PO-Revision-Date: 2006-02-01 23:18+0100\n"
+"Last-Translator: Szentiványi Gábor <szentivanyi.gabor@ulx.hu>\n"
+"Language-Team: hungarian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9\n"
+"X-Generator: KBabel 1.10.2\n"
 
 #: ../src/serviceconf.py:75
 #, python-format
@@ -46,7 +48,6 @@ msgid "All"
 msgstr "Összes"
 
 #: ../src/serviceconf.py:552
-#, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -57,12 +58,13 @@ msgid ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
-"Szolgáltatásbeállító VERSION\n"
-" Copyright (c) 2002-2004 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat>\n"
-" Bill Nottingham <notting@redhat>\n"
+"Rendszerszolgáltatás-beállító eszköz VERSION\n"
+" Copyright (c) 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
 #: ../src/serviceconf.py:556
@@ -189,12 +191,17 @@ msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
+"Ezek a szolgáltatások igény esetén indulnak és le is állnak, ha nincs tennivaló. "
+"A <b>xinetd</b> szolgáltatásnak mindig futnia kell, hogy a többi szolgáltatás igény esetén el tudjon "
+"indulni, illetve le tudjon állni."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
 msgstr ""
+"Ezek a szolgáltatásokat egyszer kell elindítani és aztán a háttérben futnak. "
+"Megadhatja, hogy egy adott szolgáltatás melyik futási szinteken induljon el."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -209,9 +216,8 @@ msgid "_Actions"
 msgstr "Mű_veletek"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "A szol_gáltatás elindítása"
+msgstr "_Háttér szolgáltatások"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
@@ -230,9 +236,8 @@ msgid "_Help"
 msgstr "_Segítség"
 
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "A szolgáltatás újrain_dítása"
+msgstr "_Igény szerint induló szolgáltatások"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
@@ -270,29 +275,3 @@ msgstr "Szolgáltatáskezelés"
 msgid "Services"
 msgstr "Szolgáltatások"
 
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd is required for this service."
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "A szolgáltatás használatához aktiválni kell a xinetd-t."
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid "_Save"
-#~ msgstr "Men_tés"
-
-#~ msgid "Save"
-#~ msgstr "Mentés"
-
-#~ msgid "_Revert"
-#~ msgstr "_Visszavonás"
-
-#~ msgid "Revert"
-#~ msgstr "Visszavonás"
-
-#~ msgid "Start at Boot"
-#~ msgstr "Automatikus indítás"
