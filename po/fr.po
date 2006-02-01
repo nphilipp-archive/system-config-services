@@ -1,4 +1,5 @@
 # translation of fr.po to 
+# translation of fr.po to
 # translation of fr.po to French
 # translation of fr.po to french
 # Copyright (C) 2001 Red Hat, Inc.
@@ -12,7 +13,7 @@ msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-27 12:24+0100\n"
-"PO-Revision-Date: 2006-01-10 09:19+1000\n"
+"PO-Revision-Date: 2006-02-01 12:45+1000\n"
 "Last-Translator: \n"
 "Language-Team:  <fr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -49,7 +50,6 @@ msgid "All"
 msgstr "Tous"
 
 #: ../src/serviceconf.py:552
-#, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -61,11 +61,12 @@ msgid ""
 " "
 msgstr ""
 "Outil de Configuration des Services Système VERSION\n"
-" Copyright (c) 2002-2004 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat>\n"
-" Bill Nottingham <notting@redhat>\n"
+" Copyright (c) 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
 #: ../src/serviceconf.py:556
@@ -276,11 +277,3 @@ msgstr "Gestion des Services"
 msgid "Services"
 msgstr "Services"
 
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd is required for this service."
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd est requis pour ce service."
