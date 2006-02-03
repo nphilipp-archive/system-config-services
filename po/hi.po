@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-27 12:24+0100\n"
+"POT-Creation-Date: 2006-01-27 17:07+0100\n"
 "PO-Revision-Date: 2006-01-30 14:51+0530\n"
 "Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
@@ -15,7 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
 "\n"
 "\n"
 
@@ -35,19 +36,19 @@ msgstr "रनलेवल %d"
 msgid "Currently Running in Runlevel: "
 msgstr "वर्तमान में रनलेवल में चल रहा हैः "
 
-#: ../src/serviceconf.py:376 ../src/serviceconf.py:489
+#: ../src/serviceconf.py:374 ../src/serviceconf.py:491
 msgid "Editing Runlevel: "
 msgstr "रनलेवल का संपादन कर रहाः"
 
-#: ../src/serviceconf.py:430
+#: ../src/serviceconf.py:428
 msgid "Unknown"
 msgstr "अज्ञात"
 
-#: ../src/serviceconf.py:518
+#: ../src/serviceconf.py:520
 msgid "All"
 msgstr "सभी"
 
-#: ../src/serviceconf.py:552
+#: ../src/serviceconf.py:554
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -67,42 +68,42 @@ msgstr ""
 " निल्स फिलिप्सेन <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:556
+#: ../src/serviceconf.py:558
 msgid "About"
 msgstr "के बारे में"
 
-#: ../src/serviceconf.py:585
+#: ../src/serviceconf.py:587
 msgid "Help is not available."
 msgstr "सहायता उपलब्ध नहीं है."
 
-#: ../src/serviceconf.py:741
+#: ../src/serviceconf.py:746
 msgid "You must run system-config-services as root."
 msgstr "आपको system-config-services को रूट जैसा चलाना है."
 
-#: ../src/servicemethods.py:321
+#: ../src/servicemethods.py:329
 msgid "xinetd failed to reload for "
 msgstr "इसके लिए xinetd पुनःभारित करने में असफल"
 
-#: ../src/servicemethods.py:322
+#: ../src/servicemethods.py:330
 msgid ". The error was: "
 msgstr ". त्रुटि थाः"
 
-#: ../src/servicemethods.py:324
+#: ../src/servicemethods.py:332
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd ने %s को सफलतापूर्वक पुनःभारित किया"
 
-#: ../src/servicemethods.py:327
+#: ../src/servicemethods.py:335
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s को चलाने के लिए xinetd  को अवश्य समर्थ करना है"
 
-#: ../src/servicemethods.py:332
+#: ../src/servicemethods.py:340
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s विफल. दोष थाः %s"
 
-#: ../src/servicemethods.py:334
+#: ../src/servicemethods.py:342
 msgid " successful"
 msgstr " सफल"
 
@@ -273,4 +274,3 @@ msgstr "सेवा प्रबंधन"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "सेवा"
-
