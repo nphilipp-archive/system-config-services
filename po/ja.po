@@ -6,14 +6,14 @@
 # James Hashida <khashida@redhat.com>, 2002,2003.
 # Tadashi Jokagi <fedora@elf.no-ip.org>, 2004.
 # Noriko Mizumoto <noriko@redhat.com>, 2004
-# Hirofumi Saito <hi_saito@yk.rim.or.jp>, 2005.
+# Hirofumi Saito <hi_saito@yk.rim.or.jp>, 2005, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-27 12:24+0100\n"
-"PO-Revision-Date: 2005-05-07 20:22+0900\n"
+"PO-Revision-Date: 2006-02-04 21:05+0900\n"
 "Last-Translator: Hirofumi Saito <hi_saito@yk.rim.or.jp>\n"
 "Language-Team: Japanese <fedora-trans-ja@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -50,7 +50,6 @@ msgid "All"
 msgstr "全て"
 
 #: ../src/serviceconf.py:552
-#, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -62,11 +61,12 @@ msgid ""
 " "
 msgstr ""
 "システムサービス設定ツール VERSION\n"
-" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+" Copyright (c) 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat>\n"
 " Bill Nottingham <notting@redhat>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
 #: ../src/serviceconf.py:556
@@ -193,12 +193,16 @@ msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
+"これらのサービスはオンデマンドで開始され、処理することがなくなれば終了しま"
+"す。<b>inetd</b> サービスはこれらを使う際に実行していなければなりません。"
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
 msgstr ""
+"これらのサービスは一度開始するとバックグラウンドで走ります。開始するラン"
+"レベルで指定できます。"
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -213,9 +217,8 @@ msgid "_Actions"
 msgstr "操作(_A)"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "サービスを開始(_S)"
+msgstr "バックグラウンドサービス(_B)"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
@@ -234,9 +237,8 @@ msgid "_Help"
 msgstr "ヘルプ(_H)"
 
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "サービスを再起動(_R)"
+msgstr "オンデマンドサービス(_O)"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
