@@ -1,4 +1,4 @@
-# translation of  it to italian
+# translation of it.po to Italiano
 # translation of it.po to
 # translation of it.po to
 # Copyright (C) 2001, Red Hat, Inc.
@@ -13,13 +13,13 @@ msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-27 12:24+0100\n"
-"PO-Revision-Date: 2006-01-27 09:20-0500\n"
+"PO-Revision-Date: 2006-02-23 19:35+0100\n"
 "Last-Translator: Francesco Tombolini <tombo@adamantio.net>\n"
-"Language-Team: Italiano <Fedora-trans-it@redhat.com>\n"
+"Language-Team: Italiano <fedora-trans-it@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11\n"
+"X-Generator: KBabel 1.11.1\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../src/serviceconf.py:75
@@ -36,7 +36,7 @@ msgstr "Runlevel %d"
 #. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:271
 msgid "Currently Running in Runlevel: "
-msgstr "Attualmente in esecuzione nel runlevel: "
+msgstr "Runlevel attualmente in esecuzione: "
 
 #: ../src/serviceconf.py:376 ../src/serviceconf.py:489
 msgid "Editing Runlevel: "
@@ -203,8 +203,8 @@ msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
 msgstr ""
-"Questi servizi sono avviati una sola volta e vengono eseguiti in background. "
-"Puoi specificare in quale runlevels sono avviati."
+"Questi servizi vengono avviati una sola volta e sono eseguiti in background. "
+"Puoi specificare in quale runlevel avviarli."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
