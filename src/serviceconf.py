@@ -174,7 +174,7 @@ class Gui:
             pass
         self.dirty=0
         self.previous=None
-        self.services = servicemethods.Services(self.uicallback)
+        self.services = Services(self.uicallback)
 
         gtk.glade.bindtextdomain(domain)
 
@@ -276,7 +276,7 @@ class Gui:
 
         # initialize this to the runlevel we are running in. It will
         # change when one of the optRL[3-6] are selected
-        self.lblRunlevel.set_text(_("Currently Running in Runlevel: ") + self.editing_runlevel)
+        self.lblRunlevel.set_text(_("Currently Running in Runlevel: ") + str (self.editing_runlevel))
         
         self.bgListServices.get_selection().connect("changed", self.changed, self.bgListServices)
 
@@ -372,7 +372,7 @@ class Gui:
         if self.already_init == 0: 
             self.services.get_service_lists()
             
-            self.lblEditing.set_text(_("Editing Runlevel: ") + self.editing_runlevel)
+            self.lblEditing.set_text(_("Editing Runlevel: ") + str (self.editing_runlevel))
             self.already_init = 1
         
         for service in self.services:
