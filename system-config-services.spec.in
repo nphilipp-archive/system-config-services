@@ -71,6 +71,12 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Wed Feb 28 2006 Florian Festi <ffesti@redhat.com> 
+- rewrote large parts of servicemethods (OO design, better handling of 
+   old/new settings, read headers of init scripts completely)
+- first implementation of widegts to control services (intended for tools configureing single services like nfs, samba, bind, ...)
+ * still misses: i18n, dependencies on other services (like portmap)
+
 * Fri Jan 27 2006 Nils Philippsen <nphilipp@redhat.com> - 0.8.99.2
 - fix saving xinetd services
 

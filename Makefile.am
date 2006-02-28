@@ -9,7 +9,7 @@ EXTRA_DIST = \
 	system-config-services.console		\
 	system-config-services.pam		\
 	pycheckrc				\
-	pixmaps/system-config-services.png	\
+	pixmaps/*.png	\
 	intltool-extract.in			\
 	intltool-merge.in			\
 	intltool-update.in			\
@@ -36,7 +36,7 @@ install-data-hook:
 	$(mkinstalldirs) $(DESTDIR)$/usr/share/doc/system-config-services-$(VERSION)/
 	$(INSTALL_DATA) $(srcdir)/system-config-services.console $(DESTDIR)$(sysconfdir)/security/console.apps/system-config-services
 	$(INSTALL_DATA) $(srcdir)/system-config-services.pam $(DESTDIR)$(sysconfdir)/pam.d/system-config-services
-	$(INSTALL_DATA) $(srcdir)/pixmaps/system-config-services.png $(DESTDIR)$(pkgdatadir)/
+	$(INSTALL_DATA) $(srcdir)/pixmaps/*.png $(DESTDIR)$(pkgdatadir)/
 	$(INSTALL_DATA) $(srcdir)/pixmaps/system-config-services.png $(DESTDIR)$(prefix)/share/icons/hicolor/48x48/apps/system-config-services.png
 #	$(INSTALL_DATA) $(srcdir)/docs/html/* $(DESTDIR)/usr/share/doc/system-config-services-$(VERSION)
 	ln -fs consolehelper $(DESTDIR)$(prefix)/bin/system-config-services
@@ -48,7 +48,7 @@ uninstall-local:
 	rm -f $(DESTDIR)$(sysconfdir)/security/console.apps/system-config-services
 	rm -f $(DESTDIR)$(sysconfdir)/pam.d/system-config-services
 	rm -f $(DESTDIR)$(prefix)/bin/system-config-services
-	rm -f $(DESTDIR)$(pkgdatadir)/system-config-service.png
+	rm -f $(DESTDIR)$(pkgdatadir)/*.png
 	rm -f $(DESTDIR)$(prefix)/share/icons/hicolor/48x48/apps/system-config-services.png
 	rm -f $(DESTDIR)$(prefix)/bin/serviceconf
 
@@ -63,7 +63,6 @@ changelog:
 	fi
 	cat ChangeLog.new ChangeLog.old > ChangeLog
 	rm -f ChangeLog.new ChangeLog.old
-	
 
 clean:
 	rm -f system-config-services.desktop
