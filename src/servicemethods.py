@@ -1,11 +1,12 @@
 """The servicemethods module handles all the backend processing for the system-config-services application."""
 # serviceactions.py
-# Copyright (C) 2002 - 2005 Red Hat, Inc.
+# Copyright (C) 2002 - 2006 Red Hat, Inc.
 # Authors:
 # Tim Powers <timp@redhat.com>
 # Dan Walsh <dwalsh@redhat.com>
 # Brent Fox <bfox@redhat.com>
 # Nils Philippsen <nphilipp@redhat.com>
+# Florian Festi <ffesti@redhat.com>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -21,12 +22,7 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-import string
-import re
-import os
-import sys
-import select
-import gtk
+import re, os
 from rhpl.translate import _, N_, cat
 
 import nonblockingreader
@@ -36,308 +32,497 @@ def getstatusoutput(cmd, callback):
     pipe = os.popen("{ %s ; } 2>&1" % (cmd), 'r')
     output = nonblockingreader.Reader ().run ([pipe], callback)
     text = output[pipe]
-    sts = pipe.close ()
-    if sts is None: sts = 0
+    status = pipe.close ()
+    if status is None: status = 0
 
     if text[-1:] == '\n':
         text = text[:-1]
-    return sts, text
+    return status, text
 
-class ServiceMethods:
+# ============================================================================
+
+UNKNOWN = 0
+RUNNING = 1
+STOPPED = 2
+ERROR = 4
+
+class Service:
+    """Represents a service with start script in /etc/init.d
+    """
+    
+    def __init__(self, name, runlevels, services):
+        self.name = name
+        self._runlevels = runlevels
+        self._runlevels_old = runlevels[:]
+        self.services = services
+        self.uicallback = services.uicallback
+
+        self.startprio = None
+        self.stopprio = None
+        self.defaultrunlevels = []
+        
+        self.hide = False
+        self.description = ""
+        self.processnames = []
+        self.configfiles = []
+        self.pidfiles = []
+        self.probe = False
+        self._read_script_file()
+
+        self._dirty = False
+
+    def __getattr__(self, name):
+        # sloppy evaluate the status as it takes some time 
+        if name in ("status", "status_message"):
+            self.status, self.status_message = self.get_status()
+            if name == "status":
+                return self.status
+            else:
+                return self.status_message
+        else:
+            raise AttributeError, name
+
+    def is_xinetd_service(self):
+        return False
+
+    # ----
+
+    def get_runlevels(self):
+        return self._runlevels
+
+    # ----
+
+    def is_default(self):
+        """return if service is configured as suggested with defaultsrunlevels
+        This is either service is off in all runlevels or on on exatctly
+        the defaultrunlevels
+        """
+        if not self.defaultrunlevels:
+            return False
+        on = self._runlevels[self.defaultrunlevels[0]]
+        for runlevel in xrange(len(self._runlevels)):
+            if runlevel not in self.defaultrunlevels:
+                if self._runlevels[runlevel]: # non default switched on
+                    return False
+            elif self._runlevels[runlevel] != on:
+                # default runlevel != the others
+                return False
+        return True
+
+    # ----
+
+    def is_default_on(self):
+        """
+        Return if service is enabled in the default runlevels
+        Assumes .is_default() == True!!!"""
+        return self._runlevels[self.defaultrunlevels[0]]
+
+    # ----
+
+    def get_status(self):
+        """Execute /sbin/service name status
+        return (status of the service, the output of the command)
+        """
+        status = UNKNOWN
+        try:
+            message = getstatusoutput("LC_ALL=C /sbin/service " + self.name + " status", self.uicallback)[1]
+        except:
+            return (UNKNOWN, "")
+
+        if message.find("running")!=-1:
+            status = RUNNING
+        if message.find("stopped")!=-1:
+            status = STOPPED
+        return (status, message)
+
+    # ----
+
+    def get_script_file(self):
+        return "/etc/init.d/" + self.name
+        
+    # ====
+
+    def set_dirty(self):
+        """Tell that a config file got changed"""
+        if self.state != STOPPED:
+            self._dirty = True
+
+    # ----
+    
+    def is_dirty(self):
+        """Are there still changes not realized by the service yet"""
+        return self._dirty
+
+    # =====
+
+    def set_in_runlevels(self, on, editing_runlevels=0):
+        """changed if service is started in the given runlevels
+        runlevels may be an int or sequence of ints
+        changes are not written to disk. Use .save_changes()"""
+        
+        if isinstance(editing_runlevels, int):
+            editing_runlevels = [editing_runlevels]
+        for runlevel in editing_runlevels:
+            self._runlevels[runlevel] = on
+        self.services._service_changed(self)
+
+    # ----
+        
+    def _set_in_runlevels(self, on, editing_runlevels):
+        """calls chkconfig --level editing_runlevel on if on, off if not on"""
+        chkconfig_action = ("on", "off")[not on]
+        try:
+            getstatusoutput("LC_ALL=C /sbin/chkconfig --level %s %s %s" % (editing_runlevels, self.name, chkconfig_action), self.uicallback)
+        except IOError:
+            pass
+
+    # ----
+
+    def set(self, on):
+        """Change is service is started in the default runlevels"""
+        for runlevel in self.defaultrunlevels:
+            self._runlevels[runlevel] = on
+        self.services._service_changed(self)
+
+    # ----
+
+    def is_changed(self):
+        """Are there any changes to runlevel behaviour that
+        are not yet written to disk"""
+        
+        for new, old in zip(self._runlevels, self._runlevels_old):
+            if new != old:
+                return True
+        return False
+
+    # ----
+
+    def save_changes(self):
+        """when this method is used it saves the change to disk"""
+
+        changed = False
+        runlevel = 0
+        for new, old in zip(self._runlevels, self._runlevels_old):
+            if new ^ old:
+                self._set_in_runlevels(new, runlevel)
+                changed = True
+            runlevel += 1
+
+        self._runlevels_old = self._runlevels[:]
+        return changed
+    
+    # ----
+
+    def action(self, action):
+        """Execute /sbin/service servicename action.
+        return (errorcode, message)"""
+        
+        status, message = getstatusoutput("/sbin/service %s %s" %
+                                          (self.name, action),
+                                          self.uicallback)
+
+        if status != 0:
+            if action in ('start', 'restart', 'reload',  'conrestart'):
+                self.status =  ERROR
+                self.message = message
+            return (1, _("%s failed. The error was: %s") %
+                    (servicename, message))
+        else:
+            self.status, self.status_message = self.get_status()
+            self._dirty = False
+            return (0,"%s %s" % (self.name, action) +
+                    _(" successful"))
+    # ----
+                
+    def _read_script_file(self):
+        """Gets the description for the given initscript or xinet.d script"""
+
+
+        try:
+            fd = open(self.get_script_file())
+        except IOError:
+            return
+
+        tag_names = ["chkconfig", "description", "processname", "config",
+                     "pidfile", "probe", "hide",
+                     "default"] # xinetd
+                    # "description[ln]" still missing
+
+        data = []
+        tag = None
+        for line in fd:
+            if line[0]!="#":
+                break
+            line = line[1:].strip()
+
+            if not tag:
+                match = re.match(r"^\s*(\w+):", line)
+                if match and match.group(1) in tag_names:
+                    tag = match.group(1)                    
+                    line = line[match.end():]
+
+            if tag:
+                if line.endswith("\\"):
+                    data.append(line[:-1].strip())
+                else:
+                    data.append(line.strip())
+                    self._process_initscript_tag(tag, " ".join(data))
+                    tag = None
+                    data = []
+
+    def _process_initscript_tag(self, name, value):
+        """used by _read_script_file only"""
+        if name == "chkconfig":
+            match = re.match(r"\s*(\d+|-)\s*(\d+)\s*(\d+)", value)
+            if match:
+                if match.group(1) != "-":
+                    for char in match.group(1):
+                        self.defaultrunlevels.append(int(char))
+                self.startprio = int(match.group(2))
+                self.stopprio = int(match.group(3))
+        elif name == "default":
+            if value.find("on") != -1:
+                self.defaultrunlevels.append(0)
+        elif name == "description":
+            self.description = value
+        elif name == "processname":
+            self.processnames.append(value)
+        elif name == "config":
+            self.configfiles.append(value)
+        elif name == "pidfile":
+            self.pidfiles.append(value)
+        elif name == "probe":
+            self.probe = value.find("true") != -1
+        elif name == "hide":
+            self.hide = value.find("true") != -1
+
+# ============================================================================
+
+class XinetdService(Service):
+
+    def is_xinetd_service(self):
+        return True
+
+    def get_status(self):
+        xinetd = self.services.get('xinetd', None)
+        if xinetd:
+            return xinetd.get_status()
+        else:
+            return (UNKNOWN, "")
+
+    def get_script_file(self):
+        return "/etc/xinetd.d/" + self.name
+        
+    # ----
+
+    def _set_in_runlevels(self, on, editing_runlevels=None):
+        """calls chkconfig on/off"""
+        chkconfig_action = ("on", "off")[not on]
+        try:
+            getstatusoutput("LC_ALL=C /sbin/chkconfig %s %s" %
+                            (self.name, chkconfig_action), self.uicallback)
+        except IOError:
+            pass
+
+    # ----
+    
+    def action(self, action):
+        """starts, stops, and restarts the service. Returns the error
+        if the service failed in any of the actions.
+        """
+        xinetd = self.services.get('xinetd', None)
+    
+        if xinetd:
+            if xinetd.status != RUNNING: 
+                return (1, _("xinetd must be enabled for %s to run") %
+                        self.name)
+            error, output = xinetd.action('relaod')
+
+            if error != 0:
+                return (1,_("xinetd failed to reload for ") +
+                        servicename +
+                        _(". The error was: ") + output)
+            else:
+                return (0,_("xinetd reloaded %s successfully"))
+        else:
+            return (1, _("xinetd must be enabled for %s to run") %
+                    self.name)
+
+# ============================================================================
+
+class Services:
     """Includes methods used to find services, and information about them such
     as the description, whether or not it is configured etc."""
         
     def __init__(self, uicallback = None):
-        self.UNKNOWN=0
-        self.RUNNING=1
-        self.STOPPED=2
         self.uicallback = uicallback
-        
-    def get_status(self,servicename):
-        status = self.UNKNOWN
-        try:
-            message = getstatusoutput("LC_ALL=C /sbin/service " + servicename + " status", self.uicallback)[1]
-        except:
-            return (self.UNKNOWN,"")
+        self._services = { }
+        self._xinetd_services = { }
+        self._changed = { }
 
-        if string.find(message,"running")!=-1:
-            status=self.RUNNING
-        if string.find(message,"stopped")!=-1:
-            status=self.STOPPED
-        return (status,message)
-        
-    def get_descriptions(self, service_script):
-        """Gets the description for the given initscript or xinet.d script"""
-        formatted_description = ""
-        for i in range(0, len(service_script)):
+    # ----
 
-            if (string.find("%s" % service_script[i], "description:") != -1 ):
-                service_script[i] = string.replace(service_script[i], "description:" ,"")
+    def __getitem__(self, name):
+        return self._services.get(name, None) or self._xinetd_services[name]
 
-                while (string.find("%s" % service_script[i], "\\") != -1) :
-                    service_script[i] = string.replace(service_script[i], "#", "")
-                    service_script[i] = string.replace(service_script[i], "\\", "\n")
-                    service_script[i] = string.strip(service_script[i])
-                    formatted_description = formatted_description + " " + service_script[i]
-                    i = i + 1
+    # ----
 
-                formatted_description = formatted_description + " " + string.strip(string.replace(service_script[i],"#",""))
-                
-        return formatted_description
+    def has_key(self, name):
+        return (self._services.has_key(name) or
+                self._xinetd_services.has_key(name))
 
+    # ----
 
+    def __iter__(self):
+        """Iter over all non xinetd services"""
+        keys = self._services.keys()
+        keys.sort()
+        for key in keys:
+            yield self._services[key]
 
-    def check_if_on(self, servicename, editing_runlevel):
-        """returns 0 if the service is not configured, and 1 if it is"""
-        #runlevel = self.get_runlevel()
-        dirlist = os.listdir("/etc/rc.d/rc%s" % editing_runlevel + ".d")
+    # ----
 
-        have_match = 0
+    def xinetd_services(self):
+        """return iterator over all xinetd services"""
+        keys = self._xinetd_services.keys()
+        keys.sort()
+        for key in keys:
+            yield self._xinetd_services[key]
 
-         #for i in range(0,len(dirlist)):
-        for direntry in dirlist:
-            # check for start links only, we don't care if there is a kill link
-            if re.match(r'^[S][0-9][0-9]' + servicename, direntry ):
-                have_match = 1
-                break
-              
-        return have_match
-
-
-
-    def xinetd_check_if_on(self,servicename):
-        """returns 0 if the xinetd service is not enabled, 1 if it is enabled, and 1 if
-        there is no disabled line"""
-        try:
-            f = open("/etc/xinetd.d/" + servicename)
-        except IOError, msg:
-            print "/etc/xinetd.d/" + servicename, msg
-            sys.exit(1)
-            
-        xinetdscript = f.readlines()
-        f.close()
-        isenabled = 1
-        
-        for i in range(0,len(xinetdscript)):
-            if (string.find(xinetdscript[i], "disable")) != -1:
-                
-                if (string.find(xinetdscript[i], "yes")) != -1:
-                    isenabled = 0
-                    break
-
-        return isenabled
-                         
-        
+    # ----
 
     def get_runlevel(self):
         """returns the current runlevel, uses /sbin/runlevel"""
-        runlevel_output = getstatusoutput("/sbin/runlevel", self.uicallback)
+        status, output = getstatusoutput("/sbin/runlevel", self.uicallback)
         # This is the current runlevel
-        return runlevel_output[-1][2]
+        return int(output[2])
 
+    # ----
 
-
-    def chkconfig_add_service(self, servicename):
+    def add_service(self, servicename):
         """calls chkconfig --add servicename"""
-        return getstatusoutput("LC_ALL=C /sbin/chkconfig --add %s" % (servicename), self.uicallback)
+        result = getstatusoutput("LC_ALL=C /sbin/chkconfig --add %s" %
+                                 (servicename), self.uicallback)
+        self.update(servicename)
+        return result
+
+    # ----
         
-    def chkconfig_delete_service(self, servicename):
+    def delete_service(self, servicename):
         """calls chkconfig --del servicename"""
-        return getstatusoutput("LC_ALL=C /sbin/chkconfig --del %s" % (servicename), self.uicallback)
+        result = getstatusoutput("LC_ALL=C /sbin/chkconfig --del %s" %
+                                 (servicename), self.uicallback)
+        self.update(servicename)
+        return result
         
-    def chkconfig_add_del(self, servicename, add_or_del, editing_runlevel):
-        """calls chkconfig --level , on if add_or_del == 1, off if add_or_del == 0"""
-        if add_or_del == 1:
-            chkconfig_action = "on"
-        elif add_or_del == 0:
-            chkconfig_action = "off"
+    # ----
 
-        if add_or_del == 1 or add_or_del == 0:
-            try:
-                getstatusoutput("LC_ALL=C /sbin/chkconfig --level %s %s %s" % (editing_runlevel, servicename, chkconfig_action), self.uicallback)
-            except IOError:
-                pass
-            self.dict_bgServices[servicename][0][int(editing_runlevel)] = add_or_del
+    def _service_from_chkconfig(self, line):
+        """parse one line of chkconfig --list output
+        return (name, runlevels as list of bools)
+               or None if not a valid line"""
+        line = line.strip()
+        if not line: return None
 
-    def xinet_add_del(self, xinetd_servicename, add_or_del):
-        """adds and removes 'disable = yes' from xinetd service scripts"""
-        if add_or_del == 1:
-            disable_option = "on"
-        elif add_or_del == 0:
-            disable_option = "off"
+        entries = line.split("\t")
+        entries = [entry.strip() for entry in entries]
 
-        if add_or_del == 1 or add_or_del == 0:
-            #try:
-            #print 'getstatusoutput("LC_ALL=C /sbin/chkconfig %s %s", %s)' % (xinetd_servicename, disable_option, self.uicallback)
-            getstatusoutput("LC_ALL=C /sbin/chkconfig %s %s" % (xinetd_servicename , disable_option), self.uicallback)
-            #except:
-            #    pass
-            self.dict_odServices[xinetd_servicename][0][0] = add_or_del
+        if entries[0].endswith(":"):
+            name = entries[0][:-1]
+        else:
+            name = entries[0]
+                
+        if name == "xinetd based services": return None
 
-    def get_service_lists (self, idle_func):
-        """populates the self.dict_bgServices, self.dict_bgServices_orig, self.dict_odServices, self.dict_odServices_orig dictionaries and the self.bgServices, self.odServices lists with service information including whether or not a service is configured to start (in runlevels 0-6), as well as whether it is an xinetd service, as well as service descriptions."""
-        self.dict_bgServices= {}
-        self.dict_odServices= {}
-        # these will be unmodified self.dict_{bg,od}Services
-        self.dict_bgServices_orig = {}
-        self.dict_odServices_orig = {}
+        entries = entries[1:]
+        runlevels = [entry.split(":")[-1]=="on" for entry in entries]
 
+        return name, runlevels
+
+    # ----
+
+    def get_service_lists (self, servicename=''):
+        """read in data about services in the system. 
+        if servicename is given only get data for this service
+        """
+        self._services = {}
+        self._xinetd_services = {}
+
+        chkconfig_list = getstatusoutput(
+          "LC_ALL=C /sbin/chkconfig --list %s 2>/dev/null" % servicename,
+          self.uicallback)[1]
+
+        chkconfig_list = chkconfig_list.splitlines()
         
-        idle_func ()
-
-        self.bgServices = []
-        self.odServices = []
-        
-        chkconfig_list = getstatusoutput("LC_ALL=C /sbin/chkconfig --list 2>/dev/null", self.uicallback)[1]
-        chkconfig_list = re.split('\n', chkconfig_list)
-        dict={}
-        for i in chkconfig_list:
-            i = i.strip ()
-            if len(i) == 0:
+        for line in chkconfig_list:
+            service = self._service_from_chkconfig(line)
+            if service is None:
                 continue
-            x=re.split(r"\t", i)
-            end= x[0].rfind(":")
-            if end >= 0:
-                name = x[0][:end].strip()
+            name, runlevels = service
+            if len(runlevels) == 1:
+                service = XinetdService(name, runlevels, self)
+                self._xinetd_services[name] = service
             else:
-                name=x[0].strip()
-            if name != "xinetd based services":
-                runlevel=x[1:]
-                if len(runlevel) > 1:
-                    for i in xrange(0,len(runlevel)):
-                        runlevel[i]=runlevel[i].split(":")[1]
+                service = Service(name, runlevels, self)
+                self._services[name] = service
+
+        if servicename and self._xinetd_services:
+            #if only one xinetd service loaded load also xinetd
+            self.update("xinetd")
+
+    # ----
+
+    def update(self, servicename):
+        """Read status of service from disk. If service got removed
+        remove from ourselfs"""
+        status, output = getstatusoutput("LC_ALL=C /sbin/chkconfig --list " +
+                                         servicename, self.uicallback)
+        if status == 0:
+            service = self._service_from_chkconfig(output)
+            if service is not None:
+                name, runlevels = service
+                if len(runlevels) == 1:
+                    service = XinetdService(name, runlevels, self)
+                    self._xinetd_services[name] = service
                 else:
-                    self.odServices.append(name)
-                dict[name]=runlevel
-
-        for servicename in dict.keys():
-            if len(dict[servicename]) == 1:
-                continue
-            idle_func ()
-            # read each initscript
-            initscript = []
-            try:
-                f = open("/etc/init.d/" + servicename)
-            except IOError, msg:
-                print "/etc/init.d/" + servicename , msg
-                continue
-                
-            line = f.readline()
-            while line:
-                if re.match('\A\#', line):
-                    initscript.append(line)
-                    line = f.readline()
-                    continue
-                if line.strip()=="":
-                    line = f.readline()
-                    continue
-                f.close()
-                break
-                
-            runlevels = dict[servicename]
-            for i in range(0, len(runlevels)):
-                runlevels[i] = string.strip(runlevels[i])
-                if runlevels[i] == "off" :
-                    runlevels[i] = 0
-                else:
-                    runlevels[i] = 1
-
-            self.dict_bgServices[servicename] = [runlevels, 0, self.get_descriptions(initscript)]
-            self.dict_bgServices_orig[servicename] = [runlevels, 0]
+                    service = Service(name, runlevels, self)
+                    self._services[name] = service
+                return
             
-            # look through the first 25 lines to see if we have "hide: true" in there.
-            # if it's there, remove the service from the dictionary
-            for i in range(0, len(initscript)):
-                if (string.find("%s" % initscript[i], "hide:") != -1) and \
-                   (string.find("%s" % initscript[i], "true") != -1):
-                    del self.dict_bgServices[servicename]
-                    del self.dict_bgServices_orig[servicename]
-                
-        for servicename in self.odServices:
-            # read each file for xinetd.d
-            try:
-                f = open("/etc/xinetd.d/%s" % servicename)
-            except IOError, msg:
-                print "/etc/xinetd.d/" + servicename, msg
-                continue
-                
-            xinetd_script = f.readlines()
-            f.close()
+        # service not found, remove if exists in memory
+        self._xinetd_services.pop(servicename)
+        self._services.pop(servicename)
+    
+    # ----
 
-            runlevels = dict[servicename]
+    def is_changed(self):
+        """Runlevel behaviour of any service got changed
+        but not yet written to disk"""
+        return bool(self._changed)
 
-            if runlevels[0] == "off":
-                runlevels = [0]
-            elif runlevels[0] == "on":
-                runlevels = [1]
-            else:
-                continue
+    # ----
 
-            # configured=1 if the service is configured already
-            # configured = self.xinetd_check_if_on(servicename)
+    def _service_changed(self, service):
+        """Called by a service that got changed"""
+        if service.is_changed():
+            self._changed[service] = 1
+        else:
+            self._changed.pop(service, None)
             
-            # the list corresponding to the key is: [configured, is it an xinetd serv., description]
-            self.dict_odServices[servicename] = [runlevels, 1, "%s" % self.get_descriptions(xinetd_script)]
-            self.dict_odServices_orig[servicename] = [runlevels, 1]
-            
-        self.bgServices = self.dict_bgServices.keys()
-        self.bgServices.sort()
+    
+    # ----
 
-        # an unmodified dictionary. Needed to compare for saving etc.
-                
-        return self.bgServices, self.dict_bgServices, self.odServices, self.dict_odServices
-
-    def get_dicts (self, servicename):
-        if self.dict_bgServices.has_key (servicename):
-            return self.dict_bgServices, self.dict_bgServices_orig
-        elif self.dict_odServices.has_key (servicename):
-            return self.dict_odServices, self.dict_odServices_orig
-
-    def save_changes(self, servicename, service_enabled, editing_runlevel):
+    def save_changes(self):
         """when this method is used it saves the change to disk"""
-        #print "save_changes (%s, %s, %s, %s)" % (self, servicename, service_enabled, editing_runlevel)
-        dict, dict_orig = self.get_dicts (servicename)
-        if dict[servicename]:
-            # only save changes
-            if int(dict_orig[servicename][0][int(editing_runlevel)]) != int(service_enabled):
-                dict[servicename][0][int(editing_runlevel)] = service_enabled
-                
-                #check to make sure we are an initscript and not an xinetd service
-                if int(dict[servicename][1]) == 0:
-                    self.chkconfig_add_del(servicename, service_enabled, editing_runlevel)
-                # for xinetd services
-                else:
-                    self.xinet_add_del(servicename, service_enabled)
-                    self.reload_xinetd = True
+        for service in self._services.itervalues():
+            service.save_changes()
 
-    def save_begin (self):
-        self.reload_xinetd = False
+        reload_xinetd = False
+        for service in self._xinetd_services.itervalues():
+            changed = service.save_changes()
+            reload_xinetd = reload_xinetd or changed
 
-    def save_end (self):
-        if self.reload_xinetd:
+        if reload_xinetd:
             getstatusoutput("/sbin/service xinetd reload", self.uicallback)
 
-    def service_action_results(self, servicename, action_type, runlevel):
-        """starts, stops, and restarts the service. returns the error if the service failed in any of the actions"""
-        dict, dict_orig = self.get_dicts (servicename)
-        if dict.has_key(servicename):
-            if int(dict[servicename][1]) == 1:
-                if int(self.dict_bgServices["xinetd"][0][int(runlevel)]) == 1:
-                    action_results = getstatusoutput("/sbin/service xinetd reload", self.uicallback)
-
-                    if action_results[0] != 0:
-                        return (1,_("xinetd failed to reload for ") + servicename +
-                                _(". The error was: ") + action_results[1])
-                    else:
-                        return (0,_("xinetd reloaded %s successfully"))
-
-                else:
-                    return (1, _("xinetd must be enabled for %s to run") % servicename)
-
-            if int(dict[servicename][1]) == 0:
-                action_results = getstatusoutput("/sbin/service %s %s" % (servicename, action_type), self.uicallback)
-                if action_results[0] != 0:
-                    return (1, _("%s failed. The error was: %s") % (servicename,action_results[1]))
-                else:
-                    return (0,"%s %s" % (servicename, action_type) + _(" successful"))
-                
+        self._changed = { }
