@@ -9,7 +9,8 @@ EXTRA_DIST = \
 	system-config-services.console		\
 	system-config-services.pam		\
 	pycheckrc				\
-	pixmaps/*.png	\
+	pixmaps/rhlogo.png	\
+	pixmaps/system-config-services.png	\
 	intltool-extract.in			\
 	intltool-merge.in			\
 	intltool-update.in			\
