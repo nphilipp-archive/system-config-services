@@ -14,6 +14,8 @@ Requires: pygtk2, pygtk2-libglade, rhpl
 Requires: usermode >= 1.36, usermode-gtk
 Requires: htmlview
 Requires: python >= @PYTHON_MINVER@
+Requires(post): hicolor-icon-theme
+Requires(postun): hicolor-icon-theme
 BuildRequires: automake
 Obsoletes: serviceconf
 Obsoletes: redhat-config-services
@@ -71,11 +73,15 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Fri Mar 03 2006 Nils Philippsen <nphilipp@redhat.com> - 0.9.0
+- requires hicolor-icon-theme (#182878, #182879)
+
 * Wed Feb 28 2006 Florian Festi <ffesti@redhat.com> 
-- rewrote large parts of servicemethods (OO design, better handling of 
-   old/new settings, read headers of init scripts completely)
-- first implementation of widegts to control services (intended for tools configureing single services like nfs, samba, bind, ...)
- * still misses: i18n, dependencies on other services (like portmap)
+- rewrote large parts of servicemethods (OO design, better handling of old/new
+  settings, read headers of init scripts completely)
+- first implementation of widgets to control services (intended for tools
+  configuring single services like nfs, samba, bind, ...), still missing: i18n,
+  dependencies on other services (like portmap)
 
 * Fri Jan 27 2006 Nils Philippsen <nphilipp@redhat.com> - 0.8.99.2
 - fix saving xinetd services
