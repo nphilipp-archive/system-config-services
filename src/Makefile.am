@@ -20,7 +20,6 @@ install-exec-local:
 	install -m 0755 $(srcdir)/checklist.py $(DESTDIR)$(pkgdatadir)/
 	install -m 0755 $(srcdir)/nonblockingreader.py $(DESTDIR)$(pkgdatadir)/
 	install -m 0755 $(srcdir)/servicemethods.py $(DESTDIR)$(pkgdatadir)/
-	install -m 0755 $(srcdir)/servicecontrol.py $(DESTDIR)$(pkgdatadir)/
 	python -c 'import compileall; compileall.compile_dir ("'"$(DESTDIR)$(pkgdatadir)"'", ddir="'"$(pkgdatadir)"'", maxlevels=10, force=1)'
 	softdir=$(pkgdatadir); \
 	p=$(DESTDIR) ; \
