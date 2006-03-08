@@ -1,27 +1,24 @@
 # translation of pa.po to Punjabi
 # <kbstpunjab@netscape.net>
+#
+#
 # Amanpreet Singh Alam <aalam@redhat.com>, 2004.
 # Amanpreet Singh Alam[ਆਲਮ] <amanpreetalam@yahoo.com>, 2005.
-# Amanpreet Singh Alam[ਆਲਮ] <amanpreetalam@yahoo.com>, 2005.
-# Amanpreet Singh Alam[ਆਲਮ] <amanpreetalam@yahoo.com>, 2005.
-# Amanpreet Singh Alam[ਆਲਮ] <amanpreetalam@yahoo.com>, 2005.
-# Amanpreet Singh Alam[ਆਲਮ] <amanpreetalam@yahoo.com>, 2005.
 # Jaswinder Singh Phulewala <jaswinderphulewala@yahoo.com>, 2006.
-#
-#
+# A S Alam <apbrar@gmail.com>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-27 17:07+0100\n"
-"PO-Revision-Date: 2006-01-28 10:03+0530\n"
-"Last-Translator: Jaswinder Singh Phulewala <jaswinderphulewala@yahoo.com>\n"
+"PO-Revision-Date: 2006-03-08 16:31+0530\n"
+"Last-Translator: A S Alam <apbrar@gmail.com>\n"
 "Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.10.2\n"
-"Plural-Forms: Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "\n"
 "\n"
 
@@ -65,7 +62,7 @@ msgstr ""
 #: ../src/serviceconf.py:75
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr "ਕੀ ਤੁਸੀਂ ਯਕੀਨਨ ਹੀ %s ਨੂੰ ਖਤਮ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
+msgstr "ਕੀ ਤੁਸੀਂ %s ਨੂੰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: ../src/serviceconf.py:130
 #, python-format
@@ -101,8 +98,8 @@ msgid ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
-"ਸਿਸਟਮ ਸੇਵਾਵਾਂ ਸੰਰਚਨਾ ਸੰਦ ਦਾ ਵਰਜਨ\n"
-" Â© 2002-2006 ਲਈ ਰੈੱਡ ਹੈਟ ਕੋਲ ਹੱਕ ਰਾਖਵੇਂ ਹਨ\n"
+"ਸਿਸਟਮ ਸੇਵਾਵਾਂ ਸੰਰਚਨਾ ਸੰਦ  ਵਰਜਨ\n"
+" Â© 2002-2006 ਲਈ Red Hat, Inc. ਕੋਲ ਹੱਕ ਰਾਖਵੇਂ ਹਨ\n"
 " ਟਿਮ ਪਾਵਰਸ <timp@redhat.com>\n"
 " ਬਿੱਲ ਨਾਟੀਇੰਗਮ <notting@redhat.com>\n"
 " ਡੇਨ ਵਾਲਿਸ਼ <dwalsh@redhat.com>\n"
@@ -120,15 +117,15 @@ msgstr "ਸਹਾਇਤਾ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ।"
 
 #: ../src/serviceconf.py:746
 msgid "You must run system-config-services as root."
-msgstr "ਤੁਹਾਨੂੰ system-config-services ਪ੍ਰਬੰਧਕ(root) ਦੇ ਤੌਰ ਤੇ ਚਲਾਉਣੀ ਪਵੇਗੀ।"
+msgstr "ਤੁਹਾਨੂੰ system-config-services ਪ੍ਰਬੰਧਕ (root) ਦੇ ਤੌਰ ਉੱਤੇ ਚਲਾਉਣਾ ਚਾਹੀਦਾ ਹੈ।"
 
 #: ../src/servicemethods.py:329
 msgid "xinetd failed to reload for "
-msgstr "xinetd ਇਸ ਦੇ ਲਈ ਫਿਰ ਲੋਡ ਕਰਨ ਵਿਚ ਅਸਫਲ ਰਿਹਾ ਹੈ"
+msgstr "xinetd ਲੋਡ ਕਰਨ ਵਿਚ ਅਸਫਲ"
 
 #: ../src/servicemethods.py:330
 msgid ". The error was: "
-msgstr "। ਗਲਤੀ ਇਹ ਸੀ: "
+msgstr "। ਗਲਤੀ ਸੀ: "
 
 #: ../src/servicemethods.py:332
 #, python-format
@@ -151,7 +148,7 @@ msgstr " ਸਫਲਤਾਪੂਰਕ"
 
 #: ../src/serviceconf.glade.h:1
 msgid "Add Service"
-msgstr "ਸੇਵਾਵਾਂ ਸ਼ਾਮਿਲ"
+msgstr "ਸੇਵਾ ਸ਼ਾਮਿਲ"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
@@ -183,23 +180,23 @@ msgstr "ਮੁਡ਼ ਚਾਲੂ"
 
 #: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
-msgstr "ਆਖਰੀ ਸੰਭਾਲ ਖੋਲੋ(_L)"
+msgstr "ਆਖਰੀ ਸੰਭਾਲ ਖੋਲ੍ਹੋ(_L)"
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
-msgstr "ਰੰਨਲੈਵਲ_3"
+msgstr "ਰੰਨਲੈਵਲ _3"
 
 #: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
-msgstr "ਰੰਨਲੈਵਲ_4"
+msgstr "ਰੰਨਲੈਵਲ _4"
 
 #: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
-msgstr "ਰੰਨਲੈਵਲ_5"
+msgstr "ਰੰਨਲੈਵਲ _5"
 
 #: ../src/serviceconf.glade.h:13
 msgid "Runlevel _All"
-msgstr "ਰੰਨਲੈਵਲ_ਸਭ"
+msgstr "ਸਭ ਰੰਨਲੈਵਲ(_A)"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
@@ -223,7 +220,7 @@ msgstr "ਸ਼ੁਰੂ"
 
 #: ../src/serviceconf.glade.h:19
 msgid "Status"
-msgstr "ਸਥਿਤੀ"
+msgstr "ਹਾਲਤ"
 
 #: ../src/serviceconf.glade.h:20
 msgid "Stop"
@@ -279,7 +276,7 @@ msgstr "ਸਹਾਇਤਾ(_H)"
 
 #: ../src/serviceconf.glade.h:31
 msgid "_On Demand Services"
-msgstr "ਲੋੜ ਮੁਤਾਬਿਕ ਸੇਵਾਵਾਂ ਾਲO ਕਰੋ(_R)"
+msgstr "ਮੰਗ ਉੱਤੇ ਸੇਵਾਵਾਂ(_R)"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
@@ -287,15 +284,15 @@ msgstr "ਬਾਹਰ(_Q)"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
-msgstr "ਸੇਵਾ ਸੂਚੀ ਨੂੰ ਮੁੜ ਤਾਜ਼ਾ ਕਰੋ(_R)"
+msgstr "ਸੇਵਾ ਸੂਚੀ ਮੁੜ ਤਾਜ਼ਾ(_R)"
 
 #: ../src/serviceconf.glade.h:34
 msgid "_Restart Service"
-msgstr "ਸੇਵਾ ਮੁਡ਼ ਚਾਲੂ ਕਰੋ(_R)"
+msgstr "ਸੇਵਾ ਮੁਡ਼ ਚਾਲੂ(_R)"
 
 #: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
-msgstr "ਤਬਦੀਲੀਆਂ ਨੂੰ ਸੰਭਾਲੋ(_S)"
+msgstr "ਤਬਦੀਲੀਆਂ ਸੰਭਾਲੋ(_S)"
 
 #: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
@@ -311,8 +308,9 @@ msgstr "ਸੰਰਚਨਾ ਕਰੋ ਕਿ ਸਿਸਟਮ ਚਾਲੂ ਹੋ�
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr "ਸੇਵਾ ਪ੍ਰਬੰਧਨ:"
+msgstr "ਸੇਵਾ ਪਰਬੰਧ"
 
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "ਸੇਵਾਵਾਂ"
+
