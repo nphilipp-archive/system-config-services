@@ -1,14 +1,14 @@
 # system-config-services Bahasa Indonesia (Id)
-# Copyright (C) 2004
+# Copyright (C) 2004-2006
 # This file is distributed under the same license as the system-config-services package.
-# Teguh DC <dheche@brawijaya.ac.id>, 2004.
+# Teguh DC <dheche@brawijaya.ac.id>, 2004-2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services-0.8.15-1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-27 12:24+0100\n"
-"PO-Revision-Date: 2005-10-28 05:25+0700\n"
+"PO-Revision-Date: 2006-03-10 23:42+0700\n"
 "Last-Translator: Teguh DC <dheche@bradjamoesti.or.id>\n"
 "Language-Team: Linux Indonesia <http:/www.linux.or.id>\n"
 "MIME-Version: 1.0\n"
@@ -46,7 +46,6 @@ msgid "All"
 msgstr "Semua"
 
 #: ../src/serviceconf.py:552
-#, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -58,11 +57,12 @@ msgid ""
 " "
 msgstr ""
 "System Services Configuration Tool VERSION\n"
-" Hakcipta (c) 2002-2004 Red Hat, Inc.\n"
+" Hakcipta © 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat>\n"
 " Bill Nottingham <notting@redhat>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
 #: ../src/serviceconf.py:556
@@ -189,12 +189,17 @@ msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
+"Layanan ini akan dijalankan apabila ada permintaan dan akan diakhiri ketika "
+"tidak ada lagi yang harus dilakukan. Layanan <b>xinetd</b> harus dijalankan "
+"sehingga ia dapat digunakan."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
 msgstr ""
+"Layanan ini dijalankan satu kali dan berjalan di background. Anda dapat "
+"menentukan di runlevel mana ia berjalan."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -209,9 +214,8 @@ msgid "_Actions"
 msgstr "Aksi"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "_Jalankan Layanan"
+msgstr "Layanan _Background"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
@@ -230,9 +234,8 @@ msgid "_Help"
 msgstr "_Bantuan"
 
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "_Jalankan Kembali Layanan"
+msgstr "Layanan _On Demand"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
