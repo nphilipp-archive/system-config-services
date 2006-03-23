@@ -1,47 +1,51 @@
+# translation of mr.po to Marathi
 # Marathi translations for PACKAGE package.
 # Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Automatically generated, 2004.
+# Rahul Bhalerao <rbhalera@redhat.com>, 2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: mr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-27 12:24+0100\n"
-"PO-Revision-Date: 2004-04-06 14:50-0400\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2006-03-23 20:05+0530\n"
+"Last-Translator: Rahul Bhalerao <rbhalera@redhat.com>\n"
+"Language-Team: Marathi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../src/serviceconf.py:75
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "तुम्ही नक्की %s नष्ट करू इच्छिता?"
 
 #: ../src/serviceconf.py:130
 #, python-format
 msgid "Runlevel %d"
-msgstr ""
+msgstr "रनलेव्हल %d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:271
 msgid "Currently Running in Runlevel: "
-msgstr ""
+msgstr "सध्या सुरू असलेली रनलेव्हल: "
 
 #: ../src/serviceconf.py:376 ../src/serviceconf.py:489
 msgid "Editing Runlevel: "
-msgstr ""
+msgstr "संपादित आहे रनलेव्हल: "
 
 #: ../src/serviceconf.py:430
 msgid "Unknown"
-msgstr ""
+msgstr "अपरिचित"
 
 #: ../src/serviceconf.py:518
 msgid "All"
-msgstr ""
+msgstr "सर्व"
 
 #: ../src/serviceconf.py:552
 msgid ""
@@ -57,201 +61,204 @@ msgstr ""
 
 #: ../src/serviceconf.py:556
 msgid "About"
-msgstr ""
+msgstr "च्या विषयी"
 
 #: ../src/serviceconf.py:585
 msgid "Help is not available."
-msgstr ""
+msgstr "मदत उपलब्ध नाही."
 
 #: ../src/serviceconf.py:741
 msgid "You must run system-config-services as root."
-msgstr ""
+msgstr "system-config-services सुरू करण्यासाठी तुम्ही root असणे आवश्यक आहे."
 
 #: ../src/servicemethods.py:321
 msgid "xinetd failed to reload for "
-msgstr ""
+msgstr "यासाठी पुनर्दाखल होण्यास xinetd अयशस्वी"
 
 #: ../src/servicemethods.py:322
 msgid ". The error was: "
-msgstr ""
+msgstr "ही त्रुटी होती: "
 
 #: ../src/servicemethods.py:324
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr ""
+msgstr "xinetd %s पुनर्दाखल करण्यात यशस्वी"
 
 #: ../src/servicemethods.py:327
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr ""
+msgstr "%s सुरू करण्यासाठी xinetd स सक्षम करणे आवश्यक आहे"
 
 #: ../src/servicemethods.py:332
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr ""
+msgstr "%s अयशस्वी. त्रुठी होती:%s"
 
 #: ../src/servicemethods.py:334
 msgid " successful"
-msgstr ""
+msgstr "यशस्वी"
 
 #: ../src/serviceconf.glade.h:1
 msgid "Add Service"
-msgstr ""
+msgstr "सेवा मिळवा"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
-msgstr ""
+msgstr "सध्या कार्यरत रनलेव्हल: "
 
 #: ../src/serviceconf.glade.h:3
 msgid "Delete Service"
-msgstr ""
+msgstr "सेवा नष्ट करा"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
-msgstr ""
+msgstr "वर्णन"
 
 #: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
-msgstr ""
+msgstr "सुरक्षित करु नये"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
-msgstr ""
+msgstr "संपादित आहे रनलेव्हल:"
 
 #: ../src/serviceconf.glade.h:7
 msgid "None"
-msgstr ""
+msgstr "काही नाही"
 
 #: ../src/serviceconf.glade.h:8
 msgid "Restart"
-msgstr ""
+msgstr "पुनःआरंभ"
 
 #: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
-msgstr ""
+msgstr "सुरक्षित पूर्वस्थितीवर जा(_L)"
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
-msgstr ""
+msgstr "रनलेव्हल ३(_3)"
 
 #: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
-msgstr ""
+msgstr "रनलेव्हल ४(_4)"
 
 #: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
-msgstr ""
+msgstr "रनलेव्हल ५(_5)"
 
 #: ../src/serviceconf.glade.h:13
 msgid "Runlevel _All"
-msgstr ""
+msgstr "रनलेव्हल सर्व(_A)"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
-msgstr ""
+msgstr "सेवा थांबवा(_t)"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "संभाषण सुरक्षित करा"
 
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
-msgstr ""
+msgstr "सेवांची व्यूहरचना"
 
 #: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
-msgstr ""
+msgstr "सेवेचे नाव: "
 
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
-msgstr ""
+msgstr "आरंभ"
 
 #: ../src/serviceconf.glade.h:19
 msgid "Status"
-msgstr ""
+msgstr "स्थिती"
 
 #: ../src/serviceconf.glade.h:20
 msgid "Stop"
-msgstr ""
+msgstr "थांबा"
 
 #: ../src/serviceconf.glade.h:21
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
+msgstr "या सेवा मागणीनुसार सुरू झाल्या आहेत आणि जेव्हा करण्यासाठी अधिक काही शिल्लक नसेल तेव्हा बंद होतील. <b>xinetd</b> सेवा कार्यरत असायला हवी, जेणेकरुन त्या वापरता येतील."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr ""
+msgstr "या सेवा एकदा सुरू होउन पार्श्वभागात कार्यरत असतात. त्यांनी कोणत्या रनलेव्हलमध्ये सुरू व्हावे हे तुम्ही ठरवू शकता."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"तुम्ही चालू रनलेव्हलमध्ये बदल केले आहेत.\n"
+"हे बदल तुम्ही सुरक्षित करू इच्छिता?"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
-msgstr ""
+msgstr "क्रिया(_A)"
 
 #: ../src/serviceconf.glade.h:26
 msgid "_Background Services"
-msgstr ""
+msgstr "पार्श्वसेवा(_B)"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr ""
+msgstr "अंतर्भूत बाबी(_C)"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
-msgstr ""
+msgstr "रनलेव्हल संपादन(_E)"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr ""
+msgstr "फाइल(_F)"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr ""
+msgstr "मदत(_H)"
 
 #: ../src/serviceconf.glade.h:31
 msgid "_On Demand Services"
-msgstr ""
+msgstr "मागणी आधारित सेवा(_O)"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
-msgstr ""
+msgstr "सोडून द्या(_Q)"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
-msgstr ""
+msgstr "सेवांच्या यादीस पुनःउजाळा द्या(_R)"
 
 #: ../src/serviceconf.glade.h:34
 msgid "_Restart Service"
-msgstr ""
+msgstr "सेवा पुन्हा सुरू करा(_R)"
 
 #: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
-msgstr ""
+msgstr "बदल सुरक्षित करा(_S)"
 
 #: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
-msgstr ""
+msgstr "सेवा सुरू करा(_S)"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr ""
+msgstr "दृश्य(_V)"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "प्रणाली सुरू होताना कोणत्या सेवा कार्यान्वीत असाव्यात याची रचना करा"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr ""
+msgstr "सेवा व्यवस्थापन"
 
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
-msgstr ""
+msgstr "सेवा"
+
