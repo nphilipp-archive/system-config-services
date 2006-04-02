@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-27 12:24+0100\n"
-"PO-Revision-Date: 2006-04-02 15:57-0300\n"
+"PO-Revision-Date: 2006-04-02 17:09-0300\n"
 "Last-Translator: Rodrigo Padula de Oliveira <rodrigopadula@projetofedora.org>\n"
 "Language-Team: Brazilian Portuguese\n"
 "MIME-Version: 1.0\n"
@@ -39,11 +39,11 @@ msgstr "Nível de Execução %d"
 #. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:271
 msgid "Currently Running in Runlevel: "
-msgstr "Atualmente sendo Executado no Nível: "
+msgstr "Atualmente Executando no Nível de Execução: "
 
 #: ../src/serviceconf.py:376 ../src/serviceconf.py:489
 msgid "Editing Runlevel: "
-msgstr "Editar Nível de Execução: "
+msgstr "Editando Nível de Execução: "
 
 #: ../src/serviceconf.py:430
 msgid "Unknown"
@@ -262,7 +262,7 @@ msgstr "_Iniciar Serviço"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr "_Ver"
+msgstr "_Exibir"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
