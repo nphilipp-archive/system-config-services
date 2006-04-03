@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-27 12:24+0100\n"
-"PO-Revision-Date: 2004-04-06 17:57+0200\n"
+"POT-Creation-Date: 2006-02-06 17:45+0100\n"
+"PO-Revision-Date: 2006-04-02 17:57+0200\n"
 "Last-Translator: Maxim Dziumanenko <mvd@mylinux.com.ua>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,9 +22,9 @@ msgid "Are you sure you want to delete the %s?"
 msgstr "Ви впевнені, що хочете видалити %s?"
 
 #: ../src/serviceconf.py:130
-#, fuzzy, python-format
+#, python-format
 msgid "Runlevel %d"
-msgstr "Рівень запуску _3"
+msgstr "Рівень запуску %d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
@@ -32,20 +32,19 @@ msgstr "Рівень запуску _3"
 msgid "Currently Running in Runlevel: "
 msgstr "поточний рівень запуску:"
 
-#: ../src/serviceconf.py:376 ../src/serviceconf.py:489
+#: ../src/serviceconf.py:374 ../src/serviceconf.py:491
 msgid "Editing Runlevel: "
 msgstr "Редагування рівня запуску:"
 
-#: ../src/serviceconf.py:430
+#: ../src/serviceconf.py:428
 msgid "Unknown"
 msgstr "Невідомий"
 
-#: ../src/serviceconf.py:518
+#: ../src/serviceconf.py:520
 msgid "All"
-msgstr ""
+msgstr "Усі"
 
-#: ../src/serviceconf.py:552
-#, fuzzy
+#: ../src/serviceconf.py:554
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -57,51 +56,52 @@ msgid ""
 " "
 msgstr ""
 "Утиліта налаштовування конфігурації служб VERSION\n"
-" Авторські права (c) 2002-2004 Red Hat, Inc.\n"
+" Авторські права © 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat>\n"
 " Bill Nottingham <notting@redhat>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:556
+#: ../src/serviceconf.py:558
 msgid "About"
 msgstr "Про програму"
 
-#: ../src/serviceconf.py:585
+#: ../src/serviceconf.py:587
 msgid "Help is not available."
 msgstr "Довідка недоступна."
 
-#: ../src/serviceconf.py:741
+#: ../src/serviceconf.py:746
 msgid "You must run system-config-services as root."
 msgstr ""
 "Необхідно запускати програму system-config-services з правами користувача "
 "root."
 
-#: ../src/servicemethods.py:321
+#: ../src/servicemethods.py:315
 msgid "xinetd failed to reload for "
 msgstr "Помилка перезавантаження xinetd для "
 
-#: ../src/servicemethods.py:322
+#: ../src/servicemethods.py:316
 msgid ". The error was: "
-msgstr ". Трапилась помилка:"
+msgstr ". Виникла помилка:"
 
-#: ../src/servicemethods.py:324
+#: ../src/servicemethods.py:318
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd перезавантажив %s успішно"
 
-#: ../src/servicemethods.py:327
+#: ../src/servicemethods.py:321
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "Щоб запустити службу %s потрібно увімкнути xinetd"
 
-#: ../src/servicemethods.py:332
+#: ../src/servicemethods.py:326
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "Помилка запуску %s. Трапилась помилка: %s"
 
-#: ../src/servicemethods.py:334
+#: ../src/servicemethods.py:328
 msgid " successful"
 msgstr " успішно"
 
@@ -154,9 +154,8 @@ msgid "Runlevel _5"
 msgstr "Рівень запуску _5"
 
 #: ../src/serviceconf.glade.h:13
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "Рівень запуску _3"
+msgstr "Рівень запуску _усі"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
@@ -191,12 +190,16 @@ msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
+"Ці служби запускаються за вимогою та завершуються коли в них немає потреби. "
+"Для них треба запустити службу <b>xinetd</b>."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
 msgstr ""
+"Ці служби запускаються один раз та виконуються у фоновому режимі. Можна "
+"вказати  рівні виконання, на яких вони запускаються."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -211,9 +214,8 @@ msgid "_Actions"
 msgstr "Д_ії"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "_Запустити службу"
+msgstr "_Фонові служби"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
@@ -232,9 +234,8 @@ msgid "_Help"
 msgstr "_Довідка"
 
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "_Перезапустити службу"
+msgstr "Службу _за вимогою"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
@@ -262,12 +263,11 @@ msgstr "_Вигляд"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "Налаштовування служб, які запускаються при старті системи"
 
 #: ../system-config-services.desktop.in.h:2
-#, fuzzy
 msgid "Service Management"
-msgstr "Назва служби: "
+msgstr "Налаштовування служб"
 
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
