@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-27 12:24+0100\n"
+"POT-Creation-Date: 2006-02-06 17:45+0100\n"
 "PO-Revision-Date: 2006-01-30 16:09+1000\n"
 "Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
 "Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
@@ -35,19 +35,19 @@ msgstr "執行等級 %d"
 msgid "Currently Running in Runlevel: "
 msgstr "目前執行等級是: "
 
-#: ../src/serviceconf.py:376 ../src/serviceconf.py:489
+#: ../src/serviceconf.py:374 ../src/serviceconf.py:491
 msgid "Editing Runlevel: "
 msgstr "正在編輯執行等級: "
 
-#: ../src/serviceconf.py:430
+#: ../src/serviceconf.py:428
 msgid "Unknown"
 msgstr "未知的"
 
-#: ../src/serviceconf.py:518
+#: ../src/serviceconf.py:520
 msgid "All"
 msgstr "全部"
 
-#: ../src/serviceconf.py:552
+#: ../src/serviceconf.py:554
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -67,42 +67,42 @@ msgstr ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:556
+#: ../src/serviceconf.py:558
 msgid "About"
 msgstr "關於"
 
-#: ../src/serviceconf.py:585
+#: ../src/serviceconf.py:587
 msgid "Help is not available."
 msgstr "輔助說明無法使用。"
 
-#: ../src/serviceconf.py:741
+#: ../src/serviceconf.py:746
 msgid "You must run system-config-services as root."
 msgstr "您必須是 root 才能執行 system-config-services。"
 
-#: ../src/servicemethods.py:321
+#: ../src/servicemethods.py:315
 msgid "xinetd failed to reload for "
 msgstr "xinetd 無法重新載入給 "
 
-#: ../src/servicemethods.py:322
+#: ../src/servicemethods.py:316
 msgid ". The error was: "
 msgstr "。 錯誤是: "
 
-#: ../src/servicemethods.py:324
+#: ../src/servicemethods.py:318
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd 重新載入 %s 成功"
 
-#: ../src/servicemethods.py:327
+#: ../src/servicemethods.py:321
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "必須啟動 xinetd 才能執行 %s"
 
-#: ../src/servicemethods.py:332
+#: ../src/servicemethods.py:326
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s 失敗。 錯誤是: %s"
 
-#: ../src/servicemethods.py:334
+#: ../src/servicemethods.py:328
 msgid " successful"
 msgstr " 成功"
 
@@ -271,4 +271,3 @@ msgstr "服務管理"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "服務"
-
