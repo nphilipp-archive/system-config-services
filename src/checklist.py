@@ -24,8 +24,9 @@ class CheckList (gtk.TreeView):
     checkbox(es) / text string pairs"""
 
     def __init__ (self, num_checkboxes = 1):
-        #print "gtk.ListStore (" + "gobject.TYPE_BOOLEAN, " * num_checkboxes + "gobject.TYPE_STRING)"
-        self.store = eval ("gtk.ListStore (" + "gobject.TYPE_BOOLEAN, " * num_checkboxes + "gobject.TYPE_STRING)")
+        args = [gobject.TYPE_BOOLEAN] * num_checkboxes
+        args.append (gobject.TYPE_STRING)
+        self.store = gtk.ListStore (*args)
 
         gtk.TreeView.__init__ (self, self.store)
         

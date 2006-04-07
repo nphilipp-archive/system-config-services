@@ -73,6 +73,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Fri Apr 07 2006 Nils Philippsen <nphilipp@redhat.com>
+- don't use eval()
+
 * Fri Mar 03 2006 Nils Philippsen <nphilipp@redhat.com> - 0.9.0
 - require hicolor-icon-theme (#182878, #182879)
 
