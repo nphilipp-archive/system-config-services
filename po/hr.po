@@ -1,6 +1,3 @@
-# Translation of system-config-services to Croatian
-# Copyright (C) Croatian team
-# Translators: Automatski Prijevod <>,Denis Lackovic <delacko@fly.srk.fer.hr>,Robert Sedak <robert.sedak@sk.tel.hr>,
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services 0\n"
@@ -263,39 +260,4 @@ msgstr "Upravljanje uslugama:"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Usluge"
-
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd is required for this service."
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "za rad ovog servisa potreban je xinetd."
-#~ msgid "*"
-#~ msgstr "*"
-
-#, fuzzy
-#~ msgid "Revert"
-#~ msgstr "Pokreni ponovo"
-#~ msgid "Start at Boot"
-#~ msgstr "Pokreni kod pokretanja sustava"
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "Copyright (c) 2002 Red Hat, Inc. Sva prava zadržana."
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "Ovaj softver se može slobodno distribuirati pod uvjetima GPL-a.\n"
-#~ "O greškama izvjestite na Red Hat sustav praćenja grešaka na:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgid "translator_credits"
-#~ msgstr "lokalizacija@linux.hr"
-#~ msgid "Restart the selected service"
-#~ msgstr "Ponovo pokreni odabrani servis"
-#~ msgid "Start the selected service"
-#~ msgstr "Pokreće izabrani servis"
-#~ msgid "Stop the selected service"
-#~ msgstr "Zastavlja izabrani servis"
 
