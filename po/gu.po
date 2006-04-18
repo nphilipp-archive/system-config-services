@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-27 17:07+0100\n"
+"POT-Creation-Date: 2006-02-06 17:45+0100\n"
 "PO-Revision-Date: 2006-01-30 11:20+0530\n"
 "Last-Translator: Ankit Patel <ankit@redhat.com>\n"
 "Language-Team: Gujarati <fedora-trans-gu@redhat.com>\n"
@@ -82,30 +82,30 @@ msgstr "મદદ ઉપ્લબ્ધ નથી."
 msgid "You must run system-config-services as root."
 msgstr "તમારે રુટ તરીકે જ system-config-services ચલાવવું પડશે."
 
-#: ../src/servicemethods.py:329
+#: ../src/servicemethods.py:315
 msgid "xinetd failed to reload for "
 msgstr "xinetd એ માટે ફરીથી લાવવામાં નિષ્ફળ "
 
-#: ../src/servicemethods.py:330
+#: ../src/servicemethods.py:316
 msgid ". The error was: "
 msgstr ". ભૂલ આ હતી: "
 
-#: ../src/servicemethods.py:332
+#: ../src/servicemethods.py:318
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd ફરીથી લવાયેલ %s સફળતાપૂર્વક"
 
-#: ../src/servicemethods.py:335
+#: ../src/servicemethods.py:321
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd એ %s ને ચલાવવા માટે સક્રિય કરેલું જ હોવું જોઈએ"
 
-#: ../src/servicemethods.py:340
+#: ../src/servicemethods.py:326
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s નિષ્ફળ. ભૂલ આ હતી: %s"
 
-#: ../src/servicemethods.py:342
+#: ../src/servicemethods.py:328
 msgid " successful"
 msgstr " સફળતાપૂર્વક"
 
