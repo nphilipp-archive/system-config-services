@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-27 12:24+0100\n"
+"POT-Creation-Date: 2006-02-06 17:45+0100\n"
 "PO-Revision-Date: 2006-03-07 17:21+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <ta@li.org>\n"
@@ -37,19 +37,19 @@ msgstr "இயக்க நிலை %d"
 msgid "Currently Running in Runlevel: "
 msgstr "இப்போது இயக்க நிலையில் உள்ளது."
 
-#: ../src/serviceconf.py:376 ../src/serviceconf.py:489
+#: ../src/serviceconf.py:374 ../src/serviceconf.py:491
 msgid "Editing Runlevel: "
 msgstr "இயக்க நிலையில் திருத்தம்:"
 
-#: ../src/serviceconf.py:430
+#: ../src/serviceconf.py:428
 msgid "Unknown"
 msgstr "தெரியாத"
 
-#: ../src/serviceconf.py:518
+#: ../src/serviceconf.py:520
 msgid "All"
 msgstr "அனைத்தும்"
 
-#: ../src/serviceconf.py:552
+#: ../src/serviceconf.py:554
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -69,42 +69,42 @@ msgstr ""
 " நில்ஸ் ஃபிலிப்ஸன் <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:556
+#: ../src/serviceconf.py:558
 msgid "About"
 msgstr "அறிமுகம்"
 
-#: ../src/serviceconf.py:585
+#: ../src/serviceconf.py:587
 msgid "Help is not available."
 msgstr "உதவி கிடைக்கவில்லை"
 
-#: ../src/serviceconf.py:741
+#: ../src/serviceconf.py:746
 msgid "You must run system-config-services as root."
 msgstr "system-config-services ஐ ரூட்டில் இயக்க வேண்டும்"
 
-#: ../src/servicemethods.py:321
+#: ../src/servicemethods.py:315
 msgid "xinetd failed to reload for "
 msgstr "xinetd  மீளேற்ற முடியவில்லை"
 
-#: ../src/servicemethods.py:322
+#: ../src/servicemethods.py:316
 msgid ". The error was: "
 msgstr ". பிழை:"
 
-#: ../src/servicemethods.py:324
+#: ../src/servicemethods.py:318
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd %s மீளேற்றப்பட்டது"
 
-#: ../src/servicemethods.py:327
+#: ../src/servicemethods.py:321
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s இயக்குவதற்காக துவக்கு"
 
-#: ../src/servicemethods.py:332
+#: ../src/servicemethods.py:326
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s தோல்வியில் முடிந்தது. பிழை : %s"
 
-#: ../src/servicemethods.py:334
+#: ../src/servicemethods.py:328
 msgid " successful"
 msgstr "வெற்றி"
 
@@ -192,13 +192,17 @@ msgstr "நிறுத்து"
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr "இந்த சேவைகள் தேவையினை பொருத்து ஆரம்பிக்கப்பட்டு ஒன்றுமில்லாத போது முடிகிறது. <b>xinetd</b> சேவை கட்டாயம் இயங்க வேண்டும் அதனால் இதனை பயன்படுத்த முடியும்."
+msgstr ""
+"இந்த சேவைகள் தேவையினை பொருத்து ஆரம்பிக்கப்பட்டு ஒன்றுமில்லாத போது முடிகிறது. "
+"<b>xinetd</b> சேவை கட்டாயம் இயங்க வேண்டும் அதனால் இதனை பயன்படுத்த முடியும்."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr "இந்த சேவைகள் ஒருமுறை ஆரம்பமாகி பின்னணியில் இயங்கும். நீங்கள் அவை எந்த இயங்கு நிலையில் ஆரம்பமாகிறது என்பதை குறிப்பிடலாம்."
+msgstr ""
+"இந்த சேவைகள் ஒருமுறை ஆரம்பமாகி பின்னணியில் இயங்கும். நீங்கள் அவை எந்த இயங்கு நிலையில் "
+"ஆரம்பமாகிறது என்பதை குறிப்பிடலாம்."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -271,4 +275,3 @@ msgstr "சேவையின் மேலாண்மை"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "சேவைகள்"
-
