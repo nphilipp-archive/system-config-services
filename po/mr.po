@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-27 12:24+0100\n"
+"POT-Creation-Date: 2006-02-06 17:45+0100\n"
 "PO-Revision-Date: 2006-03-23 20:54+0530\n"
 "Last-Translator: Rahul Bhalerao <rbhalera@redhat.com>\n"
 "Language-Team: Marathi\n"
@@ -35,19 +35,19 @@ msgstr "रनलेव्हल %d"
 msgid "Currently Running in Runlevel: "
 msgstr "सध्या सुरू असलेली रनलेव्हल: "
 
-#: ../src/serviceconf.py:376 ../src/serviceconf.py:489
+#: ../src/serviceconf.py:374 ../src/serviceconf.py:491
 msgid "Editing Runlevel: "
 msgstr "संपादित आहे रनलेव्हल: "
 
-#: ../src/serviceconf.py:430
+#: ../src/serviceconf.py:428
 msgid "Unknown"
 msgstr "अपरिचित"
 
-#: ../src/serviceconf.py:518
+#: ../src/serviceconf.py:520
 msgid "All"
 msgstr "सर्व"
 
-#: ../src/serviceconf.py:552
+#: ../src/serviceconf.py:554
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -67,42 +67,42 @@ msgstr ""
 " निल्स फिलिप्सन <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:556
+#: ../src/serviceconf.py:558
 msgid "About"
 msgstr "च्या विषयी"
 
-#: ../src/serviceconf.py:585
+#: ../src/serviceconf.py:587
 msgid "Help is not available."
 msgstr "मदत उपलब्ध नाही."
 
-#: ../src/serviceconf.py:741
+#: ../src/serviceconf.py:746
 msgid "You must run system-config-services as root."
 msgstr "system-config-services सुरू करण्यासाठी तुम्ही root असणे आवश्यक आहे."
 
-#: ../src/servicemethods.py:321
+#: ../src/servicemethods.py:315
 msgid "xinetd failed to reload for "
 msgstr "यासाठी पुनर्दाखल होण्यास xinetd अयशस्वी"
 
-#: ../src/servicemethods.py:322
+#: ../src/servicemethods.py:316
 msgid ". The error was: "
 msgstr "ही त्रुटी होती: "
 
-#: ../src/servicemethods.py:324
+#: ../src/servicemethods.py:318
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd %s पुनर्दाखल करण्यात यशस्वी"
 
-#: ../src/servicemethods.py:327
+#: ../src/servicemethods.py:321
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s सुरू करण्यासाठी xinetd स सक्षम करणे आवश्यक आहे"
 
-#: ../src/servicemethods.py:332
+#: ../src/servicemethods.py:326
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s अयशस्वी. त्रुठी होती:%s"
 
-#: ../src/servicemethods.py:334
+#: ../src/servicemethods.py:328
 msgid " successful"
 msgstr "यशस्वी"
 
@@ -190,13 +190,17 @@ msgstr "थांबा"
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr "या सेवा मागणीनुसार सुरू झाल्या आहेत आणि जेव्हा करण्यासाठी अधिक काही शिल्लक नसेल तेव्हा बंद होतील. <b>xinetd</b> सेवा कार्यरत असायला हवी, जेणेकरुन त्या वापरता येतील."
+msgstr ""
+"या सेवा मागणीनुसार सुरू झाल्या आहेत आणि जेव्हा करण्यासाठी अधिक काही शिल्लक नसेल तेव्हा बंद "
+"होतील. <b>xinetd</b> सेवा कार्यरत असायला हवी, जेणेकरुन त्या वापरता येतील."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr "या सेवा एकदा सुरू होउन पार्श्वभागात कार्यरत असतात. त्यांनी कोणत्या रनलेव्हलमध्ये सुरू व्हावे हे तुम्ही ठरवू शकता."
+msgstr ""
+"या सेवा एकदा सुरू होउन पार्श्वभागात कार्यरत असतात. त्यांनी कोणत्या रनलेव्हलमध्ये सुरू व्हावे "
+"हे तुम्ही ठरवू शकता."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -269,4 +273,3 @@ msgstr "सेवा व्यवस्थापन"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "सेवा"
-
