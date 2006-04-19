@@ -253,13 +253,17 @@ msgstr "বন্ধ"
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr "এই পরিসেবাগুলির অনুরোধ করা হলে আরম্ভ করা হয় এবং কর্ম সমাপ্ত হলে সেগুলি বন্ধ হয়ে যায়। এই পরিসেবাগুলি ব্যবহার করার জন্য <b>xinetd</b> পরিসেবা সক্রিয় থাকা আবশ্যক।"
+msgstr ""
+"এই পরিসেবাগুলির অনুরোধ করা হলে আরম্ভ করা হয় এবং কর্ম সমাপ্ত হলে সেগুলি বন্ধ হয়ে "
+"যায়। এই পরিসেবাগুলি ব্যবহার করার জন্য <b>xinetd</b> পরিসেবা সক্রিয় থাকা আবশ্যক।"
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr "এই পরিসেবারগুলি একবার আরম্ভ করা হয় ও পটভুমিতে সক্রিয় অবস্থায় বজায় থাকে। আপনি এই পরিসেবাগুলি চালানোর জন্য প্রয়োজনীয় runlevel চিহ্নিত করতে পারবেন।"
+msgstr ""
+"এই পরিসেবারগুলি একবার আরম্ভ করা হয় ও পটভুমিতে সক্রিয় অবস্থায় বজায় থাকে। আপনি এই "
+"পরিসেবাগুলি চালানোর জন্য প্রয়োজনীয় runlevel চিহ্নিত করতে পারবেন।"
 
 # "বর্তমান রানলেভেলে আপনি পরিবর্তন করেছেন।\n"
 # "আপনি কি পরিবর্তনগুলি সেভ করতে চান ?"--old version
@@ -350,4 +354,3 @@ msgstr "পরিসেবা পরিচালনা"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "পরিসেবা"
-
