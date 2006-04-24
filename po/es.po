@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-01-27 12:24+0100\n"
+"POT-Creation-Date: 2006-02-06 17:45+0100\n"
 "PO-Revision-Date: 2006-03-13 14:49+1000\n"
 "Last-Translator: Manuel Ospina <mospina@redhat.com>\n"
 "Language-Team: Spanish <en@li.org>\n"
@@ -50,19 +50,19 @@ msgstr "Ejecutándose en el nivel de ejecución: "
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
-#: ../src/serviceconf.py:376 ../src/serviceconf.py:489
+#: ../src/serviceconf.py:374 ../src/serviceconf.py:491
 msgid "Editing Runlevel: "
 msgstr "Editando nivel de ejecución: "
 
-#: ../src/serviceconf.py:430
+#: ../src/serviceconf.py:428
 msgid "Unknown"
 msgstr "Desconocido"
 
-#: ../src/serviceconf.py:518
+#: ../src/serviceconf.py:520
 msgid "All"
 msgstr "Todo"
 
-#: ../src/serviceconf.py:552
+#: ../src/serviceconf.py:554
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -82,56 +82,56 @@ msgstr ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:556
+#: ../src/serviceconf.py:558
 msgid "About"
 msgstr "Acerca de"
 
-#: ../src/serviceconf.py:585
+#: ../src/serviceconf.py:587
 msgid "Help is not available."
 msgstr "La ayuda no está disponible."
 
 # ../serviceconf.py:432
 # ../serviceconf.py:432
-#: ../src/serviceconf.py:741
+#: ../src/serviceconf.py:746
 msgid "You must run system-config-services as root."
 msgstr "Debe ejecutar system-config-services como root."
 
 # ../servicemethods.py:307
 # ../servicemethods.py:307
-#: ../src/servicemethods.py:321
+#: ../src/servicemethods.py:315
 msgid "xinetd failed to reload for "
 msgstr "xinetd falló su recarga por "
 
 # ../servicemethods.py:308
 # ../servicemethods.py:308
-#: ../src/servicemethods.py:322
+#: ../src/servicemethods.py:316
 msgid ". The error was: "
 msgstr ". El error fue: "
 
 # ../servicemethods.py:310
 # ../servicemethods.py:310
-#: ../src/servicemethods.py:324
+#: ../src/servicemethods.py:318
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "recarga de xinetd para %s satisfactoria"
 
 # ../servicemethods.py:313
 # ../servicemethods.py:313
-#: ../src/servicemethods.py:327
+#: ../src/servicemethods.py:321
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd debe estar activo para poder ejecutar %s"
 
 # ../servicemethods.py:318
 # ../servicemethods.py:318
-#: ../src/servicemethods.py:332
+#: ../src/servicemethods.py:326
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s falló. El error fue: %s"
 
 # ../servicemethods.py:320
 # ../servicemethods.py:320
-#: ../src/servicemethods.py:334
+#: ../src/servicemethods.py:328
 msgid " successful"
 msgstr " satisfactorio"
 
@@ -351,4 +351,3 @@ msgstr "Gestor de servicio:"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Servicios"
-
