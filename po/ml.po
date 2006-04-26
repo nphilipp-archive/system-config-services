@@ -1,48 +1,49 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# translation of ml.po to Malayalam
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Ani Peter <apeter@redhat.com>, 2006.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: ml\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-02-06 17:45+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2006-04-26 14:17+0530\n"
+"Last-Translator: Ani Peter <apeter@redhat.com>\n"
+"Language-Team: Malayalam\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
 
 #: ../src/serviceconf.py:75
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "നിങ്ങള്‍ക്ക് %s നീക്കം ചെയ്യ്ണമെന്ന് ഉറപ്പാണോ?"
 
 #: ../src/serviceconf.py:130
 #, python-format
 msgid "Runlevel %d"
-msgstr ""
+msgstr "റണ്‍ലവല്‍ %d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:271
 msgid "Currently Running in Runlevel: "
-msgstr ""
+msgstr "ഇപ്പോള്‍ പ്രവറ്‍ത്തിച്ചുകൊണ്ടിരിക്കുന്ന റണ്‍ലവല്‍: "
 
 #: ../src/serviceconf.py:374 ../src/serviceconf.py:491
 msgid "Editing Runlevel: "
-msgstr ""
+msgstr "റണ്‍ലവലില്‍ മാറ്റം വരുത്തുക: "
 
 #: ../src/serviceconf.py:428
 msgid "Unknown"
-msgstr ""
+msgstr "അപരിചിതം"
 
 #: ../src/serviceconf.py:520
 msgid "All"
-msgstr ""
+msgstr "എല്ലാം"
 
 #: ../src/serviceconf.py:554
 msgid ""
@@ -55,77 +56,85 @@ msgid ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
+"System Services Configuration Tool VERSION\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
+" "
 
 #: ../src/serviceconf.py:558
 msgid "About"
-msgstr ""
+msgstr "സംബന്ധിച്ച്"
 
 #: ../src/serviceconf.py:587
 msgid "Help is not available."
-msgstr ""
+msgstr "സഹായം ലഭ്യമല്ല."
 
 #: ../src/serviceconf.py:746
 msgid "You must run system-config-services as root."
-msgstr ""
+msgstr "system-config-services റൂട്ട് ആയി നിന്നേ പ്രവറ്‍ത്തിപ്പിക്കാന്‍ പാടുള്ളൂ."
 
 #: ../src/servicemethods.py:315
 msgid "xinetd failed to reload for "
-msgstr ""
+msgstr " റീലോഡ് ചെയ്യുന്നതില്‍ xinetd പരാജയപ്പെട്ടു"
 
 #: ../src/servicemethods.py:316
 msgid ". The error was: "
-msgstr ""
+msgstr " ഇതായിരുന്നു പിഴവ്: "
 
 #: ../src/servicemethods.py:318
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr ""
+msgstr "%s വിജയകരമായി xinetd റീലോഡ് ചെയ്തിരിക്കുന്നു"
 
 #: ../src/servicemethods.py:321
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr ""
+msgstr "%s പ്രവറ്‍ത്തിക്കിന്നതിനായി xinetd പ്രവറ്‍ത്തന സജ്ജമായിരിക്കണം"
 
 #: ../src/servicemethods.py:326
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr ""
+msgstr "%s പരാജയപ്പെട്ടു. ഇതായിരുന്നു പിഴവ്: %s"
 
 #: ../src/servicemethods.py:328
 msgid " successful"
-msgstr ""
+msgstr " വിജയിച്ചു"
 
 #: ../src/serviceconf.glade.h:1
 msgid "Add Service"
-msgstr ""
+msgstr "സറ്‍വീസ് ചേറ്‍ക്കുക"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
-msgstr ""
+msgstr "ഇപ്പോള്‍ പ്രവറ്‍ത്തിക്കുന്ന റണ്‍ലവല്‍: "
 
 #: ../src/serviceconf.glade.h:3
 msgid "Delete Service"
-msgstr ""
+msgstr "സറ്‍വീസ് നീക്കം ചെയ്യുക"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
-msgstr ""
+msgstr "വിശദീകരണം"
 
 #: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
-msgstr ""
+msgstr "സംരക്ഷിക്കേണ്ടതില്ല"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
-msgstr ""
+msgstr "റണ്‍ലവലില്‍ മാറ്റം വരുത്തുക: "
 
 #: ../src/serviceconf.glade.h:7
 msgid "None"
-msgstr ""
+msgstr "ഒന്നുമില്ല"
 
 #: ../src/serviceconf.glade.h:8
 msgid "Restart"
-msgstr ""
+msgstr "വീണ്ടും സ്റ്റാറ്‍ട്ട് ചെയ്യുക"
 
 #: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
@@ -133,53 +142,56 @@ msgstr ""
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
-msgstr ""
+msgstr "റണ്‍ലവല്‍ 3(_3)"
 
 #: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
-msgstr ""
+msgstr "റണ്‍ലവല്‍ 4(_4)"
 
 #: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
-msgstr ""
+msgstr "റണ്‍ലവല്‍ 5(_5)"
 
 #: ../src/serviceconf.glade.h:13
 msgid "Runlevel _All"
-msgstr ""
+msgstr "എല്ലാ റണ്‍ലവലുകളും(_A)"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
-msgstr ""
+msgstr "സറ്‍വീസ് നിറ്‍ത്തലാക്കുക(_t)"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "ഡയലോഗ് സംരക്ഷിക്കുക"
 
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
-msgstr ""
+msgstr "സറ്‍വീസ് കോണ്‍ഫിഗറേഷന്‍"
 
 #: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
-msgstr ""
+msgstr "സറ്‍വീസിന്‍റെ പേര്: "
 
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
-msgstr ""
+msgstr "ആരംഭിക്കുക"
 
 #: ../src/serviceconf.glade.h:19
 msgid "Status"
-msgstr ""
+msgstr "സ്ഥിതി"
 
 #: ../src/serviceconf.glade.h:20
 msgid "Stop"
-msgstr ""
+msgstr "നിറ്‍ത്തുക"
 
 #: ../src/serviceconf.glade.h:21
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
+"ആവശ്യാനുസരണം ആണ് ഈ സറ്‍വീസുകള്‍ ആരംഭിച്ചത്. എല്ലാം തീറ്‍ന്നതിന് ശേഷമേ ഇവ "
+"ഇനി അവസാനിക്കൂ. <b>xinetd</b> എന്ന സറ്‍വീസ് പ്രവറ്‍ത്തിച്ചുകൊണ്ടിരിക്കുന്നു, അതിനാല്‍ "
+"ഇത് ഉപയോഗിക്കാവുന്നതാണ്."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
@@ -192,67 +204,72 @@ msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"ഇപ്പോള്‍ പ്രവറ്‍ത്തിക്കുന്ന റണ്‍ലവലില്‍ നിങ്ങള്‍ മാറ്റങ്ങള്‍ വരുത്തിയിരിക്കുന്നു.\n"
+"ഈ മാറ്റങ്ങള്‍ നിങ്ങള്‍ക്ക് സംരക്ഷിക്കണമോ?"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
-msgstr ""
+msgstr "പ്രവറ്‍ത്തികള്‍(ആക്കഷനുകള്‍)(_A)"
 
 #: ../src/serviceconf.glade.h:26
 msgid "_Background Services"
-msgstr ""
+msgstr "ബാക്ക്ഗ്രൌണ്ട് സറ്‍വീസുകള്‍"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr ""
+msgstr "ഉള്ളടക്കം(_C)"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
-msgstr ""
+msgstr "റണ്‍ലവലില്‍ മാറ്റം വരുത്തുക(_E)"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr ""
+msgstr "ഫൈല്‍(_F)"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr ""
+msgstr "സഹായം(_H)"
 
 #: ../src/serviceconf.glade.h:31
 msgid "_On Demand Services"
-msgstr ""
+msgstr "ഓണ്‍ ഡിമാന്‍ഡ് സറ്‍വീസുകള്‍(_O)"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
-msgstr ""
+msgstr "പുറത്ത് പോവുക(_Q)"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
-msgstr ""
+msgstr "സറ്‍വീസ് ലിസ്റ്റ് ചിട്ടപ്പെടുത്തുക(_R)"
 
 #: ../src/serviceconf.glade.h:34
 msgid "_Restart Service"
-msgstr ""
+msgstr "സറ്‍വീസ് വീണ്ടും ആരംഭിക്കുക(_R)"
 
 #: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
-msgstr ""
+msgstr "മാറ്റങ്ങള്‍ സംരക്ഷിക്കുക(_S)"
 
 #: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
-msgstr ""
+msgstr "സറ്‍വീസ് ആരംഭിക്കുക(_S)"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr ""
+msgstr "വീക്ഷിക്കുക(_V)"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr ""
+"കംപ്യൂട്ടറ്‍ ഓണ്‍ ആകുമ്പോള്‍ ഏതെല്ലാം സറ്‍വീസുകള്‍ പ്രവറ്‍ത്തിക്കണമെന്ന് "
+"കോണ്‍ഫിഗറ്‍ ചെയ്യുക"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr ""
+msgstr "സറ്‍വീസ് മാനേജ്മന്‍റ്"
 
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
-msgstr ""
+msgstr "സറ്‍വീസുകള്‍"
+
