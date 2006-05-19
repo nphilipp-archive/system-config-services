@@ -7,93 +7,57 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"POT-Creation-Date: 2004-10-20 13:01+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-05-19 17:18+0200\n"
 "PO-Revision-Date: 2004-10-20 13:01+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Report-Msgid-Bugs-To: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/serviceconf.py:73
+#: ../src/serviceconf.py:76
 #, fuzzy, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Are you sure you want to delete the %s?"
 
-#: src/serviceconf.py:197 src/serviceconf.glade.h:18
-#, fuzzy
-msgid "Start"
-msgstr "Start"
-
-#: src/serviceconf.py:201 src/serviceconf.glade.h:20
-#, fuzzy
-msgid "Stop"
-msgstr "Stop"
-
-#: src/serviceconf.py:205 src/serviceconf.glade.h:9
-#, fuzzy
-msgid "Restart"
-msgstr "Restart"
-
-#: src/serviceconf.py:211
-#, fuzzy
-msgid "_Save"
-msgstr "_Save"
-
-#: src/serviceconf.py:211
-#, fuzzy
-msgid "Save"
-msgstr "Save"
-
-#: src/serviceconf.py:216
-#, fuzzy
-msgid "_Revert"
-msgstr "_Revert"
-
-#: src/serviceconf.py:216
-#, fuzzy
-msgid "Revert"
-msgstr "Revert"
+#: ../src/serviceconf.py:139
+#, fuzzy, python-format
+msgid "Runlevel %d"
+msgstr "Runlevel _3"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: src/serviceconf.py:250
+#: ../src/serviceconf.py:279
 #, fuzzy
 msgid "Currently Running in Runlevel: "
 msgstr "Currently Running in Runlevel: "
 
-#: src/serviceconf.py:261
-#, fuzzy
-msgid "Start at Boot"
-msgstr "Start at Boot"
-
-#: src/serviceconf.py:262
-#, fuzzy
-msgid "Services"
-msgstr "Services"
-
-#: src/serviceconf.py:320 src/serviceconf.py:426 src/serviceconf.py:443
-#: src/serviceconf.py:462
+#: ../src/serviceconf.py:375 ../src/serviceconf.py:484
 #, fuzzy
 msgid "Editing Runlevel: "
 msgstr "Editing Runlevel: "
 
-#: src/serviceconf.py:363
+#: ../src/serviceconf.py:423
 #, fuzzy
 msgid "Unknown"
 msgstr "Unknown"
 
-#: src/serviceconf.py:491
+#: ../src/serviceconf.py:513
+msgid "All"
+msgstr ""
+
+#: ../src/serviceconf.py:547
 #, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright (c) 2002-2004 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat>\n"
-" Bill Nottingham <notting@redhat>\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
 "System Services Configuration Tool VERSION\n"
@@ -104,210 +68,310 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: src/serviceconf.py:495
+#: ../src/serviceconf.py:551
 #, fuzzy
 msgid "About"
 msgstr "About"
 
-#: src/serviceconf.py:524
+#: ../src/serviceconf.py:580
 #, fuzzy
 msgid "Help is not available."
 msgstr "Help is not available."
 
-#: src/serviceconf.py:677
+#: ../src/serviceconf.py:731
 #, fuzzy
 msgid "You must run system-config-services as root."
 msgstr "You must run system-config-services as root."
 
-#. configured=1 if the service is configured already
-#. configured = self.xinetd_check_if_on(servicename)
-#. the list corresponding to the key is: [configured, is it an xinetd serv., description]
-#: src/servicemethods.py:289
-#, fuzzy
-msgid ""
-"\n"
-"\n"
-"xinetd is required for this service."
-msgstr ""
-"\n"
-"\n"
-"xinetd is required for this service."
-
-#: src/servicemethods.py:335
-#, fuzzy
-msgid "xinetd failed to reload for "
-msgstr "xinetd failed to reload for "
-
-#: src/servicemethods.py:336
-#, fuzzy
-msgid ". The error was: "
-msgstr ". The error was: "
-
-#: src/servicemethods.py:338
-#, fuzzy, python-format
-msgid "xinetd reloaded %s successfully"
-msgstr "xinetd reloaded %s successfully"
-
-#: src/servicemethods.py:341
-#, fuzzy, python-format
-msgid "xinetd must be enabled for %s to run"
-msgstr "xinetd must be enabled for %s to run"
-
-#: src/servicemethods.py:346
+#: ../src/servicemethods.py:228
 #, fuzzy, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s failed. The error was: %s"
 
-#: src/servicemethods.py:348
+#: ../src/servicemethods.py:234
 #, fuzzy
 msgid " successful"
 msgstr " successful"
 
-#: src/serviceconf.glade.h:1
-#, fuzzy
-msgid "*"
-msgstr "*"
+#: ../src/servicemethods.py:337 ../src/servicemethods.py:348
+#, fuzzy, python-format
+msgid "xinetd must be enabled for %s to run"
+msgstr "xinetd must be enabled for %s to run"
 
-#: src/serviceconf.glade.h:2
+#: ../src/servicemethods.py:342
 #, fuzzy
-msgid "Add Service"
-msgstr "Add Service"
+msgid "xinetd failed to reload for "
+msgstr "xinetd failed to reload for "
 
-#: src/serviceconf.glade.h:3
+#: ../src/servicemethods.py:344
 #, fuzzy
-msgid "Current Active Runlevel: "
-msgstr "Current Active Runlevel: "
+msgid ". The error was: "
+msgstr ". The error was: "
 
-#: src/serviceconf.glade.h:4
-#, fuzzy
-msgid "Delete Service"
-msgstr "Delete Service"
+#: ../src/servicemethods.py:346
+#, fuzzy, python-format
+msgid "xinetd reloaded %s successfully"
+msgstr "xinetd reloaded %s successfully"
 
-#: src/serviceconf.glade.h:5
-#, fuzzy
-msgid "Description"
-msgstr "Description"
-
-#: src/serviceconf.glade.h:6
-#, fuzzy
-msgid "Don't Save"
-msgstr "Don't Save"
-
-#: src/serviceconf.glade.h:7
-#, fuzzy
-msgid "Editing Runlevel:"
-msgstr "Editing Runlevel:"
-
-#: src/serviceconf.glade.h:8
+#.
+#. * Translatable strings file generated by Glade.
+#. * Add this file to your project's POTFILES.in.
+#. * DO NOT compile it as part of your application.
+#.
+#: system-config-services.gladestrings:7
 #, fuzzy
 msgid "None"
 msgstr "None"
 
-#: src/serviceconf.glade.h:10
+#: system-config-services.gladestrings:8
+#: system-config-services.gladestrings:23
+#: system-config-services.gladestrings:45
 #, fuzzy
-msgid "Revert To _Last Save"
-msgstr "Revert To _Last Save"
+msgid "Start the selected service"
+msgstr "_Start Service"
 
-#: src/serviceconf.glade.h:11
+#: system-config-services.gladestrings:9
+#: system-config-services.gladestrings:46
 #, fuzzy
-msgid "Runlevel _3"
-msgstr "Runlevel _3"
+msgid "Start"
+msgstr "Start"
 
-#: src/serviceconf.glade.h:12
+#: system-config-services.gladestrings:10
+#: system-config-services.gladestrings:25
+#: system-config-services.gladestrings:47
 #, fuzzy
-msgid "Runlevel _4"
-msgstr "Runlevel _4"
+msgid "Stop the selected service"
+msgstr "Delete Service"
 
-#: src/serviceconf.glade.h:13
+#: system-config-services.gladestrings:11
+#: system-config-services.gladestrings:48
 #, fuzzy
-msgid "Runlevel _5"
-msgstr "Runlevel _5"
+msgid "Stop"
+msgstr "Stop"
 
-#: src/serviceconf.glade.h:14
+#: system-config-services.gladestrings:12
+#: system-config-services.gladestrings:27
+#: system-config-services.gladestrings:49
 #, fuzzy
-msgid "S_top Service"
-msgstr "S_top Service"
+msgid "Restart the selected service"
+msgstr "_Restart Service"
 
-#: src/serviceconf.glade.h:15
+#: system-config-services.gladestrings:13
+#: system-config-services.gladestrings:50
 #, fuzzy
-msgid "Save Dialog"
-msgstr "Save Dialog"
+msgid "Restart"
+msgstr "Restart"
 
-#: src/serviceconf.glade.h:16
+#: system-config-services.gladestrings:14
 #, fuzzy
 msgid "Service Configuration"
 msgstr "Service Configuration"
 
-#: src/serviceconf.glade.h:17
+#: system-config-services.gladestrings:15
 #, fuzzy
-msgid "Service Name: "
-msgstr "Service Name: "
+msgid "Refresh the list of services"
+msgstr "_Refresh Service List"
 
-#: src/serviceconf.glade.h:19
-#, fuzzy
-msgid "Status"
-msgstr "Status"
-
-#: src/serviceconf.glade.h:21
-#, fuzzy
-msgid ""
-"You have made changes to the current runlevel.\n"
-"Do you want to save the changes?"
-msgstr ""
-"You have made changes to the current runlevel.\n"
-"Do you want to save the changes?"
-
-#: src/serviceconf.glade.h:23
-#, fuzzy
-msgid "_Actions"
-msgstr "_Actions"
-
-#: src/serviceconf.glade.h:24
-#, fuzzy
-msgid "_Contents"
-msgstr "_Contents"
-
-#: src/serviceconf.glade.h:25
-#, fuzzy
-msgid "_Edit Runlevel"
-msgstr "_Edit Runlevel"
-
-#: src/serviceconf.glade.h:26
-#, fuzzy
-msgid "_File"
-msgstr "_File"
-
-#: src/serviceconf.glade.h:27
-#, fuzzy
-msgid "_Help"
-msgstr "_Help"
-
-#: src/serviceconf.glade.h:28
-#, fuzzy
-msgid "_Quit"
-msgstr "_Quit"
-
-#: src/serviceconf.glade.h:29
+#: system-config-services.gladestrings:16
 #, fuzzy
 msgid "_Refresh Service List"
 msgstr "_Refresh Service List"
 
-#: src/serviceconf.glade.h:30
-#, fuzzy
-msgid "_Restart Service"
-msgstr "_Restart Service"
+#: system-config-services.gladestrings:17
+#: system-config-services.gladestrings:39
+msgid "Save the changes you have made"
+msgstr ""
 
-#: src/serviceconf.glade.h:31
+#: system-config-services.gladestrings:18
 #, fuzzy
 msgid "_Save Changes"
 msgstr "_Save Changes"
 
-#: src/serviceconf.glade.h:32
+#: system-config-services.gladestrings:19
+#: system-config-services.gladestrings:41
+#, fuzzy
+msgid "Revert to the last saved change"
+msgstr "Revert To _Last Save"
+
+#: system-config-services.gladestrings:20
+#, fuzzy
+msgid "_Revert To Last Save"
+msgstr "Revert To _Last Save"
+
+#: system-config-services.gladestrings:21
+msgid "Actions such as start, stop, and restart on the selected service"
+msgstr ""
+
+#: system-config-services.gladestrings:22
+#, fuzzy
+msgid "_Actions"
+msgstr "_Actions"
+
+#: system-config-services.gladestrings:24
 #, fuzzy
 msgid "_Start Service"
 msgstr "_Start Service"
 
-#: src/serviceconf.glade.h:33
+#: system-config-services.gladestrings:26
 #, fuzzy
-msgid "_View"
-msgstr "_View"
+msgid "S_top Service"
+msgstr "S_top Service"
+
+#: system-config-services.gladestrings:28
+#, fuzzy
+msgid "_Restart Service"
+msgstr "_Restart Service"
+
+#: system-config-services.gladestrings:29
+msgid "Select the runlevel you would like to edit"
+msgstr ""
+
+#: system-config-services.gladestrings:30
+#, fuzzy
+msgid "_Edit Runlevel"
+msgstr "_Edit Runlevel"
+
+#: system-config-services.gladestrings:31
+msgid "Runlevel 3 is multiuser mode with networking"
+msgstr ""
+
+#: system-config-services.gladestrings:32
+#, fuzzy
+msgid "Runlevel _3"
+msgstr "Runlevel _3"
+
+#: system-config-services.gladestrings:33
+msgid "Runlevel 4 is reserved for local customization, and is not usually used"
+msgstr ""
+
+#: system-config-services.gladestrings:34
+#, fuzzy
+msgid "Runlevel _4"
+msgstr "Runlevel _4"
+
+#: system-config-services.gladestrings:35
+msgid "Runlevel 5 is multiuser mode with networking and X Windows"
+msgstr ""
+
+#: system-config-services.gladestrings:36
+#, fuzzy
+msgid "Runlevel _5"
+msgstr "Runlevel _5"
+
+#: system-config-services.gladestrings:37
+msgid "Read Manual"
+msgstr ""
+
+#: system-config-services.gladestrings:38
+msgid "_Manual"
+msgstr ""
+
+#: system-config-services.gladestrings:40
+#, fuzzy
+msgid "Save"
+msgstr "Save"
+
+#: system-config-services.gladestrings:42
+msgid "Cancel"
+msgstr ""
+
+#: system-config-services.gladestrings:43
+#, fuzzy
+msgid "Quit"
+msgstr "_Quit"
+
+#: system-config-services.gladestrings:44
+msgid "Exit"
+msgstr ""
+
+#: system-config-services.gladestrings:51
+#, fuzzy
+msgid "Current Active Runlevel: "
+msgstr "Current Active Runlevel: "
+
+#: system-config-services.gladestrings:52
+#, fuzzy
+msgid "Editing Runlevel:"
+msgstr "Editing Runlevel:"
+
+#, fuzzy
+#~ msgid "_Save"
+#~ msgstr "_Save"
+
+#, fuzzy
+#~ msgid "_Revert"
+#~ msgstr "_Revert"
+
+#, fuzzy
+#~ msgid "Revert"
+#~ msgstr "Revert"
+
+#, fuzzy
+#~ msgid "Start at Boot"
+#~ msgstr "Start at Boot"
+
+#, fuzzy
+#~ msgid "Services"
+#~ msgstr "Services"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "xinetd is required for this service."
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "xinetd is required for this service."
+
+#, fuzzy
+#~ msgid "*"
+#~ msgstr "*"
+
+#, fuzzy
+#~ msgid "Add Service"
+#~ msgstr "Add Service"
+
+#, fuzzy
+#~ msgid "Description"
+#~ msgstr "Description"
+
+#, fuzzy
+#~ msgid "Don't Save"
+#~ msgstr "Don't Save"
+
+#, fuzzy
+#~ msgid "Save Dialog"
+#~ msgstr "Save Dialog"
+
+#, fuzzy
+#~ msgid "Service Name: "
+#~ msgstr "Service Name: "
+
+#, fuzzy
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#, fuzzy
+#~ msgid ""
+#~ "You have made changes to the current runlevel.\n"
+#~ "Do you want to save the changes?"
+#~ msgstr ""
+#~ "You have made changes to the current runlevel.\n"
+#~ "Do you want to save the changes?"
+
+#, fuzzy
+#~ msgid "_Contents"
+#~ msgstr "_Contents"
+
+#, fuzzy
+#~ msgid "_File"
+#~ msgstr "_File"
+
+#, fuzzy
+#~ msgid "_Help"
+#~ msgstr "_Help"
+
+#, fuzzy
+#~ msgid "_View"
+#~ msgstr "_View"

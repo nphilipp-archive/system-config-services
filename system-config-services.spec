@@ -1,10 +1,10 @@
 # -*- RPM-SPEC -*-
 Summary: system-config-services is an initscript and xinetd configuration utility
-Name: @PACKAGE@
-Version: @VERSION@
+Name: system-config-services
+Version: 0.9.0
 Release: 1
 URL: http://www.redhat.com/ 
-Source0: %{name}-%{version}.tar.gz
+Source0: %{name}-%{version}.tar.bz2
 License: GPL
 Group: Applications/System
 BuildArch: noarch
@@ -13,10 +13,10 @@ Requires: /sbin/chkconfig
 Requires: pygtk2, pygtk2-libglade, rhpl
 Requires: usermode >= 1.36, usermode-gtk
 Requires: htmlview
-Requires: python >= @PYTHON_MINVER@
+Requires: python >= 2.3.0
 Requires(post): hicolor-icon-theme
 Requires(postun): hicolor-icon-theme
-BuildRequires: automake
+BuildRequires: intltool sed desktop-file-utils
 Obsoletes: serviceconf
 Obsoletes: redhat-config-services
 
@@ -27,18 +27,17 @@ should be enabled on your machine.
 %prep
 %setup -q
 
-CFLAGS="$RPM_OPT_FLAGS" ./configure \
-    $MYARCH_FLAGS --enable-more-warnings=no \
-    --prefix=%{_prefix} --datadir=%{_datadir} \
-    --sysconfdir=%{_sysconfdir} --includedir=%{_includedir} \
-    --libdir=%{_libdir} --bindir=%{_bindir}
-
 %build
 make
 
 %install
 rm -rf %{buildroot}
-%makeinstall
+make DESTDIR=%buildroot install
+
+desktop-file-install --vendor system --delete-original      \
+  --dir %{buildroot}%{_datadir}/applications                \
+  --add-category X-Red-Hat-Base                             \
+  %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %find_lang %name
 
@@ -73,8 +72,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
-* Fri Apr 07 2006 Nils Philippsen <nphilipp@redhat.com>
-- don't use eval()
+* Fri May 19 2006 Nils Philippsen <nphilipp@redhat.com>
+- rip out autofoo
+- use bzip2'ed tarballs
 
 * Fri Mar 03 2006 Nils Philippsen <nphilipp@redhat.com> - 0.9.0
 - require hicolor-icon-theme (#182878, #182879)
