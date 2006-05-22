@@ -1,25 +1,26 @@
+# translation of it.po to 
 # translation of it.po to Italiano
 # translation of it.po to
 # translation of it.po to
 # Copyright (C) 2001, Red Hat, Inc.
-#
-#
 # Valentina Besi <valentina@redhat.it>, 2001.
 # Luca Ferrari <alexluca@inwind.it>, 2004.
 # Francesco Valente <fvalen@redhat.com>, 2004.
 # Francesco Tombolini <tombo@adamantio.net>, 2005, 2006.
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-02-23 19:35+0100\n"
-"Last-Translator: Francesco Tombolini <tombo@adamantio.net>\n"
-"Language-Team: Italiano <fedora-trans-it@redhat.com>\n"
+"PO-Revision-Date: 2006-05-22 04:09+0200\n"
+"Last-Translator: \n"
+"Language-Team:  <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.1\n"
+"X-Generator: KBabel 1.9.1\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../src/serviceconf.py:76
@@ -121,9 +122,8 @@ msgstr "Nessuno"
 #: system-config-services.gladestrings:8
 #: system-config-services.gladestrings:23
 #: system-config-services.gladestrings:45
-#, fuzzy
 msgid "Start the selected service"
-msgstr "_Avvia servizio"
+msgstr "Avvia il servizio selezionato"
 
 #: system-config-services.gladestrings:9
 #: system-config-services.gladestrings:46
@@ -133,9 +133,8 @@ msgstr "Avvia"
 #: system-config-services.gladestrings:10
 #: system-config-services.gladestrings:25
 #: system-config-services.gladestrings:47
-#, fuzzy
 msgid "Stop the selected service"
-msgstr "Elimina servizio"
+msgstr "Arresta il servizio selezionato"
 
 #: system-config-services.gladestrings:11
 #: system-config-services.gladestrings:48
@@ -145,9 +144,8 @@ msgstr "Arresta"
 #: system-config-services.gladestrings:12
 #: system-config-services.gladestrings:27
 #: system-config-services.gladestrings:49
-#, fuzzy
 msgid "Restart the selected service"
-msgstr "_Riavvia servizio"
+msgstr "Riavvia il servizio selezionato"
 
 #: system-config-services.gladestrings:13
 #: system-config-services.gladestrings:50
@@ -159,9 +157,8 @@ msgid "Service Configuration"
 msgstr "Configurazione del servizio"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "_Aggiorna elenco servizi"
+msgstr "Aggiorna l'elenco dei servizi"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
@@ -170,7 +167,7 @@ msgstr "_Aggiorna elenco servizi"
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr ""
+msgstr "Salva le modifiche apportate"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
@@ -178,18 +175,16 @@ msgstr "_Salva modifiche"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "_Ritorna all'ultimo salvataggio"
+msgstr "Ritorna all'ultima modifica salvata"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
-msgstr "_Ritorna all'ultimo salvataggio"
+msgstr "Ritorna all'ultimo salvataggio"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr ""
+msgstr "Azioni come avvio, arresto e riavvio sul servizio selezionato"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -209,7 +204,7 @@ msgstr "_Riavvia servizio"
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr ""
+msgstr "Selezionare il runlevel che si desidera modificare"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -217,7 +212,7 @@ msgstr "_Modifica runlevel"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr ""
+msgstr "Runlevel 3 è una modalità multiutente con networking"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -225,7 +220,7 @@ msgstr "Runlevel _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
+msgstr "Runlevel 4 è riservato alla personalizzazione locale, e generalmente non viene utilizzato"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -233,7 +228,7 @@ msgstr "Runlevel _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "Runlevel 5 è una modalità multiutente con networking e X Windows"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -241,28 +236,27 @@ msgstr "Runlevel _5"
 
 #: system-config-services.gladestrings:37
 msgid "Read Manual"
-msgstr ""
+msgstr "Leggi manuale"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
-msgstr ""
+msgstr "_Manuale"
 
 #: system-config-services.gladestrings:40
 msgid "Save"
-msgstr ""
+msgstr "Salva"
 
 #: system-config-services.gladestrings:42
 msgid "Cancel"
-msgstr ""
+msgstr "Cancella"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "_Abbandona"
+msgstr "Abbandona"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
-msgstr ""
+msgstr "Esci"
 
 #: system-config-services.gladestrings:51
 msgid "Current Active Runlevel: "
@@ -272,72 +266,3 @@ msgstr "Runlevel attualmente attivo: "
 msgid "Editing Runlevel:"
 msgstr "Modifica del runlevel:"
 
-#~ msgid "Add Service"
-#~ msgstr "Aggiungi Servizio"
-
-#~ msgid "Description"
-#~ msgstr "Descrizione"
-
-#~ msgid "Don't Save"
-#~ msgstr "Non salvare"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "_Tutti i Runlevel"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Salvataggio Impostazioni"
-
-#~ msgid "Service Name: "
-#~ msgstr "Nome Servizio: "
-
-#~ msgid "Status"
-#~ msgstr "Stato"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "Questi servizi sono avviati a richiesta e terminano quando non c'é più "
-#~ "nulla da fare. Il servizio <b>xinetd</b> deve essere in esecuzione "
-#~ "affinché possano essere utilizzati."
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Questi servizi vengono avviati una sola volta e sono eseguiti in "
-#~ "background. Puoi specificare in quale runlevel avviarli."
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Sono state apportate modifiche al runlevel corrente.\n"
-#~ "Salvare le modifiche?"
-
-#~ msgid "_Background Services"
-#~ msgstr "Servizi in _Background"
-
-#~ msgid "_Contents"
-#~ msgstr "_Contenuti"
-
-#~ msgid "_File"
-#~ msgstr "_File"
-
-#~ msgid "_Help"
-#~ msgstr "_Help"
-
-#~ msgid "_On Demand Services"
-#~ msgstr "Servizi a _Richiesta"
-
-#~ msgid "_View"
-#~ msgstr "_Vista"
-
-#~ msgid "Configure which services will be running when the system starts"
-#~ msgstr "Configura quali servizi dovranno partire all'avvio del sistema"
-
-#~ msgid "Service Management"
-#~ msgstr "Amministrazione Servizio"
-
-#~ msgid "Services"
-#~ msgstr "Servizi"
