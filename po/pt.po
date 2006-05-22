@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-01-28 13:13+0000\n"
+"PO-Revision-Date: 2006-05-22 01:13+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -150,9 +150,8 @@ msgid "Service Configuration"
 msgstr "Configuração do Serviço"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "Reiniciar o servidor seleccionado"
+msgstr "Actualiza a lista de serviços"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
@@ -161,7 +160,7 @@ msgstr "Actualiza_r a Lista de Serviços"
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr ""
+msgstr "Gravar as modificações que fez"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
@@ -169,18 +168,16 @@ msgstr "Gravar Alteraçõe_s"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "Reverter para a Ú_ltima Gravação"
+msgstr "Reverte para a última alteração gravada"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
-msgstr "Reverter para a Ú_ltima Gravação"
+msgstr "_Reverter para a Última Gravação"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr ""
+msgstr "As acções como o arranque, paragem e reinício do serviço seleccionado"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -200,7 +197,7 @@ msgstr "_Reiniciar Serviço"
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr ""
+msgstr "Seleccione o nível de execução a editar"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -208,7 +205,7 @@ msgstr "_Editar Nível de Execução"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr ""
+msgstr "O nível de execução 3 é o modo multi-utilizador com rede"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -216,7 +213,7 @@ msgstr "Nível de Execução _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
+msgstr "O nível de execução 4 está reservado para configurações locais e não é usado normalmente"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -224,7 +221,7 @@ msgstr "Nível de Execução _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "O nível de execução 5 é o modo multi-utilizador com rede e o X Windows"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -232,11 +229,11 @@ msgstr "Nível de Execução _4"
 
 #: system-config-services.gladestrings:37
 msgid "Read Manual"
-msgstr ""
+msgstr "Leitura Manual"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
-msgstr ""
+msgstr "_Manual"
 
 #: system-config-services.gladestrings:40
 msgid "Save"
@@ -244,16 +241,15 @@ msgstr "Gravar"
 
 #: system-config-services.gladestrings:42
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "_Sair"
+msgstr "Sair"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
-msgstr ""
+msgstr "Sair"
 
 #: system-config-services.gladestrings:51
 msgid "Current Active Runlevel: "
