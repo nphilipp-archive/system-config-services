@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: system-config-services 0.8.26\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-01-27 15:25+0100\n"
+"PO-Revision-Date: 2006-05-24 00:48+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -113,9 +113,8 @@ msgstr "Ingen"
 #: system-config-services.gladestrings:8
 #: system-config-services.gladestrings:23
 #: system-config-services.gladestrings:45
-#, fuzzy
 msgid "Start the selected service"
-msgstr "_Start tjenester"
+msgstr "Start valgt tjeneste"
 
 #: system-config-services.gladestrings:9
 #: system-config-services.gladestrings:46
@@ -125,9 +124,8 @@ msgstr "Start"
 #: system-config-services.gladestrings:10
 #: system-config-services.gladestrings:25
 #: system-config-services.gladestrings:47
-#, fuzzy
 msgid "Stop the selected service"
-msgstr "Slett tjeneste"
+msgstr "Stopp valgt tjeneste"
 
 #: system-config-services.gladestrings:11
 #: system-config-services.gladestrings:48
@@ -137,9 +135,8 @@ msgstr "Stopp"
 #: system-config-services.gladestrings:12
 #: system-config-services.gladestrings:27
 #: system-config-services.gladestrings:49
-#, fuzzy
 msgid "Restart the selected service"
-msgstr "Sta_rt tjenesten på nytt"
+msgstr "Start valgt tjeneste på nytt"
 
 #: system-config-services.gladestrings:13
 #: system-config-services.gladestrings:50
@@ -151,9 +148,8 @@ msgid "Service Configuration"
 msgstr "Tjenestekonfigurasjon"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "_Oppdater tjenestelisten"
+msgstr "Oppdater tjenestelisten"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
@@ -162,7 +158,7 @@ msgstr "_Oppdater tjenestelisten"
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr ""
+msgstr "Lagre endringene du har gjort"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
@@ -170,14 +166,12 @@ msgstr "_Lagre endringer"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "Gå ti_lbake til forrige lagring"
+msgstr "Gå tilbake til sist lagrede endring"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
-msgstr "Gå ti_lbake til forrige lagring"
+msgstr "Gå tilbake til fo_rrige lagring"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
@@ -209,7 +203,7 @@ msgstr "Redigerer kjøringsnivå"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr ""
+msgstr "Kjøringsnivå 3 er flerbrukermodus med nettverk"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -241,20 +235,19 @@ msgstr ""
 
 #: system-config-services.gladestrings:40
 msgid "Save"
-msgstr ""
+msgstr "Lagre"
 
 #: system-config-services.gladestrings:42
 msgid "Cancel"
-msgstr ""
+msgstr "Avbryt"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "A_vslutt"
+msgstr "Avslutt"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
-msgstr ""
+msgstr "Avslutt"
 
 #: system-config-services.gladestrings:51
 msgid "Current Active Runlevel: "
@@ -263,72 +256,3 @@ msgstr "Aktivt kjøringsnivå: "
 #: system-config-services.gladestrings:52
 msgid "Editing Runlevel:"
 msgstr "Redigerer kjøringsnivå:"
-
-#~ msgid "Add Service"
-#~ msgstr "Legg til tjeneste"
-
-#~ msgid "Description"
-#~ msgstr "Beskrivelse"
-
-#~ msgid "Don't Save"
-#~ msgstr "Ikke lagre"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "Kjøringsnivå _alle"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Lagre dialog"
-
-#~ msgid "Service Name: "
-#~ msgstr "Navn på tjeneste: "
-
-#~ msgid "Status"
-#~ msgstr "Status"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "Disse tjenestene startes ved behov og avsluttes når de ikke har mer å "
-#~ "gjøre. <b>xinetd</b>-thenesten må kjøre for at disse skal kunne brukes."
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Disse tjenestene startes en gang og kjører i bakgrunnen. Du kan oppgi "
-#~ "hvilke kjøringsnivåer de skal startes for."
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Du har gjort endringer i aktivt kjøringsnivå.\n"
-#~ "Vil du lagre endringene?"
-
-#~ msgid "_Background Services"
-#~ msgstr "_Bakgrunnstjenester"
-
-#~ msgid "_Contents"
-#~ msgstr "_Innhold"
-
-#~ msgid "_File"
-#~ msgstr "_Fil"
-
-#~ msgid "_Help"
-#~ msgstr "_Hjelp"
-
-#~ msgid "_On Demand Services"
-#~ msgstr "_Tjenester ved behov"
-
-#~ msgid "_View"
-#~ msgstr "_Vis"
-
-#~ msgid "Configure which services will be running when the system starts"
-#~ msgstr "Konfigurer tjenester som skal startes ved oppstart av systemet"
-
-#~ msgid "Service Management"
-#~ msgstr "Tjenestehåndtering"
-
-#~ msgid "Services"
-#~ msgstr "Tjenester"
