@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-01-29 00:30+0300\n"
+"PO-Revision-Date: 2006-05-23 23:30+0400\n"
 "Last-Translator: Andrew Martynov <andrewm@inventa.ru>\n"
 "Language-Team: Russian <fedora-trans-ru@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.11.2\n"
 
 #: ../src/serviceconf.py:76
 #, python-format
@@ -117,9 +117,8 @@ msgstr "Нет"
 #: system-config-services.gladestrings:8
 #: system-config-services.gladestrings:23
 #: system-config-services.gladestrings:45
-#, fuzzy
 msgid "Start the selected service"
-msgstr "_Запустить службу"
+msgstr "Запустить выбранную службу"
 
 #: system-config-services.gladestrings:9
 #: system-config-services.gladestrings:46
@@ -129,9 +128,8 @@ msgstr "Запустить"
 #: system-config-services.gladestrings:10
 #: system-config-services.gladestrings:25
 #: system-config-services.gladestrings:47
-#, fuzzy
 msgid "Stop the selected service"
-msgstr "Удалить службу"
+msgstr "Остановить выбранную службу"
 
 #: system-config-services.gladestrings:11
 #: system-config-services.gladestrings:48
@@ -141,9 +139,8 @@ msgstr "Остановить"
 #: system-config-services.gladestrings:12
 #: system-config-services.gladestrings:27
 #: system-config-services.gladestrings:49
-#, fuzzy
 msgid "Restart the selected service"
-msgstr "_Перезапустить службу"
+msgstr "Перезапустить выбранную службу"
 
 #: system-config-services.gladestrings:13
 #: system-config-services.gladestrings:50
@@ -155,9 +152,8 @@ msgid "Service Configuration"
 msgstr "Настройка служб"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "_Обновить список служб"
+msgstr "Обновить список служб"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
@@ -166,7 +162,7 @@ msgstr "_Обновить список служб"
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr ""
+msgstr "Сохранить сделанные изменения"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
@@ -174,18 +170,16 @@ msgstr "_Сохранить изменения"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "Откат к последнему сохранению"
+msgstr "Откат к последнему сохраненному изменению"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
-msgstr "Откат к последнему сохранению"
+msgstr "_Откат к последнему сохранению"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr ""
+msgstr "Действия по запуску, останову и перезапуску выбранной службы"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -205,7 +199,7 @@ msgstr "_Перезапустить службу"
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr ""
+msgstr "Укажите какой уровень выполнения редактировать"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -213,7 +207,7 @@ msgstr "_Изменить уровень"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr ""
+msgstr "Уровень выполнения 3 - это многопользовательский режим с поддержкой сети"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -221,7 +215,7 @@ msgstr "Уровень запуска _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
+msgstr "Уровень выполнения 4 зарезервирован для локальных изменений, обычно не используется"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -229,7 +223,7 @@ msgstr "Уровень запуска _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "Уровень выполнения 5 - многопользовательский режим с поддержкой сети и X Windows"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -237,11 +231,11 @@ msgstr "Уровень запуска _5"
 
 #: system-config-services.gladestrings:37
 msgid "Read Manual"
-msgstr ""
+msgstr "Прочитать руководство"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
-msgstr ""
+msgstr "_Руководство"
 
 #: system-config-services.gladestrings:40
 msgid "Save"
@@ -249,16 +243,15 @@ msgstr "Сохранить"
 
 #: system-config-services.gladestrings:42
 msgid "Cancel"
-msgstr ""
+msgstr "Отменить"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
 msgstr "Выход"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
-msgstr ""
+msgstr "Выход"
 
 #: system-config-services.gladestrings:51
 msgid "Current Active Runlevel: "
@@ -361,3 +354,4 @@ msgstr "Редактируется уровень запуска:"
 
 #~ msgid "Start at Boot"
 #~ msgstr "Запускать при загрузке системы"
+
