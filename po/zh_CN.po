@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: zh_CN\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-05-28 22:30+0800\n"
+"PO-Revision-Date: 2006-05-29 21:05+0800\n"
 "Last-Translator: Joel Gump <biglaughing@gmail.com>\n"
 "Language-Team:  <zh@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -121,9 +121,8 @@ msgstr "无"
 #: system-config-services.gladestrings:8
 #: system-config-services.gladestrings:23
 #: system-config-services.gladestrings:45
-#, fuzzy
 msgid "Start the selected service"
-msgstr "开始服务(_S)"
+msgstr "启动服务"
 
 #: system-config-services.gladestrings:9
 #: system-config-services.gladestrings:46
@@ -133,9 +132,8 @@ msgstr "开始"
 #: system-config-services.gladestrings:10
 #: system-config-services.gladestrings:25
 #: system-config-services.gladestrings:47
-#, fuzzy
 msgid "Stop the selected service"
-msgstr "删除服务"
+msgstr "停止服务"
 
 #: system-config-services.gladestrings:11
 #: system-config-services.gladestrings:48
@@ -145,9 +143,8 @@ msgstr "停止"
 #: system-config-services.gladestrings:12
 #: system-config-services.gladestrings:27
 #: system-config-services.gladestrings:49
-#, fuzzy
 msgid "Restart the selected service"
-msgstr "重启服务(_R)"
+msgstr "重启服务"
 
 #: system-config-services.gladestrings:13
 #: system-config-services.gladestrings:50
@@ -159,9 +156,8 @@ msgid "Service Configuration"
 msgstr "服务配置"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "刷新服务列表(_R)"
+msgstr "刷新服务列表"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
@@ -178,14 +174,12 @@ msgstr "保存改变(_S)"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "还原到上一次保存(_L)"
+msgstr "还原到上一次保存"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
-msgstr "还原到上一次保存(_L)"
+msgstr "还原到上一次保存"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
@@ -256,9 +250,8 @@ msgid "Cancel"
 msgstr "取消"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "退出(_Q)"
+msgstr "退出"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
