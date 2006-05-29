@@ -13,13 +13,12 @@ msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-05-26 17:37+0100\n"
+"PO-Revision-Date: 2006-05-29 17:29+0200\n"
 "Last-Translator: Philippe Villiers <kissifrot@gmail.com>\n"
 "Language-Team:  <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
+"Content-Transfer-Encoding: 8bit"
 
 #: ../src/serviceconf.py:76
 #, python-format
@@ -220,7 +219,7 @@ msgstr "Niveau d'exécution _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
+msgstr "Le niveau 4 est un mode d'exécution réservé à la personnalisation du système, et n'est que peu utilisé."
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -228,7 +227,7 @@ msgstr "Niveau d'exécution _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "Le niveau 5 est un mode d'exécution multi-utilisateur avec gestion du réseau et X Windows"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -317,4 +316,3 @@ msgstr "Modification du niveau d'exécution :"
 #~ msgstr "Gestion des Services"
 #~ msgid "Services"
 #~ msgstr "Services"
-
