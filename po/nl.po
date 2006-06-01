@@ -14,13 +14,13 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-01-29 11:12+0100\n"
+"PO-Revision-Date: 2006-06-01 17:36+0200\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@gmail.com>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11\n"
+"X-Generator: KBabel 1.11.2\n"
 
 #: ../src/serviceconf.py:76
 #, python-format
@@ -157,9 +157,8 @@ msgid "Service Configuration"
 msgstr "Voorziening configuratie"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "De geselecteerde voorziening opnieuw starten"
+msgstr "Lijst van voorzieningen verversen"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
@@ -168,7 +167,7 @@ msgstr "Voorzieningenlijst _verversen"
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr ""
+msgstr "Opslaan van de door u gemaakte wijzigingen"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
@@ -176,18 +175,17 @@ msgstr "Wijzigingen _opslaan"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "_Terugkeren naar laatst opgeslagen"
+msgstr "Terugkeren naar de laatst opgeslagen wijziging"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
-msgstr "_Terugkeren naar laatst opgeslagen"
+msgstr "_Terugkeren naar laatst opgeslagen wijziging"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
 msgstr ""
+"Acties zoals starten, stoppen en herstarten van de geselecteerde voorziening"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -207,7 +205,7 @@ msgstr "Voorziening _herstarten"
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr ""
+msgstr "Selecteer het runlevel dat u wilt bewerken"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -215,7 +213,7 @@ msgstr "Runlevel _bewerken"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr ""
+msgstr "Runlevel 3 is de multiuser-modus met netwerkondersteuning"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -224,6 +222,8 @@ msgstr "Runlevel _3"
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
 msgstr ""
+"Runlevel 4 is gereserveerd voor lokale aanpassingen en wordt meestal niet "
+"gebruikt"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -231,7 +231,7 @@ msgstr "Runlevel _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "Runlevel 5 is de multiuser-modus met netwerkondersteuning en X Windows"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -239,11 +239,11 @@ msgstr "Runlevel _5"
 
 #: system-config-services.gladestrings:37
 msgid "Read Manual"
-msgstr ""
+msgstr "Lees de handleiding"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
-msgstr ""
+msgstr "_Handleiding"
 
 #: system-config-services.gladestrings:40
 msgid "Save"
@@ -251,16 +251,15 @@ msgstr "Opslaan"
 
 #: system-config-services.gladestrings:42
 msgid "Cancel"
-msgstr ""
+msgstr "Annuleren"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "_Afsluiten"
+msgstr "Afsluiten"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
-msgstr ""
+msgstr "Beëindigen"
 
 #: system-config-services.gladestrings:51
 msgid "Current Active Runlevel: "
