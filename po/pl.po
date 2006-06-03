@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-01-27 17:10+0200\n"
+"PO-Revision-Date: 2006-05-21 19:50+0200\n"
 "Last-Translator: Tom Berner <tom@lodz.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -114,9 +114,8 @@ msgstr "Brak"
 #: system-config-services.gladestrings:8
 #: system-config-services.gladestrings:23
 #: system-config-services.gladestrings:45
-#, fuzzy
 msgid "Start the selected service"
-msgstr "Uruchom u_sługę"
+msgstr "Uruchom zaznaczoną usługę"
 
 #: system-config-services.gladestrings:9
 #: system-config-services.gladestrings:46
@@ -126,9 +125,8 @@ msgstr "Uruchom"
 #: system-config-services.gladestrings:10
 #: system-config-services.gladestrings:25
 #: system-config-services.gladestrings:47
-#, fuzzy
 msgid "Stop the selected service"
-msgstr "Usuń usługę"
+msgstr "Zatrzymaj zaznaczoną usługę"
 
 #: system-config-services.gladestrings:11
 #: system-config-services.gladestrings:48
@@ -138,9 +136,8 @@ msgstr "Zatrzymaj"
 #: system-config-services.gladestrings:12
 #: system-config-services.gladestrings:27
 #: system-config-services.gladestrings:49
-#, fuzzy
 msgid "Restart the selected service"
-msgstr "U_ruchom ponownie usługę"
+msgstr "Uruchom ponownie zaznaczoną usługę"
 
 #: system-config-services.gladestrings:13
 #: system-config-services.gladestrings:50
@@ -152,9 +149,8 @@ msgid "Service Configuration"
 msgstr "Konfiguracja usług"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "_Odśwież listę usług"
+msgstr "Odśwież listę usług"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
@@ -163,7 +159,7 @@ msgstr "_Odśwież listę usług"
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr ""
+msgstr "Zapisz wprowadzone zmiany"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
@@ -171,18 +167,18 @@ msgstr "Zapi_sz zmiany"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "Przywróć do ostatniego zapisu"
+msgstr "Przywróć do ostatniej zapisanej zmiany"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
-msgstr "Przywróć do ostatniego zapisu"
+msgstr "P_rzywróć do ostatniego zapisu"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
 msgstr ""
+"Operacje takie jak uruchomienie, zatrzymanie i ponowne uruchomienie na "
+"zaznaczonej usłudze"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -202,7 +198,7 @@ msgstr "U_ruchom ponownie usługę"
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr ""
+msgstr "Zaznacz poziom uruchamiania, który chciałbyś zmodyfikować"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -210,7 +206,7 @@ msgstr "_Edytuj poziom uruchamiania"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr ""
+msgstr "Poziom 3 to tryb wieloużytkownikowy z siecią"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -219,6 +215,8 @@ msgstr "Poziom _3"
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
 msgstr ""
+"Poziom 4 jest zarezerwowany do lokalnego dostosowania i nie jest zwykle "
+"używany"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -226,7 +224,7 @@ msgstr "Poziom _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "Poziom 5 to tryb wieloużytkownikowy bez sieci i X Window"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -234,28 +232,27 @@ msgstr "Poziom _5"
 
 #: system-config-services.gladestrings:37
 msgid "Read Manual"
-msgstr ""
+msgstr "Przeczytaj podręcznik"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
-msgstr ""
+msgstr "_Podręcznik"
 
 #: system-config-services.gladestrings:40
 msgid "Save"
-msgstr ""
+msgstr "Zapisz"
 
 #: system-config-services.gladestrings:42
 msgid "Cancel"
-msgstr ""
+msgstr "Anuluj"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "_Zakończ"
+msgstr "Zakończ"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
-msgstr ""
+msgstr "Zakończ"
 
 #: system-config-services.gladestrings:51
 msgid "Current Active Runlevel: "
@@ -264,73 +261,3 @@ msgstr "Bieżący poziom uruchamiania: "
 #: system-config-services.gladestrings:52
 msgid "Editing Runlevel:"
 msgstr "Modyfikowanie poziomu uruchamiania:"
-
-#~ msgid "Add Service"
-#~ msgstr "Dodaj usługę"
-
-#~ msgid "Description"
-#~ msgstr "Opis"
-
-#~ msgid "Don't Save"
-#~ msgstr "Nie zapisuj"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "_Wszystkie poziomy"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Okno dialogowe zapisu"
-
-#~ msgid "Service Name: "
-#~ msgstr "Nazwa usługi: "
-
-#~ msgid "Status"
-#~ msgstr "Stan"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "Te usługi uruchamiane są na żądanie i kończą działanie, gdy nie ma nic "
-#~ "więcej do zrobienia. Usługa <b>xinetd</b> musi być uruchomiona, aby mogły "
-#~ "być używane."
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Te usługi są raz uruchamiane w tle. Można określić, w których poziomach "
-#~ "są uruchamiane."
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Dokonałeś zmian w bieżącym poziomie uruchamiania.\n"
-#~ "Czy chcesz zapisać zmiany?"
-
-#~ msgid "_Background Services"
-#~ msgstr "_Usługi w tle"
-
-#~ msgid "_Contents"
-#~ msgstr "_Zawartość"
-
-#~ msgid "_File"
-#~ msgstr "_Plik"
-
-#~ msgid "_Help"
-#~ msgstr "_Pomoc"
-
-#~ msgid "_On Demand Services"
-#~ msgstr "U_sługi na żądanie"
-
-#~ msgid "_View"
-#~ msgstr "_Widok"
-
-#~ msgid "Configure which services will be running when the system starts"
-#~ msgstr "Konfiguracja usług uruchamianych przy starcie systemu"
-
-#~ msgid "Service Management"
-#~ msgstr "Zarządzanie usługami"
-
-#~ msgid "Services"
-#~ msgstr "Usługi"
