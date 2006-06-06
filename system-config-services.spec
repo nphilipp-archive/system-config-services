@@ -2,7 +2,7 @@
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
 Version: 0.9.0
-Release: 1
+Release: 2
 URL: http://www.redhat.com/ 
 Source0: %{name}-%{version}.tar.bz2
 License: GPL
@@ -15,8 +15,11 @@ Requires: usermode >= 1.36, usermode-gtk
 Requires: htmlview
 Requires: python >= 2.3.0
 Requires(post): hicolor-icon-theme
+Requires(post): gtk2
 Requires(postun): hicolor-icon-theme
+Requires(postun): gtk2
 BuildRequires: intltool sed desktop-file-utils
+BuildRequires: perl(XML::Parser)
 Obsoletes: serviceconf
 Obsoletes: redhat-config-services
 
@@ -72,6 +75,10 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Jun 05 2006 Jesse Keating <jkeating@redhat.com> - 0.9.0-2
+- Added BuildRequires perl-XML-Parser (#194179)
+- Added Requires(post) and (postun) gtk2
+
 * Fri May 19 2006 Nils Philippsen <nphilipp@redhat.com>
 - rip out autofoo
 - use bzip2'ed tarballs
