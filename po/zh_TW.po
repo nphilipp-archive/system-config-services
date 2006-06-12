@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-01-30 16:09+1000\n"
+"PO-Revision-Date: 2006-06-12 10:22+0800\n"
 "Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
 "Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 #: ../src/serviceconf.py:76
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr "您確定要刪除 %s 嗎？"
+msgstr "確定要刪除 %s 嗎？"
 
 #: ../src/serviceconf.py:139
 #, python-format
@@ -33,15 +33,15 @@ msgstr "執行等級 %d"
 #. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:279
 msgid "Currently Running in Runlevel: "
-msgstr "目前執行等級是: "
+msgstr "目前的執行等級是: "
 
 #: ../src/serviceconf.py:375 ../src/serviceconf.py:484
 msgid "Editing Runlevel: "
-msgstr "正在編輯執行等級: "
+msgstr "正在編輯的執行等級: "
 
 #: ../src/serviceconf.py:423
 msgid "Unknown"
-msgstr "未知的"
+msgstr "未知"
 
 #: ../src/serviceconf.py:513
 msgid "All"
@@ -58,7 +58,7 @@ msgid ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
-"系統服務的設定工具 VERSION\n"
+"系統服務設定工具 VERSION\n"
 " 版權所有 (c) 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat>\n"
 " Bill Nottingham <notting@redhat>\n"
@@ -118,21 +118,19 @@ msgstr "沒有"
 #: system-config-services.gladestrings:8
 #: system-config-services.gladestrings:23
 #: system-config-services.gladestrings:45
-#, fuzzy
 msgid "Start the selected service"
-msgstr "啟動服務(_S)"
+msgstr "啟動選取的服務"
 
 #: system-config-services.gladestrings:9
 #: system-config-services.gladestrings:46
 msgid "Start"
-msgstr "開始"
+msgstr "啟動"
 
 #: system-config-services.gladestrings:10
 #: system-config-services.gladestrings:25
 #: system-config-services.gladestrings:47
-#, fuzzy
 msgid "Stop the selected service"
-msgstr "刪除服務"
+msgstr "停止選取的服務"
 
 #: system-config-services.gladestrings:11
 #: system-config-services.gladestrings:48
@@ -142,9 +140,8 @@ msgstr "停止"
 #: system-config-services.gladestrings:12
 #: system-config-services.gladestrings:27
 #: system-config-services.gladestrings:49
-#, fuzzy
 msgid "Restart the selected service"
-msgstr "重新啟動服務(_R)"
+msgstr "重新啟動選取的服務"
 
 #: system-config-services.gladestrings:13
 #: system-config-services.gladestrings:50
@@ -153,12 +150,11 @@ msgstr "重新啟動"
 
 #: system-config-services.gladestrings:14
 msgid "Service Configuration"
-msgstr "服務組態設定"
+msgstr "服務設定"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "重新整理服務清單(_R)"
+msgstr "重新整理服務清單"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
@@ -167,7 +163,7 @@ msgstr "重新整理服務清單(_R)"
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr ""
+msgstr "儲存所作的變更"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
@@ -175,18 +171,16 @@ msgstr "儲存變更(_S)"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "返回到上一次的儲存(_L)"
+msgstr "返回到上一次的儲存"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
-msgstr "返回到上一次的儲存(_L)"
+msgstr "返回到上一次的儲存(_R)"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr ""
+msgstr "對選取服務的動作，諸如啟動、停止、重新啟動等"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -206,7 +200,7 @@ msgstr "重新啟動服務(_R)"
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr ""
+msgstr "選取要編輯的執行等級"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -214,7 +208,7 @@ msgstr "編輯執行等級(_E)"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr ""
+msgstr "執行等級 3 是有網路功能的多用戶模式"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -222,7 +216,7 @@ msgstr "執行等級 _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
+msgstr "執行等級 4 保留作本機自訂用途，通常不會使用"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -230,7 +224,7 @@ msgstr "執行等級 _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "執行等級 5 是有網路功能和 X 視窗的多用戶模式"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -238,28 +232,27 @@ msgstr "執行等級 _5"
 
 #: system-config-services.gladestrings:37
 msgid "Read Manual"
-msgstr ""
+msgstr "閱讀手冊"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
-msgstr ""
+msgstr "手冊(_M)"
 
 #: system-config-services.gladestrings:40
 msgid "Save"
-msgstr ""
+msgstr "儲存"
 
 #: system-config-services.gladestrings:42
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "離開(_Q)"
+msgstr "離開"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
-msgstr ""
+msgstr "退出"
 
 #: system-config-services.gladestrings:51
 msgid "Current Active Runlevel: "
@@ -267,7 +260,7 @@ msgstr "現行的執行等級:"
 
 #: system-config-services.gladestrings:52
 msgid "Editing Runlevel:"
-msgstr "正在編輯執行等級:"
+msgstr "正在編輯的執行等級:"
 
 #~ msgid "Add Service"
 #~ msgstr "新增服務"
