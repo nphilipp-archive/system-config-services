@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: system-config-services 0.8.26\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-05-24 00:48+0200\n"
+"PO-Revision-Date: 2006-06-12 14:49+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -175,7 +175,7 @@ msgstr "Gå tilbake til fo_rrige lagring"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr ""
+msgstr "Handlinger som start, stopp og omstart av valgt tjeneste"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -195,7 +195,7 @@ msgstr "Sta_rt tjenesten på nytt"
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr ""
+msgstr "Velg kjøringsnivået du ønsker å redigere"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -211,7 +211,7 @@ msgstr "Kjøringsnivå _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
+msgstr "Kjøringsnivå 4 er reservert for lokal tilpasning og brukes vanligvis ikke"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -219,7 +219,7 @@ msgstr "Kjøringsnivå _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "Kjøringsnivå 5 er flerbrukermodus med nettverk og X Windows"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -227,11 +227,11 @@ msgstr "Kjøringsnivå _5"
 
 #: system-config-services.gladestrings:37
 msgid "Read Manual"
-msgstr ""
+msgstr "Les dokumentasjon"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
-msgstr ""
+msgstr "_Brukermanual"
 
 #: system-config-services.gladestrings:40
 msgid "Save"
