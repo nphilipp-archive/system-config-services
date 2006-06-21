@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-04-26 00:14+0800\n"
+"PO-Revision-Date: 2006-06-21 21:19+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,8 @@ msgstr "Runlevel %d"
 msgid "Currently Running in Runlevel: "
 msgstr "Kini Dilaksana pada Runlevel:"
 
-#: ../src/serviceconf.py:375 ../src/serviceconf.py:484
+#: ../src/serviceconf.py:375
+#: ../src/serviceconf.py:484
 msgid "Editing Runlevel: "
 msgstr "Menyunting Runlevel: "
 
@@ -85,7 +86,8 @@ msgstr "%s gagal. Ralat adalah: %s"
 msgid " successful"
 msgstr " berjaya"
 
-#: ../src/servicemethods.py:337 ../src/servicemethods.py:348
+#: ../src/servicemethods.py:337
+#: ../src/servicemethods.py:348
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd perlu dihidupkan supaya %s dilaksanakan"
@@ -117,7 +119,7 @@ msgstr "Tiada"
 #: system-config-services.gladestrings:45
 #, fuzzy
 msgid "Start the selected service"
-msgstr "_Mulakan Servis"
+msgstr "Servis s"
 
 #: system-config-services.gladestrings:9
 #: system-config-services.gladestrings:46
@@ -129,7 +131,7 @@ msgstr "Mula"
 #: system-config-services.gladestrings:47
 #, fuzzy
 msgid "Stop the selected service"
-msgstr "Padam Servis"
+msgstr "Servis s"
 
 #: system-config-services.gladestrings:11
 #: system-config-services.gladestrings:48
@@ -141,7 +143,7 @@ msgstr "Henti"
 #: system-config-services.gladestrings:49
 #, fuzzy
 msgid "Restart the selected service"
-msgstr "_Ulanghidup Servis"
+msgstr "Servis s"
 
 #: system-config-services.gladestrings:13
 #: system-config-services.gladestrings:50
@@ -202,8 +204,9 @@ msgid "_Restart Service"
 msgstr "_Ulanghidup Servis"
 
 #: system-config-services.gladestrings:29
+#, fuzzy
 msgid "Select the runlevel you would like to edit"
-msgstr ""
+msgstr "Sila pilih resolusi yang anda ingin gunakan:"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -234,29 +237,29 @@ msgid "Runlevel _5"
 msgstr "Runlevel _5"
 
 #: system-config-services.gladestrings:37
+#, fuzzy
 msgid "Read Manual"
-msgstr ""
+msgstr "/Bantuan/_Manual"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
-msgstr ""
+msgstr "_Manual"
 
 #: system-config-services.gladestrings:40
 msgid "Save"
-msgstr ""
+msgstr "Simpan"
 
 #: system-config-services.gladestrings:42
 msgid "Cancel"
-msgstr ""
+msgstr "Batal"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "_Keluar"
+msgstr "Keluar"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
-msgstr ""
+msgstr "Keluar"
 
 #: system-config-services.gladestrings:51
 msgid "Current Active Runlevel: "
@@ -266,64 +269,3 @@ msgstr "Runlevel Aktif Samasa:"
 msgid "Editing Runlevel:"
 msgstr "Mengedit Runlevel:"
 
-#~ msgid "Add Service"
-#~ msgstr "Tambah Servis"
-
-#~ msgid "Description"
-#~ msgstr "Huraian"
-
-#~ msgid "Don't Save"
-#~ msgstr "Jangan Simpan"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "Runlevel Semu_a"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Simpan Dialog"
-
-#~ msgid "Service Name: "
-#~ msgstr "Nama Servis:"
-
-#~ msgid "Status"
-#~ msgstr "Status"
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Servis ini dimulakan sekali dan dilaksana pada latarbelakang. Anda boleh "
-#~ "menyatakan dalam runlevel mana ia dimulakan."
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Anda membuat perubahan pada runlevel semasa.\n"
-#~ " Adakah anda ingin menyimpan perubahan ini?"
-
-#~ msgid "_Background Services"
-#~ msgstr "Servis Latar_belakang"
-
-#~ msgid "_Contents"
-#~ msgstr "_Kandungan"
-
-#~ msgid "_File"
-#~ msgstr "_Fail"
-
-#~ msgid "_Help"
-#~ msgstr "_Bantuan"
-
-#~ msgid "_On Demand Services"
-#~ msgstr "_Servis Ketika Perlu"
-
-#~ msgid "_View"
-#~ msgstr "_Lihat"
-
-#~ msgid "Configure which services will be running when the system starts"
-#~ msgstr "Tetapkan servis mana yang akan dilaksanakan ketika sistem bermula"
-
-#~ msgid "Service Management"
-#~ msgstr "Pengurusan Servis"
-
-#~ msgid "Services"
-#~ msgstr "Servis"
