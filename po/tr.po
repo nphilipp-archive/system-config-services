@@ -1,19 +1,18 @@
 # translation of services_tr.po to 
-# 
 # translation of tr.po to Turkish
-# $Id: tr.po,v 1.60 2006/05/19 16:08:59 nphilipp Exp $
+# $Id: tr.po,v 1.61 2006/06/23 16:49:06 emturanb Exp $
 # Nilgün Belma Bugüner <nilgun@superonline.com>, 2003.
 # Erçin EKER <erc.caldera@gmx.net>, 2003.
 # Bahadir Yagan <bahadir.yagan@mentorsystem.com>, 2004, 2006.
-# 
+# Egemen Metin Turan <mturan@aegee-ankara.org>,  2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: services_tr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-02-06 00:06+0200\n"
-"Last-Translator: \n"
-"Language-Team:  <en@li.org>\n"
+"PO-Revision-Date: 2006-06-23 19:58+0200\n"
+"Last-Translator: Egemen Metin Turan <mturan@aegee-ankara.org>\n"
+"Language-Team: Turkish <fedora-trans-tr@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -119,9 +118,8 @@ msgstr "Hiçbiri"
 #: system-config-services.gladestrings:8
 #: system-config-services.gladestrings:23
 #: system-config-services.gladestrings:45
-#, fuzzy
 msgid "Start the selected service"
-msgstr "Hizmeti _Başlat"
+msgstr "Seçilmiş servisi başlat"
 
 #: system-config-services.gladestrings:9
 #: system-config-services.gladestrings:46
@@ -131,9 +129,8 @@ msgstr "Başlat"
 #: system-config-services.gladestrings:10
 #: system-config-services.gladestrings:25
 #: system-config-services.gladestrings:47
-#, fuzzy
 msgid "Stop the selected service"
-msgstr "Hizmeti Sil"
+msgstr "Seçilmiş servisi durdur"
 
 #: system-config-services.gladestrings:11
 #: system-config-services.gladestrings:48
@@ -143,9 +140,8 @@ msgstr "Dur"
 #: system-config-services.gladestrings:12
 #: system-config-services.gladestrings:27
 #: system-config-services.gladestrings:49
-#, fuzzy
 msgid "Restart the selected service"
-msgstr "Hizmeti _Yeniden Başlat"
+msgstr "Seçilmiş servisi yeniden başlat"
 
 #: system-config-services.gladestrings:13
 #: system-config-services.gladestrings:50
@@ -154,21 +150,20 @@ msgstr "Yeniden Başlat"
 
 #: system-config-services.gladestrings:14
 msgid "Service Configuration"
-msgstr "Hizmet Yapılandırması"
+msgstr "Servis Yapılandırması"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "Hizmet Listesini _Tazele"
+msgstr "Servis listesini tazele"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
-msgstr "Hizmet Listesini _Tazele"
+msgstr "Servis listesini _Tazele"
 
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr ""
+msgstr "Yaptığın değişiklikleri kaydet"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
@@ -176,18 +171,16 @@ msgstr "Değişiklikleri _Kaydet"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "Son Kayıtlı Duruma _Dön"
+msgstr "Son kayıtlı duruma dön"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
 msgstr "Son Kayıtlı Duruma _Dön"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr ""
+msgstr "Seçilmiş servis üzerinde başlatma, durdurma ve yeniden başlatma eylemleri"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -195,19 +188,19 @@ msgstr "_Eylemler"
 
 #: system-config-services.gladestrings:24
 msgid "_Start Service"
-msgstr "Hizmeti _Başlat"
+msgstr "Servisi _Başlat"
 
 #: system-config-services.gladestrings:26
 msgid "S_top Service"
-msgstr "Hizmeti _Durdur"
+msgstr "Servisi _Durdur"
 
 #: system-config-services.gladestrings:28
 msgid "_Restart Service"
-msgstr "Hizmeti _Yeniden Başlat"
+msgstr "Servisi _Yeniden Başlat"
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr ""
+msgstr "Düzenlemek istediğin çalışma seviyesini seç"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -215,7 +208,7 @@ msgstr "Çalışma _Seviyesini Düzenle"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr ""
+msgstr "Çalışma Seviyesi 3 ağ desteği bulunan çok kullanıcılı kiptir"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -223,7 +216,7 @@ msgstr "Çalışma Seviyesi _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
+msgstr "Çalışma Seviyesi 4 yerel uyarlama için yedek olarak ayrılmıştır, ve genellikle kullanılmaz"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -231,7 +224,7 @@ msgstr "Çalışma Seviyesi _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "Çalışma Seviyesi 5 ağ ve X Windows desteği bulunan çok kullanıcılı kiptir"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -239,28 +232,27 @@ msgstr "Çalışma Seviyesi _5"
 
 #: system-config-services.gladestrings:37
 msgid "Read Manual"
-msgstr ""
+msgstr "Elkitabını Oku"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
-msgstr ""
+msgstr "_Elkitabı"
 
 #: system-config-services.gladestrings:40
 msgid "Save"
-msgstr ""
+msgstr "Kaydet"
 
 #: system-config-services.gladestrings:42
 msgid "Cancel"
-msgstr ""
+msgstr "Vazgeç"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "K_apat"
+msgstr "Kapat"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
-msgstr ""
+msgstr "Çık"
 
 #: system-config-services.gladestrings:51
 msgid "Current Active Runlevel: "
@@ -271,7 +263,7 @@ msgid "Editing Runlevel:"
 msgstr "Düzenlenen Çalışma Seviyesi:"
 
 #~ msgid "Add Service"
-#~ msgstr "Hizmet Ekle"
+#~ msgstr "Servis Ekle"
 
 #~ msgid "Description"
 #~ msgstr "Açıklama"
@@ -286,7 +278,7 @@ msgstr "Düzenlenen Çalışma Seviyesi:"
 #~ msgstr "Kayıt Diyaloğu"
 
 #~ msgid "Service Name: "
-#~ msgstr "Hizmet Adı: "
+#~ msgstr "Servis Adı: "
 
 #~ msgid "Status"
 #~ msgstr "Durum"
