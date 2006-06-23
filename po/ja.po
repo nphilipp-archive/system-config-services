@@ -177,9 +177,8 @@ msgid "Revert to the last saved change"
 msgstr "前回保存した変更を元に戻す"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
-msgstr "前回の保存に戻る(_L)"
+msgstr "前回の保存に戻る(_R)"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
@@ -250,9 +249,8 @@ msgid "Cancel"
 msgstr "取り消し"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "終了(_Q)"
+msgstr "終了"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
