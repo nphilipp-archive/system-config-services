@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: ml\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-04-27 16:11+0530\n"
+"PO-Revision-Date: 2006-06-23 16:55+0530\n"
 "Last-Translator: Ani Peter <apeter@redhat.com>\n"
 "Language-Team: Malayalam\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
 "\n"
 
 #: ../src/serviceconf.py:76
@@ -117,9 +117,8 @@ msgstr "ഒന്നുമില്ല"
 #: system-config-services.gladestrings:8
 #: system-config-services.gladestrings:23
 #: system-config-services.gladestrings:45
-#, fuzzy
 msgid "Start the selected service"
-msgstr "സറ്‍വീസ് ആരംഭിക്കുക(_S)"
+msgstr "സറ്‍വീസ് ആരംഭിക്കുക"
 
 #: system-config-services.gladestrings:9
 #: system-config-services.gladestrings:46
@@ -129,9 +128,8 @@ msgstr "ആരംഭിക്കുക"
 #: system-config-services.gladestrings:10
 #: system-config-services.gladestrings:25
 #: system-config-services.gladestrings:47
-#, fuzzy
 msgid "Stop the selected service"
-msgstr "സറ്‍വീസ് നീക്കം ചെയ്യുക"
+msgstr "തിരഞ്ഞെടുത്ത സര്‍വീസ് നീക്കം ചെയ്യുക"
 
 #: system-config-services.gladestrings:11
 #: system-config-services.gladestrings:48
@@ -141,9 +139,8 @@ msgstr "നിറ്‍ത്തുക"
 #: system-config-services.gladestrings:12
 #: system-config-services.gladestrings:27
 #: system-config-services.gladestrings:49
-#, fuzzy
 msgid "Restart the selected service"
-msgstr "സറ്‍വീസ് വീണ്ടും ആരംഭിക്കുക(_R)"
+msgstr "സറ്‍വീസ് വീണ്ടും ആരംഭിക്കുക"
 
 #: system-config-services.gladestrings:13
 #: system-config-services.gladestrings:50
@@ -155,9 +152,8 @@ msgid "Service Configuration"
 msgstr "സറ്‍വീസ് കോണ്‍ഫിഗറേഷന്‍"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "സറ്‍വീസ് ലിസ്റ്റ് ചിട്ടപ്പെടുത്തുക(_R)"
+msgstr "സറ്‍വീസ് ലിസ്റ്റ് ചിട്ടപ്പെടുത്തുക"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
@@ -166,7 +162,7 @@ msgstr "സറ്‍വീസ് ലിസ്റ്റ് ചിട്ടപ്�
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr ""
+msgstr "നിങ്ങള്‍ വരുത്തിയ മാറ്റങ്ങള്‍ സംരക്ഷിക്കുക"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
@@ -174,18 +170,16 @@ msgstr "മാറ്റങ്ങള്‍ സംരക്ഷിക്കുക(_
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "ഏറ്റവും ഒടുവില്‍(_L) സംരക്ഷിച്ചതിലേക്ക് തിരികെ പോവുക"
+msgstr "ഏറ്റവും ഒടുവില്‍ സംരക്ഷിച്ചതിലേക്ക് തിരികെ പോവുക"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
-msgstr "ഏറ്റവും ഒടുവില്‍(_L) സംരക്ഷിച്ചതിലേക്ക് തിരികെ പോവുക"
+msgstr "ഏറ്റവും ഒടുവില്‍ സംരക്ഷിച്ചതിലേക്ക് തിരികെ പോവുക(_R)"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr ""
+msgstr "തിരഞ്ഞെടുത്ത സര്‍വീസില്‍ ഉളള ആരംഭിക്കുക, നിര്‍ത്തുക, റീസ്റ്റാര്‍ട്ട് ചെയ്യുക എന്നീ പ്രവര്‍ത്തനങ്ങള്‍"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -205,7 +199,7 @@ msgstr "സറ്‍വീസ് വീണ്ടും ആരംഭിക്ക�
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr ""
+msgstr "മാറ്റം വരുത്തുവാന്‍ ആഗ്രഹിക്കുന്ന റണ്‍ലവല്‍ തിരഞ്ഞെടുക്കുക"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -213,7 +207,7 @@ msgstr "റണ്‍ലവലില്‍ മാറ്റം വരുത്ത�
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr ""
+msgstr "നെറ്റ്വര്‍ക്കിംങ് ഉളള മള്‍ട്ടീയൂസര്‍ മോഡാണ് റണ്‍ലവല്‍ 3"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -221,7 +215,7 @@ msgstr "റണ്‍ലവല്‍ 3(_3)"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
+msgstr "ലോക്കല്‍ കസ്റ്റമൈസേഷനായി റിസേര്‍വ് റണ്‍ലവല്‍ 4 ചെയ്തിരിക്കുന്നു, പക്ഷേ സാധാരണയായി ഉപയോഗിക്കാറില്ല"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -229,7 +223,7 @@ msgstr "റണ്‍ലവല്‍ 4(_4)"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "നെറ്റ്വര്‍ക്കിംങും X Windowsും ഉളള മള്‍ട്ടീയൂസര്‍ മോഡാണ് റണ്‍ലവല്‍ 5"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -237,28 +231,27 @@ msgstr "റണ്‍ലവല്‍ 5(_5)"
 
 #: system-config-services.gladestrings:37
 msgid "Read Manual"
-msgstr ""
+msgstr "മാനുവല്‍ വായിക്കുക"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
-msgstr ""
+msgstr "മാനുവല്‍(_M)"
 
 #: system-config-services.gladestrings:40
 msgid "Save"
-msgstr ""
+msgstr "സംരക്ഷിക്കുക"
 
 #: system-config-services.gladestrings:42
 msgid "Cancel"
-msgstr ""
+msgstr "റദ്ദാക്കുക"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "പുറത്ത് പോവുക(_Q)"
+msgstr "പുറത്ത് പോവുക"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
-msgstr ""
+msgstr "പുറത്തേക്ക് പോവുക"
 
 #: system-config-services.gladestrings:51
 msgid "Current Active Runlevel: "
@@ -268,71 +261,3 @@ msgstr "ഇപ്പോള്‍ പ്രവറ്‍ത്തിക്കു�
 msgid "Editing Runlevel:"
 msgstr "റണ്‍ലവലില്‍ മാറ്റം വരുത്തുക: "
 
-#~ msgid "Add Service"
-#~ msgstr "സറ്‍വീസ് ചേറ്‍ക്കുക"
-
-#~ msgid "Description"
-#~ msgstr "വിശദീകരണം"
-
-#~ msgid "Don't Save"
-#~ msgstr "സംരക്ഷിക്കേണ്ടതില്ല"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "എല്ലാ റണ്‍ലവലുകളും(_A)"
-
-#~ msgid "Save Dialog"
-#~ msgstr "ഡയലോഗ് സംരക്ഷിക്കുക"
-
-#~ msgid "Service Name: "
-#~ msgstr "സറ്‍വീസിന്‍റെ പേര്: "
-
-#~ msgid "Status"
-#~ msgstr "സ്ഥിതി"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "ആവശ്യാനുസരണം ആണ് ഈ സറ്‍വീസുകള്‍ ആരംഭിച്ചത്. എല്ലാം തീറ്‍ന്നതിന് ശേഷമേ ഇവ ഇനി അവസാനിക്കൂ. "
-#~ "<b>xinetd</b> എന്ന സറ്‍വീസ് പ്രവറ്‍ത്തിച്ചുകൊണ്ടിരിക്കുന്നു, അതിനാല്‍ ഇത് ഉപയോഗിക്കാവുന്നതാണ്."
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "ഈ സറ്‍വീസുകള്‍ ഒരിക്കല്‍ ആരംഭിച്ചാല്‍ അവ പശ്ചാത്തലത്തില്‍ പ്രവറ്‍ത്തിച്ചുകൊണ്ടിരിക്കുന്നു. ഇവ ഏത് "
-#~ "റണ്‍ലവലില്‍ പ്രവറ്‍ത്തനം ആരംഭിച്ചുവെന്ന് നിങ്ങള്‍ക്ക് പറയാം."
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "ഇപ്പോള്‍ പ്രവറ്‍ത്തിക്കുന്ന റണ്‍ലവലില്‍ നിങ്ങള്‍ മാറ്റങ്ങള്‍ വരുത്തിയിരിക്കുന്നു.\n"
-#~ "ഈ മാറ്റങ്ങള്‍ നിങ്ങള്‍ക്ക് സംരക്ഷിക്കണമോ?"
-
-#~ msgid "_Background Services"
-#~ msgstr "ബാക്ക്ഗ്രൌണ്ട് സറ്‍വീസുകള്‍"
-
-#~ msgid "_Contents"
-#~ msgstr "ഉള്ളടക്കം(_C)"
-
-#~ msgid "_File"
-#~ msgstr "ഫൈല്‍(_F)"
-
-#~ msgid "_Help"
-#~ msgstr "സഹായം(_H)"
-
-#~ msgid "_On Demand Services"
-#~ msgstr "ഓണ്‍ ഡിമാന്‍ഡ് സറ്‍വീസുകള്‍(_O)"
-
-#~ msgid "_View"
-#~ msgstr "വീക്ഷിക്കുക(_V)"
-
-#~ msgid "Configure which services will be running when the system starts"
-#~ msgstr "കംപ്യൂട്ടറ്‍ ഓണ്‍ ആകുമ്പോള്‍ ഏതെല്ലാം സറ്‍വീസുകള്‍ പ്രവറ്‍ത്തിക്കണമെന്ന് കോണ്‍ഫിഗറ്‍ ചെയ്യുക"
-
-#~ msgid "Service Management"
-#~ msgstr "സറ്‍വീസ് മാനേജ്മന്‍റ്"
-
-#~ msgid "Services"
-#~ msgstr "സറ്‍വീസുകള്‍"
