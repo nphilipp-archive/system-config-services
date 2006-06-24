@@ -8,6 +8,7 @@
 # Jean-Paul Aubry <jpaubry@redhat.com>, 2003,2004.
 # Stephane Raimbault <stephane.raimbault@free.fr>, 2004, 2006.
 # Philippe Villiers <kissifrot@gmail.com>, 2006.
+# Thomas Canniot <thomas.canniot@laposte.net>, 2006
 # 
 # 
 msgid ""
