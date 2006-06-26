@@ -2,14 +2,15 @@
 # Michelle Kim <mkim@redhat.com>, 2002.
 # Michelle J Kim <mkim@redhat.com>, 2003,2004.
 # Michelle Ji Yeen Kim <mkim@redhat.com>, 2005, 2006.
+# Eunju Kim <eukim@redhat.com>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-01-31 11:01+1000\n"
-"Last-Translator: Michelle Ji Yeen Kim <mkim@redhat.com>\n"
-"Language-Team: Korean\n"
+"PO-Revision-Date: 2006-06-26 15:35+1000\n"
+"Last-Translator: Eunju Kim <eukim@redhat.com>\n"
+"Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -116,9 +117,8 @@ msgstr "없음"
 #: system-config-services.gladestrings:8
 #: system-config-services.gladestrings:23
 #: system-config-services.gladestrings:45
-#, fuzzy
 msgid "Start the selected service"
-msgstr "서비스 시작 (_S)"
+msgstr "선택한 서비스 시작"
 
 #: system-config-services.gladestrings:9
 #: system-config-services.gladestrings:46
@@ -128,9 +128,8 @@ msgstr "시작"
 #: system-config-services.gladestrings:10
 #: system-config-services.gladestrings:25
 #: system-config-services.gladestrings:47
-#, fuzzy
 msgid "Stop the selected service"
-msgstr "서비스 삭제"
+msgstr "선택한 서비스 중지"
 
 #: system-config-services.gladestrings:11
 #: system-config-services.gladestrings:48
@@ -140,9 +139,8 @@ msgstr "중지"
 #: system-config-services.gladestrings:12
 #: system-config-services.gladestrings:27
 #: system-config-services.gladestrings:49
-#, fuzzy
 msgid "Restart the selected service"
-msgstr "서비스 재시작 (_R)"
+msgstr "선택한 서비스 재시작 "
 
 #: system-config-services.gladestrings:13
 #: system-config-services.gladestrings:50
@@ -154,9 +152,8 @@ msgid "Service Configuration"
 msgstr "서비스 설정"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "서비스 목록 재정리 (_R)"
+msgstr "서비스 목록 재정리 "
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
@@ -165,7 +162,7 @@ msgstr "서비스 목록 재정리 (_R)"
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr ""
+msgstr "변동 사항 저장"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
@@ -173,18 +170,16 @@ msgstr "변동 사항 저장 (_S)"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "마지막 변동 사항 취소 (_L)"
+msgstr "마지막 변동사항이 저장된 곳으로 되돌아가기"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
-msgstr "마지막 변동 사항 취소 (_L)"
+msgstr "마지막으로 저장된 곳으로 되돌아가기"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr ""
+msgstr "선택한 서비스에서 시작, 중지, 재시작과 같은 명령"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -204,7 +199,7 @@ msgstr "서비스 재시작 (_R)"
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr ""
+msgstr "편집하고자 하는 런레벨 선택"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -212,7 +207,7 @@ msgstr "런레벨 편집 (_E)"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr ""
+msgstr "런레벨 3 은 네트워크 상에서 다중 사용자 모드를 말합니다"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -220,7 +215,7 @@ msgstr "런레벨 3 (_3)"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
+msgstr "런레벨 4는 로컬 사용자 설정으로 지정되어 있으나 이는 주로 사용되지 않습니다"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -228,7 +223,7 @@ msgstr "런레벨 4 (_4)"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "런레벨 5는 네트워크와 X윈도우 상에서 다중사용자 모드를 말합니다"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -236,28 +231,27 @@ msgstr "런레벨 5 (_5)"
 
 #: system-config-services.gladestrings:37
 msgid "Read Manual"
-msgstr ""
+msgstr "메뉴얼 읽기"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
-msgstr ""
+msgstr "메뉴얼(_M)"
 
 #: system-config-services.gladestrings:40
 msgid "Save"
-msgstr ""
+msgstr "저장"
 
 #: system-config-services.gladestrings:42
 msgid "Cancel"
-msgstr ""
+msgstr "취소"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "종료(_Q)"
+msgstr "종료( Q)"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
-msgstr ""
+msgstr "나가기"
 
 #: system-config-services.gladestrings:51
 msgid "Current Active Runlevel: "
@@ -267,72 +261,3 @@ msgstr "현재 실행 중인 런레벨: "
 msgid "Editing Runlevel:"
 msgstr "런레벨 편집:"
 
-#~ msgid "Add Service"
-#~ msgstr "서비스 추가"
-
-#~ msgid "Description"
-#~ msgstr "설명"
-
-#~ msgid "Don't Save"
-#~ msgstr "저장하지 않음"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "모든 런레벨(_A)"
-
-#~ msgid "Save Dialog"
-#~ msgstr "대화 상자 저장"
-
-#~ msgid "Service Name: "
-#~ msgstr "서비스 이름: "
-
-#~ msgid "Status"
-#~ msgstr "상태"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "이 서비스들은 사용자 요구에 의해서 시작되며, 더이상 수행할 작업이 없으면 "
-#~ "완료됩니다. 이 서비스들을 사용하기 위해서는 <b>xinetd</b> 서비스가 반드시 "
-#~ "실행 중이어야 합니다."
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "이 서비스들이 시작되면 백그라운드에서 실행됩니다. 서비스 시작시 실행될 런"
-#~ "레벨을 지정하실 수 있습니다."
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "현재 런레벨을 수정하셨습니다.\n"
-#~ "변경 사항을 저장하시겠습니까?"
-
-#~ msgid "_Background Services"
-#~ msgstr "백그라운드 서비스(_B)"
-
-#~ msgid "_Contents"
-#~ msgstr "내용(_C)"
-
-#~ msgid "_File"
-#~ msgstr "파일(_F)"
-
-#~ msgid "_Help"
-#~ msgstr "도움말(_H)"
-
-#~ msgid "_On Demand Services"
-#~ msgstr "주문형 서비스(_O)"
-
-#~ msgid "_View"
-#~ msgstr "보기(_V)"
-
-#~ msgid "Configure which services will be running when the system starts"
-#~ msgstr "시스템 시작시 실행될 서비스를 설정"
-
-#~ msgid "Service Management"
-#~ msgstr "서비스 관리"
-
-#~ msgid "Services"
-#~ msgstr "서비스"
