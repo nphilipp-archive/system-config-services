@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: serviceconf 1.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-01-31 22:43+0000\n"
+"PO-Revision-Date: 2006-07-01 22:43+0000\n"
 "Last-Translator: Richard Allen <ra@ra.is>\n"
 "Language-Team: is <kde-isl@molar.is>\n"
 "MIME-Version: 1.0\n"
@@ -113,9 +113,8 @@ msgstr "Engin"
 #: system-config-services.gladestrings:8
 #: system-config-services.gladestrings:23
 #: system-config-services.gladestrings:45
-#, fuzzy
 msgid "Start the selected service"
-msgstr "_Ræsa þjónustu"
+msgstr "Ræsa þjónustuna"
 
 #: system-config-services.gladestrings:9
 #: system-config-services.gladestrings:46
@@ -125,9 +124,8 @@ msgstr "Ræsa"
 #: system-config-services.gladestrings:10
 #: system-config-services.gladestrings:25
 #: system-config-services.gladestrings:47
-#, fuzzy
 msgid "Stop the selected service"
-msgstr "Eyða þjónustu"
+msgstr "Stöðva þjónustu"
 
 #: system-config-services.gladestrings:11
 #: system-config-services.gladestrings:48
@@ -137,9 +135,8 @@ msgstr "Stöðva"
 #: system-config-services.gladestrings:12
 #: system-config-services.gladestrings:27
 #: system-config-services.gladestrings:49
-#, fuzzy
 msgid "Restart the selected service"
-msgstr "_Endurræsa þjónustu"
+msgstr "Endurræsa valinni þjónustu"
 
 #: system-config-services.gladestrings:13
 #: system-config-services.gladestrings:50
@@ -151,9 +148,8 @@ msgid "Service Configuration"
 msgstr "Stillingar þjónustna"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "_Uppfæra þjónustulistann"
+msgstr "Uppfæra þjónustulistann"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
@@ -162,7 +158,7 @@ msgstr "_Uppfæra þjónustulistann"
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr ""
+msgstr "Vista breytingunum sem þú hefur gert"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
@@ -170,18 +166,16 @@ msgstr "_Vista breytingum"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "_Fara í síðustu vistuðu stillingar"
+msgstr "Fara í síðustu vistuðu stillingar"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
 msgstr "_Fara í síðustu vistuðu stillingar"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr ""
+msgstr "Aðgerðir eins og start, stop og restart á þjónustunni"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -201,7 +195,7 @@ msgstr "_Endurræsa þjónustu"
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr ""
+msgstr "Veldu keryslustigið sem þú vil breyta"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -209,7 +203,7 @@ msgstr "_Breyta keyrslustigi"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr ""
+msgstr "Keyrslustig 3 er fjölnotandakerfi með virku neti"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -217,7 +211,7 @@ msgstr "Keyrslustig _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
+msgstr "Keyrslustig 4 er frátekið til að fikta í og venjulega ekki notað"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -225,7 +219,7 @@ msgstr "Keyrslustig _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "Keyrslustig 5 er fjölnotandakerfi með X gluggakerfinu"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -233,28 +227,27 @@ msgstr "Keyrslustig _5"
 
 #: system-config-services.gladestrings:37
 msgid "Read Manual"
-msgstr ""
+msgstr "Lesa handbókina"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
-msgstr ""
+msgstr "_Handbók"
 
 #: system-config-services.gladestrings:40
 msgid "Save"
-msgstr ""
+msgstr "Vista"
 
 #: system-config-services.gladestrings:42
 msgid "Cancel"
-msgstr ""
+msgstr "Hætta við"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "_Hætta"
+msgstr "Hætta"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
-msgstr ""
+msgstr "Hætta"
 
 #: system-config-services.gladestrings:51
 msgid "Current Active Runlevel: "
@@ -263,72 +256,3 @@ msgstr "Núverandi keyrsluþrep:"
 #: system-config-services.gladestrings:52
 msgid "Editing Runlevel:"
 msgstr "Breyti keyrsluþrepi:"
-
-#~ msgid "Add Service"
-#~ msgstr "Bæta við þjónustu"
-
-#~ msgid "Description"
-#~ msgstr "Lýsing"
-
-#~ msgid "Don't Save"
-#~ msgstr "Ekki vista"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "Keyrslustig ö_ll"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Vista"
-
-#~ msgid "Service Name: "
-#~ msgstr "Heiti þjónustu: "
-
-#~ msgid "Status"
-#~ msgstr "Staða"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "Þessar þjónustur ræsa þegar á þarf að halda og því er ekkert meira sem "
-#~ "þarf að gera. Þjónninn <b>xinetd</b> þarf hinsvegar að vera gangi."
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Þessar þjónustur eru keyrðar upp einusinni og keyra í bakgrunni. Þú getur "
-#~ "valið í hvaða keyrslustigum þær keyra."
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Þú hefur gert breytingar á núverandi keyrslustigi.\n"
-#~ "Viltu vista breytingunum?"
-
-#~ msgid "_Background Services"
-#~ msgstr "_Bakgrunnsþjónustur"
-
-#~ msgid "_Contents"
-#~ msgstr "_Innihald"
-
-#~ msgid "_File"
-#~ msgstr "_Skrá"
-
-#~ msgid "_Help"
-#~ msgstr "_Hjálp"
-
-#~ msgid "_On Demand Services"
-#~ msgstr "_On Demand þjónustur"
-
-#~ msgid "_View"
-#~ msgstr "_Birta"
-
-#~ msgid "Configure which services will be running when the system starts"
-#~ msgstr "Stilla hvaða þjónustur eru keyrandi þegar vélin ræsir"
-
-#~ msgid "Service Management"
-#~ msgstr "Þjónustustýring"
-
-#~ msgid "Services"
-#~ msgstr "Þjónustur"
