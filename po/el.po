@@ -15,7 +15,7 @@ msgstr ""
 "Language-Team: Greek\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
 #: ../src/serviceconf.py:76
 #, python-format
@@ -179,7 +179,8 @@ msgstr "_Επαναφορά στην προηγούμενη αποθήκευση
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr "Ενέργειες όπως εκκίνηση, διακοπή και επανεκκίνηση στην επιλεγμένη υπηρεσία"
+msgstr ""
+"Ενέργειες όπως εκκίνηση, διακοπή και επανεκκίνηση στην επιλεγμένη υπηρεσία"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -207,7 +208,8 @@ msgstr "_Επεξεργασία Runlevel"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr "Το Runlevel 3 είναι η λειτουργία πολλαπλών χρηστών με δικτυακή δυνατότητα"
+msgstr ""
+"Το Runlevel 3 είναι η λειτουργία πολλαπλών χρηστών με δικτυακή δυνατότητα"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -215,7 +217,9 @@ msgstr "Runlevel _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr "Το Runlevel 4 είναι δεσμευμένο για τοπική παραμετροποίηση, συνήθως δεν χρησιμοποιείτε"
+msgstr ""
+"Το Runlevel 4 είναι δεσμευμένο για τοπική παραμετροποίηση, συνήθως δεν "
+"χρησιμοποιείτε"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -223,7 +227,9 @@ msgstr "Runlevel _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr "Το Runlevel 5 είναι η λειτουργία πολλαπλών χρηστών με δικτυακή δυνατότητα και το περιβάλλον X"
+msgstr ""
+"Το Runlevel 5 είναι η λειτουργία πολλαπλών χρηστών με δικτυακή δυνατότητα "
+"και το περιβάλλον X"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
