@@ -210,7 +210,7 @@ msgstr "ランレベルの編集(_E)"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr "ランレベル 3 はネットワークが有効なマルチユーザモードです"
+msgstr "ランレベル 3 はネットワークが有効なマルチユーザーモードです"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -226,7 +226,7 @@ msgstr "ランレベル _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr "ランレベル 5 はネットワークとXが有効なマルチユーザモードです"
+msgstr "ランレベル 5 はネットワークとXが有効なマルチユーザーモードです"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -454,7 +454,7 @@ msgstr "ランレベルの編集:"
 #~ msgstr "IP "
 
 #~ msgid "Nameserver "
-#~ msgstr "ネームサーバ"
+#~ msgstr "ネームサーバー"
 
 #~ msgid " is not a valid host or domain name."
 #~ msgstr "有効なホスト名又はドメイン名ではありません。"
@@ -490,7 +490,7 @@ msgstr "ランレベルの編集:"
 #~ msgstr "逆行ゾーン`"
 
 #~ msgid "' must list at least one name server"
-#~ msgstr "` 最低1つのネームサーバを記入する必要があります。"
+#~ msgstr "` 最低1つのネームサーバーを記入する必要があります。"
 
 #~ msgid "Reverse zone "
 #~ msgstr "逆行ゾーン"
