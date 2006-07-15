@@ -18,13 +18,13 @@ msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-05-27 15:26-0300\n"
+"PO-Revision-Date: 2006-07-14 23:21-0300\n"
 "Last-Translator: Igor Pires Soares <igorpsoares@uol.com.br>\n"
 "Language-Team: Brazilian Portuguese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms:  nplurals=2; plural=(n > 1);\n"
+"Plural-Forms:  nplurals=2; plural=(n > 1);"
 
 #: ../src/serviceconf.py:76
 #, python-format
@@ -84,7 +84,7 @@ msgstr "A ajuda não está disponível"
 
 #: ../src/serviceconf.py:731
 msgid "You must run system-config-services as root."
-msgstr "Você deve executar system-config-services como root."
+msgstr "Você deve executar o system-config-services como root."
 
 #: ../src/servicemethods.py:228
 #, python-format
@@ -207,7 +207,7 @@ msgstr "_Reiniciar Serviço"
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr "Selecione o Nível de Execução que você gostaria de editar"
+msgstr "Selecione o Nível de Execução que você deseja editar"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -223,9 +223,7 @@ msgstr "Nível de Execução _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
-"O Nível de Execução 4 é reservado para personalizações locais, e normalmente "
-"não é usado"
+msgstr "O Nível de Execução 4 é reservado para personalizações locais e normalmente não é usado"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
