@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: cs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-01-28 17:23+0100\n"
+"PO-Revision-Date: 2006-07-16 23:24+0200\n"
 "Last-Translator: Nikola Štohanzl <niko@srnet.cz>\n"
 "Language-Team: Czech\n"
 "MIME-Version: 1.0\n"
@@ -17,8 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
 "X-Generator: KBabel 1.10.2\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../src/serviceconf.py:76
 #, python-format
@@ -119,9 +118,8 @@ msgstr "Žádný"
 #: system-config-services.gladestrings:8
 #: system-config-services.gladestrings:23
 #: system-config-services.gladestrings:45
-#, fuzzy
 msgid "Start the selected service"
-msgstr "_Spustit službu"
+msgstr "Spustit vybranou službu"
 
 #: system-config-services.gladestrings:9
 #: system-config-services.gladestrings:46
@@ -131,9 +129,8 @@ msgstr "Spustit"
 #: system-config-services.gladestrings:10
 #: system-config-services.gladestrings:25
 #: system-config-services.gladestrings:47
-#, fuzzy
 msgid "Stop the selected service"
-msgstr "Odstranit službu"
+msgstr "Zastavit vybranou službu"
 
 #: system-config-services.gladestrings:11
 #: system-config-services.gladestrings:48
@@ -143,9 +140,8 @@ msgstr "Zastavit"
 #: system-config-services.gladestrings:12
 #: system-config-services.gladestrings:27
 #: system-config-services.gladestrings:49
-#, fuzzy
 msgid "Restart the selected service"
-msgstr "_Restartovat službu"
+msgstr "Restartovat vybranou službu"
 
 #: system-config-services.gladestrings:13
 #: system-config-services.gladestrings:50
@@ -157,9 +153,8 @@ msgid "Service Configuration"
 msgstr "Nastavení služeb"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "_Obnovit seznam služeb"
+msgstr "Obnovit seznam služeb"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
@@ -168,7 +163,7 @@ msgstr "_Obnovit seznam služeb"
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr ""
+msgstr "Uložit provedené změny"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
@@ -176,18 +171,16 @@ msgstr "_Uložit změny"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "Vrátit se k _poslednímu uloženému"
+msgstr "Vrátit se k poslední uložené změně"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
-msgstr "Vrátit se k _poslednímu uloženému"
+msgstr "Vrátit se k _poslednímu uloženému stavu"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr ""
+msgstr "Akce jako start, stop a restart pro vybranou službu"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -207,7 +200,7 @@ msgstr "_Restartovat službu"
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr ""
+msgstr "Vyberte runlevel, který chcete editovat"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -215,7 +208,7 @@ msgstr "_Upravit runlevel"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr ""
+msgstr "Runlevel 3 je víceuživatelský režim se síťováním"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -223,7 +216,7 @@ msgstr "Runlevel _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
+msgstr "Runlevel 4 je vyhrazen pro lokální přizpůsobení a obvykle není používán"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -231,7 +224,7 @@ msgstr "Runlevel _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "Runlevel 5 je víceuživatelský režim se síťováním a X Windows"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -239,28 +232,27 @@ msgstr "Runlevel _5"
 
 #: system-config-services.gladestrings:37
 msgid "Read Manual"
-msgstr ""
+msgstr "Přečíst manuál"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
-msgstr ""
+msgstr "_Manuál"
 
 #: system-config-services.gladestrings:40
 msgid "Save"
-msgstr ""
+msgstr "Uložit"
 
 #: system-config-services.gladestrings:42
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušit"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "U_končit"
+msgstr "Ukončit"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
-msgstr ""
+msgstr "Ukončit"
 
 #: system-config-services.gladestrings:51
 msgid "Current Active Runlevel: "
@@ -270,72 +262,3 @@ msgstr "Momentálně aktivní runlevel: "
 msgid "Editing Runlevel:"
 msgstr "Upravovaný runlevel:"
 
-#~ msgid "Add Service"
-#~ msgstr "Přidat službu"
-
-#~ msgid "Description"
-#~ msgstr "Popis"
-
-#~ msgid "Don't Save"
-#~ msgstr "Neukládat"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "_Všechny runlevely"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Dialog uložení"
-
-#~ msgid "Service Name: "
-#~ msgstr "Název služby: "
-
-#~ msgid "Status"
-#~ msgstr "Stav"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "Tyto služby jsou spouštěny na požádání a končí ve chvíli, kdy již nemají "
-#~ "nic na práci. Aby je bylo možné použít, musí být spuštěna služba "
-#~ "<b>xinetd</b>."
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Tyto služby jsou spuštěny jednorázově a běží na pozadí. Můžete zadat, ve "
-#~ "kterých runlevelech se mají spouštět."
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Provedli jste změny aktuálního runlevel.\n"
-#~ "Chcete změny uložit?"
-
-#~ msgid "_Background Services"
-#~ msgstr "Služby na _pozadí"
-
-#~ msgid "_Contents"
-#~ msgstr "O_bsah"
-
-#~ msgid "_File"
-#~ msgstr "_Soubor"
-
-#~ msgid "_Help"
-#~ msgstr "_Nápověda"
-
-#~ msgid "_On Demand Services"
-#~ msgstr "Služby na požá_dání"
-
-#~ msgid "_View"
-#~ msgstr "_Zobrazit"
-
-#~ msgid "Configure which services will be running when the system starts"
-#~ msgstr "Nastavit, které služby budou běžet po startu systému"
-
-#~ msgid "Service Management"
-#~ msgstr "Správa služeb"
-
-#~ msgid "Services"
-#~ msgstr "Služby"
