@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-06-21 21:19+0800\n"
+"PO-Revision-Date: 2006-07-16 13:22+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -155,9 +155,8 @@ msgid "Service Configuration"
 msgstr "Konfigurasi Servis"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "_Segarkan Senarai Servis"
+msgstr "Segarkan senarai servis"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
@@ -174,14 +173,12 @@ msgstr "_Simpan Perubahan"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "Berbalik ke yang Ter_akhir Disimpan"
+msgstr "Berbalik ke perubahan terakhir disimpan"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
-msgstr "Berbalik ke yang Ter_akhir Disimpan"
+msgstr "Berbalik Ke Te_rakhir Disimpan"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
@@ -204,9 +201,8 @@ msgid "_Restart Service"
 msgstr "_Ulanghidup Servis"
 
 #: system-config-services.gladestrings:29
-#, fuzzy
 msgid "Select the runlevel you would like to edit"
-msgstr "Sila pilih resolusi yang anda ingin gunakan:"
+msgstr "Pilih runlevel yang anda hendak sunting"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -237,9 +233,8 @@ msgid "Runlevel _5"
 msgstr "Runlevel _5"
 
 #: system-config-services.gladestrings:37
-#, fuzzy
 msgid "Read Manual"
-msgstr "/Bantuan/_Manual"
+msgstr "Baca Manual"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
