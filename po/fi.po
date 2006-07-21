@@ -1,21 +1,24 @@
+# translation of fi.po to Finnish
 # Finnish messages for system-config-services.
 # Copyright (C) 2004 Lauri Nurmi.
 # This file is distributed under the same license as the system-config-mouse
 # package.
-# Lauri Nurmi <lanurmi@iki.fi>, 2003, 2004.
 #
+# Lauri Nurmi <lanurmi@iki.fi>, 2003, 2004.
+# Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services\n"
+"Project-Id-Version: fi\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2004-03-17 00:19+0200\n"
-"Last-Translator: Lauri Nurmi <lanurmi@iki.fi>\n"
-"Language-Team: Gnome Finnish Translation Team <gnome-fi-laatu@lists."
-"sourceforge.net>\n"
+"PO-Revision-Date: 2006-07-21 23:24+0300\n"
+"Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
+"Language-Team: Finnish <Laatu@lokalisointi.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.2\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../src/serviceconf.py:76
 #, python-format
@@ -23,9 +26,9 @@ msgid "Are you sure you want to delete the %s?"
 msgstr "Haluatko varmasti poistaa %s?"
 
 #: ../src/serviceconf.py:139
-#, fuzzy, python-format
+#, python-format
 msgid "Runlevel %d"
-msgstr "Ajotaso _3"
+msgstr "Ajotaso %d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
@@ -43,10 +46,9 @@ msgstr "Tuntematon"
 
 #: ../src/serviceconf.py:513
 msgid "All"
-msgstr ""
+msgstr "Kaikki"
 
 #: ../src/serviceconf.py:547
-#, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -58,11 +60,12 @@ msgid ""
 " "
 msgstr ""
 "Järjestelmäpalveluiden asetustyökalu VERSIO\n"
-"Tekijänoikeus © 2002-2004 Red Hat, Inc.\n"
+"Tekijänoikeus © 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat>\n"
 " Bill Nottingham <notting@redhat>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
 #: ../src/serviceconf.py:551
@@ -151,9 +154,8 @@ msgid "Service Configuration"
 msgstr "Palvelujen asetus"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "Käynnistä uudelleen valittu palvelu"
+msgstr "Virkistä palveluluettelo"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
@@ -162,7 +164,7 @@ msgstr "_Virkistä palveluluettelo"
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr ""
+msgstr "Tallenna tehdyt muutokset"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
@@ -180,8 +182,9 @@ msgid "_Revert To Last Save"
 msgstr "Palauta _edellisen tallennuksen tilanne"
 
 #: system-config-services.gladestrings:21
+#, fuzzy
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr ""
+msgstr "Toimenpiteet kuten valitun palvelun käynnistys, pysäytys ja uudelleenkäynnistys"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -201,31 +204,34 @@ msgstr "_Käynnistä palvelu uudelleen"
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr ""
+msgstr "Valitse muokattava ajotaso"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
 msgstr "_Muokkaa ajotasoa"
 
 #: system-config-services.gladestrings:31
+#, fuzzy
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr ""
+msgstr "Ajotaso 3 on monenkäyttäjän tila verkkotuella"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
 msgstr "Ajotaso _3"
 
 #: system-config-services.gladestrings:33
+#, fuzzy
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
+msgstr "Ajotaso 4 on varattu paikalliselle muokkaukselle eikä se ole yleensä käytössä"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
 msgstr "Ajotaso _4"
 
 #: system-config-services.gladestrings:35
+#, fuzzy
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "Ajotaso 5 on monenkäyttäjän tila verkkotuella ja X-ikkunoinnilla"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -233,11 +239,11 @@ msgstr "Ajotaso _5"
 
 #: system-config-services.gladestrings:37
 msgid "Read Manual"
-msgstr ""
+msgstr "Lue käyttöohje"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
-msgstr ""
+msgstr "_Käyttöohje"
 
 #: system-config-services.gladestrings:40
 msgid "Save"
@@ -245,16 +251,15 @@ msgstr "Tallenna"
 
 #: system-config-services.gladestrings:42
 msgid "Cancel"
-msgstr ""
+msgstr "Peruuta"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "_Lopeta"
+msgstr "Lopeta"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
-msgstr ""
+msgstr "Poistu"
 
 #: system-config-services.gladestrings:51
 msgid "Current Active Runlevel: "
@@ -264,103 +269,3 @@ msgstr "Nykyinen aktiivinen ajotaso: "
 msgid "Editing Runlevel:"
 msgstr "Muokattava ajotaso:"
 
-#~ msgid "Add Service"
-#~ msgstr "Lisää palvelu"
-
-#~ msgid "Delete Service"
-#~ msgstr "Poista palvelu"
-
-#~ msgid "Description"
-#~ msgstr "Kuvaus"
-
-#~ msgid "Don't Save"
-#~ msgstr "Älä tallenna"
-
-#, fuzzy
-#~ msgid "Runlevel _All"
-#~ msgstr "Ajotaso _3"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Tallennusikkuna"
-
-#~ msgid "Service Name: "
-#~ msgstr "Palvelun nimi: "
-
-#~ msgid "Status"
-#~ msgstr "Tila"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Nykyiseen ajotasoon on tehty muutoksia.\n"
-#~ "Tallennetaanko ne?"
-
-#, fuzzy
-#~ msgid "_Background Services"
-#~ msgstr "_Käynnistä palvelu"
-
-#~ msgid "_Contents"
-#~ msgstr "_Sisältö"
-
-#~ msgid "_File"
-#~ msgstr "_Tiedosto"
-
-#~ msgid "_Help"
-#~ msgstr "_Ohje"
-
-#, fuzzy
-#~ msgid "_On Demand Services"
-#~ msgstr "_Käynnistä palvelu uudelleen"
-
-#~ msgid "_View"
-#~ msgstr "_Näytä"
-
-#, fuzzy
-#~ msgid "Service Management"
-#~ msgstr "Palvelun nimi: "
-
-#~ msgid "Services"
-#~ msgstr "Palvelut"
-
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd is required for this service."
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "Tämän palvelun käyttämiseksi xinetd:n on oltava käytössä."
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid "_Save"
-#~ msgstr "_Tallenna"
-
-#~ msgid "_Revert"
-#~ msgstr "_Palauta"
-
-#~ msgid "Revert"
-#~ msgstr "Palauta"
-
-#~ msgid "Start at Boot"
-#~ msgstr "Käynnistä koneen käynnistyksen yhteydessä"
-
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "Tekijänoikeus © 2002 Red Hat, Inc. Kaikki oikeudet pidätetään."
-
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "Tätä ohjelmistoa saa levittää vapaasti GPL:n ehtojen mukaisesti.\n"
-#~ "Ilmoita kaikista ohjelmistovioista Red Hatin ohjelmistovikajärjestelmän\n"
-#~ "kautta: http://bugzilla.redhat.com"
-
-#~ msgid "translator_credits"
-#~ msgstr "Lauri Nurmi, 2003-2004"
-
-#~ msgid "xinetd service"
-#~ msgstr "xinetd-palvelu"
