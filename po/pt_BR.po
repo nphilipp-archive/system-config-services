@@ -24,7 +24,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms:  nplurals=2; plural=(n > 1);"
+"Plural-Forms:  nplurals=2; plural=(n > 1);\n"
 
 #: ../src/serviceconf.py:76
 #, python-format
@@ -223,7 +223,9 @@ msgstr "Nível de Execução _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr "O Nível de Execução 4 é reservado para personalizações locais e normalmente não é usado"
+msgstr ""
+"O Nível de Execução 4 é reservado para personalizações locais e normalmente "
+"não é usado"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
