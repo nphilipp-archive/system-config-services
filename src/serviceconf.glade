@@ -110,6 +110,7 @@
   <property name="type_hint">GDK_WINDOW_TYPE_HINT_DIALOG</property>
   <property name="gravity">GDK_GRAVITY_NORTH_WEST</property>
   <property name="focus_on_map">True</property>
+  <property name="urgency_hint">False</property>
   <property name="has_separator">True</property>
 
   <child internal-child="vbox">
@@ -321,6 +322,7 @@ Do you want to save the changes?</property>
   <property name="type_hint">GDK_WINDOW_TYPE_HINT_DIALOG</property>
   <property name="gravity">GDK_GRAVITY_NORTH_WEST</property>
   <property name="focus_on_map">True</property>
+  <property name="urgency_hint">False</property>
   <property name="has_separator">True</property>
 
   <child internal-child="vbox">
@@ -431,7 +433,6 @@ Do you want to save the changes?</property>
 <widget class="GtkWindow" id="winMain">
   <property name="width_request">600</property>
   <property name="height_request">450</property>
-  <property name="visible">True</property>
   <property name="title" translatable="yes">Service Configuration</property>
   <property name="type">GTK_WINDOW_TOPLEVEL</property>
   <property name="window_position">GTK_WIN_POS_NONE</property>
@@ -444,6 +445,7 @@ Do you want to save the changes?</property>
   <property name="type_hint">GDK_WINDOW_TYPE_HINT_NORMAL</property>
   <property name="gravity">GDK_GRAVITY_NORTH_WEST</property>
   <property name="focus_on_map">True</property>
+  <property name="urgency_hint">False</property>
   <signal name="delete_event" handler="on_winMain_delete_event" last_modification_time="Thu, 24 Mar 2005 09:43:28 GMT"/>
 
   <child>
@@ -456,6 +458,8 @@ Do you want to save the changes?</property>
 	<widget class="GtkMenuBar" id="menubar">
 	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
+	  <property name="pack_direction">GTK_PACK_DIRECTION_LTR</property>
+	  <property name="child_pack_direction">GTK_PACK_DIRECTION_LTR</property>
 
 	  <child>
 	    <widget class="GtkMenuItem" id="mnuFIle">

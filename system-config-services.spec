@@ -75,6 +75,10 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Fri Aug 18 2006 Nils Philippsen <nphilipp@redhat.com>
+- make revert work again (#202467)
+- don't show all runlevels when starting
+
 * Mon Jun 05 2006 Jesse Keating <jkeating@redhat.com> - 0.9.0-2
 - Added BuildRequires perl-XML-Parser (#194179)
 - Added Requires(post) and (postun) gtk2

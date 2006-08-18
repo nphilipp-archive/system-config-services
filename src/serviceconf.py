@@ -211,6 +211,7 @@ class Gui:
         # main window
         self.winMain = self.xml.get_widget("winMain")
         self.winMain.connect("destroy", self.destroy)
+        self.winMain.realize ()
 
         # menu items
         self.mnuRescan = self.xml.get_widget("mnuRescan")
@@ -614,8 +615,9 @@ class Gui:
         
     def on_mnuRevert_clicked(self, args):
         """calls populateList() to repopulate the checklist"""
-        self.populateList()
-        self.save_revert_sensitive(0)
+        self.services.revert ()
+        self.populateList ()
+        self.save_revert_sensitive (0)
 
 
     def get_service_action_results(self, servicename, action_type):

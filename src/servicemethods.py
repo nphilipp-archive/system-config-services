@@ -24,6 +24,7 @@
 
 import re, os
 from rhpl.translate import _, N_, cat
+import copy
 
 import nonblockingreader
 
@@ -296,6 +297,9 @@ class Service:
         elif name == "hide":
             self.hide = value.find("true") != -1
 
+    def revert (self):
+        self._runlevels = copy.copy (self._runlevels_old)
+
 # ============================================================================
 
 class XinetdService(Service):
@@ -526,3 +530,9 @@ class Services:
             getstatusoutput("/sbin/service xinetd reload", self.uicallback)
 
         self._changed = { }
+
+    def revert (self):
+        for service in self._services.itervalues ():
+            service.revert ()
+        for service in self._xinetd_services.itervalues ():
+            service.revert ()
