@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: hi\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-06-19 11:16+0530\n"
+"PO-Revision-Date: 2006-08-23 13:44+0530\n"
 "Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -159,16 +159,16 @@ msgstr "सेवा सूची ताजा करें"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
-msgstr "सेवा सुची का पुनर्जनन करें (_R)"
+msgstr "सेवा सूची ताजा करें (_R)"
 
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr "अपना बदलाव सहेजें जो आप बनाया है"
+msgstr "अपने बदलाव सहेजें जो आप बनाया है"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
-msgstr "बदलावों को सहेजें (_S)"
+msgstr "बदलाव सहेजें (_S)"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
@@ -185,7 +185,7 @@ msgstr "चयनित सेवा पर आरंभ करें, रोक
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
-msgstr "क्रिया"
+msgstr "क्रिया (_A)"
 
 #: system-config-services.gladestrings:24
 msgid "_Start Service"
@@ -193,7 +193,7 @@ msgstr "सेवा को आरंभ करें (_S)"
 
 #: system-config-services.gladestrings:26
 msgid "S_top Service"
-msgstr "सेवा रोकें"
+msgstr "सेवा रोकें (_t)"
 
 #: system-config-services.gladestrings:28
 msgid "_Restart Service"
