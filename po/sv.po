@@ -1,19 +1,19 @@
 # Swedish messages for system-config-services.
 # Copyright (C) 2001, 2003, 2004, 2005, 2006 Christian Rose <menthos@menthos.com>.
 #
-# $Id: sv.po,v 1.67 2006/05/19 16:08:59 nphilipp Exp $
+# $Id: sv.po,v 1.68 2006/08/23 06:01:23 raada Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-02-07 00:17+0100\n"
+"PO-Revision-Date: 2006-08-23 02:18-0400\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit"
 
 #: ../src/serviceconf.py:76
 #, python-format
@@ -171,9 +171,8 @@ msgid "Revert to the last saved change"
 msgstr "Återgå till den senast sparade ändringen"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
-msgstr "Återgå till _senast sparade"
+msgstr "_Återgå till senast sparade"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
