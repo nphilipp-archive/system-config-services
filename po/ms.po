@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-07-16 13:22+0800\n"
+"PO-Revision-Date: 2006-08-30 07:37+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -46,7 +46,6 @@ msgid "All"
 msgstr "Semua"
 
 #: ../src/serviceconf.py:547
-#, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -59,11 +58,12 @@ msgid ""
 msgstr ""
 "Alatan Tetapan Servis Sistem VERSION\n"
 " Hakcipta (c) 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat>\n"
-" Bill Nottingham <notting@redhat>\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
 " Nils Philippsen <nphilipp@redhat.com>\n"
+" "
 
 #: ../src/serviceconf.py:551
 msgid "About"
@@ -117,9 +117,8 @@ msgstr "Tiada"
 #: system-config-services.gladestrings:8
 #: system-config-services.gladestrings:23
 #: system-config-services.gladestrings:45
-#, fuzzy
 msgid "Start the selected service"
-msgstr "Servis s"
+msgstr "Mulakan servis dipilih"
 
 #: system-config-services.gladestrings:9
 #: system-config-services.gladestrings:46
@@ -129,9 +128,8 @@ msgstr "Mula"
 #: system-config-services.gladestrings:10
 #: system-config-services.gladestrings:25
 #: system-config-services.gladestrings:47
-#, fuzzy
 msgid "Stop the selected service"
-msgstr "Servis s"
+msgstr "Hentikan servis dipilih"
 
 #: system-config-services.gladestrings:11
 #: system-config-services.gladestrings:48
@@ -141,9 +139,8 @@ msgstr "Henti"
 #: system-config-services.gladestrings:12
 #: system-config-services.gladestrings:27
 #: system-config-services.gladestrings:49
-#, fuzzy
 msgid "Restart the selected service"
-msgstr "Servis s"
+msgstr "Ulangmula servis dipilih"
 
 #: system-config-services.gladestrings:13
 #: system-config-services.gladestrings:50
