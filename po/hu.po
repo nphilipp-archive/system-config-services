@@ -1,23 +1,23 @@
-# translation of hu.po to hungarian
-# translation of hu.po to Hungarian
+# translation of hu.po to hu
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
 # Tamas Szanto <tszanto@mol.hu>, 2003.
 # Arpad Biro <biro_arpad@yahoo.com>, 2005.
 # Szentiványi Gábor <szentivanyi.gabor@ulx.hu>, 2006.
-#
+# Gábor Szentiványi <szenti@ulx.hu>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-02-01 23:18+0100\n"
-"Last-Translator: Szentiványi Gábor <szentivanyi.gabor@ulx.hu>\n"
-"Language-Team: hungarian\n"
+"PO-Revision-Date: 2006-09-01 17:01+0200\n"
+"Last-Translator: Gábor Szentiványi <szenti@ulx.hu>\n"
+"Language-Team: hu <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.10.2\n"
+"X-Generator: KBabel 1.11.2\n"
 
 #: ../src/serviceconf.py:76
 #, python-format
@@ -118,9 +118,8 @@ msgstr "Nincs"
 #: system-config-services.gladestrings:8
 #: system-config-services.gladestrings:23
 #: system-config-services.gladestrings:45
-#, fuzzy
 msgid "Start the selected service"
-msgstr "A szol_gáltatás elindítása"
+msgstr "A kiválasztott szolgáltatás indítása"
 
 #: system-config-services.gladestrings:9
 #: system-config-services.gladestrings:46
@@ -130,9 +129,8 @@ msgstr "Indítás"
 #: system-config-services.gladestrings:10
 #: system-config-services.gladestrings:25
 #: system-config-services.gladestrings:47
-#, fuzzy
 msgid "Stop the selected service"
-msgstr "A szolgáltatás törlése"
+msgstr "A kiválasztott szolgáltatás leállítása"
 
 #: system-config-services.gladestrings:11
 #: system-config-services.gladestrings:48
@@ -142,9 +140,8 @@ msgstr "Leállítás"
 #: system-config-services.gladestrings:12
 #: system-config-services.gladestrings:27
 #: system-config-services.gladestrings:49
-#, fuzzy
 msgid "Restart the selected service"
-msgstr "A szolgáltatás újrain_dítása"
+msgstr "A kiválasztott szolgáltatás újraindítása"
 
 #: system-config-services.gladestrings:13
 #: system-config-services.gladestrings:50
@@ -156,9 +153,8 @@ msgid "Service Configuration"
 msgstr "A szolgáltatás beállításai"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "A sz_olgáltatáslista frissítése"
+msgstr "A szolgáltatáslista frissítése"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
@@ -167,7 +163,7 @@ msgstr "A sz_olgáltatáslista frissítése"
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr ""
+msgstr "A változtatások mentése"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
@@ -175,18 +171,16 @@ msgstr "A módosítások m_entése"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "A legutóbbi álla_pot visszatöltése"
+msgstr "A legutóbbi mentett változtatásra való visszaállás"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
-msgstr "A legutóbbi álla_pot visszatöltése"
+msgstr "A legutóbbi mentett állapotra való _visszalépés"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr ""
+msgstr "A start, stop és restart parancsok a kiválasztott szolgáltatáson"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -206,7 +200,7 @@ msgstr "A szolgáltatás újrain_dítása"
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr ""
+msgstr "Válassza ki a szerkeszteni kívánt futási szintet"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -214,7 +208,7 @@ msgstr "F_utási szint szerkesztése"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr ""
+msgstr "A 3-as futási szint többfelhasználós mód hálózattal"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -222,7 +216,7 @@ msgstr "_3. futási szint"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
+msgstr "A 4-es futási szint fenn van tartva egyedi beállításokra és általában nincs használatban"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -230,7 +224,7 @@ msgstr "_4. futási szint"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "Az 5-ös futási szint többfelhasználós mód hálózattal és X Window grafikus rendszerrel"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -238,28 +232,27 @@ msgstr "_5. futási szint"
 
 #: system-config-services.gladestrings:37
 msgid "Read Manual"
-msgstr ""
+msgstr "Leírás olvasása"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
-msgstr ""
+msgstr "_Leírás"
 
 #: system-config-services.gladestrings:40
 msgid "Save"
-msgstr ""
+msgstr "Mentés"
 
 #: system-config-services.gladestrings:42
 msgid "Cancel"
-msgstr ""
+msgstr "Elvetés"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "_Kilépés"
+msgstr "Kilépés"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
-msgstr ""
+msgstr "Kilépés"
 
 #: system-config-services.gladestrings:51
 msgid "Current Active Runlevel: "
@@ -269,74 +262,3 @@ msgstr "A jelenlegi aktív futási szint: "
 msgid "Editing Runlevel:"
 msgstr "Futási szint szerkesztése:"
 
-#~ msgid "Add Service"
-#~ msgstr "Szolgáltatás hozzáadása"
-
-#~ msgid "Description"
-#~ msgstr "Leírás"
-
-#~ msgid "Don't Save"
-#~ msgstr "Mentés nélkül"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "Öss_zes futási szint"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Mentési párbeszédablak"
-
-#~ msgid "Service Name: "
-#~ msgstr "A szolgáltatás neve: "
-
-#~ msgid "Status"
-#~ msgstr "Állapot"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "Ezek a szolgáltatások igény esetén indulnak és le is állnak, ha nincs "
-#~ "tennivaló. A <b>xinetd</b> szolgáltatásnak mindig futnia kell, hogy a "
-#~ "többi szolgáltatás igény esetén el tudjon indulni, illetve le tudjon "
-#~ "állni."
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Ezek a szolgáltatásokat egyszer kell elindítani és aztán a háttérben "
-#~ "futnak. Megadhatja, hogy egy adott szolgáltatás melyik futási szinteken "
-#~ "induljon el."
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Módosítások történtek az aktuális futási szint beállításaiban.\n"
-#~ "El szeretné menteni a módosításokat?"
-
-#~ msgid "_Background Services"
-#~ msgstr "_Háttér szolgáltatások"
-
-#~ msgid "_Contents"
-#~ msgstr "_Tartalom"
-
-#~ msgid "_File"
-#~ msgstr "_Fájl"
-
-#~ msgid "_Help"
-#~ msgstr "_Segítség"
-
-#~ msgid "_On Demand Services"
-#~ msgstr "_Igény szerint induló szolgáltatások"
-
-#~ msgid "_View"
-#~ msgstr "_Nézet"
-
-#~ msgid "Configure which services will be running when the system starts"
-#~ msgstr "A rendszer indulásakor elindítandó szolgáltatások megadása"
-
-#~ msgid "Service Management"
-#~ msgstr "Szolgáltatáskezelés"
-
-#~ msgid "Services"
-#~ msgstr "Szolgáltatások"
