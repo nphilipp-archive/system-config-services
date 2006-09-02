@@ -76,7 +76,7 @@ msgstr "Η βοήθεια δεν είναι διαθέσιμη."
 #: ../src/serviceconf.py:731
 msgid "You must run system-config-services as root."
 msgstr ""
-"Πρέπει να τρέξετε το system-config-services ως διαχειριστής συστήματος."
+"Πρέπει να τρέξετε το system-config-services ως υπερχρήστης."
 
 #: ../src/servicemethods.py:228
 #, python-format
