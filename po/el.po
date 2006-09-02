@@ -149,7 +149,7 @@ msgstr "Επανεκκίνηση"
 
 #: system-config-services.gladestrings:14
 msgid "Service Configuration"
-msgstr "Ρύθμιση Υπηρεσίας"
+msgstr "Ρύθμιση υπηρεσίας"
 
 #: system-config-services.gladestrings:15
 msgid "Refresh the list of services"
@@ -157,7 +157,7 @@ msgstr "Ανανέωση λίστας υπηρεσιών"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
-msgstr "Ανανέωση _Λίστας Υπηρεσιών"
+msgstr "Ανανέωση _λίστας υπηρεσιών"
 
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
@@ -166,7 +166,7 @@ msgstr "Αποθήκευση των αλλαγών"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
-msgstr "_Αποθήκευση Αλλαγών"
+msgstr "_Αποθήκευση αλλαγών"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
@@ -188,15 +188,15 @@ msgstr "_Ενέργειες"
 
 #: system-config-services.gladestrings:24
 msgid "_Start Service"
-msgstr "Ε_κκίνηση Υπηρεσίας"
+msgstr "Ε_κκίνηση υπηρεσίας"
 
 #: system-config-services.gladestrings:26
 msgid "S_top Service"
-msgstr "_Διακοπή Υπηρεσίας"
+msgstr "_Διακοπή υπηρεσίας"
 
 #: system-config-services.gladestrings:28
 msgid "_Restart Service"
-msgstr "Ε_πανεκκίνηση Υπηρεσίας"
+msgstr "Ε_πανεκκίνηση υπηρεσίας"
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
@@ -268,26 +268,26 @@ msgid "Editing Runlevel:"
 msgstr "Επεξεργασία Runlevel:"
 
 #~ msgid "Add Service"
-#~ msgstr "Προσθήκη Υπηρεσίας"
+#~ msgstr "Προσθήκη υπηρεσίας"
 
 #~ msgid "Description"
 #~ msgstr "Περιγραφή"
 
 #~ msgid "Don't Save"
-#~ msgstr "Να μην Αποθηκευτεί"
+#~ msgstr "Να μην αποθηκευτεί"
 
 #~ msgid "Save Dialog"
-#~ msgstr "Διάλογος Αποθήκευσης"
+#~ msgstr "Διάλογος αποθήκευσης"
 
 #~ msgid "Service Name: "
-#~ msgstr "Όνομα Υπηρεσίας:"
+#~ msgstr "Όνομα υπηρεσίας:"
 
 #~ msgid "Status"
 #~ msgstr "Κατάσταση"
 
 #, fuzzy
 #~ msgid "_Background Services"
-#~ msgstr "_Εκκίνηση Υπηρεσίας"
+#~ msgstr "_Εκκίνηση υπηρεσίας"
 
 #~ msgid "_Contents"
 #~ msgstr "_Περιεχόμενα"
@@ -300,14 +300,14 @@ msgstr "Επεξεργασία Runlevel:"
 
 #, fuzzy
 #~ msgid "_On Demand Services"
-#~ msgstr "Ε_πανεκκίνηση Υπηρεσίας"
+#~ msgstr "Ε_πανεκκίνηση υπηρεσίας"
 
 #~ msgid "_View"
 #~ msgstr "_Προβολή"
 
 #, fuzzy
 #~ msgid "Service Management"
-#~ msgstr "Όνομα Υπηρεσίας:"
+#~ msgstr "Όνομα υπηρεσίας:"
 
 #~ msgid "Services"
 #~ msgstr "Υπηρεσίες"
