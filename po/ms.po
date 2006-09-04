@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-05-19 17:18+0200\n"
-"PO-Revision-Date: 2006-08-30 07:37+0800\n"
+"PO-Revision-Date: 2006-08-31 22:17+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -207,7 +207,7 @@ msgstr "_Edit Runlevel"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr ""
+msgstr "Runlevel 3 adalah mod pelbagai pengguna dengan rangkaian"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -215,7 +215,7 @@ msgstr "Runlevel _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
+msgstr "Runlevel 4 adalah dikhaskan untuk tetapan sendiri tempatan, dan biasanya tidak digunakan"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -223,7 +223,7 @@ msgstr "Runlevel _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "Runlevel 5 adalah mod pelbagai pengguna dengan rangkaian dan X Windows"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
