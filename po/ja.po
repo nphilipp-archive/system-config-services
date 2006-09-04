@@ -218,7 +218,8 @@ msgstr "ランレベル 3 (_3)"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr "ランレベル 4 はローカルなカスタマイズに予約されているため通常は使用しません"
+msgstr ""
+"ランレベル 4 はローカルなカスタマイズに予約されているため通常は使用しません"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -263,4 +264,3 @@ msgstr "現在のランレベル: "
 #: system-config-services.gladestrings:52
 msgid "Editing Runlevel:"
 msgstr "編集しているランレベル:"
-
