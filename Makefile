@@ -72,13 +72,14 @@ install:	all
 	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(sbindir)/serviceconf;
 
 cvstag:
-	if [ "$(FORCETAG)" != "" ]; then \
+	@if [ "$(FORCETAG)" != "" ]; then \
 		CVSFORCE=-F; \
 	else \
 		CVSFORCE=""; \
 	fi; \
 	cvs tag $(CVSFORCE) -cR $(CVSTAG) .
-	if cvs diff -u -r $(CVSTAG) . | grep -q '^[^\?]'; then \
+	@if cvs diff -u -r $(CVSTAG) . | grep -q '^[^\?]'; then \
+		echo "won't move tag $(CVSTAG), use CVSFORCE=1?"; \
 		exit 1; \
 	fi
 
