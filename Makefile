@@ -21,7 +21,6 @@ PAMD_DIR        = /etc/pam.d
 SECURITY_DIR    = /etc/security/console.apps
 
 all:	$(PKGNAME).desktop
-	$(MAKE) -C po
 	rm -f src/$(PKGNAME)
 	ln -snf serviceconf.py src/$(PKGNAME)
 
@@ -60,10 +59,10 @@ install:	all
 	python -c 'import compileall; compileall.compile_dir ("'"$(DESTDIR)$(PKGDATADIR)"'", ddir="'"$(PKGDATADIR)"'", maxlevels=10, force=1)'
 	softdir=$(PKGDATADIR); \
 	p=$(DESTDIR) ; \
-	softdir=$${softdir/#$$p} ; \
+	softdir=$${softdir/\#$$p} ; \
 	p=$(prefix) ; \
-	softdir=$${softdir/#$$p} ; \
-	softdir=$${softdir/#\/} ; \
+	softdir=$${softdir/\#$$p} ; \
+	softdir=$${softdir/\#\/} ; \
 	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(sbindir)/system-config-services; \
 	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(sbindir)/serviceconf;
 
