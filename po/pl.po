@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-09-05 15:39+0200\n"
-"PO-Revision-Date: 2006-05-21 19:50+0200\n"
+"PO-Revision-Date: 2006-09-05 18:02+0200\n"
 "Last-Translator: Tom Berner <tom@lodz.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -25,8 +25,6 @@ msgstr "Czy na pewno chcesz usunąć %s?"
 msgid "Runlevel %d"
 msgstr "Poziom %d"
 
-#. initialize this to the runlevel we are running in. It will
-#. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
 msgstr "Bieżący poziom uruchamiania: "
