@@ -70,7 +70,7 @@ install:	all
 	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(sbindir)/system-config-services; \
 	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(sbindir)/serviceconf;
 
-archive: changelog
+archive: changelog_cvs
 	cvs tag -cR $(CVSTAG) .
 	@rm -rf /tmp/$(PKGNAME)-$(VERSION) /tmp/$(PKGNAME)
 	@CVSROOT=`cat CVS/Root`; cd /tmp; cvs -d $$CVSROOT export -r$(CVSTAG) $(PKGNAME)
@@ -103,6 +103,9 @@ changelog:
 	fi
 	cat ChangeLog.new ChangeLog.old > ChangeLog
 	rm -f ChangeLog.new ChangeLog.old
+
+changelog_cvs:	changelog
+	cvs commit -m '' ChangeLog
 
 pycheck:
 	pychecker -F pycheckrc src/*.py
