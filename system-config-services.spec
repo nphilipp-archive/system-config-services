@@ -78,6 +78,7 @@ rm -rf %{buildroot}
 * Tue Sep 05 2006 Nils Philippsen <nphilipp@redhat.com> - 0.9.1
 - don't disable Start/Stop/Restart upon reverting changes (#202722)
 - add dist tag
+- install po files (again)
 
 * Fri Aug 18 2006 Nils Philippsen <nphilipp@redhat.com>
 - make revert work again (#202467)

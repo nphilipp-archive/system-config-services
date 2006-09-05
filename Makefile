@@ -33,6 +33,7 @@ po/$(PKGNAME).pot:: all
 	intltool-merge -u -d po/ $< $@
 
 install:	all
+	$(MAKE) -C po install
 	mkdir -p $(DESTDIR)$(SECURITY_DIR)
 	mkdir -p $(DESTDIR)$(PAMD_DIR)
 	mkdir -p $(DESTDIR)$(BINDIR)
