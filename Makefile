@@ -78,6 +78,9 @@ cvstag:
 		CVSFORCE=""; \
 	fi; \
 	cvs tag $(CVSFORCE) -cR $(CVSTAG) .
+	if cvs diff -u -r $(CVSTAG) . | grep -q '^[^\?]'; then \
+		exit 1; \
+	fi
 
 archive: changelog_cvs cvstag
 	@rm -rf /tmp/$(PKGNAME)-$(VERSION) /tmp/$(PKGNAME)
