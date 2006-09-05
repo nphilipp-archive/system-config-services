@@ -284,101 +284,16 @@ msgstr "Servicii de _Fond"
 msgid "Editing Runlevel:"
 msgstr "Editează Runlevel:"
 
-#~ msgid "Add Service"
-#~ msgstr "Adăugaţi un serviciu"
-
-#~ msgid "Description"
-#~ msgstr "Descriere"
-
-#~ msgid "Don't Save"
-#~ msgstr "Nu salvaţi"
-
-
-#, fuzzy
-#~ msgid "Runlevel _All"
-#~ msgstr "Runlevel _3"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Fereastră de Salvare"
-
-#~ msgid "Service Name: "
-#~ msgstr "Numele serviciului: "
-
-#~ msgid "Status"
-#~ msgstr "Stare"
-
 #: ../src/serviceconf.glade.h:31
 msgid "_On Demand Services"
 msgstr "Servicii la _Cerere"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Aţi făcut schimbări la Runlevel-ul actual.\n"
-#~ "Doriţi să salvaţi schimbările?"
-
-#, fuzzy
-#~ msgid "_Background Services"
-#~ msgstr "_Porniţi serviciul"
-
-#~ msgid "_Contents"
-#~ msgstr "_Conţinut"
-
-#~ msgid "_File"
-#~ msgstr "_Fişier"
-
-#~ msgid "_Help"
-#~ msgstr "_Ajutor"
-
-#, fuzzy
-#~ msgid "_On Demand Services"
-#~ msgstr "_Restartează serviciu"
-
-
-#~ msgid "_View"
-#~ msgstr "_Afişează"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "Alegeţi ce servicii vor rula când sistemul porneşte"
 
 
-
-#, fuzzy
-#~ msgid "Service Management"
-#~ msgstr "Numele serviciului: "
-
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
 msgstr "Organizarea Serviciilor"
-
-
-#~ msgid "Services"
-#~ msgstr "Servicii"
-
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd is required for this service."
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd este necesar pentru acest serviciu."
-#~ msgid "*"
-#~ msgstr "*"
-#~ msgid "_Save"
-#~ msgstr "_Salvaţi"
-
-
-
-#~ msgid "Save"
-#~ msgstr "Salvaţi"
-
-#~ msgid "_Revert"
-#~ msgstr "_Renunţaţi"
-#~ msgid "Revert"
-#~ msgstr "Renunţaţi"
-#~ msgid "Start at Boot"
-#~ msgstr "Pornesc la bootare"
 

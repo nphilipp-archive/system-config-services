@@ -24,11 +24,6 @@ all:	$(PKGNAME).desktop
 	rm -f src/$(PKGNAME)
 	ln -snf serviceconf.py src/$(PKGNAME)
 
-po/$(PKGNAME).pot:: all
-
-#%.desktop.in.h:	%.desktop.in
-#	intltool-extract --type=gettext/ini $<
-
 %.desktop: %.desktop.in po/$(PKGNAME).pot po/*.po
 	intltool-merge -u -d po/ $< $@
 

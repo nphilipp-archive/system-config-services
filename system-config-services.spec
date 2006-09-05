@@ -82,6 +82,8 @@ rm -rf %{buildroot}
 - install po files (again)
 - require gettext for building
 - fix tagging for make archive
+- fix circular make dependency
+- remove duplicate message definitions
 
 * Fri Aug 18 2006 Nils Philippsen <nphilipp@redhat.com>
 - make revert work again (#202467)
