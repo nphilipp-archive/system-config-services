@@ -20,6 +20,7 @@ Requires(postun): hicolor-icon-theme
 Requires(postun): gtk2
 BuildRequires: intltool sed desktop-file-utils
 BuildRequires: perl(XML::Parser)
+BuildRequires: gettext
 Obsoletes: serviceconf
 Obsoletes: redhat-config-services
 
@@ -79,6 +80,8 @@ rm -rf %{buildroot}
 - don't disable Start/Stop/Restart upon reverting changes (#202722)
 - add dist tag
 - install po files (again)
+- require gettext for building
+- fix tagging for make archive
 
 * Fri Aug 18 2006 Nils Philippsen <nphilipp@redhat.com>
 - make revert work again (#202467)

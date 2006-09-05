@@ -71,8 +71,15 @@ install:	all
 	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(sbindir)/system-config-services; \
 	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(sbindir)/serviceconf;
 
-archive: changelog_cvs
-	cvs tag -cR $(CVSTAG) .
+cvstag:
+	if [ "$(FORCETAG)" != "" ]; then \
+		CVSFORCE=-F; \
+	else \
+		CVSFORCE=""; \
+	fi; \
+	cvs tag $(CVSFORCE) -cR $(CVSTAG) .
+
+archive: changelog_cvs cvstag
 	@rm -rf /tmp/$(PKGNAME)-$(VERSION) /tmp/$(PKGNAME)
 	@CVSROOT=`cat CVS/Root`; cd /tmp; cvs -d $$CVSROOT export -r$(CVSTAG) $(PKGNAME)
 	@mv /tmp/$(PKGNAME) /tmp/$(PKGNAME)-$(VERSION)
