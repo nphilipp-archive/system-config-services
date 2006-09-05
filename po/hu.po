@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-19 17:18+0200\n"
+"POT-Creation-Date: 2006-09-05 15:39+0200\n"
 "PO-Revision-Date: 2006-09-01 17:01+0200\n"
 "Last-Translator: Gábor Szentiványi <szenti@ulx.hu>\n"
 "Language-Team: hu <en@li.org>\n"
@@ -31,23 +31,23 @@ msgstr "%d. futási szint"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:279
+#: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
 msgstr "Az aktuális futási szint: "
 
-#: ../src/serviceconf.py:375 ../src/serviceconf.py:484
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "A szerkesztendő futási szint: "
 
-#: ../src/serviceconf.py:423
+#: ../src/serviceconf.py:418
 msgid "Unknown"
 msgstr "Ismeretlen"
 
-#: ../src/serviceconf.py:513
+#: ../src/serviceconf.py:508
 msgid "All"
 msgstr "Összes"
 
-#: ../src/serviceconf.py:547
+#: ../src/serviceconf.py:542
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -67,41 +67,41 @@ msgstr ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:551
+#: ../src/serviceconf.py:546
 msgid "About"
 msgstr "Névjegy"
 
-#: ../src/serviceconf.py:580
+#: ../src/serviceconf.py:575
 msgid "Help is not available."
 msgstr "Nem érhető el segítség."
 
-#: ../src/serviceconf.py:731
+#: ../src/serviceconf.py:714
 msgid "You must run system-config-services as root."
 msgstr "A program csak rendszergazdai jogosultsággal futtatható."
 
-#: ../src/servicemethods.py:228
+#: ../src/servicemethods.py:229
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s nem sikerült. A hibaüzenet: %s"
 
-#: ../src/servicemethods.py:234
+#: ../src/servicemethods.py:235
 msgid " successful"
 msgstr " sikerült"
 
-#: ../src/servicemethods.py:337 ../src/servicemethods.py:348
+#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "A xinetd futtatásához engedélyezni kell ezt: %s"
 
-#: ../src/servicemethods.py:342
+#: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
 msgstr "A xinetd újratöltése nem sikerült: "
 
-#: ../src/servicemethods.py:344
+#: ../src/servicemethods.py:348
 msgid ". The error was: "
 msgstr ". A hibaüzenet: "
 
-#: ../src/servicemethods.py:346
+#: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "A xinetd sikeresen újratöltötte ezt: %s"
@@ -216,7 +216,9 @@ msgstr "_3. futási szint"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr "A 4-es futási szint fenn van tartva egyedi beállításokra és általában nincs használatban"
+msgstr ""
+"A 4-es futási szint fenn van tartva egyedi beállításokra és általában nincs "
+"használatban"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -224,7 +226,9 @@ msgstr "_4. futási szint"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr "Az 5-ös futási szint többfelhasználós mód hálózattal és X Window grafikus rendszerrel"
+msgstr ""
+"Az 5-ös futási szint többfelhasználós mód hálózattal és X Window grafikus "
+"rendszerrel"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -261,4 +265,3 @@ msgstr "A jelenlegi aktív futási szint: "
 #: system-config-services.gladestrings:52
 msgid "Editing Runlevel:"
 msgstr "Futási szint szerkesztése:"
-

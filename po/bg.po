@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-19 17:18+0200\n"
+"POT-Creation-Date: 2006-09-05 15:39+0200\n"
 "PO-Revision-Date: 2004-09-02 16:48-0700\n"
 "Last-Translator: Николай Сърмаджиев,преносим <nikolayds@msn.com>\n"
 "Language-Team:  <bg@li.org>\n"
@@ -30,23 +30,23 @@ msgstr "Runlevel _3"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:279
+#: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
 msgstr "В момента се изпълнява в Runlevel: "
 
-#: ../src/serviceconf.py:375 ../src/serviceconf.py:484
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "Редактиране на Runlevel: "
 
-#: ../src/serviceconf.py:423
+#: ../src/serviceconf.py:418
 msgid "Unknown"
 msgstr "Непознат"
 
-#: ../src/serviceconf.py:513
+#: ../src/serviceconf.py:508
 msgid "All"
 msgstr ""
 
-#: ../src/serviceconf.py:547
+#: ../src/serviceconf.py:542
 #, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
@@ -66,41 +66,41 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:551
+#: ../src/serviceconf.py:546
 msgid "About"
 msgstr "За програмата"
 
-#: ../src/serviceconf.py:580
+#: ../src/serviceconf.py:575
 msgid "Help is not available."
 msgstr "Помощна информация не е налична."
 
-#: ../src/serviceconf.py:731
+#: ../src/serviceconf.py:714
 msgid "You must run system-config-services as root."
 msgstr "Трябва да стартирате system-config-services като руут."
 
-#: ../src/servicemethods.py:228
+#: ../src/servicemethods.py:229
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s се провали. Грешката: %s"
 
-#: ../src/servicemethods.py:234
+#: ../src/servicemethods.py:235
 msgid " successful"
 msgstr " успешно"
 
-#: ../src/servicemethods.py:337 ../src/servicemethods.py:348
+#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd трябва да е включен за стартирането на %s"
 
-#: ../src/servicemethods.py:342
+#: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
 msgstr "xinetd не можа да се презареди за "
 
-#: ../src/servicemethods.py:344
+#: ../src/servicemethods.py:348
 msgid ". The error was: "
 msgstr ". Грешката: "
 
-#: ../src/servicemethods.py:346
+#: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd се презареди %s успешно"

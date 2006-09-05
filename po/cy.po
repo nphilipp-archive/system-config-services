@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.cy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-19 17:18+0200\n"
+"POT-Creation-Date: 2006-09-05 15:39+0200\n"
 "PO-Revision-Date: 2004-03-01 17:55+0000\n"
 "Last-Translator: Owain Green <owaing@oceanfree.net>\n"
 "Language-Team: Cymraeg <Cy@li.org>\n"
@@ -26,23 +26,23 @@ msgstr "Lefel Rhedeg _3"
 # Sigh also needs %s use to translate properly!
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:279
+#: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
 msgstr "Yn Rhedeg yn Gyfredol ar Lefel-Rhedeg: "
 
-#: ../src/serviceconf.py:375 ../src/serviceconf.py:484
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "Yn Golygu Lefel-Rhedeg: "
 
-#: ../src/serviceconf.py:423
+#: ../src/serviceconf.py:418
 msgid "Unknown"
 msgstr "Anhysbys"
 
-#: ../src/serviceconf.py:513
+#: ../src/serviceconf.py:508
 msgid "All"
 msgstr ""
 
-#: ../src/serviceconf.py:547
+#: ../src/serviceconf.py:542
 #, fuzzy
 msgid ""
 "System Services Configuration Tool VERSION\n"
@@ -62,42 +62,42 @@ msgstr ""
 " Brent Fox <bfox@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:551
+#: ../src/serviceconf.py:546
 msgid "About"
 msgstr "Ynghylch"
 
-#: ../src/serviceconf.py:580
+#: ../src/serviceconf.py:575
 msgid "Help is not available."
 msgstr "Nid yw cymorth ar gael."
 
-#: ../src/serviceconf.py:731
+#: ../src/serviceconf.py:714
 msgid "You must run system-config-services as root."
 msgstr "Rhaid i chi redeg system-config-services fel gwraidd."
 
-#: ../src/servicemethods.py:228
+#: ../src/servicemethods.py:229
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "Methodd %s. Dyma'r gwall: %s"
 
-#: ../src/servicemethods.py:234
+#: ../src/servicemethods.py:235
 msgid " successful"
 msgstr " llwyddiannus"
 
-#: ../src/servicemethods.py:337 ../src/servicemethods.py:348
+#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "rhaid bod xinetd yn alluog er mwyn i %s redeg"
 
-#: ../src/servicemethods.py:342
+#: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
 msgstr "methodd xinetd ail-lwytho ar gyfer "
 
 # Pain - should be %s yw'r nam but the string handling is wrong
-#: ../src/servicemethods.py:344
+#: ../src/servicemethods.py:348
 msgid ". The error was: "
 msgstr ". Dyma'r gwall: "
 
-#: ../src/servicemethods.py:346
+#: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "ail-lwythodd xinetd  %s yn llwyddiannus"

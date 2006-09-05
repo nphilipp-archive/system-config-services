@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-19 17:18+0200\n"
+"POT-Creation-Date: 2006-09-05 15:39+0200\n"
 "PO-Revision-Date: 2006-05-25 17:53+0530\n"
 "Last-Translator: Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <ta@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"\n"
 "\n"
 "\n"
 
@@ -34,23 +35,23 @@ msgstr "இயக்க நிலை %d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:279
+#: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
 msgstr "இப்போது இயக்க நிலையில் உள்ளது."
 
-#: ../src/serviceconf.py:375 ../src/serviceconf.py:484
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "இயக்க நிலையில் திருத்தம்:"
 
-#: ../src/serviceconf.py:423
+#: ../src/serviceconf.py:418
 msgid "Unknown"
 msgstr "தெரியாத"
 
-#: ../src/serviceconf.py:513
+#: ../src/serviceconf.py:508
 msgid "All"
 msgstr "அனைத்தும்"
 
-#: ../src/serviceconf.py:547
+#: ../src/serviceconf.py:542
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -70,41 +71,41 @@ msgstr ""
 " நில்ஸ் ஃபிலிப்ஸன் <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:551
+#: ../src/serviceconf.py:546
 msgid "About"
 msgstr "அறிமுகம்"
 
-#: ../src/serviceconf.py:580
+#: ../src/serviceconf.py:575
 msgid "Help is not available."
 msgstr "உதவி கிடைக்கவில்லை"
 
-#: ../src/serviceconf.py:731
+#: ../src/serviceconf.py:714
 msgid "You must run system-config-services as root."
 msgstr "system-config-services ஐ ரூட்டில் இயக்க வேண்டும்"
 
-#: ../src/servicemethods.py:228
+#: ../src/servicemethods.py:229
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s தோல்வியில் முடிந்தது. பிழை : %s"
 
-#: ../src/servicemethods.py:234
+#: ../src/servicemethods.py:235
 msgid " successful"
 msgstr "வெற்றி"
 
-#: ../src/servicemethods.py:337 ../src/servicemethods.py:348
+#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s இயக்குவதற்காக துவக்கு"
 
-#: ../src/servicemethods.py:342
+#: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
 msgstr "xinetd  மீளேற்ற முடியவில்லை"
 
-#: ../src/servicemethods.py:344
+#: ../src/servicemethods.py:348
 msgid ". The error was: "
 msgstr ". பிழை:"
 
-#: ../src/servicemethods.py:346
+#: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd %s மீளேற்றப்பட்டது"
@@ -183,7 +184,8 @@ msgstr "கடைசியாக சேமித்த நிலைக்கு 
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr "தேர்ந்தெடுக்கப்பட்ட சேவையில் துவக்கு, நிறுத்து மற்றும் மீண்டும் துவக்கு போன்ற செயல்கள் உள்ளன"
+msgstr ""
+"தேர்ந்தெடுக்கப்பட்ட சேவையில் துவக்கு, நிறுத்து மற்றும் மீண்டும் துவக்கு போன்ற செயல்கள் உள்ளன"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -219,7 +221,9 @@ msgstr "(_3)இயக்க நிலை 3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr "இயக்க நிலை 4 இருப்பிட தனிபயனாக்குதலுக்கு முன்பதிவு செய்யப்பட்டது மற்றும் பொதுவாக பயன்படுத்துவதில்லை."
+msgstr ""
+"இயக்க நிலை 4 இருப்பிட தனிபயனாக்குதலுக்கு முன்பதிவு செய்யப்பட்டது மற்றும் பொதுவாக "
+"பயன்படுத்துவதில்லை."
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -264,4 +268,3 @@ msgstr "தற்போது செயலில்உள்ள இயக்க 
 #: system-config-services.gladestrings:52
 msgid "Editing Runlevel:"
 msgstr "இயக்கமட்டத்தில் திருத்தம்:"
-

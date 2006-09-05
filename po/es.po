@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-19 17:18+0200\n"
+"POT-Creation-Date: 2006-09-05 15:39+0200\n"
 "PO-Revision-Date: 2006-05-20 21:28-0300\n"
 "Last-Translator: Domingo E. Becker <beckerde@hotmail.com>\n"
 "Language-Team: Spanish <en@li.org>\n"
@@ -44,26 +44,25 @@ msgstr "Nivel de ejecución %d"
 # ../serviceconf.py:134
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:279
+#: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
 msgstr "Ejecutándose en el nivel de ejecución: "
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
-#: ../src/serviceconf.py:375
-#: ../src/serviceconf.py:484
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "Editando nivel de ejecución: "
 
-#: ../src/serviceconf.py:423
+#: ../src/serviceconf.py:418
 msgid "Unknown"
 msgstr "Desconocido"
 
-#: ../src/serviceconf.py:513
+#: ../src/serviceconf.py:508
 msgid "All"
 msgstr "Todo"
 
-#: ../src/serviceconf.py:547
+#: ../src/serviceconf.py:542
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -83,56 +82,55 @@ msgstr ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:551
+#: ../src/serviceconf.py:546
 msgid "About"
 msgstr "Acerca de"
 
-#: ../src/serviceconf.py:580
+#: ../src/serviceconf.py:575
 msgid "Help is not available."
 msgstr "La ayuda no está disponible."
 
 # ../serviceconf.py:432
 # ../serviceconf.py:432
-#: ../src/serviceconf.py:731
+#: ../src/serviceconf.py:714
 msgid "You must run system-config-services as root."
 msgstr "Debe ejecutar system-config-services como root."
 
 # ../servicemethods.py:318
 # ../servicemethods.py:318
-#: ../src/servicemethods.py:228
+#: ../src/servicemethods.py:229
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s falló. El error fue: %s"
 
 # ../servicemethods.py:320
 # ../servicemethods.py:320
-#: ../src/servicemethods.py:234
+#: ../src/servicemethods.py:235
 msgid " successful"
 msgstr " satisfactorio"
 
 # ../servicemethods.py:313
 # ../servicemethods.py:313
-#: ../src/servicemethods.py:337
-#: ../src/servicemethods.py:348
+#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd debe estar activo para poder ejecutar %s"
 
 # ../servicemethods.py:307
 # ../servicemethods.py:307
-#: ../src/servicemethods.py:342
+#: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
 msgstr "xinetd falló su recarga por "
 
 # ../servicemethods.py:308
 # ../servicemethods.py:308
-#: ../src/servicemethods.py:344
+#: ../src/servicemethods.py:348
 msgid ". The error was: "
 msgstr ". El error fue: "
 
 # ../servicemethods.py:310
 # ../servicemethods.py:310
-#: ../src/servicemethods.py:346
+#: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "recarga de xinetd para %s satisfactoria"
@@ -226,7 +224,8 @@ msgstr "_Revertir al último guardado"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr "Acciones tales como iniciar, detener y reiniciar en el servicio seleccionado"
+msgstr ""
+"Acciones tales como iniciar, detener y reiniciar en el servicio seleccionado"
 
 # serviceconf.gladestrings:22
 #: system-config-services.gladestrings:22
@@ -274,7 +273,9 @@ msgstr "Nivel de ejecución _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr "En nivel de ejecución 4 se reserva para personalización local, y no es usualmente usado"
+msgstr ""
+"En nivel de ejecución 4 se reserva para personalización local, y no es "
+"usualmente usado"
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
@@ -330,4 +331,3 @@ msgstr "Nivel de ejecución activo actual: "
 #: system-config-services.gladestrings:52
 msgid "Editing Runlevel:"
 msgstr "Editando nivel de ejecución:"
-

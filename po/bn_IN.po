@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn_IN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-19 17:18+0200\n"
+"POT-Creation-Date: 2006-09-05 15:39+0200\n"
 "PO-Revision-Date: 2006-05-22 11:40+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bangla (INDIA) <redhat-translation@bengalinux.org>\n"
@@ -79,24 +79,24 @@ msgstr "Runlevel %d"
 # not sure if Runlevel is to be translated
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:279
+#: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
 msgstr "বর্তমানে যে রান-লেভেলে চলছে: "
 
-#: ../src/serviceconf.py:375 ../src/serviceconf.py:484
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "রান-লেভেল সম্পাদন করা হচ্ছে: "
 
-#: ../src/serviceconf.py:423
+#: ../src/serviceconf.py:418
 msgid "Unknown"
 msgstr "অজানা"
 
-#: ../src/serviceconf.py:513
+#: ../src/serviceconf.py:508
 msgid "All"
 msgstr "সমস্ত"
 
 # "সিষ্টম সার্ভিস কনফিগারেশন টুল VERSION\n"--spelling of "system" is wrong, changed by RB
-#: ../src/serviceconf.py:547
+#: ../src/serviceconf.py:542
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -116,41 +116,41 @@ msgstr ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:551
+#: ../src/serviceconf.py:546
 msgid "About"
 msgstr "পরিচিতি"
 
-#: ../src/serviceconf.py:580
+#: ../src/serviceconf.py:575
 msgid "Help is not available."
 msgstr "সহায়িকা উপস্থিত নেই"
 
-#: ../src/serviceconf.py:731
+#: ../src/serviceconf.py:714
 msgid "You must run system-config-services as root."
 msgstr "system-config-services চালাবার জন্যে root পরিচয় ব্যবহার করা আবশ্যক।"
 
-#: ../src/servicemethods.py:228
+#: ../src/servicemethods.py:229
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s ব্যর্থ। উত্‍‌পন্ন ত্রুটি: %s"
 
-#: ../src/servicemethods.py:234
+#: ../src/servicemethods.py:235
 msgid " successful"
 msgstr " সফল"
 
 # same as before, changing to en to maintain consistency as of now,
 # msgstr "%s চলবার জন্যে এক্স্‌আইনেটডীর সক্রিয় থাকা আবশ্যিক"--old version
-#: ../src/servicemethods.py:337 ../src/servicemethods.py:348
+#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s চালানোর জন্যে xinetd সক্রিয় থাকা আবশ্যক"
 
 # xinetd has not been transliterated in the earlier string, changing this to maintain consistency as of now.
 # msgstr "জন্যে এক্স্‌আইনেটডী (xinetd) রি-লোড করতে ব্যর্থ হয়েছে"--old version
-#: ../src/servicemethods.py:342
+#: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
 msgstr "উল্লিখিত বস্তুর জন্য xinetd রি-লোড করতে ব্যর্থ "
 
-#: ../src/servicemethods.py:344
+#: ../src/servicemethods.py:348
 msgid ". The error was: "
 msgstr "। উত্‍‌পন্ন ত্রুটি: "
 
@@ -158,7 +158,7 @@ msgstr "। উত্‍‌পন্ন ত্রুটি: "
 # in this string xinetd was transliterated, without the en in brackets as done in the previous string.
 # same as before, changing to en to maintain consistency as of now,
 # msgstr "এক্সআইনেটডী সাফল্যের সঙ্গে %s রি-লোড করেছে"--old version
-#: ../src/servicemethods.py:346
+#: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd সাফল্যের সঙ্গে %s রি-লোড করেছে"
@@ -248,7 +248,9 @@ msgstr "সর্বশেষ সংরক্ষিত মানে প্রত
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr "নির্বাচিত পরিসেবার ক্ষেত্রে start (আরম্ভ), stop (বন্ধ) ও restart (পুনরাম্ভ) প্রভৃতি কর্ম।"
+msgstr ""
+"নির্বাচিত পরিসেবার ক্ষেত্রে start (আরম্ভ), stop (বন্ধ) ও restart (পুনরাম্ভ) প্রভৃতি "
+"কর্ম।"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -290,7 +292,9 @@ msgstr "Runlevel _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr "Runlevel 4 অর্থাত্‌ স্থানীয়রূপে পছন্দসই মান পরিবর্তনের জন্য সংরক্ষিত এবং সাধারণ ব্যবহার করা হয় না"
+msgstr ""
+"Runlevel 4 অর্থাত্‌ স্থানীয়রূপে পছন্দসই মান পরিবর্তনের জন্য সংরক্ষিত এবং সাধারণ "
+"ব্যবহার করা হয় না"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -298,7 +302,8 @@ msgstr "Runlevel _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr "Runlevel 5 অর্থাত্‌ নেটওয়ার্কিং ও X উইন্ডো সহ একাধিক ব্যবহারকারী সমর্থন করতে সক্ষম"
+msgstr ""
+"Runlevel 5 অর্থাত্‌ নেটওয়ার্কিং ও X উইন্ডো সহ একাধিক ব্যবহারকারী সমর্থন করতে সক্ষম"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -336,4 +341,3 @@ msgstr "বর্তমানে সক্রিয় রান-লেভেল: "
 #: system-config-services.gladestrings:52
 msgid "Editing Runlevel:"
 msgstr "রান-লেভেল সম্পাদনা: "
-

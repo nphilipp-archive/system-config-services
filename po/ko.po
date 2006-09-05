@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-19 17:18+0200\n"
+"POT-Creation-Date: 2006-09-05 15:39+0200\n"
 "PO-Revision-Date: 2006-06-26 15:35+1000\n"
 "Last-Translator: Eunju Kim <eukim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -29,23 +29,23 @@ msgstr "런레벨 %d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:279
+#: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
 msgstr "런레벨에서 현재 실행 중임: "
 
-#: ../src/serviceconf.py:375 ../src/serviceconf.py:484
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "런레벨 편집: "
 
-#: ../src/serviceconf.py:423
+#: ../src/serviceconf.py:418
 msgid "Unknown"
 msgstr "알 수 없음"
 
-#: ../src/serviceconf.py:513
+#: ../src/serviceconf.py:508
 msgid "All"
 msgstr "모두"
 
-#: ../src/serviceconf.py:547
+#: ../src/serviceconf.py:542
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -65,42 +65,42 @@ msgstr ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:551
+#: ../src/serviceconf.py:546
 msgid "About"
 msgstr "정보"
 
-#: ../src/serviceconf.py:580
+#: ../src/serviceconf.py:575
 msgid "Help is not available."
 msgstr "도움말이 없습니다."
 
-#: ../src/serviceconf.py:731
+#: ../src/serviceconf.py:714
 msgid "You must run system-config-services as root."
 msgstr "system-config-services는 루트로 실행하셔야 합니다."
 
-#: ../src/servicemethods.py:228
+#: ../src/servicemethods.py:229
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s에 실패했습니다. 오류는 다음과 같습니다: %s"
 
 # ../servicemethods.py:320"
-#: ../src/servicemethods.py:234
+#: ../src/servicemethods.py:235
 msgid " successful"
 msgstr " 성공"
 
-#: ../src/servicemethods.py:337 ../src/servicemethods.py:348
+#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s (을)를 실행하기 위해서는 반드시 xinetd가 활성화 되어야 합니다"
 
-#: ../src/servicemethods.py:342
+#: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
 msgstr "xinetd가 다음을 다시 읽어오는데 실패했습니다: "
 
-#: ../src/servicemethods.py:344
+#: ../src/servicemethods.py:348
 msgid ". The error was: "
 msgstr ". 오류는 다음과 같습니다: "
 
-#: ../src/servicemethods.py:346
+#: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd가 %s (을)를 성공적으로 다시 읽어들였습니다"
@@ -215,7 +215,8 @@ msgstr "런레벨 3 (_3)"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr "런레벨 4는 로컬 사용자 설정으로 지정되어 있으나 이는 주로 사용되지 않습니다"
+msgstr ""
+"런레벨 4는 로컬 사용자 설정으로 지정되어 있으나 이는 주로 사용되지 않습니다"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -260,4 +261,3 @@ msgstr "현재 실행 중인 런레벨: "
 #: system-config-services.gladestrings:52
 msgid "Editing Runlevel:"
 msgstr "런레벨 편집:"
-

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-19 17:18+0200\n"
+"POT-Creation-Date: 2006-09-05 15:39+0200\n"
 "PO-Revision-Date: 2006-05-20 02:03+0100\n"
 "Last-Translator: Renato Pavicic <renato@translator-shop.org>\n"
 "Language-Team: Croatian <www.translator-shop.org>\n"
@@ -25,24 +25,23 @@ msgstr "Razina pokretanja %d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:279
+#: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
 msgstr "Trenutno pokrenuto u razini pokretanja: "
 
-#: ../src/serviceconf.py:375
-#: ../src/serviceconf.py:484
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "Uređivanje razine pokretanja: "
 
-#: ../src/serviceconf.py:423
+#: ../src/serviceconf.py:418
 msgid "Unknown"
 msgstr "Nepoznato"
 
-#: ../src/serviceconf.py:513
+#: ../src/serviceconf.py:508
 msgid "All"
 msgstr "Sve"
 
-#: ../src/serviceconf.py:547
+#: ../src/serviceconf.py:542
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -62,42 +61,41 @@ msgstr ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:551
+#: ../src/serviceconf.py:546
 msgid "About"
 msgstr "O programu"
 
-#: ../src/serviceconf.py:580
+#: ../src/serviceconf.py:575
 msgid "Help is not available."
 msgstr "Pomoć nije dostupna."
 
-#: ../src/serviceconf.py:731
+#: ../src/serviceconf.py:714
 msgid "You must run system-config-services as root."
 msgstr "system-config-services morate pokrenuti kao root korisnik."
 
-#: ../src/servicemethods.py:228
+#: ../src/servicemethods.py:229
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s nije uspio. Pogreška je bila: %s"
 
-#: ../src/servicemethods.py:234
+#: ../src/servicemethods.py:235
 msgid " successful"
 msgstr " uspješno"
 
-#: ../src/servicemethods.py:337
-#: ../src/servicemethods.py:348
+#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd mora biti omogućen za pokretanje %s"
 
-#: ../src/servicemethods.py:342
+#: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
 msgstr "xinetd nije uspio ponovo učitati za "
 
-#: ../src/servicemethods.py:344
+#: ../src/servicemethods.py:348
 msgid ". The error was: "
 msgstr ". Pogreška je bila: "
 
-#: ../src/servicemethods.py:346
+#: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd uspješno je ponovo učitao %s"
@@ -176,7 +174,9 @@ msgstr "Vrati na _posljednje spremljeno"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr "Aktivnosti poput pokretanja, zaustavljanja ili ponovnog pokretanja odabrane usluge"
+msgstr ""
+"Aktivnosti poput pokretanja, zaustavljanja ili ponovnog pokretanja odabrane "
+"usluge"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -212,7 +212,9 @@ msgstr "Razina pokretanja _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr "Razina izvršavanja 4 rezervirana je za lokalno prilagođavanje i uobičajeno se ne upotrebljava."
+msgstr ""
+"Razina izvršavanja 4 rezervirana je za lokalno prilagođavanje i uobičajeno "
+"se ne upotrebljava."
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -220,7 +222,8 @@ msgstr "Razina pokretanja _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr "Razina izvršavanja 5 je višekorisnički način s umrežavanjem i X prozorima"
+msgstr ""
+"Razina izvršavanja 5 je višekorisnički način s umrežavanjem i X prozorima"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -257,4 +260,3 @@ msgstr "Trenutno aktivno u razini pokretanja: "
 #: system-config-services.gladestrings:52
 msgid "Editing Runlevel:"
 msgstr "Uređivanje razine pokretanja:"
-

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-19 17:18+0200\n"
+"POT-Creation-Date: 2006-09-05 15:39+0200\n"
 "PO-Revision-Date: 2006-05-23 23:30+0400\n"
 "Last-Translator: Andrew Martynov <andrewm@inventa.ru>\n"
 "Language-Team: Russian <fedora-trans-ru@redhat.com>\n"
@@ -30,23 +30,23 @@ msgstr "Уровень запуска %d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:279
+#: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
 msgstr "Текущий уровень запуска:"
 
-#: ../src/serviceconf.py:375 ../src/serviceconf.py:484
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "Редактируется уровень запуска:"
 
-#: ../src/serviceconf.py:423
+#: ../src/serviceconf.py:418
 msgid "Unknown"
 msgstr "Неизвестно"
 
-#: ../src/serviceconf.py:513
+#: ../src/serviceconf.py:508
 msgid "All"
 msgstr "Все"
 
-#: ../src/serviceconf.py:547
+#: ../src/serviceconf.py:542
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -66,41 +66,41 @@ msgstr ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:551
+#: ../src/serviceconf.py:546
 msgid "About"
 msgstr "О программе"
 
-#: ../src/serviceconf.py:580
+#: ../src/serviceconf.py:575
 msgid "Help is not available."
 msgstr "Справка недоступна."
 
-#: ../src/serviceconf.py:731
+#: ../src/serviceconf.py:714
 msgid "You must run system-config-services as root."
 msgstr "system-config-services должен выполняться с правами пользователя root."
 
-#: ../src/servicemethods.py:228
+#: ../src/servicemethods.py:229
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "Сбой %s. Ошибка была: %s"
 
-#: ../src/servicemethods.py:234
+#: ../src/servicemethods.py:235
 msgid " successful"
 msgstr " успешно"
 
-#: ../src/servicemethods.py:337 ../src/servicemethods.py:348
+#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd должен быть включен для запуска %s"
 
-#: ../src/servicemethods.py:342
+#: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
 msgstr "Ошибка перезапуска xinetd для "
 
-#: ../src/servicemethods.py:344
+#: ../src/servicemethods.py:348
 msgid ". The error was: "
 msgstr ". Ошибка была:"
 
-#: ../src/servicemethods.py:346
+#: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd перезагрузил %s успешно."
@@ -207,7 +207,8 @@ msgstr "_Изменить уровень"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr "Уровень выполнения 3 - это многопользовательский режим с поддержкой сети"
+msgstr ""
+"Уровень выполнения 3 - это многопользовательский режим с поддержкой сети"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -215,7 +216,9 @@ msgstr "Уровень запуска _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr "Уровень выполнения 4 зарезервирован для локальных изменений, обычно не используется"
+msgstr ""
+"Уровень выполнения 4 зарезервирован для локальных изменений, обычно не "
+"используется"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -223,7 +226,9 @@ msgstr "Уровень запуска _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr "Уровень выполнения 5 - многопользовательский режим с поддержкой сети и X Windows"
+msgstr ""
+"Уровень выполнения 5 - многопользовательский режим с поддержкой сети и X "
+"Windows"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -354,4 +359,3 @@ msgstr "Редактируется уровень запуска:"
 
 #~ msgid "Start at Boot"
 #~ msgstr "Запускать при загрузке системы"
-

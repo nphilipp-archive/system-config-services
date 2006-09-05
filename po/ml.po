@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ml\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-19 17:18+0200\n"
+"POT-Creation-Date: 2006-09-05 15:39+0200\n"
 "PO-Revision-Date: 2006-06-23 16:55+0530\n"
 "Last-Translator: Ani Peter <apeter@redhat.com>\n"
 "Language-Team: Malayalam\n"
@@ -15,7 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"\n"
 "\n"
 
 #: ../src/serviceconf.py:76
@@ -30,23 +31,23 @@ msgstr "റണ്‍ലവല്‍ %d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:279
+#: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
 msgstr "ഇപ്പോള്‍ പ്രവറ്‍ത്തിച്ചുകൊണ്ടിരിക്കുന്ന റണ്‍ലവല്‍: "
 
-#: ../src/serviceconf.py:375 ../src/serviceconf.py:484
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "റണ്‍ലവലില്‍ മാറ്റം വരുത്തുക: "
 
-#: ../src/serviceconf.py:423
+#: ../src/serviceconf.py:418
 msgid "Unknown"
 msgstr "അപരിചിതം"
 
-#: ../src/serviceconf.py:513
+#: ../src/serviceconf.py:508
 msgid "All"
 msgstr "എല്ലാം"
 
-#: ../src/serviceconf.py:547
+#: ../src/serviceconf.py:542
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -66,41 +67,41 @@ msgstr ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:551
+#: ../src/serviceconf.py:546
 msgid "About"
 msgstr "സംബന്ധിച്ച്"
 
-#: ../src/serviceconf.py:580
+#: ../src/serviceconf.py:575
 msgid "Help is not available."
 msgstr "സഹായം ലഭ്യമല്ല."
 
-#: ../src/serviceconf.py:731
+#: ../src/serviceconf.py:714
 msgid "You must run system-config-services as root."
 msgstr "system-config-services റൂട്ട് ആയി നിന്നേ പ്രവറ്‍ത്തിപ്പിക്കാന്‍ പാടുള്ളൂ."
 
-#: ../src/servicemethods.py:228
+#: ../src/servicemethods.py:229
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s പരാജയപ്പെട്ടു. ഇതായിരുന്നു പിഴവ്: %s"
 
-#: ../src/servicemethods.py:234
+#: ../src/servicemethods.py:235
 msgid " successful"
 msgstr " വിജയിച്ചു"
 
-#: ../src/servicemethods.py:337 ../src/servicemethods.py:348
+#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s പ്രവറ്‍ത്തിക്കിന്നതിനായി xinetd പ്രവറ്‍ത്തന സജ്ജമായിരിക്കണം"
 
-#: ../src/servicemethods.py:342
+#: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
 msgstr " റീലോഡ് ചെയ്യുന്നതില്‍ xinetd പരാജയപ്പെട്ടു"
 
-#: ../src/servicemethods.py:344
+#: ../src/servicemethods.py:348
 msgid ". The error was: "
 msgstr " ഇതായിരുന്നു പിഴവ്: "
 
-#: ../src/servicemethods.py:346
+#: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "%s വിജയകരമായി xinetd റീലോഡ് ചെയ്തിരിക്കുന്നു"
@@ -179,7 +180,8 @@ msgstr "ഏറ്റവും ഒടുവില്‍ സംരക്ഷിച�
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr "തിരഞ്ഞെടുത്ത സര്‍വീസില്‍ ഉളള ആരംഭിക്കുക, നിര്‍ത്തുക, റീസ്റ്റാര്‍ട്ട് ചെയ്യുക എന്നീ പ്രവര്‍ത്തനങ്ങള്‍"
+msgstr ""
+"തിരഞ്ഞെടുത്ത സര്‍വീസില്‍ ഉളള ആരംഭിക്കുക, നിര്‍ത്തുക, റീസ്റ്റാര്‍ട്ട് ചെയ്യുക എന്നീ പ്രവര്‍ത്തനങ്ങള്‍"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -215,7 +217,8 @@ msgstr "റണ്‍ലവല്‍ 3(_3)"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr "ലോക്കല്‍ കസ്റ്റമൈസേഷനായി റിസേര്‍വ് റണ്‍ലവല്‍ 4 ചെയ്തിരിക്കുന്നു, പക്ഷേ സാധാരണയായി ഉപയോഗിക്കാറില്ല"
+msgstr ""
+"ലോക്കല്‍ കസ്റ്റമൈസേഷനായി റിസേര്‍വ് റണ്‍ലവല്‍ 4 ചെയ്തിരിക്കുന്നു, പക്ഷേ സാധാരണയായി ഉപയോഗിക്കാറില്ല"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -260,4 +263,3 @@ msgstr "ഇപ്പോള്‍ പ്രവറ്‍ത്തിക്കു�
 #: system-config-services.gladestrings:52
 msgid "Editing Runlevel:"
 msgstr "റണ്‍ലവലില്‍ മാറ്റം വരുത്തുക: "
-

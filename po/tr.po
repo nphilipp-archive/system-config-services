@@ -1,6 +1,6 @@
 # translation of services_tr.po to 
 # translation of tr.po to Turkish
-# $Id: tr.po,v 1.61 2006/06/23 16:49:06 emturanb Exp $
+# $Id: tr.po,v 1.62 2006/09/05 13:38:51 nphilipp Exp $
 # Nilgün Belma Bugüner <nilgun@superonline.com>, 2003.
 # Erçin EKER <erc.caldera@gmx.net>, 2003.
 # Bahadir Yagan <bahadir.yagan@mentorsystem.com>, 2004, 2006.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: services_tr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-05-19 17:18+0200\n"
+"POT-Creation-Date: 2006-09-05 15:39+0200\n"
 "PO-Revision-Date: 2006-06-23 19:58+0200\n"
 "Last-Translator: Egemen Metin Turan <mturan@aegee-ankara.org>\n"
 "Language-Team: Turkish <fedora-trans-tr@redhat.com>\n"
@@ -31,23 +31,23 @@ msgstr "Çalışma Seviyesi %d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:279
+#: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
 msgstr "Şu an Etkin Olan Çalışma Seviyesi:"
 
-#: ../src/serviceconf.py:375 ../src/serviceconf.py:484
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "Düzenlenen Çalışma Seviyesi: "
 
-#: ../src/serviceconf.py:423
+#: ../src/serviceconf.py:418
 msgid "Unknown"
 msgstr "Bilinmeyen"
 
-#: ../src/serviceconf.py:513
+#: ../src/serviceconf.py:508
 msgid "All"
 msgstr "Tümü"
 
-#: ../src/serviceconf.py:547
+#: ../src/serviceconf.py:542
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -67,41 +67,41 @@ msgstr ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:551
+#: ../src/serviceconf.py:546
 msgid "About"
 msgstr "Hakkında"
 
-#: ../src/serviceconf.py:580
+#: ../src/serviceconf.py:575
 msgid "Help is not available."
 msgstr "Yardım erişilebilir değil."
 
-#: ../src/serviceconf.py:731
+#: ../src/serviceconf.py:714
 msgid "You must run system-config-services as root."
 msgstr "sytem-config-services root olarak çalıştırılmalıdır."
 
-#: ../src/servicemethods.py:228
+#: ../src/servicemethods.py:229
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s başarısız. Hata: %s"
 
-#: ../src/servicemethods.py:234
+#: ../src/servicemethods.py:235
 msgid " successful"
 msgstr " başarılı"
 
-#: ../src/servicemethods.py:337 ../src/servicemethods.py:348
+#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s i çalıştırmak için xinetd etkin olmalıdır"
 
-#: ../src/servicemethods.py:342
+#: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
 msgstr "xinetd bunu yeniden yükleyemedi: "
 
-#: ../src/servicemethods.py:344
+#: ../src/servicemethods.py:348
 msgid ". The error was: "
 msgstr ". Hata: "
 
-#: ../src/servicemethods.py:346
+#: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd %s i başarıyla yeniden yükledi"
@@ -180,7 +180,8 @@ msgstr "Son Kayıtlı Duruma _Dön"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr "Seçilmiş servis üzerinde başlatma, durdurma ve yeniden başlatma eylemleri"
+msgstr ""
+"Seçilmiş servis üzerinde başlatma, durdurma ve yeniden başlatma eylemleri"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -216,7 +217,9 @@ msgstr "Çalışma Seviyesi _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr "Çalışma Seviyesi 4 yerel uyarlama için yedek olarak ayrılmıştır, ve genellikle kullanılmaz"
+msgstr ""
+"Çalışma Seviyesi 4 yerel uyarlama için yedek olarak ayrılmıştır, ve "
+"genellikle kullanılmaz"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -224,7 +227,8 @@ msgstr "Çalışma Seviyesi _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr "Çalışma Seviyesi 5 ağ ve X Windows desteği bulunan çok kullanıcılı kiptir"
+msgstr ""
+"Çalışma Seviyesi 5 ağ ve X Windows desteği bulunan çok kullanıcılı kiptir"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"

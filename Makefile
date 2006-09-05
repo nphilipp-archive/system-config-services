@@ -21,6 +21,7 @@ PAMD_DIR        = /etc/pam.d
 SECURITY_DIR    = /etc/security/console.apps
 
 all:	$(PKGNAME).desktop
+	$(MAKE) -C po
 	rm -f src/$(PKGNAME)
 	ln -snf serviceconf.py src/$(PKGNAME)
 
