@@ -1,5 +1,31 @@
 2006-09-05  nphilipp  <nphilipp@redhat.com>
 
+	* ChangeLog: *** empty log message ***
+
+	* Makefile, system-config-services.spec: install po files (again)
+
+	* ChangeLog: *** empty log message ***
+
+	* Makefile: commit ChangeLog before tagging for archive
+
+	* src/serviceconf.py, system-config-services.spec:
+	don't disable Start/Stop/Restart upon reverting changes (#202722)
+	add dist tag
+
+2006-09-05  nphilipp  <nphilipp@redhat.com>
+
+	* Makefile, system-config-services.spec: install po files (again)
+
+	* ChangeLog: *** empty log message ***
+
+	* Makefile: commit ChangeLog before tagging for archive
+
+	* src/serviceconf.py, system-config-services.spec:
+	don't disable Start/Stop/Restart upon reverting changes (#202722)
+	add dist tag
+
+2006-09-05  nphilipp  <nphilipp@redhat.com>
+
 	* Makefile: commit ChangeLog before tagging for archive
 
 	* src/serviceconf.py, system-config-services.spec:
