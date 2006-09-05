@@ -77,10 +77,10 @@ cvstag:
 	else \
 		CVSFORCE=""; \
 	fi; \
-	cvs tag $(CVSFORCE) -cR $(CVSTAG) .
+	cvs tag $$CVSFORCE -cR $(CVSTAG) .
 	@if cvs diff -u -r $(CVSTAG) . | grep -q '^[^\?]'; then \
 		echo; \
-		echo "CVS tag $(CVSTAG) exists. Perhaps use CVSFORCE=1?"; \
+		echo "CVS tag $(CVSTAG) exists. Perhaps use FORCETAG=1?"; \
 		echo; \
 		exit 1; \
 	fi
