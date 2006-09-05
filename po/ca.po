@@ -1,5 +1,5 @@
 # Catalan translation of system-config-services by Softcatalà
-# Copyright (C) 2004, 2006 Free Software Foundation, Inc.
+# Copyright © 2004, 2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the
 #  system-config-services package.
 # Xavier Conde Rueda <xaviconde@gmail.com>, 2004, 2006
@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-09-05 15:39+0200\n"
-"PO-Revision-Date: 2006-01-29 01:58+0100\n"
+"PO-Revision-Date: 2006-09-06 00:47+0200\n"
 "Last-Translator: Xavier Conde Rueda <xaviconde@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
@@ -162,9 +162,8 @@ msgid "Service Configuration"
 msgstr "Configuració dels serveis"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "Reinicia el servei seleccionat"
+msgstr "Actualitza la llista de serveis"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
@@ -173,7 +172,7 @@ msgstr "_Actualitza els serveis"
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr ""
+msgstr "Desa els canvis que hagueu fet"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
@@ -181,18 +180,16 @@ msgstr "De_sa els canvis"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "Torna a _l'estat ja desat"
+msgstr "Reverteix a l'últim canvi desat"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
-msgstr "Torna a _l'estat ja desat"
+msgstr "_Reverteix al darrer estat desat"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr ""
+msgstr "Accions com ara iniciar, aturar i reiniciar del servei seleccionat"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -212,7 +209,7 @@ msgstr "_Reinicia el servei"
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr ""
+msgstr "Seleccioneu el nivell d'execució que vulgueu editar"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -220,7 +217,7 @@ msgstr "_Edita el nivell"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr ""
+msgstr "El nivell d'execució 3 és en mode multiusuari amb xarxa"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -229,6 +226,8 @@ msgstr "Nivell d'execució _3"
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
 msgstr ""
+"El nivell d'execució 4 està reservat a presonalitzacions locals, normalment "
+"no s'utilitza"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -236,7 +235,7 @@ msgstr "Nivell d'execució _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "El nivell d'execució 5 és en mode multiusuari, xara i amb X Windows"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -244,11 +243,11 @@ msgstr "Nivell d'execució _5"
 
 #: system-config-services.gladestrings:37
 msgid "Read Manual"
-msgstr ""
+msgstr "Llegiu el manual"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
-msgstr ""
+msgstr "_Manual"
 
 #: system-config-services.gladestrings:40
 msgid "Save"
@@ -256,16 +255,15 @@ msgstr "Desa"
 
 #: system-config-services.gladestrings:42
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel·la"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "S_urt"
+msgstr "Surt"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
-msgstr ""
+msgstr "Surt"
 
 #: system-config-services.gladestrings:51
 msgid "Current Active Runlevel: "
