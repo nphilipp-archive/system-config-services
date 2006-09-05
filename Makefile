@@ -53,7 +53,7 @@ install:	all
 
 	ln -sf consolehelper $(DESTDIR)$(BINDIR)/$(PKGNAME)
 	ln -sf consolehelper $(DESTDIR)$(BINDIR)/serviceconf
-	ln -sf $(PKGNAME) $(DESTDIR)$(SECURITYDIR)/serviceconf
+	ln -sf $(PKGNAME) $(DESTDIR)$(SECURITY_DIR)/serviceconf
 	ln -sf $(PKGNAME) $(DESTDIR)$(PAMD_DIR)/serviceconf
 
 	python -c 'import compileall; compileall.compile_dir ("'"$(DESTDIR)$(PKGDATADIR)"'", ddir="'"$(PKGDATADIR)"'", maxlevels=10, force=1)'
