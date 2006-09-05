@@ -59,12 +59,12 @@ install:	all
 	python -c 'import compileall; compileall.compile_dir ("'"$(DESTDIR)$(PKGDATADIR)"'", ddir="'"$(PKGDATADIR)"'", maxlevels=10, force=1)'
 	softdir=$(PKGDATADIR); \
 	p=$(DESTDIR) ; \
-	softdir=$${softdir/\#$$p} ; \
-	p=$(prefix) ; \
-	softdir=$${softdir/\#$$p} ; \
-	softdir=$${softdir/\#\/} ; \
-	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(sbindir)/system-config-services; \
-	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(sbindir)/serviceconf;
+	softdir=$${softdir/#$$p} ; \
+	p=$(PREFIX) ; \
+	softdir=$${softdir/#$$p} ; \
+	softdir=$${softdir/#\/} ; \
+	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(SBINDIR)/system-config-services; \
+	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(SBINDIR)/serviceconf;
 
 cvstag:
 	@if [ "$(FORCETAG)" != "" ]; then \
