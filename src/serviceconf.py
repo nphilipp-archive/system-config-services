@@ -409,13 +409,7 @@ class Gui:
         # set the text in {bg,od}TxtDesc
         service = self.services[self.text_in_row]
         buf.set_text(service.description)
-        # if an xinetd service is selected, disable these,
-        # they'll do nothing
-        if service.is_xinetd_service():
-            self.action_widgets_sensitive(0)
-        else:
-            self.action_widgets_sensitive(1)
-            
+
     def set_status_buffer(self, buf):
         # set the text in {bg,od}TxtStatus
         print self.text_in_row
@@ -704,19 +698,6 @@ class Gui:
         self.btnRevert.set_sensitive(sensitive)
         self.dirty=sensitive
 
-    def action_widgets_sensitive(self, sensitive):
-        """sets the start/stop/restart buttons and menuitems to be sensitive or not"""
-        self.btnStart.set_sensitive(sensitive)
-        self.btnRestart.set_sensitive(sensitive)
-        self.btnStop.set_sensitive(sensitive)
-        self.mnuStart.set_sensitive(sensitive)
-        self.mnuStop.set_sensitive(sensitive)
-        self.mnuRestart.set_sensitive(sensitive)
-        self.pmnStart.set_sensitive(sensitive)
-        self.pmnStop.set_sensitive(sensitive)
-        self.pmnRestart.set_sensitive(sensitive)
-                                    
-        
 def main():
     if os.geteuid() == 0:
         #try:

@@ -1,8 +1,8 @@
 # -*- RPM-SPEC -*-
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.9.0
-Release: 2
+Version: 0.9.1
+Release: 1%{?dist}
 URL: http://www.redhat.com/ 
 Source0: %{name}-%{version}.tar.bz2
 License: GPL
@@ -75,6 +75,10 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Tue Sep 05 2006 Nils Philippsen <nphilipp@redhat.com> - 0.9.1
+- don't disable Start/Stop/Restart upon reverting changes (#202722)
+- add dist tag
+
 * Fri Aug 18 2006 Nils Philippsen <nphilipp@redhat.com>
 - make revert work again (#202467)
 - don't show all runlevels when starting
