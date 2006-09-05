@@ -79,7 +79,9 @@ cvstag:
 	fi; \
 	cvs tag $(CVSFORCE) -cR $(CVSTAG) .
 	@if cvs diff -u -r $(CVSTAG) . | grep -q '^[^\?]'; then \
-		echo "won't move tag $(CVSTAG), use CVSFORCE=1?"; \
+		echo; echo; \
+		echo "Won't move tag $(CVSTAG). Perhaps use CVSFORCE=1?"; \
+		echo; echo; \
 		exit 1; \
 	fi
 
