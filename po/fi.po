@@ -11,13 +11,13 @@ msgstr ""
 "Project-Id-Version: fi\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-09-05 15:39+0200\n"
-"PO-Revision-Date: 2006-07-21 23:24+0300\n"
+"PO-Revision-Date: 2006-09-06 20:52+0300\n"
 "Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
 "Language-Team: Finnish <Laatu@lokalisointi.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
+"X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../src/serviceconf.py:76
@@ -172,12 +172,10 @@ msgstr "_Tallenna muutokset"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "Palauta _edellisen tallennuksen tilanne"
+msgstr "Palauta edellisen tallennuksen tilanne"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
 msgstr "Palauta _edellisen tallennuksen tilanne"
 
@@ -224,8 +222,7 @@ msgstr "Ajotaso _3"
 #: system-config-services.gladestrings:33
 #, fuzzy
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
-"Ajotaso 4 on varattu paikalliselle muokkaukselle eikä se ole yleensä käytössä"
+msgstr "Ajotaso 4 on varattu paikalliselle muokkaukselle eikä se ole yleensä käytössä"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -271,3 +268,4 @@ msgstr "Nykyinen aktiivinen ajotaso: "
 #: system-config-services.gladestrings:52
 msgid "Editing Runlevel:"
 msgstr "Muokattava ajotaso:"
+
