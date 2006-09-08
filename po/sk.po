@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-09-05 15:39+0200\n"
-"PO-Revision-Date: 2005-05-12 06:17+0200\n"
-"Last-Translator: Marcel Telka <marcel@telka.sk>\n"
+"POT-Creation-Date: 2006-05-19 17:18+0200\n"
+"PO-Revision-Date: 2006-09-06 21:51+0100\n"
+"Last-Translator: Mike Karas <zoliqe@gmail.com>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,24 +27,24 @@ msgstr "Úroveň behu %d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:280
+#: ../src/serviceconf.py:279
 msgid "Currently Running in Runlevel: "
-msgstr "Aktuálne bežiace v úrovni behu: "
+msgstr "Aktuálne spustená úroveň behu: "
 
-#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
+#: ../src/serviceconf.py:375
+#: ../src/serviceconf.py:484
 msgid "Editing Runlevel: "
 msgstr "Úprava úrovne behu: "
 
-#: ../src/serviceconf.py:418
+#: ../src/serviceconf.py:423
 msgid "Unknown"
 msgstr "Neznámy"
 
-#: ../src/serviceconf.py:508
+#: ../src/serviceconf.py:513
 msgid "All"
 msgstr "Všetky"
 
-#: ../src/serviceconf.py:542
-#, fuzzy
+#: ../src/serviceconf.py:547
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -61,43 +61,45 @@ msgstr ""
 " Bill Nottingham <notting@redhat>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:546
+#: ../src/serviceconf.py:551
 msgid "About"
 msgstr "O programe"
 
-#: ../src/serviceconf.py:575
+#: ../src/serviceconf.py:580
 msgid "Help is not available."
 msgstr "Pomocník nie je dostupný."
 
-#: ../src/serviceconf.py:714
+#: ../src/serviceconf.py:731
 msgid "You must run system-config-services as root."
 msgstr "Musíte spustiť system-config-services ako správca."
 
-#: ../src/servicemethods.py:229
+#: ../src/servicemethods.py:228
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s zlyhalo. Chyba bola: %s"
 
-#: ../src/servicemethods.py:235
+#: ../src/servicemethods.py:234
 msgid " successful"
 msgstr " úspešné"
 
-#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
+#: ../src/servicemethods.py:337
+#: ../src/servicemethods.py:348
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd musí byť povolený pre %s na spustenie"
 
-#: ../src/servicemethods.py:346
+#: ../src/servicemethods.py:342
 msgid "xinetd failed to reload for "
 msgstr "zlyhalo opätovne zavedenie xinetd pre "
 
-#: ../src/servicemethods.py:348
+#: ../src/servicemethods.py:344
 msgid ". The error was: "
 msgstr ". Chyba bola: "
 
-#: ../src/servicemethods.py:350
+#: ../src/servicemethods.py:346
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd opätovne zaviedol %s úspešne"
@@ -114,33 +116,30 @@ msgstr "Nič"
 #: system-config-services.gladestrings:8
 #: system-config-services.gladestrings:23
 #: system-config-services.gladestrings:45
-#, fuzzy
 msgid "Start the selected service"
-msgstr "_Spustiť službu"
+msgstr "Spustiť zvolenú službu"
 
 #: system-config-services.gladestrings:9
 #: system-config-services.gladestrings:46
 msgid "Start"
-msgstr "Štart"
+msgstr "Spustiť"
 
 #: system-config-services.gladestrings:10
 #: system-config-services.gladestrings:25
 #: system-config-services.gladestrings:47
-#, fuzzy
 msgid "Stop the selected service"
-msgstr "Odstrániť službu"
+msgstr "Zastaviť zvolenú službu"
 
 #: system-config-services.gladestrings:11
 #: system-config-services.gladestrings:48
 msgid "Stop"
-msgstr "Stop"
+msgstr "Zastaviť"
 
 #: system-config-services.gladestrings:12
 #: system-config-services.gladestrings:27
 #: system-config-services.gladestrings:49
-#, fuzzy
 msgid "Restart the selected service"
-msgstr "_Reštartovať službu"
+msgstr "Reštartovať zvolenú službu"
 
 #: system-config-services.gladestrings:13
 #: system-config-services.gladestrings:50
@@ -152,9 +151,8 @@ msgid "Service Configuration"
 msgstr "Konfigurácia služby"
 
 #: system-config-services.gladestrings:15
-#, fuzzy
 msgid "Refresh the list of services"
-msgstr "_Obnoviť zoznam služieb"
+msgstr "Obnoviť zoznam služieb"
 
 #: system-config-services.gladestrings:16
 msgid "_Refresh Service List"
@@ -163,7 +161,7 @@ msgstr "_Obnoviť zoznam služieb"
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr ""
+msgstr "Uložiť zmeny, ktoré ste vykonali"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
@@ -171,18 +169,16 @@ msgstr "_Uložiť zmeny"
 
 #: system-config-services.gladestrings:19
 #: system-config-services.gladestrings:41
-#, fuzzy
 msgid "Revert to the last saved change"
-msgstr "Vrátiť sa k pos_lednému uloženému"
+msgstr "Vrátiť sa k naposledy uloženej zmene"
 
 #: system-config-services.gladestrings:20
-#, fuzzy
 msgid "_Revert To Last Save"
-msgstr "Vrátiť sa k pos_lednému uloženému"
+msgstr "V_rátiť sa k naposledy uloženému"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr ""
+msgstr "Akcie ako štart, stop a reštart na zvolenej službe"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -202,7 +198,7 @@ msgstr "_Reštartovať službu"
 
 #: system-config-services.gladestrings:29
 msgid "Select the runlevel you would like to edit"
-msgstr ""
+msgstr "Zvoľte úroveň behu, ktorú chcete upraviť"
 
 #: system-config-services.gladestrings:30
 msgid "_Edit Runlevel"
@@ -210,7 +206,7 @@ msgstr "_Upraviť úroveň behu"
 
 #: system-config-services.gladestrings:31
 msgid "Runlevel 3 is multiuser mode with networking"
-msgstr ""
+msgstr "Úroveň behu 3 je viacužívateľský režim so sieťovaním"
 
 #: system-config-services.gladestrings:32
 msgid "Runlevel _3"
@@ -218,7 +214,7 @@ msgstr "Úroveň behu _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
+msgstr "Úroveň behu 4 je vyhradená pre lokálne úpravy a bežne nie je využívaná"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -226,7 +222,7 @@ msgstr "Úroveň behu _4"
 
 #: system-config-services.gladestrings:35
 msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-msgstr ""
+msgstr "Úroveň behu 5 je viacužívateľský režim so sieťovaním a X Windows"
 
 #: system-config-services.gladestrings:36
 msgid "Runlevel _5"
@@ -234,28 +230,27 @@ msgstr "Úroveň behu _5"
 
 #: system-config-services.gladestrings:37
 msgid "Read Manual"
-msgstr ""
+msgstr "Čítať návod"
 
 #: system-config-services.gladestrings:38
 msgid "_Manual"
-msgstr ""
+msgstr "Ná_vod"
 
 #: system-config-services.gladestrings:40
 msgid "Save"
-msgstr ""
+msgstr "Uložiť"
 
 #: system-config-services.gladestrings:42
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušiť"
 
 #: system-config-services.gladestrings:43
-#, fuzzy
 msgid "Quit"
-msgstr "_Koniec"
+msgstr "Koniec"
 
 #: system-config-services.gladestrings:44
 msgid "Exit"
-msgstr ""
+msgstr "Koniec"
 
 #: system-config-services.gladestrings:51
 msgid "Current Active Runlevel: "
@@ -267,25 +262,18 @@ msgstr "Úprava úrovne behu:"
 
 #~ msgid "Add Service"
 #~ msgstr "Pridať službu"
-
 #~ msgid "Description"
 #~ msgstr "Popis"
-
 #~ msgid "Don't Save"
 #~ msgstr "Neuložiť"
-
 #~ msgid "Runlevel _All"
 #~ msgstr "_Všetky úrovne behu"
-
 #~ msgid "Save Dialog"
 #~ msgstr "Dialógové okno uloženia"
-
 #~ msgid "Service Name: "
 #~ msgstr "Názov služby: "
-
 #~ msgid "Status"
 #~ msgstr "Stav"
-
 #~ msgid ""
 #~ "You have made changes to the current runlevel.\n"
 #~ "Do you want to save the changes?"
@@ -296,32 +284,24 @@ msgstr "Úprava úrovne behu:"
 #, fuzzy
 #~ msgid "_Background Services"
 #~ msgstr "_Spustiť službu"
-
 #~ msgid "_Contents"
 #~ msgstr "_Obsah"
-
 #~ msgid "_File"
 #~ msgstr "_Súbor"
-
 #~ msgid "_Help"
 #~ msgstr "_Pomocník"
 
 #, fuzzy
 #~ msgid "_On Demand Services"
 #~ msgstr "_Reštartovať službu"
-
 #~ msgid "_View"
 #~ msgstr "_Zobraziť"
-
 #~ msgid "Configure which services will be running when the system starts"
 #~ msgstr "Konfigurovať, ktoré služby budú bežať pri štarte systému"
-
 #~ msgid "Service Management"
 #~ msgstr "Správa služieb"
-
 #~ msgid "Services"
 #~ msgstr "Služby"
-
 #~ msgid ""
 #~ "\n"
 #~ "\n"
@@ -330,6 +310,6 @@ msgstr "Úprava úrovne behu:"
 #~ "\n"
 #~ "\n"
 #~ "xinetd je vyžadovaný pre túto službu."
-
 #~ msgid "*"
 #~ msgstr "*"
+
