@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-09-05 15:39+0200\n"
-"PO-Revision-Date: 2006-08-31 22:17+0800\n"
+"PO-Revision-Date: 2006-09-09 11:56+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,8 @@ msgstr "Runlevel %d"
 msgid "Currently Running in Runlevel: "
 msgstr "Kini Dilaksana pada Runlevel:"
 
-#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
+#: ../src/serviceconf.py:376
+#: ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "Menyunting Runlevel: "
 
@@ -85,7 +86,8 @@ msgstr "%s gagal. Ralat adalah: %s"
 msgid " successful"
 msgstr " berjaya"
 
-#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
+#: ../src/servicemethods.py:341
+#: ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd perlu dihidupkan supaya %s dilaksanakan"
@@ -160,7 +162,7 @@ msgstr "_Segarkan Senarai Servis"
 #: system-config-services.gladestrings:17
 #: system-config-services.gladestrings:39
 msgid "Save the changes you have made"
-msgstr ""
+msgstr "Simpan perubahan yang anda buat"
 
 #: system-config-services.gladestrings:18
 msgid "_Save Changes"
@@ -177,7 +179,7 @@ msgstr "Berbalik Ke Te_rakhir Disimpan"
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr ""
+msgstr "Tindakan seperti mula, henti dan ulangmula pada servis dipilih"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -213,9 +215,7 @@ msgstr "Runlevel _3"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
-"Runlevel 4 adalah dikhaskan untuk tetapan sendiri tempatan, dan biasanya "
-"tidak digunakan"
+msgstr "Runlevel 4 adalah dikhaskan untuk tetapan sendiri tempatan, dan biasanya tidak digunakan"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -260,3 +260,4 @@ msgstr "Runlevel Aktif Samasa:"
 #: system-config-services.gladestrings:52
 msgid "Editing Runlevel:"
 msgstr "Mengedit Runlevel:"
+
