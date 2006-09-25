@@ -8,21 +8,21 @@ msgstr ""
 "Project-Id-Version: ml\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-09-05 15:39+0200\n"
-"PO-Revision-Date: 2006-06-23 16:55+0530\n"
+"PO-Revision-Date: 2006-09-24 21:56+0530\n"
 "Last-Translator: Ani Peter <apeter@redhat.com>\n"
 "Language-Team: Malayalam\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
 "\n"
 "\n"
 
 #: ../src/serviceconf.py:76
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr "നിങ്ങള്‍ക്ക് %s നീക്കം ചെയ്യ്ണമെന്ന് ഉറപ്പാണോ?"
+msgstr "നിങ്ങള്‍ക്ക് %s നീക്കം ചെയ്യണമെന്ന് ഉറപ്പാണോ?"
 
 #: ../src/serviceconf.py:139
 #, python-format
@@ -58,13 +58,13 @@ msgid ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
-"System Services Configuration Tool VERSION\n"
+"സിസ്റ്റം സര്‍വീസ് കോണ്‍ഫിഗറേഷന്‍ ടൂള്‍ വേര്‍ഷന്‍\n"
 " Copyright Â© 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
+" ടിം പവേര്‍സ് <timp@redhat.com>\n"
+" ബില്‍ നോട്ടിങ് ഹാം <notting@redhat.com>\n"
+" ഡാന്‍ വാല്‍ഷ് <dwalsh@redhat.com>\n"
+" ബ്രെന്‍റ് ഫോക്സ് <bfox@redhat.com>\n"
+" നില്‍സ് ഫിലിപ്പ് സെന്‍ <nphilipp@redhat.com>\n"
 " "
 
 #: ../src/serviceconf.py:546
@@ -180,8 +180,7 @@ msgstr "ഏറ്റവും ഒടുവില്‍ സംരക്ഷിച�
 
 #: system-config-services.gladestrings:21
 msgid "Actions such as start, stop, and restart on the selected service"
-msgstr ""
-"തിരഞ്ഞെടുത്ത സര്‍വീസില്‍ ഉളള ആരംഭിക്കുക, നിര്‍ത്തുക, റീസ്റ്റാര്‍ട്ട് ചെയ്യുക എന്നീ പ്രവര്‍ത്തനങ്ങള്‍"
+msgstr "തിരഞ്ഞെടുത്ത സര്‍വീസില്‍ ഉളള ആരംഭിക്കുക, നിര്‍ത്തുക, റീസ്റ്റാര്‍ട്ട് ചെയ്യുക എന്നീ പ്രവര്‍ത്തനങ്ങള്‍"
 
 #: system-config-services.gladestrings:22
 msgid "_Actions"
@@ -217,8 +216,7 @@ msgstr "റണ്‍ലവല്‍ 3(_3)"
 
 #: system-config-services.gladestrings:33
 msgid "Runlevel 4 is reserved for local customization, and is not usually used"
-msgstr ""
-"ലോക്കല്‍ കസ്റ്റമൈസേഷനായി റിസേര്‍വ് റണ്‍ലവല്‍ 4 ചെയ്തിരിക്കുന്നു, പക്ഷേ സാധാരണയായി ഉപയോഗിക്കാറില്ല"
+msgstr "ലോക്കല്‍ കസ്റ്റമൈസേഷനായി റിസേര്‍വ് റണ്‍ലവല്‍ 4 ചെയ്തിരിക്കുന്നു, പക്ഷേ സാധാരണയായി ഉപയോഗിക്കാറില്ല"
 
 #: system-config-services.gladestrings:34
 msgid "Runlevel _4"
@@ -263,3 +261,4 @@ msgstr "ഇപ്പോള്‍ പ്രവറ്‍ത്തിക്കു�
 #: system-config-services.gladestrings:52
 msgid "Editing Runlevel:"
 msgstr "റണ്‍ലവലില്‍ മാറ്റം വരുത്തുക: "
+
