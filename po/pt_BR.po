@@ -18,13 +18,13 @@ msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-09-05 15:39+0200\n"
-"PO-Revision-Date: 2006-07-14 23:21-0300\n"
-"Last-Translator: Igor Pires Soares <igorpsoares@uol.com.br>\n"
-"Language-Team: Brazilian Portuguese\n"
+"PO-Revision-Date: 2006-10-02 23:41-0300\n"
+"Last-Translator: Igor Pires Soares <igor@projetofedora.org>\n"
+"Language-Team: Brazilian Portuguese <fedora-trans-pt_br@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms:  nplurals=2; plural=(n > 1);\n"
+"Plural-Forms:  nplurals=2; plural=(n > 1);"
 
 #: ../src/serviceconf.py:76
 #, python-format
@@ -157,7 +157,7 @@ msgstr "Reiniciar"
 
 #: system-config-services.gladestrings:14
 msgid "Service Configuration"
-msgstr "Configuração do Serviço"
+msgstr "Configuração dos Serviços"
 
 #: system-config-services.gladestrings:15
 msgid "Refresh the list of services"
