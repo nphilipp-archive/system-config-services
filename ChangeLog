@@ -1,3 +1,116 @@
+2006-10-20  nphilipp  <nphilipp@redhat.com>
+
+	* po/uk.po, po/ur.po, po/vi.po, po/zh_CN.po, po/zh_TW.po, po/my.po, po/nb.po, po/nl.po, po/no.po, po/or.po, po/pa.po, po/pl.po, po/pt.po, po/pt_BR.po, po/ro.po, po/ru.po, po/si.po, po/sk.po, po/sl.po, po/sq.po, po/sr.po, po/sr@Latn.po, po/sv.po, po/ta.po, po/te.po, po/tr.po, po/fa.po, po/fi.po, po/fr.po, po/gu.po, po/he.po, po/hi.po, po/hr.po, po/hu.po, po/hy.po, po/id.po, po/is.po, po/it.po, po/ja.po, po/ka.po, po/kn.po, po/ko.po, po/ku.po, po/lo.po, po/lt.po, po/lv.po, po/mk.po, po/ml.po, po/mr.po, po/ms.po, po/ar.po, po/as.po, po/bg.po, po/bn.po, po/bn_IN.po, po/bs.po, po/ca.po, po/cs.po, po/cy.po, po/da.po, po/de.po, po/el.po, po/en_GB.po, po/es.po, po/et.po, po/Makefile, po/system-config-services.gladestrings, po/system-config-services.pot, system-config-services.spec:
+	use intltool-extract for i18n of glade files (#211248) and desktop file (#207345)
+
+2006-10-17  rbhalera  <rbhalera@redhat.com>
+
+	* po/mr.po: Updated Translation
+
+2006-10-06  sganesh  <sganesh@redhat.com>
+
+	* po/te.po: Telugu translation commited
+
+2006-10-03  igor  <igor@redhat.com>
+
+	* po/pt_BR.po: *** empty log message ***
+
+2006-10-02  amit  <amit@redhat.com>
+
+	* po/as.po: updated assamese system-config-services translation
+
+2006-10-01  keldsim  <keldsim@redhat.com>
+
+	* po/da.po: updates
+	firstboot/da.po initscripts/da.po system-config-services/da.po
+	system-config-soundcard/da.po system-config-lvm/po/da.po
+
+2006-09-29  amit  <amit@redhat.com>
+
+	* po/as.po: system-config-services for translation
+
+2006-09-26  runab  <runab@redhat.com>
+
+	* po/bn_IN.po: Updated Bengali India Translation
+
+2006-09-25  apeter  <apeter@redhat.com>
+
+	* po/ml.po: Updated Malayalam ml.po
+
+2006-09-09  arclynx  <arclynx@redhat.com>
+
+	* po/ms.po: Updated Malay translation
+
+2006-09-08  zoliq  <zoliq@redhat.com>
+
+	* po/sk.po: po-update
+
+2006-09-06  vpv  <vpv@redhat.com>
+
+	* po/fi.po: Updated Finnish translation
+
+2006-09-05  joseppc  <joseppc@redhat.com>
+
+	* po/ca.po: Updated Catalan translation.
+
+2006-09-05  nphilipp  <nphilipp@redhat.com>
+
+	* ChangeLog: *** empty log message ***
+
+	* Makefile: fix typo
+
+2006-09-05  raven  <raven@redhat.com>
+
+	* po/pl.po: Updated Polish translation
+
+2006-09-05  nphilipp  <nphilipp@redhat.com>
+
+	* ChangeLog: *** empty log message ***
+
+	* Makefile: fix relative symlinking in install target
+
+	* ChangeLog: *** empty log message ***
+
+	* Makefile: don't recursively make in po/
+
+	* ChangeLog: *** empty log message ***
+
+	* po/zh_CN.po, po/zh_TW.po, po/pt.po, po/pt_BR.po, po/ro.po, po/ru.po, po/si.po, po/sk.po, po/sl.po, po/sq.po, po/sr.po, po/sr@Latn.po, po/sv.po, po/system-config-services.pot, po/ta.po, po/te.po, po/tr.po, po/uk.po, po/ur.po, po/vi.po, po/ja.po, po/ka.po, po/kn.po, po/ko.po, po/ku.po, po/lo.po, po/lt.po, po/lv.po, po/mk.po, po/ml.po, po/mr.po, po/ms.po, po/my.po, po/nb.po, po/nl.po, po/no.po, po/or.po, po/pa.po, po/pl.po, Makefile, po/ar.po, po/bg.po, po/bn.po, po/bn_IN.po, po/bs.po, po/ca.po, po/cs.po, po/cy.po, po/da.po, po/de.po, po/el.po, po/en_GB.po, po/es.po, po/et.po, po/fa.po, po/fi.po, po/fr.po, po/gu.po, po/he.po, po/hi.po, po/hr.po, po/hu.po, po/hy.po, po/id.po, po/is.po, po/it.po:
+	recursively make in po/ as well
+
+	* Makefile, po/ro.po, system-config-services.spec:
+	fix circular make dependency
+	remove duplicate message definitions
+
+	* ChangeLog: *** empty log message ***
+
+	* Makefile: more tagging fixes
+
+	* ChangeLog: *** empty log message ***
+
+	* Makefile: correct explanation
+
+	* Makefile: better explanation
+
+	* Makefile: add explanation
+
+	* Makefile: fail on not moving tags
+
+	* Makefile, system-config-services.spec: require gettext for building
+	fix tagging for make archive
+
+	* ChangeLog: *** empty log message ***
+
+	* Makefile, system-config-services.spec: install po files (again)
+
+	* ChangeLog: *** empty log message ***
+
+	* Makefile: commit ChangeLog before tagging for archive
+
+	* src/serviceconf.py, system-config-services.spec:
+	don't disable Start/Stop/Restart upon reverting changes (#202722)
+	add dist tag
+
 2006-09-05  nphilipp  <nphilipp@redhat.com>
 
 	* Makefile: fix typo
