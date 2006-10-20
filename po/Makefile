@@ -1,7 +1,7 @@
 #
 # Makefile for the PO files (translation) catalog
 #
-# $Id: Makefile,v 1.1 2006/05/19 16:08:57 nphilipp Exp $
+# $Id: Makefile,v 1.2 2006/10/20 09:56:53 nphilipp Exp $
 
 TOP	 = ../..
 
@@ -20,14 +20,25 @@ MSGMERGE	= msgmerge -v
 XGETTEXT	= xgettext --default-domain=$(NLSPACKAGE) \
 		  --add-comments		  
 MSGFMT		= msgfmt --statistics --verbose
+INTLTOOLEXTRACT	= intltool-extract
 
 # What do we need to do
 POFILES		= $(wildcard *.po)
 MOFILES		= $(patsubst %.po,%.mo,$(POFILES))
 PYSRC		= $(wildcard ../src/*.py)
-SRCFILES	= $(PYSRC) $(NLSPACKAGE).gladestrings
+GLADEFILES	= $(wildcard ../src/*.glade)
+GLADEHFILES	= $(patsubst %.glade,%.glade.h,$(GLADEFILES))
+DESKTOPINFILES	= $(wildcard ../*.desktop.in)
+DESKTOPINHFILES	= $(patsubst %.desktop.in,%.desktop.in.h,$(DESKTOPINFILES))
+SRCFILES	= $(PYSRC) $(GLADEHFILES) $(DESKTOPINHFILES)
 
 all::  update-po $(MOFILES)
+
+%.glade.h:	%.glade
+	$(INTLTOOLEXTRACT) -t gettext/glade $<
+
+%.desktop.in.h:	%.desktop.in
+	$(INTLTOOLEXTRACT) -t gettext/ini $<
 
 $(POTFILE): $(SRCFILES)
 	$(XGETTEXT) --keyword=_ --keyword=N_ $(SRCFILES)
@@ -52,7 +63,7 @@ refresh-po: Makefile
 	done
 
 clean:
-	@rm -fv *mo *~ .depend
+	@rm -fv *mo *~ .depend $(GLADEHFILES) $(DESKTOPINHFILES)
 
 install: $(MOFILES)
 	@for n in $(MOFILES); do \
