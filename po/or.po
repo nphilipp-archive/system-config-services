@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: or\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-10-18 01:55+0530\n"
+"PO-Revision-Date: 2006-10-18 02:01+0530\n"
 "Last-Translator: Subhransu Behera <sbehera@redhat.com>\n"
 "Language-Team: Oriya <oriya-group@lists.sarovar.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 #: ../src/serviceconf.py:76
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr "ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ %s କୁ ଅପସାରଣ କରନ୍ତୁିବା ପାଇଁ ଚାହୁଁଛନ୍ତି?"
+msgstr "ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ %s କୁ ଅପସାରଣ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି?"
 
 #: ../src/serviceconf.py:139
 #, python-format
@@ -37,7 +37,7 @@ msgstr "ବର୍ତ୍ତମାନ Runlevel ରେ ଚାଲୁଅଛି:"
 
 #: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
-msgstr "Runlevel କୁ ଅଦ୍ଯତନ କରନ୍ତୁୁଅଛି:"
+msgstr "Runlevel କୁ ଅଦ୍ଯତନ କରୁଅଛି:"
 
 #: ../src/serviceconf.py:418
 msgid "Unknown"
@@ -77,12 +77,12 @@ msgstr "ସହାୟକ ଉପଲବ୍ଧ ନାହିଁ"
 
 #: ../src/serviceconf.py:714
 msgid "You must run system-config-services as root."
-msgstr "ଆପଣ system-config-services ଗୋଟିଏ ମୂଖ୍ଯ ଚାଳକ ଭାବରେ ବ୍ଯବହାର କରନ୍ତୁିବା ଉଚିତ"
+msgstr "ଆପଣ system-config-services ଗୋଟିଏ ମୂଖ୍ଯ ଚାଳକ ଭାବରେ ବ୍ଯବହାର କରିବା ଉଚିତ"
 
 #: ../src/servicemethods.py:229
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s ଅସଫଳ | ତ୍ରୁଟି ଟି ହେଲା: %s"
+msgstr "%s ଅସଫଳ। ତୃଟି ଟି ହେଲା: %s"
 
 #: ../src/servicemethods.py:235
 msgid " successful"
@@ -91,7 +91,7 @@ msgstr " ସଫଳ"
 #: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "%s କୁ ଚଳାଇବା ପାଇଁ xinetd ସଫଳତା ର ସହିତ ସକ୍ରିୟ ହେବା ଆବଶ୍ଯକ"
+msgstr "%s କୁ ଚଳାଇବା ପାଇଁ xinetd ସଫଳତାର ସହିତ ସକ୍ରିୟ ହେବା ଆବଶ୍ଯକ"
 
 #: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
@@ -99,12 +99,12 @@ msgstr "xinetd ପୂନର୍ଧାରଣ ପାଇଁ ଅସଫଳ ହୋଇ�
 
 #: ../src/servicemethods.py:348
 msgid ". The error was: "
-msgstr ". ତ୍ରୁଟି ଟି ହେଲା: "
+msgstr ". ତୃଟି ଟି ହେଲା: "
 
 #: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "xinetd ଟି ସଫଳତା ର ସହିତ %s କୁ ପୂନର୍ଧାରଣ କରନ୍ତୁିଦେଲା"
+msgstr "xinetd ଟି ସଫଳତାର ସହିତ %s କୁ ପୂନର୍ଧାରଣ କରାଯାଇଛି"
 
 #: ../src/serviceconf.glade.h:1
 msgid "Add Service"
@@ -112,7 +112,7 @@ msgstr "ସେବା ଯୋଗ କରନ୍ତୁ"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
-msgstr "ବର୍ତମାନ ସକ୍ରିୟ ଥିବା Runlevel"
+msgstr "ବର୍ତମାନ ସକ୍ରିୟ ଥିବା Runlevel:"
 
 #: ../src/serviceconf.glade.h:3
 msgid "Delete Service"
@@ -128,7 +128,7 @@ msgstr "ସଂରକ୍ଷଣ କରନ୍ତୁ ନାହିଁ"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
-msgstr "Runlevel କୁ ଅଦ୍ଯତନ କରନ୍ତୁୁଅଛି:"
+msgstr "Runlevel କୁ ଅଦ୍ଯତନ କରୁଅଛି:"
 
 #: ../src/serviceconf.glade.h:7
 msgid "None"
@@ -136,11 +136,11 @@ msgstr "କିଛି ନାହିଁ"
 
 #: ../src/serviceconf.glade.h:8
 msgid "Restart"
-msgstr "ପୂନଃଆରମ୍ଭ"
+msgstr "ପୁନଃପ୍ରାରମ୍ଭ କରନ୍ତୁ"
 
 #: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
-msgstr "ଅନ୍ତିମ ସଂରକ୍ଷଣ (_R) କୁ ପ୍ରତ୍ଯାବ୍ରୁତି କରନ୍ତୁ"
+msgstr "ଅନ୍ତିମ ସଂରକ୍ଷଣ (_R) କୁ ପ୍ରତ୍ଯାବୃତ୍ତି କରନ୍ତୁ"
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
@@ -160,7 +160,7 @@ msgstr "ସମସ୍ତ Runlevel (_A)"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
-msgstr "ସେବା ବନ୍ଦ କରନ୍ତୁ (_t) "
+msgstr "ସେବା ବନ୍ଦ କରନ୍ତୁ (_t)"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
@@ -212,7 +212,7 @@ msgstr ""
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
-msgstr "କାମ (_A)"
+msgstr "କାର୍ଯ୍ଯ (_A)"
 
 #: ../src/serviceconf.glade.h:26
 msgid "_Background Services"
@@ -252,11 +252,11 @@ msgstr "ସେବା ପୂନଃଆରମ୍ଭ କରନ୍ତୁ (_R)"
 
 #: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
-msgstr "ପରିବର୍ତ୍ତନ କୁ ସଂରକ୍ଷଣ କରନ୍ତୁ (_S)"
+msgstr "ପରିବର୍ତ୍ତନକୁ ସଂରକ୍ଷଣ କରନ୍ତୁ (_S)"
 
 #: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
-msgstr "ସେବା ର ପ୍ରାରମ୍ଭ କରନ୍ତୁ (_S)"
+msgstr "ସେବା ପ୍ରାରମ୍ଭ କରନ୍ତୁ (_S)"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
