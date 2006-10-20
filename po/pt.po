@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-05-22 01:13+0100\n"
+"PO-Revision-Date: 2006-10-20 12:11+0100\n"
 "Last-Translator: Pedro Morais <morais@kde.org>\n"
 "Language-Team: pt <morais@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -136,9 +136,8 @@ msgid "Restart"
 msgstr "Reiniciar"
 
 #: ../src/serviceconf.glade.h:9
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "_Reverter para a Última Gravação"
+msgstr "Reverter para a Ú_ltima Gravação"
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
@@ -239,9 +238,8 @@ msgid "_On Demand Services"
 msgstr "Serviç_os a Pedido"
 
 #: ../src/serviceconf.glade.h:32
-#, fuzzy
 msgid "_Quit"
-msgstr "Sair"
+msgstr "_Sair"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
@@ -264,37 +262,33 @@ msgid "_View"
 msgstr "_Ver"
 
 #: ../src/servicetab.glade.h:2
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current runlevel is %s"
-msgstr "Nível de Execução Actualmente Activo: "
+msgstr "O nível de execução actual é o %s"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "Desactivar"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "Activar"
 
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "Nível de Execução %d"
+msgstr "Níveis de Execução"
 
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
-msgstr "Configuração do Serviço"
+msgstr "Controlo de serviços"
 
 #: ../src/servicetab.glade.h:7
-#, fuzzy
 msgid "Start "
-msgstr "Iniciar"
+msgstr "Iniciar o "
 
 #: ../src/servicetab.glade.h:8
-#, fuzzy
 msgid "Status output"
-msgstr "Estado"
+msgstr "Resultado do estado"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
