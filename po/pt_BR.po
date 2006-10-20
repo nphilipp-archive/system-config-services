@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-10-20 11:24-0300\n"
+"PO-Revision-Date: 2006-10-20 11:30-0300\n"
 "Last-Translator: Igor Pires Soares <igor@projetofedora.org>\n"
 "Language-Team: Brazilian Portuguese <fedora-trans-pt_br@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -198,9 +198,9 @@ msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
-"Estes serviços são inicializados sob demanda e finalizados quando não "
-"há mais nada a ser feito. O serviço <b>xinetd</b> deve estar rodando, de "
-"modo que eles possam ser utilizados."
+"Estes serviços são inicializados sob demanda e finalizados quando não há "
+"mais nada a ser feito. O serviço <b>xinetd</b> deve estar rodando, de modo "
+"que eles possam ser utilizados."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
@@ -305,7 +305,7 @@ msgstr "Configure quais serviços estarão rodando quando o sistema for iniciado
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr "Controle do Serviço"
+msgstr "Gerenciamento do Serviço"
 
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
