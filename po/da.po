@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: da\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-10-01 02:21+0200\n"
+"PO-Revision-Date: 2006-10-21 18:53+0200\n"
 "Last-Translator: Keld Simonsen <keld@rap.dk>\n"
 "Language-Team:  <da@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -108,26 +108,24 @@ msgid "xinetd reloaded %s successfully"
 msgstr "xinetd genindlæste %s uden problemer"
 
 #: ../src/serviceconf.glade.h:1
-#, fuzzy
 msgid "Add Service"
-msgstr "Afbryd tjeneste"
+msgstr "Tilføj tjeneste"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "Nuværende aktive kørselsniveau: "
 
 #: ../src/serviceconf.glade.h:3
-#, fuzzy
 msgid "Delete Service"
-msgstr "Gensta_rt tjeneste"
+msgstr "Slet tjeneste"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
-msgstr ""
+msgstr "Beskrivelse"
 
 #: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
-msgstr ""
+msgstr "Gem ikke"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
@@ -142,9 +140,8 @@ msgid "Restart"
 msgstr "Genstart"
 
 #: ../src/serviceconf.glade.h:9
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "_Genetablér til sidste gemning"
+msgstr "Genetablér til _sidste gemning"
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
@@ -159,9 +156,8 @@ msgid "Runlevel _5"
 msgstr "Kørselsniveau _5"
 
 #: ../src/serviceconf.glade.h:13
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "Kørselsniveau _3"
+msgstr "Kørselsniveau _Alle"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
@@ -169,7 +165,7 @@ msgstr "Afbryd tjeneste"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "Gem dialog"
 
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
@@ -177,16 +173,15 @@ msgstr "Tjenestekonfiguration"
 
 #: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
-msgstr ""
+msgstr "Navn på tjeneste: "
 
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Start"
 
 #: ../src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "Start"
+msgstr "Status"
 
 #: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
@@ -196,32 +191,33 @@ msgstr "Afbryd"
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
+msgstr "Disse tjenester startes når der bedes om det og slutter når der ikke er mere at lave. <b>xinetd</b>-tjenesten skal køre for at de kan bruges."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr ""
+msgstr "Disse tjenester startes én gang og kører i baggrunden. Du kan angive i hvilke kørselsniveauer de skal startes."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"Du har lavet ændringer til det aktuelle kørselsniveau.\n"
+"Ønsker du at gemme ændringerne?"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
 msgstr "_Handlinger"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "_Start tjeneste"
+msgstr "_Baggrunds-tjenester"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr ""
+msgstr "_Indhold"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
@@ -229,21 +225,19 @@ msgstr "_Ændr kørselsniveau"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr ""
+msgstr "_Fil"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr ""
+msgstr "_Hjælp"
 
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "Gensta_rt tjeneste"
+msgstr "_Tjenester der startes når der bedes om det"
 
 #: ../src/serviceconf.glade.h:32
-#, fuzzy
 msgid "_Quit"
-msgstr "Afslut"
+msgstr "_Afslut"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
@@ -263,100 +257,46 @@ msgstr "_Start tjeneste"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr ""
+msgstr "_Vis"
 
 #: ../src/servicetab.glade.h:2
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current runlevel is %s"
-msgstr "Nuværende aktive kørselsniveau: "
+msgstr "Nuværende kørselsniveau er %s"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "Deaktivér"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "Aktivér"
 
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "Kørselsniveau %d"
+msgstr "Kørselsniveauer"
 
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
-msgstr "Tjenestekonfiguration"
+msgstr "Styring af tjenester"
 
 #: ../src/servicetab.glade.h:7
-#, fuzzy
 msgid "Start "
-msgstr "Start"
+msgstr "Start "
 
 #: ../src/servicetab.glade.h:8
 msgid "Status output"
-msgstr ""
+msgstr "Uddata for status"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "Konfigurér hvilke tjenester der skal køre når systemet startes"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr ""
+msgstr "Administration af tjenester"
 
 #: ../system-config-services.desktop.in.h:3
-#, fuzzy
 msgid "Services"
-msgstr "Afbryd tjeneste"
+msgstr "Tjenester"
 
-#~ msgid "Start the selected service"
-#~ msgstr "Start den valgte tjeneste"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "Afbryd den valgte tjeneste"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "Genstart den valgte tjeneste"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "Opdatér listen af tjenester"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "Gem ændringerne du har foretaget"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Gå tilbage til den sidst gemte ændring"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr "Handlinger såsom start, afbryd og genstart på den valgte tjeneste"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Vælg kørselsniveauet du ønsker af ændre"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "Kørselsniveau 3 er flerbrugertilstand med netværk"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr ""
-#~ "Kørselsniveau 4 er reserveret for egen opsætning, og normalt ikke brugt"
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr ""
-#~ "Kørselsniveau 5 er flerbrugertilstand med netværk og X-vinduessystemet"
-
-#~ msgid "Read Manual"
-#~ msgstr "Læs manualen"
-
-#~ msgid "_Manual"
-#~ msgstr "_Manual"
-
-#~ msgid "Save"
-#~ msgstr "Gem"
-
-#~ msgid "Cancel"
-#~ msgstr "Annullér"
-
-#~ msgid "Exit"
-#~ msgstr "Afslut"
