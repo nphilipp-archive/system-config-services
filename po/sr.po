@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-05-27 23:42-0000\n"
+"PO-Revision-Date: 2006-10-21 13:43+0100\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian (sr) <fedora@prevod.org>\n"
 "MIME-Version: 1.0\n"
@@ -31,7 +31,8 @@ msgstr "Извршни ниво %d"
 msgid "Currently Running in Runlevel: "
 msgstr "Тренутно се ради у извршном нивоу: "
 
-#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
+#: ../src/serviceconf.py:376
+#: ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "Уређивање извршног нивоа: "
 
@@ -84,7 +85,8 @@ msgstr "%s неуспело. Грешка је била: %s"
 msgid " successful"
 msgstr " успешно"
 
-#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
+#: ../src/servicemethods.py:341
+#: ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd мора бити укључен да би се %s покренуо"
@@ -103,26 +105,24 @@ msgid "xinetd reloaded %s successfully"
 msgstr "xinetd је изнова учитао %s успешно"
 
 #: ../src/serviceconf.glade.h:1
-#, fuzzy
 msgid "Add Service"
-msgstr "_Заустави сервис"
+msgstr "Додај сервис"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "Тренутно активан извршни ниво: "
 
 #: ../src/serviceconf.glade.h:3
-#, fuzzy
 msgid "Delete Service"
-msgstr "Пон_ово покрени сервис"
+msgstr "Обриши сервис"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
-msgstr ""
+msgstr "Опис"
 
 #: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
-msgstr ""
+msgstr "Немој да сачуваш"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
@@ -137,7 +137,6 @@ msgid "Restart"
 msgstr "Покрени поново"
 
 #: ../src/serviceconf.glade.h:9
-#, fuzzy
 msgid "Revert To _Last Save"
 msgstr "Врати на пос_ледње сачувано"
 
@@ -154,9 +153,8 @@ msgid "Runlevel _5"
 msgstr "Извршни ниво _5"
 
 #: ../src/serviceconf.glade.h:13
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "Извршни ниво _3"
+msgstr "Извршни ниво _сви"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
@@ -164,7 +162,7 @@ msgstr "_Заустави сервис"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "Прозорче чувања"
 
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
@@ -172,51 +170,48 @@ msgstr "Подешавање сервиса"
 
 #: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
-msgstr ""
+msgstr "Име сервиса:"
 
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Покрени"
 
 #: ../src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "Покрени"
+msgstr "Статус"
 
-#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
+#: ../src/serviceconf.glade.h:20
+#: ../src/servicetab.glade.h:9
 msgid "Stop"
 msgstr "Заустави"
 
 #: ../src/serviceconf.glade.h:21
-msgid ""
-"These services are started on demand and end when there is nothing more to "
-"do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
+msgid "These services are started on demand and end when there is nothing more to do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr "Ови сервиси се покрећу на захтев и завршавају када немају више шта да раде. Сервис <b>xinetd</b> мора бити покренут како би они моги да се користе."
 
 #: ../src/serviceconf.glade.h:22
-msgid ""
-"These services are started once and run in the background. You can specify "
-"in which runlevels they are started."
-msgstr ""
+msgid "These services are started once and run in the background. You can specify in which runlevels they are started."
+msgstr "Ови сервиси се покрећу једном и извршавају се у позадини. Можете назначити у којим ће извршним нивоима бити покренути."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"Направили сте измене у текућем извршном нивоу.\n"
+"Желите ли да сачувате ове измене?"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
 msgstr "_Акције"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "По_крени сервис"
+msgstr "По_задински сервиси"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr ""
+msgstr "_Садржај"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
@@ -224,21 +219,19 @@ msgstr "У_реди извршни ниво"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr ""
+msgstr "_Датотека"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr ""
+msgstr "_Помоћ"
 
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "Пон_ово покрени сервис"
+msgstr "Сервиси на за_хтев"
 
 #: ../src/serviceconf.glade.h:32
-#, fuzzy
 msgid "_Quit"
-msgstr "Изађи"
+msgstr "_Изађи"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
@@ -258,101 +251,46 @@ msgstr "По_крени сервис"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr ""
+msgstr "Пре_глед"
 
 #: ../src/servicetab.glade.h:2
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current runlevel is %s"
-msgstr "Тренутно активан извршни ниво: "
+msgstr "Тренутно је активан извршни ниво %s"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "Искључи"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "Укључи"
 
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "Извршни ниво %d"
+msgstr "Извршни нивои"
 
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
-msgstr "Подешавање сервиса"
+msgstr "Контрола сервиса"
 
 #: ../src/servicetab.glade.h:7
-#, fuzzy
 msgid "Start "
 msgstr "Покрени"
 
 #: ../src/servicetab.glade.h:8
 msgid "Status output"
-msgstr ""
+msgstr "Испис статуса"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "Подешава који ће се сервиси извршавати када се систем покрене"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr ""
+msgstr "Управљање сервисима"
 
 #: ../system-config-services.desktop.in.h:3
-#, fuzzy
 msgid "Services"
-msgstr "_Заустави сервис"
+msgstr "Сервиси"
 
-#~ msgid "Start the selected service"
-#~ msgstr "Покрени изабрани сервис"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "Заустави изабрани сервис"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "Поново покрени изабрани сервис"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "Освежи списак сервиса"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "Сачувајте измене које сте направили"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Врати на последње сачуване промене"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr ""
-#~ "Радње као што су покретање, заустављање и поновно покретање над изабраним "
-#~ "сервисом"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Изаберите извршни ниво који желите да уредите"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "Извршни ниво 3 је вишекориснички режим са умрежавањем"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr "Извршни ниво 4 је остављен за прилагођавање и обично се не користи"
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr ""
-#~ "Извршни ниво 5 је вишекориснички режим са умрежавањем и Икс прозорима"
-
-#~ msgid "Read Manual"
-#~ msgstr "Прочитај упутство"
-
-#~ msgid "_Manual"
-#~ msgstr "Упу_тство"
-
-#~ msgid "Save"
-#~ msgstr "Сачувај"
-
-#~ msgid "Cancel"
-#~ msgstr "Откажи"
-
-#~ msgid "Exit"
-#~ msgstr "Изађи"
