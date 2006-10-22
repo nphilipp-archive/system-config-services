@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: fi\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-09-06 20:52+0300\n"
+"PO-Revision-Date: 2006-10-22 19:41+0300\n"
 "Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
 "Language-Team: Finnish <Laatu@lokalisointi.org>\n"
 "MIME-Version: 1.0\n"
@@ -108,26 +108,24 @@ msgid "xinetd reloaded %s successfully"
 msgstr "xinetd uudelleenlatasi palvelun %s onnistuneesti"
 
 #: ../src/serviceconf.glade.h:1
-#, fuzzy
 msgid "Add Service"
-msgstr "_Pysäytä palvelu"
+msgstr "Lisää palvelu"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "Nykyinen aktiivinen ajotaso: "
 
 #: ../src/serviceconf.glade.h:3
-#, fuzzy
 msgid "Delete Service"
-msgstr "_Käynnistä palvelu uudelleen"
+msgstr "Poista palvelu"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
-msgstr ""
+msgstr "Kuvaus"
 
 #: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
-msgstr ""
+msgstr "Älä tallenna"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
@@ -159,9 +157,8 @@ msgid "Runlevel _5"
 msgstr "Ajotaso _5"
 
 #: ../src/serviceconf.glade.h:13
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "Ajotaso _3"
+msgstr "Kaikki ajotasot"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
@@ -177,16 +174,15 @@ msgstr "Palvelujen asetus"
 
 #: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
-msgstr ""
+msgstr "Palvelun nimi"
 
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Käynnistä"
 
 #: ../src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "Käynnistä"
+msgstr "Tila"
 
 #: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
@@ -196,32 +192,34 @@ msgstr "Sammuta"
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
+msgstr "Nämä palvelut käynnistetään kun niitä tarvitaan ja lopetetaan kun niillä ei ole mitään tehtävää. <b>Xinetd</b>-palvelun täytyy olla päällä, jotta näitä voidaan käyttää."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr ""
+msgstr "Nämä palvelut käynnistetään kerran ja ajetaan taustalla. Voit määritellä ajotasot, joissa ne käynnistetään."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"Olet tehnyt muutoksia nykyiseen ajotasoon.\n"
+"Haluatko tallentaa muutokset?"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
 msgstr "T_oiminnot"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "_Käynnistä palvelu"
+msgstr "_Taustapalvelut"
 
 #: ../src/serviceconf.glade.h:27
+#, fuzzy
 msgid "_Contents"
-msgstr ""
+msgstr "_Sisältö"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
@@ -229,21 +227,20 @@ msgstr "_Muokkaa ajotasoa"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr ""
+msgstr "_Tiedosto"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr ""
+msgstr "_Ohje"
 
 #: ../src/serviceconf.glade.h:31
 #, fuzzy
 msgid "_On Demand Services"
-msgstr "_Käynnistä palvelu uudelleen"
+msgstr "_Tarvittaessa käynnistettävät palvelut"
 
 #: ../src/serviceconf.glade.h:32
-#, fuzzy
 msgid "_Quit"
-msgstr "Lopeta"
+msgstr "_Lopeta"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
@@ -263,28 +260,26 @@ msgstr "_Käynnistä palvelu"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr ""
+msgstr "_Näytä"
 
 #: ../src/servicetab.glade.h:2
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current runlevel is %s"
-msgstr "Nykyinen aktiivinen ajotaso: "
+msgstr "Nykyinen ajotaso on %s "
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "Poista käytöstä"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "Ota käyttöön"
 
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "Ajotaso %d"
+msgstr "Ajotasot"
 
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
 msgstr "Palvelujen asetus"
 
@@ -295,74 +290,17 @@ msgstr "Käynnistä"
 
 #: ../src/servicetab.glade.h:8
 msgid "Status output"
-msgstr ""
+msgstr "Tilan tulostus"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "Aseta mitkä palvelut ovat käytössä järjestelmän käynnistyessä"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr ""
+msgstr "Palvelujen hallinta"
 
 #: ../system-config-services.desktop.in.h:3
-#, fuzzy
 msgid "Services"
-msgstr "_Pysäytä palvelu"
+msgstr "Palvelut"
 
-#~ msgid "Start the selected service"
-#~ msgstr "Käynnistä valittu palvelu"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "Pysäytä valittu palvelu"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "Käynnistä uudelleen valittu palvelu"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "Virkistä palveluluettelo"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "Tallenna tehdyt muutokset"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Palauta edellisen tallennuksen tilanne"
-
-#, fuzzy
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr ""
-#~ "Toimenpiteet kuten valitun palvelun käynnistys, pysäytys ja "
-#~ "uudelleenkäynnistys"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Valitse muokattava ajotaso"
-
-#, fuzzy
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "Ajotaso 3 on monenkäyttäjän tila verkkotuella"
-
-#, fuzzy
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr ""
-#~ "Ajotaso 4 on varattu paikalliselle muokkaukselle eikä se ole yleensä "
-#~ "käytössä"
-
-#, fuzzy
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr "Ajotaso 5 on monenkäyttäjän tila verkkotuella ja X-ikkunoinnilla"
-
-#~ msgid "Read Manual"
-#~ msgstr "Lue käyttöohje"
-
-#~ msgid "_Manual"
-#~ msgstr "_Käyttöohje"
-
-#~ msgid "Save"
-#~ msgstr "Tallenna"
-
-#~ msgid "Cancel"
-#~ msgstr "Peruuta"
-
-#~ msgid "Exit"
-#~ msgstr "Poistu"
