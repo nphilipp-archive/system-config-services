@@ -21,9 +21,9 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-09-06 00:47+0200\n"
+"PO-Revision-Date: 2006-10-06 00:47+0200\n"
 "Last-Translator: Xavier Conde Rueda <xaviconde@gmail.com>\n"
-"Language-Team: Catalan <tradgnome@softcatala.org>\n"
+"Language-Team: Catalan <fedora@softcatala.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,7 +31,7 @@ msgstr ""
 #: ../src/serviceconf.py:76
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr "Esteu segur que voleu suprimir el %s?"
+msgstr "Esteu segur que voleu suprimir %s?"
 
 #: ../src/serviceconf.py:139
 #, python-format
@@ -100,7 +100,7 @@ msgstr " correctament"
 #: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "S'ha d'habilitar l'xinetd per executar el %s"
+msgstr "S'ha d'habilitar l'xinetd per executar %s"
 
 #: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
@@ -148,9 +148,8 @@ msgid "Restart"
 msgstr "Reinicia"
 
 #: ../src/serviceconf.glade.h:9
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "_Reverteix al darrer estat desat"
+msgstr "Retorna a_l darrer estat desat"
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
@@ -227,7 +226,7 @@ msgstr "_Accions"
 
 #: ../src/serviceconf.glade.h:26
 msgid "_Background Services"
-msgstr "_Servei en segon pla"
+msgstr "_Serveis en segon pla"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
@@ -250,9 +249,8 @@ msgid "_On Demand Services"
 msgstr "Ser_veis a la carta"
 
 #: ../src/serviceconf.glade.h:32
-#, fuzzy
 msgid "_Quit"
-msgstr "Surt"
+msgstr "_Surt"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
@@ -275,41 +273,37 @@ msgid "_View"
 msgstr "_Visualitza"
 
 #: ../src/servicetab.glade.h:2
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current runlevel is %s"
-msgstr "Nivell d'execució actual: "
+msgstr "El nivell actua és %s"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "Inhabilita"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "Habilita"
 
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "Nivell d'execució %d"
+msgstr "Nivells d'execució"
 
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
-msgstr "Configuració dels serveis"
+msgstr "Control del servei"
 
 #: ../src/servicetab.glade.h:7
-#, fuzzy
 msgid "Start "
-msgstr "Inicia"
+msgstr "Inicia "
 
 #: ../src/servicetab.glade.h:8
-#, fuzzy
 msgid "Status output"
-msgstr "Estat"
+msgstr "Sortida de l'estat"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "Configura quins servidors s'executaran quan el sistema s'iniciï"
+msgstr "Configura quins serveis s'executaran quan el sistema s'iniciï"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -318,95 +312,3 @@ msgstr "Gestió de serveis"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Serveis"
-
-#~ msgid "Start the selected service"
-#~ msgstr "Inicia el servei seleccionat"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "Atura el servei seleccionat"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "Reinicia el servei seleccionat"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "Actualitza la llista de serveis"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "Desa els canvis que hagueu fet"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Reverteix a l'últim canvi desat"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr "Accions com ara iniciar, aturar i reiniciar del servei seleccionat"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Seleccioneu el nivell d'execució que vulgueu editar"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "El nivell d'execució 3 és en mode multiusuari amb xarxa"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr ""
-#~ "El nivell d'execució 4 està reservat a presonalitzacions locals, "
-#~ "normalment no s'utilitza"
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr "El nivell d'execució 5 és en mode multiusuari, xara i amb X Windows"
-
-#~ msgid "Read Manual"
-#~ msgstr "Llegiu el manual"
-
-#~ msgid "_Manual"
-#~ msgstr "_Manual"
-
-#~ msgid "Save"
-#~ msgstr "Desa"
-
-#~ msgid "Cancel"
-#~ msgstr "Cancel·la"
-
-#~ msgid "Exit"
-#~ msgstr "Surt"
-
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd is required for this service."
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "Aquest servei necessita l'xinetd."
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid "_Save"
-#~ msgstr "De_sa"
-
-#~ msgid "_Revert"
-#~ msgstr "_Reverteix"
-
-#~ msgid "Revert"
-#~ msgstr "Reverteix"
-
-#~ msgid "Start at Boot"
-#~ msgstr "Inicia en arrencar"
-
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "Aquest programari es pot redistribuir lliurement sota els termes de la "
-#~ "GPL.\n"
-#~ "Informeu de tots els errors que trobeu al sistema de seguiment d'errors "
-#~ "de Red Hat:\n"
-#~ "http://bugzilla.redhat.com"
-
-#~ msgid "translator_credits"
-#~ msgstr "Xavier Conde Rueda <xaviconde@eresmas.com>"
