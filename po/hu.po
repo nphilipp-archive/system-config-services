@@ -1,23 +1,23 @@
-# translation of hu.po to hu
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-#
 # Tamas Szanto <tszanto@mol.hu>, 2003.
-# Arpad Biro <biro_arpad@yahoo.com>, 2005.
+# Arpad Biro <biro_arpad@yahoo.com>, 2005, 2006.
 # Szentiványi Gábor <szentivanyi.gabor@ulx.hu>, 2006.
 # Gábor Szentiványi <szenti@ulx.hu>, 2006.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-09-01 17:01+0200\n"
-"Last-Translator: Gábor Szentiványi <szenti@ulx.hu>\n"
-"Language-Team: hu <en@li.org>\n"
+"PO-Revision-Date: 2006-10-22 22:10+0200\n"
+"Last-Translator: Arpad Biro <biro_arpad@yahoo.com>\n"
+"Language-Team: Hungarian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
+"X-Generator: KBabel 1.10.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../src/serviceconf.py:76
 #, python-format
@@ -91,7 +91,7 @@ msgstr " sikerült"
 #: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "A xinetd futtatásához engedélyezni kell ezt: %s"
+msgstr "A(z) %s futtatásához engedélyezni kell az xinetd-t"
 
 #: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
@@ -104,29 +104,27 @@ msgstr ". A hibaüzenet: "
 #: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "A xinetd sikeresen újratöltötte ezt: %s"
+msgstr "Az xinetd sikeresen újratöltötte ezt: %s"
 
 #: ../src/serviceconf.glade.h:1
-#, fuzzy
 msgid "Add Service"
-msgstr "A szolgáltatás _leállítása"
+msgstr "Szolgáltatás felvétele"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "A jelenlegi aktív futási szint: "
 
 #: ../src/serviceconf.glade.h:3
-#, fuzzy
 msgid "Delete Service"
-msgstr "A szolgáltatás újrain_dítása"
+msgstr "Szolgáltatás eltávolítása"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
-msgstr ""
+msgstr "Leírás"
 
 #: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
-msgstr ""
+msgstr "Ne legyen mentés"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
@@ -141,7 +139,6 @@ msgid "Restart"
 msgstr "Újraindítás"
 
 #: ../src/serviceconf.glade.h:9
-#, fuzzy
 msgid "Revert To _Last Save"
 msgstr "A legutóbbi mentett állapotra való _visszalépés"
 
@@ -158,9 +155,8 @@ msgid "Runlevel _5"
 msgstr "_5. futási szint"
 
 #: ../src/serviceconf.glade.h:13
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "_3. futási szint"
+msgstr "M_inden futási szint"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
@@ -168,7 +164,7 @@ msgstr "A szolgáltatás _leállítása"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "Mentési párbeszédablak"
 
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
@@ -176,16 +172,15 @@ msgstr "A szolgáltatás beállításai"
 
 #: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
-msgstr ""
+msgstr "Szolgáltatásnév: "
 
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Indítás"
 
 #: ../src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "Indítás"
+msgstr "Állapot"
 
 #: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
@@ -196,31 +191,37 @@ msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
+"Ezen szolgáltatások igény esetén indulnak el, és akkor állnak le, amikor "
+"nincs további teendőjük. Ahhoz, hogy használhatók legyenek, futnia kell az "
+"<b>xinetd</b> szolgáltatásnak."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
 msgstr ""
+"Ezen szolgáltatások egyszer kerülnek elindításra, és a háttérben futnak. "
+"Megadható, hogy mely futási szinteken legyenek elindítva."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"Módosította az aktuális futási szintet.\n"
+"Szeretné menteni a módosításokat?"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
 msgstr "Mű_veletek"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "A szol_gáltatás elindítása"
+msgstr "_Háttérszolgáltatások"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr ""
+msgstr "_Tartalom"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
@@ -228,21 +229,19 @@ msgstr "F_utási szint szerkesztése"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr ""
+msgstr "_Fájl"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr ""
+msgstr "_Segítség"
 
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "A szolgáltatás újrain_dítása"
+msgstr "I_gény szerinti szolgáltatások"
 
 #: ../src/serviceconf.glade.h:32
-#, fuzzy
 msgid "_Quit"
-msgstr "Kilépés"
+msgstr "Ki_lépés"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
@@ -262,102 +261,47 @@ msgstr "A szol_gáltatás elindítása"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr ""
+msgstr "Meg_jelenítés"
 
 #: ../src/servicetab.glade.h:2
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current runlevel is %s"
-msgstr "A jelenlegi aktív futási szint: "
+msgstr "A jelenlegi futási szint: %s"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "Kikapcsolás"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "Bekapcsolás"
 
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "%d. futási szint"
+msgstr "Futási szintek"
 
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
-msgstr "A szolgáltatás beállításai"
+msgstr "Szolgáltatás-vezérlés"
 
 #: ../src/servicetab.glade.h:7
-#, fuzzy
 msgid "Start "
-msgstr "Indítás"
+msgstr "Indítás "
 
 #: ../src/servicetab.glade.h:8
 msgid "Status output"
-msgstr ""
+msgstr "Állapot-kimenet"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr ""
+"Annak beállítása, hogy mely szolgáltatások legyenek elindítva a rendszer "
+"indításakor"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr ""
+msgstr "Szolgáltatás-kezelés"
 
 #: ../system-config-services.desktop.in.h:3
-#, fuzzy
 msgid "Services"
-msgstr "A szolgáltatás _leállítása"
-
-#~ msgid "Start the selected service"
-#~ msgstr "A kiválasztott szolgáltatás indítása"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "A kiválasztott szolgáltatás leállítása"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "A kiválasztott szolgáltatás újraindítása"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "A szolgáltatáslista frissítése"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "A változtatások mentése"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "A legutóbbi mentett változtatásra való visszaállás"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr "A start, stop és restart parancsok a kiválasztott szolgáltatáson"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Válassza ki a szerkeszteni kívánt futási szintet"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "A 3-as futási szint többfelhasználós mód hálózattal"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr ""
-#~ "A 4-es futási szint fenn van tartva egyedi beállításokra és általában "
-#~ "nincs használatban"
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr ""
-#~ "Az 5-ös futási szint többfelhasználós mód hálózattal és X Window grafikus "
-#~ "rendszerrel"
-
-#~ msgid "Read Manual"
-#~ msgstr "Leírás olvasása"
-
-#~ msgid "_Manual"
-#~ msgstr "_Leírás"
-
-#~ msgid "Save"
-#~ msgstr "Mentés"
-
-#~ msgid "Cancel"
-#~ msgstr "Elvetés"
-
-#~ msgid "Exit"
-#~ msgstr "Kilépés"
+msgstr "Szolgáltatások"
