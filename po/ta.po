@@ -11,14 +11,14 @@ msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-05-25 17:53+0530\n"
+"PO-Revision-Date: 2006-10-23 16:42+0530\n"
 "Last-Translator: Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <ta@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
 "\n"
 "\n"
 "\n"
@@ -108,29 +108,27 @@ msgstr ". பிழை:"
 #: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "xinetd %s மீளேற்றப்பட்டது"
+msgstr "xinetd வெற்றிகரமாக %s மீளேற்றப்பட்டது"
 
 #: ../src/serviceconf.glade.h:1
-#, fuzzy
 msgid "Add Service"
-msgstr "(_t)சேவையை நிறுத்து"
+msgstr "சேவையை சேர்க்கவும்"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
-msgstr "தற்போது செயலில்உள்ள இயக்க மட்டம்"
+msgstr "தற்போது செயலிலுள்ள இயக்க நிலை:"
 
 #: ../src/serviceconf.glade.h:3
-#, fuzzy
 msgid "Delete Service"
-msgstr "(_R)சேவையை மீண்டும் துவக்கு"
+msgstr "சேவையை அழிக்கவும்"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
-msgstr ""
+msgstr "விளக்கம்"
 
 #: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
-msgstr ""
+msgstr "சேமிக்க வேண்டாம்"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
@@ -145,13 +143,12 @@ msgid "Restart"
 msgstr "மீண்டும் துவக்கு"
 
 #: ../src/serviceconf.glade.h:9
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "கடைசியாக சேமித்த நிலைக்கு செல்"
+msgstr "கடைசியாக சேமித்த நிலைக்கு செல்லவும் (_L)"
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
-msgstr "(_3)இயக்க நிலை 3"
+msgstr "இயக்க நிலை _3"
 
 #: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
@@ -162,34 +159,32 @@ msgid "Runlevel _5"
 msgstr "(_5)இயக்க நிலை 5"
 
 #: ../src/serviceconf.glade.h:13
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "(_3)இயக்க நிலை 3"
+msgstr "அனைத்து இயக்க நிலை (_A)"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
-msgstr "(_t)சேவையை நிறுத்து"
+msgstr "சேவையை நிறுத்தவும் (_t)"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "உரையாடலை சேமிக்கவும்"
 
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
-msgstr "சேவை அமைப்பு"
+msgstr "சேவை கட்டமைப்பு"
 
 #: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
-msgstr ""
+msgstr "சேவை பெயர்: "
 
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "துவக்கு"
 
 #: ../src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "துவக்கு"
+msgstr "நிலை"
 
 #: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
@@ -200,31 +195,36 @@ msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
+"இந்த சேவைகள் தேவையின் பொருட்டு துவக்கப்பட்டு, எதுவும் செய்ய முடியாத நிலையில் முடிவடைந்தது. "
+"<b>xinetd</b> சேவை இயக்கத்தில் இருப்பதால் அவை பயன்படுத்தப்பட வேண்டும்."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
 msgstr ""
+"இந்த சேவைகள் ஒருமுறை துவக்கப்பட்ட பின்னணியில் இயங்கும். நீங்கள் அவை எந்த "
+"இயக்க நிலைகளில் துவங்க வேண்டும் என்பதைக் குறிக்கலாம்."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"நீங்கள் நடப்பு இயக்க நிலையில் மாற்றம் செய்துள்ளீர்கள்.\n"
+"மாற்றங்களை சேமிக்க வேண்டுமா?"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
 msgstr "(_A)செயல்"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "(_S)சேவையை துவக்கு"
+msgstr "பின்னணி சேவைகள் (_B)"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr ""
+msgstr "உள்ளடக்கங்கள் (_C)"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
@@ -232,135 +232,78 @@ msgstr "(_E)இயக்க நிலையை திருத்து"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr ""
+msgstr "கோப்பு (_F)"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr ""
+msgstr "உதவி (_H)"
 
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "(_R)சேவையை மீண்டும் துவக்கு"
+msgstr "தேவையில் சேவைகள் (_O)"
 
 #: ../src/serviceconf.glade.h:32
-#, fuzzy
 msgid "_Quit"
-msgstr "வெளியேறு"
+msgstr "வெளியேறுதல் (_Q)"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
-msgstr "(_R)சேவைப்பட்டியலை புதுப்பி"
+msgstr "சேவைப்பட்டியலை புதுப்பிக்கவும் (_R)"
 
 #: ../src/serviceconf.glade.h:34
 msgid "_Restart Service"
-msgstr "(_R)சேவையை மீண்டும் துவக்கு"
+msgstr "சேவையை மீண்டும் துவக்கவும் (_R)"
 
 #: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
-msgstr "மாற்றங்களை சேமி (_S)"
+msgstr "மாற்றங்களை சேமிக்கவும் (_S)"
 
 #: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
-msgstr "(_S)சேவையை துவக்கு"
+msgstr "சேவையை துவக்கவும் (_S)"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr ""
+msgstr "பார்வை (_V)"
 
 #: ../src/servicetab.glade.h:2
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current runlevel is %s"
-msgstr "தற்போது செயலில்உள்ள இயக்க மட்டம்"
+msgstr "நடப்பு இயக்க நிலை %s"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "செயல்நீக்குதல்"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "செயல்படுத்தல்"
 
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "இயக்க நிலை %d"
+msgstr "இயக்க நிலைகள்"
 
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
-msgstr "சேவை அமைப்பு"
+msgstr "சேவை கட்டுப்பாடு"
 
 #: ../src/servicetab.glade.h:7
-#, fuzzy
 msgid "Start "
-msgstr "துவக்கு"
+msgstr "துவக்குதல்"
 
 #: ../src/servicetab.glade.h:8
 msgid "Status output"
-msgstr ""
+msgstr "நிலை வெளியீடு"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "கணினியை துவக்கும் போது எந்த சேவைகள் இயங்க வேண்டும் என கட்டமைக்கவும்"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr ""
+msgstr "சேவை மேலாண்மை"
 
 #: ../system-config-services.desktop.in.h:3
-#, fuzzy
 msgid "Services"
-msgstr "(_t)சேவையை நிறுத்து"
+msgstr "சேவைகள்"
 
-#~ msgid "Start the selected service"
-#~ msgstr "தேர்ந்தெடுக்கப்பட்ட சேவையை துவக்கு"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "தேர்ந்தெடுக்கப்பட்ட சேவையை நிறுத்து"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "தேர்ந்தெடுக்கப்பட்ட சேவையை மீண்டும் துவக்கு"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "சேவைகள் பட்டியலை புதுப்பி"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "செய்யப்பட்ட மாற்றங்களை சேமிக்கவும்"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "கடைசியாக சேமி நிலைக்கு செல்"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr ""
-#~ "தேர்ந்தெடுக்கப்பட்ட சேவையில் துவக்கு, நிறுத்து மற்றும் மீண்டும் துவக்கு போன்ற செயல்கள் உள்ளன"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "தொகுக்க வேண்டிய இயக்க நிலையை தேர்ந்தெடு"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "இயக்க நிலை 3 பிணையத்துடன் பல பயனர் முறையாகும்"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr ""
-#~ "இயக்க நிலை 4 இருப்பிட தனிபயனாக்குதலுக்கு முன்பதிவு செய்யப்பட்டது மற்றும் பொதுவாக "
-#~ "பயன்படுத்துவதில்லை."
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr "இயக்க நிலை 5 பிணையம் மற்றும் X விண்டோஸுக்கு பல பயனர் முறையாகும்."
-
-#~ msgid "Read Manual"
-#~ msgstr "கையேட்டினை படிக்கவும்"
-
-#~ msgid "_Manual"
-#~ msgstr "கையேடு (_M)"
-
-#~ msgid "Save"
-#~ msgstr "சேமி"
-
-#~ msgid "Cancel"
-#~ msgstr "ரத்து"
-
-#~ msgid "Exit"
-#~ msgstr "வெளியேறு"
