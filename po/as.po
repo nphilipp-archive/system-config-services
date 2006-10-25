@@ -1,20 +1,20 @@
 # translation of as.po to Assamese
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-# Amitakhya Phukan <amitakhya.phukan@gmail.com>, 2006.
 #
+# Amitakhya Phukan <amitakhya.phukan@gmail.com>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: as\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-10-02 15:23+0530\n"
+"PO-Revision-Date: 2006-10-26 01:40+0530\n"
 "Last-Translator: Amitakhya Phukan <amitakhya.phukan@gmail.com>\n"
-"Language-Team: Assamese\n"
+"Language-Team: Assamese <assam@mm.assam-glug.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.11.1\n"
 
 #: ../src/serviceconf.py:76
 #, python-format
@@ -104,26 +104,24 @@ msgid "xinetd reloaded %s successfully"
 msgstr "xinetdয়ে %s পুনঃ তুলি ল'ব'লৈ সফল হ'ল"
 
 #: ../src/serviceconf.glade.h:1
-#, fuzzy
 msgid "Add Service"
-msgstr "সেৱা বন্ধ কৰক (_t)"
+msgstr "সেৱা যোগ কৰক"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "বৰ্ত্তমান সক্ৰীয় চলনাস্তৰ:"
 
 #: ../src/serviceconf.glade.h:3
-#, fuzzy
 msgid "Delete Service"
-msgstr "সৈৱা পুনৰাৰম্ভ কৰক (_R)"
+msgstr "সেৱাক আঁতৰাওক"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
-msgstr ""
+msgstr "বিৱৰণ"
 
 #: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
-msgstr ""
+msgstr "ৰক্ষা নকৰিব"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
@@ -138,9 +136,8 @@ msgid "Restart"
 msgstr "পুনৰাৰম্ভ"
 
 #: ../src/serviceconf.glade.h:9
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "শেহতীয়া ৰক্ষালৈ প্ৰত্যাৱৰ্তন কৰক (_R)"
+msgstr "শেহতীয়া ৰক্ষালৈ প্ৰত্যাৱৰ্তন কৰক (_L)"
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
@@ -155,9 +152,8 @@ msgid "Runlevel _5"
 msgstr "চলনাস্তৰ ৫ (_5)"
 
 #: ../src/serviceconf.glade.h:13
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "চলনাস্তৰ ৩ (_3)"
+msgstr "সকলো চলনাস্তৰ (_A)"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
@@ -165,7 +161,7 @@ msgstr "সেৱা বন্ধ কৰক (_t)"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "কথোপকথন ৰক্ষা কৰক"
 
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
@@ -173,16 +169,15 @@ msgstr "সেৱাৰ বিন্যাস"
 
 #: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
-msgstr ""
+msgstr "সেৱাৰ নাম:"
 
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "আৰম্ভ"
 
 #: ../src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "আৰম্ভ"
+msgstr "অৱস্থা"
 
 #: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
@@ -192,32 +187,33 @@ msgstr "বন্ধ"
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
+msgstr "এই সেৱাসমূহ দাবি কৰাৰ মতে আৰম্ভ কৰা হয় আৰু কাৰ্য্য সম্পূৰ্ণ হওঁতে অন্ত হয় । এই সেৱাসমূহ প্ৰয়োগ কৰিব'লৈ হ'লে <b>xinetd</b>সেৱা চলি থাকিব লাগিব ।"
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr ""
+msgstr "এই সেৱাসমূহ এবাৰ আৰম্ভ কৰা হয় আৰু পৃষ্ঠভূমিত চলে । কোনটো চলনাস্তৰত চলিব লাগে আপুনি নিৰ্দ্দিষ্ট কৰিব পাৰে ।"
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"চলনাস্তৰত আপুনি সাল সলনি কৰিছে ।\n"
+"এই সলনিসমূহ আপুনি ৰক্ষা কৰিব খোজে নেকি ?"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
 msgstr "ক্ৰিয়া (_A)"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "সেৱা আৰম্ভ কৰক (_S)"
+msgstr "পৃষ্ঠভূমিত চলা সেৱা (_B)"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr ""
+msgstr "বিষয়বস্তু (_C)"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
@@ -225,21 +221,19 @@ msgstr "চলনাস্তৰ সম্পাদন কৰক (_E)"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr ""
+msgstr "নথিপত্ৰ (_F)"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr ""
+msgstr "সহায় (_H)"
 
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "সৈৱা পুনৰাৰম্ভ কৰক (_R)"
+msgstr "দাবি কৰা মতে সেৱা (_O)"
 
 #: ../src/serviceconf.glade.h:32
-#, fuzzy
 msgid "_Quit"
-msgstr "এৰি যাওক"
+msgstr "এৰি যাওক (_Q)"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
@@ -247,7 +241,7 @@ msgstr "সেৱাৰ তালিকা পুনৰ সবল কৰক (_R)
 
 #: ../src/serviceconf.glade.h:34
 msgid "_Restart Service"
-msgstr "সৈৱা পুনৰাৰম্ভ কৰক (_R)"
+msgstr "সেৱা পুনৰাৰম্ভ কৰক (_R)"
 
 #: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
@@ -259,101 +253,46 @@ msgstr "সেৱা আৰম্ভ কৰক (_S)"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr ""
+msgstr "চাওক (_V)"
 
 #: ../src/servicetab.glade.h:2
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current runlevel is %s"
-msgstr "বৰ্ত্তমান সক্ৰীয় চলনাস্তৰ:"
+msgstr "বৰ্ত্তমানৰ চলনাস্তৰ হৈছে %s"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "অক্ষম"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "সক্ষম"
 
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "চলনাস্তৰ %d"
+msgstr "চলনাস্তৰসমূহ"
 
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
-msgstr "সেৱাৰ বিন্যাস"
+msgstr "সেৱাৰ নিযন্ত্ৰণ"
 
 #: ../src/servicetab.glade.h:7
-#, fuzzy
 msgid "Start "
 msgstr "আৰম্ভ"
 
 #: ../src/servicetab.glade.h:8
 msgid "Status output"
-msgstr ""
+msgstr "স্থিতিৰ নিৰ্গম"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "ব্যৱস্থাপ্ৰণালী আৰম্ভ হওঁতে চলিব লগীয়া সেৱা বিন্যাস কৰক"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr ""
+msgstr "সেৱাৰ পৰিচালনা"
 
 #: ../system-config-services.desktop.in.h:3
-#, fuzzy
 msgid "Services"
-msgstr "সেৱা বন্ধ কৰক (_t)"
+msgstr "সেৱাসমূহ"
 
-#~ msgid "Start the selected service"
-#~ msgstr "নিৰ্ব্বাচিত সেৱা আৰম্ভ কৰক"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "নিৰ্ব্বাচিত সেৱা বন্ধ কৰক"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "নিৰ্ব্বাচিত সেৱা পুনৰাৰম্ভ কৰক"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "সেৱাৰ তালিকা পুনৰ সবল কৰক"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "আপুনি কৰা সলনি ৰক্ষা কৰক"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "শেহতীয়া ভাবে ৰক্ষা কৰা সলনি সমূহলৈ প্ৰত্যাৱৰ্তন কৰক "
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr "নিৰ্ব্বাচিত সেৱাত ক্ৰিয়া যেনে আৰম্ভ, বন্ধ, আৰু পুনৰাৰম্ভ"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "সম্পাদন কৰিব খোজা চলনাস্তৰ নিৰ্ব্বাচন কৰক"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr ""
-#~ "চলনাস্তৰ ৩ হৈছে সংযোগকৰণৰ সৈতে একাধিক ব্যৱহাৰকৰ্তাৰ প্ৰয়োগৰ বাবে সক্ষম কৰা "
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr "চলনাস্তৰ ৪ স্থানিক পছন্দীকৰণৰ বাবে সংৰক্ষিত, আৰু প্ৰায়ে প্ৰয়োগ নহয়"
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr ""
-#~ "চলনাস্তৰ ৫ হৈছে সংযোগকৰণ আৰু X Windowsৰ সৈতে একাধিক ব্যৱহাৰকৰ্তাৰ প্ৰয়োগৰ বাবে "
-#~ "সক্ষম কৰা "
-
-#~ msgid "Read Manual"
-#~ msgstr "নিবন্ধপুথি পঢ়ক"
-
-#~ msgid "_Manual"
-#~ msgstr "নিবন্ধপুথি (_M)"
-
-#~ msgid "Save"
-#~ msgstr "ৰক্ষা কৰক"
-
-#~ msgid "Cancel"
-#~ msgstr "বাতিল কৰক"
-
-#~ msgid "Exit"
-#~ msgstr "ওলাই আহক"
