@@ -1,14 +1,15 @@
 # Swedish messages for system-config-services.
 # Copyright (C) 2001, 2003, 2004, 2005, 2006 Christian Rose <menthos@menthos.com>.
-#
-# $Id: sv.po,v 1.70 2006/10/20 09:57:48 nphilipp Exp $
-#
+# Copyright (C) 2006 Magnus Larsson <fedoratrans@gmail.com>.
+# $Id: sv.po,v 1.71 2006/10/26 16:10:46 raada Exp $
+# 
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-08-23 02:18-0400\n"
+"PO-Revision-Date: 2006-10-28 14:16-0400\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -135,7 +136,6 @@ msgid "Restart"
 msgstr "Starta om"
 
 #: ../src/serviceconf.glade.h:9
-#, fuzzy
 msgid "Revert To _Last Save"
 msgstr "_Återgå till senast sparade"
 
@@ -260,37 +260,33 @@ msgid "_View"
 msgstr "_Visa"
 
 #: ../src/servicetab.glade.h:2
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current runlevel is %s"
-msgstr "Aktiv körnivå just nu: "
+msgstr "Aktiv körnivå är %s"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "Inaktivera"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "Aktivera"
 
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "Körnivå"
+msgstr "Körnivåer"
 
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
-msgstr "Konfiguration av tjänst"
+msgstr "Konfiguration av tjänster"
 
 #: ../src/servicetab.glade.h:7
-#, fuzzy
 msgid "Start "
-msgstr "Starta"
+msgstr "Starta "
 
 #: ../src/servicetab.glade.h:8
-#, fuzzy
 msgid "Status output"
-msgstr "Status"
+msgstr "Statusutskrift"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
