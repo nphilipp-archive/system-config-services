@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: system-config-services 0.8.26\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-06-12 14:49+0200\n"
+"PO-Revision-Date: 2006-10-30 01:36+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -102,26 +102,24 @@ msgid "xinetd reloaded %s successfully"
 msgstr "xinetd fullførte gjenlasting av %s"
 
 #: ../src/serviceconf.glade.h:1
-#, fuzzy
 msgid "Add Service"
-msgstr "S_topp tjenesten"
+msgstr "Legg til tjeneste"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "Aktivt kjøringsnivå: "
 
 #: ../src/serviceconf.glade.h:3
-#, fuzzy
 msgid "Delete Service"
-msgstr "Sta_rt tjenesten på nytt"
+msgstr "Slett tjeneste"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
-msgstr ""
+msgstr "Beskrivelse"
 
 #: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
-msgstr ""
+msgstr "Ikke lagre"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
@@ -136,9 +134,8 @@ msgid "Restart"
 msgstr "Start på nytt"
 
 #: ../src/serviceconf.glade.h:9
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "Gå tilbake til fo_rrige lagring"
+msgstr "Gå ti_lbake til forrige lagring"
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
@@ -153,9 +150,8 @@ msgid "Runlevel _5"
 msgstr "Kjøringsnivå _5"
 
 #: ../src/serviceconf.glade.h:13
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "Kjøringsnivå _3"
+msgstr "_Alle kjøringsnivå"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
@@ -163,7 +159,7 @@ msgstr "S_topp tjenesten"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "Dialog for lagring"
 
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
@@ -171,16 +167,15 @@ msgstr "Tjenestekonfigurasjon"
 
 #: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
-msgstr ""
+msgstr "Navn på tjeneste:"
 
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Start"
 
 #: ../src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "Start"
+msgstr "Status"
 
 #: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
@@ -209,13 +204,12 @@ msgid "_Actions"
 msgstr "H_andlinger"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "_Start tjenester"
+msgstr "_Bakgrunnstjenester"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr ""
+msgstr "_Innhold"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
@@ -223,11 +217,11 @@ msgstr "Redigerer kjøringsnivå"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr ""
+msgstr "_Fil"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr ""
+msgstr "_Hjelp"
 
 #: ../src/serviceconf.glade.h:31
 #, fuzzy
@@ -235,9 +229,8 @@ msgid "_On Demand Services"
 msgstr "Sta_rt tjenesten på nytt"
 
 #: ../src/serviceconf.glade.h:32
-#, fuzzy
 msgid "_Quit"
-msgstr "Avslutt"
+msgstr "A_vslutt"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
@@ -257,25 +250,24 @@ msgstr "_Start tjenester"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr ""
+msgstr "_Vis"
 
 #: ../src/servicetab.glade.h:2
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current runlevel is %s"
-msgstr "Aktivt kjøringsnivå: "
+msgstr "Aktivt kjøringsnivå er %s"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "Deaktiver"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "Aktiver"
 
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "Kjøringsnivå %d"
+msgstr "Kjøringsnivåer"
 
 #: ../src/servicetab.glade.h:6
 #, fuzzy
@@ -283,9 +275,8 @@ msgid "Service control"
 msgstr "Tjenestekonfigurasjon"
 
 #: ../src/servicetab.glade.h:7
-#, fuzzy
 msgid "Start "
-msgstr "Start"
+msgstr "Start "
 
 #: ../src/servicetab.glade.h:8
 msgid "Status output"
@@ -297,59 +288,8 @@ msgstr ""
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr ""
+msgstr "Håndtering av tjenester"
 
 #: ../system-config-services.desktop.in.h:3
-#, fuzzy
 msgid "Services"
-msgstr "S_topp tjenesten"
-
-#~ msgid "Start the selected service"
-#~ msgstr "Start valgt tjeneste"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "Stopp valgt tjeneste"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "Start valgt tjeneste på nytt"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "Oppdater tjenestelisten"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "Lagre endringene du har gjort"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Gå tilbake til sist lagrede endring"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr "Handlinger som start, stopp og omstart av valgt tjeneste"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Velg kjøringsnivået du ønsker å redigere"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "Kjøringsnivå 3 er flerbrukermodus med nettverk"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr ""
-#~ "Kjøringsnivå 4 er reservert for lokal tilpasning og brukes vanligvis ikke"
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr "Kjøringsnivå 5 er flerbrukermodus med nettverk og X Windows"
-
-#~ msgid "Read Manual"
-#~ msgstr "Les dokumentasjon"
-
-#~ msgid "_Manual"
-#~ msgstr "_Brukermanual"
-
-#~ msgid "Save"
-#~ msgstr "Lagre"
-
-#~ msgid "Cancel"
-#~ msgstr "Avbryt"
-
-#~ msgid "Exit"
-#~ msgstr "Avslutt"
+msgstr "Tjenester"
