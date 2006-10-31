@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-07-26 13:08+1000\n"
+"PO-Revision-Date: 2006-10-31 14:13+1000\n"
 "Last-Translator: Noriko Mizumoto <noriko@redhat.com>\n"
 "Language-Team: Japanese <doc-i18n-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "現在実行中のランレベル: "
 
 #: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
-msgstr "ランレベルの編集"
+msgstr "編集中のランレベル: "
 
 #: ../src/serviceconf.py:418
 msgid "Unknown"
@@ -61,9 +61,9 @@ msgid ""
 " "
 msgstr ""
 "システムサービス設定ツール VERSION\n"
-" Copyright (c) 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat>\n"
-" Bill Nottingham <notting@redhat>\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
 " Brent Fox <bfox@redhat.com>\n"
 " Nils Philippsen <nphilipp@redhat.com>\n"
@@ -109,26 +109,24 @@ msgid "xinetd reloaded %s successfully"
 msgstr "xinetd は %s を正常に再読み込みしました"
 
 #: ../src/serviceconf.glade.h:1
-#, fuzzy
 msgid "Add Service"
-msgstr "サービスの停止(_t)"
+msgstr "サービスの追加"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "現在のランレベル: "
 
 #: ../src/serviceconf.glade.h:3
-#, fuzzy
 msgid "Delete Service"
-msgstr "サービスの再起動(_R)"
+msgstr "サービスの削除"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
-msgstr ""
+msgstr "詳細"
 
 #: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
-msgstr ""
+msgstr "保存しない"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
@@ -143,9 +141,8 @@ msgid "Restart"
 msgstr "再起動"
 
 #: ../src/serviceconf.glade.h:9
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "前回の保存に戻す(_R)"
+msgstr "前回の保存に戻す (_L)"
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
@@ -160,9 +157,8 @@ msgid "Runlevel _5"
 msgstr "ランレベル 5 (_5)"
 
 #: ../src/serviceconf.glade.h:13
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "ランレベル 3 (_3)"
+msgstr "すべてのランレベル (_A)"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
@@ -170,7 +166,7 @@ msgstr "サービスの停止(_t)"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "ダイアログの保存"
 
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
@@ -178,16 +174,15 @@ msgstr "サービスの設定"
 
 #: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
-msgstr ""
+msgstr "サービス名: "
 
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "開始"
 
 #: ../src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "開始"
+msgstr "状態"
 
 #: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
@@ -197,32 +192,33 @@ msgstr "停止"
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
+msgstr "これらのサービスは要求に応じて(オンデマンド)起動され、 行うことがなくなると終了します。 これらのサービスを使用するには、 <b>xinetd</b> サービスが動作していなければなりません。"
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr ""
+msgstr "これらのサービスは一度起動されるとバックグラウンドで実行されます。 起動するランレベルを指定することができます。"
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"現在のランレベルに変更が加えられました。\n"
+"この変更を保存しますか?"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
 msgstr "操作(_A)"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "サービスの開始(_S)"
+msgstr "バックグラウンドのサービス (_B)"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr ""
+msgstr "コンテンツ (_C)"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
@@ -230,21 +226,19 @@ msgstr "ランレベルの編集(_E)"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr ""
+msgstr "ファイル (_F)"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr ""
+msgstr "ヘルプ (_H)"
 
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "サービスの再起動(_R)"
+msgstr "オンデマンドのサービス(_O)"
 
 #: ../src/serviceconf.glade.h:32
-#, fuzzy
 msgid "_Quit"
-msgstr "終了"
+msgstr "終了 (_Q)"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
@@ -264,100 +258,46 @@ msgstr "サービスの開始(_S)"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr ""
+msgstr "表示 (_V)"
 
 #: ../src/servicetab.glade.h:2
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current runlevel is %s"
-msgstr "現在のランレベル: "
+msgstr "現在のランレベルは %s です"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "無効にする"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "有効にする"
 
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "ランレベル %d"
+msgstr "ランレベル"
 
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
-msgstr "サービスの設定"
+msgstr "サービスの制御"
 
 #: ../src/servicetab.glade.h:7
-#, fuzzy
 msgid "Start "
-msgstr "開始"
+msgstr "開始 "
 
 #: ../src/servicetab.glade.h:8
 msgid "Status output"
-msgstr ""
+msgstr "状態出力"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "システムの起動時に実行するサービスを設定します"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr ""
+msgstr "サービス管理"
 
 #: ../system-config-services.desktop.in.h:3
-#, fuzzy
 msgid "Services"
-msgstr "サービスの停止(_t)"
+msgstr "サービス"
 
-#~ msgid "Start the selected service"
-#~ msgstr "選択したサービスを開始"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "選択したサービスを停止"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "選択したサービスを再起動"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "サービスの一覧をリフレッシュ"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "加えた変更を保存"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "前回保存した変更に戻す"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr "選択したサービスに対する操作 (start、 stop、 restart など)"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "編集を行うランレベルを選択してください"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "ランレベル 3 はネットワークが有効なマルチユーザーモードです"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr ""
-#~ "ランレベル 4 はローカルなカスタマイズに予約されているため通常は使用しませ"
-#~ "ん"
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr "ランレベル 5 はネットワークと X が有効なマルチユーザーモードです"
-
-#~ msgid "Read Manual"
-#~ msgstr "マニュアルを読む"
-
-#~ msgid "_Manual"
-#~ msgstr "マニュアル(_M)"
-
-#~ msgid "Save"
-#~ msgstr "保存"
-
-#~ msgid "Cancel"
-#~ msgstr "取り消し"
-
-#~ msgid "Exit"
-#~ msgstr "終了"
