@@ -1,14 +1,15 @@
 # translation of pl.po to Polish
 # Radosław Zawartko <radzaw@radzaw.one.pl>, 2003.
 # Tom Berner <tom@lodz.pl>, 2005.
+# Piotr Drąg <raven@pmail.pl>, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-09-05 18:02+0200\n"
-"Last-Translator: Tom Berner <tom@lodz.pl>\n"
+"PO-Revision-Date: 2006-11-02 17:23+0200\n"
+"Last-Translator: Piotr Drąg <raven@pmail.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,8 +26,6 @@ msgstr "Czy na pewno chcesz usunąć %s?"
 msgid "Runlevel %d"
 msgstr "Poziom %d"
 
-#. initialize this to the runlevel we are running in. It will
-#. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
 msgstr "Bieżący poziom uruchamiania: "
@@ -103,26 +102,24 @@ msgid "xinetd reloaded %s successfully"
 msgstr "xinetd pomyślnie ponownie wczytał %s"
 
 #: ../src/serviceconf.glade.h:1
-#, fuzzy
 msgid "Add Service"
-msgstr "Za_trzymaj usługę"
+msgstr "Dodaj usługę"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "Bieżący poziom uruchamiania: "
 
 #: ../src/serviceconf.glade.h:3
-#, fuzzy
 msgid "Delete Service"
-msgstr "U_ruchom ponownie usługę"
+msgstr "Usuń usługę"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
 #: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
-msgstr ""
+msgstr "Nie zapisuj"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
@@ -137,7 +134,6 @@ msgid "Restart"
 msgstr "Uruchom ponownie"
 
 #: ../src/serviceconf.glade.h:9
-#, fuzzy
 msgid "Revert To _Last Save"
 msgstr "P_rzywróć do ostatniego zapisu"
 
@@ -154,9 +150,8 @@ msgid "Runlevel _5"
 msgstr "Poziom _5"
 
 #: ../src/serviceconf.glade.h:13
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "Poziom _3"
+msgstr "Wszystkie p_oziomy"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
@@ -164,7 +159,7 @@ msgstr "Za_trzymaj usługę"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "Okno dialogowe zapisu"
 
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
@@ -172,16 +167,15 @@ msgstr "Konfiguracja usług"
 
 #: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
-msgstr ""
+msgstr "Nazwa usługi: "
 
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Uruchom"
 
 #: ../src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "Uruchom"
+msgstr "Stan"
 
 #: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
@@ -192,31 +186,36 @@ msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
+"Te usługi są uruchamiane na żądanie i kończą działanie, gdy nie mają nic do "
+"zrobienia. Usługa <b>xinetd</b> musi być uruchomiona, aby można je było użyć."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
 msgstr ""
+"Te usługi są uruchamiane jednorazowo i działają w tle. Można określić, na "
+"jakich poziomach uruchamiania moją być używane."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"Do bieżącego poziomu uruchamiania wprowadzono zmiany.\n"
+"Czy chcesz zapisać zmiany?"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
 msgstr "Oper_acje"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "Uruchom u_sługę"
+msgstr "Usługi w _tle"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr ""
+msgstr "_Zawartość"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
@@ -224,21 +223,19 @@ msgstr "_Edytuj poziom uruchamiania"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr ""
+msgstr "_Plik"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr ""
+msgstr "Pomo_c"
 
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "U_ruchom ponownie usługę"
+msgstr "_Usługi na żądanie"
 
 #: ../src/serviceconf.glade.h:32
-#, fuzzy
 msgid "_Quit"
-msgstr "Zakończ"
+msgstr "Za_kończ"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
@@ -258,102 +255,45 @@ msgstr "Uruchom u_sługę"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr ""
+msgstr "_Widok"
 
 #: ../src/servicetab.glade.h:2
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current runlevel is %s"
-msgstr "Bieżący poziom uruchamiania: "
+msgstr "Bieżący poziom uruchamiania to %s"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "Wyłącz"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "Włącz"
 
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "Poziom %d"
+msgstr "Poziomy"
 
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
 msgstr "Konfiguracja usług"
 
 #: ../src/servicetab.glade.h:7
-#, fuzzy
 msgid "Start "
-msgstr "Uruchom"
+msgstr "Uruchom "
 
 #: ../src/servicetab.glade.h:8
 msgid "Status output"
-msgstr ""
+msgstr "Wyjście stanu"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "Konfiguracja usług uruchamianych przy starcie systemu"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr ""
+msgstr "Zarządzanie usługami"
 
 #: ../system-config-services.desktop.in.h:3
-#, fuzzy
 msgid "Services"
-msgstr "Za_trzymaj usługę"
-
-#~ msgid "Start the selected service"
-#~ msgstr "Uruchom zaznaczoną usługę"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "Zatrzymaj zaznaczoną usługę"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "Uruchom ponownie zaznaczoną usługę"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "Odśwież listę usług"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "Zapisz wprowadzone zmiany"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Przywróć do ostatniej zapisanej zmiany"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr ""
-#~ "Operacje takie jak uruchomienie, zatrzymanie i ponowne uruchomienie na "
-#~ "zaznaczonej usłudze"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Zaznacz poziom uruchamiania, który chciałbyś zmodyfikować"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "Poziom 3 to tryb wieloużytkownikowy z siecią"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr ""
-#~ "Poziom 4 jest zarezerwowany do lokalnego dostosowania i nie jest zwykle "
-#~ "używany"
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr "Poziom 5 to tryb wieloużytkownikowy bez sieci i X Window"
-
-#~ msgid "Read Manual"
-#~ msgstr "Przeczytaj podręcznik"
-
-#~ msgid "_Manual"
-#~ msgstr "_Podręcznik"
-
-#~ msgid "Save"
-#~ msgstr "Zapisz"
-
-#~ msgid "Cancel"
-#~ msgstr "Anuluj"
-
-#~ msgid "Exit"
-#~ msgstr "Zakończ"
+msgstr "Usługi"
