@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-05-23 23:30+0400\n"
+"PO-Revision-Date: 2006-11-10 11:30+0300\n"
 "Last-Translator: Andrew Martynov <andrewm@inventa.ru>\n"
 "Language-Team: Russian <fedora-trans-ru@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -114,9 +114,8 @@ msgid "Current Active Runlevel: "
 msgstr "Текущий уровень запуска:"
 
 #: ../src/serviceconf.glade.h:3
-#, fuzzy
 msgid "Delete Service"
-msgstr "_Перезапустить службу"
+msgstr "_Удалить службу"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
@@ -139,7 +138,6 @@ msgid "Restart"
 msgstr "Перезапустить"
 
 #: ../src/serviceconf.glade.h:9
-#, fuzzy
 msgid "Revert To _Last Save"
 msgstr "_Откат к последнему сохранению"
 
@@ -240,9 +238,8 @@ msgid "_On Demand Services"
 msgstr "_Запускаемые по запросу"
 
 #: ../src/serviceconf.glade.h:32
-#, fuzzy
 msgid "_Quit"
-msgstr "Выход"
+msgstr "_Выход"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
@@ -265,35 +262,31 @@ msgid "_View"
 msgstr "_Вид"
 
 #: ../src/servicetab.glade.h:2
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current runlevel is %s"
-msgstr "Текущий уровень запуска:"
+msgstr "Текущий уровень запуска - %s"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "Отключить"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "Включить"
 
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "Уровень запуска %d"
+msgstr "Уровни запуска"
 
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
 msgstr "Настройка служб"
 
 #: ../src/servicetab.glade.h:7
-#, fuzzy
 msgid "Start "
-msgstr "Запустить"
+msgstr "Запустить "
 
 #: ../src/servicetab.glade.h:8
-#, fuzzy
 msgid "Status output"
 msgstr "Состояние"
 
