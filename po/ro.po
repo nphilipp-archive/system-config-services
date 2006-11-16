@@ -1,41 +1,43 @@
-# translation of system-config-services to Romanian
+# Romanian translation of system-config-services
 # Copyright (C) 2004 linux360
 # This file is distributed under the same license as the system-config-services package.
 # Răzvan Corneliu VILT <razvan.vilt@linux360.ro>, 2004.
 # Razvan VILT <razvan.vilt@linux360.ro>, 2004.
-#
-#
+# Alexandru Szasz <alexxed@gmail.com>, 2006.
+# Răzvan Corneliu VILT <razvan.vilt@linux360.ro>, 2006.
+# 
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services VERSION\n"
+"Project-Id-Version: system-config-services cvs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2004-06-22 15:33+0300\n"
-"Last-Translator: Răzvan Corneliu VILT <razvan.vilt@linux360.ro>\n"
-"Language-Team: Romanian <ro_team@linux360.ro>\n"
+"PO-Revision-Date: 2006-11-16 22:37+0200\n"
+"Last-Translator: Alexandru Szasz <alexxed@gmail.com>\n"
+"Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8bit"
 
 #: ../src/serviceconf.py:76
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr "Sunteţi sigur că vreţi să ştergeţi %s?"
+msgstr "Sigur doriţi să ştergeţi %s?"
 
 #: ../src/serviceconf.py:139
 #, python-format
 msgid "Runlevel %d"
-msgstr "Runlevel %d"
+msgstr "Nivel de rulare %d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
-msgstr "Se rulează în Runlevel: "
+msgstr "Actualmente se rulează în nivelul: "
 
 #: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
-msgstr "Editaţi Runlevel:"
+msgstr "Editare nivelul de rulare:"
 
 #: ../src/serviceconf.py:418
 msgid "Unknown"
@@ -56,8 +58,8 @@ msgid ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
-"Utilitarul de configurare a serviciilor VERSION\n"
-" Copyright (c) 2002-2004 Red Hat, Inc.\n"
+"Unealtă de configurare a serviciilor VERSION\n"
+" Copyright (c) 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat>\n"
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
@@ -71,7 +73,7 @@ msgstr "Despre"
 
 #: ../src/serviceconf.py:575
 msgid "Help is not available."
-msgstr "Nu este disponibil ajutor"
+msgstr "Ajutorul nu este disponibil."
 
 #: ../src/serviceconf.py:714
 msgid "You must run system-config-services as root."
@@ -80,20 +82,20 @@ msgstr "Trebuie să rulaţi system-config-services ca root."
 #: ../src/servicemethods.py:229
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s a dat eroare. Aceasta este: %s"
+msgstr "%s a eşuat. Eroarea a fost: %s"
 
 #: ../src/servicemethods.py:235
 msgid " successful"
-msgstr "succes"
+msgstr "cu succes"
 
 #: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "xinetd trebuie să fie disponibil ca să ruleze %s"
+msgstr "xinetd trebuie să fie activat pentru ca %s să ruleze"
 
 #: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
-msgstr "xinetd nu s-a incărcat pentru "
+msgstr "xinetd a eşuat la reîncărcarea "
 
 #: ../src/servicemethods.py:348
 msgid ". The error was: "
@@ -105,85 +107,80 @@ msgid "xinetd reloaded %s successfully"
 msgstr "xinetd a reîncărcat cu succes %s"
 
 #: ../src/serviceconf.glade.h:1
-#, fuzzy
 msgid "Add Service"
-msgstr "Opri_ţi Serviciul"
+msgstr "Adaugă serviciu"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
-msgstr "Runlevel-ul activ momentan: "
+msgstr "Nivelul de rulare activ: "
 
 #: ../src/serviceconf.glade.h:3
-#, fuzzy
 msgid "Delete Service"
-msgstr "_Restartează serviciu"
+msgstr "Şterge serviciul"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
-msgstr ""
+msgstr "Descriere"
 
 #: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
-msgstr ""
+msgstr "Nu salva"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
-msgstr "Editează Runlevel:"
+msgstr "Editare nivel de rulare:"
 
 #: ../src/serviceconf.glade.h:7
 msgid "None"
-msgstr "Nu este"
+msgstr "Nimic"
 
 #: ../src/serviceconf.glade.h:8
 msgid "Restart"
-msgstr "Restartaţi"
+msgstr "Reporniţi"
 
 #: ../src/serviceconf.glade.h:9
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "Reincarcă la _Ultima Salvare"
+msgstr "Revenire la u_ltima salvare"
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
-msgstr "Runlevel _3"
+msgstr "Nivel de rulare _3"
 
 #: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
-msgstr "Runlevel _4"
+msgstr "Nivel de rulare _4"
 
 #: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
-msgstr "Runlevel _5"
+msgstr "Nivel de rulare _5"
 
 #: ../src/serviceconf.glade.h:13
 msgid "Runlevel _All"
-msgstr "Runlevel _Toate"
+msgstr "To_ate nivelele de rulare"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
-msgstr "Opri_ţi Serviciul"
+msgstr "Opri_ţi serviciul"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "Dialog salvare"
 
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
-msgstr "Configurarea serviciului"
+msgstr "Configurare servicii"
 
 #: ../src/serviceconf.glade.h:17
-#, fuzzy
 msgid "Service Name: "
-msgstr "Organizarea Serviciilor"
+msgstr "Nume serviciu: "
 
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Porniţi"
 
 #: ../src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "Porniţi"
+msgstr "Stare"
 
 #: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
@@ -194,7 +191,7 @@ msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
-"Acest servicii pornesc la cerere si se termină când nu mai este nimic de "
+"Acest servicii sunt pornite la cerere şi se termină când nu mai este nimic de "
 "făcut. Servicul <b>xinetd</b> trebuie pornit pentru a putea fi utilizate."
 
 #: ../src/serviceconf.glade.h:22
@@ -202,14 +199,16 @@ msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
 msgstr ""
-"Aceste servicii sunt rulate o dată şi rulează în fond. Puteţi specifica în "
-"ce runlevel sunt pornite."
+"Aceste servicii sunt pornite o dată şi rulează în fundal. Puteţi specifica în "
+"ce nivele de rulare să fie pornite."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"Aţi făcut schimbări la nivelul de rulare curent.\n"
+"Doriţi să salvaţi schimbările?"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
@@ -217,44 +216,43 @@ msgstr "_Acţiuni"
 
 #: ../src/serviceconf.glade.h:26
 msgid "_Background Services"
-msgstr "Servicii de _Fond"
+msgstr "Servicii din _fundal"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr ""
+msgstr "_Conţinut"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
-msgstr "_Editează Runlevel"
+msgstr "_Editează nivel de rulare"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr ""
+msgstr "_Fişier"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr ""
+msgstr "A_jutor"
 
 #: ../src/serviceconf.glade.h:31
 msgid "_On Demand Services"
 msgstr "Servicii la _Cerere"
 
 #: ../src/serviceconf.glade.h:32
-#, fuzzy
 msgid "_Quit"
-msgstr "_Ieşire"
+msgstr "_Ieşiţi"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
-msgstr "_Reactualizaţi lista de servicii"
+msgstr "_Reîmprospătare listă servicii"
 
 #: ../src/serviceconf.glade.h:34
 msgid "_Restart Service"
-msgstr "_Restartează serviciu"
+msgstr "_Reporniţi serviciul"
 
 #: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
-msgstr "_Salvaţi schimbările"
+msgstr "_Salvează schimbările"
 
 #: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
@@ -262,52 +260,48 @@ msgstr "_Porniţi serviciul"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr ""
+msgstr "_Vedere"
 
 #: ../src/servicetab.glade.h:2
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current runlevel is %s"
-msgstr "Runlevel-ul activ momentan: "
+msgstr "Nivelul de rulare este acum %s"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "Dezactivează"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "Activează"
 
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "Runlevel %d"
+msgstr "Nivele de rulare"
 
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
-msgstr "Configurarea serviciului"
+msgstr "Control serviciu"
 
 #: ../src/servicetab.glade.h:7
-#, fuzzy
 msgid "Start "
-msgstr "Porniţi"
+msgstr "Porniţi "
 
 #: ../src/servicetab.glade.h:8
 msgid "Status output"
-msgstr ""
+msgstr "Starea curentă"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "Alegeţi ce servicii vor rula când sistemul porneşte"
+msgstr "Configuraţi ce servicii rulează la pornirea sistemului."
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr "Organizarea Serviciilor"
+msgstr "Management serviciu"
 
 #: ../system-config-services.desktop.in.h:3
-#, fuzzy
 msgid "Services"
-msgstr "Opri_ţi Serviciul"
+msgstr "Servicii"
 
 #, fuzzy
 #~ msgid "Start the selected service"
