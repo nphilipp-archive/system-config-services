@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: system-config-services 0.8.26\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-10-30 01:36+0100\n"
+"PO-Revision-Date: 2006-11-19 20:32+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -185,19 +185,21 @@ msgstr "Stopp"
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
+msgstr "Disse tjenestene startes etter behov og avsluttes når det ikke er mer arbeid for dem. <b>xinetd</b>-tjenesten må kjøre for at disse kan brukes."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr ""
+msgstr "Disse tjenestene startes en gang og kjører i bakgrunnen. Du kan oppgi hvilke kjøringsnivå disse startes i."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"Du har gjort endringer i aktivt kjøringsnivå.\n"
+"Vil du lagre endringene?"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
@@ -224,9 +226,8 @@ msgid "_Help"
 msgstr "_Hjelp"
 
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "Sta_rt tjenesten på nytt"
+msgstr "Tjenester som startes etter beh_ov"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
@@ -270,9 +271,8 @@ msgid "Runlevels"
 msgstr "Kjøringsnivåer"
 
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
-msgstr "Tjenestekonfigurasjon"
+msgstr "Tjenestekontroll"
 
 #: ../src/servicetab.glade.h:7
 msgid "Start "
@@ -280,11 +280,11 @@ msgstr "Start "
 
 #: ../src/servicetab.glade.h:8
 msgid "Status output"
-msgstr ""
+msgstr "Utskrift av status"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "Bestem hvilke tjenester som skal kjøre når systemet starter"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
