@@ -1,47 +1,50 @@
+# translation of si.po to Sinhala
 # Sinhalese translations for PACKAGE package.
 # Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2004.
 #
+# Automatically generated, 2004.
+# Tyronne Wickramarathne <tywickra@redhat.com>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: si\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2004-04-06 14:50-0400\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2006-11-20 22:13+0530\n"
+"Last-Translator: Tyronne Wickramarathne <tywickra@redhat.com>\n"
+"Language-Team: Sinhala <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../src/serviceconf.py:76
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "%s මකා දැමීමට අවශ්‍ය බව ඔබට හොඳටම විශ්වාසද?"
 
 #: ../src/serviceconf.py:139
 #, python-format
 msgid "Runlevel %d"
-msgstr ""
+msgstr "ක්‍රියා මට්ටම%d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
-msgstr ""
+msgstr "දැනට ක්‍රියාත්මක වන ක්‍රියා මට්ටම:"
 
 #: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
-msgstr ""
+msgstr "ක්‍රියා මට්ටම සංශෝධනය කරන්න:"
 
 #: ../src/serviceconf.py:418
 msgid "Unknown"
-msgstr ""
+msgstr "හඳුනා නොගත්"
 
 #: ../src/serviceconf.py:508
 msgid "All"
-msgstr ""
+msgstr "සියල්ලම"
 
 #: ../src/serviceconf.py:542
 msgid ""
@@ -57,24 +60,24 @@ msgstr ""
 
 #: ../src/serviceconf.py:546
 msgid "About"
-msgstr ""
+msgstr "සම්බන්ධ විස්තර"
 
 #: ../src/serviceconf.py:575
 msgid "Help is not available."
-msgstr ""
+msgstr "උදව් භාවිතයේ නොමැත"
 
 #: ../src/serviceconf.py:714
 msgid "You must run system-config-services as root."
-msgstr ""
+msgstr "ඔබ විසින් system-config-services ක්‍රියාත්මක කල යුත්තේ root ලෙසය."
 
 #: ../src/servicemethods.py:229
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr ""
+msgstr "%s අසමත් විය. දෝශය වන්නේ: %s"
 
 #: ../src/servicemethods.py:235
 msgid " successful"
-msgstr ""
+msgstr " සාර්ථකයි"
 
 #: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
@@ -83,11 +86,11 @@ msgstr ""
 
 #: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
-msgstr ""
+msgstr "සඳහා xinetd නැවත රුවීමට අසමත්විය"
 
 #: ../src/servicemethods.py:348
 msgid ". The error was: "
-msgstr ""
+msgstr ". දෝශය වන්නේ: "
 
 #: ../src/servicemethods.py:350
 #, python-format
@@ -96,15 +99,15 @@ msgstr ""
 
 #: ../src/serviceconf.glade.h:1
 msgid "Add Service"
-msgstr ""
+msgstr "සේවාව එකතු කරන්න"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
-msgstr ""
+msgstr "දැනට සක්‍රීය ක්‍රියා මට්ටම: "
 
 #: ../src/serviceconf.glade.h:3
 msgid "Delete Service"
-msgstr ""
+msgstr "සේවාව මකා දමන්න"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
@@ -116,15 +119,15 @@ msgstr ""
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
-msgstr ""
+msgstr "ක්‍රියා මට්ටම සංශෝධනය කරන්න:"
 
 #: ../src/serviceconf.glade.h:7
 msgid "None"
-msgstr ""
+msgstr "නොමැත"
 
 #: ../src/serviceconf.glade.h:8
 msgid "Restart"
-msgstr ""
+msgstr "නැවත ආරම්භ කරන්න"
 
 #: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
@@ -148,7 +151,7 @@ msgstr ""
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
-msgstr ""
+msgstr "සේවාව නවත්වන්න(_t)"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
@@ -156,23 +159,23 @@ msgstr ""
 
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
-msgstr ""
+msgstr "සේවා මානකරණය"
 
 #: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
-msgstr ""
+msgstr "සේවා නාමය:"
 
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
-msgstr ""
+msgstr "ආරම්භ කරන්න"
 
 #: ../src/serviceconf.glade.h:19
 msgid "Status"
-msgstr ""
+msgstr "තත්වය"
 
 #: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
-msgstr ""
+msgstr "නවත්වන්න"
 
 #: ../src/serviceconf.glade.h:21
 msgid ""
@@ -194,15 +197,15 @@ msgstr ""
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
-msgstr ""
+msgstr "ක්‍රියා(_A)"
 
 #: ../src/serviceconf.glade.h:26
 msgid "_Background Services"
-msgstr ""
+msgstr "පසුබිම් සේවාවන්(_B)"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr ""
+msgstr "අන්තර්ගතයන්(_C)"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
@@ -210,11 +213,11 @@ msgstr ""
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr ""
+msgstr "ගොනුව(_F)"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr ""
+msgstr "උදව්(_H)"
 
 #: ../src/serviceconf.glade.h:31
 msgid "_On Demand Services"
@@ -230,7 +233,7 @@ msgstr ""
 
 #: ../src/serviceconf.glade.h:34
 msgid "_Restart Service"
-msgstr ""
+msgstr "සේවාව නැවත ආරම්භ කරන්න(_R)"
 
 #: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
@@ -238,7 +241,7 @@ msgstr ""
 
 #: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
-msgstr ""
+msgstr "සේවාව ආරම්භ කරන්න(_S)"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
@@ -251,11 +254,11 @@ msgstr ""
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "අක්‍රීය කරන්න"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "සක්‍රීය කරන්න"
 
 #: ../src/servicetab.glade.h:5
 msgid "Runlevels"
@@ -263,15 +266,16 @@ msgstr ""
 
 #: ../src/servicetab.glade.h:6
 msgid "Service control"
-msgstr ""
+msgstr "සේවා පාලනය"
 
 #: ../src/servicetab.glade.h:7
 msgid "Start "
-msgstr ""
+msgstr "ආරම්භ කරන්න"
 
 #: ../src/servicetab.glade.h:8
+#, fuzzy
 msgid "Status output"
-msgstr ""
+msgstr "තත්ව ප්‍රතිදානය"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -279,8 +283,9 @@ msgstr ""
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr ""
+msgstr "සේවා කළමණාකරනය"
 
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
-msgstr ""
+msgstr "සේවාවන්"
+
