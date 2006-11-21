@@ -187,13 +187,18 @@ msgstr "Apturēt"
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr "Šie servisi tiek startēti pēc pieprasījuma un tiek apstādināti, kad to darbība vairs nav nepieciešama. Lai tos izmantotu, jābūt startētam <b>xinetd</b> servisam."
+msgstr ""
+"Šie servisi tiek startēti pēc pieprasījuma un tiek apstādināti, kad to "
+"darbība vairs nav nepieciešama. Lai tos izmantotu, jābūt startētam "
+"<b>xinetd</b> servisam."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr "Šie servisi tiek startēti un izmantoti fona režīmā. Jums jānorāda, kādā darblīmenī tie izmantojami."
+msgstr ""
+"Šie servisi tiek startēti un izmantoti fona režīmā. Jums jānorāda, kādā "
+"darblīmenī tie izmantojami."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -295,4 +300,3 @@ msgstr "Servisu vadība"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Servisi"
-

@@ -28,7 +28,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"\n"
 "\n"
 
 #  checklist.py: A class (derived from GtkTreeView) that provides a list of
@@ -254,13 +255,17 @@ msgstr "বন্ধ"
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr "প্রয়োজনে এই পরিসেবাগুলি আরম্ভ করা হবে ও কর্ম সমাপ্ত হলে বন্ধ করা হবে। এই সমস্ত পরিসেবা ব্যবহারের জন্য <b>xinetd</b> পরিসেবা সর্বদা চলমান থাকা আবশ্যক।"
+msgstr ""
+"প্রয়োজনে এই পরিসেবাগুলি আরম্ভ করা হবে ও কর্ম সমাপ্ত হলে বন্ধ করা হবে। এই সমস্ত "
+"পরিসেবা ব্যবহারের জন্য <b>xinetd</b> পরিসেবা সর্বদা চলমান থাকা আবশ্যক।"
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr "এই পরিসেবাগুলি একবার আরম্ভ করা হয় ও নেপথ্যে সঞ্চালিত হয়। এই ক্ষেত্রে পরিসেবাগুলির জন্য প্রারম্ভিক runlevel নির্ধারণ করা যাবে।"
+msgstr ""
+"এই পরিসেবাগুলি একবার আরম্ভ করা হয় ও নেপথ্যে সঞ্চালিত হয়। এই ক্ষেত্রে পরিসেবাগুলির "
+"জন্য প্রারম্ভিক runlevel নির্ধারণ করা যাবে।"
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -375,4 +380,3 @@ msgstr "পরিসেবা পরিচালনা"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "পরিসেবা"
-

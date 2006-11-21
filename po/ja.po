@@ -192,13 +192,18 @@ msgstr "停止"
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr "これらのサービスは要求に応じて(オンデマンド)起動され、 行うことがなくなると終了します。 これらのサービスを使用するには、 <b>xinetd</b> サービスが動作していなければなりません。"
+msgstr ""
+"これらのサービスは要求に応じて(オンデマンド)起動され、 行うことがなくなると終"
+"了します。 これらのサービスを使用するには、 <b>xinetd</b> サービスが動作して"
+"いなければなりません。"
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr "これらのサービスは一度起動されるとバックグラウンドで実行されます。 起動するランレベルを指定することができます。"
+msgstr ""
+"これらのサービスは一度起動されるとバックグラウンドで実行されます。 起動するラ"
+"ンレベルを指定することができます。"
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -300,4 +305,3 @@ msgstr "サービス管理"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "サービス"
-

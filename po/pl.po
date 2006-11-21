@@ -26,6 +26,8 @@ msgstr "Czy na pewno chcesz usunąć %s?"
 msgid "Runlevel %d"
 msgstr "Poziom %d"
 
+#. initialize this to the runlevel we are running in. It will
+#. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
 msgstr "Bieżący poziom uruchamiania: "

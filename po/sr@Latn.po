@@ -31,8 +31,7 @@ msgstr "Izvršni nivo %d"
 msgid "Currently Running in Runlevel: "
 msgstr "Trenutno se radi u izvršnom nivou: "
 
-#: ../src/serviceconf.py:376
-#: ../src/serviceconf.py:479
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "Uređivanje izvršnog nivoa: "
 
@@ -85,8 +84,7 @@ msgstr "%s neuspelo. Greška je bila: %s"
 msgid " successful"
 msgstr " uspešno"
 
-#: ../src/servicemethods.py:341
-#: ../src/servicemethods.py:352
+#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd mora biti uključen da bi se %s pokrenuo"
@@ -180,18 +178,25 @@ msgstr "Pokreni"
 msgid "Status"
 msgstr "Status"
 
-#: ../src/serviceconf.glade.h:20
-#: ../src/servicetab.glade.h:9
+#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
 msgstr "Zaustavi"
 
 #: ../src/serviceconf.glade.h:21
-msgid "These services are started on demand and end when there is nothing more to do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr "Ovi servisi se pokreću na zahtev i završavaju kada nemaju više šta da rade. Servis <b>xinetd</b> mora biti pokrenut kako bi oni mogi da se koriste."
+msgid ""
+"These services are started on demand and end when there is nothing more to "
+"do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr ""
+"Ovi servisi se pokreću na zahtev i završavaju kada nemaju više šta da rade. "
+"Servis <b>xinetd</b> mora biti pokrenut kako bi oni mogi da se koriste."
 
 #: ../src/serviceconf.glade.h:22
-msgid "These services are started once and run in the background. You can specify in which runlevels they are started."
-msgstr "Ovi servisi se pokreću jednom i izvršavaju se u pozadini. Možete naznačiti u kojim će izvršnim nivoima biti pokrenuti."
+msgid ""
+"These services are started once and run in the background. You can specify "
+"in which runlevels they are started."
+msgstr ""
+"Ovi servisi se pokreću jednom i izvršavaju se u pozadini. Možete naznačiti u "
+"kojim će izvršnim nivoima biti pokrenuti."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -293,4 +298,3 @@ msgstr "Upravljanje servisima"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Servisi"
-

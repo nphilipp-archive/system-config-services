@@ -50,8 +50,7 @@ msgstr "Ejecutándose en el nivel de ejecución: "
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
-#: ../src/serviceconf.py:376
-#: ../src/serviceconf.py:479
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "Editando nivel de ejecución: "
 
@@ -112,8 +111,7 @@ msgstr " satisfactorio"
 
 # ../servicemethods.py:313
 # ../servicemethods.py:313
-#: ../src/servicemethods.py:341
-#: ../src/servicemethods.py:352
+#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd debe estar activo para poder ejecutar %s"
@@ -241,18 +239,26 @@ msgid "Status"
 msgstr "Estado"
 
 # serviceconf.gladestrings:11 serviceconf.gladestrings:48
-#: ../src/serviceconf.glade.h:20
-#: ../src/servicetab.glade.h:9
+#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
 msgstr "Detener"
 
 #: ../src/serviceconf.glade.h:21
-msgid "These services are started on demand and end when there is nothing more to do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr "Estos servicios son iniciados por demanda y finalizan cuando ya no hay nada más que hacer. El servicio <b>xinetd</b> debe estar ejecutándose para que se los pueda usar."
+msgid ""
+"These services are started on demand and end when there is nothing more to "
+"do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr ""
+"Estos servicios son iniciados por demanda y finalizan cuando ya no hay nada "
+"más que hacer. El servicio <b>xinetd</b> debe estar ejecutándose para que se "
+"los pueda usar."
 
 #: ../src/serviceconf.glade.h:22
-msgid "These services are started once and run in the background. You can specify in which runlevels they are started."
-msgstr "Estos servicios son iniciados una vez y se ejecutan en segundo plano. Puede especificar en qué niveles de ejecución se iniciarán."
+msgid ""
+"These services are started once and run in the background. You can specify "
+"in which runlevels they are started."
+msgstr ""
+"Estos servicios son iniciados una vez y se ejecutan en segundo plano. Puede "
+"especificar en qué niveles de ejecución se iniciarán."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -376,4 +382,3 @@ msgstr "Administración de Servicios"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Servicios"
-

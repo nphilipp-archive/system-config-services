@@ -301,7 +301,8 @@ msgstr "Status-Ausgabe"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "Konfiguriere welche Dienste beim Starten des Systems ausgefÃ¼hrt werden"
+msgstr ""
+"Konfiguriere welche Dienste beim Starten des Systems ausgefÃ¼hrt werden"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -310,4 +311,3 @@ msgstr "Dienste-Verwaltung"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Dienste"
-

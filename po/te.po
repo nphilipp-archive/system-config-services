@@ -188,13 +188,17 @@ msgstr "ఆపు"
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr "ఈ సేవలు కోరగా ప్రారంభించబడ్డాయి మరియూ చేయటానికి ఏమీలేకపోతే ముగించబడతాయి. <b>xinetd</b> సేవ తప్పక నడుస్తూ ఉంటుంది కాబట్టి వాళ్లు ఉపయోగించగలుగుతారు."
+msgstr ""
+"ఈ సేవలు కోరగా ప్రారంభించబడ్డాయి మరియూ చేయటానికి ఏమీలేకపోతే ముగించబడతాయి. <b>xinetd</b> సేవ తప్పక "
+"నడుస్తూ ఉంటుంది కాబట్టి వాళ్లు ఉపయోగించగలుగుతారు."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr "ఈ సేవలు ఒకసారి ప్రారంభించబడి నేపధ్యంలో నడుస్తూఉంటాయి. మీరు ఏ ఉపయోగస్థాయిలలో వాళ్లు ప్రారంభించారో మీరు తెలియచేయాలి."
+msgstr ""
+"ఈ సేవలు ఒకసారి ప్రారంభించబడి నేపధ్యంలో నడుస్తూఉంటాయి. మీరు ఏ ఉపయోగస్థాయిలలో వాళ్లు ప్రారంభించారో మీరు "
+"తెలియచేయాలి."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -296,4 +300,3 @@ msgstr "సేవల నిర్వహణ"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "సేవలు"
-

@@ -339,4 +339,3 @@ msgstr "ਸੇਵਾ ਪਰਬੰਧ"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "ਸੇਵਾਵਾਂ"
-

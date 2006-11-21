@@ -15,7 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
 "\n"
 "\n"
 
@@ -191,16 +192,16 @@ msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
-"ଏହି ସେବା ଗୁଡିକୁ ଦାବି ଅନୁଯାୟୀ ପ୍ରାରମ୍ଭ କରାଯାଏ ଏବଂ ଅଧିକ କିଛି କରିବାକୁ ନ ଥିଲେ ସେଗୁଡିକୁ "
-"ବନ୍ଦ କରାଯାଏ। <b>xinetd</b> ସେବାଟି ଚାଲୁଥିବା ଉଚିତ ଯେପରି ତାହାକୁ ବ୍ଯବହାର କରିହେବ।"
+"ଏହି ସେବା ଗୁଡିକୁ ଦାବି ଅନୁଯାୟୀ ପ୍ରାରମ୍ଭ କରାଯାଏ ଏବଂ ଅଧିକ କିଛି କରିବାକୁ ନ ଥିଲେ ସେଗୁଡିକୁ ବନ୍ଦ "
+"କରାଯାଏ। <b>xinetd</b> ସେବାଟି ଚାଲୁଥିବା ଉଚିତ ଯେପରି ତାହାକୁ ବ୍ଯବହାର କରିହେବ।"
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
 msgstr ""
-"ଏହି ସେବା ଗୁଡିକ ଥରେ ପ୍ରାରମ୍ଭ ହୁଅନ୍ତି ଏବଂ ପୃଷ୍ଠଭୂମିରେ ଚାଲନ୍ତି। କେଉଁ runlevel ରେ ଏଗୁଡିକ "
-"ପ୍ରାରମ୍ଭ ହେଇଛନ୍ତି, ଆପଣ ତାହା ଉଲ୍ଲେଖ କରିପାରନ୍ତି।"
+"ଏହି ସେବା ଗୁଡିକ ଥରେ ପ୍ରାରମ୍ଭ ହୁଅନ୍ତି ଏବଂ ପୃଷ୍ଠଭୂମିରେ ଚାଲନ୍ତି। କେଉଁ runlevel ରେ ଏଗୁଡିକ ପ୍ରାରମ୍ଭ "
+"ହେଇଛନ୍ତି, ଆପଣ ତାହା ଉଲ୍ଲେଖ କରିପାରନ୍ତି।"
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -302,4 +303,3 @@ msgstr "ସେବା ପରିଚାଳନ"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "ସେବା"
-

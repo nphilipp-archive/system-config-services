@@ -288,4 +288,3 @@ msgstr "සේවා කළමණාකරනය"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "සේවාවන්"
-

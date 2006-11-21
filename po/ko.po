@@ -190,16 +190,16 @@ msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
-"이러한 서비스는 사용자 요구에 따라 시작되며 제공해 드릴 서비스가 없을 때 "
-"종료됩니다. <b>xinetd</b> 서비스가 실행되어야 하므로 이를 사용하실 수 있습니다."
+"이러한 서비스는 사용자 요구에 따라 시작되며 제공해 드릴 서비스가 없을 때 종료"
+"됩니다. <b>xinetd</b> 서비스가 실행되어야 하므로 이를 사용하실 수 있습니다."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
 msgstr ""
-"이러한 서비스가 시작되면 백그라운드에서 실행됩니다. 어떤 런레벨에서 "
-"서비스를 시작할 지를 지정하실 수 있습니다."
+"이러한 서비스가 시작되면 백그라운드에서 실행됩니다. 어떤 런레벨에서 서비스를 "
+"시작할 지를 지정하실 수 있습니다."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -301,4 +301,3 @@ msgstr "서비스 관리"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "서비스 (_S)"
-

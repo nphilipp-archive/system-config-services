@@ -39,8 +39,7 @@ msgstr "Niveau d'exécution %d"
 msgid "Currently Running in Runlevel: "
 msgstr "Niveau d'exécution actuel : "
 
-#: ../src/serviceconf.py:376
-#: ../src/serviceconf.py:479
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "Modification du niveau d'exécution : "
 
@@ -93,8 +92,7 @@ msgstr "Échec de %s. L'erreur était : %s"
 msgid " successful"
 msgstr " réussi"
 
-#: ../src/servicemethods.py:341
-#: ../src/servicemethods.py:352
+#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd doit être activé pour que %s puisse être exécuté"
@@ -188,18 +186,26 @@ msgstr "Démarrer"
 msgid "Status"
 msgstr "Ãtat"
 
-#: ../src/serviceconf.glade.h:20
-#: ../src/servicetab.glade.h:9
+#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
 msgstr "Arrêter"
 
 #: ../src/serviceconf.glade.h:21
-msgid "These services are started on demand and end when there is nothing more to do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr "Ces services sont lancÃ©s Ã  la demande et se terminent lorsqu'il n'y a plus rien Ã  faire. Le service <b>xinetd</b> doit Ãªtre en cours d'exÃ©cution pour pouvoir les utiliser."
+msgid ""
+"These services are started on demand and end when there is nothing more to "
+"do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr ""
+"Ces services sont lancÃ©s Ã  la demande et se terminent lorsqu'il n'y a plus "
+"rien Ã  faire. Le service <b>xinetd</b> doit Ãªtre en cours d'exÃ©cution "
+"pour pouvoir les utiliser."
 
 #: ../src/serviceconf.glade.h:22
-msgid "These services are started once and run in the background. You can specify in which runlevels they are started."
-msgstr "Ces services sont lancÃ©s une fois et exÃ©cutÃ©s en arriÃ¨re-plan. Vous pouvez spÃ©cifier dans quels niveaux d'exÃ©cution ils sont lancÃ©s."
+msgid ""
+"These services are started once and run in the background. You can specify "
+"in which runlevels they are started."
+msgstr ""
+"Ces services sont lancÃ©s une fois et exÃ©cutÃ©s en arriÃ¨re-plan. Vous "
+"pouvez spÃ©cifier dans quels niveaux d'exÃ©cution ils sont lancÃ©s."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -304,43 +310,57 @@ msgstr "Services"
 
 #~ msgid "Start the selected service"
 #~ msgstr "Démarrer le service sélectionné"
+
 #~ msgid "Stop the selected service"
 #~ msgstr "Arrêter le service sélectionné"
+
 #~ msgid "Restart the selected service"
 #~ msgstr "Redémarrer le service sélectionné"
+
 #~ msgid "Refresh the list of services"
 #~ msgstr "Mettre à jour la liste des services"
+
 #~ msgid "Save the changes you have made"
 #~ msgstr "Enregistrer les changement que vous avez effectués"
+
 #~ msgid "Revert to the last saved change"
 #~ msgstr "Revenir à la dernière sauvegarde"
+
 #~ msgid "Actions such as start, stop, and restart on the selected service"
 #~ msgstr ""
 #~ "Des actions comme démarrer, arrêter et redémarrer sur le service "
 #~ "sélectionné"
+
 #~ msgid "Select the runlevel you would like to edit"
 #~ msgstr ""
 #~ "Sélectionnez le niveau d'exécution (runlevel) que vous voulez éditer"
+
 #~ msgid "Runlevel 3 is multiuser mode with networking"
 #~ msgstr ""
 #~ "Le niveau 3 est un mode multi-utilisateurs avec prise en charge réseau"
+
 #~ msgid ""
 #~ "Runlevel 4 is reserved for local customization, and is not usually used"
 #~ msgstr ""
 #~ "Le niveau 4 est un mode d'exécution réservé à la personnalisation du "
 #~ "système, et n'est que peu utilisé."
+
 #~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
 #~ msgstr ""
 #~ "Le niveau 5 est un mode d'exécution multi-utilisateur avec gestion du "
 #~ "réseau et X Windows"
+
 #~ msgid "Read Manual"
 #~ msgstr "Lire le manuel"
+
 #~ msgid "_Manual"
 #~ msgstr "_Manuel"
+
 #~ msgid "Save"
 #~ msgstr "Enregistrer"
+
 #~ msgid "Cancel"
 #~ msgstr "Annuler"
+
 #~ msgid "Exit"
 #~ msgstr "Quitter"
-
