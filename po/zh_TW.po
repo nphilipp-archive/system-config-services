@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-06-12 10:22+0800\n"
+"PO-Revision-Date: 2006-11-22 00:40+1000\n"
 "Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
 "Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -115,9 +115,8 @@ msgid "Current Active Runlevel: "
 msgstr "現行的執行等級:"
 
 #: ../src/serviceconf.glade.h:3
-#, fuzzy
 msgid "Delete Service"
-msgstr "重新啟動服務(_R)"
+msgstr "刪除服務"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
@@ -140,9 +139,8 @@ msgid "Restart"
 msgstr "重新啟動"
 
 #: ../src/serviceconf.glade.h:9
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "返回到上一次的儲存(_R)"
+msgstr "返回到上一次的儲存(_L)"
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
@@ -239,9 +237,8 @@ msgid "_On Demand Services"
 msgstr "依據需要啟動的服務(_O)"
 
 #: ../src/serviceconf.glade.h:32
-#, fuzzy
 msgid "_Quit"
-msgstr "離開"
+msgstr "離開(_Q)"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
@@ -264,37 +261,33 @@ msgid "_View"
 msgstr "檢視(_V)"
 
 #: ../src/servicetab.glade.h:2
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current runlevel is %s"
-msgstr "現行的執行等級:"
+msgstr "現行的執行等級為 %s"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "停用"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "啟用"
 
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "執行等級 %d"
+msgstr "執行等級"
 
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
-msgstr "服務設定"
+msgstr "服務控制"
 
 #: ../src/servicetab.glade.h:7
-#, fuzzy
 msgid "Start "
-msgstr "啟動"
+msgstr "開始"
 
 #: ../src/servicetab.glade.h:8
-#, fuzzy
 msgid "Status output"
-msgstr "狀態"
+msgstr "狀態輸出"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -307,52 +300,3 @@ msgstr "服務管理"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "服務"
-
-#~ msgid "Start the selected service"
-#~ msgstr "啟動選取的服務"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "停止選取的服務"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "重新啟動選取的服務"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "重新整理服務清單"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "儲存所作的變更"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "返回到上一次的儲存"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr "對選取服務的動作，諸如啟動、停止、重新啟動等"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "選取要編輯的執行等級"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "執行等級 3 是有網路功能的多用戶模式"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr "執行等級 4 保留作本機自訂用途，通常不會使用"
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr "執行等級 5 是有網路功能和 X 視窗的多用戶模式"
-
-#~ msgid "Read Manual"
-#~ msgstr "閱讀手冊"
-
-#~ msgid "_Manual"
-#~ msgstr "手冊(_M)"
-
-#~ msgid "Save"
-#~ msgstr "儲存"
-
-#~ msgid "Cancel"
-#~ msgstr "取消"
-
-#~ msgid "Exit"
-#~ msgstr "退出"
