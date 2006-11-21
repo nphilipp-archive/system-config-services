@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-09-09 11:56+0800\n"
+"PO-Revision-Date: 2006-11-22 00:51+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,8 @@ msgstr "Runlevel %d"
 msgid "Currently Running in Runlevel: "
 msgstr "Kini Dilaksana pada Runlevel:"
 
-#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
+#: ../src/serviceconf.py:376
+#: ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "Menyunting Runlevel: "
 
@@ -85,7 +86,8 @@ msgstr "%s gagal. Ralat adalah: %s"
 msgid " successful"
 msgstr " berjaya"
 
-#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
+#: ../src/servicemethods.py:341
+#: ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd perlu dihidupkan supaya %s dilaksanakan"
@@ -104,26 +106,24 @@ msgid "xinetd reloaded %s successfully"
 msgstr "xinetd mengulangmuat %s dengan jayanya"
 
 #: ../src/serviceconf.glade.h:1
-#, fuzzy
 msgid "Add Service"
-msgstr "_Hentikan Servis"
+msgstr "Tambah Servis"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
 msgstr "Runlevel Aktif Samasa:"
 
 #: ../src/serviceconf.glade.h:3
-#, fuzzy
 msgid "Delete Service"
-msgstr "_Ulanghidup Servis"
+msgstr "Padam Servis"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
-msgstr ""
+msgstr "Huraian"
 
 #: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
-msgstr ""
+msgstr "Jangan Simpan"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
@@ -138,9 +138,8 @@ msgid "Restart"
 msgstr "Ulanghidup"
 
 #: ../src/serviceconf.glade.h:9
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "Berbalik Ke Te_rakhir Disimpan"
+msgstr "Berbalik ke yang Ter_akhir Disimpan"
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
@@ -155,9 +154,8 @@ msgid "Runlevel _5"
 msgstr "Runlevel _5"
 
 #: ../src/serviceconf.glade.h:13
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "Runlevel _3"
+msgstr "Runlevel Semu_a"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
@@ -165,7 +163,7 @@ msgstr "_Hentikan Servis"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "Dialog Simpan"
 
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
@@ -173,38 +171,36 @@ msgstr "Konfigurasi Servis"
 
 #: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
-msgstr ""
+msgstr "Nama Servis:"
 
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Mula"
 
 #: ../src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "Mula"
+msgstr "Status"
 
-#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
+#: ../src/serviceconf.glade.h:20
+#: ../src/servicetab.glade.h:9
 msgid "Stop"
 msgstr "Henti"
 
 #: ../src/serviceconf.glade.h:21
-msgid ""
-"These services are started on demand and end when there is nothing more to "
-"do. The <b>xinetd</b> service must be running so that they can be used."
+msgid "These services are started on demand and end when there is nothing more to do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
 
 #: ../src/serviceconf.glade.h:22
-msgid ""
-"These services are started once and run in the background. You can specify "
-"in which runlevels they are started."
-msgstr ""
+msgid "These services are started once and run in the background. You can specify in which runlevels they are started."
+msgstr "Servis ini dimulakan sekali dan dilaksana pada latarbelakang. Anda boleh menyatakan dalam runlevel mana ia dimulakan."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"Anda membuat perubahan pada runlevel semasa.\n"
+"Adakah anda ingin menyimpan perubahan ini?"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
@@ -213,11 +209,11 @@ msgstr "_Aksi"
 #: ../src/serviceconf.glade.h:26
 #, fuzzy
 msgid "_Background Services"
-msgstr "_Mulakan Servis"
+msgstr "Peranti PCM default:"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr ""
+msgstr "_Kandungan"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
@@ -225,21 +221,25 @@ msgstr "_Edit Runlevel"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr ""
+msgstr "_Fail"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr ""
+msgstr "_Bantuan"
 
 #: ../src/serviceconf.glade.h:31
 #, fuzzy
 msgid "_On Demand Services"
-msgstr "_Ulanghidup Servis"
+msgstr ""
+"Pengesanan automatik bagi kad bunyi tidak berjaya.  Audio tidak ada pada sistem.\n"
+"Anda boleh memeriksa %s dan failkan pepijat baru\n"
+"di http://bugzilla.redhat.com.\n"
+"\n"
+"Sila klik OK untuk meneruskan."
 
 #: ../src/serviceconf.glade.h:32
-#, fuzzy
 msgid "_Quit"
-msgstr "Keluar"
+msgstr "_Keluar"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
@@ -259,7 +259,7 @@ msgstr "_Mulakan Servis"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr ""
+msgstr "_Lihat"
 
 #: ../src/servicetab.glade.h:2
 #, fuzzy, no-c-format
@@ -268,92 +268,40 @@ msgstr "Runlevel Aktif Samasa:"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "Matikan"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "Hidupkan"
 
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "Runlevel %d"
+msgstr "Runlevel"
 
 #: ../src/servicetab.glade.h:6
 #, fuzzy
 msgid "Service control"
-msgstr "Konfigurasi Servis"
+msgstr "Pusat Kawalan"
 
 #: ../src/servicetab.glade.h:7
-#, fuzzy
 msgid "Start "
 msgstr "Mula"
 
 #: ../src/servicetab.glade.h:8
+#, fuzzy
 msgid "Status output"
-msgstr ""
+msgstr "Fail output:"
 
 #: ../system-config-services.desktop.in.h:1
+#, fuzzy
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "Tetapkan servis mana yang akan dilaksanakan ketika sistem bermula"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr ""
+msgstr "Pengurusan Servis"
 
 #: ../system-config-services.desktop.in.h:3
-#, fuzzy
 msgid "Services"
-msgstr "_Hentikan Servis"
+msgstr "Perkhidmatan"
 
-#~ msgid "Start the selected service"
-#~ msgstr "Mulakan servis dipilih"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "Hentikan servis dipilih"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "Ulangmula servis dipilih"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "Segarkan senarai servis"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "Simpan perubahan yang anda buat"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Berbalik ke perubahan terakhir disimpan"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr "Tindakan seperti mula, henti dan ulangmula pada servis dipilih"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Pilih runlevel yang anda hendak sunting"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "Runlevel 3 adalah mod pelbagai pengguna dengan rangkaian"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr ""
-#~ "Runlevel 4 adalah dikhaskan untuk tetapan sendiri tempatan, dan biasanya "
-#~ "tidak digunakan"
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr ""
-#~ "Runlevel 5 adalah mod pelbagai pengguna dengan rangkaian dan X Windows"
-
-#~ msgid "Read Manual"
-#~ msgstr "Baca Manual"
-
-#~ msgid "_Manual"
-#~ msgstr "_Manual"
-
-#~ msgid "Save"
-#~ msgstr "Simpan"
-
-#~ msgid "Cancel"
-#~ msgstr "Batal"
-
-#~ msgid "Exit"
-#~ msgstr "Keluar"
