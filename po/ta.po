@@ -11,14 +11,14 @@ msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-10-23 16:42+0530\n"
+"PO-Revision-Date: 2006-11-23 17:29+0530\n"
 "Last-Translator: Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <ta@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
 "\n"
 "\n"
 "\n"
@@ -27,7 +27,7 @@ msgstr ""
 #: ../src/serviceconf.py:76
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr "%s ஐ நீக்க வேண்டுமா?"
+msgstr "%s ஐ அழிக்க வேண்டுமா?"
 
 #: ../src/serviceconf.py:139
 #, python-format
@@ -42,11 +42,11 @@ msgstr "இப்போது இயக்க நிலையில் உள்
 
 #: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
-msgstr "இயக்க நிலையில் திருத்தம்:"
+msgstr "இயக்க நிலையை திருத்துகிறது:"
 
 #: ../src/serviceconf.py:418
 msgid "Unknown"
-msgstr "தெரியாத"
+msgstr "தெரியாதது"
 
 #: ../src/serviceconf.py:508
 msgid "All"
@@ -87,7 +87,7 @@ msgstr "system-config-services ஐ ரூட்டில் இயக்க வ�
 #: ../src/servicemethods.py:229
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s தோல்வியில் முடிந்தது. பிழை : %s"
+msgstr "%s செயலிழக்கப்பட்டது. பிழை செய்தி: %s"
 
 #: ../src/servicemethods.py:235
 msgid " successful"
@@ -96,20 +96,20 @@ msgstr "வெற்றி"
 #: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "%s இயக்குவதற்காக துவக்கு"
+msgstr "xinetd  %s ஐ இயக்க செயல்படுத்தப்பட வேண்டும்"
 
 #: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
-msgstr "xinetd  மீளேற்ற முடியவில்லை"
+msgstr "xinetd மீண்டும் ஏற்ற முடியவில்லை"
 
 #: ../src/servicemethods.py:348
 msgid ". The error was: "
-msgstr ". பிழை:"
+msgstr ". அதன் பிழை செய்தி:"
 
 #: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "xinetd வெற்றிகரமாக %s மீளேற்றப்பட்டது"
+msgstr "xinetd வெற்றிகரமாக %s ஐ மீண்டும் ஏற்றியது"
 
 #: ../src/serviceconf.glade.h:1
 msgid "Add Service"
@@ -133,15 +133,15 @@ msgstr "சேமிக்க வேண்டாம்"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
-msgstr "இயக்கமட்டத்தில் திருத்தம்:"
+msgstr "இயக்க நிலையை திருத்துகிறது:"
 
 #: ../src/serviceconf.glade.h:7
 msgid "None"
-msgstr "எதுவுமில்லை"
+msgstr "ஒன்றுமில்லை"
 
 #: ../src/serviceconf.glade.h:8
 msgid "Restart"
-msgstr "மீண்டும் துவக்கு"
+msgstr "மீண்டும் துவக்கவும்"
 
 #: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
@@ -153,11 +153,11 @@ msgstr "இயக்க நிலை _3"
 
 #: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
-msgstr "(_4)இயக்க நிலை 4`"
+msgstr "இயக்க நிலை _4"
 
 #: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
-msgstr "(_5)இயக்க நிலை 5"
+msgstr "இயக்க நிலை _5"
 
 #: ../src/serviceconf.glade.h:13
 msgid "Runlevel _All"
@@ -181,7 +181,7 @@ msgstr "சேவை பெயர்: "
 
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
-msgstr "துவக்கு"
+msgstr "துவக்கவும்"
 
 #: ../src/serviceconf.glade.h:19
 msgid "Status"
@@ -189,7 +189,7 @@ msgstr "நிலை"
 
 #: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
-msgstr "நிறுத்து"
+msgstr "நிறுத்தவும்"
 
 #: ../src/serviceconf.glade.h:21
 msgid ""
@@ -217,7 +217,7 @@ msgstr ""
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
-msgstr "(_A)செயல்"
+msgstr "செயல்கள் (_A)"
 
 #: ../src/serviceconf.glade.h:26
 msgid "_Background Services"
@@ -229,7 +229,7 @@ msgstr "உள்ளடக்கங்கள் (_C)"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
-msgstr "(_E)இயக்க நிலையை திருத்து"
+msgstr "இயக்க நிலையை திருத்தவும் (_E)"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
@@ -307,3 +307,4 @@ msgstr "சேவை மேலாண்மை"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "சேவைகள்"
+
