@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: si\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-11-20 22:13+0530\n"
+"PO-Revision-Date: 2006-11-23 15:12+0530\n"
 "Last-Translator: Tyronne Wickramarathne <tywickra@redhat.com>\n"
 "Language-Team: Sinhala <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -26,21 +26,21 @@ msgstr "%s මකා දැමීමට අවශ්‍ය බව ඔබට හ�
 #: ../src/serviceconf.py:139
 #, python-format
 msgid "Runlevel %d"
-msgstr "ක්‍රියා මට්ටම%d"
+msgstr "ධාවක මට්ටම %d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
-msgstr "දැනට ක්‍රියාත්මක වන ක්‍රියා මට්ටම:"
+msgstr "දැනට ක්‍රියාත්මක වන ධාවක මට්ටම:"
 
 #: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
-msgstr "ක්‍රියා මට්ටම සංශෝධනය කරන්න:"
+msgstr "ධාවක මට්ටම සංශෝධනය කරන්න:"
 
 #: ../src/serviceconf.py:418
 msgid "Unknown"
-msgstr "හඳුනා නොගත්"
+msgstr "හඳුනානොගත්"
 
 #: ../src/serviceconf.py:508
 msgid "All"
@@ -57,6 +57,14 @@ msgid ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
+"පද්ධතියේ සේවාවන් මානකරන මෙවලම, වෙළුම\n"
+" සියළුම හිමිකම් සමඟිනි Â© 2002-2006 Red Hat, Inc.\n"
+" ටිම් පවර්ස් <timp@redhat.com>\n"
+" බිල් නොටිංහැම් <notting@redhat.com>\n"
+" ඩෑන් වොල්ෂ් <dwalsh@redhat.com>\n"
+" බ්‍රෙන්ට් ෆොක්ස් <bfox@redhat.com>\n"
+" නිල්ස් ෆිලිප්සෙන් <nphilipp@redhat.com>\n"
+" "
 
 #: ../src/serviceconf.py:546
 msgid "About"
@@ -82,7 +90,7 @@ msgstr " සාර්ථකයි"
 #: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr ""
+msgstr "%s හට ක්‍රියා කිරීමට xinetd සක්‍රීය කලයුතු වේ"
 
 #: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
@@ -95,7 +103,7 @@ msgstr ". දෝශය වන්නේ: "
 #: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr ""
+msgstr "xinetd සාර්ථක ලෙස නැවත ඇතුල්කරනු ලැබීය %s"
 
 #: ../src/serviceconf.glade.h:1
 msgid "Add Service"
@@ -103,7 +111,7 @@ msgstr "සේවාව එකතු කරන්න"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
-msgstr "දැනට සක්‍රීය ක්‍රියා මට්ටම: "
+msgstr "දැනට සක්‍රීය ධාවක මට්ටම: "
 
 #: ../src/serviceconf.glade.h:3
 msgid "Delete Service"
@@ -111,15 +119,15 @@ msgstr "සේවාව මකා දමන්න"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
-msgstr ""
+msgstr "විස්තරය"
 
 #: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
-msgstr ""
+msgstr "සුරකින්න එපා"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
-msgstr "ක්‍රියා මට්ටම සංශෝධනය කරන්න:"
+msgstr "ධාවක මට්ටම සංශෝධනය කරන්න:"
 
 #: ../src/serviceconf.glade.h:7
 msgid "None"
@@ -131,23 +139,23 @@ msgstr "නැවත ආරම්භ කරන්න"
 
 #: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
-msgstr ""
+msgstr "පෙර සුරැකුම වෙත නැවත රැගෙන යන්න(_L)"
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
-msgstr ""
+msgstr "ධාවක මට්ටම (_3)"
 
 #: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
-msgstr ""
+msgstr "ධාවක මට්ටම(_4)"
 
 #: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
-msgstr ""
+msgstr "ධාවක මට්ටම(_5)"
 
 #: ../src/serviceconf.glade.h:13
 msgid "Runlevel _All"
-msgstr ""
+msgstr "ධාවක මට්ටම සියල්ල(_A)"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
@@ -155,7 +163,7 @@ msgstr "සේවාව නවත්වන්න(_t)"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "දෙබස සුරකින්න"
 
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
@@ -181,19 +189,21 @@ msgstr "නවත්වන්න"
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
+msgstr "මෙම සේවාවන් සම්බන්ධයෙන් සිදුකිරීමට කිසිවක් නොමැති අතර ආරම්භවනුයේ විමසා සිටින විට පමණි. මෙම සේවාවල භාවිතා කිරීම සඳහා <b>xinetd</b> සේවාව ක්‍රියාත්මකව පැවතිය යුතු වෙයි."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr ""
+msgstr "මෙම සේවාවන් එක් වරක් ආරම්භ වී පසුබිමේ ක්‍රියාත්මක වේ. මෙම සේවාවන් කිනම් ධාවක මට්ටමක ක්‍රියාත්මක විය යුතු දැයි ඔබ හට නියම කල හැක."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"වර්තමාන ධාවන මට්ටම මත ඔබ විසින් වෙනස්කම් සිදුකර ඇත.\n"
+"මෙම වෙනස්කම් සුරැකීමට ඔබට අවශ්‍යද?"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
@@ -209,7 +219,7 @@ msgstr "අන්තර්ගතයන්(_C)"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
-msgstr ""
+msgstr "ධාවන මට්ටම සංශෝධනය කරන්න(_E)"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
@@ -221,15 +231,15 @@ msgstr "උදව්(_H)"
 
 #: ../src/serviceconf.glade.h:31
 msgid "_On Demand Services"
-msgstr ""
+msgstr "විමසන විට ලබාදෙන සේවාවන්(_O)"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
-msgstr ""
+msgstr "නිම කරන්න(_Q)"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
-msgstr ""
+msgstr "සේවා ලයිස්තුව ප්‍රබෝධමත් කරන්න(_R)"
 
 #: ../src/serviceconf.glade.h:34
 msgid "_Restart Service"
@@ -237,7 +247,7 @@ msgstr "සේවාව නැවත ආරම්භ කරන්න(_R)"
 
 #: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
-msgstr ""
+msgstr "වෙනස්කම් ආර්ක්‍ෂා කරන්න(_S)"
 
 #: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
@@ -245,12 +255,12 @@ msgstr "සේවාව ආරම්භ කරන්න(_S)"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr ""
+msgstr "බලන්න(_V)"
 
 #: ../src/servicetab.glade.h:2
 #, no-c-format
 msgid "Current runlevel is %s"
-msgstr ""
+msgstr "වතමන් ධාවක මට්ටම වන්නේ %s"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
@@ -262,7 +272,7 @@ msgstr "සක්‍රීය කරන්න"
 
 #: ../src/servicetab.glade.h:5
 msgid "Runlevels"
-msgstr ""
+msgstr "ධාවක මට්ටම්"
 
 #: ../src/servicetab.glade.h:6
 msgid "Service control"
@@ -273,13 +283,12 @@ msgid "Start "
 msgstr "ආරම්භ කරන්න"
 
 #: ../src/servicetab.glade.h:8
-#, fuzzy
 msgid "Status output"
 msgstr "තත්ව ප්‍රතිදානය"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "පද්ධතිය ආරම්භයේදී ක්‍රියාත්මකව පැවතිය යුතු සේවාවන් මානකරන්න"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -288,3 +297,4 @@ msgstr "සේවා කළමණාකරනය"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "සේවාවන්"
+
