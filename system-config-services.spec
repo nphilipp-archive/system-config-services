@@ -1,7 +1,7 @@
 # -*- RPM-SPEC -*-
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.9.2
+Version: 0.9.3
 Release: 1%{?dist}
 URL: http://www.redhat.com/ 
 Source0: %{name}-%{version}.tar.bz2
@@ -76,6 +76,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Fri Nov 24 2006 Nils Philippsen <nphilipp@redhat.com> - 0.9.3
+- pick up updated translations (#216558)
+
 * Fri Oct 20 2006 Nils Philippsen <nphilipp@redhat.com> - 0.9.2
 - use intltool-extract for i18n of glade files (#211248) and desktop file
   (#207345)
