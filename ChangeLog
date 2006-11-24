@@ -1,3 +1,198 @@
+2006-11-24  nphilipp  <nphilipp@redhat.com>
+
+	* system-config-services.spec: pick up updated translations (#216558)
+
+2006-11-24  rranjan  <rranjan@redhat.com>
+
+	* po/hi.po: hindi proof
+
+2006-11-24  apeter  <apeter@redhat.com>
+
+	* po/ml.po: Updated malayalam file
+
+2006-11-24  aalam  <aalam@redhat.com>
+
+	* po/pa.po:
+	update translation for Punjabi (Gurmukhi) by apbrar gmail com
+
+2006-11-23  ifelix  <ifelix@redhat.com>
+
+	* po/ta.po: Fedora ta translation updated
+
+2006-11-23  rbhalera  <rbhalera@redhat.com>
+
+	* po/mr.po: Updated Marathi Translations
+
+2006-11-23  bershath  <bershath@redhat.com>
+
+	* po/si.po: translated
+
+2006-11-21  raven  <raven@redhat.com>
+
+	* po/pl.po: Updated Polish translation
+
+2006-11-21  arclynx  <arclynx@redhat.com>
+
+	* po/ms.po: Updated Malay translation
+
+2006-11-21  nphilipp  <nphilipp@redhat.com>
+
+	* po/as.po, po/bn_IN.po, po/da.po, po/de.po, po/es.po, po/fi.po, po/fr.po, po/gu.po, po/hi.po, po/hr.po, po/it.po, po/ja.po, po/ko.po, po/lv.po, po/ml.po, po/nb.po, po/or.po, po/pa.po, po/pl.po, po/pt_BR.po, po/ro.po, po/si.po, po/sr.po, po/sr@Latn.po, po/ta.po, po/te.po, po/tr.po:
+	make update-po
+
+2006-11-21  ccheng  <ccheng@redhat.com>
+
+	* po/zh_TW.po: routine merge
+
+2006-11-21  gatons  <gatons@redhat.com>
+
+	* po/lv.po: *** empty log message ***
+
+2006-11-20  bershath  <bershath@redhat.com>
+
+	* po/si.po: translated 50%
+
+2006-11-20  ltenn  <ltenn@redhat.com>
+
+	* po/zh_CN.po: Routine merge by l10n
+
+2006-11-19  kmaraas  <kmaraas@redhat.com>
+
+	* po/nb.po: Update norwegian bokmål translation
+
+2006-11-16  alexxed  <alexxed@redhat.com>
+
+	* po/ro.po: updated a few texts, corrected others for consistency
+
+2006-11-12  tombo  <tombo@redhat.com>
+
+	* po/it.po: updated 13 fuzzy and 16 untraslated
+
+2006-11-10  andrmart  <andrmart@redhat.com>
+
+	* po/ru.po: Updated translation after FC6 release
+
+2006-11-07  pve-nl  <pve-nl@redhat.com>
+
+	* po/nl.po: Some fixes for system-config-services nl.po
+
+2006-11-06  iasci  <iasci@redhat.com>
+
+	* po/tr.po: *** empty log message ***
+
+2006-11-02  raven  <raven@redhat.com>
+
+	* po/pl.po: Updated Polish translation
+
+2006-11-01  splinux  <splinux@redhat.com>
+
+	* po/fr.po: Updated french translation
+
+2006-11-01  eukim  <eukim@redhat.com>
+
+	* po/ko.po: Updated
+
+2006-10-31  noriko  <noriko@redhat.com>
+
+	* po/ja.po: updates translated
+
+2006-10-31  zyang  <zyang@redhat.com>
+
+	* po/zh_CN.po: *** empty log message ***
+
+2006-10-30  sganesh  <sganesh@redhat.com>
+
+	* po/te.po: Telugu translation commited
+
+2006-10-29  kmaraas  <kmaraas@redhat.com>
+
+	* po/nb.po: Update some
+
+2006-10-26  raada  <raada@redhat.com>
+
+	* po/sv.po: *** empty log message ***
+
+2006-10-25  amit  <amit@redhat.com>
+
+	* po/as.po: updated assamese system-config-services translation
+
+2006-10-25  apeter  <apeter@redhat.com>
+
+	* po/ml.po: Updated Malayalam file
+
+2006-10-24  runab  <runab@redhat.com>
+
+	* po/bn_IN.po: Updated Bengali India Translation:24/10
+
+2006-10-24  aalam  <aalam@redhat.com>
+
+	* po/pa.po: update for Punjabi by alam
+
+2006-10-24  trinks  <trinks@redhat.com>
+
+	* po/de.po: total:62 fuzzy:0 untranslated:0
+
+2006-10-23  rranjan  <rranjan@redhat.com>
+
+	* po/hi.po: hindi sys conf service trans udpate
+
+2006-10-23  ifelix  <ifelix@redhat.com>
+
+	* po/ta.po:
+	System config services and virt-manager modules are updated in tamil translation
+
+2006-10-22  tszanto  <tszanto@redhat.com>
+
+	* po/hu.po: *** empty log message ***
+
+2006-10-22  vpv  <vpv@redhat.com>
+
+	* po/fi.po: Updated Finnish translation
+
+2006-10-22  xconde  <xconde@redhat.com>
+
+	* po/ca.po: Updated by Xavier Conde
+
+2006-10-21  keldsim  <keldsim@redhat.com>
+
+	* po/da.po: updates
+	setuptool/da.po system-config-services/da.po
+
+2006-10-21  kmilos  <kmilos@redhat.com>
+
+	* po/sr@Latn.po, po/sr.po: *** empty log message ***
+
+2006-10-20  renato  <renato@redhat.com>
+
+	* po/hr.po: new lines
+
+2006-10-20  beckerde  <beckerde@redhat.com>
+
+	* po/es.po: listo
+
+2006-10-20  igor  <igor@redhat.com>
+
+	* po/pt_BR.po: *** empty log message ***
+
+2006-10-20  ankitp  <ankitp@redhat.com>
+
+	* po/gu.po: Updated Gujarati Translations
+
+2006-10-20  zepires  <zepires@redhat.com>
+
+	* po/pt.po: Finished  system-config-services
+
+2006-10-20  sbehera  <sbehera@redhat.com>
+
+	* po/or.po: Updated Oriya Translation
+
+2006-10-20  nphilipp  <nphilipp@redhat.com>
+
+	* ChangeLog: *** empty log message ***
+
+	* po/uk.po, po/ur.po, po/vi.po, po/zh_CN.po, po/zh_TW.po, po/my.po, po/nb.po, po/nl.po, po/no.po, po/or.po, po/pa.po, po/pl.po, po/pt.po, po/pt_BR.po, po/ro.po, po/ru.po, po/si.po, po/sk.po, po/sl.po, po/sq.po, po/sr.po, po/sr@Latn.po, po/sv.po, po/ta.po, po/te.po, po/tr.po, po/fa.po, po/fi.po, po/fr.po, po/gu.po, po/he.po, po/hi.po, po/hr.po, po/hu.po, po/hy.po, po/id.po, po/is.po, po/it.po, po/ja.po, po/ka.po, po/kn.po, po/ko.po, po/ku.po, po/lo.po, po/lt.po, po/lv.po, po/mk.po, po/ml.po, po/mr.po, po/ms.po, po/ar.po, po/as.po, po/bg.po, po/bn.po, po/bn_IN.po, po/bs.po, po/ca.po, po/cs.po, po/cy.po, po/da.po, po/de.po, po/el.po, po/en_GB.po, po/es.po, po/et.po, po/Makefile, po/system-config-services.gladestrings, po/system-config-services.pot, system-config-services.spec:
+	use intltool-extract for i18n of glade files (#211248) and desktop file (#207345)
+
 2006-10-20  nphilipp  <nphilipp@redhat.com>
 
 	* po/uk.po, po/ur.po, po/vi.po, po/zh_CN.po, po/zh_TW.po, po/my.po, po/nb.po, po/nl.po, po/no.po, po/or.po, po/pa.po, po/pl.po, po/pt.po, po/pt_BR.po, po/ro.po, po/ru.po, po/si.po, po/sk.po, po/sl.po, po/sq.po, po/sr.po, po/sr@Latn.po, po/sv.po, po/ta.po, po/te.po, po/tr.po, po/fa.po, po/fi.po, po/fr.po, po/gu.po, po/he.po, po/hi.po, po/hr.po, po/hu.po, po/hy.po, po/id.po, po/is.po, po/it.po, po/ja.po, po/ka.po, po/kn.po, po/ko.po, po/ku.po, po/lo.po, po/lt.po, po/lv.po, po/mk.po, po/ml.po, po/mr.po, po/ms.po, po/ar.po, po/as.po, po/bg.po, po/bn.po, po/bn_IN.po, po/bs.po, po/ca.po, po/cs.po, po/cy.po, po/da.po, po/de.po, po/el.po, po/en_GB.po, po/es.po, po/et.po, po/Makefile, po/system-config-services.gladestrings, po/system-config-services.pot, system-config-services.spec:
