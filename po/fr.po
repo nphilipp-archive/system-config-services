@@ -1,4 +1,4 @@
-# translation of fr.po to 
+# translation of fr.po to
 # translation of fr.po to
 # translation of fr.po to French
 # translation of fr.po to french
@@ -10,18 +10,20 @@
 # Philippe Villiers <kissifrot@gmail.com>, 2006.
 # Thomas Canniot <thomas.canniot@laposte.net>, 2006.
 # Damien Durand <splinux@fedoraproject.org>, 2006.
+# Decroux Fabien <fdecroux@redhat.com>, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-11-01 21:59+0100\n"
-"Last-Translator: Damien Durand <splinux@fedoraproject.org>\n"
-"Language-Team: French <fedora-trans-fr@redhat.com>\n"
+"PO-Revision-Date: 2006-11-28 10:43+1000\n"
+"Last-Translator: Decroux Fabien <fdecroux@redhat.com>\n"
+"Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
 
 #: ../src/serviceconf.py:76
 #, python-format
@@ -120,7 +122,7 @@ msgstr "Niveau d'exécution courant :"
 
 #: ../src/serviceconf.glade.h:3
 msgid "Delete Service"
-msgstr "Surpprimer le service"
+msgstr "Supprimer le service"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
@@ -160,11 +162,11 @@ msgstr "Niveau d'exécution _5"
 
 #: ../src/serviceconf.glade.h:13
 msgid "Runlevel _All"
-msgstr "Niveau d'exÃ©cution _Tous"
+msgstr "Niveau d'exécution _Tous"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
-msgstr "Arré_ter le service"
+msgstr "Arrê_ter le service"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
@@ -184,7 +186,7 @@ msgstr "Démarrer"
 
 #: ../src/serviceconf.glade.h:19
 msgid "Status"
-msgstr "Ãtat"
+msgstr "Status"
 
 #: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
@@ -195,8 +197,8 @@ msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
-"Ces services sont lancÃ©s Ã  la demande et se terminent lorsqu'il n'y a plus "
-"rien Ã  faire. Le service <b>xinetd</b> doit Ãªtre en cours d'exÃ©cution "
+"Ces services sont lancés à la demande et se terminent lorsqu'il n'y a plus "
+"rien à faire. Le service <b>xinetd</b> doit être en cours d'exécution "
 "pour pouvoir les utiliser."
 
 #: ../src/serviceconf.glade.h:22
@@ -204,15 +206,15 @@ msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
 msgstr ""
-"Ces services sont lancÃ©s une fois et exÃ©cutÃ©s en arriÃ¨re-plan. Vous "
-"pouvez spÃ©cifier dans quels niveaux d'exÃ©cution ils sont lancÃ©s."
+"Ces services sont lancés une fois et exécutés en arrière-plan. Vous "
+"pouvez spécifier dans quels niveaux d'exécution ils sont lancés."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
-"Vous avez effectuÃ© des modifications sur le niveau d'exÃ©cution en cours.\n"
+"Vous avez effectué des modifications sur le niveau d'exécution en cours.\n"
 "Voulez-vous sauvegarder ces modifications ?"
 
 #: ../src/serviceconf.glade.h:25
@@ -221,7 +223,7 @@ msgstr "_Actions"
 
 #: ../src/serviceconf.glade.h:26
 msgid "_Background Services"
-msgstr "Services d'_arriÃ¨re-plan"
+msgstr "Services d'_arrière-plan"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
@@ -298,7 +300,7 @@ msgstr "Statut de sortie"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "Configure quels services seront lancÃ©s au dÃ©marrage du systÃ¨me"
+msgstr "Configure quels services seront lancés au démarrage du système"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -308,59 +310,3 @@ msgstr "Gestion des Services"
 msgid "Services"
 msgstr "Services"
 
-#~ msgid "Start the selected service"
-#~ msgstr "Démarrer le service sélectionné"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "Arrêter le service sélectionné"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "Redémarrer le service sélectionné"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "Mettre à jour la liste des services"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "Enregistrer les changement que vous avez effectués"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Revenir à la dernière sauvegarde"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr ""
-#~ "Des actions comme démarrer, arrêter et redémarrer sur le service "
-#~ "sélectionné"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr ""
-#~ "Sélectionnez le niveau d'exécution (runlevel) que vous voulez éditer"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr ""
-#~ "Le niveau 3 est un mode multi-utilisateurs avec prise en charge réseau"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr ""
-#~ "Le niveau 4 est un mode d'exécution réservé à la personnalisation du "
-#~ "système, et n'est que peu utilisé."
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr ""
-#~ "Le niveau 5 est un mode d'exécution multi-utilisateur avec gestion du "
-#~ "réseau et X Windows"
-
-#~ msgid "Read Manual"
-#~ msgstr "Lire le manuel"
-
-#~ msgid "_Manual"
-#~ msgstr "_Manuel"
-
-#~ msgid "Save"
-#~ msgstr "Enregistrer"
-
-#~ msgid "Cancel"
-#~ msgstr "Annuler"
-
-#~ msgid "Exit"
-#~ msgstr "Quitter"
