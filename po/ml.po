@@ -304,4 +304,3 @@ msgstr "സര്‍വീസ് മാനേജ്മെന്‍റ്"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "സറ്‍വീസുകള്‍"
-

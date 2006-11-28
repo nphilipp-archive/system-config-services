@@ -240,8 +240,8 @@ msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
 msgstr ""
-"ਇਹ ਸੇਵਾਵਾਂ ਨੂੰ ਇੱਕ ਵਾਰ ਸ਼ੁਰੂ ਕੀਤਾ ਜਾਂਦਾ ਹੈ ਅਤੇ ਬੈਕਗਰਾਊਂਡ ਵਿੱਚ ਚਲਾਇਆ ਜਾਂਦਾ ਹੈ। ਤੁਸੀਂ ਉਹਨਾਂ "
-"ਦੇ ਚੱਲਣ ਸਮੇਂ ਰਨ-ਲੈਵਲ ਦੇ ਸਕਦੇ ਹੋ।"
+"ਇਹ ਸੇਵਾਵਾਂ ਨੂੰ ਇੱਕ ਵਾਰ ਸ਼ੁਰੂ ਕੀਤਾ ਜਾਂਦਾ ਹੈ ਅਤੇ ਬੈਕਗਰਾਊਂਡ ਵਿੱਚ ਚਲਾਇਆ ਜਾਂਦਾ ਹੈ। ਤੁਸੀਂ ਉਹਨਾਂ ਦੇ ਚੱਲਣ "
+"ਸਮੇਂ ਰਨ-ਲੈਵਲ ਦੇ ਸਕਦੇ ਹੋ।"
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -343,4 +343,3 @@ msgstr "ਸੇਵਾ ਪਰਬੰਧ"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "ਸੇਵਾਵਾਂ"
-
