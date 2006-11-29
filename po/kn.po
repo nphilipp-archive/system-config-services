@@ -1,48 +1,49 @@
-# SOME DESCRIPTIVE TITLE.
+# translation of system-config-services.po to kannada
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
+# shankar prasad <svenkate@redhat.com>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2006-11-29 15:30+0530\n"
+"Last-Translator: shankar prasad <svenkate@redhat.com>\n"
+"Language-Team: kannada <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../src/serviceconf.py:76
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "ನೀವು %s ಅನ್ನು ಖಚಿತವಾಗಿ ಅಳಿಸಬೇಕೆ?"
 
 #: ../src/serviceconf.py:139
 #, python-format
 msgid "Runlevel %d"
-msgstr ""
+msgstr "ರನ್ ಲೆವೆಲ್ %d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
-msgstr ""
+msgstr "ಸದ್ಯಕ್ಕೆ ರನ್ ಲೆವೆಲ್ ನಲ್ಲಿ ಚಾಲನೆಯಾಗುತ್ತಿದೆ: "
 
 #: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
-msgstr ""
+msgstr "ರನ್ ಲೆವೆಲ್ ಅನ್ನು ಸಂಪಾದಿಸುತ್ತಿದೆ:"
 
 #: ../src/serviceconf.py:418
 msgid "Unknown"
-msgstr ""
+msgstr "ಅಜ್ಞಾತ"
 
 #: ../src/serviceconf.py:508
 msgid "All"
-msgstr ""
+msgstr "ಎಲ್ಲಾ"
 
 #: ../src/serviceconf.py:542
 msgid ""
@@ -55,233 +56,246 @@ msgid ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
+"System Services Configuration Tool VERSION\n"
+" ಹಕ್ಕು Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
+" "
 
 #: ../src/serviceconf.py:546
 msgid "About"
-msgstr ""
+msgstr "ಕುರಿತು"
 
 #: ../src/serviceconf.py:575
 msgid "Help is not available."
-msgstr ""
+msgstr "ಸಹಾಯ ಲಭ್ಯವಿಲ್ಲ."
 
 #: ../src/serviceconf.py:714
 msgid "You must run system-config-services as root."
-msgstr ""
+msgstr "ನೀವು system-config-services ಮೂಲವಾಗಿ ಚಲಾಯಿಸಬೇಕು."
 
 #: ../src/servicemethods.py:229
 #, python-format
 msgid "%s failed. The error was: %s"
-msgstr ""
+msgstr "%s ವಿಫಲವಾಗಿದೆ. ದೋಷವು: %s ಆಗಿತ್ತು"
 
 #: ../src/servicemethods.py:235
 msgid " successful"
-msgstr ""
+msgstr " ಯಶಸ್ವಿಯಾಗಿದೆ"
 
 #: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr ""
+msgstr " %s ನ ಚಾಲನೆಗೆ xinetd ಶಕ್ತಗೊಂಡಿರಲೇ ಬೇಕು "
 
 #: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
-msgstr ""
+msgstr "ಗೆ xinetd ಮರುಹೇರಲು ಮಾಡಲು ವಿಫಲವಾಗಿದೆ "
 
 #: ../src/servicemethods.py:348
 msgid ". The error was: "
-msgstr ""
+msgstr ". ದೋಷವು ಇದಾಗಿತ್ತು: "
 
 #: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr ""
+msgstr " %s ಅನ್ನು xinetd ಯಶಸ್ವಿಯಾಗಿ ಮರುಲೋಡ್ ಮಾಡಿದೆ"
 
 #: ../src/serviceconf.glade.h:1
 msgid "Add Service"
-msgstr ""
+msgstr "ಸೇವೆಯನ್ನು ಸೇರಿಸಿ"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
-msgstr ""
+msgstr "ಪ್ರಸ್ತುತ ಚಾಲನೆಯಲ್ಲಿರುವ ರನ್ ಲೆವೆಲ್: "
 
 #: ../src/serviceconf.glade.h:3
 msgid "Delete Service"
-msgstr ""
+msgstr "ಸೇವೆಯನ್ನು ಅಳಿಸು"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
-msgstr ""
+msgstr "ವಿವರಣೆ"
 
 #: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
-msgstr ""
+msgstr "ಉಳಿಸ ಬೇಡ"
 
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
-msgstr ""
+msgstr "ರನ್ ಲೆವೆಲ್ ಅನ್ನು ಸಂಪಾದಿಸು:"
 
 #: ../src/serviceconf.glade.h:7
 msgid "None"
-msgstr ""
+msgstr "ಯಾವುದೂ ಅಲ್ಲ"
 
 #: ../src/serviceconf.glade.h:8
 msgid "Restart"
-msgstr ""
+msgstr "ಪುನಃ ಪ್ರಾರಂಭಿಸು"
 
 #: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
-msgstr ""
+msgstr "ಹಿಂದಿನ ಉಳಿಕೆಗೆ ತೆರಳು (_L)"
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
-msgstr ""
+msgstr "ರನ್ ಲೆವೆಲ್ _3"
 
 #: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
-msgstr ""
+msgstr "ರನ್ ಲೆವೆಲ್ _4"
 
 #: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
-msgstr ""
+msgstr "ರನ್ ಲೆವೆಲ್ _5"
 
 #: ../src/serviceconf.glade.h:13
 msgid "Runlevel _All"
-msgstr ""
+msgstr "ಎಲ್ಲಾ ರನ್ ಲೆವೆಲ್ (_A)"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
-msgstr ""
+msgstr "ಸೇವೆಯನ್ನು ತಡೆಹಿಡಿ (_t)"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "ಸಂವಾದವನ್ನು ಉಳಿಸು"
 
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
-msgstr ""
+msgstr "ಸೇವೆಯ ಸ್ವರೂಪ"
 
 #: ../src/serviceconf.glade.h:17
 msgid "Service Name: "
-msgstr ""
+msgstr "ಸೇವೆಯ ಹೆಸರು: "
 
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
-msgstr ""
+msgstr "ಪ್ರಾರಂಭಿಸು"
 
 #: ../src/serviceconf.glade.h:19
 msgid "Status"
-msgstr ""
+msgstr "ಸ್ಥಿತಿ"
 
 #: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
-msgstr ""
+msgstr "ತಡೆಹಿಡಿ"
 
 #: ../src/serviceconf.glade.h:21
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
+"ಬೇಡಿಕೆಗನುಗುಣವಾಗ ಈ ಸೇವೆಗಳು ಪ್ರಾರಂಭವಾಗಿವೆ ಹಾಗೂ ಮಾಡಲು ಕೆಲಸವೇನೂ ಇಲ್ಲವಾದಾಗ ಕೊನೆಗೊಳ್ಳುತ್ತವೆ."
+"<b>xinetd</b> ಸೇವೆಗಳನ್ನು ಉಪಯೋಗಿಸ ಬೇಕೆಂದರೆ ಅವುುಚಾುವಂತೆ ಚಾಲನೆಲ್ಲಿರಲೇ ಬೇಕು ."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
-msgstr ""
+msgstr "ಈ ಸೇವೆಗಳು ಒಮ್ಮೆ ಪ್ರಾರಂಭಗೊಂಡು ಹಿನ್ನಲೆಯದಲ್ಲಿ ಚಾಲನೆಯಲ್ಲಿರುತ್ತವೆ.ಯಾವ ರನ್ ಲೆವೆಲ್ ನಲ್ಲಿ ಅವು ಪ್ರಾರಂಭಗೊಂಡಿವೆ ಎಂಬುದನ್ನು ನೀವು ಖಚಿತ ಪಡಿಸಬಹುದು."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"ನೀವು ಪ್ರಸ್ತುತ ರನ್ ಲೆವೆಲ್ ಗೆ ಬದಲಾವಣೆಗಳನ್ನು ಮಾಡಿದ್ದೀರಿ.\n"
+"ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸ ಬೇಕೇ?"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
-msgstr ""
+msgstr "ಕ್ರಿಯೆಗಳು (_A)"
 
 #: ../src/serviceconf.glade.h:26
 msgid "_Background Services"
-msgstr ""
+msgstr "ಹಿನ್ನಲೆಯ ಸೇವೆಗಳು (_B)"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr ""
+msgstr "ಅನುಕ್ರಮಗಳು (_C)"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
-msgstr ""
+msgstr "ರನ್ ಲೆವೆಲ್ ಅನ್ನು ಸಂಪಾದಿಸು (_E)"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr ""
+msgstr "ಕಡತ (_F)"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr ""
+msgstr "ಸಹಾಯ (_H)"
 
 #: ../src/serviceconf.glade.h:31
 msgid "_On Demand Services"
-msgstr ""
+msgstr "ಬೇಡಿಕೆಗನುಗುಣವಾದ ಸೇವೆಗಳು (_O)"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
-msgstr ""
+msgstr "ಬಿಟ್ಟು ಬಿಡು (_Q)"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
-msgstr ""
+msgstr "ಸೇವಾ ಪಟ್ಟಿಯನ್ನು ಪುನ್ಶೇತನಗೂಳಿಸು (_R)"
 
 #: ../src/serviceconf.glade.h:34
 msgid "_Restart Service"
-msgstr ""
+msgstr "ಸೇವೆಯನ್ನು ಪುನಃ ಪ್ರಾರಂಭಿಸು (_R)"
 
 #: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
-msgstr ""
+msgstr "ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸು (_S)"
 
 #: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
-msgstr ""
+msgstr "ಸೇವೆಯನ್ನು ಪ್ರಾರಂಭಿಸು (_S)"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr ""
+msgstr "ವೀಕ್ಷಿಸು (_V)"
 
 #: ../src/servicetab.glade.h:2
 #, no-c-format
 msgid "Current runlevel is %s"
-msgstr ""
+msgstr "ಪ್ರಸ್ತುತ ರನ್ ಲೆವೆಲ್ %s"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "ಅನಹ೯ಗೊಳಿಸು"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "ಶಕ್ತಗೊಳಿಸು"
 
 #: ../src/servicetab.glade.h:5
 msgid "Runlevels"
-msgstr ""
+msgstr "ರನ್ ಲೆವೆಲ್ ಗಳು"
 
 #: ../src/servicetab.glade.h:6
 msgid "Service control"
-msgstr ""
+msgstr "ಸೇವೆಯ ನಿಯಂತ್ರಣ"
 
 #: ../src/servicetab.glade.h:7
 msgid "Start "
-msgstr ""
+msgstr "ಪ್ರಾರಂಭಿಸು "
 
 #: ../src/servicetab.glade.h:8
 msgid "Status output"
-msgstr ""
+msgstr "ಸ್ಥಿತಿ ಉತ್ಪತ್ತಿ"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "ವ್ಯವಸ್ಥೆ ಪ್ರಾರಂಭಗೊಂಡಾಗ ಯಾವ ಯಾವ ಸೇವೆಗಳು ಚಾಲನೆಯಲ್ಲಿರ ಬೇಕು ಎಂಬುದನ್ನು ರೂಪಿಸಿ."
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr ""
+msgstr "ಸೇವೆಯ ನಿರ್ವಹಣೆ"
 
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
-msgstr ""
+msgstr "ಸೇವೆಗಳು"
+
