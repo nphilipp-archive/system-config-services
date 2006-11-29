@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-11-29 15:30+0530\n"
+"PO-Revision-Date: 2006-11-29 15:38+0530\n"
 "Last-Translator: shankar prasad <svenkate@redhat.com>\n"
 "Language-Team: kannada <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,7 @@ msgstr "ಸದ್ಯಕ್ಕೆ ರನ್ ಲೆವೆಲ್ ನಲ್ಲಿ �
 
 #: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
-msgstr "ರನ್ ಲೆವೆಲ್ ಅನ್ನು ಸಂಪಾದಿಸುತ್ತಿದೆ:"
+msgstr "ರನ್ ಲೆವೆಲ್ ಅನ್ನು ಸಂಪಾದಿಸುತ್ತಿದೆ: "
 
 #: ../src/serviceconf.py:418
 msgid "Unknown"
@@ -289,7 +289,7 @@ msgstr "ಸ್ಥಿತಿ ಉತ್ಪತ್ತಿ"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "ವ್ಯವಸ್ಥೆ ಪ್ರಾರಂಭಗೊಂಡಾಗ ಯಾವ ಯಾವ ಸೇವೆಗಳು ಚಾಲನೆಯಲ್ಲಿರ ಬೇಕು ಎಂಬುದನ್ನು ರೂಪಿಸಿ."
+msgstr "ವ್ಯವಸ್ಥೆ ಪ್ರಾರಂಭಗೊಂಡಾಗ ಯಾವ ಯಾವ ಸೇವೆಗಳು ಚಾಲನೆಯಲ್ಲಿರ ಬೇಕು ಎಂಬುದನ್ನು ರೂಪಿಸಿ"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
