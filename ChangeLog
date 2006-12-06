@@ -1,3 +1,58 @@
+2006-12-06  Unknown  <harald@redhat.com>
+
+	* src/servicemethods.py, system-config-services.spec:
+	- fixed service start/stop (#218429)
+	- translation update (#216558)
+	- Resolves: rhbz#216558, rhbz#218429
+
+2006-11-29  mrtom  <mrtom@redhat.com>
+
+	* po/fr.po: translation updated
+
+2006-11-29  svenkate  <svenkate@redhat.com>
+
+	* po/kn.po: kannada translation updation
+
+2006-11-28  ccheng  <ccheng@redhat.com>
+
+	* po/hi.po, po/ml.po, po/mr.po, po/pa.po, po/si.po, po/ta.po:
+	Routine merge
+
+2006-11-28  fdecroux  <fdecroux@redhat.com>
+
+	* po/fr.po: Updated
+
+2006-11-27  rranjan  <rranjan@redhat.com>
+
+	* po/hi.po: hindi proof
+
+2006-11-27  runab  <runab@redhat.com>
+
+	* po/messages.mo: Removing file messages.mo:27/11
+
+2006-11-25  vpv  <vpv@redhat.com>
+
+	* po/fi.po: Updated Finnish translation
+
+2006-11-24  nphilipp  <nphilipp@redhat.com>
+
+	* ChangeLog: *** empty log message ***
+
+	* system-config-services.spec: pick up updated translations (#216558)
+
+2006-11-24  rranjan  <rranjan@redhat.com>
+
+	* po/hi.po: hindi proof
+
+2006-11-24  apeter  <apeter@redhat.com>
+
+	* po/ml.po: Updated malayalam file
+
+2006-11-24  aalam  <aalam@redhat.com>
+
+	* po/pa.po:
+	update translation for Punjabi (Gurmukhi) by apbrar gmail com
+
 2006-11-24  nphilipp  <nphilipp@redhat.com>
 
 	* system-config-services.spec: pick up updated translations (#216558)
