@@ -223,11 +223,11 @@ class Service:
                                           self.uicallback)
 
         if status != 0:
-            if action in ('start', 'restart', 'reload',  'conrestart'):
+            if action in ('start', 'restart', 'reload',  'condrestart'):
                 self.status =  ERROR
                 self.message = message
             return (1, _("%s failed. The error was: %s") %
-                    (servicename, message))
+                    (self.name, message))
         else:
             self.status, self.status_message = self.get_status()
             self._dirty = False
