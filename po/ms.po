@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-11-22 00:51+0800\n"
+"PO-Revision-Date: 2007-01-18 23:22+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -264,7 +264,7 @@ msgstr "_Lihat"
 #: ../src/servicetab.glade.h:2
 #, fuzzy, no-c-format
 msgid "Current runlevel is %s"
-msgstr "Runlevel Aktif Samasa:"
+msgstr "Kala semasa adalah %1."
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
@@ -279,21 +279,18 @@ msgid "Runlevels"
 msgstr "Runlevel"
 
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
-msgstr "Pusat Kawalan"
+msgstr "Kawalan servis"
 
 #: ../src/servicetab.glade.h:7
 msgid "Start "
 msgstr "Mula"
 
 #: ../src/servicetab.glade.h:8
-#, fuzzy
 msgid "Status output"
-msgstr "Fail output:"
+msgstr "Keluaran status"
 
 #: ../system-config-services.desktop.in.h:1
-#, fuzzy
 msgid "Configure which services will be running when the system starts"
 msgstr "Tetapkan servis mana yang akan dilaksanakan ketika sistem bermula"
 
