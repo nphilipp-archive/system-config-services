@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2007-01-21 02:52+0800\n"
+"PO-Revision-Date: 2007-01-22 01:39+0800\n"
 "Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
 "Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -188,7 +188,7 @@ msgstr "Henti"
 
 #: ../src/serviceconf.glade.h:21
 msgid "These services are started on demand and end when there is nothing more to do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
+msgstr "Servis ini dimulakan apabila diminta dan berakhir apabila tiada lagi apa-apa untuk dilakukan. Servis <b>xinetd</b> mestilah dilaksanakan supaya ia boleh digunakan."
 
 #: ../src/serviceconf.glade.h:22
 msgid "These services are started once and run in the background. You can specify in which runlevels they are started."
