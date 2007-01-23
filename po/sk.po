@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-09-06 21:51+0100\n"
+"PO-Revision-Date: 2007-01-23 01:07+0100\n"
 "Last-Translator: Mike Karas <zoliqe@gmail.com>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
 "MIME-Version: 1.0\n"
@@ -31,7 +31,8 @@ msgstr "Úroveň behu %d"
 msgid "Currently Running in Runlevel: "
 msgstr "Aktuálne spustená úroveň behu: "
 
-#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
+#: ../src/serviceconf.py:376
+#: ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "Úprava úrovne behu: "
 
@@ -84,7 +85,8 @@ msgstr "%s zlyhalo. Chyba bola: %s"
 msgid " successful"
 msgstr " úspešné"
 
-#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
+#: ../src/servicemethods.py:341
+#: ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd musí byť povolený pre %s na spustenie"
@@ -111,9 +113,8 @@ msgid "Current Active Runlevel: "
 msgstr "Aktuálna aktívna úroveň behu: "
 
 #: ../src/serviceconf.glade.h:3
-#, fuzzy
 msgid "Delete Service"
-msgstr "_Reštartovať službu"
+msgstr "Odstrániť službu"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
@@ -136,9 +137,8 @@ msgid "Restart"
 msgstr "Reštart"
 
 #: ../src/serviceconf.glade.h:9
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "V_rátiť sa k naposledy uloženému"
+msgstr "Vrátiť sa k napos_ledy uloženému"
 
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
@@ -180,21 +180,18 @@ msgstr "Spustiť"
 msgid "Status"
 msgstr "Stav"
 
-#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
+#: ../src/serviceconf.glade.h:20
+#: ../src/servicetab.glade.h:9
 msgid "Stop"
 msgstr "Zastaviť"
 
 #: ../src/serviceconf.glade.h:21
-msgid ""
-"These services are started on demand and end when there is nothing more to "
-"do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
+msgid "These services are started on demand and end when there is nothing more to do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr "Tieto služby sa spúšťajú na požiadanie a po spracovaní úlohy sa ukončia. Na to, aby mohli byť použité je potrebné mať spustenú službu <b>xinetd</b>."
 
 #: ../src/serviceconf.glade.h:22
-msgid ""
-"These services are started once and run in the background. You can specify "
-"in which runlevels they are started."
-msgstr ""
+msgid "These services are started once and run in the background. You can specify in which runlevels they are started."
+msgstr "Tieto služby sa spúšťajú raz a bežia na pozadí. Môžete určiť, v ktorých úrovniach behu sa budú spúšťať."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -209,9 +206,8 @@ msgid "_Actions"
 msgstr "_Akcie"
 
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "_Spustiť službu"
+msgstr "Služ_by na pozadí"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
@@ -230,14 +226,12 @@ msgid "_Help"
 msgstr "_Pomocník"
 
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "_Reštartovať službu"
+msgstr "Služby na p_ožiadanie"
 
 #: ../src/serviceconf.glade.h:32
-#, fuzzy
 msgid "_Quit"
-msgstr "Koniec"
+msgstr "_Koniec"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
@@ -260,37 +254,33 @@ msgid "_View"
 msgstr "_Zobraziť"
 
 #: ../src/servicetab.glade.h:2
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current runlevel is %s"
-msgstr "Aktuálna aktívna úroveň behu: "
+msgstr "Súčasná úroveň behu je %s"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "Zakázať"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "Povoliť"
 
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "Úroveň behu %d"
+msgstr "Úrovne behu"
 
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
-msgstr "Konfigurácia služby"
+msgstr "Ovládanie služby"
 
 #: ../src/servicetab.glade.h:7
-#, fuzzy
 msgid "Start "
 msgstr "Spustiť"
 
 #: ../src/servicetab.glade.h:8
-#, fuzzy
 msgid "Status output"
-msgstr "Stav"
+msgstr "Stav - výstup"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -306,54 +296,38 @@ msgstr "Služby"
 
 #~ msgid "Start the selected service"
 #~ msgstr "Spustiť zvolenú službu"
-
 #~ msgid "Stop the selected service"
 #~ msgstr "Zastaviť zvolenú službu"
-
 #~ msgid "Restart the selected service"
 #~ msgstr "Reštartovať zvolenú službu"
-
 #~ msgid "Refresh the list of services"
 #~ msgstr "Obnoviť zoznam služieb"
-
 #~ msgid "Save the changes you have made"
 #~ msgstr "Uložiť zmeny, ktoré ste vykonali"
-
 #~ msgid "Revert to the last saved change"
 #~ msgstr "Vrátiť sa k naposledy uloženej zmene"
-
 #~ msgid "Actions such as start, stop, and restart on the selected service"
 #~ msgstr "Akcie ako štart, stop a reštart na zvolenej službe"
-
 #~ msgid "Select the runlevel you would like to edit"
 #~ msgstr "Zvoľte úroveň behu, ktorú chcete upraviť"
-
 #~ msgid "Runlevel 3 is multiuser mode with networking"
 #~ msgstr "Úroveň behu 3 je viacužívateľský režim so sieťovaním"
-
 #~ msgid ""
 #~ "Runlevel 4 is reserved for local customization, and is not usually used"
 #~ msgstr ""
 #~ "Úroveň behu 4 je vyhradená pre lokálne úpravy a bežne nie je využívaná"
-
 #~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
 #~ msgstr "Úroveň behu 5 je viacužívateľský režim so sieťovaním a X Windows"
-
 #~ msgid "Read Manual"
 #~ msgstr "Čítať návod"
-
 #~ msgid "_Manual"
 #~ msgstr "Ná_vod"
-
 #~ msgid "Save"
 #~ msgstr "Uložiť"
-
 #~ msgid "Cancel"
 #~ msgstr "Zrušiť"
-
 #~ msgid "Exit"
 #~ msgstr "Koniec"
-
 #~ msgid ""
 #~ "\n"
 #~ "\n"
@@ -362,6 +336,6 @@ msgstr "Služby"
 #~ "\n"
 #~ "\n"
 #~ "xinetd je vyžadovaný pre túto službu."
-
 #~ msgid "*"
 #~ msgstr "*"
+
