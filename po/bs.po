@@ -1,51 +1,47 @@
-# Bosnian translation..
-# Copyright (C) 2001. Free Software Foundation, Inc.
-# Semir MujkiĂŚ <robijas@hotpop.com>, 2001.
-# 
+# translation of bs.po to Bosnian
+# Adnan Hodzic <AbsintheSyringe@gmail.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: desktop files\n"
+"Project-Id-Version: bs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2001-09-09 18:28GMT\n"
-"Last-Translator: Amila AkagiĂŚ <bono@lugbih.org>\n"
-"Language-Team: Bosnian <lokal-subscribe@lugbih.org>\n"
+"PO-Revision-Date: 2007-01-24 17:34+0100\n"
+"Last-Translator: Adnan Hodzic <AbsintheSyringe@gmail.com>\n"
+"Language-Team: Bosnian <lokal@linux.org.ba>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 0.9.1\n"
+"X-Generator: KBabel 1.11.4\n"
+"X-Poedit-Language: Bosnian\n"
+"X-Poedit-Country: BOSNIA\n"
 
 #: ../src/serviceconf.py:76
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr ""
+msgstr "Jeste li sigurni ste da želite izbrisati %s?"
 
-# serviceconf.gladestrings:32
 #: ../src/serviceconf.py:139
-#, fuzzy, python-format
+#, python-format
 msgid "Runlevel %d"
-msgstr "Runlevel _3"
+msgstr "Razina pokretanja %d"
 
-# ../serviceconf.py:134
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:280
 msgid "Currently Running in Runlevel: "
-msgstr "Trenutno podiÂžem u runlevel-u: "
+msgstr "Trenutno pokrenuto u razini pokretanja: "
 
-# ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
-# ../serviceconf.py:296
 #: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
-msgstr "UreĂ°ujem runlevel: "
+msgstr "Uređivanje razine pokretanja: "
 
 #: ../src/serviceconf.py:418
 msgid "Unknown"
-msgstr ""
+msgstr "Nepoznato"
 
 #: ../src/serviceconf.py:508
 msgid "All"
-msgstr ""
+msgstr "Sve"
 
 #: ../src/serviceconf.py:542
 msgid ""
@@ -58,153 +54,130 @@ msgid ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
+"Konfiguracijski alat usluga sistema VERZIJA\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
+" "
 
 #: ../src/serviceconf.py:546
 msgid "About"
-msgstr ""
+msgstr "O programu"
 
 #: ../src/serviceconf.py:575
 msgid "Help is not available."
-msgstr ""
+msgstr "Pomoć nije dostupna."
 
-# ../serviceconf.py:432
 #: ../src/serviceconf.py:714
-#, fuzzy
 msgid "You must run system-config-services as root."
-msgstr "Morate pokrenuti serviceconf kao root."
+msgstr "system-config-services morate pokrenuti kao korijenski korisnik."
 
-# ../servicemethods.py:318
 #: ../src/servicemethods.py:229
-#, fuzzy, python-format
+#, python-format
 msgid "%s failed. The error was: %s"
-msgstr "%s nije uspio da %s. GreÂška je bila: %s"
+msgstr "%s nije uspio. Pogreška je bila: %s"
 
-# ../servicemethods.py:320
 #: ../src/servicemethods.py:235
 msgid " successful"
-msgstr " uspjeÂšno"
+msgstr " uspješno"
 
-# ../servicemethods.py:313
 #: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
-msgstr "xinetd mora biti omoguĂŚen za %s da bi se pokrenuo"
+msgstr "xinetd mora biti omogućen za pokretanje %s"
 
-# ../servicemethods.py:307
 #: ../src/servicemethods.py:346
 msgid "xinetd failed to reload for "
-msgstr "xinetd se nije uspio ponovo uĂ¨itati za "
+msgstr "xinetd nije uspio ponovo učitati za "
 
-# ../servicemethods.py:308
 #: ../src/servicemethods.py:348
 msgid ". The error was: "
-msgstr ". GreÂška je bila: "
+msgstr ". Pogreška je bila: "
 
-# ../servicemethods.py:310
 #: ../src/servicemethods.py:350
 #, python-format
 msgid "xinetd reloaded %s successfully"
-msgstr "xinetd ponovo uĂ¨itan %s uspjeÂšno"
+msgstr "xinetd uspješno je ponovo učitao %s"
 
-# ../serviceconf.py:144
 #: ../src/serviceconf.glade.h:1
-#, fuzzy
 msgid "Add Service"
-msgstr "Servisi"
+msgstr "Dodaj uslugu"
 
-# serviceconf.gladestrings:51
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
-msgstr "Trenutni aktivni runlevel: "
+msgstr "Trenutno aktivno u razini pokretanja: "
 
-# serviceconf.gladestrings:26
 #: ../src/serviceconf.glade.h:3
-#, fuzzy
 msgid "Delete Service"
-msgstr "Zaus_tavi servis"
+msgstr "Izbriši uslugu"
 
 #: ../src/serviceconf.glade.h:4
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
 #: ../src/serviceconf.glade.h:5
 msgid "Don't Save"
-msgstr ""
+msgstr "Ne spremaj"
 
-# serviceconf.gladestrings:52
 #: ../src/serviceconf.glade.h:6
 msgid "Editing Runlevel:"
-msgstr "UreĂ°ujem runlevel:"
+msgstr "Uređivanje razine pokretanja:"
 
-# serviceconf.gladestrings:7
 #: ../src/serviceconf.glade.h:7
 msgid "None"
-msgstr "NiÂšta"
+msgstr "Niti jedan"
 
-# serviceconf.gladestrings:13 serviceconf.gladestrings:50
 #: ../src/serviceconf.glade.h:8
 msgid "Restart"
-msgstr "Ponovo pokreni"
+msgstr "Ponovo pokreni "
 
-# serviceconf.gladestrings:20
 #: ../src/serviceconf.glade.h:9
-#, fuzzy
 msgid "Revert To _Last Save"
-msgstr "_Vrati na posljednju promjenu"
+msgstr "Vrati na _posljednje spremljeno"
 
-# serviceconf.gladestrings:32
 #: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
-msgstr "Runlevel _3"
+msgstr "Razina pokretanja _3"
 
-# serviceconf.gladestrings:34
 #: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
-msgstr "Runlevel _4"
+msgstr "Razina pokretanja _4"
 
-# serviceconf.gladestrings:36
 #: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
-msgstr "Runlevel _5"
+msgstr "Razina pokretanja _5"
 
-# serviceconf.gladestrings:32
 #: ../src/serviceconf.glade.h:13
-#, fuzzy
 msgid "Runlevel _All"
-msgstr "Runlevel _3"
+msgstr "Razina pokretanja _sve"
 
-# serviceconf.gladestrings:26
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
-msgstr "Zaus_tavi servis"
+msgstr "_Zaustavi uslugu"
 
 #: ../src/serviceconf.glade.h:15
 msgid "Save Dialog"
-msgstr ""
+msgstr "Dijalog spremanja"
 
-# serviceconf.gladestrings:14
 #: ../src/serviceconf.glade.h:16
 msgid "Service Configuration"
-msgstr "Konfiguracija servisa"
+msgstr "Konfiguracija usluge"
 
-# ../serviceconf.py:144
 #: ../src/serviceconf.glade.h:17
-#, fuzzy
 msgid "Service Name: "
-msgstr "Servisi"
+msgstr "Naziv usluge:"
 
-# serviceconf.gladestrings:9 serviceconf.gladestrings:46
 #: ../src/serviceconf.glade.h:18
 msgid "Start"
-msgstr "Pokreni"
+msgstr "Započni"
 
-# serviceconf.gladestrings:9 serviceconf.gladestrings:46
 #: ../src/serviceconf.glade.h:19
-#, fuzzy
 msgid "Status"
-msgstr "Pokreni"
+msgstr "Stanje"
 
-# serviceconf.gladestrings:11 serviceconf.gladestrings:48
 #: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
 msgstr "Zaustavi"
@@ -214,261 +187,115 @@ msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
+"Ove se usluge pokreću na zahtjev i zaustavljaju kad nema daljnjih zadataka. "
+"Da bi se mogle upotrebljavati, usluga <b>xinetd</b> mora biti pokrenutom."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
 "These services are started once and run in the background. You can specify "
 "in which runlevels they are started."
 msgstr ""
+"Ove se usluge pokreću na jedanput i izvršavaju u pozadini. Možete odrediti "
+"na kojoj će razini pokretanja započeti s radom."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
+"Unijeli ste izmjene u trenutnu razinu pokretanja.\n"
+"Želite li spremiti izmjene?"
 
-# serviceconf.gladestrings:22
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
-msgstr "_Akcije"
+msgstr "_Aktivnosti"
 
-# serviceconf.gladestrings:24
 #: ../src/serviceconf.glade.h:26
-#, fuzzy
 msgid "_Background Services"
-msgstr "_Pokreni servis"
+msgstr "Po_zadinske usluge"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr ""
+msgstr "_Sadržaji"
 
-# serviceconf.gladestrings:30
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
-msgstr "_Uredi runlevel"
+msgstr "_Uredi razinu pokretanja"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr ""
+msgstr "_Datoteka"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr ""
+msgstr "_Pomoć"
 
-# serviceconf.gladestrings:28
 #: ../src/serviceconf.glade.h:31
-#, fuzzy
 msgid "_On Demand Services"
-msgstr "_Ponovo pokreni servis"
+msgstr "_Usluge na zahtjev"
 
-# serviceconf.gladestrings:43
 #: ../src/serviceconf.glade.h:32
-#, fuzzy
 msgid "_Quit"
-msgstr "ZavrÂši"
+msgstr "_Izlaz"
 
-# serviceconf.gladestrings:16
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
-msgstr "_OsvjeÂži listu servisa"
+msgstr "_Osvježi popis usluga"
 
-# serviceconf.gladestrings:28
 #: ../src/serviceconf.glade.h:34
 msgid "_Restart Service"
-msgstr "_Ponovo pokreni servis"
+msgstr "_Ponovo pokreni uslugu"
 
-# serviceconf.gladestrings:18
 #: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
-msgstr "_SaĂ¨uvaj promjene"
+msgstr "_Spremi izmjene"
 
-# serviceconf.gladestrings:24
 #: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
-msgstr "_Pokreni servis"
+msgstr "_Pokreni uslugu"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
-msgstr ""
+msgstr "_Prikaz"
 
-# serviceconf.gladestrings:51
 #: ../src/servicetab.glade.h:2
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "Current runlevel is %s"
-msgstr "Trenutni aktivni runlevel: "
+msgstr "Trenutno aktivno u razini pokretanja je %s"
 
 #: ../src/servicetab.glade.h:3
 msgid "Disable"
-msgstr ""
+msgstr "Onemogući"
 
 #: ../src/servicetab.glade.h:4
 msgid "Enable"
-msgstr ""
+msgstr "Omogući"
 
-# serviceconf.gladestrings:32
 #: ../src/servicetab.glade.h:5
-#, fuzzy
 msgid "Runlevels"
-msgstr "Runlevel _3"
+msgstr "Razine pokretanja"
 
-# serviceconf.gladestrings:14
 #: ../src/servicetab.glade.h:6
-#, fuzzy
 msgid "Service control"
-msgstr "Konfiguracija servisa"
+msgstr "Upravljanje usluge"
 
-# serviceconf.gladestrings:9 serviceconf.gladestrings:46
 #: ../src/servicetab.glade.h:7
-#, fuzzy
 msgid "Start "
 msgstr "Pokreni"
 
-# serviceconf.gladestrings:9 serviceconf.gladestrings:46
 #: ../src/servicetab.glade.h:8
-#, fuzzy
 msgid "Status output"
-msgstr "Pokreni"
+msgstr "Ispis stanja"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
+msgstr "Konfiguriranje usluga koje će biti pokrenute tijekom pokretanja sistema"
 
-# ../serviceconf.py:144
 #: ../system-config-services.desktop.in.h:2
-#, fuzzy
 msgid "Service Management"
-msgstr "Servisi"
+msgstr "Upravljanje uslugom"
 
-# ../serviceconf.py:144
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
-msgstr "Servisi"
+msgstr "Usluge"
 
-# serviceconf.gladestrings:8 serviceconf.gladestrings:23
-# serviceconf.gladestrings:45
-#~ msgid "Start the selected service"
-#~ msgstr "Pokreni izabrani servis"
-
-# serviceconf.gladestrings:10 serviceconf.gladestrings:25
-# serviceconf.gladestrings:47
-#~ msgid "Stop the selected service"
-#~ msgstr "Zaustavi izabrani servis"
-
-# serviceconf.gladestrings:12 serviceconf.gladestrings:27
-# serviceconf.gladestrings:49
-#~ msgid "Restart the selected service"
-#~ msgstr "Ponovo pokreni izabrani servis"
-
-# serviceconf.gladestrings:15
-#~ msgid "Refresh the list of services"
-#~ msgstr "OsvjeÂži listu servisa"
-
-# serviceconf.gladestrings:17 serviceconf.gladestrings:39
-#~ msgid "Save the changes you have made"
-#~ msgstr "SaĂ¨uvaj promjene koje ste napravili"
-
-# serviceconf.gladestrings:19 serviceconf.gladestrings:41
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Vrati na posljednju snimljenu promjenu"
-
-# serviceconf.gladestrings:21
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr ""
-#~ "Akcije kao Âšto su pokreni, zaustavi i ponovo pokreni na izabranom servisu"
-
-# serviceconf.gladestrings:29
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Izaberite runlevel koji Âželite urediti"
-
-# serviceconf.gladestrings:31
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "Runlevel 3 je multikorisniĂ¨ki metod sa mreÂžom"
-
-# serviceconf.gladestrings:33
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr ""
-#~ "Runlevel 4 je rezervisan za lokalno prilagoĂ°avanje i nije Ă¨esto "
-#~ "koriÂšten"
-
-# serviceconf.gladestrings:35
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr "Runlevel 5 je multikorisniĂ¨ki metod sa mreÂžom i X Windows-om"
-
-# serviceconf.gladestrings:37
-#~ msgid "Read Manual"
-#~ msgstr "ProĂ¨itaj priruĂ¨nik"
-
-# serviceconf.gladestrings:38
-#~ msgid "_Manual"
-#~ msgstr "PriruĂ¨_nik"
-
-# serviceconf.gladestrings:40
-#~ msgid "Save"
-#~ msgstr "SaĂ¨uvaj"
-
-# serviceconf.gladestrings:42
-#~ msgid "Cancel"
-#~ msgstr "Odustani"
-
-# serviceconf.gladestrings:44
-#~ msgid "Exit"
-#~ msgstr "IzaĂ°i"
-
-# ../servicemethods.py:261
-#, fuzzy
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd is required for this service."
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "Morate omoguĂŚiti xinetd da bi koristili ovaj servis."
-
-# serviceconf.gladestrings:40
-#, fuzzy
-#~ msgid "_Save"
-#~ msgstr "SaĂ¨uvaj"
-
-# serviceconf.gladestrings:13 serviceconf.gladestrings:50
-#, fuzzy
-#~ msgid "Revert"
-#~ msgstr "Ponovo pokreni"
-
-# ../serviceconf.py:143
-#~ msgid "Start at Boot"
-#~ msgstr "Pokreni prilikom boot-anja"
-
-# ../serviceconf.py:309
-#, fuzzy
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "Autorska prava (c) 2001 Red Hat, Inc. Sva prava zadrÂžana."
-
-# ../serviceconf.py:312
-#, fuzzy
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "Ovaj softwere se moÂže slobodno redistribuirati pod uslovima GPL-a.\n"
-#~ "                                  \n"
-#~ "Molimo vas da prijavite sve greÂške koje naĂ°ete u Red Hat-ovom sistemu "
-#~ "za otkrivanje greÂšaka:\n"
-#~ "http://bugzilla.redhat.com"
-
-# serviceconf.gladestrings:7
-#, fuzzy
-#~ msgid "Zone "
-#~ msgstr "NiÂšta"
-
-# ../serviceconf.py:432
-#, fuzzy
-#~ msgid "You must enter an priority."
-#~ msgstr "Morate pokrenuti serviceconf kao root."
-
-# ../serviceconf.py:432
-#, fuzzy
-#~ msgid "You must enter a host name."
-#~ msgstr "Morate pokrenuti serviceconf kao root."
