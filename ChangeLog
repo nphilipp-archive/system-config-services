@@ -1,5 +1,15 @@
 2007-01-31  nphilipp  <nphilipp@redhat.com>
 
+	* src/servicemethods.py, system-config-services.spec:
+	fix up service metadata reading a bit (#217591)
+
+	* ChangeLog: *** empty log message ***
+
+	* Makefile, system-config-services.spec:
+	use "install -m" to install a lot of files without executable bits (#222579)
+
+2007-01-31  nphilipp  <nphilipp@redhat.com>
+
 	* Makefile, system-config-services.spec:
 	use "install -m" to install a lot of files without executable bits (#222579)
 
