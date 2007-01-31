@@ -1,3 +1,55 @@
+2007-01-31  nphilipp  <nphilipp@redhat.com>
+
+	* Makefile, system-config-services.spec:
+	use "install -m" to install a lot of files without executable bits (#222579)
+
+2007-01-27  kerslage  <kerslage@redhat.com>
+
+	* po/cs.po: Finished
+
+2007-01-24  absinthe  <absinthe@redhat.com>
+
+	* po/bs.po: translated system-config-servics to bosnian
+
+2007-01-24  maxik  <maxik@redhat.com>
+
+	* po/uk.po: Maxim Dziumanenko <dziumanenko@gmail.com>
+
+		* Updated Ukrainian translation
+
+2007-01-23  zoliq  <zoliq@redhat.com>
+
+	* po/sk.po: po-update
+
+2007-01-21  arclynx  <arclynx@redhat.com>
+
+	* po/ms.po: Updated Malay translation
+
+2007-01-20  arclynx  <arclynx@redhat.com>
+
+	* po/ms.po: Updated Malay translation
+
+2007-01-18  arclynx  <arclynx@redhat.com>
+
+	* po/ms.po: Updated Malay translation
+
+2006-12-26  vpv  <vpv@redhat.com>
+
+	* po/fi.po: Updated Finnish translation
+
+2006-12-09  ra  <ra@redhat.com>
+
+	* po/is.po: *** empty log message ***
+
+2006-12-06  harald  <harald@redhat.com>
+
+	* ChangeLog: *** empty log message ***
+
+	* src/servicemethods.py, system-config-services.spec:
+	- fixed service start/stop (#218429)
+	- translation update (#216558)
+	- Resolves: rhbz#216558, rhbz#218429
+
 2006-12-06  Unknown  <harald@redhat.com>
 
 	* src/servicemethods.py, system-config-services.spec:
