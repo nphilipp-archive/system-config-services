@@ -252,7 +252,7 @@ class Service:
         data = []
         tag = None
         for line in fd:
-            if line[0]!="#":
+            if len(line) > 0 and line[0]!="#" and not re.match(r"^\s*$",line):
                 break
             line = line[1:].strip()
 
