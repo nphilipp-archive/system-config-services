@@ -38,11 +38,11 @@ install:	all
 	mkdir -p $(DESTDIR)$(DATADIR)/applications
 	mkdir -p $(DESTDIR)$(MANDIR)/man8
 
-	install $(PKGNAME).console $(DESTDIR)$(SECURITY_DIR)/$(PKGNAME)
-	install $(PKGNAME).pam $(DESTDIR)$(PAMD_DIR)/$(PKGNAME)
-	install pixmaps/*.png $(DESTDIR)$(PKGDATADIR)
-	install pixmaps/$(PKGNAME).png $(DESTDIR)/usr/share/icons/hicolor/48x48/apps
-	install man/$(PKGNAME).8 $(DESTDIR)$(MANDIR)/man8
+	install -m 0644 $(PKGNAME).console $(DESTDIR)$(SECURITY_DIR)/$(PKGNAME)
+	install -m 0644 $(PKGNAME).pam $(DESTDIR)$(PAMD_DIR)/$(PKGNAME)
+	install -m 0644 pixmaps/*.png $(DESTDIR)$(PKGDATADIR)
+	install -m 0644 pixmaps/$(PKGNAME).png $(DESTDIR)/usr/share/icons/hicolor/48x48/apps
+	install -m 0644 man/$(PKGNAME).8 $(DESTDIR)$(MANDIR)/man8
 	sed -e 's/\@VERSION\@/$(VERSION)/g' src/serviceconf.py > $(DESTDIR)$(PKGDATADIR)/serviceconf.py
 	chmod 755 $(DESTDIR)$(PKGDATADIR)/serviceconf.py
 	install -m 0755 src/checklist.py $(DESTDIR)$(PKGDATADIR)/

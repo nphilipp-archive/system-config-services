@@ -1,7 +1,7 @@
 # -*- RPM-SPEC -*-
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.9.4
+Version: 0.9.5
 Release: 1%{?dist}
 URL: http://www.redhat.com/ 
 Source0: %{name}-%{version}.tar.bz2
@@ -76,6 +76,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Wed Jan 31 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.5
+- use "install -m" to install a lot of files without executable bits (#222579)
+
 * Wed Dec  6 2006 Harald Hoyer <harald@redhat.com> - 0.9.4
 - fixed service start/stop (#218429)
 - translation update (#216558)
