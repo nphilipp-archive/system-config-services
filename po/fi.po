@@ -1,18 +1,16 @@
-# translation of fi.po to Finnish
 # Finnish messages for system-config-services.
-# Copyright (C) 2004 Lauri Nurmi.
-# This file is distributed under the same license as the system-config-mouse
+# This file is distributed under the same license as the system-config-services
 # package.
 #
-# Lauri Nurmi <lanurmi@iki.fi>, 2003, 2004.
+# Lauri Nurmi <lanurmi@iki.fi>, 2003, 2004, 2007.
 # Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: fi\n"
+"Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-12-26 23:38+0200\n"
-"Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
+"PO-Revision-Date: 2007-02-25 13:08+0200\n"
+"Last-Translator: Lauri Nurmi <lanurmi@iki.fi>\n"
 "Language-Team: Finnish <laatu@lokalisointi.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -139,7 +137,7 @@ msgstr "Ei mikään"
 
 #: ../src/serviceconf.glade.h:8
 msgid "Restart"
-msgstr "Käynnistä uudelleen"
+msgstr "Käynnistä _uudelleen"
 
 #: ../src/serviceconf.glade.h:9
 msgid "Revert To _Last Save"
@@ -159,7 +157,7 @@ msgstr "Ajotaso _5"
 
 #: ../src/serviceconf.glade.h:13
 msgid "Runlevel _All"
-msgstr "Kaikki ajotasot"
+msgstr "_Kaikki ajotasot"
 
 #: ../src/serviceconf.glade.h:14
 msgid "S_top Service"
@@ -212,10 +210,9 @@ msgstr "T_oiminnot"
 
 #: ../src/serviceconf.glade.h:26
 msgid "_Background Services"
-msgstr "_Taustapalvelut"
+msgstr "Ta_ustapalvelut"
 
 #: ../src/serviceconf.glade.h:27
-#, fuzzy
 msgid "_Contents"
 msgstr "_Sisältö"
 
@@ -229,11 +226,11 @@ msgstr "_Tiedosto"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr "_Ohje"
+msgstr "O_hje"
 
 #: ../src/serviceconf.glade.h:31
 msgid "_On Demand Services"
-msgstr "_Tarvittaessa käynnistettävät palvelut"
+msgstr "T_arvittaessa käynnistettävät palvelut"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
