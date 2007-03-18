@@ -1,4 +1,5 @@
 # translation of de.po to 
+# translation of de.po to
 # translation of de.po to German
 # translation of de.po to
 # translation of system-config-services.po to
@@ -9,7 +10,7 @@
 # Bernd Bartmann <Bernd.Bartmann@sohanet.de>, 2004.
 # Nils Philippsen <nphilipp@redhat.com>, 2006.
 # Marcus Gloeckner <mgloeckner@gmail.com>, 2006.Nils Philippsen <nphilipp@redhat.com>, 2006.
-# Timo Trinks <ttrinks@redhat.com>, 2006.
+# Timo Trinks <ttrinks@redhat.com>, 2006, 2007.
 #
 #
 msgid ""
@@ -17,7 +18,7 @@ msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-10-20 11:59+0200\n"
-"PO-Revision-Date: 2006-10-24 10:32+1000\n"
+"PO-Revision-Date: 2007-03-19 08:00+1000\n"
 "Last-Translator: Timo Trinks <ttrinks@redhat.com>\n"
 "Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -115,7 +116,7 @@ msgstr "xinetd wurde für %s erfolgreich neu geladen"
 
 #: ../src/serviceconf.glade.h:1
 msgid "Add Service"
-msgstr "Dienst hinzufÃ¼gen"
+msgstr "Dienst hinzufügen"
 
 #: ../src/serviceconf.glade.h:2
 msgid "Current Active Runlevel: "
@@ -200,7 +201,7 @@ msgid ""
 msgstr ""
 "Diese Dienste werden bei Bedarf gestartet und beenden sich, wenn es nichts "
 "mehr zu tun gibt. Der <b>xinetd</b> Dienst muss laufen, damit sie benutzt "
-"werden kÃ¶nnen."
+"werden können."
 
 #: ../src/serviceconf.glade.h:22
 msgid ""
@@ -208,15 +209,15 @@ msgid ""
 "in which runlevels they are started."
 msgstr ""
 "Diese Dienste werden ein Mal gestartet und laufen im Hintergrund. Sie "
-"kÃ¶nnen festlegen, in welchen Runleveln sie gestartet werden."
+"können festlegen, in welchen Runleveln sie gestartet werden."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
 msgstr ""
-"Der aktuelle Runlevel wurde geÃ¤ndert.\n"
-"MÃ¶chten Sie die Ãnderungen speichern?"
+"Der aktuelle Runlevel wurde geändert.\n"
+"Möchten Sie die Änderungen speichern?"
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
@@ -244,7 +245,7 @@ msgstr "_Hilfe"
 
 #: ../src/serviceconf.glade.h:31
 msgid "_On Demand Services"
-msgstr "Dienste fÃ¼r den _Bedarfsfall"
+msgstr "Dienste für den _Bedarfsfall"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
@@ -301,8 +302,7 @@ msgstr "Status-Ausgabe"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
-"Konfiguriere welche Dienste beim Starten des Systems ausgefÃ¼hrt werden"
+msgstr "Konfiguriere welche Dienste beim Starten des Systems ausgeführt werden"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -311,3 +311,4 @@ msgstr "Dienste-Verwaltung"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Dienste"
+
