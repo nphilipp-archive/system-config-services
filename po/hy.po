@@ -1,6 +1,6 @@
 # Armenian translations for PACKAGE package.
 # Copyright (C) 2005 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the system-config-services package.
 # Automatically generated, 2005.
 #
 msgid ""

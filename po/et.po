@@ -1,6 +1,6 @@
 # 
 #
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the system-config-services package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Allan Sims <allsi@eau.ee>, 2004.
 #

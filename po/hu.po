@@ -1,4 +1,4 @@
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the system-config-services package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Tamas Szanto <tszanto@mol.hu>, 2003.
 # Arpad Biro <biro_arpad@yahoo.com>, 2005, 2006.

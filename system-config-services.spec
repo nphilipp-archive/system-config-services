@@ -4,11 +4,13 @@ Name: system-config-services
 Version: 0.9.6
 Release: 1%{?dist}
 URL: http://www.redhat.com/ 
+# We are upstream, thus the source is only available from within this source
+# package.
 Source0: %{name}-%{version}.tar.bz2
 License: GPL
 Group: Applications/System
 BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-root
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires: /sbin/chkconfig
 Requires: pygtk2, pygtk2-libglade, rhpl
 Requires: usermode >= 1.36, usermode-gtk
@@ -76,6 +78,12 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Tue Mar 20 2007 Nils Philippsen <nphilipp@redhat.com>
+- mention that we are upstream
+- use preferred buildroot
+- fix licensing blurb in PO files
+- recode spec file to UTF-8
+
 * Wed Jan 31 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.6
 - fix up service metadata reading a bit (#217591)
 
@@ -426,7 +434,7 @@ rm -rf %{buildroot}
 * Wed May 29 2002 Bill Nottingham <notting@redhat.com> 0.8.0-1
 - initial hack gtk2 port
 
-* Mon Apr 15 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.7.0-3
+* Mon Apr 15 2002 Trond Eivind GlomsrÃ¸d <teg@redhat.com> 0.7.0-3
 - Update translations
 
 * Wed Apr 10 2002 Bill Nottingham <notting@redhat.com> 0.7.0-2

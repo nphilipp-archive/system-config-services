@@ -1,5 +1,5 @@
 # translation of as.po to Assamese
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the system-config-services package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
 # Amitakhya Phukan <amitakhya.phukan@gmail.com>, 2006.

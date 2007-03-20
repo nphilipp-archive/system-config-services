@@ -1,5 +1,5 @@
 # translation of ar.po to 
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the system-config-services package.
 # Copyright (C) 2005.
 # Ossama M. Khayat <okhayat@yahoo.com>, 2004.
 # Munzir Taha <munzirtaha@newhoriznos.com.sa>, 2005.

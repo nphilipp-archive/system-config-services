@@ -1,7 +1,7 @@
 # translation of te.po to 
 # translation of te౧.po to
 # translation of te.po to
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the system-config-services package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2006.
 #
 msgid ""

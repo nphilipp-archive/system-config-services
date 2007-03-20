@@ -2,7 +2,7 @@
 # translation of mk.po to Macedonian
 # Macedonian translations for PACKAGE package.
 # Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the system-config-services package.
 # Automatically generated, 2004.
 # Arangel Angov <ufo@linux.net.mk>, 2004.
 #

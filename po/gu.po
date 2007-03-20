@@ -1,7 +1,7 @@
 # translation of gu1.po to Gujarati
 # translation of gu.po to Gujarati
 # translation of system-config-services.po to Gujarati
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the system-config-services package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 # Ankit Patel <ankit@redhat.com>, 2004, 2005, 2006.
 #
