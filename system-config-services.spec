@@ -3,7 +3,7 @@ Summary: system-config-services is an initscript and xinetd configuration utilit
 Name: system-config-services
 Version: 0.9.6
 Release: 1%{?dist}
-URL: http://www.redhat.com/ 
+URL: http://fedoraproject.org/wiki/SystemConfig/services
 # We are upstream, thus the source is only available from within this source
 # package.
 Source0: %{name}-%{version}.tar.bz2
@@ -78,6 +78,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Thu Mar 22 2007 Nils Philippsen <nphilipp@redhat.com>
+- update URL
+
 * Tue Mar 20 2007 Nils Philippsen <nphilipp@redhat.com>
 - mention that we are upstream
 - use preferred buildroot
