@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-10-20 11:59+0200\n"
+"POT-Creation-Date: 2007-04-25 15:44+0200\n"
 "PO-Revision-Date: 2007-02-25 13:08+0200\n"
 "Last-Translator: Lauri Nurmi <lanurmi@iki.fi>\n"
 "Language-Team: Finnish <laatu@lokalisointi.org>\n"
@@ -34,8 +34,7 @@ msgstr "Ajotaso %d"
 msgid "Currently Running in Runlevel: "
 msgstr "Nykyinen käytössä oleva ajotaso: "
 
-#: ../src/serviceconf.py:376
-#: ../src/serviceconf.py:479
+#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "Muokattava ajotaso: "
 
@@ -50,7 +49,7 @@ msgstr "Kaikki"
 #: ../src/serviceconf.py:542
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Copyright © 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat.com>\n"
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
@@ -88,8 +87,7 @@ msgstr "%s epäonnistui. Virhe oli: %s"
 msgid " successful"
 msgstr " onnistui"
 
-#: ../src/servicemethods.py:341
-#: ../src/servicemethods.py:352
+#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd:n on oltava käytössä palvelun %s käyttämistä varten"
@@ -183,18 +181,26 @@ msgstr "Käynnistä"
 msgid "Status"
 msgstr "Tila"
 
-#: ../src/serviceconf.glade.h:20
-#: ../src/servicetab.glade.h:9
+#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
 msgstr "Sammuta"
 
 #: ../src/serviceconf.glade.h:21
-msgid "These services are started on demand and end when there is nothing more to do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr "Nämä palvelut käynnistetään kun niitä tarvitaan ja lopetetaan kun niillä ei ole mitään tehtävää. <b>Xinetd</b>-palvelun täytyy olla päällä, jotta näitä voidaan käyttää."
+msgid ""
+"These services are started on demand and end when there is nothing more to "
+"do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr ""
+"Nämä palvelut käynnistetään kun niitä tarvitaan ja lopetetaan kun niillä ei "
+"ole mitään tehtävää. <b>Xinetd</b>-palvelun täytyy olla päällä, jotta näitä "
+"voidaan käyttää."
 
 #: ../src/serviceconf.glade.h:22
-msgid "These services are started once and run in the background. You can specify in which runlevels they are started."
-msgstr "Nämä palvelut käynnistetään kerran ja ajetaan taustalla. Voit määritellä ajotasot, joissa ne käynnistetään."
+msgid ""
+"These services are started once and run in the background. You can specify "
+"in which runlevels they are started."
+msgstr ""
+"Nämä palvelut käynnistetään kerran ja ajetaan taustalla. Voit määritellä "
+"ajotasot, joissa ne käynnistetään."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -296,4 +302,3 @@ msgstr "Palvelujen hallinta"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Palvelut"
-
