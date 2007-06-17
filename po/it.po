@@ -8,13 +8,13 @@
 # Valentina Besi <valentina@redhat.it>, 2001.
 # Luca Ferrari <alexluca@inwind.it>, 2004.
 # Francesco Valente <fvalen@redhat.com>, 2004.
-# Francesco Tombolini <tombo@adamantio.net>, 2005, 2006.
+# Francesco Tombolini <tombo@adamantio.net>, 2005, 2006, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-04-25 15:44+0200\n"
-"PO-Revision-Date: 2006-11-12 20:41+0100\n"
+"PO-Revision-Date: 2007-06-09 14:27+0200\n"
 "Last-Translator: Francesco Tombolini <tombo@adamantio.net>\n"
 "Language-Team: Italiano <fedora-trans-it@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgstr ""
 #: ../src/serviceconf.py:76
 #, python-format
 msgid "Are you sure you want to delete the %s?"
-msgstr "Sei sicuro di voler eliminare %s?"
+msgstr "Si è sicuri di voler eliminare %s?"
 
 #: ../src/serviceconf.py:139
 #, python-format
@@ -307,3 +307,4 @@ msgstr "Gestione dei servizi"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Servizi"
+
