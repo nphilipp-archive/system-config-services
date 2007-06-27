@@ -1,3 +1,30 @@
+2007-06-27  nphilipp  <nphilipp@redhat.com>
+
+	* system-config-services.desktop.in, system-config-services.spec:
+	fix desktop file category (#245891)
+
+2007-06-17  tombo  <tombo@redhat.com>
+
+	* po/it.po: updated some entry with better translation
+
+2007-06-13  alan  <alan@redhat.com>
+
+	* po/en_GB.po: Autotranslator
+
+2007-06-10  raven  <raven@redhat.com>
+
+	* po/pl.po: Updated Polish Translation
+
+2007-05-04  nphilipp  <nphilipp@redhat.com>
+
+	* ChangeLog: *** empty log message ***
+
+	* system-config-services.spec: pick up updated translations (#223447)
+
+2007-05-04  trinks  <trinks@redhat.com>
+
+	* po/de.po: *** empty log message ***
+
 2007-05-04  nphilipp  <nphilipp@redhat.com>
 
 	* system-config-services.spec: pick up updated translations (#223447)
