@@ -1,10 +1,13 @@
 # License: GPL
-# Copyright Red Hat Inc. 2001, 2006
+# Copyright Red Hat Inc. 2001 - 2007
 
 PKGNAME=system-config-services
+
+HGUPSTREAM_RE=^ssh://[^@]+@hg.fedoraproject.org//hg/hosted/$(PKGNAME)$$
+HGREPO=$(shell hg showconfig | awk -F= '/paths.default=/ { print $$2 }')
 VERSION=$(shell awk '/Version:/ { print $$2 }' $(PKGNAME).spec)
-RELEASE=$(shell awk '/Release:/ { print $$2 }' $(PKGNAME).spec)
-CVSTAG=r$(subst .,-,$(VERSION))
+HGTAG=$(PKGNAME)-$(subst .,_,$(VERSION))
+
 SUBDIRS=po
 
 PREFIX=/usr
@@ -66,55 +69,75 @@ install:	all
 	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(SBINDIR)/system-config-services; \
 	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(SBINDIR)/serviceconf;
 
-cvstag:
-	@if [ "$(FORCETAG)" != "" ]; then \
-		CVSFORCE=-F; \
-	else \
-		CVSFORCE=""; \
-	fi; \
-	cvs tag $$CVSFORCE -cR $(CVSTAG) .
-	@if cvs diff -u -r $(CVSTAG) . | grep -q '^[^\?]'; then \
-		echo; \
-		echo "CVS tag $(CVSTAG) exists. Perhaps use FORCETAG=1?"; \
-		echo; \
+checkmods:
+	@if [ -n "$$(hg diff -a)" ]; then \
+		echo There are modifications not yet committed. Commit these first. >&2; \
 		exit 1; \
 	fi
 
-archive: changelog_cvs cvstag
-	@rm -rf /tmp/$(PKGNAME)-$(VERSION) /tmp/$(PKGNAME)
-	@CVSROOT=`cat CVS/Root`; cd /tmp; cvs -d $$CVSROOT export -r$(CVSTAG) $(PKGNAME)
-	@mv /tmp/$(PKGNAME) /tmp/$(PKGNAME)-$(VERSION)
-	@dir=$$PWD; cd /tmp; tar cvjf $$dir/$(PKGNAME)-$(VERSION).tar.bz2 $(PKGNAME)-$(VERSION)
-	@rm -rf /tmp/$(PKGNAME)-$(VERSION)
-	@echo "The archive is in $(PKGNAME)-$(VERSION).tar.bz2"
+checkrepo:
+ifndef BYPASSUPSTREAM
+	@if [ -z "$$(echo $(HGREPO) | egrep '$(HGUPSTREAM_RE)')" ]; then \
+		echo The repository $(HGREPO) is not the upstream of $(PKGNAME). >&2; \
+		echo Pushing to anywhere else may not be helpful when creating an archive. >&2; \
+		echo Use BYPASSUPSTREAM=1 to not access upstream or FORCEPUSH=1 to push anyway. >&2; \
+		exit 1; \
+	fi
+endif
+
+incoming: checkrepo
+	@if [ -n "$$(hg incoming --quiet --bundle $(HGREPO))" ]; then \
+		echo There are incoming changes which need to be integrated. >&2; \
+		echo Pull them with "hg pull; hg update" and resolve possible conflicts. >&2; \
+		exit 1; \
+	fi
+
+tag:
+ifndef FORCETAG
+	@if hg diff -r "$(HGTAG)" >& /dev/null; then \
+		echo "Tag $(HGTAG) exists already. Use FORCETAG=1 to force tagging." >&2 ; \
+		exit 1; \
+	fi
+endif
+	@LASTTAG="$$(hg tags -q | head -n 2 | tail -n 1)"; \
+	if [ -n "$$LASTTAG" -a -z "$$(hg diff --exclude .hgtags -r $$LASTTAG)" ]; then \
+		echo "No differences to last tagged release '$$LASTTAG'. Not tagging."; \
+	else \
+		echo "Tagging '$(HGTAG)'."; \
+		hg tag $(HGTAG); \
+	fi
+
+ifdef FORCEPUSH
+archivepush:
+else
+archivepush: checkrepo
+endif
+ifndef BYPASSUPSTREAM
+	@echo Pushing to repository $(HGREPO).
+	@if ! hg push $(HGREPO); then \
+		echo Pushing failed. >&2; \
+		echo Use NOPUSH=1 to bypass pushing. >&2; \
+		exit 1; \
+	fi
+endif
+
+archive: checkmods incoming tag archivepush
+ifndef FORCEARCHIVE
+	@if [ -e "${PKGNAME}-$(VERSION).tar.bz2" ]; then \
+		echo "File ${PKGNAME}-$(VERSION).tar.bz2 exists already." >&2; \
+		echo "Use FORCEARCHIVE=1 to force overwriting it." >&2; \
+		exit 1; \
+	fi
+endif
+	@hg archive -r$(HGTAG) -t tbz2 "${PKGNAME}-$(VERSION).tar.bz2"
+	@echo "The archive is in ${PKGNAME}-$(VERSION).tar.bz2"
 
 snapsrc: archive
-	@rpmbuild -ta $(PKGNAME)-$(VERSION)-$(RELEASE).tar.bz2
+	@rpmbuild -ta $(PKGNAME)-$(VERSION).tar.bz2
 
 local:
-	@rm -rf $(PKGNAME)-$(VERSION).tar.gz
-	@rm -rf /tmp/$(PKGNAME)-$(VERSION) /tmp/$(PKGNAME)
-	@mkdir /tmp/$(PKGNAME)
-	@cp -a * /tmp/$(PKGNAME)
-	@mv /tmp/$(PKGNAME) /tmp/$(PKGNAME)-$(VERSION)
-	@dir=$$PWD; cd /tmp; tar cvjf $$dir/$(PKGNAME)-$(VERSION).tar.bz2 $(PKGNAME)-$(VERSION)
-	@rm -rf /tmp/$(PKGNAME)-$(VERSION)      
-	@echo "The archive is in $(PKGNAME)-$(VERSION).tar.bz2"
-
-changelog:
-	rcs2log -h redhat.com \
-		| sed -e 's|/usr/local/CVS/system-config-services/||g' \
-		> ChangeLog.new
-	if test -f ChangeLog; then \
-		cp -dpf ChangeLog ChangeLog.old; \
-	else \
-		touch ChangeLog.old; \
-	fi
-	cat ChangeLog.new ChangeLog.old > ChangeLog
-	rm -f ChangeLog.new ChangeLog.old
-
-changelog_cvs:	changelog
-	cvs commit -m '' ChangeLog
+	@hg archive -t tbz2 "${PKGNAME}-$(VERSION).tar.bz2"
+	@echo "The _local_ archive is in ${PKGNAME}-$(VERSION).tar.bz2"
 
 pycheck:
 	pychecker -F pycheckrc src/*.py

@@ -1,3 +1,10 @@
+With the CVS -> Hg transition, autogeneration of ChangeLog is no longer
+possible. Changes are logged in the %changelog section of
+system-config-services.spec and can usually be queried with the command
+"rpm -q --changelog system-config-services".
+
+### legacy ChangeLog:
+
 2007-06-27  nphilipp  <nphilipp@redhat.com>
 
 	* system-config-services.desktop.in, system-config-services.spec:
