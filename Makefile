@@ -99,12 +99,17 @@ ifndef FORCETAG
 		exit 1; \
 	fi
 endif
-	@LASTTAG="$$(hg tags -q | head -n 2 | tail -n 1)"; \
+	@if [ -n "$(FORCETAG)" ]; then \
+		FORCE=-f; \
+	else \
+		FORCE=""; \
+	fi; \
+	LASTTAG="$$(hg tags -q | head -n 2 | tail -n 1)"; \
 	if [ -n "$$LASTTAG" -a -z "$$(hg diff --exclude .hgtags -r $$LASTTAG)" ]; then \
 		echo "No differences to last tagged release '$$LASTTAG'. Not tagging."; \
 	else \
 		echo "Tagging '$(HGTAG)'."; \
-		hg tag $(HGTAG); \
+		hg tag $$FORCE $(HGTAG); \
 	fi
 
 ifdef FORCEPUSH

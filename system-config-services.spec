@@ -78,6 +78,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Sep 10 2007 Nils Philippsen <nphilipp@redhat.com>
+- make use of force tagging (since mercurial 0.9.4)
+
 * Mon Jul 23 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.10
 - make "make archive" work with Hg
 - disable automatic ChangeLog generation
