@@ -1,25 +1,25 @@
 # translation of ja.po to Japanese
 # serviceconf ja.po
 # Copyright (C) Red Hat, Inc. 2002
+#
 # SATO Satoru <ssato@redhat.com>, 2001.
 # Yukihiro Nakai <ynakai@redhat.com>, 2001.
 # James Hashida <khashida@redhat.com>, 2002,2003.
 # Tadashi Jokagi <fedora@elf.no-ip.org>, 2004.
-# Noriko Mizumoto <noriko@redhat.com>, 2004, 2006.
+# Noriko Mizumoto <noriko@redhat.com>, 2004, 2006, 2007.
 # Hirofumi Saito <hi_saito@yk.rim.or.jp>, 2005, 2006.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-25 15:44+0200\n"
-"PO-Revision-Date: 2006-10-31 14:13+1000\n"
+"POT-Creation-Date: 2007-09-20 17:38-0700\n"
+"PO-Revision-Date: 2007-09-24 14:19+1000\n"
 "Last-Translator: Noriko Mizumoto <noriko@redhat.com>\n"
-"Language-Team: Japanese <doc-i18n-list@redhat.com>\n"
+"Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../src/serviceconf.py:76
 #, python-format
@@ -52,7 +52,7 @@ msgstr "すべて"
 #: ../src/serviceconf.py:542
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright © 2002-2006 Red Hat, Inc.\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat.com>\n"
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
@@ -61,7 +61,7 @@ msgid ""
 " "
 msgstr ""
 "システムサービス設定ツール VERSION\n"
-" Copyright © 2002-2006 Red Hat, Inc.\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat.com>\n"
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
@@ -184,7 +184,7 @@ msgstr "開始"
 msgid "Status"
 msgstr "状態"
 
-#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
+#: ../src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "停止"
 
@@ -265,35 +265,6 @@ msgstr "サービスの開始(_S)"
 msgid "_View"
 msgstr "表示 (_V)"
 
-#: ../src/servicetab.glade.h:2
-#, no-c-format
-msgid "Current runlevel is %s"
-msgstr "現在のランレベルは %s です"
-
-#: ../src/servicetab.glade.h:3
-msgid "Disable"
-msgstr "無効にする"
-
-#: ../src/servicetab.glade.h:4
-msgid "Enable"
-msgstr "有効にする"
-
-#: ../src/servicetab.glade.h:5
-msgid "Runlevels"
-msgstr "ランレベル"
-
-#: ../src/servicetab.glade.h:6
-msgid "Service control"
-msgstr "サービスの制御"
-
-#: ../src/servicetab.glade.h:7
-msgid "Start "
-msgstr "開始 "
-
-#: ../src/servicetab.glade.h:8
-msgid "Status output"
-msgstr "状態出力"
-
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "システムの起動時に実行するサービスを設定します"
@@ -305,3 +276,4 @@ msgstr "サービス管理"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "サービス"
+
