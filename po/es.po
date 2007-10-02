@@ -15,17 +15,18 @@
 # Manuel Ospina <mospina@redhat.com>, 2005, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: es\n"
+"Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-25 15:44+0200\n"
-"PO-Revision-Date: 2006-10-20 14:33-0300\n"
-"Last-Translator: Domingo E. Becker <beckerde@hotmail.com>\n"
-"Language-Team: Spanish <en@li.org>\n"
+"POT-Creation-Date: 2007-10-02 01:39-0700\n"
+"PO-Revision-Date: 2007-10-02 13:19-0300\n"
+"Last-Translator: Domingo Becker <domingobecker@gmail.com>\n"
+"Language-Team: Fedora Spanish <fedora-trans-es@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
 "X-Generator: KBabel 1.9.1\n"
+"X-Poedit-Language: Spanish\n"
 
 #: ../src/serviceconf.py:76
 #, python-format
@@ -50,7 +51,8 @@ msgstr "Ejecutándose en el nivel de ejecución: "
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
-#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
+#: ../src/serviceconf.py:376
+#: ../src/serviceconf.py:479
 msgid "Editing Runlevel: "
 msgstr "Editando nivel de ejecución: "
 
@@ -65,7 +67,7 @@ msgstr "Todo"
 #: ../src/serviceconf.py:542
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright © 2002-2006 Red Hat, Inc.\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat.com>\n"
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
@@ -74,7 +76,7 @@ msgid ""
 " "
 msgstr ""
 "Herramienta de Configuración de los Servicios del Sistema VERSION\n"
-" Copyright © 2002-2006 Red Hat, Inc.\n"
+" Copyright Â©  2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat.com>\n"
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
@@ -111,7 +113,8 @@ msgstr " satisfactorio"
 
 # ../servicemethods.py:313
 # ../servicemethods.py:313
-#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
+#: ../src/servicemethods.py:341
+#: ../src/servicemethods.py:352
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd debe estar activo para poder ejecutar %s"
@@ -239,26 +242,17 @@ msgid "Status"
 msgstr "Estado"
 
 # serviceconf.gladestrings:11 serviceconf.gladestrings:48
-#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
+#: ../src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "Detener"
 
 #: ../src/serviceconf.glade.h:21
-msgid ""
-"These services are started on demand and end when there is nothing more to "
-"do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
-"Estos servicios son iniciados por demanda y finalizan cuando ya no hay nada "
-"más que hacer. El servicio <b>xinetd</b> debe estar ejecutándose para que se "
-"los pueda usar."
+msgid "These services are started on demand and end when there is nothing more to do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr "Estos servicios son iniciados por demanda y finalizan cuando ya no hay nada más que hacer. El servicio <b>xinetd</b> debe estar ejecutándose para que se los pueda usar."
 
 #: ../src/serviceconf.glade.h:22
-msgid ""
-"These services are started once and run in the background. You can specify "
-"in which runlevels they are started."
-msgstr ""
-"Estos servicios son iniciados una vez y se ejecutan en segundo plano. Puede "
-"especificar en qué niveles de ejecución se iniciarán."
+msgid "These services are started once and run in the background. You can specify in which runlevels they are started."
+msgstr "Estos servicios son iniciados una vez y se ejecutan en segundo plano. Puede especificar en qué niveles de ejecución se iniciarán."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -333,42 +327,6 @@ msgstr "Iniciar _Servicio"
 msgid "_View"
 msgstr "_Ver"
 
-# ../serviceconf.py:134
-# serviceconf.gladestrings:51
-#: ../src/servicetab.glade.h:2
-#, no-c-format
-msgid "Current runlevel is %s"
-msgstr "El nivel de ejecución actual es %s"
-
-#: ../src/servicetab.glade.h:3
-msgid "Disable"
-msgstr "Deshabilitar"
-
-#: ../src/servicetab.glade.h:4
-msgid "Enable"
-msgstr "Habilitar"
-
-# ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
-# ../serviceconf.py:296
-# serviceconf.gladestrings:32
-#: ../src/servicetab.glade.h:5
-msgid "Runlevels"
-msgstr "Niveles de Ejecución"
-
-# serviceconf.gladestrings:14
-#: ../src/servicetab.glade.h:6
-msgid "Service control"
-msgstr "Control de Servicio"
-
-# serviceconf.gladestrings:9 serviceconf.gladestrings:46
-#: ../src/servicetab.glade.h:7
-msgid "Start "
-msgstr "Iniciar"
-
-#: ../src/servicetab.glade.h:8
-msgid "Status output"
-msgstr "Salida de estado"
-
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "Configurar qué servicios se ejecutarán cuando se inicie el sistema "
@@ -382,3 +340,4 @@ msgstr "Administración de Servicios"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Servicios"
+
