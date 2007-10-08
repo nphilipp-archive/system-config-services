@@ -1,7 +1,7 @@
 # -*- RPM-SPEC -*-
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.9.11
+Version: 0.9.12
 Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/SystemConfig/services
 # We are upstream, thus the source is only available from within this source
@@ -78,6 +78,10 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Oct 08 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.12
+- add "make diff" ("dif") and "make shortdiff" ("sdif")
+- pull in updated translations
+
 * Tue Oct 02 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.11
 - pick up updated translations
 

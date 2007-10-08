@@ -151,3 +151,16 @@ clean:
 	@rm -fv *~
 	@rm -fv src/*.pyc src/*.pyo
 	@rm -fv system-config-services.desktop
+
+dif:	diff
+
+diff:
+	@echo Differences to tag $(HGTAG):
+	@echo
+	@hg diff -r$(HGTAG) -X .hgtags
+
+sdif:	shortdiff
+
+shortdiff:
+	@echo Files changed since tag $(HGTAG):
+	@hg diff -r$(HGTAG) -X .hgtags | egrep '^---|^\+\+\+' | sed 's:^...[   ][      ]*[ab]/::g' | sort -u
