@@ -83,6 +83,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Oct 15 2007 Nils Philippsen <nphilipp@redhat.com>
+- add release tag to remaining changelog versions to appease rpmlint
+
 * Mon Oct 15 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.15-1
 - Merge review (#226470):
   - remove hicolor-icon-theme, gtk2 requirements, call gtk-update-icon-cache
@@ -178,7 +181,7 @@ rm -rf %{buildroot}
 - rip out autofoo
 - use bzip2'ed tarballs
 
-* Fri Mar 03 2006 Nils Philippsen <nphilipp@redhat.com> - 0.9.0
+* Fri Mar 03 2006 Nils Philippsen <nphilipp@redhat.com> - 0.9.0-1
 - require hicolor-icon-theme (#182878, #182879)
 
 * Wed Feb 28 2006 Florian Festi <ffesti@redhat.com> 
@@ -188,10 +191,10 @@ rm -rf %{buildroot}
   configuring single services like nfs, samba, bind, ...), still missing: i18n,
   dependencies on other services (like portmap)
 
-* Fri Jan 27 2006 Nils Philippsen <nphilipp@redhat.com> - 0.8.99.2
+* Fri Jan 27 2006 Nils Philippsen <nphilipp@redhat.com> - 0.8.99.2-1
 - fix saving xinetd services
 
-* Fri Jan 27 2006 Nils Philippsen <nphilipp@redhat.com> - 0.8.99.1
+* Fri Jan 27 2006 Nils Philippsen <nphilipp@redhat.com> - 0.8.99.1-1
 - implement daemons and xinetd services on separate tabs
 
 * Mon Jan 09 2006 Nils Philippsen <nphilipp@redhat.com>
