@@ -17,7 +17,11 @@ Requires: pygtk2-libglade
 Requires: rhpl
 Requires: usermode >= 1.36
 Requires: usermode-gtk
+%if 0%{?fedora}%{?rhel} == 0 || 0%{?fedora} >= 7 || 0%{?rhel} >= 6
+Requires: xdg-utils
+%else
 Requires: htmlview
+%endif
 Requires: python >= 2.3.0
 Requires(post): hicolor-icon-theme
 Requires(post): gtk2
@@ -94,6 +98,7 @@ rm -rf %{buildroot}
   - use %%config(noreplace)
   - use "make %%{?_smp_mflags}"
   - use "%%defattr(-,root,root,-)"
+  - use xdg-open if available
 
 * Mon Oct 08 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.12-1
 - add "make diff" ("dif") and "make shortdiff" ("sdif")

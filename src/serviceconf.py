@@ -569,7 +569,11 @@ class Gui:
     def on_mnuManual_activate(self,args):
         help_page = "file:///usr/share/doc/system-config-services-" + VERSION + "/html/index.html"
 
-        path = "/usr/bin/htmlview"
+        paths = ["/usr/bin/xdg-open", "/usr/bin/htmlview", None]
+
+        for path in paths:
+            if os.access (path, os.X_OK):
+                break
          
         if path == None:
             dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_WARNING, gtk.BUTTONS_OK,
