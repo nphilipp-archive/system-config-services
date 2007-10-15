@@ -55,13 +55,13 @@ desktop-file-install --vendor system --delete-original      \
 %post
 touch --no-create %{_datadir}/icons/hicolor
 if [ -x %{_bindir}/gtk-update-icon-cache ]; then
-  %{_bindir}/gtk-update-icon-cache -q %{_datadir}/icons/hicolor
+  %{_bindir}/gtk-update-icon-cache --quiet %{_datadir}/icons/hicolor || :
 fi
 
 %postun
 touch --no-create %{_datadir}/icons/hicolor
 if [ -x %{_bindir}/gtk-update-icon-cache ]; then
-  %{_bindir}/gtk-update-icon-cache -q %{_datadir}/icons/hicolor
+  %{_bindir}/gtk-update-icon-cache --quiet %{_datadir}/icons/hicolor || :
 fi
 
 %clean
@@ -85,6 +85,7 @@ rm -rf %{buildroot}
 %changelog
 * Mon Oct 15 2007 Nils Philippsen <nphilipp@redhat.com>
 - add release tag to remaining changelog versions to appease rpmlint
+- don't let gtk-update-icon-cache fail scriptlets
 
 * Mon Oct 15 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.15-1
 - Merge review (#226470):
