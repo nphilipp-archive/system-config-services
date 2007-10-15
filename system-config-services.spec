@@ -68,7 +68,7 @@ fi
 rm -rf %{buildroot}
 
 %files -f %{name}.lang
-%defattr(-,root,root)
+%defattr(-,root,root,-)
 %doc COPYING
 %doc docs/*
 %{_sbindir}/*
@@ -93,6 +93,7 @@ rm -rf %{buildroot}
   - add release to changelog versions to appease rpmlint
   - use %%config(noreplace)
   - use "make %%{?_smp_mflags}"
+  - use "%%defattr(-,root,root,-)"
 
 * Mon Oct 08 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.12-1
 - add "make diff" ("dif") and "make shortdiff" ("sdif")
