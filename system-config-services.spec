@@ -23,10 +23,6 @@ Requires: xdg-utils
 Requires: htmlview
 %endif
 Requires: python >= 2.3.0
-Requires(post): hicolor-icon-theme
-Requires(post): gtk2
-Requires(postun): hicolor-icon-theme
-Requires(postun): gtk2
 BuildRequires: intltool
 BuildRequires: sed
 BuildRequires: desktop-file-utils
@@ -58,14 +54,14 @@ desktop-file-install --vendor system --delete-original      \
 
 %post
 touch --no-create %{_datadir}/icons/hicolor
-if [ -x /usr/bin/gtk-update-icon-cache ]; then
-  gtk-update-icon-cache -q %{_datadir}/icons/hicolor
+if [ -x %{_bindir}/gtk-update-icon-cache ]; then
+  %{_bindir}/gtk-update-icon-cache -q %{_datadir}/icons/hicolor
 fi
 
 %postun
 touch --no-create %{_datadir}/icons/hicolor
-if [ -x /usr/bin/gtk-update-icon-cache ]; then
-  gtk-update-icon-cache -q %{_datadir}/icons/hicolor
+if [ -x %{_bindir}/gtk-update-icon-cache ]; then
+  %{_bindir}/gtk-update-icon-cache -q %{_datadir}/icons/hicolor
 fi
 
 %clean
@@ -87,6 +83,11 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Oct 15 2007 Nils Philippsen <nphilipp@redhat.com>
+- Merge review (#226470):
+  - remove hicolor-icon-theme, gtk2 requirements, call gtk-update-icon-cache
+    with full path
+
 * Mon Oct 15 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.14-1
 - Merge review (#226470):
   - remove shebang line from nonblockingreader.py
