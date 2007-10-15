@@ -90,28 +90,29 @@ rm -rf %{buildroot}
   - change license tag to GPLv2+
   - recoded documentation to UTF-8
   - install files with correct permissions
+  - add release to changelog versions to appease rpmlint
 
-* Mon Oct 08 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.12
+* Mon Oct 08 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.12-1
 - add "make diff" ("dif") and "make shortdiff" ("sdif")
 - pull in updated translations
 
-* Tue Oct 02 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.11
+* Tue Oct 02 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.11-1
 - pick up updated translations
 
 * Mon Sep 10 2007 Nils Philippsen <nphilipp@redhat.com>
 - make use of force tagging (since mercurial 0.9.4)
 
-* Mon Jul 23 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.10
+* Mon Jul 23 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.10-1
 - make "make archive" work with Hg
 - disable automatic ChangeLog generation
 
-* Wed Jun 27 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.9
+* Wed Jun 27 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.9-1
 - fix desktop file category (#245891)
 
-* Fri May 04 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.8
+* Fri May 04 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.8-1
 - pick up updated translations (#223447)
 
-* Wed Apr 25 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.7
+* Wed Apr 25 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.7-1
 - pick up updated translations
 - work around issues with UTF-8 in translatable strings (#232809)
 
@@ -124,25 +125,25 @@ rm -rf %{buildroot}
 - fix licensing blurb in PO files
 - recode spec file to UTF-8
 
-* Wed Jan 31 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.6
+* Wed Jan 31 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.6-1
 - fix up service metadata reading a bit (#217591)
 
-* Wed Jan 31 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.5
+* Wed Jan 31 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.5-1
 - use "install -m" to install a lot of files without executable bits (#222579)
 
-* Wed Dec  6 2006 Harald Hoyer <harald@redhat.com> - 0.9.4
+* Wed Dec  6 2006 Harald Hoyer <harald@redhat.com> - 0.9.4-1
 - fixed service start/stop (#218429)
 - translation update (#216558)
 - Resolves: rhbz#216558, rhbz#218429
 
-* Fri Nov 24 2006 Nils Philippsen <nphilipp@redhat.com> - 0.9.3
+* Fri Nov 24 2006 Nils Philippsen <nphilipp@redhat.com> - 0.9.3-1
 - pick up updated translations (#216558)
 
-* Fri Oct 20 2006 Nils Philippsen <nphilipp@redhat.com> - 0.9.2
+* Fri Oct 20 2006 Nils Philippsen <nphilipp@redhat.com> - 0.9.2-1
 - use intltool-extract for i18n of glade files (#211248) and desktop file
   (#207345)
 
-* Tue Sep 05 2006 Nils Philippsen <nphilipp@redhat.com> - 0.9.1
+* Tue Sep 05 2006 Nils Philippsen <nphilipp@redhat.com> - 0.9.1-1
 - don't disable Start/Stop/Restart upon reverting changes (#202722)
 - add dist tag
 - install po files (again)
@@ -186,17 +187,17 @@ rm -rf %{buildroot}
 * Fri Oct 14 2005 Nils Philippsen <nphilipp@redhat.com>
 - don't use pam_stack (#170645)
 
-* Tue Aug 16 2005 Nils Philippsen <nphilipp@redhat.com> - 0.8.26
+* Tue Aug 16 2005 Nils Philippsen <nphilipp@redhat.com> - 0.8.26-1
 - revamp getting output from external commands (#162884)
 - package %%{_bindir}/serviceconf symlink (#165099)
 
-* Mon May 09 2005 Nils Philippsen <nphilipp@redhat.com> - 0.8.25
+* Mon May 09 2005 Nils Philippsen <nphilipp@redhat.com> - 0.8.25-1
 - pick up updated translations
 
-* Fri May 06 2005 Nils Philippsen <nphilipp@redhat.com> - 0.8.24
+* Fri May 06 2005 Nils Philippsen <nphilipp@redhat.com> - 0.8.24-1
 - make "make update-po" pick up translatable strings in desktop file (#156801)
 
-* Fri May 06 2005 Nils Philippsen <nphilipp@redhat.com> - 0.8.23
+* Fri May 06 2005 Nils Philippsen <nphilipp@redhat.com> - 0.8.23-1
 - pick up new translations
 
 * Wed Apr 27 2005 Jeremy Katz <katzj@redhat.com> - 0.8.22-2
