@@ -76,10 +76,10 @@ rm -rf %{buildroot}
 %{_datadir}/applications/system-config-services.desktop
 %{_datadir}/icons/hicolor/48x48/apps/system-config-services.png
 %{_datadir}/system-config-services
-%config %{_sysconfdir}/pam.d/system-config-services
-%config %{_sysconfdir}/security/console.apps/system-config-services
-%config %{_sysconfdir}/security/console.apps/serviceconf
-%config %{_sysconfdir}/pam.d/serviceconf
+%config(noreplace) %{_sysconfdir}/pam.d/system-config-services
+%config(noreplace) %{_sysconfdir}/security/console.apps/system-config-services
+%config(noreplace) %{_sysconfdir}/security/console.apps/serviceconf
+%config(noreplace) %{_sysconfdir}/pam.d/serviceconf
 %{_mandir}/*/system-config-services.8*
 
 %changelog
@@ -91,6 +91,7 @@ rm -rf %{buildroot}
   - recoded documentation to UTF-8
   - install files with correct permissions
   - add release to changelog versions to appease rpmlint
+  - use %%config(noreplace)
 
 * Mon Oct 08 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.12-1
 - add "make diff" ("dif") and "make shortdiff" ("sdif")
