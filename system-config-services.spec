@@ -86,6 +86,7 @@ rm -rf %{buildroot}
 * Mon Oct 15 2007 Nils Philippsen <nphilipp@redhat.com>
 - Merge review (#226470):
   - make obsoletes versioned
+  - escape RPM macro in changelog
 
 * Mon Oct 08 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.12
 - add "make diff" ("dif") and "make shortdiff" ("sdif")
@@ -184,7 +185,7 @@ rm -rf %{buildroot}
 
 * Tue Aug 16 2005 Nils Philippsen <nphilipp@redhat.com> - 0.8.26
 - revamp getting output from external commands (#162884)
-- package %{_bindir}/serviceconf symlink (#165099)
+- package %%{_bindir}/serviceconf symlink (#165099)
 
 * Mon May 09 2005 Nils Philippsen <nphilipp@redhat.com> - 0.8.25
 - pick up updated translations
