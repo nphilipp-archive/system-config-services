@@ -23,6 +23,7 @@ Requires: xdg-utils
 Requires: htmlview
 %endif
 Requires: python >= 2.3.0
+Requires: hicolor-icon-theme
 BuildRequires: intltool
 BuildRequires: sed
 BuildRequires: desktop-file-utils
@@ -86,6 +87,7 @@ rm -rf %{buildroot}
 * Mon Oct 15 2007 Nils Philippsen <nphilipp@redhat.com>
 - add release tag to remaining changelog versions to appease rpmlint
 - don't let gtk-update-icon-cache fail scriptlets
+- re-add plain hicolor-icon-theme requirement to avoid unowned directories
 
 * Mon Oct 15 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.15-1
 - Merge review (#226470):
