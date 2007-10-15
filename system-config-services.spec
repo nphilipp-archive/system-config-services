@@ -12,19 +12,24 @@ Group: Applications/System
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires: /sbin/chkconfig
-Requires: pygtk2, pygtk2-libglade, rhpl
-Requires: usermode >= 1.36, usermode-gtk
+Requires: pygtk2
+Requires: pygtk2-libglade
+Requires: rhpl
+Requires: usermode >= 1.36
+Requires: usermode-gtk
 Requires: htmlview
 Requires: python >= 2.3.0
 Requires(post): hicolor-icon-theme
 Requires(post): gtk2
 Requires(postun): hicolor-icon-theme
 Requires(postun): gtk2
-BuildRequires: intltool sed desktop-file-utils
+BuildRequires: intltool
+BuildRequires: sed
+BuildRequires: desktop-file-utils
 BuildRequires: perl(XML::Parser)
 BuildRequires: gettext
-Obsoletes: serviceconf
-Obsoletes: redhat-config-services
+Obsoletes: serviceconf <= 0.8.1
+Obsoletes: redhat-config-services <= 0.8.5
 
 %description
 system-config-services is a utility which allows you to configure which services
@@ -78,6 +83,10 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Oct 15 2007 Nils Philippsen <nphilipp@redhat.com>
+- Merge review (#226470):
+  - make obsoletes versioned
+
 * Mon Oct 08 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.12
 - add "make diff" ("dif") and "make shortdiff" ("sdif")
 - pull in updated translations
