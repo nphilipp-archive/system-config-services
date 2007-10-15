@@ -87,6 +87,10 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Oct 15 2007 Nils Philippsen <nphilipp@redhat.com>
+- Merge review (#226470):
+  - remove shebang line from nonblockingreader.py
+
 * Mon Oct 15 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.13-1
 - Merge review (#226470):
   - make obsoletes versioned

@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 # nonblockingreader.py -- read from file objects without blocking UIs
 #
 # Copyright (C) 2004 Red Hat, Inc.
