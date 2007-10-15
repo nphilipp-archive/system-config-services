@@ -39,7 +39,7 @@ should be enabled on your machine.
 %setup -q
 
 %build
-make
+make %{?_smp_mflags}
 
 %install
 rm -rf %{buildroot}
@@ -92,6 +92,7 @@ rm -rf %{buildroot}
   - install files with correct permissions
   - add release to changelog versions to appease rpmlint
   - use %%config(noreplace)
+  - use "make %%{?_smp_mflags}"
 
 * Mon Oct 08 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.12-1
 - add "make diff" ("dif") and "make shortdiff" ("sdif")
