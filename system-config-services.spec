@@ -89,6 +89,7 @@ rm -rf %{buildroot}
   - escape RPM macro in changelog
   - change license tag to GPLv2+
   - recoded documentation to UTF-8
+  - install files with correct permissions
 
 * Mon Oct 08 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.12
 - add "make diff" ("dif") and "make shortdiff" ("sdif")

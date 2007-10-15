@@ -48,9 +48,9 @@ install:	all
 	install -m 0644 man/$(PKGNAME).8 $(DESTDIR)$(MANDIR)/man8
 	sed -e 's/\@VERSION\@/$(VERSION)/g' src/serviceconf.py > $(DESTDIR)$(PKGDATADIR)/serviceconf.py
 	chmod 755 $(DESTDIR)$(PKGDATADIR)/serviceconf.py
-	install -m 0755 src/checklist.py $(DESTDIR)$(PKGDATADIR)/
-	install -m 0755 src/nonblockingreader.py $(DESTDIR)$(PKGDATADIR)/
-	install -m 0755 src/servicemethods.py $(DESTDIR)$(PKGDATADIR)/
+	install -m 0644 src/checklist.py $(DESTDIR)$(PKGDATADIR)/
+	install -m 0644 src/nonblockingreader.py $(DESTDIR)$(PKGDATADIR)/
+	install -m 0644 src/servicemethods.py $(DESTDIR)$(PKGDATADIR)/
 	install -m 0644 src/serviceconf.glade $(DESTDIR)$(GLADEDIR)
 	install -m 0644 $(PKGNAME).desktop $(DESTDIR)$(DATADIR)/applications/$(PKGNAME).desktop
 
