@@ -572,7 +572,7 @@ class Gui:
         paths = ["/usr/bin/xdg-open", "/usr/bin/htmlview", None]
 
         for path in paths:
-            if os.access (path, os.X_OK):
+            if path and os.access (path, os.X_OK):
                 break
          
         if path == None:
