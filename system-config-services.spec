@@ -99,6 +99,7 @@ rm -rf %{buildroot}
   - use "make %%{?_smp_mflags}"
   - use "%%defattr(-,root,root,-)"
   - use xdg-open if available
+- pick up updated translations
 
 * Mon Oct 08 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.12-1
 - add "make diff" ("dif") and "make shortdiff" ("sdif")
