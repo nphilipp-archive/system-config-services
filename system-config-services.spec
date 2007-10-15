@@ -88,6 +88,7 @@ rm -rf %{buildroot}
 - add release tag to remaining changelog versions to appease rpmlint
 - don't let gtk-update-icon-cache fail scriptlets
 - re-add plain hicolor-icon-theme requirement to avoid unowned directories
+- remove obsolete no.po translation file (#332411)
 
 * Mon Oct 15 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.15-1
 - Merge review (#226470):
