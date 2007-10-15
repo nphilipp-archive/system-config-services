@@ -3,11 +3,6 @@
 """ system-config-services: This module contains the Gui class which contains the methods pertaining to the gui only """
 # serviceconf.py
 # Copyright © 2002-2006 Red Hat, Inc.
-# Authors: Tim Powers <timp@redhat.com>
-#          Bill Nottingham <notting@redhat.com>
-#          Dan Walsh <dwalsh@redhat.com>
-#          Nils Philippsen <nphilipp@redhat.com>
-#          Florian Festi <ffesti@redhat.com>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -22,6 +17,12 @@
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+# Authors: Tim Powers <timp@redhat.com>
+#          Bill Nottingham <notting@redhat.com>
+#          Dan Walsh <dwalsh@redhat.com>
+#          Nils Philippsen <nphilipp@redhat.com>
+#          Florian Festi <ffesti@redhat.com>
 
 import signal
 import sys

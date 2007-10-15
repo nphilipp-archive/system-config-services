@@ -1,12 +1,6 @@
 """The servicemethods module handles all the backend processing for the system-config-services application."""
 # serviceactions.py
-# Copyright (C) 2002 - 2006 Red Hat, Inc.
-# Authors:
-# Tim Powers <timp@redhat.com>
-# Dan Walsh <dwalsh@redhat.com>
-# Brent Fox <bfox@redhat.com>
-# Nils Philippsen <nphilipp@redhat.com>
-# Florian Festi <ffesti@redhat.com>
+# Copyright (C) 2002 - 2007 Red Hat, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -21,6 +15,13 @@
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+# Authors:
+# Tim Powers <timp@redhat.com>
+# Dan Walsh <dwalsh@redhat.com>
+# Brent Fox <bfox@redhat.com>
+# Nils Philippsen <nphilipp@redhat.com>
+# Florian Festi <ffesti@redhat.com>
 
 import re, os
 from rhpl.translate import _, N_, cat

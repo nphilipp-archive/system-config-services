@@ -7,7 +7,7 @@ URL: http://fedoraproject.org/wiki/SystemConfig/services
 # We are upstream, thus the source is only available from within this source
 # package.
 Source0: %{name}-%{version}.tar.bz2
-License: GPL
+License: GPLv2+
 Group: Applications/System
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
@@ -87,6 +87,7 @@ rm -rf %{buildroot}
 - Merge review (#226470):
   - make obsoletes versioned
   - escape RPM macro in changelog
+  - change license tag to GPLv2+
 
 * Mon Oct 08 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.12
 - add "make diff" ("dif") and "make shortdiff" ("sdif")
