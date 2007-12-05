@@ -84,6 +84,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Wed Dec 05 2007 Nils Philippsen <nphilipp@redhat.com>
+- overwrite *.pot and *.po files only on real changes
+
 * Mon Oct 15 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.17-1
 - avoid traceback when neither xdg-open nor htmlview is found
 
