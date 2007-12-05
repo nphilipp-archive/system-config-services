@@ -59,7 +59,7 @@ po_diff_and_mv_or_rm_func = \
 
 $(POTFILE): $(SRCFILES)
 	$(XGETTEXT) --keyword=_ --keyword=N_ $(SRCFILES)
-	@$(call diff_and_mv_or_rm,$(POTFILE),$(NLSPACKAGE).po)
+	@$(call po_diff_and_mv_or_rm,$(POTFILE),$(NLSPACKAGE).po)
 
 update-po: Makefile $(POTFILE) refresh-po
 
