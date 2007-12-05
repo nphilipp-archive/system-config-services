@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.tip.gu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-20 17:38-0700\n"
+"POT-Creation-Date: 2007-04-25 15:44+0200\n"
 "PO-Revision-Date: 2007-09-21 12:36+0530\n"
 "Last-Translator: Ankit Patel <ankit@redhat.com>\n"
 "Language-Team: Gujarati <fedora-trans-gu@redhat.com>\n"
@@ -15,7 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n"
+"\n"
 "\n"
 "\n"
 "\n"
@@ -54,7 +55,7 @@ msgstr "બધું"
 #: ../src/serviceconf.py:542
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Copyright © 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat.com>\n"
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
@@ -62,14 +63,6 @@ msgid ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
-"System Services Configuration Tool VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
-" "
 
 #: ../src/serviceconf.py:546
 msgid "About"
@@ -186,7 +179,7 @@ msgstr "શરુ કરો"
 msgid "Status"
 msgstr "પરિસ્થિતિ"
 
-#: ../src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
 msgstr "અટકાવો"
 
@@ -266,6 +259,35 @@ msgstr "સેવા શરુ કરો (_S)"
 msgid "_View"
 msgstr "દેખાવ (_V)"
 
+#: ../src/servicetab.glade.h:2
+#, no-c-format
+msgid "Current runlevel is %s"
+msgstr ""
+
+#: ../src/servicetab.glade.h:3
+msgid "Disable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:4
+msgid "Enable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:5
+msgid "Runlevels"
+msgstr ""
+
+#: ../src/servicetab.glade.h:6
+msgid "Service control"
+msgstr ""
+
+#: ../src/servicetab.glade.h:7
+msgid "Start "
+msgstr ""
+
+#: ../src/servicetab.glade.h:8
+msgid "Status output"
+msgstr ""
+
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "જ્યારે સિસ્ટમ શરૂ થાય ત્યારે કઈ સેવાઓ ચાલી રહી હશે તે રૂપરેખાંકિત કરો"
@@ -278,3 +300,21 @@ msgstr "સેવા વ્યવસ્થાપન"
 msgid "Services"
 msgstr "સેવાઓ"
 
+#~ msgid ""
+#~ "System Services Configuration Tool VERSION\n"
+#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
+#~ msgstr ""
+#~ "System Services Configuration Tool VERSION\n"
+#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "

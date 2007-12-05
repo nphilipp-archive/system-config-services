@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-20 17:38-0700\n"
+"POT-Creation-Date: 2007-04-25 15:44+0200\n"
 "PO-Revision-Date: 2007-09-24 14:19+1000\n"
 "Last-Translator: Noriko Mizumoto <noriko@redhat.com>\n"
 "Language-Team: Japanese\n"
@@ -52,7 +52,7 @@ msgstr "すべて"
 #: ../src/serviceconf.py:542
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Copyright © 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat.com>\n"
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
@@ -60,14 +60,6 @@ msgid ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
-"システムサービス設定ツール VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
-" "
 
 #: ../src/serviceconf.py:546
 msgid "About"
@@ -184,7 +176,7 @@ msgstr "開始"
 msgid "Status"
 msgstr "状態"
 
-#: ../src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
 msgstr "停止"
 
@@ -265,6 +257,35 @@ msgstr "サービスの開始(_S)"
 msgid "_View"
 msgstr "表示 (_V)"
 
+#: ../src/servicetab.glade.h:2
+#, no-c-format
+msgid "Current runlevel is %s"
+msgstr ""
+
+#: ../src/servicetab.glade.h:3
+msgid "Disable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:4
+msgid "Enable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:5
+msgid "Runlevels"
+msgstr ""
+
+#: ../src/servicetab.glade.h:6
+msgid "Service control"
+msgstr ""
+
+#: ../src/servicetab.glade.h:7
+msgid "Start "
+msgstr ""
+
+#: ../src/servicetab.glade.h:8
+msgid "Status output"
+msgstr ""
+
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "システムの起動時に実行するサービスを設定します"
@@ -277,3 +298,21 @@ msgstr "サービス管理"
 msgid "Services"
 msgstr "サービス"
 
+#~ msgid ""
+#~ "System Services Configuration Tool VERSION\n"
+#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
+#~ msgstr ""
+#~ "システムサービス設定ツール VERSION\n"
+#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "

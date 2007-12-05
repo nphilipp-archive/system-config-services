@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn_IN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-24 01:36-0700\n"
+"POT-Creation-Date: 2007-04-25 15:44+0200\n"
 "PO-Revision-Date: 2007-09-24 18:30+0530\n"
 "Last-Translator: Runa Bhattacharjee <runabh@gmail.com>\n"
 "Language-Team: Bengali INDIA\n"
@@ -88,11 +88,10 @@ msgstr "অজানা"
 msgid "All"
 msgstr "সমস্ত"
 
-# "সিষ্টম সার্ভিস কনফিগারেশন টুল VERSION\n"--spelling of "system" is wrong, changed by RB
 #: ../src/serviceconf.py:542
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Copyright © 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat.com>\n"
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
@@ -100,14 +99,6 @@ msgid ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
-"System Services Configuration Tool VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
-" "
 
 #: ../src/serviceconf.py:546
 msgid "About"
@@ -237,7 +228,7 @@ msgstr "আরম্ভ"
 msgid "Status"
 msgstr "অবস্থা"
 
-#: ../src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
 msgstr "বন্ধ"
 
@@ -329,6 +320,35 @@ msgstr "পরিসেবা আরম্ভ করা হবে (_S)"
 msgid "_View"
 msgstr "প্রদর্শন (_V)"
 
+#: ../src/servicetab.glade.h:2
+#, no-c-format
+msgid "Current runlevel is %s"
+msgstr ""
+
+#: ../src/servicetab.glade.h:3
+msgid "Disable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:4
+msgid "Enable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:5
+msgid "Runlevels"
+msgstr ""
+
+#: ../src/servicetab.glade.h:6
+msgid "Service control"
+msgstr ""
+
+#: ../src/servicetab.glade.h:7
+msgid "Start "
+msgstr ""
+
+#: ../src/servicetab.glade.h:8
+msgid "Status output"
+msgstr ""
+
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "সিস্টেম আরম্ভের সময় সক্রিয় পরিসেবাগুলি কনফিগার করুন"
@@ -342,3 +362,22 @@ msgstr "পরিসেবা পরিচালনা"
 msgid "Services"
 msgstr "পরিসেবা"
 
+# "সিষ্টম সার্ভিস কনফিগারেশন টুল VERSION\n"--spelling of "system" is wrong, changed by RB
+#~ msgid ""
+#~ "System Services Configuration Tool VERSION\n"
+#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
+#~ msgstr ""
+#~ "System Services Configuration Tool VERSION\n"
+#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "

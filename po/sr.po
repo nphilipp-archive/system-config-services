@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-08 09:38-0700\n"
+"POT-Creation-Date: 2007-04-25 15:44+0200\n"
 "PO-Revision-Date: 2007-10-08 17:59-0500\n"
 "Last-Translator: Igor Miletic <grejigl-gnomeprevod@yahoo.ca>\n"
 "Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
@@ -48,7 +48,7 @@ msgstr "Све"
 #: ../src/serviceconf.py:542
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Copyright © 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat.com>\n"
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
@@ -56,14 +56,6 @@ msgid ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
-"Алат за подешавање системских сервиса VERSION\n"
-" Ауторска права Â© 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
-" "
 
 #: ../src/serviceconf.py:546
 msgid "About"
@@ -180,7 +172,7 @@ msgstr "Покрени"
 msgid "Status"
 msgstr "Статус"
 
-#: ../src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
 msgstr "Заустави"
 
@@ -260,6 +252,35 @@ msgstr "По_крени сервис"
 msgid "_View"
 msgstr "Пре_глед"
 
+#: ../src/servicetab.glade.h:2
+#, no-c-format
+msgid "Current runlevel is %s"
+msgstr ""
+
+#: ../src/servicetab.glade.h:3
+msgid "Disable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:4
+msgid "Enable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:5
+msgid "Runlevels"
+msgstr ""
+
+#: ../src/servicetab.glade.h:6
+msgid "Service control"
+msgstr ""
+
+#: ../src/servicetab.glade.h:7
+msgid "Start "
+msgstr ""
+
+#: ../src/servicetab.glade.h:8
+msgid "Status output"
+msgstr ""
+
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "Подешава који ће се сервиси извршавати када се систем покрене"
@@ -271,3 +292,22 @@ msgstr "Управљање сервисима"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Сервиси"
+
+#~ msgid ""
+#~ "System Services Configuration Tool VERSION\n"
+#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
+#~ msgstr ""
+#~ "Алат за подешавање системских сервиса VERSION\n"
+#~ " Ауторска права Â© 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "

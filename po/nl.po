@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-24 09:38-0700\n"
+"POT-Creation-Date: 2007-04-25 15:44+0200\n"
 "PO-Revision-Date: 2007-09-24 21:13+0200\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@gmail.com>\n"
 "Language-Team: Dutch <vertaling@nl.linux.org>\n"
@@ -53,7 +53,7 @@ msgstr "Alles"
 #: ../src/serviceconf.py:542
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Copyright © 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat.com>\n"
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
@@ -61,14 +61,6 @@ msgid ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
-"Configuratiehulpmiddel voor systeemvoorzieningen VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
-" "
 
 #: ../src/serviceconf.py:546
 msgid "About"
@@ -186,7 +178,7 @@ msgstr "Starten"
 msgid "Status"
 msgstr "Status"
 
-#: ../src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
 msgid "Stop"
 msgstr "Stoppen"
 
@@ -267,6 +259,35 @@ msgstr "Voorziening _starten"
 msgid "_View"
 msgstr "Beel_d"
 
+#: ../src/servicetab.glade.h:2
+#, no-c-format
+msgid "Current runlevel is %s"
+msgstr "Huidig runlevel is %s"
+
+#: ../src/servicetab.glade.h:3
+msgid "Disable"
+msgstr "Uitzetten"
+
+#: ../src/servicetab.glade.h:4
+msgid "Enable"
+msgstr "Aanzetten"
+
+#: ../src/servicetab.glade.h:5
+msgid "Runlevels"
+msgstr "Runlevels"
+
+#: ../src/servicetab.glade.h:6
+msgid "Service control"
+msgstr "Voorziening besturing"
+
+#: ../src/servicetab.glade.h:7
+msgid "Start "
+msgstr "Starten "
+
+#: ../src/servicetab.glade.h:8
+msgid "Status output"
+msgstr "Statusuitvoer"
+
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr ""
@@ -280,26 +301,24 @@ msgstr "Voorzieningenbeheer"
 msgid "Services"
 msgstr "Voorzieningen"
 
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Huidig runlevel is %s"
-
-#~ msgid "Disable"
-#~ msgstr "Uitzetten"
-
-#~ msgid "Enable"
-#~ msgstr "Aanzetten"
-
-#~ msgid "Runlevels"
-#~ msgstr "Runlevels"
-
-#~ msgid "Service control"
-#~ msgstr "Voorziening besturing"
-
-#~ msgid "Start "
-#~ msgstr "Starten "
-
-#~ msgid "Status output"
-#~ msgstr "Statusuitvoer"
+#~ msgid ""
+#~ "System Services Configuration Tool VERSION\n"
+#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
+#~ msgstr ""
+#~ "Configuratiehulpmiddel voor systeemvoorzieningen VERSION\n"
+#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
 
 #~ msgid "Start the selected service"
 #~ msgstr "De geselecteerde voorziening starten"
