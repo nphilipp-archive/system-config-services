@@ -45,7 +45,7 @@ all::  update-po $(MOFILES)
 	$(INTLTOOLEXTRACT) -t gettext/ini $<
 
 po_diff_and_mv_or_rm  = \
-	if [ ! -f "$(1)" ] || ($(DIFF) "$(1)" "$(2)" | $(GREP) -v '^. "POT-Creation-Date:' | $(GREP) -q '^[<>] .'); then \
+	if [ ! -f "$(1)" ] || ($(DIFF) "$(1)" "$(2)" | $(GREP) -v '^. "POT-Creation-Date:' | $(GREP) -q '^[<>] [^\#]'); then \
 		echo "Creating/updating $(1)"; \
 		mv -f $(2) $(1); \
 	else \
@@ -69,7 +69,7 @@ refresh-po: Makefile
 		lang=`basename $$cat .po`; \
 		if $(MSGMERGE) $$lang.po $(POTFILE) > $$lang.pot ; then \
 			echo "$(MSGMERGE) of $$lang succeeded" ; \
-			po_diff_and_mv_or_rm $$lang.pot $$lang.po; \
+			po_diff_and_mv_or_rm $$lang.po $$lang.pot; \
 		else \
 			echo "$(MSGMERGE) of $$lang failed" ; \
 			rm -f $$lang.pot ; \
