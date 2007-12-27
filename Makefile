@@ -1,4 +1,4 @@
-# License: GPL
+# License: GPL v2 or later
 # Copyright Red Hat Inc. 2001 - 2007
 
 PKGNAME=system-config-services
