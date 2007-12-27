@@ -1,7 +1,7 @@
 # -*- RPM-SPEC -*-
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.9.17
+Version: 0.9.18
 Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/SystemConfig/services
 # We are upstream, thus the source is only available from within this source
@@ -84,6 +84,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Thu Dec 27 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.18-1
+- rename sr@Latn to sr@latin (#426590)
+
 * Wed Dec 05 2007 Nils Philippsen <nphilipp@redhat.com>
 - overwrite *.pot and *.po files only on real changes
 
