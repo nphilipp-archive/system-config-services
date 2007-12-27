@@ -3,7 +3,7 @@
 
 PKGNAME=system-config-services
 
-HGUPSTREAM_RE=^ssh://[^@]+@hg.fedoraproject.org//hg/hosted/$(PKGNAME)$$
+HGUPSTREAM_RE=^ssh://[^@]+@hg.fedorahosted.org//hg/$(PKGNAME)$$
 HGREPO=$(shell hg showconfig | awk -F= '/paths.default=/ { print $$2 }')
 VERSION=$(shell awk '/Version:/ { print $$2 }' $(PKGNAME).spec)
 HGTAG=$(PKGNAME)-$(subst .,_,$(VERSION))
