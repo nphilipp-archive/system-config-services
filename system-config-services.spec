@@ -1,7 +1,22 @@
 # -*- RPM-SPEC -*-
+
+# Command line configurables
+
+%if 0%{?fedora}%{?rhel} == 0 || 0%{?fedora} >= 7 || 0%{?rhel} >= 6
+%bcond_without xdg_utils
+%else
+%bcond_with xdg_utils
+%endif
+
+%if 0%{?fedora}%{?rhel} == 0 || 0%{?fedora} >= 9 || 0%{?rhel} >= 6
+%bcond_without console_util
+%else
+%bcond_with console_util
+%endif
+
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.9.18
+Version: 0.9.19
 Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/SystemConfig/services
 # We are upstream, thus the source is only available from within this source
@@ -15,9 +30,13 @@ Requires: /sbin/chkconfig
 Requires: pygtk2
 Requires: pygtk2-libglade
 Requires: rhpl
+%if 0%{?with_console_util:1}
+Requires: usermode >= 1.94
+%else
 Requires: usermode >= 1.36
+%endif
 Requires: usermode-gtk
-%if 0%{?fedora}%{?rhel} == 0 || 0%{?fedora} >= 7 || 0%{?rhel} >= 6
+%if 0%{?with_xdg_utils:1}
 Requires: xdg-utils
 %else
 Requires: htmlview
@@ -40,7 +59,7 @@ should be enabled on your machine.
 %setup -q
 
 %build
-make %{?_smp_mflags}
+make %{?with_console_util:CONSOLE_USE_CONFIG_UTIL=1} %{?_smp_mflags}
 
 %install
 rm -rf %{buildroot}
@@ -84,6 +103,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Fri Jan 11 2008 Nils Philippsen <nphilipp@redhat.com> - 0.9.19-1
+- use config-util for userhelper configuration from Fedora 9 on (#428407)
+
 * Thu Dec 27 2007 Nils Philippsen <nphilipp@redhat.com> - 0.9.18-1
 - rename sr@Latn to sr@latin (#426590)
 

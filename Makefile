@@ -23,9 +23,11 @@ GLADEDIR=$(PKGDATADIR)
 PAMD_DIR        = /etc/pam.d
 SECURITY_DIR    = /etc/security/console.apps
 
-all:	$(PKGNAME).desktop
+all:	$(PKGNAME).desktop $(PKGNAME).console
 	rm -f src/$(PKGNAME)
 	ln -snf serviceconf.py src/$(PKGNAME)
+
+include console_rules.mk
 
 %.desktop: %.desktop.in po/$(PKGNAME).pot po/*.po
 	intltool-merge -u -d po/ $< $@
@@ -147,7 +149,7 @@ local:
 pycheck:
 	pychecker -F pycheckrc src/*.py
 
-clean:
+clean: console-clean
 	@rm -fv *~
 	@rm -fv src/*.pyc src/*.pyo
 	@rm -fv system-config-services.desktop
