@@ -29,6 +29,11 @@ import copy
 
 import nonblockingreader
 
+try:
+    import gamin, gobject
+except ImportError:
+    gamin = None
+
 def getstatusoutput(cmd, callback):
     """Return (status, output) of executing cmd in a shell."""
     pipe = os.popen("{ %s ; } 2>&1" % (cmd), 'r')
@@ -55,7 +60,8 @@ class Service:
     def __init__(self, name, runlevels, services):
         self.name = name
         self._runlevels = runlevels
-        self._runlevels_old = runlevels[:]
+        if runlevels:
+            self._runlevels_old = runlevels[:]
         self.services = services
         self.uicallback = services.uicallback
 
@@ -70,8 +76,14 @@ class Service:
         self.pidfiles = []
         self.probe = False
         self._read_script_file()
+        if not self.defaultrunlevels:
+            self.defaultrunlevels = [2, 3, 4, 5]
 
         self._dirty = False
+        self._callbacks = []
+
+        if gamin:
+            self.services._file_monitor.watch_file('/var/lock/subsys/' + name, self._lock_status_changed)
 
     def __getattr__(self, name):
         # sloppy evaluate the status as it takes some time 
@@ -87,10 +99,39 @@ class Service:
     def is_xinetd_service(self):
         return False
 
+    def exists(self):
+        return self._runlevels is not None
+
+    # ----
+
+    def update(self, runlevels):
+        self._runlevels = runlevels
+        if runlevels is not None:
+            self._runlevels_old = runlevels[:]
+        self._callback()
+
     # ----
 
     def get_runlevels(self):
-        return self._runlevels
+        return self._runlevels[:]
+
+    def get_active_runlevels(self):
+        result = []
+        for nr, on in enumerate(self._runlevels):
+            if on:
+                result.append(nr)
+        return result
+
+    def get_active_runlevels_text(self):
+        return ', '.join(map(str, self.get_active_runlevels()))
+
+    # ----
+
+    def get_default_runlevels(self):
+        return self.defaultrunlevels[:]
+
+    def get_default_runlevels_text(self):
+        return ', '.join(map(str, self.get_default_runlevels()))
 
     # ----
 
@@ -147,6 +188,7 @@ class Service:
     def set_dirty(self):
         """Tell that a config file got changed"""
         if self.state != STOPPED:
+            self._callback()
             self._dirty = True
 
     # ----
@@ -166,6 +208,7 @@ class Service:
             editing_runlevels = [editing_runlevels]
         for runlevel in editing_runlevels:
             self._runlevels[runlevel] = on
+        self._callback()
         self.services._service_changed(self)
 
     # ----
@@ -184,6 +227,7 @@ class Service:
         """Change is service is started in the default runlevels"""
         for runlevel in self.defaultrunlevels:
             self._runlevels[runlevel] = on
+        self._callback()
         self.services._service_changed(self)
 
     # ----
@@ -211,6 +255,7 @@ class Service:
             runlevel += 1
 
         self._runlevels_old = self._runlevels[:]
+        self._callback()
         return changed
     
     # ----
@@ -227,11 +272,13 @@ class Service:
             if action in ('start', 'restart', 'reload',  'condrestart'):
                 self.status =  ERROR
                 self.message = message
+            self._callback()
             return (1, _("%s failed. The error was: %s") %
                     (self.name, message))
         else:
             self.status, self.status_message = self.get_status()
             self._dirty = False
+            self._callback()
             return (0,"%s %s" % (self.name, action) +
                     _(" successful"))
     # ----
@@ -301,9 +348,32 @@ class Service:
     def revert (self):
         self._runlevels = copy.copy (self._runlevels_old)
 
+    # ----
+
+    def subscribe(self, callback, userdata=None):
+        self._callbacks.append((callback, userdata))
+
+    def unsubscribe(self, callback):
+        self._callbacks = filter(lambda x: x[0]!=callback, self.callbacks)
+
+    def _callback(self):
+        for callback, userdata in self._callbacks:
+            callback(self, userdata)
+    
+    # ----
+
+    def _lock_status_changed(self, file, change):
+        if change in (gamin.GAMCreated, gamin.GAMDeleted):
+            self.status, self.status_message = self.get_status()
+            self._callback()
+
 # ============================================================================
 
 class XinetdService(Service):
+
+    def __init__(self, name, runlevels, services):
+        Service.__init__(self, name, runlevels, services)
+        self.defaultrunlevels = [0]
 
     def is_xinetd_service(self):
         return True
@@ -345,7 +415,7 @@ class XinetdService(Service):
 
             if error != 0:
                 return (1,_("xinetd failed to reload for ") +
-                        servicename +
+                        self.name +
                         _(". The error was: ") + output)
             else:
                 return (0,_("xinetd reloaded %s successfully"))
@@ -355,7 +425,7 @@ class XinetdService(Service):
 
 # ============================================================================
 
-class Services:
+class _Services:
     """Includes methods used to find services, and information about them such
     as the description, whether or not it is configured etc."""
         
@@ -365,10 +435,48 @@ class Services:
         self._xinetd_services = { }
         self._changed = { }
 
+        self._delayed_update = set()
+
+        self._no_update = False
+        
+        if gamin:
+            self._file_monitor = gamin.WatchMonitor()
+            self._file_monitor.watch_directory('/etc/rc.d/rc1.d', self._init_status_changed, 1)
+            self._file_monitor.watch_directory('/etc/rc.d/rc2.d', self._init_status_changed, 2)
+            self._file_monitor.watch_directory('/etc/rc.d/rc3.d', self._init_status_changed, 3)
+            self._file_monitor.watch_directory('/etc/rc.d/rc4.d', self._init_status_changed, 4)
+            self._file_monitor.watch_directory('/etc/rc.d/rc5.d', self._init_status_changed, 5)
+            self._file_monitor.watch_directory('/etc/xinetd.d', self._xinetd_status_changed)
+            gobject.io_add_watch(self._file_monitor.get_fd(), gobject.IO_IN | gobject.IO_PRI, self._process_file_monitor)
+
+    def _process_file_monitor(self, source, condition, data=None):
+        while self._file_monitor.event_pending():
+            self._file_monitor.handle_events()
+        return True
+
     # ----
 
     def __getitem__(self, name):
-        return self._services.get(name, None) or self._xinetd_services[name]
+        result = self._services.get(name, None) or self._xinetd_services.get(name, None)
+
+        if result:
+            return result
+
+        if not self._no_update:
+            self._no_update = True
+            self.update(name)
+            self._no_update = False
+            
+        result = self._services.get(name, None) or self._xinetd_services.get(name, None)
+
+        if not result:
+            result = Service(name, None, self)
+            self._services[name] = result
+
+        return result
+
+    def get(self, key, default=None):
+        return self[key] or default
 
     # ----
 
@@ -393,6 +501,13 @@ class Services:
         keys.sort()
         for key in keys:
             yield self._xinetd_services[key]
+
+    def get_xinetd_service(self, name):
+        if not self._xinetd_services.has_key(name):
+            self.update(name)
+            if not self._xinetd_services.has_key(name):
+                self._xinetd_services[name] = XinetdService(name, None, self)
+        return self._xinetd_services[name]
 
     # ----
 
@@ -450,8 +565,6 @@ class Services:
         """read in data about services in the system. 
         if servicename is given only get data for this service
         """
-        self._services = {}
-        self._xinetd_services = {}
 
         chkconfig_list = getstatusoutput(
           "LC_ALL=C /sbin/chkconfig --list %s 2>/dev/null" % servicename,
@@ -465,11 +578,13 @@ class Services:
                 continue
             name, runlevels = service
             if len(runlevels) == 1:
-                service = XinetdService(name, runlevels, self)
-                self._xinetd_services[name] = service
+                if not self._xinetd_services.has_key(name):
+                    service = XinetdService(name, runlevels, self)
+                    self._xinetd_services[name] = service
             else:
-                service = Service(name, runlevels, self)
-                self._services[name] = service
+                if not self._services.has_key(name):
+                    service = Service(name, runlevels, self)
+                    self._services[name] = service
 
         if servicename and self._xinetd_services:
             #if only one xinetd service loaded load also xinetd
@@ -477,26 +592,33 @@ class Services:
 
     # ----
 
-    def update(self, servicename):
+    def update(self, name, runlevels=None):
         """Read status of service from disk. If service got removed
         remove from ourselfs"""
-        status, output = getstatusoutput("LC_ALL=C /sbin/chkconfig --list " +
-                                         servicename, self.uicallback)
-        if status == 0:
-            service = self._service_from_chkconfig(output)
-            if service is not None:
-                name, runlevels = service
-                if len(runlevels) == 1:
-                    service = XinetdService(name, runlevels, self)
-                    self._xinetd_services[name] = service
-                else:
-                    service = Service(name, runlevels, self)
-                    self._services[name] = service
+        if runlevels is None:
+            status, output = getstatusoutput("LC_ALL=C /sbin/chkconfig --list " +
+                                             name, self.uicallback)
+            if status == 0:
+                service = self._service_from_chkconfig(output)
+                if service is not None:
+                    name, runlevels = service
+            else:
+                # service not found, remove if exists in memory
+                self[name].update(None)
                 return
-            
-        # service not found, remove if exists in memory
-        self._xinetd_services.pop(servicename)
-        self._services.pop(servicename)
+                
+        if len(runlevels) == 1:
+            if not self._xinetd_services.has_key(name):
+                service = XinetdService(name, runlevels, self)
+                self._xinetd_services[name] = service
+            else:
+                self._xinetd_services[name].update(runlevels)
+        else:
+            if not self._services.has_key(name):
+                service = Service(name, runlevels, self)
+                self._services[name] = service
+            else:
+                self._services[name].update(runlevels)
     
     # ----
 
@@ -515,6 +637,26 @@ class Services:
             self._changed.pop(service, None)
             
     
+    def _init_status_changed(self, file, change, level):
+        if change in (gamin.GAMCreated, gamin.GAMDeleted):
+            # self.update(file[3:])
+            self._timed_update(file[3:])
+
+    def _xinetd_status_changed(self, file, change):
+        if change in (gamin.GAMCreated, gamin.GAMDeleted):
+            # self.update(file)
+            self._timed_update(file)
+
+    def _timed_update(self, service_name):
+        if service_name not in self._delayed_update:
+            self.update(service_name)
+            self._delayed_update.add(service_name)
+            gobject.timeout_add(100, self._delayed_service_update, service_name)
+
+    def _delayed_service_update(self, service_name):
+        self.update(service_name)
+        self._delayed_update.discard(service_name)
+
     # ----
 
     def save_changes(self):
@@ -537,3 +679,11 @@ class Services:
             service.revert ()
         for service in self._xinetd_services.itervalues ():
             service.revert ()
+
+_services = None
+def Services(uicallback = None):
+    global _services
+    if _services is None:
+        _services = _Services(uicallback)
+    _services.uicallback = _services.uicallback or uicallback
+    return  _services
