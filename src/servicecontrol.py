@@ -1,10 +1,8 @@
 #!/bin/env python
 
-import gtk, sys, os
-
+import gtk.glade, sys, os
+from rhpl.translate import _
 from servicemethods import *
-
-# XXX I18N!!!!! XXX
 
 def newServiceControl(glade, functionname, widget_name,
                       string1, string2, int1, int2):
@@ -33,107 +31,215 @@ class GladeWidget:
 
 class ServiceStatusBase:
 
-    def __init__(self):
+    def __init__(self, service_name):
         # Get icons
-        self._redlight = gtk.gdk.pixbuf_new_from_file(
-            "/usr/share/system-config-services/red.png")
-        self._yellowlight = gtk.gdk.pixbuf_new_from_file(
-            "/usr/share/system-config-services/yellow.png")
-        self._greenlight = gtk.gdk.pixbuf_new_from_file(
-            "/usr/share/system-config-services/green.png")
-        self._nolight = gtk.gdk.pixbuf_new_from_file(
-            "/usr/share/system-config-services/off.png")
-        
+        self.services = Services(idle_func)
+        self.services.get_service_lists(service_name)
+        self.service = self.services[service_name]
+        self.service.subscribe(self.update)
+        if self.service.is_xinetd_service():
+            self.xinetd = self.service = self.services["xinetd"]
+
+        self.tooltips = gtk.Tooltips()
+
+    stockname = {
+        'red' : 'gtk-dialog-error',
+        'yellow' : 'gtk-dialog-warning',
+        'green': 'gtk-execute',
+        'off' : 'gtk-stop',
+        }
+
+    def _setIcon(self, state):        
+        self.imgStatus.set_from_stock(self.stockname[state], 1)
+
     def _setState(self):
         status = self.service.status
+        name = self.service.name
+
+        if not self.service.exists():
+            self._setIcon('red')
+            self.lblStatus.set_text(_("Service %s not found!") % name)
+            return
 
         if status == RUNNING:
             if self.service.is_dirty():
-                self.imgStatus.set_from_pixbuf(self._yellowlight)
+                self._setIcon('yellow')
+                self.lblStatus.set_text(_("Service %s is running with old config") % name) 
             else:
-                self.imgStatus.set_from_pixbuf(self._greenlight)
+                self._setIcon('green')
+                self.lblStatus.set_text(_("Service %s is running") % name) 
         elif status == ERROR:
-            self.imgStatus.set_from_pixbuf(self._redlight)
+            self._setIcon('red')
+            self.lblStatus.set_text(_("Service %s resports an error") % name) 
         else:
-            self.imgStatus.set_from_pixbuf(self._nolight)
-        self.lblStatus.set_text(self.service.status_message)
+            self._setIcon('off')
+            self.lblStatus.set_text(_("Service %s is stopped") % name) 
+        self.tooltips.set_tip(self.lblStatus.parent, self.service.status_message)
+        self.tooltips.set_tip(self.imgStatus.parent, self.service.status_message)
 
     def on_servicestatus_show(self, widget):
         self._setState()
-    
+
+    def update(self, service, data=None):
+        self._setState()
+
+class ServiceStatus(ServiceStatusBase, GladeWidget):
+    """Status bar widget"""
+    def __init__(self, service_name):
+
+        ServiceStatusBase.__init__(self, service_name)
+        
+        self.xml = gtk.glade.XML(
+            os.path.join(gladepath, "servicetab.glade"), root="servicestatus")
+        self.getWidgets('servicestatus', 'lblStatus', 'imgStatus')
+        self.widget = self.servicestatus
+        self.xml.signal_autoconnect(self)
+        self._setState()
 
 class ServiceControlBase:
 
-    def __init__(self, service_name):
+    def __init__(self, service_name, configure=True):
         self.uicallback = idle_func
         self.services = Services(idle_func)
         self.services.get_service_lists(service_name)
         self.service = self.services[service_name]
+        self.tooltips = gtk.Tooltips()
 
-        self.statuswidget = None
-        
+        if self.service.is_xinetd_service():
+            if hasattr(self, 'ReStart'):
+                self.ReStart.hide()
+                self.ReStart.set_no_show_all(True)
+            else:
+                self.Start.hide()
+                self.Start.set_no_show_all(True)
+                self.Restart.hide()
+                self.Restart.set_no_show_all(True)
+            self.Stop.hide()
+            self.Stop.set_no_show_all(True)
+            self.separator1.hide()
+            self.separator1.set_no_show_all(True)
+
+        if not configure:
+            self.separator2.hide()
+            self.separator2.set_no_show_all(True)
+            self.Configure.hide()
+            self.Configure.set_no_show_all(True)
+
     # ----------        
 
     def set_dirty(self, on):
         self._dirty = on
 
-    def _setStart(self, on):
-        if on:
-            icon = gtk.image_new_from_icon_name("reload", 1)
-            self.btnReStart.set_image(icon)
-            icon.show()
-            self.btnReStart.set_label("Restart")
-            self.btnStop.set_sensitive(True)
+    def _setTooltip(self, widget, tip):
+        if hasattr(widget, 'set_tooltip'):
+            widget.set_tooltip(self.tooltips, tip)
         else:
-            icon = gtk.image_new_from_icon_name("forward", 1)
-            self.btnReStart.set_image(icon)
-            self.btnReStart.set_label("Start")
-            icon.show()
-            self.btnStop.set_sensitive(False)
+            self.tooltips.set_tip(widget, tip)
+
+    def _setStart(self, on):
+        if hasattr(self, 'ReStart'):
+            if on:
+                icon = gtk.image_new_from_icon_name("reload", 1)
+                self.ReStart.set_image(icon)
+                icon.show()
+                self.ReStart.set_label("Restart")
+            else:
+                icon = gtk.image_new_from_icon_name("forward", 1)
+                self.ReStart.set_image(icon)
+                self.ReStart.set_label("Start")
+                icon.show()
+        else:
+             self.Start.set_sensitive(not on)
+             self.Restart.set_sensitive(on)
+        self.Stop.set_sensitive(on)
+
+    def _setExists(self):
+        on = self.service.exists()
+        if hasattr(self, 'ReStart'):
+            self.ReStart.set_sensitive(on)
+        else:
+            self.Start.set_sensitive(on)
+            self.Restart.set_sensitive(on)
+        self.Stop.set_sensitive(on)
+        self.Enable.set_sensitive(on)
+        self.Disable.set_sensitive(on)
 
     def _setState(self):
-        self._setStart(self.service.status==RUNNING)
-        self._setRunlevelStatus()
-        if self.statuswidget:
-            self.statuswidget._setState()
+        self._setExists()
+        if self.service.exists():
+            self._setStart(self.service.status==RUNNING)
+            self._setRunlevelStatus()
             
     def _setRunlevelStatus(self):
+        buttons = isinstance(self.Enable, (gtk.ToolButton, gtk.Button))
         if self.service.is_default():
             on = self.service.is_default_on()
-            self.btnEnable.set_sensitive(not on)
-            self.btnDisable.set_sensitive(on)
+            self.Enable.set_sensitive(not on)
+            self.Disable.set_sensitive(on)
+            if on:                
+                self._setTooltip(self.Enable, None)
+                if self.service.is_xinetd_service():
+                    self._setTooltip(self.Disable, None)
+                else:
+                    self._setTooltip(
+                        self.Disable, _("Currently enabled in runlevels %s") %
+                        self.service.get_active_runlevels_text())
+            else:
+                self._setTooltip(self.Disable, None)
+                if self.service.is_xinetd_service():
+                    self._setTooltip(self.Enable, None)
+                else:
+                    self._setTooltip(
+                        self.Enable, _("Enable %(name)s in runlevels %(levels)s") %
+                        { 'name' : self.service.name, 
+                          'levels' : self.service.get_default_runlevels_text() } )
         else:
-            self.btnEnable.set_sensitive(False)
-            self.btnDisable.set_sensitive(False)
+            self.Enable.set_sensitive(True)
+            self.Disable.set_sensitive(True)
+            self._setTooltip(
+                self.Disable, _("Currently enabled in runlevels %s") % 
+                self.service.get_active_runlevels_text())
+            self._setTooltip(
+                self.Enable, _("Enable %(name)s in runlevels %(levels)s") %
+                { 'name' : self.service.name, 
+                  'levels' : self.service.get_default_runlevels_text()} )
 
     def on_servicetab_show(self, widget):
         self._setState()
 
-    def on_btnReStart_clicked(self, button):
+    def on_Start_clicked(self, button):
+        self.service.action('start')
+        self._setState()
+
+    def on_Restart_clicked(self, button):
         if self.service.status == RUNNING:
             self.service.action('restart')
         else:
             self.service.action('start')
         self._setState()
         
-    def on_btnStop_clicked(self, button):
+    def on_Stop_clicked(self, button):
         self.service.action('stop')
         self._setState()
 
-    def on_btnRunlevels_clicked(self, button):
+    def on_Runlevels_clicked(self, button):
         err, message = getstatusoutput("/usr/bin/system-config-services",
                                        self.uicallback)
         self._setState()
 
-    def on_btnEnable_clicked(self, button):
+    def on_Enable_clicked(self, button):
         self.service.set(True)
         self.service.save_changes()
         self._setState()
 
-    def on_btnDisable_clicked(self, button):
+    def on_Disable_clicked(self, button):
         self.service.set(False)
         self.service.save_changes()        
         self._setState()
+
+    def on_Configure_clicked(self, button):
+        # XXX
+        pass
 
     def _toggleRunlevel(self, button, nr):
         if button.get_icon_widget().get_icon_name() == "ok":
@@ -151,90 +257,30 @@ class ServiceControlBase:
             path = "/usr/bin/system-config-services"
             os.execv(path, [path])
 
-class ServiceControlHBox(ServiceControlBase, gtk.HBox):
-    #XXX DOES NOT WORK YET!
-    def __init__(self): # XXX
+class ServiceControlWidget(ServiceControlBase, GladeWidget):
+    
+    widget_name = None
+    
+    def __init__(self, service_name, configure=True):
+        self.xml = gtk.glade.XML(os.path.join(gladepath, "servicetab.glade"), root=self.widget_name)
+        self.widget = self.xml.get_widget(self.widget_name)
+        self.xml.signal_autoconnect(self)
+        self.getWidgets('Start', 'Stop', 'Restart', 'separator1', 'Enable', 'Disable', 'separator2', 'Configure')
 
-        ServiceControlBase.__init__(self) #XXX
+        ServiceControlBase.__init__(self, service_name, configure)
 
-        #  Setup GUI
-
-        gtk.HBox.__init__(self, homogeneous=False)
-
-        vbox = gtk.VBox()
-        vbox.show()
-        self.stateIcon = gtk.Image()
-        #self.stateIcon.set_from_f("red.png")
-        self.stateIcon.show()
-        vbox.add(self.stateIcon)
-
-        label = gtk.Label("Status")
-        label.show()
-        vbox.add(label)
+        self.service.subscribe(self.update)
+        self._setState()
         
-        self.pack_start(vbox, expand=False)
+    def update(self, service, userdata=None):
+        self._setState()
 
-
-        
-        self.toolbar = gtk.Toolbar()
-           
-        self._addSeperator()
-        self.btnStartStop = self._addButton("Start", "forward",
-                                            self._startStop)
-        self.btnReload = self._addButton("Restart", "reload", self._restart)
-        self.btnReload.set_sensitive(False)
-        self._addSeperator()
-
-        if runlevel_buttons:
-
-            self.btnRunlevel = { }
-
-            for runlevel in [5, 4, 3, 2]:
-                if self.serviceMethods.check_if_on(service_name, runlevel):
-                    icon = "ok"
-                else:
-                    icon = "no"
-                btn = self._addButton("Runlevel %d" % runlevel, icon,
-                                      self._toggleRunlevel, runlevel)
-                self.btnRunlevel[runlevel] = btn
-        else:
-            self._addButton("Runlevels", "configure", self.openServicesTool)
-
-
-        self.add(self.toolbar)
-        self.toolbar.show()
-
-        self.set_size_request(-1, 53)
-        self._setState(self.serviceState)
-
-    def _addButton(self, label, icon, callback, data=None, disabled=False):
-        btn = gtk.ToolButton(label)
-
-        btn.set_label(label)
-        
-        icon = gtk.image_new_from_icon_name(icon, 2)
-        btn.set_icon_widget(icon)
-        icon.show()
-
-        if data is not None:
-            btn.connect("clicked", callback, data)
-        else:
-            btn.connect("clicked", callback)
-            
-        self.toolbar.add(btn)
-        btn.show()
-
-        return btn
-
-    def _addSeperator(self):
-        seperator = gtk.SeparatorToolItem() 
-        self.toolbar.add(seperator)
-        seperator.show()
-
-
-class ServiceControlVBox(ServiceControlBase, gtk.VBox):
-    #XXX DOES NOT WORK YET!
-    pass
+class ServiceControlButtons(ServiceControlWidget):
+    widget_name = "ServiceControlButtons"
+class ServiceControlToolbar(ServiceControlWidget):
+    widget_name = "ServiceControlToolbar"
+class ServiceMenu(ServiceControlWidget):
+    widget_name = "ServiceMenu"
 
 class ServiceTab(ServiceControlBase, GladeWidget):
     """Widget for controlling a service"""
@@ -244,9 +290,9 @@ class ServiceTab(ServiceControlBase, GladeWidget):
             os.path.join(gladepath, "servicetab.glade"), root="servicetab")
 
         # set as attributes
-        self.getWidgets('btnEnable', 'btnDisable', 'btnRunlevels',
+        self.getWidgets('Enable', 'Disable', 'Runlevels',
                         'lblRunlevel', 'lblEditingRunlevels',
-                        'btnReStart', 'btnStop',
+                        'ReStart', 'Stop',
                         'servicetab')
         self.widget = self.servicetab
         self.xml.signal_autoconnect(self)
@@ -263,29 +309,28 @@ class ServiceTab(ServiceControlBase, GladeWidget):
             self.lblEditingRunlevels.set_text(
                 "Changing runlevel %s (current runlevel)" % runlevel)
 
-class ServiceStatus(ServiceStatusBase, GladeWidget):
-    """Status bar widget"""
-    def __init__(self):
-
-        ServiceStatusBase.__init__(self)
-        
-        self.xml = gtk.glade.XML(
-            os.path.join(gladepath, "servicetab.glade"), root="servicestatus")
-        self.getWidgets('servicestatus', 'lblStatus', 'imgStatus')
-        self.widget = self.servicestatus
-        self.xml.signal_autoconnect(self)
-
 gladepath = os.path.dirname(__file__)
 
 def main():
     mainWindow = gtk.Window()
     mainWindow.connect("delete_event", gtk.main_quit)
+    vbox = gtk.VBox(spacing=6)
 
-    serviceControl = ServiceControl("nfs", runlevel_buttons=False)
-    mainWindow.add(serviceControl)
-    
+    # service_name = 'cvs'
+    service_name = 'nfs'
+
+    status = ServiceStatus(service_name)
+    serviceControl = ServiceControlToolbar(service_name, False)
+    serviceMenu = ServiceMenu(service_name)
+    mainWindow.add(vbox)
+    menubar = gtk.MenuBar()
+    menubar.append(serviceMenu.widget)
+    vbox.add(menubar)
+    vbox.add(serviceControl.widget)
+    vbox.add(ServiceControlButtons(service_name).widget)
+    vbox.add(status.widget)
+    vbox.show_all()
     mainWindow.show()
-    serviceControl.show()
 
     gtk.main()
 
