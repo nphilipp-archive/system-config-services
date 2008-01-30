@@ -2,10 +2,10 @@
 
 # Command line configurables
 
-%if 0%{?fedora}%{?rhel} == 0 || 0%{?fedora} >= 7 || 0%{?rhel} >= 6
-%bcond_without xdg_utils
+%if 0%{?fedora}%{?rhel} == 0 || 0%{?fedora} >= 8 || 0%{?rhel} >= 6
+%bcond_without rarian_compat
 %else
-%bcond_with xdg_utils
+%bcond_with rarian_compat
 %endif
 
 %if 0%{?fedora}%{?rhel} == 0 || 0%{?fedora} >= 9 || 0%{?rhel} >= 6
@@ -26,28 +26,30 @@ License: GPLv2+
 Group: Applications/System
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-Requires: /sbin/chkconfig
-Requires: pygtk2
-Requires: pygtk2-libglade
-Requires: rhpl
-%if 0%{?with_console_util:1}
-Requires: usermode >= 1.94
-%else
-Requires: usermode >= 1.36
-%endif
-Requires: usermode-gtk
-%if 0%{?with_xdg_utils:1}
-Requires: xdg-utils
-%else
-Requires: htmlview
-%endif
-Requires: python >= 2.3.0
-Requires: hicolor-icon-theme
 BuildRequires: intltool
 BuildRequires: sed
 BuildRequires: desktop-file-utils
 BuildRequires: perl(XML::Parser)
 BuildRequires: gettext
+BuildRequires: gnome-doc-utils
+BuildRequires: docbook-dtds
+%if %{with rarian_compat}
+BuildRequires: rarian-compat
+%else
+BuildRequires: scrollkeeper
+%endif
+Requires: /sbin/chkconfig
+Requires: pygtk2
+Requires: pygtk2-libglade
+Requires: rhpl
+%if %{with console_util}
+Requires: usermode >= 1.94
+%else
+Requires: usermode >= 1.36
+%endif
+Requires: usermode-gtk
+Requires: python >= 2.3.0
+Requires: hicolor-icon-theme
 Obsoletes: serviceconf <= 0.8.1
 Obsoletes: redhat-config-services <= 0.8.5
 
@@ -90,7 +92,8 @@ rm -rf %{buildroot}
 %files -f %{name}.lang
 %defattr(-,root,root,-)
 %doc COPYING
-%doc docs/*
+%doc %{_datadir}/omf/system-config-services
+%doc %{_datadir}/gnome/help/system-config-services
 %{_sbindir}/*
 %{_bindir}/*
 %{_datadir}/applications/system-config-services.desktop
@@ -103,6 +106,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Wed Jan 30 2008 Nils Philippsen <nphilipp@redhat.com> - 0.9.20-1
+- migrate online help to yelp/Docbook XML
+
 * Fri Jan 11 2008 Nils Philippsen <nphilipp@redhat.com> - 0.9.19-1
 - use config-util for userhelper configuration from Fedora 9 on (#428407)
 

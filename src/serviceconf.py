@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """ system-config-services: This module contains the Gui class which contains the methods pertaining to the gui only """
 # serviceconf.py
-# Copyright © 2002-2006 Red Hat, Inc.
+# Copyright © 2002-2008 Red Hat, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -567,9 +567,9 @@ class Gui:
 # once I have "real" help :)
 #----------------------------------------------------------------------------
     def on_mnuManual_activate(self,args):
-        help_page = "file:///usr/share/doc/system-config-services-" + VERSION + "/html/index.html"
+        help_page = "ghelp:system-config-services"
 
-        paths = ["/usr/bin/xdg-open", "/usr/bin/htmlview", None]
+        paths = ["/usr/bin/yelp", None]
 
         for path in paths:
             if path and os.access (path, os.X_OK):
@@ -577,7 +577,7 @@ class Gui:
          
         if path == None:
             dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_WARNING, gtk.BUTTONS_OK,
-                                    (_("Help is not available.")))
+                                    (_("The help viewer could not be found. To be able to view help you need to install the 'yelp' package.")))
             dlg.set_position(gtk.WIN_POS_CENTER)
             dlg.run()
             dlg.destroy()

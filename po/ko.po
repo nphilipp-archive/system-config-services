@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-25 15:44+0200\n"
+"POT-Creation-Date: 2008-01-30 14:05+0100\n"
 "PO-Revision-Date: 2007-04-30 10:08+1000\n"
 "Last-Translator: Eunju Kim <eukim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -17,35 +17,35 @@ msgstr ""
 "Generated-By: pygettext.py 1.1\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../src/serviceconf.py:76
+#: ../src/serviceconf.py:77
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "%s를 삭제하시겠습니까?"
 
-#: ../src/serviceconf.py:139
+#: ../src/serviceconf.py:140
 #, python-format
 msgid "Runlevel %d"
 msgstr "런레벨 %d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:280
+#: ../src/serviceconf.py:281
 msgid "Currently Running in Runlevel: "
 msgstr "런레벨에서 현재 실행 중임: "
 
-#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
+#: ../src/serviceconf.py:377 ../src/serviceconf.py:480
 msgid "Editing Runlevel: "
 msgstr "런레벨 편집: "
 
-#: ../src/serviceconf.py:418
+#: ../src/serviceconf.py:419
 msgid "Unknown"
 msgstr "알 수 없음"
 
-#: ../src/serviceconf.py:508
+#: ../src/serviceconf.py:509
 msgid "All"
 msgstr "모두"
 
-#: ../src/serviceconf.py:542
+#: ../src/serviceconf.py:543
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright © 2002-2006 Red Hat, Inc.\n"
@@ -65,42 +65,79 @@ msgstr ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:546
+#: ../src/serviceconf.py:547
 msgid "About"
 msgstr "정보"
 
-#: ../src/serviceconf.py:575
-msgid "Help is not available."
-msgstr "도움말이 없습니다."
+#: ../src/serviceconf.py:580
+msgid ""
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr ""
 
-#: ../src/serviceconf.py:714
+#: ../src/serviceconf.py:719
 msgid "You must run system-config-services as root."
 msgstr "system-config-services는 루트로 실행하셔야 합니다."
 
-#: ../src/servicemethods.py:229
+#: ../src/servicecontrol.py:61
+#, python-format
+msgid "Service %s not found!"
+msgstr ""
+
+#: ../src/servicecontrol.py:67
+#, python-format
+msgid "Service %s is running with old config"
+msgstr ""
+
+#: ../src/servicecontrol.py:70
+#, python-format
+msgid "Service %s is running"
+msgstr ""
+
+#: ../src/servicecontrol.py:73
+#, python-format
+msgid "Service %s resports an error"
+msgstr ""
+
+#: ../src/servicecontrol.py:76
+#, python-format
+msgid "Service %s is stopped"
+msgstr ""
+
+#: ../src/servicecontrol.py:185 ../src/servicecontrol.py:200
+#, python-format
+msgid "Currently enabled in runlevels %s"
+msgstr ""
+
+#: ../src/servicecontrol.py:193 ../src/servicecontrol.py:203
+#, python-format
+msgid "Enable %(name)s in runlevels %(levels)s"
+msgstr ""
+
+#: ../src/servicemethods.py:276
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s에 실패했습니다. 오류는 다음과 같습니다: %s"
 
 # ../servicemethods.py:320"
-#: ../src/servicemethods.py:235
+#: ../src/servicemethods.py:283
 msgid " successful"
 msgstr " 성공"
 
-#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
+#: ../src/servicemethods.py:412 ../src/servicemethods.py:423
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "%s (을)를 실행하기 위해서는 반드시 xinetd가 활성화 되어야 합니다"
 
-#: ../src/servicemethods.py:346
+#: ../src/servicemethods.py:417
 msgid "xinetd failed to reload for "
 msgstr "xinetd가 다음을 다시 읽어오는데 실패했습니다: "
 
-#: ../src/servicemethods.py:348
+#: ../src/servicemethods.py:419
 msgid ". The error was: "
 msgstr ". 오류는 다음과 같습니다: "
 
-#: ../src/servicemethods.py:350
+#: ../src/servicemethods.py:421
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd가 %s (을)를 성공적으로 다시 읽어들였습니다"
@@ -133,7 +170,7 @@ msgstr "런레벨 편집:"
 msgid "None"
 msgstr "없음"
 
-#: ../src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:8 ../src/servicetab.glade.h:7
 msgid "Restart"
 msgstr "재시작"
 
@@ -173,7 +210,7 @@ msgstr "서비스 설정"
 msgid "Service Name: "
 msgstr "서비스명: "
 
-#: ../src/serviceconf.glade.h:18
+#: ../src/serviceconf.glade.h:18 ../src/servicetab.glade.h:11
 msgid "Start"
 msgstr "시작"
 
@@ -181,7 +218,7 @@ msgstr "시작"
 msgid "Status"
 msgstr "상태"
 
-#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
+#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:14
 msgid "Stop"
 msgstr "중지"
 
@@ -261,34 +298,74 @@ msgstr "서비스 시작 (_S)"
 msgid "_View"
 msgstr "보기 (_V)"
 
+#: ../src/servicetab.glade.h:1
+msgid "Button Box"
+msgstr ""
+
 #: ../src/servicetab.glade.h:2
+msgid "Configure"
+msgstr ""
+
+#: ../src/servicetab.glade.h:4
 #, no-c-format
 msgid "Current runlevel is %s"
 msgstr "현재 실행 중인 런레벨은 %s입니다"
 
-#: ../src/servicetab.glade.h:3
+#: ../src/servicetab.glade.h:5
 msgid "Disable"
 msgstr "비활성화"
 
-#: ../src/servicetab.glade.h:4
+#: ../src/servicetab.glade.h:6
 msgid "Enable"
 msgstr "활성화"
 
-#: ../src/servicetab.glade.h:5
+#: ../src/servicetab.glade.h:8
 msgid "Runlevels"
 msgstr "런레벨"
 
-#: ../src/servicetab.glade.h:6
+#: ../src/servicetab.glade.h:9
+msgid "Service"
+msgstr ""
+
+#: ../src/servicetab.glade.h:10
 msgid "Service control"
 msgstr "서비스 제어"
 
-#: ../src/servicetab.glade.h:7
+#: ../src/servicetab.glade.h:12
 msgid "Start "
 msgstr "시작 "
 
-#: ../src/servicetab.glade.h:8
+#: ../src/servicetab.glade.h:13
 msgid "Status output"
 msgstr "출력 상태"
+
+#: ../src/servicetab.glade.h:15
+msgid "_Configure"
+msgstr ""
+
+#: ../src/servicetab.glade.h:16
+msgid "_Disable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:17
+msgid "_Enable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:18
+msgid "_Restart"
+msgstr ""
+
+#: ../src/servicetab.glade.h:19
+msgid "_Start"
+msgstr ""
+
+#: ../src/servicetab.glade.h:20
+msgid "barfoo"
+msgstr ""
+
+#: ../src/servicetab.glade.h:21
+msgid "foobar"
+msgstr ""
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -302,3 +379,5 @@ msgstr "서비스 관리"
 msgid "Services"
 msgstr "서비스"
 
+#~ msgid "Help is not available."
+#~ msgstr "도움말이 없습니다."

@@ -23,16 +23,26 @@ GLADEDIR=$(PKGDATADIR)
 PAMD_DIR        = /etc/pam.d
 SECURITY_DIR    = /etc/security/console.apps
 
-all:	$(PKGNAME).desktop $(PKGNAME).console
+MAKEFILE        := $(lastword $(MAKEFILE_LIST))
+TOPDIR          := $(dir $(abspath $(MAKEFILE)))
+DOC_MODULE      = $(PKGNAME)
+DOC_ABS_SRCDIR  = $(TOPDIR)/doc
+DOC_FIGURES_DIR = images
+DOC_FIGURES     = system-config-services.png
+DOC_ENTITIES    = distro-specifics.ent system-config-services-distro-specifics.ent system-config-services-abstract.xml system-config-services-content.xml system-config-services-hostname-formats.xml
+DOC_LINGUAS     =
+
+all:	$(PKGNAME).desktop $(PKGNAME).console doc-all
 	rm -f src/$(PKGNAME)
 	ln -snf serviceconf.py src/$(PKGNAME)
 
+include doc_rules.mk
 include console_rules.mk
 
 %.desktop: %.desktop.in po/$(PKGNAME).pot po/*.po
 	intltool-merge -u -d po/ $< $@
 
-install:	all
+install:	all doc-install
 	$(MAKE) -C po install
 	mkdir -p $(DESTDIR)$(SECURITY_DIR)
 	mkdir -p $(DESTDIR)$(PAMD_DIR)
@@ -149,7 +159,7 @@ local:
 pycheck:
 	pychecker -F pycheckrc src/*.py
 
-clean: console-clean
+clean: doc-clean console-clean
 	@rm -fv *~
 	@rm -fv src/*.pyc src/*.pyo
 	@rm -fv system-config-services.desktop

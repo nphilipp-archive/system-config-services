@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_CN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-25 15:44+0200\n"
+"POT-Creation-Date: 2008-01-30 14:05+0100\n"
 "PO-Revision-Date: 2006-10-31 10:29+0800\n"
 "Last-Translator: ProgramFan <zyangmath@gmail.com>\n"
 "Language-Team:  <zh@li.org>\n"
@@ -20,35 +20,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
 
-#: ../src/serviceconf.py:76
+#: ../src/serviceconf.py:77
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "您确定要删除 %s 吗？"
 
-#: ../src/serviceconf.py:139
+#: ../src/serviceconf.py:140
 #, python-format
 msgid "Runlevel %d"
 msgstr "运行级别 %d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:280
+#: ../src/serviceconf.py:281
 msgid "Currently Running in Runlevel: "
 msgstr "目前运行的级别是："
 
-#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
+#: ../src/serviceconf.py:377 ../src/serviceconf.py:480
 msgid "Editing Runlevel: "
 msgstr "编辑运行级别："
 
-#: ../src/serviceconf.py:418
+#: ../src/serviceconf.py:419
 msgid "Unknown"
 msgstr "未知"
 
-#: ../src/serviceconf.py:508
+#: ../src/serviceconf.py:509
 msgid "All"
 msgstr "全部"
 
-#: ../src/serviceconf.py:542
+#: ../src/serviceconf.py:543
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright © 2002-2006 Red Hat, Inc.\n"
@@ -68,41 +68,78 @@ msgstr ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:546
+#: ../src/serviceconf.py:547
 msgid "About"
 msgstr "关于"
 
-#: ../src/serviceconf.py:575
-msgid "Help is not available."
-msgstr "帮助不存在"
+#: ../src/serviceconf.py:580
+msgid ""
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr ""
 
-#: ../src/serviceconf.py:714
+#: ../src/serviceconf.py:719
 msgid "You must run system-config-services as root."
 msgstr "您必须作为根用户才能运行 system-config-services。"
 
-#: ../src/servicemethods.py:229
+#: ../src/servicecontrol.py:61
+#, python-format
+msgid "Service %s not found!"
+msgstr ""
+
+#: ../src/servicecontrol.py:67
+#, python-format
+msgid "Service %s is running with old config"
+msgstr ""
+
+#: ../src/servicecontrol.py:70
+#, python-format
+msgid "Service %s is running"
+msgstr ""
+
+#: ../src/servicecontrol.py:73
+#, python-format
+msgid "Service %s resports an error"
+msgstr ""
+
+#: ../src/servicecontrol.py:76
+#, python-format
+msgid "Service %s is stopped"
+msgstr ""
+
+#: ../src/servicecontrol.py:185 ../src/servicecontrol.py:200
+#, python-format
+msgid "Currently enabled in runlevels %s"
+msgstr ""
+
+#: ../src/servicecontrol.py:193 ../src/servicecontrol.py:203
+#, python-format
+msgid "Enable %(name)s in runlevels %(levels)s"
+msgstr ""
+
+#: ../src/servicemethods.py:276
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s 失败，错误是：%s"
 
-#: ../src/servicemethods.py:235
+#: ../src/servicemethods.py:283
 msgid " successful"
 msgstr "成功"
 
-#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
+#: ../src/servicemethods.py:412 ../src/servicemethods.py:423
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "一定要启用 xinetd 才可运行 %s"
 
-#: ../src/servicemethods.py:346
+#: ../src/servicemethods.py:417
 msgid "xinetd failed to reload for "
 msgstr "xinetd 重载失败"
 
-#: ../src/servicemethods.py:348
+#: ../src/servicemethods.py:419
 msgid ". The error was: "
 msgstr "错误是："
 
-#: ../src/servicemethods.py:350
+#: ../src/servicemethods.py:421
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xined 重载 %s 成功"
@@ -135,7 +172,7 @@ msgstr "编辑运行级别："
 msgid "None"
 msgstr "无"
 
-#: ../src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:8 ../src/servicetab.glade.h:7
 msgid "Restart"
 msgstr "重启"
 
@@ -175,7 +212,7 @@ msgstr "服务配置"
 msgid "Service Name: "
 msgstr "服务名称："
 
-#: ../src/serviceconf.glade.h:18
+#: ../src/serviceconf.glade.h:18 ../src/servicetab.glade.h:11
 msgid "Start"
 msgstr "开始"
 
@@ -183,7 +220,7 @@ msgstr "开始"
 msgid "Status"
 msgstr "状态"
 
-#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
+#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:14
 msgid "Stop"
 msgstr "停止"
 
@@ -261,34 +298,74 @@ msgstr "开始服务(_S)"
 msgid "_View"
 msgstr "查看(_V)"
 
+#: ../src/servicetab.glade.h:1
+msgid "Button Box"
+msgstr ""
+
 #: ../src/servicetab.glade.h:2
+msgid "Configure"
+msgstr ""
+
+#: ../src/servicetab.glade.h:4
 #, no-c-format
 msgid "Current runlevel is %s"
 msgstr "目前的运行级别是 %s"
 
-#: ../src/servicetab.glade.h:3
+#: ../src/servicetab.glade.h:5
 msgid "Disable"
 msgstr "禁用"
 
-#: ../src/servicetab.glade.h:4
+#: ../src/servicetab.glade.h:6
 msgid "Enable"
 msgstr "启用"
 
-#: ../src/servicetab.glade.h:5
+#: ../src/servicetab.glade.h:8
 msgid "Runlevels"
 msgstr "运行级别"
 
-#: ../src/servicetab.glade.h:6
+#: ../src/servicetab.glade.h:9
+msgid "Service"
+msgstr ""
+
+#: ../src/servicetab.glade.h:10
 msgid "Service control"
 msgstr "服务控制"
 
-#: ../src/servicetab.glade.h:7
+#: ../src/servicetab.glade.h:12
 msgid "Start "
 msgstr "启动"
 
-#: ../src/servicetab.glade.h:8
+#: ../src/servicetab.glade.h:13
 msgid "Status output"
 msgstr "状态输出"
+
+#: ../src/servicetab.glade.h:15
+msgid "_Configure"
+msgstr ""
+
+#: ../src/servicetab.glade.h:16
+msgid "_Disable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:17
+msgid "_Enable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:18
+msgid "_Restart"
+msgstr ""
+
+#: ../src/servicetab.glade.h:19
+msgid "_Start"
+msgstr ""
+
+#: ../src/servicetab.glade.h:20
+msgid "barfoo"
+msgstr ""
+
+#: ../src/servicetab.glade.h:21
+msgid "foobar"
+msgstr ""
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -301,6 +378,9 @@ msgstr "服务程序管理："
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "服务"
+
+#~ msgid "Help is not available."
+#~ msgstr "帮助不存在"
 
 #~ msgid "Start the selected service"
 #~ msgstr "启动服务"

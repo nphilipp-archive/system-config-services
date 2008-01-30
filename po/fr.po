@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-25 15:44+0200\n"
+"POT-Creation-Date: 2008-01-30 14:05+0100\n"
 "PO-Revision-Date: 2006-11-29 06:10+0100\n"
 "Last-Translator: Alain PORTAL <aportal@univ-montp2.fr>\n"
 "Language-Team: Français <traduc@traduc.org>\n"
@@ -24,35 +24,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../src/serviceconf.py:76
+#: ../src/serviceconf.py:77
 #, python-format
 msgid "Are you sure you want to delete the %s?"
 msgstr "Souhaitez-vous vraiment supprimer %s ?"
 
-#: ../src/serviceconf.py:139
+#: ../src/serviceconf.py:140
 #, python-format
 msgid "Runlevel %d"
 msgstr "Niveau d'exécution %d"
 
 #. initialize this to the runlevel we are running in. It will
 #. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:280
+#: ../src/serviceconf.py:281
 msgid "Currently Running in Runlevel: "
 msgstr "Niveau d'exécution actuel : "
 
-#: ../src/serviceconf.py:376 ../src/serviceconf.py:479
+#: ../src/serviceconf.py:377 ../src/serviceconf.py:480
 msgid "Editing Runlevel: "
 msgstr "Modification du niveau d'exécution : "
 
-#: ../src/serviceconf.py:418
+#: ../src/serviceconf.py:419
 msgid "Unknown"
 msgstr "Inconnu"
 
-#: ../src/serviceconf.py:508
+#: ../src/serviceconf.py:509
 msgid "All"
 msgstr "Tous"
 
-#: ../src/serviceconf.py:542
+#: ../src/serviceconf.py:543
 msgid ""
 "System Services Configuration Tool VERSION\n"
 " Copyright © 2002-2006 Red Hat, Inc.\n"
@@ -72,41 +72,78 @@ msgstr ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 
-#: ../src/serviceconf.py:546
+#: ../src/serviceconf.py:547
 msgid "About"
 msgstr "À propos"
 
-#: ../src/serviceconf.py:575
-msgid "Help is not available."
-msgstr "L'aide n'est pas disponible."
+#: ../src/serviceconf.py:580
+msgid ""
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr ""
 
-#: ../src/serviceconf.py:714
+#: ../src/serviceconf.py:719
 msgid "You must run system-config-services as root."
 msgstr "Vous devez exécuter system-config-services en tant que root."
 
-#: ../src/servicemethods.py:229
+#: ../src/servicecontrol.py:61
+#, python-format
+msgid "Service %s not found!"
+msgstr ""
+
+#: ../src/servicecontrol.py:67
+#, python-format
+msgid "Service %s is running with old config"
+msgstr ""
+
+#: ../src/servicecontrol.py:70
+#, python-format
+msgid "Service %s is running"
+msgstr ""
+
+#: ../src/servicecontrol.py:73
+#, python-format
+msgid "Service %s resports an error"
+msgstr ""
+
+#: ../src/servicecontrol.py:76
+#, python-format
+msgid "Service %s is stopped"
+msgstr ""
+
+#: ../src/servicecontrol.py:185 ../src/servicecontrol.py:200
+#, python-format
+msgid "Currently enabled in runlevels %s"
+msgstr ""
+
+#: ../src/servicecontrol.py:193 ../src/servicecontrol.py:203
+#, python-format
+msgid "Enable %(name)s in runlevels %(levels)s"
+msgstr ""
+
+#: ../src/servicemethods.py:276
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "Échec de %s. L'erreur était : %s"
 
-#: ../src/servicemethods.py:235
+#: ../src/servicemethods.py:283
 msgid " successful"
 msgstr " réussi"
 
-#: ../src/servicemethods.py:341 ../src/servicemethods.py:352
+#: ../src/servicemethods.py:412 ../src/servicemethods.py:423
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd doit être activé pour que %s puisse être exécuté"
 
-#: ../src/servicemethods.py:346
+#: ../src/servicemethods.py:417
 msgid "xinetd failed to reload for "
 msgstr "xinetd n'a pas redémarré à cause de "
 
-#: ../src/servicemethods.py:348
+#: ../src/servicemethods.py:419
 msgid ". The error was: "
 msgstr ". L'erreur était : "
 
-#: ../src/servicemethods.py:350
+#: ../src/servicemethods.py:421
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "Rechargement de %s par xinetd réussi"
@@ -139,7 +176,7 @@ msgstr "Modification du niveau d'exécution :"
 msgid "None"
 msgstr "Aucun"
 
-#: ../src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:8 ../src/servicetab.glade.h:7
 msgid "Restart"
 msgstr "Redémarrer"
 
@@ -179,7 +216,7 @@ msgstr "Configuration du service"
 msgid "Service Name: "
 msgstr "Nom de service :"
 
-#: ../src/serviceconf.glade.h:18
+#: ../src/serviceconf.glade.h:18 ../src/servicetab.glade.h:11
 msgid "Start"
 msgstr "Démarrer"
 
@@ -187,7 +224,7 @@ msgstr "Démarrer"
 msgid "Status"
 msgstr "État"
 
-#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:9
+#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:14
 msgid "Stop"
 msgstr "Arrêter"
 
@@ -268,34 +305,74 @@ msgstr "_Démarrer le service"
 msgid "_View"
 msgstr "_Vue"
 
+#: ../src/servicetab.glade.h:1
+msgid "Button Box"
+msgstr ""
+
 #: ../src/servicetab.glade.h:2
+msgid "Configure"
+msgstr ""
+
+#: ../src/servicetab.glade.h:4
 #, no-c-format
 msgid "Current runlevel is %s"
 msgstr "Le niveau d'exécution courant est %s"
 
-#: ../src/servicetab.glade.h:3
+#: ../src/servicetab.glade.h:5
 msgid "Disable"
 msgstr "Désactiver"
 
-#: ../src/servicetab.glade.h:4
+#: ../src/servicetab.glade.h:6
 msgid "Enable"
 msgstr "Activer"
 
-#: ../src/servicetab.glade.h:5
+#: ../src/servicetab.glade.h:8
 msgid "Runlevels"
 msgstr "Niveaux d'exécution"
 
-#: ../src/servicetab.glade.h:6
+#: ../src/servicetab.glade.h:9
+msgid "Service"
+msgstr ""
+
+#: ../src/servicetab.glade.h:10
 msgid "Service control"
 msgstr "Contrôle du service"
 
-#: ../src/servicetab.glade.h:7
+#: ../src/servicetab.glade.h:12
 msgid "Start "
 msgstr "Démarrer"
 
-#: ../src/servicetab.glade.h:8
+#: ../src/servicetab.glade.h:13
 msgid "Status output"
 msgstr "Statut de sortie"
+
+#: ../src/servicetab.glade.h:15
+msgid "_Configure"
+msgstr ""
+
+#: ../src/servicetab.glade.h:16
+msgid "_Disable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:17
+msgid "_Enable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:18
+msgid "_Restart"
+msgstr ""
+
+#: ../src/servicetab.glade.h:19
+msgid "_Start"
+msgstr ""
+
+#: ../src/servicetab.glade.h:20
+msgid "barfoo"
+msgstr ""
+
+#: ../src/servicetab.glade.h:21
+msgid "foobar"
+msgstr ""
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -308,3 +385,6 @@ msgstr "Gestion des services"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Services"
+
+#~ msgid "Help is not available."
+#~ msgstr "L'aide n'est pas disponible."
