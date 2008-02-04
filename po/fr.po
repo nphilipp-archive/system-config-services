@@ -1,4 +1,4 @@
-# translation of system-config-services.po to Français
+# translation of system-config-services.tip.po to Français
 # translation of fr.po to
 # translation of fr.po to
 # Copyright (C) 2001 Red Hat, Inc.
@@ -11,14 +11,15 @@
 # Thomas Canniot <thomas.canniot@laposte.net>, 2006.
 # Damien Durand <splinux@fedoraproject.org>, 2006.
 # Alain PORTAL <aportal@univ-montp2.fr>, 2006.
+# Mathieu Schopfer <mat.schopfer@bluewin.ch>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services\n"
+"Project-Id-Version: system-config-services.tip\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-30 14:05+0100\n"
-"PO-Revision-Date: 2006-11-29 06:10+0100\n"
-"Last-Translator: Alain PORTAL <aportal@univ-montp2.fr>\n"
-"Language-Team: Français <traduc@traduc.org>\n"
+"POT-Creation-Date: 2008-02-03 02:13-0700\n"
+"PO-Revision-Date: 2008-02-03 17:15+0100\n"
+"Last-Translator: Mathieu Schopfer <mat.schopfer@bluewin.ch>\n"
+"Language-Team: Français <fedora-trans-fr@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -55,7 +56,7 @@ msgstr "Tous"
 #: ../src/serviceconf.py:543
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright © 2002-2006 Red Hat, Inc.\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat.com>\n"
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
@@ -63,7 +64,7 @@ msgid ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
-"Outil de Configuration des Services Système VERSION\n"
+"Outil de configuration des services du système VERSION\n"
 " Copyright © 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat.com>\n"
 " Bill Nottingham <notting@redhat.com>\n"
@@ -80,46 +81,11 @@ msgstr "À propos"
 msgid ""
 "The help viewer could not be found. To be able to view help you need to "
 "install the 'yelp' package."
-msgstr ""
+msgstr "Impossible d'afficher l'aide. Pour la voir, vous devez installer le paquetage « yelp »."
 
 #: ../src/serviceconf.py:719
 msgid "You must run system-config-services as root."
-msgstr "Vous devez exécuter system-config-services en tant que root."
-
-#: ../src/servicecontrol.py:61
-#, python-format
-msgid "Service %s not found!"
-msgstr ""
-
-#: ../src/servicecontrol.py:67
-#, python-format
-msgid "Service %s is running with old config"
-msgstr ""
-
-#: ../src/servicecontrol.py:70
-#, python-format
-msgid "Service %s is running"
-msgstr ""
-
-#: ../src/servicecontrol.py:73
-#, python-format
-msgid "Service %s resports an error"
-msgstr ""
-
-#: ../src/servicecontrol.py:76
-#, python-format
-msgid "Service %s is stopped"
-msgstr ""
-
-#: ../src/servicecontrol.py:185 ../src/servicecontrol.py:200
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr ""
-
-#: ../src/servicecontrol.py:193 ../src/servicecontrol.py:203
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr ""
+msgstr "Vous devez exécuter system-config-services en tant que superutilisateur."
 
 #: ../src/servicemethods.py:276
 #, python-format
@@ -176,7 +142,7 @@ msgstr "Modification du niveau d'exécution :"
 msgid "None"
 msgstr "Aucun"
 
-#: ../src/serviceconf.glade.h:8 ../src/servicetab.glade.h:7
+#: ../src/serviceconf.glade.h:8
 msgid "Restart"
 msgstr "Redémarrer"
 
@@ -216,7 +182,7 @@ msgstr "Configuration du service"
 msgid "Service Name: "
 msgstr "Nom de service :"
 
-#: ../src/serviceconf.glade.h:18 ../src/servicetab.glade.h:11
+#: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Démarrer"
 
@@ -224,7 +190,7 @@ msgstr "Démarrer"
 msgid "Status"
 msgstr "État"
 
-#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:14
+#: ../src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "Arrêter"
 
@@ -305,75 +271,6 @@ msgstr "_Démarrer le service"
 msgid "_View"
 msgstr "_Vue"
 
-#: ../src/servicetab.glade.h:1
-msgid "Button Box"
-msgstr ""
-
-#: ../src/servicetab.glade.h:2
-msgid "Configure"
-msgstr ""
-
-#: ../src/servicetab.glade.h:4
-#, no-c-format
-msgid "Current runlevel is %s"
-msgstr "Le niveau d'exécution courant est %s"
-
-#: ../src/servicetab.glade.h:5
-msgid "Disable"
-msgstr "Désactiver"
-
-#: ../src/servicetab.glade.h:6
-msgid "Enable"
-msgstr "Activer"
-
-#: ../src/servicetab.glade.h:8
-msgid "Runlevels"
-msgstr "Niveaux d'exécution"
-
-#: ../src/servicetab.glade.h:9
-msgid "Service"
-msgstr ""
-
-#: ../src/servicetab.glade.h:10
-msgid "Service control"
-msgstr "Contrôle du service"
-
-#: ../src/servicetab.glade.h:12
-msgid "Start "
-msgstr "Démarrer"
-
-#: ../src/servicetab.glade.h:13
-msgid "Status output"
-msgstr "Statut de sortie"
-
-#: ../src/servicetab.glade.h:15
-msgid "_Configure"
-msgstr ""
-
-#: ../src/servicetab.glade.h:16
-msgid "_Disable"
-msgstr ""
-
-#: ../src/servicetab.glade.h:17
-msgid "_Enable"
-msgstr ""
-
-#: ../src/servicetab.glade.h:18
-msgid "_Restart"
-msgstr ""
-
-#: ../src/servicetab.glade.h:19
-msgid "_Start"
-msgstr ""
-
-#: ../src/servicetab.glade.h:20
-msgid "barfoo"
-msgstr ""
-
-#: ../src/servicetab.glade.h:21
-msgid "foobar"
-msgstr ""
-
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "Configure quels services seront lancés au démarrage du système"
@@ -386,5 +283,3 @@ msgstr "Gestion des services"
 msgid "Services"
 msgstr "Services"
 
-#~ msgid "Help is not available."
-#~ msgstr "L'aide n'est pas disponible."
