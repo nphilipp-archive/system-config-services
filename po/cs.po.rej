@@ -1,0 +1,377 @@
+***************
+*** 1,19 ****
+  # Czech translation for system-config-users
+  # $Id: cs.po,v 1.94 2007/06/13 16:02:43 nphilipp Exp $
+  # Copyright (C) 2001, 2006 Free Software Foundation, Inc.
+  # Milan Kerslager <kerslage@linux.cz>, 2001, 2007.
+- # Miloslav Trmac <mitr@volny.cz>, 2002, 2003, 2004, 2005.
+  # Nikola Štohanzl <niko@srnet.cz>, 2006.
+  # Milan Kerslager <kerslage@linux.cz>, 2007.
+- # 
+  #
+- msgid ""
+- msgstr ""
+- "Project-Id-Version: cs\n"
+  "Report-Msgid-Bugs-To: \n"
+  "POT-Creation-Date: 2008-01-31 14:30+0100\n"
+- "PO-Revision-Date: 2007-05-19 01:42-0400\n"
+- "Last-Translator: Adam Pribyl <pribyl@lowlevel.cz>\n"
+  "Language-Team: Czech\n"
+  "MIME-Version: 1.0\n"
+  "Content-Type: text/plain; charset=UTF-8\n"
+--- 1,22 ----
+  # Czech translation for system-config-users
+  # $Id: cs.po,v 1.94 2007/06/13 16:02:43 nphilipp Exp $
+  # Copyright (C) 2001, 2006 Free Software Foundation, Inc.
++ # Copyright (C) 2008 system-config-users' COPYRIGHT HOLDER
++ # Copyright (C) 2008 Miloslav Trmač <mitr@volny.cz>
++ #
+  # Milan Kerslager <kerslage@linux.cz>, 2001, 2007.
++ # Miloslav Trmač <mitr@volny.cz>, 2002, 2003, 2004, 2005, 2008.
+  # Nikola Štohanzl <niko@srnet.cz>, 2006.
+  # Milan Kerslager <kerslage@linux.cz>, 2007.
+  #
++ #
++ msgid ""
++ msgstr ""
++ "Project-Id-Version: system-config-users tip\n"
+  "Report-Msgid-Bugs-To: \n"
+  "POT-Creation-Date: 2008-01-31 14:30+0100\n"
++ "PO-Revision-Date: 2008-02-04 02:38+0100\n"
++ "Last-Translator: Miloslav Trmač <mitr@volny.cz>\n"
+  "Language-Team: Czech\n"
+  "MIME-Version: 1.0\n"
+  "Content-Type: text/plain; charset=UTF-8\n"
+***************
+*** 59,70 ****
+  msgid ""
+  "The help viewer could not be found. To be able to view help you need to "
+  "install the 'yelp' package."
+- msgstr ""
+  
+  #: ../src/mainWindow.py:150
+  #, python-format
+  msgid "No helper application for the URL '%(url)s can be found."
+- msgstr ""
+  
+  #: ../src/mainWindow.py:175
+  #, python-format
+--- 62,73 ----
+  msgid ""
+  "The help viewer could not be found. To be able to view help you need to "
+  "install the 'yelp' package."
++ msgstr "Nelze najít prohlížeč nápovědy. Pro zobrazování nápovědy musíte nainstalovat balíček 'yelp'."
+  
+  #: ../src/mainWindow.py:150
+  #, python-format
+  msgid "No helper application for the URL '%(url)s can be found."
++ msgstr "Pro URL '%(url)s nelze najít pomocnou aplikaci."
+  
+  #: ../src/mainWindow.py:175
+  #, python-format
+***************
+*** 176,184 ****
+  "ignorovat a pokračovat. Opravte prosím tyto nesrovnalosti co nejdříve."
+  
+  #: ../src/mainWindow.py:631 system-config-users.gladestrings:92
+- #, fuzzy
+  msgid "system-config-users"
+- msgstr "O system-config-users"
+  
+  #: ../src/mainWindow.py:641
+  #, python-format
+--- 179,186 ----
+  "ignorovat a pokračovat. Opravte prosím tyto nesrovnalosti co nejdříve."
+  
+  #: ../src/mainWindow.py:631 system-config-users.gladestrings:92
+  msgid "system-config-users"
++ msgstr "system-config-users"
+  
+  #: ../src/mainWindow.py:641
+  #, python-format
+***************
+*** 193,204 ****
+  #: ../src/mainWindow.py:651
+  #, python-format
+  msgid "%(author)s <%(email)s>"
+- msgstr ""
+  
+  #: ../src/mainWindow.py:653
+  #, python-format
+  msgid "%(author)s"
+- msgstr ""
+  
+  #: ../src/mainWindow.py:701
+  msgid "Deleting the root user is not allowed."
+--- 195,206 ----
+  #: ../src/mainWindow.py:651
+  #, python-format
+  msgid "%(author)s <%(email)s>"
++ msgstr "%(author)s <%(email)s>"
+  
+  #: ../src/mainWindow.py:653
+  #, python-format
+  msgid "%(author)s"
++ msgstr "%(author)s"
+  
+  #: ../src/mainWindow.py:701
+  msgid "Deleting the root user is not allowed."
+***************
+*** 399,438 ****
+  "dvojtečky."
+  
+  #: ../src/userGroupCheck.py:193
+- #, fuzzy, python-format
+  msgid ""
+  "The directory name '%s' doesn't begin with a '/'. Please specify an absolute "
+  "path for the home directory."
+- msgstr ""
+- "Název adresáře '%s' obsahuje dvojtečku. Nepoužívejte prosím v názvu adresáře "
+- "dvojtečky."
+  
+  #: ../src/userGroupCheck.py:199
+- #, fuzzy, python-format
+  msgid ""
+  "The directory name '%s' has path components which are too long. Please use "
+  "shorter path components for the home directory."
+- msgstr ""
+- "Název adresáře '%s' obsahuje dvojtečku. Nepoužívejte prosím v názvu adresáře "
+- "dvojtečky."
+  
+  #: ../src/userGroupCheck.py:206
+- #, fuzzy, python-format
+  msgid ""
+  "The directory name '%s' contains empty path components. Please specify a "
+  "home directory name without empty path components."
+- msgstr ""
+- "Název adresáře '%s' obsahuje dvojtečku. Nepoužívejte prosím v názvu adresáře "
+- "dvojtečky."
+  
+  #: ../src/userGroupCheck.py:215
+- #, fuzzy, python-format
+  msgid ""
+  "The directory name '%s' contains illegal path components. Please don't use "
+  "'.' or '..' as path components for the home directory."
+- msgstr ""
+- "Název adresáře '%s' obsahuje dvojtečku. Nepoužívejte prosím v názvu adresáře "
+- "dvojtečky."
+  
+  #: ../src/userProperties.py:121 ../src/userWindow.py:87
+  msgid "User"
+--- 401,432 ----
+  "dvojtečky."
+  
+  #: ../src/userGroupCheck.py:193
++ #, python-format
+  msgid ""
+  "The directory name '%s' doesn't begin with a '/'. Please specify an absolute "
+  "path for the home directory."
++ msgstr "Název adresáře '%s' nezačíná s '/'. Zadejte prosím absolutní cestu domovského adresáře."
+  
+  #: ../src/userGroupCheck.py:199
++ #, python-format
+  msgid ""
+  "The directory name '%s' has path components which are too long. Please use "
+  "shorter path components for the home directory."
++ msgstr "Název adresáře '%s' obsahuje příliš dlouhé komponenty cesty. Použijte prosím pro domovský adresář kratší komponenty cesty."
+  
+  #: ../src/userGroupCheck.py:206
++ #, python-format
+  msgid ""
+  "The directory name '%s' contains empty path components. Please specify a "
+  "home directory name without empty path components."
++ msgstr "Název adresáře '%s' obsahuje prázdné komponenty cesty. Zadejte prosím název domovského adresáře bez prázdných komponent cesty."
+  
+  #: ../src/userGroupCheck.py:215
++ #, python-format
+  msgid ""
+  "The directory name '%s' contains illegal path components. Please don't use "
+  "'.' or '..' as path components for the home directory."
++ msgstr "Název adresáře '%s' obsahuje neplatné komponenty cesty. Nepoužívejte prosím '.' a '..' jako komponenty cesty pro domovský adresář."
+  
+  #: ../src/userProperties.py:121 ../src/userWindow.py:87
+  msgid "User"
+***************
+*** 494,505 ****
+  msgstr "Zadejte prosím počet dní před tím, než je povolena změna hesla."
+  
+  #: ../src/userProperties.py:528
+- #, fuzzy, python-format
+  msgid ""
+  "The number of days before changing the password is allowed must be between %"
+  "(min)d and %(max)d."
+- msgstr ""
+- "Počet dní před tím, než je povoleno změnit si heslo, musí být mezi 0 a 99999."
+  
+  #: ../src/userProperties.py:533
+  msgid ""
+--- 488,498 ----
+  msgstr "Zadejte prosím počet dní před tím, než je povolena změna hesla."
+  
+  #: ../src/userProperties.py:528
++ #, python-format
+  msgid ""
+  "The number of days before changing the password is allowed must be between %"
+  "(min)d and %(max)d."
++ msgstr "Počet dní před tím, než je povoleno změnit si heslo, musí být mezi %(min)d a %(max)d."
+  
+  #: ../src/userProperties.py:533
+  msgid ""
+***************
+*** 507,518 ****
+  msgstr "Zadejte prosím počet dní před tím, než je vyžadována změna hesla."
+  
+  #: ../src/userProperties.py:535
+- #, fuzzy, python-format
+  msgid ""
+  "The number of days before changing the password is required must be between %"
+  "(min)d and %(max)d."
+- msgstr ""
+- "Počet dní před tím, než je vyžadována změna hesla, musí být mezi 0 a 99999."
+  
+  #: ../src/userProperties.py:539
+  msgid ""
+--- 500,510 ----
+  msgstr "Zadejte prosím počet dní před tím, než je vyžadována změna hesla."
+  
+  #: ../src/userProperties.py:535
++ #, python-format
+  msgid ""
+  "The number of days before changing the password is required must be between %"
+  "(min)d and %(max)d."
++ msgstr "Počet dní před tím, než je vyžadována změna hesla, musí být mezi %(min)d a %(max)d."
+  
+  #: ../src/userProperties.py:539
+  msgid ""
+***************
+*** 522,534 ****
+  "Zadejte prosím počet dní varování uživatele, než je vyžadována změna hesla."
+  
+  #: ../src/userProperties.py:541
+- #, fuzzy, python-format
+  msgid ""
+  "The number of days to warn the user before changing the password is required "
+  "must be between %(min)d and %(max)d."
+- msgstr ""
+- "Počet dní varování uživatele, že bude vyžadována změna hesla, musí být mezi "
+- "0 a 99999."
+  
+  #: ../src/userProperties.py:547
+  msgid ""
+--- 514,524 ----
+  "Zadejte prosím počet dní varování uživatele, než je vyžadována změna hesla."
+  
+  #: ../src/userProperties.py:541
++ #, python-format
+  msgid ""
+  "The number of days to warn the user before changing the password is required "
+  "must be between %(min)d and %(max)d."
++ msgstr "Počet dní varování uživatele, že bude vyžadována změna hesla, musí být mezi %(min)d a %(max)d."
+  
+  #: ../src/userProperties.py:547
+  msgid ""
+***************
+*** 539,553 ****
+  "neaktivní."
+  
+  #: ../src/userProperties.py:549
+- #, fuzzy, python-format
+  msgid ""
+  "The number of days until the user account becomes inactive after the "
+  "password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+  "means the account won't become inactive."
+- msgstr ""
+- "Počet dní od vypršení hesla, po jejichž uplynutí se uživatelský účet stane "
+- "neaktivní, musí být mezi 1 až 99999. Nastavení na 1 znamená, že účet nebude "
+- "nikdy aktivní."
+  
+  #: ../src/userWindow.py:215
+  msgid "The passwords do not match."
+--- 529,540 ----
+  "neaktivní."
+  
+  #: ../src/userProperties.py:549
++ #, python-format
+  msgid ""
+  "The number of days until the user account becomes inactive after the "
+  "password has expired must be between %(min)d and %(max)d. Setting it to -1 "
+  "means the account won't become inactive."
++ msgstr "Počet dní od vypršení hesla, po jejichž uplynutí se uživatelský účet stane neaktivní, musí být mezi %(min)d a %(max)d. Nastavení na -1 znamená, že účet nebude nikdy aktivní."
+  
+  #: ../src/userWindow.py:215
+  msgid "The passwords do not match."
+***************
+*** 911,923 ****
+  msgstr "<b>Noví uživatelé</b>"
+  
+  #: system-config-users.gladestrings:93
+- #, fuzzy
+  msgid "Copyright © 2001-2007 Red Hat, Inc."
+- msgstr "Copyright (c) 2001 - 2005 Red Hat, Inc."
+  
+  #: system-config-users.gladestrings:94
+  msgid "Manages users and groups on your system."
+- msgstr ""
+  
+  #: system-config-users.gladestrings:95
+  msgid ""
+--- 898,909 ----
+  msgstr "<b>Noví uživatelé</b>"
+  
+  #: system-config-users.gladestrings:93
+  msgid "Copyright © 2001-2007 Red Hat, Inc."
++ msgstr "Copyright © 2001-2007 Red Hat, Inc."
+  
+  #: system-config-users.gladestrings:94
+  msgid "Manages users and groups on your system."
++ msgstr "Spravuje uživatele a skupiny ve vašem systému."
+  
+  #: system-config-users.gladestrings:95
+  msgid ""
+***************
+*** 935,954 ****
+  "system-config-users; if not, write to the Free Software Foundation, Inc., 51 "
+  "Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+  msgstr ""
+  
+  #: system-config-users.gladestrings:100
+  msgid "translator-credits"
+  msgstr ""
+  
+  #~ msgid "Version %s"
+  #~ msgstr "Verze %s"
+  
+  #~ msgid "Help is not available."
+  #~ msgstr "Nápověda není k dispozici."
+- 
+- #, fuzzy
+- #~ msgid "_Specify group ID manually:"
+- #~ msgstr "_Určit ID skupiny ručně"
+  
+  #~ msgid "Con_firm Password:"
+  #~ msgstr "_Potvrdit heslo:"
+--- 921,944 ----
+  "system-config-users; if not, write to the Free Software Foundation, Inc., 51 "
+  "Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+  msgstr ""
++ "Tento program je svobodný software; můžete ho redistribuovat a modifikovat pod podmínkami GNU General Public Licence tak jak byla uveřejněna Free Software Foundation; buď verze 2 této licence, nebo (podle vašeho uvážení) jakékoli pozdější verze.\n"
++ "\n"
++ "Tento program je distribuován v dobré víře, že bude užitečný, ale bez JAKÉKOLI ZÁRUKY; a to ani bez záruky POUŽITELNOSTI nebo VHODNOSTI PRO KONKRÉTNÍ ÚČEL. Podrobnosti najdete v GNU General Public Licenci.\n"
++ "\n"
++ "Kopii GNU General Public License jste měli obdržet s system-config-users; pokud ne, napište Free Software Foundation Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+  
+  #: system-config-users.gladestrings:100
+  msgid "translator-credits"
+  msgstr ""
++ "Milan Keršláger <kerslage@linux.cz>\n"
++ "Miloslav Trmač <mitr@volny.cz>\n"
++ "Nikola Štohanzl <niko@srnet.cz>"
+  
+  #~ msgid "Version %s"
+  #~ msgstr "Verze %s"
+  
+  #~ msgid "Help is not available."
+  #~ msgstr "Nápověda není k dispozici."
+  
+  #~ msgid "Con_firm Password:"
+  #~ msgstr "_Potvrdit heslo:"
