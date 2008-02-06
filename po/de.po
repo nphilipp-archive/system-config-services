@@ -17,8 +17,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-users\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-30 14:05+0100\n"
-"PO-Revision-Date: 2008-01-30 09:32+0100\n"
+"POT-Creation-Date: 2008-02-06 01:35-0700\n"
+"PO-Revision-Date: 2008-02-06 12:26+0100\n"
 "Last-Translator: Fabian Affolter <fab@fedoraproject.org>\n"
 "Language-Team: German <fedora-trans-de@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -44,7 +44,8 @@ msgstr "Runlevel %d"
 msgid "Currently Running in Runlevel: "
 msgstr "Folgender Runlevel wird gerade ausgeführt: "
 
-#: ../src/serviceconf.py:377 ../src/serviceconf.py:480
+#: ../src/serviceconf.py:377
+#: ../src/serviceconf.py:480
 msgid "Editing Runlevel: "
 msgstr "Bearbeite Runlevel: "
 
@@ -59,7 +60,7 @@ msgstr "Alle"
 #: ../src/serviceconf.py:543
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright © 2002-2006 Red Hat, Inc.\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat.com>\n"
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
@@ -67,55 +68,26 @@ msgid ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
+"System Services Configuration Tool VERSION\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
+" "
 
 #: ../src/serviceconf.py:547
 msgid "About"
 msgstr "Über"
 
 #: ../src/serviceconf.py:580
-msgid ""
-"The help viewer could not be found. To be able to view help you need to "
-"install the 'yelp' package."
-msgstr ""
+msgid "The help viewer could not be found. To be able to view help you need to install the 'yelp' package."
+msgstr "Das Anzeigeprogramm für die Hilfe wurde nicht gefunden. Um die Möglichkeit zu haben, die Hilfe anzusehen, müssen Sie das 'yelp'-Paket installieren."
 
 #: ../src/serviceconf.py:719
 msgid "You must run system-config-services as root."
 msgstr "Sie müssen system-config-services als Root ausführen."
-
-#: ../src/servicecontrol.py:61
-#, python-format
-msgid "Service %s not found!"
-msgstr ""
-
-#: ../src/servicecontrol.py:67
-#, python-format
-msgid "Service %s is running with old config"
-msgstr ""
-
-#: ../src/servicecontrol.py:70
-#, python-format
-msgid "Service %s is running"
-msgstr ""
-
-#: ../src/servicecontrol.py:73
-#, python-format
-msgid "Service %s resports an error"
-msgstr ""
-
-#: ../src/servicecontrol.py:76
-#, python-format
-msgid "Service %s is stopped"
-msgstr ""
-
-#: ../src/servicecontrol.py:185 ../src/servicecontrol.py:200
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr ""
-
-#: ../src/servicecontrol.py:193 ../src/servicecontrol.py:203
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr ""
 
 #: ../src/servicemethods.py:276
 #, python-format
@@ -126,7 +98,8 @@ msgstr "%s ist fehlgeschlagen. Der Fehler war: %s"
 msgid " successful"
 msgstr " erfolgreich"
 
-#: ../src/servicemethods.py:412 ../src/servicemethods.py:423
+#: ../src/servicemethods.py:412
+#: ../src/servicemethods.py:423
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd muss aktiviert werden, damit %s ausgeführt werden kann"
@@ -172,7 +145,7 @@ msgstr "Bearbeite Runlevel:"
 msgid "None"
 msgstr "Keiner"
 
-#: ../src/serviceconf.glade.h:8 ../src/servicetab.glade.h:7
+#: ../src/serviceconf.glade.h:8
 msgid "Restart"
 msgstr "Neustart"
 
@@ -212,7 +185,7 @@ msgstr "Dienste-Konfiguration"
 msgid "Service Name: "
 msgstr "Dienstname: "
 
-#: ../src/serviceconf.glade.h:18 ../src/servicetab.glade.h:11
+#: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Starten"
 
@@ -220,26 +193,17 @@ msgstr "Starten"
 msgid "Status"
 msgstr "Status"
 
-#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:14
+#: ../src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "Stop"
 
 #: ../src/serviceconf.glade.h:21
-msgid ""
-"These services are started on demand and end when there is nothing more to "
-"do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
-"Diese Dienste werden bei Bedarf gestartet und beenden sich, wenn es nichts "
-"mehr zu tun gibt. Der <b>xinetd</b> Dienst muss laufen, damit sie benutzt "
-"werden können."
+msgid "These services are started on demand and end when there is nothing more to do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr "Diese Dienste werden bei Bedarf gestartet und beenden sich, wenn es nichts mehr zu tun gibt. Der <b>xinetd</b> Dienst muss laufen, damit sie benutzt werden können."
 
 #: ../src/serviceconf.glade.h:22
-msgid ""
-"These services are started once and run in the background. You can specify "
-"in which runlevels they are started."
-msgstr ""
-"Diese Dienste werden ein Mal gestartet und laufen im Hintergrund. Sie können "
-"festlegen, in welchen Runleveln sie gestartet werden."
+msgid "These services are started once and run in the background. You can specify in which runlevels they are started."
+msgstr "Diese Dienste werden ein Mal gestartet und laufen im Hintergrund. Sie können festlegen, in welchen Runleveln sie gestartet werden."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -301,79 +265,9 @@ msgstr "Dienst _starten"
 msgid "_View"
 msgstr "_Anzeigen"
 
-#: ../src/servicetab.glade.h:1
-msgid "Button Box"
-msgstr ""
-
-#: ../src/servicetab.glade.h:2
-msgid "Configure"
-msgstr ""
-
-#: ../src/servicetab.glade.h:4
-#, no-c-format
-msgid "Current runlevel is %s"
-msgstr "Aktuelles Runlevel ist %s"
-
-#: ../src/servicetab.glade.h:5
-msgid "Disable"
-msgstr "Deaktivieren"
-
-#: ../src/servicetab.glade.h:6
-msgid "Enable"
-msgstr "Aktivieren"
-
-#: ../src/servicetab.glade.h:8
-msgid "Runlevels"
-msgstr "Runlevel"
-
-#: ../src/servicetab.glade.h:9
-msgid "Service"
-msgstr ""
-
-#: ../src/servicetab.glade.h:10
-msgid "Service control"
-msgstr "Dienste-Kontrolle"
-
-#: ../src/servicetab.glade.h:12
-msgid "Start "
-msgstr "Starten "
-
-#: ../src/servicetab.glade.h:13
-msgid "Status output"
-msgstr "Status-Ausgabe"
-
-#: ../src/servicetab.glade.h:15
-msgid "_Configure"
-msgstr ""
-
-#: ../src/servicetab.glade.h:16
-msgid "_Disable"
-msgstr ""
-
-#: ../src/servicetab.glade.h:17
-msgid "_Enable"
-msgstr ""
-
-#: ../src/servicetab.glade.h:18
-msgid "_Restart"
-msgstr ""
-
-#: ../src/servicetab.glade.h:19
-msgid "_Start"
-msgstr ""
-
-#: ../src/servicetab.glade.h:20
-msgid "barfoo"
-msgstr ""
-
-#: ../src/servicetab.glade.h:21
-msgid "foobar"
-msgstr ""
-
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
-"Konfiguriere, welche Dienste beim Starten des Systems ausgeführt werden"
+msgstr "Konfiguriere, welche Dienste beim Starten des Systems ausgeführt werden"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -383,24 +277,20 @@ msgstr "Dienste-Verwaltung"
 msgid "Services"
 msgstr "Dienste"
 
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-
+#~ msgid "Current runlevel is %s"
+#~ msgstr "Aktuelles Runlevel ist %s"
+#~ msgid "Disable"
+#~ msgstr "Deaktivieren"
+#~ msgid "Enable"
+#~ msgstr "Aktivieren"
+#~ msgid "Runlevels"
+#~ msgstr "Runlevel"
+#~ msgid "Service control"
+#~ msgstr "Dienste-Kontrolle"
+#~ msgid "Start "
+#~ msgstr "Starten "
+#~ msgid "Status output"
+#~ msgstr "Status-Ausgabe"
 #~ msgid "Help is not available."
 #~ msgstr "Hilfe ist nicht verfügbar."
+
