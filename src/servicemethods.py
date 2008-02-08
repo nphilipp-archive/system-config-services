@@ -53,6 +53,13 @@ RUNNING = 1
 STOPPED = 2
 ERROR = 4
 
+status_text = {
+    UNKNOWN : _('Unknown'),
+    RUNNING : _('Running'),
+    STOPPED : _('Stopped'),
+    ERROR : _('Error'), 
+    }
+
 class Service:
     """Represents a service with start script in /etc/init.d
     """
@@ -687,3 +694,27 @@ def Services(uicallback = None):
         _services = _Services(uicallback)
     _services.uicallback = _services.uicallback or uicallback
     return  _services
+
+"""
+_default_runlevel = None
+def default_runlevel():
+    if _default_runlevel:
+        return _default_runlevel
+    regex = re.compile('^\w+:(\d):initdefault:.*')
+    for line in open('/etc/inittab', 'r'):
+        m = regex.match(line)
+        if m:
+            _default_runlevel = int(m.groups(1))
+            break
+    
+    return _default_runlevel
+
+def runlevel(callback=None):
+    if callback is None and _services:
+        callback = _service._callback
+    status, text = getstatusoutput('/sbin/runlevel', callback)
+    if status or (len(text) != 3):
+        return -1
+    else:
+        return int(text[-1])
+"""
