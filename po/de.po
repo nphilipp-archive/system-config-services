@@ -17,8 +17,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-users\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-06 01:35-0700\n"
-"PO-Revision-Date: 2008-02-06 12:26+0100\n"
+"POT-Creation-Date: 2008-02-09 01:44-0700\n"
+"PO-Revision-Date: 2008-02-09 10:31+0100\n"
 "Last-Translator: Fabian Affolter <fab@fedoraproject.org>\n"
 "Language-Team: German <fedora-trans-de@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -50,6 +50,7 @@ msgid "Editing Runlevel: "
 msgstr "Bearbeite Runlevel: "
 
 #: ../src/serviceconf.py:419
+#: ../src/servicemethods.py:57
 msgid "Unknown"
 msgstr "Unbekannt"
 
@@ -89,30 +90,42 @@ msgstr "Das Anzeigeprogramm für die Hilfe wurde nicht gefunden. Um die Möglich
 msgid "You must run system-config-services as root."
 msgstr "Sie müssen system-config-services als Root ausführen."
 
-#: ../src/servicemethods.py:276
+#: ../src/servicemethods.py:58
+msgid "Running"
+msgstr "Läuft"
+
+#: ../src/servicemethods.py:59
+msgid "Stopped"
+msgstr "Gestoppt"
+
+#: ../src/servicemethods.py:60
+msgid "Error"
+msgstr "Fehler"
+
+#: ../src/servicemethods.py:283
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s ist fehlgeschlagen. Der Fehler war: %s"
 
-#: ../src/servicemethods.py:283
+#: ../src/servicemethods.py:290
 msgid " successful"
 msgstr " erfolgreich"
 
-#: ../src/servicemethods.py:412
-#: ../src/servicemethods.py:423
+#: ../src/servicemethods.py:419
+#: ../src/servicemethods.py:430
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd muss aktiviert werden, damit %s ausgeführt werden kann"
 
-#: ../src/servicemethods.py:417
+#: ../src/servicemethods.py:424
 msgid "xinetd failed to reload for "
 msgstr "xinetd konnte nicht neu laden wegen "
 
-#: ../src/servicemethods.py:419
+#: ../src/servicemethods.py:426
 msgid ". The error was: "
 msgstr ". Folgender Fehler ist aufgetreten: "
 
-#: ../src/servicemethods.py:421
+#: ../src/servicemethods.py:428
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd wurde für %s erfolgreich neu geladen"
