@@ -1,15 +1,15 @@
 # translation of pl.po to Polish
 # Radosław Zawartko <radzaw@radzaw.one.pl>, 2003.
 # Tom Berner <tom@lodz.pl>, 2005.
-# Piotr Drąg <raven@pmail.pl>, 2006.
+# Piotr Drąg <piotrdrag@gmail.com>, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-30 14:05+0100\n"
-"PO-Revision-Date: 2006-06-10 17:26+0200\n"
-"Last-Translator: Piotr Drąg <raven@pmail.pl>\n"
+"PO-Revision-Date: 2008-02-09 21:18+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,8 +25,6 @@ msgstr "Czy na pewno chcesz usunąć %s?"
 msgid "Runlevel %d"
 msgstr "Poziom %d"
 
-#. initialize this to the runlevel we are running in. It will
-#. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:281
 msgid "Currently Running in Runlevel: "
 msgstr "Bieżący poziom uruchamiania: "
@@ -72,6 +70,8 @@ msgid ""
 "The help viewer could not be found. To be able to view help you need to "
 "install the 'yelp' package."
 msgstr ""
+"Nie można znaleźć przeglądarki pomocy. Aby zobaczyć pomoc, zainstaluj pakiet "
+"\"yelp\"."
 
 #: ../src/serviceconf.py:719
 msgid "You must run system-config-services as root."
@@ -80,37 +80,37 @@ msgstr "Musisz uruchomić system-config-services jako root."
 #: ../src/servicecontrol.py:61
 #, python-format
 msgid "Service %s not found!"
-msgstr ""
+msgstr "Nie znaleziono usługi %s!"
 
 #: ../src/servicecontrol.py:67
 #, python-format
 msgid "Service %s is running with old config"
-msgstr ""
+msgstr "Usługa %s działa ze starą konfiguracją"
 
 #: ../src/servicecontrol.py:70
 #, python-format
 msgid "Service %s is running"
-msgstr ""
+msgstr "Usługa %s jest uruchomiona"
 
 #: ../src/servicecontrol.py:73
 #, python-format
 msgid "Service %s resports an error"
-msgstr ""
+msgstr "Usługa %s zgłasza błąd"
 
 #: ../src/servicecontrol.py:76
 #, python-format
 msgid "Service %s is stopped"
-msgstr ""
+msgstr "Usługa %s jest zatrzymana"
 
 #: ../src/servicecontrol.py:185 ../src/servicecontrol.py:200
 #, python-format
 msgid "Currently enabled in runlevels %s"
-msgstr ""
+msgstr "Obecnie jest włączona na poziomach %s"
 
 #: ../src/servicecontrol.py:193 ../src/servicecontrol.py:203
 #, python-format
 msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr ""
+msgstr "Włącz %(name)s na poziomach %(levels)s"
 
 #: ../src/servicemethods.py:276
 #, python-format
@@ -297,11 +297,11 @@ msgstr "_Widok"
 
 #: ../src/servicetab.glade.h:1
 msgid "Button Box"
-msgstr ""
+msgstr "Przycisk"
 
 #: ../src/servicetab.glade.h:2
 msgid "Configure"
-msgstr ""
+msgstr "Skonfiguruj"
 
 #: ../src/servicetab.glade.h:4
 #, no-c-format
@@ -322,7 +322,7 @@ msgstr "Poziomy"
 
 #: ../src/servicetab.glade.h:9
 msgid "Service"
-msgstr ""
+msgstr "Usługa"
 
 #: ../src/servicetab.glade.h:10
 msgid "Service control"
@@ -338,31 +338,31 @@ msgstr "Wyjście stanu"
 
 #: ../src/servicetab.glade.h:15
 msgid "_Configure"
-msgstr ""
+msgstr "_Skonfiguruj"
 
 #: ../src/servicetab.glade.h:16
 msgid "_Disable"
-msgstr ""
+msgstr "_Wyłącz"
 
 #: ../src/servicetab.glade.h:17
 msgid "_Enable"
-msgstr ""
+msgstr "Włą_cz"
 
 #: ../src/servicetab.glade.h:18
 msgid "_Restart"
-msgstr ""
+msgstr "U_ruchom ponownie"
 
 #: ../src/servicetab.glade.h:19
 msgid "_Start"
-msgstr ""
+msgstr "_Uruchom"
 
 #: ../src/servicetab.glade.h:20
 msgid "barfoo"
-msgstr ""
+msgstr "barfoo"
 
 #: ../src/servicetab.glade.h:21
 msgid "foobar"
-msgstr ""
+msgstr "foobar"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -375,6 +375,3 @@ msgstr "Zarządzanie usługami"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Usługi"
-
-#~ msgid "Help is not available."
-#~ msgstr "Pomoc jest niedostępna."
