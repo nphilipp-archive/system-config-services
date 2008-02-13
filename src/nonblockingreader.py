@@ -1,6 +1,6 @@
 # nonblockingreader.py -- read from file objects without blocking UIs
 #
-# Copyright (C) 2004 Red Hat, Inc.
+# Copyright (C) 2004, 2008 Red Hat, Inc.
 # Copyright (C) 2004 Nils Philippsen <nphilipp@redhat.com>
 #
 # This program is free software; you can redistribute it and/or modify
@@ -24,13 +24,18 @@ import time
 import select
 
 class Reader:
-    def run (self, fileobjs, callback=None, serviceinterval=0.1, readmax=128):
+    def run (self, fileobjs, callbacks = None, serviceinterval = 0.1,
+            readmax=128):
         outputs = {}
         for fileobj in fileobjs:
             outputs[fileobj] = ""
         while len (fileobjs):
-            if callback:
-                callback ()
+            if callbacks:
+                if isinstance (callbacks, (tuple, list, set)):
+                    for callback in callbacks:
+                        callback ()
+                else:
+                    callbacks ()
             available = select.select (fileobjs, [], [], serviceinterval)
             for fileobj in available[0]:
                 text = fileobj.read (readmax)
