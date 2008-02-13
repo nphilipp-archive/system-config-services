@@ -1,30 +1,31 @@
-# translation of system-config-services.tip.es.po to Spanish
+# translation of es.po to Spanish
+# translation of es.po to
+# translation of es.po to
+# translation of es.po to
+# translation of es.po to Español
+# translation of es.po to
+# translation of es.po to
+# translation of es.po to
+# translation of es.po to spanish
+# Copyright (C) 2001 ORGANIZATION
+# Yelitza Louze <ylouze@redhat.com>
 # Fernando Ruiz-Tapiador Gutiérrez <frtapiador@redhat.es>, 2001.
 # Yelitza Louze <ylouze@redhat.com>, 2003,2004.
 # Luis Mayoral <mayoral@linuxadicto.org>, 2003, 2004.
 # Manuel Ospina <mospina@redhat.com>, 2005, 2006.
-# Domingo Becker <domingobecker@gmail.com>, 2008.
-# translation of es.po to
-# translation of es.po to
-# translation of es.po to
-# translation of es.po to
-# translation of es.po to
-# translation of es.po to
-# Copyright (C) 2001 ORGANIZATION
-# Yelitza Louze <ylouze@redhat.com>
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.tip.es\n"
+"Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-15 17:46-0700\n"
-"PO-Revision-Date: 2008-02-16 00:17-0200\n"
+"POT-Creation-Date: 2008-01-30 14:05+0100\n"
+"PO-Revision-Date: 2007-10-02 13:19-0300\n"
 "Last-Translator: Domingo Becker <domingobecker@gmail.com>\n"
-"Language-Team: Spanish <fedora-trans-es@redhat.com>\n"
+"Language-Team: Fedora Spanish <fedora-trans-es@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: KBabel 1.9.1\n"
 "X-Poedit-Language: Spanish\n"
 
 #: ../src/serviceconf.py:77
@@ -54,7 +55,7 @@ msgstr "Ejecutándose en el nivel de ejecución: "
 msgid "Editing Runlevel: "
 msgstr "Editando nivel de ejecución: "
 
-#: ../src/serviceconf.py:419 ../src/servicemethods.py:57
+#: ../src/serviceconf.py:419
 msgid "Unknown"
 msgstr "Desconocido"
 
@@ -65,7 +66,7 @@ msgstr "Todo"
 #: ../src/serviceconf.py:543
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Copyright © 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat.com>\n"
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
@@ -73,14 +74,6 @@ msgid ""
 " Nils Philippsen <nphilipp@redhat.com>\n"
 " "
 msgstr ""
-"Herramienta de Configuración de los Servicios del Sistema VERSION\n"
-" Copyright Â©  2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
-" "
 
 #: ../src/serviceconf.py:547
 msgid "About"
@@ -90,7 +83,7 @@ msgstr "Acerca de"
 msgid ""
 "The help viewer could not be found. To be able to view help you need to "
 "install the 'yelp' package."
-msgstr "El visor de ayuda no está. Para poder ver la ayuda debe instalar el paquete 'yelp'."
+msgstr ""
 
 # ../serviceconf.py:432
 # ../serviceconf.py:432
@@ -98,54 +91,76 @@ msgstr "El visor de ayuda no está. Para poder ver la ayuda debe instalar el paq
 msgid "You must run system-config-services as root."
 msgstr "Debe ejecutar system-config-services como root."
 
-#: ../src/servicemethods.py:58
-msgid "Running"
-msgstr "Ejecutando"
+#: ../src/servicecontrol.py:61
+#, python-format
+msgid "Service %s not found!"
+msgstr ""
 
-# serviceconf.gladestrings:11 serviceconf.gladestrings:48
-#: ../src/servicemethods.py:59
-msgid "Stopped"
-msgstr "Detenido"
+#: ../src/servicecontrol.py:67
+#, python-format
+msgid "Service %s is running with old config"
+msgstr ""
 
-#: ../src/servicemethods.py:60
-msgid "Error"
-msgstr "Error"
+#: ../src/servicecontrol.py:70
+#, python-format
+msgid "Service %s is running"
+msgstr ""
+
+#: ../src/servicecontrol.py:73
+#, python-format
+msgid "Service %s resports an error"
+msgstr ""
+
+#: ../src/servicecontrol.py:76
+#, python-format
+msgid "Service %s is stopped"
+msgstr ""
+
+#: ../src/servicecontrol.py:185 ../src/servicecontrol.py:200
+#, python-format
+msgid "Currently enabled in runlevels %s"
+msgstr ""
+
+#: ../src/servicecontrol.py:193 ../src/servicecontrol.py:203
+#, python-format
+msgid "Enable %(name)s in runlevels %(levels)s"
+msgstr ""
 
 # ../servicemethods.py:318
 # ../servicemethods.py:318
-#: ../src/servicemethods.py:283
+#: ../src/servicemethods.py:276
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s falló. El error fue: %s"
 
 # ../servicemethods.py:320
 # ../servicemethods.py:320
-#: ../src/servicemethods.py:290
+#: ../src/servicemethods.py:283
 msgid " successful"
 msgstr " satisfactorio"
 
 # ../servicemethods.py:313
 # ../servicemethods.py:313
-#: ../src/servicemethods.py:419 ../src/servicemethods.py:430
+#: ../src/servicemethods.py:412 ../src/servicemethods.py:423
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd debe estar activo para poder ejecutar %s"
 
 # ../servicemethods.py:307
 # ../servicemethods.py:307
-#: ../src/servicemethods.py:424
+#: ../src/servicemethods.py:417
 msgid "xinetd failed to reload for "
 msgstr "xinetd falló su recarga por "
 
 # ../servicemethods.py:308
 # ../servicemethods.py:308
-#: ../src/servicemethods.py:426
+#: ../src/servicemethods.py:419
 msgid ". The error was: "
 msgstr ". El error fue: "
 
 # ../servicemethods.py:310
 # ../servicemethods.py:310
-#: ../src/servicemethods.py:428
+#: ../src/servicemethods.py:421
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "recarga de xinetd para %s satisfactoria"
@@ -187,7 +202,7 @@ msgid "None"
 msgstr "Ninguno"
 
 # serviceconf.gladestrings:13 serviceconf.gladestrings:50
-#: ../src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade.h:8 ../src/servicetab.glade.h:7
 msgid "Restart"
 msgstr "Reiniciar"
 
@@ -244,7 +259,7 @@ msgid "Service Name: "
 msgstr "Nombre del Servicio:"
 
 # serviceconf.gladestrings:9 serviceconf.gladestrings:46
-#: ../src/serviceconf.glade.h:18
+#: ../src/serviceconf.glade.h:18 ../src/servicetab.glade.h:11
 msgid "Start"
 msgstr "Iniciar"
 
@@ -254,7 +269,7 @@ msgid "Status"
 msgstr "Estado"
 
 # serviceconf.gladestrings:11 serviceconf.gladestrings:48
-#: ../src/serviceconf.glade.h:20
+#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:14
 msgid "Stop"
 msgstr "Detener"
 
@@ -348,6 +363,75 @@ msgstr "Iniciar _Servicio"
 msgid "_View"
 msgstr "_Ver"
 
+#: ../src/servicetab.glade.h:1
+msgid "Button Box"
+msgstr ""
+
+#: ../src/servicetab.glade.h:2
+msgid "Configure"
+msgstr ""
+
+#: ../src/servicetab.glade.h:4
+#, no-c-format
+msgid "Current runlevel is %s"
+msgstr ""
+
+#: ../src/servicetab.glade.h:5
+msgid "Disable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:6
+msgid "Enable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:8
+msgid "Runlevels"
+msgstr ""
+
+#: ../src/servicetab.glade.h:9
+msgid "Service"
+msgstr ""
+
+#: ../src/servicetab.glade.h:10
+msgid "Service control"
+msgstr ""
+
+#: ../src/servicetab.glade.h:12
+msgid "Start "
+msgstr ""
+
+#: ../src/servicetab.glade.h:13
+msgid "Status output"
+msgstr ""
+
+#: ../src/servicetab.glade.h:15
+msgid "_Configure"
+msgstr ""
+
+#: ../src/servicetab.glade.h:16
+msgid "_Disable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:17
+msgid "_Enable"
+msgstr ""
+
+#: ../src/servicetab.glade.h:18
+msgid "_Restart"
+msgstr ""
+
+#: ../src/servicetab.glade.h:19
+msgid "_Start"
+msgstr ""
+
+#: ../src/servicetab.glade.h:20
+msgid "barfoo"
+msgstr ""
+
+#: ../src/servicetab.glade.h:21
+msgid "foobar"
+msgstr ""
+
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "Configurar qué servicios se ejecutarán cuando se inicie el sistema "
@@ -362,3 +446,24 @@ msgstr "Administración de Servicios"
 msgid "Services"
 msgstr "Servicios"
 
+#~ msgid "Help is not available."
+#~ msgstr "La ayuda no está disponible."
+
+#~ msgid ""
+#~ "System Services Configuration Tool VERSION\n"
+#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
+#~ msgstr ""
+#~ "Herramienta de Configuración de los Servicios del Sistema VERSION\n"
+#~ " Copyright Â©  2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "

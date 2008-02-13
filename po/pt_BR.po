@@ -1,31 +1,29 @@
-# translation of system-config-services.tip.po to Brazilian Portuguese
+# translation of pt_BR.po to Brazilian Portuguese
 # Brazilian Portuguese localization of Red Hat Linux
 # Originated from the Portuguese translation by
 # Pedro Morais <morais@kde.org>
 # José Nuno Pires <jncp@netcabo.pt>
-#
-#
 # David Barzilay <barzilay@redhat.com>, 2003,2004.
 # Daniel Brooke Peig <daniel@brookepeig.com>, 2004.
 # Pedro Fernandes Macedo <webmaster@margo.bijoux.nom.br>, 2004,2005.
 # Rodrigo Padula de Oliveira <rodrigopadula@projetofedora.org>, 2006.
 # Igor Pires Soares <igor@projetofedora.org>, 2006,2007,2008.
-# Diego Búrigo Zacarão <diegobz@projetofedora.org>, 2008.
+#
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.tip\n"
+"Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-21 09:27-0700\n"
-"PO-Revision-Date: 2008-02-21 15:00-0300\n"
-"Last-Translator: Diego Búrigo Zacarão <diegobz@projetofedora.org>\n"
-"Language-Team: Brazilian Portuguese <fedora-docs-br@redhat.com>\n"
+"POT-Creation-Date: 2008-01-30 14:05+0100\n"
+"PO-Revision-Date: 2008-02-01 16:31-0300\n"
+"Last-Translator: Igor Pires Soares <igor@projetofedora.org>\n"
+"Language-Team: Brazilian Portuguese <fedora-trans-pt_br@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: BRAZIL\n"
-"X-Generator: KBabel 1.11.4\n"
 
 #: ../src/serviceconf.py:77
 #, python-format
@@ -43,11 +41,12 @@ msgstr "Nível de Execução %d"
 msgid "Currently Running in Runlevel: "
 msgstr "Atualmente Executando no Nível de Execução: "
 
-#: ../src/serviceconf.py:377 ../src/serviceconf.py:480
+#: ../src/serviceconf.py:377
+#: ../src/serviceconf.py:480
 msgid "Editing Runlevel: "
 msgstr "Editando Nível de Execução: "
 
-#: ../src/serviceconf.py:419 ../src/servicemethods.py:57
+#: ../src/serviceconf.py:419
 msgid "Unknown"
 msgstr "Desconhecido"
 
@@ -58,7 +57,7 @@ msgstr "Todos"
 #: ../src/serviceconf.py:543
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Copyright © 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat.com>\n"
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
@@ -67,7 +66,7 @@ msgid ""
 " "
 msgstr ""
 "Ferramenta de Configuração de Serviços VERSÃO\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Copyright © 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat.com>\n"
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
@@ -80,52 +79,74 @@ msgid "About"
 msgstr "Sobre"
 
 #: ../src/serviceconf.py:580
-msgid ""
-"The help viewer could not be found. To be able to view help you need to "
-"install the 'yelp' package."
-msgstr ""
-"O visualizador de ajuda não pôde ser encontrado. Você deve instalar o pacote "
-"\"yelp\" para que seja possível visualizar a ajuda."
+msgid "The help viewer could not be found. To be able to view help you need to install the 'yelp' package."
+msgstr "O visualizador de ajuda não pôde ser encontrado. Você deve instalar o pacote \"yelp\" para que seja possível visualizar a ajuda."
 
 #: ../src/serviceconf.py:719
 msgid "You must run system-config-services as root."
 msgstr "Você deve executar o system-config-services como root."
 
-#: ../src/servicemethods.py:58
-msgid "Running"
-msgstr "Rodando"
+#: ../src/servicecontrol.py:61
+#, python-format
+msgid "Service %s not found!"
+msgstr "Serviço %s não encontrado!"
 
-#: ../src/servicemethods.py:59
-msgid "Stopped"
-msgstr "Parado"
+#: ../src/servicecontrol.py:67
+#, python-format
+msgid "Service %s is running with old config"
+msgstr "Serviço %s em execução com uma configuração antiga"
 
-#: ../src/servicemethods.py:60
-msgid "Error"
-msgstr "Erro"
+#: ../src/servicecontrol.py:70
+#, python-format
+msgid "Service %s is running"
+msgstr "O serviço %s está em execução"
 
-#: ../src/servicemethods.py:283
+#: ../src/servicecontrol.py:73
+#, python-format
+msgid "Service %s resports an error"
+msgstr "O serviço %s reportou um erro"
+
+#: ../src/servicecontrol.py:76
+#, python-format
+msgid "Service %s is stopped"
+msgstr "O serviço %s está parado"
+
+#: ../src/servicecontrol.py:185
+#: ../src/servicecontrol.py:200
+#, python-format
+msgid "Currently enabled in runlevels %s"
+msgstr "Atualmente habilitado nos níveis de execução %s"
+
+#: ../src/servicecontrol.py:193
+#: ../src/servicecontrol.py:203
+#, python-format
+msgid "Enable %(name)s in runlevels %(levels)s"
+msgstr "Habilitar %(name)s nos níveis de execução %(levels)s"
+
+#: ../src/servicemethods.py:276
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s falhou. O erro foi: %s"
 
-#: ../src/servicemethods.py:290
+#: ../src/servicemethods.py:283
 msgid " successful"
 msgstr " com sucesso"
 
-#: ../src/servicemethods.py:419 ../src/servicemethods.py:430
+#: ../src/servicemethods.py:412
+#: ../src/servicemethods.py:423
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd deve estar ativo para executar o %s"
 
-#: ../src/servicemethods.py:424
+#: ../src/servicemethods.py:417
 msgid "xinetd failed to reload for "
 msgstr "xinetd falhou ao recarregar para "
 
-#: ../src/servicemethods.py:426
+#: ../src/servicemethods.py:419
 msgid ". The error was: "
 msgstr ". O erro foi: "
 
-#: ../src/servicemethods.py:428
+#: ../src/servicemethods.py:421
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd recarregou %s com sucesso"
@@ -159,6 +180,7 @@ msgid "None"
 msgstr "Nenhum"
 
 #: ../src/serviceconf.glade.h:8
+#: ../src/servicetab.glade.h:7
 msgid "Restart"
 msgstr "Reiniciar"
 
@@ -199,6 +221,7 @@ msgid "Service Name: "
 msgstr "Nome do Serviço: "
 
 #: ../src/serviceconf.glade.h:18
+#: ../src/servicetab.glade.h:11
 msgid "Start"
 msgstr "Iniciar"
 
@@ -207,25 +230,17 @@ msgid "Status"
 msgstr "Status"
 
 #: ../src/serviceconf.glade.h:20
+#: ../src/servicetab.glade.h:14
 msgid "Stop"
 msgstr "Parar"
 
 #: ../src/serviceconf.glade.h:21
-msgid ""
-"These services are started on demand and end when there is nothing more to "
-"do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
-"Estes serviços são inicializados sob demanda e finalizados quando não há "
-"mais nada a ser feito. O serviço <b>xinetd</b> deve estar rodando, de modo "
-"que eles possam ser utilizados."
+msgid "These services are started on demand and end when there is nothing more to do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr "Estes serviços são inicializados sob demanda e finalizados quando não há mais nada a ser feito. O serviço <b>xinetd</b> deve estar rodando, de modo que eles possam ser utilizados."
 
 #: ../src/serviceconf.glade.h:22
-msgid ""
-"These services are started once and run in the background. You can specify "
-"in which runlevels they are started."
-msgstr ""
-"Estes serviços são inicializados uma vez e rodam em segundo plano. Você pode "
-"especificar em quais níveis de execução eles serão inicializados."
+msgid "These services are started once and run in the background. You can specify in which runlevels they are started."
+msgstr "Estes serviços são inicializados uma vez e rodam em segundo plano. Você pode especificar em quais níveis de execução eles serão inicializados."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -287,6 +302,75 @@ msgstr "_Iniciar Serviço"
 msgid "_View"
 msgstr "_Exibir"
 
+#: ../src/servicetab.glade.h:1
+msgid "Button Box"
+msgstr "Caixa de Botões"
+
+#: ../src/servicetab.glade.h:2
+msgid "Configure"
+msgstr "Configurar"
+
+#: ../src/servicetab.glade.h:4
+#, no-c-format
+msgid "Current runlevel is %s"
+msgstr "O nível de execução atual é %s"
+
+#: ../src/servicetab.glade.h:5
+msgid "Disable"
+msgstr "Desabilitar"
+
+#: ../src/servicetab.glade.h:6
+msgid "Enable"
+msgstr "Habilitar"
+
+#: ../src/servicetab.glade.h:8
+msgid "Runlevels"
+msgstr "Níveis de Execução"
+
+#: ../src/servicetab.glade.h:9
+msgid "Service"
+msgstr "Serviço"
+
+#: ../src/servicetab.glade.h:10
+msgid "Service control"
+msgstr "Configuração dos serviços"
+
+#: ../src/servicetab.glade.h:12
+msgid "Start "
+msgstr "Iniciar "
+
+#: ../src/servicetab.glade.h:13
+msgid "Status output"
+msgstr "Saída de status"
+
+#: ../src/servicetab.glade.h:15
+msgid "_Configure"
+msgstr "_Configurar"
+
+#: ../src/servicetab.glade.h:16
+msgid "_Disable"
+msgstr "_Desabilitar"
+
+#: ../src/servicetab.glade.h:17
+msgid "_Enable"
+msgstr "_Habilitar"
+
+#: ../src/servicetab.glade.h:18
+msgid "_Restart"
+msgstr "_Reiniciar"
+
+#: ../src/servicetab.glade.h:19
+msgid "_Start"
+msgstr "_Iniciar"
+
+#: ../src/servicetab.glade.h:20
+msgid "barfoo"
+msgstr "barfoo"
+
+#: ../src/servicetab.glade.h:21
+msgid "foobar"
+msgstr "foobar"
+
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "Configurar quais serviços serão executados quando o sistema for iniciado"
@@ -298,4 +382,42 @@ msgstr "Gerenciamento do Serviço"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Serviços"
+
+#~ msgid "Help is not available."
+#~ msgstr "A ajuda não está disponível."
+#~ msgid "Start the selected service"
+#~ msgstr "Iniciar o serviço selecionado"
+#~ msgid "Stop the selected service"
+#~ msgstr "Parar o serviço selecionado"
+#~ msgid "Restart the selected service"
+#~ msgstr "Reiniciar o serviço selecionado"
+#~ msgid "Refresh the list of services"
+#~ msgstr "Atualizar a lista de serviços"
+#~ msgid "Save the changes you have made"
+#~ msgstr "Salvar as alterações que você fez"
+#~ msgid "Revert to the last saved change"
+#~ msgstr "Reverter para a última alteração salva"
+#~ msgid "Actions such as start, stop, and restart on the selected service"
+#~ msgstr "Ações como iniciar, parar e reiniciar no serviço selecionado"
+#~ msgid "Select the runlevel you would like to edit"
+#~ msgstr "Selecione o Nível de Execução que você deseja editar"
+#~ msgid "Runlevel 3 is multiuser mode with networking"
+#~ msgstr "O Nível de Execução 3 é um modo multi-usuário com rede"
+#~ msgid ""
+#~ "Runlevel 4 is reserved for local customization, and is not usually used"
+#~ msgstr ""
+#~ "O Nível de Execução 4 é reservado para personalizações locais e "
+#~ "normalmente não é usado"
+#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
+#~ msgstr "O Nível de Execução 5 é um modo multi-usuário com rede e X Windows"
+#~ msgid "Read Manual"
+#~ msgstr "Ler o manual"
+#~ msgid "_Manual"
+#~ msgstr "_Manual"
+#~ msgid "Save"
+#~ msgstr "Salvar"
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"
+#~ msgid "Exit"
+#~ msgstr "Sair"
 
