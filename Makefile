@@ -32,12 +32,15 @@ DOC_FIGURES     = system-config-services.png
 DOC_ENTITIES    = distro-specifics.ent system-config-services-distro-specifics.ent system-config-services-abstract.xml system-config-services-content.xml system-config-services-hostname-formats.xml
 DOC_LINGUAS     =
 
-all:	$(PKGNAME).desktop $(PKGNAME).console doc-all
+all:	src/config.py $(PKGNAME).desktop $(PKGNAME).console doc-all
 	rm -f src/$(PKGNAME)
 	ln -snf serviceconf.py src/$(PKGNAME)
 
 include doc_rules.mk
 include console_rules.mk
+
+src/config.py:	src/config.py.in
+	sed -e 's,\@DATADIR\@,$(DATADIR),g; s,\@VERSION\@,$(VERSION),g;' $< > $@ || rm -f $@
 
 %.desktop: %.desktop.in po/$(PKGNAME).pot po/*.po
 	intltool-merge -u -d po/ $< $@
