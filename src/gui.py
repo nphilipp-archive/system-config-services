@@ -31,6 +31,7 @@ from rhpl.translate import _, N_
 
 import serviceherders
 from serviceherders import SVC_ADDED, SVC_DELETED, SVC_CHANGED
+import services
 
 gtk.glade.bindtextdomain (config.domain)
 
@@ -110,6 +111,8 @@ class GUIServicesTreeView (gtk.TreeView):
         self.model = GUIServicesTreeStore (serviceherders)
         gtk.TreeView.__init__ (self, model = self.model) 
 
+        self.selection = self.get_selection ()
+
         for column in xrange (1, SVC_COL_LAST):
             title = self.col_spec[column][self.COL_TITLE]
             cell_renderer = self.col_spec[column][self.COL_CELL_RENDERER] ()
@@ -131,6 +134,22 @@ class GUIServicesTreeView (gtk.TreeView):
             col.set_properties (**properties)
             self.append_column (col)
 
+        self.selection.set_mode (gtk.SELECTION_SINGLE)
+        self.selection.connect ('changed', self.on_selection_changed)
+
+    def on_selection_changed (self, selection, *p):
+        selected = selection.get_selected ()
+        if selected == None:
+            self.emit ('service-selected', None)
+            return
+        (model, iter) = selected
+        if iter == None:
+            self.emit ('service-selected', None)
+            return
+        service = model.get (iter, SVC_COL_SVC_OBJECT)
+        self.emit ('service-selected', service[0])
+
+_service_selected_signal = gobject.signal_new ('service-selected', GUIServicesTreeView, gobject.SIGNAL_RUN_LAST | gobject.SIGNAL_ACTION, gobject.TYPE_NONE, (gobject.TYPE_PYOBJECT, ))
 
 class GUIServicesList (object):
     SERVICE_TYPE_NONE = 0
@@ -147,14 +166,20 @@ class GUIServicesList (object):
 
         self.servicesTreeView = GUIServicesTreeView (serviceherders)
         self.servicesTreeView.show ()
+        self.servicesTreeView.connect ('service-selected', self.on_service_selected)
 
         servicesScrolledWindow.add (self.servicesTreeView)
 
         self.servicesDetailsNotebook = self.xml.get_widget ("servicesDetailsNotebook")
 
-    def select_service (self, service):
-        self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_NONE)
-
+    def on_service_selected (self, treeview, service, *args):
+        print "GUIServicesList.on_service_selected (%s, %s, %s)" % (treeview, service, args)
+        if not service:
+            self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_NONE)
+        elif isinstance (service, services.SysVService):
+            self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_SYSV)
+        elif isinstance (service, services.XinetdService):
+            self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_XINETD)
 
 class MainWindow (object):
     def __init__ (self, serviceherders):
@@ -166,7 +191,7 @@ class MainWindow (object):
                                                     "system-config-services.glade"),
                                       domain = config.domain)
 
-        self.servicelist = GUIServicesList (xml = self.xml, serviceherders = serviceherders)
+        self.servicesList = GUIServicesList (xml = self.xml, serviceherders = serviceherders)
 
         self.toplevel = self.xml.get_widget ("mainWindow")
         self.toplevel.connect ('delete_event', gtk.main_quit)
