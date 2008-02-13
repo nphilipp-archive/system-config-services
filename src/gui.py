@@ -171,9 +171,14 @@ class MainWindow (object):
         self.toplevel = self.xml.get_widget ("mainWindow")
         self.toplevel.connect ('delete_event', gtk.main_quit)
 
-        # the tabs are visible in the glade file to improve maintainability
+        # the tabs are visible in the glade file to improve maintainability ...
         self.servicesDetailsNotebook = self.xml.get_widget ("servicesDetailsNotebook")
+        # ... so we hide them
         self.servicesDetailsNotebook.set_show_tabs (False)
+
+        self.aboutDialog = self.xml.get_widget ("aboutDialog")
+        self.aboutDialog.set_name (config.name)
+        self.aboutDialog.set_version (config.version)
 
         # connect defined signals with callback methods
         self.xml.signal_autoconnect (self)
@@ -206,9 +211,12 @@ class MainWindow (object):
         print "MainWindow.on_helpContents_activate (%s)" % ', '.join (map (lambda x: str(x), args))
 
     def on_helpAbout_activate (self, *args):
-        print "MainWindow.on_helpAbout_activate (%s)" % ', '.join (map (lambda x: str(x), args))
+        self.aboutDialog.show ()
+        self.aboutDialog.window.raise_ ()
 
-
+    def on_aboutDialog_close (self, *args):
+        self.aboutDialog.hide ()
+        return True
 
 class GUI (object):
     def __init__ (self):
