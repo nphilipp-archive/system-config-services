@@ -21,6 +21,7 @@
 
 import os.path
 
-domain = "system-config-services"
+name = "system-config-services"
+domain = name
 datadir = os.path.join ("@DATADIR@", domain)
 version = "@VERSION@"

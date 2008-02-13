@@ -39,7 +39,7 @@ all:	src/config.py $(PKGNAME).desktop $(PKGNAME).console doc-all
 include doc_rules.mk
 include console_rules.mk
 
-src/config.py:	src/config.py.in
+src/config.py:	src/config.py.in $(PKGNAME).spec
 	sed -e 's,\@DATADIR\@,$(DATADIR),g; s,\@VERSION\@,$(VERSION),g;' $< > $@ || rm -f $@
 
 %.desktop: %.desktop.in po/$(PKGNAME).pot po/*.po
