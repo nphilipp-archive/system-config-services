@@ -173,13 +173,12 @@ class GUIServicesList (object):
         self.servicesDetailsNotebook = self.xml.get_widget ("servicesDetailsNotebook")
 
     def on_service_selected (self, treeview, service, *args):
-        print "GUIServicesList.on_service_selected (%s, %s, %s)" % (treeview, service, args)
-        if not service:
-            self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_NONE)
-        elif isinstance (service, services.SysVService):
+        if isinstance (service, services.SysVService):
             self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_SYSV)
         elif isinstance (service, services.XinetdService):
             self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_XINETD)
+        else:
+            self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_NONE)
 
 class MainWindow (object):
     def __init__ (self, serviceherders):
