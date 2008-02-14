@@ -145,6 +145,9 @@ class ChkconfigServiceHerder (ServiceHerder):
     rpmbak_re = re.compile (r'.*\.rpm(?:orig|save|new)$')
     rpmtmp_re = re.compile (r'.*\;[0-9A-Fa-f]{8}$')
 
+    def async_load_finished (self, service):
+        self.notify (SVC_CHANGED, service = service)
+
 class SysVServiceHerder (ChkconfigServiceHerder):
     """service herder for services started by SysVinit"""
     
@@ -182,7 +185,8 @@ class SysVServiceHerder (ChkconfigServiceHerder):
         # the service triggered an event in the meantime, tell the object to
         # synchronize itself and keep watching it
         if service_cluster_delayed:
-            service.load ()
+            self.notify (SVC_UPDATING, service = service)
+            service.async_load (self.async_load_finished, service)
             return True
         
         # don't watch this particular service any longer
@@ -215,13 +219,14 @@ class SysVServiceHerder (ChkconfigServiceHerder):
                 startkill = sm.group ('startkill')
                 name = sm.group ('name')
 
+                service = self.services[name]
+
                 if not self.serviceClusterDelayBegins.has_key (name):
                     self.serviceClusterDelayBegins[name] = time.time ()
                     try:
                         gobject.timeout_add (self.cluster_timeout, self.service_cluster_timeout, name)
-                        self.notify (SVC_UPDATING, service = self.services[name][)
-                        self.services[name].load ()
-                        self.notify (SVC_CHANGED, service = self.services[name])
+                        self.notify (SVC_UPDATING, service = service)
+                        service.async_load (self.async_load_finished, service)
                     except KeyError:
                         del self.serviceClusterDelayBegins[name]
                 else:
@@ -252,9 +257,9 @@ class XinetdServiceHerder (ChkconfigServiceHerder):
             self.delete_service_delayed (path)
         elif action == gamin.GAMChanged:
             if self.services.has_key (path):
-                self.notify (SVC_UPDATING, service = self.services[name][)
-                self.services[path].load ()
-                self.notify (SVC_CHANGED, service = self.services[path])
+                service = self.services[name]
+                self.notify (SVC_UPDATING, service = service)
+                service.async_load (self.async_load_finished, service)
 
     def create_service_delayed (self, name):
         gobject.timeout_add (self.delay_timeout, self.create_service_cb, name)
@@ -262,7 +267,9 @@ class XinetdServiceHerder (ChkconfigServiceHerder):
     def create_service_cb (self, name):
         if os.access ("/etc/xinetd.d/%s" % name, os.F_OK):
             if self.services.has_key (name):
-                self.services[name].load ()
+                service = self.services[name]
+                self.notify (SVC_UPDATING, service = service)
+                service.async_load (self.async_load_finished, service)
             else:
                 self.create_service (name)
         return False
