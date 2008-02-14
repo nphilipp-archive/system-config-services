@@ -27,6 +27,12 @@ import os
 import signal
 import threading
 
+__all__ = ['AsyncLock', 'AsyncRunner']
+
+##############################################################################
+
+AsyncLock = threading.Lock
+
 ##############################################################################
 
 class AsyncRunnable (object):
@@ -75,7 +81,7 @@ class AsyncQueue (object):
             if r.ready_fn_meth:
                 args = (r.ready_args != None) and r.ready_args or []
                 kwargs = (r.ready_kwargs != None) and r.ready_kwargs or {}
-                r.ready_fn_meth (*args, **kwargs)
+                r.ready_fn_meth (r, *args, **kwargs)
             with self._queue_lock:
                 self._queue.pop (0)
         with self._thread_lock:
@@ -135,7 +141,7 @@ if __name__ == '__main__':
     class Foo:
         def long_method (self, num):
             print "long_method(%d): begin" % num
-            for i in range (5):
+            for i in range (num + 3):
                 print "  long_method(%d): %d" % (num, i)
                 time.sleep (1)
             print "long_method(%d): end" % num
@@ -148,12 +154,15 @@ if __name__ == '__main__':
 
         def run (self):
             for num in xrange (5):
-                self.async_runner.start (num, self.long_method, start_args = [num])
+                self.async_runner.start (num, self.long_method, start_args = [num], ready_fn_meth = self.finished)
             i = 0
             while self.async_runner.running ():
                 print "base:", i
                 i += 1
                 time.sleep (1)
+
+        def finished (self, runnable):
+            print "finished:", runnable.start_args[0]
 
         def reap (self):
             self.async_runner.reap ()

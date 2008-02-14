@@ -63,7 +63,10 @@ class GUIServicesTreeStore (gtk.TreeStore):
         self.serviceherders = serviceherders
 
         for herder in serviceherders:
+            print "%s.subscribe (%s)" % (herder, self.on_services_changed)
             herder.subscribe (self.on_services_changed)
+
+        self.service_iters = {}
 
     def _sort_by_name (self, treemodel, iter1, iter2, user_data = None):
         name1 = self.get (iter1, SVC_COL_NAME)
@@ -83,12 +86,29 @@ class GUIServicesTreeStore (gtk.TreeStore):
     def on_services_changed (self, change, service):
         #print "GUIServicesTreeStore.on_services_changed (%s, %s)" % (('SVC_ADDED', 'SVC_DELETED', 'SVC_CHANGED')[change], service)
         if change == SVC_ADDED:
-            iter = self.append (None)
-            self.set (iter, SVC_COL_SVC_OBJECT, service, SVC_COL_NAME, service.name)
+            self._service_added (service)
         elif change == SVC_DELETED:
-            self.foreach (self._delete_svc_callback, service)
+            self._service_deleted (service)
         elif change == SVC_CHANGED:
-            pass
+            self._service_changed (service)
+
+    def _service_added (self, service):
+        iter = self.append (None)
+        self.set (iter, SVC_COL_SVC_OBJECT, service, SVC_COL_NAME, service.name)
+        self.service_iters[service] = iter
+        self._service_changed (service)
+
+    def _service_changed (self, service):
+        self.emit ('service-changed', service)
+
+    def _service_deleted (self, service):
+        iter = self.append (None)
+        self.foreach (self._delete_svc_callback, service)
+        del self.service_iters[service]
+        self.emit ('service-deleted', service)
+
+_service_changed_signal = gobject.signal_new ('service-changed', GUIServicesTreeStore, gobject.SIGNAL_RUN_LAST | gobject.SIGNAL_ACTION, gobject.TYPE_NONE, (gobject.TYPE_PYOBJECT, ))
+_service_deleted_signal = gobject.signal_new ('service-deleted', GUIServicesTreeStore, gobject.SIGNAL_RUN_LAST | gobject.SIGNAL_ACTION, gobject.TYPE_NONE, (gobject.TYPE_PYOBJECT, ))
 
 class GUIServicesTreeView (gtk.TreeView):
     COL_TITLE = 0
@@ -109,6 +129,8 @@ class GUIServicesTreeView (gtk.TreeView):
 
     def __init__ (self, serviceherders):
         self.model = GUIServicesTreeStore (serviceherders)
+        self.model.
+
         gtk.TreeView.__init__ (self, model = self.model) 
 
         self.selection = self.get_selection ()
@@ -151,12 +173,61 @@ class GUIServicesTreeView (gtk.TreeView):
 
 _service_selected_signal = gobject.signal_new ('service-selected', GUIServicesTreeView, gobject.SIGNAL_RUN_LAST | gobject.SIGNAL_ACTION, gobject.TYPE_NONE, (gobject.TYPE_PYOBJECT, ))
 
+class _Foo:
+    def __new__ (cls, xml, service, *p, **k):
+        if isinstance (service, services.SysVService):
+            return object.__new__ (GUISysVServicePainter)
+        elif isinstance (service, services.XinetdService):
+            return object.__new__ (GUIXinetdServicePainter)
+        else:
+            raise TypeError ('service')
+
+class GUIServicesDetailsPainter (object):
+    _xml_widgets = []
+
+    """Abstract services details painter"""
+    def __init__ (self, xml):
+        self.xml = xml
+
+        for wname in self._xml_widgets:
+            w = xml.get_widget (wname)
+            if w:
+                setattr (self, wname, w)
+
+    def paint_details (self, service):
+        raise NotImplementedError
+
+class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
+    """Details painter for SysV services"""
+    self._xml_widgets = [
+        'sysVServiceExplanationLabel',
+        'sysVEnabledDisabledIcon',
+        'sysVServiceEnabledDisabledLabel',
+        'sysVServiceStatusIcon',
+        'sysVServiceStatusLabel',
+        'sysVServiceDescriptionTextView'
+    ]
+
+    def __init__ (self, xml):
+        super (GUIServicesDetailsPainter, self).__init__ (xml)
+
+    def paint_details (self, service):
+        if not isinstance (service, services.SysVService):
+            raise TypeError ("service")
+        FOXME
+
+class GUIXinetdServicePainter (GUIServicePainter):
+    pass
+
 class GUIServicesList (object):
     SERVICE_TYPE_NONE = 0
     SERVICE_TYPE_SYSV = 1
     SERVICE_TYPE_XINETD = 2
 
     def __init__ (self, xml, serviceherders):
+        self.current_service = None
+        self.service_painters = {}
+
         self.xml = xml
         self.serviceherders = serviceherders
 
@@ -168,17 +239,34 @@ class GUIServicesList (object):
         self.servicesTreeView.show ()
         self.servicesTreeView.connect ('service-selected', self.on_service_selected)
 
+        self.servicesTreeStore = self.servicesTreeView.model
+        self.servicesTreeStore.connect ('service-changed', self.on_service_changed)
+        self.servicesTreeStore.connect ('service-deleted', self.on_service_deleted)
+
         servicesScrolledWindow.add (self.servicesTreeView)
 
         self.servicesDetailsNotebook = self.xml.get_widget ("servicesDetailsNotebook")
 
-    def on_service_selected (self, treeview, service, *args):
+    def on_service_selected (self, treeview = None, service = None, *args):
+        self.current_service = service
+        self.service_painters[service].paint_details ()
         if isinstance (service, services.SysVService):
             self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_SYSV)
         elif isinstance (service, services.XinetdService):
             self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_XINETD)
         else:
             self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_NONE)
+
+    def on_service_changed (self, treestore, service, *args):
+        if not self.service_painters.has_key (service):
+            self.service_painters[service] = GUIServicePainter (self, service)
+        if service == self.current_service:
+            self.service_painters[service].paint_details ()
+
+    def on_service_deleted (self, treestore, service, *args):
+        if service == self.current_service:
+            self.on_service_selected (service = None)
+        del self.service_painters[service]
 
 class MainWindow (object):
     def __init__ (self, serviceherders):

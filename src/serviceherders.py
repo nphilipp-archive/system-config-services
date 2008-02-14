@@ -31,10 +31,11 @@ import gamin
 
 import services
 
-SVC_ADDED = 0
-SVC_DELETED = 1
-SVC_CHANGED = 2
-SVC_LAST = 3
+SVC_UPDATING = 0
+SVC_ADDED = 1
+SVC_DELETED = 2
+SVC_CHANGED = 3
+SVC_LAST = 4
 
 def gam_action_to_str (action):
     try:
@@ -218,6 +219,7 @@ class SysVServiceHerder (ChkconfigServiceHerder):
                     self.serviceClusterDelayBegins[name] = time.time ()
                     try:
                         gobject.timeout_add (self.cluster_timeout, self.service_cluster_timeout, name)
+                        self.notify (SVC_UPDATING, service = self.services[name][)
                         self.services[name].load ()
                         self.notify (SVC_CHANGED, service = self.services[name])
                     except KeyError:
@@ -240,8 +242,8 @@ class XinetdServiceHerder (ChkconfigServiceHerder):
             # ignore state change on the directory
             return
 
-        if self.rpmbak_re.match (path):
-            # ignore RPM backup files
+        if self.rpmbak_re.match (path) or self.rpmtmp_re.match (path):
+            # ignore RPM backup and temporary files
             return
 
         if action == gamin.GAMCreated or action == gamin.GAMExists:
@@ -250,6 +252,7 @@ class XinetdServiceHerder (ChkconfigServiceHerder):
             self.delete_service_delayed (path)
         elif action == gamin.GAMChanged:
             if self.services.has_key (path):
+                self.notify (SVC_UPDATING, service = self.services[name][)
                 self.services[path].load ()
                 self.notify (SVC_CHANGED, service = self.services[path])
 

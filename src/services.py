@@ -20,12 +20,15 @@
 # Authors:
 # Nils Philippsen <nphilipp@redhat.com>
 
+from __future__ import with_statement
+
 import os
 import copy
 import re
 import time
 
 from util import getstatusoutput
+import async
 
 class InvalidServiceException (Exception):
     pass
@@ -70,6 +73,9 @@ class SysVService (ChkconfigService):
         self.runlevels = [False, False, False, False, False, False, False]
         self.runlevels_ondisk = [False, False, False, False, False, False, False]
         self.configured = False
+
+        self._run_lock = async.AsyncLock ()
+
         self.load ()
 
     def __del__ (self):
@@ -154,5 +160,3 @@ class XinetdService (ChkconfigService):
         return self.enabled != self.enabled_ondisk
 
 service_classes = [ SysVService, XinetdService ]
-
-__all__ = service_classes + [ getstatusoutput ]
