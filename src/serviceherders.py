@@ -251,7 +251,7 @@ class XinetdServiceHerder (ChkconfigServiceHerder):
         elif action == gamin.GAMChanged:
             if self.services.has_key (path):
                 self.services[path].load ()
-                self.notify (SVC_CHANGED, service = self.services[name])
+                self.notify (SVC_CHANGED, service = self.services[path])
 
     def create_service_delayed (self, name):
         gobject.timeout_add (self.delay_timeout, self.create_service_cb, name)
