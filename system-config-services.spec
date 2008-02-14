@@ -106,6 +106,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Thu Feb 14 2008 Nils Philippsen <nphilipp@redhat.com>
+- move getstatusoutput() into util.py
+
 * Wed Feb 13 2008 Nils Philippsen <nphilipp@redhat.com>
 - new GUI, backend implementation
 
