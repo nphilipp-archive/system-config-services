@@ -167,11 +167,15 @@ class SysVServiceHerder (ChkconfigServiceHerder):
         service_cluster_delayed = name in self.serviceClusterDelayed
         self.serviceClusterDelayed.discard (name)
 
-        # A service might have been deleted in between
+        # A service might have been deleted in between or not supported by
+        # chkconfig (halt, killall, single, local, reboot)
         try:
             service = self.services[name]
         except KeyError:
-            del self.serviceClusterDelayBegins[name]
+            try:
+                del self.serviceClusterDelayBegins[name]
+            except KeyError:
+                pass
             return False
 
         # the service triggered an event in the meantime, tell the object to
