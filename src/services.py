@@ -28,39 +28,50 @@ import re
 import time
 
 from util import getstatusoutput
-import async
+from async import *
 
 class InvalidServiceException (Exception):
     pass
 
 class Service (object):
-    """Represents an abstract service"""
+    """Represents an abstract service."""
     def __init__ (self, name, mon):
         super (Service, self).__init__ ()
         self.name = name
         self.mon = mon
 
+        self._run_lock = AsyncLock ()
+
 class ChkconfigService (Service):
-    """Represents an abstract service handled with chkconfig"""
+    """Represents an abstract service handled with chkconfig."""
 
     def __init__ (self, name, mon):
         super (ChkconfigService, self).__init__ (name, mon)
         self.settled = False
+        self._asyncrunner = AsyncRunner (['load', 'save'])
+
+    def async_load (self, callback, *p, **k):
+        """Kick off asynchronous loading of configuration from disk."""
+        self._asyncrunner.start ('load', self.load, ready_fn_meth = callback, ready_args = p, ready_kwargs = k)
+
+    def async_save (self, callback, *p, **k):
+        """Kick off asynchronous saving of configuration to disk."""
+        raise NotImplementedError
 
     def load (self):
-        """Load configuration from disk"""
+        """Load configuration from disk."""
         raise NotImplementedError
 
     def save (self):
-        """Save configuration to disk"""
+        """Save configuration to disk."""
         raise NotImplementedError
 
     def is_dirty (self):
-        """Check if a service is dirty, i.e. changed and not saved"""
+        """Check if a service is dirty, i.e. changed and not saved."""
         raise NotImplementedError
 
 class SysVService (ChkconfigService):
-    """Represents a service handled by SysVinit"""
+    """Represents a service handled by SysVinit."""
 
     init_list_re = re.compile (r'^(?P<name>\S+)\s+0:(?P<r0>off|on)\s+1:(?P<r1>off|on)\s+2:(?P<r2>off|on)\s+3:(?P<r3>off|on)\s+4:(?P<r4>off|on)\s+5:(?P<r5>off|on)\s+6:(?P<r6>off|on)\s*$')
 
@@ -74,8 +85,6 @@ class SysVService (ChkconfigService):
         self.runlevels_ondisk = [False, False, False, False, False, False, False]
         self.configured = False
 
-        self._run_lock = async.AsyncLock ()
-
         self.load ()
 
     def __del__ (self):
@@ -83,7 +92,12 @@ class SysVService (ChkconfigService):
         pass
 
     def load (self):
-        """Load configuration from disk"""
+        """Load configuration from disk."""
+        with self._run_lock:
+            return self._load ()
+
+    def _load (self):
+        """Load configuration from disk (without locking)."""
         (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig --list %s 2>&1' % self.name, None)
         if status != 0:
             if self.no_chkconfig_re.match (output):
@@ -105,7 +119,12 @@ class SysVService (ChkconfigService):
         #print "%s: %s" % (self.name, self.runlevels)
 
     def save (self):
-        """Save configuration to disk"""
+        """Save configuration to disk."""
+        with self._run_lock:
+            return self._save (self)
+
+    def _save (self):
+        """Save configuration to disk (without locking)."""
         runlevel_changes = { 'on': [], 'off': [] }
 
         for i in xrange (len (self.runlevels)):
@@ -123,10 +142,14 @@ class SysVService (ChkconfigService):
         self.configured = True
 
     def is_dirty (self):
+        with self._run_lock:
+            return self.is_dirty ()
+
+    def _is_dirty (self):
         return self.runlevels != self.runlevels_ondisk
 
 class XinetdService (ChkconfigService):
-    """Represents a service handled by xinetd"""
+    """Represents a service handled by xinetd."""
 
     xinetd_list_re = re.compile (r'^(?P<name>\S+)\s+(?P<enabled>off|on)\s*$')
 
@@ -138,7 +161,12 @@ class XinetdService (ChkconfigService):
         self.load ()
 
     def load (self):
-        """Load configuration from disk"""
+        """Load configuration from disk."""
+        with self._run_lock:
+            return self._load ()
+
+    def _load (self):
+        """Load configuration from disk (without locking)."""
 
         (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig --list %s 2>/dev/null' % self.name, None)
         if status != 0:
@@ -150,13 +178,22 @@ class XinetdService (ChkconfigService):
         self.enabled_ondisk = self.enabled
 
     def save (self):
-        """Save configuration to disk"""
+        """Save configuration to disk."""
+        with self._run_lock:
+            return self._save (self)
+
+    def _save (self):
+        """Save configuration to disk (without locking)."""
         (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig %s %s 2>/dev/null' % (self.name, self.enabled and 'on' or 'off'), None)
         if status != 0:
             raise OSError ("Saving service '%s' failed, command was 'LC_ALL=C /sbin/chkconfig %s %s 2>/dev/null'." % (self.name, self.name, self.enabled and 'on' or 'off'))
         self.enabled_ondisk = self.enabled
 
     def is_dirty (self):
+        with self._run_lock:
+            return self._is_dirty ()
+
+    def _is_dirty (self):
         return self.enabled != self.enabled_ondisk
 
 service_classes = [ SysVService, XinetdService ]
