@@ -105,15 +105,14 @@ class AsyncRunner (object):
     def __init__ (self, purposes):
         self._queues = {}
 
+        self.add_queues (purposes)
+
+    def add_queues (self, purposes):
         if isinstance (purposes, str) or '__iter__' not in dir (purposes):
             purposes = (purposes, )
 
         for p in purposes:
             self._queues[p] = AsyncQueue ()
-
-    def __del__ (self):
-        for q in self._queues.itervalues ():
-            del q
 
     def reap (self):
         for q in self._queues.itervalues ():
