@@ -20,7 +20,7 @@
 # Authors:
 # Nils Philippsen <nphilipp@redhat.com>
 
-"""Keep track of added, deleted, changed services."""
+"""Keep track of added, deleted and changed services."""
 
 import copy
 import os
@@ -149,9 +149,9 @@ class SysVServiceHerder (ChkconfigServiceHerder):
     
     service_class = services.SysVService
 
-    watch_directories = ['/etc/init.d', '/etc/rc1.d', '/etc/rc2.d', '/etc/rc3.d', '/etc/rc4.d', '/etc/rc5.d']
+    watch_directories = ['/etc/init.d', '/etc/rc0.d', '/etc/rc1.d', '/etc/rc2.d', '/etc/rc3.d', '/etc/rc4.d', '/etc/rc5.d', '/etc/rc6.d']
 
-    runlevel_dirs_re = re.compile (r'^/etc/rc(?P<runlevel>[1-5]).d$')
+    runlevel_dirs_re = re.compile (r'^/etc/rc(?P<runlevel>[0-6]).d$')
     runlevel_services_re = re.compile (r'^(?P<startkill>[SK])[0-9]+(?P<name>.*)$')
 
     # cluster service activity for self.cluster_timeout milliseconds
@@ -213,8 +213,9 @@ class SysVServiceHerder (ChkconfigServiceHerder):
                 if not self.serviceClusterDelayBegins.has_key (name):
                     self.serviceClusterDelayBegins[name] = time.time ()
                     try:
-                        self.services[name].load ()
                         gobject.timeout_add (self.cluster_timeout, self.service_cluster_timeout, name)
+                        self.services[name].load ()
+                        self.notify (SVC_CHANGED, service = self.services[name])
                     except KeyError:
                         del self.serviceClusterDelayBegins[name]
                 else:
@@ -246,6 +247,7 @@ class XinetdServiceHerder (ChkconfigServiceHerder):
         elif action == gamin.GAMChanged:
             if self.services.has_key (path):
                 self.services[path].load ()
+                self.notify (SVC_CHANGED, service = self.services[name])
 
     def create_service_delayed (self, name):
         gobject.timeout_add (self.delay_timeout, self.create_service_cb, name)

@@ -108,6 +108,8 @@ rm -rf %{buildroot}
 %changelog
 * Thu Feb 14 2008 Nils Philippsen <nphilipp@redhat.com>
 - move getstatusoutput() into util.py
+- watch runlevels 0 and 6 as well
+- notify subscribers on service changes
 
 * Wed Feb 13 2008 Nils Philippsen <nphilipp@redhat.com>
 - new GUI, backend implementation
