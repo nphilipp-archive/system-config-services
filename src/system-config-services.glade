@@ -625,7 +625,7 @@
 		      </child>
 
 		      <child>
-			<widget class="GtkImage" id="sysVEnabledDisabledIcon">
+			<widget class="GtkImage" id="sysVServiceEnabledIcon">
 			  <property name="visible">True</property>
 			  <property name="xalign">0.5</property>
 			  <property name="yalign">0.5</property>
@@ -643,7 +643,7 @@
 		      </child>
 
 		      <child>
-			<widget class="GtkLabel" id="sysVServiceEnabledDisabledLabel">
+			<widget class="GtkLabel" id="sysVServiceEnabledLabel">
 			  <property name="visible">True</property>
 			  <property name="label">This service is {enabled|disabled}{| in runlevels x, y, z}.</property>
 			  <property name="use_underline">False</property>
@@ -845,7 +845,7 @@
 		      <property name="spacing">0</property>
 
 		      <child>
-			<widget class="GtkImage" id="image44">
+			<widget class="GtkImage" id="xinetdServiceStatusIcon">
 			  <property name="visible">True</property>
 			  <property name="xalign">0.5</property>
 			  <property name="yalign">0.5</property>
