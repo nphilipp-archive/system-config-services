@@ -42,6 +42,8 @@ SVC_COL_NAME = 3
 SVC_COL_REMARK = 4
 SVC_COL_LAST = 5
 
+##############################################################################
+
 class GUIServicesTreeStore (gtk.TreeStore):
     col_types = {
         SVC_COL_SVC_OBJECT:     gobject.TYPE_PYOBJECT,
@@ -85,12 +87,17 @@ class GUIServicesTreeStore (gtk.TreeStore):
 
     def on_services_changed (self, change, service):
         #print "GUIServicesTreeStore.on_services_changed (%s, %s)" % (('SVC_ADDED', 'SVC_DELETED', 'SVC_CHANGED')[change], service)
-        if change == SVC_ADDED:
+        if change == SVC_UPDATING:
+            self._service_updating (service)
+        elif change == SVC_ADDED:
             self._service_added (service)
         elif change == SVC_DELETED:
             self._service_deleted (service)
         elif change == SVC_CHANGED:
             self._service_changed (service)
+
+    def _service_updating (self, service):
+        self.emit ('service-updating', service)
 
     def _service_added (self, service):
         iter = self.append (None)
@@ -107,8 +114,11 @@ class GUIServicesTreeStore (gtk.TreeStore):
         del self.service_iters[service]
         self.emit ('service-deleted', service)
 
+_service_updating_signal = gobject.signal_new ('service-updating', GUIServicesTreeStore, gobject.SIGNAL_RUN_LAST | gobject.SIGNAL_ACTION, gobject.TYPE_NONE, (gobject.TYPE_PYOBJECT, ))
 _service_changed_signal = gobject.signal_new ('service-changed', GUIServicesTreeStore, gobject.SIGNAL_RUN_LAST | gobject.SIGNAL_ACTION, gobject.TYPE_NONE, (gobject.TYPE_PYOBJECT, ))
 _service_deleted_signal = gobject.signal_new ('service-deleted', GUIServicesTreeStore, gobject.SIGNAL_RUN_LAST | gobject.SIGNAL_ACTION, gobject.TYPE_NONE, (gobject.TYPE_PYOBJECT, ))
+
+##############################################################################
 
 class GUIServicesTreeView (gtk.TreeView):
     COL_TITLE = 0
@@ -173,14 +183,7 @@ class GUIServicesTreeView (gtk.TreeView):
 
 _service_selected_signal = gobject.signal_new ('service-selected', GUIServicesTreeView, gobject.SIGNAL_RUN_LAST | gobject.SIGNAL_ACTION, gobject.TYPE_NONE, (gobject.TYPE_PYOBJECT, ))
 
-class _Foo:
-    def __new__ (cls, xml, service, *p, **k):
-        if isinstance (service, services.SysVService):
-            return object.__new__ (GUISysVServicePainter)
-        elif isinstance (service, services.XinetdService):
-            return object.__new__ (GUIXinetdServicePainter)
-        else:
-            raise TypeError ('service')
+##############################################################################
 
 class GUIServicesDetailsPainter (object):
     _xml_widgets = []
@@ -197,12 +200,14 @@ class GUIServicesDetailsPainter (object):
     def paint_details (self, service):
         raise NotImplementedError
 
+##############################################################################
+
 class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
     """Details painter for SysV services"""
-    self._xml_widgets = [
+    _xml_widgets = [
         'sysVServiceExplanationLabel',
-        'sysVEnabledDisabledIcon',
-        'sysVServiceEnabledDisabledLabel',
+        'sysVServiceEnabledIcon',
+        'sysVServiceEnabledLabel',
         'sysVServiceStatusIcon',
         'sysVServiceStatusLabel',
         'sysVServiceDescriptionTextView'
@@ -214,10 +219,56 @@ class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
     def paint_details (self, service):
         if not isinstance (service, services.SysVService):
             raise TypeError ("service")
-        FOXME
+        FIXME
 
-class GUIXinetdServicePainter (GUIServicePainter):
+##############################################################################
+
+class GUIXinetdServiceDetailsPainter (GUIServiceDetailsPainter):
+    _xml_widgets = [
+        'xinetdExplanationLabel',
+        'xinetdServiceStatusIcon',
+        'xinetdServiceStatusLabel',
+        'xinetdServiceDescription'
+    ]
+
+    def __init__ (self, xml):
+        super (GUIServicesDetailsPainter, self).__init__ (xml)
+
+    def paint_details (self, service):
+        if not isinstance (service, services.XinetdService):
+            raise TypeError ("service")
+        FIXME
+
+##############################################################################
+
+class GUIServiceEntryPainter:
+    def __new__ (cls, xml, service, *p, **k):
+        if isinstance (service, services.SysVService):
+            return object.__new__ (GUISysVServiceEntryPainter)
+        elif isinstance (service, services.XinetdService):
+            return object.__new__ (GUIXinetdServiceEntryPainter)
+        else:
+            raise TypeError ('service')
+
+    def __init__ (self):
+        self._updating = False
+
+    def set_updating (self, updating):
+        if updating != self._updating:
+            self._updating = updating
+            # FIXME
+
+##############################################################################
+
+class GUISysVServiceEntryPainter (GUIServiceEntryPainter):
     pass
+
+##############################################################################
+
+class GUIXinetdServiceEntryPainter (GUIServiceEntryPainter):
+    pass
+
+##############################################################################
 
 class GUIServicesList (object):
     SERVICE_TYPE_NONE = 0
@@ -240,6 +291,7 @@ class GUIServicesList (object):
         self.servicesTreeView.connect ('service-selected', self.on_service_selected)
 
         self.servicesTreeStore = self.servicesTreeView.model
+        self.servicesTreeStore.connect ('service-updating', self.on_service_updating)
         self.servicesTreeStore.connect ('service-changed', self.on_service_changed)
         self.servicesTreeStore.connect ('service-deleted', self.on_service_deleted)
 
@@ -257,9 +309,15 @@ class GUIServicesList (object):
         else:
             self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_NONE)
 
+    def on_service_updating (self, treestore, service, *args):
+        if not self.service_painters.has_key (service):
+            self.service_painters[service] = GUIServicePainter (self, service)
+        self.service_painters[service].updating (True)
+
     def on_service_changed (self, treestore, service, *args):
         if not self.service_painters.has_key (service):
             self.service_painters[service] = GUIServicePainter (self, service)
+        self.service_painters[service].updating (False)
         if service == self.current_service:
             self.service_painters[service].paint_details ()
 
@@ -267,6 +325,8 @@ class GUIServicesList (object):
         if service == self.current_service:
             self.on_service_selected (service = None)
         del self.service_painters[service]
+
+##############################################################################
 
 class MainWindow (object):
     def __init__ (self, serviceherders):
@@ -329,6 +389,8 @@ class MainWindow (object):
     def on_aboutDialog_close (self, *args):
         self.aboutDialog.hide ()
         return True
+
+##############################################################################
 
 class GUI (object):
     def __init__ (self):
