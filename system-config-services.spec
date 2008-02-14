@@ -111,6 +111,7 @@ rm -rf %{buildroot}
 - watch runlevels 0 and 6 as well
 - notify subscribers on service changes
 - ignore non-chkconfig-capable "services" in /etc/init.d, /etc/rc?.d
+- add infrastructure for asynchronous loading/saving of services
 
 * Wed Feb 13 2008 Nils Philippsen <nphilipp@redhat.com>
 - new GUI, backend implementation
