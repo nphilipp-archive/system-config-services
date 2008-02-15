@@ -22,16 +22,15 @@
 
 import os
 
-import nonblockingreader
-
-def getstatusoutput (cmd, callbacks = None):
+def getstatusoutput (cmd):
     """Return (status, output) of executing cmd in a shell."""
     pipe = os.popen("{ %s ; } 2>&1" % (cmd), 'r')
-    output = nonblockingreader.Reader ().run ([pipe], callbacks)
-    text = output[pipe]
+    text = pipe.read ()
     status = pipe.close ()
-    if status is None: status = 0
+    if status is None:
+        status = 0
 
     if text[-1:] == '\n':
         text = text[:-1]
+
     return status, text

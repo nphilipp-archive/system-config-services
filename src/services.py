@@ -129,7 +129,7 @@ class SysVService (ChkconfigService):
 
     def _load (self):
         """Load configuration from disk (without locking)."""
-        (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig --list %s 2>&1' % self.name, None)
+        (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig --list %s 2>&1' % self.name)
         if status != 0:
             if self.no_chkconfig_re.match (output) \
                 or self.chkconfig_error_re.match (output):
@@ -166,7 +166,7 @@ class SysVService (ChkconfigService):
         for what in ('on', 'off'):
             if not len (runlevel_changes[what]):
                 continue
-            (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig --level %s %s %s 2>&1' % (''.join (runlevel_changes[what]), self.name, what), None)
+            (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig --level %s %s %s 2>&1' % (''.join (runlevel_changes[what]), self.name, what))
             if status != 0:
                 raise OSError ("Saving service '%s' failed, command was 'LC_ALL=C /sbin/chkconfig --level %s %s %s'.\nOutput was:\n%s" % (self.name, ''.join (runlevel_changes[what]), self.name, what, output))
 
@@ -191,20 +191,29 @@ class SysVService (ChkconfigService):
 
     def _get_status (self):
         """Determine status of service (without locking)."""
-        status = SVC_STATUS_UNKNOWN
         try:
-            (status, output) = getstatusoutput ("LC_ALL=C /sbin/service \"%s\" status 2>&1" % self.name)
+            (s, o) = getstatusoutput ("LC_ALL=C /sbin/service \"%s\" status 2>&1" % self.name)
         except:
-            return SVC_STATUS_UNKNOWN, output
+            self.status = SVC_STATUS_UNKNOWN
+            self.status_output = output
+            return
 
-        if status == 0:
-            status = SVC_STATUS_RUNNING
-        elif status == 1 or status == 2:
-            status = SVC_STATUS_DEAD
-        elif status == 3:
-            status = SVC_STATUS_STOPPED
-        self.status = status
-        self.status_output = output
+        signal = s & 0xFF
+        exitcode = (s >> 8) & 0xFF
+
+        if not signal:
+            if exitcode == 0:
+                self.status = SVC_STATUS_RUNNING
+            elif exitcode == 1 or exitcode == 2:
+                self.status = SVC_STATUS_DEAD
+            elif exitcode == 3:
+                self.status = SVC_STATUS_STOPPED
+            else:
+                self.status = SVC_STATUS_UNKNOWN
+        else:
+            self.status = SVC_STATUS_UNKNOWN
+
+        self.status_output = o
 
     def is_dirty (self):
         with self._run_lock:
@@ -235,7 +244,7 @@ class XinetdService (ChkconfigService):
     def _load (self):
         """Load configuration from disk (without locking)."""
 
-        (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig --list %s 2>/dev/null' % self.name, None)
+        (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig --list %s 2>/dev/null' % self.name)
         if status != 0:
             raise OSError ("Loading service '%s' failed, command was 'LC_ALL=C /sbin/chkconfig --list %s 2>/dev/null'." % self.name)
         m = self.xinetd_list_re.match (output)
@@ -251,7 +260,7 @@ class XinetdService (ChkconfigService):
 
     def _save (self):
         """Save configuration to disk (without locking)."""
-        (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig %s %s 2>/dev/null' % (self.name, self.enabled and 'on' or 'off'), None)
+        (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig %s %s 2>/dev/null' % (self.name, self.enabled and 'on' or 'off'))
         if status != 0:
             raise OSError ("Saving service '%s' failed, command was 'LC_ALL=C /sbin/chkconfig %s %s 2>/dev/null'." % (self.name, self.name, self.enabled and 'on' or 'off'))
         self.enabled_ondisk = self.enabled

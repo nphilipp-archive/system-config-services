@@ -190,6 +190,8 @@ class SysVServiceHerder (ChkconfigServiceHerder):
         if service_cluster_delayed:
             self.notify (SVC_CONF_UPDATING, service = service)
             service.async_load (self.async_load_finished, service)
+            self.notify (SVC_STATUS_UPDATING, service = service)
+            service.async_status_update (self.async_status_update_finished, service)
             return True
         
         # don't watch this particular service any longer
@@ -210,9 +212,8 @@ class SysVServiceHerder (ChkconfigServiceHerder):
     def on_dir_changed (self, path, action, dir):
         #print "%s.on_dir_changed (%s, %s, %s)" % (self, path, action, dir)
         basename = self.basename_re.search (path).group ('basename')
-        if path == dir or basename[:1] == '.' or basename[-4:] == '.bak' or basename[-1:] == '~':
-            # ignore state change on the directory and common temporary/backup
-            # files
+        if path == dir:
+            # ignore state change on the directory
             return
 
         if self.rpmbak_re.match (path) or self.rpmtmp_re.match (path):
@@ -252,6 +253,8 @@ class SysVServiceHerder (ChkconfigServiceHerder):
                         gobject.timeout_add (self.cluster_timeout, self.service_cluster_timeout, name)
                         self.notify (SVC_CONF_UPDATING, service = service)
                         service.async_load (self.async_load_finished, service)
+                        self.notify (SVC_STATUS_UPDATING, service = service)
+                        service.async_status_update (self.async_status_update_finished, service)
                     except KeyError:
                         del self.serviceClusterDelayBegins[name]
                 else:
