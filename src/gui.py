@@ -272,7 +272,7 @@ class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
             elif status == SVC_STATUS_DEAD:
                 stock_icon = gtk.STOCK_STOP
             else:
-                raise KeyError ("status: %d", status)
+                raise KeyError ("service: %s status: %d" % (self.service.name, status))
             self.sysVServiceStatusIcon.set_from_stock (stock_icon,
                                                        gtk.ICON_SIZE_MENU)
         if self.service.conf_updating:
