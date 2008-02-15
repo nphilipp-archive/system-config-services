@@ -30,8 +30,17 @@ import time
 from util import getstatusoutput
 import async
 
+SVC_STATUS_UNKNOWN = 0
+SVC_STATUS_STOPPED = 1
+SVC_STATUS_RUNNING = 2
+SVC_STATUS_DEAD = 3
+
+##############################################################################
+
 class InvalidServiceException (Exception):
     pass
+
+##############################################################################
 
 class Service (object):
     """Represents an abstract service."""
@@ -42,6 +51,11 @@ class Service (object):
 
         self._run_lock = async.Lock ()
 
+    def __repr__ (self):
+        return '<%s object at %s: "%s">' % (str (self.__class__), hex (id (self)), self.name)
+
+##############################################################################
+
 class ChkconfigService (Service):
     """Represents an abstract service handled with chkconfig."""
 
@@ -49,10 +63,18 @@ class ChkconfigService (Service):
         super (ChkconfigService, self).__init__ (name, mon)
         self.settled = False
         self._asyncrunner = async.Runner (['load', 'save'])
+        self.conf_updating = False
+
+    def _async_ready_callback (self, runnable, callback, *p, **k):
+        self.conf_updating = False
+        callback (runnable, *p, **k)
 
     def async_load (self, callback, *p, **k):
         """Kick off asynchronous loading of configuration from disk."""
-        self._asyncrunner.start ('load', self.load, ready_fn_meth = callback, ready_args = p, ready_kwargs = k)
+        self._asyncrunner.start ('load', self.load,
+            ready_fn_meth = self._async_ready_callback,
+            ready_args = [callback] + list (p), ready_kwargs = k)
+        self.conf_updating = True
 
     def async_save (self, callback, *p, **k):
         """Kick off asynchronous saving of configuration to disk."""
@@ -70,20 +92,29 @@ class ChkconfigService (Service):
         """Check if a service is dirty, i.e. changed and not saved."""
         raise NotImplementedError
 
+##############################################################################
+
 class SysVService (ChkconfigService):
     """Represents a service handled by SysVinit."""
 
     init_list_re = re.compile (r'^(?P<name>\S+)\s+0:(?P<r0>off|on)\s+1:(?P<r1>off|on)\s+2:(?P<r2>off|on)\s+3:(?P<r3>off|on)\s+4:(?P<r4>off|on)\s+5:(?P<r5>off|on)\s+6:(?P<r6>off|on)\s*$')
 
     no_chkconfig_re = re.compile (r'^service (?P<name>.*) does not support chkconfig$')
+    chkconfig_error_re = re.compile (r'^error reading information on service (?P<name>.*):.*$')
     chkconfig_unconfigured_re = re.compile (r"^service (?P<name>.*) supports chkconfig, but is not referenced in any runlevel \(run 'chkconfig --add (?P=name)'\)$")
 
     def __init__ (self, name, mon):
         super (SysVService, self).__init__ (name, mon)
-        #print "SysVService (%s, %s)" % (name, mon)
+        self._asyncrunner.add_queues ('status')
+
         self.runlevels = [False, False, False, False, False, False, False]
         self.runlevels_ondisk = [False, False, False, False, False, False, False]
         self.configured = False
+
+        self._status_lock = async.Lock ()
+        self.status_updating = False
+        self.status = SVC_STATUS_UNKNOWN
+        self.status_output = None
 
         self.load ()
 
@@ -100,7 +131,8 @@ class SysVService (ChkconfigService):
         """Load configuration from disk (without locking)."""
         (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig --list %s 2>&1' % self.name, None)
         if status != 0:
-            if self.no_chkconfig_re.match (output):
+            if self.no_chkconfig_re.match (output) \
+                or self.chkconfig_error_re.match (output):
                 raise InvalidServiceException (output)
             elif self.chkconfig_unconfigured_re.match (output):
                 self.configured = False
@@ -141,12 +173,47 @@ class SysVService (ChkconfigService):
         self.runlevels_ondisk = copy.copy (self.runlevels)
         self.configured = True
 
+    def _async_status_ready_callback (self, runnable, callback, *p, **k):
+        self.status_updating = False
+        callback (runnable, *p, **k)
+
+    def async_status_update (self, callback, *p, **k):
+        """Kick off asynchronous determining of the status."""
+        self._asyncrunner.start ('status', self.get_status,
+            ready_fn_meth = self._async_status_ready_callback,
+            ready_args = [callback] + list (p), ready_kwargs = k)
+        self.status_updating = True
+
+    def get_status (self):
+        """Determine status of service."""
+        with self._status_lock:
+            return self._get_status ()
+
+    def _get_status (self):
+        """Determine status of service (without locking)."""
+        status = SVC_STATUS_UNKNOWN
+        try:
+            (status, output) = getstatusoutput ("LC_ALL=C /sbin/service \"%s\" status 2>&1" % self.name)
+        except:
+            return SVC_STATUS_UNKNOWN, output
+
+        if status == 0:
+            status = SVC_STATUS_RUNNING
+        elif status == 1 or status == 2:
+            status = SVC_STATUS_DEAD
+        elif status == 3:
+            status = SVC_STATUS_STOPPED
+        self.status = status
+        self.status_output = output
+
     def is_dirty (self):
         with self._run_lock:
             return self.is_dirty ()
 
     def _is_dirty (self):
         return self.runlevels != self.runlevels_ondisk
+
+##############################################################################
 
 class XinetdService (ChkconfigService):
     """Represents a service handled by xinetd."""

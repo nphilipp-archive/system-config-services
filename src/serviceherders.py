@@ -31,11 +31,13 @@ import gamin
 
 import services
 
-SVC_UPDATING = 0
-SVC_ADDED = 1
-SVC_DELETED = 2
-SVC_CHANGED = 3
-SVC_LAST = 4
+SVC_ADDED = 0
+SVC_DELETED = 1
+SVC_CONF_UPDATING = 2
+SVC_CONF_CHANGED = 3
+SVC_STATUS_UPDATING = 4
+SVC_STATUS_CHANGED = 5
+SVC_LAST = 6
 
 def gam_action_to_str (action):
     try:
@@ -146,15 +148,16 @@ class ChkconfigServiceHerder (ServiceHerder):
     rpmtmp_re = re.compile (r'.*\;[0-9A-Fa-f]{8}$')
 
     def async_load_finished (self, runnable, service):
-        self.notify (SVC_CHANGED, service = service)
+        self.notify (SVC_CONF_CHANGED, service = service)
 
 class SysVServiceHerder (ChkconfigServiceHerder):
     """service herder for services started by SysVinit"""
     
     service_class = services.SysVService
 
-    watch_directories = ['/etc/init.d', '/etc/rc0.d', '/etc/rc1.d', '/etc/rc2.d', '/etc/rc3.d', '/etc/rc4.d', '/etc/rc5.d', '/etc/rc6.d']
+    watch_directories = ['/etc/init.d', '/etc/rc0.d', '/etc/rc1.d', '/etc/rc2.d', '/etc/rc3.d', '/etc/rc4.d', '/etc/rc5.d', '/etc/rc6.d', '/var/lock/subsys']
 
+    basename_re = re.compile (r'(?P<basename>[^/]*)$')
     runlevel_dirs_re = re.compile (r'^/etc/rc(?P<runlevel>[0-6]).d$')
     runlevel_services_re = re.compile (r'^(?P<startkill>[SK])[0-9]+(?P<name>.*)$')
 
@@ -185,7 +188,7 @@ class SysVServiceHerder (ChkconfigServiceHerder):
         # the service triggered an event in the meantime, tell the object to
         # synchronize itself and keep watching it
         if service_cluster_delayed:
-            self.notify (SVC_UPDATING, service = service)
+            self.notify (SVC_CONF_UPDATING, service = service)
             service.async_load (self.async_load_finished, service)
             return True
         
@@ -193,10 +196,23 @@ class SysVServiceHerder (ChkconfigServiceHerder):
         del self.serviceClusterDelayBegins[name]
         return False
 
+    def async_status_update_finished (self, runnable, service, *p, **k):
+        self.notify (SVC_STATUS_CHANGED, service = service)
+
+    def async_status_update (self, name):
+        try:
+            service = self.services[name]
+        except KeyError:
+            return
+        self.notify (SVC_STATUS_UPDATING, service = service)
+        service.async_status_update (self.async_status_update_finished, service)
+
     def on_dir_changed (self, path, action, dir):
         #print "%s.on_dir_changed (%s, %s, %s)" % (self, path, action, dir)
-        if path == dir:
-            # ignore state change on the directory
+        basename = self.basename_re.search (path).group ('basename')
+        if path == dir or basename[:1] == '.' or basename[-4:] == '.bak' or basename[-1:] == '~':
+            # ignore state change on the directory and common temporary/backup
+            # files
             return
 
         if self.rpmbak_re.match (path) or self.rpmtmp_re.match (path):
@@ -209,6 +225,10 @@ class SysVServiceHerder (ChkconfigServiceHerder):
                 self.create_service (path)
             elif action == gamin.GAMDeleted:
                 self.delete_service (path)
+            return
+        elif dir == '/var/lock/subsys':
+            # check for lock files of services
+            self.async_status_update (basename)
             return
 
         rlm = self.runlevel_dirs_re.match (dir)
@@ -230,7 +250,7 @@ class SysVServiceHerder (ChkconfigServiceHerder):
                     self.serviceClusterDelayBegins[name] = time.time ()
                     try:
                         gobject.timeout_add (self.cluster_timeout, self.service_cluster_timeout, name)
-                        self.notify (SVC_UPDATING, service = service)
+                        self.notify (SVC_CONF_UPDATING, service = service)
                         service.async_load (self.async_load_finished, service)
                     except KeyError:
                         del self.serviceClusterDelayBegins[name]
@@ -263,7 +283,7 @@ class XinetdServiceHerder (ChkconfigServiceHerder):
         elif action == gamin.GAMChanged:
             if self.services.has_key (path):
                 service = self.services[name]
-                self.notify (SVC_UPDATING, service = service)
+                self.notify (SVC_CONF_UPDATING, service = service)
                 service.async_load (self.async_load_finished, service)
 
     def create_service_delayed (self, name):
@@ -273,7 +293,7 @@ class XinetdServiceHerder (ChkconfigServiceHerder):
         if os.access ("/etc/xinetd.d/%s" % name, os.F_OK):
             if self.services.has_key (name):
                 service = self.services[name]
-                self.notify (SVC_UPDATING, service = service)
+                self.notify (SVC_CONF_UPDATING, service = service)
                 service.async_load (self.async_load_finished, service)
             else:
                 self.create_service (name)
@@ -289,4 +309,4 @@ class XinetdServiceHerder (ChkconfigServiceHerder):
 
 herder_classes = [ SysVServiceHerder, XinetdServiceHerder ]
 
-__all__ = herder_classes + [ SVC_ADDED, SVC_DELETED, SVC_CHANGED ]
+__all__ = herder_classes + [ SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED ]
