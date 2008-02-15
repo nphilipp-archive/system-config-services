@@ -145,7 +145,7 @@ class ChkconfigServiceHerder (ServiceHerder):
     rpmbak_re = re.compile (r'.*\.rpm(?:orig|save|new)$')
     rpmtmp_re = re.compile (r'.*\;[0-9A-Fa-f]{8}$')
 
-    def async_load_finished (self, service):
+    def async_load_finished (self, runnable, service):
         self.notify (SVC_CHANGED, service = service)
 
 class SysVServiceHerder (ChkconfigServiceHerder):
@@ -219,7 +219,12 @@ class SysVServiceHerder (ChkconfigServiceHerder):
                 startkill = sm.group ('startkill')
                 name = sm.group ('name')
 
-                service = self.services[name]
+                # A service might have been deleted in between or not supported
+                # by chkconfig (halt, killall, single, local, reboot)
+                try:
+                    service = self.services[name]
+                except KeyError:
+                    return
 
                 if not self.serviceClusterDelayBegins.has_key (name):
                     self.serviceClusterDelayBegins[name] = time.time ()
