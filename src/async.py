@@ -27,15 +27,15 @@ import os
 import signal
 import threading
 
-__all__ = ['AsyncLock', 'AsyncRunner']
+__all__ = ['Lock', 'Runner']
 
 ##############################################################################
 
-AsyncLock = threading.Lock
+Lock = threading.Lock
 
 ##############################################################################
 
-class AsyncRunnable (object):
+class Runnable (object):
     def __init__ (self, start_fn_meth, start_args = None, start_kwargs = None,
             ready_fn_meth = None, ready_args = None, ready_kwargs = None):
         self.start_fn_meth = start_fn_meth
@@ -47,7 +47,7 @@ class AsyncRunnable (object):
 
 ##############################################################################
 
-class AsyncQueue (object):
+class Queue (object):
     def __init__ (self):
         self._queue = []
         self._queue_lock = threading.Lock ()
@@ -101,7 +101,7 @@ class AsyncQueue (object):
 
 ##############################################################################
 
-class AsyncRunner (object):
+class Runner (object):
     def __init__ (self, purposes):
         self._queues = {}
 
@@ -112,7 +112,7 @@ class AsyncRunner (object):
             purposes = (purposes, )
 
         for p in purposes:
-            self._queues[p] = AsyncQueue ()
+            self._queues[p] = Queue ()
 
     def reap (self):
         for q in self._queues.itervalues ():
@@ -120,7 +120,7 @@ class AsyncRunner (object):
     
     def start (self, purpose, start_fn_meth, start_args = None, start_kwargs = None, ready_fn_meth = None, ready_args = None, ready_kwargs = None):
         queue = self._queues[purpose]
-        runnable = AsyncRunnable (start_fn_meth, start_args = start_args,
+        runnable = Runnable (start_fn_meth, start_args = start_args,
                 start_kwargs = start_kwargs, ready_fn_meth = ready_fn_meth,
                 ready_args = ready_args, ready_kwargs = ready_kwargs)
         queue.add (runnable)
@@ -146,7 +146,7 @@ if __name__ == '__main__':
             print "long_method(%d): end" % num
 
         def __init__ (self):
-            self.async_runner = AsyncRunner (range (5))
+            self.async_runner = Runner (range (5))
 
         def __del__ (self):
             del self.async_runner 
