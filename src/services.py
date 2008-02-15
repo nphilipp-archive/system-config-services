@@ -28,7 +28,7 @@ import re
 import time
 
 from util import getstatusoutput
-from async import *
+import async
 
 class InvalidServiceException (Exception):
     pass
@@ -40,7 +40,7 @@ class Service (object):
         self.name = name
         self.mon = mon
 
-        self._run_lock = AsyncLock ()
+        self._run_lock = async.Lock ()
 
 class ChkconfigService (Service):
     """Represents an abstract service handled with chkconfig."""
@@ -48,7 +48,7 @@ class ChkconfigService (Service):
     def __init__ (self, name, mon):
         super (ChkconfigService, self).__init__ (name, mon)
         self.settled = False
-        self._asyncrunner = AsyncRunner (['load', 'save'])
+        self._asyncrunner = async.Runner (['load', 'save'])
 
     def async_load (self, callback, *p, **k):
         """Kick off asynchronous loading of configuration from disk."""
