@@ -29,8 +29,10 @@ import gtk.glade
 
 from rhpl.translate import _, N_
 
+import async
+
 import serviceherders
-from serviceherders import SVC_ADDED, SVC_DELETED, SVC_CHANGED
+from serviceherders import SVC_UPDATING, SVC_ADDED, SVC_DELETED, SVC_CHANGED
 import services
 
 gtk.glade.bindtextdomain (config.domain)
@@ -65,7 +67,6 @@ class GUIServicesTreeStore (gtk.TreeStore):
         self.serviceherders = serviceherders
 
         for herder in serviceherders:
-            print "%s.subscribe (%s)" % (herder, self.on_services_changed)
             herder.subscribe (self.on_services_changed)
 
         self.service_iters = {}
@@ -139,7 +140,6 @@ class GUIServicesTreeView (gtk.TreeView):
 
     def __init__ (self, serviceherders):
         self.model = GUIServicesTreeStore (serviceherders)
-        self.model.
 
         gtk.TreeView.__init__ (self, model = self.model) 
 
@@ -188,16 +188,43 @@ _service_selected_signal = gobject.signal_new ('service-selected', GUIServicesTr
 class GUIServicesDetailsPainter (object):
     _xml_widgets = []
 
+    _classes = None
+    _classes_objects = { }
+
     """Abstract services details painter"""
-    def __init__ (self, xml):
+    def __new__ (cls, xml, service, *p, **k):
+        if GUIServicesDetailsPainter._classes == None:
+            GUIServicesDetailsPainter._classes = {
+                services.SysVService: GUISysVServicesDetailsPainter,
+                services.XinetdService: GUIXinetdServicesDetailsPainter,
+            }
+
+        painter_class = None
+
+        for svc_cls, ptr_cls in GUIServicesDetailsPainter._classes.iteritems ():
+            if isinstance (service, svc_cls):
+                painter_class = ptr_cls
+                break
+
+        if not painter_class:
+            raise TypeError ('service: %s' % service)
+
+        if not GUIServicesDetailsPainter._classes_objects.has_key (painter_class):
+            GUIServicesDetailsPainter._classes_objects[painter_class] = \
+                object.__new__ (painter_class, xml)
+
+        return GUIServicesDetailsPainter._classes_objects[painter_class]
+
+    def __init__ (self, xml, service):
         self.xml = xml
+        self.current_service = service
 
         for wname in self._xml_widgets:
             w = xml.get_widget (wname)
             if w:
                 setattr (self, wname, w)
 
-    def paint_details (self, service):
+    def paint_details (self):
         raise NotImplementedError
 
 ##############################################################################
@@ -213,17 +240,16 @@ class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
         'sysVServiceDescriptionTextView'
     ]
 
-    def __init__ (self, xml):
-        super (GUIServicesDetailsPainter, self).__init__ (xml)
+    def __init__ (self, xml, service):
+        super (GUIServicesDetailsPainter, self).__init__ (xml, service)
 
-    def paint_details (self, service):
-        if not isinstance (service, services.SysVService):
-            raise TypeError ("service")
-        FIXME
+    def paint_details (self):
+        pass
+        # FIXME
 
 ##############################################################################
 
-class GUIXinetdServiceDetailsPainter (GUIServiceDetailsPainter):
+class GUIXinetdServicesDetailsPainter (GUIServicesDetailsPainter):
     _xml_widgets = [
         'xinetdExplanationLabel',
         'xinetdServiceStatusIcon',
@@ -231,13 +257,12 @@ class GUIXinetdServiceDetailsPainter (GUIServiceDetailsPainter):
         'xinetdServiceDescription'
     ]
 
-    def __init__ (self, xml):
-        super (GUIServicesDetailsPainter, self).__init__ (xml)
+    def __init__ (self, xml, service):
+        super (GUIServicesDetailsPainter, self).__init__ (xml, service)
 
-    def paint_details (self, service):
-        if not isinstance (service, services.XinetdService):
-            raise TypeError ("service")
-        FIXME
+    def paint_details (self):
+        pass
+        # FIXME
 
 ##############################################################################
 
@@ -250,8 +275,11 @@ class GUIServiceEntryPainter:
         else:
             raise TypeError ('service')
 
-    def __init__ (self):
+    def __init__ (self, xml, service):
         self._updating = False
+
+        self.xml = xml
+        self.service = service
 
     def set_updating (self, updating):
         if updating != self._updating:
@@ -301,7 +329,7 @@ class GUIServicesList (object):
 
     def on_service_selected (self, treeview = None, service = None, *args):
         self.current_service = service
-        self.service_painters[service].paint_details ()
+        GUIServicesDetailsPainter (self.xml, service).paint_details ()
         if isinstance (service, services.SysVService):
             self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_SYSV)
         elif isinstance (service, services.XinetdService):
@@ -311,15 +339,15 @@ class GUIServicesList (object):
 
     def on_service_updating (self, treestore, service, *args):
         if not self.service_painters.has_key (service):
-            self.service_painters[service] = GUIServicePainter (self, service)
-        self.service_painters[service].updating (True)
+            self.service_painters[service] = GUIServiceEntryPainter (self.xml, service)
+        self.service_painters[service].set_updating (True)
 
     def on_service_changed (self, treestore, service, *args):
         if not self.service_painters.has_key (service):
-            self.service_painters[service] = GUIServicePainter (self, service)
-        self.service_painters[service].updating (False)
+            self.service_painters[service] = GUIServiceEntryPainter (self.xml, service)
+        self.service_painters[service].set_updating (False)
         if service == self.current_service:
-            self.service_painters[service].paint_details ()
+            GUIServicesDetailsPainter (self.xml, service).paint_details ()
 
     def on_service_deleted (self, treestore, service, *args):
         if service == self.current_service:
@@ -420,4 +448,7 @@ class GUI (object):
             pass
 
 if __name__ == "__main__":
-    GUI ().run ()
+    try:
+        GUI ().run ()
+    except KeyboardInterrupt:
+        async.queues_kill ()
