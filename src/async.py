@@ -47,22 +47,43 @@ class Runnable (object):
 
 ##############################################################################
 
+_queues = set ()
+_queues_lock = Lock ()
+
+def queues_kill ():
+    global _queues_lock, _queues
+    with _queues_lock:
+        for q in _queues:
+            q.kill ()
+
 class Queue (object):
     def __init__ (self):
         self._queue = []
-        self._queue_lock = threading.Lock ()
+        self._queue_lock = Lock ()
 
         self._thread = None
         self._thread_pid = None
-        self._thread_lock = threading.Lock ()
+        self._thread_lock = Lock ()
 
-        self._run_lock = threading.Lock ()
+        self._run_lock = Lock ()
+
+        with _queues_lock:
+            _queues.add (self)
 
     def __len__ (self):
         with self._queue_lock:
             return len (self._queue)
 
-    def reap (self):
+    def __del__ (self):
+        global _queues_lock, _queues
+        self.kill ()
+        try:
+            with _queues_lock:
+                _queues.remove (self)
+        except AttributeError:
+            pass
+
+    def kill (self):
         with self._thread_lock:
             if self._thread_pid:
                 os.kill (self._thread_pid, signal.SIGKILL)
@@ -114,9 +135,9 @@ class Runner (object):
         for p in purposes:
             self._queues[p] = Queue ()
 
-    def reap (self):
+    def kill (self):
         for q in self._queues.itervalues ():
-            q.reap ()
+            q.kill ()
     
     def start (self, purpose, start_fn_meth, start_args = None, start_kwargs = None, ready_fn_meth = None, ready_args = None, ready_kwargs = None):
         queue = self._queues[purpose]
@@ -163,12 +184,8 @@ if __name__ == '__main__':
         def finished (self, runnable):
             print "finished:", runnable.start_args[0]
 
-        def reap (self):
-            self.async_runner.reap ()
-
-
     f = Foo ()
     try:
         f.run ()
     except KeyboardInterrupt:
-        f.reap ()
+        queues_kill ()
