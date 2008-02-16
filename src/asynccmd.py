@@ -28,9 +28,10 @@ __all__ = ('AsyncCmd', 'AsyncCmdQueue', 'AsyncCmdQueueHerder')
 ##############################################################################
 
 class AsyncCmd (object):
-    def __init__ (self, cmd, combined_stdout = False, ready_cb = None, ready_args = (), ready_kwargs = {}):
+    def __init__ (self, cmd, combined_stdout = False, priority = gobject.PRIORITY_DEFAULT_IDLE, ready_cb = None, ready_args = (), ready_kwargs = {}):
         self.cmd = cmd
         self.combined_stdout = combined_stdout
+        self.priority = priority
         self.ready_cb = ready_cb
         self.ready_args = ready_args
         self.ready_kwargs = ready_kwargs
@@ -72,7 +73,7 @@ class AsyncCmd (object):
         #print "fileobjs:", self.fileobjs
 
         for fd in self.fileobjs:
-            gobject.io_add_watch (fd, gobject.IO_IN | gobject.IO_PRI | gobject.IO_HUP, self.on_fd)
+            gobject.io_add_watch (fd, gobject.IO_IN | gobject.IO_PRI | gobject.IO_HUP, self.on_fd, priority = self.priority)
 
     def on_fd (self, fd, condition):
         if condition & (gobject.IO_IN | gobject.IO_PRI):
@@ -130,10 +131,10 @@ class AsyncCmdQueue (object):
     def __repr__ (self):
         return "<%s.AsyncCmdQueue object at %s: max: %d run: %d wait: %d>" % (__name__, hex (id (self)), self.max_cmds_running, len (self.cmds_running), len (self.cmds_waiting))
 
-    def queue (self, async_cmd, combined_stdout = False, ready_cb = None, ready_args = (), ready_kwargs = {}):
+    def queue (self, async_cmd, combined_stdout = False, priority = gobject.PRIORITY_DEFAULT_IDLE, ready_cb = None, ready_args = (), ready_kwargs = {}):
         ready_args = (ready_cb, ) + ready_args
         if isinstance (async_cmd, (str, unicode)):
-            cmd_obj = AsyncCmd (async_cmd, combined_stdout = combined_stdout, ready_cb = self._ready_cb, ready_args = ready_args, ready_kwargs = ready_kwargs)
+            cmd_obj = AsyncCmd (async_cmd, combined_stdout = combined_stdout, priority = priority, ready_cb = self._ready_cb, ready_args = ready_args, ready_kwargs = ready_kwargs)
         elif isinstance (async_cmd, AsyncCmd):
             cmd_obj = async_cmd
         else:

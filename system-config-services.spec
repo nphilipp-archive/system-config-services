@@ -106,6 +106,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Sun Feb 17 2008 Nils Philippsen <nphilipp@redhat.com>
+- use lower default priority for asynchronous IO handling
+
 * Sat Feb 16 2008 Nils Philippsen <nphilipp@redhat.com>
 - move handling of service changes from GUIServicesTreeStore into
   GUIServicesList
