@@ -110,6 +110,7 @@ rm -rf %{buildroot}
 - move handling of service changes from GUIServicesTreeStore into
   GUIServicesList
 - use stock icons for enabled/status columns
+- use event loop instead of threads for asynchronously running external commands
 
 * Fri Feb 15 2008 Nils Philippsen <nphilipp@redhat.com>
 - implement status updates

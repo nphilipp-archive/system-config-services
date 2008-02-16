@@ -147,7 +147,7 @@ class ChkconfigServiceHerder (ServiceHerder):
     rpmbak_re = re.compile (r'.*\.rpm(?:orig|save|new)$')
     rpmtmp_re = re.compile (r'.*\;[0-9A-Fa-f]{8}$')
 
-    def async_load_finished (self, runnable, service):
+    def async_load_finished (self, service):
         self.notify (SVC_CONF_CHANGED, service = service)
 
 class SysVServiceHerder (ChkconfigServiceHerder):
@@ -198,10 +198,11 @@ class SysVServiceHerder (ChkconfigServiceHerder):
         del self.serviceClusterDelayBegins[name]
         return False
 
-    def async_status_update_finished (self, runnable, service, *p, **k):
+    def async_status_update_finished (self, service):
         self.notify (SVC_STATUS_CHANGED, service = service)
 
     def async_status_update (self, name):
+        #print "%s.async_status_update (%s)" % (self, name)
         try:
             service = self.services[name]
         except KeyError:

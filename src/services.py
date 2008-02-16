@@ -20,15 +20,13 @@
 # Authors:
 # Nils Philippsen <nphilipp@redhat.com>
 
-from __future__ import with_statement
-
 import os
 import copy
 import re
 import time
 
 from util import getstatusoutput
-import async
+from asynccmd import *
 
 SVC_STATUS_UNKNOWN = 0
 SVC_STATUS_STOPPED = 1
@@ -49,8 +47,6 @@ class Service (object):
         self.name = name
         self.mon = mon
 
-        self._run_lock = async.Lock ()
-
     def __repr__ (self):
         return '<%s object at %s: "%s">' % (str (self.__class__), hex (id (self)), self.name)
 
@@ -62,26 +58,11 @@ class ChkconfigService (Service):
     def __init__ (self, name, mon):
         super (ChkconfigService, self).__init__ (name, mon)
         self.settled = False
-        self._asyncrunner = async.Runner (['load', 'save'])
-        self.conf_updating = False
-
-    def _async_ready_callback (self, runnable, callback, *p, **k):
-        self.conf_updating = False
-        callback (runnable, *p, **k)
+        self._asynccmdqueue = AsyncCmdQueue ()
+        self.conf_updates_running = 0
 
     def async_load (self, callback, *p, **k):
-        """Kick off asynchronous loading of configuration from disk."""
-        self._asyncrunner.start ('load', self.load,
-            ready_fn_meth = self._async_ready_callback,
-            ready_args = [callback] + list (p), ready_kwargs = k)
-        self.conf_updating = True
-
-    def async_save (self, callback, *p, **k):
-        """Kick off asynchronous saving of configuration to disk."""
-        raise NotImplementedError
-
-    def load (self):
-        """Load configuration from disk."""
+        """Load configuration from disk asynchronously."""
         raise NotImplementedError
 
     def save (self):
@@ -105,32 +86,34 @@ class SysVService (ChkconfigService):
 
     def __init__ (self, name, mon):
         super (SysVService, self).__init__ (name, mon)
-        self._asyncrunner.add_queues ('status')
 
         self.runlevels = [False, False, False, False, False, False, False]
         self.runlevels_ondisk = [False, False, False, False, False, False, False]
         self.configured = False
 
-        self._status_lock = async.Lock ()
-        self.status_updating = False
+        self.status_updates_running = 0
         self.status = SVC_STATUS_UNKNOWN
         self.status_output = None
 
-        self.load ()
+        #self.async_load (None)
 
-    def __del__ (self):
-        #print "del (%s)" % self
-        pass
+    def async_load (self, callback, *p, **k):
+        """Load configuration from disk asynchronously."""
+        p = (callback, ) + p
+        self._asynccmdqueue.queue ('env LC_ALL=C /sbin/chkconfig --list "%s"' % self.name, combined_stdout = True, ready_cb = self._load_ready, ready_args = p, ready_kwargs = k)
+        self.conf_updates_running += 1
 
-    def load (self):
-        """Load configuration from disk."""
-        with self._run_lock:
-            return self._load ()
+    def _load_ready (self, cmd, callback, *p, **k):
+        self._load_process (cmd)
+        self.conf_updates_running -= 1
+        callback (*p, **k)
 
-    def _load (self):
-        """Load configuration from disk (without locking)."""
-        (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig --list %s 2>&1' % self.name)
-        if status != 0:
+    def _load_process (self, cmd):
+        """Process asynchronously loaded configuration."""
+        exitcode = cmd.exitcode
+        output = cmd.output
+
+        if exitcode != 0:
             if self.no_chkconfig_re.match (output) \
                 or self.chkconfig_error_re.match (output):
                 raise InvalidServiceException (output)
@@ -138,9 +121,9 @@ class SysVService (ChkconfigService):
                 self.configured = False
                 return
             else:
-                # service might have been deleted
+                # service might have been deleted, let the herder take care of it
                 return
-                #raise OSError ("Loading service '%s' failed, command was 'LC_ALL=C /sbin/chkconfig --list %s'.\nOutput was:\n%s" % (self.name, self.name, output))
+
         m = self.init_list_re.match (output)
         if not m or m.group ('name') != self.name:
             raise output
@@ -148,15 +131,10 @@ class SysVService (ChkconfigService):
             self.runlevels[runlevel] = (m.group ("r%d" % runlevel) == 'on') and True or False
         self.runlevels_ondisk = copy.copy (self.runlevels)
         self.configured = True
-        #print "%s: %s" % (self.name, self.runlevels)
+        self.conf_updates_running -= 1
 
     def save (self):
         """Save configuration to disk."""
-        with self._run_lock:
-            return self._save (self)
-
-    def _save (self):
-        """Save configuration to disk (without locking)."""
         runlevel_changes = { 'on': [], 'off': [] }
 
         for i in xrange (len (self.runlevels)):
@@ -166,60 +144,40 @@ class SysVService (ChkconfigService):
         for what in ('on', 'off'):
             if not len (runlevel_changes[what]):
                 continue
-            (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig --level %s %s %s 2>&1' % (''.join (runlevel_changes[what]), self.name, what))
+            (status, output) = getstatusoutput ('env LC_ALL=C /sbin/chkconfig --level %s %s %s 2>&1' % (''.join (runlevel_changes[what]), self.name, what))
             if status != 0:
                 raise OSError ("Saving service '%s' failed, command was 'LC_ALL=C /sbin/chkconfig --level %s %s %s'.\nOutput was:\n%s" % (self.name, ''.join (runlevel_changes[what]), self.name, what, output))
 
         self.runlevels_ondisk = copy.copy (self.runlevels)
         self.configured = True
 
-    def _async_status_ready_callback (self, runnable, callback, *p, **k):
-        self.status_updating = False
-        callback (runnable, *p, **k)
-
     def async_status_update (self, callback, *p, **k):
-        """Kick off asynchronous determining of the status."""
-        self._asyncrunner.start ('status', self.get_status,
-            ready_fn_meth = self._async_status_ready_callback,
-            ready_args = [callback] + list (p), ready_kwargs = k)
-        self.status_updating = True
+        """Determine service status asynchronously."""
+        p = (callback, ) + p
+        self._asynccmdqueue.queue ('env LC_ALL=C /sbin/service \"%s\" status' % self.name, combined_stdout = True, ready_cb = self._status_update_ready, ready_args = p, ready_kwargs = k)
+        self.status_updates_running += 1
 
-    def get_status (self):
-        """Determine status of service."""
-        with self._status_lock:
-            return self._get_status ()
+    def _status_update_ready (self, cmd, callback, *p, **k):
+        self._status_update_process (cmd)
+        self.status_updates_running -= 1
+        callback (*p, **k)
 
-    def _get_status (self):
-        """Determine status of service (without locking)."""
-        try:
-            (s, o) = getstatusoutput ("LC_ALL=C /sbin/service \"%s\" status 2>&1" % self.name)
-        except:
-            self.status = SVC_STATUS_UNKNOWN
-            self.status_output = output
-            return
+    def _status_update_process (self, cmd):
+        """Process asynchronously determined service status."""
+        exitcode = cmd.exitcode
 
-        signal = s & 0xFF
-        exitcode = (s >> 8) & 0xFF
-
-        if not signal:
-            if exitcode == 0:
-                self.status = SVC_STATUS_RUNNING
-            elif exitcode == 1 or exitcode == 2:
-                self.status = SVC_STATUS_DEAD
-            elif exitcode == 3:
-                self.status = SVC_STATUS_STOPPED
-            else:
-                self.status = SVC_STATUS_UNKNOWN
+        if exitcode == 0:
+            self.status = SVC_STATUS_RUNNING
+        elif exitcode == 1 or exitcode == 2:
+            self.status = SVC_STATUS_DEAD
+        elif exitcode == 3:
+            self.status = SVC_STATUS_STOPPED
         else:
             self.status = SVC_STATUS_UNKNOWN
 
-        self.status_output = o
+        self.status_output = cmd.output
 
     def is_dirty (self):
-        with self._run_lock:
-            return self.is_dirty ()
-
-    def _is_dirty (self):
         return self.runlevels != self.runlevels_ondisk
 
 ##############################################################################
@@ -238,11 +196,6 @@ class XinetdService (ChkconfigService):
 
     def load (self):
         """Load configuration from disk."""
-        with self._run_lock:
-            return self._load ()
-
-    def _load (self):
-        """Load configuration from disk (without locking)."""
 
         (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig --list %s 2>/dev/null' % self.name)
         if status != 0:
@@ -255,21 +208,12 @@ class XinetdService (ChkconfigService):
 
     def save (self):
         """Save configuration to disk."""
-        with self._run_lock:
-            return self._save (self)
-
-    def _save (self):
-        """Save configuration to disk (without locking)."""
         (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig %s %s 2>/dev/null' % (self.name, self.enabled and 'on' or 'off'))
         if status != 0:
             raise OSError ("Saving service '%s' failed, command was 'LC_ALL=C /sbin/chkconfig %s %s 2>/dev/null'." % (self.name, self.name, self.enabled and 'on' or 'off'))
         self.enabled_ondisk = self.enabled
 
     def is_dirty (self):
-        with self._run_lock:
-            return self._is_dirty ()
-
-    def _is_dirty (self):
         return self.enabled != self.enabled_ondisk
 
 service_classes = [ SysVService, XinetdService ]

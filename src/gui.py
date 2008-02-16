@@ -29,8 +29,6 @@ import gtk.glade
 
 from rhpl.translate import _, N_
 
-import async
-
 import serviceherders
 from serviceherders import SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED
 import services
@@ -230,7 +228,7 @@ class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
         super (GUISysVServicesDetailsPainter, self).__init__ (xml, service)
 
     def paint_details (self):
-        if self.service.status_updating:
+        if self.service.status_updates_running > 0:
             self.sysVServiceStatusIcon.set_from_stock (gtk.STOCK_REFRESH,
                                                        gtk.ICON_SIZE_MENU)
         else:
@@ -238,7 +236,7 @@ class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
             self.sysVServiceStatusIcon.set_from_stock (stock_icon_id,
                                                        gtk.ICON_SIZE_MENU)
 
-        if self.service.conf_updating:
+        if self.service.conf_updates_running > 0:
             self.sysVServiceEnabledIcon.set_from_stock (gtk.STOCK_REFRESH,
                                                         gtk.ICON_SIZE_MENU)
         else:
@@ -477,4 +475,4 @@ if __name__ == "__main__":
     try:
         GUI ().run ()
     except KeyboardInterrupt:
-        async.queues_kill ()
+        pass
