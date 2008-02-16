@@ -50,8 +50,8 @@ SVC_COL_LAST = 5
 class GUIServicesTreeStore (gtk.TreeStore):
     col_types = {
         SVC_COL_SVC_OBJECT:     gobject.TYPE_PYOBJECT,
-        SVC_COL_ENABLED:        gtk.gdk.Pixbuf,
-        SVC_COL_STATUS:         gtk.gdk.Pixbuf,
+        SVC_COL_ENABLED:        gobject.TYPE_STRING,
+        SVC_COL_STATUS:         gobject.TYPE_STRING,
         SVC_COL_NAME:           gobject.TYPE_STRING,
         SVC_COL_REMARK:         gobject.TYPE_STRING,
     }
@@ -104,8 +104,8 @@ class GUIServicesTreeView (gtk.TreeView):
     COL_LAST = 7
 
     col_spec = {
-        SVC_COL_ENABLED:    ["", gtk.CellRendererPixbuf, None, False, False, False, 40],
-        SVC_COL_STATUS:     ["", gtk.CellRendererPixbuf, None, False, False, False, 40],
+        SVC_COL_ENABLED:    ["", gtk.CellRendererPixbuf, "stock_id", False, False, False, 40],
+        SVC_COL_STATUS:     ["", gtk.CellRendererPixbuf, "stock_id", False, False, False, 40],
         SVC_COL_NAME:       [_("Name"), gtk.CellRendererText, "text", True, True, True, None],
         SVC_COL_REMARK:     [_("Remarks"), gtk.CellRendererText, "text", True, True, True, None],
     }
@@ -157,7 +157,7 @@ _service_selected_signal = gobject.signal_new ('service-selected', GUIServicesTr
 
 ##############################################################################
 
-def _status_stock_icon (status):
+def _status_stock_icon_id (status):
     if status == SVC_STATUS_UNKNOWN:
         return gtk.STOCK_DIALOG_QUESTION
     elif status == SVC_STATUS_STOPPED:
@@ -234,8 +234,8 @@ class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
             self.sysVServiceStatusIcon.set_from_stock (gtk.STOCK_REFRESH,
                                                        gtk.ICON_SIZE_MENU)
         else:
-            stock_icon = _status_stock_icon (self.service.status)
-            self.sysVServiceStatusIcon.set_from_stock (stock_icon,
+            stock_icon_id = _status_stock_icon_id (self.service.status)
+            self.sysVServiceStatusIcon.set_from_stock (stock_icon_id,
                                                        gtk.ICON_SIZE_MENU)
 
         if self.service.conf_updating:
@@ -265,7 +265,7 @@ class GUIXinetdServicesDetailsPainter (GUIServicesDetailsPainter):
 ##############################################################################
 
 class GUIServiceEntryPainter (object):
-    def __new__ (cls, xml, service, *p, **k):
+    def __new__ (cls, treestore, service, *p, **k):
         if isinstance (service, services.SysVService):
             return object.__new__ (GUISysVServiceEntryPainter)
         elif isinstance (service, services.XinetdService):
@@ -273,33 +273,25 @@ class GUIServiceEntryPainter (object):
         else:
             raise TypeError ('service')
 
-    def __init__ (self, xml, service):
-        self._conf_updating = False
-
-        self.xml = xml
+    def __init__ (self, treestore, service):
+        self.treestore = treestore
         self.service = service
 
-    def set_conf_updating (self, updating):
-        if updating != self._conf_updating:
-            self._conf_updating = updating
-            # FIXME
+    def paint (self):
+        raise NotImplementedError
 
 ##############################################################################
 
 class GUISysVServiceEntryPainter (GUIServiceEntryPainter):
-    def __init__ (self, xml, service):
-        super (GUISysVServiceEntryPainter, self).__init__ (xml, service)
-        self._status_updating = False
-
-    def set_status_updating (self, updating):
-        if updating != self._status_updating:
-            self._conf_updating = updating
-            # FIXME
+    def paint (self):
+        iter = self.treestore.service_iters[self.service]
+        self.treestore.set (iter, SVC_COL_STATUS, _status_stock_icon_id (self.service.status))
 
 ##############################################################################
 
 class GUIXinetdServiceEntryPainter (GUIServiceEntryPainter):
-    pass
+    def paint (self):
+        pass
 
 ##############################################################################
 
@@ -360,38 +352,31 @@ class GUIServicesList (object):
 
     def on_service_added (self, service):
         self.servicesTreeStore.add_service (service)
-        #self._service_conf_changed (service)
+        self.service_painters[service] = GUIServiceEntryPainter (self.servicesTreeStore, service)
+        self.service_painters[service].paint ()
 
     def on_service_deleted (self, service):
         self.servicesTreeStore.delete_service (service)
         if service == self.current_service:
             self.on_service_selected (service = None)
         try:
-            self.service_painters[service]
+            del self.service_painters[service]
         except KeyError:
             pass
 
     def on_service_conf_updating (self, service):
-        if not self.service_painters.has_key (service):
-            self.service_painters[service] = GUIServiceEntryPainter (self.xml, service)
-        self.service_painters[service].set_conf_updating (True)
+        self.service_painters[service].paint ()
 
     def on_service_conf_changed (self, service):
-        if not self.service_painters.has_key (service):
-            self.service_painters[service] = GUIServiceEntryPainter (self.xml, service)
-        self.service_painters[service].set_conf_updating (False)
+        self.service_painters[service].paint ()
         if service == self.current_service:
             GUIServicesDetailsPainter (self.xml, service).paint_details ()
 
     def on_service_status_updating (self, service):
-        if not self.service_painters.has_key (service):
-            self.service_painters[service] = GUIServiceEntryPainter (self.xml, service)
-        self.service_painters[service].set_status_updating (True)
+        self.service_painters[service].paint ()
 
     def on_service_status_changed (self, service):
-        if not self.service_painters.has_key (service):
-            self.service_painters[service] = GUIServiceEntryPainter (self.xml, service)
-        self.service_painters[service].set_status_updating (False)
+        self.service_painters[service].paint ()
         if service == self.current_service:
             GUIServicesDetailsPainter (self.xml, service).paint_details ()
 
