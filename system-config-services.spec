@@ -106,6 +106,14 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Sat Feb 16 2008 Nils Philippsen <nphilipp@redhat.com>
+- move handling of service changes from GUIServicesTreeStore into
+  GUIServicesList
+- use stock icons for enabled/status columns
+
+* Fri Feb 15 2008 Nils Philippsen <nphilipp@redhat.com>
+- implement status updates
+
 * Thu Feb 14 2008 Nils Philippsen <nphilipp@redhat.com>
 - move getstatusoutput() into util.py
 - watch runlevels 0 and 6 as well
