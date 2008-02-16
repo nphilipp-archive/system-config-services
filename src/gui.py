@@ -56,7 +56,7 @@ class GUIServicesTreeStore (gtk.TreeStore):
         SVC_COL_REMARK:         gobject.TYPE_STRING,
     }
 
-    def __init__ (self, serviceherders):
+    def __init__ (self):
         col_types = []
         for col in xrange (SVC_COL_LAST):
             col_types.append (self.col_types [col])
@@ -65,11 +65,6 @@ class GUIServicesTreeStore (gtk.TreeStore):
         self.set_sort_func (SVC_COL_NAME, self._sort_by_name)
         self.set_sort_column_id (SVC_COL_NAME, gtk.SORT_ASCENDING)
 
-        self.serviceherders = serviceherders
-
-        for herder in serviceherders:
-            herder.subscribe (self.on_services_changed)
-
         self.service_iters = {}
 
     def _sort_by_name (self, treemodel, iter1, iter2, user_data = None):
@@ -77,6 +72,11 @@ class GUIServicesTreeStore (gtk.TreeStore):
         name2 = self.get (iter2, SVC_COL_NAME)
 
         return name1 < name2 and -1 or name1 > name2 and 1 or 0
+
+    def add_service (self, service):
+        iter = self.append (None)
+        self.set (iter, SVC_COL_SVC_OBJECT, service, SVC_COL_NAME, service.name)
+        self.service_iters[service] = iter
 
     def _delete_svc_callback (self, model, path, iter, service):
         row_service = self.get_value (iter, SVC_COL_SVC_OBJECT)
@@ -87,51 +87,9 @@ class GUIServicesTreeStore (gtk.TreeStore):
 
         return False
 
-    def on_services_changed (self, change, service):
-        if change == SVC_ADDED:
-            self._service_added (service)
-        elif change == SVC_DELETED:
-            self._service_deleted (service)
-        elif change == SVC_CONF_UPDATING:
-            self._service_conf_updating (service)
-        elif change == SVC_CONF_CHANGED:
-            self._service_conf_changed (service)
-        elif change == SVC_STATUS_UPDATING:
-            self._service_status_updating (service)
-        elif change == SVC_STATUS_CHANGED:
-            self._service_status_changed (service)
-        else:
-            raise KeyError ("change: %d", change)
-
-    def _service_added (self, service):
-        iter = self.append (None)
-        self.set (iter, SVC_COL_SVC_OBJECT, service, SVC_COL_NAME, service.name)
-        self.service_iters[service] = iter
-        #self._service_conf_changed (service)
-
-    def _service_deleted (self, service):
-        iter = self.append (None)
+    def delete_service (self, service):
         self.foreach (self._delete_svc_callback, service)
         del self.service_iters[service]
-        self.emit ('service-deleted', service)
-
-    def _service_conf_updating (self, service):
-        self.emit ('service-conf-updating', service)
-
-    def _service_conf_changed (self, service):
-        self.emit ('service-conf-changed', service)
-
-    def _service_status_updating (self, service):
-        self.emit ('service-status-updating', service)
-
-    def _service_status_changed (self, service):
-        self.emit ('service-status-changed', service)
-
-_service_conf_updating_signal = gobject.signal_new ('service-conf-updating', GUIServicesTreeStore, gobject.SIGNAL_RUN_LAST | gobject.SIGNAL_ACTION, gobject.TYPE_NONE, (gobject.TYPE_PYOBJECT, ))
-_service_conf_changed_signal = gobject.signal_new ('service-conf-changed', GUIServicesTreeStore, gobject.SIGNAL_RUN_LAST | gobject.SIGNAL_ACTION, gobject.TYPE_NONE, (gobject.TYPE_PYOBJECT, ))
-_service_status_updating_signal = gobject.signal_new ('service-status-updating', GUIServicesTreeStore, gobject.SIGNAL_RUN_LAST | gobject.SIGNAL_ACTION, gobject.TYPE_NONE, (gobject.TYPE_PYOBJECT, ))
-_service_status_changed_signal = gobject.signal_new ('service-status-changed', GUIServicesTreeStore, gobject.SIGNAL_RUN_LAST | gobject.SIGNAL_ACTION, gobject.TYPE_NONE, (gobject.TYPE_PYOBJECT, ))
-_service_deleted_signal = gobject.signal_new ('service-deleted', GUIServicesTreeStore, gobject.SIGNAL_RUN_LAST | gobject.SIGNAL_ACTION, gobject.TYPE_NONE, (gobject.TYPE_PYOBJECT, ))
 
 ##############################################################################
 
@@ -152,8 +110,8 @@ class GUIServicesTreeView (gtk.TreeView):
         SVC_COL_REMARK:     [_("Remarks"), gtk.CellRendererText, "text", True, True, True, None],
     }
 
-    def __init__ (self, serviceherders):
-        self.model = GUIServicesTreeStore (serviceherders)
+    def __init__ (self):
+        self.model = GUIServicesTreeStore ()
 
         gtk.TreeView.__init__ (self, model = self.model) 
 
@@ -196,6 +154,20 @@ class GUIServicesTreeView (gtk.TreeView):
         self.emit ('service-selected', service[0])
 
 _service_selected_signal = gobject.signal_new ('service-selected', GUIServicesTreeView, gobject.SIGNAL_RUN_LAST | gobject.SIGNAL_ACTION, gobject.TYPE_NONE, (gobject.TYPE_PYOBJECT, ))
+
+##############################################################################
+
+def _status_stock_icon (status):
+    if status == SVC_STATUS_UNKNOWN:
+        return gtk.STOCK_DIALOG_QUESTION
+    elif status == SVC_STATUS_STOPPED:
+        return gtk.STOCK_DISCONNECT
+    elif status == SVC_STATUS_RUNNING:
+        return gtk.STOCK_CONNECT
+    elif status == SVC_STATUS_DEAD:
+        return gtk.STOCK_STOP
+    else:
+        raise KeyError ("service: %s status: %d" % (self.service.name, status))
 
 ##############################################################################
 
@@ -262,19 +234,10 @@ class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
             self.sysVServiceStatusIcon.set_from_stock (gtk.STOCK_REFRESH,
                                                        gtk.ICON_SIZE_MENU)
         else:
-            status = self.service.status
-            if status == SVC_STATUS_UNKNOWN:
-                stock_icon = gtk.STOCK_DIALOG_QUESTION
-            elif status == SVC_STATUS_STOPPED:
-                stock_icon = gtk.STOCK_DISCONNECT
-            elif status == SVC_STATUS_RUNNING:
-                stock_icon = gtk.STOCK_CONNECT
-            elif status == SVC_STATUS_DEAD:
-                stock_icon = gtk.STOCK_STOP
-            else:
-                raise KeyError ("service: %s status: %d" % (self.service.name, status))
+            stock_icon = _status_stock_icon (self.service.status)
             self.sysVServiceStatusIcon.set_from_stock (stock_icon,
                                                        gtk.ICON_SIZE_MENU)
+
         if self.service.conf_updating:
             self.sysVServiceEnabledIcon.set_from_stock (gtk.STOCK_REFRESH,
                                                         gtk.ICON_SIZE_MENU)
@@ -356,20 +319,18 @@ class GUIServicesList (object):
         servicesTreeView = xml.get_widget ('servicesTreeView')
         servicesScrolledWindow.remove (servicesTreeView)
 
-        self.servicesTreeView = GUIServicesTreeView (serviceherders)
+        self.servicesTreeView = GUIServicesTreeView ()
         self.servicesTreeView.show ()
         self.servicesTreeView.connect ('service-selected', self.on_service_selected)
 
         self.servicesTreeStore = self.servicesTreeView.model
-        self.servicesTreeStore.connect ('service-conf-updating', self.on_service_conf_updating)
-        self.servicesTreeStore.connect ('service-conf-changed', self.on_service_conf_changed)
-        self.servicesTreeStore.connect ('service-status-updating', self.on_service_status_updating)
-        self.servicesTreeStore.connect ('service-status-changed', self.on_service_status_changed)
-        self.servicesTreeStore.connect ('service-deleted', self.on_service_deleted)
 
         servicesScrolledWindow.add (self.servicesTreeView)
 
         self.servicesDetailsNotebook = self.xml.get_widget ("servicesDetailsNotebook")
+
+        for herder in serviceherders:
+            herder.subscribe (self.on_services_changed)
 
     def on_service_selected (self, treeview = None, service = None, *args):
         self.current_service = service
@@ -381,37 +342,58 @@ class GUIServicesList (object):
         else:
             self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_NONE)
 
-    def on_service_conf_updating (self, treestore, service, *args):
-        if not self.service_painters.has_key (service):
-            self.service_painters[service] = GUIServiceEntryPainter (self.xml, service)
-        self.service_painters[service].set_conf_updating (True)
+    def on_services_changed (self, change, service):
+        if change == SVC_ADDED:
+            self.on_service_added (service)
+        elif change == SVC_DELETED:
+            self.on_service_deleted (service)
+        elif change == SVC_CONF_UPDATING:
+            self.on_service_conf_updating (service)
+        elif change == SVC_CONF_CHANGED:
+            self.on_service_conf_changed (service)
+        elif change == SVC_STATUS_UPDATING:
+            self.on_service_status_updating (service)
+        elif change == SVC_STATUS_CHANGED:
+            self.on_service_status_changed (service)
+        else:
+            raise KeyError ("change: %d", change)
 
-    def on_service_conf_changed (self, treestore, service, *args):
-        if not self.service_painters.has_key (service):
-            self.service_painters[service] = GUIServiceEntryPainter (self.xml, service)
-        self.service_painters[service].set_conf_updating (False)
-        if service == self.current_service:
-            GUIServicesDetailsPainter (self.xml, service).paint_details ()
+    def on_service_added (self, service):
+        self.servicesTreeStore.add_service (service)
+        #self._service_conf_changed (service)
 
-    def on_service_status_updating (self, treestore, service, *args):
-        if not self.service_painters.has_key (service):
-            self.service_painters[service] = GUIServiceEntryPainter (self.xml, service)
-        self.service_painters[service].set_status_updating (True)
-
-    def on_service_status_changed (self, treestore, service, *args):
-        if not self.service_painters.has_key (service):
-            self.service_painters[service] = GUIServiceEntryPainter (self.xml, service)
-        self.service_painters[service].set_status_updating (False)
-        if service == self.current_service:
-            GUIServicesDetailsPainter (self.xml, service).paint_details ()
-
-    def on_service_deleted (self, treestore, service, *args):
+    def on_service_deleted (self, service):
+        self.servicesTreeStore.delete_service (service)
         if service == self.current_service:
             self.on_service_selected (service = None)
         try:
             self.service_painters[service]
         except KeyError:
             pass
+
+    def on_service_conf_updating (self, service):
+        if not self.service_painters.has_key (service):
+            self.service_painters[service] = GUIServiceEntryPainter (self.xml, service)
+        self.service_painters[service].set_conf_updating (True)
+
+    def on_service_conf_changed (self, service):
+        if not self.service_painters.has_key (service):
+            self.service_painters[service] = GUIServiceEntryPainter (self.xml, service)
+        self.service_painters[service].set_conf_updating (False)
+        if service == self.current_service:
+            GUIServicesDetailsPainter (self.xml, service).paint_details ()
+
+    def on_service_status_updating (self, service):
+        if not self.service_painters.has_key (service):
+            self.service_painters[service] = GUIServiceEntryPainter (self.xml, service)
+        self.service_painters[service].set_status_updating (True)
+
+    def on_service_status_changed (self, service):
+        if not self.service_painters.has_key (service):
+            self.service_painters[service] = GUIServiceEntryPainter (self.xml, service)
+        self.service_painters[service].set_status_updating (False)
+        if service == self.current_service:
+            GUIServicesDetailsPainter (self.xml, service).paint_details ()
 
 ##############################################################################
 
