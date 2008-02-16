@@ -34,7 +34,7 @@ DOC_LINGUAS     =
 
 all:	src/config.py $(PKGNAME).desktop $(PKGNAME).console doc-all
 	rm -f src/$(PKGNAME)
-	ln -snf serviceconf.py src/$(PKGNAME)
+	ln -snf gui.py src/$(PKGNAME)
 
 include doc_rules.mk
 include console_rules.mk
