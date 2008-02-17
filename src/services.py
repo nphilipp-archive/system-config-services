@@ -24,6 +24,7 @@ import os
 import copy
 import re
 import time
+import gobject
 
 from util import getstatusoutput
 from asynccmd import *
@@ -95,20 +96,37 @@ class SysVService (ChkconfigService):
         self.status = SVC_STATUS_UNKNOWN
         self.status_output = None
 
-        #self.async_load (None)
+        self.valid = False
+
+        self.load ()
+
+    def load (self):
+        mainloop = gobject.MainLoop ()
+        self.async_load (self._load_ready, mainloop)
+        mainloop.run ()
+
+    def _load_ready (self, mainloop, __exception__ = None):
+        mainloop.quit ()
+        if __exception__ == None:
+            self.valid = True
+        else:
+            self.valid = False
 
     def async_load (self, callback, *p, **k):
         """Load configuration from disk asynchronously."""
         p = (callback, ) + p
-        self._asynccmdqueue.queue ('env LC_ALL=C /sbin/chkconfig --list "%s"' % self.name, combined_stdout = True, ready_cb = self._load_ready, ready_args = p, ready_kwargs = k)
+        self._asynccmdqueue.queue ('env LC_ALL=C /sbin/chkconfig --list "%s"' % self.name, combined_stdout = True, ready_cb = self._async_load_ready, ready_args = p, ready_kwargs = k)
         self.conf_updates_running += 1
 
-    def _load_ready (self, cmd, callback, *p, **k):
-        self._load_process (cmd)
+    def _async_load_ready (self, cmd, callback, *p, **k):
+        try:
+            self._async_load_process (cmd)
+        except Exception, e:
+            k['__exception__'] = e
         self.conf_updates_running -= 1
         callback (*p, **k)
 
-    def _load_process (self, cmd):
+    def _async_load_process (self, cmd):
         """Process asynchronously loaded configuration."""
         exitcode = cmd.exitcode
         output = cmd.output

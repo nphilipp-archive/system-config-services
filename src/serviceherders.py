@@ -147,7 +147,7 @@ class ChkconfigServiceHerder (ServiceHerder):
     rpmbak_re = re.compile (r'.*\.rpm(?:orig|save|new)$')
     rpmtmp_re = re.compile (r'.*\;[0-9A-Fa-f]{8}$')
 
-    def async_load_finished (self, service):
+    def async_load_finished (self, service, __exception__ = None):
         self.notify (SVC_CONF_CHANGED, service = service)
 
 class SysVServiceHerder (ChkconfigServiceHerder):
