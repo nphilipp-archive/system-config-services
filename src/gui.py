@@ -155,17 +155,19 @@ _service_selected_signal = gobject.signal_new ('service-selected', GUIServicesTr
 
 ##############################################################################
 
-def _status_stock_icon_id (status):
-    if status == SVC_STATUS_UNKNOWN:
-        return gtk.STOCK_DIALOG_QUESTION
-    elif status == SVC_STATUS_STOPPED:
-        return gtk.STOCK_DISCONNECT
-    elif status == SVC_STATUS_RUNNING:
-        return gtk.STOCK_CONNECT
-    elif status == SVC_STATUS_DEAD:
-        return gtk.STOCK_STOP
-    else:
-        raise KeyError ("service: %s status: %d" % (self.service.name, status))
+_status_stock_id = {
+        SVC_STATUS_UNKNOWN: gtk.STOCK_DIALOG_QUESTION,
+        SVC_STATUS_STOPPED: gtk.STOCK_DISCONNECT,
+        SVC_STATUS_RUNNING: gtk.STOCK_CONNECT,
+        SVC_STATUS_DEAD: gtk.STOCK_STOP,
+        }
+
+_status_text = {
+        SVC_STATUS_UNKNOWN: _("The status of this service is unknown."),
+        SVC_STATUS_STOPPED: _("This service is stopped."),
+        SVC_STATUS_RUNNING: _("This service is running."),
+        SVC_STATUS_DEAD: _("This service is dead."),
+        }
 
 ##############################################################################
 
@@ -228,13 +230,7 @@ class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
         super (GUISysVServicesDetailsPainter, self).__init__ (xml, service)
 
     def paint_details (self):
-        if self.service.status_updates_running > 0:
-            self.sysVServiceStatusIcon.set_from_stock (gtk.STOCK_REFRESH,
-                                                       gtk.ICON_SIZE_MENU)
-        else:
-            stock_icon_id = _status_stock_icon_id (self.service.status)
-            self.sysVServiceStatusIcon.set_from_stock (stock_icon_id,
-                                                       gtk.ICON_SIZE_MENU)
+        self.sysVServiceExplanationLabel.set_markup (_("The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed.") % {'servicename': self.service.name})
 
         if self.service.conf_updates_running > 0:
             self.sysVServiceEnabledIcon.set_from_stock (gtk.STOCK_REFRESH,
@@ -242,6 +238,16 @@ class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
         else:
             self.sysVServiceEnabledIcon.set_from_stock (gtk.STOCK_DIALOG_QUESTION,
                                                         gtk.ICON_SIZE_MENU)
+
+        if self.service.status_updates_running > 0:
+            self.sysVServiceStatusIcon.set_from_stock (gtk.STOCK_REFRESH,
+                                                       gtk.ICON_SIZE_MENU)
+            self.sysVServiceStatusLabel.set_text (_("The status of this service is unknown."))
+        else:
+            stock_icon_id = _status_stock_id [self.service.status]
+            self.sysVServiceStatusIcon.set_from_stock (stock_icon_id,
+                                                       gtk.ICON_SIZE_MENU)
+            self.sysVServiceStatusLabel.set_text (_status_text [self.service.status])
 
 ##############################################################################
 
@@ -283,7 +289,7 @@ class GUIServiceEntryPainter (object):
 class GUISysVServiceEntryPainter (GUIServiceEntryPainter):
     def paint (self):
         iter = self.treestore.service_iters[self.service]
-        self.treestore.set (iter, SVC_COL_STATUS, _status_stock_icon_id (self.service.status))
+        self.treestore.set (iter, SVC_COL_STATUS, _status_stock_id [self.service.status])
 
 ##############################################################################
 
@@ -324,7 +330,8 @@ class GUIServicesList (object):
 
     def on_service_selected (self, treeview = None, service = None, *args):
         self.current_service = service
-        GUIServicesDetailsPainter (self.xml, service).paint_details ()
+        if service:
+            GUIServicesDetailsPainter (self.xml, service).paint_details ()
         if isinstance (service, services.SysVService):
             self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_SYSV)
         elif isinstance (service, services.XinetdService):

@@ -8,6 +8,8 @@
   <property name="type">GTK_WINDOW_TOPLEVEL</property>
   <property name="window_position">GTK_WIN_POS_NONE</property>
   <property name="modal">False</property>
+  <property name="default_width">800</property>
+  <property name="default_height">400</property>
   <property name="resizable">True</property>
   <property name="destroy_with_parent">False</property>
   <property name="decorated">True</property>
@@ -479,8 +481,8 @@
 	      </child>
 	    </widget>
 	    <packing>
-	      <property name="shrink">True</property>
-	      <property name="resize">False</property>
+	      <property name="shrink">False</property>
+	      <property name="resize">True</property>
 	    </packing>
 	  </child>
 
@@ -565,12 +567,13 @@
 		  <child>
 		    <widget class="GtkLabel" id="sysVServiceExplanationLabel">
 		      <property name="visible">True</property>
+		      <property name="can_focus">True</property>
 		      <property name="label" translatable="yes">This service is started once, usually when the system is booted, runs in the background and wakes up when needed.</property>
 		      <property name="use_underline">False</property>
 		      <property name="use_markup">False</property>
 		      <property name="justify">GTK_JUSTIFY_LEFT</property>
 		      <property name="wrap">True</property>
-		      <property name="selectable">False</property>
+		      <property name="selectable">True</property>
 		      <property name="xalign">0</property>
 		      <property name="yalign">0.5</property>
 		      <property name="xpad">0</property>
@@ -599,12 +602,13 @@
 		      <child>
 			<widget class="GtkLabel" id="sysVServiceStatusLabel">
 			  <property name="visible">True</property>
+			  <property name="can_focus">True</property>
 			  <property name="label">This service is {running|stopped|dead}.</property>
 			  <property name="use_underline">False</property>
 			  <property name="use_markup">False</property>
 			  <property name="justify">GTK_JUSTIFY_LEFT</property>
 			  <property name="wrap">False</property>
-			  <property name="selectable">False</property>
+			  <property name="selectable">True</property>
 			  <property name="xalign">0</property>
 			  <property name="yalign">0.5</property>
 			  <property name="xpad">0</property>
@@ -645,12 +649,13 @@
 		      <child>
 			<widget class="GtkLabel" id="sysVServiceEnabledLabel">
 			  <property name="visible">True</property>
+			  <property name="can_focus">True</property>
 			  <property name="label">This service is {enabled|disabled}{| in runlevels x, y, z}.</property>
 			  <property name="use_underline">False</property>
 			  <property name="use_markup">False</property>
 			  <property name="justify">GTK_JUSTIFY_LEFT</property>
 			  <property name="wrap">False</property>
-			  <property name="selectable">False</property>
+			  <property name="selectable">True</property>
 			  <property name="xalign">0</property>
 			  <property name="yalign">0.5</property>
 			  <property name="xpad">0</property>
@@ -816,12 +821,13 @@
 		  <child>
 		    <widget class="GtkLabel" id="xinetdExplanationLabel">
 		      <property name="visible">True</property>
+		      <property name="can_focus">True</property>
 		      <property name="label" translatable="yes">This service will be started on demand by the xinetd service and ends when it has got nothing more to do.</property>
 		      <property name="use_underline">False</property>
 		      <property name="use_markup">False</property>
 		      <property name="justify">GTK_JUSTIFY_LEFT</property>
 		      <property name="wrap">True</property>
-		      <property name="selectable">False</property>
+		      <property name="selectable">True</property>
 		      <property name="xalign">0</property>
 		      <property name="yalign">0.5</property>
 		      <property name="xpad">0</property>
@@ -862,12 +868,13 @@
 		      <child>
 			<widget class="GtkLabel" id="xinetdServiceStatusLabel">
 			  <property name="visible">True</property>
+			  <property name="can_focus">True</property>
 			  <property name="label" translatable="yes">This service is {enabled|disabled}{|, but &lt;b&gt;xinetd&lt;/b&gt; is stopped}.</property>
 			  <property name="use_underline">False</property>
-			  <property name="use_markup">True</property>
+			  <property name="use_markup">False</property>
 			  <property name="justify">GTK_JUSTIFY_LEFT</property>
 			  <property name="wrap">False</property>
-			  <property name="selectable">False</property>
+			  <property name="selectable">True</property>
 			  <property name="xalign">0</property>
 			  <property name="yalign">0</property>
 			  <property name="xpad">0</property>
@@ -1004,7 +1011,7 @@
 	      </child>
 	    </widget>
 	    <packing>
-	      <property name="shrink">True</property>
+	      <property name="shrink">False</property>
 	      <property name="resize">True</property>
 	    </packing>
 	  </child>
