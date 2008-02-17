@@ -159,7 +159,7 @@ _status_stock_id = {
         SVC_STATUS_UNKNOWN: gtk.STOCK_DIALOG_QUESTION,
         SVC_STATUS_STOPPED: gtk.STOCK_DISCONNECT,
         SVC_STATUS_RUNNING: gtk.STOCK_CONNECT,
-        SVC_STATUS_DEAD: gtk.STOCK_STOP,
+        SVC_STATUS_DEAD: gtk.STOCK_DIALOG_WARNING,
         }
 
 _status_text = {
