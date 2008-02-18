@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services-0.8.15-1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-30 14:05+0100\n"
-"PO-Revision-Date: 2007-02-23 02:08+0700\n"
-"Last-Translator: Teguh DC <dheche@bradjamoesti.or.id>\n"
+"POT-Creation-Date: 2008-02-15 01:48-0700\n"
+"PO-Revision-Date: 2008-02-18 16:22+0700\n"
+"Last-Translator: Dapid Candra <dapidc@gmail.com>\n"
 "Language-Team: Linux Indonesia <http:/www.linux.or.id>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,13 +31,15 @@ msgstr "Runlevel %d"
 #. change when one of the optRL[3-6] are selected
 #: ../src/serviceconf.py:281
 msgid "Currently Running in Runlevel: "
-msgstr "Yang saat ini berjalan di Runlevel: "
+msgstr "Saat ini berjalan di Runlevel: "
 
-#: ../src/serviceconf.py:377 ../src/serviceconf.py:480
+#: ../src/serviceconf.py:377
+#: ../src/serviceconf.py:480
 msgid "Editing Runlevel: "
 msgstr "Mengubah Runlevel: "
 
 #: ../src/serviceconf.py:419
+#: ../src/servicemethods.py:57
 msgid "Unknown"
 msgstr "Tidak diketahui"
 
@@ -48,7 +50,7 @@ msgstr "Semua"
 #: ../src/serviceconf.py:543
 msgid ""
 "System Services Configuration Tool VERSION\n"
-" Copyright © 2002-2006 Red Hat, Inc.\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
 " Tim Powers <timp@redhat.com>\n"
 " Bill Nottingham <notting@redhat.com>\n"
 " Dan Walsh <dwalsh@redhat.com>\n"
@@ -70,73 +72,49 @@ msgid "About"
 msgstr "Tentang"
 
 #: ../src/serviceconf.py:580
-msgid ""
-"The help viewer could not be found. To be able to view help you need to "
-"install the 'yelp' package."
-msgstr ""
+msgid "The help viewer could not be found. To be able to view help you need to install the 'yelp' package."
+msgstr "Penampil bantuan tidak ditemukan. Untuk menampilkan bantuan Anda perlu memasang paket 'yelp'."
 
 #: ../src/serviceconf.py:719
 msgid "You must run system-config-services as root."
 msgstr "Anda harus menjalankan system-config-services sebagai root."
 
-#: ../src/servicecontrol.py:61
-#, python-format
-msgid "Service %s not found!"
-msgstr ""
+#: ../src/servicemethods.py:58
+msgid "Running"
+msgstr "Jalan"
 
-#: ../src/servicecontrol.py:67
-#, python-format
-msgid "Service %s is running with old config"
-msgstr ""
+#: ../src/servicemethods.py:59
+msgid "Stopped"
+msgstr "Dihentikan"
 
-#: ../src/servicecontrol.py:70
-#, python-format
-msgid "Service %s is running"
-msgstr ""
+#: ../src/servicemethods.py:60
+msgid "Error"
+msgstr "Error"
 
-#: ../src/servicecontrol.py:73
-#, python-format
-msgid "Service %s resports an error"
-msgstr ""
-
-#: ../src/servicecontrol.py:76
-#, python-format
-msgid "Service %s is stopped"
-msgstr ""
-
-#: ../src/servicecontrol.py:185 ../src/servicecontrol.py:200
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr ""
-
-#: ../src/servicecontrol.py:193 ../src/servicecontrol.py:203
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr ""
-
-#: ../src/servicemethods.py:276
+#: ../src/servicemethods.py:283
 #, python-format
 msgid "%s failed. The error was: %s"
 msgstr "%s gagal. Kesalahannya adalah: %s"
 
-#: ../src/servicemethods.py:283
+#: ../src/servicemethods.py:290
 msgid " successful"
 msgstr " dengan sukses"
 
-#: ../src/servicemethods.py:412 ../src/servicemethods.py:423
+#: ../src/servicemethods.py:419
+#: ../src/servicemethods.py:430
 #, python-format
 msgid "xinetd must be enabled for %s to run"
 msgstr "xinetd harus diaktifkan agar %s dapat berjalan"
 
-#: ../src/servicemethods.py:417
+#: ../src/servicemethods.py:424
 msgid "xinetd failed to reload for "
 msgstr "xinetd gagal dipanggil ulang untuk "
 
-#: ../src/servicemethods.py:419
+#: ../src/servicemethods.py:426
 msgid ". The error was: "
 msgstr ". Kesalahannya adalah: "
 
-#: ../src/servicemethods.py:421
+#: ../src/servicemethods.py:428
 #, python-format
 msgid "xinetd reloaded %s successfully"
 msgstr "xinetd memanggil ulang %s dengan sukses"
@@ -169,7 +147,7 @@ msgstr "Mengubah Runlevel:"
 msgid "None"
 msgstr "Tidak Satu pun"
 
-#: ../src/serviceconf.glade.h:8 ../src/servicetab.glade.h:7
+#: ../src/serviceconf.glade.h:8
 msgid "Restart"
 msgstr "Mulai kembali"
 
@@ -209,7 +187,7 @@ msgstr "Konfigurasi Layanan"
 msgid "Service Name: "
 msgstr "Nama Layanan: "
 
-#: ../src/serviceconf.glade.h:18 ../src/servicetab.glade.h:11
+#: ../src/serviceconf.glade.h:18
 msgid "Start"
 msgstr "Mulai"
 
@@ -217,26 +195,17 @@ msgstr "Mulai"
 msgid "Status"
 msgstr "Status"
 
-#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:14
+#: ../src/serviceconf.glade.h:20
 msgid "Stop"
 msgstr "Berhenti"
 
 #: ../src/serviceconf.glade.h:21
-msgid ""
-"These services are started on demand and end when there is nothing more to "
-"do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
-"Layanan ini akan dijalankan apabila ada permintaan dan akan diakhiri ketika "
-"tidak ada lagi yang harus dilakukan. Layanan <b>xinetd</b> harus dijalankan "
-"sehingga ia dapat digunakan."
+msgid "These services are started on demand and end when there is nothing more to do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr "Layanan ini akan dijalankan apabila ada permintaan dan akan diakhiri ketika tidak ada lagi yang harus dilakukan. Layanan <b>xinetd</b> harus dijalankan sehingga ia dapat digunakan."
 
 #: ../src/serviceconf.glade.h:22
-msgid ""
-"These services are started once and run in the background. You can specify "
-"in which runlevels they are started."
-msgstr ""
-"Layanan ini dijalankan satu kali dan berjalan di background. Anda dapat "
-"menentukan di runlevel mana ia berjalan."
+msgid "These services are started once and run in the background. You can specify in which runlevels they are started."
+msgstr "Layanan ini dijalankan satu kali dan berjalan di background. Anda dapat menentukan di runlevel mana ia berjalan."
 
 #: ../src/serviceconf.glade.h:23
 msgid ""
@@ -248,7 +217,7 @@ msgstr ""
 
 #: ../src/serviceconf.glade.h:25
 msgid "_Actions"
-msgstr "Aksi"
+msgstr "_Aksi"
 
 #: ../src/serviceconf.glade.h:26
 msgid "_Background Services"
@@ -256,19 +225,19 @@ msgstr "Layanan _Background"
 
 #: ../src/serviceconf.glade.h:27
 msgid "_Contents"
-msgstr "_Isi"
+msgstr "Isi"
 
 #: ../src/serviceconf.glade.h:28
 msgid "_Edit Runlevel"
-msgstr "_Ubah Runlevel"
+msgstr "Ubah Runlevel"
 
 #: ../src/serviceconf.glade.h:29
 msgid "_File"
-msgstr "_Berkas"
+msgstr "Berkas"
 
 #: ../src/serviceconf.glade.h:30
 msgid "_Help"
-msgstr "_Bantuan"
+msgstr "Bantuan"
 
 #: ../src/serviceconf.glade.h:31
 msgid "_On Demand Services"
@@ -276,7 +245,7 @@ msgstr "Layanan _On Demand"
 
 #: ../src/serviceconf.glade.h:32
 msgid "_Quit"
-msgstr "_Keluar"
+msgstr "Keluar"
 
 #: ../src/serviceconf.glade.h:33
 msgid "_Refresh Service List"
@@ -284,7 +253,7 @@ msgstr "_Refresh Daftar Layanan"
 
 #: ../src/serviceconf.glade.h:34
 msgid "_Restart Service"
-msgstr "_Jalankan Kembali Layanan"
+msgstr "Jalankan Kembali Layanan"
 
 #: ../src/serviceconf.glade.h:35
 msgid "_Save Changes"
@@ -292,93 +261,38 @@ msgstr "_Simpan Perubahan"
 
 #: ../src/serviceconf.glade.h:36
 msgid "_Start Service"
-msgstr "_Jalankan Layanan"
+msgstr "Mulai Layanan"
 
 #: ../src/serviceconf.glade.h:37
 msgid "_View"
 msgstr "_Lihat"
 
-#: ../src/servicetab.glade.h:1
-msgid "Button Box"
-msgstr ""
-
-#: ../src/servicetab.glade.h:2
-msgid "Configure"
-msgstr ""
-
-#: ../src/servicetab.glade.h:4
-#, no-c-format
-msgid "Current runlevel is %s"
-msgstr "Runlevel Saat Ini %s"
-
-#: ../src/servicetab.glade.h:5
-msgid "Disable"
-msgstr "Nonaktifkan"
-
-#: ../src/servicetab.glade.h:6
-msgid "Enable"
-msgstr "Aktifkan"
-
-#: ../src/servicetab.glade.h:8
-msgid "Runlevels"
-msgstr "Runlevel"
-
-#: ../src/servicetab.glade.h:9
-msgid "Service"
-msgstr ""
-
-#: ../src/servicetab.glade.h:10
-msgid "Service control"
-msgstr "Kontrol Layanan"
-
-#: ../src/servicetab.glade.h:12
-msgid "Start "
-msgstr "Mulai"
-
-#: ../src/servicetab.glade.h:13
-msgid "Status output"
-msgstr "Status keluaran"
-
-#: ../src/servicetab.glade.h:15
-msgid "_Configure"
-msgstr ""
-
-#: ../src/servicetab.glade.h:16
-msgid "_Disable"
-msgstr ""
-
-#: ../src/servicetab.glade.h:17
-msgid "_Enable"
-msgstr ""
-
-#: ../src/servicetab.glade.h:18
-msgid "_Restart"
-msgstr ""
-
-#: ../src/servicetab.glade.h:19
-msgid "_Start"
-msgstr ""
-
-#: ../src/servicetab.glade.h:20
-msgid "barfoo"
-msgstr ""
-
-#: ../src/servicetab.glade.h:21
-msgid "foobar"
-msgstr ""
-
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "Konfigur layanan mana yang akan berjalan ketika sistem mulai"
+msgstr "Tentukan layanan mana yang akan berjalan ketika sistem mulai"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr "Menejemen Layanan: "
+msgstr "Pengelolaan Layanan: "
 
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Layanan"
 
+#~ msgid "Current runlevel is %s"
+#~ msgstr "Runlevel Saat Ini %s"
+#~ msgid "Disable"
+#~ msgstr "Nonaktifkan"
+#~ msgid "Enable"
+#~ msgstr "Aktifkan"
+#~ msgid "Runlevels"
+#~ msgstr "Runlevel"
+#~ msgid "Service control"
+#~ msgstr "Kontrol Layanan"
+#~ msgid "Start "
+#~ msgstr "Mulai"
+#~ msgid "Status output"
+#~ msgstr "Status keluaran"
 #~ msgid "Help is not available."
 #~ msgstr "Bantuan tidak tersedia."
 
@@ -401,10 +315,8 @@ msgstr "Layanan"
 #, fuzzy
 #~ msgid "Revert to the last saved change"
 #~ msgstr "Kembalikan ke Simpanan Terakhir"
-
 #~ msgid "Save"
 #~ msgstr "Simpan"
-
 #~ msgid ""
 #~ "\n"
 #~ "\n"
@@ -413,18 +325,14 @@ msgstr "Layanan"
 #~ "\n"
 #~ "\n"
 #~ "xinetd dibutuhkan oleh layanan ini."
-
 #~ msgid "*"
 #~ msgstr "*"
-
 #~ msgid "_Save"
 #~ msgstr "_Simpan"
-
 #~ msgid "_Revert"
 #~ msgstr "Kem_bali"
-
 #~ msgid "Revert"
 #~ msgstr "Kembali"
-
 #~ msgid "Start at Boot"
 #~ msgstr "Mulai pada saat Boot"
+
