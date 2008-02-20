@@ -155,6 +155,22 @@ _service_selected_signal = gobject.signal_new ('service-selected', GUIServicesTr
 
 ##############################################################################
 
+_fallback_default_runlevels = set ((2, 3, 4, 5))
+
+def _enabled_stock_id (service):
+    if service.conf_updates_running > 0:
+        return gtk.STOCK_REFRESH
+    if len (service.runlevels) == 0:
+        return gtk.STOCK_NO
+    if len (service.info.startrunlevels) > 0 \
+            and service.runlevels == service.info.startrunlevels \
+            or service.runlevels == _fallback_default_runlevels:
+        return gtk.STOCK_YES
+    else:
+        return gtk.STOCK_PREFERENCES
+
+##############################################################################
+
 _status_stock_id = {
         SVC_STATUS_UNKNOWN: gtk.STOCK_DIALOG_QUESTION,
         SVC_STATUS_STOPPED: gtk.STOCK_DISCONNECT,
@@ -232,12 +248,8 @@ class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
     def paint_details (self):
         self.sysVServiceExplanationLabel.set_markup (_("The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed.") % {'servicename': self.service.name})
 
-        if self.service.conf_updates_running > 0:
-            self.sysVServiceEnabledIcon.set_from_stock (gtk.STOCK_REFRESH,
-                                                        gtk.ICON_SIZE_MENU)
-        else:
-            self.sysVServiceEnabledIcon.set_from_stock (gtk.STOCK_DIALOG_QUESTION,
-                                                        gtk.ICON_SIZE_MENU)
+        self.sysVServiceEnabledIcon.set_from_stock (_enabled_stock_id (self.service),
+                gtk.ICON_SIZE_MENU)
 
         if self.service.status_updates_running > 0:
             self.sysVServiceStatusIcon.set_from_stock (gtk.STOCK_REFRESH,
@@ -289,6 +301,7 @@ class GUIServiceEntryPainter (object):
 class GUISysVServiceEntryPainter (GUIServiceEntryPainter):
     def paint (self):
         iter = self.treestore.service_iters[self.service]
+        self.treestore.set (iter, SVC_COL_ENABLED, _enabled_stock_id (self.service))
         self.treestore.set (iter, SVC_COL_STATUS, _status_stock_id [self.service.status])
 
 ##############################################################################
