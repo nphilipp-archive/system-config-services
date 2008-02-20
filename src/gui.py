@@ -267,6 +267,9 @@ class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
                                                        gtk.ICON_SIZE_MENU)
             self.sysVServiceStatusLabel.set_text (_status_text [self.service.status])
 
+        if self.service.info.description:
+            self.sysVServiceDescriptionTextView.get_buffer ().set_text (self.service.info.description)
+
 ##############################################################################
 
 class GUIXinetdServicesDetailsPainter (GUIServicesDetailsPainter):
@@ -309,6 +312,9 @@ class GUISysVServiceEntryPainter (GUIServiceEntryPainter):
         iter = self.treestore.service_iters[self.service]
         self.treestore.set (iter, SVC_COL_ENABLED, _enabled_stock_id[self.service.is_enabled ()])
         self.treestore.set (iter, SVC_COL_STATUS, _status_stock_id[self.service.status])
+        if self.service.info.shortdescription:
+            self.treestore.set (iter, SVC_COL_REMARK, self.service.info.shortdescription)
+
 
 ##############################################################################
 
