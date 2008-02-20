@@ -95,8 +95,8 @@ class SysVService (ChkconfigService):
         except InvalidServiceInfoException:
             raise InvalidServiceException
 
-        self.runlevels = [False, False, False, False, False, False, False]
-        self.runlevels_ondisk = [False, False, False, False, False, False, False]
+        self.runlevels = set ()
+        self.runlevels_ondisk = set ()
         self.configured = False
 
         self.status_updates_running = 0
@@ -152,8 +152,10 @@ class SysVService (ChkconfigService):
         m = self.init_list_re.match (output)
         if not m or m.group ('name') != self.name:
             raise output
+        self.runlevels = set ()
         for runlevel in xrange (1, 6):
-            self.runlevels[runlevel] = (m.group ("r%d" % runlevel) == 'on') and True or False
+            if m.group ("r%d" % runlevel) == 'on':
+                self.runlevels.add (runlevel)
         self.runlevels_ondisk = copy.copy (self.runlevels)
         self.configured = True
         self.conf_updates_running -= 1
@@ -162,9 +164,9 @@ class SysVService (ChkconfigService):
         """Save configuration to disk."""
         runlevel_changes = { 'on': [], 'off': [] }
 
-        for i in xrange (len (self.runlevels)):
-            if self.runlevels[i] != self.runlevels_ondisk[i]:
-                runlevel_changes[self.runlevels[i] and 'on' or 'off'].append (i)
+        for i in xrange (0, 7):
+            if (i in self.runlevels) != (i in self.runlevels_ondisk):
+                runlevel_changes[(i in self.runlevels) and 'on' or 'off'].append (i)
 
         for what in ('on', 'off'):
             if not len (runlevel_changes[what]):
