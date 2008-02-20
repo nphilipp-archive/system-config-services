@@ -36,6 +36,11 @@ SVC_STATUS_STOPPED = 1
 SVC_STATUS_RUNNING = 2
 SVC_STATUS_DEAD = 3
 
+SVC_ENABLED_REFRESHING = 0
+SVC_ENABLED_YES = 1
+SVC_ENABLED_NO = 2
+SVC_ENABLED_CUSTOM = 3
+
 ##############################################################################
 
 class InvalidServiceException (Exception):
@@ -86,6 +91,8 @@ class SysVService (ChkconfigService):
     no_chkconfig_re = re.compile (r'^service (?P<name>.*) does not support chkconfig$')
     chkconfig_error_re = re.compile (r'^error reading information on service (?P<name>.*):.*$')
     chkconfig_unconfigured_re = re.compile (r"^service (?P<name>.*) supports chkconfig, but is not referenced in any runlevel \(run 'chkconfig --add (?P=name)'\)$")
+
+    _fallback_default_runlevels = set ((2, 3, 4, 5))
 
     def __init__ (self, name, mon):
         super (SysVService, self).__init__ (name, mon)
@@ -206,6 +213,18 @@ class SysVService (ChkconfigService):
 
     def is_dirty (self):
         return self.runlevels != self.runlevels_ondisk
+
+    def is_enabled (self):
+        if self.conf_updates_running > 0:
+            return SVC_ENABLED_REFRESHING
+        if len (self.runlevels) == 0:
+            return SVC_ENABLED_NO
+        if len (self.info.startrunlevels) > 0 \
+                and self.runlevels == self.info.startrunlevels \
+                or self.runlevels == self._fallback_default_runlevels:
+            return SVC_ENABLED_YES
+        else:
+            return SVC_ENABLED_CUSTOM
 
 ##############################################################################
 

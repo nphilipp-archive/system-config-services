@@ -32,7 +32,7 @@ from rhpl.translate import _, N_
 import serviceherders
 from serviceherders import SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED
 import services
-from services import SVC_STATUS_UNKNOWN, SVC_STATUS_STOPPED, SVC_STATUS_RUNNING, SVC_STATUS_DEAD
+from services import SVC_STATUS_UNKNOWN, SVC_STATUS_STOPPED, SVC_STATUS_RUNNING, SVC_STATUS_DEAD, SVC_ENABLED_REFRESHING, SVC_ENABLED_YES, SVC_ENABLED_NO, SVC_ENABLED_CUSTOM
 
 gtk.glade.bindtextdomain (config.domain)
 
@@ -155,19 +155,19 @@ _service_selected_signal = gobject.signal_new ('service-selected', GUIServicesTr
 
 ##############################################################################
 
-_fallback_default_runlevels = set ((2, 3, 4, 5))
+_enabled_stock_id = {
+        SVC_ENABLED_REFRESHING: gtk.STOCK_REFRESH,
+        SVC_ENABLED_YES: gtk.STOCK_YES,
+        SVC_ENABLED_NO: gtk.STOCK_NO,
+        SVC_ENABLED_CUSTOM: gtk.STOCK_PREFERENCES,
+        }
 
-def _enabled_stock_id (service):
-    if service.conf_updates_running > 0:
-        return gtk.STOCK_REFRESH
-    if len (service.runlevels) == 0:
-        return gtk.STOCK_NO
-    if len (service.info.startrunlevels) > 0 \
-            and service.runlevels == service.info.startrunlevels \
-            or service.runlevels == _fallback_default_runlevels:
-        return gtk.STOCK_YES
-    else:
-        return gtk.STOCK_PREFERENCES
+_enabled_text = {
+        SVC_ENABLED_REFRESHING: _("This service is being refreshed right now."),
+        SVC_ENABLED_YES: _("This service is enabled."),
+        SVC_ENABLED_NO: _("This service is disabled."),
+        SVC_ENABLED_CUSTOM: _("This service is enabled in runlevels: %(runlevels)s"),
+        }
 
 ##############################################################################
 
@@ -248,13 +248,19 @@ class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
     def paint_details (self):
         self.sysVServiceExplanationLabel.set_markup (_("The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed.") % {'servicename': self.service.name})
 
-        self.sysVServiceEnabledIcon.set_from_stock (_enabled_stock_id (self.service),
-                gtk.ICON_SIZE_MENU)
+        enabled = self.service.is_enabled ()
+        self.sysVServiceEnabledIcon.set_from_stock (_enabled_stock_id[enabled],
+                                                    gtk.ICON_SIZE_MENU)
+        if enabled == SVC_ENABLED_CUSTOM:
+            runlevels = ", ".join (map (str, sorted (self.service.runlevels)))
+            self.sysVServiceEnabledLabel.set_text (_enabled_text[enabled] % {'runlevels': runlevels})
+        else:
+            self.sysVServiceEnabledLabel.set_text (_enabled_text[enabled])
 
         if self.service.status_updates_running > 0:
             self.sysVServiceStatusIcon.set_from_stock (gtk.STOCK_REFRESH,
                                                        gtk.ICON_SIZE_MENU)
-            self.sysVServiceStatusLabel.set_text (_("The status of this service is unknown."))
+            self.sysVServiceStatusLabel.set_text (_("This service is updated currently."))
         else:
             stock_icon_id = _status_stock_id [self.service.status]
             self.sysVServiceStatusIcon.set_from_stock (stock_icon_id,
@@ -301,8 +307,8 @@ class GUIServiceEntryPainter (object):
 class GUISysVServiceEntryPainter (GUIServiceEntryPainter):
     def paint (self):
         iter = self.treestore.service_iters[self.service]
-        self.treestore.set (iter, SVC_COL_ENABLED, _enabled_stock_id (self.service))
-        self.treestore.set (iter, SVC_COL_STATUS, _status_stock_id [self.service.status])
+        self.treestore.set (iter, SVC_COL_ENABLED, _enabled_stock_id[self.service.is_enabled ()])
+        self.treestore.set (iter, SVC_COL_STATUS, _status_stock_id[self.service.status])
 
 ##############################################################################
 
