@@ -47,7 +47,7 @@ class AsyncCmd (object):
             self.stderr_output = ""
 
     def __repr__ (self):
-        return '<%s.AsyncCmd object at %s: cmd: %s fileobjs: %s>' % (__name__, hex (id (self)), self.cmd, self.fileobjs)
+        return '<%s.%s object at %s: cmd: %s fileobjs: %s>' % (self.__class__.__module__, self.__class__.__name__, hex (id (self)), self.cmd, self.fileobjs)
 
     def run (self):
         #print "%s.run ()" % self
@@ -129,7 +129,7 @@ class AsyncCmdQueue (object):
         self.herder.queues.remove (self)
 
     def __repr__ (self):
-        return "<%s.AsyncCmdQueue object at %s: max: %d run: %d wait: %d>" % (__name__, hex (id (self)), self.max_cmds_running, len (self.cmds_running), len (self.cmds_waiting))
+        return "<%s.%s object at %s: max: %d run: %d wait: %d>" % (self.__class__.__module, self.__class__.__name__, hex (id (self)), self.max_cmds_running, len (self.cmds_running), len (self.cmds_waiting))
 
     def queue (self, async_cmd, combined_stdout = False, priority = gobject.PRIORITY_DEFAULT_IDLE, ready_cb = None, ready_args = (), ready_kwargs = {}):
         ready_args = (ready_cb, ) + ready_args
@@ -177,7 +177,7 @@ class AsyncCmdQueueHerder (object):
         self.queues = set ()
 
     def __repr__ (self):
-        return '<%s.AsyncCmdQueueHerder object at %s: max: %d run: %d queues: %d>' % (__name__, hex (id (self)), self.max_cmds_running, len (self.cmds_running), len (self.queues))
+        return '<%s.%s object at %s: max: %d run: %d queues: %d>' % (self.__class__.__module__, self.__class__.__name__, hex (id (self)), self.max_cmds_running, len (self.cmds_running), len (self.queues))
 
     def try_run (self):
         #print "%s.try_run ()" % self

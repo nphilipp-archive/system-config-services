@@ -51,7 +51,7 @@ class Service (object):
         self.mon = mon
 
     def __repr__ (self):
-        return '<%s object at %s: "%s">' % (str (self.__class__), hex (id (self)), self.name)
+        return '<%s.%s object at %s: "%s">' % (self.__class__.__module__, self.__class__.__name__, hex (id (self)), self.name)
 
 ##############################################################################
 
