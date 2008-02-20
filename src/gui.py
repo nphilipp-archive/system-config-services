@@ -102,8 +102,8 @@ class GUIServicesTreeView (gtk.TreeView):
     COL_LAST = 7
 
     col_spec = {
-        SVC_COL_ENABLED:    ["", gtk.CellRendererPixbuf, "stock_id", False, False, False, 40],
-        SVC_COL_STATUS:     ["", gtk.CellRendererPixbuf, "stock_id", False, False, False, 40],
+        SVC_COL_ENABLED:    ["", gtk.CellRendererPixbuf, "stock_id", False, False, False, gtk.icon_size_lookup (gtk.ICON_SIZE_MENU)[0]],
+        SVC_COL_STATUS:     ["", gtk.CellRendererPixbuf, "stock_id", False, False, False, gtk.icon_size_lookup (gtk.ICON_SIZE_MENU)[0]],
         SVC_COL_NAME:       [_("Name"), gtk.CellRendererText, "text", True, True, True, None],
         SVC_COL_REMARK:     [_("Remarks"), gtk.CellRendererText, "text", True, True, True, None],
     }
