@@ -468,9 +468,6 @@ class GUI (object):
         self._filemon.handle_events ()
         return True
 
-    def refresh_interface (self):
-        gtk.main_iteration (block = False) 
-
     def run (self):
         try:
             self.mainWindow.toplevel.show ()
