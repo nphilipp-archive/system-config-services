@@ -29,6 +29,8 @@ import gobject
 from util import getstatusoutput
 from asynccmd import *
 
+from servicesinfo import *
+
 SVC_STATUS_UNKNOWN = 0
 SVC_STATUS_STOPPED = 1
 SVC_STATUS_RUNNING = 2
@@ -88,6 +90,11 @@ class SysVService (ChkconfigService):
     def __init__ (self, name, mon):
         super (SysVService, self).__init__ (name, mon)
 
+        try:
+            self.info = SysVServiceInfo (name)
+        except InvalidServiceInfoException:
+            raise InvalidServiceException
+
         self.runlevels = [False, False, False, False, False, False, False]
         self.runlevels_ondisk = [False, False, False, False, False, False, False]
         self.configured = False
@@ -98,7 +105,7 @@ class SysVService (ChkconfigService):
 
         self.valid = False
 
-        self.load ()
+        #self.load ()
 
     def load (self):
         mainloop = gobject.MainLoop ()
