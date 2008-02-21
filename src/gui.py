@@ -32,7 +32,7 @@ from rhpl.translate import _, N_
 import serviceherders
 from serviceherders import SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED
 import services
-from services import SVC_STATUS_UNKNOWN, SVC_STATUS_STOPPED, SVC_STATUS_RUNNING, SVC_STATUS_DEAD, SVC_ENABLED_REFRESHING, SVC_ENABLED_YES, SVC_ENABLED_NO, SVC_ENABLED_CUSTOM
+from services import SVC_STATUS_REFRESHING, SVC_STATUS_UNKNOWN, SVC_STATUS_STOPPED, SVC_STATUS_RUNNING, SVC_STATUS_DEAD, SVC_ENABLED_REFRESHING, SVC_ENABLED_YES, SVC_ENABLED_NO, SVC_ENABLED_CUSTOM
 
 gtk.glade.bindtextdomain (config.domain)
 
@@ -172,6 +172,7 @@ _enabled_text = {
 ##############################################################################
 
 _status_stock_id = {
+        SVC_STATUS_REFRESHING: gtk.STOCK_REFRESH,
         SVC_STATUS_UNKNOWN: gtk.STOCK_DIALOG_QUESTION,
         SVC_STATUS_STOPPED: gtk.STOCK_DISCONNECT,
         SVC_STATUS_RUNNING: gtk.STOCK_CONNECT,
@@ -269,23 +270,34 @@ class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
 
         if self.service.info.description:
             self.sysVServiceDescriptionTextView.get_buffer ().set_text (self.service.info.description)
+        else:
+            self.sysVServiceDescriptionTextView.get_buffer ().set_text ("")
 
 ##############################################################################
 
 class GUIXinetdServicesDetailsPainter (GUIServicesDetailsPainter):
     _xml_widgets = [
-        'xinetdExplanationLabel',
-        'xinetdServiceStatusIcon',
-        'xinetdServiceStatusLabel',
-        'xinetdServiceDescription'
+        'xinetdServiceExplanationLabel',
+        'xinetdServiceEnabledIcon',
+        'xinetdServiceEnabledLabel',
+        'xinetdServiceDescriptionTextView'
     ]
 
     def __init__ (self, xml, service):
         super (GUIXinetdServicesDetailsPainter, self).__init__ (xml, service)
 
     def paint_details (self):
-        pass
-        # FIXME
+        self.xinetdServiceExplanationLabel.set_markup (_("The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has got nothing more to do.") % {'servicename': self.service.name})
+
+        enabled = self.service.is_enabled ()
+        self.xinetdServiceEnabledIcon.set_from_stock (_enabled_stock_id[enabled],
+                                                      gtk.ICON_SIZE_MENU)
+        self.xinetdServiceEnabledLabel.set_text (_enabled_text[enabled])
+
+        if self.service.info.description:
+            self.xinetdServiceDescriptionTextView.get_buffer ().set_text (self.service.info.description)
+        else:
+            self.xinetdServiceDescriptionTextView.get_buffer ().set_text ("")
 
 ##############################################################################
 

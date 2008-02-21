@@ -819,7 +819,7 @@
 		  <property name="spacing">5</property>
 
 		  <child>
-		    <widget class="GtkLabel" id="xinetdExplanationLabel">
+		    <widget class="GtkLabel" id="xinetdServiceExplanationLabel">
 		      <property name="visible">True</property>
 		      <property name="can_focus">True</property>
 		      <property name="label" translatable="yes">This service will be started on demand by the xinetd service and ends when it has got nothing more to do.</property>
@@ -851,7 +851,7 @@
 		      <property name="spacing">0</property>
 
 		      <child>
-			<widget class="GtkImage" id="xinetdServiceStatusIcon">
+			<widget class="GtkImage" id="xinetdServiceEnabledIcon">
 			  <property name="visible">True</property>
 			  <property name="xalign">0.5</property>
 			  <property name="yalign">0.5</property>
@@ -866,7 +866,7 @@
 		      </child>
 
 		      <child>
-			<widget class="GtkLabel" id="xinetdServiceStatusLabel">
+			<widget class="GtkLabel" id="xinetdServiceEnabledLabel">
 			  <property name="visible">True</property>
 			  <property name="can_focus">True</property>
 			  <property name="label" translatable="yes">This service is {enabled|disabled}{|, but &lt;b&gt;xinetd&lt;/b&gt; is stopped}.</property>
@@ -928,7 +928,7 @@
 			      <property name="window_placement">GTK_CORNER_TOP_LEFT</property>
 
 			      <child>
-				<widget class="GtkTextView" id="xinetdServiceDescription">
+				<widget class="GtkTextView" id="xinetdServiceDescriptionTextView">
 				  <property name="visible">True</property>
 				  <property name="can_focus">True</property>
 				  <property name="editable">False</property>

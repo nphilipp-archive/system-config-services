@@ -31,10 +31,11 @@ from asynccmd import *
 
 from servicesinfo import *
 
-SVC_STATUS_UNKNOWN = 0
-SVC_STATUS_STOPPED = 1
-SVC_STATUS_RUNNING = 2
-SVC_STATUS_DEAD = 3
+SVC_STATUS_REFRESHING = 0
+SVC_STATUS_UNKNOWN = 1
+SVC_STATUS_STOPPED = 2
+SVC_STATUS_RUNNING = 3
+SVC_STATUS_DEAD = 4
 
 SVC_ENABLED_REFRESHING = 0
 SVC_ENABLED_YES = 1
@@ -54,23 +55,39 @@ class Service (object):
         super (Service, self).__init__ ()
         self.name = name
         self.mon = mon
+        self._asynccmdqueue = AsyncCmdQueue ()
+        self.conf_updates_running = 0
 
     def __repr__ (self):
         return '<%s.%s object at %s: "%s">' % (self.__class__.__module__, self.__class__.__name__, hex (id (self)), self.name)
 
-##############################################################################
+    def load (self):
+        """Load configuration from disk synchronously."""
+        mainloop = gobject.MainLoop ()
+        self.async_load (self._load_ready, mainloop)
+        mainloop.run ()
 
-class ChkconfigService (Service):
-    """Represents an abstract service handled with chkconfig."""
+    def _load_ready (self, mainloop, __exception__ = None):
+        mainloop.quit ()
+        if __exception__ == None:
+            self.valid = True
+        else:
+            self.valid = False
 
-    def __init__ (self, name, mon):
-        super (ChkconfigService, self).__init__ (name, mon)
-        self.settled = False
-        self._asynccmdqueue = AsyncCmdQueue ()
-        self.conf_updates_running = 0
+    def _async_load_ready (self, cmd, callback, *p, **k):
+        try:
+            self._async_load_process (cmd)
+        except Exception, e:
+            k['__exception__'] = e
+        self.conf_updates_running -= 1
+        callback (*p, **k)
 
     def async_load (self, callback, *p, **k):
         """Load configuration from disk asynchronously."""
+        raise NotImplementedError
+
+    def _async_load_process (self, cmd):
+        """Process asynchronously loaded configuration."""
         raise NotImplementedError
 
     def save (self):
@@ -80,6 +97,12 @@ class ChkconfigService (Service):
     def is_dirty (self):
         """Check if a service is dirty, i.e. changed and not saved."""
         raise NotImplementedError
+
+##############################################################################
+
+class ChkconfigService (Service):
+    """Represents an abstract service handled with chkconfig."""
+    pass
 
 ##############################################################################
 
@@ -114,31 +137,11 @@ class SysVService (ChkconfigService):
 
         #self.load ()
 
-    def load (self):
-        mainloop = gobject.MainLoop ()
-        self.async_load (self._load_ready, mainloop)
-        mainloop.run ()
-
-    def _load_ready (self, mainloop, __exception__ = None):
-        mainloop.quit ()
-        if __exception__ == None:
-            self.valid = True
-        else:
-            self.valid = False
-
     def async_load (self, callback, *p, **k):
         """Load configuration from disk asynchronously."""
         p = (callback, ) + p
         self._asynccmdqueue.queue ('env LC_ALL=C /sbin/chkconfig --list "%s"' % self.name, combined_stdout = True, ready_cb = self._async_load_ready, ready_args = p, ready_kwargs = k)
         self.conf_updates_running += 1
-
-    def _async_load_ready (self, cmd, callback, *p, **k):
-        try:
-            self._async_load_process (cmd)
-        except Exception, e:
-            k['__exception__'] = e
-        self.conf_updates_running -= 1
-        callback (*p, **k)
 
     def _async_load_process (self, cmd):
         """Process asynchronously loaded configuration."""
@@ -190,10 +193,14 @@ class SysVService (ChkconfigService):
         p = (callback, ) + p
         self._asynccmdqueue.queue ('env LC_ALL=C /sbin/service \"%s\" status' % self.name, combined_stdout = True, ready_cb = self._status_update_ready, ready_args = p, ready_kwargs = k)
         self.status_updates_running += 1
+        self.status = SVC_STATUS_REFRESHING
 
     def _status_update_ready (self, cmd, callback, *p, **k):
-        self._status_update_process (cmd)
         self.status_updates_running -= 1
+        if self.status_updates_running <= 0:
+            self.status_updates_running = 0
+            self.status = SVC_STATUS_UNKNOWN
+        self._status_update_process (cmd)
         callback (*p, **k)
 
     def _status_update_process (self, cmd):
@@ -209,6 +216,7 @@ class SysVService (ChkconfigService):
         else:
             self.status = SVC_STATUS_UNKNOWN
 
+        #print "%s: %s: %d" % (cmd, self.name, self.status)
         self.status_output = cmd.output
 
     def is_dirty (self):
@@ -235,17 +243,41 @@ class XinetdService (ChkconfigService):
 
     def __init__ (self, name, mon):
         super (XinetdService, self).__init__ (name, mon)
-        self.enabled = False
-        self.enabled_ondisk = False
+
+        try:
+            self.info = XinetdServiceInfo (name)
+        except InvalidServiceInfoException:
+            raise InvalidServiceException
+
+        self.enabled = None
+        self.enabled_ondisk = None
 
         self.load ()
 
-    def load (self):
-        """Load configuration from disk."""
+    def async_load (self, callback, *p, **k):
+        """Load configuration from disk asynchronously."""
 
-        (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig --list %s 2>/dev/null' % self.name)
-        if status != 0:
-            raise OSError ("Loading service '%s' failed, command was 'LC_ALL=C /sbin/chkconfig --list %s 2>/dev/null'." % self.name)
+        p = (callback, ) + p
+
+        self._asynccmdqueue.queue ('env LC_ALL=C /sbin/chkconfig --list %s' % self.name, combined_stdout = True, ready_cb = self._async_load_ready, ready_args = p, ready_kwargs = k)
+        self.conf_updates_running += 1
+
+    def _async_load_process (self, cmd):
+        """Process asynchronously loaded configuration."""
+        exitcode = cmd.exitcode
+        output = cmd.output
+
+        if exitcode != 0:
+            if self.no_chkconfig_re.match (output) \
+                or self.chkconfig_error_re.match (output):
+                raise InvalidServiceException (output)
+            elif self.chkconfig_unconfigured_re.match (output):
+                self.configured = False
+                return
+            else:
+                # service might have been deleted, let the herder take care of it
+                return
+
         m = self.xinetd_list_re.match (output)
         if not m or m.group ('name') != self.name:
             raise output
@@ -261,5 +293,12 @@ class XinetdService (ChkconfigService):
 
     def is_dirty (self):
         return self.enabled != self.enabled_ondisk
+
+    def is_enabled (self):
+        if self.conf_updates_running > 0:
+            return SVC_ENABLED_REFRESHING
+        return self.enabled and SVC_ENABLED_YES or SVC_ENABLED_NO
+
+##############################################################################
 
 service_classes = [ SysVService, XinetdService ]
