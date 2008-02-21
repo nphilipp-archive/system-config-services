@@ -47,7 +47,7 @@ class AsyncCmd (object):
             self.stderr_output = ""
 
     def __repr__ (self):
-        return '<%s.%s object at %s: cmd: %s fileobjs: %s>' % (self.__class__.__module__, self.__class__.__name__, hex (id (self)), self.cmd, self.fileobjs)
+        return '<%s.%s object at %s: cmd: %s exitcode: %s fileobjs: %s output: %s>' % (self.__class__.__module__, self.__class__.__name__, hex (id (self)), self.cmd, self.exitcode, self.fileobjs, self.output)
 
     def run (self):
         #print "%s.run ()" % self
