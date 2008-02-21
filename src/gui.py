@@ -194,7 +194,7 @@ class GUIServicesDetailsPainter (object):
     _classes = None
     _classes_objects = { }
 
-    """Abstract services details painter"""
+    """Services details painter singleton factory"""
     def __new__ (cls, xml, service, *p, **k):
         if GUIServicesDetailsPainter._classes == None:
             GUIServicesDetailsPainter._classes = {
@@ -339,9 +339,9 @@ class GUIXinetdServiceEntryPainter (GUIServiceEntryPainter):
 ##############################################################################
 
 class GUIServicesList (object):
-    SERVICE_TYPE_NONE = 0
-    SERVICE_TYPE_SYSV = 1
-    SERVICE_TYPE_XINETD = 2
+    SVC_PAGE_NONE = 0
+    SVC_PAGE_SYSV = 1
+    SVC_PAGE_XINETD = 2
 
     def __init__ (self, xml, serviceherders):
         self.current_service = None
@@ -372,11 +372,11 @@ class GUIServicesList (object):
         if service:
             GUIServicesDetailsPainter (self.xml, service).paint_details ()
         if isinstance (service, services.SysVService):
-            self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_SYSV)
+            self.servicesDetailsNotebook.set_current_page (self.SVC_PAGE_SYSV)
         elif isinstance (service, services.XinetdService):
-            self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_XINETD)
+            self.servicesDetailsNotebook.set_current_page (self.SVC_PAGE_XINETD)
         else:
-            self.servicesDetailsNotebook.set_current_page (self.SERVICE_TYPE_NONE)
+            self.servicesDetailsNotebook.set_current_page (self.SVC_PAGE_NONE)
 
     def on_services_changed (self, change, service):
         if change == SVC_ADDED:
@@ -420,9 +420,13 @@ class GUIServicesList (object):
         self.service_painters[service].paint ()
 
     def on_service_status_changed (self, service):
-        self.service_painters[service].paint ()
-        if service == self.current_service:
-            GUIServicesDetailsPainter (self.xml, service).paint_details ()
+        if self.service_painters.has_key (service):
+            self.service_painters[service].paint ()
+            if service == self.current_service:
+                GUIServicesDetailsPainter (self.xml, service).paint_details ()
+        else:
+            # service might have been deleted
+            pass
 
 ##############################################################################
 
