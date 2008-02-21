@@ -188,13 +188,27 @@ _status_text = {
 
 ##############################################################################
 
-class GUIServicesDetailsPainter (object):
+class GladeUser (object):
     _xml_widgets = []
+
+    def __init__ (self, xml):
+        self.xml = xml
+
+        for wname in self._xml_widgets:
+            w = xml.get_widget (wname)
+            if w:
+                setattr (self, wname, w)
+            else:
+                raise KeyError (wname)
+
+##############################################################################
+
+class GUIServicesDetailsPainter (GladeUser):
+    """Services details painter singleton factory"""
 
     _classes = None
     _classes_objects = { }
 
-    """Services details painter singleton factory"""
     def __new__ (cls, xml, service, *p, **k):
         if GUIServicesDetailsPainter._classes == None:
             GUIServicesDetailsPainter._classes = {
@@ -219,13 +233,8 @@ class GUIServicesDetailsPainter (object):
         return GUIServicesDetailsPainter._classes_objects[painter_class]
 
     def __init__ (self, xml, service):
-        self.xml = xml
+        super (GUIServicesDetailsPainter, self).__init__ (xml)
         self.service = service
-
-        for wname in self._xml_widgets:
-            w = xml.get_widget (wname)
-            if w:
-                setattr (self, wname, w)
 
     def paint_details (self):
         raise NotImplementedError
@@ -234,14 +243,14 @@ class GUIServicesDetailsPainter (object):
 
 class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
     """Details painter for SysV services"""
-    _xml_widgets = [
+    _xml_widgets = (
         'sysVServiceExplanationLabel',
         'sysVServiceEnabledIcon',
         'sysVServiceEnabledLabel',
         'sysVServiceStatusIcon',
         'sysVServiceStatusLabel',
         'sysVServiceDescriptionTextView'
-    ]
+    )
 
     def __init__ (self, xml, service):
         super (GUISysVServicesDetailsPainter, self).__init__ (xml, service)
@@ -276,12 +285,12 @@ class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
 ##############################################################################
 
 class GUIXinetdServicesDetailsPainter (GUIServicesDetailsPainter):
-    _xml_widgets = [
+    _xml_widgets = (
         'xinetdServiceExplanationLabel',
         'xinetdServiceEnabledIcon',
         'xinetdServiceEnabledLabel',
         'xinetdServiceDescriptionTextView'
-    ]
+    )
 
     def __init__ (self, xml, service):
         super (GUIXinetdServicesDetailsPainter, self).__init__ (xml, service)
@@ -338,21 +347,40 @@ class GUIXinetdServiceEntryPainter (GUIServiceEntryPainter):
 
 ##############################################################################
 
-class GUIServicesList (object):
+class GUIServicesList (GladeUser):
     SVC_PAGE_NONE = 0
     SVC_PAGE_SYSV = 1
     SVC_PAGE_XINETD = 2
+
+    _service_xml_widgets = (
+            'serviceEnable',
+            'serviceDisable',
+            'serviceStart',
+            'serviceStop',
+            'serviceRestart',
+            'serviceInformation',
+            'serviceEnableButton',
+            'serviceDisableButton',
+            'serviceStartButton',
+            'serviceStopButton',
+            'serviceRestartButton',
+            'serviceInformationButton',
+            )
+
+    _xml_widgets = _service_xml_widgets + (
+            'servicesScrolledWindow',
+            'servicesDetailsNotebook',
+            )
 
     def __init__ (self, xml, serviceherders):
         self.current_service = None
         self.service_painters = {}
 
-        self.xml = xml
+        super (GUIServicesList, self).__init__ (xml)
         self.serviceherders = serviceherders
 
-        servicesScrolledWindow = xml.get_widget ('servicesScrolledWindow')
         servicesTreeView = xml.get_widget ('servicesTreeView')
-        servicesScrolledWindow.remove (servicesTreeView)
+        self.servicesScrolledWindow.remove (servicesTreeView)
 
         self.servicesTreeView = GUIServicesTreeView ()
         self.servicesTreeView.show ()
@@ -360,9 +388,9 @@ class GUIServicesList (object):
 
         self.servicesTreeStore = self.servicesTreeView.model
 
-        servicesScrolledWindow.add (self.servicesTreeView)
+        self.servicesScrolledWindow.add (self.servicesTreeView)
 
-        self.servicesDetailsNotebook = self.xml.get_widget ("servicesDetailsNotebook")
+        self.on_service_selected ()
 
         for herder in serviceherders:
             herder.subscribe (self.on_services_changed)
@@ -377,6 +405,49 @@ class GUIServicesList (object):
             self.servicesDetailsNotebook.set_current_page (self.SVC_PAGE_XINETD)
         else:
             self.servicesDetailsNotebook.set_current_page (self.SVC_PAGE_NONE)
+
+        map (lambda x: self._set_service_widget_sensitive (x, service),
+             self._service_xml_widgets)
+
+    def _set_service_widget_sensitive (self, wname, service):
+        try:
+            w = getattr (self, wname)
+        except AttributeError:
+            return
+
+        if wname.endswith ('Button'):
+            wname = wname[:-6]
+
+        if not service:
+            w.set_sensitive (False)
+            return
+
+        sensitive = True
+
+        if wname in ('serviceEnable', 'serviceDisable'):
+            is_enabled = service.is_enabled ()
+            if is_enabled == SVC_ENABLED_REFRESHING:
+                sensitive = False
+            elif wname == 'serviceEnable':
+                sensitive = (is_enabled != SVC_ENABLED_YES)
+            elif wname == 'serviceDisable':
+                sensitive = (is_enabled != SVC_ENABLED_NO)
+        elif wname in ('serviceStart', 'serviceStop', 'serviceRestart'):
+            if isinstance (service, services.SysVService):
+                if service.status == SVC_STATUS_REFRESHING:
+                    sensitive = False
+                elif wname == 'serviceStart':
+                    sensitive = (service.status != SVC_STATUS_RUNNING)
+                elif wname == 'serviceStop':
+                    sensitive = (service.status in (SVC_STATUS_UNKNOWN, SVC_STATUS_RUNNING))
+                elif wname == 'serviceRestart':
+                    sensitive = (service.status == SVC_STATUS_RUNNING)
+            else:
+                sensitive = False
+        else:
+            sensitive = True
+
+        w.set_sensitive (sensitive)
 
     def on_services_changed (self, change, service):
         if change == SVC_ADDED:
@@ -430,32 +501,39 @@ class GUIServicesList (object):
 
 ##############################################################################
 
-class MainWindow (object):
+class MainWindow (GladeUser):
+    _xml_widgets = (
+            'helpContents',
+            'helpContentsButton',
+            'servicesDetailsNotebook',
+            'aboutDialog'
+            )
+
     def __init__ (self, serviceherders):
         try:
-            self.xml = gtk.glade.XML ("system-config-services.glade",
-                                      domain = config.domain)
+            xml = gtk.glade.XML ("system-config-services.glade",
+                                 domain = config.domain)
         except RuntimeError:
-            self.xml = gtk.glade.XML (os.path.join (config.datadir,
-                                                    "system-config-services.glade"),
-                                      domain = config.domain)
+            xml = gtk.glade.XML (os.path.join (config.datadir,
+                                 "system-config-services.glade"),
+                                 domain = config.domain)
+
+        super (MainWindow, self).__init__ (xml)
 
         self.servicesList = GUIServicesList (xml = self.xml, serviceherders = serviceherders)
 
-        self.toplevel = self.xml.get_widget ("mainWindow")
+        self.toplevel = xml.get_widget ("mainWindow")
         self.toplevel.connect ('delete_event', gtk.main_quit)
 
         # the tabs are visible in the glade file to improve maintainability ...
-        self.servicesDetailsNotebook = self.xml.get_widget ("servicesDetailsNotebook")
         # ... so we hide them
         self.servicesDetailsNotebook.set_show_tabs (False)
 
-        self.aboutDialog = self.xml.get_widget ("aboutDialog")
         self.aboutDialog.set_name (config.name)
         self.aboutDialog.set_version (config.version)
 
         # connect defined signals with callback methods
-        self.xml.signal_autoconnect (self)
+        xml.signal_autoconnect (self)
 
     def on_programQuit_activate (self, *args):
         gtk.main_quit ()
