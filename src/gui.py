@@ -332,7 +332,9 @@ class GUISysVServiceEntryPainter (GUIServiceEntryPainter):
 
 class GUIXinetdServiceEntryPainter (GUIServiceEntryPainter):
     def paint (self):
-        pass
+        iter = self.treestore.service_iters[self.service]
+        self.treestore.set (iter, SVC_COL_ENABLED, _enabled_stock_id[self.service.is_enabled ()])
+        self.treestore.set (iter, SVC_COL_STATUS, None)
 
 ##############################################################################
 
