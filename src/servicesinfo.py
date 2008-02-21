@@ -275,8 +275,62 @@ class SysVServiceInfo (ServiceInfo):
 class XinetdServiceInfo (ServiceInfo):
     dir = "/etc/xinetd.d"
 
+    info_line_re = re.compile (r'^\s*(?P<key>[^\s:]+)\s*=\s*(?P<value>.*\S)\s*$')
+    default_re = re.compile (r'^\s*#\s*default:\s*(?P<default>on|off)\s*$')
+    description_re = re.compile (r'^\s*#\s*description:\s*(?P<descline>.*?)(?P<cont>\\)?$')
+    description_cont_re = re.compile (r'^\s*#\s*(?P<descline>.*?)(?P<cont>\\)?$')
+
+    attrs = ('default', 'description', 'enabled')
+
     def parse (self, fd):
-        pass # FIXME
+        self.valid = False
+
+        self.default = False
+        self.description = None
+        self.enabled = None
+
+        in_description = False
+
+        for line in fd:
+            if in_description:
+                m = self.description_cont_re.match (line)
+                if m:
+                    descline = m.group ('descline')
+                    if m.group ('cont') != '\\':
+                        in_description = False
+                    if len (descline.strip ()) == 0:
+                        self.description += "\n\n"
+                    else:
+                        self.description += " " + descline.strip ()
+                    continue
+
+            if not self.default:
+                m = self.default_re.match (line)
+                if m:
+                    self.default = m.group ('default') == 'on'
+                    continue
+
+            if not self.description:
+                m = self.description_re.match (line)
+                if m:
+                    self.description = m.group ('descline').strip ()
+                    if m.group ('cont') == '\\':
+                        in_description = True
+                    continue
+
+            m = self.info_line_re.match (line)
+
+            if m:
+                key = m.group ('key')
+                value = m.group ('value')
+
+                if key == "disable":
+                    self.enabled = (value == 'no')
+
+        if self.enabled == None:
+            self.enabled = True
+
+        self.valid = True
 
 ### Test #####################################################################
 
@@ -287,6 +341,7 @@ if __name__ == '__main__':
         services = sys.argv[1:]
     else:
         services = os.listdir (SysVServiceInfo.dir)
+        services.extend (os.listdir (XinetdServiceInfo.dir))
         services.sort ()
 
     for servicename in services:
@@ -294,4 +349,8 @@ if __name__ == '__main__':
             service = SysVServiceInfo (servicename)
             print "\n%s:\n%s" % (servicename, service)
         except InvalidServiceInfoException:
-            print "\n%s: invalid" % servicename
+            try:
+                service = XinetdServiceInfo (servicename)
+                print "\n %s:\n%s" %(servicename, service)
+            except InvalidServiceInfoException:
+                print "\n%s: invalid" % servicename
