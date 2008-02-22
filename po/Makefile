@@ -30,16 +30,13 @@ INTLTOOLEXTRACT	= intltool-extract
 POFILES		= $(wildcard *.po)
 MOFILES		= $(patsubst %.po,%.mo,$(POFILES))
 PYSRC		= $(wildcard ../src/*.py)
-GLADEFILES	= $(wildcard ../src/*.glade)
-GLADEHFILES	= $(patsubst %.glade,%.glade.h,$(GLADEFILES))
+GLADESRC	= $(wildcard ../src/*.glade)
 DESKTOPINFILES	= $(wildcard ../*.desktop.in)
 DESKTOPINHFILES	= $(patsubst %.desktop.in,%.desktop.in.h,$(DESKTOPINFILES))
-SRCFILES	= $(PYSRC) $(GLADEHFILES) $(DESKTOPINHFILES)
+CSRC		= $(DESKTOPINHFILES)
+SRCFILES	= $(PYSRC) $(GLADESRC) $(CSRC)
 
 all::  update-po $(MOFILES)
-
-%.glade.h:	%.glade
-	$(INTLTOOLEXTRACT) -t gettext/glade $<
 
 %.desktop.in.h:	%.desktop.in
 	$(INTLTOOLEXTRACT) -t gettext/ini $<
@@ -58,7 +55,9 @@ po_diff_and_mv_or_rm_func = \
 	}
 
 $(POTFILE): $(SRCFILES)
-	$(XGETTEXT) --keyword=_ --keyword=N_ $(SRCFILES)
+	$(XGETTEXT) --omit-header    --keyword --keyword=_ --keyword=N_ --language=python $(PYSRC)
+	$(XGETTEXT) --omit-header -j --keyword --keyword=_ --keyword=N_ --language=Glade $(GLADESRC)
+	$(XGETTEXT)               -j --keyword --keyword=_ --keyword=N_ --language=C $(CSRC)
 	@$(call po_diff_and_mv_or_rm,$(POTFILE),$(NLSPACKAGE).po)
 
 update-po: Makefile $(POTFILE) refresh-po
