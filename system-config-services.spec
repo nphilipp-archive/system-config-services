@@ -106,8 +106,37 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Fri Feb 22 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.0-1
+- make start/stop/restart/enable/disable buttons/menu entries work
+- SysVService: SVC_ENABLED_YES <-> RL 2, 3, 4, 5; everything else is
+  SVC_ENABLED_CUSTOM
+
+* Thu Feb 21 2008 Nils Philippsen <nphilipp@redhat.com>
+- implement XinetdServiceInfo.parse()
+- add and implement SVC_STATUS_REFRESHING
+- clear description text buffers if not description exists
+- implement GUIXinetdServicesDetailsPainter.paint_details()
+- implement async loading in XinetdService
+- implement GUISysVServiceEntryPainter.paint()
+- handle deleted services in GUIServicesList.on_service_status_changed()
+- make menu items and toolbar buttons (in)sensitive based on selected service
+
+* Wed Feb 20 2008 Nils Philippsen <nphilipp@redhat.com>
+- add classes dealing with information about services, e.g. contained in
+  chkconfig/LSB style comments in init scripts
+- distinguish real SysV services from fake ones (e.g. halt)
+- set enabled/disabled icons for SysV services
+- add textual description about if a service is enabled/disabled/customized
+- display description, short description
+
 * Sun Feb 17 2008 Nils Philippsen <nphilipp@redhat.com>
 - use lower default priority for asynchronous IO handling
+- remove more obsolete files
+- symlink gui.py instead of obsolete serviceconf.py to system-config-services
+- write status and explanation labels
+- make some labels selectable
+- use default geometry of 800x400
+- use stock warning icon for dead services
 
 * Sat Feb 16 2008 Nils Philippsen <nphilipp@redhat.com>
 - move handling of service changes from GUIServicesTreeStore into
