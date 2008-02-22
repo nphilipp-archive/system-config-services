@@ -545,28 +545,29 @@ class MainWindow (GladeUser):
         gtk.main_quit ()
 
     def on_serviceEnable_activate (self, *args):
-        print "MainWindow.on_serviceEnable_activate (%s)" % ', '.join (map (lambda x: str(x), args))
+        service = self.servicesList.current_service
+        if service:
+            service.enable ()
 
     def on_serviceEnable_show_menu (self, *args):
         print "MainWindow.on_serviceEnable_show_menu (%s)" % ', '.join (map (lambda x: str(x), args))
 
     def on_serviceDisable_activate (self, *args):
-        print "MainWindow.on_serviceDisable_activate (%s)" % ', '.join (map (lambda x: str(x), args))
+        service = self.servicesList.current_service
+        if service:
+            service.disable ()
 
     def on_serviceStart_activate (self, *args):
-        print "MainWindow.on_serviceStart_activate (%s)" % ', '.join (map (lambda x: str(x), args))
         service = self.servicesList.current_service
         if service:
             service.start ()
 
     def on_serviceStop_activate (self, *args):
-        print "MainWindow.on_serviceStop_activate (%s)" % ', '.join (map (lambda x: str(x), args))
         service = self.servicesList.current_service
         if service:
             service.stop ()
 
     def on_serviceRestart_activate (self, *args):
-        print "MainWindow.on_serviceRestart_activate (%s)" % ', '.join (map (lambda x: str(x), args))
         service = self.servicesList.current_service
         if service:
             service.restart ()

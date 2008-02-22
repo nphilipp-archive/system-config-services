@@ -102,7 +102,18 @@ class Service (object):
 
 class ChkconfigService (Service):
     """Represents an abstract service handled with chkconfig."""
-    pass
+
+    def _change_enablement (self, change):
+        # no callback, we let the herder handle that
+        self._asynccmdqueue.queue ('env LC_ALL=C /sbin/chkconfig "%s" "%s"' % (self.name, change))
+
+    def enable (self):
+        """Enable this service."""
+        self._change_enablement ('on')
+
+    def disable (self):
+        """Disable this service."""
+        self._change_enablement ('off')
 
 ##############################################################################
 
@@ -229,9 +240,10 @@ class SysVService (ChkconfigService):
             return SVC_ENABLED_REFRESHING
         if len (self.runlevels) == 0:
             return SVC_ENABLED_NO
-        if len (self.info.startrunlevels) > 0 \
-                and self.runlevels == self.info.startrunlevels \
-                or self.runlevels == self._fallback_default_runlevels:
+        #if len (self.info.startrunlevels) > 0 \
+        #        and self.runlevels == self.info.startrunlevels \
+        #        or self.runlevels == self._fallback_default_runlevels:
+        if self.runlevels == self._fallback_default_runlevels:
             return SVC_ENABLED_YES
         else:
             return SVC_ENABLED_CUSTOM
@@ -253,7 +265,6 @@ class SysVService (ChkconfigService):
     def restart (self):
         """Restart this service."""
         self._change_status ('restart')
-        
 
 ##############################################################################
 
