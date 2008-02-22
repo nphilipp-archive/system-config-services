@@ -1,4 +1,4 @@
 #!/bin/sh
 
-/usr/bin/python /usr/share/system-config-services/serviceconf.py
+/usr/bin/python /usr/share/system-config-services/gui.py
 

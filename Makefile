@@ -61,11 +61,9 @@ install:	all doc-install
 	install -m 0644 pixmaps/*.png $(DESTDIR)$(PKGDATADIR)
 	install -m 0644 pixmaps/$(PKGNAME).png $(DESTDIR)/usr/share/icons/hicolor/48x48/apps
 	install -m 0644 man/$(PKGNAME).8 $(DESTDIR)$(MANDIR)/man8
-	sed -e 's/\@VERSION\@/$(VERSION)/g' src/serviceconf.py > $(DESTDIR)$(PKGDATADIR)/serviceconf.py
-	chmod 755 $(DESTDIR)$(PKGDATADIR)/serviceconf.py
-	install -m 0644 src/checklist.py $(DESTDIR)$(PKGDATADIR)/
-	install -m 0644 src/nonblockingreader.py $(DESTDIR)$(PKGDATADIR)/
-	install -m 0644 src/servicemethods.py $(DESTDIR)$(PKGDATADIR)/
+	for file in asynccmd.py config.py gui.py serviceherders.py servicesinfo.py services.py util.py; do \
+		install -m 0644 "src/$$file" "$(DESTDIR)$(PKGDATADIR)/$$file"; \
+	done
 	install -m 0644 src/serviceconf.glade $(DESTDIR)$(GLADEDIR)
 	install -m 0644 $(PKGNAME).desktop $(DESTDIR)$(DATADIR)/applications/$(PKGNAME).desktop
 
@@ -81,8 +79,8 @@ install:	all doc-install
 	p=$(PREFIX) ; \
 	softdir=$${softdir/#$$p} ; \
 	softdir=$${softdir/#\/} ; \
-	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(SBINDIR)/system-config-services; \
-	ln  -fs ../$${softdir}/serviceconf.py $(DESTDIR)$(SBINDIR)/serviceconf;
+	ln  -fs ../$${softdir}/gui.py $(DESTDIR)$(SBINDIR)/system-config-services; \
+	ln  -fs ../$${softdir}/gui.py $(DESTDIR)$(SBINDIR)/serviceconf;
 
 checkmods:
 	@if [ -n "$$(hg diff -a)" ]; then \
