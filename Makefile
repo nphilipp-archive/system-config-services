@@ -64,7 +64,7 @@ install:	all doc-install
 	for file in asynccmd.py config.py gui.py serviceherders.py servicesinfo.py services.py util.py; do \
 		install -m 0644 "src/$$file" "$(DESTDIR)$(PKGDATADIR)/$$file"; \
 	done
-	install -m 0644 src/serviceconf.glade $(DESTDIR)$(GLADEDIR)
+	install -m 0644 src/$(PKGNAME).glade $(DESTDIR)$(GLADEDIR)
 	install -m 0644 $(PKGNAME).desktop $(DESTDIR)$(DATADIR)/applications/$(PKGNAME).desktop
 
 	ln -sf consolehelper $(DESTDIR)$(BINDIR)/$(PKGNAME)
