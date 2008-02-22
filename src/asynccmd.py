@@ -146,7 +146,8 @@ class AsyncCmdQueue (object):
 
     def _ready_cb (self, cmd, ready_cb, *p, **k):
         #print "%s.ready_cb (%s, %s, %s, %s)" % (self, cmd, ready_cb, p, k)
-        ready_cb (cmd, *p, **k)
+        if ready_cb:
+            ready_cb (cmd, *p, **k)
         self.cmds_running.remove (cmd)
         self.herder.cmd_ready (cmd)
         self.herder.try_run ()

@@ -405,8 +405,10 @@ class GUIServicesList (GladeUser):
             self.servicesDetailsNotebook.set_current_page (self.SVC_PAGE_XINETD)
         else:
             self.servicesDetailsNotebook.set_current_page (self.SVC_PAGE_NONE)
+        self._set_widgets_sensitivity ()
 
-        map (lambda x: self._set_service_widget_sensitive (x, service),
+    def _set_widgets_sensitivity (self):
+        map (lambda x: self._set_service_widget_sensitive (x, self.current_service),
              self._service_xml_widgets)
 
     def _set_service_widget_sensitive (self, wname, service):
@@ -481,14 +483,17 @@ class GUIServicesList (GladeUser):
 
     def on_service_conf_updating (self, service):
         self.service_painters[service].paint ()
+        self._set_widgets_sensitivity ()
 
     def on_service_conf_changed (self, service):
         self.service_painters[service].paint ()
         if service == self.current_service:
             GUIServicesDetailsPainter (self.xml, service).paint_details ()
+        self._set_widgets_sensitivity ()
 
     def on_service_status_updating (self, service):
         self.service_painters[service].paint ()
+        self._set_widgets_sensitivity ()
 
     def on_service_status_changed (self, service):
         if self.service_painters.has_key (service):
@@ -498,6 +503,7 @@ class GUIServicesList (GladeUser):
         else:
             # service might have been deleted
             pass
+        self._set_widgets_sensitivity ()
 
 ##############################################################################
 
@@ -549,12 +555,21 @@ class MainWindow (GladeUser):
 
     def on_serviceStart_activate (self, *args):
         print "MainWindow.on_serviceStart_activate (%s)" % ', '.join (map (lambda x: str(x), args))
+        service = self.servicesList.current_service
+        if service:
+            service.start ()
 
     def on_serviceStop_activate (self, *args):
         print "MainWindow.on_serviceStop_activate (%s)" % ', '.join (map (lambda x: str(x), args))
+        service = self.servicesList.current_service
+        if service:
+            service.stop ()
 
     def on_serviceRestart_activate (self, *args):
         print "MainWindow.on_serviceRestart_activate (%s)" % ', '.join (map (lambda x: str(x), args))
+        service = self.servicesList.current_service
+        if service:
+            service.restart ()
 
     def on_serviceInformation_activate (self, *args):
         print "MainWindow.on_serviceInformation_activate (%s)" % ', '.join (map (lambda x: str(x), args))

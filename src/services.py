@@ -220,9 +220,11 @@ class SysVService (ChkconfigService):
         self.status_output = cmd.output
 
     def is_dirty (self):
+        """Determines if the configuration of a service is saved or not."""
         return self.runlevels != self.runlevels_ondisk
 
     def is_enabled (self):
+        """Determines the enablement state of a service."""
         if self.conf_updates_running > 0:
             return SVC_ENABLED_REFRESHING
         if len (self.runlevels) == 0:
@@ -233,6 +235,25 @@ class SysVService (ChkconfigService):
             return SVC_ENABLED_YES
         else:
             return SVC_ENABLED_CUSTOM
+
+    def _change_status (self, change):
+        self.status = SVC_STATUS_REFRESHING
+
+        # no callback, we let the herder handle that
+        self._asynccmdqueue.queue ('env LC_ALL=C /sbin/service "%s" "%s"' % (self.name, change))
+
+    def start (self):
+        """Start this service."""
+        self._change_status ('start')
+
+    def stop (self):
+        """Stop this service."""
+        self._change_status ('stop')
+
+    def restart (self):
+        """Restart this service."""
+        self._change_status ('restart')
+        
 
 ##############################################################################
 
