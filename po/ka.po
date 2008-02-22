@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ka\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-30 14:05+0100\n"
+"POT-Creation-Date: 2008-02-22 13:31+0100\n"
 "PO-Revision-Date: 2005-12-20 01:55+0300\n"
 "Last-Translator: George Machitidze <giomac@gmail.com>\n"
 "Language-Team: Georgian <guiasher@mes.gov.ge>\n"
@@ -18,226 +18,130 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11\n"
 
-#: ../src/serviceconf.py:77
-#, python-format
-msgid "Are you sure you want to delete the %s?"
-msgstr "ნამდვილად გსურთ %s-ის წაშლა?"
-
-#: ../src/serviceconf.py:140
-#, python-format
-msgid "Runlevel %d"
-msgstr "გაშვების დონე %d"
-
-#. initialize this to the runlevel we are running in. It will
-#. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:281
-msgid "Currently Running in Runlevel: "
-msgstr "მიმდინარე გაშვების დონე:"
-
-#: ../src/serviceconf.py:377 ../src/serviceconf.py:480
-msgid "Editing Runlevel: "
-msgstr "რედაქტირებადი გაშვების დონე:"
-
-#: ../src/serviceconf.py:419
-msgid "Unknown"
-msgstr "უცნობი"
-
-#: ../src/serviceconf.py:509
-msgid "All"
-msgstr "ყველა"
-
-#: ../src/serviceconf.py:543
-#, fuzzy
-msgid ""
-"System Services Configuration Tool VERSION\n"
-" Copyright © 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
-" "
-msgstr ""
-"სისტემური სერვისების კონფიგურირების ინსტრუმენტი VERSION\n"
-"System Services Configuration Tool VERSION\n"
-" Copyright (c) 2002-2004 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat>\n"
-" Bill Nottingham <notting@redhat>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" "
-
-#: ../src/serviceconf.py:547
-msgid "About"
-msgstr "პროგრამის შესახებ"
-
-#: ../src/serviceconf.py:580
-msgid ""
-"The help viewer could not be found. To be able to view help you need to "
-"install the 'yelp' package."
+#: ../src/gui.py:107
+msgid "Name"
 msgstr ""
 
-#: ../src/serviceconf.py:719
-msgid "You must run system-config-services as root."
-msgstr "System-config-services უნდა გაიშვას root-მომხმარებლის მიერ."
+#: ../src/gui.py:108
+msgid "Remarks"
+msgstr ""
 
-#: ../src/servicecontrol.py:61
+#: ../src/gui.py:166
+msgid "This service is being refreshed right now."
+msgstr ""
+
+#: ../src/gui.py:167
+msgid "This service is enabled."
+msgstr ""
+
+#: ../src/gui.py:168
+msgid "This service is disabled."
+msgstr ""
+
+#: ../src/gui.py:169
+#, python-format
+msgid "This service is enabled in runlevels: %(runlevels)s"
+msgstr ""
+
+#: ../src/gui.py:183
+msgid "The status of this service is unknown."
+msgstr ""
+
+#: ../src/gui.py:184
+msgid "This service is stopped."
+msgstr ""
+
+#: ../src/gui.py:185
+msgid "This service is running."
+msgstr ""
+
+#: ../src/gui.py:186
+msgid "This service is dead."
+msgstr ""
+
+#: ../src/gui.py:259
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is started once, usually when the system "
+"is booted, runs in the background and wakes up when needed."
+msgstr ""
+
+#: ../src/gui.py:273
+msgid "This service is updated currently."
+msgstr ""
+
+#: ../src/gui.py:299
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
+"service and ends when it has got nothing more to do."
+msgstr ""
+
+#: ../src/servicecontrol.py:88
 #, python-format
 msgid "Service %s not found!"
 msgstr ""
 
-#: ../src/servicecontrol.py:67
+#: ../src/servicecontrol.py:94
 #, python-format
 msgid "Service %s is running with old config"
 msgstr ""
 
-#: ../src/servicecontrol.py:70
+#: ../src/servicecontrol.py:97
 #, python-format
 msgid "Service %s is running"
 msgstr ""
 
-#: ../src/servicecontrol.py:73
+#: ../src/servicecontrol.py:100
 #, python-format
 msgid "Service %s resports an error"
 msgstr ""
 
-#: ../src/servicecontrol.py:76
+#: ../src/servicecontrol.py:103
 #, python-format
 msgid "Service %s is stopped"
 msgstr ""
 
-#: ../src/servicecontrol.py:185 ../src/servicecontrol.py:200
+#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
 #, python-format
 msgid "Currently enabled in runlevels %s"
 msgstr ""
 
-#: ../src/servicecontrol.py:193 ../src/servicecontrol.py:203
+#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
 #, python-format
 msgid "Enable %(name)s in runlevels %(levels)s"
 msgstr ""
 
-#: ../src/servicemethods.py:276
-#, python-format
-msgid "%s failed. The error was: %s"
-msgstr "%s სერვისისთვის შეუძლებელია. შეცდომა: %s"
-
-#: ../src/servicemethods.py:283
-msgid " successful"
-msgstr "წარმატებით დასრულდა"
-
-#: ../src/servicemethods.py:412 ../src/servicemethods.py:423
-#, python-format
-msgid "xinetd must be enabled for %s to run"
-msgstr "%s-ის გასაშვებად xinetd უნდა იყოს ჩართული"
-
-#: ../src/servicemethods.py:417
-msgid "xinetd failed to reload for "
-msgstr "xinetd-ის გადატვირვა შეუძლებელია "
-
-#: ../src/servicemethods.py:419
-msgid ". The error was: "
-msgstr "სერვისისთვის. შეცდომა:"
-
-#: ../src/servicemethods.py:421
-#, python-format
-msgid "xinetd reloaded %s successfully"
-msgstr "xinetd-მა %s წარმატებით გადატვირთა"
-
-#: ../src/serviceconf.glade.h:1
-msgid "Add Service"
-msgstr "_სერვისის დამატება"
-
-#: ../src/serviceconf.glade.h:2
-msgid "Current Active Runlevel: "
-msgstr "მიმდინარე აქტიური გაშვების დონე:"
-
-#: ../src/serviceconf.glade.h:3
-#, fuzzy
-msgid "Delete Service"
-msgstr "სერვისის გა_დატვირთვა"
-
-#: ../src/serviceconf.glade.h:4
-msgid "Description"
-msgstr "განმარტება"
-
-#: ../src/serviceconf.glade.h:5
-msgid "Don't Save"
-msgstr "შენახვის გარეშე"
-
-#: ../src/serviceconf.glade.h:6
-msgid "Editing Runlevel:"
-msgstr "რედაქტირებადი გაშვების დონე:"
-
-#: ../src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade:13
 msgid "None"
 msgstr "არ არის"
 
-#: ../src/serviceconf.glade.h:8 ../src/servicetab.glade.h:7
-msgid "Restart"
-msgstr "გადატვირთვა"
-
-#: ../src/serviceconf.glade.h:9
-#, fuzzy
-msgid "Revert To _Last Save"
-msgstr "დაბ_რუნება"
-
-#: ../src/serviceconf.glade.h:10
-msgid "Runlevel _3"
-msgstr "გაშვების დონე _3"
-
-#: ../src/serviceconf.glade.h:11
-msgid "Runlevel _4"
-msgstr "გაშვების დონე _4"
-
-#: ../src/serviceconf.glade.h:12
-msgid "Runlevel _5"
-msgstr "გაშვების დონე _5"
-
-#: ../src/serviceconf.glade.h:13
-msgid "Runlevel _All"
-msgstr "_ყველა გაშვების დონე"
-
-#: ../src/serviceconf.glade.h:14
-msgid "S_top Service"
-msgstr "სერვისის _შეჩერება"
-
-#: ../src/serviceconf.glade.h:15
-msgid "Save Dialog"
-msgstr "შენახვის დიალოგი"
-
-#: ../src/serviceconf.glade.h:16
-msgid "Service Configuration"
-msgstr "სერვისების კონფიგურაცია"
-
-#: ../src/serviceconf.glade.h:17
-msgid "Service Name: "
-msgstr "სერვისის სახელი:"
-
-#: ../src/serviceconf.glade.h:18 ../src/servicetab.glade.h:11
+#: ../src/serviceconf.glade:39 ../src/serviceconf.glade:978
+#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
+#: ../src/servicetab.glade:2135
 msgid "Start"
 msgstr "გაშვება"
 
-#: ../src/serviceconf.glade.h:19
-msgid "Status"
-msgstr "მდგომარეობა"
-
-#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:14
+#: ../src/serviceconf.glade:60 ../src/servicetab.glade:1019
+#: ../src/servicetab.glade:2177
 msgid "Stop"
 msgstr "შეჩერება"
 
-#: ../src/serviceconf.glade.h:21
-msgid ""
-"These services are started on demand and end when there is nothing more to "
-"do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
+#: ../src/serviceconf.glade:81 ../src/serviceconf.glade:1010
+#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
+#: ../src/servicetab.glade:2156
+msgid "Restart"
+msgstr "გადატვირთვა"
 
-#: ../src/serviceconf.glade.h:22
-msgid ""
-"These services are started once and run in the background. You can specify "
-"in which runlevels they are started."
-msgstr ""
+#: ../src/serviceconf.glade:101
+msgid "Save Dialog"
+msgstr "შენახვის დიალოგი"
 
-#: ../src/serviceconf.glade.h:23
+#: ../src/serviceconf.glade:174
+msgid "Don't Save"
+msgstr "შენახვის გარეშე"
+
+#: ../src/serviceconf.glade:277
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -245,132 +149,342 @@ msgstr ""
 "თქვენ შეცვალეთ მიმდინარე გაშვების დონე.\n"
 "გსურთ ცვლილებების შენახვა?"
 
-#: ../src/serviceconf.glade.h:25
-msgid "_Actions"
-msgstr "_მოქმედებები"
+#: ../src/serviceconf.glade:313 ../src/serviceconf.glade:583
+msgid "Add Service"
+msgstr "_სერვისის დამატება"
 
-#: ../src/serviceconf.glade.h:26
-#, fuzzy
-msgid "_Background Services"
-msgstr "სერვისის _გაშვება"
+#: ../src/serviceconf.glade:382
+msgid "Service Name: "
+msgstr "სერვისის სახელი:"
 
-#: ../src/serviceconf.glade.h:27
-msgid "_Contents"
-msgstr "_შიგთaვსი"
+#: ../src/serviceconf.glade:436 ../src/system-config-services.glade:7
+#: ../src/system-config-services.glade:1189
+msgid "Service Configuration"
+msgstr "სერვისების კონფიგურაცია"
 
-#: ../src/serviceconf.glade.h:28
-msgid "_Edit Runlevel"
-msgstr "გაშვების დონის _რედაქტირება"
-
-#: ../src/serviceconf.glade.h:29
+#: ../src/serviceconf.glade:467
 msgid "_File"
 msgstr "_ფაილი"
 
-#: ../src/serviceconf.glade.h:30
-msgid "_Help"
-msgstr "_დახმარება"
+#: ../src/serviceconf.glade:476
+msgid "_Save Changes"
+msgstr "ცვლილებების _შენახვა"
 
-#: ../src/serviceconf.glade.h:31
+#: ../src/serviceconf.glade:498
 #, fuzzy
-msgid "_On Demand Services"
-msgstr "სერვისის გა_დატვირთვა"
+msgid "Revert To _Last Save"
+msgstr "დაბ_რუნება"
 
-#: ../src/serviceconf.glade.h:32
+#: ../src/serviceconf.glade:526
 #, fuzzy
 msgid "_Quit"
 msgstr "_გასვლა"
 
-#: ../src/serviceconf.glade.h:33
-msgid "_Refresh Service List"
-msgstr "_სერვისების სიის განახება"
-
-#: ../src/serviceconf.glade.h:34
-msgid "_Restart Service"
-msgstr "სერვისის გა_დატვირთვა"
-
-#: ../src/serviceconf.glade.h:35
-msgid "_Save Changes"
-msgstr "ცვლილებების _შენახვა"
-
-#: ../src/serviceconf.glade.h:36
-msgid "_Start Service"
-msgstr "სერვისის _გაშვება"
-
-#: ../src/serviceconf.glade.h:37
+#: ../src/serviceconf.glade:551
 msgid "_View"
 msgstr "_ხედი"
 
-#: ../src/servicetab.glade.h:1
-msgid "Button Box"
+#: ../src/serviceconf.glade:560
+msgid "_Refresh Service List"
+msgstr "_სერვისების სიის განახება"
+
+#: ../src/serviceconf.glade:574
+msgid "_Actions"
+msgstr "_მოქმედებები"
+
+#: ../src/serviceconf.glade:604
+#, fuzzy
+msgid "Delete Service"
+msgstr "სერვისის გა_დატვირთვა"
+
+#: ../src/serviceconf.glade:631
+msgid "_Start Service"
+msgstr "სერვისის _გაშვება"
+
+#: ../src/serviceconf.glade:653
+msgid "S_top Service"
+msgstr "სერვისის _შეჩერება"
+
+#: ../src/serviceconf.glade:675
+msgid "_Restart Service"
+msgstr "სერვისის გა_დატვირთვა"
+
+#: ../src/serviceconf.glade:701
+msgid "_Edit Runlevel"
+msgstr "გაშვების დონის _რედაქტირება"
+
+#: ../src/serviceconf.glade:711
+msgid "Runlevel _3"
+msgstr "გაშვების დონე _3"
+
+#: ../src/serviceconf.glade:722
+msgid "Runlevel _4"
+msgstr "გაშვების დონე _4"
+
+#: ../src/serviceconf.glade:734
+msgid "Runlevel _5"
+msgstr "გაშვების დონე _5"
+
+#: ../src/serviceconf.glade:746
+msgid "Runlevel _All"
+msgstr "_ყველა გაშვების დონე"
+
+#: ../src/serviceconf.glade:762 ../src/system-config-services.glade:217
+msgid "_Help"
+msgstr "_დახმარება"
+
+#: ../src/serviceconf.glade:771 ../src/system-config-services.glade:226
+msgid "_Contents"
+msgstr "_შიგთaვსი"
+
+#: ../src/serviceconf.glade:865
+msgid ""
+"These services are started once and run in the background. You can specify "
+"in which runlevels they are started."
 msgstr ""
 
-#: ../src/servicetab.glade.h:2
-msgid "Configure"
-msgstr ""
-
-#: ../src/servicetab.glade.h:4
-#, fuzzy, no-c-format
-msgid "Current runlevel is %s"
+#: ../src/serviceconf.glade:900
+msgid "Current Active Runlevel: "
 msgstr "მიმდინარე აქტიური გაშვების დონე:"
 
-#: ../src/servicetab.glade.h:5
-msgid "Disable"
+#: ../src/serviceconf.glade:930
+msgid "Editing Runlevel:"
+msgstr "რედაქტირებადი გაშვების დონე:"
+
+#: ../src/serviceconf.glade:1107 ../src/serviceconf.glade:1374
+#: ../src/system-config-services.glade:758
+#: ../src/system-config-services.glade:957
+msgid "Description"
+msgstr "განმარტება"
+
+#: ../src/serviceconf.glade:1175 ../src/serviceconf.glade:1441
+msgid "Status"
+msgstr "მდგომარეობა"
+
+#: ../src/serviceconf.glade:1238
+#, fuzzy
+msgid "_Background Services"
+msgstr "სერვისის _გაშვება"
+
+#: ../src/serviceconf.glade:1267
+msgid ""
+"These services are started on demand and end when there is nothing more to "
+"do. The <b>xinetd</b> service must be running so that they can be used."
 msgstr ""
 
-#: ../src/servicetab.glade.h:6
+#: ../src/serviceconf.glade:1504
+#, fuzzy
+msgid "_On Demand Services"
+msgstr "სერვისის გა_დატვირთვა"
+
+#: ../src/servicetab.glade:8
+msgid "window1"
+msgstr ""
+
+#: ../src/servicetab.glade:38
+msgid "Service %s"
+msgstr ""
+
+#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
+#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
 msgid "Enable"
 msgstr ""
 
-#: ../src/servicetab.glade.h:8
+#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
+#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
+msgid "Disable"
+msgstr ""
+
+#: ../src/servicetab.glade:89
+msgid "Customize"
+msgstr ""
+
+#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
+msgid "Enable Default"
+msgstr ""
+
+#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
+msgid "Runlevel 2"
+msgstr ""
+
+#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
+msgid "Runlevel 3"
+msgstr ""
+
+#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
+msgid "Runlevel 4"
+msgstr ""
+
+#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
+msgid "Runlevel 5"
+msgstr ""
+
+#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
+msgid "Enable All"
+msgstr ""
+
+#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
+msgid "Disable All"
+msgstr ""
+
+#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
+#: ../src/servicetab.glade:1922
+msgid "Configure"
+msgstr ""
+
+#: ../src/servicetab.glade:394
+msgid "foobar"
+msgstr ""
+
+#: ../src/servicetab.glade:412
+msgid "barfoo"
+msgstr ""
+
+#: ../src/servicetab.glade:521
+#, fuzzy
+msgid "Current runlevel is %s"
+msgstr "მიმდინარე აქტიური გაშვების დონე:"
+
+#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
 #, fuzzy
 msgid "Runlevels"
 msgstr "გაშვების დონე %d"
 
-#: ../src/servicetab.glade.h:9
-msgid "Service"
+#: ../src/servicetab.glade:807
+msgid "label18"
 msgstr ""
 
-#: ../src/servicetab.glade.h:10
-#, fuzzy
-msgid "Service control"
-msgstr "სერვისების კონფიგურაცია"
-
-#: ../src/servicetab.glade.h:12
+#: ../src/servicetab.glade:940
 #, fuzzy
 msgid "Start "
 msgstr "გაშვება"
 
-#: ../src/servicetab.glade.h:13
+#: ../src/servicetab.glade:1066
+#, fuzzy
+msgid "Service control"
+msgstr "სერვისების კონფიგურაცია"
+
+#: ../src/servicetab.glade:1148
 #, fuzzy
 msgid "Status output"
 msgstr "მდგომარეობა"
 
-#: ../src/servicetab.glade.h:15
-msgid "_Configure"
-msgstr ""
-
-#: ../src/servicetab.glade.h:16
-msgid "_Disable"
-msgstr ""
-
-#: ../src/servicetab.glade.h:17
-msgid "_Enable"
-msgstr ""
-
-#: ../src/servicetab.glade.h:18
-msgid "_Restart"
-msgstr ""
-
-#: ../src/servicetab.glade.h:19
+#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:119
+#: ../src/system-config-services.glade:342
 msgid "_Start"
 msgstr ""
 
-#: ../src/servicetab.glade.h:20
-msgid "barfoo"
+#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:163
+#: ../src/system-config-services.glade:376
+msgid "_Restart"
 msgstr ""
 
-#: ../src/servicetab.glade.h:21
-msgid "foobar"
+#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
+#: ../src/system-config-services.glade:294
+msgid "_Enable"
+msgstr ""
+
+#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
+#: ../src/system-config-services.glade:312
+msgid "_Disable"
+msgstr ""
+
+#: ../src/servicetab.glade:1613
+msgid "_Configure"
+msgstr ""
+
+#: ../src/servicetab.glade:1653
+msgid "Button Box"
+msgstr ""
+
+#: ../src/servicetab.glade:1730
+msgid "label16"
+msgstr ""
+
+#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
+msgid "Service %s:"
+msgstr ""
+
+#: ../src/servicetab.glade:1991
+msgid "Customize Runlevels"
+msgstr ""
+
+#: ../src/system-config-services.glade:38
+msgid "_Program"
+msgstr ""
+
+#: ../src/system-config-services.glade:60
+msgid "Ser_vice"
+msgstr ""
+
+#: ../src/system-config-services.glade:141
+#: ../src/system-config-services.glade:359
+msgid "S_top"
+msgstr ""
+
+#: ../src/system-config-services.glade:191
+msgid "Show _Information"
+msgstr ""
+
+#: ../src/system-config-services.glade:254
+msgid "_About"
+msgstr ""
+
+#: ../src/system-config-services.glade:509
+msgid "No service selected."
+msgstr ""
+
+#: ../src/system-config-services.glade:571
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+
+#: ../src/system-config-services.glade:825
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has got nothing more to do."
+msgstr ""
+
+#: ../src/system-config-services.glade:872
+msgid "This service is {enabled|disabled}{|, but <b>xinetd</b> is stopped}."
+msgstr ""
+
+#: ../src/system-config-services.glade:1031
+msgid "Service Information"
+msgstr ""
+
+#: ../src/system-config-services.glade:1150
+msgid "Status of service %s:"
+msgstr ""
+
+#: ../src/system-config-services.glade:1187
+msgid "system-config-services"
+msgstr ""
+
+#: ../src/system-config-services.glade:1188
+msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
+msgstr ""
+
+#: ../src/system-config-services.glade:1190
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+
+#: ../src/system-config-services.glade:1197
+msgid "translator-credits"
 msgstr ""
 
 #: ../system-config-services.desktop.in.h:1
@@ -384,6 +498,68 @@ msgstr "სერვისების მართვა"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "სერვისები"
+
+#~ msgid "Are you sure you want to delete the %s?"
+#~ msgstr "ნამდვილად გსურთ %s-ის წაშლა?"
+
+#~ msgid "Runlevel %d"
+#~ msgstr "გაშვების დონე %d"
+
+#~ msgid "Currently Running in Runlevel: "
+#~ msgstr "მიმდინარე გაშვების დონე:"
+
+#~ msgid "Editing Runlevel: "
+#~ msgstr "რედაქტირებადი გაშვების დონე:"
+
+#~ msgid "Unknown"
+#~ msgstr "უცნობი"
+
+#~ msgid "All"
+#~ msgstr "ყველა"
+
+#, fuzzy
+#~ msgid ""
+#~ "System Services Configuration Tool VERSION\n"
+#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
+#~ msgstr ""
+#~ "სისტემური სერვისების კონფიგურირების ინსტრუმენტი VERSION\n"
+#~ "System Services Configuration Tool VERSION\n"
+#~ " Copyright (c) 2002-2004 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat>\n"
+#~ " Bill Nottingham <notting@redhat>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " "
+
+#~ msgid "About"
+#~ msgstr "პროგრამის შესახებ"
+
+#~ msgid "You must run system-config-services as root."
+#~ msgstr "System-config-services უნდა გაიშვას root-მომხმარებლის მიერ."
+
+#~ msgid "%s failed. The error was: %s"
+#~ msgstr "%s სერვისისთვის შეუძლებელია. შეცდომა: %s"
+
+#~ msgid " successful"
+#~ msgstr "წარმატებით დასრულდა"
+
+#~ msgid "xinetd must be enabled for %s to run"
+#~ msgstr "%s-ის გასაშვებად xinetd უნდა იყოს ჩართული"
+
+#~ msgid "xinetd failed to reload for "
+#~ msgstr "xinetd-ის გადატვირვა შეუძლებელია "
+
+#~ msgid ". The error was: "
+#~ msgstr "სერვისისთვის. შეცდომა:"
+
+#~ msgid "xinetd reloaded %s successfully"
+#~ msgstr "xinetd-მა %s წარმატებით გადატვირთა"
 
 #~ msgid "Help is not available."
 #~ msgstr "დახმარება არ არის ხელმისაწვდომი"

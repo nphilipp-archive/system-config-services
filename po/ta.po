@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-30 14:05+0100\n"
+"POT-Creation-Date: 2008-02-22 13:31+0100\n"
 "PO-Revision-Date: 2006-11-23 17:29+0530\n"
 "Last-Translator: Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <ta@li.org>\n"
@@ -25,227 +25,130 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../src/serviceconf.py:77
-#, python-format
-msgid "Are you sure you want to delete the %s?"
-msgstr "%s ஐ அழிக்க வேண்டுமா?"
-
-#: ../src/serviceconf.py:140
-#, python-format
-msgid "Runlevel %d"
-msgstr "இயக்க நிலை %d"
-
-#. initialize this to the runlevel we are running in. It will
-#. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:281
-msgid "Currently Running in Runlevel: "
-msgstr "இப்போது இயக்க நிலையில் உள்ளது."
-
-#: ../src/serviceconf.py:377 ../src/serviceconf.py:480
-msgid "Editing Runlevel: "
-msgstr "இயக்க நிலையை திருத்துகிறது:"
-
-#: ../src/serviceconf.py:419
-msgid "Unknown"
-msgstr "தெரியாதது"
-
-#: ../src/serviceconf.py:509
-msgid "All"
-msgstr "அனைத்தும்"
-
-#: ../src/serviceconf.py:543
-msgid ""
-"System Services Configuration Tool VERSION\n"
-" Copyright © 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
-" "
-msgstr ""
-"கணினி சேவை அமைப்பு கருவிகள் பதிப்பு\n"
-" காப்புரிமை© 2002-2004 Red Hat, Inc.\n"
-" டிம் பவர்ஸ் <timp@redhat>\n"
-" பில் நாதிங்காம் <notting@redhat>\n"
-" டான் வால்ஷ் <dwalsh@redhat.com>\n"
-" ப்ரென்ட் ஃபாக்ஸ் <bfox@redhat.com>\n"
-" நில்ஸ் ஃபிலிப்ஸன் <nphilipp@redhat.com>\n"
-" "
-
-#: ../src/serviceconf.py:547
-msgid "About"
-msgstr "அறிமுகம்"
-
-#: ../src/serviceconf.py:580
-msgid ""
-"The help viewer could not be found. To be able to view help you need to "
-"install the 'yelp' package."
+#: ../src/gui.py:107
+msgid "Name"
 msgstr ""
 
-#: ../src/serviceconf.py:719
-msgid "You must run system-config-services as root."
-msgstr "system-config-services ஐ ரூட்டில் இயக்க வேண்டும்"
+#: ../src/gui.py:108
+msgid "Remarks"
+msgstr ""
 
-#: ../src/servicecontrol.py:61
+#: ../src/gui.py:166
+msgid "This service is being refreshed right now."
+msgstr ""
+
+#: ../src/gui.py:167
+msgid "This service is enabled."
+msgstr ""
+
+#: ../src/gui.py:168
+msgid "This service is disabled."
+msgstr ""
+
+#: ../src/gui.py:169
+#, python-format
+msgid "This service is enabled in runlevels: %(runlevels)s"
+msgstr ""
+
+#: ../src/gui.py:183
+msgid "The status of this service is unknown."
+msgstr ""
+
+#: ../src/gui.py:184
+msgid "This service is stopped."
+msgstr ""
+
+#: ../src/gui.py:185
+msgid "This service is running."
+msgstr ""
+
+#: ../src/gui.py:186
+msgid "This service is dead."
+msgstr ""
+
+#: ../src/gui.py:259
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is started once, usually when the system "
+"is booted, runs in the background and wakes up when needed."
+msgstr ""
+
+#: ../src/gui.py:273
+msgid "This service is updated currently."
+msgstr ""
+
+#: ../src/gui.py:299
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
+"service and ends when it has got nothing more to do."
+msgstr ""
+
+#: ../src/servicecontrol.py:88
 #, python-format
 msgid "Service %s not found!"
 msgstr ""
 
-#: ../src/servicecontrol.py:67
+#: ../src/servicecontrol.py:94
 #, python-format
 msgid "Service %s is running with old config"
 msgstr ""
 
-#: ../src/servicecontrol.py:70
+#: ../src/servicecontrol.py:97
 #, python-format
 msgid "Service %s is running"
 msgstr ""
 
-#: ../src/servicecontrol.py:73
+#: ../src/servicecontrol.py:100
 #, python-format
 msgid "Service %s resports an error"
 msgstr ""
 
-#: ../src/servicecontrol.py:76
+#: ../src/servicecontrol.py:103
 #, python-format
 msgid "Service %s is stopped"
 msgstr ""
 
-#: ../src/servicecontrol.py:185 ../src/servicecontrol.py:200
+#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
 #, python-format
 msgid "Currently enabled in runlevels %s"
 msgstr ""
 
-#: ../src/servicecontrol.py:193 ../src/servicecontrol.py:203
+#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
 #, python-format
 msgid "Enable %(name)s in runlevels %(levels)s"
 msgstr ""
 
-#: ../src/servicemethods.py:276
-#, python-format
-msgid "%s failed. The error was: %s"
-msgstr "%s செயலிழக்கப்பட்டது. பிழை செய்தி: %s"
-
-#: ../src/servicemethods.py:283
-msgid " successful"
-msgstr "வெற்றி"
-
-#: ../src/servicemethods.py:412 ../src/servicemethods.py:423
-#, python-format
-msgid "xinetd must be enabled for %s to run"
-msgstr "xinetd  %s ஐ இயக்க செயல்படுத்தப்பட வேண்டும்"
-
-#: ../src/servicemethods.py:417
-msgid "xinetd failed to reload for "
-msgstr "xinetd மீண்டும் ஏற்ற முடியவில்லை"
-
-#: ../src/servicemethods.py:419
-msgid ". The error was: "
-msgstr ". அதன் பிழை செய்தி:"
-
-#: ../src/servicemethods.py:421
-#, python-format
-msgid "xinetd reloaded %s successfully"
-msgstr "xinetd வெற்றிகரமாக %s ஐ மீண்டும் ஏற்றியது"
-
-#: ../src/serviceconf.glade.h:1
-msgid "Add Service"
-msgstr "சேவையை சேர்க்கவும்"
-
-#: ../src/serviceconf.glade.h:2
-msgid "Current Active Runlevel: "
-msgstr "தற்போது செயலிலுள்ள இயக்க நிலை:"
-
-#: ../src/serviceconf.glade.h:3
-msgid "Delete Service"
-msgstr "சேவையை அழிக்கவும்"
-
-#: ../src/serviceconf.glade.h:4
-msgid "Description"
-msgstr "விளக்கம்"
-
-#: ../src/serviceconf.glade.h:5
-msgid "Don't Save"
-msgstr "சேமிக்க வேண்டாம்"
-
-#: ../src/serviceconf.glade.h:6
-msgid "Editing Runlevel:"
-msgstr "இயக்க நிலையை திருத்துகிறது:"
-
-#: ../src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade:13
 msgid "None"
 msgstr "ஒன்றுமில்லை"
 
-#: ../src/serviceconf.glade.h:8 ../src/servicetab.glade.h:7
-msgid "Restart"
-msgstr "மீண்டும் துவக்கவும்"
-
-#: ../src/serviceconf.glade.h:9
-msgid "Revert To _Last Save"
-msgstr "கடைசியாக சேமித்த நிலைக்கு செல்லவும் (_L)"
-
-#: ../src/serviceconf.glade.h:10
-msgid "Runlevel _3"
-msgstr "இயக்க நிலை _3"
-
-#: ../src/serviceconf.glade.h:11
-msgid "Runlevel _4"
-msgstr "இயக்க நிலை _4"
-
-#: ../src/serviceconf.glade.h:12
-msgid "Runlevel _5"
-msgstr "இயக்க நிலை _5"
-
-#: ../src/serviceconf.glade.h:13
-msgid "Runlevel _All"
-msgstr "அனைத்து இயக்க நிலை (_A)"
-
-#: ../src/serviceconf.glade.h:14
-msgid "S_top Service"
-msgstr "சேவையை நிறுத்தவும் (_t)"
-
-#: ../src/serviceconf.glade.h:15
-msgid "Save Dialog"
-msgstr "உரையாடலை சேமிக்கவும்"
-
-#: ../src/serviceconf.glade.h:16
-msgid "Service Configuration"
-msgstr "சேவை கட்டமைப்பு"
-
-#: ../src/serviceconf.glade.h:17
-msgid "Service Name: "
-msgstr "சேவை பெயர்: "
-
-#: ../src/serviceconf.glade.h:18 ../src/servicetab.glade.h:11
+#: ../src/serviceconf.glade:39 ../src/serviceconf.glade:978
+#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
+#: ../src/servicetab.glade:2135
 msgid "Start"
 msgstr "துவக்கவும்"
 
-#: ../src/serviceconf.glade.h:19
-msgid "Status"
-msgstr "நிலை"
-
-#: ../src/serviceconf.glade.h:20 ../src/servicetab.glade.h:14
+#: ../src/serviceconf.glade:60 ../src/servicetab.glade:1019
+#: ../src/servicetab.glade:2177
 msgid "Stop"
 msgstr "நிறுத்தவும்"
 
-#: ../src/serviceconf.glade.h:21
-msgid ""
-"These services are started on demand and end when there is nothing more to "
-"do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
-"இந்த சேவைகள் தேவையின் பொருட்டு துவக்கப்பட்டு, எதுவும் செய்ய முடியாத நிலையில் "
-"முடிவடைந்தது. <b>xinetd</b> சேவை இயக்கத்தில் இருப்பதால் அவை பயன்படுத்தப்பட வேண்டும்."
+#: ../src/serviceconf.glade:81 ../src/serviceconf.glade:1010
+#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
+#: ../src/servicetab.glade:2156
+msgid "Restart"
+msgstr "மீண்டும் துவக்கவும்"
 
-#: ../src/serviceconf.glade.h:22
-msgid ""
-"These services are started once and run in the background. You can specify "
-"in which runlevels they are started."
-msgstr ""
-"இந்த சேவைகள் ஒருமுறை துவக்கப்பட்ட பின்னணியில் இயங்கும். நீங்கள் அவை எந்த இயக்க நிலைகளில் "
-"துவங்க வேண்டும் என்பதைக் குறிக்கலாம்."
+#: ../src/serviceconf.glade:101
+msgid "Save Dialog"
+msgstr "உரையாடலை சேமிக்கவும்"
 
-#: ../src/serviceconf.glade.h:23
+#: ../src/serviceconf.glade:174
+msgid "Don't Save"
+msgstr "சேமிக்க வேண்டாம்"
+
+#: ../src/serviceconf.glade:277
 msgid ""
 "You have made changes to the current runlevel.\n"
 "Do you want to save the changes?"
@@ -253,125 +156,336 @@ msgstr ""
 "நீங்கள் நடப்பு இயக்க நிலையில் மாற்றம் செய்துள்ளீர்கள்.\n"
 "மாற்றங்களை சேமிக்க வேண்டுமா?"
 
-#: ../src/serviceconf.glade.h:25
-msgid "_Actions"
-msgstr "செயல்கள் (_A)"
+#: ../src/serviceconf.glade:313 ../src/serviceconf.glade:583
+msgid "Add Service"
+msgstr "சேவையை சேர்க்கவும்"
 
-#: ../src/serviceconf.glade.h:26
-msgid "_Background Services"
-msgstr "பின்னணி சேவைகள் (_B)"
+#: ../src/serviceconf.glade:382
+msgid "Service Name: "
+msgstr "சேவை பெயர்: "
 
-#: ../src/serviceconf.glade.h:27
-msgid "_Contents"
-msgstr "உள்ளடக்கங்கள் (_C)"
+#: ../src/serviceconf.glade:436 ../src/system-config-services.glade:7
+#: ../src/system-config-services.glade:1189
+msgid "Service Configuration"
+msgstr "சேவை கட்டமைப்பு"
 
-#: ../src/serviceconf.glade.h:28
-msgid "_Edit Runlevel"
-msgstr "இயக்க நிலையை திருத்தவும் (_E)"
-
-#: ../src/serviceconf.glade.h:29
+#: ../src/serviceconf.glade:467
 msgid "_File"
 msgstr "கோப்பு (_F)"
 
-#: ../src/serviceconf.glade.h:30
-msgid "_Help"
-msgstr "உதவி (_H)"
-
-#: ../src/serviceconf.glade.h:31
-msgid "_On Demand Services"
-msgstr "தேவையில் சேவைகள் (_O)"
-
-#: ../src/serviceconf.glade.h:32
-msgid "_Quit"
-msgstr "வெளியேறுதல் (_Q)"
-
-#: ../src/serviceconf.glade.h:33
-msgid "_Refresh Service List"
-msgstr "சேவைப்பட்டியலை புதுப்பிக்கவும் (_R)"
-
-#: ../src/serviceconf.glade.h:34
-msgid "_Restart Service"
-msgstr "சேவையை மீண்டும் துவக்கவும் (_R)"
-
-#: ../src/serviceconf.glade.h:35
+#: ../src/serviceconf.glade:476
 msgid "_Save Changes"
 msgstr "மாற்றங்களை சேமிக்கவும் (_S)"
 
-#: ../src/serviceconf.glade.h:36
-msgid "_Start Service"
-msgstr "சேவையை துவக்கவும் (_S)"
+#: ../src/serviceconf.glade:498
+msgid "Revert To _Last Save"
+msgstr "கடைசியாக சேமித்த நிலைக்கு செல்லவும் (_L)"
 
-#: ../src/serviceconf.glade.h:37
+#: ../src/serviceconf.glade:526
+msgid "_Quit"
+msgstr "வெளியேறுதல் (_Q)"
+
+#: ../src/serviceconf.glade:551
 msgid "_View"
 msgstr "பார்வை (_V)"
 
-#: ../src/servicetab.glade.h:1
-msgid "Button Box"
+#: ../src/serviceconf.glade:560
+msgid "_Refresh Service List"
+msgstr "சேவைப்பட்டியலை புதுப்பிக்கவும் (_R)"
+
+#: ../src/serviceconf.glade:574
+msgid "_Actions"
+msgstr "செயல்கள் (_A)"
+
+#: ../src/serviceconf.glade:604
+msgid "Delete Service"
+msgstr "சேவையை அழிக்கவும்"
+
+#: ../src/serviceconf.glade:631
+msgid "_Start Service"
+msgstr "சேவையை துவக்கவும் (_S)"
+
+#: ../src/serviceconf.glade:653
+msgid "S_top Service"
+msgstr "சேவையை நிறுத்தவும் (_t)"
+
+#: ../src/serviceconf.glade:675
+msgid "_Restart Service"
+msgstr "சேவையை மீண்டும் துவக்கவும் (_R)"
+
+#: ../src/serviceconf.glade:701
+msgid "_Edit Runlevel"
+msgstr "இயக்க நிலையை திருத்தவும் (_E)"
+
+#: ../src/serviceconf.glade:711
+msgid "Runlevel _3"
+msgstr "இயக்க நிலை _3"
+
+#: ../src/serviceconf.glade:722
+msgid "Runlevel _4"
+msgstr "இயக்க நிலை _4"
+
+#: ../src/serviceconf.glade:734
+msgid "Runlevel _5"
+msgstr "இயக்க நிலை _5"
+
+#: ../src/serviceconf.glade:746
+msgid "Runlevel _All"
+msgstr "அனைத்து இயக்க நிலை (_A)"
+
+#: ../src/serviceconf.glade:762 ../src/system-config-services.glade:217
+msgid "_Help"
+msgstr "உதவி (_H)"
+
+#: ../src/serviceconf.glade:771 ../src/system-config-services.glade:226
+msgid "_Contents"
+msgstr "உள்ளடக்கங்கள் (_C)"
+
+#: ../src/serviceconf.glade:865
+msgid ""
+"These services are started once and run in the background. You can specify "
+"in which runlevels they are started."
+msgstr ""
+"இந்த சேவைகள் ஒருமுறை துவக்கப்பட்ட பின்னணியில் இயங்கும். நீங்கள் அவை எந்த இயக்க நிலைகளில் "
+"துவங்க வேண்டும் என்பதைக் குறிக்கலாம்."
+
+#: ../src/serviceconf.glade:900
+msgid "Current Active Runlevel: "
+msgstr "தற்போது செயலிலுள்ள இயக்க நிலை:"
+
+#: ../src/serviceconf.glade:930
+msgid "Editing Runlevel:"
+msgstr "இயக்க நிலையை திருத்துகிறது:"
+
+#: ../src/serviceconf.glade:1107 ../src/serviceconf.glade:1374
+#: ../src/system-config-services.glade:758
+#: ../src/system-config-services.glade:957
+msgid "Description"
+msgstr "விளக்கம்"
+
+#: ../src/serviceconf.glade:1175 ../src/serviceconf.glade:1441
+msgid "Status"
+msgstr "நிலை"
+
+#: ../src/serviceconf.glade:1238
+msgid "_Background Services"
+msgstr "பின்னணி சேவைகள் (_B)"
+
+#: ../src/serviceconf.glade:1267
+msgid ""
+"These services are started on demand and end when there is nothing more to "
+"do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr ""
+"இந்த சேவைகள் தேவையின் பொருட்டு துவக்கப்பட்டு, எதுவும் செய்ய முடியாத நிலையில் "
+"முடிவடைந்தது. <b>xinetd</b> சேவை இயக்கத்தில் இருப்பதால் அவை பயன்படுத்தப்பட வேண்டும்."
+
+#: ../src/serviceconf.glade:1504
+msgid "_On Demand Services"
+msgstr "தேவையில் சேவைகள் (_O)"
+
+#: ../src/servicetab.glade:8
+msgid "window1"
 msgstr ""
 
-#: ../src/servicetab.glade.h:2
-msgid "Configure"
+#: ../src/servicetab.glade:38
+msgid "Service %s"
 msgstr ""
 
-#: ../src/servicetab.glade.h:4
-#, no-c-format
-msgid "Current runlevel is %s"
-msgstr "நடப்பு இயக்க நிலை %s"
-
-#: ../src/servicetab.glade.h:5
-msgid "Disable"
-msgstr "செயல்நீக்குதல்"
-
-#: ../src/servicetab.glade.h:6
+#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
+#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
 msgid "Enable"
 msgstr "செயல்படுத்தல்"
 
-#: ../src/servicetab.glade.h:8
-msgid "Runlevels"
-msgstr "இயக்க நிலைகள்"
+#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
+#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
+msgid "Disable"
+msgstr "செயல்நீக்குதல்"
 
-#: ../src/servicetab.glade.h:9
-msgid "Service"
+#: ../src/servicetab.glade:89
+msgid "Customize"
 msgstr ""
 
-#: ../src/servicetab.glade.h:10
-msgid "Service control"
-msgstr "சேவை கட்டுப்பாடு"
-
-#: ../src/servicetab.glade.h:12
-msgid "Start "
-msgstr "துவக்குதல்"
-
-#: ../src/servicetab.glade.h:13
-msgid "Status output"
-msgstr "நிலை வெளியீடு"
-
-#: ../src/servicetab.glade.h:15
-msgid "_Configure"
+#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
+msgid "Enable Default"
 msgstr ""
 
-#: ../src/servicetab.glade.h:16
-msgid "_Disable"
+#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
+msgid "Runlevel 2"
 msgstr ""
 
-#: ../src/servicetab.glade.h:17
-msgid "_Enable"
+#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
+msgid "Runlevel 3"
 msgstr ""
 
-#: ../src/servicetab.glade.h:18
-msgid "_Restart"
+#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
+msgid "Runlevel 4"
 msgstr ""
 
-#: ../src/servicetab.glade.h:19
-msgid "_Start"
+#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
+msgid "Runlevel 5"
 msgstr ""
 
-#: ../src/servicetab.glade.h:20
+#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
+msgid "Enable All"
+msgstr ""
+
+#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
+msgid "Disable All"
+msgstr ""
+
+#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
+#: ../src/servicetab.glade:1922
+msgid "Configure"
+msgstr ""
+
+#: ../src/servicetab.glade:394
+msgid "foobar"
+msgstr ""
+
+#: ../src/servicetab.glade:412
 msgid "barfoo"
 msgstr ""
 
-#: ../src/servicetab.glade.h:21
-msgid "foobar"
+#: ../src/servicetab.glade:521
+msgid "Current runlevel is %s"
+msgstr "நடப்பு இயக்க நிலை %s"
+
+#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
+msgid "Runlevels"
+msgstr "இயக்க நிலைகள்"
+
+#: ../src/servicetab.glade:807
+msgid "label18"
+msgstr ""
+
+#: ../src/servicetab.glade:940
+msgid "Start "
+msgstr "துவக்குதல்"
+
+#: ../src/servicetab.glade:1066
+msgid "Service control"
+msgstr "சேவை கட்டுப்பாடு"
+
+#: ../src/servicetab.glade:1148
+msgid "Status output"
+msgstr "நிலை வெளியீடு"
+
+#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:119
+#: ../src/system-config-services.glade:342
+msgid "_Start"
+msgstr ""
+
+#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:163
+#: ../src/system-config-services.glade:376
+msgid "_Restart"
+msgstr ""
+
+#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
+#: ../src/system-config-services.glade:294
+msgid "_Enable"
+msgstr ""
+
+#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
+#: ../src/system-config-services.glade:312
+msgid "_Disable"
+msgstr ""
+
+#: ../src/servicetab.glade:1613
+msgid "_Configure"
+msgstr ""
+
+#: ../src/servicetab.glade:1653
+msgid "Button Box"
+msgstr ""
+
+#: ../src/servicetab.glade:1730
+msgid "label16"
+msgstr ""
+
+#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
+msgid "Service %s:"
+msgstr ""
+
+#: ../src/servicetab.glade:1991
+msgid "Customize Runlevels"
+msgstr ""
+
+#: ../src/system-config-services.glade:38
+msgid "_Program"
+msgstr ""
+
+#: ../src/system-config-services.glade:60
+msgid "Ser_vice"
+msgstr ""
+
+#: ../src/system-config-services.glade:141
+#: ../src/system-config-services.glade:359
+msgid "S_top"
+msgstr ""
+
+#: ../src/system-config-services.glade:191
+msgid "Show _Information"
+msgstr ""
+
+#: ../src/system-config-services.glade:254
+msgid "_About"
+msgstr ""
+
+#: ../src/system-config-services.glade:509
+msgid "No service selected."
+msgstr ""
+
+#: ../src/system-config-services.glade:571
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+
+#: ../src/system-config-services.glade:825
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has got nothing more to do."
+msgstr ""
+
+#: ../src/system-config-services.glade:872
+msgid "This service is {enabled|disabled}{|, but <b>xinetd</b> is stopped}."
+msgstr ""
+
+#: ../src/system-config-services.glade:1031
+msgid "Service Information"
+msgstr ""
+
+#: ../src/system-config-services.glade:1150
+msgid "Status of service %s:"
+msgstr ""
+
+#: ../src/system-config-services.glade:1187
+msgid "system-config-services"
+msgstr ""
+
+#: ../src/system-config-services.glade:1188
+msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
+msgstr ""
+
+#: ../src/system-config-services.glade:1190
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+
+#: ../src/system-config-services.glade:1197
+msgid "translator-credits"
 msgstr ""
 
 #: ../system-config-services.desktop.in.h:1
@@ -385,6 +499,67 @@ msgstr "சேவை மேலாண்மை"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "சேவைகள்"
+
+#~ msgid "Are you sure you want to delete the %s?"
+#~ msgstr "%s ஐ அழிக்க வேண்டுமா?"
+
+#~ msgid "Runlevel %d"
+#~ msgstr "இயக்க நிலை %d"
+
+#~ msgid "Currently Running in Runlevel: "
+#~ msgstr "இப்போது இயக்க நிலையில் உள்ளது."
+
+#~ msgid "Editing Runlevel: "
+#~ msgstr "இயக்க நிலையை திருத்துகிறது:"
+
+#~ msgid "Unknown"
+#~ msgstr "தெரியாதது"
+
+#~ msgid "All"
+#~ msgstr "அனைத்தும்"
+
+#~ msgid ""
+#~ "System Services Configuration Tool VERSION\n"
+#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
+#~ msgstr ""
+#~ "கணினி சேவை அமைப்பு கருவிகள் பதிப்பு\n"
+#~ " காப்புரிமை© 2002-2004 Red Hat, Inc.\n"
+#~ " டிம் பவர்ஸ் <timp@redhat>\n"
+#~ " பில் நாதிங்காம் <notting@redhat>\n"
+#~ " டான் வால்ஷ் <dwalsh@redhat.com>\n"
+#~ " ப்ரென்ட் ஃபாக்ஸ் <bfox@redhat.com>\n"
+#~ " நில்ஸ் ஃபிலிப்ஸன் <nphilipp@redhat.com>\n"
+#~ " "
+
+#~ msgid "About"
+#~ msgstr "அறிமுகம்"
+
+#~ msgid "You must run system-config-services as root."
+#~ msgstr "system-config-services ஐ ரூட்டில் இயக்க வேண்டும்"
+
+#~ msgid "%s failed. The error was: %s"
+#~ msgstr "%s செயலிழக்கப்பட்டது. பிழை செய்தி: %s"
+
+#~ msgid " successful"
+#~ msgstr "வெற்றி"
+
+#~ msgid "xinetd must be enabled for %s to run"
+#~ msgstr "xinetd  %s ஐ இயக்க செயல்படுத்தப்பட வேண்டும்"
+
+#~ msgid "xinetd failed to reload for "
+#~ msgstr "xinetd மீண்டும் ஏற்ற முடியவில்லை"
+
+#~ msgid ". The error was: "
+#~ msgstr ". அதன் பிழை செய்தி:"
+
+#~ msgid "xinetd reloaded %s successfully"
+#~ msgstr "xinetd வெற்றிகரமாக %s ஐ மீண்டும் ஏற்றியது"
 
 #~ msgid "Help is not available."
 #~ msgstr "உதவி கிடைக்கவில்லை"

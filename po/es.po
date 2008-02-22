@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.tip.es\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-15 17:46-0700\n"
+"POT-Creation-Date: 2008-02-22 13:31+0100\n"
 "PO-Revision-Date: 2008-02-16 00:17-0200\n"
 "Last-Translator: Domingo Becker <domingobecker@gmail.com>\n"
 "Language-Team: Spanish <fedora-trans-es@redhat.com>\n"
@@ -27,238 +27,293 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "X-Poedit-Language: Spanish\n"
 
-#: ../src/serviceconf.py:77
-#, python-format
-msgid "Are you sure you want to delete the %s?"
-msgstr "¿Está seguro de que desea eliminar el %s?"
-
-# ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
-# ../serviceconf.py:296
-# serviceconf.gladestrings:32
-#: ../src/serviceconf.py:140
-#, python-format
-msgid "Runlevel %d"
-msgstr "Nivel de ejecución %d"
-
-# ../serviceconf.py:134
-# ../serviceconf.py:134
-#. initialize this to the runlevel we are running in. It will
-#. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:281
-msgid "Currently Running in Runlevel: "
-msgstr "Ejecutándose en el nivel de ejecución: "
-
-# ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
-# ../serviceconf.py:296
-#: ../src/serviceconf.py:377 ../src/serviceconf.py:480
-msgid "Editing Runlevel: "
-msgstr "Editando nivel de ejecución: "
-
-#: ../src/serviceconf.py:419 ../src/servicemethods.py:57
-msgid "Unknown"
-msgstr "Desconocido"
-
-#: ../src/serviceconf.py:509
-msgid "All"
-msgstr "Todo"
-
-#: ../src/serviceconf.py:543
-msgid ""
-"System Services Configuration Tool VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
-" "
+#: ../src/gui.py:107
+msgid "Name"
 msgstr ""
-"Herramienta de Configuración de los Servicios del Sistema VERSION\n"
-" Copyright Â©  2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
-" "
 
-#: ../src/serviceconf.py:547
-msgid "About"
-msgstr "Acerca de"
+#: ../src/gui.py:108
+msgid "Remarks"
+msgstr ""
 
-#: ../src/serviceconf.py:580
+#: ../src/gui.py:166
+msgid "This service is being refreshed right now."
+msgstr ""
+
+#: ../src/gui.py:167
+msgid "This service is enabled."
+msgstr ""
+
+#: ../src/gui.py:168
+msgid "This service is disabled."
+msgstr ""
+
+#: ../src/gui.py:169
+#, python-format
+msgid "This service is enabled in runlevels: %(runlevels)s"
+msgstr ""
+
+#: ../src/gui.py:183
+msgid "The status of this service is unknown."
+msgstr ""
+
+#: ../src/gui.py:184
+msgid "This service is stopped."
+msgstr ""
+
+#: ../src/gui.py:185
+msgid "This service is running."
+msgstr ""
+
+#: ../src/gui.py:186
+msgid "This service is dead."
+msgstr ""
+
+#: ../src/gui.py:259
+#, python-format
 msgid ""
-"The help viewer could not be found. To be able to view help you need to "
-"install the 'yelp' package."
-msgstr "El visor de ayuda no está. Para poder ver la ayuda debe instalar el paquete 'yelp'."
+"The <b>%(servicename)s</b> service is started once, usually when the system "
+"is booted, runs in the background and wakes up when needed."
+msgstr ""
 
-# ../serviceconf.py:432
-# ../serviceconf.py:432
-#: ../src/serviceconf.py:719
-msgid "You must run system-config-services as root."
-msgstr "Debe ejecutar system-config-services como root."
+#: ../src/gui.py:273
+msgid "This service is updated currently."
+msgstr ""
 
-#: ../src/servicemethods.py:58
-msgid "Running"
-msgstr "Ejecutando"
-
-# serviceconf.gladestrings:11 serviceconf.gladestrings:48
-#: ../src/servicemethods.py:59
-msgid "Stopped"
-msgstr "Detenido"
-
-#: ../src/servicemethods.py:60
-msgid "Error"
-msgstr "Error"
-
-# ../servicemethods.py:318
-# ../servicemethods.py:318
-#: ../src/servicemethods.py:283
+#: ../src/gui.py:299
 #, python-format
-msgid "%s failed. The error was: %s"
-msgstr "%s falló. El error fue: %s"
+msgid ""
+"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
+"service and ends when it has got nothing more to do."
+msgstr ""
 
-# ../servicemethods.py:320
-# ../servicemethods.py:320
-#: ../src/servicemethods.py:290
-msgid " successful"
-msgstr " satisfactorio"
-
-# ../servicemethods.py:313
-# ../servicemethods.py:313
-#: ../src/servicemethods.py:419 ../src/servicemethods.py:430
+#: ../src/servicecontrol.py:88
 #, python-format
-msgid "xinetd must be enabled for %s to run"
-msgstr "xinetd debe estar activo para poder ejecutar %s"
+msgid "Service %s not found!"
+msgstr ""
 
-# ../servicemethods.py:307
-# ../servicemethods.py:307
-#: ../src/servicemethods.py:424
-msgid "xinetd failed to reload for "
-msgstr "xinetd falló su recarga por "
-
-# ../servicemethods.py:308
-# ../servicemethods.py:308
-#: ../src/servicemethods.py:426
-msgid ". The error was: "
-msgstr ". El error fue: "
-
-# ../servicemethods.py:310
-# ../servicemethods.py:310
-#: ../src/servicemethods.py:428
+#: ../src/servicecontrol.py:94
 #, python-format
-msgid "xinetd reloaded %s successfully"
-msgstr "recarga de xinetd para %s satisfactoria"
+msgid "Service %s is running with old config"
+msgstr ""
 
-# ../serviceconf.py:144
-# serviceconf.gladestrings:26
-#: ../src/serviceconf.glade.h:1
-msgid "Add Service"
-msgstr "_Agregar Servicio"
+#: ../src/servicecontrol.py:97
+#, python-format
+msgid "Service %s is running"
+msgstr ""
 
-# ../serviceconf.py:134
-# serviceconf.gladestrings:51
-#: ../src/serviceconf.glade.h:2
-msgid "Current Active Runlevel: "
-msgstr "Nivel de ejecución activo actual: "
+#: ../src/servicecontrol.py:100
+#, python-format
+msgid "Service %s resports an error"
+msgstr ""
 
-# serviceconf.gladestrings:28
-#: ../src/serviceconf.glade.h:3
-msgid "Delete Service"
-msgstr "_Eliminar Servicio"
+#: ../src/servicecontrol.py:103
+#, python-format
+msgid "Service %s is stopped"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:4
-msgid "Description"
-msgstr "Descripción"
+#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
+#, python-format
+msgid "Currently enabled in runlevels %s"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:5
-msgid "Don't Save"
-msgstr "No Guardar"
-
-# ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
-# ../serviceconf.py:296
-#: ../src/serviceconf.glade.h:6
-msgid "Editing Runlevel:"
-msgstr "Editando nivel de ejecución:"
+#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
+#, python-format
+msgid "Enable %(name)s in runlevels %(levels)s"
+msgstr ""
 
 # serviceconf.gladestrings:7
-#: ../src/serviceconf.glade.h:7
+#: ../src/serviceconf.glade:13
 msgid "None"
 msgstr "Ninguno"
 
+# serviceconf.gladestrings:9 serviceconf.gladestrings:46
+#: ../src/serviceconf.glade:39 ../src/serviceconf.glade:978
+#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
+#: ../src/servicetab.glade:2135
+msgid "Start"
+msgstr "Iniciar"
+
+# serviceconf.gladestrings:11 serviceconf.gladestrings:48
+#: ../src/serviceconf.glade:60 ../src/servicetab.glade:1019
+#: ../src/servicetab.glade:2177
+msgid "Stop"
+msgstr "Detener"
+
 # serviceconf.gladestrings:13 serviceconf.gladestrings:50
-#: ../src/serviceconf.glade.h:8
+#: ../src/serviceconf.glade:81 ../src/serviceconf.glade:1010
+#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
+#: ../src/servicetab.glade:2156
 msgid "Restart"
 msgstr "Reiniciar"
 
+#: ../src/serviceconf.glade:101
+msgid "Save Dialog"
+msgstr "Diálogo de Guardar"
+
+#: ../src/serviceconf.glade:174
+msgid "Don't Save"
+msgstr "No Guardar"
+
+#: ../src/serviceconf.glade:277
+msgid ""
+"You have made changes to the current runlevel.\n"
+"Do you want to save the changes?"
+msgstr ""
+"Ha hecho cambios en el nivel de ejecución actual.\n"
+"¿ Desea guardar los cambios ?"
+
+# ../serviceconf.py:144
+# serviceconf.gladestrings:26
+#: ../src/serviceconf.glade:313 ../src/serviceconf.glade:583
+msgid "Add Service"
+msgstr "_Agregar Servicio"
+
+#: ../src/serviceconf.glade:382
+msgid "Service Name: "
+msgstr "Nombre del Servicio:"
+
+# serviceconf.gladestrings:14
+#: ../src/serviceconf.glade:436 ../src/system-config-services.glade:7
+#: ../src/system-config-services.glade:1189
+msgid "Service Configuration"
+msgstr "Configuración del servicio"
+
+#: ../src/serviceconf.glade:467
+msgid "_File"
+msgstr "_Archivo"
+
+# serviceconf.gladestrings:18
+#: ../src/serviceconf.glade:476
+msgid "_Save Changes"
+msgstr "_Guardar Cambios"
+
 # serviceconf.gladestrings:20
-#: ../src/serviceconf.glade.h:9
+#: ../src/serviceconf.glade:498
 msgid "Revert To _Last Save"
 msgstr "Revertir a_l último guardado"
+
+# serviceconf.gladestrings:43
+#: ../src/serviceconf.glade:526
+msgid "_Quit"
+msgstr "Sa_lir"
+
+#: ../src/serviceconf.glade:551
+msgid "_View"
+msgstr "_Ver"
+
+# serviceconf.gladestrings:16
+#: ../src/serviceconf.glade:560
+msgid "_Refresh Service List"
+msgstr "_Refrescar la lista de servicios"
+
+# serviceconf.gladestrings:22
+#: ../src/serviceconf.glade:574
+msgid "_Actions"
+msgstr "_Acciones"
+
+# serviceconf.gladestrings:28
+#: ../src/serviceconf.glade:604
+msgid "Delete Service"
+msgstr "_Eliminar Servicio"
+
+# ../serviceconf.py:144
+# serviceconf.gladestrings:24
+#: ../src/serviceconf.glade:631
+msgid "_Start Service"
+msgstr "Iniciar _Servicio"
+
+# ../serviceconf.py:144
+# serviceconf.gladestrings:26
+#: ../src/serviceconf.glade:653
+msgid "S_top Service"
+msgstr "_Detener Servicio"
+
+# serviceconf.gladestrings:28
+#: ../src/serviceconf.glade:675
+msgid "_Restart Service"
+msgstr "_Reiniciar Servicio"
+
+# ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
+# ../serviceconf.py:296
+# serviceconf.gladestrings:30
+#: ../src/serviceconf.glade:701
+msgid "_Edit Runlevel"
+msgstr "_Editar nivel"
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
 # serviceconf.gladestrings:32
-#: ../src/serviceconf.glade.h:10
+#: ../src/serviceconf.glade:711
 msgid "Runlevel _3"
 msgstr "Nivel de ejecución _3"
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
 # serviceconf.gladestrings:34
-#: ../src/serviceconf.glade.h:11
+#: ../src/serviceconf.glade:722
 msgid "Runlevel _4"
 msgstr "Nivel de ejecución _4"
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
 # serviceconf.gladestrings:36
-#: ../src/serviceconf.glade.h:12
+#: ../src/serviceconf.glade:734
 msgid "Runlevel _5"
 msgstr "Nivel de ejecución _5"
 
 # ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
 # ../serviceconf.py:296
 # serviceconf.gladestrings:32
-#: ../src/serviceconf.glade.h:13
+#: ../src/serviceconf.glade:746
 msgid "Runlevel _All"
 msgstr "Nivel de Ejecución _Todos"
 
-# ../serviceconf.py:144
-# serviceconf.gladestrings:26
-#: ../src/serviceconf.glade.h:14
-msgid "S_top Service"
-msgstr "_Detener Servicio"
+#: ../src/serviceconf.glade:762 ../src/system-config-services.glade:217
+msgid "_Help"
+msgstr "Ay_uda"
 
-#: ../src/serviceconf.glade.h:15
-msgid "Save Dialog"
-msgstr "Diálogo de Guardar"
+#: ../src/serviceconf.glade:771 ../src/system-config-services.glade:226
+msgid "_Contents"
+msgstr "_Contenidos"
 
-# serviceconf.gladestrings:14
-#: ../src/serviceconf.glade.h:16
-msgid "Service Configuration"
-msgstr "Configuración del servicio"
+#: ../src/serviceconf.glade:865
+msgid ""
+"These services are started once and run in the background. You can specify "
+"in which runlevels they are started."
+msgstr ""
+"Estos servicios son iniciados una vez y se ejecutan en segundo plano. Puede "
+"especificar en qué niveles de ejecución se iniciarán."
 
-#: ../src/serviceconf.glade.h:17
-msgid "Service Name: "
-msgstr "Nombre del Servicio:"
+# ../serviceconf.py:134
+# serviceconf.gladestrings:51
+#: ../src/serviceconf.glade:900
+msgid "Current Active Runlevel: "
+msgstr "Nivel de ejecución activo actual: "
+
+# ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
+# ../serviceconf.py:296
+#: ../src/serviceconf.glade:930
+msgid "Editing Runlevel:"
+msgstr "Editando nivel de ejecución:"
+
+#: ../src/serviceconf.glade:1107 ../src/serviceconf.glade:1374
+#: ../src/system-config-services.glade:758
+#: ../src/system-config-services.glade:957
+msgid "Description"
+msgstr "Descripción"
 
 # serviceconf.gladestrings:9 serviceconf.gladestrings:46
-#: ../src/serviceconf.glade.h:18
-msgid "Start"
-msgstr "Iniciar"
-
-# serviceconf.gladestrings:9 serviceconf.gladestrings:46
-#: ../src/serviceconf.glade.h:19
+#: ../src/serviceconf.glade:1175 ../src/serviceconf.glade:1441
 msgid "Status"
 msgstr "Estado"
 
-# serviceconf.gladestrings:11 serviceconf.gladestrings:48
-#: ../src/serviceconf.glade.h:20
-msgid "Stop"
-msgstr "Detener"
+# ../serviceconf.py:144
+# serviceconf.gladestrings:24
+#: ../src/serviceconf.glade:1238
+msgid "_Background Services"
+msgstr "_Servicios en Segundo Plano"
 
-#: ../src/serviceconf.glade.h:21
+#: ../src/serviceconf.glade:1267
 msgid ""
 "These services are started on demand and end when there is nothing more to "
 "do. The <b>xinetd</b> service must be running so that they can be used."
@@ -267,86 +322,215 @@ msgstr ""
 "más que hacer. El servicio <b>xinetd</b> debe estar ejecutándose para que se "
 "los pueda usar."
 
-#: ../src/serviceconf.glade.h:22
-msgid ""
-"These services are started once and run in the background. You can specify "
-"in which runlevels they are started."
-msgstr ""
-"Estos servicios son iniciados una vez y se ejecutan en segundo plano. Puede "
-"especificar en qué niveles de ejecución se iniciarán."
-
-#: ../src/serviceconf.glade.h:23
-msgid ""
-"You have made changes to the current runlevel.\n"
-"Do you want to save the changes?"
-msgstr ""
-"Ha hecho cambios en el nivel de ejecución actual.\n"
-"¿ Desea guardar los cambios ?"
-
-# serviceconf.gladestrings:22
-#: ../src/serviceconf.glade.h:25
-msgid "_Actions"
-msgstr "_Acciones"
-
-# ../serviceconf.py:144
-# serviceconf.gladestrings:24
-#: ../src/serviceconf.glade.h:26
-msgid "_Background Services"
-msgstr "_Servicios en Segundo Plano"
-
-#: ../src/serviceconf.glade.h:27
-msgid "_Contents"
-msgstr "_Contenidos"
-
-# ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
-# ../serviceconf.py:296
-# serviceconf.gladestrings:30
-#: ../src/serviceconf.glade.h:28
-msgid "_Edit Runlevel"
-msgstr "_Editar nivel"
-
-#: ../src/serviceconf.glade.h:29
-msgid "_File"
-msgstr "_Archivo"
-
-#: ../src/serviceconf.glade.h:30
-msgid "_Help"
-msgstr "Ay_uda"
-
 # serviceconf.gladestrings:28
-#: ../src/serviceconf.glade.h:31
+#: ../src/serviceconf.glade:1504
 msgid "_On Demand Services"
 msgstr "Servici_os por Demanda"
 
-# serviceconf.gladestrings:43
-#: ../src/serviceconf.glade.h:32
-msgid "_Quit"
-msgstr "Sa_lir"
+#: ../src/servicetab.glade:8
+msgid "window1"
+msgstr ""
 
-# serviceconf.gladestrings:16
-#: ../src/serviceconf.glade.h:33
-msgid "_Refresh Service List"
-msgstr "_Refrescar la lista de servicios"
+#: ../src/servicetab.glade:38
+msgid "Service %s"
+msgstr ""
 
-# serviceconf.gladestrings:28
-#: ../src/serviceconf.glade.h:34
-msgid "_Restart Service"
-msgstr "_Reiniciar Servicio"
+#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
+#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
+msgid "Enable"
+msgstr ""
 
-# serviceconf.gladestrings:18
-#: ../src/serviceconf.glade.h:35
-msgid "_Save Changes"
-msgstr "_Guardar Cambios"
+#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
+#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
+msgid "Disable"
+msgstr ""
 
-# ../serviceconf.py:144
-# serviceconf.gladestrings:24
-#: ../src/serviceconf.glade.h:36
-msgid "_Start Service"
-msgstr "Iniciar _Servicio"
+#: ../src/servicetab.glade:89
+msgid "Customize"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:37
-msgid "_View"
-msgstr "_Ver"
+#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
+msgid "Enable Default"
+msgstr ""
+
+#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
+msgid "Runlevel 2"
+msgstr ""
+
+#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
+msgid "Runlevel 3"
+msgstr ""
+
+#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
+msgid "Runlevel 4"
+msgstr ""
+
+#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
+msgid "Runlevel 5"
+msgstr ""
+
+#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
+msgid "Enable All"
+msgstr ""
+
+#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
+msgid "Disable All"
+msgstr ""
+
+#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
+#: ../src/servicetab.glade:1922
+msgid "Configure"
+msgstr ""
+
+#: ../src/servicetab.glade:394
+msgid "foobar"
+msgstr ""
+
+#: ../src/servicetab.glade:412
+msgid "barfoo"
+msgstr ""
+
+#: ../src/servicetab.glade:521
+msgid "Current runlevel is %s"
+msgstr ""
+
+#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
+msgid "Runlevels"
+msgstr ""
+
+#: ../src/servicetab.glade:807
+msgid "label18"
+msgstr ""
+
+#: ../src/servicetab.glade:940
+msgid "Start "
+msgstr ""
+
+#: ../src/servicetab.glade:1066
+msgid "Service control"
+msgstr ""
+
+#: ../src/servicetab.glade:1148
+msgid "Status output"
+msgstr ""
+
+#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:119
+#: ../src/system-config-services.glade:342
+msgid "_Start"
+msgstr ""
+
+#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:163
+#: ../src/system-config-services.glade:376
+msgid "_Restart"
+msgstr ""
+
+#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
+#: ../src/system-config-services.glade:294
+msgid "_Enable"
+msgstr ""
+
+#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
+#: ../src/system-config-services.glade:312
+msgid "_Disable"
+msgstr ""
+
+#: ../src/servicetab.glade:1613
+msgid "_Configure"
+msgstr ""
+
+#: ../src/servicetab.glade:1653
+msgid "Button Box"
+msgstr ""
+
+#: ../src/servicetab.glade:1730
+msgid "label16"
+msgstr ""
+
+#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
+msgid "Service %s:"
+msgstr ""
+
+#: ../src/servicetab.glade:1991
+msgid "Customize Runlevels"
+msgstr ""
+
+#: ../src/system-config-services.glade:38
+msgid "_Program"
+msgstr ""
+
+#: ../src/system-config-services.glade:60
+msgid "Ser_vice"
+msgstr ""
+
+#: ../src/system-config-services.glade:141
+#: ../src/system-config-services.glade:359
+msgid "S_top"
+msgstr ""
+
+#: ../src/system-config-services.glade:191
+msgid "Show _Information"
+msgstr ""
+
+#: ../src/system-config-services.glade:254
+msgid "_About"
+msgstr ""
+
+#: ../src/system-config-services.glade:509
+msgid "No service selected."
+msgstr ""
+
+#: ../src/system-config-services.glade:571
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+
+#: ../src/system-config-services.glade:825
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has got nothing more to do."
+msgstr ""
+
+#: ../src/system-config-services.glade:872
+msgid "This service is {enabled|disabled}{|, but <b>xinetd</b> is stopped}."
+msgstr ""
+
+#: ../src/system-config-services.glade:1031
+msgid "Service Information"
+msgstr ""
+
+#: ../src/system-config-services.glade:1150
+msgid "Status of service %s:"
+msgstr ""
+
+#: ../src/system-config-services.glade:1187
+msgid "system-config-services"
+msgstr ""
+
+#: ../src/system-config-services.glade:1188
+msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
+msgstr ""
+
+#: ../src/system-config-services.glade:1190
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+
+#: ../src/system-config-services.glade:1197
+msgid "translator-credits"
+msgstr ""
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -362,3 +546,101 @@ msgstr "Administración de Servicios"
 msgid "Services"
 msgstr "Servicios"
 
+#~ msgid "Are you sure you want to delete the %s?"
+#~ msgstr "¿Está seguro de que desea eliminar el %s?"
+
+# ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
+# ../serviceconf.py:296
+# serviceconf.gladestrings:32
+#~ msgid "Runlevel %d"
+#~ msgstr "Nivel de ejecución %d"
+
+# ../serviceconf.py:134
+# ../serviceconf.py:134
+#~ msgid "Currently Running in Runlevel: "
+#~ msgstr "Ejecutándose en el nivel de ejecución: "
+
+# ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
+# ../serviceconf.py:296
+#~ msgid "Editing Runlevel: "
+#~ msgstr "Editando nivel de ejecución: "
+
+#~ msgid "Unknown"
+#~ msgstr "Desconocido"
+
+#~ msgid "All"
+#~ msgstr "Todo"
+
+#~ msgid ""
+#~ "System Services Configuration Tool VERSION\n"
+#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
+#~ msgstr ""
+#~ "Herramienta de Configuración de los Servicios del Sistema VERSION\n"
+#~ " Copyright Â©  2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
+
+#~ msgid "About"
+#~ msgstr "Acerca de"
+
+#~ msgid ""
+#~ "The help viewer could not be found. To be able to view help you need to "
+#~ "install the 'yelp' package."
+#~ msgstr ""
+#~ "El visor de ayuda no está. Para poder ver la ayuda debe instalar el "
+#~ "paquete 'yelp'."
+
+# ../serviceconf.py:432
+# ../serviceconf.py:432
+#~ msgid "You must run system-config-services as root."
+#~ msgstr "Debe ejecutar system-config-services como root."
+
+#~ msgid "Running"
+#~ msgstr "Ejecutando"
+
+# serviceconf.gladestrings:11 serviceconf.gladestrings:48
+#~ msgid "Stopped"
+#~ msgstr "Detenido"
+
+#~ msgid "Error"
+#~ msgstr "Error"
+
+# ../servicemethods.py:318
+# ../servicemethods.py:318
+#~ msgid "%s failed. The error was: %s"
+#~ msgstr "%s falló. El error fue: %s"
+
+# ../servicemethods.py:320
+# ../servicemethods.py:320
+#~ msgid " successful"
+#~ msgstr " satisfactorio"
+
+# ../servicemethods.py:313
+# ../servicemethods.py:313
+#~ msgid "xinetd must be enabled for %s to run"
+#~ msgstr "xinetd debe estar activo para poder ejecutar %s"
+
+# ../servicemethods.py:307
+# ../servicemethods.py:307
+#~ msgid "xinetd failed to reload for "
+#~ msgstr "xinetd falló su recarga por "
+
+# ../servicemethods.py:308
+# ../servicemethods.py:308
+#~ msgid ". The error was: "
+#~ msgstr ". El error fue: "
+
+# ../servicemethods.py:310
+# ../servicemethods.py:310
+#~ msgid "xinetd reloaded %s successfully"
+#~ msgstr "recarga de xinetd para %s satisfactoria"
