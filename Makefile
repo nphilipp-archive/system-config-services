@@ -61,9 +61,10 @@ install:	all doc-install
 	install -m 0644 pixmaps/*.png $(DESTDIR)$(PKGDATADIR)
 	install -m 0644 pixmaps/$(PKGNAME).png $(DESTDIR)/usr/share/icons/hicolor/48x48/apps
 	install -m 0644 man/$(PKGNAME).8 $(DESTDIR)$(MANDIR)/man8
-	for file in asynccmd.py config.py gui.py serviceherders.py servicesinfo.py services.py util.py; do \
+	for file in asynccmd.py config.py serviceherders.py servicesinfo.py services.py util.py; do \
 		install -m 0644 "src/$$file" "$(DESTDIR)$(PKGDATADIR)/$$file"; \
 	done
+	install -m 0755 src/gui.py "$(DESTDIR)$(PKGDATADIR)/gui.py"
 	install -m 0644 src/$(PKGNAME).glade $(DESTDIR)$(GLADEDIR)
 	install -m 0644 $(PKGNAME).desktop $(DESTDIR)$(DATADIR)/applications/$(PKGNAME).desktop
 

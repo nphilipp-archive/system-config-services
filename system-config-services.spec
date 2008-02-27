@@ -16,7 +16,7 @@
 
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.99.0
+Version: 0.99.1
 Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/SystemConfig/services
 # We are upstream, thus the source is only available from within this source
@@ -106,6 +106,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Wed Feb 26 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.1-1
+- make gui.py executable (#435068)
+
 * Fri Feb 22 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.0-1
 - make start/stop/restart/enable/disable buttons/menu entries work
 - SysVService: SVC_ENABLED_YES <-> RL 2, 3, 4, 5; everything else is
