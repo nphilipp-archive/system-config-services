@@ -16,7 +16,7 @@
 
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.99.1
+Version: 0.99.2
 Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/SystemConfig/services
 # We are upstream, thus the source is only available from within this source
@@ -106,6 +106,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Wed Feb 26 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.2-1
+- import missing os.path (#435068)
+
 * Wed Feb 26 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.1-1
 - make gui.py executable (#435068)
 

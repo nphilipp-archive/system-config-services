@@ -22,6 +22,7 @@
 
 import config
 
+import os.path
 import gobject
 import gamin
 import gtk
