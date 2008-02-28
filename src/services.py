@@ -30,6 +30,7 @@ from util import getstatusoutput
 from asynccmd import *
 
 from servicesinfo import *
+import serviceherders
 
 SVC_STATUS_REFRESHING = 0
 SVC_STATUS_UNKNOWN = 1
@@ -51,28 +52,42 @@ class InvalidServiceException (Exception):
 
 class Service (object):
     """Represents an abstract service."""
-    def __init__ (self, name, mon):
+    def __init__ (self, name, mon, herder):
         super (Service, self).__init__ ()
         self.name = name
         self.mon = mon
+        self.herder = herder
         self._asynccmdqueue = AsyncCmdQueue ()
         self.conf_updates_running = 0
 
     def __repr__ (self):
         return '<%s.%s object at %s: "%s">' % (self.__class__.__module__, self.__class__.__name__, hex (id (self)), self.name)
 
+    def notify_herder (self, change):
+        """Notify the herder of a change."""
+        if self.herder:
+            self.herder.notify (change, self)
+
     def load (self):
         """Load configuration from disk synchronously."""
         mainloop = gobject.MainLoop ()
-        self.async_load (self._load_ready, mainloop)
+        self._async_load (self._sync_load_finished, mainloop)
         mainloop.run ()
 
-    def _load_ready (self, mainloop, __exception__ = None):
+    def _sync_load_finished (self, mainloop, __exception__ = None):
         mainloop.quit ()
         if __exception__ == None:
             self.valid = True
         else:
             self.valid = False
+
+    def async_load (self):
+        """Load configuration from disk asynchronously, notify herder on completion."""
+        self.notify_herder (serviceherders.SVC_CONF_UPDATING)
+        return self._async_load (self._async_load_finished)
+
+    def _async_load_finished (self, __exception__ = None):
+        self.notify_herder (serviceherders.SVC_CONF_CHANGED)
 
     def _async_load_ready (self, cmd, callback, *p, **k):
         try:
@@ -82,7 +97,7 @@ class Service (object):
         self.conf_updates_running -= 1
         callback (*p, **k)
 
-    def async_load (self, callback, *p, **k):
+    def _async_load (self, callback, *p, **k):
         """Load configuration from disk asynchronously."""
         raise NotImplementedError
 
@@ -128,8 +143,8 @@ class SysVService (ChkconfigService):
 
     _fallback_default_runlevels = set ((2, 3, 4, 5))
 
-    def __init__ (self, name, mon):
-        super (SysVService, self).__init__ (name, mon)
+    def __init__ (self, name, mon, herder):
+        super (SysVService, self).__init__ (name, mon, herder)
 
         try:
             self.info = SysVServiceInfo (name)
@@ -148,7 +163,7 @@ class SysVService (ChkconfigService):
 
         #self.load ()
 
-    def async_load (self, callback, *p, **k):
+    def _async_load (self, callback, *p, **k):
         """Load configuration from disk asynchronously."""
         p = (callback, ) + p
         self._asynccmdqueue.queue ('env LC_ALL=C /sbin/chkconfig --list "%s"' % self.name, combined_stdout = True, ready_cb = self._async_load_ready, ready_args = p, ready_kwargs = k)
@@ -198,6 +213,9 @@ class SysVService (ChkconfigService):
 
         self.runlevels_ondisk = copy.copy (self.runlevels)
         self.configured = True
+
+    def _async_status_update_finished (self):
+        self.notify_herder (SVC_STATUS_CHANGED)
 
     def async_status_update (self, callback, *p, **k):
         """Determine service status asynchronously."""
@@ -273,8 +291,8 @@ class XinetdService (ChkconfigService):
 
     xinetd_list_re = re.compile (r'^(?P<name>\S+)\s+(?P<enabled>off|on)\s*$')
 
-    def __init__ (self, name, mon):
-        super (XinetdService, self).__init__ (name, mon)
+    def __init__ (self, name, mon, herder):
+        super (XinetdService, self).__init__ (name, mon, herder)
 
         try:
             self.info = XinetdServiceInfo (name)
@@ -286,7 +304,7 @@ class XinetdService (ChkconfigService):
 
         self.load ()
 
-    def async_load (self, callback, *p, **k):
+    def _async_load (self, callback, *p, **k):
         """Load configuration from disk asynchronously."""
 
         p = (callback, ) + p
