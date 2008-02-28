@@ -25,6 +25,7 @@ import copy
 import re
 import time
 import gobject
+import gamin
 
 from util import getstatusoutput
 from asynccmd import *
@@ -161,6 +162,8 @@ class SysVService (ChkconfigService):
 
         self.valid = False
 
+        self.mon.watch_file ("/var/lock/subsys/%s" % self.name, self._var_lock_subsys_changed)
+
         #self.load ()
 
     def _async_load (self, callback, *p, **k):
@@ -214,11 +217,18 @@ class SysVService (ChkconfigService):
         self.runlevels_ondisk = copy.copy (self.runlevels)
         self.configured = True
 
-    def _async_status_update_finished (self):
-        self.notify_herder (SVC_STATUS_CHANGED)
+    def _var_lock_subsys_changed (self, path, action, *p):
+        if action != gamin.GAMEndExist:
+            self.async_status_update ()
 
-    def async_status_update (self, callback, *p, **k):
+    def async_status_update (self):
         """Determine service status asynchronously."""
+        return self._async_status_update (self._async_status_update_finished)
+
+    def _async_status_update_finished (self):
+        self.notify_herder (serviceherders.SVC_STATUS_CHANGED)
+
+    def _async_status_update (self, callback, *p, **k):
         p = (callback, ) + p
         self._asynccmdqueue.queue ('env LC_ALL=C /sbin/service \"%s\" status' % self.name, combined_stdout = True, ready_cb = self._status_update_ready, ready_args = p, ready_kwargs = k)
         self.status_updates_running += 1
