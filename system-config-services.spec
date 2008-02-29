@@ -38,9 +38,13 @@ BuildRequires: rarian-compat
 %else
 BuildRequires: scrollkeeper
 %endif
-Requires: /sbin/chkconfig
+Requires: chkconfig
+Requires: gamin-python
+Requires: hicolor-icon-theme
+Requires: initscripts
 Requires: pygtk2
 Requires: pygtk2-libglade
+Requires: python >= 2.3.0
 Requires: rhpl
 %if %{with console_util}
 Requires: usermode >= 1.94
@@ -48,8 +52,6 @@ Requires: usermode >= 1.94
 Requires: usermode >= 1.36
 %endif
 Requires: usermode-gtk
-Requires: python >= 2.3.0
-Requires: hicolor-icon-theme
 Obsoletes: serviceconf <= 0.8.1
 Obsoletes: redhat-config-services <= 0.8.5
 
@@ -106,10 +108,13 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
-* Wed Feb 26 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.2-1
+* Fri Feb 26 2008 Nils Philippsen <nphilipp@redhat.com>
+- add gamin-python requirement (#435068)
+
+* Wed Feb 27 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.2-1
 - import missing os.path (#435068)
 
-* Wed Feb 26 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.1-1
+* Wed Feb 27 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.1-1
 - make gui.py executable (#435068)
 
 * Fri Feb 22 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.0-1
