@@ -108,7 +108,7 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
-* Fri Feb 26 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.3-1
+* Fri Feb 29 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.3-1
 - add gamin-python requirement (#435068)
 - monitor /proc/<pid> for services with known pidfile(s)
 
