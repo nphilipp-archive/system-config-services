@@ -162,9 +162,18 @@ class SysVService (ChkconfigService):
 
         self.valid = False
 
-        self.mon.watch_file ("/var/lock/subsys/%s" % self.name, self._var_lock_subsys_changed)
+        self._status_asynccmdqueue = AsyncCmdQueue ()
 
-        #self.load ()
+        if self.info.pidfiles:
+            self.pidfiles = set (self.info.pidfiles)
+            self.pids = set ()
+            self.pids_pidfiles = {}
+
+            for file in self.info.pidfiles:
+                self.mon.watch_file (file, self._pidfile_changed)
+        else:
+            # no pidfile(s), watch /var/lock/subsys/...
+            self.mon.watch_file ("/var/lock/subsys/%s" % self.name, self._var_lock_subsys_changed)
 
     def _async_load (self, callback, *p, **k):
         """Load configuration from disk asynchronously."""
@@ -221,6 +230,56 @@ class SysVService (ChkconfigService):
         if action != gamin.GAMEndExist:
             self.async_status_update ()
 
+    def _pidfile_changed (self, path, action, *p):
+        if action in (gamin.GAMCreated, gamin.GAMChanged, gamin.GAMExists):
+            self._watch_pidfile (path)
+        elif action == gamin.GAMDeleted:
+            self._unwatch_pidfile (path)
+
+    def _watch_pidfile (self, path):
+        self._unwatch_pidfile (path)
+        try:
+            pidfile = open (path, "r")
+        except IOError:
+            return
+
+        for line in pidfile:
+            for _pid in line.split ():
+                try:
+                    pid = int (_pid)
+                    self._watch_pid (pid, path)
+                except ValueError:
+                    pass
+
+        pidfile.close ()
+
+    def _unwatch_pidfile (self, path):
+        unwatch_pids = set ()
+        for pid in self.pids:
+            if path in self.pids_pidfiles[pid]:
+                unwatch_pids.add (pid)
+        for pid in unwatch_pids:
+            self._unwatch_pid (pid, path)
+
+    def _proc_pid_changed (self, path, action, *p):
+        if action != gamin.GAMEndExist:
+            self.async_status_update ()
+        
+    def _watch_pid (self, pid, pidfile):
+        if pid not in self.pids:
+            self.pids.add (pid)
+            self.mon.watch_file ("/proc/%d" % pid, self._proc_pid_changed)
+        if not self.pids_pidfiles.has_key (pid):
+            self.pids_pidfiles[pid] = set ()
+        self.pids_pidfiles[pid].add (pidfile)
+
+    def _unwatch_pid (self, pid, pidfile):
+        self.pids_pidfiles[pid].discard (pidfile)
+        if len (self.pids_pidfiles[pid]) == 0:
+            del self.pids_pidfiles[pid]
+            self.pids.discard (pid)
+            self.mon.stop_watch ("/proc/%d" % pid)
+
     def async_status_update (self):
         """Determine service status asynchronously."""
         return self._async_status_update (self._async_status_update_finished)
@@ -230,7 +289,7 @@ class SysVService (ChkconfigService):
 
     def _async_status_update (self, callback, *p, **k):
         p = (callback, ) + p
-        self._asynccmdqueue.queue ('env LC_ALL=C /sbin/service \"%s\" status' % self.name, combined_stdout = True, ready_cb = self._status_update_ready, ready_args = p, ready_kwargs = k)
+        self._status_asynccmdqueue.queue ('env LC_ALL=C /sbin/service \"%s\" status' % self.name, combined_stdout = True, ready_cb = self._status_update_ready, ready_args = p, ready_kwargs = k)
         self.status_updates_running += 1
         self.status = SVC_STATUS_REFRESHING
 
