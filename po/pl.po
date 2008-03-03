@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-03 18:49+0100\n"
-"PO-Revision-Date: 2008-02-22 21:36+0200\n"
+"PO-Revision-Date: 2008-03-03 22:02+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -83,6 +83,8 @@ msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
+"Nie można znaleźć przeglądarki pomocy. Aby zobaczyć pomoc, zainstaluj pakiet "
+"\"yelp\"." 
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -284,7 +286,7 @@ msgstr "_Usługa"
 #: ../src/system-config-services.glade:113
 #: ../src/system-config-services.glade:365
 msgid "_Customize"
-msgstr ""
+msgstr "_Dostosuj"
 
 #: ../src/system-config-services.glade:206
 #: ../src/system-config-services.glade:412
@@ -389,11 +391,11 @@ msgstr ""
 
 #: ../src/system-config-services.glade:1354
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr ""
+msgstr "Włącz usługę <b>%(service)s</b> na tych poziomach uruchamiania:"
 
 #: ../src/system-config-services.glade:1380
 msgid "Runlevel _2"
-msgstr ""
+msgstr "Poziom uruchamiania _2"
 
 #: ../src/system-config-services.glade:1399
 msgid "Runlevel _3"
@@ -418,97 +420,3 @@ msgstr "Zarządzanie usługami"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Usługi"
-
-#~ msgid "None"
-#~ msgstr "Brak"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Okno dialogowe zapisu"
-
-#~ msgid "Don't Save"
-#~ msgstr "Nie zapisuj"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Do bieżącego poziomu uruchamiania wprowadzono zmiany.\n"
-#~ "Czy chcesz je zapisać?"
-
-#~ msgid "Add Service"
-#~ msgstr "Dodaj usługę"
-
-#~ msgid "Service Name: "
-#~ msgstr "Nazwa usługi: "
-
-#~ msgid "_File"
-#~ msgstr "_Plik"
-
-#~ msgid "_Save Changes"
-#~ msgstr "Zapi_sz zmiany"
-
-#~ msgid "Revert To _Last Save"
-#~ msgstr "P_rzywróć do ostatniego zapisu"
-
-#~ msgid "_Quit"
-#~ msgstr "Za_kończ"
-
-#~ msgid "_View"
-#~ msgstr "_Widok"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "_Odśwież listę usług"
-
-#~ msgid "_Actions"
-#~ msgstr "Oper_acje"
-
-#~ msgid "Delete Service"
-#~ msgstr "Usuń usługę"
-
-#~ msgid "_Start Service"
-#~ msgstr "Uruchom u_sługę"
-
-#~ msgid "S_top Service"
-#~ msgstr "Za_trzymaj usługę"
-
-#~ msgid "_Restart Service"
-#~ msgstr "U_ruchom ponownie usługę"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "_Edytuj poziom uruchamiania"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "Wszystkie p_oziomy uruchamiania"
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Te usługi są uruchamiane jednorazowo i działają w tle. Można określić, na "
-#~ "jakich poziomach uruchamiania moją być używane."
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "Bieżący poziom uruchamiania: "
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "Modyfikowanie poziomu uruchamiania:"
-
-#~ msgid "Status"
-#~ msgstr "Stan"
-
-#~ msgid "_Background Services"
-#~ msgstr "Usługi w _tle"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "Te usługi są uruchamiane na żądanie i kończą działanie, gdy nie mają nic "
-#~ "do zrobienia. Usługa <b>xinetd</b> musi być uruchomiona, aby można je "
-#~ "było użyć."
-
-#~ msgid "_On Demand Services"
-#~ msgstr "_Usługi na żądanie"
-
-#~ msgid "Show _Information"
-#~ msgstr "Wyświetl _informacje"
