@@ -362,6 +362,7 @@
 	  <child>
 	    <widget class="GtkToolButton" id="serviceCustomizeButton">
 	      <property name="visible">True</property>
+	      <property name="tooltip" translatable="yes">Customize the runlevels in which a service is enabled.</property>
 	      <property name="label" translatable="yes">_Customize</property>
 	      <property name="use_underline">True</property>
 	      <property name="stock_id">gtk-preferences</property>
@@ -1294,7 +1295,7 @@ You should have received a copy of the GNU General Public License along with thi
 </widget>
 
 <widget class="GtkDialog" id="serviceRunlevelsDialog">
-  <property name="title">Customize Runlevels</property>
+  <property name="title" translatable="yes">Customize Runlevels</property>
   <property name="type">GTK_WINDOW_TOPLEVEL</property>
   <property name="window_position">GTK_WIN_POS_NONE</property>
   <property name="modal">False</property>
@@ -1310,26 +1311,39 @@ You should have received a copy of the GNU General Public License along with thi
   <property name="has_separator">True</property>
 
   <child internal-child="vbox">
-    <widget class="GtkVBox" id="dialog-vbox2">
+    <widget class="GtkVBox" id="dialog-vbox3">
       <property name="visible">True</property>
       <property name="homogeneous">False</property>
       <property name="spacing">0</property>
 
       <child internal-child="action_area">
-	<widget class="GtkHButtonBox" id="dialog-action_area2">
+	<widget class="GtkHButtonBox" id="dialog-action_area3">
 	  <property name="visible">True</property>
 	  <property name="layout_style">GTK_BUTTONBOX_END</property>
 
 	  <child>
-	    <widget class="GtkButton" id="closebutton2">
+	    <widget class="GtkButton" id="cancelbutton1">
 	      <property name="visible">True</property>
 	      <property name="can_default">True</property>
 	      <property name="can_focus">True</property>
-	      <property name="label">gtk-close</property>
+	      <property name="label">gtk-cancel</property>
 	      <property name="use_stock">True</property>
 	      <property name="relief">GTK_RELIEF_NORMAL</property>
 	      <property name="focus_on_click">True</property>
-	      <property name="response_id">-7</property>
+	      <property name="response_id">-6</property>
+	    </widget>
+	  </child>
+
+	  <child>
+	    <widget class="GtkButton" id="okbutton1">
+	      <property name="visible">True</property>
+	      <property name="can_default">True</property>
+	      <property name="can_focus">True</property>
+	      <property name="label">gtk-ok</property>
+	      <property name="use_stock">True</property>
+	      <property name="relief">GTK_RELIEF_NORMAL</property>
+	      <property name="focus_on_click">True</property>
+	      <property name="response_id">-5</property>
 	    </widget>
 	  </child>
 	</widget>

@@ -214,7 +214,7 @@ class SysVService (ChkconfigService):
 
         for i in xrange (0, 7):
             if (i in self.runlevels) != (i in self.runlevels_ondisk):
-                runlevel_changes[(i in self.runlevels) and 'on' or 'off'].append (i)
+                runlevel_changes[(i in self.runlevels) and 'on' or 'off'].append (str (i))
 
         for what in ('on', 'off'):
             if not len (runlevel_changes[what]):

@@ -513,10 +513,57 @@ class GUIServicesList (GladeUser):
 
 ##############################################################################
 
+class ServiceRunlevelDialog (GladeUser):
+    _xml_widgets = (
+            'serviceRunlevelsDialog',
+            'serviceRunlevelsExplanationLabel',
+            'serviceRunlevel2Button',
+            'serviceRunlevel3Button',
+            'serviceRunlevel4Button',
+            'serviceRunlevel5Button',
+            )
+
+    def __init__ (self, xml, main_window, service):
+        super (ServiceRunlevelDialog, self).__init__ (xml)
+        self.service = service
+
+        self.runlevel_checkboxes = {
+                2: self.serviceRunlevel2Button,
+                3: self.serviceRunlevel3Button,
+                4: self.serviceRunlevel4Button,
+                5: self.serviceRunlevel5Button
+                }
+
+        self.serviceRunlevelsDialog.set_transient_for (main_window)
+
+        self.serviceRunlevelsExplanationLabel.set_markup (_("Enable the <b>%(service)s</b> service in these runlevels:") % {'service': service.name})
+
+        for i in xrange (2, 6):
+            cb = self.runlevel_checkboxes[i]
+            if i in service.runlevels:
+                cb.set_active (True)
+            else:
+                cb.set_active (False)
+
+    def run (self):
+        response = self.serviceRunlevelsDialog.run ()
+        if response == gtk.RESPONSE_OK:
+            enabled_runlevels = set ()
+            for i in xrange (2, 6):
+                cb = self.runlevel_checkboxes[i]
+                if cb.get_active ():
+                    enabled_runlevels.add (i)
+            self.service.runlevels = enabled_runlevels
+            self.service.save ()
+        self.serviceRunlevelsDialog.destroy ()
+
+##############################################################################
+
 class MainWindow (GladeUser):
     _xml_widgets = (
-            'serviceEnableButton',
-            'serviceEnable_popupMenu',
+            #'serviceEnableButton',
+            #'serviceEnable_popupMenu',
+            'serviceRunlevelsDialog',
             'helpContents',
             'helpContentsButton',
             'servicesDetailsNotebook',
@@ -524,13 +571,15 @@ class MainWindow (GladeUser):
             )
 
     def __init__ (self, serviceherders):
-        try:
-            xml = gtk.glade.XML ("system-config-services.glade",
-                                 domain = config.domain)
-        except RuntimeError:
-            xml = gtk.glade.XML (os.path.join (config.datadir,
-                                 "system-config-services.glade"),
-                                 domain = config.domain)
+        if os.access ("system-config-services.glade", os.R_OK):
+            fd = open ("system-config-services.glade", "r")
+        else:
+            fd = open (os.path.join (config.datadir, "system-config-services.glade"), "r")
+
+        self.xmlbuf = fd.read ()
+        fd.close ()
+
+        xml = gtk.glade.xml_new_from_buffer (self.xmlbuf, len (self.xmlbuf), domain = config.domain)
 
         super (MainWindow, self).__init__ (xml)
 
@@ -562,13 +611,19 @@ class MainWindow (GladeUser):
         if service:
             service.enable ()
 
-    def on_serviceEnable_show_menu (self, *args):
-        print "MainWindow.on_serviceEnable_show_menu (%s)" % ', '.join (map (lambda x: str(x), args))
+    #def on_serviceEnable_show_menu (self, *args):
+    #    print "MainWindow.on_serviceEnable_show_menu (%s)" % ', '.join (map (lambda x: str(x), args))
 
     def on_serviceDisable_activate (self, *args):
         service = self.servicesList.current_service
         if service:
             service.disable ()
+
+    def on_serviceCustomize_activate (self, *args):
+        service = self.servicesList.current_service
+        if service:
+            xml = gtk.glade.xml_new_from_buffer (self.xmlbuf, len (self.xmlbuf), domain = config.domain)
+            ServiceRunlevelDialog (xml, self.toplevel, service).run ()
 
     def on_serviceStart_activate (self, *args):
         service = self.servicesList.current_service
