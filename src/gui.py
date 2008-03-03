@@ -357,16 +357,18 @@ class GUIServicesList (GladeUser):
     _service_xml_widgets = (
             'serviceEnable',
             'serviceDisable',
+            'serviceCustomize',
             'serviceStart',
             'serviceStop',
             'serviceRestart',
-            'serviceInformation',
+            #'serviceInformation',
             'serviceEnableButton',
             'serviceDisableButton',
+            'serviceCustomizeButton',
             'serviceStartButton',
             'serviceStopButton',
             'serviceRestartButton',
-            'serviceInformationButton',
+            #'serviceInformationButton',
             )
 
     _xml_widgets = _service_xml_widgets + (
@@ -436,9 +438,11 @@ class GUIServicesList (GladeUser):
                 sensitive = (is_enabled != SVC_ENABLED_YES)
             elif wname == 'serviceDisable':
                 sensitive = (is_enabled != SVC_ENABLED_NO)
-        elif wname in ('serviceStart', 'serviceStop', 'serviceRestart'):
+        elif wname in ('serviceCustomize', 'serviceStart', 'serviceStop', 'serviceRestart'):
             if isinstance (service, services.SysVService):
-                if service.status == SVC_STATUS_REFRESHING:
+                if wname == 'serviceCustomize':
+                    sensitive = True
+                elif service.status == SVC_STATUS_REFRESHING:
                     sensitive = False
                 elif wname == 'serviceStart':
                     sensitive = (service.status != SVC_STATUS_RUNNING)
@@ -536,7 +540,7 @@ class MainWindow (GladeUser):
         self.toplevel.connect ('delete_event', gtk.main_quit)
 
         # enable service popup menu
-        self.serviceEnableButton.set_menu (self.serviceEnable_popupMenu)
+        #self.serviceEnableButton.set_menu (self.serviceEnable_popupMenu)
 
         # the tabs are visible in the glade file to improve maintainability ...
         # ... so we hide them
@@ -547,6 +551,8 @@ class MainWindow (GladeUser):
 
         # connect defined signals with callback methods
         xml.signal_autoconnect (self)
+
+    ### Callbacks
 
     def on_programQuit_activate (self, *args):
         gtk.main_quit ()
