@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-22 01:29-0700\n"
+"POT-Creation-Date: 2008-03-03 18:49+0100\n"
 "PO-Revision-Date: 2008-03-03 06:34+0100\n"
 "Last-Translator: Miloslav Trmač <mitr@volny.cz>\n"
 "Language-Team: Czech\n"
@@ -16,265 +16,374 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../src/serviceconf.py:77
-#, python-format
-msgid "Are you sure you want to delete the %s?"
-msgstr "Jste si jisti, že chcete odstranit %s?"
-
-#: ../src/serviceconf.py:140
-#, python-format
-msgid "Runlevel %d"
-msgstr "Runlevel %d"
-
-#. initialize this to the runlevel we are running in. It will
-#. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:281
-msgid "Currently Running in Runlevel: "
-msgstr "Momentálně je systém v runlevelu: "
-
-#: ../src/serviceconf.py:377 ../src/serviceconf.py:480
-msgid "Editing Runlevel: "
-msgstr "Úprava runlevelu: "
-
-#: ../src/serviceconf.py:419 ../src/servicemethods.py:57
-msgid "Unknown"
-msgstr "Neznámý"
-
-#: ../src/serviceconf.py:509
-msgid "All"
-msgstr "Všechny"
-
-#: ../src/serviceconf.py:543
-msgid ""
-"System Services Configuration Tool VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
-" "
+#: ../src/gui.py:109
+msgid "Name"
 msgstr ""
-"Nástroj pro nastavení služeb systému VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
-" "
 
-#: ../src/serviceconf.py:547
-msgid "About"
-msgstr "O aplikaci"
+#: ../src/gui.py:110
+msgid "Remarks"
+msgstr ""
 
-#: ../src/serviceconf.py:580
+#: ../src/gui.py:168
+msgid "This service is being refreshed right now."
+msgstr ""
+
+#: ../src/gui.py:169
+msgid "This service is enabled."
+msgstr ""
+
+#: ../src/gui.py:170
+msgid "This service is disabled."
+msgstr ""
+
+#: ../src/gui.py:171
+#, python-format
+msgid "This service is enabled in runlevels: %(runlevels)s"
+msgstr ""
+
+#: ../src/gui.py:185
+msgid "The status of this service is unknown."
+msgstr ""
+
+#: ../src/gui.py:186
+msgid "This service is stopped."
+msgstr ""
+
+#: ../src/gui.py:187
+msgid "This service is running."
+msgstr ""
+
+#: ../src/gui.py:188
+msgid "This service is dead."
+msgstr ""
+
+#: ../src/gui.py:261
+#, python-format
 msgid ""
-"The help viewer could not be found. To be able to view help you need to "
-"install the 'yelp' package."
-msgstr "Prohlížeč nápovědy nelze najít. Abyste mohli zobrazit nápovědu, musíte nainstalovat balíček 'yelp'."
+"The <b>%(servicename)s</b> service is started once, usually when the system "
+"is booted, runs in the background and wakes up when needed."
+msgstr ""
 
-#: ../src/serviceconf.py:719
-msgid "You must run system-config-services as root."
-msgstr "Nástroj system-config-services musíte spustit jako root."
+#: ../src/gui.py:275
+msgid "This service is updated currently."
+msgstr ""
 
-#: ../src/servicemethods.py:58
-msgid "Running"
-msgstr "Běží"
-
-#: ../src/servicemethods.py:59
-msgid "Stopped"
-msgstr "Zastaveno"
-
-#: ../src/servicemethods.py:60
-msgid "Error"
-msgstr "Chyba"
-
-#: ../src/servicemethods.py:283
+#: ../src/gui.py:301
 #, python-format
-msgid "%s failed. The error was: %s"
-msgstr "%s selhalo. Chyba byla: %s"
+msgid ""
+"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
+"service and ends when it has got nothing more to do."
+msgstr ""
 
-#: ../src/servicemethods.py:290
-msgid " successful"
-msgstr " úspěšný"
+#: ../src/gui.py:598
+msgid ""
+"The help viewer could not be found. To be able to view help, the 'yelp' "
+"package needs to be installed."
+msgstr ""
 
-#: ../src/servicemethods.py:419 ../src/servicemethods.py:430
+#: ../src/servicecontrol.py:88
 #, python-format
-msgid "xinetd must be enabled for %s to run"
-msgstr "Pro běh %s musí být povolen xinetd"
+msgid "Service %s not found!"
+msgstr ""
 
-#: ../src/servicemethods.py:424
-msgid "xinetd failed to reload for "
-msgstr "Selhalo opětovné načtení xinetd pro "
-
-#: ../src/servicemethods.py:426
-msgid ". The error was: "
-msgstr ". Chyba byla: "
-
-#: ../src/servicemethods.py:428
+#: ../src/servicecontrol.py:94
 #, python-format
-msgid "xinetd reloaded %s successfully"
-msgstr "xinetd úspěšně opětovně načetl %s"
+msgid "Service %s is running with old config"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:1
-msgid "Add Service"
-msgstr "_Přidat službu"
+#: ../src/servicecontrol.py:97
+#, python-format
+msgid "Service %s is running"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:2
-msgid "Current Active Runlevel: "
-msgstr "Právě aktivní runlevel: "
+#: ../src/servicecontrol.py:100
+#, python-format
+msgid "Service %s resports an error"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:3
-msgid "Delete Service"
-msgstr "_Odstranit službu"
+#: ../src/servicecontrol.py:103
+#, python-format
+msgid "Service %s is stopped"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:4
-msgid "Description"
-msgstr "Popis"
+#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
+#, python-format
+msgid "Currently enabled in runlevels %s"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:5
-msgid "Don't Save"
-msgstr "Neukládat"
+#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
+#, python-format
+msgid "Enable %(name)s in runlevels %(levels)s"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:6
-msgid "Editing Runlevel:"
-msgstr "Úprava runlevelu:"
+#: ../src/servicetab.glade:8
+msgid "window1"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:7
-msgid "None"
-msgstr "Žádný"
+#: ../src/servicetab.glade:38
+msgid "Service %s"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:8
-msgid "Restart"
-msgstr "Restartovat"
+#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
+#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
+msgid "Enable"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:9
-msgid "Revert To _Last Save"
-msgstr "Vrátit se k _poslednímu uloženému stavu"
+#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
+#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
+msgid "Disable"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:10
-msgid "Runlevel _3"
-msgstr "Runlevel _3"
+#: ../src/servicetab.glade:89
+msgid "Customize"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:11
-msgid "Runlevel _4"
-msgstr "Runlevel _4"
+#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
+msgid "Enable Default"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:12
-msgid "Runlevel _5"
-msgstr "Runlevel _5"
+#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
+#: ../src/system-config-services.glade:134
+#: ../src/system-config-services.glade:1258
+msgid "Runlevel 2"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:13
-msgid "Runlevel _All"
-msgstr "_Všechny runlevely"
+#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
+#: ../src/system-config-services.glade:144
+#: ../src/system-config-services.glade:1268
+msgid "Runlevel 3"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:14
-msgid "S_top Service"
-msgstr "_Zastavit službu"
+#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
+#: ../src/system-config-services.glade:154
+#: ../src/system-config-services.glade:1278
+msgid "Runlevel 4"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:15
-msgid "Save Dialog"
-msgstr "Ukládací dialog"
+#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
+#: ../src/system-config-services.glade:164
+#: ../src/system-config-services.glade:1288
+msgid "Runlevel 5"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:16
-msgid "Service Configuration"
-msgstr "Nastavení služeb"
+#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
+msgid "Enable All"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:17
-msgid "Service Name: "
-msgstr "Jméno služby"
+#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
+msgid "Disable All"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:18
+#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
+#: ../src/servicetab.glade:2135
 msgid "Start"
 msgstr "Spustit"
 
-#: ../src/serviceconf.glade.h:19
-msgid "Status"
-msgstr "Stav"
+#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
+#: ../src/servicetab.glade:2156
+msgid "Restart"
+msgstr "Restartovat"
 
-#: ../src/serviceconf.glade.h:20
+#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
+#: ../src/servicetab.glade:1922
+msgid "Configure"
+msgstr ""
+
+#: ../src/servicetab.glade:394
+msgid "foobar"
+msgstr ""
+
+#: ../src/servicetab.glade:412
+msgid "barfoo"
+msgstr ""
+
+#: ../src/servicetab.glade:521
+msgid "Current runlevel is %s"
+msgstr ""
+
+#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
+msgid "Runlevels"
+msgstr ""
+
+#: ../src/servicetab.glade:807
+msgid "label18"
+msgstr ""
+
+#: ../src/servicetab.glade:940
+msgid "Start "
+msgstr ""
+
+#: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
 msgid "Stop"
 msgstr "Zastavit"
 
-#: ../src/serviceconf.glade.h:21
-msgid ""
-"These services are started on demand and end when there is nothing more to "
-"do. The <b>xinetd</b> service must be running so that they can be used."
+#: ../src/servicetab.glade:1066
+msgid "Service control"
 msgstr ""
-"Služby jsou spouštěny příchodem požadavku a ukončí se, když obsluha "
-"požadavku skončí. Tyto služby jsou spouštěny síťovým superserverm <b>xinetd</"
-"b>, který musí být trvale spuštěn."
 
-#: ../src/serviceconf.glade.h:22
-msgid ""
-"These services are started once and run in the background. You can specify "
-"in which runlevels they are started."
+#: ../src/servicetab.glade:1148
+msgid "Status output"
 msgstr ""
-"Tyto služby jsou spouštěny na pozadí a trvale běží. Můžete nastavit, ve "
-"kterých runlevelech budou spuštěny."
 
-#: ../src/serviceconf.glade.h:23
-msgid ""
-"You have made changes to the current runlevel.\n"
-"Do you want to save the changes?"
+#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:184
+#: ../src/system-config-services.glade:395
+msgid "_Start"
 msgstr ""
-"V aktuálním runlevelu jste provedli změny.\n"
-"Chcete své změny uložit?"
 
-#: ../src/serviceconf.glade.h:25
-msgid "_Actions"
-msgstr "_Akce"
+#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:228
+#: ../src/system-config-services.glade:429
+msgid "_Restart"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:26
-msgid "_Background Services"
-msgstr "Služby na _pozadí"
+#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
+#: ../src/system-config-services.glade:331
+msgid "_Enable"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:27
-msgid "_Contents"
-msgstr "_Obsah"
+#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
+#: ../src/system-config-services.glade:348
+msgid "_Disable"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:28
-msgid "_Edit Runlevel"
-msgstr "_Upravit runlevel"
+#: ../src/servicetab.glade:1613
+msgid "_Configure"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:29
-msgid "_File"
-msgstr "_Soubor"
+#: ../src/servicetab.glade:1653
+msgid "Button Box"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:30
+#: ../src/servicetab.glade:1730
+msgid "label16"
+msgstr ""
+
+#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
+msgid "Service %s:"
+msgstr ""
+
+#: ../src/servicetab.glade:1991
+msgid "Customize Runlevels"
+msgstr ""
+
+#: ../src/system-config-services.glade:7
+#: ../src/system-config-services.glade:1240
+msgid "Service Configuration"
+msgstr "Nastavení služeb"
+
+#: ../src/system-config-services.glade:38
+msgid "_Program"
+msgstr ""
+
+#: ../src/system-config-services.glade:60
+msgid "Ser_vice"
+msgstr ""
+
+#: ../src/system-config-services.glade:113
+#: ../src/system-config-services.glade:365
+msgid "_Customize"
+msgstr ""
+
+#: ../src/system-config-services.glade:206
+#: ../src/system-config-services.glade:412
+msgid "S_top"
+msgstr ""
+
+#: ../src/system-config-services.glade:254
 msgid "_Help"
 msgstr "_Nápověda"
 
-#: ../src/serviceconf.glade.h:31
-msgid "_On Demand Services"
-msgstr "Služby _dle potřeby"
+#: ../src/system-config-services.glade:263
+msgid "_Contents"
+msgstr "_Obsah"
 
-#: ../src/serviceconf.glade.h:32
-msgid "_Quit"
-msgstr "_Konec"
+#: ../src/system-config-services.glade:291
+msgid "_About"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:33
-msgid "_Refresh Service List"
-msgstr "_Obnovit seznam služeb"
+#: ../src/system-config-services.glade:560
+msgid "No service selected."
+msgstr ""
 
-#: ../src/serviceconf.glade.h:34
-msgid "_Restart Service"
-msgstr "_Restartovat službu"
+#: ../src/system-config-services.glade:622
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
 
-#: ../src/serviceconf.glade.h:35
-msgid "_Save Changes"
-msgstr "_Uložit změny"
+#: ../src/system-config-services.glade:809
+#: ../src/system-config-services.glade:1008
+msgid "Description"
+msgstr "Popis"
 
-#: ../src/serviceconf.glade.h:36
-msgid "_Start Service"
-msgstr "_Spustit službu"
+#: ../src/system-config-services.glade:876
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has got nothing more to do."
+msgstr ""
 
-#: ../src/serviceconf.glade.h:37
-msgid "_View"
-msgstr "_Zobrazit"
+#: ../src/system-config-services.glade:923
+msgid "This service is {enabled|disabled}{|, but <b>xinetd</b> is stopped}."
+msgstr ""
+
+#: ../src/system-config-services.glade:1082
+msgid "Service Information"
+msgstr ""
+
+#: ../src/system-config-services.glade:1201
+msgid "Status of service %s:"
+msgstr ""
+
+#: ../src/system-config-services.glade:1238
+msgid "system-config-services"
+msgstr ""
+
+#: ../src/system-config-services.glade:1239
+msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
+msgstr ""
+
+#: ../src/system-config-services.glade:1241
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+
+#: ../src/system-config-services.glade:1248
+msgid "translator-credits"
+msgstr ""
+
+#: ../src/system-config-services.glade:1354
+msgid "Enable the <b>%(service)s</b> service in these runlevels:"
+msgstr ""
+
+#: ../src/system-config-services.glade:1380
+msgid "Runlevel _2"
+msgstr ""
+
+#: ../src/system-config-services.glade:1399
+msgid "Runlevel _3"
+msgstr "Runlevel _3"
+
+#: ../src/system-config-services.glade:1418
+msgid "Runlevel _4"
+msgstr "Runlevel _4"
+
+#: ../src/system-config-services.glade:1437
+msgid "Runlevel _5"
+msgstr "Runlevel _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -287,3 +396,171 @@ msgstr "Správa služeb"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Služby"
+
+#~ msgid "Are you sure you want to delete the %s?"
+#~ msgstr "Jste si jisti, že chcete odstranit %s?"
+
+#~ msgid "Runlevel %d"
+#~ msgstr "Runlevel %d"
+
+#~ msgid "Currently Running in Runlevel: "
+#~ msgstr "Momentálně je systém v runlevelu: "
+
+#~ msgid "Editing Runlevel: "
+#~ msgstr "Úprava runlevelu: "
+
+#~ msgid "Unknown"
+#~ msgstr "Neznámý"
+
+#~ msgid "All"
+#~ msgstr "Všechny"
+
+#~ msgid ""
+#~ "System Services Configuration Tool VERSION\n"
+#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
+#~ msgstr ""
+#~ "Nástroj pro nastavení služeb systému VERSION\n"
+#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
+
+#~ msgid "About"
+#~ msgstr "O aplikaci"
+
+#~ msgid ""
+#~ "The help viewer could not be found. To be able to view help you need to "
+#~ "install the 'yelp' package."
+#~ msgstr ""
+#~ "Prohlížeč nápovědy nelze najít. Abyste mohli zobrazit nápovědu, musíte "
+#~ "nainstalovat balíček 'yelp'."
+
+#~ msgid "You must run system-config-services as root."
+#~ msgstr "Nástroj system-config-services musíte spustit jako root."
+
+#~ msgid "Running"
+#~ msgstr "Běží"
+
+#~ msgid "Stopped"
+#~ msgstr "Zastaveno"
+
+#~ msgid "Error"
+#~ msgstr "Chyba"
+
+#~ msgid "%s failed. The error was: %s"
+#~ msgstr "%s selhalo. Chyba byla: %s"
+
+#~ msgid " successful"
+#~ msgstr " úspěšný"
+
+#~ msgid "xinetd must be enabled for %s to run"
+#~ msgstr "Pro běh %s musí být povolen xinetd"
+
+#~ msgid "xinetd failed to reload for "
+#~ msgstr "Selhalo opětovné načtení xinetd pro "
+
+#~ msgid ". The error was: "
+#~ msgstr ". Chyba byla: "
+
+#~ msgid "xinetd reloaded %s successfully"
+#~ msgstr "xinetd úspěšně opětovně načetl %s"
+
+#~ msgid "Add Service"
+#~ msgstr "_Přidat službu"
+
+#~ msgid "Current Active Runlevel: "
+#~ msgstr "Právě aktivní runlevel: "
+
+#~ msgid "Delete Service"
+#~ msgstr "_Odstranit službu"
+
+#~ msgid "Don't Save"
+#~ msgstr "Neukládat"
+
+#~ msgid "Editing Runlevel:"
+#~ msgstr "Úprava runlevelu:"
+
+#~ msgid "None"
+#~ msgstr "Žádný"
+
+#~ msgid "Revert To _Last Save"
+#~ msgstr "Vrátit se k _poslednímu uloženému stavu"
+
+#~ msgid "Runlevel _All"
+#~ msgstr "_Všechny runlevely"
+
+#~ msgid "S_top Service"
+#~ msgstr "_Zastavit službu"
+
+#~ msgid "Save Dialog"
+#~ msgstr "Ukládací dialog"
+
+#~ msgid "Service Name: "
+#~ msgstr "Jméno služby"
+
+#~ msgid "Status"
+#~ msgstr "Stav"
+
+#~ msgid ""
+#~ "These services are started on demand and end when there is nothing more "
+#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
+#~ msgstr ""
+#~ "Služby jsou spouštěny příchodem požadavku a ukončí se, když obsluha "
+#~ "požadavku skončí. Tyto služby jsou spouštěny síťovým superserverm "
+#~ "<b>xinetd</b>, který musí být trvale spuštěn."
+
+#~ msgid ""
+#~ "These services are started once and run in the background. You can "
+#~ "specify in which runlevels they are started."
+#~ msgstr ""
+#~ "Tyto služby jsou spouštěny na pozadí a trvale běží. Můžete nastavit, ve "
+#~ "kterých runlevelech budou spuštěny."
+
+#~ msgid ""
+#~ "You have made changes to the current runlevel.\n"
+#~ "Do you want to save the changes?"
+#~ msgstr ""
+#~ "V aktuálním runlevelu jste provedli změny.\n"
+#~ "Chcete své změny uložit?"
+
+#~ msgid "_Actions"
+#~ msgstr "_Akce"
+
+#~ msgid "_Background Services"
+#~ msgstr "Služby na _pozadí"
+
+#~ msgid "_Edit Runlevel"
+#~ msgstr "_Upravit runlevel"
+
+#~ msgid "_File"
+#~ msgstr "_Soubor"
+
+#~ msgid "_On Demand Services"
+#~ msgstr "Služby _dle potřeby"
+
+#~ msgid "_Quit"
+#~ msgstr "_Konec"
+
+#~ msgid "_Refresh Service List"
+#~ msgstr "_Obnovit seznam služeb"
+
+#~ msgid "_Restart Service"
+#~ msgstr "_Restartovat službu"
+
+#~ msgid "_Save Changes"
+#~ msgstr "_Uložit změny"
+
+#~ msgid "_Start Service"
+#~ msgstr "_Spustit službu"
+
+#~ msgid "_View"
+#~ msgstr "_Zobrazit"
