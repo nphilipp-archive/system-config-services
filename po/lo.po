@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: redhat-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-03 18:49+0100\n"
+"POT-Creation-Date: 2008-03-03 22:34+0100\n"
 "PO-Revision-Date: 2004-04-06 14:50-0400\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -74,7 +74,12 @@ msgid ""
 "service and ends when it has got nothing more to do."
 msgstr ""
 
-#: ../src/gui.py:598
+#: ../src/gui.py:539 ../src/system-config-services.glade:1368
+#, python-format
+msgid "Enable the <b>%(service)s</b> service in these runlevels:"
+msgstr ""
+
+#: ../src/gui.py:653
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
@@ -143,25 +148,25 @@ msgstr ""
 
 #: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
 #: ../src/system-config-services.glade:134
-#: ../src/system-config-services.glade:1258
+#: ../src/system-config-services.glade:1259
 msgid "Runlevel 2"
 msgstr ""
 
 #: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
 #: ../src/system-config-services.glade:144
-#: ../src/system-config-services.glade:1268
+#: ../src/system-config-services.glade:1269
 msgid "Runlevel 3"
 msgstr ""
 
 #: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
 #: ../src/system-config-services.glade:154
-#: ../src/system-config-services.glade:1278
+#: ../src/system-config-services.glade:1279
 msgid "Runlevel 4"
 msgstr ""
 
 #: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
 #: ../src/system-config-services.glade:164
-#: ../src/system-config-services.glade:1288
+#: ../src/system-config-services.glade:1289
 msgid "Runlevel 5"
 msgstr ""
 
@@ -225,12 +230,12 @@ msgid "Status output"
 msgstr ""
 
 #: ../src/servicetab.glade:1260 ../src/system-config-services.glade:184
-#: ../src/system-config-services.glade:395
+#: ../src/system-config-services.glade:396
 msgid "_Start"
 msgstr ""
 
 #: ../src/servicetab.glade:1339 ../src/system-config-services.glade:228
-#: ../src/system-config-services.glade:429
+#: ../src/system-config-services.glade:430
 msgid "_Restart"
 msgstr ""
 
@@ -260,12 +265,12 @@ msgstr ""
 msgid "Service %s:"
 msgstr ""
 
-#: ../src/servicetab.glade:1991
+#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1298
 msgid "Customize Runlevels"
 msgstr ""
 
 #: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1240
+#: ../src/system-config-services.glade:1241
 msgid "Service Configuration"
 msgstr ""
 
@@ -278,12 +283,12 @@ msgid "Ser_vice"
 msgstr ""
 
 #: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:365
+#: ../src/system-config-services.glade:366
 msgid "_Customize"
 msgstr ""
 
 #: ../src/system-config-services.glade:206
-#: ../src/system-config-services.glade:412
+#: ../src/system-config-services.glade:413
 msgid "S_top"
 msgstr ""
 
@@ -299,48 +304,52 @@ msgstr ""
 msgid "_About"
 msgstr ""
 
-#: ../src/system-config-services.glade:560
+#: ../src/system-config-services.glade:365
+msgid "Customize the runlevels in which a service is enabled."
+msgstr ""
+
+#: ../src/system-config-services.glade:561
 msgid "No service selected."
 msgstr ""
 
-#: ../src/system-config-services.glade:622
+#: ../src/system-config-services.glade:623
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
 
-#: ../src/system-config-services.glade:809
-#: ../src/system-config-services.glade:1008
+#: ../src/system-config-services.glade:810
+#: ../src/system-config-services.glade:1009
 msgid "Description"
 msgstr ""
 
-#: ../src/system-config-services.glade:876
+#: ../src/system-config-services.glade:877
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
 msgstr ""
 
-#: ../src/system-config-services.glade:923
+#: ../src/system-config-services.glade:924
 msgid "This service is {enabled|disabled}{|, but <b>xinetd</b> is stopped}."
 msgstr ""
 
-#: ../src/system-config-services.glade:1082
+#: ../src/system-config-services.glade:1083
 msgid "Service Information"
 msgstr ""
 
-#: ../src/system-config-services.glade:1201
+#: ../src/system-config-services.glade:1202
 msgid "Status of service %s:"
 msgstr ""
 
-#: ../src/system-config-services.glade:1238
+#: ../src/system-config-services.glade:1239
 msgid "system-config-services"
 msgstr ""
 
-#: ../src/system-config-services.glade:1239
+#: ../src/system-config-services.glade:1240
 msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
 msgstr ""
 
-#: ../src/system-config-services.glade:1241
+#: ../src/system-config-services.glade:1242
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -357,27 +366,23 @@ msgid ""
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
 
-#: ../src/system-config-services.glade:1248
+#: ../src/system-config-services.glade:1249
 msgid "translator-credits"
 msgstr ""
 
-#: ../src/system-config-services.glade:1354
-msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr ""
-
-#: ../src/system-config-services.glade:1380
+#: ../src/system-config-services.glade:1394
 msgid "Runlevel _2"
 msgstr ""
 
-#: ../src/system-config-services.glade:1399
+#: ../src/system-config-services.glade:1413
 msgid "Runlevel _3"
 msgstr ""
 
-#: ../src/system-config-services.glade:1418
+#: ../src/system-config-services.glade:1432
 msgid "Runlevel _4"
 msgstr ""
 
-#: ../src/system-config-services.glade:1437
+#: ../src/system-config-services.glade:1451
 msgid "Runlevel _5"
 msgstr ""
 
