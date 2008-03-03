@@ -45,7 +45,6 @@ Requires: initscripts
 Requires: pygtk2
 Requires: pygtk2-libglade
 Requires: python >= 2.3.0
-Requires: rhpl
 %if %{with console_util}
 Requires: usermode >= 1.94
 %else

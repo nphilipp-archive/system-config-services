@@ -1199,4 +1199,47 @@ You should have received a copy of the GNU General Public License along with thi
   <signal name="delete_event" handler="on_aboutDialog_close" last_modification_time="Wed, 13 Feb 2008 16:05:35 GMT"/>
 </widget>
 
+<widget class="GtkMenu" id="serviceEnable_popupMenu">
+
+  <child>
+    <widget class="GtkCheckMenuItem" id="serviceEnable_popupMenu_runlevel2">
+      <property name="visible">True</property>
+      <property name="label" translatable="yes">Runlevel 2</property>
+      <property name="use_underline">True</property>
+      <property name="active">False</property>
+      <signal name="activate" handler="on_serviceEnable_popupMenu_runlevel2_activate" last_modification_time="Fri, 29 Feb 2008 14:18:44 GMT"/>
+    </widget>
+  </child>
+
+  <child>
+    <widget class="GtkCheckMenuItem" id="serviceEnable_popupMenu_runlevel3">
+      <property name="visible">True</property>
+      <property name="label" translatable="yes">Runlevel 3</property>
+      <property name="use_underline">True</property>
+      <property name="active">False</property>
+      <signal name="activate" handler="on_serviceEnable_popupMenu_runlevel3_activate" last_modification_time="Fri, 29 Feb 2008 14:18:44 GMT"/>
+    </widget>
+  </child>
+
+  <child>
+    <widget class="GtkCheckMenuItem" id="serviceEnable_popupMenu_runlevel4">
+      <property name="visible">True</property>
+      <property name="label" translatable="yes">Runlevel 4</property>
+      <property name="use_underline">True</property>
+      <property name="active">False</property>
+      <signal name="activate" handler="on_serviceEnable_popupMenu_runlevel4_activate" last_modification_time="Fri, 29 Feb 2008 14:18:44 GMT"/>
+    </widget>
+  </child>
+
+  <child>
+    <widget class="GtkCheckMenuItem" id="serviceEnable_popupMenu_runlevel5">
+      <property name="visible">True</property>
+      <property name="label" translatable="yes">Runlevel 5</property>
+      <property name="use_underline">True</property>
+      <property name="active">False</property>
+      <signal name="activate" handler="on_serviceEnable_popupMenu_runlevel5_activate" last_modification_time="Fri, 29 Feb 2008 14:18:44 GMT"/>
+    </widget>
+  </child>
+</widget>
+
 </glade-interface>

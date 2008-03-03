@@ -28,7 +28,8 @@ import gamin
 import gtk
 import gtk.glade
 
-from rhpl.translate import _, N_
+import gettext
+gettext.install ('system-config-services')
 
 import serviceherders
 from serviceherders import SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED
@@ -510,6 +511,8 @@ class GUIServicesList (GladeUser):
 
 class MainWindow (GladeUser):
     _xml_widgets = (
+            'serviceEnableButton',
+            'serviceEnable_popupMenu',
             'helpContents',
             'helpContentsButton',
             'servicesDetailsNotebook',
@@ -531,6 +534,9 @@ class MainWindow (GladeUser):
 
         self.toplevel = xml.get_widget ("mainWindow")
         self.toplevel.connect ('delete_event', gtk.main_quit)
+
+        # enable service popup menu
+        self.serviceEnableButton.set_menu (self.serviceEnable_popupMenu)
 
         # the tabs are visible in the glade file to improve maintainability ...
         # ... so we hide them
