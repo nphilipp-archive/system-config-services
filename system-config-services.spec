@@ -16,7 +16,7 @@
 
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.99.3
+Version: 0.99.4
 Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/SystemConfig/services
 # We are upstream, thus the source is only available from within this source
@@ -107,9 +107,11 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
-* Mon Mar 03 2008 Nils Philippsen <nphilipp@redhat.com> 
-- Use gettext directly instead of rhpl
-- Add popup menu for enabling SysV services in specific runlevels
+* Mon Mar 03 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.4-1
+- use gettext directly instead of rhpl
+- add popup menu for enabling SysV services in specific runlevels
+- display help
+- enable custom runlevels via customization dialog
 
 * Fri Feb 29 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.3-1
 - add gamin-python requirement (#435068)
