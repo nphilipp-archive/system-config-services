@@ -583,7 +583,21 @@ class MainWindow (GladeUser):
         print "MainWindow.on_serviceInformation_activate (%s)" % ', '.join (map (lambda x: str(x), args))
 
     def on_helpContents_activate (self, *args):
-        print "MainWindow.on_helpContents_activate (%s)" % ', '.join (map (lambda x: str(x), args))
+        help_page = "ghelp:system-config-services"
+        path = "/usr/bin/yelp"
+
+        if not os.access (path, os.X_OK):
+            d = gtk.MessageDialog (self.toplevel, 0,
+                        gtk.MESSAGE_WARNING, gtk.BUTTONS_CLOSE,
+                        _("The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."))
+            d.set_position (gtk.WIN_POS_CENTER)
+            d.run ()
+            d.destroy ()
+            return
+
+        pid = os.fork ()
+        if pid == 0:
+            os.execv (path, (path, help_page))
 
     def on_helpAbout_activate (self, *args):
         self.aboutDialog.show ()
