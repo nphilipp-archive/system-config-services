@@ -47,7 +47,7 @@ SVC_COL_LAST = 5
 
 ##############################################################################
 
-class GUIServicesTreeStore (gtk.TreeStore):
+class GUIServicesListStore (gtk.ListStore):
     col_types = {
         SVC_COL_SVC_OBJECT:     gobject.TYPE_PYOBJECT,
         SVC_COL_ENABLED:        gobject.TYPE_STRING,
@@ -60,7 +60,7 @@ class GUIServicesTreeStore (gtk.TreeStore):
         col_types = []
         for col in xrange (SVC_COL_LAST):
             col_types.append (self.col_types [col])
-        gtk.TreeStore.__init__ (self, *col_types)
+        gtk.ListStore.__init__ (self, *col_types)
         self.set_default_sort_func (self._sort_by_name)
         self.set_sort_func (SVC_COL_NAME, self._sort_by_name)
         self.set_sort_column_id (SVC_COL_NAME, gtk.SORT_ASCENDING)
@@ -111,7 +111,7 @@ class GUIServicesTreeView (gtk.TreeView):
     }
 
     def __init__ (self):
-        self.model = GUIServicesTreeStore ()
+        self.model = GUIServicesListStore ()
 
         gtk.TreeView.__init__ (self, model = self.model) 
 
@@ -133,6 +133,8 @@ class GUIServicesTreeView (gtk.TreeView):
             properties = {'clickable': clickable, 'expand': expand, 'resizable': resizable}
             fixed_width = self.col_spec[column][self.COL_FIXED_WIDTH]
             if fixed_width != None:
+                # add some padding
+                fixed_width += 5
                 properties['fixed-width'] = fixed_width
 
             col.set_properties (**properties)
