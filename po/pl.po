@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-03 22:34+0100\n"
-"PO-Revision-Date: 2008-03-03 22:02+0200\n"
+"PO-Revision-Date: 2008-03-04 03:42+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -312,7 +312,7 @@ msgstr "_Informacje o"
 
 #: ../src/system-config-services.glade:365
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
+msgstr "Dostosuj poziomy uruchamiania, w których usługa jest włączona."
 
 #: ../src/system-config-services.glade:561
 msgid "No service selected."
