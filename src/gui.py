@@ -203,6 +203,7 @@ class GladeController (object):
             else:
                 raise KeyError (wname)
 
+        # connect defined signals with callback methods
         xml.signal_autoconnect (self)
 
 ##############################################################################
@@ -637,9 +638,6 @@ class MainWindow (GladeController):
 
         self.aboutDialog.set_name (config.name)
         self.aboutDialog.set_version (config.version)
-
-        # connect defined signals with callback methods
-        xml.signal_autoconnect (self)
 
     ### Callbacks
 
