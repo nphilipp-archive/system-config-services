@@ -127,6 +127,7 @@
 
 		      <child>
 			<widget class="GtkMenu" id="serviceCustomize_menu">
+			  <signal name="unmap_event" handler="on_serviceCustomize_menu_unmap_event" last_modification_time="Tue, 04 Mar 2008 13:52:56 GMT"/>
 
 			  <child>
 			    <widget class="GtkCheckMenuItem" id="serviceRunlevel2">
@@ -134,7 +135,6 @@
 			      <property name="label" translatable="yes">Runlevel 2</property>
 			      <property name="use_underline">True</property>
 			      <property name="active">False</property>
-			      <signal name="activate" handler="on_serviceRunlevel2_activate" last_modification_time="Mon, 03 Mar 2008 17:30:23 GMT"/>
 			    </widget>
 			  </child>
 
@@ -144,7 +144,6 @@
 			      <property name="label" translatable="yes">Runlevel 3</property>
 			      <property name="use_underline">True</property>
 			      <property name="active">False</property>
-			      <signal name="activate" handler="on_serviceRunlevel3_activate" last_modification_time="Mon, 03 Mar 2008 17:30:23 GMT"/>
 			    </widget>
 			  </child>
 
@@ -154,7 +153,6 @@
 			      <property name="label" translatable="yes">Runlevel 4</property>
 			      <property name="use_underline">True</property>
 			      <property name="active">False</property>
-			      <signal name="activate" handler="on_serviceRunlevel4_activate" last_modification_time="Mon, 03 Mar 2008 17:30:23 GMT"/>
 			    </widget>
 			  </child>
 
@@ -164,7 +162,6 @@
 			      <property name="label" translatable="yes">Runlevel 5</property>
 			      <property name="use_underline">True</property>
 			      <property name="active">False</property>
-			      <signal name="activate" handler="on_serviceRunlevel5_activate" last_modification_time="Mon, 03 Mar 2008 17:30:23 GMT"/>
 			    </widget>
 			  </child>
 			</widget>

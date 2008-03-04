@@ -190,7 +190,7 @@ _status_text = {
 
 ##############################################################################
 
-class GladeUser (object):
+class GladeController (object):
     _xml_widgets = []
 
     def __init__ (self, xml):
@@ -203,9 +203,11 @@ class GladeUser (object):
             else:
                 raise KeyError (wname)
 
+        xml.signal_autoconnect (self)
+
 ##############################################################################
 
-class GUIServicesDetailsPainter (GladeUser):
+class GUIServicesDetailsPainter (GladeController):
     """Services details painter singleton factory"""
 
     _classes = None
@@ -349,7 +351,7 @@ class GUIXinetdServiceEntryPainter (GUIServiceEntryPainter):
 
 ##############################################################################
 
-class GUIServicesList (GladeUser):
+class GUIServicesList (GladeController):
     SVC_PAGE_NONE = 0
     SVC_PAGE_SYSV = 1
     SVC_PAGE_XINETD = 2
@@ -374,6 +376,10 @@ class GUIServicesList (GladeUser):
     _xml_widgets = _service_xml_widgets + (
             'servicesScrolledWindow',
             'servicesDetailsNotebook',
+            'serviceRunlevel2',
+            'serviceRunlevel3',
+            'serviceRunlevel4',
+            'serviceRunlevel5',
             )
 
     def __init__ (self, xml, serviceherders):
@@ -382,6 +388,20 @@ class GUIServicesList (GladeUser):
 
         super (GUIServicesList, self).__init__ (xml)
         self.serviceherders = serviceherders
+
+        self.runlevels_checkboxes = {
+                2: self.serviceRunlevel2,
+                3: self.serviceRunlevel3,
+                4: self.serviceRunlevel4,
+                5: self.serviceRunlevel5
+                }
+
+        self.checkboxes_runlevels = {}
+        # connect these signal handlers here so we can block/unblock them later
+        self.runlevels_toggled_handlers = {}
+        for rl, cb in self.runlevels_checkboxes.iteritems ():
+            self.checkboxes_runlevels[cb] = rl
+            self.runlevels_toggled_handlers[rl] = cb.connect ("toggled", self.on_serviceRunlevels_toggled)
 
         servicesTreeView = xml.get_widget ('servicesTreeView')
         self.servicesScrolledWindow.remove (servicesTreeView)
@@ -399,12 +419,32 @@ class GUIServicesList (GladeUser):
         for herder in serviceherders:
             herder.subscribe (self.on_services_changed)
 
+    def _update_runlevel_menu (self):
+        for rl in xrange (2, 6):
+            self.runlevels_checkboxes[rl].handler_block (self.runlevels_toggled_handlers[rl])
+            self.runlevels_checkboxes[rl].set_active (rl in self.current_service.runlevels)
+            self.runlevels_checkboxes[rl].handler_unblock (self.runlevels_toggled_handlers[rl])
+
+    def on_serviceRunlevels_toggled (self, menuitem):
+        rl = self.checkboxes_runlevels[menuitem]
+        state = menuitem.get_active ()
+
+        if state:
+            self.current_service.runlevels.add (rl)
+        else:
+            self.current_service.runlevels.discard (rl)
+
+    def on_serviceCustomize_menu_unmap_event (self, menu, event):
+        if self.current_service.is_dirty ():
+            self.current_service.save ()
+
     def on_service_selected (self, treeview = None, service = None, *args):
         self.current_service = service
         if service:
             GUIServicesDetailsPainter (self.xml, service).paint_details ()
         if isinstance (service, services.SysVService):
             self.servicesDetailsNotebook.set_current_page (self.SVC_PAGE_SYSV)
+            self._update_runlevel_menu ()
         elif isinstance (service, services.XinetdService):
             self.servicesDetailsNotebook.set_current_page (self.SVC_PAGE_XINETD)
         else:
@@ -513,7 +553,7 @@ class GUIServicesList (GladeUser):
 
 ##############################################################################
 
-class ServiceRunlevelDialog (GladeUser):
+class ServiceRunlevelDialog (GladeController):
     _xml_widgets = (
             'serviceRunlevelsDialog',
             'serviceRunlevelsExplanationLabel',
@@ -527,7 +567,7 @@ class ServiceRunlevelDialog (GladeUser):
         super (ServiceRunlevelDialog, self).__init__ (xml)
         self.service = service
 
-        self.runlevel_checkboxes = {
+        self.runlevels_checkboxes = {
                 2: self.serviceRunlevel2Button,
                 3: self.serviceRunlevel3Button,
                 4: self.serviceRunlevel4Button,
@@ -539,7 +579,7 @@ class ServiceRunlevelDialog (GladeUser):
         self.serviceRunlevelsExplanationLabel.set_markup (_("Enable the <b>%(service)s</b> service in these runlevels:") % {'service': service.name})
 
         for i in xrange (2, 6):
-            cb = self.runlevel_checkboxes[i]
+            cb = self.runlevels_checkboxes[i]
             if i in service.runlevels:
                 cb.set_active (True)
             else:
@@ -550,7 +590,7 @@ class ServiceRunlevelDialog (GladeUser):
         if response == gtk.RESPONSE_OK:
             enabled_runlevels = set ()
             for i in xrange (2, 6):
-                cb = self.runlevel_checkboxes[i]
+                cb = self.runlevels_checkboxes[i]
                 if cb.get_active ():
                     enabled_runlevels.add (i)
             self.service.runlevels = enabled_runlevels
@@ -559,7 +599,7 @@ class ServiceRunlevelDialog (GladeUser):
 
 ##############################################################################
 
-class MainWindow (GladeUser):
+class MainWindow (GladeController):
     _xml_widgets = (
             #'serviceEnableButton',
             #'serviceEnable_popupMenu',
