@@ -481,10 +481,10 @@ class GUIServicesList (GladeController):
                 sensitive = (is_enabled != SVC_ENABLED_NO)
         elif wname in ('serviceCustomize', 'serviceStart', 'serviceStop', 'serviceRestart'):
             if isinstance (service, services.SysVService):
-                if wname == 'serviceCustomize':
-                    sensitive = True
-                elif service.status == SVC_STATUS_REFRESHING:
+                if service.status == SVC_STATUS_REFRESHING:
                     sensitive = False
+                elif wname == 'serviceCustomize':
+                    sensitive = True
                 elif wname == 'serviceStart':
                     sensitive = (service.status != SVC_STATUS_RUNNING)
                 elif wname == 'serviceStop':
@@ -536,6 +536,8 @@ class GUIServicesList (GladeController):
         self.service_painters[service].paint ()
         if service == self.current_service:
             GUIServicesDetailsPainter (self.xml, service).paint_details ()
+            if isinstance (service, services.SysVService):
+                self._update_runlevel_menu ()
         self._set_widgets_sensitivity ()
 
     def on_service_status_updating (self, service):
