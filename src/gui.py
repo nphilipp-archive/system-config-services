@@ -541,6 +541,8 @@ class GUIServicesList (GladeController):
         self.service_painters[service].paint ()
         if service.name == "xinetd" and isinstance (service, services.SysVService):
             self.xinetd_service = service
+            if isinstance (self.current_service, services.XinetdService):
+                GUIServicesDetailsPainter (self, self.current_service).paint_details ()
 
     def on_service_deleted (self, service):
         self.servicesTreeStore.delete_service (service)
@@ -552,6 +554,8 @@ class GUIServicesList (GladeController):
             pass
         if service == self.xinetd_service:
             self.xinetd_service = None
+            if isinstance (self.current_service, services.XinetdService):
+                GUIServicesDetailsPainter (self, self.current_service).paint_details ()
 
     def on_service_conf_updating (self, service):
         self.service_painters[service].paint ()
@@ -574,6 +578,9 @@ class GUIServicesList (GladeController):
             self.service_painters[service].paint ()
             if service == self.current_service:
                 GUIServicesDetailsPainter (self, service).paint_details ()
+            elif service == self.xinetd_service \
+                    and isinstance (self.current_service, services.XinetdService):
+                GUIServicesDetailsPainter (self, self.current_service).paint_details ()
         else:
             # service might have been deleted
             pass
@@ -671,18 +678,21 @@ class MainWindow (GladeController):
     def on_programQuit_activate (self, *args):
         gtk.main_quit ()
 
+    def _xinetd_reload (self):
+        xinetd_service = self.servicesList.xinetd_service
+        if xinetd_service and xinetd_service.status == SVC_STATUS_RUNNING:
+            while service.is_chkconfig_running ():
+                while gtk.events_pending ():
+                    gtk.main_iteration ()
+            xinetd_service.reload ()
+
+
     def on_serviceEnable_activate (self, *args):
         service = self.servicesList.current_service
         if service:
             service.enable ()
             if isinstance (service, services.XinetdService):
-                xinetd_service = self.servicesList.xinetd_service
-                if xinetd_service \
-                        and xinetd_service.status == SVC_STATUS_RUNNING:
-                    while service.is_chkconfig_running ():
-                        while gtk.events_pending ():
-                            gtk.main_iteration ()
-                    xinetd_service.reload ()
+                self._xinetd_reload ()
 
     #def on_serviceEnable_show_menu (self, *args):
     #    print "MainWindow.on_serviceEnable_show_menu (%s)" % ', '.join (map (lambda x: str(x), args))
@@ -691,6 +701,8 @@ class MainWindow (GladeController):
         service = self.servicesList.current_service
         if service:
             service.disable ()
+            if isinstance (service, services.XinetdService):
+                self._xinetd_reload ()
 
     def on_serviceCustomize_activate (self, *args):
         service = self.servicesList.current_service
