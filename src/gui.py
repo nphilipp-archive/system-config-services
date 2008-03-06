@@ -184,6 +184,7 @@ _status_stock_id = {
         }
 
 _status_text = {
+        SVC_STATUS_REFRESHING: _("This service is being refreshed right now."),
         SVC_STATUS_UNKNOWN: _("The status of this service is unknown."),
         SVC_STATUS_STOPPED: _("This service is stopped."),
         SVC_STATUS_RUNNING: _("This service is running."),
@@ -336,7 +337,7 @@ class GUIXinetdServicesDetailsPainter (GUIServicesDetailsPainter):
 ##############################################################################
 
 class GUIServiceEntryPainter (object):
-    def __new__ (cls, treestore, service, *p, **k):
+    def __new__ (cls, serviceslist, service, *p, **k):
         if isinstance (service, services.SysVService):
             return object.__new__ (GUISysVServiceEntryPainter)
         elif isinstance (service, services.XinetdService):
@@ -344,8 +345,9 @@ class GUIServiceEntryPainter (object):
         else:
             raise TypeError ('service')
 
-    def __init__ (self, treestore, service):
-        self.treestore = treestore
+    def __init__ (self, serviceslist, service):
+        self.serviceslist = serviceslist
+        self.treestore = serviceslist.servicesTreeStore
         self.service = service
 
     def paint (self):
@@ -367,7 +369,13 @@ class GUISysVServiceEntryPainter (GUIServiceEntryPainter):
 class GUIXinetdServiceEntryPainter (GUIServiceEntryPainter):
     def paint (self):
         iter = self.treestore.service_iters[self.service]
-        self.treestore.set (iter, SVC_COL_ENABLED, _enabled_stock_id[self.service.is_enabled ()])
+        enabled = self.service.is_enabled ()
+        xinetd_service = self.serviceslist.xinetd_service
+        if enabled and (not xinetd_service \
+                or xinetd_service.status != SVC_STATUS_RUNNING):
+            self.treestore.set (iter, SVC_COL_ENABLED, gtk.STOCK_DIALOG_WARNING)
+        else:
+            self.treestore.set (iter, SVC_COL_ENABLED, _enabled_stock_id[self.service.is_enabled ()])
         self.treestore.set (iter, SVC_COL_STATUS, None)
 
 ##############################################################################
@@ -535,14 +543,20 @@ class GUIServicesList (GladeController):
         else:
             raise KeyError ("change: %d", change)
 
+    def _update_xinetd_service_entries (self):
+        for service, painter in self.service_painters.iteritems ():
+            if isinstance (service, services.XinetdService):
+                painter.paint ()
+
     def on_service_added (self, service):
         self.servicesTreeStore.add_service (service)
-        self.service_painters[service] = GUIServiceEntryPainter (self.servicesTreeStore, service)
+        self.service_painters[service] = GUIServiceEntryPainter (self, service)
         self.service_painters[service].paint ()
         if service.name == "xinetd" and isinstance (service, services.SysVService):
             self.xinetd_service = service
             if isinstance (self.current_service, services.XinetdService):
                 GUIServicesDetailsPainter (self, self.current_service).paint_details ()
+            self._update_xinetd_service_entries ()
 
     def on_service_deleted (self, service):
         self.servicesTreeStore.delete_service (service)
@@ -556,6 +570,7 @@ class GUIServicesList (GladeController):
             self.xinetd_service = None
             if isinstance (self.current_service, services.XinetdService):
                 GUIServicesDetailsPainter (self, self.current_service).paint_details ()
+            self._update_xinetd_service_entries ()
 
     def on_service_conf_updating (self, service):
         self.service_painters[service].paint ()
@@ -578,9 +593,10 @@ class GUIServicesList (GladeController):
             self.service_painters[service].paint ()
             if service == self.current_service:
                 GUIServicesDetailsPainter (self, service).paint_details ()
-            elif service == self.xinetd_service \
-                    and isinstance (self.current_service, services.XinetdService):
-                GUIServicesDetailsPainter (self, self.current_service).paint_details ()
+            if service == self.xinetd_service:
+                if isinstance (self.current_service, services.XinetdService):
+                    GUIServicesDetailsPainter (self, self.current_service).paint_details ()
+                self._update_xinetd_service_entries ()
         else:
             # service might have been deleted
             pass
@@ -678,7 +694,7 @@ class MainWindow (GladeController):
     def on_programQuit_activate (self, *args):
         gtk.main_quit ()
 
-    def _xinetd_reload (self):
+    def _xinetd_reload (self, service):
         xinetd_service = self.servicesList.xinetd_service
         if xinetd_service and xinetd_service.status == SVC_STATUS_RUNNING:
             while service.is_chkconfig_running ():
@@ -692,7 +708,7 @@ class MainWindow (GladeController):
         if service:
             service.enable ()
             if isinstance (service, services.XinetdService):
-                self._xinetd_reload ()
+                self._xinetd_reload (service)
 
     #def on_serviceEnable_show_menu (self, *args):
     #    print "MainWindow.on_serviceEnable_show_menu (%s)" % ', '.join (map (lambda x: str(x), args))
@@ -702,7 +718,7 @@ class MainWindow (GladeController):
         if service:
             service.disable ()
             if isinstance (service, services.XinetdService):
-                self._xinetd_reload ()
+                self._xinetd_reload (service)
 
     def on_serviceCustomize_activate (self, *args):
         service = self.servicesList.current_service

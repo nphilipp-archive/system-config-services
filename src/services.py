@@ -347,7 +347,8 @@ class SysVService (ChkconfigService):
             return SVC_ENABLED_CUSTOM
 
     def _change_status (self, change):
-        self.status = SVC_STATUS_REFRESHING
+        if change in ("start", "stop", "restart"):
+            self.status = SVC_STATUS_REFRESHING
 
         # no callback, we let the herder handle that
         self._asynccmdqueue.queue ('env LC_ALL=C /sbin/service "%s" "%s"' % (self.name, change))
