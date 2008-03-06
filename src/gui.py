@@ -216,7 +216,7 @@ class GUIServicesDetailsPainter (GladeController):
     _classes = None
     _classes_objects = { }
 
-    def __new__ (cls, xml, service, *p, **k):
+    def __new__ (cls, serviceslist, service, *p, **k):
         if GUIServicesDetailsPainter._classes == None:
             GUIServicesDetailsPainter._classes = {
                 services.SysVService: GUISysVServicesDetailsPainter,
@@ -239,8 +239,9 @@ class GUIServicesDetailsPainter (GladeController):
 
         return GUIServicesDetailsPainter._classes_objects[painter_class]
 
-    def __init__ (self, xml, service):
-        super (GUIServicesDetailsPainter, self).__init__ (xml)
+    def __init__ (self, serviceslist, service):
+        super (GUIServicesDetailsPainter, self).__init__ (serviceslist.xml)
+        self.serviceslist = serviceslist
         self.service = service
 
     def paint_details (self):
@@ -259,8 +260,8 @@ class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
         'sysVServiceDescriptionTextView'
     )
 
-    def __init__ (self, xml, service):
-        super (GUISysVServicesDetailsPainter, self).__init__ (xml, service)
+    def __init__ (self, serviceslist, service):
+        super (GUISysVServicesDetailsPainter, self).__init__ (serviceslist, service)
 
     def paint_details (self):
         self.sysVServiceExplanationLabel.set_markup (_("The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed.") % {'servicename': self.service.name})
@@ -299,16 +300,33 @@ class GUIXinetdServicesDetailsPainter (GUIServicesDetailsPainter):
         'xinetdServiceDescriptionTextView'
     )
 
-    def __init__ (self, xml, service):
-        super (GUIXinetdServicesDetailsPainter, self).__init__ (xml, service)
+    def __init__ (self, serviceslist, service):
+        super (GUIXinetdServicesDetailsPainter, self).__init__ (serviceslist, service)
 
     def paint_details (self):
         self.xinetdServiceExplanationLabel.set_markup (_("The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has got nothing more to do.") % {'servicename': self.service.name})
 
         enabled = self.service.is_enabled ()
-        self.xinetdServiceEnabledIcon.set_from_stock (_enabled_stock_id[enabled],
-                                                      gtk.ICON_SIZE_MENU)
-        self.xinetdServiceEnabledLabel.set_text (_enabled_text[enabled])
+        xinetd_service = self.serviceslist.xinetd_service
+        if enabled == SVC_ENABLED_YES and not xinetd_service:
+            self.xinetdServiceEnabledIcon.set_from_stock (
+                    gtk.STOCK_DIALOG_WARNING,
+                    gtk.ICON_SIZE_MENU
+                    )
+            self.xinetdServiceEnabledLabel.set_markup (_("This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."))
+        elif enabled == SVC_ENABLED_YES and xinetd_service.status != SVC_STATUS_RUNNING:
+            self.xinetdServiceEnabledIcon.set_from_stock (
+                    gtk.STOCK_DIALOG_WARNING,
+                    gtk.ICON_SIZE_MENU
+                    )
+            self.xinetdServiceEnabledLabel.set_markup (_("This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."))
+        else:
+
+            self.xinetdServiceEnabledIcon.set_from_stock (
+                    _enabled_stock_id[enabled],
+                    gtk.ICON_SIZE_MENU
+                    )
+            self.xinetdServiceEnabledLabel.set_text (_enabled_text[enabled])
 
         if self.service.info.description:
             self.xinetdServiceDescriptionTextView.get_buffer ().set_text (self.service.info.description)
@@ -387,6 +405,7 @@ class GUIServicesList (GladeController):
 
     def __init__ (self, xml, serviceherders):
         self.current_service = None
+        self.xinetd_service = None
         self.service_painters = {}
 
         super (GUIServicesList, self).__init__ (xml)
@@ -444,7 +463,7 @@ class GUIServicesList (GladeController):
     def on_service_selected (self, treeview = None, service = None, *args):
         self.current_service = service
         if service:
-            GUIServicesDetailsPainter (self.xml, service).paint_details ()
+            GUIServicesDetailsPainter (self, service).paint_details ()
         if isinstance (service, services.SysVService):
             self.servicesDetailsNotebook.set_current_page (self.SVC_PAGE_SYSV)
             self._update_runlevel_menu ()
@@ -520,6 +539,8 @@ class GUIServicesList (GladeController):
         self.servicesTreeStore.add_service (service)
         self.service_painters[service] = GUIServiceEntryPainter (self.servicesTreeStore, service)
         self.service_painters[service].paint ()
+        if service.name == "xinetd" and isinstance (service, services.SysVService):
+            self.xinetd_service = service
 
     def on_service_deleted (self, service):
         self.servicesTreeStore.delete_service (service)
@@ -529,6 +550,8 @@ class GUIServicesList (GladeController):
             del self.service_painters[service]
         except KeyError:
             pass
+        if service == self.xinetd_service:
+            self.xinetd_service = None
 
     def on_service_conf_updating (self, service):
         self.service_painters[service].paint ()
@@ -537,7 +560,7 @@ class GUIServicesList (GladeController):
     def on_service_conf_changed (self, service):
         self.service_painters[service].paint ()
         if service == self.current_service:
-            GUIServicesDetailsPainter (self.xml, service).paint_details ()
+            GUIServicesDetailsPainter (self, service).paint_details ()
             if isinstance (service, services.SysVService):
                 self._update_runlevel_menu ()
         self._set_widgets_sensitivity ()
@@ -550,7 +573,7 @@ class GUIServicesList (GladeController):
         if self.service_painters.has_key (service):
             self.service_painters[service].paint ()
             if service == self.current_service:
-                GUIServicesDetailsPainter (self.xml, service).paint_details ()
+                GUIServicesDetailsPainter (self, service).paint_details ()
         else:
             # service might have been deleted
             pass
@@ -652,6 +675,14 @@ class MainWindow (GladeController):
         service = self.servicesList.current_service
         if service:
             service.enable ()
+            if isinstance (service, services.XinetdService):
+                xinetd_service = self.servicesList.xinetd_service
+                if xinetd_service \
+                        and xinetd_service.status == SVC_STATUS_RUNNING:
+                    while service.is_chkconfig_running ():
+                        while gtk.events_pending ():
+                            gtk.main_iteration ()
+                    xinetd_service.reload ()
 
     #def on_serviceEnable_show_menu (self, *args):
     #    print "MainWindow.on_serviceEnable_show_menu (%s)" % ', '.join (map (lambda x: str(x), args))

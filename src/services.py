@@ -119,9 +119,20 @@ class Service (object):
 class ChkconfigService (Service):
     """Represents an abstract service handled with chkconfig."""
 
+    def __init__ (self, name, mon, herder):
+        super (ChkconfigService, self).__init__ (name, mon, herder)
+        self._chkconfig_running = 0
+
+    def is_chkconfig_running (self):
+        return self._chkconfig_running < 1
+
+    def _change_enablement_ready (self, cmd):
+        self._chkconfig_running -= 1
+
     def _change_enablement (self, change):
         # no callback, we let the herder handle that
-        self._asynccmdqueue.queue ('env LC_ALL=C /sbin/chkconfig "%s" "%s"' % (self.name, change))
+        self._chkconfig_running += 1
+        self._asynccmdqueue.queue ('env LC_ALL=C /sbin/chkconfig "%s" "%s"' % (self.name, change), self._change_enablement_ready)
 
     def enable (self):
         """Enable this service."""
@@ -352,6 +363,10 @@ class SysVService (ChkconfigService):
     def restart (self):
         """Restart this service."""
         self._change_status ('restart')
+
+    def reload (self):
+        """Reload this service."""
+        self._change_status ('reload')
 
 ##############################################################################
 
