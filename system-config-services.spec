@@ -16,7 +16,7 @@
 
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.99.6
+Version: 0.99.7
 Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/SystemConfig/services
 # We are upstream, thus the source is only available from within this source
@@ -107,6 +107,11 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Thu Mar 06 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.7-1
+- update online documentation
+- reload xinetd on changing xinetd services
+- honor xinetd status when displaying xinetd services
+
 * Tue Mar 04 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.6-1
 - use ListStore instead of TreeStore
 - add some extra padding for fixed width columns in TreeView
