@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-06 16:41+0100\n"
-"PO-Revision-Date: 2008-03-04 03:42+0200\n"
+"PO-Revision-Date: 2008-03-06 19:49+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -83,12 +83,16 @@ msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
+"Ta usługa jest włączona, ale pakiet <b>xinetd</b> nie jest zainstalowany. Ta "
+"usługa nie działa bez niego."
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
+"Ta usługa jest włączona, ale usługa <b>xinetd</b> nie jest uruchomiona. Ta "
+"usługa nie działa bez niej."
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
@@ -432,7 +436,3 @@ msgstr "Zarządzanie usługami"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Usługi"
-
-#~ msgid "This service is {enabled|disabled}{|, but <b>xinetd</b> is stopped}."
-#~ msgstr ""
-#~ "Ta usługa jest {włączona|wyłączona}{|, ale <b>xinetd</b> jest zatrzymany}."
