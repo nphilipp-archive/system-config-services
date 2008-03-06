@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-03 22:34+0100\n"
+"POT-Creation-Date: 2008-03-06 16:41+0100\n"
 "PO-Revision-Date: 2006-11-27 11:45+0530\n"
 "Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
@@ -31,63 +31,75 @@ msgstr ""
 msgid "Remarks"
 msgstr ""
 
-#: ../src/gui.py:168
+#: ../src/gui.py:170 ../src/gui.py:187
 msgid "This service is being refreshed right now."
 msgstr ""
 
-#: ../src/gui.py:169
+#: ../src/gui.py:171
 msgid "This service is enabled."
 msgstr ""
 
-#: ../src/gui.py:170
+#: ../src/gui.py:172
 msgid "This service is disabled."
 msgstr ""
 
-#: ../src/gui.py:171
+#: ../src/gui.py:173
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr ""
 
-#: ../src/gui.py:185
+#: ../src/gui.py:188
 msgid "The status of this service is unknown."
 msgstr ""
 
-#: ../src/gui.py:186
+#: ../src/gui.py:189
 msgid "This service is stopped."
 msgstr ""
 
-#: ../src/gui.py:187
+#: ../src/gui.py:190
 msgid "This service is running."
 msgstr ""
 
-#: ../src/gui.py:188
+#: ../src/gui.py:191
 msgid "This service is dead."
 msgstr ""
 
-#: ../src/gui.py:261
+#: ../src/gui.py:268
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
 
-#: ../src/gui.py:275
+#: ../src/gui.py:282
 msgid "This service is updated currently."
 msgstr ""
 
-#: ../src/gui.py:301
+#: ../src/gui.py:308
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
 msgstr ""
 
-#: ../src/gui.py:539 ../src/system-config-services.glade:1368
+#: ../src/gui.py:317
+msgid ""
+"This service is enabled, but the <b>xinetd</b> package is not installed. "
+"This service does not work without it."
+msgstr ""
+
+#: ../src/gui.py:323
+msgid ""
+"This service is enabled, but the <b>xinetd</b> service is not running. This "
+"service does not work without it."
+msgstr ""
+
+#: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr ""
 
-#: ../src/gui.py:653
+#: ../src/gui.py:754
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
@@ -155,26 +167,26 @@ msgid "Enable Default"
 msgstr ""
 
 #: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
-#: ../src/system-config-services.glade:134
-#: ../src/system-config-services.glade:1259
+#: ../src/system-config-services.glade:135
+#: ../src/system-config-services.glade:1256
 msgid "Runlevel 2"
 msgstr ""
 
 #: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
 #: ../src/system-config-services.glade:144
-#: ../src/system-config-services.glade:1269
+#: ../src/system-config-services.glade:1266
 msgid "Runlevel 3"
 msgstr ""
 
 #: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
-#: ../src/system-config-services.glade:154
-#: ../src/system-config-services.glade:1279
+#: ../src/system-config-services.glade:153
+#: ../src/system-config-services.glade:1276
 msgid "Runlevel 4"
 msgstr ""
 
 #: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
-#: ../src/system-config-services.glade:164
-#: ../src/system-config-services.glade:1289
+#: ../src/system-config-services.glade:162
+#: ../src/system-config-services.glade:1286
 msgid "Runlevel 5"
 msgstr ""
 
@@ -237,23 +249,23 @@ msgstr "सेवा नियंत्रण"
 msgid "Status output"
 msgstr "स्थिति आउटपुट"
 
-#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:184
-#: ../src/system-config-services.glade:396
+#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:181
+#: ../src/system-config-services.glade:393
 msgid "_Start"
 msgstr ""
 
-#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:228
-#: ../src/system-config-services.glade:430
+#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:225
+#: ../src/system-config-services.glade:427
 msgid "_Restart"
 msgstr ""
 
 #: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
-#: ../src/system-config-services.glade:331
+#: ../src/system-config-services.glade:328
 msgid "_Enable"
 msgstr ""
 
 #: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
-#: ../src/system-config-services.glade:348
+#: ../src/system-config-services.glade:345
 msgid "_Disable"
 msgstr ""
 
@@ -273,12 +285,12 @@ msgstr ""
 msgid "Service %s:"
 msgstr ""
 
-#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1298
+#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1295
 msgid "Customize Runlevels"
 msgstr ""
 
 #: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1241
+#: ../src/system-config-services.glade:1238
 msgid "Service Configuration"
 msgstr "सेवा विन्यास"
 
@@ -291,73 +303,69 @@ msgid "Ser_vice"
 msgstr ""
 
 #: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:366
+#: ../src/system-config-services.glade:363
 msgid "_Customize"
 msgstr ""
 
-#: ../src/system-config-services.glade:206
-#: ../src/system-config-services.glade:413
+#: ../src/system-config-services.glade:203
+#: ../src/system-config-services.glade:410
 msgid "S_top"
 msgstr ""
 
-#: ../src/system-config-services.glade:254
+#: ../src/system-config-services.glade:251
 msgid "_Help"
 msgstr "मदद (_H)"
 
-#: ../src/system-config-services.glade:263
+#: ../src/system-config-services.glade:260
 msgid "_Contents"
 msgstr "सामग्री (_C)"
 
-#: ../src/system-config-services.glade:291
+#: ../src/system-config-services.glade:288
 msgid "_About"
 msgstr ""
 
-#: ../src/system-config-services.glade:365
+#: ../src/system-config-services.glade:362
 msgid "Customize the runlevels in which a service is enabled."
 msgstr ""
 
-#: ../src/system-config-services.glade:561
+#: ../src/system-config-services.glade:558
 msgid "No service selected."
 msgstr ""
 
-#: ../src/system-config-services.glade:623
+#: ../src/system-config-services.glade:620
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
 
-#: ../src/system-config-services.glade:810
-#: ../src/system-config-services.glade:1009
+#: ../src/system-config-services.glade:807
+#: ../src/system-config-services.glade:1006
 msgid "Description"
 msgstr "विवरण"
 
-#: ../src/system-config-services.glade:877
+#: ../src/system-config-services.glade:874
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
 msgstr ""
 
-#: ../src/system-config-services.glade:924
-msgid "This service is {enabled|disabled}{|, but <b>xinetd</b> is stopped}."
-msgstr ""
-
-#: ../src/system-config-services.glade:1083
+#: ../src/system-config-services.glade:1080
 msgid "Service Information"
 msgstr ""
 
-#: ../src/system-config-services.glade:1202
+#: ../src/system-config-services.glade:1199
 msgid "Status of service %s:"
 msgstr ""
 
-#: ../src/system-config-services.glade:1239
+#: ../src/system-config-services.glade:1236
 msgid "system-config-services"
 msgstr ""
 
-#: ../src/system-config-services.glade:1240
+#: ../src/system-config-services.glade:1237
 msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
 msgstr ""
 
-#: ../src/system-config-services.glade:1242
+#: ../src/system-config-services.glade:1239
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -374,23 +382,23 @@ msgid ""
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
 
-#: ../src/system-config-services.glade:1249
+#: ../src/system-config-services.glade:1246
 msgid "translator-credits"
 msgstr ""
 
-#: ../src/system-config-services.glade:1394
+#: ../src/system-config-services.glade:1391
 msgid "Runlevel _2"
 msgstr ""
 
-#: ../src/system-config-services.glade:1413
+#: ../src/system-config-services.glade:1410
 msgid "Runlevel _3"
 msgstr "रनलेवल _3"
 
-#: ../src/system-config-services.glade:1432
+#: ../src/system-config-services.glade:1429
 msgid "Runlevel _4"
 msgstr "रनलेवल _4"
 
-#: ../src/system-config-services.glade:1451
+#: ../src/system-config-services.glade:1448
 msgid "Runlevel _5"
 msgstr "रनलेवल _5"
 
