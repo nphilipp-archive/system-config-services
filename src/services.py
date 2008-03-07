@@ -332,7 +332,7 @@ class SysVService (ChkconfigService):
         """Determines if the configuration of a service is saved or not."""
         return self.runlevels != self.runlevels_ondisk
 
-    def is_enabled (self):
+    def get_enabled (self):
         """Determines the enablement state of a service."""
         if self.conf_updates_running > 0:
             return SVC_ENABLED_REFRESHING
@@ -429,7 +429,7 @@ class XinetdService (ChkconfigService):
     def is_dirty (self):
         return self.enabled != self.enabled_ondisk
 
-    def is_enabled (self):
+    def get_enabled (self):
         if self.conf_updates_running > 0:
             return SVC_ENABLED_REFRESHING
         return self.enabled and SVC_ENABLED_YES or SVC_ENABLED_NO

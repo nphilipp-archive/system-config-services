@@ -267,7 +267,7 @@ class GUISysVServicesDetailsPainter (GUIServicesDetailsPainter):
     def paint_details (self):
         self.sysVServiceExplanationLabel.set_markup (_("The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed.") % {'servicename': self.service.name})
 
-        enabled = self.service.is_enabled ()
+        enabled = self.service.get_enabled ()
         self.sysVServiceEnabledIcon.set_from_stock (_enabled_stock_id[enabled],
                                                     gtk.ICON_SIZE_MENU)
         if enabled == SVC_ENABLED_CUSTOM:
@@ -307,7 +307,7 @@ class GUIXinetdServicesDetailsPainter (GUIServicesDetailsPainter):
     def paint_details (self):
         self.xinetdServiceExplanationLabel.set_markup (_("The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has got nothing more to do.") % {'servicename': self.service.name})
 
-        enabled = self.service.is_enabled ()
+        enabled = self.service.get_enabled ()
         xinetd_service = self.serviceslist.xinetd_service
         if enabled == SVC_ENABLED_YES and not xinetd_service:
             self.xinetdServiceEnabledIcon.set_from_stock (
@@ -358,7 +358,7 @@ class GUIServiceEntryPainter (object):
 class GUISysVServiceEntryPainter (GUIServiceEntryPainter):
     def paint (self):
         iter = self.treestore.service_iters[self.service]
-        self.treestore.set (iter, SVC_COL_ENABLED, _enabled_stock_id[self.service.is_enabled ()])
+        self.treestore.set (iter, SVC_COL_ENABLED, _enabled_stock_id[self.service.get_enabled ()])
         self.treestore.set (iter, SVC_COL_STATUS, _status_stock_id[self.service.status])
         if self.service.info.shortdescription:
             self.treestore.set (iter, SVC_COL_REMARK, self.service.info.shortdescription)
@@ -369,13 +369,13 @@ class GUISysVServiceEntryPainter (GUIServiceEntryPainter):
 class GUIXinetdServiceEntryPainter (GUIServiceEntryPainter):
     def paint (self):
         iter = self.treestore.service_iters[self.service]
-        enabled = self.service.is_enabled ()
+        enabled = self.service.get_enabled ()
         xinetd_service = self.serviceslist.xinetd_service
-        if enabled and (not xinetd_service \
+        if enabled == SVC_ENABLED_YES and (not xinetd_service \
                 or xinetd_service.status != SVC_STATUS_RUNNING):
             self.treestore.set (iter, SVC_COL_ENABLED, gtk.STOCK_DIALOG_WARNING)
         else:
-            self.treestore.set (iter, SVC_COL_ENABLED, _enabled_stock_id[self.service.is_enabled ()])
+            self.treestore.set (iter, SVC_COL_ENABLED, _enabled_stock_id[self.service.get_enabled ()])
         self.treestore.set (iter, SVC_COL_STATUS, None)
 
 ##############################################################################
@@ -501,13 +501,12 @@ class GUIServicesList (GladeController):
         sensitive = True
 
         if wname in ('serviceEnable', 'serviceDisable'):
-            is_enabled = service.is_enabled ()
-            if is_enabled == SVC_ENABLED_REFRESHING:
+            if service.get_enabled () == SVC_ENABLED_REFRESHING:
                 sensitive = False
             elif wname == 'serviceEnable':
-                sensitive = (is_enabled != SVC_ENABLED_YES)
+                sensitive = (get_enabled != SVC_ENABLED_YES)
             elif wname == 'serviceDisable':
-                sensitive = (is_enabled != SVC_ENABLED_NO)
+                sensitive = (get_enabled != SVC_ENABLED_NO)
         elif wname in ('serviceCustomize', 'serviceStart', 'serviceStop', 'serviceRestart'):
             if isinstance (service, services.SysVService):
                 if service.status == SVC_STATUS_REFRESHING:
