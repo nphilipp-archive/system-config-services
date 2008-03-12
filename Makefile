@@ -24,7 +24,7 @@ PAMD_DIR        = /etc/pam.d
 SECURITY_DIR    = /etc/security/console.apps
 
 MAKEFILE        := $(lastword $(MAKEFILE_LIST))
-TOPDIR          := $(dir $(abspath $(MAKEFILE)))
+TOPDIR          := $(abspath $(dir $(abspath $(MAKEFILE))))
 DOC_MODULE      = $(PKGNAME)
 DOC_ABS_SRCDIR  = $(TOPDIR)/doc
 DOC_FIGURES_DIR = images
