@@ -29,7 +29,7 @@ DOC_MODULE      = $(PKGNAME)
 DOC_ABS_SRCDIR  = $(TOPDIR)/doc
 DOC_FIGURES_DIR = images
 DOC_FIGURES     = system-config-services.png
-DOC_ENTITIES    = distro-specifics.ent system-config-services-distro-specifics.ent system-config-services-abstract.xml system-config-services-content.xml system-config-services-hostname-formats.xml
+DOC_ENTITIES    = distro-specifics.ent system-config-services-distro-specifics.ent system-config-services-abstract.xml system-config-services-content.xml
 DOC_LINGUAS     = af sq am ar hy as az bal eu eu_ES be be@latin bn bn_IN bs pt_BR en_GB bg my ca zh_CN zh_TW hr cs da nl dz et fi fr gl ka de el gu he hi hu is ilo id it ja kn ko ku lo lv lt mk mai ms ml mr mn ne nso no nb nn or fa pl pt pa ro ru sr si sk sl es sv tl ta te th tr uk ur vi cy zu
 
 all:	src/config.py $(PKGNAME).desktop $(PKGNAME).console doc-all
