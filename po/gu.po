@@ -1,14 +1,14 @@
-# translation of usermode.tip.gu.po to Gujarati
+# translation of system-config-services.tip.gu.po to Gujarati
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
 # Ankit Patel <ankit@redhat.com>, 2004, 2005, 2006, 2007, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: usermode.tip.gu\n"
+"Project-Id-Version: system-config-services.tip.gu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-29 10:14-0700\n"
-"PO-Revision-Date: 2008-03-11 17:07+0530\n"
+"POT-Creation-Date: 2008-02-22 01:29-0700\n"
+"PO-Revision-Date: 2008-03-12 17:43+0530\n"
 "Last-Translator: Ankit Patel <ankit@redhat.com>\n"
 "Language-Team: Gujarati <fedora-trans-gu@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -28,494 +28,270 @@ msgstr ""
 "\n"
 "\n"
 "\n"
+"\n"
 
-#.
-#. * Copyright (C) 2001 Red Hat, Inc.
-#. *
-#. * This is free software; you can redistribute it and/or modify it
-#. * under the terms of the GNU General Public License as published by
-#. * the Free Software Foundation; either version 2 of the License, or
-#. * (at your option) any later version.
-#. *
-#. * This program is distributed in the hope that it will be useful, but
-#. * WITHOUT ANY WARRANTY; without even the implied warranty of
-#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-#. * General Public License for more details.
-#. *
-#. * You should have received a copy of the GNU General Public License
-#. * along with this program; if not, write to the Free Software
-#. * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#.
-#. Just a dummy file for gettext, containing messages emmitted by various
-#. * commonly-used PAM modules.
-#: ../dummy.h:21
-msgid "OK"
-msgstr "બરાબર"
+#: ../src/serviceconf.py:77
+#, python-format
+msgid "Are you sure you want to delete the %s?"
+msgstr "શું તમે ખરેખર %s કાઢી નાંખવા માંગો છો?"
 
-#: ../dummy.h:22
-msgid "Exit"
-msgstr "બહાર નીકળો"
+#: ../src/serviceconf.py:140
+#, python-format
+msgid "Runlevel %d"
+msgstr "રનલેવલ %d"
 
-#: ../dummy.h:23
-msgid "Cancel"
-msgstr "રદ કરો"
+#. initialize this to the runlevel we are running in. It will
+#. change when one of the optRL[3-6] are selected
+#: ../src/serviceconf.py:281
+msgid "Currently Running in Runlevel: "
+msgstr "વર્તમાનમાં આ રનલેવલમાં ચાલી રહ્યું છે: "
 
-#: ../dummy.h:24
-msgid "Run Unprivileged"
-msgstr "નહિં સુધારાયેલ ચલાવો"
+#: ../src/serviceconf.py:377 ../src/serviceconf.py:480
+msgid "Editing Runlevel: "
+msgstr "રનલેવલમાં ફેરફાર કરી રહ્યા છીએ: "
 
-#: ../dummy.h:25
-msgid "(current) UNIX password: "
-msgstr "(વર્તમાન) યુનિક્સ પાસવર્ડ: "
+#: ../src/serviceconf.py:419 ../src/servicemethods.py:57
+msgid "Unknown"
+msgstr "અજ્ઞાત"
 
-#: ../dummy.h:26
-msgid "New UNIX password: "
-msgstr "નવો યુનિક્સ પાસવર્ડ: "
+#: ../src/serviceconf.py:509
+msgid "All"
+msgstr "બધું"
 
-#: ../dummy.h:27
-msgid "Retype new UNIX password: "
-msgstr "નવો યુનિક્સ પાસવર્ડ ફરીથી છાપો: "
-
-#: ../dummy.h:28
-msgid "BAD PASSWORD: it's WAY too short"
-msgstr "ખરાબ પાસવર્ડ: આ રસ્તો ખૂબ નાનો છે"
-
-#: ../dummy.h:29
-msgid "BAD PASSWORD: it is too short"
-msgstr "ખરાબ પાસવર્ડ: આ ખૂબ નાનો છે"
-
-#: ../dummy.h:30
-msgid "Password unchanged"
-msgstr "પાસવર્ડ બદલાયેલ નથી"
-
-#: ../dummy.h:31
-msgid "Sorry, passwords do not match"
-msgstr "માફ કરજો, પાસવર્ડ બંધબેસતા નથી"
-
-#: ../dummy.h:32
-msgid "Launch system-wide configuration tools without a password."
-msgstr "સિસ્ટમના રુપરેખાંકન સાધનો પાસવર્ડ વગર લાવો."
-
-#: ../dummy.h:33
-msgid "login: "
-msgstr "પ્રવેશો: "
-
-#: ../dummy.h:34
-msgid "Password: "
-msgstr "પાસવર્ડ: "
-
-#: ../gsmclient.c:362
-#, c-format
-msgid "%s failed to connect to the session manager: %s\n"
-msgstr "%s એ સત્ર વ્યવસ્થાપક સાથે જોડાવામાં નિષ્ફળ ગયું: %s\n"
-
-#: ../pam-panel-icon.c:89
-#, c-format
-msgid "Failed to drop administrator privileges: %s"
-msgstr "સંચાલન પૂર્વધારણાઓ મૂકવામાં નિષ્ફળ: %s"
-
-#: ../pam-panel-icon.c:98
-#, c-format
+#: ../src/serviceconf.py:543
 msgid ""
-"Failed to drop administrator privileges: pam_timestamp_check returned "
-"failure code %d"
-msgstr "સંચાલન પૂર્વધારણાઓ મૂકવામાં નિષ્ફળ: pam_timestamp_check એ નિષ્ફળતા કોડ %d આપ્યો"
-
-#: ../pam-panel-icon.c:146
-msgid ""
-"You're currently authorized to configure system-wide settings (that affect "
-"all users) without typing the administrator password again. You can give up "
-"this authorization."
+"System Services Configuration Tool VERSION\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
+" "
 msgstr ""
-"તમે system-wide સુયોજનો સાથે વર્તમાનમાં સત્તાધિકાર પામેલા છો (કે જે બધા વપરાશકર્તાઓને "
-"અસર કરે છે) સંચાલન પાસવર્ડ છાપ્યા વિના. તમે આ સત્તાધિકરણ આપી શકો છો."
+"System Services Configuration Tool VERSION\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
+" "
 
-#: ../pam-panel-icon.c:151 ../pam-panel-icon.c:178
-msgid "Keep Authorization"
-msgstr "સત્તાધિકરણ સાચવી રાખો"
+#: ../src/serviceconf.py:547
+msgid "About"
+msgstr "વિશે"
 
-#: ../pam-panel-icon.c:154 ../pam-panel-icon.c:185
-msgid "Forget Authorization"
-msgstr "સત્તાધિકરણ ભૂલી ગયા"
-
-#: ../pam-panel-icon.c:285
-msgid "pam_timestamp_check is not setuid root"
-msgstr "pam_timestamp_check એ setuid રુટ નથી"
-
-#: ../pam-panel-icon.c:289
-msgid "no controlling tty for pam_timestamp_check"
-msgstr "pam_timestamp_check માટે કોઈ નિયંત્રક tty નથી"
-
-#: ../pam-panel-icon.c:293
-msgid "user unknown to pam_timestamp_check"
-msgstr "pam_timestamp_check નો વપરાશકર્તા અજ્ઞાત"
-
-#: ../pam-panel-icon.c:297
-msgid "permissions error in pam_timestamp_check"
-msgstr "pam_timestamp_check માં પરવાનગી ભૂલ"
-
-#: ../pam-panel-icon.c:301
-msgid "invalid controlling tty in pam_timestamp_check"
-msgstr "pam_timestamp_check માં tty ને નિયંત્રિત કરવાનું અયોગ્ય"
-
-#: ../pam-panel-icon.c:319
-#, c-format
-msgid "Error: %s\n"
-msgstr "ભૂલ: %s\n"
-
-#: ../pam-panel-icon.c:384
-#, c-format
-msgid "Failed to run command \"%s\": %s\n"
-msgstr "\"%s\" આદેશ ચલાવવામાં નિષ્ફળ: %s\n"
-
-#: ../pam-panel-icon.c:396
-#, c-format
-msgid "Failed to set IO channel nonblocking: %s\n"
-msgstr "IO channel nonblocking સુયોજિત કરવામાં નિષ્ફળ: %s\n"
-
-#: ../pam-panel-icon.c:476
-msgid "pam-panel-icon: failed to connect to session manager\n"
-msgstr "pam-panel-icon: સત્ર વ્યવસ્થાપક સાથે સંપર્ક કરવામાં નિષ્ફળ\n"
-
-#: ../userhelper-wrap.c:204
-msgid "Unknown exit code."
-msgstr "બહાર નીકળવાનો અજ્ઞાત કોડ."
-
-#: ../userhelper-wrap.c:206
-msgid "Information updated."
-msgstr "જાણકારી સુધારાયેલ છે."
-
-#: ../userhelper-wrap.c:208
+#: ../src/serviceconf.py:580
 msgid ""
-"The password you typed is invalid.\n"
-"Please try again."
-msgstr ""
-"તમે લખેલો પાસવર્ડ અયોગ્ય છે.\n"
-"મહેરબાની કરીને ફરીથી પ્રયત્ન કરો."
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr "મદદ દર્શક શોધી શક્યા નહિં. મદદ જોવા માટે સમર્થ થવા માટે તમારે 'yelp' પેકેજ સ્થાપિત કરવાની જરૂર છે."
 
-#: ../userhelper-wrap.c:210
-msgid ""
-"One or more of the changed fields is invalid.\n"
-"This is probably due to either colons or commas in one of the fields.\n"
-"Please remove those and try again."
-msgstr ""
-"એક અથવા વધુ બદલાયેલ ક્ષેત્ર અયોગ્ય છે.\n"
-"આ કદાચ તેમાંના કોઈએક ક્ષેત્રમાં ':' અથવા ',' ને લીધે હશે.\n"
-"મહેરબાની કરીને તેને દૂર કરો અને ફરીથી પ્રયત્ન કરો."
+#: ../src/serviceconf.py:719
+msgid "You must run system-config-services as root."
+msgstr "તમારે system-config-services ને રુટ તરીકે જ ચલાવવું જોઈએ."
 
-#: ../userhelper-wrap.c:212
-msgid "Password resetting error."
-msgstr "પાસવર્ડ ફરીથી સુયોજિત કરવામાં ભૂલ."
+#: ../src/servicemethods.py:58
+msgid "Running"
+msgstr "ચલાવી રહ્યા છીએ"
 
-#: ../userhelper-wrap.c:214
-msgid ""
-"Some systems files are locked.\n"
-"Please try again in a few moments."
-msgstr ""
-"અમુક સિસ્ટમ ફાઈલોને તાળુ મરાયેલ છે.\n"
-"મહેરબાની કરીને અમુક ક્ષણો માટે ફરીથી પ્રયત્ન કરો."
+#: ../src/servicemethods.py:59
+msgid "Stopped"
+msgstr "અટકાવાયેલ"
 
-#: ../userhelper-wrap.c:216
-msgid "Unknown user."
-msgstr "અજ્ઞાત વપરાશકર્તા."
-
-#: ../userhelper-wrap.c:218
-msgid "Insufficient rights."
-msgstr "અપૂરતા નિયમો."
-
-#: ../userhelper-wrap.c:220
-msgid "Invalid call to subprocess."
-msgstr "ઉપપ્રક્રિયાઓને અયોગ્ય બોલાવો."
-
-#: ../userhelper-wrap.c:222
-msgid ""
-"Your current shell is not listed in /etc/shells.\n"
-"You are not allowed to change your shell.\n"
-"Consult your system administrator."
-msgstr ""
-"તમારુ વર્તમાન શેલ /etc/shells માં યાદિત કરેલ નથી.\n"
-"તમે તમારું પ્રવેશ શેલ બદલવા સમર્થ નથી.\n"
-"તમારા સિસ્ટમ સંચાલકનો સંપર્ક કરો."
-
-#: ../userhelper-wrap.c:225
-msgid "Out of memory."
-msgstr "મેમરીની બહાર."
-
-#: ../userhelper-wrap.c:227
-msgid "The exec() call failed."
-msgstr "exec() કોલ નિષ્ફળ ગયો."
-
-#: ../userhelper-wrap.c:229
-msgid "Failed to find selected program."
-msgstr "પસંદ કરેલ કાર્યક્રમ શોધવામાં નિષ્ફળ."
-
-#: ../userhelper-wrap.c:232
-msgid "Request canceled."
-msgstr "અરજી રદ થઈ ગઈ."
-
-#: ../userhelper-wrap.c:234
-msgid "Internal PAM error occured."
-msgstr "આંતરિક PAM ભૂલ ઉદ્દભવી."
-
-#: ../userhelper-wrap.c:236
-msgid "Unknown error."
-msgstr "અજ્ઞાત ભૂલ."
-
-#: ../userhelper-wrap.c:504
-msgid "Query"
-msgstr "પ્રશ્ન"
-
-#: ../userhelper-wrap.c:581 ../userhelper-wrap.c:732
+#: ../src/servicemethods.py:60
 msgid "Error"
 msgstr "ભૂલ"
 
-#: ../userhelper-wrap.c:581
-msgid "Information"
-msgstr "જાણકારી"
+#: ../src/servicemethods.py:283
+#, python-format
+msgid "%s failed. The error was: %s"
+msgstr "%s નિષ્ફળ. ભૂલ હતી: %s"
 
-#: ../userhelper-wrap.c:724
-msgid "Placeholder text."
-msgstr "જગ્યા વાપરનાર લખાણ."
+#: ../src/servicemethods.py:290
+msgid " successful"
+msgstr " સફળ"
 
-#: ../userhelper-wrap.c:753 ../userhelper.c:627
-#, c-format
-msgid "Authenticating as \"%s\""
-msgstr "\"%s\" તરીકે સત્તાધિકારીત કરી રહ્યા છીએ"
+#: ../src/servicemethods.py:419 ../src/servicemethods.py:430
+#, python-format
+msgid "xinetd must be enabled for %s to run"
+msgstr "xinetd એ %s ને ચલાવવા માટે સક્રિયકૃત હોવું જ જોઈએ"
 
-#: ../userhelper-wrap.c:782
-msgid "Changing password."
-msgstr "પાસવર્ડો બદલી રહ્યા છીએ."
+#: ../src/servicemethods.py:424
+msgid "xinetd failed to reload for "
+msgstr "xinetd ને આના માટે પુનઃલાવવાનું નિષ્ફળ "
 
-#: ../userhelper-wrap.c:784
-msgid "Changing personal information."
-msgstr "ખાનગી જાણકારી બદલી રહ્યા છીએ."
+#: ../src/servicemethods.py:426
+msgid ". The error was: "
+msgstr ". ભૂલ હતી: "
 
-#: ../userhelper-wrap.c:787
-msgid "Changing login shell."
-msgstr "પ્રવેશ શેલ બદલી રહ્યા છીએ."
+#: ../src/servicemethods.py:428
+#, python-format
+msgid "xinetd reloaded %s successfully"
+msgstr "xinetd એ %s ને સફળતાપૂર્વક પુનઃલોડ કર્યું"
 
-#: ../userhelper-wrap.c:791
-#, c-format
+#: ../src/serviceconf.glade.h:1
+msgid "Add Service"
+msgstr "સેવા ઉમેરો"
+
+#: ../src/serviceconf.glade.h:2
+msgid "Current Active Runlevel: "
+msgstr "વર્તમાન સક્રિય રનલેવલ: "
+
+#: ../src/serviceconf.glade.h:3
+msgid "Delete Service"
+msgstr "સેવા કાઢી નાંખો"
+
+#: ../src/serviceconf.glade.h:4
+msgid "Description"
+msgstr "વર્ણન"
+
+#: ../src/serviceconf.glade.h:5
+msgid "Don't Save"
+msgstr "સંગ્રહો નહિં"
+
+#: ../src/serviceconf.glade.h:6
+msgid "Editing Runlevel:"
+msgstr "રનલેવલમાં ફેરફાર કરી રહ્યા છીએ:"
+
+#: ../src/serviceconf.glade.h:7
+msgid "None"
+msgstr "કંઈ નહિં"
+
+#: ../src/serviceconf.glade.h:8
+msgid "Restart"
+msgstr "પુનઃશરૂ કરો"
+
+#: ../src/serviceconf.glade.h:9
+msgid "Revert To _Last Save"
+msgstr "છેલ્લી સંગ્રહમાં પુનઃઉલટાવો (_L)"
+
+#: ../src/serviceconf.glade.h:10
+msgid "Runlevel _3"
+msgstr "રનલેવલ _3"
+
+#: ../src/serviceconf.glade.h:11
+msgid "Runlevel _4"
+msgstr "રનલેવલ _4"
+
+#: ../src/serviceconf.glade.h:12
+msgid "Runlevel _5"
+msgstr "રનલેવલ _5"
+
+#: ../src/serviceconf.glade.h:13
+msgid "Runlevel _All"
+msgstr "બધા રનલેવલ (_A)"
+
+#: ../src/serviceconf.glade.h:14
+msgid "S_top Service"
+msgstr "સેવા અટકાવો (_t)"
+
+#: ../src/serviceconf.glade.h:15
+msgid "Save Dialog"
+msgstr "સંવાદ સંગ્રહો"
+
+#: ../src/serviceconf.glade.h:16
+msgid "Service Configuration"
+msgstr "સેવા રૂપરેખાંકન"
+
+#: ../src/serviceconf.glade.h:17
+msgid "Service Name: "
+msgstr "સેવા નામ: "
+
+#: ../src/serviceconf.glade.h:18
+msgid "Start"
+msgstr "શરૂ"
+
+#: ../src/serviceconf.glade.h:19
+msgid "Status"
+msgstr "પરિસ્થિતિ"
+
+#: ../src/serviceconf.glade.h:20
+msgid "Stop"
+msgstr "અટકાવો"
+
+#: ../src/serviceconf.glade.h:21
 msgid ""
-"You are attempting to run \"%s\" which may benefit from administrative "
-"privileges, but more information is needed in order to do so."
-msgstr ""
-"તમે \"%s\" ચલાવવાનું પસંદ કરવા જઈ રહ્યા છીએ કે જે સંચાલન\n"
-"માટે લાભદાયક છે, પરંતુ એમ કરવા માટે વધુ જાણકારી જરુરી છે."
+"These services are started on demand and end when there is nothing more to "
+"do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr "આ સેવાઓ જરૂરીયાત પર શરૂ થયેલ છે અને અંત થશે જ્યારે ત્યાં કરવા માટે કંઈ ના હોય. <b>xinetd</b> સેવા ચાલતી હોવી જ જોઈએ કે જેથી તેઓ વાપરી શકાય."
 
-#: ../userhelper-wrap.c:793
-#, c-format
+#: ../src/serviceconf.glade.h:22
 msgid ""
-"You are attempting to run \"%s\" which requires administrative privileges, "
-"but more information is needed in order to do so."
-msgstr ""
-"તમે \"%s\" ચલાવવાનું પસંદ કરવા જઈ રહ્યા છીએ કે જેના માટે સંચાલન\n"
-"જાણકારી જરુરી છે, પરંતુ એમ કરવા માટે વધુ જાણકારી જરુરી છે."
+"These services are started once and run in the background. You can specify "
+"in which runlevels they are started."
+msgstr "આ સેવાઓ એકવાર શરૂ થાય છે અને પાશ્વભાગમાં ચાલે છે. તમે સ્પષ્ટ કરી શકો છો કે કયા રનલેવલોમાં તેઓ શરૂ થાય છે."
 
-#: ../userhelper-wrap.c:798
+#: ../src/serviceconf.glade.h:23
 msgid ""
-"You are attempting to run a command which may benefit from administrative "
-"privileges, but more information is needed in order to do so."
+"You have made changes to the current runlevel.\n"
+"Do you want to save the changes?"
 msgstr ""
-"તમે આદેશ ચલાવવાનું પસંદ કરવા જઈ રહ્યા છીએ કે જે સંચાલન\n"
-"માટે લાભદાયક છે, પરંતુ એમ કરવા માટે વધુ જાણકારી જરુરી છે."
+"તમે વર્તમાન રનલેવલમાં ફેરફારો કરેલ છે.\n"
+"શું તમે ફેરફારો સંગ્રહવા માંગો છો?"
 
-#: ../userhelper-wrap.c:800
-msgid ""
-"You are attempting to run a command which requires administrative "
-"privileges, but more information is needed in order to do so."
-msgstr ""
-"તમે આદેશ ચલાવવાનું પસંદ કરવા જઈ રહ્યા છીએ કે જેના માટે સંચાલન\n"
-"જાણકારી જરુરી છે, પરંતુ એમ કરવા માટે વધુ જાણકારી જરુરી છે."
+#: ../src/serviceconf.glade.h:25
+msgid "_Actions"
+msgstr "ક્રિયાઓ (_A)"
 
-#: ../userhelper-wrap.c:810
-msgid "_Run Unprivileged"
-msgstr "પ્રિવિલેજ નહિં તે ચલાવો (_R)"
+#: ../src/serviceconf.glade.h:26
+msgid "_Background Services"
+msgstr "પાશ્વભાગ સેવાઓ (_B)"
 
-#: ../userhelper-wrap.c:968
-#, c-format
-msgid "Pipe error.\n"
-msgstr "પાઈપ ભૂલ.\n"
+#: ../src/serviceconf.glade.h:27
+msgid "_Contents"
+msgstr "વિષયસૂચી (_C)"
 
-#: ../userhelper-wrap.c:975
-#, c-format
-msgid "Cannot fork().\n"
-msgstr "fork() કરી શકતા નથી.\n"
+#: ../src/serviceconf.glade.h:28
+msgid "_Edit Runlevel"
+msgstr "રનલેવલમાં ફેરફાર કરો (_E)"
 
-#: ../userhelper-wrap.c:1001
-#, c-format
-msgid "Can't set charset %s on an IO channel: %s\n"
-msgstr "અક્ષરસમૂહ %s ને IO ચેનલ પર સુયોજિત કરી શકતા નથી: %s\n"
+#: ../src/serviceconf.glade.h:29
+msgid "_File"
+msgstr "ફાઈલ (_F)"
 
-#: ../userhelper-wrap.c:1077 ../userhelper-wrap.c:1081
-#, c-format
-msgid "dup2() error.\n"
-msgstr "dup2() ભૂલ.\n"
+#: ../src/serviceconf.glade.h:30
+msgid "_Help"
+msgstr "મદદ (_H)"
 
-#: ../userhelper-wrap.c:1093
-#, c-format
-msgid "execl() error, errno=%d\n"
-msgstr "execl() ભૂલ, ભૂલ ક્રમાંક=%d\n"
+#: ../src/serviceconf.glade.h:31
+msgid "_On Demand Services"
+msgstr "જરૂરીયાત પ્રમાણેની સેવાઓ (_O)"
 
-#: ../userhelper.c:609
-#, c-format
-msgid ""
-"You are attempting to run \"%s\" which may benefit from administrative\n"
-"privileges, but more information is needed in order to do so."
-msgstr ""
-"તમે \"%s\" ચલાવવાનું પસંદ કરવા જઈ રહ્યા છીએ કે જે સંચાલન\n"
-"માટે લાભદાયક છે, પરંતુ એમ કરવા માટે વધુ જાણકારી જરુરી છે."
+#: ../src/serviceconf.glade.h:32
+msgid "_Quit"
+msgstr "બંધ કરો (_Q)"
 
-#: ../userhelper.c:611
-#, c-format
-msgid ""
-"You are attempting to run \"%s\" which requires administrative\n"
-"privileges, but more information is needed in order to do so."
-msgstr ""
-"તમે \"%s\" ચલાવવાનું પસંદ કરવા જઈ રહ્યા છીએ કે જેના માટે સંચાલન\n"
-"જાણકારી જરુરી છે, પરંતુ એમ કરવા માટે વધુ જાણકારી જરુરી છે."
+#: ../src/serviceconf.glade.h:33
+msgid "_Refresh Service List"
+msgstr "સેવા યાદી પુનઃતાજી કરો (_R)"
 
-#: ../userhelper.c:615
-msgid ""
-"You are attempting to run a command which may benefit from\n"
-"administrative privileges, but more information is needed in order to do so."
-msgstr ""
-"તમે આદેશ ચલાવવાનું પસંદ કરવા જઈ રહ્યા છીએ કે જે સંચાલન\n"
-"માટે લાભદાયક છે, પરંતુ એમ કરવા માટે વધુ જાણકારી જરુરી છે."
+#: ../src/serviceconf.glade.h:34
+msgid "_Restart Service"
+msgstr "સેવા પુનઃશરૂ કરો (_R)"
 
-#: ../userhelper.c:617
-msgid ""
-"You are attempting to run a command which requires administrative\n"
-"privileges, but more information is needed in order to do so."
-msgstr ""
-"તમે આદેશ ચલાવવાનું પસંદ કરવા જઈ રહ્યા છીએ કે જેના માટે સંચાલન\n"
-"જાણકારી જરુરી છે, પરંતુ એમ કરવા માટે વધુ જાણકારી જરુરી છે."
+#: ../src/serviceconf.glade.h:35
+msgid "_Save Changes"
+msgstr "ફેરફારો સંગ્રહો (_S)"
 
-#: ../userhelper.c:2171
-#, c-format
-msgid "userhelper must be setuid root\n"
-msgstr "વપરાશકર્તા મદદગાર માટે uid રુટ જ સુયોજિત હોવું જોઈએ\n"
+#: ../src/serviceconf.glade.h:36
+msgid "_Start Service"
+msgstr "સેવા શરૂ કરો (_S)"
 
-#. FIXME: print a warning here?
-#: ../userhelper.c:2269
-#, c-format
-msgid "Unable to open graphical window, and unable to find controlling terminal.\n"
-msgstr "ગ્રાફિકવાળી વિન્ડો ખોલવા સમર્થ નથી, અને નિયંત્રક ટર્મિનલ ખોલવામાં અસમર્થ.\n"
+#: ../src/serviceconf.glade.h:37
+msgid "_View"
+msgstr "દૃશ્ય (_V)"
 
-#: ../userinfo.c:370
-#, c-format
-msgid "Unexpected argument"
-msgstr "અનિચ્છનિય દલીલ"
+#: ../system-config-services.desktop.in.h:1
+msgid "Configure which services will be running when the system starts"
+msgstr "જ્યારે સિસ્ટમ શરૂ થાય ત્યારે કઈ સેવાઓ ચાલી રહી હશે તે રૂપરેખાંકિત કરો"
 
-#: ../userinfo.c:395
-#, c-format
-msgid "You don't exist.  Go away.\n"
-msgstr "તમે અસ્તિત્વમાં નથી.  દૂર જતા રહો.\n"
+#: ../system-config-services.desktop.in.h:2
+msgid "Service Management"
+msgstr "સેવા વ્યવસ્થાપન"
 
-#: ../userinfo.desktop.in.h:1
-msgid "About Myself"
-msgstr "મારા વિશે"
-
-#: ../userinfo.desktop.in.h:2
-msgid "Change personal information"
-msgstr "ખાનગી જાણકારી બદલો"
-
-#: ../usermode.glade.h:1
-msgid "Full Name:"
-msgstr "પુરુ નામ:"
-
-#: ../usermode.glade.h:2
-msgid "Home Phone Number:"
-msgstr "ઘરનો ફોન નંબર:"
-
-#: ../usermode.glade.h:3
-msgid "Login Shell:"
-msgstr "પ્રવેશ શેલ:"
-
-#: ../usermode.glade.h:4
-msgid "Office Phone Number:"
-msgstr "ઓફિસ ફોન નંબર:"
-
-#: ../usermode.glade.h:5
-msgid "Office:"
-msgstr "ઓફિસ:"
-
-#: ../usermode.glade.h:6
-msgid "User Information"
-msgstr "વપરાશકર્તા જાણકારી"
-
-#: ../usermount.c:61
-msgid "_Mount"
-msgstr "માઉન્ટ (_M)"
-
-#: ../usermount.c:62
-msgid "Un_mount"
-msgstr "માઉન્ટ કરો નહિં (_m)"
-
-#: ../usermount.c:289
-msgid ""
-"Are you sure you want to format this disk?  You will destroy any data it "
-"currently contains."
-msgstr ""
-"શું તમે ખરેખર આ ડિસ્કને ફોર્મેટ કરવા માંગો છો?  તમે હમણાં એ જે માહિતી સમાવે છે તે નાશ કરી "
-"નાંખશો."
-
-#: ../usermount.c:300
-msgid "Perform a _low-level format."
-msgstr "નિમ્ન સ્તરનું ફોર્મેટ કરો (_l)."
-
-#: ../usermount.c:337
-msgid "Select a _filesystem type to create:"
-msgstr "બનાવવા માટે ફાઈલસિસ્ટમનો પ્રકાર પસંદ કરો (_f):"
-
-#: ../usermount.c:507
-msgid ""
-"There are no filesystems which you are allowed to mount or unmount.\n"
-"Contact your administrator."
-msgstr ""
-"ત્યાં કોઈ ફાઈલ સિસ્ટમ નથી કે જે તમને માઉન્ટ અથવા માઉન્ટ નહિં કરવા માટે છે.\n"
-"તમારા સંચાલકનો સંપર્ક કરો."
-
-#. Create the dialog.
-#: ../usermount.c:508 ../usermount.c:520
-msgid "User Mount Tool"
-msgstr "વપરાશકર્તા માઉન્ટ સાધન"
-
-#. Create the other buttons.
-#: ../usermount.c:538
-msgid "_Format"
-msgstr "બંધારણ (_F)"
-
-#: ../usermount.c:574
-msgid "Device"
-msgstr "ઉપકરણ"
-
-#: ../usermount.c:580
-msgid "Directory"
-msgstr "ડિરેક્ટરી"
-
-#: ../usermount.c:586
-msgid "Filesystem"
-msgstr "ફાઈલસિસ્ટમ"
-
-#: ../usermount.c:633
-#, c-format
-msgid "The device '%s' can not be formatted."
-msgstr "ઉપકરણ '%s' નું બંધારણ ઘડી શકતા નથી."
-
-#: ../usermount.desktop.in.h:1
-msgid "Disk Management"
-msgstr "ડિસ્ક વ્યવસ્થાપન"
-
-#: ../usermount.desktop.in.h:2
-msgid "Mount and unmount filesystems"
-msgstr "ફાઈલસિસ્ટમો માઉન્ટ અને અનમાઉન્ટ કરો"
-
-#: ../userpasswd.desktop.in.h:1
-msgid "Change your login password"
-msgstr "તમારો પ્રવેશ પાસવર્ડ બદલો"
-
-#: ../userpasswd.desktop.in.h:2
-msgid "Password"
-msgstr "પાસવર્ડ"
+#: ../system-config-services.desktop.in.h:3
+msgid "Services"
+msgstr "સેવાઓ"
 
