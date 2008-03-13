@@ -109,6 +109,8 @@ rm -rf %{buildroot}
 %changelog
 * Thu Mar 13 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.9-1
 - fix traceback when setting GUI elements (in)sensitive (#437289)
+- fix generating localized XML files
+- update online docs po/pot files only on real changes
 
 * Fri Mar 07 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.8-1
 - don't warn about xinetd not installed/running with disabled xinetd services
