@@ -501,12 +501,13 @@ class GUIServicesList (GladeController):
         sensitive = True
 
         if wname in ('serviceEnable', 'serviceDisable'):
-            if service.get_enabled () == SVC_ENABLED_REFRESHING:
+            is_enabled = service.get_enabled ()
+            if is_enabled == SVC_ENABLED_REFRESHING:
                 sensitive = False
             elif wname == 'serviceEnable':
-                sensitive = (get_enabled != SVC_ENABLED_YES)
+                sensitive = (is_enabled != SVC_ENABLED_YES)
             elif wname == 'serviceDisable':
-                sensitive = (get_enabled != SVC_ENABLED_NO)
+                sensitive = (is_enabled != SVC_ENABLED_NO)
         elif wname in ('serviceCustomize', 'serviceStart', 'serviceStop', 'serviceRestart'):
             if isinstance (service, services.SysVService):
                 if service.status == SVC_STATUS_REFRESHING:
