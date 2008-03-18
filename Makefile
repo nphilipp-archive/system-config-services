@@ -178,3 +178,9 @@ sdif:	shortdiff
 shortdiff:
 	@echo Files changed since tag $(HGTAG):
 	@hg diff -r$(HGTAG) -X .hgtags | egrep '^---|^\+\+\+' | sed 's:^...[   ][      ]*[ab]/::g' | sort -u
+
+llog:	lastlog
+
+lastlog:
+	@echo Log since tag $(HGTAG):
+	@hg log -v -r $(HGTAG):
