@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-06 16:41+0100\n"
+"POT-Creation-Date: 2008-03-20 16:11+0100\n"
 "PO-Revision-Date: 2007-01-24 17:34+0100\n"
 "Last-Translator: Adnan Hodzic <AbsintheSyringe@gmail.com>\n"
 "Language-Team: Bosnian <lokal@linux.org.ba>\n"
@@ -104,7 +104,7 @@ msgstr ""
 
 #: ../src/servicecontrol.py:94
 #, python-format
-msgid "Service %s is running with old config"
+msgid "Service %s is running with old configuration"
 msgstr ""
 
 #: ../src/servicecontrol.py:97
@@ -114,7 +114,7 @@ msgstr ""
 
 #: ../src/servicecontrol.py:100
 #, python-format
-msgid "Service %s resports an error"
+msgid "Service %s reports an error"
 msgstr ""
 
 #: ../src/servicecontrol.py:103

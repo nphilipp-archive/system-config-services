@@ -91,13 +91,13 @@ class ServiceStatusBase:
         if status == RUNNING:
             if self.service.is_dirty():
                 self._setIcon('yellow')
-                self.lblStatus.set_text(_("Service %s is running with old config") % name) 
+                self.lblStatus.set_text(_("Service %s is running with old configuration") % name) 
             else:
                 self._setIcon('green')
                 self.lblStatus.set_text(_("Service %s is running") % name) 
         elif status == ERROR:
             self._setIcon('red')
-            self.lblStatus.set_text(_("Service %s resports an error") % name) 
+            self.lblStatus.set_text(_("Service %s reports an error") % name) 
         else:
             self._setIcon('off')
             self.lblStatus.set_text(_("Service %s is stopped") % name) 

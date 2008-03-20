@@ -9,272 +9,392 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-22 01:27-0700\n"
+"POT-Creation-Date: 2008-03-20 16:11+0100\n"
 "PO-Revision-Date: 2008-03-11 12:00+0100\n"
 "Last-Translator: Alexander Todorov <atodorov@redhat.com>\n"
 "Language-Team: Bulgarian <Bulgarian Translators' Team <dict@fsa-bg.org>>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/serviceconf.py:77
-#, python-format
-msgid "Are you sure you want to delete the %s?"
-msgstr "Сигурни ли сте, че желаете да премахнете %s?"
-
-#: ../src/serviceconf.py:140
-#, python-format
-msgid "Runlevel %d"
-msgstr "Работно ниво %d"
-
-#. initialize this to the runlevel we are running in. It will
-#. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:281
-msgid "Currently Running in Runlevel: "
-msgstr "В момента се работи на работно ниво: "
-
-#: ../src/serviceconf.py:377 ../src/serviceconf.py:480
-msgid "Editing Runlevel: "
-msgstr "Редакция на работно ниво: "
-
-#: ../src/serviceconf.py:419 ../src/servicemethods.py:57
-msgid "Unknown"
-msgstr "Непознат"
-
-#: ../src/serviceconf.py:509
-msgid "All"
-msgstr "Всички"
-
-#: ../src/serviceconf.py:543
-msgid ""
-"System Services Configuration Tool VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
-" "
+#: ../src/gui.py:109
+msgid "Name"
 msgstr ""
-"Инструмент за настройка на системните услуги VERSION\n"
-" Copyright·Â©·2002-2006·Red·Hat,·Inc.\n"
-" Tim·Powers·<timp@redhat.com>\n"
-" Bill·Nottingham·<notting@redhat.com>\n"
-" Dan·Walsh·<dwalsh@redhat.com>\n"
-" Brent·Fox·<bfox@redhat.com>\n"
-" Nils·Philippsen·<nphilipp@redhat.com>\n"
-" "
 
-#: ../src/serviceconf.py:547
-msgid "About"
-msgstr "За програмата"
-
-#: ../src/serviceconf.py:580
-msgid ""
-"The help viewer could not be found. To be able to view help you need to "
-"install the 'yelp' package."
+#: ../src/gui.py:110
+msgid "Remarks"
 msgstr ""
-"Не може да бъде намерен четец за помощната документация.·За да прочетете помоща "
-"трябва да инсталирате пакета 'yelp'."
 
-#: ../src/serviceconf.py:719
-msgid "You must run system-config-services as root."
-msgstr "Трябва да стартирате system-config-services като root."
+#: ../src/gui.py:170 ../src/gui.py:187
+msgid "This service is being refreshed right now."
+msgstr ""
 
-#: ../src/servicemethods.py:58
-msgid "Running"
-msgstr "Работеща"
+#: ../src/gui.py:171
+msgid "This service is enabled."
+msgstr ""
 
-#: ../src/servicemethods.py:59
-msgid "Stopped"
-msgstr "Спряна"
+#: ../src/gui.py:172
+msgid "This service is disabled."
+msgstr ""
 
-#: ../src/servicemethods.py:60
-msgid "Error"
-msgstr "Грешка"
-
-#: ../src/servicemethods.py:283
+#: ../src/gui.py:173
 #, python-format
-msgid "%s failed. The error was: %s"
-msgstr "%s не успя. Грешката бе: %s"
+msgid "This service is enabled in runlevels: %(runlevels)s"
+msgstr ""
 
-#: ../src/servicemethods.py:290
-msgid " successful"
-msgstr " успешно"
+#: ../src/gui.py:188
+msgid "The status of this service is unknown."
+msgstr ""
 
-#: ../src/servicemethods.py:419 ../src/servicemethods.py:430
+#: ../src/gui.py:189
+msgid "This service is stopped."
+msgstr ""
+
+#: ../src/gui.py:190
+msgid "This service is running."
+msgstr ""
+
+#: ../src/gui.py:191
+msgid "This service is dead."
+msgstr ""
+
+#: ../src/gui.py:268
 #, python-format
-msgid "xinetd must be enabled for %s to run"
-msgstr "xinetd трябва да е включен за да работи %s"
+msgid ""
+"The <b>%(servicename)s</b> service is started once, usually when the system "
+"is booted, runs in the background and wakes up when needed."
+msgstr ""
 
-#: ../src/servicemethods.py:424
-msgid "xinetd failed to reload for "
-msgstr "xinetd не можа да се презареди за "
+#: ../src/gui.py:282
+msgid "This service is updated currently."
+msgstr ""
 
-#: ../src/servicemethods.py:426
-msgid ". The error was: "
-msgstr ". Грешката бе: "
-
-#: ../src/servicemethods.py:428
+#: ../src/gui.py:308
 #, python-format
-msgid "xinetd reloaded %s successfully"
-msgstr "xinetd презареди %s успешно"
+msgid ""
+"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
+"service and ends when it has got nothing more to do."
+msgstr ""
 
-#: ../src/serviceconf.glade.h:1
-msgid "Add Service"
-msgstr "Добавяне на услуга"
+#: ../src/gui.py:317
+msgid ""
+"This service is enabled, but the <b>xinetd</b> package is not installed. "
+"This service does not work without it."
+msgstr ""
 
-#: ../src/serviceconf.glade.h:2
-msgid "Current Active Runlevel: "
-msgstr "Активно в момента работно ниво: "
+#: ../src/gui.py:323
+msgid ""
+"This service is enabled, but the <b>xinetd</b> service is not running. This "
+"service does not work without it."
+msgstr ""
 
-#: ../src/serviceconf.glade.h:3
-msgid "Delete Service"
-msgstr "Изтриване на услуга"
+#: ../src/gui.py:630 ../src/system-config-services.glade:1365
+#, python-format
+msgid "Enable the <b>%(service)s</b> service in these runlevels:"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:4
-msgid "Description"
-msgstr "Описание"
+#: ../src/gui.py:754
+msgid ""
+"The help viewer could not be found. To be able to view help, the 'yelp' "
+"package needs to be installed."
+msgstr ""
 
-#: ../src/serviceconf.glade.h:5
-msgid "Don't Save"
-msgstr "Без записване"
+#: ../src/servicecontrol.py:88
+#, python-format
+msgid "Service %s not found!"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:6
-msgid "Editing Runlevel:"
-msgstr "Редактиране на работно ниво:"
+#: ../src/servicecontrol.py:94
+#, python-format
+msgid "Service %s is running with old configuration"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:7
-msgid "None"
-msgstr "Няма"
+#: ../src/servicecontrol.py:97
+#, python-format
+msgid "Service %s is running"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:8
-msgid "Restart"
-msgstr "Рестартиране"
+#: ../src/servicecontrol.py:100
+#, python-format
+msgid "Service %s reports an error"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:9
-msgid "Revert To _Last Save"
-msgstr "Връщане към _последно съхраненото"
+#: ../src/servicecontrol.py:103
+#, python-format
+msgid "Service %s is stopped"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:10
-msgid "Runlevel _3"
-msgstr "Работно ниво _3"
+#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
+#, python-format
+msgid "Currently enabled in runlevels %s"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:11
-msgid "Runlevel _4"
-msgstr "Работно ниво _4"
+#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
+#, python-format
+msgid "Enable %(name)s in runlevels %(levels)s"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:12
-msgid "Runlevel _5"
-msgstr "Работно ниво _5"
+#: ../src/servicetab.glade:8
+msgid "window1"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:13
-msgid "Runlevel _All"
-msgstr "_Всички работни нива"
+#: ../src/servicetab.glade:38
+msgid "Service %s"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:14
-msgid "S_top Service"
-msgstr "_Спиране на услуга"
+#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
+#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
+msgid "Enable"
+msgstr "Включване"
 
-#: ../src/serviceconf.glade.h:15
-msgid "Save Dialog"
-msgstr "Диалогов прозорец за запис"
+#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
+#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
+msgid "Disable"
+msgstr "Изключване"
 
-#: ../src/serviceconf.glade.h:16
-msgid "Service Configuration"
-msgstr "Конфигуриране на услугата"
+#: ../src/servicetab.glade:89
+msgid "Customize"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:17
-msgid "Service Name: "
-msgstr "Име на услугата: "
+#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
+msgid "Enable Default"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:18
+#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
+#: ../src/system-config-services.glade:135
+#: ../src/system-config-services.glade:1256
+msgid "Runlevel 2"
+msgstr ""
+
+#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
+#: ../src/system-config-services.glade:144
+#: ../src/system-config-services.glade:1266
+msgid "Runlevel 3"
+msgstr ""
+
+#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
+#: ../src/system-config-services.glade:153
+#: ../src/system-config-services.glade:1276
+msgid "Runlevel 4"
+msgstr ""
+
+#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
+#: ../src/system-config-services.glade:162
+#: ../src/system-config-services.glade:1286
+msgid "Runlevel 5"
+msgstr ""
+
+#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
+msgid "Enable All"
+msgstr ""
+
+#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
+msgid "Disable All"
+msgstr ""
+
+#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
+#: ../src/servicetab.glade:2135
 msgid "Start"
 msgstr "Стартиране"
 
-#: ../src/serviceconf.glade.h:19
-msgid "Status"
-msgstr "Състояние"
+#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
+#: ../src/servicetab.glade:2156
+msgid "Restart"
+msgstr "Рестартиране"
 
-#: ../src/serviceconf.glade.h:20
+#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
+#: ../src/servicetab.glade:1922
+msgid "Configure"
+msgstr ""
+
+#: ../src/servicetab.glade:394
+msgid "foobar"
+msgstr ""
+
+#: ../src/servicetab.glade:412
+msgid "barfoo"
+msgstr ""
+
+#: ../src/servicetab.glade:521
+msgid "Current runlevel is %s"
+msgstr "Настоящото работно ниво е %s"
+
+#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
+msgid "Runlevels"
+msgstr "Работно ниво _3"
+
+#: ../src/servicetab.glade:807
+msgid "label18"
+msgstr ""
+
+#: ../src/servicetab.glade:940
+msgid "Start "
+msgstr "Стартиране "
+
+#: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
 msgid "Stop"
 msgstr "Спиране"
 
-#: ../src/serviceconf.glade.h:21
-msgid ""
-"These services are started on demand and end when there is nothing more to "
-"do. The <b>xinetd</b> service must be running so that they can be used."
+#: ../src/servicetab.glade:1066
+msgid "Service control"
+msgstr "Контрол на услуга"
+
+#: ../src/servicetab.glade:1148
+msgid "Status output"
+msgstr "Състояние"
+
+#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:181
+#: ../src/system-config-services.glade:393
+msgid "_Start"
 msgstr ""
-"Тези услуги се стартират при нужда и спират когато нямат повече работа. "
-"Услугата <b>xinetd</b> трябва да работи за да се ползват те."
 
-#: ../src/serviceconf.glade.h:22
-msgid ""
-"These services are started once and run in the background. You can specify "
-"in which runlevels they are started."
+#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:225
+#: ../src/system-config-services.glade:427
+msgid "_Restart"
 msgstr ""
-"Тези услуги се стартират веднъж и работят на фонов режим. Можете да укажете "
-"те в кои работни нива да са пуснати."
 
-#: ../src/serviceconf.glade.h:23
-msgid ""
-"You have made changes to the current runlevel.\n"
-"Do you want to save the changes?"
+#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
+#: ../src/system-config-services.glade:328
+msgid "_Enable"
 msgstr ""
-"Направени са промени в текущото работно ниво.\n"
-"Да бъдат ли съхранени тези промени?"
 
-#: ../src/serviceconf.glade.h:25
-msgid "_Actions"
-msgstr "_Действия"
+#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
+#: ../src/system-config-services.glade:345
+msgid "_Disable"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:26
-msgid "_Background Services"
-msgstr "_Фонови услуги"
+#: ../src/servicetab.glade:1613
+msgid "_Configure"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:27
-msgid "_Contents"
-msgstr "_Съдържание"
+#: ../src/servicetab.glade:1653
+msgid "Button Box"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:28
-msgid "_Edit Runlevel"
-msgstr "_Редакция на работно ниво"
+#: ../src/servicetab.glade:1730
+msgid "label16"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:29
-msgid "_File"
-msgstr "_Файл"
+#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
+msgid "Service %s:"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:30
+#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1295
+msgid "Customize Runlevels"
+msgstr ""
+
+#: ../src/system-config-services.glade:7
+#: ../src/system-config-services.glade:1238
+msgid "Service Configuration"
+msgstr "Конфигуриране на услугата"
+
+#: ../src/system-config-services.glade:38
+msgid "_Program"
+msgstr ""
+
+#: ../src/system-config-services.glade:60
+msgid "Ser_vice"
+msgstr ""
+
+#: ../src/system-config-services.glade:113
+#: ../src/system-config-services.glade:363
+msgid "_Customize"
+msgstr ""
+
+#: ../src/system-config-services.glade:203
+#: ../src/system-config-services.glade:410
+msgid "S_top"
+msgstr ""
+
+#: ../src/system-config-services.glade:251
 msgid "_Help"
 msgstr "_Помощ"
 
-#: ../src/serviceconf.glade.h:31
-msgid "_On Demand Services"
-msgstr "При _нужда"
+#: ../src/system-config-services.glade:260
+msgid "_Contents"
+msgstr "_Съдържание"
 
-#: ../src/serviceconf.glade.h:32
-msgid "_Quit"
-msgstr "_Изход"
+#: ../src/system-config-services.glade:288
+msgid "_About"
+msgstr ""
 
-#: ../src/serviceconf.glade.h:33
-msgid "_Refresh Service List"
-msgstr "_Опресняване списъка услуги"
+#: ../src/system-config-services.glade:362
+msgid "Customize the runlevels in which a service is enabled."
+msgstr ""
 
-#: ../src/serviceconf.glade.h:34
-msgid "_Restart Service"
-msgstr "Рестартиране на _услуга"
+#: ../src/system-config-services.glade:558
+msgid "No service selected."
+msgstr ""
 
-#: ../src/serviceconf.glade.h:35
-msgid "_Save Changes"
-msgstr "_Запис на промените"
+#: ../src/system-config-services.glade:620
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
 
-#: ../src/serviceconf.glade.h:36
-msgid "_Start Service"
-msgstr "Стартиране на ус_луга"
+#: ../src/system-config-services.glade:807
+#: ../src/system-config-services.glade:1006
+msgid "Description"
+msgstr "Описание"
 
-#: ../src/serviceconf.glade.h:37
-msgid "_View"
-msgstr "Из_глед"
+#: ../src/system-config-services.glade:874
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has got nothing more to do."
+msgstr ""
+
+#: ../src/system-config-services.glade:1080
+msgid "Service Information"
+msgstr ""
+
+#: ../src/system-config-services.glade:1199
+msgid "Status of service %s:"
+msgstr ""
+
+#: ../src/system-config-services.glade:1236
+msgid "system-config-services"
+msgstr ""
+
+#: ../src/system-config-services.glade:1237
+msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
+msgstr ""
+
+#: ../src/system-config-services.glade:1239
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+
+#: ../src/system-config-services.glade:1246
+msgid "translator-credits"
+msgstr ""
+
+#: ../src/system-config-services.glade:1391
+msgid "Runlevel _2"
+msgstr ""
+
+#: ../src/system-config-services.glade:1410
+msgid "Runlevel _3"
+msgstr "Работно ниво _3"
+
+#: ../src/system-config-services.glade:1429
+msgid "Runlevel _4"
+msgstr "Работно ниво _4"
+
+#: ../src/system-config-services.glade:1448
+msgid "Runlevel _5"
+msgstr "Работно ниво _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -288,26 +408,172 @@ msgstr "Мениджмънт на услугите"
 msgid "Services"
 msgstr "Услуги"
 
-#~ msgid "Enable"
-#~ msgstr "Включване"
+#~ msgid "Are you sure you want to delete the %s?"
+#~ msgstr "Сигурни ли сте, че желаете да премахнете %s?"
 
-#~ msgid "Disable"
-#~ msgstr "Изключване"
+#~ msgid "Runlevel %d"
+#~ msgstr "Работно ниво %d"
 
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Настоящото работно ниво е %s"
+#~ msgid "Currently Running in Runlevel: "
+#~ msgstr "В момента се работи на работно ниво: "
 
-#~ msgid "Runlevels"
-#~ msgstr "Работно ниво _3"
+#~ msgid "Editing Runlevel: "
+#~ msgstr "Редакция на работно ниво: "
 
-#~ msgid "Start "
-#~ msgstr "Стартиране "
+#~ msgid "Unknown"
+#~ msgstr "Непознат"
 
-#~ msgid "Service control"
-#~ msgstr "Контрол на услуга"
+#~ msgid "All"
+#~ msgstr "Всички"
 
-#~ msgid "Status output"
+#~ msgid ""
+#~ "System Services Configuration Tool VERSION\n"
+#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
+#~ msgstr ""
+#~ "Инструмент за настройка на системните услуги VERSION\n"
+#~ " Copyright·Â©·2002-2006·Red·Hat,·Inc.\n"
+#~ " Tim·Powers·<timp@redhat.com>\n"
+#~ " Bill·Nottingham·<notting@redhat.com>\n"
+#~ " Dan·Walsh·<dwalsh@redhat.com>\n"
+#~ " Brent·Fox·<bfox@redhat.com>\n"
+#~ " Nils·Philippsen·<nphilipp@redhat.com>\n"
+#~ " "
+
+#~ msgid "About"
+#~ msgstr "За програмата"
+
+#~ msgid ""
+#~ "The help viewer could not be found. To be able to view help you need to "
+#~ "install the 'yelp' package."
+#~ msgstr ""
+#~ "Не може да бъде намерен четец за помощната документация.·За да прочетете "
+#~ "помоща трябва да инсталирате пакета 'yelp'."
+
+#~ msgid "You must run system-config-services as root."
+#~ msgstr "Трябва да стартирате system-config-services като root."
+
+#~ msgid "Running"
+#~ msgstr "Работеща"
+
+#~ msgid "Stopped"
+#~ msgstr "Спряна"
+
+#~ msgid "Error"
+#~ msgstr "Грешка"
+
+#~ msgid "%s failed. The error was: %s"
+#~ msgstr "%s не успя. Грешката бе: %s"
+
+#~ msgid " successful"
+#~ msgstr " успешно"
+
+#~ msgid "xinetd must be enabled for %s to run"
+#~ msgstr "xinetd трябва да е включен за да работи %s"
+
+#~ msgid "xinetd failed to reload for "
+#~ msgstr "xinetd не можа да се презареди за "
+
+#~ msgid ". The error was: "
+#~ msgstr ". Грешката бе: "
+
+#~ msgid "xinetd reloaded %s successfully"
+#~ msgstr "xinetd презареди %s успешно"
+
+#~ msgid "Add Service"
+#~ msgstr "Добавяне на услуга"
+
+#~ msgid "Current Active Runlevel: "
+#~ msgstr "Активно в момента работно ниво: "
+
+#~ msgid "Delete Service"
+#~ msgstr "Изтриване на услуга"
+
+#~ msgid "Don't Save"
+#~ msgstr "Без записване"
+
+#~ msgid "Editing Runlevel:"
+#~ msgstr "Редактиране на работно ниво:"
+
+#~ msgid "None"
+#~ msgstr "Няма"
+
+#~ msgid "Revert To _Last Save"
+#~ msgstr "Връщане към _последно съхраненото"
+
+#~ msgid "Runlevel _All"
+#~ msgstr "_Всички работни нива"
+
+#~ msgid "S_top Service"
+#~ msgstr "_Спиране на услуга"
+
+#~ msgid "Save Dialog"
+#~ msgstr "Диалогов прозорец за запис"
+
+#~ msgid "Service Name: "
+#~ msgstr "Име на услугата: "
+
+#~ msgid "Status"
 #~ msgstr "Състояние"
+
+#~ msgid ""
+#~ "These services are started on demand and end when there is nothing more "
+#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
+#~ msgstr ""
+#~ "Тези услуги се стартират при нужда и спират когато нямат повече работа. "
+#~ "Услугата <b>xinetd</b> трябва да работи за да се ползват те."
+
+#~ msgid ""
+#~ "These services are started once and run in the background. You can "
+#~ "specify in which runlevels they are started."
+#~ msgstr ""
+#~ "Тези услуги се стартират веднъж и работят на фонов режим. Можете да "
+#~ "укажете те в кои работни нива да са пуснати."
+
+#~ msgid ""
+#~ "You have made changes to the current runlevel.\n"
+#~ "Do you want to save the changes?"
+#~ msgstr ""
+#~ "Направени са промени в текущото работно ниво.\n"
+#~ "Да бъдат ли съхранени тези промени?"
+
+#~ msgid "_Actions"
+#~ msgstr "_Действия"
+
+#~ msgid "_Background Services"
+#~ msgstr "_Фонови услуги"
+
+#~ msgid "_Edit Runlevel"
+#~ msgstr "_Редакция на работно ниво"
+
+#~ msgid "_File"
+#~ msgstr "_Файл"
+
+#~ msgid "_On Demand Services"
+#~ msgstr "При _нужда"
+
+#~ msgid "_Quit"
+#~ msgstr "_Изход"
+
+#~ msgid "_Refresh Service List"
+#~ msgstr "_Опресняване списъка услуги"
+
+#~ msgid "_Restart Service"
+#~ msgstr "Рестартиране на _услуга"
+
+#~ msgid "_Save Changes"
+#~ msgstr "_Запис на промените"
+
+#~ msgid "_Start Service"
+#~ msgstr "Стартиране на ус_луга"
+
+#~ msgid "_View"
+#~ msgstr "Из_глед"
 
 #~ msgid "Help is not available."
 #~ msgstr "Няма налична помощна информация."
