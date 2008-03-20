@@ -1,4 +1,4 @@
-# translation of s-c-s_pt_BR.po to Brazilian Portuguese
+# translation of s-c-s-pt_BR.po to Brazilian Portuguese
 # Brazilian Portuguese localization of Red Hat Linux
 # Originated from the Portuguese translation by
 # Pedro Morais <morais@kde.org>
@@ -13,10 +13,10 @@
 # Diego Búrigo Zacarão <diegobz@projetofedora.org>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: s-c-s_pt_BR\n"
+"Project-Id-Version: s-c-s-pt_BR\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-06 16:41+0100\n"
-"PO-Revision-Date: 2008-03-20 13:35-0300\n"
+"POT-Creation-Date: 2008-03-20 16:11+0100\n"
+"PO-Revision-Date: 2008-03-20 14:23-0300\n"
 "Last-Translator: Diego Búrigo Zacarão <diegobz@projetofedora.org>\n"
 "Language-Team: Brazilian Portuguese <fedora-docs-br@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -73,7 +73,10 @@ msgstr "Este serviço está morto."
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr "O serviço <b>%(servicename)s</b> é iniciado uma única vez, normalmente quando o sistema é inicializado, roda em segundo plano e acionado quando necessário."
+msgstr ""
+"O serviço <b>%(servicename)s</b> é iniciado uma única vez, normalmente "
+"quando o sistema é inicializado, roda em segundo plano e acionado quando "
+"necessário."
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
@@ -84,19 +87,25 @@ msgstr "Este serviço está atualmente atualizado."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
-msgstr "O serviço <b>%(servicename)s</b> será iniciado por demanda através do serviço xinetd e pára quando ele não tem mais nada a fazer."
+msgstr ""
+"O serviço <b>%(servicename)s</b> será iniciado por demanda através do "
+"serviço xinetd e pára quando ele não tem mais nada a fazer."
 
 #: ../src/gui.py:317
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr "Este serviço está habilitado, mas o pacote <b>xinetd</b> não está instalado. Este serviço não funciona sem esse pacote."
+msgstr ""
+"Este serviço está habilitado, mas o pacote <b>xinetd</b> não está instalado. "
+"Este serviço não funciona sem esse pacote."
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr "Este serviço está habilitado, mas o serviço <b>xinetd</b> não está rodando. Este serviço não funciona sem que o <b>xinetd</b> esteja em execução."
+msgstr ""
+"Este serviço está habilitado, mas o serviço <b>xinetd</b> não está rodando. "
+"Este serviço não funciona sem que o <b>xinetd</b> esteja em execução."
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
@@ -107,7 +116,9 @@ msgstr "Habilitar o serviço <b>%(service)s</b> nesses níveis de execução:"
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr "O visualizador de ajuda não pode ser encontrado. Para estar apto a visualizar a ajuda o pacote 'yelp' precisa estar instalado."
+msgstr ""
+"O visualizador de ajuda não pode ser encontrado. Para estar apto a "
+"visualizar a ajuda o pacote 'yelp' precisa estar instalado."
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -116,7 +127,7 @@ msgstr "Serviço %s não encontrado!"
 
 #: ../src/servicecontrol.py:94
 #, python-format
-msgid "Service %s is running with old config"
+msgid "Service %s is running with old configuration"
 msgstr "O serviço %s está rodando com a configuração antiga"
 
 #: ../src/servicecontrol.py:97
@@ -126,7 +137,7 @@ msgstr "O serviço %s está rodando"
 
 #: ../src/servicecontrol.py:100
 #, python-format
-msgid "Service %s resports an error"
+msgid "Service %s reports an error"
 msgstr "O serviço %s reporta um erro"
 
 #: ../src/servicecontrol.py:103
@@ -340,7 +351,9 @@ msgstr "Nenhum serviço selecionado."
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
-msgstr "Este serviço é iniciado uma única vez, normalmente quando o sistema é inicializado, roda em segundo plano e acionado quando necessário."
+msgstr ""
+"Este serviço é iniciado uma única vez, normalmente quando o sistema é "
+"inicializado, roda em segundo plano e acionado quando necessário."
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
@@ -351,7 +364,9 @@ msgstr "Descrição"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
-msgstr "Este serviço será iniciado por demanda através do serviço xinetd e pára quando ele não tem mais nada a fazer."
+msgstr ""
+"Este serviço será iniciado por demanda através do serviço xinetd e pára "
+"quando ele não tem mais nada a fazer."
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
@@ -387,18 +402,17 @@ msgid ""
 msgstr ""
 "Este programa é um software livre; você pode redistribui-lo e/ou modifica-lo "
 "dentro dos termos da Licença Pública Geral GNU como publicada pela Fundação "
-"do Software Livre (FSF); na versão 2 da Licença, ou (na sua opnião) em qualquer "
-"versão posterior.\n"
+"do Software Livre (FSF); na versão 2 da Licença, ou (na sua opnião) em "
+"qualquer versão posterior.\n"
 "\n"
 "Este programa é distribuido na esperança que possa ser útil, mas SEM NENHUMA "
 "GARANTIA; sem uma garantia implícita de adequação a qualquer MERCADO ou "
 "APLICAÇÃO EM PARTICULAR. Veja a \n"
-"Licença Pública Geral GNU para maiores "
-"detalhes.\n"
+"Licença Pública Geral GNU para maiores detalhes.\n"
 "\n"
 "Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este "
-"programa, se não, escreva para a Fundação do Software Livre(FSF) Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"programa, se não, escreva para a Fundação do Software Livre(FSF) Inc., 59 "
+"Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: ../src/system-config-services.glade:1246
 msgid "translator-credits"
