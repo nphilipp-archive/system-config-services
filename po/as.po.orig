@@ -1,0 +1,569 @@
+# translation of system-config-services.tip.as.po to Assamese
+# This file is distributed under the same license as the system-config-services package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Amitakhya Phukan <amitakhya.phukan@gmail.com>, 2006.
+# Amitakhya Phukan <aphukan@redhat.com>, 2008.
+# Amitakhya Phukan <aphukan@fedoraproject.org>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-services.tip.as\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-20 16:11+0100\n"
+"PO-Revision-Date: 2008-01-31 17:19+0530\n"
+"Last-Translator: Amitakhya Phukan <aphukan@fedoraproject.org>\n"
+"Language-Team: Assamese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1)\n"
+
+#: ../src/gui.py:109
+msgid "Name"
+msgstr ""
+
+#: ../src/gui.py:110
+msgid "Remarks"
+msgstr ""
+
+#: ../src/gui.py:170 ../src/gui.py:187
+msgid "This service is being refreshed right now."
+msgstr ""
+
+#: ../src/gui.py:171
+msgid "This service is enabled."
+msgstr ""
+
+#: ../src/gui.py:172
+msgid "This service is disabled."
+msgstr ""
+
+#: ../src/gui.py:173
+#, python-format
+msgid "This service is enabled in runlevels: %(runlevels)s"
+msgstr ""
+
+#: ../src/gui.py:188
+msgid "The status of this service is unknown."
+msgstr ""
+
+#: ../src/gui.py:189
+msgid "This service is stopped."
+msgstr ""
+
+#: ../src/gui.py:190
+msgid "This service is running."
+msgstr ""
+
+#: ../src/gui.py:191
+msgid "This service is dead."
+msgstr ""
+
+#: ../src/gui.py:268
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is started once, usually when the system "
+"is booted, runs in the background and wakes up when needed."
+msgstr ""
+
+#: ../src/gui.py:282
+msgid "This service is updated currently."
+msgstr ""
+
+#: ../src/gui.py:308
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
+"service and ends when it has got nothing more to do."
+msgstr ""
+
+#: ../src/gui.py:317
+msgid ""
+"This service is enabled, but the <b>xinetd</b> package is not installed. "
+"This service does not work without it."
+msgstr ""
+
+#: ../src/gui.py:323
+msgid ""
+"This service is enabled, but the <b>xinetd</b> service is not running. This "
+"service does not work without it."
+msgstr ""
+
+#: ../src/gui.py:630 ../src/system-config-services.glade:1365
+#, python-format
+msgid "Enable the <b>%(service)s</b> service in these runlevels:"
+msgstr ""
+
+#: ../src/gui.py:754
+msgid ""
+"The help viewer could not be found. To be able to view help, the 'yelp' "
+"package needs to be installed."
+msgstr ""
+
+#: ../src/servicecontrol.py:88
+#, python-format
+msgid "Service %s not found!"
+msgstr ""
+
+#: ../src/servicecontrol.py:94
+#, python-format
+msgid "Service %s is running with old configuration"
+msgstr ""
+
+#: ../src/servicecontrol.py:97
+#, python-format
+msgid "Service %s is running"
+msgstr ""
+
+#: ../src/servicecontrol.py:100
+#, python-format
+msgid "Service %s reports an error"
+msgstr ""
+
+#: ../src/servicecontrol.py:103
+#, python-format
+msgid "Service %s is stopped"
+msgstr ""
+
+#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
+#, python-format
+msgid "Currently enabled in runlevels %s"
+msgstr ""
+
+#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
+#, python-format
+msgid "Enable %(name)s in runlevels %(levels)s"
+msgstr ""
+
+#: ../src/servicetab.glade:8
+msgid "window1"
+msgstr ""
+
+#: ../src/servicetab.glade:38
+msgid "Service %s"
+msgstr ""
+
+#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
+#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
+msgid "Enable"
+msgstr ""
+
+#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
+#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
+msgid "Disable"
+msgstr ""
+
+#: ../src/servicetab.glade:89
+msgid "Customize"
+msgstr ""
+
+#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
+msgid "Enable Default"
+msgstr ""
+
+#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
+#: ../src/system-config-services.glade:135
+#: ../src/system-config-services.glade:1256
+msgid "Runlevel 2"
+msgstr ""
+
+#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
+#: ../src/system-config-services.glade:144
+#: ../src/system-config-services.glade:1266
+msgid "Runlevel 3"
+msgstr ""
+
+#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
+#: ../src/system-config-services.glade:153
+#: ../src/system-config-services.glade:1276
+msgid "Runlevel 4"
+msgstr ""
+
+#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
+#: ../src/system-config-services.glade:162
+#: ../src/system-config-services.glade:1286
+msgid "Runlevel 5"
+msgstr ""
+
+#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
+msgid "Enable All"
+msgstr ""
+
+#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
+msgid "Disable All"
+msgstr ""
+
+#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
+#: ../src/servicetab.glade:2135
+msgid "Start"
+msgstr "আৰম্ভ"
+
+#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
+#: ../src/servicetab.glade:2156
+msgid "Restart"
+msgstr "পুনৰাৰম্ভ"
+
+#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
+#: ../src/servicetab.glade:1922
+msgid "Configure"
+msgstr ""
+
+#: ../src/servicetab.glade:394
+msgid "foobar"
+msgstr ""
+
+#: ../src/servicetab.glade:412
+msgid "barfoo"
+msgstr ""
+
+#: ../src/servicetab.glade:521
+msgid "Current runlevel is %s"
+msgstr ""
+
+#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
+msgid "Runlevels"
+msgstr ""
+
+#: ../src/servicetab.glade:807
+msgid "label18"
+msgstr ""
+
+#: ../src/servicetab.glade:940
+msgid "Start "
+msgstr ""
+
+#: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
+msgid "Stop"
+msgstr "বন্ধ"
+
+#: ../src/servicetab.glade:1066
+msgid "Service control"
+msgstr ""
+
+#: ../src/servicetab.glade:1148
+msgid "Status output"
+msgstr ""
+
+#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:181
+#: ../src/system-config-services.glade:393
+msgid "_Start"
+msgstr ""
+
+#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:225
+#: ../src/system-config-services.glade:427
+msgid "_Restart"
+msgstr ""
+
+#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
+#: ../src/system-config-services.glade:328
+msgid "_Enable"
+msgstr ""
+
+#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
+#: ../src/system-config-services.glade:345
+msgid "_Disable"
+msgstr ""
+
+#: ../src/servicetab.glade:1613
+msgid "_Configure"
+msgstr ""
+
+#: ../src/servicetab.glade:1653
+msgid "Button Box"
+msgstr ""
+
+#: ../src/servicetab.glade:1730
+msgid "label16"
+msgstr ""
+
+#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
+msgid "Service %s:"
+msgstr ""
+
+#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1295
+msgid "Customize Runlevels"
+msgstr ""
+
+#: ../src/system-config-services.glade:7
+#: ../src/system-config-services.glade:1238
+msgid "Service Configuration"
+msgstr "সেৱাৰ বিন্যাস"
+
+#: ../src/system-config-services.glade:38
+msgid "_Program"
+msgstr ""
+
+#: ../src/system-config-services.glade:60
+msgid "Ser_vice"
+msgstr ""
+
+#: ../src/system-config-services.glade:113
+#: ../src/system-config-services.glade:363
+msgid "_Customize"
+msgstr ""
+
+#: ../src/system-config-services.glade:203
+#: ../src/system-config-services.glade:410
+msgid "S_top"
+msgstr ""
+
+#: ../src/system-config-services.glade:251
+msgid "_Help"
+msgstr "সহায় (_H)"
+
+#: ../src/system-config-services.glade:260
+msgid "_Contents"
+msgstr "বিষয়বস্তু (_C)"
+
+#: ../src/system-config-services.glade:288
+msgid "_About"
+msgstr ""
+
+#: ../src/system-config-services.glade:362
+msgid "Customize the runlevels in which a service is enabled."
+msgstr ""
+
+#: ../src/system-config-services.glade:558
+msgid "No service selected."
+msgstr ""
+
+#: ../src/system-config-services.glade:620
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+
+#: ../src/system-config-services.glade:807
+#: ../src/system-config-services.glade:1006
+msgid "Description"
+msgstr "বিৱৰণ"
+
+#: ../src/system-config-services.glade:874
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has got nothing more to do."
+msgstr ""
+
+#: ../src/system-config-services.glade:1080
+msgid "Service Information"
+msgstr ""
+
+#: ../src/system-config-services.glade:1199
+msgid "Status of service %s:"
+msgstr ""
+
+#: ../src/system-config-services.glade:1236
+msgid "system-config-services"
+msgstr ""
+
+#: ../src/system-config-services.glade:1237
+msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
+msgstr ""
+
+#: ../src/system-config-services.glade:1239
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+
+#: ../src/system-config-services.glade:1246
+msgid "translator-credits"
+msgstr ""
+
+#: ../src/system-config-services.glade:1391
+msgid "Runlevel _2"
+msgstr ""
+
+#: ../src/system-config-services.glade:1410
+msgid "Runlevel _3"
+msgstr "চলনাস্তৰ ৩ (_3)"
+
+#: ../src/system-config-services.glade:1429
+msgid "Runlevel _4"
+msgstr "চলনাস্তৰ ৪ (_4)"
+
+#: ../src/system-config-services.glade:1448
+msgid "Runlevel _5"
+msgstr "চলনাস্তৰ ৫ (_5)"
+
+#: ../system-config-services.desktop.in.h:1
+msgid "Configure which services will be running when the system starts"
+msgstr "ব্যৱস্থাপ্ৰণালী আৰম্ভ হওঁতে চলিব লগীয়া সেৱা বিন্যাস কৰক"
+
+#: ../system-config-services.desktop.in.h:2
+msgid "Service Management"
+msgstr "সেৱাৰ পৰিচালনা"
+
+#: ../system-config-services.desktop.in.h:3
+msgid "Services"
+msgstr "সেৱাসমূহ"
+
+#~ msgid "None"
+#~ msgstr "কোনো নাই"
+
+#~ msgid "Save Dialog"
+#~ msgstr "কথোপকথন ৰক্ষা কৰক"
+
+#~ msgid "Don't Save"
+#~ msgstr "ৰক্ষা নকৰিব"
+
+#~ msgid ""
+#~ "You have made changes to the current runlevel.\n"
+#~ "Do you want to save the changes?"
+#~ msgstr ""
+#~ "চলনাস্তৰত আপুনি সাল সলনি কৰিছে ।\n"
+#~ "এই সলনিসমূহ আপুনি ৰক্ষা কৰিব খোজে নেকি ?"
+
+#~ msgid "Add Service"
+#~ msgstr "সেৱা যোগ কৰক"
+
+#~ msgid "Service Name: "
+#~ msgstr "সেৱাৰ নাম:"
+
+#~ msgid "_File"
+#~ msgstr "নথিপত্ৰ (_F)"
+
+#~ msgid "_Save Changes"
+#~ msgstr "সলনি ৰক্ষা কৰক (_S)"
+
+#~ msgid "Revert To _Last Save"
+#~ msgstr "শেহতীয়া ৰক্ষালৈ প্ৰত্যাৱৰ্তন কৰক (_L)"
+
+#~ msgid "_Quit"
+#~ msgstr "এৰি যাওক (_Q)"
+
+#~ msgid "_View"
+#~ msgstr "চাওক (_V)"
+
+#~ msgid "_Refresh Service List"
+#~ msgstr "সেৱাৰ তালিকা পুনৰ সবল কৰক (_R)"
+
+#~ msgid "_Actions"
+#~ msgstr "ক্ৰিয়া (_A)"
+
+#~ msgid "Delete Service"
+#~ msgstr "সেৱাক আঁতৰাওক"
+
+#~ msgid "_Start Service"
+#~ msgstr "সেৱা আৰম্ভ কৰক (_S)"
+
+#~ msgid "S_top Service"
+#~ msgstr "সেৱা বন্ধ কৰক (_t)"
+
+#~ msgid "_Restart Service"
+#~ msgstr "সেৱা পুনৰাৰম্ভ কৰক (_R)"
+
+#~ msgid "_Edit Runlevel"
+#~ msgstr "চলনাস্তৰ সম্পাদন কৰক (_E)"
+
+#~ msgid "Runlevel _All"
+#~ msgstr "সকলো চলনাস্তৰ (_A)"
+
+#~ msgid ""
+#~ "These services are started once and run in the background. You can "
+#~ "specify in which runlevels they are started."
+#~ msgstr ""
+#~ "এই সেৱাসমূহ এবাৰ আৰম্ভ কৰা হয় আৰু পৃষ্ঠভূমিত চলে । কোনটো চলনাস্তৰত চলিব লাগে "
+#~ "আপুনি নিৰ্দ্দিষ্ট কৰিব পাৰে ।"
+
+#~ msgid "Current Active Runlevel: "
+#~ msgstr "বৰ্ত্তমান সক্ৰীয় চলনাস্তৰ:"
+
+#~ msgid "Editing Runlevel:"
+#~ msgstr "সম্পাদন কৰা চলনাস্তৰ:"
+
+#~ msgid "Status"
+#~ msgstr "অৱস্থা"
+
+#~ msgid "_Background Services"
+#~ msgstr "পৃষ্ঠভূমিত চলা সেৱা (_B)"
+
+#~ msgid ""
+#~ "These services are started on demand and end when there is nothing more "
+#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
+#~ msgstr ""
+#~ "এই সেৱাসমূহ দাবি কৰাৰ মতে আৰম্ভ কৰা হয় আৰু কাৰ্য্য সম্পূৰ্ণ হওঁতে অন্ত হয় । এই "
+#~ "সেৱাসমূহ প্ৰয়োগ কৰিব'লৈ হ'লে <b>xinetd</b>সেৱা চলি থাকিব লাগিব ।"
+
+#~ msgid "_On Demand Services"
+#~ msgstr "দাবি কৰা মতে সেৱা (_O)"
+
+#~ msgid "Are you sure you want to delete the %s?"
+#~ msgstr "আপুনি %s আঁতৰাব'লৈ নিশ্চিত নে"
+
+#~ msgid "Runlevel %d"
+#~ msgstr "চলনাস্তৰ %d"
+
+#~ msgid "Currently Running in Runlevel: "
+#~ msgstr "বৰ্ত্তমানে চলা চলনাস্তৰ:"
+
+#~ msgid "Editing Runlevel: "
+#~ msgstr "সম্পাদন কৰা চলনাস্তৰ:"
+
+#~ msgid "Unknown"
+#~ msgstr "অজ্ঞাত"
+
+#~ msgid "All"
+#~ msgstr "সকলো"
+
+#~ msgid ""
+#~ "System Services Configuration Tool VERSION\n"
+#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
+#~ msgstr ""
+#~ "System Services Configuration Tool VERSION\n"
+#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
+
+#~ msgid "About"
+#~ msgstr "বিষয়ে"
+
+#~ msgid ""
+#~ "The help viewer could not be found. To be able to view help you need to "
+#~ "install the 'yelp' package."
+#~ msgstr ""
+#~ "সহায় প্ৰদৰ্শক পোৱা ন'গ'ল । সহায় চাবলৈ আপুনি 'yelp' সৰঞ্জাম সংস্থাপন কৰিব লাগিব "
+#~ "।"
+
+#~ msgid "You must run system-config-services as root."
+#~ msgstr "আপুনি system-config-services অকল ৰূট হিচাপেহে চলাব লাগে ।"
+
+#~ msgid "%s failed. The error was: %s"
+#~ msgstr "%s অক্ষম হ'ল । ভুলতো আছিল: %s"
+
+#~ msgid " successful"
+#~ msgstr "সফল"
+
+#~ msgid "xinetd must be enabled for %s to run"
+#~ msgstr "%s ক চলোৱাৰ বাবে xinetd সক্ষম কৰিব লাগিব"
+
+#~ msgid "xinetd failed to reload for "
+#~ msgstr "ইয়াৰ বাবে xinetd পুনঃ তুলি লোৱাত ভুল হ'ল"
+
+#~ msgid ". The error was: "
+#~ msgstr "। ভুলতো আছিল:"
+
+#~ msgid "xinetd reloaded %s successfully"
+#~ msgstr "xinetdয়ে %s পুনঃ তুলি ল'ব'লৈ সফল হ'ল"
