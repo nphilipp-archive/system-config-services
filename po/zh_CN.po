@@ -1,403 +1,278 @@
-# translation of zh_CN.po to 
-# translation of zh_CN.po to Chinese, Simplified
-# translation of zh_CN.po to zh_CN
-# translation of system-config-services.po to Simplified Chinese
+# translation of system-config-services.tip.po to Simplified Chinese
+# translation of zh_CN.po to
 # Simplified Chinese Version of serviceconf.
 # Copyright (C) 2002 Red Hat, Inc.
+#
 # Sarah Wang <sarahs@redhat.com>, 2003,2004, 2005.
 # Leah Liu <weliu@redhat.com>, 2005, 2006.
-#
+# Leah Liu <lliu@redhat.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: zh_CN\n"
+"Project-Id-Version: system-config-services.tip\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-06 16:41+0100\n"
-"PO-Revision-Date: 2006-10-31 10:29+0800\n"
-"Last-Translator: ProgramFan <zyangmath@gmail.com>\n"
-"Language-Team:  <zh@li.org>\n"
+"POT-Creation-Date: 2008-02-22 01:27-0700\n"
+"PO-Revision-Date: 2008-03-28 13:44+1000\n"
+"Last-Translator: Leah Liu <lliu@redhat.com>\n"
+"Language-Team: Simplified Chinese <zh@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.11.4\n"
 
-#: ../src/gui.py:109
-msgid "Name"
-msgstr ""
-
-#: ../src/gui.py:110
-msgid "Remarks"
-msgstr ""
-
-#: ../src/gui.py:170 ../src/gui.py:187
-msgid "This service is being refreshed right now."
-msgstr ""
-
-#: ../src/gui.py:171
-msgid "This service is enabled."
-msgstr ""
-
-#: ../src/gui.py:172
-msgid "This service is disabled."
-msgstr ""
-
-#: ../src/gui.py:173
+#: ../src/serviceconf.py:77
 #, python-format
-msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr ""
+msgid "Are you sure you want to delete the %s?"
+msgstr "您确定要删除 %s 吗？"
 
-#: ../src/gui.py:188
-msgid "The status of this service is unknown."
-msgstr ""
-
-#: ../src/gui.py:189
-msgid "This service is stopped."
-msgstr ""
-
-#: ../src/gui.py:190
-msgid "This service is running."
-msgstr ""
-
-#: ../src/gui.py:191
-msgid "This service is dead."
-msgstr ""
-
-#: ../src/gui.py:268
+#: ../src/serviceconf.py:140
 #, python-format
+msgid "Runlevel %d"
+msgstr "运行级别 %d"
+
+#. initialize this to the runlevel we are running in. It will
+#. change when one of the optRL[3-6] are selected
+#: ../src/serviceconf.py:281
+msgid "Currently Running in Runlevel: "
+msgstr "目前运行的级别是："
+
+#: ../src/serviceconf.py:377 ../src/serviceconf.py:480
+msgid "Editing Runlevel: "
+msgstr "编辑运行级别："
+
+#: ../src/serviceconf.py:419 ../src/servicemethods.py:57
+msgid "Unknown"
+msgstr "未知"
+
+#: ../src/serviceconf.py:509
+msgid "All"
+msgstr "全部"
+
+#: ../src/serviceconf.py:543
 msgid ""
-"The <b>%(servicename)s</b> service is started once, usually when the system "
-"is booted, runs in the background and wakes up when needed."
+"System Services Configuration Tool VERSION\n"
+" Copyright Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
+" "
 msgstr ""
+"系统服务配置工具版本\n"
+" 版权 Â© 2002-2006 Red Hat, Inc.\n"
+" Tim Powers <timp@redhat.com>\n"
+" Bill Nottingham <notting@redhat.com>\n"
+" Dan Walsh <dwalsh@redhat.com>\n"
+" Brent Fox <bfox@redhat.com>\n"
+" Nils Philippsen <nphilipp@redhat.com>\n"
+" "
 
-#: ../src/gui.py:282
-msgid "This service is updated currently."
-msgstr ""
+#: ../src/serviceconf.py:547
+msgid "About"
+msgstr "关于"
 
-#: ../src/gui.py:308
-#, python-format
+#: ../src/serviceconf.py:580
 msgid ""
-"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has got nothing more to do."
-msgstr ""
+"The help viewer could not be found. To be able to view help you need to "
+"install the 'yelp' package."
+msgstr "无法找到帮助视窗。要想查看帮助，您需要安装‘yelp’软件包。"
 
-#: ../src/gui.py:317
-msgid ""
-"This service is enabled, but the <b>xinetd</b> package is not installed. "
-"This service does not work without it."
-msgstr ""
+#: ../src/serviceconf.py:719
+msgid "You must run system-config-services as root."
+msgstr "您必须作为根用户才能运行 system-config-services。"
 
-#: ../src/gui.py:323
-msgid ""
-"This service is enabled, but the <b>xinetd</b> service is not running. This "
-"service does not work without it."
-msgstr ""
+#: ../src/servicemethods.py:58
+msgid "Running"
+msgstr "运行中"
 
-#: ../src/gui.py:630 ../src/system-config-services.glade:1365
-#, python-format
-msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr ""
-
-#: ../src/gui.py:754
-msgid ""
-"The help viewer could not be found. To be able to view help, the 'yelp' "
-"package needs to be installed."
-msgstr ""
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr ""
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old config"
-msgstr ""
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr ""
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s resports an error"
-msgstr ""
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr ""
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr ""
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr ""
-
-#: ../src/servicetab.glade:8
-msgid "window1"
-msgstr ""
-
-#: ../src/servicetab.glade:38
-msgid "Service %s"
-msgstr ""
-
-#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
-#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
-msgid "Enable"
-msgstr "启用"
-
-#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
-#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
-msgid "Disable"
-msgstr "禁用"
-
-#: ../src/servicetab.glade:89
-msgid "Customize"
-msgstr ""
-
-#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
-msgid "Enable Default"
-msgstr ""
-
-#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
-#: ../src/system-config-services.glade:135
-#: ../src/system-config-services.glade:1256
-msgid "Runlevel 2"
-msgstr ""
-
-#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
-#: ../src/system-config-services.glade:144
-#: ../src/system-config-services.glade:1266
-msgid "Runlevel 3"
-msgstr ""
-
-#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
-#: ../src/system-config-services.glade:153
-#: ../src/system-config-services.glade:1276
-msgid "Runlevel 4"
-msgstr ""
-
-#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
-#: ../src/system-config-services.glade:162
-#: ../src/system-config-services.glade:1286
-msgid "Runlevel 5"
-msgstr ""
-
-#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
-msgid "Enable All"
-msgstr ""
-
-#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
-msgid "Disable All"
-msgstr ""
-
-#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
-#: ../src/servicetab.glade:2135
-msgid "Start"
-msgstr "开始"
-
-#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
-#: ../src/servicetab.glade:2156
-msgid "Restart"
-msgstr "重启"
-
-#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
-#: ../src/servicetab.glade:1922
-msgid "Configure"
-msgstr ""
-
-#: ../src/servicetab.glade:394
-msgid "foobar"
-msgstr ""
-
-#: ../src/servicetab.glade:412
-msgid "barfoo"
-msgstr ""
-
-#: ../src/servicetab.glade:521
-msgid "Current runlevel is %s"
-msgstr "目前的运行级别是 %s"
-
-#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
-msgid "Runlevels"
-msgstr "运行级别"
-
-#: ../src/servicetab.glade:807
-msgid "label18"
-msgstr ""
-
-#: ../src/servicetab.glade:940
-msgid "Start "
-msgstr "启动"
-
-#: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
-msgid "Stop"
+#: ../src/servicemethods.py:59
+msgid "Stopped"
 msgstr "停止"
 
-#: ../src/servicetab.glade:1066
-msgid "Service control"
-msgstr "服务控制"
+#: ../src/servicemethods.py:60
+msgid "Error"
+msgstr "错误"
 
-#: ../src/servicetab.glade:1148
-msgid "Status output"
-msgstr "状态输出"
+#: ../src/servicemethods.py:283
+#, python-format
+msgid "%s failed. The error was: %s"
+msgstr "%s 失败，错误是：%s"
 
-#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:181
-#: ../src/system-config-services.glade:393
-msgid "_Start"
-msgstr ""
+#: ../src/servicemethods.py:290
+msgid " successful"
+msgstr "成功"
 
-#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:225
-#: ../src/system-config-services.glade:427
-msgid "_Restart"
-msgstr ""
+#: ../src/servicemethods.py:419 ../src/servicemethods.py:430
+#, python-format
+msgid "xinetd must be enabled for %s to run"
+msgstr "一定要启用 xinetd 才可运行 %s"
 
-#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
-#: ../src/system-config-services.glade:328
-msgid "_Enable"
-msgstr ""
+#: ../src/servicemethods.py:424
+msgid "xinetd failed to reload for "
+msgstr "xinetd 重载失败"
 
-#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
-#: ../src/system-config-services.glade:345
-msgid "_Disable"
-msgstr ""
+#: ../src/servicemethods.py:426
+msgid ". The error was: "
+msgstr "错误是："
 
-#: ../src/servicetab.glade:1613
-msgid "_Configure"
-msgstr ""
+#: ../src/servicemethods.py:428
+#, python-format
+msgid "xinetd reloaded %s successfully"
+msgstr "xined 重载 %s 成功"
 
-#: ../src/servicetab.glade:1653
-msgid "Button Box"
-msgstr ""
+#: ../src/serviceconf.glade.h:1
+msgid "Add Service"
+msgstr "添加服务"
 
-#: ../src/servicetab.glade:1730
-msgid "label16"
-msgstr ""
+#: ../src/serviceconf.glade.h:2
+msgid "Current Active Runlevel: "
+msgstr "目前活跃的运行级别："
 
-#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
-msgid "Service %s:"
-msgstr ""
+#: ../src/serviceconf.glade.h:3
+msgid "Delete Service"
+msgstr "删除服务"
 
-#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1295
-msgid "Customize Runlevels"
-msgstr ""
-
-#: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1238
-msgid "Service Configuration"
-msgstr "服务配置"
-
-#: ../src/system-config-services.glade:38
-msgid "_Program"
-msgstr ""
-
-#: ../src/system-config-services.glade:60
-msgid "Ser_vice"
-msgstr ""
-
-#: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:363
-msgid "_Customize"
-msgstr ""
-
-#: ../src/system-config-services.glade:203
-#: ../src/system-config-services.glade:410
-msgid "S_top"
-msgstr ""
-
-#: ../src/system-config-services.glade:251
-msgid "_Help"
-msgstr "帮助(_H)"
-
-#: ../src/system-config-services.glade:260
-msgid "_Contents"
-msgstr "内容(_C)"
-
-#: ../src/system-config-services.glade:288
-msgid "_About"
-msgstr ""
-
-#: ../src/system-config-services.glade:362
-msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
-
-#: ../src/system-config-services.glade:558
-msgid "No service selected."
-msgstr ""
-
-#: ../src/system-config-services.glade:620
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-
-#: ../src/system-config-services.glade:807
-#: ../src/system-config-services.glade:1006
+#: ../src/serviceconf.glade.h:4
 msgid "Description"
 msgstr "描述"
 
-#: ../src/system-config-services.glade:874
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has got nothing more to do."
-msgstr ""
+#: ../src/serviceconf.glade.h:5
+msgid "Don't Save"
+msgstr "不保存"
 
-#: ../src/system-config-services.glade:1080
-msgid "Service Information"
-msgstr ""
+#: ../src/serviceconf.glade.h:6
+msgid "Editing Runlevel:"
+msgstr "编辑运行级别："
 
-#: ../src/system-config-services.glade:1199
-msgid "Status of service %s:"
-msgstr ""
+#: ../src/serviceconf.glade.h:7
+msgid "None"
+msgstr "无"
 
-#: ../src/system-config-services.glade:1236
-msgid "system-config-services"
-msgstr ""
+#: ../src/serviceconf.glade.h:8
+msgid "Restart"
+msgstr "重启"
 
-#: ../src/system-config-services.glade:1237
-msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-msgstr ""
+#: ../src/serviceconf.glade.h:9
+msgid "Revert To _Last Save"
+msgstr "还原到上一次保存 (_L)"
 
-#: ../src/system-config-services.glade:1239
-msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-
-#: ../src/system-config-services.glade:1246
-msgid "translator-credits"
-msgstr ""
-
-#: ../src/system-config-services.glade:1391
-msgid "Runlevel _2"
-msgstr ""
-
-#: ../src/system-config-services.glade:1410
+#: ../src/serviceconf.glade.h:10
 msgid "Runlevel _3"
 msgstr "运行级别 _3"
 
-#: ../src/system-config-services.glade:1429
+#: ../src/serviceconf.glade.h:11
 msgid "Runlevel _4"
 msgstr "运行级别 _4"
 
-#: ../src/system-config-services.glade:1448
+#: ../src/serviceconf.glade.h:12
 msgid "Runlevel _5"
 msgstr "运行级别 _5"
+
+#: ../src/serviceconf.glade.h:13
+msgid "Runlevel _All"
+msgstr "所有运行级别(_A)"
+
+#: ../src/serviceconf.glade.h:14
+msgid "S_top Service"
+msgstr "停止服务(_T)"
+
+#: ../src/serviceconf.glade.h:15
+msgid "Save Dialog"
+msgstr "保存对话"
+
+#: ../src/serviceconf.glade.h:16
+msgid "Service Configuration"
+msgstr "服务配置"
+
+#: ../src/serviceconf.glade.h:17
+msgid "Service Name: "
+msgstr "服务名称："
+
+#: ../src/serviceconf.glade.h:18
+msgid "Start"
+msgstr "开始"
+
+#: ../src/serviceconf.glade.h:19
+msgid "Status"
+msgstr "状态"
+
+#: ../src/serviceconf.glade.h:20
+msgid "Stop"
+msgstr "停止"
+
+#: ../src/serviceconf.glade.h:21
+msgid ""
+"These services are started on demand and end when there is nothing more to "
+"do. The <b>xinetd</b> service must be running so that they can be used."
+msgstr ""
+"这些服务会在需要时启动，并在不需要时终止。必须运行<b>xinetd</b>服务以使之可"
+"用。"
+
+#: ../src/serviceconf.glade.h:22
+msgid ""
+"These services are started once and run in the background. You can specify "
+"in which runlevels they are started."
+msgstr "这些服务被启动过一次，并在后台运行。您可以指定启动它的运行等级。"
+
+#: ../src/serviceconf.glade.h:23
+msgid ""
+"You have made changes to the current runlevel.\n"
+"Do you want to save the changes?"
+msgstr ""
+"您对当前的运行级别已做了些改变。\n"
+"您想保存这些改变吗？"
+
+#: ../src/serviceconf.glade.h:25
+msgid "_Actions"
+msgstr "行动(_A)"
+
+#: ../src/serviceconf.glade.h:26
+msgid "_Background Services"
+msgstr "后台服务(_S)"
+
+#: ../src/serviceconf.glade.h:27
+msgid "_Contents"
+msgstr "内容(_C)"
+
+#: ../src/serviceconf.glade.h:28
+msgid "_Edit Runlevel"
+msgstr "编辑运行级别(_E)"
+
+#: ../src/serviceconf.glade.h:29
+msgid "_File"
+msgstr "文件(_F)"
+
+#: ../src/serviceconf.glade.h:30
+msgid "_Help"
+msgstr "帮助(_H)"
+
+#: ../src/serviceconf.glade.h:31
+msgid "_On Demand Services"
+msgstr "按需服务(_O)"
+
+#: ../src/serviceconf.glade.h:32
+msgid "_Quit"
+msgstr "退出 (_Q)"
+
+#: ../src/serviceconf.glade.h:33
+msgid "_Refresh Service List"
+msgstr "刷新服务列表(_R)"
+
+#: ../src/serviceconf.glade.h:34
+msgid "_Restart Service"
+msgstr "重启服务(_R)"
+
+#: ../src/serviceconf.glade.h:35
+msgid "_Save Changes"
+msgstr "保存改变(_S)"
+
+#: ../src/serviceconf.glade.h:36
+msgid "_Start Service"
+msgstr "开始服务(_S)"
+
+#: ../src/serviceconf.glade.h:37
+msgid "_View"
+msgstr "查看(_V)"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -411,203 +286,3 @@ msgstr "服务程序管理："
 msgid "Services"
 msgstr "服务"
 
-#~ msgid "None"
-#~ msgstr "无"
-
-#~ msgid "Save Dialog"
-#~ msgstr "保存对话"
-
-#~ msgid "Don't Save"
-#~ msgstr "不保存"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "您对当前的运行级别已做了些改变。\n"
-#~ "您想保存这些改变吗？"
-
-#~ msgid "Add Service"
-#~ msgstr "添加服务"
-
-#~ msgid "Service Name: "
-#~ msgstr "服务名称："
-
-#~ msgid "_File"
-#~ msgstr "文件(_F)"
-
-#~ msgid "_Save Changes"
-#~ msgstr "保存改变(_S)"
-
-#~ msgid "Revert To _Last Save"
-#~ msgstr "还原到上一次保存 (_L)"
-
-#~ msgid "_Quit"
-#~ msgstr "退出 (_Q)"
-
-#~ msgid "_View"
-#~ msgstr "查看(_V)"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "刷新服务列表(_R)"
-
-#~ msgid "_Actions"
-#~ msgstr "行动(_A)"
-
-#~ msgid "Delete Service"
-#~ msgstr "删除服务"
-
-#~ msgid "_Start Service"
-#~ msgstr "开始服务(_S)"
-
-#~ msgid "S_top Service"
-#~ msgstr "停止服务(_T)"
-
-#~ msgid "_Restart Service"
-#~ msgstr "重启服务(_R)"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "编辑运行级别(_E)"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "所有运行级别(_A)"
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr "这些服务被启动过一次，并在后台运行。你可以指定启动它的运行等级。"
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "目前活跃的运行级别："
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "编辑运行级别："
-
-#~ msgid "Status"
-#~ msgstr "状态"
-
-#~ msgid "_Background Services"
-#~ msgstr "后台服务(_S)"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "这些服务会在需要时启动，并在不需要时终止。必须运行<b>xinetd</b>服务以使之"
-#~ "可用。"
-
-#~ msgid "_On Demand Services"
-#~ msgstr "按需服务(_O)"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "您确定要删除 %s 吗？"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "运行级别 %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "目前运行的级别是："
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "编辑运行级别："
-
-#~ msgid "Unknown"
-#~ msgstr "未知"
-
-#~ msgid "All"
-#~ msgstr "全部"
-
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "关于"
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "您必须作为根用户才能运行 system-config-services。"
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "%s 失败，错误是：%s"
-
-#~ msgid " successful"
-#~ msgstr "成功"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "一定要启用 xinetd 才可运行 %s"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "xinetd 重载失败"
-
-#~ msgid ". The error was: "
-#~ msgstr "错误是："
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "xined 重载 %s 成功"
-
-#~ msgid "Help is not available."
-#~ msgstr "帮助不存在"
-
-#~ msgid "Start the selected service"
-#~ msgstr "启动服务"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "停止服务"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "重启服务"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "刷新服务列表"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "保存您所做的修改"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "还原到上一次保存"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr "在选择的设备上可进行启动、停止、重启等操作"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "选择您愿意修改的运行级"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "第3运行级是带网络的多用户模式"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr "第4运行级是为本地客户化而保留的，不常用"
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr "第5运行级是带网络和X窗口的多用户模式"
-
-#~ msgid "Read Manual"
-#~ msgstr "阅读手册"
-
-#~ msgid "_Manual"
-#~ msgstr "_手册"
-
-#~ msgid "Save"
-#~ msgstr "保存"
-
-#~ msgid "Cancel"
-#~ msgstr "取消"
-
-#~ msgid "Exit"
-#~ msgstr "退出"
