@@ -28,6 +28,8 @@ import gamin
 import gtk
 import gtk.glade
 
+import gtk_label_autowrap
+
 import gettext
 gettext.install ('system-config-services')
 
@@ -658,6 +660,8 @@ class MainWindow (GladeController):
             'helpContents',
             'helpContentsButton',
             'servicesDetailsNotebook',
+            'sysVServiceExplanationLabel',
+            'xinetdServiceExplanationLabel',
             'aboutDialog'
             )
 
@@ -688,6 +692,9 @@ class MainWindow (GladeController):
 
         self.aboutDialog.set_name (config.name)
         self.aboutDialog.set_version (config.version)
+
+        gtk_label_autowrap.set_autowrap (self.sysVServiceExplanationLabel)
+        gtk_label_autowrap.set_autowrap (self.xinetdServiceExplanationLabel)
 
     ### Callbacks
 
