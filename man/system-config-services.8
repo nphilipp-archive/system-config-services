@@ -1,7 +1,7 @@
 .TH serviceconf 8 "Wed May 16 2001"
 .SH "NAME"
 system-config-services \- Service Configuration Utility
-.SH "SYNTAX"
+.SH "SYNOPSIS"
 system-config-services
 .SH "DESCRIPTION"
 This is a graphical tool for enabling and disabling services
@@ -10,19 +10,15 @@ services is also included.
 .SH "OPTIONS"
 None
 .SH "FILES"
+.nf
 \fI/usr/bin/system-config-services\fP
-.br 
-\fI/usr/share/serviceconf/*\fP
-.br 
+\fI/usr/share/system-config-services/*\fP
+.fi
 .SH "EXAMPLES"
 To run this program simply type:
 .LP 
 system-config-services
 .LP 
-.SH "LIMITATIONS"
-This utility currently execs chkconfig --add/--del <servicename> when
-enabling and disabling services. This means that it does not have the
-same default behaviour as ntsysv.
 
 .SH "SEE ALSO"
 .IR chkconfig(8)
@@ -35,13 +31,15 @@ instances). This is not a bug in system-config-services, but in the individual
 services.
 
 \- Some services are incredibly hard to detect if they are running or
-not. Starting, stopping and restarting initscripts may give mixed
-results (ie. may fail if you are stopping a service that's already
-stopped, etc). This will be fixed; until then it's a bug.
+not. While there are workarounds present to deal with these, it can't be
+guaranteed that they're detected properly. Please file bugs against the
+system-config-services component at http://bugzilla.redhat.com if you encounter
+such services.
 
 .SH "AUTHORS"
+.nf
 Tim Powers <timp@redhat.com>
-.br
 Bill Nottingham <notting@redhat.com>
-.br
 Dan Walsh <dwalsh@redhat.com>
+Nils Philippsen <nphilipp@redhat.com>
+.fi
