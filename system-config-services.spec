@@ -109,6 +109,7 @@ rm -rf %{buildroot}
 %changelog
 * Fri Apr 04 2008 Nils Philippsen <nphilipp@redhat.com>
 - indent runlevel checkboxes in "Customize Runlevels" dialog
+- set rules hint for services treeview
 
 * Fri Apr 04 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.13-1
 - distribute gtk_label_autowrap.py (#440582)

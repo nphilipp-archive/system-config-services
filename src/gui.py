@@ -440,6 +440,7 @@ class GUIServicesList (GladeController):
 
         self.servicesTreeView = GUIServicesTreeView ()
         self.servicesTreeView.show ()
+        self.servicesTreeView.set_rules_hint (True)
         self.servicesTreeView.connect ('service-selected', self.on_service_selected)
 
         self.servicesTreeStore = self.servicesTreeView.model
