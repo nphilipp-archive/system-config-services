@@ -1,4 +1,4 @@
-# translation of system-config-services.tip.sr.po to Serbian
+# translation of system-config-services.tip.sr2.po to Serbian
 # Serbian(Latin) translations for system-config-services
 # Copyright (C) 2005 Red Hat, Inc.
 # This file is distributed under the same license as the system-config-services package.
@@ -8,10 +8,10 @@
 # Igor Miletic <grejigl-gnomeprevod@yahoo.ca>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.tip.sr\n"
+"Project-Id-Version: system-config-services.tip.sr2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-12 01:40-0700\n"
-"PO-Revision-Date: 2008-04-06 01:36-0400\n"
+"POT-Creation-Date: 2008-03-20 16:11+0100\n"
+"PO-Revision-Date: 2008-04-06 02:15-0400\n"
 "Last-Translator: Igor Miletic <grejigl-gnomeprevod@yahoo.ca>\n"
 "Language-Team: Serbian <fedora-trans-sr@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -21,264 +21,410 @@ msgstr ""
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../src/serviceconf.py:77
+#: ../src/gui.py:109
+msgid "Name"
+msgstr "Ime"
+
+#: ../src/gui.py:110
+msgid "Remarks"
+msgstr "Napomene"
+
+#: ../src/gui.py:170 ../src/gui.py:187
+msgid "This service is being refreshed right now."
+msgstr "Ovaj se servis osvežava sada."
+
+#: ../src/gui.py:171
+msgid "This service is enabled."
+msgstr "Ovaj servis je uključen."
+
+#: ../src/gui.py:172
+msgid "This service is disabled."
+msgstr "Ovaj servis je isključen."
+
+#: ../src/gui.py:173
 #, python-format
-msgid "Are you sure you want to delete the %s?"
-msgstr "Sigurno želite da obrišete %s?"
+msgid "This service is enabled in runlevels: %(runlevels)s"
+msgstr "Servis je uključen u izvršnim nivoima: %(runlevels)s"
 
-#: ../src/serviceconf.py:140
+#: ../src/gui.py:188
+msgid "The status of this service is unknown."
+msgstr "Status ovog servisa je nepoznat."
+
+#: ../src/gui.py:189
+msgid "This service is stopped."
+msgstr "Ovaj servis je zaustavljen."
+
+#: ../src/gui.py:190
+msgid "This service is running."
+msgstr "Ovaj servis je pokrenut."
+
+#: ../src/gui.py:191
+msgid "This service is dead."
+msgstr "Ovaj servis ne reaguje."
+
+#: ../src/gui.py:268
 #, python-format
-msgid "Runlevel %d"
-msgstr "Izvršni nivo %d"
-
-#. initialize this to the runlevel we are running in. It will
-#. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:281
-msgid "Currently Running in Runlevel: "
-msgstr "Trenutno se radi u izvršnom nivou: "
-
-#: ../src/serviceconf.py:377 ../src/serviceconf.py:480
-msgid "Editing Runlevel: "
-msgstr "Uređivanje izvršnog nivoa: "
-
-#: ../src/serviceconf.py:419 ../src/servicemethods.py:57
-msgid "Unknown"
-msgstr "Nepoznato"
-
-#: ../src/serviceconf.py:509
-msgid "All"
-msgstr "Sve"
-
-#: ../src/serviceconf.py:543
 msgid ""
-"System Services Configuration Tool VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
-" "
+"The <b>%(servicename)s</b> service is started once, usually when the system "
+"is booted, runs in the background and wakes up when needed."
 msgstr ""
-"Alat za podešavanje sistemskih servisa VERSION\n"
-" Autorska prava Â© 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
-" "
+"Servis <b>%(servicename)s</b> se pokreće jednom, obično prilikom podizanja "
+"sistema, radi u pozadini i budi se po potrebi."
 
-#: ../src/serviceconf.py:547
-msgid "About"
-msgstr "O programu"
+#: ../src/gui.py:282
+msgid "This service is updated currently."
+msgstr "Ovaj servis je trenutno ažuriran."
 
-#: ../src/serviceconf.py:580
+#: ../src/gui.py:308
+#, python-format
 msgid ""
-"The help viewer could not be found. To be able to view help you need to "
-"install the 'yelp' package."
+"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
+"service and ends when it has got nothing more to do."
 msgstr ""
-"Program za pregledanje pomoći nije nađen. Da bi mogli pregledati pomoć "
-"morate instalirati paket „yelp“."
+"Servis xinetd će pokrenuti servis <b>%(servicename)s</b> na zahtev i "
+"završiće kada ne bude imao više šta da radi."
 
-#: ../src/serviceconf.py:719
-msgid "You must run system-config-services as root."
-msgstr "Morate pokrenuti system-config-services kao root."
+#: ../src/gui.py:317
+msgid ""
+"This service is enabled, but the <b>xinetd</b> package is not installed. "
+"This service does not work without it."
+msgstr ""
+"Ovaj servis je uključen, ali paket <b>xinetd</b> nije instaliran. Ovaj "
+"servis ne radi bez njega."
 
-#: ../src/servicemethods.py:58
-msgid "Running"
-msgstr "Izvršava se"
+#: ../src/gui.py:323
+msgid ""
+"This service is enabled, but the <b>xinetd</b> service is not running. This "
+"service does not work without it."
+msgstr ""
+"Ovaj servis je uključen, ali servis <b>xinetd</b> nije pokrenut. Ovaj servis "
+"ne radi bez njega."
 
-#: ../src/servicemethods.py:59
-msgid "Stopped"
-msgstr "Zaustavljeno"
-
-#: ../src/servicemethods.py:60
-msgid "Error"
-msgstr "Greška"
-
-#: ../src/servicemethods.py:283
+#: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
-msgid "%s failed. The error was: %s"
-msgstr "%s nije uspelo. Greška je bila: %s"
+msgid "Enable the <b>%(service)s</b> service in these runlevels:"
+msgstr "Uključi servis <b>%(service)s</b> u ovim izvrpnim nivoima:"
 
-#: ../src/servicemethods.py:290
-msgid " successful"
-msgstr " uspešno"
+#: ../src/gui.py:754
+msgid ""
+"The help viewer could not be found. To be able to view help, the 'yelp' "
+"package needs to be installed."
+msgstr ""
+"Program za pregledanje pomoći nije nađen. Da bi mogli pregledati pomoć paket "
+"„yelp“ mora biti instaliran."
 
-#: ../src/servicemethods.py:419 ../src/servicemethods.py:430
+#: ../src/servicecontrol.py:88
 #, python-format
-msgid "xinetd must be enabled for %s to run"
-msgstr "xinetd mora biti uključen da bi se %s pokrenuo"
+msgid "Service %s not found!"
+msgstr "Servis %s nije pronađen!"
 
-#: ../src/servicemethods.py:424
-msgid "xinetd failed to reload for "
-msgstr "nije uspelo ponovno xinetd učitavanje za "
-
-#: ../src/servicemethods.py:426
-msgid ". The error was: "
-msgstr ". Greška je bila: "
-
-#: ../src/servicemethods.py:428
+#: ../src/servicecontrol.py:94
 #, python-format
-msgid "xinetd reloaded %s successfully"
-msgstr "xinetd je iznova učitao %s uspešno"
+msgid "Service %s is running with old configuration"
+msgstr "Servis %s je pokrenut sa starim podešavanjima"
 
-#: ../src/serviceconf.glade.h:1
-msgid "Add Service"
-msgstr "Dodaj servis"
+#: ../src/servicecontrol.py:97
+#, python-format
+msgid "Service %s is running"
+msgstr "Servis %s je pokrenut"
 
-#: ../src/serviceconf.glade.h:2
-msgid "Current Active Runlevel: "
-msgstr "Trenutno aktivan izvršni nivo: "
+#: ../src/servicecontrol.py:100
+#, python-format
+msgid "Service %s reports an error"
+msgstr "Servis %s javlja grešku"
 
-#: ../src/serviceconf.glade.h:3
-msgid "Delete Service"
-msgstr "Obriši servis"
+#: ../src/servicecontrol.py:103
+#, python-format
+msgid "Service %s is stopped"
+msgstr "Servis %s je zaustavljen"
 
-#: ../src/serviceconf.glade.h:4
-msgid "Description"
-msgstr "Opis"
+#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
+#, python-format
+msgid "Currently enabled in runlevels %s"
+msgstr "Trenutno se radi u izvršnom nivou %s"
 
-#: ../src/serviceconf.glade.h:5
-msgid "Don't Save"
-msgstr "Nemoj da sačuvaš"
+#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
+#, python-format
+msgid "Enable %(name)s in runlevels %(levels)s"
+msgstr "Uključi %(name)s u izvršnim nivoima %(levels)s"
 
-#: ../src/serviceconf.glade.h:6
-msgid "Editing Runlevel:"
-msgstr "Uređivanje izvršnog nivoa:"
+#: ../src/servicetab.glade:8
+msgid "window1"
+msgstr "window1"
 
-#: ../src/serviceconf.glade.h:7
-msgid "None"
-msgstr "Ništa"
+#: ../src/servicetab.glade:38
+msgid "Service %s"
+msgstr "Servis %s"
 
-#: ../src/serviceconf.glade.h:8
-msgid "Restart"
-msgstr "Pokreni ponovo"
+#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
+#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
+msgid "Enable"
+msgstr "Uključi"
 
-#: ../src/serviceconf.glade.h:9
-msgid "Revert To _Last Save"
-msgstr "Vrati na pos_lednje sačuvano"
+#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
+#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
+msgid "Disable"
+msgstr "Isključi"
 
-#: ../src/serviceconf.glade.h:10
-msgid "Runlevel _3"
-msgstr "Izvršni nivo _3"
+#: ../src/servicetab.glade:89
+msgid "Customize"
+msgstr "Prilagodi"
 
-#: ../src/serviceconf.glade.h:11
-msgid "Runlevel _4"
-msgstr "Izvršni nivo _4"
+#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
+msgid "Enable Default"
+msgstr "Uključi podrazumevano"
 
-#: ../src/serviceconf.glade.h:12
-msgid "Runlevel _5"
-msgstr "Izvršni nivo _5"
+#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
+#: ../src/system-config-services.glade:135
+#: ../src/system-config-services.glade:1256
+msgid "Runlevel 2"
+msgstr "Izvršni nivo 2"
 
-#: ../src/serviceconf.glade.h:13
-msgid "Runlevel _All"
-msgstr "Izvršni nivo _svi"
+#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
+#: ../src/system-config-services.glade:144
+#: ../src/system-config-services.glade:1266
+msgid "Runlevel 3"
+msgstr "Izvršni nivo 3"
 
-#: ../src/serviceconf.glade.h:14
-msgid "S_top Service"
-msgstr "_Zaustavi servis"
+#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
+#: ../src/system-config-services.glade:153
+#: ../src/system-config-services.glade:1276
+msgid "Runlevel 4"
+msgstr "Izvršni nivo 4"
 
-#: ../src/serviceconf.glade.h:15
-msgid "Save Dialog"
-msgstr "Prozorče čuvanja"
+#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
+#: ../src/system-config-services.glade:162
+#: ../src/system-config-services.glade:1286
+msgid "Runlevel 5"
+msgstr "Izvršni nivo 5"
 
-#: ../src/serviceconf.glade.h:16
-msgid "Service Configuration"
-msgstr "Podešavanje servisa"
+#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
+msgid "Enable All"
+msgstr "Uključi sve"
 
-#: ../src/serviceconf.glade.h:17
-msgid "Service Name: "
-msgstr "Ime servisa:"
+#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
+msgid "Disable All"
+msgstr "Isključi sve"
 
-#: ../src/serviceconf.glade.h:18
+#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
+#: ../src/servicetab.glade:2135
 msgid "Start"
 msgstr "Pokreni"
 
-#: ../src/serviceconf.glade.h:19
-msgid "Status"
-msgstr "Status"
+#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
+#: ../src/servicetab.glade:2156
+msgid "Restart"
+msgstr "Pokreni ponovo"
 
-#: ../src/serviceconf.glade.h:20
+#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
+#: ../src/servicetab.glade:1922
+msgid "Configure"
+msgstr "Podesi"
+
+#: ../src/servicetab.glade:394
+msgid "foobar"
+msgstr "foobar"
+
+#: ../src/servicetab.glade:412
+msgid "barfoo"
+msgstr "barfoo"
+
+#: ../src/servicetab.glade:521
+msgid "Current runlevel is %s"
+msgstr "Trenutno aktivan izvršni nivo je %s"
+
+#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
+msgid "Runlevels"
+msgstr "Izvršni nivoi"
+
+#: ../src/servicetab.glade:807
+msgid "label18"
+msgstr "label18"
+
+#: ../src/servicetab.glade:940
+msgid "Start "
+msgstr "Pokreni"
+
+#: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
 msgid "Stop"
 msgstr "Zaustavi"
 
-#: ../src/serviceconf.glade.h:21
-msgid ""
-"These services are started on demand and end when there is nothing more to "
-"do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
-"Ovi servisi se pokreću na zahtev i završavaju kada nemaju više šta da rade. "
-"Servis <b>xinetd</b> mora biti pokrenut kako bi oni mogi da se koriste."
+#: ../src/servicetab.glade:1066
+msgid "Service control"
+msgstr "Kontrola servisa"
 
-#: ../src/serviceconf.glade.h:22
-msgid ""
-"These services are started once and run in the background. You can specify "
-"in which runlevels they are started."
-msgstr ""
-"Ovi servisi se pokreću jednom i izvršavaju se u pozadini. Možete naznačiti u "
-"kojim će izvršnim nivoima biti pokrenuti."
+#: ../src/servicetab.glade:1148
+msgid "Status output"
+msgstr "Izlazni status"
 
-#: ../src/serviceconf.glade.h:23
-msgid ""
-"You have made changes to the current runlevel.\n"
-"Do you want to save the changes?"
-msgstr ""
-"Napravili ste izmene u tekućem izvršnom nivou.\n"
-"Želite li da sačuvate ove izmene?"
+#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:181
+#: ../src/system-config-services.glade:393
+msgid "_Start"
+msgstr "_Pokreni"
 
-#: ../src/serviceconf.glade.h:25
-msgid "_Actions"
-msgstr "_Akcije"
+#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:225
+#: ../src/system-config-services.glade:427
+msgid "_Restart"
+msgstr "Pok_reni ponovo"
 
-#: ../src/serviceconf.glade.h:26
-msgid "_Background Services"
-msgstr "Po_zadinski servisi"
+#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
+#: ../src/system-config-services.glade:328
+msgid "_Enable"
+msgstr "_Uključi"
 
-#: ../src/serviceconf.glade.h:27
-msgid "_Contents"
-msgstr "_Sadržaj"
+#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
+#: ../src/system-config-services.glade:345
+msgid "_Disable"
+msgstr "_Isključi"
 
-#: ../src/serviceconf.glade.h:28
-msgid "_Edit Runlevel"
-msgstr "U_redi izvršni nivo"
+#: ../src/servicetab.glade:1613
+msgid "_Configure"
+msgstr "P_odesi"
 
-#: ../src/serviceconf.glade.h:29
-msgid "_File"
-msgstr "_Datoteka"
+#: ../src/servicetab.glade:1653
+msgid "Button Box"
+msgstr "Kutija za dugme"
 
-#: ../src/serviceconf.glade.h:30
+#: ../src/servicetab.glade:1730
+msgid "label16"
+msgstr "label16"
+
+#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
+msgid "Service %s:"
+msgstr "Servis %s:"
+
+#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1295
+msgid "Customize Runlevels"
+msgstr "Prilagodi izvšne nivoe"
+
+#: ../src/system-config-services.glade:7
+#: ../src/system-config-services.glade:1238
+msgid "Service Configuration"
+msgstr "Podešavanje servisa"
+
+#: ../src/system-config-services.glade:38
+msgid "_Program"
+msgstr "Progra_m"
+
+#: ../src/system-config-services.glade:60
+msgid "Ser_vice"
+msgstr "Ser_vis"
+
+#: ../src/system-config-services.glade:113
+#: ../src/system-config-services.glade:363
+msgid "_Customize"
+msgstr "_Prilagodi"
+
+#: ../src/system-config-services.glade:203
+#: ../src/system-config-services.glade:410
+msgid "S_top"
+msgstr "_Zaustavi"
+
+#: ../src/system-config-services.glade:251
 msgid "_Help"
 msgstr "_Pomoć"
 
-#: ../src/serviceconf.glade.h:31
-msgid "_On Demand Services"
-msgstr "Servisi na za_htev"
+#: ../src/system-config-services.glade:260
+msgid "_Contents"
+msgstr "_Sadržaj"
 
-#: ../src/serviceconf.glade.h:32
-msgid "_Quit"
-msgstr "_Izađi"
+#: ../src/system-config-services.glade:288
+msgid "_About"
+msgstr "_O programu"
 
-#: ../src/serviceconf.glade.h:33
-msgid "_Refresh Service List"
-msgstr "Osv_eži spisak servisa"
+#: ../src/system-config-services.glade:362
+msgid "Customize the runlevels in which a service is enabled."
+msgstr "Prilagodi izvršne nivoe u kojima je servis uključen."
 
-#: ../src/serviceconf.glade.h:34
-msgid "_Restart Service"
-msgstr "Pon_ovo pokreni servis"
+#: ../src/system-config-services.glade:558
+msgid "No service selected."
+msgstr "Ni jedan servis nije izabran."
 
-#: ../src/serviceconf.glade.h:35
-msgid "_Save Changes"
-msgstr "Saču_vaj promene"
+#: ../src/system-config-services.glade:620
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"Ovaj servis se pokreće jednom, obično prilikom podizanja sistema, radi u "
+"pozadini i budi se po potrebi."
 
-#: ../src/serviceconf.glade.h:36
-msgid "_Start Service"
-msgstr "Po_kreni servis"
+#: ../src/system-config-services.glade:807
+#: ../src/system-config-services.glade:1006
+msgid "Description"
+msgstr "Opis"
 
-#: ../src/serviceconf.glade.h:37
-msgid "_View"
-msgstr "Pre_gled"
+#: ../src/system-config-services.glade:874
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has got nothing more to do."
+msgstr ""
+"Servis xinetd će pokrenuti ovaj servis na zahtev i završiće kada ne bude "
+"imao više šta da radi."
+
+#: ../src/system-config-services.glade:1080
+msgid "Service Information"
+msgstr "Podaci servisa"
+
+#: ../src/system-config-services.glade:1199
+msgid "Status of service %s:"
+msgstr "Status servisa %s:"
+
+#: ../src/system-config-services.glade:1236
+msgid "system-config-services"
+msgstr "system-config-services"
+
+#: ../src/system-config-services.glade:1237
+msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
+msgstr "Autorska prava  2002-2008 Red Hat, Inc. i priložioci"
+
+#: ../src/system-config-services.glade:1239
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+"Ovaj program je slobodan softver; možete ga raspodeljivati i/ili ga menjati "
+"pod uslovima GNU Opšte Javne Licence (GNU GPL) kako je objavljuje Zadužbina "
+"za Slobodni Softver (FSF); bilo verzije 2 te Licence, bilo (po vašem "
+"nahođenju) bilo koje novije verzije.\n"
+"\n"
+"Ovaj program se raspodeljuje u nadi da će biti od koristi, ali BEZ IKAKVIH "
+"GARANCIJA; čak i bez podrazumevane garancije KORISNOSTI ili PRILAGOĐENOSTI "
+"ODREĐENOJ NAMENI.  Vidite GNU Opštu Javnu Licencu za više detalja.\n"
+"\n"
+"Trebalo je da primite primerak GNU Opšte Javne Licence uz ovaj program, ako "
+"niste, pišite Zadužbini za Slobodni Softver  Free Software Foundation, Inc., "
+"59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+
+#: ../src/system-config-services.glade:1246
+msgid "translator-credits"
+msgstr "Igor Miletic Milos Komarcevic"
+
+#: ../src/system-config-services.glade:1391
+msgid "Runlevel _2"
+msgstr "Izvršni nivo _2"
+
+#: ../src/system-config-services.glade:1410
+msgid "Runlevel _3"
+msgstr "Izvršni nivo _3"
+
+#: ../src/system-config-services.glade:1429
+msgid "Runlevel _4"
+msgstr "Izvršni nivo _4"
+
+#: ../src/system-config-services.glade:1448
+msgid "Runlevel _5"
+msgstr "Izvršni nivo _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
