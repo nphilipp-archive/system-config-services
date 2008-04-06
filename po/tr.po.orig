@@ -1,60 +1,64 @@
-# translation of pl.po to Polish
-# Radosław Zawartko <radzaw@radzaw.one.pl>, 2003.
-# Tom Berner <tom@lodz.pl>, 2005.
-# Piotr Drąg <piotrdrag@gmail.com>, 2006.
-#
+# translation of tr.po to
+# translation of services_tr.po to
+# $Id: tr.po,v 1.66 2007/04/25 14:06:10 nphilipp Exp $
+# Nilgün Belma Bugüner <nilgun@superonline.com>, 2003.
+# Erçin EKER <erc.caldera@gmx.net>, 2003.
+# Bahadir Yagan <bahadir.yagan@mentorsystem.com>, 2004, 2006.
+# Egemen Metin Turan <mturan@aegee-ankara.org>,  2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: pl\n"
+"Project-Id-Version: tr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-20 16:11+0100\n"
-"PO-Revision-Date: 2008-03-20 20:36+0200\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <pl@li.org>\n"
+"PO-Revision-Date: 2006-11-06 11:52+0200\n"
+"Last-Translator: \n"
+"Language-Team:  <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.1\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../src/gui.py:109
 msgid "Name"
-msgstr "Nazwa"
+msgstr ""
 
 #: ../src/gui.py:110
 msgid "Remarks"
-msgstr "Zmień oznaczenia"
+msgstr ""
 
 #: ../src/gui.py:170 ../src/gui.py:187
 msgid "This service is being refreshed right now."
-msgstr "Ta usługa jest właśnie odświeżana."
+msgstr ""
 
 #: ../src/gui.py:171
 msgid "This service is enabled."
-msgstr "Ta usługa jest włączona."
+msgstr ""
 
 #: ../src/gui.py:172
 msgid "This service is disabled."
-msgstr "Ta usługa jest wyłączona."
+msgstr ""
 
 #: ../src/gui.py:173
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr "Ta usługa jest włączona na poziomach uruchamiania: %(runlevels)s"
+msgstr ""
 
 #: ../src/gui.py:188
 msgid "The status of this service is unknown."
-msgstr "Stan tej usługi jest nieznany."
+msgstr ""
 
 #: ../src/gui.py:189
 msgid "This service is stopped."
-msgstr "Ta usługa jest zatrzymana."
+msgstr ""
 
 #: ../src/gui.py:190
 msgid "This service is running."
-msgstr "Ta usługa jest uruchomiona."
+msgstr ""
 
 #: ../src/gui.py:191
 msgid "This service is dead."
-msgstr "Ta usługa jest martwa."
+msgstr ""
 
 #: ../src/gui.py:268
 #, python-format
@@ -62,12 +66,10 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
-"Usługa <b>%(servicename)s</b> jest uruchamiana raz, zwykle podczas "
-"uruchamiania systemu, działa w tle i przebudza się, kiedy jest potrzebna."
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
-msgstr "Ta usługa jest obecnie zaktualizowana."
+msgstr ""
 
 #: ../src/gui.py:308
 #, python-format
@@ -75,301 +77,289 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
 msgstr ""
-"Usługa <b>%(servicename)s</b> zostanie uruchomiona na żądanie przez usługę "
-"xinetd i zakończy działanie, kiedy nie ma nic do zrobienia."
 
 #: ../src/gui.py:317
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
-"Ta usługa jest włączona, ale pakiet <b>xinetd</b> nie jest zainstalowany. Ta "
-"usługa nie działa bez niego."
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
-"Ta usługa jest włączona, ale usługa <b>xinetd</b> nie jest uruchomiona. Ta "
-"usługa nie działa bez niej."
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "Włącz usługę <b>%(service)s</b> na tych poziomach uruchamiania:"
+msgstr ""
 
 #: ../src/gui.py:754
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
-"Nie można znaleźć przeglądarki pomocy. Aby zobaczyć pomoc, zainstaluj pakiet "
-"\"yelp\"."
 
 #: ../src/servicecontrol.py:88
 #, python-format
 msgid "Service %s not found!"
-msgstr "Nie znaleziono usługi %s!"
+msgstr ""
 
 #: ../src/servicecontrol.py:94
 #, python-format
 msgid "Service %s is running with old configuration"
-msgstr "Usługa %s jest uruchomiona za pomocą starej konfiguracji"
+msgstr ""
 
 #: ../src/servicecontrol.py:97
 #, python-format
 msgid "Service %s is running"
-msgstr "Usługa %s jest uruchomiona"
+msgstr ""
 
 #: ../src/servicecontrol.py:100
 #, python-format
 msgid "Service %s reports an error"
-msgstr "Usługa %s zgłasza błąd"
+msgstr ""
 
 #: ../src/servicecontrol.py:103
 #, python-format
 msgid "Service %s is stopped"
-msgstr "Usługa %s jest zatrzymana"
+msgstr ""
 
 #: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
 #, python-format
 msgid "Currently enabled in runlevels %s"
-msgstr "Obecnie jest włączona na poziomach uruchamiania %s"
+msgstr ""
 
 #: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
 #, python-format
 msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "Włącz %(name)s na poziomach uruchamiania %(levels)s"
+msgstr ""
 
 #: ../src/servicetab.glade:8
 msgid "window1"
-msgstr "okno1"
+msgstr ""
 
 #: ../src/servicetab.glade:38
 msgid "Service %s"
-msgstr "Usługa %s"
+msgstr ""
 
 #: ../src/servicetab.glade:47 ../src/servicetab.glade:395
 #: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
 msgid "Enable"
-msgstr "Włącz"
+msgstr "Etkin"
 
 #: ../src/servicetab.glade:68 ../src/servicetab.glade:413
 #: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
 msgid "Disable"
-msgstr "Wyłącz"
+msgstr "Etkin değil"
 
 #: ../src/servicetab.glade:89
 msgid "Customize"
-msgstr "Dostosuj"
+msgstr ""
 
 #: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
 msgid "Enable Default"
-msgstr "Włącz domyślnie"
+msgstr ""
 
 #: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
 #: ../src/system-config-services.glade:135
 #: ../src/system-config-services.glade:1256
 msgid "Runlevel 2"
-msgstr "Poziom uruchamiania 2"
+msgstr ""
 
 #: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
 #: ../src/system-config-services.glade:144
 #: ../src/system-config-services.glade:1266
 msgid "Runlevel 3"
-msgstr "Poziom uruchamiania 3"
+msgstr ""
 
 #: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
 #: ../src/system-config-services.glade:153
 #: ../src/system-config-services.glade:1276
 msgid "Runlevel 4"
-msgstr "Poziom uruchamiania 4"
+msgstr ""
 
 #: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
 #: ../src/system-config-services.glade:162
 #: ../src/system-config-services.glade:1286
 msgid "Runlevel 5"
-msgstr "Poziom uruchamiania 5"
+msgstr ""
 
 #: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
 msgid "Enable All"
-msgstr "Włącz wszystkie"
+msgstr ""
 
 #: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
 msgid "Disable All"
-msgstr "Wyłącz wszystkie"
+msgstr ""
 
 #: ../src/servicetab.glade:235 ../src/servicetab.glade:332
 #: ../src/servicetab.glade:2135
 msgid "Start"
-msgstr "Uruchom"
+msgstr "Başlat"
 
 #: ../src/servicetab.glade:256 ../src/servicetab.glade:349
 #: ../src/servicetab.glade:2156
 msgid "Restart"
-msgstr "Uruchom ponownie"
+msgstr "Yeniden Başlat"
 
 #: ../src/servicetab.glade:292 ../src/servicetab.glade:441
 #: ../src/servicetab.glade:1922
 msgid "Configure"
-msgstr "Skonfiguruj"
+msgstr ""
 
 #: ../src/servicetab.glade:394
 msgid "foobar"
-msgstr "foobar"
+msgstr ""
 
 #: ../src/servicetab.glade:412
 msgid "barfoo"
-msgstr "barfoo"
+msgstr ""
 
 #: ../src/servicetab.glade:521
 msgid "Current runlevel is %s"
-msgstr "Bieżący poziom uruchamiania to %s"
+msgstr "Şu an Etkin olan Çalışma Seviyesi: "
 
 #: ../src/servicetab.glade:764 ../src/servicetab.glade:836
 msgid "Runlevels"
-msgstr "Poziomy"
+msgstr "Çalışma Seviyeleri"
 
 #: ../src/servicetab.glade:807
 msgid "label18"
-msgstr "label18"
+msgstr ""
 
 #: ../src/servicetab.glade:940
 msgid "Start "
-msgstr "Uruchom "
+msgstr "Başlat"
 
 #: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
 msgid "Stop"
-msgstr "Zatrzymaj"
+msgstr "Dur"
 
 #: ../src/servicetab.glade:1066
 msgid "Service control"
-msgstr "Konfiguracja usług"
+msgstr "Hizmet kontrolü"
 
 #: ../src/servicetab.glade:1148
 msgid "Status output"
-msgstr "Wyjście stanu"
+msgstr "Durum çıktısı"
 
 #: ../src/servicetab.glade:1260 ../src/system-config-services.glade:181
 #: ../src/system-config-services.glade:393
 msgid "_Start"
-msgstr "_Uruchom"
+msgstr ""
 
 #: ../src/servicetab.glade:1339 ../src/system-config-services.glade:225
 #: ../src/system-config-services.glade:427
 msgid "_Restart"
-msgstr "U_ruchom ponownie"
+msgstr ""
 
 #: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
 #: ../src/system-config-services.glade:328
 msgid "_Enable"
-msgstr "Włą_cz"
+msgstr ""
 
 #: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
 #: ../src/system-config-services.glade:345
 msgid "_Disable"
-msgstr "_Wyłącz"
+msgstr ""
 
 #: ../src/servicetab.glade:1613
 msgid "_Configure"
-msgstr "_Skonfiguruj"
+msgstr ""
 
 #: ../src/servicetab.glade:1653
 msgid "Button Box"
-msgstr "Przycisk"
+msgstr ""
 
 #: ../src/servicetab.glade:1730
 msgid "label16"
-msgstr "label16"
+msgstr ""
 
 #: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
 msgid "Service %s:"
-msgstr "Usługa %s:"
+msgstr ""
 
 #: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1295
 msgid "Customize Runlevels"
-msgstr "Dostosuj poziomy uruchamiania"
+msgstr ""
 
 #: ../src/system-config-services.glade:7
 #: ../src/system-config-services.glade:1238
 msgid "Service Configuration"
-msgstr "Konfiguracja usług"
+msgstr "Servis Yapılandırması"
 
 #: ../src/system-config-services.glade:38
 msgid "_Program"
-msgstr "_Program"
+msgstr ""
 
 #: ../src/system-config-services.glade:60
 msgid "Ser_vice"
-msgstr "_Usługa"
+msgstr ""
 
 #: ../src/system-config-services.glade:113
 #: ../src/system-config-services.glade:363
 msgid "_Customize"
-msgstr "_Dostosuj"
+msgstr ""
 
 #: ../src/system-config-services.glade:203
 #: ../src/system-config-services.glade:410
 msgid "S_top"
-msgstr "Za_trzymaj"
+msgstr ""
 
 #: ../src/system-config-services.glade:251
 msgid "_Help"
-msgstr "Pomo_c"
+msgstr "_Yardım"
 
 #: ../src/system-config-services.glade:260
 msgid "_Contents"
-msgstr "_Zawartość"
+msgstr "İçi_ndekiler"
 
 #: ../src/system-config-services.glade:288
 msgid "_About"
-msgstr "_Informacje o"
+msgstr ""
 
 #: ../src/system-config-services.glade:362
 msgid "Customize the runlevels in which a service is enabled."
-msgstr "Dostosuj poziomy uruchamiania, w których usługa jest włączona."
+msgstr ""
 
 #: ../src/system-config-services.glade:558
 msgid "No service selected."
-msgstr "Nie wybrano usługi."
+msgstr ""
 
 #: ../src/system-config-services.glade:620
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
-"Ta usługa jest uruchamiana raz, zwykle podczas uruchamiania systemu, działa "
-"w tle i przebudza się, kiedy jest potrzebna."
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
 msgid "Description"
-msgstr "Opis"
+msgstr "Açıklama"
 
 #: ../src/system-config-services.glade:874
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
 msgstr ""
-"Ta usługa zostanie uruchomiona na żądanie przez usługę xinetd i zakończy "
-"działanie, kiedy nie ma nic do zrobienia."
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
-msgstr "Informacje o usłudze"
+msgstr ""
 
 #: ../src/system-config-services.glade:1199
 msgid "Status of service %s:"
-msgstr "Stan usługi %s:"
+msgstr ""
 
 #: ../src/system-config-services.glade:1236
 msgid "system-config-services"
-msgstr "system-config-services"
+msgstr ""
 
 #: ../src/system-config-services.glade:1237
 msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-msgstr "Copyright  2002-2008 Red Hat, Inc. oraz współtwórcy"
+msgstr ""
 
 #: ../src/system-config-services.glade:1239
 msgid ""
@@ -387,58 +377,192 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Niniejszy program jest wolnym oprogramowaniem; możesz go rozprowadzać dalej "
-"i/lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU, wydanej "
-"przez Fundację Wolnego Oprogramowania - według wersji 2-giej tej Licencji "
-"lub którejś z późniejszych wersji.\n"
-"\n"
-"Niniejszy program rozpowszechniany jest z nadzieją, iż będzie on użyteczny - "
-"jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI "
-"HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania "
-"bliższych informacji - Powszechna Licencja Publiczna GNU.\n"
-"\n"
-"Z pewnością wraz z niniejszym programem otrzymałeś też egzemplarz "
-"Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie "
-"- napisz do Free Software Foundation, Inc., 59 Temple Place, Suite 330, "
-"Boston, MA 02111-1307 USA."
 
 #: ../src/system-config-services.glade:1246
 msgid "translator-credits"
 msgstr ""
-"Radosław Zawartko <radzaw@radzaw.one.pl>, 2003\n"
-"Tom Berner <tom@lodz.pl>, 2005\n"
-"Piotr Drąg <piotrdrag@gmail.com>, 2006"
 
 #: ../src/system-config-services.glade:1391
 msgid "Runlevel _2"
-msgstr "Poziom uruchamiania _2"
+msgstr ""
 
 #: ../src/system-config-services.glade:1410
 msgid "Runlevel _3"
-msgstr "Poziom uruchamiania _3"
+msgstr "Çalışma Seviyesi _3"
 
 #: ../src/system-config-services.glade:1429
 msgid "Runlevel _4"
-msgstr "Poziom uruchamiania _4"
+msgstr "Çalışma Seviyesi _4"
 
 #: ../src/system-config-services.glade:1448
 msgid "Runlevel _5"
-msgstr "Poziom uruchamiania _5"
+msgstr "Çalışma Seviyesi _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "Konfiguracja usług uruchamianych przy starcie systemu"
+msgstr ""
+"Sisteminiz açıldığında hangi servislerin çalışmaya başlayacağını "
+"yapılandırınız."
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr "Zarządzanie usługami"
+msgstr "Servis Yönetimi"
 
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
-msgstr "Usługi"
+msgstr "Servisler"
 
-#~ msgid "Service %s is running with old config"
-#~ msgstr "Usługa %s jest uruchomiona ze starą konfiguracją"
+#~ msgid "None"
+#~ msgstr "Hiçbiri"
 
-#~ msgid "Service %s resports an error"
-#~ msgstr "Usługa %s zgłasza błąd"
+#~ msgid "Save Dialog"
+#~ msgstr "Kayıt Diyaloğu"
+
+#~ msgid "Don't Save"
+#~ msgstr "Kaydetme"
+
+#~ msgid ""
+#~ "You have made changes to the current runlevel.\n"
+#~ "Do you want to save the changes?"
+#~ msgstr ""
+#~ "Şu anki çalışma seviyesinde değişklik yaptınız.\n"
+#~ "Bu değişikliklerin kaydedilmesini ister misiniz?"
+
+#~ msgid "Add Service"
+#~ msgstr "Servis Ekle"
+
+#~ msgid "Service Name: "
+#~ msgstr "Servis Adı: "
+
+#~ msgid "_File"
+#~ msgstr "_Dosya"
+
+#~ msgid "_Save Changes"
+#~ msgstr "Değişiklikleri _Kaydet"
+
+#~ msgid "Revert To _Last Save"
+#~ msgstr "Son Kayıtlı Duruma _Dön"
+
+#~ msgid "_Quit"
+#~ msgstr "Çı_kış"
+
+#~ msgid "_View"
+#~ msgstr "_Görünüm"
+
+#~ msgid "_Refresh Service List"
+#~ msgstr "Servis listesini _Tazele"
+
+#~ msgid "_Actions"
+#~ msgstr "_Eylemler"
+
+#~ msgid "Delete Service"
+#~ msgstr "Hizmeti Sil"
+
+#~ msgid "_Start Service"
+#~ msgstr "Servisi _Başlat"
+
+#~ msgid "S_top Service"
+#~ msgstr "Servisi _Durdur"
+
+#~ msgid "_Restart Service"
+#~ msgstr "Servisi _Yeniden Başlat"
+
+#~ msgid "_Edit Runlevel"
+#~ msgstr "Çalışma _Seviyesini Düzenle"
+
+#~ msgid "Runlevel _All"
+#~ msgstr "Çalışma Seviyesi _Tümü"
+
+#~ msgid ""
+#~ "These services are started once and run in the background. You can "
+#~ "specify in which runlevels they are started."
+#~ msgstr ""
+#~ "Bu servisler bir kez başlatılır ve arka planda çalıştırılır. Hangi "
+#~ "çalışma seviyelerinde başlatılacaklarını belirleyebilirsiniz."
+
+#~ msgid "Current Active Runlevel: "
+#~ msgstr "Şu an Etkin olan Çalışma Seviyesi: "
+
+#~ msgid "Editing Runlevel:"
+#~ msgstr "Düzenlenen Çalışma Seviyesi:"
+
+#~ msgid "Status"
+#~ msgstr "Durum"
+
+#~ msgid "_Background Services"
+#~ msgstr "_Arkaplan Servisleri"
+
+#~ msgid ""
+#~ "These services are started on demand and end when there is nothing more "
+#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
+#~ msgstr ""
+#~ "Bu servisleri istek üzerine başlatılır ve yapılacak birşey olmadığında "
+#~ "durdurulur. <b>xinetd> servisinin çalışması, bu servislerin çalışması "
+#~ "için gereklidir. "
+
+#~ msgid "_On Demand Services"
+#~ msgstr "_İsteğe Bağlı Servisler"
+
+#~ msgid "Are you sure you want to delete the %s?"
+#~ msgstr "%s'i silmek istediğinizden emin misiniz?"
+
+#~ msgid "Runlevel %d"
+#~ msgstr "Çalışma Seviyesi %d"
+
+#~ msgid "Currently Running in Runlevel: "
+#~ msgstr "Şu an Etkin Olan Çalışma Seviyesi:"
+
+#~ msgid "Editing Runlevel: "
+#~ msgstr "Düzenlenen Çalışma Seviyesi: "
+
+#~ msgid "Unknown"
+#~ msgstr "Bilinmeyen"
+
+#~ msgid "All"
+#~ msgstr "Tümü"
+
+#~ msgid ""
+#~ "System Services Configuration Tool VERSION\n"
+#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
+#~ msgstr ""
+#~ "Sistem Servis Yapılandırma Aracı SÜRÜM\n"
+#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
+#~ " Tim Powers <timp@redhat.com>\n"
+#~ " Bill Nottingham <notting@redhat.com>\n"
+#~ " Dan Walsh <dwalsh@redhat.com>\n"
+#~ " Brent Fox <bfox@redhat.com>\n"
+#~ " Nils Philippsen <nphilipp@redhat.com>\n"
+#~ " "
+
+#~ msgid "About"
+#~ msgstr "Hakkında"
+
+#~ msgid "You must run system-config-services as root."
+#~ msgstr "sytem-config-services root olarak çalıştırılmalıdır."
+
+#~ msgid "%s failed. The error was: %s"
+#~ msgstr "%s başarısız. Hata: %s"
+
+#~ msgid " successful"
+#~ msgstr " başarılı"
+
+#~ msgid "xinetd must be enabled for %s to run"
+#~ msgstr "%s i çalıştırmak için xinetd etkin olmalıdır"
+
+#~ msgid "xinetd failed to reload for "
+#~ msgstr "xinetd bunu yeniden yükleyemedi: "
+
+#~ msgid ". The error was: "
+#~ msgstr ". Hata: "
+
+#~ msgid "xinetd reloaded %s successfully"
+#~ msgstr "xinetd %s i başarıyla yeniden yükledi"
+
+#~ msgid "Help is not available."
+#~ msgstr "Yardım erişilebilir değil."

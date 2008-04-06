@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-20 16:11+0100\n"
-"PO-Revision-Date: 2008-03-20 20:36+0200\n"
+"PO-Revision-Date: 2008-03-20 16:58+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -436,9 +436,3 @@ msgstr "Zarządzanie usługami"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Usługi"
-
-#~ msgid "Service %s is running with old config"
-#~ msgstr "Usługa %s jest uruchomiona ze starą konfiguracją"
-
-#~ msgid "Service %s resports an error"
-#~ msgstr "Usługa %s zgłasza błąd"
