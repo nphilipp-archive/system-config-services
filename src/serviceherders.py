@@ -74,12 +74,10 @@ class ServiceHerder (object):
         #print "%s.__new__ ()" % cls
         if not '_the_instance' in cls.__dict__:
             cls._the_instance = object.__new__ (cls)
-            cls._the_instance.__initialize__ (*p, **k)
         return cls._the_instance
 
-    def __initialize__ (self, mon):
+    def __init__ (self, mon):
         """mon: a gamin WatchMonitor instance"""
-        #print "%s.__initialize__ ()" % self
         super (ServiceHerder, self).__init__ ()
 
         self.services = {}
