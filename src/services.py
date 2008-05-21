@@ -31,7 +31,11 @@ from util import getstatusoutput
 from asynccmd import *
 
 from servicesinfo import *
-import serviceherders
+# make pydoc work by working around cyclic dependency
+try:
+    import serviceherders
+except AttributeError:
+    pass
 
 SVC_STATUS_REFRESHING = 0
 SVC_STATUS_UNKNOWN = 1
