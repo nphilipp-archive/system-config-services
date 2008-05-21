@@ -16,6 +16,17 @@ from services import SVC_STATUS_REFRESHING, SVC_STATUS_UNKNOWN, SVC_STATUS_STOPP
 from services import SVC_ENABLED_REFRESHING, SVC_ENABLED_YES, SVC_ENABLED_NO, SVC_ENABLED_CUSTOM
 
 class DBusService (dbus.servicehelper.TimeoutObject):
+    def __new__ (cls, bus, object_path, service, **k):
+        srv_cls_dbussrv_cls = {
+                services.SysVService: DBusSysVService,
+                services.XinetdService: DBusXinetdService,
+                }
+
+        for srv_cls, dbussrv_cls in srv_cls_dbussrv_cls.iteritems ():
+            if isinstance (service, srv_cls):
+                return super (DBusService, cls).__new__ (dbussrv_cls, bus, object_path, service, **k)
+        raise NotImplementedError
+
     def __init__ (self, bus, object_path, service):
         dbus.servicehelper.TimeoutObject.__init__ (self, bus, object_path)
 
@@ -25,6 +36,46 @@ class DBusService (dbus.servicehelper.TimeoutObject):
     def ping (self):
         return "pong"
 
+    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.Service", in_signature = "", out_signature = "")
+    def save (self):
+        raise NotImplementedError
+
+class DBusChkconfigService (DBusService):
+    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.ChkconfigService", in_signature = "", out_signature = "")
+    def enable (self):
+        self.service.enable ()
+
+    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.ChkconfigService", in_signature = "", out_signature = "")
+    def disable (self):
+        self.service.disable ()
+
+class DBusSysVService (DBusChkconfigService):
+    # FIXME
+    def save (self, runlevels):
+        pass
+
+    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.SysVService", in_signature = "", out_signature = "")
+    def start (self):
+        self.service.start ()
+
+    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.SysVService", in_signature = "", out_signature = "")
+    def stop (self):
+        self.service.stop ()
+
+    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.SysVService", in_signature = "", out_signature = "")
+    def restart (self):
+        self.service.restart ()
+
+    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.SysVService", in_signature = "", out_signature = "")
+    def reload (self):
+        self.service.reload ()
+
+class DBusXinetdService (DBusChkconfigService):
+    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.XinetdService", in_signature = "b", out_signature = "")
+    def save (self, enabled):
+        self.service.enabled = enabled
+        self.service.save ()
+    
 class DBusServiceHerder (dbus.servicehelper.TimeoutObject):
     def __init__ (self, bus, object_path, herder):
         dbus.servicehelper.TimeoutObject.__init__ (self, bus, object_path)
