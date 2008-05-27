@@ -5,7 +5,7 @@ import gobject
 
 import dbus
 import dbus.service
-import kraut.dbus.service
+import slip.dbus.service
 import dbus.mainloop.glib
 
 import serviceherders
@@ -15,7 +15,7 @@ import services
 from services import SVC_STATUS_REFRESHING, SVC_STATUS_UNKNOWN, SVC_STATUS_STOPPED, SVC_STATUS_RUNNING, SVC_STATUS_DEAD
 from services import SVC_ENABLED_REFRESHING, SVC_ENABLED_YES, SVC_ENABLED_NO, SVC_ENABLED_CUSTOM
 
-class DBusService (kraut.dbus.service.TimeoutObject):
+class DBusService (slip.dbus.service.TimeoutObject):
     def __new__ (cls, bus, object_path, service, **k):
         srv_cls_dbussrv_cls = {
                 services.SysVService: DBusSysVService,
@@ -28,7 +28,7 @@ class DBusService (kraut.dbus.service.TimeoutObject):
         raise NotImplementedError
 
     def __init__ (self, bus, object_path, service):
-        kraut.dbus.service.TimeoutObject.__init__ (self, bus, object_path)
+        slip.dbus.service.TimeoutObject.__init__ (self, bus, object_path)
 
         self.service = service
 
@@ -76,9 +76,9 @@ class DBusXinetdService (DBusChkconfigService):
         self.service.enabled = enabled
         self.service.save ()
     
-class DBusServiceHerder (kraut.dbus.service.TimeoutObject):
+class DBusServiceHerder (slip.dbus.service.TimeoutObject):
     def __init__ (self, bus, object_path, herder):
-        kraut.dbus.service.TimeoutObject.__init__ (self, bus, object_path)
+        slip.dbus.service.TimeoutObject.__init__ (self, bus, object_path)
 
         self.herder = herder
         self.herder.subscribe (self.on_services_changed)
@@ -150,7 +150,7 @@ def run_service ():
 
     gobject.io_add_watch (filemon_fd, gobject.IO_IN | gobject.IO_PRI, filemon_handle_events)
 
-    kraut.dbus.service.set_mainloop (mainloop)
+    slip.dbus.service.set_mainloop (mainloop)
     print "Running system-config-services dbus service."
     mainloop.run ()
 
