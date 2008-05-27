@@ -128,21 +128,13 @@ class DBusServiceHerder (slip.dbus.service.TimeoutObject):
         dbusservice.remove_from_connection (connection = self.connection, path = self._service_object_path (service))
         del self.services_dbusservices[service]
 
+    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.ServiceHerder", out_signature = "as")
+    def list_services (self):
+        return map (lambda service: service.name, self.services_dbusservices.keys ())
+
     @dbus.service.signal (dbus_interface = "org.fedoraproject.Config.Services.ServiceHerder.notify", signature = "us")
     def notify (self, change, servicename):
         pass
-
-    def create_service (self, name):
-        if name not in self.services.keys ():
-            try:
-                servicecls = services_dbusservices [self.service_class]
-                serviceobj = servicecls (self.connection,
-                        self._service_object_path (name),
-                        name, self.mon, self)
-                self.services[name] = serviceobj
-                self.notify (SVC_ADDED, service = serviceobj)
-            except services.InvalidServiceException:
-                pass
 
     def _service_object_path (self, service):
         name = service.name.replace ('-', '_')
