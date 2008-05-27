@@ -61,6 +61,10 @@ class DBusService (slip.dbus.service.TimeoutObject):
     def save (self):
         raise NotImplementedError
 
+    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.Service", in_signature = "", out_signature = "s")
+    def get_name (self):
+        return self.service.name
+
 class DBusChkconfigService (DBusService):
     @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.ChkconfigService", in_signature = "", out_signature = "")
     def enable (self):
