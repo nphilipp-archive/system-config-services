@@ -24,7 +24,6 @@ import config
 
 import os.path
 import gobject
-import gamin
 import gtk
 import gtk.glade
 
@@ -33,9 +32,8 @@ import slip.gtk
 import gettext
 gettext.install ('system-config-services')
 
-import serviceherders
 from serviceherders import SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED
-import services
+
 from services import SVC_STATUS_REFRESHING, SVC_STATUS_UNKNOWN, SVC_STATUS_STOPPED, SVC_STATUS_RUNNING, SVC_STATUS_DEAD, SVC_ENABLED_REFRESHING, SVC_ENABLED_YES, SVC_ENABLED_NO, SVC_ENABLED_CUSTOM
 
 gtk.glade.bindtextdomain (config.domain)
@@ -666,7 +664,7 @@ class MainWindow (GladeController):
             'aboutDialog'
             )
 
-    def __init__ (self, serviceherders):
+    def __init__ (self, mainloop, serviceherders):
         if os.access ("system-config-services.glade", os.R_OK):
             fd = open ("system-config-services.glade", "r")
         else:
@@ -679,10 +677,13 @@ class MainWindow (GladeController):
 
         super (MainWindow, self).__init__ (xml)
 
+        self.mainloop = mainloop
+        self.maincontext = mainloop.get_context ()
+
         self.servicesList = GUIServicesList (xml = self.xml, serviceherders = serviceherders)
 
         self.toplevel = xml.get_widget ("mainWindow")
-        self.toplevel.connect ('delete_event', gtk.main_quit)
+        self.toplevel.connect ('delete_event', self.on_programQuit_activate)
 
         # enable service popup menu
         #self.serviceEnableButton.set_menu (self.serviceEnable_popupMenu)
@@ -700,14 +701,14 @@ class MainWindow (GladeController):
     ### Callbacks
 
     def on_programQuit_activate (self, *args):
-        gtk.main_quit ()
+        self.mainloop.quit ()
 
     def _xinetd_reload (self, service):
         xinetd_service = self.servicesList.xinetd_service
         if xinetd_service and xinetd_service.status == SVC_STATUS_RUNNING:
             while service.is_chkconfig_running ():
-                while gtk.events_pending ():
-                    gtk.main_iteration ()
+                while self.maincontext.pending ():
+                    self.maincontext.iteration ()
             xinetd_service.reload ()
 
 
@@ -780,17 +781,39 @@ class MainWindow (GladeController):
 ##############################################################################
 
 class GUI (object):
-    def __init__ (self):
-        self._filemon = gamin.WatchMonitor ()
-        self._filemon_fd = self._filemon.get_fd ()
-        gobject.io_add_watch (self._filemon_fd, gobject.IO_IN | gobject.IO_PRI,
-                              self._mon_handle_events)
+    def __init__ (self, use_dbus = True):
+        global serviceherders, services
+
+        self.use_dbus = use_dbus
+        self.mainloop = gobject.MainLoop ()
+
+        if not use_dbus:
+            import gamin
+            import serviceherders
+            import services
+            self._filemon = gamin.WatchMonitor ()
+            self._filemon_fd = self._filemon.get_fd ()
+            gobject.io_add_watch (self._filemon_fd,
+                    gobject.IO_IN | gobject.IO_PRI,
+                    self._mon_handle_events)
+        else:
+            import dbus
+            import dbus.mainloop.glib
+            import dbus_proxy as serviceherders
+            import dbus_proxy as services
+            dbus.mainloop.glib.DBusGMainLoop (set_as_default=True)
+            self._bus = dbus.SystemBus ()
 
         self.serviceherders = []
         for cls in serviceherders.herder_classes:
-            self.serviceherders.append (cls (mon = self._filemon))
+            print "adding", cls
+            if not use_dbus:
+                self.serviceherders.append (cls (mon = self._filemon))
+            else:
+                self.serviceherders.append (cls (bus = self._bus))
 
-        self.mainWindow = MainWindow (serviceherders = self.serviceherders)
+        self.mainWindow = MainWindow (mainloop = self.mainloop,
+                serviceherders = self.serviceherders)
 
     def _mon_handle_events (self, source, condition, data = None):
         self._filemon.handle_events ()
@@ -799,12 +822,19 @@ class GUI (object):
     def run (self):
         try:
             self.mainWindow.toplevel.show ()
-            gtk.main ()
+            self.mainloop.run ()
         except KeyboardInterrupt:
             pass
 
 if __name__ == "__main__":
+    import sys
+
+    if "--no-dbus" in sys.argv[1:]:
+        use_dbus = False
+    else:
+        use_dbus = True
+
     try:
-        GUI ().run ()
+        GUI (use_dbus = use_dbus).run ()
     except KeyboardInterrupt:
         pass
