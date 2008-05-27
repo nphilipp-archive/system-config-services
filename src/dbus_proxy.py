@@ -38,17 +38,18 @@ dbus_service_path = "/org/fedoraproject/Config/Services"
 class DBusServiceProxy (object):
     def __init__ (self, name, bus, herder):
         super (DBusServiceProxy, self).__init__ ()
+        self.name = name
         self.bus = bus
         self.herder = herder
 
-        self.dbus_service_path = herder.dbus_service_path + "/Services/" + name
+        self.dbus_service_path = herder.dbus_service_path + "/Services/" + self.dbus_name
         self.dbus_object = bus.get_object (dbus_service_name, self.dbus_service_path)
 
     @property
-    def name (self):
-        if "_name" not in dir (self):
-            self._name = self.dbus_object.get_name ()
-        return self._name
+    def dbus_name (self):
+        if "_dbus_name" not in dir (self):
+            self._dbus_name = self.name.replace ("-", "_")
+        return self._dbus_name
 
     def save (self):
         self.dbus_object.save ()
@@ -101,12 +102,11 @@ class DBusServiceHerderProxy (object):
 
         self.dbus_object.connect_to_signal ("notify", self.dbus_notify)
 
-
-        i = self.services_dbus_object.Introspect (dbus_interface = "org.freedesktop.DBus.Introspectable")
-
-        print "i:", i
-
         self.services = {}
+
+        for service_name in self.dbus_object.list_services (dbus_interface = "org.fedoraproject.Config.Services.ServiceHerder"):
+            self.services[service_name] = self.service_class (service_name, bus, self)
+
         self.subscribers = set ()
 
     class _Subscriber (object):
