@@ -80,6 +80,9 @@ class DBusServiceProxy (object):
 
         self.info = self.info_class (name, bus, self)
 
+    def __repr__ (self):
+        return "<%s.%s object at %x: %s>" % (self.__class__.__module__, self.__class__.__name__, id (self), self.name)
+
     @property
     def dbus_name (self):
         if "_dbus_name" not in dir (self):
@@ -152,12 +155,18 @@ class DBusServiceHerderProxy (object):
         self.dbus_object = bus.get_object (dbus_service_name, self.dbus_service_path)
         self.services_dbus_object = bus.get_object (dbus_service_name, self.dbus_service_path + "/Services")
 
-        self.dbus_object.connect_to_signal ("notify", self.dbus_notify)
-
         self.services = {}
+
+        self.freeze_level = 0
+        self.frozen_notifications = None
+
+        self.freeze_notifications ()
+
+        self.dbus_object.connect_to_signal ("notify", self.notify)
 
         for service_name in self.dbus_object.list_services (dbus_interface = "org.fedoraproject.Config.Services.ServiceHerder"):
             self.services[service_name] = self.service_class (service_name, bus, self)
+        self.thaw_notifications ()
 
         self.subscribers = set ()
 
@@ -167,17 +176,56 @@ class DBusServiceHerderProxy (object):
             self.p = p
             self.k = k
 
+    class _Notification (object):
+        def __init__ (self, subscriber, service_name, change):
+            self.subscriber = subscriber
+            self.service_name = service_name
+            self.change = change
+
     def subscribe (self, remote_method_or_function, *p, **k):
         self.subscribers.add (self._Subscriber (remote_method_or_function, p, k))
+        self.freeze_notifications ()
         for service in self.services.itervalues ():
             remote_method_or_function (change = SVC_ADDED, service = service)
+        self.thaw_notifications ()
 
-    def dbus_notify (self, change, service_name):
+    def dbus_notify (self, subscriber, service_name, change):
+        if change == SVC_ADDED:
+            self.services[service_name] = self.service_class (service_name, self.bus, self)
+
+        k = copy.copy (subscriber.k)
+        service = self.services[service_name]
+        k["service"] = service
+        subscriber.remote_method_or_function (change = change, *subscriber.p, **k)
+
+        if change == SVC_DELETED:
+            del self.services[service_name]
+
+    @property
+    def frozen (self):
+        return self.freeze_level > 0
+
+    def freeze_notifications (self):
+        self.freeze_level += 1
+        if not self.frozen_notifications:
+            self.frozen_notifications = []
+
+    def thaw_notifications (self):
+        self.freeze_level -= 1
+        if self.freeze_level < 0:
+            self.freeze_level = 0
+        if self.frozen:
+            return
+        for n in self.frozen_notifications:
+            self.dbus_notify (n.subscriber, n.service_name, n.change)
+        self.frozen_notifications = None
+
+    def notify (self, change, service_name):
         for subscriber in self.subscribers:
-            k = copy.copy (subscriber.k)
-            service = self.service_class (service_name, self.bus, self)
-            k["service"] = service
-            subscriber.remote_method_or_function (change = change, *subscriber.p, **k)
+            if not self.frozen:
+                self.dbus_notify (subscriber, service_name, change)
+            else:
+                self.frozen_notifications.append (self._Notification (subscriber, service_name, change))
 
 ##############################################################################
 
