@@ -35,7 +35,40 @@ dbus_service_path = "/org/fedoraproject/Config/Services"
 
 ##############################################################################
 
+class DBusServiceInfoProxy (object):
+    def __init__ (self, name, bus, service):
+        self.name = name
+        self.bus = bus
+        self.service = service
+
+        self.dbus_service_path = self.service.dbus_service_path
+        self.dbus_object = bus.get_object (dbus_service_name,
+                self.dbus_service_path)
+
+##############################################################################
+
+class DBusSysVServiceInfoProxy (DBusServiceInfoProxy):
+    @property
+    def shortdescription (self):
+        return self.dbus_object.get_shortdescription (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+
+    @property
+    def description (self):
+        return self.dbus_object.get_description (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+
+##############################################################################
+
+class DBusXinetdServiceInfoProxy (DBusServiceInfoProxy):
+    @property
+    def description (self):
+        return self.dbus_object.get_description (dbus_interface = "org.fedoraproject.Config.Services.XinetdService")
+
+
+##############################################################################
+
 class DBusServiceProxy (object):
+    info_class = DBusServiceInfoProxy
+
     def __init__ (self, name, bus, herder):
         super (DBusServiceProxy, self).__init__ ()
         self.name = name
@@ -45,6 +78,8 @@ class DBusServiceProxy (object):
         self.dbus_service_path = herder.dbus_service_path + "/Services/" + self.dbus_name
         self.dbus_object = bus.get_object (dbus_service_name, self.dbus_service_path)
 
+        self.info = self.info_class (name, bus, self)
+
     @property
     def dbus_name (self):
         if "_dbus_name" not in dir (self):
@@ -52,38 +87,55 @@ class DBusServiceProxy (object):
         return self._dbus_name
 
     def save (self):
-        self.dbus_object.save ()
+        self.dbus_object.save (dbus_interface = "org.fedoraproject.Config.Services.Service")
 
 ##############################################################################
 
 class DBusChkconfigServiceProxy (DBusServiceProxy):
     def enable (self):
-        self.dbus_object.enable ()
+        self.dbus_object.enable (dbus_interface = "org.fedoraproject.Config.Services.ChkconfigService")
 
     def disable (self):
-        self.dbus_object.disable ()
+        self.dbus_object.disable (dbus_interface = "org.fedoraproject.Config.Services.ChkconfigService")
+
+    def get_enabled (self):
+        return self.dbus_object.get_enabled (dbus_interface = "org.fedoraproject.Config.Services.ChkconfigService")
 
 ##############################################################################
 
 class DBusSysVServiceProxy (DBusChkconfigServiceProxy):
+    info_class = DBusSysVServiceInfoProxy
+
     def start (self):
-        self.dbus_object.start ()
+        self.dbus_object.start (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
 
     def stop (self):
-        self.dbus_object.stop ()
+        self.dbus_object.stop (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
 
     def restart (self):
-        self.dbus_object.restart ()
+        self.dbus_object.restart (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
 
     def reload (self):
-        self.dbus_object.reload ()
+        self.dbus_object.reload (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+
+    @property
+    def status (self):
+        return self.dbus_object.get_status (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+
+    @property
+    def status_updates_running (self):
+        return self.dbus_object.get_status_updates_running (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+
+    @property
+    def runlevels (self):
+        return set (self.dbus_object.get_runlevels (dbus_interface = "org.fedoraproject.Config.Services.SysVService"))
 
 SysVService = DBusSysVServiceProxy
 
 ##############################################################################
 
 class DBusXinetdServiceProxy (DBusChkconfigServiceProxy):
-    pass
+    info_class = DBusXinetdServiceInfoProxy
 
 XinetdService = DBusXinetdServiceProxy
 

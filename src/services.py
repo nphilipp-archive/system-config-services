@@ -146,6 +146,9 @@ class ChkconfigService (Service):
         """Disable this service."""
         self._change_enablement ('off')
 
+    def get_enabled (self):
+        raise NotImplementedError
+
 ##############################################################################
 
 class SysVService (ChkconfigService):

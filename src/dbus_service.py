@@ -36,6 +36,8 @@ import services
 from services import SVC_STATUS_REFRESHING, SVC_STATUS_UNKNOWN, SVC_STATUS_STOPPED, SVC_STATUS_RUNNING, SVC_STATUS_DEAD
 from services import SVC_ENABLED_REFRESHING, SVC_ENABLED_YES, SVC_ENABLED_NO, SVC_ENABLED_CUSTOM
 
+##############################################################################
+
 class DBusService (slip.dbus.service.TimeoutObject):
     def __new__ (cls, bus, object_path, service, **k):
         srv_cls_dbussrv_cls = {
@@ -53,13 +55,11 @@ class DBusService (slip.dbus.service.TimeoutObject):
 
         self.service = service
 
-    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.Service", in_signature = "", out_signature = "s")
-    def ping (self):
-        return "pong"
-
     @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.Service", in_signature = "", out_signature = "")
     def save (self):
         raise NotImplementedError
+
+##############################################################################
 
 class DBusChkconfigService (DBusService):
     @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.ChkconfigService", in_signature = "", out_signature = "")
@@ -69,6 +69,12 @@ class DBusChkconfigService (DBusService):
     @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.ChkconfigService", in_signature = "", out_signature = "")
     def disable (self):
         self.service.disable ()
+
+    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.ChkconfigService", in_signature = "", out_signature = "b")
+    def get_enabled (self):
+        return self.service.get_enabled ()
+
+##############################################################################
 
 class DBusSysVService (DBusChkconfigService):
     # FIXME
@@ -91,12 +97,49 @@ class DBusSysVService (DBusChkconfigService):
     def reload (self):
         self.service.reload ()
 
+    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.SysVService", in_signature = "", out_signature = "i")
+    def get_status (self):
+        return self.service.status
+
+    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.SysVService", in_signature = "", out_signature = "i")
+    def get_status_updates_running (self):
+        return self.service.status_updates_running
+
+    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.SysVService", in_signature = "", out_signature = "s")
+    def get_shortdescription (self):
+        if self.service.info.shortdescription:
+            return self.service.info.shortdescription
+        else:
+            return ""
+
+    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.SysVService", in_signature = "", out_signature = "s")
+    def get_description (self):
+        if self.service.info.description:
+            return self.service.info.description
+        else:
+            return ""
+
+    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.SysVService", in_signature = "", out_signature = "ai")
+    def get_runlevels (self):
+        return list (self.service.runlevels)
+
+##############################################################################
+
 class DBusXinetdService (DBusChkconfigService):
     @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.XinetdService", in_signature = "b", out_signature = "")
     def save (self, enabled):
         self.service.enabled = enabled
         self.service.save ()
     
+    @dbus.service.method (dbus_interface = "org.fedoraproject.Config.Services.XinetdService", in_signature = "", out_signature = "s")
+    def get_description (self):
+        if self.service.info.description:
+            return self.service.info.description
+        else:
+            return ""
+
+##############################################################################
+
 class DBusServiceHerder (slip.dbus.service.TimeoutObject):
     def __init__ (self, bus, object_path, herder):
         slip.dbus.service.TimeoutObject.__init__ (self, bus, object_path)
@@ -140,6 +183,8 @@ class DBusServiceHerder (slip.dbus.service.TimeoutObject):
         name = service.name.replace ('-', '_')
         return "%s/Services/%s" % (self._object_path, name)
 
+##############################################################################
+
 def run_service ():
     mainloop = gobject.MainLoop()
     dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
@@ -166,6 +211,8 @@ def run_service ():
     slip.dbus.service.set_mainloop (mainloop)
     print "Running system-config-services dbus service."
     mainloop.run ()
+
+##############################################################################
 
 if __name__ == "__main__":
     run_service ()
