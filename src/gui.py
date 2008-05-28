@@ -806,7 +806,6 @@ class GUI (object):
 
         self.serviceherders = []
         for cls in serviceherders.herder_classes:
-            print "adding", cls
             if not use_dbus:
                 self.serviceherders.append (cls (mon = self._filemon))
             else:
