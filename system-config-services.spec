@@ -1,5 +1,3 @@
-# -*- RPM-SPEC -*-
-
 # Command line configurables
 
 %if 0%{?fedora}%{?rhel} == 0 || 0%{?fedora} >= 8 || 0%{?rhel} >= 6
@@ -13,6 +11,10 @@
 %else
 %bcond_with console_util
 %endif
+
+# sitelib for noarch packages, sitearch for others (remove the unneeded one)
+%{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(0)")}
+%{!?python_version: %define python_version %(%{__python} -c "from distutils.sysconfig import get_python_version; print get_python_version()")}
 
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
@@ -102,10 +104,12 @@ rm -rf %{buildroot}
 %{_datadir}/applications/system-config-services.desktop
 %{_datadir}/icons/hicolor/48x48/apps/system-config-services.png
 %{_datadir}/system-config-services
+%{python_sitelib}/scservices
 %config(noreplace) %{_sysconfdir}/pam.d/system-config-services
 %config(noreplace) %{_sysconfdir}/security/console.apps/system-config-services
 %config(noreplace) %{_sysconfdir}/security/console.apps/serviceconf
 %config(noreplace) %{_sysconfdir}/pam.d/serviceconf
+
 %{_mandir}/*/system-config-services.8*
 
 %changelog

@@ -1,0 +1,15 @@
+#!/usr/bin/python
+
+from distutils.core import setup
+
+setup (
+        name = "scservices",
+        version = "@VERSION@",
+        packages = ["scservices", "scservices.core"]
+        )
+
+setup (
+        name = "scservices.dbus",
+        version = "@VERSION@",
+        packages = ["scservices.dbus", "scservices.dbus.service", "scservices.dbus.proxy"]
+        )
