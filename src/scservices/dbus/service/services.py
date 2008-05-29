@@ -62,7 +62,7 @@ class DBusChkconfigService (DBusService):
     def disable (self):
         self.service.disable ()
 
-    @dbus.service.method (dbus_interface = dbus_service_name + ".ChkconfigService", in_signature = "", out_signature = "b")
+    @dbus.service.method (dbus_interface = dbus_service_name + ".ChkconfigService", in_signature = "", out_signature = "i")
     def get_enabled (self):
         return self.service.get_enabled ()
 
