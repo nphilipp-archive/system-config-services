@@ -32,9 +32,9 @@ import slip.gtk
 import gettext
 gettext.install ('system-config-services')
 
-from serviceherders import SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED
+from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED
 
-from services import SVC_STATUS_REFRESHING, SVC_STATUS_UNKNOWN, SVC_STATUS_STOPPED, SVC_STATUS_RUNNING, SVC_STATUS_DEAD, SVC_ENABLED_REFRESHING, SVC_ENABLED_YES, SVC_ENABLED_NO, SVC_ENABLED_CUSTOM
+from scservices.core.services import SVC_STATUS_REFRESHING, SVC_STATUS_UNKNOWN, SVC_STATUS_STOPPED, SVC_STATUS_RUNNING, SVC_STATUS_DEAD, SVC_ENABLED_REFRESHING, SVC_ENABLED_YES, SVC_ENABLED_NO, SVC_ENABLED_CUSTOM
 
 gtk.glade.bindtextdomain (config.domain)
 
@@ -789,8 +789,8 @@ class GUI (object):
 
         if not use_dbus:
             import gamin
-            import serviceherders
-            import services
+            import scservices.core.serviceherders as serviceherders
+            import sscservices.core.services as services
             self._filemon = gamin.WatchMonitor ()
             self._filemon_fd = self._filemon.get_fd ()
             gobject.io_add_watch (self._filemon_fd,
@@ -799,8 +799,8 @@ class GUI (object):
         else:
             import dbus
             import dbus.mainloop.glib
-            import dbus_proxy as serviceherders
-            import dbus_proxy as services
+            import scservices.dbus.proxy.serviceherders as serviceherders
+            import scservices.dbus.proxy.services as services
             dbus.mainloop.glib.DBusGMainLoop (set_as_default=True)
             self._bus = dbus.SystemBus ()
 

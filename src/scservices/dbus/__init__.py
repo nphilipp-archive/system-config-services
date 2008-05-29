@@ -1,6 +1,5 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
-# dbus_service.py: run dbus backend service for system-config-services
+# scservices.dbus: DBus wrapper code
 #
 # Copyright © 2008 Red Hat, Inc.
 #
@@ -21,8 +20,5 @@
 # Authors:
 # Nils Philippsen <nphilipp@redhat.com>
 
-import scservices.dbus.service
-try:
-    scservices.dbus.service.run_service ()
-except KeyboardInterrupt:
-    pass
+dbus_service_name = "org.fedoraproject.Config.Services"
+dbus_service_path = "/org/fedoraproject/Config/Services"
