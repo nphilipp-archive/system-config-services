@@ -1,3 +1,8 @@
+# sitelib for noarch packages, sitearch for others (remove the unneeded one)
+%if 0%{!?python_sitelib}
+%define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(0)")
+%endif
+
 # Command line configurables
 
 %if 0%{?fedora}%{?rhel} == 0 || 0%{?fedora} >= 8 || 0%{?rhel} >= 6
@@ -11,10 +16,6 @@
 %else
 %bcond_with console_util
 %endif
-
-# sitelib for noarch packages, sitearch for others (remove the unneeded one)
-%{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(0)")}
-%{!?python_version: %define python_version %(%{__python} -c "from distutils.sysconfig import get_python_version; print get_python_version()")}
 
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
