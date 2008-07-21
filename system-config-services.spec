@@ -1,6 +1,10 @@
-# sitelib for noarch packages, sitearch for others (remove the unneeded one)
-%{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(0)")}
-%{!?python_version: %define python_version %(%{__python} -c "from distutils.sysconfig import get_python_version; print get_python_version()")}
+# workaround %%{with ...} peculiarities
+%if %{undefined python_sitelib}
+%expand %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(0)")
+%endif
+%if %{undefined python_version}
+%expand %define python_version %(%{__python} -c "from distutils.sysconfig import get_python_version; print get_python_version()")
+%endif
 
 # Command line configurables
 
@@ -28,6 +32,8 @@ License: GPLv2+
 Group: Applications/System
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+BuildRequires: python
+BuildRequires: python-devel
 BuildRequires: intltool
 BuildRequires: sed
 BuildRequires: desktop-file-utils
