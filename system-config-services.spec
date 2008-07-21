@@ -114,10 +114,6 @@ rm -rf %{buildroot}
 %{python_sitelib}/scservices
 %{python_sitelib}/scservices-%{version}-py%{python_version}.egg-info
 %{python_sitelib}/scservices.dbus-%{version}-py%{python_version}.egg-info
-%config(noreplace) %{_sysconfdir}/pam.d/system-config-services
-%config(noreplace) %{_sysconfdir}/security/console.apps/system-config-services
-%config(noreplace) %{_sysconfdir}/security/console.apps/serviceconf
-%config(noreplace) %{_sysconfdir}/pam.d/serviceconf
 
 %{_sysconfdir}/dbus-1/system.d/org.fedoraproject.Config.Services.conf
 %{_datadir}/dbus-1/system-services/org.fedoraproject.Config.Services.service

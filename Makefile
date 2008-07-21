@@ -26,9 +26,6 @@ POLKIT_POLICY_DIR=$(DATADIR)/PolicyKit/policy
 PKGDATADIR=$(DATADIR)/$(PKGNAME)
 GLADEDIR=$(PKGDATADIR)
 
-PAMD_DIR        = /etc/pam.d
-SECURITY_DIR    = /etc/security/console.apps
-
 MAKEFILE        := $(lastword $(MAKEFILE_LIST))
 TOPDIR          := $(abspath $(dir $(abspath $(MAKEFILE))))
 DOC_MODULE      = $(PKGNAME)
@@ -63,8 +60,6 @@ config:	src/scservices/config.py
 
 install:	all py-install doc-install
 	$(MAKE) -C po install
-	mkdir -p $(DESTDIR)$(SECURITY_DIR)
-	mkdir -p $(DESTDIR)$(PAMD_DIR)
 	mkdir -p $(DESTDIR)$(BINDIR)
 	mkdir -p $(DESTDIR)$(SBINDIR)
 	mkdir -p $(DESTDIR)$(PKGDATADIR)
@@ -75,8 +70,6 @@ install:	all py-install doc-install
 	mkdir -p $(DESTDIR)$(DBUS_SERVICE_DIR)
 	mkdir -p $(DESTDIR)$(POLKIT_POLICY_DIR)
 
-	install -m 0644 $(PKGNAME).console $(DESTDIR)$(SECURITY_DIR)/$(PKGNAME)
-	install -m 0644 $(PKGNAME).pam $(DESTDIR)$(PAMD_DIR)/$(PKGNAME)
 	install -m 0644 pixmaps/*.png $(DESTDIR)$(PKGDATADIR)
 	install -m 0644 pixmaps/$(PKGNAME).png $(DESTDIR)/usr/share/icons/hicolor/48x48/apps
 	install -m 0644 man/$(PKGNAME).8 $(DESTDIR)$(MANDIR)/man8
@@ -85,11 +78,6 @@ install:	all py-install doc-install
 	done
 	install -m 0644 src/$(PKGNAME).glade $(DESTDIR)$(GLADEDIR)
 	install -m 0644 $(PKGNAME).desktop $(DESTDIR)$(DATADIR)/applications/$(PKGNAME).desktop
-
-	ln -sf consolehelper $(DESTDIR)$(BINDIR)/$(PKGNAME)
-	ln -sf consolehelper $(DESTDIR)$(BINDIR)/serviceconf
-	ln -sf $(PKGNAME) $(DESTDIR)$(SECURITY_DIR)/serviceconf
-	ln -sf $(PKGNAME) $(DESTDIR)$(PAMD_DIR)/serviceconf
 
 	install -m 0644 config/org.fedoraproject.Config.Services.conf $(DESTDIR)$(DBUS_POLICY_DIR)/
 	install -m 0644 config/org.fedoraproject.Config.Services.service $(DESTDIR)$(DBUS_SERVICE_DIR)/
@@ -102,6 +90,8 @@ install:	all py-install doc-install
 	p=$(PREFIX) ; \
 	softdir=$${softdir/#$$p} ; \
 	softdir=$${softdir/#\/} ; \
+	ln  -fs ../$${softdir}/gui.py $(DESTDIR)$(BINDIR)/system-config-services; \
+	ln  -fs ../$${softdir}/gui.py $(DESTDIR)$(BINDIR)/serviceconf; \
 	ln  -fs ../$${softdir}/gui.py $(DESTDIR)$(SBINDIR)/system-config-services; \
 	ln  -fs ../$${softdir}/gui.py $(DESTDIR)$(SBINDIR)/serviceconf;
 
