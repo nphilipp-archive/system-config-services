@@ -19,7 +19,7 @@
 
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.99.15
+Version: 0.99.16
 Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/SystemConfig/services
 # We are upstream, thus the source is only available from within this source
@@ -54,6 +54,7 @@ Requires: usermode >= 1.94
 Requires: usermode >= 1.36
 %endif
 Requires: usermode-gtk
+Requires: dbus-python
 Requires: python-slip-dbus >= 0.1.4
 Requires: python-slip-gtk
 Obsoletes: serviceconf <= 0.8.1
@@ -111,9 +112,16 @@ rm -rf %{buildroot}
 %config(noreplace) %{_sysconfdir}/security/console.apps/serviceconf
 %config(noreplace) %{_sysconfdir}/pam.d/serviceconf
 
+%{_sysconfdir}/dbus-1/system.d/org.fedoraproject.Config.Services.conf
+%{_datadir}/dbus-1/system-services/org.fedoraproject.Config.Services.service
+%{_datadir}/PolicyKit/policy/org.fedoraproject.config.services.policy
+
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Jul 21 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.16-1
+- add dbus and PolicyKit integration
+
 * Fri Apr 04 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.15-1
 - pick up updated translations
 - remove unnecessary *.orig files
