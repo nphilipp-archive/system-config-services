@@ -20,7 +20,7 @@
 #
 # Authors: Nils Philippsen <nphilipp@redhat.com>
 
-import scservices.config
+import scservices.config as config
 
 import os.path
 import gobject
