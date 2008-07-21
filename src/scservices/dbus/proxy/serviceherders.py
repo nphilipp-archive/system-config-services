@@ -28,6 +28,8 @@ from scservices.dbus.proxy.services import DBusSysVServiceProxy, DBusXinetdServi
 
 from scservices.dbus import dbus_service_name, dbus_service_path
 
+from slip.dbus.proxy import *
+
 ##############################################################################
 
 class DBusServiceHerderProxy (object):
@@ -50,11 +52,15 @@ class DBusServiceHerderProxy (object):
 
         self.dbus_object.connect_to_signal ("notify", self.notify)
 
-        for service_name in self.dbus_object.list_services (dbus_interface = "org.fedoraproject.Config.Services.ServiceHerder"):
+        for service_name in self.list_services ():
             self.services[service_name] = self.service_class (service_name, bus, self)
         self.thaw_notifications ()
 
         self.subscribers = set ()
+
+    @polkit_enable
+    def list_services (self):
+        return self.dbus_object.list_services (dbus_interface = "org.fedoraproject.Config.Services.ServiceHerder")
 
     class _Subscriber (object):
         def __init__ (self, remote_method_or_function, p, k):
