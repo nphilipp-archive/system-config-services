@@ -23,6 +23,7 @@
 
 import dbus.service
 import slip.dbus.service
+import slip.dbus.polkit as polkit
 
 from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED
 from scservices.dbus.service.services import DBusService
@@ -32,6 +33,8 @@ from scservices.dbus import dbus_service_name
 ##############################################################################
 
 class DBusServiceHerder (slip.dbus.service.Object):
+    default_polkit_auth_required = "org.fedoraproject.config.services.all"
+
     def __init__ (self, bus, object_path, herder):
         slip.dbus.service.Object.__init__ (self, bus, object_path)
 
@@ -39,10 +42,6 @@ class DBusServiceHerder (slip.dbus.service.Object):
         self.herder.subscribe (self.on_services_changed)
 
         self.services_dbusservices = {}
-
-    @dbus.service.method (dbus_interface = dbus_service_name + ".ServiceHerder", in_signature = "", out_signature = "s")
-    def ping (self):
-        return "pong"
 
     def on_services_changed (self, change, service):
         if change == SVC_ADDED:
@@ -62,6 +61,7 @@ class DBusServiceHerder (slip.dbus.service.Object):
         dbusservice.remove_from_connection (connection = self.connection, path = self._service_object_path (service))
         del self.services_dbusservices[service]
 
+    @polkit.auth_required ("org.fedoraproject.config.services.get")
     @dbus.service.method (dbus_interface = dbus_service_name + ".ServiceHerder", out_signature = "as")
     def list_services (self):
         return map (lambda service: service.name, self.services_dbusservices.keys ())
