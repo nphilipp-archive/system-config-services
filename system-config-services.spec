@@ -1,7 +1,6 @@
 # sitelib for noarch packages, sitearch for others (remove the unneeded one)
-%if 0%{!?python_sitelib}
-%define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(0)")
-%endif
+%{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(0)")}
+%{!?python_version: %define python_version %(%{__python} -c "from distutils.sysconfig import get_python_version; print get_python_version()")}
 
 # Command line configurables
 
@@ -107,6 +106,8 @@ rm -rf %{buildroot}
 %{_datadir}/icons/hicolor/48x48/apps/system-config-services.png
 %{_datadir}/system-config-services
 %{python_sitelib}/scservices
+%{python_sitelib}/scservices-%{version}-py%{python_version}.egg-info
+%{python_sitelib}/scservices.dbus-%{version}-py%{python_version}.egg-info
 %config(noreplace) %{_sysconfdir}/pam.d/system-config-services
 %config(noreplace) %{_sysconfdir}/security/console.apps/system-config-services
 %config(noreplace) %{_sysconfdir}/security/console.apps/serviceconf
