@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.fedoraproject.Config.Services
+Exec=/usr/share/system-config-services/system-config-services-mechanism.py
+User=root
