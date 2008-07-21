@@ -13,9 +13,15 @@ SUBDIRS=po
 PREFIX=/usr
 
 BINDIR=$(PREFIX)/bin
+SYSCONFDIR=/etc
 SBINDIR=$(PREFIX)/sbin
-MANDIR=/usr/share/man
 DATADIR=$(PREFIX)/share
+MANDIR=$(DATADIR)/man
+LIBEXECDIR=$(PREFIX)/libexec
+
+DBUS_POLICY_DIR=$(SYSCONFDIR)/dbus-1/system.d
+DBUS_SERVICE_DIR=$(DATADIR)/dbus-1/system-services
+POLKIT_POLICY_DIR=$(DATADIR)/PolicyKit/policy
 
 PKGDATADIR=$(DATADIR)/$(PKGNAME)
 GLADEDIR=$(PKGDATADIR)
@@ -33,7 +39,7 @@ DOC_ENTITIES    = distro-specifics.ent system-config-services-distro-specifics.e
 DOC_LINGUAS     = af sq am ar hy as az bal eu eu_ES be be@latin bn bn_IN bs pt_BR en_GB bg my ca zh_CN zh_TW hr cs da nl dz et fi fr gl ka de el gu he hi hu is ilo id it ja kn ko ku lo lv lt mk mai ms ml mr mn ne nso no nb nn or fa pl pt pa ro ru sr si sk sl es sv tl ta te th tr uk ur vi cy zu
 
 PY_SRC_DIR		= src
-PY_SRC_APPS		= gui.py dbus_service.py
+PY_SRC_APPS		= gui.py system-config-services-mechanism.py
 _PY_SRC_APPS	= $(patsubst %,$(PY_SRC_DIR)/%,$(PY_SRC_APPS))
 PY_SRC_MODULES	= scservices
 _PY_SRC_MODULE_FILES	= $(shell find $(patsubst %,$(PY_SRC_DIR)/%,$(PY_SRC_MODULES)) -type f -a -name "*.py")
@@ -65,6 +71,9 @@ install:	all py-install doc-install
 	mkdir -p $(DESTDIR)$(DATADIR)/icons/hicolor/48x48/apps
 	mkdir -p $(DESTDIR)$(DATADIR)/applications
 	mkdir -p $(DESTDIR)$(MANDIR)/man8
+	mkdir -p $(DESTDIR)$(DBUS_POLICY_DIR)
+	mkdir -p $(DESTDIR)$(DBUS_SERVICE_DIR)
+	mkdir -p $(DESTDIR)$(POLKIT_POLICY_DIR)
 
 	install -m 0644 $(PKGNAME).console $(DESTDIR)$(SECURITY_DIR)/$(PKGNAME)
 	install -m 0644 $(PKGNAME).pam $(DESTDIR)$(PAMD_DIR)/$(PKGNAME)
@@ -81,6 +90,10 @@ install:	all py-install doc-install
 	ln -sf consolehelper $(DESTDIR)$(BINDIR)/serviceconf
 	ln -sf $(PKGNAME) $(DESTDIR)$(SECURITY_DIR)/serviceconf
 	ln -sf $(PKGNAME) $(DESTDIR)$(PAMD_DIR)/serviceconf
+
+	install -m 0644 config/org.fedoraproject.Config.Services.conf $(DESTDIR)$(DBUS_POLICY_DIR)/
+	install -m 0644 config/org.fedoraproject.Config.Services.service $(DESTDIR)$(DBUS_SERVICE_DIR)/
+	install -m 0644 config/org.fedoraproject.config.services.policy $(DESTDIR)$(POLKIT_POLICY_DIR)/
 
 	python -c 'import compileall; compileall.compile_dir ("'"$(DESTDIR)$(PKGDATADIR)"'", ddir="'"$(PKGDATADIR)"'", maxlevels=10, force=1)'
 	softdir=$(PKGDATADIR); \
