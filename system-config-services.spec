@@ -54,7 +54,7 @@ Requires: usermode >= 1.94
 Requires: usermode >= 1.36
 %endif
 Requires: usermode-gtk
-Requires: python-slip-dbus
+Requires: python-slip-dbus >= 0.1.4
 Requires: python-slip-gtk
 Obsoletes: serviceconf <= 0.8.1
 Obsoletes: redhat-config-services <= 0.8.5

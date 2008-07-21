@@ -31,9 +31,9 @@ from scservices.dbus import dbus_service_name
 
 ##############################################################################
 
-class DBusServiceHerder (slip.dbus.service.TimeoutObject):
+class DBusServiceHerder (slip.dbus.service.Object):
     def __init__ (self, bus, object_path, herder):
-        slip.dbus.service.TimeoutObject.__init__ (self, bus, object_path)
+        slip.dbus.service.Object.__init__ (self, bus, object_path)
 
         self.herder = herder
         self.herder.subscribe (self.on_services_changed)

@@ -30,7 +30,7 @@ from scservices.dbus import dbus_service_name
 
 ##############################################################################
 
-class DBusService (slip.dbus.service.TimeoutObject):
+class DBusService (slip.dbus.service.Object):
     def __new__ (cls, bus, object_path, service, **k):
         srv_cls_dbussrv_cls = {
                 services.SysVService: DBusSysVService,
@@ -43,7 +43,7 @@ class DBusService (slip.dbus.service.TimeoutObject):
         raise NotImplementedError
 
     def __init__ (self, bus, object_path, service):
-        slip.dbus.service.TimeoutObject.__init__ (self, bus, object_path)
+        slip.dbus.service.Object.__init__ (self, bus, object_path)
 
         self.service = service
 
