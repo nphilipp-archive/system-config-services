@@ -22,7 +22,7 @@
 
 from scservices.dbus import dbus_service_name
 
-from slip.dbus.proxy import *
+import slip.dbus.polkit as polkit
 
 ##############################################################################
 
@@ -40,12 +40,12 @@ class DBusServiceInfoProxy (object):
 
 class DBusSysVServiceInfoProxy (DBusServiceInfoProxy):
     @property
-    @polkit_enable
+    @polkit.proxy_enable
     def shortdescription (self):
         return self.dbus_object.get_shortdescription (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
 
     @property
-    @polkit_enable
+    @polkit.proxy_enable
     def description (self):
         return self.dbus_object.get_description (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
 
@@ -53,6 +53,6 @@ class DBusSysVServiceInfoProxy (DBusServiceInfoProxy):
 
 class DBusXinetdServiceInfoProxy (DBusServiceInfoProxy):
     @property
-    @polkit_enable
+    @polkit.proxy_enable
     def description (self):
         return self.dbus_object.get_description (dbus_interface = "org.fedoraproject.Config.Services.XinetdService")

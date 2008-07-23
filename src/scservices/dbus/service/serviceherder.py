@@ -61,7 +61,7 @@ class DBusServiceHerder (slip.dbus.service.Object):
         dbusservice.remove_from_connection (connection = self.connection, path = self._service_object_path (service))
         del self.services_dbusservices[service]
 
-    @polkit.auth_required ("org.fedoraproject.config.services.get")
+    @polkit.require_auth ("org.fedoraproject.config.services.get")
     @dbus.service.method (dbus_interface = dbus_service_name + ".ServiceHerder", out_signature = "as")
     def list_services (self):
         return map (lambda service: service.name, self.services_dbusservices.keys ())

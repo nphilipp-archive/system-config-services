@@ -28,7 +28,7 @@ from scservices.dbus.proxy.services import DBusSysVServiceProxy, DBusXinetdServi
 
 from scservices.dbus import dbus_service_name, dbus_service_path
 
-from slip.dbus.proxy import *
+import slip.dbus.polkit as polkit
 
 ##############################################################################
 
@@ -58,7 +58,7 @@ class DBusServiceHerderProxy (object):
 
         self.subscribers = set ()
 
-    @polkit_enable
+    @polkit.proxy_enable
     def list_services (self):
         return self.dbus_object.list_services (dbus_interface = "org.fedoraproject.Config.Services.ServiceHerder")
 
