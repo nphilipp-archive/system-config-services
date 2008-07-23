@@ -14,12 +14,6 @@
 %bcond_with rarian_compat
 %endif
 
-%if 0%{?fedora}%{?rhel} == 0 || 0%{?fedora} >= 9 || 0%{?rhel} >= 6
-%bcond_without console_util
-%else
-%bcond_with console_util
-%endif
-
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
 Version: 0.99.17
@@ -53,15 +47,10 @@ Requires: initscripts
 Requires: pygtk2
 Requires: pygtk2-libglade
 Requires: python >= 2.3.0
-%if %{with console_util}
-Requires: usermode >= 1.94
-%else
-Requires: usermode >= 1.36
-%endif
-Requires: usermode-gtk
 Requires: dbus-python
 Requires: python-slip-dbus >= 0.1.4
 Requires: python-slip-gtk
+Requires: PolicyKit-gnome
 Obsoletes: serviceconf <= 0.8.1
 Obsoletes: redhat-config-services <= 0.8.5
 
@@ -73,7 +62,7 @@ should be enabled on your machine.
 %setup -q
 
 %build
-make %{?with_console_util:CONSOLE_USE_CONFIG_UTIL=1} %{?_smp_mflags}
+make %{?_smp_mflags}
 
 %install
 rm -rf %{buildroot}
@@ -122,6 +111,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Wed Jul 23 2008 Nils Philippsen <nphilipp@redhat.com>
+- require PolicyKit-gnome instead of usermode
+
 * Tue Jul 22 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.17-1
 - remove pam/consolehelper cruft
 
