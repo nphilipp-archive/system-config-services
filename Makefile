@@ -170,7 +170,7 @@ local:
 	@hg archive -t tbz2 "${PKGNAME}-$(PKGVERSION).tar.bz2"
 	@echo "The _local_ archive is in ${PKGNAME}-$(PKGVERSION).tar.bz2"
 
-clean: doc-clean console-clean
+clean: py-clean doc-clean console-clean
 	@rm -fv *~
 	@rm -fv src/*.pyc src/*.pyo
 	@rm -fv system-config-services.desktop
