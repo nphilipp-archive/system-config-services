@@ -40,12 +40,12 @@ class DBusServiceInfoProxy (object):
 
 class DBusSysVServiceInfoProxy (DBusServiceInfoProxy):
     @property
-    @polkit.proxy_enable
+    @polkit.enable_proxy
     def shortdescription (self):
         return self.dbus_object.get_shortdescription (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
 
     @property
-    @polkit.proxy_enable
+    @polkit.enable_proxy
     def description (self):
         return self.dbus_object.get_description (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
 
@@ -53,6 +53,6 @@ class DBusSysVServiceInfoProxy (DBusServiceInfoProxy):
 
 class DBusXinetdServiceInfoProxy (DBusServiceInfoProxy):
     @property
-    @polkit.proxy_enable
+    @polkit.enable_proxy
     def description (self):
         return self.dbus_object.get_description (dbus_interface = "org.fedoraproject.Config.Services.XinetdService")

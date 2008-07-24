@@ -58,7 +58,7 @@ class DBusServiceHerderProxy (object):
 
         self.subscribers = set ()
 
-    @polkit.proxy_enable
+    @polkit.enable_proxy
     def list_services (self):
         return self.dbus_object.list_services (dbus_interface = "org.fedoraproject.Config.Services.ServiceHerder")
 
