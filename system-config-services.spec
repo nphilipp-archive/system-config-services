@@ -16,7 +16,7 @@
 
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.99.20
+Version: 0.99.21
 Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/SystemConfig/services
 # We are upstream, thus the source is only available from within this source
@@ -48,6 +48,7 @@ Requires: pygtk2
 Requires: pygtk2-libglade
 Requires: python >= 2.3.0
 Requires: dbus-python
+Requires: python-slip >= 0.1.11
 Requires: python-slip-dbus >= 0.1.7
 Requires: python-slip-gtk
 Requires: PolicyKit-gnome
@@ -111,6 +112,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Tue Aug 05 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.21-1
+- get rid of save() methods, save instantly on changes instead
+
 * Thu Jul 24 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.20-1
 - use new slip.dbus API as of python-slip-0.1.7
 
