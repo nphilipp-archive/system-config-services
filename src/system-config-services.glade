@@ -127,7 +127,6 @@
 
 		      <child>
 			<widget class="GtkMenu" id="serviceCustomize_menu">
-			  <signal name="unmap_event" handler="on_serviceCustomize_menu_unmap_event" last_modification_time="Tue, 04 Mar 2008 13:52:56 GMT"/>
 
 			  <child>
 			    <widget class="GtkCheckMenuItem" id="serviceRunlevel2">
