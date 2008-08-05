@@ -465,10 +465,6 @@ class GUIServicesList (GladeController):
         else:
             self.current_service.runlevels.discard (rl)
 
-    def on_serviceCustomize_menu_unmap_event (self, menu, event):
-        if self.current_service.is_dirty ():
-            self.current_service.save ()
-
     def on_service_selected (self, treeview = None, service = None, *args):
         self.current_service = service
         if service:
@@ -646,7 +642,6 @@ class ServiceRunlevelDialog (GladeController):
                 if cb.get_active ():
                     enabled_runlevels.add (i)
             self.service.runlevels = enabled_runlevels
-            self.service.save ()
         self.serviceRunlevelsDialog.destroy ()
 
 ##############################################################################
@@ -790,7 +785,7 @@ class GUI (object):
         if not use_dbus:
             import gamin
             import scservices.core.serviceherders as serviceherders
-            import sscservices.core.services as services
+            import scservices.core.services as services
             self._filemon = gamin.WatchMonitor ()
             self._filemon_fd = self._filemon.get_fd ()
             gobject.io_add_watch (self._filemon_fd,
