@@ -130,6 +130,11 @@ class DBusSysVService (DBusChkconfigService):
     def get_runlevels (self):
         return list (self.service.runlevels)
 
+    @polkit.require_auth ("org.fedoraproject.config.services.set")
+    @dbus.service.method (dbus_interface = dbus_service_name + ".SysVService", in_signature = "ai", out_signature = "")
+    def set_runlevels (self, runlevels):
+        self.service.runlevels = set (runlevels)
+
 ##############################################################################
 
 class DBusXinetdService (DBusChkconfigService):

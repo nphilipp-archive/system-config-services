@@ -37,6 +37,8 @@ try:
 except AttributeError:
     pass
 
+from slip.util.hookable import HookableSet
+
 SVC_STATUS_REFRESHING = 0
 SVC_STATUS_UNKNOWN = 1
 SVC_STATUS_STOPPED = 2
@@ -110,14 +112,6 @@ class Service (object):
         """Process asynchronously loaded configuration."""
         raise NotImplementedError
 
-    def save (self):
-        """Save configuration to disk."""
-        raise NotImplementedError
-
-    def is_dirty (self):
-        """Check if a service is dirty, i.e. changed and not saved."""
-        raise NotImplementedError
-
 ##############################################################################
 
 class ChkconfigService (Service):
@@ -170,8 +164,7 @@ class SysVService (ChkconfigService):
         except InvalidServiceInfoException:
             raise InvalidServiceException
 
-        self.runlevels = set ()
-        self.runlevels_ondisk = set ()
+        # property: self.runlevels = HookableSet ()
         self.configured = False
 
         self.status_updates_running = 0
@@ -218,21 +211,26 @@ class SysVService (ChkconfigService):
         m = self.init_list_re.match (output)
         if not m or m.group ('name') != self.name:
             raise output
-        self.runlevels = set ()
+        runlevels = set ()
         for runlevel in xrange (1, 6):
             if m.group ("r%d" % runlevel) == 'on':
-                self.runlevels.add (runlevel)
-        self.runlevels_ondisk = copy.copy (self.runlevels)
+                runlevels.add (runlevel)
+
+
+        # disable save hook temporarily to avoid endless loops
+        self.runlevels.hooks_enabled = False
+        self.runlevels.update (runlevels)
+        self.runlevels.hooks_enabled = True
+
         self.configured = True
         self.conf_updates_running -= 1
 
-    def save (self):
-        """Save configuration to disk."""
+    def _runlevels_save_hook (self):
+        """Save runlevel configuration to disk."""
         runlevel_changes = { 'on': [], 'off': [] }
 
         for i in xrange (0, 7):
-            if (i in self.runlevels) != (i in self.runlevels_ondisk):
-                runlevel_changes[(i in self.runlevels) and 'on' or 'off'].append (str (i))
+            runlevel_changes[(i in self._runlevels) and 'on' or 'off'].append (str (i))
 
         for what in ('on', 'off'):
             if not len (runlevel_changes[what]):
@@ -241,8 +239,21 @@ class SysVService (ChkconfigService):
             if status != 0:
                 raise OSError ("Saving service '%s' failed, command was 'LC_ALL=C /sbin/chkconfig --level %s %s %s'.\nOutput was:\n%s" % (self.name, ''.join (runlevel_changes[what]), self.name, what, output))
 
-        self.runlevels_ondisk = copy.copy (self.runlevels)
         self.configured = True
+
+    def _get_runlevels (self):
+        if not hasattr (self, "_runlevels"):
+            self._runlevels = HookableSet ()
+            self._runlevels.add_hook (self._runlevels_save_hook)
+        return self._runlevels
+
+    def _set_runlevels (self, runlevels):
+        self.runlevels.freeze_hooks ()
+        self.runlevels.clear ()
+        self.runlevels.update (runlevels)
+        self.runlevels.thaw_hooks ()
+
+    runlevels = property (_get_runlevels, _set_runlevels)
 
     def _var_lock_subsys_changed (self, path, action, *p):
         if action != gamin.GAMEndExist:
@@ -335,10 +346,6 @@ class SysVService (ChkconfigService):
         #print "%s: %s: %d" % (cmd, self.name, self.status)
         self.status_output = cmd.output
 
-    def is_dirty (self):
-        """Determines if the configuration of a service is saved or not."""
-        return self.runlevels != self.runlevels_ondisk
-
     def get_enabled (self):
         """Determines the enablement state of a service."""
         if self.conf_updates_running > 0:
@@ -391,8 +398,7 @@ class XinetdService (ChkconfigService):
         except InvalidServiceInfoException:
             raise InvalidServiceException
 
-        self.enabled = None
-        self.enabled_ondisk = None
+        # property: self.enabled = None
 
         self.load ()
 
@@ -424,17 +430,20 @@ class XinetdService (ChkconfigService):
         if not m or m.group ('name') != self.name:
             raise output
         self.enabled = m.group ('enabled') == "on"
-        self.enabled_ondisk = self.enabled
 
-    def save (self):
-        """Save configuration to disk."""
-        (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig %s %s 2>/dev/null' % (self.name, self.enabled and 'on' or 'off'))
-        if status != 0:
-            raise OSError ("Saving service '%s' failed, command was 'LC_ALL=C /sbin/chkconfig %s %s 2>/dev/null'." % (self.name, self.name, self.enabled and 'on' or 'off'))
-        self.enabled_ondisk = self.enabled
+    def _get_enabled (self):
+        if not hasattr (self, "_enabled"):
+            self._enabled = None
+        return self._enabled
 
-    def is_dirty (self):
-        return self.enabled != self.enabled_ondisk
+    def _set_enabled (self, enabled):
+        if self._enabled != enabled:
+            self._enabled = enabled
+            (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig %s %s 2>/dev/null' % (self.name, self.enabled and 'on' or 'off'))
+            if status != 0:
+                raise OSError ("Saving service '%s' failed, command was 'LC_ALL=C /sbin/chkconfig %s %s 2>/dev/null'." % (self.name, self.name, self.enabled and 'on' or 'off'))
+
+    enabled = property (_get_enabled, _set_enabled)
 
     def get_enabled (self):
         if self.conf_updates_running > 0:

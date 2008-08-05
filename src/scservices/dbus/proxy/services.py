@@ -101,10 +101,15 @@ class DBusSysVServiceProxy (DBusChkconfigServiceProxy):
     def status_updates_running (self):
         return self.dbus_object.get_status_updates_running (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
 
-    @property
     @polkit.enable_proxy
-    def runlevels (self):
+    def _get_runlevels (self):
         return set (self.dbus_object.get_runlevels (dbus_interface = "org.fedoraproject.Config.Services.SysVService"))
+
+    @polkit.enable_proxy
+    def _set_runlevels (self, runlevels):
+        self.dbus_object.set_runlevels (list (runlevels), dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+
+    runlevels = property (_get_runlevels, _set_runlevels)
 
 SysVService = DBusSysVServiceProxy
 
