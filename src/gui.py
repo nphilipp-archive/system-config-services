@@ -828,7 +828,4 @@ if __name__ == "__main__":
     else:
         use_dbus = True
 
-    try:
-        GUI (use_dbus = use_dbus).run ()
-    except KeyboardInterrupt:
-        pass
+    GUI (use_dbus = use_dbus).run ()
