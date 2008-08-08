@@ -25,6 +25,7 @@ from scservices.dbus.proxy.servicesinfo import DBusServiceInfoProxy, DBusSysVSer
 from scservices.dbus import dbus_service_name
 
 import slip.dbus.polkit as polkit
+from slip.util.hookable import HookableSet
 
 ##############################################################################
 
@@ -103,11 +104,25 @@ class DBusSysVServiceProxy (DBusChkconfigServiceProxy):
 
     @polkit.enable_proxy
     def _get_runlevels (self):
-        return set (self.dbus_object.get_runlevels (dbus_interface = "org.fedoraproject.Config.Services.SysVService"))
+        if not hasattr (self, "_runlevels"):
+            self._runlevels = HookableSet ()
+            self._runlevels.add_hook (self._save_runlevels)
+        self._runlevels.hooks_enabled = False
+        self._runlevels.clear ()
+        self._runlevels.update (self.dbus_object.get_runlevels (dbus_interface = "org.fedoraproject.Config.Services.SysVService"))
+        self._runlevels.hooks_enabled = True
+        return self._runlevels
+
+    def _set_runlevels (self, runlevels):
+        if self.runlevels != runlevels:
+            self.runlevels.freeze_hooks ()
+            self.runlevels.clear ()
+            self.runlevels.update (runlevels)
+            self.runlevels.thaw_hooks ()
 
     @polkit.enable_proxy
-    def _set_runlevels (self, runlevels):
-        self.dbus_object.set_runlevels (list (runlevels), dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+    def _save_runlevels (self):
+        self.dbus_object.set_runlevels (list (self._runlevels), dbus_interface = "org.fedoraproject.Config.Services.SysVService")
 
     runlevels = property (_get_runlevels, _set_runlevels)
 
