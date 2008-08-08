@@ -689,6 +689,7 @@ class MainWindow (GladeController):
 
         self.aboutDialog.set_name (config.name)
         self.aboutDialog.set_version (config.version)
+        self.aboutDialog.set_transient_for (self.toplevel)
 
         slip.gtk.label_set_autowrap (self.sysVServiceExplanationLabel)
         slip.gtk.label_set_autowrap (self.xinetdServiceExplanationLabel)
