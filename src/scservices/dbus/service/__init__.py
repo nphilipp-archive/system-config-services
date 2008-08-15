@@ -49,7 +49,7 @@ def run_service ():
 
     for herder_cls in herder_classes:
         herder = herder_cls (filemon)
-        dbus_herder_object = DBusServiceHerder (system_bus, dbus_service_path + "/ServiceHerders/%s" % herder_cls.__name__, herder)
+        dbus_herder_object = DBusServiceHerder (name, dbus_service_path + "/ServiceHerders/%s" % herder_cls.__name__, herder)
         dbus_herder_objects.append (dbus_herder_object)
 
     def filemon_handle_events (source, condition, data = None):

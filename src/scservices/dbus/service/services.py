@@ -33,7 +33,7 @@ from scservices.dbus import dbus_service_name
 
 class DBusService (slip.dbus.service.Object):
     default_polkit_auth_required = "org.fedoraproject.config.services.all"
-    def __new__ (cls, bus, object_path, service, **k):
+    def __new__ (cls, bus_name, object_path, service, **k):
         srv_cls_dbussrv_cls = {
                 services.SysVService: DBusSysVService,
                 services.XinetdService: DBusXinetdService,
@@ -41,11 +41,11 @@ class DBusService (slip.dbus.service.Object):
 
         for srv_cls, dbussrv_cls in srv_cls_dbussrv_cls.iteritems ():
             if isinstance (service, srv_cls):
-                return super (DBusService, cls).__new__ (dbussrv_cls, bus, object_path, service, **k)
+                return super (DBusService, cls).__new__ (dbussrv_cls, bus_name, object_path, service, **k)
         raise NotImplementedError
 
-    def __init__ (self, bus, object_path, service):
-        slip.dbus.service.Object.__init__ (self, bus, object_path)
+    def __init__ (self, bus_name, object_path, service):
+        slip.dbus.service.Object.__init__ (self, bus_name, object_path)
 
         self.service = service
 
