@@ -36,10 +36,8 @@ class DBusServiceHerderProxy (object):
     object_path = dbus_service_path + "/ServiceHerders/"
 
     def __init__ (self, bus):
-        super (DBusServiceHerderProxy, self).__init__ ()
-
         self.bus = bus
-        self.dbus_service_path = dbus_service_path + "/ServiceHerders/" + self.object_name
+        self.dbus_service_path = self.object_path + self.object_name
         self.dbus_object = bus.get_object (dbus_service_name, self.dbus_service_path)
         self.services_dbus_object = bus.get_object (dbus_service_name, self.dbus_service_path + "/Services")
 
