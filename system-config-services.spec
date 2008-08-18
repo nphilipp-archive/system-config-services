@@ -1,10 +1,5 @@
-# workaround %%{with ...} peculiarities
-%if %{undefined python_sitelib}
-%expand %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(0)")
-%endif
-%if %{undefined python_version}
-%expand %define python_version %(%{__python} -c "from distutils.sysconfig import get_python_version; print get_python_version()")
-%endif
+%{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(0)")}
+%{!?python_version: %global python_version %(%{__python} -c "from distutils.sysconfig import get_python_version; print get_python_version()")}
 
 # Command line configurables
 
