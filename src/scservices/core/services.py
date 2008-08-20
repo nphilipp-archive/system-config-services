@@ -263,6 +263,8 @@ class SysVService (ChkconfigService):
         if action in (gamin.GAMCreated, gamin.GAMChanged, gamin.GAMExists):
             self._watch_pidfile (path)
         elif action == gamin.GAMDeleted:
+            if len (self.pids) == 0:
+                self.async_status_update ()
             self._unwatch_pidfile (path)
 
     def _watch_pidfile (self, path):
