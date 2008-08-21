@@ -25,7 +25,7 @@ import dbus.service
 import slip.dbus.service
 import slip.dbus.polkit as polkit
 
-from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED, SVC_HERDER_READY
+from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED
 from scservices.dbus.service.services import DBusService
 
 from scservices.dbus import dbus_service_name
@@ -45,10 +45,6 @@ class DBusServiceHerder (slip.dbus.service.Object):
 
     def on_services_changed (self, herder, change, service):
         # ignore herder as we know which one is affected
-
-        if change == SVC_HERDER_READY:
-            print "%s.on_services_changed (%s, SVC_HERDER_READY, %s)" % (self, herder, service)
-
         if change == SVC_ADDED:
             self.on_service_added (service)
         elif change == SVC_DELETED:
