@@ -32,7 +32,7 @@ from scservices.dbus import dbus_service_name
 ##############################################################################
 
 class DBusService (slip.dbus.service.Object):
-    default_polkit_auth_required = "org.fedoraproject.config.services.all"
+    default_polkit_auth_required = "org.fedoraproject.config.services.manage"
     def __new__ (cls, bus_name, object_path, service, **k):
         srv_cls_dbussrv_cls = {
                 services.SysVService: DBusSysVService,
@@ -49,7 +49,7 @@ class DBusService (slip.dbus.service.Object):
 
         self.service = service
 
-    @polkit.require_auth ("org.fedoraproject.config.services.set")
+    @polkit.require_auth ("org.fedoraproject.config.services.manage")
     @dbus.service.method (dbus_interface = dbus_service_name + ".Service", in_signature = "", out_signature = "")
     def save (self):
         raise NotImplementedError
@@ -57,17 +57,17 @@ class DBusService (slip.dbus.service.Object):
 ##############################################################################
 
 class DBusChkconfigService (DBusService):
-    @polkit.require_auth ("org.fedoraproject.config.services.set")
+    @polkit.require_auth ("org.fedoraproject.config.services.manage")
     @dbus.service.method (dbus_interface = dbus_service_name + ".ChkconfigService", in_signature = "", out_signature = "")
     def enable (self):
         self.service.enable ()
 
-    @polkit.require_auth ("org.fedoraproject.config.services.set")
+    @polkit.require_auth ("org.fedoraproject.config.services.manage")
     @dbus.service.method (dbus_interface = dbus_service_name + ".ChkconfigService", in_signature = "", out_signature = "")
     def disable (self):
         self.service.disable ()
 
-    @polkit.require_auth ("org.fedoraproject.config.services.get")
+    @polkit.require_auth ("org.fedoraproject.config.services.info")
     @dbus.service.method (dbus_interface = dbus_service_name + ".ChkconfigService", in_signature = "", out_signature = "i")
     def get_enabled (self):
         return self.service.get_enabled ()
@@ -79,37 +79,37 @@ class DBusSysVService (DBusChkconfigService):
     def save (self, runlevels):
         pass
 
-    @polkit.require_auth ("org.fedoraproject.config.services.set")
+    @polkit.require_auth ("org.fedoraproject.config.services.manage")
     @dbus.service.method (dbus_interface = dbus_service_name + ".SysVService", in_signature = "", out_signature = "")
     def start (self):
         self.service.start ()
 
-    @polkit.require_auth ("org.fedoraproject.config.services.set")
+    @polkit.require_auth ("org.fedoraproject.config.services.manage")
     @dbus.service.method (dbus_interface = dbus_service_name + ".SysVService", in_signature = "", out_signature = "")
     def stop (self):
         self.service.stop ()
 
-    @polkit.require_auth ("org.fedoraproject.config.services.set")
+    @polkit.require_auth ("org.fedoraproject.config.services.manage")
     @dbus.service.method (dbus_interface = dbus_service_name + ".SysVService", in_signature = "", out_signature = "")
     def restart (self):
         self.service.restart ()
 
-    @polkit.require_auth ("org.fedoraproject.config.services.set")
+    @polkit.require_auth ("org.fedoraproject.config.services.manage")
     @dbus.service.method (dbus_interface = dbus_service_name + ".SysVService", in_signature = "", out_signature = "")
     def reload (self):
         self.service.reload ()
 
-    @polkit.require_auth ("org.fedoraproject.config.services.get")
+    @polkit.require_auth ("org.fedoraproject.config.services.info")
     @dbus.service.method (dbus_interface = dbus_service_name + ".SysVService", in_signature = "", out_signature = "i")
     def get_status (self):
         return self.service.status
 
-    @polkit.require_auth ("org.fedoraproject.config.services.get")
+    @polkit.require_auth ("org.fedoraproject.config.services.info")
     @dbus.service.method (dbus_interface = dbus_service_name + ".SysVService", in_signature = "", out_signature = "i")
     def get_status_updates_running (self):
         return self.service.status_updates_running
 
-    @polkit.require_auth ("org.fedoraproject.config.services.get")
+    @polkit.require_auth ("org.fedoraproject.config.services.info")
     @dbus.service.method (dbus_interface = dbus_service_name + ".SysVService", in_signature = "", out_signature = "s")
     def get_shortdescription (self):
         if self.service.info.shortdescription:
@@ -117,7 +117,7 @@ class DBusSysVService (DBusChkconfigService):
         else:
             return ""
 
-    @polkit.require_auth ("org.fedoraproject.config.services.get")
+    @polkit.require_auth ("org.fedoraproject.config.services.info")
     @dbus.service.method (dbus_interface = dbus_service_name + ".SysVService", in_signature = "", out_signature = "s")
     def get_description (self):
         if self.service.info.description:
@@ -125,12 +125,12 @@ class DBusSysVService (DBusChkconfigService):
         else:
             return ""
 
-    @polkit.require_auth ("org.fedoraproject.config.services.get")
+    @polkit.require_auth ("org.fedoraproject.config.services.info")
     @dbus.service.method (dbus_interface = dbus_service_name + ".SysVService", in_signature = "", out_signature = "ai")
     def get_runlevels (self):
         return list (self.service.runlevels)
 
-    @polkit.require_auth ("org.fedoraproject.config.services.set")
+    @polkit.require_auth ("org.fedoraproject.config.services.manage")
     @dbus.service.method (dbus_interface = dbus_service_name + ".SysVService", in_signature = "ai", out_signature = "")
     def set_runlevels (self, runlevels):
         self.service.runlevels = set (runlevels)
@@ -138,13 +138,13 @@ class DBusSysVService (DBusChkconfigService):
 ##############################################################################
 
 class DBusXinetdService (DBusChkconfigService):
-    @polkit.require_auth ("org.fedoraproject.config.services.set")
+    @polkit.require_auth ("org.fedoraproject.config.services.manage")
     @dbus.service.method (dbus_interface = dbus_service_name + ".XinetdService", in_signature = "b", out_signature = "")
     def save (self, enabled):
         self.service.enabled = enabled
         self.service.save ()
     
-    @polkit.require_auth ("org.fedoraproject.config.services.get")
+    @polkit.require_auth ("org.fedoraproject.config.services.info")
     @dbus.service.method (dbus_interface = dbus_service_name + ".XinetdService", in_signature = "", out_signature = "s")
     def get_description (self):
         if self.service.info.description:

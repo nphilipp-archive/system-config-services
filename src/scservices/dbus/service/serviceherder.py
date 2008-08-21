@@ -33,7 +33,7 @@ from scservices.dbus import dbus_service_name
 ##############################################################################
 
 class DBusServiceHerder (slip.dbus.service.Object):
-    default_polkit_auth_required = "org.fedoraproject.config.services.all"
+    default_polkit_auth_required = "org.fedoraproject.config.services.manage"
 
     def __init__ (self, bus_name, object_path, herder):
         slip.dbus.service.Object.__init__ (self, bus_name, object_path)
@@ -67,12 +67,12 @@ class DBusServiceHerder (slip.dbus.service.Object):
         dbusservice.remove_from_connection (connection = self.connection, path = self._service_object_path (service))
         del self.services_dbusservices[service]
 
-    @polkit.require_auth ("org.fedoraproject.config.services.get")
+    @polkit.require_auth ("org.fedoraproject.config.services.info")
     @dbus.service.method (dbus_interface = dbus_service_name + ".ServiceHerder", out_signature = "b")
     def is_ready (self):
         return self.herder.ready
 
-    @polkit.require_auth ("org.fedoraproject.config.services.get")
+    @polkit.require_auth ("org.fedoraproject.config.services.info")
     @dbus.service.method (dbus_interface = dbus_service_name + ".ServiceHerder", out_signature = "as")
     def list_services (self):
         return map (lambda service: service.name, self.services_dbusservices.keys ())

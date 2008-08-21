@@ -4,27 +4,20 @@
  "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
 
 <policyconfig>
-  <action id="org.fedoraproject.config.services.everything">
-    <description>Do absolutely everything with system services</description>
-    <message>System policy prevents access to system services</message>
-    <defaults>
-      <allow_any>no</allow_any>
-    </defaults>
-  </action>
-  <action id="org.fedoraproject.config.services.get">
+  <action id="org.fedoraproject.config.services.info">
     <description>Get information about system services</description>
-    <message>System policy prevents access to system services</message>
+    <message>System policy prevents access to system services information</message>
     <defaults>
       <allow_inactive>no</allow_inactive>
       <allow_active>yes</allow_active>
     </defaults>
   </action>
-  <action id="org.fedoraproject.config.services.set">
-    <description>Manipulate system services</description>
-    <message>System policy prevents access to system services</message>
+  <action id="org.fedoraproject.config.services.manage">
+    <description>Manage system services</description>
+    <message>System policy prevents management of system services</message>
     <defaults>
       <allow_inactive>no</allow_inactive>
-      <allow_active>auth_admin_keep_session</allow_active>
+      <allow_active>auth_admin_keep_always</allow_active>
     </defaults>
   </action>
 </policyconfig>
