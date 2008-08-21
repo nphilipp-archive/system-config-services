@@ -63,8 +63,6 @@ class DBusServiceHerderProxy (object):
 
     @polkit.enable_proxy
     def list_services (self):
-        while not self.ready:
-            time.sleep (1)
         return self.dbus_object.list_services (dbus_interface = "org.fedoraproject.Config.Services.ServiceHerder")
 
     class _Subscriber (object):
@@ -91,8 +89,12 @@ class DBusServiceHerderProxy (object):
         if change == SVC_ADDED:
             self.services[service_name] = self.service_class (service_name, self.bus, self)
 
+        if service_name != "":
+            service = self.services[service_name]
+        else:
+            # service_name is empty if the herder signals being ready
+            service = None
         k = copy.copy (subscriber.k)
-        service = self.services[service_name]
         k["service"] = service
         subscriber.remote_method_or_function (herder = self, change = change, *subscriber.p, **k)
 
