@@ -25,7 +25,7 @@ import dbus.service
 import slip.dbus.service
 import slip.dbus.polkit as polkit
 
-from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED
+from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED, SVC_HERDER_READY
 from scservices.dbus.service.services import DBusService
 
 from scservices.dbus import dbus_service_name
@@ -43,13 +43,23 @@ class DBusServiceHerder (slip.dbus.service.Object):
 
         self.services_dbusservices = {}
 
-    def on_services_changed (self, change, service):
+    def on_services_changed (self, herder, change, service):
+        # ignore herder as we know which one is affected
+
+        if change == SVC_HERDER_READY:
+            print "%s.on_services_changed (%s, SVC_HERDER_READY, %s)" % (self, herder, service)
+
         if change == SVC_ADDED:
             self.on_service_added (service)
         elif change == SVC_DELETED:
             self.on_service_deleted (service)
 
-        self.notify (change, service.name)
+        if service:
+            servicename = service.name
+        else:
+            servicename = ""
+
+        self.notify (change, servicename)
 
     def on_service_added (self, service):
         if service in self.services_dbusservices:
@@ -60,6 +70,11 @@ class DBusServiceHerder (slip.dbus.service.Object):
         dbusservice = self.services_dbusservices[service]
         dbusservice.remove_from_connection (connection = self.connection, path = self._service_object_path (service))
         del self.services_dbusservices[service]
+
+    @polkit.require_auth ("org.fedoraproject.config.services.get")
+    @dbus.service.method (dbus_interface = dbus_service_name + ".ServiceHerder", out_signature = "b")
+    def is_ready (self):
+        return self.herder.ready
 
     @polkit.require_auth ("org.fedoraproject.config.services.get")
     @dbus.service.method (dbus_interface = dbus_service_name + ".ServiceHerder", out_signature = "as")

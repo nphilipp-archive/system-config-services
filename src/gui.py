@@ -32,7 +32,7 @@ import slip.gtk
 import gettext
 gettext.install ('system-config-services')
 
-from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED
+from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED, SVC_HERDER_READY
 
 from scservices.core.services import SVC_STATUS_REFRESHING, SVC_STATUS_UNKNOWN, SVC_STATUS_STOPPED, SVC_STATUS_RUNNING, SVC_STATUS_DEAD, SVC_ENABLED_REFRESHING, SVC_ENABLED_YES, SVC_ENABLED_NO, SVC_ENABLED_CUSTOM
 
@@ -417,7 +417,8 @@ class GUIServicesList (GladeController):
         self.service_painters = {}
 
         super (GUIServicesList, self).__init__ (xml)
-        self.serviceherders = serviceherders
+        self.serviceherders = set (serviceherders)
+        self.serviceherders_ready = set ()
 
         self.runlevels_checkboxes = {
                 2: self.serviceRunlevel2,
@@ -438,6 +439,7 @@ class GUIServicesList (GladeController):
 
         self.servicesTreeView = GUIServicesTreeView ()
         self.servicesTreeView.show ()
+        self.servicesTreeView.set_sensitive (False)
         self.servicesTreeView.set_rules_hint (True)
         self.servicesTreeView.connect ('service-selected', self.on_service_selected)
 
@@ -524,7 +526,7 @@ class GUIServicesList (GladeController):
 
         w.set_sensitive (sensitive)
 
-    def on_services_changed (self, change, service):
+    def on_services_changed (self, herder, change, service):
         if change == SVC_ADDED:
             self.on_service_added (service)
         elif change == SVC_DELETED:
@@ -537,6 +539,8 @@ class GUIServicesList (GladeController):
             self.on_service_status_updating (service)
         elif change == SVC_STATUS_CHANGED:
             self.on_service_status_changed (service)
+        elif change == SVC_HERDER_READY:
+            self.on_service_herder_ready (herder)
         else:
             raise KeyError ("change: %d", change)
 
@@ -598,6 +602,19 @@ class GUIServicesList (GladeController):
             # service might have been deleted
             pass
         self._set_widgets_sensitivity ()
+
+    def on_service_herder_ready (self, herder):
+        self.serviceherders_ready.add (herder)
+        if self.serviceherders == self.serviceherders_ready:
+            self.enable ()
+
+    def enable (self):
+        # if the list isn't empty, select the first entry
+        iter = self.servicesTreeStore.get_iter_first ()
+        if iter != None:
+            self.servicesTreeView.selection.select_iter (iter)
+
+        self.servicesTreeView.set_sensitive (True)
 
 ##############################################################################
 

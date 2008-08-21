@@ -37,7 +37,8 @@ SVC_CONF_UPDATING = 2
 SVC_CONF_CHANGED = 3
 SVC_STATUS_UPDATING = 4
 SVC_STATUS_CHANGED = 5
-SVC_LAST = 6
+SVC_HERDER_READY = 6
+SVC_LAST = 7
 
 def gam_action_to_str (action):
     try:
@@ -83,8 +84,18 @@ class ServiceHerder (object):
         self.services = {}
         self.subscribers = set ()
 
+        self._ready = False
+
         self.mon = mon
         self.start_watching ()
+
+    @property
+    def ready (self):
+        return self._ready
+
+    def set_ready (self):
+        self._ready = True
+        self.notify (SVC_HERDER_READY)
 
     def start_watching (self):
         #print "%s.start_watching ()" % self
@@ -130,12 +141,12 @@ class ServiceHerder (object):
         for service in self.services.itervalues ():
             remote_method_or_function (change = SVC_ADDED, service = service)
 
-    def notify (self, change, service):
+    def notify (self, change, service = None):
         for subscriber in self.subscribers:
             k = copy.copy (subscriber.k)
             k['service'] = service
-            subscriber.remote_method_or_function (change = change,
-                                                  *subscriber.p, **k)
+            subscriber.remote_method_or_function (herder = self,
+                    change = change, *subscriber.p, **k)
 
 class ChkconfigServiceHerder (ServiceHerder):
     """abstract service herder for services manageable by chkconfig"""
@@ -194,7 +205,9 @@ class SysVServiceHerder (ChkconfigServiceHerder):
         #print "%s.on_dir_changed (%s, %s, %s)" % (self, path, action, dir)
         basename = self.basename_re.search (path).group ('basename')
         if path == dir:
-            # ignore state change on the directory
+            if dir == '/etc/init.d' and action == gamin.GAMEndExist:
+                self.set_ready ()
+            # ignore state change on the directory from now on
             return
 
         if self.rpmbak_re.match (path) or self.rpmtmp_re.match (path):
@@ -245,8 +258,13 @@ class XinetdServiceHerder (ChkconfigServiceHerder):
     delay_timeout = 1000
 
     def on_dir_changed (self, path, action, dir):
+        # we only watch one directory, no need to verify that it is
+        # indeed /etc/xinetd.d
+
         if path == dir:
-            # ignore state change on the directory
+            if action == gamin.GAMEndExist:
+                self.set_ready ()
+            # ignore state change on the directory from here on
             return
 
         if self.rpmbak_re.match (path) or self.rpmtmp_re.match (path):

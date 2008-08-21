@@ -20,9 +20,9 @@
 # Authors:
 # Nils Philippsen <nphilipp@redhat.com>
 
-import copy
+import copy, time
 
-from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED
+from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED, SVC_HERDER_READY
 
 from scservices.dbus.proxy.services import DBusSysVServiceProxy, DBusXinetdServiceProxy
 
@@ -56,8 +56,15 @@ class DBusServiceHerderProxy (object):
 
         self.subscribers = set ()
 
+    @property
+    @polkit.enable_proxy
+    def ready (self):
+        return self.dbus_object.is_ready (dbus_interface = "org.fedoraproject.Config.Services.ServiceHerder")
+
     @polkit.enable_proxy
     def list_services (self):
+        while not self.ready:
+            time.sleep (1)
         return self.dbus_object.list_services (dbus_interface = "org.fedoraproject.Config.Services.ServiceHerder")
 
     class _Subscriber (object):
@@ -76,7 +83,8 @@ class DBusServiceHerderProxy (object):
         self.subscribers.add (self._Subscriber (remote_method_or_function, p, k))
         self.freeze_notifications ()
         for service in self.services.itervalues ():
-            remote_method_or_function (change = SVC_ADDED, service = service)
+            remote_method_or_function (herder = self, change = SVC_ADDED, service = service)
+        remote_method_or_function (herder = self, change = SVC_HERDER_READY, service = None)
         self.thaw_notifications ()
 
     def dbus_notify (self, subscriber, service_name, change):
@@ -86,7 +94,7 @@ class DBusServiceHerderProxy (object):
         k = copy.copy (subscriber.k)
         service = self.services[service_name]
         k["service"] = service
-        subscriber.remote_method_or_function (change = change, *subscriber.p, **k)
+        subscriber.remote_method_or_function (herder = self, change = change, *subscriber.p, **k)
 
         if change == SVC_DELETED:
             del self.services[service_name]
