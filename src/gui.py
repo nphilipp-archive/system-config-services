@@ -559,14 +559,51 @@ class GUIServicesList (GladeController):
                 GUIServicesDetailsPainter (self, self.current_service).paint_details ()
             self._update_xinetd_service_entries ()
 
+    def find_new_service_path_to_select (self):
+        # determine which service to select now
+        path_to_select = None
+
+        model, current_iter = self.servicesTreeView.selection.get_selected ()
+
+        if current_iter:
+            # find next service in list
+            current_path = model.get_path (current_iter)
+
+            next_iter = model.iter_next (current_iter)
+            if next_iter:
+                path_to_select = model.get_path (next_iter)
+            else:
+                # find previous service in list
+                iter = model.get_iter_first ()
+                prev_iter = None
+                while iter and model.get_path (iter) != current_path:
+                    new_iter = model.iter_next (iter)
+                    if new_iter:
+                        prev_iter = iter
+                        iter = new_iter
+                    else:
+                        prev_iter = None
+                        break
+                if prev_iter:
+                    path_to_select = model.get_path (prev_iter)
+        return path_to_select
+
     def on_service_deleted (self, service):
-        self.servicesTreeStore.delete_service (service)
         if service == self.current_service:
-            self.on_service_selected (service = None)
+            path_to_select = self.find_new_service_path_to_select ()
+            if path_to_select:
+                self.servicesTreeView.selection.select_path (path_to_select)
+            else:
+                self.servicesTreeView.selection.unselect_all ()
+            #self.on_service_selected (service = self.find_new_service_to_select ())
+
+        self.servicesTreeStore.delete_service (service)
+
         try:
             del self.service_painters[service]
         except KeyError:
             pass
+
         if service == self.xinetd_service:
             self.xinetd_service = None
             if isinstance (self.current_service, services.XinetdService):
