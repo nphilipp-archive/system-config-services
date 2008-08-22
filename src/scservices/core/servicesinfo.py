@@ -106,6 +106,7 @@ class SysVServiceInfo (ServiceInfo):
     def _parse_lsb (self, fd):
         lsb = __struct__ ()
         lsb.description = None
+        lsb.pidfiles = None
         lsb.startrunlevels = set ()
         lsb.stoprunlevels = set ()
         lsb.shortdescription = None
@@ -160,6 +161,8 @@ class SysVServiceInfo (ServiceInfo):
                         lsb.stoprunlevels = set (map (lambda x: int (x), value.split ()))
                     except ValueError:
                         return None
+                elif key == "X-Fedora-Pidfile":
+                    lsb.pidfiles = set (value.split ())
                 else:
                     # ignore other keywords for now
                     pass
