@@ -110,8 +110,9 @@ class AsyncCmd (object):
 ##############################################################################
 
 class AsyncCmdQueue (object):
-    def __init__ (self, max_cmds_running = 3, herder = None):
+    def __init__ (self, max_cmds_running = 3, herder = None, default_priority = gobject.PRIORITY_DEFAULT_IDLE):
         self.max_cmds_running = max_cmds_running
+        self.default_priority = default_priority
 
         if not herder:
             global defaultAsyncCmdQueueHerder
@@ -131,7 +132,9 @@ class AsyncCmdQueue (object):
     def __repr__ (self):
         return "<%s.%s object at %s: max: %d run: %d wait: %d>" % (self.__class__.__module, self.__class__.__name__, hex (id (self)), self.max_cmds_running, len (self.cmds_running), len (self.cmds_waiting))
 
-    def queue (self, async_cmd, combined_stdout = False, priority = gobject.PRIORITY_DEFAULT_IDLE, ready_cb = None, ready_args = (), ready_kwargs = {}):
+    def queue (self, async_cmd, combined_stdout = False, priority = None, ready_cb = None, ready_args = (), ready_kwargs = {}):
+        if not priority:
+            priority = self.default_priority
         ready_args = (ready_cb, ) + ready_args
         if isinstance (async_cmd, (str, unicode)):
             cmd_obj = AsyncCmd (async_cmd, combined_stdout = combined_stdout, priority = priority, ready_cb = self._ready_cb, ready_args = ready_args, ready_kwargs = ready_kwargs)
