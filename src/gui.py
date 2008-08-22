@@ -527,6 +527,8 @@ class GUIServicesList (GladeController):
         w.set_sensitive (sensitive)
 
     def on_services_changed (self, herder, change, service):
+        while gtk.events_pending ():
+            gtk.main_iteration ()
         if change == SVC_ADDED:
             self.on_service_added (service)
         elif change == SVC_DELETED:
