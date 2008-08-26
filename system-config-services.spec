@@ -11,7 +11,7 @@
 
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.99.21
+Version: 0.99.22
 Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/SystemConfig/services
 # We are upstream, thus the source is only available from within this source
@@ -107,6 +107,47 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Tue Aug 26 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.22-1
+- version 0.99.22
+
+* Tue Aug 26 2008 Nils Philippsen <nphilipp@redhat.com>
+- make services list insensitive until first batch of services has rolled in
+
+* Fri Aug 22 2008 Nils Philippsen <nphilipp@redhat.com>
+- honor X-Fedora-Pidfile directive in LSB header
+- implement default priorities for AsyncCmdQueue objects
+- service gtk events in GUIServicesList.on_services_changed () to avoid hanging
+  GUI on startup
+
+* Thu Aug 21 2008 Nils Philippsen <nphilipp@redhat.com>
+- let GUI wait until herders are ready, then select first service in list
+- remove debugging output
+- when the selected service is deleted, find a suitable alternative to select
+- change PolicyKit actions to org.fedoraproject.config.services.info,
+  org.fedoraproject.config.services.manage
+- when listing services, don't sleep until backend herder is ready
+- handle SVC_HERDER_READY signal with empty service name
+
+* Wed Aug 20 2008 Nils Philippsen <nphilipp@redhat.com>
+- make monitoring of initially stopped services with pidfiles work
+
+* Mon Aug 18 2008 Nils Philippsen <nphilipp@redhat.com>
+- use %global for %%python_sitelib, %%python_version
+
+* Fri Aug 15 2008 Nils Philippsen <nphilipp@redhat.com>
+- remove some cruft
+- DBUS objects get a bus name, not the bus itself when created
+
+* Tue Aug 12 2008 Nils Philippsen <nphilipp@redhat.com>
+- rectify dbus interface name
+
+* Fri Aug 08 2008 Nils Philippsen <nphilipp@redhat.com>
+- use HookableSet for DBusSysVServiceProxy.runlevels
+- set about dialog transient for main window
+
+* Wed Aug 06 2008 Nils Philippsen <nphilipp@redhat.com>
+- don't except KeyboardInterrupt in two places
+
 * Tue Aug 05 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.21-1
 - get rid of save() methods, save instantly on changes instead
 
