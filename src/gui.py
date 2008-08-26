@@ -412,6 +412,7 @@ class GUIServicesList (GladeController):
             )
 
     def __init__ (self, xml, serviceherders):
+        self._enabled = False
         self.current_service = None
         self.xinetd_service = None
         self.service_painters = {}
@@ -439,7 +440,6 @@ class GUIServicesList (GladeController):
 
         self.servicesTreeView = GUIServicesTreeView ()
         self.servicesTreeView.show ()
-        self.servicesTreeView.set_sensitive (False)
         self.servicesTreeView.set_rules_hint (True)
         self.servicesTreeView.connect ('service-selected', self.on_service_selected)
 
@@ -451,6 +451,8 @@ class GUIServicesList (GladeController):
 
         for herder in serviceherders:
             herder.subscribe (self.on_services_changed)
+
+        self.servicesScrolledWindow.set_sensitive (False)
 
     def _update_runlevel_menu (self):
         for rl in xrange (2, 6):
@@ -561,6 +563,12 @@ class GUIServicesList (GladeController):
                 GUIServicesDetailsPainter (self, self.current_service).paint_details ()
             self._update_xinetd_service_entries ()
 
+        if not self._enabled:
+            iter = self.servicesTreeStore.get_iter_first ()
+            if iter:
+                path = self.servicesTreeStore.get_path (iter)
+                self.servicesTreeView.scroll_to_cell (path)
+
     def find_new_service_path_to_select (self):
         # determine which service to select now
         path_to_select = None
@@ -653,7 +661,8 @@ class GUIServicesList (GladeController):
         if iter != None:
             self.servicesTreeView.selection.select_iter (iter)
 
-        self.servicesTreeView.set_sensitive (True)
+            self.servicesScrolledWindow.set_sensitive (True)
+            self._enabled = True
 
 ##############################################################################
 
