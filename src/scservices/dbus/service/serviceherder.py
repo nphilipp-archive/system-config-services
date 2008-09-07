@@ -35,8 +35,8 @@ from scservices.dbus import dbus_service_name
 class DBusServiceHerder (slip.dbus.service.Object):
     default_polkit_auth_required = "org.fedoraproject.config.services.manage"
 
-    def __init__ (self, bus_name, object_path, herder):
-        slip.dbus.service.Object.__init__ (self, bus_name, object_path)
+    def __init__ (self, bus_name, object_path, herder, persistent = None):
+        slip.dbus.service.Object.__init__ (self, bus_name, object_path, persistent)
 
         self.herder = herder
         self.herder.subscribe (self.on_services_changed)

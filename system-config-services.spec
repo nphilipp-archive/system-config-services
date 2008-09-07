@@ -44,7 +44,7 @@ Requires: pygtk2-libglade
 Requires: python >= 2.3.0
 Requires: dbus-python
 Requires: python-slip >= 0.1.11
-Requires: python-slip-dbus >= 0.1.7
+Requires: python-slip-dbus >= 0.1.12
 Requires: python-slip-gtk
 Requires: PolicyKit-gnome
 Obsoletes: serviceconf <= 0.8.1
