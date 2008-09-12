@@ -449,10 +449,12 @@ class GUIServicesList (GladeController):
 
         self.on_service_selected ()
 
+        self.servicesScrolledWindow.set_sensitive (False)
+
         for herder in serviceherders:
             herder.subscribe (self.on_services_changed)
-
-        self.servicesScrolledWindow.set_sensitive (False)
+            if herder.ready:
+                self.on_service_herder_ready (herder)
 
     def _update_runlevel_menu (self):
         for rl in xrange (2, 6):
