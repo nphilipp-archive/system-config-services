@@ -254,8 +254,17 @@ class XinetdServiceHerder (ChkconfigServiceHerder):
 
     watch_directories = ['/etc/xinetd.d']
 
-    # delay recognition to avoid detecting temporary files
-    delay_timeout = 1000
+    # after startup, delay recognition to avoid detecting temporary files
+    starting_delay_timeout = 0
+    ready_delay_timeout = 500
+
+    def __init__ (self, *p, **k):
+        super (XinetdServiceHerder, self).__init__ (*p, **k)
+        self.delay_timeout = self.starting_delay_timeout
+
+    def set_ready (self):
+        self.delay_timeout = self.ready_delay_timeout
+        super (XinetdServiceHerder, self).set_ready ()
 
     def on_dir_changed (self, path, action, dir):
         # we only watch one directory, no need to verify that it is
@@ -280,7 +289,10 @@ class XinetdServiceHerder (ChkconfigServiceHerder):
                 self.services[name].async_load ()
 
     def create_service_delayed (self, name):
-        gobject.timeout_add (self.delay_timeout, self.create_service_cb, name)
+        if self.delay_timeout != 0:
+            gobject.timeout_add (self.delay_timeout, self.create_service_cb, name)
+        else:
+            self.create_service_cb (name)
 
     def create_service_cb (self, name):
         if os.access ("/etc/xinetd.d/%s" % name, os.F_OK):
@@ -291,7 +303,10 @@ class XinetdServiceHerder (ChkconfigServiceHerder):
         return False
 
     def delete_service_delayed (self, name):
-        gobject.timeout_add (self.delay_timeout, self.delete_service_cb, name)
+        if self.delay_timeout != 0:
+            gobject.timeout_add (self.delay_timeout, self.delete_service_cb, name)
+        else:
+            self.create_service_cb (name)
 
     def delete_service_cb (self, name):
         if not os.access ("/etc/xinetd.d/%s" % name, os.F_OK):
