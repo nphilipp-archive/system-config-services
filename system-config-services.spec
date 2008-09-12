@@ -11,7 +11,7 @@
 
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.99.22
+Version: 0.99.23
 Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/SystemConfig/services
 # We are upstream, thus the source is only available from within this source
@@ -107,6 +107,14 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Fri Sep 12 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.23-1
+- make double-thaws of notications fail
+- ensure correct order replay of frozen notifications when thawing (#460598)
+- ensure list is sensitive when dealing with herders that are ready already
+  (e.g. in the case of already running backend)
+- avoid premature herder ready signals
+- XinetdServiceHerder: delay added/deleted services signals only after startup
+
 * Tue Aug 26 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.22-1
 - version 0.99.22
 
