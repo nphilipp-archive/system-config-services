@@ -112,8 +112,7 @@ class DBusServiceHerderProxy (object):
 
     def thaw_notifications (self):
         self.freeze_level -= 1
-        if self.freeze_level < 0:
-            self.freeze_level = 0
+        assert self.freeze_level >= 0
         if self.frozen:
             return
         for n in self.frozen_notifications:
