@@ -111,13 +111,12 @@ class DBusServiceHerderProxy (object):
             self.frozen_notifications = []
 
     def thaw_notifications (self):
+        assert self.freeze_level >= 1
+        if self.freeze_level == 1:
+            for n in self.frozen_notifications:
+                self.dbus_notify (n.subscriber, n.service_name, n.change)
+            self.frozen_notifications = None
         self.freeze_level -= 1
-        assert self.freeze_level >= 0
-        if self.frozen:
-            return
-        for n in self.frozen_notifications:
-            self.dbus_notify (n.subscriber, n.service_name, n.change)
-        self.frozen_notifications = None
 
     def notify (self, change, service_name):
         for subscriber in self.subscribers:
