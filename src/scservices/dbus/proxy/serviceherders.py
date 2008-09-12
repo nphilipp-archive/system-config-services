@@ -82,7 +82,6 @@ class DBusServiceHerderProxy (object):
         self.freeze_notifications ()
         for service in self.services.itervalues ():
             remote_method_or_function (herder = self, change = SVC_ADDED, service = service)
-        remote_method_or_function (herder = self, change = SVC_HERDER_READY, service = None)
         self.thaw_notifications ()
 
     def dbus_notify (self, subscriber, service_name, change):
