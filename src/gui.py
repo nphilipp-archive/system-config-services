@@ -656,7 +656,6 @@ class GUIServicesList (GladeController):
     def on_service_herder_ready (self, herder):
         self.serviceherders_ready.add (herder)
         if self.serviceherders == self.serviceherders_ready:
-            print "enable", herder.__class__.__name__
             self.enable ()
 
     def enable (self):
