@@ -450,6 +450,7 @@ class GUIServicesList (GladeController):
         self.on_service_selected ()
 
         self.servicesScrolledWindow.set_sensitive (False)
+        self.servicesDetailsNotebook.set_sensitive (False)
 
         for herder in serviceherders:
             herder.subscribe (self.on_services_changed)
@@ -665,6 +666,7 @@ class GUIServicesList (GladeController):
             self.servicesTreeView.selection.select_iter (iter)
 
             self.servicesScrolledWindow.set_sensitive (True)
+            self.servicesDetailsNotebook.set_sensitive (True)
             self._enabled = True
 
 ##############################################################################
