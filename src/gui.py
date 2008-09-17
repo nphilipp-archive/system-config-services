@@ -403,6 +403,7 @@ class GUIServicesList (GladeController):
             )
 
     _xml_widgets = _service_xml_widgets + (
+            'mainWindow',
             'servicesListDetailsPaned',
             'servicesScrolledWindow',
             'servicesDetailsNotebook',
@@ -413,6 +414,8 @@ class GUIServicesList (GladeController):
             )
 
     def __init__ (self, xml, serviceherders):
+        self.busy_cursor = gtk.gdk.Cursor (gtk.gdk.WATCH)
+
         self.current_service = None
         self.xinetd_service = None
         self.service_painters = {}
@@ -448,6 +451,8 @@ class GUIServicesList (GladeController):
         self.servicesScrolledWindow.add (self.servicesTreeView)
 
         self.on_service_selected ()
+
+        self.mainWindow.realize ()
 
         self.disable ()
 
@@ -660,6 +665,7 @@ class GUIServicesList (GladeController):
     def disable (self):
         self._enabled = False
         self.servicesListDetailsPaned.set_sensitive (False)
+        self.mainWindow.window.set_cursor (self.busy_cursor)
 
     def enable (self):
         # if the list isn't empty, select the first entry
@@ -668,6 +674,7 @@ class GUIServicesList (GladeController):
             self.servicesTreeView.selection.select_iter (iter)
 
             self.servicesListDetailsPaned.set_sensitive (True)
+            self.mainWindow.window.set_cursor (None)
             self._enabled = True
 
 ##############################################################################
