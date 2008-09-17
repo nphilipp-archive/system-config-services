@@ -403,6 +403,7 @@ class GUIServicesList (GladeController):
             )
 
     _xml_widgets = _service_xml_widgets + (
+            'servicesListDetailsPaned',
             'servicesScrolledWindow',
             'servicesDetailsNotebook',
             'serviceRunlevel2',
@@ -412,7 +413,6 @@ class GUIServicesList (GladeController):
             )
 
     def __init__ (self, xml, serviceherders):
-        self._enabled = False
         self.current_service = None
         self.xinetd_service = None
         self.service_painters = {}
@@ -449,8 +449,7 @@ class GUIServicesList (GladeController):
 
         self.on_service_selected ()
 
-        self.servicesScrolledWindow.set_sensitive (False)
-        self.servicesDetailsNotebook.set_sensitive (False)
+        self.disable ()
 
         for herder in serviceherders:
             herder.subscribe (self.on_services_changed)
@@ -658,14 +657,17 @@ class GUIServicesList (GladeController):
         if self.serviceherders == self.serviceherders_ready:
             self.enable ()
 
+    def disable (self):
+        self._enabled = False
+        self.servicesListDetailsPaned.set_sensitive (False)
+
     def enable (self):
         # if the list isn't empty, select the first entry
         iter = self.servicesTreeStore.get_iter_first ()
         if iter != None:
             self.servicesTreeView.selection.select_iter (iter)
 
-            self.servicesScrolledWindow.set_sensitive (True)
-            self.servicesDetailsNotebook.set_sensitive (True)
+            self.servicesListDetailsPaned.set_sensitive (True)
             self._enabled = True
 
 ##############################################################################

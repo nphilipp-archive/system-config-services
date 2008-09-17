@@ -499,7 +499,7 @@
       </child>
 
       <child>
-	<widget class="GtkHPaned" id="hpaned1">
+	<widget class="GtkHPaned" id="servicesListDetailsPaned">
 	  <property name="border_width">5</property>
 	  <property name="visible">True</property>
 	  <property name="can_focus">True</property>
