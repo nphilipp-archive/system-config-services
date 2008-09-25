@@ -1,64 +1,66 @@
 # Czech translation of system-config-services
 # Copyright (C) 2002-2005, 2008 system-config-services' COPYRIGHT HOLDER
+#
 # Miloslav Trmač <mitr@volny.cz>, 2002 - 2005, 2008.
 # Nikola Štohanzl <niko@srnet.cz>, 2006.
 # Milan Kerslager <kerslage@linux.cz>, 2007.
-#
+# Adam Pribyl <pribyl@lowlevel.cz>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-20 16:11+0100\n"
-"PO-Revision-Date: 2008-03-03 06:34+0100\n"
-"Last-Translator: Miloslav Trmač <mitr@volny.cz>\n"
-"Language-Team: Czech\n"
+"PO-Revision-Date: 2008-08-05 07:13+0200\n"
+"Last-Translator: Adam Pribyl <pribyl@lowlevel.cz>\n"
+"Language-Team: Czech <fedora-cs-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 0.2\n"
 
 #: ../src/gui.py:109
 msgid "Name"
-msgstr ""
+msgstr "Jméno"
 
 #: ../src/gui.py:110
 msgid "Remarks"
-msgstr ""
+msgstr "Poznámky"
 
 #: ../src/gui.py:170 ../src/gui.py:187
 msgid "This service is being refreshed right now."
-msgstr ""
+msgstr "Tato služba se právě obnovuje."
 
 #: ../src/gui.py:171
 msgid "This service is enabled."
-msgstr ""
+msgstr "Tato služba je povolena."
 
 #: ../src/gui.py:172
 msgid "This service is disabled."
-msgstr ""
+msgstr "Tato služba je zakázána."
 
 #: ../src/gui.py:173
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr ""
+msgstr "Tato služba je povolena v runlevelech: %(runlevels)s"
 
 #: ../src/gui.py:188
 msgid "The status of this service is unknown."
-msgstr ""
+msgstr "Stav této služby je neznámý"
 
 #: ../src/gui.py:189
 msgid "This service is stopped."
-msgstr ""
+msgstr "Tato služba je zastavena."
 
 #: ../src/gui.py:190
 msgid "This service is running."
-msgstr ""
+msgstr "Tato služba běží."
 
 #: ../src/gui.py:191
 msgid "This service is dead."
-msgstr ""
+msgstr "Tato služba neodpovídá."
 
 #: ../src/gui.py:268
 #, python-format
@@ -66,10 +68,13 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
+"Služba <b>%(servicename)s</b> se nastaruje pouze jednou, obvykle při "
+"zavádění systému, "
+"potom běží na pozadí a probouzí se pouze pokud je potřeba."
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
-msgstr ""
+msgstr "Tato služba je právě aktualizována."
 
 #: ../src/gui.py:308
 #, python-format
@@ -77,122 +82,130 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
 msgstr ""
+"Služba <b>%(servicename)s</b> bude spuštěna v případě potřeby službou xinetd "
+"a ukončena pokud nebude mít další požadavny na vyřízení."
 
 #: ../src/gui.py:317
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
+"Tato služba je povolena, ale <b>xinetd</b> není nainstalován. "
+"Bez něj nebude tato služba fungovat."
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
+"Tato služba je povolena, ale služba <b>xinetd</b> neběží. Bez ní nebude tato "
+"služba fungovat."
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr ""
+msgstr "Povolte službu <b>%(service)s</b> v těchto runlevelech:"
 
 #: ../src/gui.py:754
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
+"Nemohu nalézt prohlížeč nápovědy. Abyste byli schopni prohlížet nápovědu, "
+"musí být nainstalován balíček 'yelp'."
 
 #: ../src/servicecontrol.py:88
 #, python-format
 msgid "Service %s not found!"
-msgstr ""
+msgstr "Služba %s nenalezena!"
 
 #: ../src/servicecontrol.py:94
 #, python-format
 msgid "Service %s is running with old configuration"
-msgstr ""
+msgstr "Služba %s běží se starou konfigurací."
 
 #: ../src/servicecontrol.py:97
 #, python-format
 msgid "Service %s is running"
-msgstr ""
+msgstr "Služba %s běží"
 
 #: ../src/servicecontrol.py:100
 #, python-format
 msgid "Service %s reports an error"
-msgstr ""
+msgstr "Služba %s hlásí chybu"
 
 #: ../src/servicecontrol.py:103
 #, python-format
 msgid "Service %s is stopped"
-msgstr ""
+msgstr "Služba %s je zastavena"
 
 #: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
 #, python-format
 msgid "Currently enabled in runlevels %s"
-msgstr ""
+msgstr "Momentálně povoleno v runlevelech %s"
 
 #: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
 #, python-format
 msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr ""
+msgstr "Povolit %(name)s v runevelech %(levels)s"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
-msgstr ""
+msgstr "window1"
 
 #: ../src/servicetab.glade:38
 msgid "Service %s"
-msgstr ""
+msgstr "Služba %s"
 
 #: ../src/servicetab.glade:47 ../src/servicetab.glade:395
 #: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
 msgid "Enable"
-msgstr ""
+msgstr "Povolit"
 
 #: ../src/servicetab.glade:68 ../src/servicetab.glade:413
 #: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
 msgid "Disable"
-msgstr ""
+msgstr "Zakázat"
 
 #: ../src/servicetab.glade:89
 msgid "Customize"
-msgstr ""
+msgstr "Upravit"
 
 #: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
 msgid "Enable Default"
-msgstr ""
+msgstr "Povolit výchozí"
 
 #: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
 #: ../src/system-config-services.glade:135
 #: ../src/system-config-services.glade:1256
 msgid "Runlevel 2"
-msgstr ""
+msgstr "Runlevel 2"
 
 #: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
 #: ../src/system-config-services.glade:144
 #: ../src/system-config-services.glade:1266
 msgid "Runlevel 3"
-msgstr ""
+msgstr "Runlevel 3"
 
 #: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
 #: ../src/system-config-services.glade:153
 #: ../src/system-config-services.glade:1276
 msgid "Runlevel 4"
-msgstr ""
+msgstr "Runlevel 4"
 
 #: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
 #: ../src/system-config-services.glade:162
 #: ../src/system-config-services.glade:1286
 msgid "Runlevel 5"
-msgstr ""
+msgstr "Runlevel 5"
 
 #: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
 msgid "Enable All"
-msgstr ""
+msgstr "Povolit všechny"
 
 #: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
 msgid "Disable All"
-msgstr ""
+msgstr "Zakázat všechny"
 
 #: ../src/servicetab.glade:235 ../src/servicetab.glade:332
 #: ../src/servicetab.glade:2135
@@ -207,31 +220,31 @@ msgstr "Restartovat"
 #: ../src/servicetab.glade:292 ../src/servicetab.glade:441
 #: ../src/servicetab.glade:1922
 msgid "Configure"
-msgstr ""
+msgstr "Nastavit"
 
 #: ../src/servicetab.glade:394
 msgid "foobar"
-msgstr ""
+msgstr "pepa"
 
 #: ../src/servicetab.glade:412
 msgid "barfoo"
-msgstr ""
+msgstr "josef"
 
 #: ../src/servicetab.glade:521
 msgid "Current runlevel is %s"
-msgstr ""
+msgstr "Aktuální runlevel je %s"
 
 #: ../src/servicetab.glade:764 ../src/servicetab.glade:836
 msgid "Runlevels"
-msgstr ""
+msgstr "Runlevely"
 
 #: ../src/servicetab.glade:807
 msgid "label18"
-msgstr ""
+msgstr "label18"
 
 #: ../src/servicetab.glade:940
 msgid "Start "
-msgstr ""
+msgstr "Spustit"
 
 #: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
 msgid "Stop"
@@ -239,51 +252,51 @@ msgstr "Zastavit"
 
 #: ../src/servicetab.glade:1066
 msgid "Service control"
-msgstr ""
+msgstr "Ovládání služby"
 
 #: ../src/servicetab.glade:1148
 msgid "Status output"
-msgstr ""
+msgstr "Stav"
 
 #: ../src/servicetab.glade:1260 ../src/system-config-services.glade:181
 #: ../src/system-config-services.glade:393
 msgid "_Start"
-msgstr ""
+msgstr "_Spustit"
 
 #: ../src/servicetab.glade:1339 ../src/system-config-services.glade:225
 #: ../src/system-config-services.glade:427
 msgid "_Restart"
-msgstr ""
+msgstr "_Restartovat"
 
 #: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
 #: ../src/system-config-services.glade:328
 msgid "_Enable"
-msgstr ""
+msgstr "_Povolit"
 
 #: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
 #: ../src/system-config-services.glade:345
 msgid "_Disable"
-msgstr ""
+msgstr "_Zakázat"
 
 #: ../src/servicetab.glade:1613
 msgid "_Configure"
-msgstr ""
+msgstr "_Nastavit"
 
 #: ../src/servicetab.glade:1653
 msgid "Button Box"
-msgstr ""
+msgstr "Tlačítko"
 
 #: ../src/servicetab.glade:1730
 msgid "label16"
-msgstr ""
+msgstr "label16"
 
 #: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
 msgid "Service %s:"
-msgstr ""
+msgstr "Služba %s:"
 
 #: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1295
 msgid "Customize Runlevels"
-msgstr ""
+msgstr "Upravit runlevely"
 
 #: ../src/system-config-services.glade:7
 #: ../src/system-config-services.glade:1238
@@ -292,21 +305,21 @@ msgstr "Nastavení služeb"
 
 #: ../src/system-config-services.glade:38
 msgid "_Program"
-msgstr ""
+msgstr "_Program"
 
 #: ../src/system-config-services.glade:60
 msgid "Ser_vice"
-msgstr ""
+msgstr "Sl_užba"
 
 #: ../src/system-config-services.glade:113
 #: ../src/system-config-services.glade:363
 msgid "_Customize"
-msgstr ""
+msgstr "_Upravit"
 
 #: ../src/system-config-services.glade:203
 #: ../src/system-config-services.glade:410
 msgid "S_top"
-msgstr ""
+msgstr "Zas_tavit"
 
 #: ../src/system-config-services.glade:251
 msgid "_Help"
@@ -318,21 +331,23 @@ msgstr "_Obsah"
 
 #: ../src/system-config-services.glade:288
 msgid "_About"
-msgstr ""
+msgstr "_O ..."
 
 #: ../src/system-config-services.glade:362
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
+msgstr "Upravit runlevely v nichž je služba povolena."
 
 #: ../src/system-config-services.glade:558
 msgid "No service selected."
-msgstr ""
+msgstr "Není vybrána žádná služba."
 
 #: ../src/system-config-services.glade:620
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
+"Tato služba je spuštěna jednou, obvykle při zavádění systému, poté "
+"běží na pozadí a vzbudí se pouze pokud je potřeba."
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
@@ -344,22 +359,24 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
 msgstr ""
+"Tato služba bude spuštěna na vyžádání službou xinetd a ukončena "
+"pokud nemá další požadavky na vyřízení."
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
-msgstr ""
+msgstr "Informace o službě"
 
 #: ../src/system-config-services.glade:1199
 msgid "Status of service %s:"
-msgstr ""
+msgstr "Stav služby %s:"
 
 #: ../src/system-config-services.glade:1236
 msgid "system-config-services"
-msgstr ""
+msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1237
 msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Všechna práva vyhrazena 2002-2008 Red Hat, Inc. a přispěvatelé"
 
 #: ../src/system-config-services.glade:1239
 msgid ""
@@ -377,14 +394,25 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
+"Tento program je svobodný software; můžete jej libovolně kopírovat a"
+"upravovat, pokud zachováte podmínky GNU General Public Licence, jak jsou"
+"publikovány na stránkách nadace Svobodného Softwrare (FSF); buď ve verzi 2"
+"nebo (podle vašeho zvážení) jakákoli pozdější. \n"
+"\n"
+"Tento program je distribuován v dobré víře, že bude užitečný, ale bez"
+"VEŠKERÝCH ZÁRUK; Pro detaily si přečtete licenci GNU General Public"
+"License. \n"
+"\n"
+"S tímto programem byste měli obdržet kopii GNU General Public Licence. Pokud"
+"ne, podívete se na http://www.gnu.org/licenses/."
 
 #: ../src/system-config-services.glade:1246
 msgid "translator-credits"
-msgstr ""
+msgstr "Adam Přibyl"
 
 #: ../src/system-config-services.glade:1391
 msgid "Runlevel _2"
-msgstr ""
+msgstr "Runlevel_2"
 
 #: ../src/system-config-services.glade:1410
 msgid "Runlevel _3"
@@ -577,3 +605,4 @@ msgstr "Služby"
 
 #~ msgid "_View"
 #~ msgstr "_Zobrazit"
+
