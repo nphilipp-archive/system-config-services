@@ -1,148 +1,149 @@
-# translation of zh_TW.po to Chinese, Traditional
+# translation of system-config-services.tip.po to Traditional Chinese
 # Translation of system-config-services to Chinese (traditional)
 # Copyright (C) 2002 Red Hat Inc.
+#
 # Ben Wu <hpwu@redhat.com>, 2002, 2003, 2004.
 # Chester Cheng <ccheng@redhat.com>, 2005, 2006.
 # Walter Cheuk <wwycheuk@netvigator.com>, 2006.
-#
+# Terry Chuang <tchuang@redhat.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: zh_TW\n"
+"Project-Id-Version: system-config-services.tip\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-20 16:11+0100\n"
-"PO-Revision-Date: 2006-11-22 00:40+1000\n"
-"Last-Translator: Chester Cheng <ccheng@redhat.com>\n"
-"Language-Team: Chinese, Traditional <zh_TW@li.org>\n"
+"PO-Revision-Date: 2008-09-26 09:52+1000\n"
+"Last-Translator: Terry Chuang <tchuang@redhat.com>\n"
+"Language-Team: Traditional Chinese <zh@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: ../src/gui.py:109
 msgid "Name"
-msgstr ""
+msgstr "名稱"
 
 #: ../src/gui.py:110
 msgid "Remarks"
-msgstr ""
+msgstr "備注"
 
 #: ../src/gui.py:170 ../src/gui.py:187
 msgid "This service is being refreshed right now."
-msgstr ""
+msgstr "服務現在正在更新。"
 
 #: ../src/gui.py:171
 msgid "This service is enabled."
-msgstr ""
+msgstr "服務已啟用。"
 
 #: ../src/gui.py:172
 msgid "This service is disabled."
-msgstr ""
+msgstr "服務已停用。"
 
 #: ../src/gui.py:173
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr ""
+msgstr "服務已啟用於 runlevel：%(runlevels)s"
 
 #: ../src/gui.py:188
 msgid "The status of this service is unknown."
-msgstr ""
+msgstr "這項服務的狀態不明。"
 
 #: ../src/gui.py:189
 msgid "This service is stopped."
-msgstr ""
+msgstr "這項服務已停止。"
 
 #: ../src/gui.py:190
 msgid "This service is running."
-msgstr ""
+msgstr "這項服務正在執行。"
 
 #: ../src/gui.py:191
 msgid "This service is dead."
-msgstr ""
+msgstr "這項服務已終止。"
 
 #: ../src/gui.py:268
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
+msgstr "<b>%(servicename)s</b> 這項服務一般會在系統開機時啟用，執行於背景中並且會視需求啟動。"
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
-msgstr ""
+msgstr "這項服務目前已更新。"
 
 #: ../src/gui.py:308
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
-msgstr ""
+msgstr "<b>%(servicename)s</b> 這項服務會視需求由 xinetd 服務啟用，並且在沒有工作時自動停用。"
 
 #: ../src/gui.py:317
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
+msgstr "這項服務已啟用，不過 <b>xinetd</b> 套件尚未安裝。這項服務無法在沒有此套件的情況下運作。"
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
+msgstr "這項服務已啟用，不過 <b>xinetd</b> 服務尚未被執行。這項服務無法在沒有此套件的情況下運作。"
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr ""
+msgstr "在這些 runlevel 中啟用 <b>%(service)s</b> 服務："
 
 #: ../src/gui.py:754
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
+msgstr "無法找到說明檢視器。若要檢視說明，您必須安裝「yelp」套件。"
 
 #: ../src/servicecontrol.py:88
 #, python-format
 msgid "Service %s not found!"
-msgstr ""
+msgstr "找不到 %s 服務！"
 
 #: ../src/servicecontrol.py:94
 #, python-format
 msgid "Service %s is running with old configuration"
-msgstr ""
+msgstr "%s 服務正在以舊的設定執行中"
 
 #: ../src/servicecontrol.py:97
 #, python-format
 msgid "Service %s is running"
-msgstr ""
+msgstr "%s 服務正在運作中"
 
 #: ../src/servicecontrol.py:100
 #, python-format
 msgid "Service %s reports an error"
-msgstr ""
+msgstr "%s 服務回報了錯誤"
 
 #: ../src/servicecontrol.py:103
 #, python-format
 msgid "Service %s is stopped"
-msgstr ""
+msgstr "%s 服務已停止"
 
 #: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
 #, python-format
 msgid "Currently enabled in runlevels %s"
-msgstr ""
+msgstr "目前已啟用於 runlevel %s 中"
 
 #: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
 #, python-format
 msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr ""
+msgstr "在 runlevel %(levels)s 中啟用 %(name)s"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
-msgstr ""
+msgstr "window1"
 
 #: ../src/servicetab.glade:38
 msgid "Service %s"
-msgstr ""
+msgstr "%s 服務"
 
 #: ../src/servicetab.glade:47 ../src/servicetab.glade:395
 #: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
@@ -156,43 +157,43 @@ msgstr "停用"
 
 #: ../src/servicetab.glade:89
 msgid "Customize"
-msgstr ""
+msgstr "自訂化"
 
 #: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
 msgid "Enable Default"
-msgstr ""
+msgstr "啟用預設值"
 
 #: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
 #: ../src/system-config-services.glade:135
 #: ../src/system-config-services.glade:1256
 msgid "Runlevel 2"
-msgstr ""
+msgstr "Runlevel 2"
 
 #: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
 #: ../src/system-config-services.glade:144
 #: ../src/system-config-services.glade:1266
 msgid "Runlevel 3"
-msgstr ""
+msgstr "Runlevel 3"
 
 #: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
 #: ../src/system-config-services.glade:153
 #: ../src/system-config-services.glade:1276
 msgid "Runlevel 4"
-msgstr ""
+msgstr "Runlevel 4"
 
 #: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
 #: ../src/system-config-services.glade:162
 #: ../src/system-config-services.glade:1286
 msgid "Runlevel 5"
-msgstr ""
+msgstr "Runlevel 5"
 
 #: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
 msgid "Enable All"
-msgstr ""
+msgstr "啟用全部"
 
 #: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
 msgid "Disable All"
-msgstr ""
+msgstr "停用全部"
 
 #: ../src/servicetab.glade:235 ../src/servicetab.glade:332
 #: ../src/servicetab.glade:2135
@@ -207,27 +208,27 @@ msgstr "重新啟動"
 #: ../src/servicetab.glade:292 ../src/servicetab.glade:441
 #: ../src/servicetab.glade:1922
 msgid "Configure"
-msgstr ""
+msgstr "配置"
 
 #: ../src/servicetab.glade:394
 msgid "foobar"
-msgstr ""
+msgstr "foobar"
 
 #: ../src/servicetab.glade:412
 msgid "barfoo"
-msgstr ""
+msgstr "barfoo"
 
 #: ../src/servicetab.glade:521
 msgid "Current runlevel is %s"
-msgstr "現行的執行等級為 %s"
+msgstr "現行的 runlevel 為 %s"
 
 #: ../src/servicetab.glade:764 ../src/servicetab.glade:836
 msgid "Runlevels"
-msgstr "執行等級"
+msgstr "Runlevel"
 
 #: ../src/servicetab.glade:807
 msgid "label18"
-msgstr ""
+msgstr "label18"
 
 #: ../src/servicetab.glade:940
 msgid "Start "
@@ -248,42 +249,42 @@ msgstr "狀態輸出"
 #: ../src/servicetab.glade:1260 ../src/system-config-services.glade:181
 #: ../src/system-config-services.glade:393
 msgid "_Start"
-msgstr ""
+msgstr "開始（_S）"
 
 #: ../src/servicetab.glade:1339 ../src/system-config-services.glade:225
 #: ../src/system-config-services.glade:427
 msgid "_Restart"
-msgstr ""
+msgstr "重新啟動（_R）"
 
 #: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
 #: ../src/system-config-services.glade:328
 msgid "_Enable"
-msgstr ""
+msgstr "啟用（_E）"
 
 #: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
 #: ../src/system-config-services.glade:345
 msgid "_Disable"
-msgstr ""
+msgstr "停用（_D）"
 
 #: ../src/servicetab.glade:1613
 msgid "_Configure"
-msgstr ""
+msgstr "配置（_C）"
 
 #: ../src/servicetab.glade:1653
 msgid "Button Box"
-msgstr ""
+msgstr "Button Box"
 
 #: ../src/servicetab.glade:1730
 msgid "label16"
-msgstr ""
+msgstr "label16"
 
 #: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
 msgid "Service %s:"
-msgstr ""
+msgstr "%s 服務："
 
 #: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1295
 msgid "Customize Runlevels"
-msgstr ""
+msgstr "自訂 Runlevel"
 
 #: ../src/system-config-services.glade:7
 #: ../src/system-config-services.glade:1238
@@ -292,47 +293,47 @@ msgstr "服務設定"
 
 #: ../src/system-config-services.glade:38
 msgid "_Program"
-msgstr ""
+msgstr "程式（_P）"
 
 #: ../src/system-config-services.glade:60
 msgid "Ser_vice"
-msgstr ""
+msgstr "服務（_v）"
 
 #: ../src/system-config-services.glade:113
 #: ../src/system-config-services.glade:363
 msgid "_Customize"
-msgstr ""
+msgstr "自訂化（_C）"
 
 #: ../src/system-config-services.glade:203
 #: ../src/system-config-services.glade:410
 msgid "S_top"
-msgstr ""
+msgstr "停止（_t）"
 
 #: ../src/system-config-services.glade:251
 msgid "_Help"
-msgstr "說明(_H)"
+msgstr "說明（_H）"
 
 #: ../src/system-config-services.glade:260
 msgid "_Contents"
-msgstr "內容(_C)"
+msgstr "內容（_C）"
 
 #: ../src/system-config-services.glade:288
 msgid "_About"
-msgstr ""
+msgstr "關於（_A）"
 
 #: ../src/system-config-services.glade:362
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
+msgstr "自訂化已啟用的服務所在的 runlevel"
 
 #: ../src/system-config-services.glade:558
 msgid "No service selected."
-msgstr ""
+msgstr "未選擇任何服務。"
 
 #: ../src/system-config-services.glade:620
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
-msgstr ""
+msgstr "服務一般在系統開機時便會被啟用，執行於背景中，並且會視需求被啟動。"
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
@@ -343,23 +344,23 @@ msgstr "說明"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
-msgstr ""
+msgstr "這項服務會視需求由 xinetd 服務啟用，並且在沒有工作時自動停用。"
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
-msgstr ""
+msgstr "服務資訊"
 
 #: ../src/system-config-services.glade:1199
 msgid "Status of service %s:"
-msgstr ""
+msgstr "%s 服務的狀態："
 
 #: ../src/system-config-services.glade:1236
 msgid "system-config-services"
-msgstr ""
+msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1237
 msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "版權所有 2002-2008 Red Hat, Inc. 以及貢獻人員"
 
 #: ../src/system-config-services.glade:1239
 msgid ""
@@ -377,26 +378,31 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
+"此程式為免費軟體；您可將它重新發佈與 / 或將它進行修改，您必須同意自由軟件基金會（Free Software Foundation）的 GNU 通用公共許可證（GNU General Public License）的授權條款；許可證版本 2 或任何更新的版本。\n"
+"\n"
+"此程式是為了方便社群使用，不過卻不含任何使用上的保証；甚至沒有任何適銷性上以及特定使用對象的保証。欲取得更多詳細資訊請參閱 GNU 通用公共許可證。\n"
+"\n"
+"當您取得此程式時，您應同時取得了一份 GNU 通用公共許可證。若沒有的話，請透過書信通知：Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA 來與自由軟件基金會取得聯繫。"
 
 #: ../src/system-config-services.glade:1246
 msgid "translator-credits"
-msgstr ""
+msgstr "譯者姓名：莊佳儒（tchuang@redhat.com）"
 
 #: ../src/system-config-services.glade:1391
 msgid "Runlevel _2"
-msgstr ""
+msgstr "Runlevel _2（_2）"
 
 #: ../src/system-config-services.glade:1410
 msgid "Runlevel _3"
-msgstr "執行等級 _3"
+msgstr "Runlevel _3（_3）"
 
 #: ../src/system-config-services.glade:1429
 msgid "Runlevel _4"
-msgstr "執行等級 _4"
+msgstr "Runlevel _4（_4）"
 
 #: ../src/system-config-services.glade:1448
 msgid "Runlevel _5"
-msgstr "執行等級 _5"
+msgstr "Runlevel _5（_5）"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -410,154 +416,3 @@ msgstr "服務管理"
 msgid "Services"
 msgstr "服務"
 
-#~ msgid "None"
-#~ msgstr "沒有"
-
-#~ msgid "Save Dialog"
-#~ msgstr "儲存對話窗"
-
-#~ msgid "Don't Save"
-#~ msgstr "不儲存變更"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "您已更改目前的執行等級。\n"
-#~ "您想要儲存變更嗎？"
-
-#~ msgid "Add Service"
-#~ msgstr "新增服務"
-
-#~ msgid "Service Name: "
-#~ msgstr "服務名稱: "
-
-#~ msgid "_File"
-#~ msgstr "檔案(_F)"
-
-#~ msgid "_Save Changes"
-#~ msgstr "儲存變更(_S)"
-
-#~ msgid "Revert To _Last Save"
-#~ msgstr "返回到上一次的儲存(_L)"
-
-#~ msgid "_Quit"
-#~ msgstr "離開(_Q)"
-
-#~ msgid "_View"
-#~ msgstr "檢視(_V)"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "重新整理服務清單(_R)"
-
-#~ msgid "_Actions"
-#~ msgstr "動作(_A)"
-
-#~ msgid "Delete Service"
-#~ msgstr "刪除服務"
-
-#~ msgid "_Start Service"
-#~ msgstr "啟動服務(_S)"
-
-#~ msgid "S_top Service"
-#~ msgstr "停止服務(_T)"
-
-#~ msgid "_Restart Service"
-#~ msgstr "重新啟動服務(_R)"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "編輯執行等級(_E)"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "全部執行等級(_A)"
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr "這些服務只執行一次及在背景運行。你可指定它們要在哪個執行等級啟動。"
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "現行的執行等級:"
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "正在編輯的執行等級:"
-
-#~ msgid "Status"
-#~ msgstr "狀態"
-
-#~ msgid "_Background Services"
-#~ msgstr "背景服務(_B)"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "這些服務依據需要啟動，及於工作完成後終止。需要先執行 <b>xinetd</b> 服務才"
-#~ "能使用它們。"
-
-#~ msgid "_On Demand Services"
-#~ msgstr "依據需要啟動的服務(_O)"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "確定要刪除 %s 嗎？"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "執行等級 %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "目前的執行等級是: "
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "正在編輯的執行等級: "
-
-#~ msgid "Unknown"
-#~ msgstr "未知"
-
-#~ msgid "All"
-#~ msgstr "全部"
-
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "系統服務設定工具 VERSION\n"
-#~ " 版權所有 © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat>\n"
-#~ " Bill Nottingham <notting@redhat>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "關於"
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "您必須是 root 才能執行 system-config-services。"
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "%s 失敗。 錯誤是: %s"
-
-#~ msgid " successful"
-#~ msgstr " 成功"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "必須啟動 xinetd 才能執行 %s"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "xinetd 無法重新載入給 "
-
-#~ msgid ". The error was: "
-#~ msgstr "。 錯誤是: "
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "xinetd 重新載入 %s 成功"
-
-#~ msgid "Help is not available."
-#~ msgstr "輔助說明無法使用。"
