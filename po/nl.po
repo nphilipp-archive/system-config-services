@@ -14,21 +14,20 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-20 16:11+0100\n"
-"PO-Revision-Date: 2008-02-10 14:34+0100\n"
+"PO-Revision-Date: 2008-09-25 22:22+0200\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@gmail.com>\n"
 "Language-Team: Dutch <fedora-trans-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
 
 #: ../src/gui.py:109
 msgid "Name"
-msgstr ""
+msgstr "Naam"
 
 #: ../src/gui.py:110
 msgid "Remarks"
-msgstr ""
+msgstr "Opmerkingen"
 
 #: ../src/gui.py:170 ../src/gui.py:187
 msgid "This service is being refreshed right now."
@@ -36,28 +35,28 @@ msgstr ""
 
 #: ../src/gui.py:171
 msgid "This service is enabled."
-msgstr ""
+msgstr "Deze voorziening is aangezet."
 
 #: ../src/gui.py:172
 msgid "This service is disabled."
-msgstr ""
+msgstr "Deze voorziening is uitgezet."
 
 #: ../src/gui.py:173
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr ""
+msgstr "Deze voorziening is aangezet in runlevels: %(runlevels)s"
 
 #: ../src/gui.py:188
 msgid "The status of this service is unknown."
-msgstr ""
+msgstr "De status van deze voorziening is onbekend."
 
 #: ../src/gui.py:189
 msgid "This service is stopped."
-msgstr ""
+msgstr "Deze voorziening is gestopt."
 
 #: ../src/gui.py:190
 msgid "This service is running."
-msgstr ""
+msgstr "Deze voorziening is actief."
 
 #: ../src/gui.py:191
 msgid "This service is dead."
@@ -72,7 +71,7 @@ msgstr ""
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
-msgstr ""
+msgstr "Deze voorziening wordt momenteel bijgewerkt."
 
 #: ../src/gui.py:308
 #, python-format
@@ -96,7 +95,7 @@ msgstr ""
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr ""
+msgstr "Zet de <b>%(service)s</b> voorziening aan in deze runlevels:"
 
 #: ../src/gui.py:754
 msgid ""
@@ -107,45 +106,45 @@ msgstr ""
 #: ../src/servicecontrol.py:88
 #, python-format
 msgid "Service %s not found!"
-msgstr ""
+msgstr "Voorziening %s niet gevonden!"
 
 #: ../src/servicecontrol.py:94
 #, python-format
 msgid "Service %s is running with old configuration"
-msgstr ""
+msgstr "Voorziening %s is actief met oude configuratie"
 
 #: ../src/servicecontrol.py:97
 #, python-format
 msgid "Service %s is running"
-msgstr ""
+msgstr "Voorziening %s is actief"
 
 #: ../src/servicecontrol.py:100
 #, python-format
 msgid "Service %s reports an error"
-msgstr ""
+msgstr "Voorziening %s rapporteert een fout"
 
 #: ../src/servicecontrol.py:103
 #, python-format
 msgid "Service %s is stopped"
-msgstr ""
+msgstr "Voorziening %s is gestopt"
 
 #: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
 #, python-format
 msgid "Currently enabled in runlevels %s"
-msgstr ""
+msgstr "Momenteel aangezet in runlevels %s"
 
 #: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
 #, python-format
 msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr ""
+msgstr "%(name)s in runlevels %(levels)s aanzetten"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
-msgstr ""
+msgstr "window1"
 
 #: ../src/servicetab.glade:38
 msgid "Service %s"
-msgstr ""
+msgstr "Voorziening %s"
 
 #: ../src/servicetab.glade:47 ../src/servicetab.glade:395
 #: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
@@ -159,7 +158,7 @@ msgstr "Uitzetten"
 
 #: ../src/servicetab.glade:89
 msgid "Customize"
-msgstr ""
+msgstr "Aanpassen"
 
 #: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
 msgid "Enable Default"
@@ -169,33 +168,33 @@ msgstr ""
 #: ../src/system-config-services.glade:135
 #: ../src/system-config-services.glade:1256
 msgid "Runlevel 2"
-msgstr ""
+msgstr "Runlevel 2"
 
 #: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
 #: ../src/system-config-services.glade:144
 #: ../src/system-config-services.glade:1266
 msgid "Runlevel 3"
-msgstr ""
+msgstr "Runlevel 3"
 
 #: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
 #: ../src/system-config-services.glade:153
 #: ../src/system-config-services.glade:1276
 msgid "Runlevel 4"
-msgstr ""
+msgstr "Runlevel 4"
 
 #: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
 #: ../src/system-config-services.glade:162
 #: ../src/system-config-services.glade:1286
 msgid "Runlevel 5"
-msgstr ""
+msgstr "Runlevel 5"
 
 #: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
 msgid "Enable All"
-msgstr ""
+msgstr "Alles aanzetten"
 
 #: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
 msgid "Disable All"
-msgstr ""
+msgstr "Alles uitzetten"
 
 #: ../src/servicetab.glade:235 ../src/servicetab.glade:332
 #: ../src/servicetab.glade:2135
@@ -210,15 +209,15 @@ msgstr "Herstarten"
 #: ../src/servicetab.glade:292 ../src/servicetab.glade:441
 #: ../src/servicetab.glade:1922
 msgid "Configure"
-msgstr ""
+msgstr "Configureren"
 
 #: ../src/servicetab.glade:394
 msgid "foobar"
-msgstr ""
+msgstr "foobar"
 
 #: ../src/servicetab.glade:412
 msgid "barfoo"
-msgstr ""
+msgstr "barfoo"
 
 #: ../src/servicetab.glade:521
 msgid "Current runlevel is %s"
@@ -230,7 +229,7 @@ msgstr "Runlevels"
 
 #: ../src/servicetab.glade:807
 msgid "label18"
-msgstr ""
+msgstr "label18"
 
 #: ../src/servicetab.glade:940
 msgid "Start "
@@ -242,7 +241,7 @@ msgstr "Stoppen"
 
 #: ../src/servicetab.glade:1066
 msgid "Service control"
-msgstr "Voorziening besturing"
+msgstr "Voorzieningenbesturing"
 
 #: ../src/servicetab.glade:1148
 msgid "Status output"
@@ -251,26 +250,26 @@ msgstr "Statusuitvoer"
 #: ../src/servicetab.glade:1260 ../src/system-config-services.glade:181
 #: ../src/system-config-services.glade:393
 msgid "_Start"
-msgstr ""
+msgstr "_Starten"
 
 #: ../src/servicetab.glade:1339 ../src/system-config-services.glade:225
 #: ../src/system-config-services.glade:427
 msgid "_Restart"
-msgstr ""
+msgstr "_Herstarten"
 
 #: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
 #: ../src/system-config-services.glade:328
 msgid "_Enable"
-msgstr ""
+msgstr "_Aanzetten"
 
 #: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
 #: ../src/system-config-services.glade:345
 msgid "_Disable"
-msgstr ""
+msgstr "_Uitzetten"
 
 #: ../src/servicetab.glade:1613
 msgid "_Configure"
-msgstr ""
+msgstr "_Configureren"
 
 #: ../src/servicetab.glade:1653
 msgid "Button Box"
@@ -278,15 +277,15 @@ msgstr ""
 
 #: ../src/servicetab.glade:1730
 msgid "label16"
-msgstr ""
+msgstr "label16"
 
 #: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
 msgid "Service %s:"
-msgstr ""
+msgstr "Voorziening %s:"
 
 #: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1295
 msgid "Customize Runlevels"
-msgstr ""
+msgstr "Runlevels aanpassen"
 
 #: ../src/system-config-services.glade:7
 #: ../src/system-config-services.glade:1238
@@ -295,21 +294,21 @@ msgstr "Voorzieningenconfiguratie"
 
 #: ../src/system-config-services.glade:38
 msgid "_Program"
-msgstr ""
+msgstr "_Programma"
 
 #: ../src/system-config-services.glade:60
 msgid "Ser_vice"
-msgstr ""
+msgstr "Voor_ziening"
 
 #: ../src/system-config-services.glade:113
 #: ../src/system-config-services.glade:363
 msgid "_Customize"
-msgstr ""
+msgstr "_Aanpassen"
 
 #: ../src/system-config-services.glade:203
 #: ../src/system-config-services.glade:410
 msgid "S_top"
-msgstr ""
+msgstr "S_toppen"
 
 #: ../src/system-config-services.glade:251
 msgid "_Help"
@@ -321,7 +320,7 @@ msgstr "_Inhoud"
 
 #: ../src/system-config-services.glade:288
 msgid "_About"
-msgstr ""
+msgstr "_Over"
 
 #: ../src/system-config-services.glade:362
 msgid "Customize the runlevels in which a service is enabled."
@@ -329,7 +328,7 @@ msgstr ""
 
 #: ../src/system-config-services.glade:558
 msgid "No service selected."
-msgstr ""
+msgstr "Geen voorziening geselecteerd."
 
 #: ../src/system-config-services.glade:620
 msgid ""
@@ -354,15 +353,15 @@ msgstr ""
 
 #: ../src/system-config-services.glade:1199
 msgid "Status of service %s:"
-msgstr ""
+msgstr "Status van voorziening %s:"
 
 #: ../src/system-config-services.glade:1236
 msgid "system-config-services"
-msgstr ""
+msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1237
 msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright  2002-2008 Red Hat, Inc. en medewerkers"
 
 #: ../src/system-config-services.glade:1239
 msgid ""
@@ -380,14 +379,30 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
+"Dit programma is vrije software; U kan het verspreiden en/of wijzigen onder "
+"de bepalingen van de GNU General Public License, zoals uitgegeven door de "
+"Free Software Foundation; zowel versie 2 van de licentie, of (naar vrije "
+"keuze) een latere versie.\n"
+"\n"
+"Dit programma is verspreid met de hoop dat het nuttig zal zijn, maar ZONDER "
+"ENIGE GARANTIE; zelfs zonder de impliciete garantie van VERKOOPBAARHEID of "
+"GESCHIKTHEID VOOR EEN BEPAALD DOEL. Zie de\n"
+"GNU General Public License voor meer details.\n"
+"\n"
+"U zou een kopie van de GNU General Public License, samen met dit programma, "
+"ontvangen moeten hebben; indien dat niet het geval is kunt u schrijven naar "
+"de Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, "
+"MA 02111-1307  USA"
 
 #: ../src/system-config-services.glade:1246
 msgid "translator-credits"
-msgstr ""
+msgstr "Taco Witte <T.C.Witte@phys.uu.nl>\n"
+"Tino Meinen <a.t.meinen@chello.nl>\n"
+"Peter van Egdom <p.van.egdom@gmail.com>"
 
 #: ../src/system-config-services.glade:1391
 msgid "Runlevel _2"
-msgstr ""
+msgstr "Runlevel _2"
 
 #: ../src/system-config-services.glade:1410
 msgid "Runlevel _3"
