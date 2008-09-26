@@ -12,10 +12,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-22 01:27-0700\n"
-"PO-Revision-Date: 2008-03-24 13:23+0530\n"
+"POT-Creation-Date: 2008-03-20 16:11+0100\n"
+"PO-Revision-Date: 2008-09-26 10:45-0400\n"
 "Last-Translator: Jaswinder Singh <jsingh@redhat.com>\n"
-"Language-Team: Punjabi <fedora-trans-pa@redhat.com>\n"
+"Language-Team: Punjabi <Punjabi-users@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,299 +24,391 @@ msgstr ""
 "\n"
 "\n"
 
-#  checklist.py: A class (derived from GtkTreeView) that provides a list of
-#  checkbox / text string pairs
-#  Brent Fox <bfox@redhat.com>
-#  Jeremy Katz <katzj@redhat.com>
-#  Copyright 2000-2002 Red Hat, Inc.
-#  This software may be freely redistributed under the terms of the GNU
-#  library public license.
-#  You should have received a copy of the GNU Library Public License
-#  along with this program; if not, write to the Free Software
-#  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-#  override this to make your own columns if necessary
-#  add the string columns to the tree view widget
-#  XXX need to handle the multicolumn case better still....
-#  XXX we only handle two text columns right now
-#  keep track of the number of rows we have so we can
-#  iterate over them all
-#  add the text for the number of columns we have
-#  !/usr/bin/python
-#  serviceconf.py
-#  Copyright (C) 2002 Red Hat, Inc.
-#  Authors: Tim Powers <timp@redhat.com>
-#  Bill Nottingham <notting@redhat.com>
-#  Dan Walsh <dwalsh@redhat.com>
-#  This program is free software; you can redistribute it and/or modify
-#  it under the terms of the GNU General Public License as published by
-#  the Free Software Foundation; either version 2 of the License, or
-#  (at your option) any later version.
-#  This program is distributed in the hope that it will be useful,
-#  but WITHOUT ANY WARRANTY; without even the implied warranty of
-#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#  GNU General Public License for more details.
-#  You should have received a copy of the GNU General Public License
-#  along with this program; if not, write to the Free Software
-#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-#  #
-#  # I18N
-#  #
-#: ../src/serviceconf.py:77
+#: ../src/gui.py:109
+msgid "Name"
+msgstr "ਨਾਂ"
+
+#: ../src/gui.py:110
+msgid "Remarks"
+msgstr "ਰੀਮਾਰਕ"
+
+#: ../src/gui.py:170 ../src/gui.py:187
+msgid "This service is being refreshed right now."
+msgstr "ਇਹ ਸਰਵਿਸ ਹੁਣ ਮੁੜ-ਤਾਜ਼ੀ ਕੀਤੀ ਜਾਵੇਗੀ।"
+
+#: ../src/gui.py:171
+msgid "This service is enabled."
+msgstr "ਇਹ ਸਰਵਿਸ ਯੋਗ ਕੀਤੀ ਹੈ।"
+
+#: ../src/gui.py:172
+msgid "This service is disabled."
+msgstr "ਇਹ ਸਰਵਿਸ ਅਯੋਗ ਕੀਤੀ ਹੈ।"
+
+#: ../src/gui.py:173
 #, python-format
-msgid "Are you sure you want to delete the %s?"
-msgstr "ਕੀ ਤੁਸੀਂ %s ਨੂੰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+msgid "This service is enabled in runlevels: %(runlevels)s"
+msgstr "ਇਹ ਸਰਵਿਸ ਇਸ ਰੰਨਲੈਵਲ ਵਿੱਚ ਹੈ: %(runlevels)s"
 
-#: ../src/serviceconf.py:140
+#: ../src/gui.py:188
+msgid "The status of this service is unknown."
+msgstr "ਇਸ ਸਰਵਿਸ ਦੀ ਹਾਲਤ ਅਣਜਾਣੀ ਹੈ।"
+
+#: ../src/gui.py:189
+msgid "This service is stopped."
+msgstr "ਇਹ ਸਰਵਿਸ ਰੋਕੀ ਗਈ ਹੈ।"
+
+#: ../src/gui.py:190
+msgid "This service is running."
+msgstr "ਇਹ ਸਰਵਿਸ ਚੱਲ ਰਹੀ ਹੈ।"
+
+#: ../src/gui.py:191
+msgid "This service is dead."
+msgstr "ਇਹ ਸਰਵਿਸ ਬੰਦ ਹੈ।"
+
+#: ../src/gui.py:268
 #, python-format
-msgid "Runlevel %d"
-msgstr "ਰਨਲੈਵਲ %d"
-
-#. initialize this to the runlevel we are running in. It will
-#. change when one of the optRL[3-6] are selected
-#: ../src/serviceconf.py:281
-msgid "Currently Running in Runlevel: "
-msgstr "ਇਸ ਵੇਲੇ ਰਨਲੈਵਲ ਵਿਚ ਚੱਲ ਰਿਹਾ: "
-
-#: ../src/serviceconf.py:377 ../src/serviceconf.py:480
-msgid "Editing Runlevel: "
-msgstr "ਰਨਲੈਵਲ ਸੋਧ: "
-
-#: ../src/serviceconf.py:419 ../src/servicemethods.py:57
-msgid "Unknown"
-msgstr "ਅਣਜਾਣ"
-
-#: ../src/serviceconf.py:509
-msgid "All"
-msgstr "ਸਭ"
-
-#: ../src/serviceconf.py:543
 msgid ""
-"System Services Configuration Tool VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
-" "
-msgstr ""
-"System Services Configuration Tool VERSION\n"
-" Copyright Â© 2002-2006 Red Hat, Inc.\n"
-" Tim Powers <timp@redhat.com>\n"
-" Bill Nottingham <notting@redhat.com>\n"
-" Dan Walsh <dwalsh@redhat.com>\n"
-" Brent Fox <bfox@redhat.com>\n"
-" Nils Philippsen <nphilipp@redhat.com>\n"
-" "
+"The <b>%(servicename)s</b> service is started once, usually when the system "
+"is booted, runs in the background and wakes up when needed."
+msgstr "<b>%(servicename)s</b> ਸਰਵਿਸ ਇੱਕ ਵਾਰ ਚਾਲੂ ਹੁੰਦੀ ਹੈ, ਆਮ ਕਰਕੇ ਜਦੋਂ ਸਿਸਟਮ ਬੂਟ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਬੈਕਗਰਾਊਂਡ ਵਿੱਚ ਚੱਲਦੀ ਹੈ ਅਤੇ ਲੋੜ ਮੁਤਾਬਿਕ ਵਰਤੀ ਜਾਂਦੀ ਹੈ।"
 
-#: ../src/serviceconf.py:547
-msgid "About"
-msgstr "ਇਸ ਬਾਰੇ"
+#: ../src/gui.py:282
+msgid "This service is updated currently."
+msgstr "ਹੁਣ ਇਹ ਸਰਵਿਸ ਅੱਪਡੇਟ ਹੋ ਰਹੀ ਹੈ।"
 
-#: ../src/serviceconf.py:580
+#: ../src/gui.py:308
+#, python-format
 msgid ""
-"The help viewer could not be found. To be able to view help you need to "
-"install the 'yelp' package."
+"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
+"service and ends when it has got nothing more to do."
+msgstr "<b>%(servicename)s</b> ਸਰਵਿਸ xinetd ਦੀ ਲੋੜ ਮੁਤਾਬਿਕ ਚਾਲੂ ਕੀਤੀ ਜਾਵੇਗੀ ਅਤੇ ਮੁਕੰਮਲ ਹੋਣ ਤੇ ਬੰਦ ਹੋ ਜਾਂਦੀ ਹੈ।"
+
+#: ../src/gui.py:317
+msgid ""
+"This service is enabled, but the <b>xinetd</b> package is not installed. "
+"This service does not work without it."
+msgstr "ਇਹ ਸਰਵਿਸ ਯੋਗ ਹੈ, ਪਰ <b>xinetd</b> ਪੈਕੇਜ ਇੰਸਟਾਲ ਨਹੀਂ ਹੈ। ਇਸ ਤੋਂ ਬਿਨਾਂ ਇਹ ਸਰਵਿਸ ਚਾਲੂ ਨਹੀਂ ਹੋਵੇਗੀ।"
+
+#: ../src/gui.py:323
+msgid ""
+"This service is enabled, but the <b>xinetd</b> service is not running. This "
+"service does not work without it."
+msgstr "ਇਹ ਸਰਵਿਸ ਯੋਗ ਕੀਤੀ ਹੈ, ਪਰ <b>xinetd</b> ਸਰਵਿਸ ਨਹੀਂ ਚੱਲ ਰਹੀ ਹੈ। ਇਹ ਸਰਵਿਸ ਇਸ ਤੋਂ ਬਿਨਾਂ ਕੰਮ ਨਹੀਂ ਕਰਦੀ ਹੈ।"
+
+#: ../src/gui.py:630 ../src/system-config-services.glade:1365
+#, python-format
+msgid "Enable the <b>%(service)s</b> service in these runlevels:"
+msgstr " <b>%(service)s</b> ਸਰਵਿਸ ਨੂੰ ਇਹਨਾਂ ਰੰਨਲੈਵਲਾਂ ਵਿੱਚ ਯੋਗ ਕਰੋ:"
+
+#: ../src/gui.py:754
+msgid ""
+"The help viewer could not be found. To be able to view help, the 'yelp' "
+"package needs to be installed."
 msgstr "ਸਹਾਇਤਾ ਦਰਸ਼ਕ ਨਹੀਂ ਲੱਭਿਆ। ਸਹਾਇਤਾ ਵੇਖਣ ਲਈ ਤੁਹਾਨੂੰ 'yelp' ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨਾ ਪਵੇਗਾ।"
 
-#: ../src/serviceconf.py:719
-msgid "You must run system-config-services as root."
-msgstr "ਤੁਹਾਨੂੰ system-config-services ਪ੍ਰਬੰਧਕ (root) ਦੇ ਤੌਰ ਉੱਤੇ ਚਲਾਉਣਾ ਚਾਹੀਦਾ ਹੈ।"
-
-#: ../src/servicemethods.py:58
-msgid "Running"
-msgstr "ਚੱਲ ਰਿਹਾ ਹੈ"
-
-#: ../src/servicemethods.py:59
-msgid "Stopped"
-msgstr "ਰੋਕਿਆ ਗਿਆ"
-
-#: ../src/servicemethods.py:60
-msgid "Error"
-msgstr "ਗਲਤੀ"
-
-#: ../src/servicemethods.py:283
+#: ../src/servicecontrol.py:88
 #, python-format
-msgid "%s failed. The error was: %s"
-msgstr "%s ਅਸਫਲ। ਗਲਤੀ ਇਹ ਹੈ: %s"
+msgid "Service %s not found!"
+msgstr "ਸਰਵਿਸ %s ਨਹੀਂ ਲੱਭੀ!"
 
-#: ../src/servicemethods.py:290
-msgid " successful"
-msgstr " ਸਫਲਤਾਪੂਰਕ"
-
-#: ../src/servicemethods.py:419 ../src/servicemethods.py:430
+#: ../src/servicecontrol.py:94
 #, python-format
-msgid "xinetd must be enabled for %s to run"
-msgstr "%s ਚਲਾਉਣ ਲਈ xinetd ਨੂੰ ਚਾਲੂ ਕਰਨਾ ਪਵੇਗਾ"
+msgid "Service %s is running with old configuration"
+msgstr "ਸਰਵਿਸ %s ਪੁਰਾਣੀ ਸੰਰਚਨਾ ਨਾਲ ਚੱਲ ਰਹੀ ਹੈ।"
 
-#: ../src/servicemethods.py:424
-msgid "xinetd failed to reload for "
-msgstr "xinetd ਇਸ ਨੂੰ ਲੋਡ ਕਰਨ ਵਿਚ ਅਸਫ਼ਲ"
-
-#: ../src/servicemethods.py:426
-msgid ". The error was: "
-msgstr "। ਗਲਤੀ ਸੀ: "
-
-#: ../src/servicemethods.py:428
+#: ../src/servicecontrol.py:97
 #, python-format
-msgid "xinetd reloaded %s successfully"
-msgstr "xinetd ਨੇ %s ਨੂੰ ਠੀਕ ਤਰ੍ਹਾਂ ਮੁੜ-ਚਾਲੂ ਕਰ ਲਿਆ ਹੈ"
+msgid "Service %s is running"
+msgstr "ਸਰਵਿਸ %s ਚੱਲ ਰਹੀ ਹੈ"
 
-#: ../src/serviceconf.glade.h:1
-msgid "Add Service"
-msgstr "ਸੇਵਾ ਸ਼ਾਮਿਲ"
+#: ../src/servicecontrol.py:100
+#, python-format
+msgid "Service %s reports an error"
+msgstr "ਸਰਵਿਸ %s ਨੇ ਇੱਕ ਗਲਤੀ ਦਿੱਤੀ ਹੈ"
 
-#: ../src/serviceconf.glade.h:2
-msgid "Current Active Runlevel: "
-msgstr "ਇਸ ਵੇਲੇ ਸਰਗਰਮ ਰੰਨਲੈਵਲ: "
+#: ../src/servicecontrol.py:103
+#, python-format
+msgid "Service %s is stopped"
+msgstr "ਸਰਵਿਸ %s ਰੋਕੀ ਗਈ ਹੈ"
 
-#: ../src/serviceconf.glade.h:3
-msgid "Delete Service"
-msgstr "ਸੇਵਾ ਹਟਾਓ"
+#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
+#, python-format
+msgid "Currently enabled in runlevels %s"
+msgstr "ਇਸ ਵੇਲੇ ਰਨਲੈਵਲ %s ਵਿਚ ਚੱਲ ਰਿਹਾ"
 
-#: ../src/serviceconf.glade.h:4
-msgid "Description"
-msgstr "ਵੇਰਵਾ"
+#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
+#, python-format
+msgid "Enable %(name)s in runlevels %(levels)s"
+msgstr "%(name)s ਨੂੰ ਰੰਨਲੈਵਲਾਂ %(levels)s ਵਿੱਚ ਯੋਗ ਕਰੋ"
 
-#: ../src/serviceconf.glade.h:5
-msgid "Don't Save"
-msgstr "ਨਾ ਸੰਭਾਲੋ"
+#: ../src/servicetab.glade:8
+msgid "window1"
+msgstr "window1"
 
-#: ../src/serviceconf.glade.h:6
-msgid "Editing Runlevel:"
-msgstr "ਰੰਨਲੈਵਲ ਸੋਧ:"
+#: ../src/servicetab.glade:38
+msgid "Service %s"
+msgstr "ਸਰਵਿਸ %s"
 
-#: ../src/serviceconf.glade.h:7
-msgid "None"
-msgstr "ਕੁਝ ਨਹੀਂ"
+#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
+#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
+msgid "Enable"
+msgstr "ਯੋਗ"
 
-#: ../src/serviceconf.glade.h:8
-msgid "Restart"
-msgstr "ਮੁਡ਼ ਚਾਲੂ"
+#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
+#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
+msgid "Disable"
+msgstr "ਅਯੋਗ"
 
-#: ../src/serviceconf.glade.h:9
-msgid "Revert To _Last Save"
-msgstr "ਆਖਰੀ ਸੰਭਾਲੇ ਲਈ ਵਾਪਿਸ(_L)"
+#: ../src/servicetab.glade:89
+msgid "Customize"
+msgstr "ਪਸੰਦ"
 
-#: ../src/serviceconf.glade.h:10
-msgid "Runlevel _3"
-msgstr "ਰਨਲੈਵਲ _3"
+#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
+msgid "Enable Default"
+msgstr "ਮੂਲ ਯਗ"
 
-#: ../src/serviceconf.glade.h:11
-msgid "Runlevel _4"
-msgstr "ਰਨਲੈਵਲ _4"
+#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
+#: ../src/system-config-services.glade:135
+#: ../src/system-config-services.glade:1256
+msgid "Runlevel 2"
+msgstr "ਰੰਨਲੈਵਲ 2"
 
-#: ../src/serviceconf.glade.h:12
-msgid "Runlevel _5"
-msgstr "ਰਨਲੈਵਲ _5"
+#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
+#: ../src/system-config-services.glade:144
+#: ../src/system-config-services.glade:1266
+msgid "Runlevel 3"
+msgstr "ਰੰਨਲੈਵਲ 3"
 
-#: ../src/serviceconf.glade.h:13
-msgid "Runlevel _All"
-msgstr "ਸਭ ਰਨ-ਲੈਵਲ(_A)"
+#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
+#: ../src/system-config-services.glade:153
+#: ../src/system-config-services.glade:1276
+msgid "Runlevel 4"
+msgstr "ਰੰਨਲੈਵਲ 4"
 
-#: ../src/serviceconf.glade.h:14
-msgid "S_top Service"
-msgstr "ਸੇਵਾ ਰੋਕੋ(_t)"
+#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
+#: ../src/system-config-services.glade:162
+#: ../src/system-config-services.glade:1286
+msgid "Runlevel 5"
+msgstr "ਰੰਨਲੈਵਲ 5"
 
-#: ../src/serviceconf.glade.h:15
-msgid "Save Dialog"
-msgstr "ਵਾਰਤਾਲਾਪ ਸੰਭਾਲੋ"
+#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
+msgid "Enable All"
+msgstr "ਸਭ ਯੋਗ"
 
-#: ../src/serviceconf.glade.h:16
-msgid "Service Configuration"
-msgstr "ਸੇਵਾ ਸੰਰਚਨਾ"
+#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
+msgid "Disable All"
+msgstr "ਸਭ ਅਯੋਗ"
 
-#: ../src/serviceconf.glade.h:17
-msgid "Service Name: "
-msgstr "ਸੇਵਾ ਨਾਂ: "
-
-#: ../src/serviceconf.glade.h:18
+#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
+#: ../src/servicetab.glade:2135
 msgid "Start"
 msgstr "ਸ਼ੁਰੂ"
 
-#: ../src/serviceconf.glade.h:19
-msgid "Status"
-msgstr "ਹਾਲਤ"
+#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
+#: ../src/servicetab.glade:2156
+msgid "Restart"
+msgstr "ਮੁਡ਼ ਚਾਲੂ"
 
-#: ../src/serviceconf.glade.h:20
+#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
+#: ../src/servicetab.glade:1922
+msgid "Configure"
+msgstr "ਸੰਰਚਨਾ"
+
+#: ../src/servicetab.glade:394
+msgid "foobar"
+msgstr "foobar"
+
+#: ../src/servicetab.glade:412
+msgid "barfoo"
+msgstr "barfoo"
+
+#: ../src/servicetab.glade:521
+msgid "Current runlevel is %s"
+msgstr "ਮੌਜੂਦਾ ਰੰਨਲੈਵਲ %s ਹੈ"
+
+#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
+msgid "Runlevels"
+msgstr "ਰਨਲੈਵਲ"
+
+#: ../src/servicetab.glade:807
+msgid "label18"
+msgstr "label18"
+
+#: ../src/servicetab.glade:940
+msgid "Start "
+msgstr "ਸ਼ੁਰੂ "
+
+#: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
 msgid "Stop"
 msgstr "ਰੋਕੋ"
 
-#: ../src/serviceconf.glade.h:21
-msgid ""
-"These services are started on demand and end when there is nothing more to "
-"do. The <b>xinetd</b> service must be running so that they can be used."
-msgstr ""
-"ਇਹ ਸੇਵਾਵਾਂ ਨੂੰ ਮੰਗ ਕਰਨ ਉੱਤੇ ਸ਼ੁਰੂ ਕੀਤਾ ਜਾਂਦਾ ਹੈ ਅਤੇ ਕੁਝ ਲੋੜ ਨਾ ਹੋਣ ਦੀ ਹਾਲਤ ਵਿੱਚ ਬੰਦ। "
-"<b>xinetd</b> ਚੱਲਦੀ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ ਤਾਂ ਕਿ ਇਹਨਾਂ ਨੂੰ ਵਰਤਿਆ ਜਾ ਸਕੇ।"
+#: ../src/servicetab.glade:1066
+msgid "Service control"
+msgstr "ਸਰਵਿਸ ਕੰਟਰੋਲ"
 
-#: ../src/serviceconf.glade.h:22
-msgid ""
-"These services are started once and run in the background. You can specify "
-"in which runlevels they are started."
-msgstr ""
-"ਇਹ ਸੇਵਾਵਾਂ ਨੂੰ ਇੱਕ ਵਾਰ ਸ਼ੁਰੂ ਕੀਤਾ ਜਾਂਦਾ ਹੈ ਅਤੇ ਬੈਕਗਰਾਊਂਡ ਵਿੱਚ ਚਲਾਇਆ ਜਾਂਦਾ ਹੈ। ਤੁਸੀਂ ਉਹਨਾਂ ਦੇ ਚੱਲਣ "
-"ਸਮੇਂ ਰਨ-ਲੈਵਲ ਦੇ ਸਕਦੇ ਹੋ।"
+#: ../src/servicetab.glade:1148
+msgid "Status output"
+msgstr "ਹਾਲਤ ਆਊਟਪੁੱਟ"
 
-#: ../src/serviceconf.glade.h:23
-msgid ""
-"You have made changes to the current runlevel.\n"
-"Do you want to save the changes?"
-msgstr ""
-"ਤੁਸੀਂ ਮੌਜੂਦਾ ਰਨ-ਲੈਵਲ ਵਿੱਚ ਕੁਝ ਤਬਦੀਲੀਆਂ ਕੀਤੀਆਂ ਹਨ।\n"
-"ਕੀ ਤੁਸੀਂ ਇਹਨਾਂ ਨੂੰ ਸੰਭਾਲਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:181
+#: ../src/system-config-services.glade:393
+msgid "_Start"
+msgstr "ਸ਼ੁਰੂ(_S)"
 
-#: ../src/serviceconf.glade.h:25
-msgid "_Actions"
-msgstr "ਕਾਰਵਾਈ(_A)"
+#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:225
+#: ../src/system-config-services.glade:427
+msgid "_Restart"
+msgstr "ਮੁਡ਼ ਚਾਲੂ(_R)"
 
-#: ../src/serviceconf.glade.h:26
-msgid "_Background Services"
-msgstr "ਬੈਕਗਰਾਊਂਡ ਸੇਵਾਵਾਂ(_B)"
+#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
+#: ../src/system-config-services.glade:328
+msgid "_Enable"
+msgstr "ਯੋਗ(_E)"
 
-#: ../src/serviceconf.glade.h:27
-msgid "_Contents"
-msgstr "ਭਾਗ(_C)"
+#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
+#: ../src/system-config-services.glade:345
+msgid "_Disable"
+msgstr "ਅਯੋਗ(_D)"
 
-#: ../src/serviceconf.glade.h:28
-msgid "_Edit Runlevel"
-msgstr "ਰਨਲੈਵਲ ਸੋਧ(_E)"
+#: ../src/servicetab.glade:1613
+msgid "_Configure"
+msgstr "ਸੰਰਚਨਾ(_C)"
 
-#: ../src/serviceconf.glade.h:29
-msgid "_File"
-msgstr "ਫਾਇਲ(_F)"
+#: ../src/servicetab.glade:1653
+msgid "Button Box"
+msgstr "ਬਟਨ ਬਾਕਸ"
 
-#: ../src/serviceconf.glade.h:30
+#: ../src/servicetab.glade:1730
+msgid "label16"
+msgstr "label16"
+
+#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
+msgid "Service %s:"
+msgstr "ਸਰਵਿਸ %s:"
+
+#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1295
+msgid "Customize Runlevels"
+msgstr "ਪਸੰਦੀ ਦੇ ਰੰਨਲੈਵਲ"
+
+#: ../src/system-config-services.glade:7
+#: ../src/system-config-services.glade:1238
+msgid "Service Configuration"
+msgstr "ਸਰਵਿਸ ਸੰਰਚਨਾ"
+
+#: ../src/system-config-services.glade:38
+msgid "_Program"
+msgstr "ਪਰੋਗਰਾਮ(_P)"
+
+#: ../src/system-config-services.glade:60
+msgid "Ser_vice"
+msgstr "ਸਰਵਿਸ(_v)"
+
+#: ../src/system-config-services.glade:113
+#: ../src/system-config-services.glade:363
+msgid "_Customize"
+msgstr "ਪਸੰਦ(_C)"
+
+#: ../src/system-config-services.glade:203
+#: ../src/system-config-services.glade:410
+msgid "S_top"
+msgstr "ਰੋਕੋ(_t)"
+
+#: ../src/system-config-services.glade:251
 msgid "_Help"
 msgstr "ਸਹਾਇਤਾ(_H)"
 
-#: ../src/serviceconf.glade.h:31
-msgid "_On Demand Services"
-msgstr "ਲੋੜ ਪੈਣ ਉੱਤੇ ਸੇਵਾਵਾਂ(_O)"
+#: ../src/system-config-services.glade:260
+msgid "_Contents"
+msgstr "ਭਾਗ(_C)"
 
-#: ../src/serviceconf.glade.h:32
-msgid "_Quit"
-msgstr "ਬਾਹਰ(_Q)"
+#: ../src/system-config-services.glade:288
+msgid "_About"
+msgstr "ਇਸ ਬਾਰੇ(_A)"
 
-#: ../src/serviceconf.glade.h:33
-msgid "_Refresh Service List"
-msgstr "ਸੇਵਾ ਸੂਚੀ ਮੁੜ ਤਾਜ਼ਾ(_R)"
+#: ../src/system-config-services.glade:362
+msgid "Customize the runlevels in which a service is enabled."
+msgstr "ਰੰਨਲੈਵਲ ਦੀ ਸੋਧ ਕਰੋ ਜਿਸ ਵਿੱਚ ਸਰਵਿਸ ਯੋਗ ਹੈ।"
 
-#: ../src/serviceconf.glade.h:34
-msgid "_Restart Service"
-msgstr "ਸੇਵਾ ਮੁਡ਼ ਚਾਲੂ(_R)"
+#: ../src/system-config-services.glade:558
+msgid "No service selected."
+msgstr "ਕੋਈ ਸਰਵਿਸ ਨਹੀਂ ਚੁਣੀ ਹੈ।"
 
-#: ../src/serviceconf.glade.h:35
-msgid "_Save Changes"
-msgstr "ਤਬਦੀਲੀਆਂ ਸੰਭਾਲੋ(_S)"
+#: ../src/system-config-services.glade:620
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr "ਇਹ ਸਰਵਿਸ ਇੱਕ ਵਾਰ ਚੱਲਦੀ ਹੈ ਜਦੋਂ ਸਿਸਟਮ ਬੂਟ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਬੈਕਗਰਾਊਂਡ ਵਿੱਚ ਚੱਲਦੀ ਹੈ ਅਤੇ ਲੋੜ ਮੁਤਾਬਿਕ ਵਰਤੀ ਜਾਂਦੀ ਹੈ।"
 
-#: ../src/serviceconf.glade.h:36
-msgid "_Start Service"
-msgstr "ਸੇਵਾ ਚਾਲੂ ਕਰੋ(_S)"
+#: ../src/system-config-services.glade:807
+#: ../src/system-config-services.glade:1006
+msgid "Description"
+msgstr "ਵੇਰਵਾ"
 
-#: ../src/serviceconf.glade.h:37
-msgid "_View"
-msgstr "ਵੇਖੋ(_V)"
+#: ../src/system-config-services.glade:874
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has got nothing more to do."
+msgstr "ਇਹ ਸਰਵਿਸ xinetd ਸਰਵਿਸ ਦੁਆਰਾ ਲੋੜ ਮੁਤਾਬਿਕ ਚਾਲੂ ਕੀਤੀ ਜਾਵੇਗੀ ਅਤੇ ਮੁਕੰਮਲ ਹੋਣ ਤੇ ਬੰਦ ਹੋ ਜਾਵੇਗੀ।"
+
+#: ../src/system-config-services.glade:1080
+msgid "Service Information"
+msgstr "ਸਰਵਿਸ ਜਾਣਕਾਰੀ"
+
+#: ../src/system-config-services.glade:1199
+msgid "Status of service %s:"
+msgstr "ਸਰਵਿਸ %s ਦੀ ਹਾਲਤ:"
+
+#: ../src/system-config-services.glade:1236
+msgid "system-config-services"
+msgstr "system-config-services"
+
+#: ../src/system-config-services.glade:1237
+msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
+msgstr "ਕਾਪੀਰਾਈਟ  2002-2008 Red Hat, Inc. ਅਤੇ ਹਿੱਸੇਦਾਰ"
+
+#: ../src/system-config-services.glade:1239
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+"ਇਹ ਪਰੋਗਰਾਮ ਫਰੀ ਸਾਫਟਵੇਅਰ ਹੈ; ਤੁਸੀਂ ਇਸ ਨੂੰ ਫਰੀ ਸਾਫਟਵੇਅਰ ਫਾਊਂਡੇਸ਼ਨ ਦੁਆਰਾ ਪਬਲਿਸ਼ GNU ਜਨਰਲ ਪਬਲਿਕ ਲਾਈਸੈੰਸ ਦੀਆਂ ਸ਼ਰਤਾਂ ਅਨੁਸਾਰ ਮੁੜ-ਵੰਡ ਅਤੇ/ਜਾਂ ਸੋਧ ਸਕਦੇ ਹੋ; ਲਾਈਸੈੰਸ ਦਾ ਜਾਂ ਤਾਂ ਵਰਜਨ , ਜਾਂ (ਤੁਹਾਡੇ ਅਨੁਸਾਰ) ਬਾਅਦ ਵਾਲਾ।\n"
+"\n"
+"ਇਸ ਪਰੋਗਰਾਮ ਨੂੰ ਵੰਡਿਆ ਜਾਂਦਾ ਹੈ ਤਾਂ ਕਿ ਇਹ ਵਰਤੋਂਯੋਗ ਹੋਵੇਗਾ, ਪਰ ਬਿਨਾਂ ਕਿਸੇ ਵਾਰੰਟੀ;ਵਪਾਰ ਦੀ ਜਾਂ ਖਾਸ ਉਦੇਸ਼ ਦੀ ਪੂਰਤੀ ਵਾਸਤੇ ਵਾਰੰਟੀ ਤੋਂ ਬਿਨਾਂ। ਵਿਸਥਾਰ ਲਈ\n"
+"GNU ਜਨਰਲ ਪਬਲਿਕ ਲਾਈਸੈੰਸ ਵੇਖੋ।\n"
+"\n"
+"ਤੁਹਾਨੂੰ ਇਸ ਪਰੋਗਰਾਮ ਨਾਲ GNU ਜਨਰਲ ਪਬਲਿਕ ਲਾਈਸੈੰਸ ਦੀ ਨਕਲ ਮਿਲਣੀ ਚਾਹੀਦੀ ਹੈ; ਜੇ ਨਹੀਂ, ਤਾਂ ਫਰੀ ਸਾਫਟਵੇਅਰ ਫਾਊਂਡੇਸ਼ਨ, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA ਨੂੰ ਦੱਸੋ।"
+
+#: ../src/system-config-services.glade:1246
+msgid "translator-credits"
+msgstr "ਜਸਵਿੰਦਰ ਸਿੰਘ <jsingh@redhat.com>"
+
+#: ../src/system-config-services.glade:1391
+msgid "Runlevel _2"
+msgstr "ਰੰਨਲੈਵਲ _2"
+
+#: ../src/system-config-services.glade:1410
+msgid "Runlevel _3"
+msgstr "ਰੰਨਲੈਵਲ _3"
+
+#: ../src/system-config-services.glade:1429
+msgid "Runlevel _4"
+msgstr "ਰੰਨਲੈਵਲ _4"
+
+#: ../src/system-config-services.glade:1448
+msgid "Runlevel _5"
+msgstr "ਰੰਨਲੈਵਲ _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -328,5 +420,5 @@ msgstr "ਸੇਵਾ ਪਰਬੰਧ"
 
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
-msgstr "ਸੇਵਾਵਾਂ"
+msgstr "ਸਰਵਿਸਾਂ"
 
