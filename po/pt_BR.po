@@ -1,5 +1,5 @@
-# translation of s-c-s-pt_BR.po to Brazilian Portuguese
-# Brazilian Portuguese localization of Red Hat Linux
+# Brazilian Portuguese translation of system-config-services.
+# This file is distributed under the same license as the system-config-services package.
 # Originated from the Portuguese translation by
 # Pedro Morais <morais@kde.org>
 # José Nuno Pires <jncp@netcabo.pt>
@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: s-c-s-pt_BR\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-20 16:11+0100\n"
-"PO-Revision-Date: 2008-04-02 00:35-0300\n"
+"PO-Revision-Date: 2008-09-26 11:18-0300\n"
 "Last-Translator: Igor Pires Soares <igor@projetofedora.org>\n"
 "Language-Team: Brazilian Portuguese <fedora-trans-pt_br@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -167,45 +167,45 @@ msgstr "Personalizar"
 #: ../src/servicetab.glade:110
 #: ../src/servicetab.glade:2013
 msgid "Enable Default"
-msgstr "Habilitar por Padrão"
+msgstr "Habilitar por padrão"
 
 #: ../src/servicetab.glade:137
 #: ../src/servicetab.glade:2040
 #: ../src/system-config-services.glade:135
 #: ../src/system-config-services.glade:1256
 msgid "Runlevel 2"
-msgstr "Nível de Execução 2"
+msgstr "Nível de execução 2"
 
 #: ../src/servicetab.glade:147
 #: ../src/servicetab.glade:2050
 #: ../src/system-config-services.glade:144
 #: ../src/system-config-services.glade:1266
 msgid "Runlevel 3"
-msgstr "Nível de Execução 3"
+msgstr "Nível de execução 3"
 
 #: ../src/servicetab.glade:157
 #: ../src/servicetab.glade:2060
 #: ../src/system-config-services.glade:153
 #: ../src/system-config-services.glade:1276
 msgid "Runlevel 4"
-msgstr "Nível de Execução 4"
+msgstr "Nível de execução 4"
 
 #: ../src/servicetab.glade:167
 #: ../src/servicetab.glade:2070
 #: ../src/system-config-services.glade:162
 #: ../src/system-config-services.glade:1286
 msgid "Runlevel 5"
-msgstr "Nível de Execução 5"
+msgstr "Nível de execução 5"
 
 #: ../src/servicetab.glade:183
 #: ../src/servicetab.glade:2086
 msgid "Enable All"
-msgstr "Habilitar Todos"
+msgstr "Habilitar todos"
 
 #: ../src/servicetab.glade:204
 #: ../src/servicetab.glade:2107
 msgid "Disable All"
-msgstr "Desabilitar Todos"
+msgstr "Desabilitar todos"
 
 #: ../src/servicetab.glade:235
 #: ../src/servicetab.glade:332
@@ -240,7 +240,7 @@ msgstr "O nível de execução atual é o %s"
 #: ../src/servicetab.glade:764
 #: ../src/servicetab.glade:836
 msgid "Runlevels"
-msgstr "Níveis de Execução"
+msgstr "Níveis de execução"
 
 #: ../src/servicetab.glade:807
 msgid "label18"
@@ -307,12 +307,12 @@ msgstr "Serviço %s:"
 #: ../src/servicetab.glade:1991
 #: ../src/system-config-services.glade:1295
 msgid "Customize Runlevels"
-msgstr "Personalizar Níveis de Execução "
+msgstr "Personalizar níveis de execução "
 
 #: ../src/system-config-services.glade:7
 #: ../src/system-config-services.glade:1238
 msgid "Service Configuration"
-msgstr "Configuração dos Serviços"
+msgstr "Configuração dos serviços"
 
 #: ../src/system-config-services.glade:38
 msgid "_Program"
@@ -367,7 +367,7 @@ msgstr "Este serviço será iniciado sob demanda através do serviço xinetd e p
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
-msgstr "Informações do Serviço"
+msgstr "Informações do serviço"
 
 #: ../src/system-config-services.glade:1199
 msgid "Status of service %s:"
@@ -390,7 +390,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Este programa é um software livre; você pode redistribui-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU (GNU General Public License) publicada pela Free Software Foundation; tanto na versão 2 da Licença, quanto (a seu critério) qualquer versão mais nova.\n"
+"Este programa é um software livre; você pode redistribuí-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU (GNU General Public License) publicada pela Free Software Foundation; tanto na versão 2 da Licença, quanto (a seu critério) qualquer versão mais nova.\n"
 "\n"
 "Este programa é distribuído na esperança de ser útil, mas SEM NENHUMA GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou ADEQUAÇÃO A UM PROPÓSITO EM PARTICULAR. Veja a Licença Pública Geral GNU (GNU General Public License) para mais detalhes.\n"
 "\n"
@@ -399,32 +399,36 @@ msgstr ""
 #: ../src/system-config-services.glade:1246
 msgid "translator-credits"
 msgstr ""
-"Diego Búrigo Zacarão <diegobz@projetofedora.org>\n"
-"Igor Pires Soares <igor@projetofedora.org>"
+"David Barzilay <barzilay@redhat.com>\n"
+"Daniel Brooke Peig <daniel@brookepeig.com>\n"
+"Pedro Fernandes Macedo <webmaster@margo.bijoux.nom.br>\n"
+"Rodrigo Padula de Oliveira <rodrigopadula@projetofedora.org>\n"
+"Igor Pires Soares <igor@projetofedora.org>\n"
+"Diego Búrigo Zacarão <diegobz@projetofedora.org>"
 
 #: ../src/system-config-services.glade:1391
 msgid "Runlevel _2"
-msgstr "Nível de Execução _2"
+msgstr "Nível de execução _2"
 
 #: ../src/system-config-services.glade:1410
 msgid "Runlevel _3"
-msgstr "Nível de Execução _3"
+msgstr "Nível de execução _3"
 
 #: ../src/system-config-services.glade:1429
 msgid "Runlevel _4"
-msgstr "Nível de Execução _4"
+msgstr "Nível de execução _4"
 
 #: ../src/system-config-services.glade:1448
 msgid "Runlevel _5"
-msgstr "Nível de Execução _5"
+msgstr "Nível de execução _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "Configurar quais serviços serão executados quando o sistema for iniciado"
+msgstr "Configure quais serviços serão executados quando o sistema for iniciado"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr "Gerenciamento do Serviço"
+msgstr "Gerenciamento do serviço"
 
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
