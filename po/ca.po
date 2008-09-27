@@ -2,7 +2,7 @@
 # Copyright © 2004, 2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the
 #  system-config-services package.
-# Xavier Conde Rueda <xaviconde@gmail.com>, 2004, 2006
+# Xavier Conde Rueda <xaviconde@gmail.com>, 2004-8
 #
 # This file is translated according to the glossary and style guide of
 #   Softcatalà. If you plan to modify this file, please read first the page
@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-20 16:11+0100\n"
-"PO-Revision-Date: 2006-10-06 00:47+0200\n"
+"PO-Revision-Date: 2008-09-27 00:47+0200\n"
 "Last-Translator: Xavier Conde Rueda <xaviconde@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
 "MIME-Version: 1.0\n"
@@ -30,44 +30,44 @@ msgstr ""
 
 #: ../src/gui.py:109
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: ../src/gui.py:110
 msgid "Remarks"
-msgstr ""
+msgstr "Comentaris"
 
 #: ../src/gui.py:170 ../src/gui.py:187
 msgid "This service is being refreshed right now."
-msgstr ""
+msgstr "Aquest servei s'està refrescant."
 
 #: ../src/gui.py:171
 msgid "This service is enabled."
-msgstr ""
+msgstr "Aquest servei està habilitat."
 
 #: ../src/gui.py:172
 msgid "This service is disabled."
-msgstr ""
+msgstr "Aquest servei està inhabilitat."
 
 #: ../src/gui.py:173
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr ""
+msgstr "Aquest servei està habilitat en els nivells: %(runlevels)s"
 
 #: ../src/gui.py:188
 msgid "The status of this service is unknown."
-msgstr ""
+msgstr "L'estat del servei és desconegut."
 
 #: ../src/gui.py:189
 msgid "This service is stopped."
-msgstr ""
+msgstr "El servei està aturat."
 
 #: ../src/gui.py:190
 msgid "This service is running."
-msgstr ""
+msgstr "El servei s'està executant."
 
 #: ../src/gui.py:191
 msgid "This service is dead."
-msgstr ""
+msgstr "El servei ha mort."
 
 #: ../src/gui.py:268
 #, python-format
@@ -75,10 +75,12 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
+"El servei <b>%(servicename)s</b> s'inicia una vegada, normalment quan el "
+"sistema arrenca, s'executa en segon terme i es desperta quan se'l necessita."
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
-msgstr ""
+msgstr "Aquest servei s'actualitza actualment."
 
 #: ../src/gui.py:308
 #, python-format
@@ -86,72 +88,80 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
 msgstr ""
+"El servei <b>%(servicename)s</b> serà iniciat per l'xinetd quan se'l demani "
+"i acaba quan no té res més a fer."
 
 #: ../src/gui.py:317
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
+"El servei està habilitat, però el paquet <b>xinetd</b> no està instal·lat. "
+"Aquest servei no funcionarà sense ell."
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
+"El servei està habilitat, però el servei <b>xinetd</b> no s'està executant. "
+"Aquest servei no funcionarà sense ell."
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr ""
+msgstr "Habilita el servei <b>%(service)s</b> en aquests nivells:"
 
 #: ../src/gui.py:754
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
+"No s'ha trobat el visualitzador d'ajuda. Per poder veure l'ajuda, us cal "
+"instal·lar el paquet «yelp»."
 
 #: ../src/servicecontrol.py:88
 #, python-format
 msgid "Service %s not found!"
-msgstr ""
+msgstr "No s'ha trobat el servei %s"
 
 #: ../src/servicecontrol.py:94
 #, python-format
 msgid "Service %s is running with old configuration"
-msgstr ""
+msgstr "El servei %s s'executa amb la configuració antiga"
 
 #: ../src/servicecontrol.py:97
 #, python-format
 msgid "Service %s is running"
-msgstr ""
+msgstr "S'està executant el servei %s"
 
 #: ../src/servicecontrol.py:100
 #, python-format
 msgid "Service %s reports an error"
-msgstr ""
+msgstr "El servei %s ha informat d'un error"
 
 #: ../src/servicecontrol.py:103
 #, python-format
 msgid "Service %s is stopped"
-msgstr ""
+msgstr "El servei %s està aturat"
 
 #: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
 #, python-format
 msgid "Currently enabled in runlevels %s"
-msgstr ""
+msgstr "Habilitat en els nivells d'execució %s"
 
 #: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
 #, python-format
 msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr ""
+msgstr "Habilita %(name)s als nivells d'execució %(levels)s"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
-msgstr ""
+msgstr " "
 
 #: ../src/servicetab.glade:38
 msgid "Service %s"
-msgstr ""
+msgstr "Servei %s"
 
 #: ../src/servicetab.glade:47 ../src/servicetab.glade:395
 #: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
@@ -165,43 +175,43 @@ msgstr "Inhabilita"
 
 #: ../src/servicetab.glade:89
 msgid "Customize"
-msgstr ""
+msgstr "Personalitza"
 
 #: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
 msgid "Enable Default"
-msgstr ""
+msgstr "Habilita el predeterminat"
 
 #: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
 #: ../src/system-config-services.glade:135
 #: ../src/system-config-services.glade:1256
 msgid "Runlevel 2"
-msgstr ""
+msgstr "Nivell d'execució 2"
 
 #: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
 #: ../src/system-config-services.glade:144
 #: ../src/system-config-services.glade:1266
 msgid "Runlevel 3"
-msgstr ""
+msgstr "Nivell d'execució 3"
 
 #: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
 #: ../src/system-config-services.glade:153
 #: ../src/system-config-services.glade:1276
 msgid "Runlevel 4"
-msgstr ""
+msgstr "Nivell d'execució 4"
 
 #: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
 #: ../src/system-config-services.glade:162
 #: ../src/system-config-services.glade:1286
 msgid "Runlevel 5"
-msgstr ""
+msgstr "Nivell d'execució 5"
 
 #: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
 msgid "Enable All"
-msgstr ""
+msgstr "Habilita'ls tots"
 
 #: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
 msgid "Disable All"
-msgstr ""
+msgstr "Inhabilita'ls tots"
 
 #: ../src/servicetab.glade:235 ../src/servicetab.glade:332
 #: ../src/servicetab.glade:2135
@@ -216,19 +226,19 @@ msgstr "Reinicia"
 #: ../src/servicetab.glade:292 ../src/servicetab.glade:441
 #: ../src/servicetab.glade:1922
 msgid "Configure"
-msgstr ""
+msgstr "Configura"
 
 #: ../src/servicetab.glade:394
 msgid "foobar"
-msgstr ""
+msgstr " "
 
 #: ../src/servicetab.glade:412
 msgid "barfoo"
-msgstr ""
+msgstr " "
 
 #: ../src/servicetab.glade:521
 msgid "Current runlevel is %s"
-msgstr "El nivell actua és %s"
+msgstr "El nivell actual és %s"
 
 #: ../src/servicetab.glade:764 ../src/servicetab.glade:836
 msgid "Runlevels"
@@ -236,7 +246,7 @@ msgstr "Nivells d'execució"
 
 #: ../src/servicetab.glade:807
 msgid "label18"
-msgstr ""
+msgstr " "
 
 #: ../src/servicetab.glade:940
 msgid "Start "
@@ -257,42 +267,42 @@ msgstr "Sortida de l'estat"
 #: ../src/servicetab.glade:1260 ../src/system-config-services.glade:181
 #: ../src/system-config-services.glade:393
 msgid "_Start"
-msgstr ""
+msgstr "_Inicia"
 
 #: ../src/servicetab.glade:1339 ../src/system-config-services.glade:225
 #: ../src/system-config-services.glade:427
 msgid "_Restart"
-msgstr ""
+msgstr "_Reinicia"
 
 #: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
 #: ../src/system-config-services.glade:328
 msgid "_Enable"
-msgstr ""
+msgstr "_Habilita"
 
 #: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
 #: ../src/system-config-services.glade:345
 msgid "_Disable"
-msgstr ""
+msgstr "Inh_abilita"
 
 #: ../src/servicetab.glade:1613
 msgid "_Configure"
-msgstr ""
+msgstr "_Configura"
 
 #: ../src/servicetab.glade:1653
 msgid "Button Box"
-msgstr ""
+msgstr " "
 
 #: ../src/servicetab.glade:1730
 msgid "label16"
-msgstr ""
+msgstr " "
 
 #: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
 msgid "Service %s:"
-msgstr ""
+msgstr "Servei %s:"
 
 #: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1295
 msgid "Customize Runlevels"
-msgstr ""
+msgstr "Personalitza els nivells"
 
 #: ../src/system-config-services.glade:7
 #: ../src/system-config-services.glade:1238
@@ -301,21 +311,21 @@ msgstr "Configuració dels serveis"
 
 #: ../src/system-config-services.glade:38
 msgid "_Program"
-msgstr ""
+msgstr "_Programa"
 
 #: ../src/system-config-services.glade:60
 msgid "Ser_vice"
-msgstr ""
+msgstr "Ser_vei"
 
 #: ../src/system-config-services.glade:113
 #: ../src/system-config-services.glade:363
 msgid "_Customize"
-msgstr ""
+msgstr "_Personalitza"
 
 #: ../src/system-config-services.glade:203
 #: ../src/system-config-services.glade:410
 msgid "S_top"
-msgstr ""
+msgstr "A_tura"
 
 #: ../src/system-config-services.glade:251
 msgid "_Help"
@@ -327,21 +337,23 @@ msgstr "_Contingut"
 
 #: ../src/system-config-services.glade:288
 msgid "_About"
-msgstr ""
+msgstr "_Quant a"
 
 #: ../src/system-config-services.glade:362
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
+msgstr "Personalitza els nivells en què s'habilitarà un servei."
 
 #: ../src/system-config-services.glade:558
 msgid "No service selected."
-msgstr ""
+msgstr "No s'ha seleccionat cap servei."
 
 #: ../src/system-config-services.glade:620
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
+"Aquest servei s'inicia una vegada, normalment quan s'arrenca el sistema, "
+"s'executa en segon terme i es desperta quan se'l necessita."
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
@@ -353,22 +365,24 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
 msgstr ""
+"Aquest servei s'inicia per l'xinetd quan es demani i finalitza quan no "
+"té res més a fer."
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
-msgstr ""
+msgstr "Informació del servei"
 
 #: ../src/system-config-services.glade:1199
 msgid "Status of service %s:"
-msgstr ""
+msgstr "Estat del servei %s:"
 
 #: ../src/system-config-services.glade:1236
 msgid "system-config-services"
-msgstr ""
+msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1237
 msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright  2002-2008 Red Hat, Inc. i col·laboradors"
 
 #: ../src/system-config-services.glade:1239
 msgid ""
@@ -389,11 +403,11 @@ msgstr ""
 
 #: ../src/system-config-services.glade:1246
 msgid "translator-credits"
-msgstr ""
+msgstr "Xavier Conde Rueda <xaviconde@gmail.com>"
 
 #: ../src/system-config-services.glade:1391
 msgid "Runlevel _2"
-msgstr ""
+msgstr "Nivell d'execució _3"
 
 #: ../src/system-config-services.glade:1410
 msgid "Runlevel _3"
