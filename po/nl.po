@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-20 16:11+0100\n"
-"PO-Revision-Date: 2008-09-25 22:22+0200\n"
+"PO-Revision-Date: 2008-09-29 23:18+0200\n"
 "Last-Translator: Peter van Egdom <p.van.egdom@gmail.com>\n"
 "Language-Team: Dutch <fedora-trans-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -31,7 +31,7 @@ msgstr "Opmerkingen"
 
 #: ../src/gui.py:170 ../src/gui.py:187
 msgid "This service is being refreshed right now."
-msgstr ""
+msgstr "Deze voorziening wordt op dit moment ververst."
 
 #: ../src/gui.py:171
 msgid "This service is enabled."
@@ -60,7 +60,7 @@ msgstr "Deze voorziening is actief."
 
 #: ../src/gui.py:191
 msgid "This service is dead."
-msgstr ""
+msgstr "Deze voorziening is afgesloten."
 
 #: ../src/gui.py:268
 #, python-format
@@ -68,6 +68,9 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
+"De <b>%(servicename)s</b> voorziening wordt eenmaal gestart, meestal wanneer "
+"het systeem wordt opgestart, wordt uitgevoerd in de achtergrond en wordt "
+"actief als dat nodig is."
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
@@ -79,18 +82,24 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
 msgstr ""
+"De <b>%(servicename)s</b> voorziening zal op verzoek worden gestart door de "
+"xinetd voorziening en eindigt wanneer het niets meer te doen heeft."
 
 #: ../src/gui.py:317
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
+"Deze voorziening is aangezet, maar het <b>xinetd</b> pakket is niet "
+"geïnstalleerd. Deze voorziening werkt hier niet zonder mee."
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
+"Deze voorziening is aangezet, maar de <b>xinetd</b> voorziening is niet "
+"actief. Deze voorziening werkt hier niet zonder mee."
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
@@ -102,6 +111,8 @@ msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
+"De hulpweergave kan niet worden gevonden. Om de hulp te tonen dient u het "
+"'yelp' pakket te installeren."
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -162,7 +173,7 @@ msgstr "Aanpassen"
 
 #: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
 msgid "Enable Default"
-msgstr ""
+msgstr "Standaard aanzetten"
 
 #: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
 #: ../src/system-config-services.glade:135
@@ -273,7 +284,7 @@ msgstr "_Configureren"
 
 #: ../src/servicetab.glade:1653
 msgid "Button Box"
-msgstr ""
+msgstr "Knopbox"
 
 #: ../src/servicetab.glade:1730
 msgid "label16"
@@ -324,7 +335,7 @@ msgstr "_Over"
 
 #: ../src/system-config-services.glade:362
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
+msgstr "Pas de runlevels aan waarin een voorziening is aangezet."
 
 #: ../src/system-config-services.glade:558
 msgid "No service selected."
@@ -335,6 +346,9 @@ msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
+"Deze voorziening wordt eenmaal gestart, meestal wanneer het systeem wordt "
+"opgestart, wordt uitgevoerd in de achtergrond en wordt actief als dat nodig "
+"is."
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
@@ -346,10 +360,12 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
 msgstr ""
+"Deze voorziening zal op verzoek worden gestart door de xinetd voorziening en "
+"eindigt wanneer het niets meer te doen heeft."
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
-msgstr ""
+msgstr "Voorzieningeninformatie"
 
 #: ../src/system-config-services.glade:1199
 msgid "Status of service %s:"
@@ -391,12 +407,13 @@ msgstr ""
 "\n"
 "U zou een kopie van de GNU General Public License, samen met dit programma, "
 "ontvangen moeten hebben; indien dat niet het geval is kunt u schrijven naar "
-"de Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, "
-"MA 02111-1307  USA"
+"de Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA "
+"02111-1307  USA"
 
 #: ../src/system-config-services.glade:1246
 msgid "translator-credits"
-msgstr "Taco Witte <T.C.Witte@phys.uu.nl>\n"
+msgstr ""
+"Taco Witte <T.C.Witte@phys.uu.nl>\n"
 "Tino Meinen <a.t.meinen@chello.nl>\n"
 "Peter van Egdom <p.van.egdom@gmail.com>"
 
