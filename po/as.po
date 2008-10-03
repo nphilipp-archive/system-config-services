@@ -1,4 +1,4 @@
-# translation of system-config-services.tip.as.po to Assamese
+# translation of system-config-services.tip.po to Assamese
 # This file is distributed under the same license as the system-config-services package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
@@ -7,10 +7,10 @@
 # Amitakhya Phukan <aphukan@fedoraproject.org>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.tip.as\n"
+"Project-Id-Version: system-config-services.tip\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-20 16:11+0100\n"
-"PO-Revision-Date: 2008-01-31 17:19+0530\n"
+"PO-Revision-Date: 2008-09-30 17:33+0530\n"
 "Last-Translator: Amitakhya Phukan <aphukan@fedoraproject.org>\n"
 "Language-Team: Assamese\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../src/gui.py:109
 msgid "Name"
-msgstr ""
+msgstr "নাম"
 
 #: ../src/gui.py:110
 msgid "Remarks"
@@ -29,36 +29,36 @@ msgstr ""
 
 #: ../src/gui.py:170 ../src/gui.py:187
 msgid "This service is being refreshed right now."
-msgstr ""
+msgstr "এই সেৱা এতিয়া সতেজ কৰা হৈছে ।"
 
 #: ../src/gui.py:171
 msgid "This service is enabled."
-msgstr ""
+msgstr "এই সেৱা সক্ৰিয় ।"
 
 #: ../src/gui.py:172
 msgid "This service is disabled."
-msgstr ""
+msgstr "এই সেৱা নিষ্ক্ৰিয় ।"
 
 #: ../src/gui.py:173
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr ""
+msgstr "এই চলনাস্তৰসমূহত এই সেৱা সক্ৰিয়: %(runlevels)s"
 
 #: ../src/gui.py:188
 msgid "The status of this service is unknown."
-msgstr ""
+msgstr "এই সেৱাৰ অৱস্থা অজ্ঞাত ।"
 
 #: ../src/gui.py:189
 msgid "This service is stopped."
-msgstr ""
+msgstr "এই সেৱা বন্ধ ।"
 
 #: ../src/gui.py:190
 msgid "This service is running."
-msgstr ""
+msgstr "এই সেৱা চলি আছে ।"
 
 #: ../src/gui.py:191
 msgid "This service is dead."
-msgstr ""
+msgstr "এই সেৱা অন্ত হ'ল ।"
 
 #: ../src/gui.py:268
 #, python-format
@@ -69,7 +69,7 @@ msgstr ""
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
-msgstr ""
+msgstr "এই সেৱা বৰ্ত্তমানে উন্নত কৰা হৈছে ।"
 
 #: ../src/gui.py:308
 #, python-format
@@ -104,7 +104,7 @@ msgstr ""
 #: ../src/servicecontrol.py:88
 #, python-format
 msgid "Service %s not found!"
-msgstr ""
+msgstr "%s সেৱা পোৱা ন'গ'ল!"
 
 #: ../src/servicecontrol.py:94
 #, python-format
@@ -114,7 +114,7 @@ msgstr ""
 #: ../src/servicecontrol.py:97
 #, python-format
 msgid "Service %s is running"
-msgstr ""
+msgstr "%s সেৱা চলি আছে"
 
 #: ../src/servicecontrol.py:100
 #, python-format
@@ -124,12 +124,12 @@ msgstr ""
 #: ../src/servicecontrol.py:103
 #, python-format
 msgid "Service %s is stopped"
-msgstr ""
+msgstr "%s সেৱা বন্ধ"
 
 #: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
 #, python-format
 msgid "Currently enabled in runlevels %s"
-msgstr ""
+msgstr "%s চলনাস্তৰত বৰ্ত্তমানে সক্ৰিয়"
 
 #: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
 #, python-format
@@ -138,11 +138,11 @@ msgstr ""
 
 #: ../src/servicetab.glade:8
 msgid "window1"
-msgstr ""
+msgstr "window1"
 
 #: ../src/servicetab.glade:38
 msgid "Service %s"
-msgstr ""
+msgstr "%s সেৱা"
 
 #: ../src/servicetab.glade:47 ../src/servicetab.glade:395
 #: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
@@ -380,7 +380,7 @@ msgstr ""
 
 #: ../src/system-config-services.glade:1246
 msgid "translator-credits"
-msgstr ""
+msgstr "অমিতাক্ষ ফুকন (aphukan@fedoraproject.org)"
 
 #: ../src/system-config-services.glade:1391
 msgid "Runlevel _2"
@@ -410,160 +410,3 @@ msgstr "সেৱাৰ পৰিচালনা"
 msgid "Services"
 msgstr "সেৱাসমূহ"
 
-#~ msgid "None"
-#~ msgstr "কোনো নাই"
-
-#~ msgid "Save Dialog"
-#~ msgstr "কথোপকথন ৰক্ষা কৰক"
-
-#~ msgid "Don't Save"
-#~ msgstr "ৰক্ষা নকৰিব"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "চলনাস্তৰত আপুনি সাল সলনি কৰিছে ।\n"
-#~ "এই সলনিসমূহ আপুনি ৰক্ষা কৰিব খোজে নেকি ?"
-
-#~ msgid "Add Service"
-#~ msgstr "সেৱা যোগ কৰক"
-
-#~ msgid "Service Name: "
-#~ msgstr "সেৱাৰ নাম:"
-
-#~ msgid "_File"
-#~ msgstr "নথিপত্ৰ (_F)"
-
-#~ msgid "_Save Changes"
-#~ msgstr "সলনি ৰক্ষা কৰক (_S)"
-
-#~ msgid "Revert To _Last Save"
-#~ msgstr "শেহতীয়া ৰক্ষালৈ প্ৰত্যাৱৰ্তন কৰক (_L)"
-
-#~ msgid "_Quit"
-#~ msgstr "এৰি যাওক (_Q)"
-
-#~ msgid "_View"
-#~ msgstr "চাওক (_V)"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "সেৱাৰ তালিকা পুনৰ সবল কৰক (_R)"
-
-#~ msgid "_Actions"
-#~ msgstr "ক্ৰিয়া (_A)"
-
-#~ msgid "Delete Service"
-#~ msgstr "সেৱাক আঁতৰাওক"
-
-#~ msgid "_Start Service"
-#~ msgstr "সেৱা আৰম্ভ কৰক (_S)"
-
-#~ msgid "S_top Service"
-#~ msgstr "সেৱা বন্ধ কৰক (_t)"
-
-#~ msgid "_Restart Service"
-#~ msgstr "সেৱা পুনৰাৰম্ভ কৰক (_R)"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "চলনাস্তৰ সম্পাদন কৰক (_E)"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "সকলো চলনাস্তৰ (_A)"
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "এই সেৱাসমূহ এবাৰ আৰম্ভ কৰা হয় আৰু পৃষ্ঠভূমিত চলে । কোনটো চলনাস্তৰত চলিব লাগে "
-#~ "আপুনি নিৰ্দ্দিষ্ট কৰিব পাৰে ।"
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "বৰ্ত্তমান সক্ৰীয় চলনাস্তৰ:"
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "সম্পাদন কৰা চলনাস্তৰ:"
-
-#~ msgid "Status"
-#~ msgstr "অৱস্থা"
-
-#~ msgid "_Background Services"
-#~ msgstr "পৃষ্ঠভূমিত চলা সেৱা (_B)"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "এই সেৱাসমূহ দাবি কৰাৰ মতে আৰম্ভ কৰা হয় আৰু কাৰ্য্য সম্পূৰ্ণ হওঁতে অন্ত হয় । এই "
-#~ "সেৱাসমূহ প্ৰয়োগ কৰিব'লৈ হ'লে <b>xinetd</b>সেৱা চলি থাকিব লাগিব ।"
-
-#~ msgid "_On Demand Services"
-#~ msgstr "দাবি কৰা মতে সেৱা (_O)"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "আপুনি %s আঁতৰাব'লৈ নিশ্চিত নে"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "চলনাস্তৰ %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "বৰ্ত্তমানে চলা চলনাস্তৰ:"
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "সম্পাদন কৰা চলনাস্তৰ:"
-
-#~ msgid "Unknown"
-#~ msgstr "অজ্ঞাত"
-
-#~ msgid "All"
-#~ msgstr "সকলো"
-
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "বিষয়ে"
-
-#~ msgid ""
-#~ "The help viewer could not be found. To be able to view help you need to "
-#~ "install the 'yelp' package."
-#~ msgstr ""
-#~ "সহায় প্ৰদৰ্শক পোৱা ন'গ'ল । সহায় চাবলৈ আপুনি 'yelp' সৰঞ্জাম সংস্থাপন কৰিব লাগিব "
-#~ "।"
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "আপুনি system-config-services অকল ৰূট হিচাপেহে চলাব লাগে ।"
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "%s অক্ষম হ'ল । ভুলতো আছিল: %s"
-
-#~ msgid " successful"
-#~ msgstr "সফল"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "%s ক চলোৱাৰ বাবে xinetd সক্ষম কৰিব লাগিব"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "ইয়াৰ বাবে xinetd পুনঃ তুলি লোৱাত ভুল হ'ল"
-
-#~ msgid ". The error was: "
-#~ msgstr "। ভুলতো আছিল:"
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "xinetdয়ে %s পুনঃ তুলি ল'ব'লৈ সফল হ'ল"
