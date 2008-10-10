@@ -858,35 +858,62 @@ class GUI (object):
     def __init__ (self, use_dbus = True):
         global serviceherders, services
 
-        self.use_dbus = use_dbus
         self.mainloop = gobject.MainLoop ()
 
-        if not use_dbus:
-            import gamin
-            import scservices.core.serviceherders as serviceherders
-            import scservices.core.services as services
-            self._filemon = gamin.WatchMonitor ()
-            self._filemon_fd = self._filemon.get_fd ()
-            gobject.io_add_watch (self._filemon_fd,
-                    gobject.IO_IN | gobject.IO_PRI,
-                    self._mon_handle_events)
+        if use_dbus == None:
+            if os.getuid () != 0 and os.geteuid () != 0:
+                use_dbus = True
+            else:
+                use_dbus = False
+
+        serviceherders = None
+        services = None
+        if use_dbus:
+            serviceherders, services = self.dbus_init ()
+            if serviceherders and services:
+                self.use_dbus = True
         else:
-            import dbus
-            import dbus.mainloop.glib
-            import scservices.dbus.proxy.serviceherders as serviceherders
-            import scservices.dbus.proxy.services as services
-            dbus.mainloop.glib.DBusGMainLoop (set_as_default=True)
-            self._bus = dbus.SystemBus ()
+            serviceherders, services = self.direct_init ()
+            if serviceherders and services:
+                self.use_dbus = False
+
+        if not serviceherders or not services:
+            import sys
+            if use_dbus != False:
+                print >>sys.stderr, "Setting up DBus connection failed."
+            if use_dbus != True:
+                print >>sys.stderr, "Acquiring direct service control failed."
+            print >>sys.stderr, "Exiting."
+            sys.exit (1)
 
         self.serviceherders = []
         for cls in serviceherders.herder_classes:
-            if not use_dbus:
+            if not self.use_dbus:
                 self.serviceherders.append (cls (mon = self._filemon))
             else:
                 self.serviceherders.append (cls (bus = self._bus))
 
         self.mainWindow = MainWindow (mainloop = self.mainloop,
                 serviceherders = self.serviceherders)
+
+    def dbus_init (self):
+        import dbus.mainloop.glib
+        import scservices.dbus.proxy.serviceherders as serviceherders
+        import scservices.dbus.proxy.services as services
+        dbus.mainloop.glib.DBusGMainLoop (set_as_default=True)
+        self._bus = dbus.SystemBus ()
+        return serviceherders, services
+
+    def direct_init (self):
+        import gamin
+        import scservices.core.serviceherders as serviceherders
+        import scservices.core.services as services
+        self._filemon = gamin.WatchMonitor ()
+        self._filemon_fd = self._filemon.get_fd ()
+        gobject.io_add_watch (self._filemon_fd,
+                gobject.IO_IN | gobject.IO_PRI,
+                self._mon_handle_events)
+        return serviceherders, services
 
     def _mon_handle_events (self, source, condition, data = None):
         self._filemon.handle_events ()
@@ -904,7 +931,9 @@ if __name__ == "__main__":
 
     if "--no-dbus" in sys.argv[1:]:
         use_dbus = False
-    else:
+    elif "--dbus" in sys.argv[1:]:
         use_dbus = True
+    else:
+        use_dbus = None
 
     GUI (use_dbus = use_dbus).run ()
