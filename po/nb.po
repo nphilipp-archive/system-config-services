@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: system-config-services 0.99.8\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-20 16:11+0100\n"
-"PO-Revision-Date: 2008-03-13 14:12+0100\n"
+"PO-Revision-Date: 2008-10-11 12:17+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@broadpark.no>\n"
 "Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -16,44 +16,44 @@ msgstr ""
 
 #: ../src/gui.py:109
 msgid "Name"
-msgstr ""
+msgstr "Navn"
 
 #: ../src/gui.py:110
 msgid "Remarks"
-msgstr ""
+msgstr "Kommentarer"
 
 #: ../src/gui.py:170 ../src/gui.py:187
 msgid "This service is being refreshed right now."
-msgstr ""
+msgstr "Tjenesten oppdateres akkurat nå."
 
 #: ../src/gui.py:171
 msgid "This service is enabled."
-msgstr ""
+msgstr "Denne tjenesten er slått på."
 
 #: ../src/gui.py:172
 msgid "This service is disabled."
-msgstr ""
+msgstr "Denne tjenesten er slått av."
 
 #: ../src/gui.py:173
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr ""
+msgstr "Denne tjenesten er slått på i kjøringsnivå: %(runlevels)s"
 
 #: ../src/gui.py:188
 msgid "The status of this service is unknown."
-msgstr ""
+msgstr "Status for denne tjenesten er ukjent."
 
 #: ../src/gui.py:189
 msgid "This service is stopped."
-msgstr ""
+msgstr "Tjenesten er stoppet."
 
 #: ../src/gui.py:190
 msgid "This service is running."
-msgstr ""
+msgstr "Tjenesten kjører."
 
 #: ../src/gui.py:191
 msgid "This service is dead."
-msgstr ""
+msgstr "Tjenesten er død."
 
 #: ../src/gui.py:268
 #, python-format
@@ -64,7 +64,7 @@ msgstr ""
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
-msgstr ""
+msgstr "Denne tjenesten oppdateres for tiden."
 
 #: ../src/gui.py:308
 #, python-format
@@ -99,7 +99,7 @@ msgstr ""
 #: ../src/servicecontrol.py:88
 #, python-format
 msgid "Service %s not found!"
-msgstr ""
+msgstr "Tjeneste %s ikke funnet!"
 
 #: ../src/servicecontrol.py:94
 #, python-format
@@ -109,17 +109,17 @@ msgstr ""
 #: ../src/servicecontrol.py:97
 #, python-format
 msgid "Service %s is running"
-msgstr ""
+msgstr "Tjeneste %s kjører"
 
 #: ../src/servicecontrol.py:100
 #, python-format
 msgid "Service %s reports an error"
-msgstr ""
+msgstr "Tjeneste %s rapporterer en feil"
 
 #: ../src/servicecontrol.py:103
 #, python-format
 msgid "Service %s is stopped"
-msgstr ""
+msgstr "Tjeneste %s er stoppet"
 
 #: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
 #, python-format
@@ -137,21 +137,21 @@ msgstr ""
 
 #: ../src/servicetab.glade:38
 msgid "Service %s"
-msgstr ""
+msgstr "Tjeneste %s"
 
 #: ../src/servicetab.glade:47 ../src/servicetab.glade:395
 #: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
 msgid "Enable"
-msgstr ""
+msgstr "Slå på"
 
 #: ../src/servicetab.glade:68 ../src/servicetab.glade:413
 #: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
 msgid "Disable"
-msgstr ""
+msgstr "Slå av"
 
 #: ../src/servicetab.glade:89
 msgid "Customize"
-msgstr ""
+msgstr "Tilpass"
 
 #: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
 msgid "Enable Default"
@@ -161,33 +161,33 @@ msgstr ""
 #: ../src/system-config-services.glade:135
 #: ../src/system-config-services.glade:1256
 msgid "Runlevel 2"
-msgstr ""
+msgstr "Kjøringsnivå 2"
 
 #: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
 #: ../src/system-config-services.glade:144
 #: ../src/system-config-services.glade:1266
 msgid "Runlevel 3"
-msgstr ""
+msgstr "Kjøringsnivå 3"
 
 #: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
 #: ../src/system-config-services.glade:153
 #: ../src/system-config-services.glade:1276
 msgid "Runlevel 4"
-msgstr ""
+msgstr "Kjøringsnivå 4"
 
 #: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
 #: ../src/system-config-services.glade:162
 #: ../src/system-config-services.glade:1286
 msgid "Runlevel 5"
-msgstr ""
+msgstr "Kjøringsnivå 5"
 
 #: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
 msgid "Enable All"
-msgstr ""
+msgstr "Slå på alle"
 
 #: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
 msgid "Disable All"
-msgstr ""
+msgstr "Slå av alle"
 
 #: ../src/servicetab.glade:235 ../src/servicetab.glade:332
 #: ../src/servicetab.glade:2135
@@ -202,23 +202,23 @@ msgstr "Start på nytt"
 #: ../src/servicetab.glade:292 ../src/servicetab.glade:441
 #: ../src/servicetab.glade:1922
 msgid "Configure"
-msgstr ""
+msgstr "Konfigurer"
 
 #: ../src/servicetab.glade:394
 msgid "foobar"
-msgstr ""
+msgstr "foobar"
 
 #: ../src/servicetab.glade:412
 msgid "barfoo"
-msgstr ""
+msgstr "barfoo"
 
 #: ../src/servicetab.glade:521
 msgid "Current runlevel is %s"
-msgstr ""
+msgstr "Aktivt kjøringsnivå er %s"
 
 #: ../src/servicetab.glade:764 ../src/servicetab.glade:836
 msgid "Runlevels"
-msgstr ""
+msgstr "Kjøringsnivåer"
 
 #: ../src/servicetab.glade:807
 msgid "label18"
@@ -226,7 +226,7 @@ msgstr ""
 
 #: ../src/servicetab.glade:940
 msgid "Start "
-msgstr ""
+msgstr "Start "
 
 #: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
 msgid "Stop"
@@ -234,7 +234,7 @@ msgstr "Stopp"
 
 #: ../src/servicetab.glade:1066
 msgid "Service control"
-msgstr ""
+msgstr "Kontroll av tjenester"
 
 #: ../src/servicetab.glade:1148
 msgid "Status output"
@@ -243,26 +243,26 @@ msgstr ""
 #: ../src/servicetab.glade:1260 ../src/system-config-services.glade:181
 #: ../src/system-config-services.glade:393
 msgid "_Start"
-msgstr ""
+msgstr "_Start"
 
 #: ../src/servicetab.glade:1339 ../src/system-config-services.glade:225
 #: ../src/system-config-services.glade:427
 msgid "_Restart"
-msgstr ""
+msgstr "Sta_rt på nytt"
 
 #: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
 #: ../src/system-config-services.glade:328
 msgid "_Enable"
-msgstr ""
+msgstr "S_lå på"
 
 #: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
 #: ../src/system-config-services.glade:345
 msgid "_Disable"
-msgstr ""
+msgstr "Slå _av"
 
 #: ../src/servicetab.glade:1613
 msgid "_Configure"
-msgstr ""
+msgstr "_Konfigurer"
 
 #: ../src/servicetab.glade:1653
 msgid "Button Box"
@@ -274,7 +274,7 @@ msgstr ""
 
 #: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
 msgid "Service %s:"
-msgstr ""
+msgstr "Tjeneste %s:"
 
 #: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1295
 msgid "Customize Runlevels"
@@ -287,21 +287,21 @@ msgstr "Tjenestekonfigurasjon"
 
 #: ../src/system-config-services.glade:38
 msgid "_Program"
-msgstr ""
+msgstr "_Program"
 
 #: ../src/system-config-services.glade:60
 msgid "Ser_vice"
-msgstr ""
+msgstr "T_jeneste"
 
 #: ../src/system-config-services.glade:113
 #: ../src/system-config-services.glade:363
 msgid "_Customize"
-msgstr ""
+msgstr "T_ilpass"
 
 #: ../src/system-config-services.glade:203
 #: ../src/system-config-services.glade:410
 msgid "S_top"
-msgstr ""
+msgstr "S_topp"
 
 #: ../src/system-config-services.glade:251
 msgid "_Help"
@@ -313,7 +313,7 @@ msgstr "_Innhold"
 
 #: ../src/system-config-services.glade:288
 msgid "_About"
-msgstr ""
+msgstr "_Om"
 
 #: ../src/system-config-services.glade:362
 msgid "Customize the runlevels in which a service is enabled."
@@ -321,7 +321,7 @@ msgstr ""
 
 #: ../src/system-config-services.glade:558
 msgid "No service selected."
-msgstr ""
+msgstr "Ingen tjeneste valgt."
 
 #: ../src/system-config-services.glade:620
 msgid ""
@@ -342,19 +342,19 @@ msgstr ""
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
-msgstr ""
+msgstr "Informasjon om tjeneste"
 
 #: ../src/system-config-services.glade:1199
 msgid "Status of service %s:"
-msgstr ""
+msgstr "Status for tjeneste %s:"
 
 #: ../src/system-config-services.glade:1236
 msgid "system-config-services"
-msgstr ""
+msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1237
 msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Opphavsrett 2002-2008 Red Hat, Inc. og bidragsytere"
 
 #: ../src/system-config-services.glade:1239
 msgid ""
@@ -375,11 +375,11 @@ msgstr ""
 
 #: ../src/system-config-services.glade:1246
 msgid "translator-credits"
-msgstr ""
+msgstr "Kjartan Maraas <kmaraas@broadpark.no>"
 
 #: ../src/system-config-services.glade:1391
 msgid "Runlevel _2"
-msgstr ""
+msgstr "Kjøringsnivå _2"
 
 #: ../src/system-config-services.glade:1410
 msgid "Runlevel _3"
@@ -404,170 +404,3 @@ msgstr "Håndtering av tjenester"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Tjenester"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "Er du sikker på at du ønsker å slette %s?"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "Kjøringsnivå %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "Aktiv runlevel: "
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "Redigerer runlevel: "
-
-#~ msgid "Unknown"
-#~ msgstr "Ukjent"
-
-#~ msgid "All"
-#~ msgstr "Alle"
-
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "Konfigurasjonsverktøy for systemtjenester VERSJON\n"
-#~ " Opphavsrett © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "Om"
-
-#~ msgid ""
-#~ "The help viewer could not be found. To be able to view help you need to "
-#~ "install the 'yelp' package."
-#~ msgstr ""
-#~ "Program for visning av hjelp ble ikke funnet. Du må installere pakken "
-#~ "«yelp» for å kunne vise hjelp."
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "Du må kjøre system-config-services som root."
-
-#~ msgid "Running"
-#~ msgstr "Kjører"
-
-#~ msgid "Stopped"
-#~ msgstr "Stoppet"
-
-#~ msgid "Error"
-#~ msgstr "Feil"
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "%s feilet. Feilen var: %s"
-
-#~ msgid " successful"
-#~ msgstr " suksess"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "xinetd må kjøre for å kunne bruke %s"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "xinetd kunne ikke laste konfigurasjonsfilen for "
-
-#~ msgid ". The error was: "
-#~ msgstr ". Feilen var: "
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "xinetd fullførte gjenlasting av %s"
-
-#~ msgid "Add Service"
-#~ msgstr "Legg til tjeneste"
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "Aktivt kjøringsnivå: "
-
-#~ msgid "Delete Service"
-#~ msgstr "Slett tjeneste"
-
-#~ msgid "Don't Save"
-#~ msgstr "Ikke lagre"
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "Redigerer kjøringsnivå:"
-
-#~ msgid "None"
-#~ msgstr "Ingen"
-
-#~ msgid "Revert To _Last Save"
-#~ msgstr "Gå ti_lbake til forrige lagring"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "_Alle kjøringsnivå"
-
-#~ msgid "S_top Service"
-#~ msgstr "S_topp tjenesten"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Dialog for lagring"
-
-#~ msgid "Service Name: "
-#~ msgstr "Navn på tjeneste:"
-
-#~ msgid "Status"
-#~ msgstr "Status"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "Disse tjenestene startes etter behov og avsluttes når det ikke er mer "
-#~ "arbeid for dem. <b>xinetd</b>-tjenesten må kjøre for at disse kan brukes."
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Disse tjenestene startes en gang og kjører i bakgrunnen. Du kan oppgi "
-#~ "hvilke kjøringsnivå disse startes i."
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Du har gjort endringer i aktivt kjøringsnivå.\n"
-#~ "Vil du lagre endringene?"
-
-#~ msgid "_Actions"
-#~ msgstr "H_andlinger"
-
-#~ msgid "_Background Services"
-#~ msgstr "_Bakgrunnstjenester"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "Redigerer kjøringsnivå"
-
-#~ msgid "_File"
-#~ msgstr "_Fil"
-
-#~ msgid "_On Demand Services"
-#~ msgstr "Tjenester som startes etter beh_ov"
-
-#~ msgid "_Quit"
-#~ msgstr "A_vslutt"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "_Oppdater tjenestelisten"
-
-#~ msgid "_Restart Service"
-#~ msgstr "Sta_rt tjenesten på nytt"
-
-#~ msgid "_Save Changes"
-#~ msgstr "_Lagre endringer"
-
-#~ msgid "_Start Service"
-#~ msgstr "_Start tjenester"
-
-#~ msgid "_View"
-#~ msgstr "_Vis"
