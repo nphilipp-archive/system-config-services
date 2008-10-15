@@ -27,6 +27,7 @@ import gobject
 import gtk
 import gtk.glade
 
+import slip.dbus.polkit
 import slip.gtk
 
 import gettext
@@ -855,13 +856,16 @@ class MainWindow (GladeController):
 ##############################################################################
 
 class GUI (object):
+    polkit_actions = ( "org.fedoraproject.config.services.info",
+            "org.fedoraproject.config.services.manage" )
+
     def __init__ (self, use_dbus = True):
         global serviceherders, services
 
         self.mainloop = gobject.MainLoop ()
 
         if use_dbus == None:
-            if os.getuid () != 0 and os.geteuid () != 0:
+            if slip.dbus.polkit.AreAuthorizationsObtainable (self.polkit_actions):
                 use_dbus = True
             else:
                 use_dbus = False
