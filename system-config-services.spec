@@ -11,7 +11,7 @@
 
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.99.23
+Version: 0.99.24
 Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/SystemConfig/services
 # We are upstream, thus the source is only available from within this source
@@ -107,6 +107,28 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Wed Oct 15 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.24-1
+- use slip.dbus.polkit.AreAuthorizationsObtainable() to determine whether to
+  use the dbus backend or not (#461688)
+- pull in updated translations
+
+* Fri Oct 10 2008 Nils Philippsen <nphilipp@redhat.com>
+- default to not using dbus as root and using dbus otherwise (#461688)
+
+* Mon Oct 06 2008 Nils Philippsen <nphilipp@redhat.com>
+- revert erroneous po-file commit
+
+* Wed Sep 24 2008 Nils Philippsen <nphilipp@redhat.com>
+- get rid of POTFILES.in (#463592)
+
+* Wed Sep 17 2008 Nils Philippsen <nphilipp@redhat.com>
+- set whole hpaned (in)sensitive, not individual child widgets
+- display busy cursor until all services are listed
+
+* Mon Sep 15 2008 Nils Philippsen <nphilipp@redhat.com>
+- make details notebook (in)sensitive along with services list
+- remove debug print
+
 * Fri Sep 12 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.23-1
 - make double-thaws of notications fail
 - ensure correct order replay of frozen notifications when thawing (#460598)
