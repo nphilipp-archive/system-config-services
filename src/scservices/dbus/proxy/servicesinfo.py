@@ -22,7 +22,9 @@
 
 from scservices.dbus import dbus_service_name
 
-import slip.dbus.polkit as polkit
+import dbus
+from slip.dbus import polkit
+from slip.dbus import proxy
 
 ##############################################################################
 
@@ -35,24 +37,28 @@ class DBusServiceInfoProxy (object):
         self.dbus_service_path = self.service.dbus_service_path
         self.dbus_object = bus.get_object (dbus_service_name,
                 self.dbus_service_path)
+        self.dbus_interface = dbus.Interface (self.dbus_object, "org.fedoraproject.Config.Services.SysVService")
 
 ##############################################################################
 
 class DBusSysVServiceInfoProxy (DBusServiceInfoProxy):
     @property
+    @proxy.unknown_method_default ("")
     @polkit.enable_proxy
     def shortdescription (self):
-        return self.dbus_object.get_shortdescription (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+        return self.dbus_interface.get_shortdescription ()
 
     @property
+    @proxy.unknown_method_default ("")
     @polkit.enable_proxy
     def description (self):
-        return self.dbus_object.get_description (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+        return self.dbus_interface.get_description ()
 
 ##############################################################################
 
 class DBusXinetdServiceInfoProxy (DBusServiceInfoProxy):
     @property
+    @proxy.unknown_method_default ("")
     @polkit.enable_proxy
     def description (self):
-        return self.dbus_object.get_description (dbus_interface = "org.fedoraproject.Config.Services.XinetdService")
+        return self.dbus_interface.get_description ()
