@@ -11,7 +11,7 @@
 
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.99.24
+Version: 0.99.25
 Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/SystemConfig/services
 # We are upstream, thus the source is only available from within this source
@@ -107,6 +107,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Tue Oct 28 2008 Nils Philippsen <nils@redhat.com> - 0.99.25-1
+- let gettext return the correct encoding
+
 * Wed Oct 15 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.24-1
 - use slip.dbus.polkit.AreAuthorizationsObtainable() to determine whether to
   use the dbus backend or not (#461688)
