@@ -30,8 +30,10 @@ import gtk.glade
 import slip.dbus.polkit
 import slip.gtk
 
+import locale
+encoding = locale.getpreferredencoding ()
 import gettext
-gettext.install ('system-config-services')
+gettext.install ('system-config-services', codeset = encoding)
 
 from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED, SVC_HERDER_READY
 
