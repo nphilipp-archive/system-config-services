@@ -108,7 +108,13 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Oct 28 2008 Nils Philippsen <nils@redhat.com> - 0.99.25-1
-- let gettext return the correct encoding
+- let gettext return the correct encoding (#468351)
+- backout use of slip.dbus.proxy.unknown_method_default as this breaks things
+  drastically
+
+* Fri Oct 17 2008 Nils Philippsen <nils@redhat.com>
+- use slip.dbus.proxy.unknown_method_default to handle objects that vanished
+  from the bus
 
 * Wed Oct 15 2008 Nils Philippsen <nphilipp@redhat.com> - 0.99.24-1
 - use slip.dbus.polkit.AreAuthorizationsObtainable() to determine whether to
