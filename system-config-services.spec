@@ -162,7 +162,7 @@ rm -rf %{buildroot}
 - make monitoring of initially stopped services with pidfiles work
 
 * Mon Aug 18 2008 Nils Philippsen <nphilipp@redhat.com>
-- use %global for %%python_sitelib, %%python_version
+- use %%global for %%python_sitelib, %%python_version
 
 * Fri Aug 15 2008 Nils Philippsen <nphilipp@redhat.com>
 - remove some cruft
