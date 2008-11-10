@@ -11,7 +11,7 @@
 
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.99.25
+Version: 0.99.26
 Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/SystemConfig/services
 # We are upstream, thus the source is only available from within this source
@@ -107,6 +107,10 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Nov 10 Nils Philippsen <nils@redhat.com> - 0.99.26-1
+- make XinetdService._set_enabled() work for the first time
+- fix GUI upon disabled services (#470722)
+
 * Tue Oct 28 2008 Nils Philippsen <nils@redhat.com> - 0.99.25-1
 - let gettext return the correct encoding (#468351)
 - backout use of slip.dbus.proxy.unknown_method_default as this breaks things
