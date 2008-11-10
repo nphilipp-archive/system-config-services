@@ -439,8 +439,9 @@ class XinetdService (ChkconfigService):
         return self._enabled
 
     def _set_enabled (self, enabled):
-        if self._enabled != enabled:
-            self._enabled = enabled
+        old_enabled = getattr (self, "_enabled", None)
+        self._enabled = enabled
+        if old_enabled != enabled:
             (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig %s %s 2>/dev/null' % (self.name, self.enabled and 'on' or 'off'))
             if status != 0:
                 raise OSError ("Saving service '%s' failed, command was 'LC_ALL=C /sbin/chkconfig %s %s 2>/dev/null'." % (self.name, self.name, self.enabled and 'on' or 'off'))
