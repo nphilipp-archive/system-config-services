@@ -107,7 +107,7 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
-* Mon Nov 10 Nils Philippsen <nils@redhat.com> - 0.99.26-1
+* Mon Nov 10 2008 Nils Philippsen <nils@redhat.com> - 0.99.26-1
 - make XinetdService._set_enabled() work for the first time
 - fix GUI upon disabled services (#470722)
 
