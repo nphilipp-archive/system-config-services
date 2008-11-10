@@ -219,6 +219,7 @@ class SysVService (ChkconfigService):
 
         # disable save hook temporarily to avoid endless loops
         self.runlevels.hooks_enabled = False
+        self.runlevels.clear ()
         self.runlevels.update (runlevels)
         self.runlevels.hooks_enabled = True
 
