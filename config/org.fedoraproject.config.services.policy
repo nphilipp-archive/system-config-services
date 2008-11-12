@@ -8,7 +8,8 @@
     <description>Get information about system services</description>
     <message>System policy prevents access to system services information</message>
     <defaults>
-      <allow_inactive>no</allow_inactive>
+      <allow_any>yes</allow_any>
+      <allow_inactive>yes</allow_inactive>
       <allow_active>yes</allow_active>
     </defaults>
   </action>
@@ -16,8 +17,9 @@
     <description>Manage system services</description>
     <message>System policy prevents management of system services</message>
     <defaults>
+      <allow_any>no</allow_any>
       <allow_inactive>no</allow_inactive>
-      <allow_active>auth_admin_keep_always</allow_active>
+      <allow_active>auth_admin</allow_active>
     </defaults>
   </action>
 </policyconfig>
