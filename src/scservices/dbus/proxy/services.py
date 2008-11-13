@@ -114,11 +114,11 @@ class DBusSysVServiceProxy (DBusChkconfigServiceProxy):
         return self._runlevels
 
     def _set_runlevels (self, runlevels):
-        if self.runlevels != runlevels:
-            self.runlevels.freeze_hooks ()
-            self.runlevels.clear ()
-            self.runlevels.update (runlevels)
-            self.runlevels.thaw_hooks ()
+        if self._runlevels != runlevels:
+            self._runlevels.freeze_hooks ()
+            self._runlevels.clear ()
+            self._runlevels.update (runlevels)
+            self._runlevels.thaw_hooks ()
 
     @polkit.enable_proxy
     def _save_runlevels (self):
