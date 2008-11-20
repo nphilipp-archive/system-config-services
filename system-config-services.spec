@@ -11,7 +11,7 @@
 
 Summary: system-config-services is an initscript and xinetd configuration utility
 Name: system-config-services
-Version: 0.99.27
+Version: 0.99.28
 Release: 1%{?dist}
 URL: http://fedoraproject.org/wiki/SystemConfig/services
 # We are upstream, thus the source is only available from within this source
@@ -107,7 +107,11 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
-* Mon Nov 13 2008 Nils Philippsen <nils@redhat.com> - 0.99.27-1
+* Thu Nov 20 2008 Nils Philippsen <nils@redhat.com> - 0.99.28-1
+- improve fixing runlevels hookable set updates
+- pick up updated translations
+
+* Thu Nov 13 2008 Nils Philippsen <nils@redhat.com> - 0.99.27-1
 - fix runlevels hookable set updates (custom runlevels dialog)
 
 * Wed Nov 12 2008 Nils Philippsen <nils@redhat.com>
