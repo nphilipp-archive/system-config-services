@@ -114,6 +114,7 @@ class DBusSysVServiceProxy (DBusChkconfigServiceProxy):
         return self._runlevels
 
     def _set_runlevels (self, runlevels):
+        self.runlevels
         if self._runlevels != runlevels:
             self._runlevels.freeze_hooks ()
             self._runlevels.clear ()

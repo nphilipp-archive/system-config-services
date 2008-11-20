@@ -249,10 +249,12 @@ class SysVService (ChkconfigService):
         return self._runlevels
 
     def _set_runlevels (self, runlevels):
-        self.runlevels.freeze_hooks ()
-        self.runlevels.clear ()
-        self.runlevels.update (runlevels)
-        self.runlevels.thaw_hooks ()
+        self.runlevels
+        if self._runlevels != runlevels:
+            self._runlevels.freeze_hooks ()
+            self._runlevels.clear ()
+            self._runlevels.update (runlevels)
+            self._runlevels.thaw_hooks ()
 
     runlevels = property (_get_runlevels, _set_runlevels)
 
