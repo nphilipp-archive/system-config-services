@@ -9,7 +9,7 @@
 %bcond_with rarian_compat
 %endif
 
-Summary: system-config-services is an initscript and xinetd configuration utility
+Summary: Utility to start and stop system services
 Name: system-config-services
 Version: 0.99.28
 Release: 1%{?dist}
@@ -107,6 +107,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Nov 24 2008 Nils Philippsen <nils@redhat.com>
+- improve summary
+
 * Thu Nov 20 2008 Nils Philippsen <nils@redhat.com> - 0.99.28-1
 - improve fixing runlevels hookable set updates
 - pick up updated translations
