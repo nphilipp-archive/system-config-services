@@ -1,0 +1,6 @@
+system-config-services-*.tar.bz2
+system-config-services.desktop.in.h
+system-config-services.desktop
+po/*.mo
+src/setup.py
+src/build

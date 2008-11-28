@@ -1,40 +1,22 @@
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(0)")}
 %{!?python_version: %global python_version %(%{__python} -c "from distutils.sysconfig import get_python_version; print get_python_version()")}
 
-# Command line configurables
-
-%if 0%{?fedora}%{?rhel} == 0 || 0%{?fedora} >= 8 || 0%{?rhel} >= 6
-%bcond_without rarian_compat
-%else
-%bcond_with rarian_compat
-%endif
-
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.99.28
+Version: 0.99.29
 Release: 1%{?dist}
-URL: http://fedoraproject.org/wiki/SystemConfig/services
-# We are upstream, thus the source is only available from within this source
-# package.
-Source0: %{name}-%{version}.tar.bz2
+URL: http://fedorahosted.org/%{name}
+Source0: http://fedorahosted.org/releases/$(echo %{name} | %{__sed} 's@\(\(.\)\(.\).*\)@\2/\3/\1@')/%{name}-%{version}.tar.bz2
 License: GPLv2+
 Group: Applications/System
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires: python
 BuildRequires: python-devel
+BuildRequires: gettext
 BuildRequires: intltool
 BuildRequires: sed
 BuildRequires: desktop-file-utils
-BuildRequires: perl(XML::Parser)
-BuildRequires: gettext
-BuildRequires: gnome-doc-utils
-BuildRequires: docbook-dtds
-%if %{with rarian_compat}
-BuildRequires: rarian-compat
-%else
-BuildRequires: scrollkeeper
-%endif
 Requires: chkconfig
 Requires: gamin-python
 Requires: hicolor-icon-theme
@@ -49,6 +31,8 @@ Requires: python-slip-gtk
 Requires: PolicyKit-gnome
 Obsoletes: serviceconf <= 0.8.1
 Obsoletes: redhat-config-services <= 0.8.5
+Obsoletes: system-config-services < 0.99.29
+Conflicts: system-config-services < 0.99.29
 
 %description
 system-config-services is a utility which allows you to configure which services
@@ -89,8 +73,6 @@ rm -rf %{buildroot}
 %files -f %{name}.lang
 %defattr(-,root,root,-)
 %doc COPYING
-%doc %{_datadir}/omf/system-config-services
-%doc %{_datadir}/gnome/help/system-config-services
 %{_sbindir}/*
 %{_bindir}/*
 %{_datadir}/applications/system-config-services.desktop
@@ -107,6 +89,10 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Fri Nov 28 2008 Nils Philippsen <nils@redhat.com> - 0.99.29-1
+- split off documentation
+- remove obsolete build requirement perl(XML::Parser)
+
 * Mon Nov 24 2008 Nils Philippsen <nils@redhat.com>
 - improve summary
 

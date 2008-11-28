@@ -1,8 +1,10 @@
 # License: GPL v2 or later
 # Copyright Red Hat Inc. 2008
 
-ifndef DESTDIR
-	DESTDIR = /
+ifdef DESTDIR
+	PYDESTDIR = $(DESTDIR)
+else
+	PYDESTDIR = /
 endif
 
 ifndef PY_SOURCES
@@ -28,7 +30,7 @@ py-build:   $(_SETUP_PY) $(PY_SOURCES)
 
 py-install:	$(_SETUP_PY)
 	cd $(PY_SRC_DIR); \
-	python $(SETUP_PY) install -O1 --skip-build --root $(DESTDIR)
+	python $(SETUP_PY) install -O1 --skip-build --root $(PYDESTDIR)
 
 py-clean:	$(_SETUP_PY)
 	cd $(PY_SRC_DIR); \
