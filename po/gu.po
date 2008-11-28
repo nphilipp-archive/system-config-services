@@ -79,9 +79,8 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
-"<b>%(servicename)s</b> સેવા એકવાર શરૂ થયેલ છે, સામાન્ય રીતે જ્યારે "
-"સિસ્ટમ બુટ થયેલ હોય છે, પાશ્ર્વભાગમાં ચલાવો અને જ્યારે જરૂરિયાત હોય ત્યારે "
-"જગાડો."
+"<b>%(servicename)s</b> સેવા એકવાર શરૂ થયેલ છે, સામાન્ય રીતે જ્યારે સિસ્ટમ બુટ થયેલ હોય "
+"છે, પાશ્ર્વભાગમાં ચલાવો અને જ્યારે જરૂરિયાત હોય ત્યારે જગાડો."
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
@@ -93,24 +92,24 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
 msgstr ""
-"<b>%(servicename)s</b> સેવા xinetd સેવા દ્દારા માંગ પર શરૂ થયેલ હશે અને "
-"જ્યારે તેની પાસે કઇ વધારે કરવા માટે કંઇ ન હોય ત્યારે અંત થાય છે."
+"<b>%(servicename)s</b> સેવા xinetd સેવા દ્દારા માંગ પર શરૂ થયેલ હશે અને જ્યારે તેની પાસે "
+"કઇ વધારે કરવા માટે કંઇ ન હોય ત્યારે અંત થાય છે."
 
 #: ../src/gui.py:317
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
-"આ સેવા સક્રિય થયેલ છે, પરંતુ <b>xinetd</b> પેકેજ સ્થાપિત થયેલ નથી. "
-"આ સેવા તેના વગર કામ કરતુ નથી."
+"આ સેવા સક્રિય થયેલ છે, પરંતુ <b>xinetd</b> પેકેજ સ્થાપિત થયેલ નથી. આ સેવા તેના વગર કામ "
+"કરતુ નથી."
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
-"આ સેવા સક્રિય થયેલ છે, પરંતુ <b>xinetd</b> સેવા ચાલી નથી રહી. આ "
-"સેવા તેના વગર કામ કરતુ નથી."
+"આ સેવા સક્રિય થયેલ છે, પરંતુ <b>xinetd</b> સેવા ચાલી નથી રહી. આ સેવા તેના વગર કામ કરતુ "
+"નથી."
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
@@ -122,8 +121,8 @@ msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
-"મદદ દર્શક શોધાઇ શકાતુ નથી. મદદ દેખાવાનું સક્ષમ કરવા માટે, 'yelp' પેકેજ "
-"ને સ્થાપિત કરવુ જરૂરી છે."
+"મદદ દર્શક શોધાઇ શકાતુ નથી. મદદ દેખાવાનું સક્ષમ કરવા માટે, 'yelp' પેકેજ ને સ્થાપિત કરવુ "
+"જરૂરી છે."
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -357,8 +356,8 @@ msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
-"આ સેવા એકવાર શરૂ થયેલ છે, સામાન્ય રીતે જ્યારે સિસ્ટમ બુટ થયેલ છે, પાશ્ર્વભાગમાં ચલાવો અને જ્યારે "
-"જરૂરિયાત હોય ત્યારે જગાડો."
+"આ સેવા એકવાર શરૂ થયેલ છે, સામાન્ય રીતે જ્યારે સિસ્ટમ બુટ થયેલ છે, પાશ્ર્વભાગમાં ચલાવો અને "
+"જ્યારે જરૂરિયાત હોય ત્યારે જગાડો."
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
@@ -370,8 +369,8 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
 msgstr ""
-"xinetd સેવા દ્દારા આ સેવા માંગ પર શરૂ થયેલ હશે અને જ્યારે તેની પાસે કંઇ કરવા "
-"માટે નહિં હોય ત્યારે અંત થશે."
+"xinetd સેવા દ્દારા આ સેવા માંગ પર શરૂ થયેલ હશે અને જ્યારે તેની પાસે કંઇ કરવા માટે નહિં હોય "
+"ત્યારે અંત થશે."
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
@@ -450,4 +449,3 @@ msgstr "સેવા વ્યવસ્થાપન"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "સેવાઓ"
-

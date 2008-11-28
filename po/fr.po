@@ -73,7 +73,10 @@ msgstr "Ce service ne fonctionne plus."
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr "Le service <b>%(servicename)s</b> démarre au départ, en général, quand le système est initialisé, puis opère en arrière-plan et se réveille quand on en a besoin."
+msgstr ""
+"Le service <b>%(servicename)s</b> démarre au départ, en général, quand le "
+"système est initialisé, puis opère en arrière-plan et se réveille quand on "
+"en a besoin."
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
@@ -84,7 +87,10 @@ msgstr "Ce service est actuellement mis à jour."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
-msgstr "Le service <b>%(servicename)s</b> sera démarré à la demande par l'intermédiaire du service xinetd et sera interrompu quand il n'y a plus rien à faire."
+msgstr ""
+"Le service <b>%(servicename)s</b> sera démarré à la demande par "
+"l'intermédiaire du service xinetd et sera interrompu quand il n'y a plus "
+"rien à faire."
 
 #: ../src/gui.py:317
 msgid ""
@@ -98,7 +104,9 @@ msgstr ""
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr "Ce service est activé, mais le service <b>xinetd</b> n'est pas activé. Ce service ne fonctionne pas sans lui."
+msgstr ""
+"Ce service est activé, mais le service <b>xinetd</b> n'est pas activé. Ce "
+"service ne fonctionne pas sans lui."
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
@@ -109,7 +117,9 @@ msgstr "Activer le service <b>%(service)s</b> à ces niveaux d'exécution:"
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr "On ne peut pas trouver l'affichage d'aide. Pour pouvoir le voir, on a besoin d'installer le paquetage 'yelp'."
+msgstr ""
+"On ne peut pas trouver l'affichage d'aide. Pour pouvoir le voir, on a besoin "
+"d'installer le paquetage 'yelp'."
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -332,7 +342,8 @@ msgstr "_A propos de"
 
 #: ../src/system-config-services.glade:362
 msgid "Customize the runlevels in which a service is enabled."
-msgstr "Personaliser les niveaux d'exécution pour lesquels un service est activé."
+msgstr ""
+"Personaliser les niveaux d'exécution pour lesquels un service est activé."
 
 #: ../src/system-config-services.glade:558
 msgid "No service selected."
@@ -342,7 +353,9 @@ msgstr "Aucun service sélectionné."
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
-msgstr "Le service démarre au départ, en général, quand le système est initialisé, puis opère en arrière-plan et se réveille quand on en a besoin."
+msgstr ""
+"Le service démarre au départ, en général, quand le système est initialisé, "
+"puis opère en arrière-plan et se réveille quand on en a besoin."
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
@@ -353,7 +366,9 @@ msgstr "Description"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
-msgstr "Le service démarre à la demande du service xinetd et s'interrompt quand il n'a plus rien à faire."
+msgstr ""
+"Le service démarre à la demande du service xinetd et s'interrompt quand il "
+"n'a plus rien à faire."
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
@@ -387,13 +402,20 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Ce programme est un logiciel gratuit; vous pouvez le redistribuer et/ou le modifier sous les conditions générales de GNU General Public License (Permis grand public GNU) ainsi publiée par Free Software Foundation, soit en version 2 de la Licence, ou (c'est une option qui vous est présentée) en version supérieure.\n"
+"Ce programme est un logiciel gratuit; vous pouvez le redistribuer et/ou le "
+"modifier sous les conditions générales de GNU General Public License (Permis "
+"grand public GNU) ainsi publiée par Free Software Foundation, soit en "
+"version 2 de la Licence, ou (c'est une option qui vous est présentée) en "
+"version supérieure.\n"
 "\n"
-"Ce programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE, même sans la garantie implicite de QUALITE MARCHANDE, ni ADAPTATION POUR UN USAGE PARTICULIER. Consulter\n"
+"Ce programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE "
+"GARANTIE, même sans la garantie implicite de QUALITE MARCHANDE, ni "
+"ADAPTATION POUR UN USAGE PARTICULIER. Consulter\n"
 "GNU General Public License pour davantage d'informations.\n"
 "\n"
-"Vous devriez avoir reçu une copie de la GNU General Public License attachée à ce programme; sinon, veuillez écrire à l'adresse suivante: Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"Vous devriez avoir reçu une copie de la GNU General Public License attachée "
+"à ce programme; sinon, veuillez écrire à l'adresse suivante: Free Software "
+"Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: ../src/system-config-services.glade:1246
 msgid "translator-credits"
@@ -426,4 +448,3 @@ msgstr "Gestion des services"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Services"
-

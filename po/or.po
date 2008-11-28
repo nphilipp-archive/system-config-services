@@ -70,8 +70,8 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
-"<b>%(servicename)s</b> ସର୍ଭିସଟି ଥରେ ଆରମ୍ଭ ହୋଇଥିଲା, ସାଧାରଣତଃ ଯେତେବେଳେ ତନ୍ତ୍ରକୁ "
-"ବୁଟ କରାଯାଇଥିଲା, ପୃଷ୍ଠଭୂମିରେ ଚାଲିଥାଏ ଏବଂ ଆବଶ୍ୟକ ହେଲେ ଜାଗିଉଠିଥାଏ."
+"<b>%(servicename)s</b> ସର୍ଭିସଟି ଥରେ ଆରମ୍ଭ ହୋଇଥିଲା, ସାଧାରଣତଃ ଯେତେବେଳେ ତନ୍ତ୍ରକୁ ବୁଟ "
+"କରାଯାଇଥିଲା, ପୃଷ୍ଠଭୂମିରେ ଚାଲିଥାଏ ଏବଂ ଆବଶ୍ୟକ ହେଲେ ଜାଗିଉଠିଥାଏ."
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
@@ -82,23 +82,25 @@ msgstr "ଏହି ସର୍ଭିସକୁ ନିକଟରେ ଅଦ୍ୟତନ
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
-msgstr "<b>%(servicename)s</b> ସର୍ଭିସକୁ ଆବଶ୍ୟକ ହେଲେ xinetd ସର୍ଭିସ ଦ୍ୱାରା ଆରମ୍ଭ କରାଯିବ ଏବଂ ଯେତେବେଳେ କିଛି କରିବାର ନଥିବ ସେତେବେଳେ ସମାପ୍ତ ହୋଇଯିବ."
+msgstr ""
+"<b>%(servicename)s</b> ସର୍ଭିସକୁ ଆବଶ୍ୟକ ହେଲେ xinetd ସର୍ଭିସ ଦ୍ୱାରା ଆରମ୍ଭ କରାଯିବ ଏବଂ "
+"ଯେତେବେଳେ କିଛି କରିବାର ନଥିବ ସେତେବେଳେ ସମାପ୍ତ ହୋଇଯିବ."
 
 #: ../src/gui.py:317
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
-"ଏହି ସର୍ଭିସକୁ ସକ୍ରିୟକରାଯାଇଛି, କିନ୍ତୁ <b>xinetd</b> ପ୍ୟାକେଜଟି ସ୍ଥାପିତ ହୋଇନାହିଁ. "
-"ଏହା ବିନା ଏହି ସର୍ଭିସ କାମକରିନଥାଏ."
+"ଏହି ସର୍ଭିସକୁ ସକ୍ରିୟକରାଯାଇଛି, କିନ୍ତୁ <b>xinetd</b> ପ୍ୟାକେଜଟି ସ୍ଥାପିତ ହୋଇନାହିଁ. ଏହା ବିନା ଏହି "
+"ସର୍ଭିସ କାମକରିନଥାଏ."
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
-"ଏହି ସର୍ଭିସକୁ ସକ୍ରିୟକରାଯାଇଛି, କିନ୍ତୁ <b>xinetd</b> ପ୍ୟାକେଜଟି ଚାଲୁନାହିଁ. "
-"ଏହା ବିନା ଏହି ସର୍ଭିସ କାମକରିନଥାଏ."
+"ଏହି ସର୍ଭିସକୁ ସକ୍ରିୟକରାଯାଇଛି, କିନ୍ତୁ <b>xinetd</b> ପ୍ୟାକେଜଟି ଚାଲୁନାହିଁ. ଏହା ବିନା ଏହି ସର୍ଭିସ "
+"କାମକରିନଥାଏ."
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
@@ -110,8 +112,7 @@ msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
-"ସହାୟକ ପ୍ରଦର୍ଶକ ମିଳୁନାହିଁ. ସହାୟତା ଦେଖିବାପାଇଁ ଆପଣଙ୍କୁ 'yelp' "
-"ପ୍ଯାକେଜ ସ୍ଥାପନ କରିବାକୁ ପଡିବ."
+"ସହାୟକ ପ୍ରଦର୍ଶକ ମିଳୁନାହିଁ. ସହାୟତା ଦେଖିବାପାଇଁ ଆପଣଙ୍କୁ 'yelp' ପ୍ଯାକେଜ ସ୍ଥାପନ କରିବାକୁ ପଡିବ."
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -345,8 +346,8 @@ msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
-"ଏହି ସର୍ଭିସଟି ଥରେ ମାତ୍ର ଆରମ୍ଭ ହୋଇଥିଲା, ସାଧାରଣତଃ ଯେତେବେଳେ ତନ୍ତ୍ର ବୁଟକରାଯାଇଥିଲା, "
-"ପୃଷ୍ଠଭୂମିରେ ଚାଲୁଥାଏ ଏବଂ ଆବଶ୍ୟକ ହେଲେ ଜାଗ୍ରତ ହୋଇଥାଏ."
+"ଏହି ସର୍ଭିସଟି ଥରେ ମାତ୍ର ଆରମ୍ଭ ହୋଇଥିଲା, ସାଧାରଣତଃ ଯେତେବେଳେ ତନ୍ତ୍ର ବୁଟକରାଯାଇଥିଲା, ପୃଷ୍ଠଭୂମିରେ "
+"ଚାଲୁଥାଏ ଏବଂ ଆବଶ୍ୟକ ହେଲେ ଜାଗ୍ରତ ହୋଇଥାଏ."
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
@@ -358,8 +359,8 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
 msgstr ""
-"ଏହି ସର୍ଭିସକୁ ଆବଶ୍ୟକ ହେଲେ xinetd ସର୍ଭିସ ଦ୍ୱାରା ଆରମ୍ଭ କରାଯିବ ଏବଂ ଯେତେବେଳେ "
-"କିଛି କରିବାର ନଥିବ ସେତେବେଳେ ସମାପ୍ତ ହୋଇଯିବ."
+"ଏହି ସର୍ଭିସକୁ ଆବଶ୍ୟକ ହେଲେ xinetd ସର୍ଭିସ ଦ୍ୱାରା ଆରମ୍ଭ କରାଯିବ ଏବଂ ଯେତେବେଳେ କିଛି କରିବାର ନଥିବ "
+"ସେତେବେଳେ ସମାପ୍ତ ହୋଇଯିବ."
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
@@ -438,4 +439,3 @@ msgstr "ସେବା ପରିଚାଳନ"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "ସେବା"
-

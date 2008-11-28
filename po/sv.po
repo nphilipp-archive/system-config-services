@@ -63,7 +63,9 @@ msgstr "Denna tjänst är död."
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr "Tjänsten <b>%(servicename)s</b> startas en gång, vanligen när systemet startas upp, kör i bakgrunden och vaknar upp vid behov."
+msgstr ""
+"Tjänsten <b>%(servicename)s</b> startas en gång, vanligen när systemet "
+"startas upp, kör i bakgrunden och vaknar upp vid behov."
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
@@ -74,19 +76,25 @@ msgstr "Denna tjänst uppdateras just nu."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
-msgstr "Tjänsten <b>%(servicename)s</b> kommer att startas på begäran av tjänsten xinetd och slutar när den inte har något mer att göra."
+msgstr ""
+"Tjänsten <b>%(servicename)s</b> kommer att startas på begäran av tjänsten "
+"xinetd och slutar när den inte har något mer att göra."
 
 #: ../src/gui.py:317
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr "Denna tjänst är aktiverad, men paketet <b>xinetd</b> är inte installerat.  Denna tjänst fungerar inte utan det."
+msgstr ""
+"Denna tjänst är aktiverad, men paketet <b>xinetd</b> är inte installerat.  "
+"Denna tjänst fungerar inte utan det."
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr "Denna tjänst är aktiverad, men tjänsten <b>xinetd</b> kör inte.  Denna tjänst fungerar inte utan den."
+msgstr ""
+"Denna tjänst är aktiverad, men tjänsten <b>xinetd</b> kör inte.  Denna "
+"tjänst fungerar inte utan den."
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
@@ -97,7 +105,9 @@ msgstr "Aktivera tjänsten <b>%(service)s</b> i dessa körnivåer:"
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr "Hjälpvisaren hittades inte.  För att kunna se hjälpen behöver paketet \"yelp\" vara installerat."
+msgstr ""
+"Hjälpvisaren hittades inte.  För att kunna se hjälpen behöver paketet \"yelp"
+"\" vara installerat."
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -330,7 +340,9 @@ msgstr "Inga tjänster valda."
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
-msgstr "Denna tjänsten startas en gång, vanligen när systemet startas upp, kör i bakgrunden och vaknar upp vid behov."
+msgstr ""
+"Denna tjänsten startas en gång, vanligen när systemet startas upp, kör i "
+"bakgrunden och vaknar upp vid behov."
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
@@ -341,7 +353,9 @@ msgstr "Beskrivning"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
-msgstr "Denna tjänst kommer att startas på begäran av tjänsten xinetd och slutar när den inte har något mer att göra."
+msgstr ""
+"Denna tjänst kommer att startas på begäran av tjänsten xinetd och slutar när "
+"den inte har något mer att göra."
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
@@ -375,11 +389,19 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Detta program är fri programvara. Du kan distribuera det och/eller modifiera det under villkoren i GNU General Public License, publicerad av Free Software Foundation, antingen version 2 av licensen eller (om du så vill) någon senare version.\n"
+"Detta program är fri programvara. Du kan distribuera det och/eller modifiera "
+"det under villkoren i GNU General Public License, publicerad av Free "
+"Software Foundation, antingen version 2 av licensen eller (om du så vill) "
+"någon senare version.\n"
 "\n"
-"Detta program distribueras i hopp om att det skall vara användbart, men UTAN NÅGON GARANTI, även utan underförstådd garanti vid KÖP eller LÄMPLIGHET FÖR NÅGOT SPECIELLT ÄNDAMÅL.  Se GNU General Public License för ytterligare information.\n"
+"Detta program distribueras i hopp om att det skall vara användbart, men UTAN "
+"NÅGON GARANTI, även utan underförstådd garanti vid KÖP eller LÄMPLIGHET FÖR "
+"NÅGOT SPECIELLT ÄNDAMÅL.  Se GNU General Public License för ytterligare "
+"information.\n"
 "\n"
-"Du bör ha fått en kopia av GNU General Public License tillsammans med detta program.  Om inte, skriv till Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA."
+"Du bör ha fått en kopia av GNU General Public License tillsammans med detta "
+"program.  Om inte, skriv till Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307, USA."
 
 #: ../src/system-config-services.glade:1246
 msgid "translator-credits"

@@ -65,7 +65,9 @@ msgstr "这个服务死了。"
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr "曾启动服务 <b>%(servicename)s</b>，通常在系统引导时启动，在后台运行，并在需要时醒来。"
+msgstr ""
+"曾启动服务 <b>%(servicename)s</b>，通常在系统引导时启动，在后台运行，并在需要"
+"时醒来。"
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
@@ -76,19 +78,23 @@ msgstr "目前更新了这个服务。"
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
-msgstr "将根据 xinetd 服务的需要启动 <b>%(servicename)s</b> 服务，并在不需要时终止。"
+msgstr ""
+"将根据 xinetd 服务的需要启动 <b>%(servicename)s</b> 服务，并在不需要时终止。"
 
 #: ../src/gui.py:317
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr "激活了这个服务，但没有安装 <b>xinetd</b> 软件包。没有该软件包这个服务无法工作。"
+msgstr ""
+"激活了这个服务，但没有安装 <b>xinetd</b> 软件包。没有该软件包这个服务无法工"
+"作。"
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr "启用了这个服务，但没有运行 <b>xinetd</b> 服务。没有它这个服务无法工作。"
+msgstr ""
+"启用了这个服务，但没有运行 <b>xinetd</b> 服务。没有它这个服务无法工作。"
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
@@ -377,12 +383,14 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"这个程序是一个自由软件，您可以根据自由软件基金发布的 GNU 通用公共许可证（版本 2 或者更新的版本）来重新发布和/或者修改这个软件。\n"
+"这个程序是一个自由软件，您可以根据自由软件基金发布的 GNU 通用公共许可证（版"
+"本 2 或者更新的版本）来重新发布和/或者修改这个软件。\n"
 "\n"
-"发布这个程序是希望它可以有所帮助，但并不确定它会有所帮助，甚至不保证其商用性质或者适用于某个特定的目的。详情请参考 GNU 通用公共许可证。\n"
+"发布这个程序是希望它可以有所帮助，但并不确定它会有所帮助，甚至不保证其商用性"
+"质或者适用于某个特定的目的。详情请参考 GNU 通用公共许可证。\n"
 "\n"
-"您应该会收到此程序附带的 GNU 通用公共许可证，如果没有收到，请致信自由软件基金公司，59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA。"
+"您应该会收到此程序附带的 GNU 通用公共许可证，如果没有收到，请致信自由软件基金"
+"公司，59 Temple Place, Suite 330, Boston, MA 02111-1307  USA。"
 
 #: ../src/system-config-services.glade:1246
 msgid "translator-credits"
@@ -415,4 +423,3 @@ msgstr "服务程序管理："
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "服务"
-

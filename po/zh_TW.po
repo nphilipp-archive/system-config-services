@@ -66,7 +66,9 @@ msgstr "這項服務已終止。"
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr "<b>%(servicename)s</b> 這項服務一般會在系統開機時啟用，執行於背景中並且會視需求啟動。"
+msgstr ""
+"<b>%(servicename)s</b> 這項服務一般會在系統開機時啟用，執行於背景中並且會視需"
+"求啟動。"
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
@@ -77,19 +79,25 @@ msgstr "這項服務目前已更新。"
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
-msgstr "<b>%(servicename)s</b> 這項服務會視需求由 xinetd 服務啟用，並且在沒有工作時自動停用。"
+msgstr ""
+"<b>%(servicename)s</b> 這項服務會視需求由 xinetd 服務啟用，並且在沒有工作時自"
+"動停用。"
 
 #: ../src/gui.py:317
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr "這項服務已啟用，不過 <b>xinetd</b> 套件尚未安裝。這項服務無法在沒有此套件的情況下運作。"
+msgstr ""
+"這項服務已啟用，不過 <b>xinetd</b> 套件尚未安裝。這項服務無法在沒有此套件的情"
+"況下運作。"
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr "這項服務已啟用，不過 <b>xinetd</b> 服務尚未被執行。這項服務無法在沒有此套件的情況下運作。"
+msgstr ""
+"這項服務已啟用，不過 <b>xinetd</b> 服務尚未被執行。這項服務無法在沒有此套件的"
+"情況下運作。"
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
@@ -378,11 +386,16 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"此程式為免費軟體；您可將它重新發佈與 / 或將它進行修改，您必須同意自由軟件基金會（Free Software Foundation）的 GNU 通用公共許可證（GNU General Public License）的授權條款；許可證版本 2 或任何更新的版本。\n"
+"此程式為免費軟體；您可將它重新發佈與 / 或將它進行修改，您必須同意自由軟件基金"
+"會（Free Software Foundation）的 GNU 通用公共許可證（GNU General Public "
+"License）的授權條款；許可證版本 2 或任何更新的版本。\n"
 "\n"
-"此程式是為了方便社群使用，不過卻不含任何使用上的保証；甚至沒有任何適銷性上以及特定使用對象的保証。欲取得更多詳細資訊請參閱 GNU 通用公共許可證。\n"
+"此程式是為了方便社群使用，不過卻不含任何使用上的保証；甚至沒有任何適銷性上以"
+"及特定使用對象的保証。欲取得更多詳細資訊請參閱 GNU 通用公共許可證。\n"
 "\n"
-"當您取得此程式時，您應同時取得了一份 GNU 通用公共許可證。若沒有的話，請透過書信通知：Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA 來與自由軟件基金會取得聯繫。"
+"當您取得此程式時，您應同時取得了一份 GNU 通用公共許可證。若沒有的話，請透過書"
+"信通知：Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, "
+"MA 02111-1307  USA 來與自由軟件基金會取得聯繫。"
 
 #: ../src/system-config-services.glade:1246
 msgid "translator-credits"
@@ -415,4 +428,3 @@ msgstr "服務管理"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "服務"
-

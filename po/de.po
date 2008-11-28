@@ -75,7 +75,9 @@ msgstr "Dieser Service ist tot."
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr "Der <b>%(servicename)s</b> Service wird normalerweise, wenn das System booted ausgeführt; läuft im Hintergrund und wacht auf wenn benötigt."
+msgstr ""
+"Der <b>%(servicename)s</b> Service wird normalerweise, wenn das System "
+"booted ausgeführt; läuft im Hintergrund und wacht auf wenn benötigt."
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
@@ -86,19 +88,25 @@ msgstr "Dieser Service wird momentan upgedated."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
-msgstr "Der <b>%(servicename)s</b> Service wird auf verlangen vom xinetd-Service gestartet und beendet wenn er nichts mehr zu tun hat."
+msgstr ""
+"Der <b>%(servicename)s</b> Service wird auf verlangen vom xinetd-Service "
+"gestartet und beendet wenn er nichts mehr zu tun hat."
 
 #: ../src/gui.py:317
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr "Dieser Service ist aktiviert, aber die <b>xinetd</b> Paktete sind noch nicht installiert. Dieser Service funktioniert ohne diese Pakete."
+msgstr ""
+"Dieser Service ist aktiviert, aber die <b>xinetd</b> Paktete sind noch nicht "
+"installiert. Dieser Service funktioniert ohne diese Pakete."
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr "Dieser Service ist aktiviert, aber die <b>xinetd</b> Service wird nicht ausgeführt. Dieser Service funktioniert ohne diesen Service."
+msgstr ""
+"Dieser Service ist aktiviert, aber die <b>xinetd</b> Service wird nicht "
+"ausgeführt. Dieser Service funktioniert ohne diesen Service."
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
@@ -109,7 +117,9 @@ msgstr "Aktivieren Sie den <b>%(service)s</b> Service in diesen Runlevels:"
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr "Die Hilfsansicht konnte nicht gefunden werden. Um in der Lage zu sein Hilfe anzusehen, muss das 'yelp' -Paket installiert werden."
+msgstr ""
+"Die Hilfsansicht konnte nicht gefunden werden. Um in der Lage zu sein Hilfe "
+"anzusehen, muss das 'yelp' -Paket installiert werden."
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -342,7 +352,9 @@ msgstr "Kein Service ausgewählt"
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
-msgstr "Dieser Service wird normalerweise, wenn das System booted ausgeführt; läuft im Hintergrund und wacht auf wenn benötigt."
+msgstr ""
+"Dieser Service wird normalerweise, wenn das System booted ausgeführt; läuft "
+"im Hintergrund und wacht auf wenn benötigt."
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
@@ -353,7 +365,9 @@ msgstr "Beschreibung"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
-msgstr "Dieser Service wird auf verlangen vom xinetd-Service gestartet und beendet wenn er nichts mehr zu tun hat."
+msgstr ""
+"Dieser Service wird auf verlangen vom xinetd-Service gestartet und beendet "
+"wenn er nichts mehr zu tun hat."
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
@@ -423,7 +437,8 @@ msgstr "Runlevel _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "Konfiguriere, welche Dienste beim Starten des Systems ausgeführt werden"
+msgstr ""
+"Konfiguriere, welche Dienste beim Starten des Systems ausgeführt werden"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -432,4 +447,3 @@ msgstr "Dienste-Verwaltung"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Dienste"
-

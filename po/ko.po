@@ -16,7 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n"
+"\n"
 "\n"
 
 #: ../src/gui.py:109
@@ -65,7 +66,9 @@ msgstr "서비스가 작동하지 않습니다.  "
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr "<b>%(servicename)s</b> 서비스가 시작되면, 시스템을 부팅했을 때 백그라운드에서 실행되고 필요에 따라 활성화됩니다.  "
+msgstr ""
+"<b>%(servicename)s</b> 서비스가 시작되면, 시스템을 부팅했을 때 백그라운드에"
+"서 실행되고 필요에 따라 활성화됩니다.  "
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
@@ -76,21 +79,25 @@ msgstr "현재 이 서비스는 업데이트되어 있습니다.  "
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
-msgstr "xinetd 서비스의 요청으로 <b>%(servicename)s</b> 서비스는 시작되며 더이상 실행할 작업이 없을 때 서비스는 종료됩니다.   "
+msgstr ""
+"xinetd 서비스의 요청으로 <b>%(servicename)s</b> 서비스는 시작되며 더이상 실행"
+"할 작업이 없을 때 서비스는 종료됩니다.   "
 
 #: ../src/gui.py:317
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
-"서비스를 사용할 수 있지만, <b>xinetd</b> 패키지가 설치되어 있지 않습니다. "
-"패키지 없이 서비스는 작동하지 않습니다.  "
+"서비스를 사용할 수 있지만, <b>xinetd</b> 패키지가 설치되어 있지 않습니다. 패"
+"키지 없이 서비스는 작동하지 않습니다.  "
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr "서비스를 사용할 수 있지만, <b>xinetd</b> 서비스가 실행되고 있지 않습니다. 이 서비스를 실행하지 않고 이는 작동하지 않습니다. "
+msgstr ""
+"서비스를 사용할 수 있지만, <b>xinetd</b> 서비스가 실행되고 있지 않습니다. 이 "
+"서비스를 실행하지 않고 이는 작동하지 않습니다. "
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
@@ -336,7 +343,9 @@ msgstr "서비스가 선택되어 있지 않습니다. "
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
-msgstr "서비스가 시작되면, 시스템을 부팅했을 때 백그라운드에서 실행되고 필요에 따라 활성화됩니다.  "
+msgstr ""
+"서비스가 시작되면, 시스템을 부팅했을 때 백그라운드에서 실행되고 필요에 따라 "
+"활성화됩니다.  "
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
@@ -347,7 +356,9 @@ msgstr "설명"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
-msgstr "xinetd 서비스의 요청으로 서비스가 시작되며 더이상 실행할 작업이 없을 때 서비스가 종료됩니다.      "
+msgstr ""
+"xinetd 서비스의 요청으로 서비스가 시작되며 더이상 실행할 작업이 없을 때 서비"
+"스가 종료됩니다.      "
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
@@ -426,4 +437,3 @@ msgstr "서비스 관리"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "서비스"
-

@@ -69,8 +69,8 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
-"സിസ്റ്റം ബൂട്ട് ചെയ്യുമ്പോള്‍ <b>%(servicename)s</b> സേവനം ഒരിക്കല്‍ ആരംഭിക്കുന്നു. "
-"ശേഷം പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിക്കുന്നു, ആവശ്യമുള്ളപ്പോള്‍ പ്രത്യക്ഷത്തില്‍ വരുന്നു."
+"സിസ്റ്റം ബൂട്ട് ചെയ്യുമ്പോള്‍ <b>%(servicename)s</b> സേവനം ഒരിക്കല്‍ ആരംഭിക്കുന്നു. ശേഷം "
+"പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിക്കുന്നു, ആവശ്യമുള്ളപ്പോള്‍ പ്രത്യക്ഷത്തില്‍ വരുന്നു."
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
@@ -82,24 +82,23 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
 msgstr ""
-"xinetd സേവനത്തിന്റെ ആവശ്യപ്രകാരം <b>%(servicename)s</b> സേവനം ആരംഭിക്കുന്നു. "
-"ജോലികള്‍ പൂര്‍ത്തിയാക്കിയ ശേഷം അതു് അവസാനിക്കുന്നു"
+"xinetd സേവനത്തിന്റെ ആവശ്യപ്രകാരം <b>%(servicename)s</b> സേവനം ആരംഭിക്കുന്നു. ജോലികള്‍ "
+"പൂര്‍ത്തിയാക്കിയ ശേഷം അതു് അവസാനിക്കുന്നു"
 
 #: ../src/gui.py:317
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
-"ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് ഇന്‍സ്റ്റോള്‍ "
-"അല്ലാത്തതിനാല്‍ ഈ സേവനം പ്രവര്‍ത്തിക്കുന്നതല്ല."
+"ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് ഇന്‍സ്റ്റോള്‍ അല്ലാത്തതിനാല്‍ ഈ സേവനം "
+"പ്രവര്‍ത്തിക്കുന്നതല്ല."
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
-"ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ "
-"സേവനം പ്രവര്‍ത്തിക്കുന്നതല്ല."
+"ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സേവനം പ്രവര്‍ത്തിക്കുന്നതല്ല."
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
@@ -111,8 +110,8 @@ msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
-"സഹായം ലഭ്യമാക്കുന്ന സംവിധാനം ഇവിടെ ലഭ്യമല്ല. ഇതിനായി, 'yelp' പാക്കേജുകള്‍ "
-"ഇന്‍സ്റ്റോള്‍ ചെയ്യേണ്ടതുണ്ടു്."
+"സഹായം ലഭ്യമാക്കുന്ന സംവിധാനം ഇവിടെ ലഭ്യമല്ല. ഇതിനായി, 'yelp' പാക്കേജുകള്‍ ഇന്‍സ്റ്റോള്‍ "
+"ചെയ്യേണ്ടതുണ്ടു്."
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -346,8 +345,8 @@ msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
-"സിസ്റ്റം ബൂട്ട് ചെയ്യുമ്പോള്‍ സേവനം ഒരിക്കല്‍ ആരംഭിക്കുന്നു. ശേഷം പശ്ചാത്തലത്തില്‍ "
-"പ്രവര്‍ത്തിക്കുന്നു, ആവശ്യമുള്ളപ്പോള്‍ പ്രത്യക്ഷത്തില്‍ വരുന്നു."
+"സിസ്റ്റം ബൂട്ട് ചെയ്യുമ്പോള്‍ സേവനം ഒരിക്കല്‍ ആരംഭിക്കുന്നു. ശേഷം പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിക്കുന്നു, "
+"ആവശ്യമുള്ളപ്പോള്‍ പ്രത്യക്ഷത്തില്‍ വരുന്നു."
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
@@ -359,8 +358,8 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
 msgstr ""
-"xinetd സേവനത്തിന്റെ ആവശ്യപ്രകാരം സേവനം ആരംഭിക്കുന്നു. ജോലികള്‍ പൂര്‍ത്തിയാക്കിയ "
-"ശേഷം അതു് അവസാനിക്കുന്നു"
+"xinetd സേവനത്തിന്റെ ആവശ്യപ്രകാരം സേവനം ആരംഭിക്കുന്നു. ജോലികള്‍ പൂര്‍ത്തിയാക്കിയ ശേഷം അതു് "
+"അവസാനിക്കുന്നു"
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
@@ -394,18 +393,17 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"ഇതു് ഒരു സ്വതന്ത്ര സോഫ്റ്റ്‌വെയര്‍ ആകുന്നു; നിങ്ങള്‍ക്കിതു് ഗ്നു ജനറല്‍ പബ്ളിക് ലൈസന്‍സിന്റെ "
-"നിബന്ധനകള്‍ പ്രകാരം (രണ്ടാം ലക്കം അല്ലെങ്കില്‍ നിങ്ങളുടെ താല്‍പര്യമനുസരിച്ച് അതിലും പുതിയ ലക്കം) "
-"വീണ്ടും വിതരണം ചെയ്യുകയോ മാറ്റം വരുത്തുകയോ ചെയ്യാം. ഫ്രീ സോഫ്റ്റ്‌വെയര്‍ "
-"ഫൌണ്ടേഷന്‍ ആണു് ഈ ലൈസന്‍സ് പ്രസിദ്ധീകരിച്ചിട്ടുള്ളത്.\n"
+"ഇതു് ഒരു സ്വതന്ത്ര സോഫ്റ്റ്‌വെയര്‍ ആകുന്നു; നിങ്ങള്‍ക്കിതു് ഗ്നു ജനറല്‍ പബ്ളിക് ലൈസന്‍സിന്റെ നിബന്ധനകള്‍ "
+"പ്രകാരം (രണ്ടാം ലക്കം അല്ലെങ്കില്‍ നിങ്ങളുടെ താല്‍പര്യമനുസരിച്ച് അതിലും പുതിയ ലക്കം) വീണ്ടും "
+"വിതരണം ചെയ്യുകയോ മാറ്റം വരുത്തുകയോ ചെയ്യാം. ഫ്രീ സോഫ്റ്റ്‌വെയര്‍ ഫൌണ്ടേഷന്‍ ആണു് ഈ ലൈസന്‍സ് "
+"പ്രസിദ്ധീകരിച്ചിട്ടുള്ളത്.\n"
 "\n"
-"വളരെ ഫലപ്രദമായ പ്രോഗ്രാം എന്ന പ്രതീക്ഷയിലാകുന്നു ഇതു് വിതരണം ചെയ്യുന്നതു്. ഇതിനു് വാറന്റി ലഭ്യമല്ല. "
-"കൂടുതല്‍ വിവരങ്ങള്‍ക്കായി ഗ്നു ജനറല്‍ പബ്ളിക് ലൈസന്‍സ് കാണുക.\n"
+"വളരെ ഫലപ്രദമായ പ്രോഗ്രാം എന്ന പ്രതീക്ഷയിലാകുന്നു ഇതു് വിതരണം ചെയ്യുന്നതു്. ഇതിനു് വാറന്റി "
+"ലഭ്യമല്ല. കൂടുതല്‍ വിവരങ്ങള്‍ക്കായി ഗ്നു ജനറല്‍ പബ്ളിക് ലൈസന്‍സ് കാണുക.\n"
 "\n"
 "ഈ പ്രോഗ്രാമിനൊപ്പം നിങ്ങള്‍ക്കു് ഗ്നു ജനറല്‍ പബ്ളിക് ലൈസന്‍സിന്റെ ഒരു പകര്‍പ്പും ലഭിച്ചിരിക്കണം, "
-"ഇല്ലായെങ്കില്‍, ‌താഴെ പറയുന്ന മേല്‍വിലാസത്തിലേക്ക് എഴുതുക: "
-"Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA."
+"ഇല്ലായെങ്കില്‍, ‌താഴെ പറയുന്ന മേല്‍വിലാസത്തിലേക്ക് എഴുതുക: Free Software Foundation, Inc., "
+"59 Temple Place, Suite 330, Boston, MA 02111-1307  USA."
 
 #: ../src/system-config-services.glade:1246
 msgid "translator-credits"
@@ -438,4 +436,3 @@ msgstr "സര്‍വീസ് മാനേജ്മെന്റ്"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "സേവനങ്ങള്‍"
-

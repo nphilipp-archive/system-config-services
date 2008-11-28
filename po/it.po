@@ -67,9 +67,9 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
-"Il servizio <b>%(servicename)s</b> viene avviato una volta, solitamente quando "
-"il sistema viene avviato, viene eseguito in background e si attiva quando "
-"necessario."
+"Il servizio <b>%(servicename)s</b> viene avviato una volta, solitamente "
+"quando il sistema viene avviato, viene eseguito in background e si attiva "
+"quando necessario."
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
@@ -81,8 +81,8 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
 msgstr ""
-"Il servizio <b>%(servicename)s</b> sarà avviato a richiesta dal servizio xinetd "
-"e terminerà quando non avrà più nulla da fare."
+"Il servizio <b>%(servicename)s</b> sarà avviato a richiesta dal servizio "
+"xinetd e terminerà quando non avrà più nulla da fare."
 
 #: ../src/gui.py:317
 msgid ""
@@ -96,7 +96,9 @@ msgstr ""
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr "Questo servizio è abilitato, ma il servizio <b>xinetd</b> non è in esecuzione. Questo servizio non funziona senza di esso."
+msgstr ""
+"Questo servizio è abilitato, ma il servizio <b>xinetd</b> non è in "
+"esecuzione. Questo servizio non funziona senza di esso."
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
@@ -356,8 +358,8 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
 msgstr ""
-"Questo servizio sarà avviato a richiesta dal servizio xinetd e terminerà quando "
-"non avrà più nulla da fare."
+"Questo servizio sarà avviato a richiesta dal servizio xinetd e terminerà "
+"quando non avrà più nulla da fare."
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
@@ -441,4 +443,3 @@ msgstr "Gestione dei servizi"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Servizi"
-

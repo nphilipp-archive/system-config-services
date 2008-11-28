@@ -343,8 +343,8 @@ msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
-"Tämä palvelu käynnistetään kerran, yleensä järjestelmän käynnistyksen aikana, "
-"se toimii taustalla ja herää tarvittaessa."
+"Tämä palvelu käynnistetään kerran, yleensä järjestelmän käynnistyksen "
+"aikana, se toimii taustalla ja herää tarvittaessa."
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
@@ -391,10 +391,10 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Tämä ohjelma on vapaa; tätä ohjelmaa on sallittu levittää edelleen ja muuttaa "
-"GNU yleisen lisenssin (GPL-lisenssin) ehtojen mukaan sellaisina kuin Free "
-"Software Foundation on ne julkaissut; joko Lisenssin version 2, tai (valinnan "
-"mukaan) minkä tahansa myöhemmän version mukaisesti.\n"
+"Tämä ohjelma on vapaa; tätä ohjelmaa on sallittu levittää edelleen ja "
+"muuttaa GNU yleisen lisenssin (GPL-lisenssin) ehtojen mukaan sellaisina kuin "
+"Free Software Foundation on ne julkaissut; joko Lisenssin version 2, tai "
+"(valinnan mukaan) minkä tahansa myöhemmän version mukaisesti.\n"
 "\n"
 "Tätä ohjelmaa levitetään siinä toivossa, että se olisi hyödyllinen, mutta "
 "ilman mitään takuuta; ilman edes hiljaista takuuta kaupallisesti "
@@ -407,9 +407,7 @@ msgstr ""
 
 #: ../src/system-config-services.glade:1246
 msgid "translator-credits"
-msgstr ""
-"Lauri Nurmi, 2003-2007."
-"Ville-Pekka Vainio, 2006-2008."
+msgstr "Lauri Nurmi, 2003-2007.Ville-Pekka Vainio, 2006-2008."
 
 #: ../src/system-config-services.glade:1391
 msgid "Runlevel _2"

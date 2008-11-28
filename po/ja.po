@@ -71,8 +71,8 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
-"<b>%(servicename)s</b> サービスは一度開始しました。通常システムが起動した時に "
-"背後で稼働して、必要な時に表面にでます。"
+"<b>%(servicename)s</b> サービスは一度開始しました。通常システムが起動した時"
+"に 背後で稼働して、必要な時に表面にでます。"
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
@@ -92,16 +92,16 @@ msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
-"このサービスは有効ですが、<b>xinetd</b>  パッケージがインストールされて "
-"いません。このサービスはこのパッケージがないと機能しません。"
+"このサービスは有効ですが、<b>xinetd</b>  パッケージがインストールされて いま"
+"せん。このサービスはこのパッケージがないと機能しません。"
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
-"このサービスは有効ですが、<b>xinetd</b> サービスが実行していません。 "
-"このサービスはそれがないと機能しません。"
+"このサービスは有効ですが、<b>xinetd</b> サービスが実行していません。 このサー"
+"ビスはそれがないと機能しません。"
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
@@ -113,8 +113,8 @@ msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
-"ヘルプビューアを見つけることができませんでした。ヘルプの表示をできるように "
-"するには、'yelp' パッケージをインストールする必要があります。"
+"ヘルプビューアを見つけることができませんでした。ヘルプの表示をできるように す"
+"るには、'yelp' パッケージをインストールする必要があります。"
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -348,8 +348,8 @@ msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
-"このサービスは一度開始しています。通常、システムが起動する時に背後で "
-"稼働していて、必要な時に表面に出てきます。"
+"このサービスは一度開始しています。通常、システムが起動する時に背後で 稼働して"
+"いて、必要な時に表面に出てきます。"
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
@@ -361,8 +361,8 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
 msgstr ""
-"このサービスは xinetd サービスによってオンデマンドで開始されます。そして "
-"必要でなくなった時に停止します。"
+"このサービスは xinetd サービスによってオンデマンドで開始されます。そして 必要"
+"でなくなった時に停止します。"
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
@@ -441,4 +441,3 @@ msgstr "サービス管理"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "サービス"
-

@@ -68,7 +68,9 @@ msgstr "Служба не работает."
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr "Служба <b>%(servicename)s</b> запускается один раз, обычно при загрузке системы, выполняется в фоновом режиме и активируется при необходимости."
+msgstr ""
+"Служба <b>%(servicename)s</b> запускается один раз, обычно при загрузке "
+"системы, выполняется в фоновом режиме и активируется при необходимости."
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
@@ -79,19 +81,25 @@ msgstr "Служба обновлена."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
-msgstr "Служба  <b>%(servicename)s</b> будет запущена при необходимости службой xinetd и завершит работу, если больше нечего делать."
+msgstr ""
+"Служба  <b>%(servicename)s</b> будет запущена при необходимости службой "
+"xinetd и завершит работу, если больше нечего делать."
 
 #: ../src/gui.py:317
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr "Эта служба включена, но пакет <b>xinetd</b> не установлен. Служба не сможет выполняться без <b>xinetd</b>."
+msgstr ""
+"Эта служба включена, но пакет <b>xinetd</b> не установлен. Служба не сможет "
+"выполняться без <b>xinetd</b>."
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr "Эта служба включена, но <b>xinetd</b> не выполняется. Служба не сможет выполняться без <b>xinetd</b>."
+msgstr ""
+"Эта служба включена, но <b>xinetd</b> не выполняется. Служба не сможет "
+"выполняться без <b>xinetd</b>."
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
@@ -103,8 +111,8 @@ msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
-"Не найдена утилита промотра справки. Чтобы просмотреть справку, "
-"необходимо установить пакет 'yelp'."
+"Не найдена утилита промотра справки. Чтобы просмотреть справку, необходимо "
+"установить пакет 'yelp'."
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -337,7 +345,9 @@ msgstr "Не выбрана служба."
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
-msgstr "Эта служба запускается один раз, обычно при загрузке системы, работает в фоновом режиме и активируется при необходимости."
+msgstr ""
+"Эта служба запускается один раз, обычно при загрузке системы, работает в "
+"фоновом режиме и активируется при необходимости."
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
@@ -348,7 +358,9 @@ msgstr "Описание"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
-msgstr "Служба будет запущена при необходимости службой xinetd и завершит работу, если больше нечего делать."
+msgstr ""
+"Служба будет запущена при необходимости службой xinetd и завершит работу, "
+"если больше нечего делать."
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
@@ -382,12 +394,16 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Эта программа является открытым программным обеспечением. Ее можно распространять и модифицировать с учетом условий лицензии GNU версии 2 или более поздней, опубликованной компанией Free "
-"Software Foundation.\n"
+"Эта программа является открытым программным обеспечением. Ее можно "
+"распространять и модифицировать с учетом условий лицензии GNU версии 2 или "
+"более поздней, опубликованной компанией Free Software Foundation.\n"
 "\n"
-"Эта программа распространяется БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, в том числе не гарантируется ее пригодность для определенных целей. За подробной информацией обратитесь к лицензии GNU.\n"
+"Эта программа распространяется БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, в том числе не "
+"гарантируется ее пригодность для определенных целей. За подробной "
+"информацией обратитесь к лицензии GNU.\n"
 "\n"
-"Копия лицензии предоставляется с этой программой. Если вы не получили копию лицензии, \n"
+"Копия лицензии предоставляется с этой программой. Если вы не получили копию "
+"лицензии, \n"
 "сообщите в отделение Free Software Foundation, Inc. по адресу 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA."
 
@@ -422,4 +438,3 @@ msgstr "Управление службами"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Службы"
-

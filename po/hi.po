@@ -15,7 +15,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+"\n"
 "\n"
 "\n"
 "\n"
@@ -71,7 +73,9 @@ msgstr "यह सेवा मृत है."
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr "<b>%(servicename)s</b> सेवा एक बार आरंभ किया जाता है जब सिस्टम बूट करता है, पृष्ठभूमि में चलता है और जरूरत पड़ने पर फिर चालू होता है."
+msgstr ""
+"<b>%(servicename)s</b> सेवा एक बार आरंभ किया जाता है जब सिस्टम बूट करता है, पृष्ठभूमि "
+"में चलता है और जरूरत पड़ने पर फिर चालू होता है."
 
 #: ../src/gui.py:282
 msgid "This service is updated currently."
@@ -83,20 +87,24 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
 msgstr ""
-"<b>%(servicename)s</b> सेवा को मांग के आधार पर आरंभ किया जाएगा xinetd "
-"सेवा के द्वारा और समाप्त होता है जब इसे करने के लिए कुछ नहीं रह जाता है."
+"<b>%(servicename)s</b> सेवा को मांग के आधार पर आरंभ किया जाएगा xinetd सेवा के "
+"द्वारा और समाप्त होता है जब इसे करने के लिए कुछ नहीं रह जाता है."
 
 #: ../src/gui.py:317
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr "यह सेवा सक्रिय है, लेकिन <b>xinetd</b> संकुल संस्थापित नहीं है. यह सेवा इसके बिना काम नहीं करता है."
+msgstr ""
+"यह सेवा सक्रिय है, लेकिन <b>xinetd</b> संकुल संस्थापित नहीं है. यह सेवा इसके बिना काम "
+"नहीं करता है."
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr "यह सेवा सक्रिय है, लेकिन <b>xinetd</b> सेवा नहीं चल रहा है. यह सेवा इसके बिना काम नहीं करता है."
+msgstr ""
+"यह सेवा सक्रिय है, लेकिन <b>xinetd</b> सेवा नहीं चल रहा है. यह सेवा इसके बिना काम नहीं "
+"करता है."
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
@@ -342,7 +350,9 @@ msgstr "कोई सेवा नहीं चुना गया."
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
-msgstr "यह सेवा एक बार आरंभ किया जाता है जब सिस्टम बूट किया जाता है, पृष्ठभूमि में चलता है और जरूरत पड़ने पर जगता है."
+msgstr ""
+"यह सेवा एक बार आरंभ किया जाता है जब सिस्टम बूट किया जाता है, पृष्ठभूमि में चलता है और "
+"जरूरत पड़ने पर जगता है."
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
@@ -353,7 +363,9 @@ msgstr "विवरण"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
-msgstr "यह सेवा को xinetd सेवा के द्वारा मांग के आधार पर आरंभ किया जाएगा और यह समाप्त होता है जब करने को कुछ और नहीं है."
+msgstr ""
+"यह सेवा को xinetd सेवा के द्वारा मांग के आधार पर आरंभ किया जाएगा और यह समाप्त होता है "
+"जब करने को कुछ और नहीं है."
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
@@ -432,4 +444,3 @@ msgstr "सेवा प्रबंधन"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "सेवायें"
-

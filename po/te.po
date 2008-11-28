@@ -18,7 +18,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
 "\n"
 
 #: ../src/gui.py:109
@@ -81,24 +82,21 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
 msgstr ""
-"<b>%(servicename)s</b> సేవ అనునది డిమాండ్‌పై xinetd సేవ చేత ప్రారంభించబడుతుంది "
-"మరియు అది చేయటానికి యేదీలేనప్పుడు ముగుస్తుంది."
+"<b>%(servicename)s</b> సేవ అనునది డిమాండ్‌పై xinetd సేవ చేత ప్రారంభించబడుతుంది మరియు అది "
+"చేయటానికి యేదీలేనప్పుడు ముగుస్తుంది."
 
 #: ../src/gui.py:317
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
-"సేవ చేతనపరచబడింది, అయితే <b>xinted</b> ప్యాకేజి సంస్థాపించబడిలేదు. "
-"అది లేకుండా ఈ సేవ పనిచేయదు."
+"సేవ చేతనపరచబడింది, అయితే <b>xinted</b> ప్యాకేజి సంస్థాపించబడిలేదు. అది లేకుండా ఈ సేవ పనిచేయదు."
 
 #: ../src/gui.py:323
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"సేవ చేతన పరచబడింది, అయితే <b>xinted</b> సేవ నడుచుటలేదు. అది లేకుండా "
-"ఈ సేవ పనిచేయదు."
+msgstr "సేవ చేతన పరచబడింది, అయితే <b>xinted</b> సేవ నడుచుటలేదు. అది లేకుండా ఈ సేవ పనిచేయదు."
 
 #: ../src/gui.py:630 ../src/system-config-services.glade:1365
 #, python-format
@@ -109,9 +107,7 @@ msgstr "<b>%(service)s</b> సేవను ఈ రన్‌లెవల్సు
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"సహాయ దర్శని కనగొనబడలేదు. సహాయమును చూడగల్గుటకు, 'yelp' ప్యాకేజీ "
-"సంస్థాపించవలసి వున్నది."
+msgstr "సహాయ దర్శని కనగొనబడలేదు. సహాయమును చూడగల్గుటకు, 'yelp' ప్యాకేజీ సంస్థాపించవలసి వున్నది."
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -345,8 +341,8 @@ msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
-"సాదారణముగా సిస్టమ్ బూట్ అయినప్పుడు, ఈ సేవ వొకసారి ప్రారంభించబడుతుంది, "
-"బ్యాక్‌గ్రౌండునందు నడుపబడుతుంది అవసరమైనప్పుడు మేల్కొలపబడుతుంది."
+"సాదారణముగా సిస్టమ్ బూట్ అయినప్పుడు, ఈ సేవ వొకసారి ప్రారంభించబడుతుంది, బ్యాక్‌గ్రౌండునందు "
+"నడుపబడుతుంది అవసరమైనప్పుడు మేల్కొలపబడుతుంది."
 
 #: ../src/system-config-services.glade:807
 #: ../src/system-config-services.glade:1006
@@ -358,8 +354,7 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
 msgstr ""
-"ఈ సేవ డిమాండ్‌పై xinetd సేవ చేత ప్రారంభించబడుతుంది మరియు అది చేయటానికి "
-"యేదీలేనప్పుడు ముగుస్తుంది."
+"ఈ సేవ డిమాండ్‌పై xinetd సేవ చేత ప్రారంభించబడుతుంది మరియు అది చేయటానికి యేదీలేనప్పుడు ముగుస్తుంది."
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
@@ -394,17 +389,16 @@ msgid ""
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
 "ఈ ప్రోగ్రామ్ ఉచిత సాఫ్టువేర్; ఉచిత సాఫ్టువేర్ వ్యవస్థాపన నుండి ప్రచురింపబడిన GNU జనరల్ పబ్లిక్ లైసెన్సు "
-"తెలిపిన దానికి లోబడి మీరు ఈ ప్రోగ్రామ్ ను తిరిగిపంరిణీ చేయవచ్చు మరియు/లేదా సవరించవచ్చు; "
-"లైసెన్సు విడుదల 2 కాని, లేదా(మీ ఐచ్చికంగా) తర్వాతి ఏ విడుదల నైనా అవలంబించవచ్చు.\n"
+"తెలిపిన దానికి లోబడి మీరు ఈ ప్రోగ్రామ్ ను తిరిగిపంరిణీ చేయవచ్చు మరియు/లేదా సవరించవచ్చు; లైసెన్సు విడుదల 2 "
+"కాని, లేదా(మీ ఐచ్చికంగా) తర్వాతి ఏ విడుదల నైనా అవలంబించవచ్చు.\n"
 "\n"
-"ఈ ప్రోగ్రామ్ ఉపయోగపడుతుందనే నమ్మకం తో పంపిణీ చేయబడుతోంది, అయితే ఏ హామీ లేకుండా; "
-"వ్యాపారసంభందితంగా గాని లేదా ఒక ప్రయోజనం కొరకు సంపూర్ణతతో ఉందని గాని కూడా హామీ "
-"లేదు. ఎక్కువ సమాచారం కొరకు GNU జనరల్\n"
+"ఈ ప్రోగ్రామ్ ఉపయోగపడుతుందనే నమ్మకం తో పంపిణీ చేయబడుతోంది, అయితే ఏ హామీ లేకుండా; వ్యాపారసంభందితంగా గాని "
+"లేదా ఒక ప్రయోజనం కొరకు సంపూర్ణతతో ఉందని గాని కూడా హామీ లేదు. ఎక్కువ సమాచారం కొరకు GNU జనరల్\n"
 "పబ్లిక్ లైసెన్సును చూడండి.\n"
 "\n"
-"ఈ ప్రోగ్రామ్ తో మీరు ఒక GNU జనరల్ పబ్లిక్ లైసెన్సు నకలు ను పొందివుంటారు.పొందకపోతే, "
-"Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, "
-"MA 02111-1307  USAకు వ్రాయండి."
+"ఈ ప్రోగ్రామ్ తో మీరు ఒక GNU జనరల్ పబ్లిక్ లైసెన్సు నకలు ను పొందివుంటారు.పొందకపోతే, Free Software "
+"Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USAకు "
+"వ్రాయండి."
 
 #: ../src/system-config-services.glade:1246
 msgid "translator-credits"
@@ -437,4 +431,3 @@ msgstr "సేవల నిర్వహణ"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "సేవలు"
-

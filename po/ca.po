@@ -365,8 +365,8 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
 msgstr ""
-"Aquest servei s'inicia per l'xinetd quan es demani i finalitza quan no "
-"té res més a fer."
+"Aquest servei s'inicia per l'xinetd quan es demani i finalitza quan no té "
+"res més a fer."
 
 #: ../src/system-config-services.glade:1080
 msgid "Service Information"
