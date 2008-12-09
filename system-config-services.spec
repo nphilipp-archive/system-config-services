@@ -89,6 +89,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Tue Dec 09 2008 Nils Philippsen <nils@redhat.com>
+- allow anyone to invoke dbus methods (#475203)
+
 * Fri Nov 28 2008 Nils Philippsen <nils@redhat.com> - 0.99.29-1
 - split off documentation
 - remove obsolete build requirement perl(XML::Parser)
