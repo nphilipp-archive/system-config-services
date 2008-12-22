@@ -3,10 +3,10 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.99.29
+Version: 0.99.30
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
-Source0: http://fedorahosted.org/releases/$(echo %{name} | %{__sed} 's@\(\(.\)\(.\).*\)@\2/\3/\1@')/%{name}-%{version}.tar.bz2
+Source0: http://fedorahosted.org/releases/%(echo %{name} | %{__sed} 's@\(\(.\)\(.\).*\)@\2/\3/\1@')/%{name}-%{version}.tar.bz2
 License: GPLv2+
 Group: Applications/System
 BuildArch: noarch
@@ -89,6 +89,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Dec 22 2008 Nils Philippsen <nils@redhat.com> - 0.99.30-1
+- fix typo in Source0 URL
+
 * Tue Dec 09 2008 Nils Philippsen <nils@redhat.com>
 - allow anyone to invoke dbus methods (#475203)
 
