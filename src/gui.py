@@ -37,7 +37,7 @@ gettext.install ('system-config-services', codeset = encoding)
 
 from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED, SVC_HERDER_READY
 
-from scservices.core.services import SVC_STATUS_REFRESHING, SVC_STATUS_UNKNOWN, SVC_STATUS_STOPPED, SVC_STATUS_RUNNING, SVC_STATUS_DEAD, SVC_ENABLED_REFRESHING, SVC_ENABLED_YES, SVC_ENABLED_NO, SVC_ENABLED_CUSTOM
+from scservices.core.services import SVC_STATUS_REFRESHING, SVC_STATUS_UNKNOWN, SVC_STATUS_STOPPED, SVC_STATUS_RUNNING, SVC_STATUS_DEAD, SVC_ENABLED_REFRESHING, SVC_ENABLED_ERROR, SVC_ENABLED_YES, SVC_ENABLED_NO, SVC_ENABLED_CUSTOM
 
 gtk.glade.bindtextdomain (config.domain)
 
@@ -164,6 +164,7 @@ _service_selected_signal = gobject.signal_new ('service-selected', GUIServicesTr
 
 _enabled_stock_id = {
         SVC_ENABLED_REFRESHING: gtk.STOCK_REFRESH,
+        SVC_ENABLED_ERROR: gtk.STOCK_DIALOG_WARNING,
         SVC_ENABLED_YES: gtk.STOCK_YES,
         SVC_ENABLED_NO: gtk.STOCK_NO,
         SVC_ENABLED_CUSTOM: gtk.STOCK_PREFERENCES,
@@ -171,6 +172,7 @@ _enabled_stock_id = {
 
 _enabled_text = {
         SVC_ENABLED_REFRESHING: _("This service is being refreshed right now."),
+        SVC_ENABLED_ERROR: _("Getting information about this service failed."),
         SVC_ENABLED_YES: _("This service is enabled."),
         SVC_ENABLED_NO: _("This service is disabled."),
         SVC_ENABLED_CUSTOM: _("This service is enabled in runlevels: %(runlevels)s"),
@@ -513,7 +515,7 @@ class GUIServicesList (GladeController):
 
         if wname in ('serviceEnable', 'serviceDisable'):
             is_enabled = service.get_enabled ()
-            if is_enabled == SVC_ENABLED_REFRESHING:
+            if is_enabled in (SVC_ENABLED_REFRESHING, SVC_ENABLED_ERROR):
                 sensitive = False
             elif wname == 'serviceEnable':
                 sensitive = (is_enabled != SVC_ENABLED_YES)

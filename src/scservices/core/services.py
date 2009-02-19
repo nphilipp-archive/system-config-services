@@ -21,6 +21,7 @@
 # Nils Philippsen <nphilipp@redhat.com>
 
 import os
+import sys
 import copy
 import re
 import time
@@ -46,9 +47,10 @@ SVC_STATUS_RUNNING = 3
 SVC_STATUS_DEAD = 4
 
 SVC_ENABLED_REFRESHING = 0
-SVC_ENABLED_YES = 1
-SVC_ENABLED_NO = 2
-SVC_ENABLED_CUSTOM = 3
+SVC_ENABLED_ERROR = 1
+SVC_ENABLED_YES = 2
+SVC_ENABLED_NO = 3
+SVC_ENABLED_CUSTOM = 4
 
 ##############################################################################
 
@@ -433,8 +435,10 @@ class XinetdService (ChkconfigService):
 
         m = self.xinetd_list_re.match (output)
         if not m or m.group ('name') != self.name:
-            raise output
-        self.enabled = m.group ('enabled') == "on"
+            print >>sys.stderr, "%s: unable to parse chkconfig output:\n%s\n" % (self, output)
+            self.enabled = None
+        else:
+            self.enabled = m.group ('enabled') == "on"
 
     def _get_enabled (self):
         if not hasattr (self, "_enabled"):
@@ -454,6 +458,8 @@ class XinetdService (ChkconfigService):
     def get_enabled (self):
         if self.conf_updates_running > 0:
             return SVC_ENABLED_REFRESHING
+        elif self.enabled == None:
+            return SVC_ENABLED_ERROR
         return self.enabled and SVC_ENABLED_YES or SVC_ENABLED_NO
 
 ##############################################################################
