@@ -3,7 +3,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.99.31
+Version: 0.99.32
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/releases/%(echo %{name} | %{__sed} 's@\(\(.\)\(.\).*\)@\2/\3/\1@')/%{name}-%{version}.tar.bz2
@@ -28,7 +28,11 @@ Requires: dbus-python
 Requires: python-slip >= 0.1.11
 Requires: python-slip-dbus >= 0.1.15
 Requires: python-slip-gtk
+%if 0%{?fedora} >= 11 || 0%{?rhel} >= 6
+Requires: PolicyKit-authentication-agent
+%else
 Requires: PolicyKit-gnome
+%endif
 Obsoletes: serviceconf <= 0.8.1
 Obsoletes: redhat-config-services <= 0.8.5
 Obsoletes: system-config-services < 0.99.29
@@ -89,6 +93,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Mar 01 2009 Nils Philippsen <nils@redhat.com> - 0.99.32-1
+- require PolicyKit-authentication-agent from F-11 on (#487200)
+
 * Thu Feb 19 2009 Nils Philippsen <nils@redhat.com> - 0.99.31-1
 - don't traceback on chkconfig errors (#467871)
 
