@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.tip.ml\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-20 16:11+0100\n"
+"POT-Creation-Date: 2009-03-13 13:44+0100\n"
 "PO-Revision-Date: 2008-10-18 17:50+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
@@ -22,48 +22,52 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../src/gui.py:109
+#: ../src/gui.py:112
 msgid "Name"
 msgstr "പേരു്"
 
-#: ../src/gui.py:110
+#: ../src/gui.py:113
 msgid "Remarks"
 msgstr "നിരൂപണങ്ങള്‍"
 
-#: ../src/gui.py:170 ../src/gui.py:187
+#: ../src/gui.py:174 ../src/gui.py:192
 msgid "This service is being refreshed right now."
 msgstr "ഈ സേവനം നിലവില്‍ പരിഷ്കരിക്കപ്പെടുന്നു."
 
-#: ../src/gui.py:171
+#: ../src/gui.py:175
+msgid "Getting information about this service failed."
+msgstr ""
+
+#: ../src/gui.py:176
 msgid "This service is enabled."
 msgstr "ഈ സേവനം പ്രവര്‍ത്തന സജ്ജമാണു്."
 
-#: ../src/gui.py:172
+#: ../src/gui.py:177
 msgid "This service is disabled."
 msgstr "ഈ സേവനം പ്രവര്‍ത്തന രഹിതമാണു്."
 
-#: ../src/gui.py:173
+#: ../src/gui.py:178
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "ഈ സേവനങ്ങള്‍ റണ്‍ലവലുകളില്‍ പ്രവര്‍ത്തന സജ്ജമാണു്: %(runlevels)s"
 
-#: ../src/gui.py:188
+#: ../src/gui.py:193
 msgid "The status of this service is unknown."
 msgstr "ഈ സേവനത്തിന്റെ അവസ്ഥ അപരിചിതമാണു്."
 
-#: ../src/gui.py:189
+#: ../src/gui.py:194
 msgid "This service is stopped."
 msgstr "ഈ സേവനം നിര്‍ത്തിയിരിക്കുന്നു."
 
-#: ../src/gui.py:190
+#: ../src/gui.py:195
 msgid "This service is running."
 msgstr "ഈ സേവനം പ്രവര്‍ത്തനത്തിലാണു്."
 
-#: ../src/gui.py:191
+#: ../src/gui.py:196
 msgid "This service is dead."
 msgstr "ഈ സേവനം നിര്‍ജ്ജീവമാണു്."
 
-#: ../src/gui.py:268
+#: ../src/gui.py:273
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
@@ -72,11 +76,11 @@ msgstr ""
 "സിസ്റ്റം ബൂട്ട് ചെയ്യുമ്പോള്‍ <b>%(servicename)s</b> സേവനം ഒരിക്കല്‍ ആരംഭിക്കുന്നു. ശേഷം "
 "പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിക്കുന്നു, ആവശ്യമുള്ളപ്പോള്‍ പ്രത്യക്ഷത്തില്‍ വരുന്നു."
 
-#: ../src/gui.py:282
+#: ../src/gui.py:287
 msgid "This service is updated currently."
 msgstr "ഈ സേവനം നിലവില്‍ പരിഷ്കരിക്കപ്പെടുന്നു."
 
-#: ../src/gui.py:308
+#: ../src/gui.py:313
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
@@ -85,7 +89,7 @@ msgstr ""
 "xinetd സേവനത്തിന്റെ ആവശ്യപ്രകാരം <b>%(servicename)s</b> സേവനം ആരംഭിക്കുന്നു. ജോലികള്‍ "
 "പൂര്‍ത്തിയാക്കിയ ശേഷം അതു് അവസാനിക്കുന്നു"
 
-#: ../src/gui.py:317
+#: ../src/gui.py:322
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
@@ -93,19 +97,19 @@ msgstr ""
 "ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് ഇന്‍സ്റ്റോള്‍ അല്ലാത്തതിനാല്‍ ഈ സേവനം "
 "പ്രവര്‍ത്തിക്കുന്നതല്ല."
 
-#: ../src/gui.py:323
+#: ../src/gui.py:328
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
 "ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സേവനം പ്രവര്‍ത്തിക്കുന്നതല്ല."
 
-#: ../src/gui.py:630 ../src/system-config-services.glade:1365
+#: ../src/gui.py:710 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "ഈ റണ്‍ലവലുകളില്‍ <b>%(service)s</b> സേവനം സജ്ജമാക്കുക:"
 
-#: ../src/gui.py:754
+#: ../src/gui.py:842
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
@@ -175,26 +179,26 @@ msgid "Enable Default"
 msgstr "സഹജമായതു് പ്രവര്‍ത്തന സജ്ജമാക്കുക"
 
 #: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
-#: ../src/system-config-services.glade:135
-#: ../src/system-config-services.glade:1256
+#: ../src/system-config-services.glade:134
+#: ../src/system-config-services.glade:1241
 msgid "Runlevel 2"
 msgstr "റണ്‍ലവല്‍ 2 "
 
 #: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
-#: ../src/system-config-services.glade:144
-#: ../src/system-config-services.glade:1266
+#: ../src/system-config-services.glade:143
+#: ../src/system-config-services.glade:1251
 msgid "Runlevel 3"
 msgstr "റണ്‍ലവല്‍ 3"
 
 #: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
-#: ../src/system-config-services.glade:153
-#: ../src/system-config-services.glade:1276
+#: ../src/system-config-services.glade:152
+#: ../src/system-config-services.glade:1261
 msgid "Runlevel 4"
 msgstr "റണ്‍ലവല്‍ 4"
 
 #: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
-#: ../src/system-config-services.glade:162
-#: ../src/system-config-services.glade:1286
+#: ../src/system-config-services.glade:161
+#: ../src/system-config-services.glade:1271
 msgid "Runlevel 5"
 msgstr "റണ്‍ലവല്‍ 5"
 
@@ -257,23 +261,23 @@ msgstr "സര്‍വീസ് കണ്ട്രോള്‍"
 msgid "Status output"
 msgstr "നിലവാരത്തിന്റെ ഔട്ട്പുട്ട്"
 
-#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:181
-#: ../src/system-config-services.glade:393
+#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:180
+#: ../src/system-config-services.glade:392
 msgid "_Start"
 msgstr "_ആരംഭിക്കുക"
 
-#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:225
-#: ../src/system-config-services.glade:427
+#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:224
+#: ../src/system-config-services.glade:426
 msgid "_Restart"
 msgstr "_വീണ്ടും ആരംഭിക്കുക"
 
 #: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
-#: ../src/system-config-services.glade:328
+#: ../src/system-config-services.glade:327
 msgid "_Enable"
 msgstr "_പ്രവര്‍ത്തന സജ്ജം"
 
 #: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
-#: ../src/system-config-services.glade:345
+#: ../src/system-config-services.glade:344
 msgid "_Disable"
 msgstr "_പ്രവര്‍ത്തന രഹിതം"
 
@@ -293,12 +297,12 @@ msgstr "label16"
 msgid "Service %s:"
 msgstr "സേവനം %s:"
 
-#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1295
+#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1280
 msgid "Customize Runlevels"
 msgstr "റണ്‍ലവലുകള്‍ യഥേഷ്ടമാക്കുക"
 
 #: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1238
+#: ../src/system-config-services.glade:1223
 msgid "Service Configuration"
 msgstr "സര്‍വീസ് ക്രമീകരണം"
 
@@ -311,36 +315,36 @@ msgid "Ser_vice"
 msgstr "_സേവനം"
 
 #: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:363
+#: ../src/system-config-services.glade:362
 msgid "_Customize"
 msgstr "_യഥേഷ്ടം"
 
-#: ../src/system-config-services.glade:203
-#: ../src/system-config-services.glade:410
+#: ../src/system-config-services.glade:202
+#: ../src/system-config-services.glade:409
 msgid "S_top"
 msgstr "_നിര്‍ത്തുക"
 
-#: ../src/system-config-services.glade:251
+#: ../src/system-config-services.glade:250
 msgid "_Help"
 msgstr "_സഹായം"
 
-#: ../src/system-config-services.glade:260
+#: ../src/system-config-services.glade:259
 msgid "_Contents"
 msgstr "_ഉളളടക്കം"
 
-#: ../src/system-config-services.glade:288
+#: ../src/system-config-services.glade:287
 msgid "_About"
 msgstr "_സംബന്ധിച്ചുള്ള"
 
-#: ../src/system-config-services.glade:362
+#: ../src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
 msgstr "സേവനം സജ്ജമാക്കിയിട്ടുള്ള റണ്‍ലവലുകള്‍ യഥേഷ്ടമാക്കുക."
 
-#: ../src/system-config-services.glade:558
+#: ../src/system-config-services.glade:559
 msgid "No service selected."
 msgstr "സേവനം തെരഞ്ഞെടുത്തിട്ടില്ല."
 
-#: ../src/system-config-services.glade:620
+#: ../src/system-config-services.glade:621
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
@@ -348,12 +352,12 @@ msgstr ""
 "സിസ്റ്റം ബൂട്ട് ചെയ്യുമ്പോള്‍ സേവനം ഒരിക്കല്‍ ആരംഭിക്കുന്നു. ശേഷം പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിക്കുന്നു, "
 "ആവശ്യമുള്ളപ്പോള്‍ പ്രത്യക്ഷത്തില്‍ വരുന്നു."
 
-#: ../src/system-config-services.glade:807
-#: ../src/system-config-services.glade:1006
+#: ../src/system-config-services.glade:769
+#: ../src/system-config-services.glade:960
 msgid "Description"
 msgstr "വിവരണം"
 
-#: ../src/system-config-services.glade:874
+#: ../src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
@@ -361,23 +365,23 @@ msgstr ""
 "xinetd സേവനത്തിന്റെ ആവശ്യപ്രകാരം സേവനം ആരംഭിക്കുന്നു. ജോലികള്‍ പൂര്‍ത്തിയാക്കിയ ശേഷം അതു് "
 "അവസാനിക്കുന്നു"
 
-#: ../src/system-config-services.glade:1080
+#: ../src/system-config-services.glade:1065
 msgid "Service Information"
 msgstr "സേവന വിവരം"
 
-#: ../src/system-config-services.glade:1199
+#: ../src/system-config-services.glade:1184
 msgid "Status of service %s:"
 msgstr "സേവനം %s-ന്റെ അവസ്ഥ:"
 
-#: ../src/system-config-services.glade:1236
+#: ../src/system-config-services.glade:1221
 msgid "system-config-services"
 msgstr "system-config-services"
 
-#: ../src/system-config-services.glade:1237
+#: ../src/system-config-services.glade:1222
 msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
 msgstr "Copyright  2002-2008 Red Hat, Inc. -ഉം സംഭാവനക്കാരും"
 
-#: ../src/system-config-services.glade:1239
+#: ../src/system-config-services.glade:1224
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -405,23 +409,23 @@ msgstr ""
 "ഇല്ലായെങ്കില്‍, ‌താഴെ പറയുന്ന മേല്‍വിലാസത്തിലേക്ക് എഴുതുക: Free Software Foundation, Inc., "
 "59 Temple Place, Suite 330, Boston, MA 02111-1307  USA."
 
-#: ../src/system-config-services.glade:1246
+#: ../src/system-config-services.glade:1231
 msgid "translator-credits"
 msgstr "അനി പീറ്റര്‍ <apeter@redhat.com>"
 
-#: ../src/system-config-services.glade:1391
+#: ../src/system-config-services.glade:1395
 msgid "Runlevel _2"
 msgstr "റണ്‍ലവല്‍ _2"
 
-#: ../src/system-config-services.glade:1410
+#: ../src/system-config-services.glade:1414
 msgid "Runlevel _3"
 msgstr "റണ്‍ലവല്‍ _3"
 
-#: ../src/system-config-services.glade:1429
+#: ../src/system-config-services.glade:1433
 msgid "Runlevel _4"
 msgstr "റണ്‍ലവല്‍ _4"
 
-#: ../src/system-config-services.glade:1448
+#: ../src/system-config-services.glade:1452
 msgid "Runlevel _5"
 msgstr "റണ്‍ലവല്‍ _5"
 

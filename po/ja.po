@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.tip.ja\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-20 16:11+0100\n"
+"POT-Creation-Date: 2009-03-13 13:44+0100\n"
 "PO-Revision-Date: 2008-09-25 18:03+1000\n"
 "Last-Translator: Kiyoto Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <jp@li.org>\n"
@@ -24,48 +24,52 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../src/gui.py:109
+#: ../src/gui.py:112
 msgid "Name"
 msgstr "名前"
 
-#: ../src/gui.py:110
+#: ../src/gui.py:113
 msgid "Remarks"
 msgstr "メモ記録"
 
-#: ../src/gui.py:170 ../src/gui.py:187
+#: ../src/gui.py:174 ../src/gui.py:192
 msgid "This service is being refreshed right now."
 msgstr "このサービスは現在リフレッシュ中です。"
 
-#: ../src/gui.py:171
+#: ../src/gui.py:175
+msgid "Getting information about this service failed."
+msgstr ""
+
+#: ../src/gui.py:176
 msgid "This service is enabled."
 msgstr "このサービスは有効です。"
 
-#: ../src/gui.py:172
+#: ../src/gui.py:177
 msgid "This service is disabled."
 msgstr "このサービスは無効です。"
 
-#: ../src/gui.py:173
+#: ../src/gui.py:178
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "このサービスはランレベル %(runlevels)s で有効です。"
 
-#: ../src/gui.py:188
+#: ../src/gui.py:193
 msgid "The status of this service is unknown."
 msgstr "このサービスの状態は不明です。"
 
-#: ../src/gui.py:189
+#: ../src/gui.py:194
 msgid "This service is stopped."
 msgstr "このサービスは停止しています。"
 
-#: ../src/gui.py:190
+#: ../src/gui.py:195
 msgid "This service is running."
 msgstr "このサービスは実行中です。"
 
-#: ../src/gui.py:191
+#: ../src/gui.py:196
 msgid "This service is dead."
 msgstr "このサービスは機能しません。"
 
-#: ../src/gui.py:268
+#: ../src/gui.py:273
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
@@ -74,11 +78,11 @@ msgstr ""
 "<b>%(servicename)s</b> サービスは一度開始しました。通常システムが起動した時"
 "に 背後で稼働して、必要な時に表面にでます。"
 
-#: ../src/gui.py:282
+#: ../src/gui.py:287
 msgid "This service is updated currently."
 msgstr "このサービスは現在更新されています。"
 
-#: ../src/gui.py:308
+#: ../src/gui.py:313
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
@@ -87,7 +91,7 @@ msgstr ""
 " <b>%(servicename)s</b> サービスは xinetd によってオンデマンドで開始されて、 "
 "何も要求されない時に終了します。"
 
-#: ../src/gui.py:317
+#: ../src/gui.py:322
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
@@ -95,7 +99,7 @@ msgstr ""
 "このサービスは有効ですが、<b>xinetd</b>  パッケージがインストールされて いま"
 "せん。このサービスはこのパッケージがないと機能しません。"
 
-#: ../src/gui.py:323
+#: ../src/gui.py:328
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
@@ -103,12 +107,12 @@ msgstr ""
 "このサービスは有効ですが、<b>xinetd</b> サービスが実行していません。 このサー"
 "ビスはそれがないと機能しません。"
 
-#: ../src/gui.py:630 ../src/system-config-services.glade:1365
+#: ../src/gui.py:710 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "これらのランレベルで <b>%(service)s</b> サービスを有効にする:"
 
-#: ../src/gui.py:754
+#: ../src/gui.py:842
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
@@ -178,26 +182,26 @@ msgid "Enable Default"
 msgstr "デフォルトを有効にする"
 
 #: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
-#: ../src/system-config-services.glade:135
-#: ../src/system-config-services.glade:1256
+#: ../src/system-config-services.glade:134
+#: ../src/system-config-services.glade:1241
 msgid "Runlevel 2"
 msgstr "ランレベル 2"
 
 #: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
-#: ../src/system-config-services.glade:144
-#: ../src/system-config-services.glade:1266
+#: ../src/system-config-services.glade:143
+#: ../src/system-config-services.glade:1251
 msgid "Runlevel 3"
 msgstr "ランレベル 3"
 
 #: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
-#: ../src/system-config-services.glade:153
-#: ../src/system-config-services.glade:1276
+#: ../src/system-config-services.glade:152
+#: ../src/system-config-services.glade:1261
 msgid "Runlevel 4"
 msgstr "ランレベル 4"
 
 #: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
-#: ../src/system-config-services.glade:162
-#: ../src/system-config-services.glade:1286
+#: ../src/system-config-services.glade:161
+#: ../src/system-config-services.glade:1271
 msgid "Runlevel 5"
 msgstr "ランレベル 5"
 
@@ -260,23 +264,23 @@ msgstr "サービス制御"
 msgid "Status output"
 msgstr "状態の出力"
 
-#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:181
-#: ../src/system-config-services.glade:393
+#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:180
+#: ../src/system-config-services.glade:392
 msgid "_Start"
 msgstr "開始（_S）"
 
-#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:225
-#: ../src/system-config-services.glade:427
+#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:224
+#: ../src/system-config-services.glade:426
 msgid "_Restart"
 msgstr "再開始（_R）"
 
 #: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
-#: ../src/system-config-services.glade:328
+#: ../src/system-config-services.glade:327
 msgid "_Enable"
 msgstr "有効（_E）"
 
 #: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
-#: ../src/system-config-services.glade:345
+#: ../src/system-config-services.glade:344
 msgid "_Disable"
 msgstr "無効（_D）"
 
@@ -296,12 +300,12 @@ msgstr "ラベル16"
 msgid "Service %s:"
 msgstr "サービス %s:"
 
-#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1295
+#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1280
 msgid "Customize Runlevels"
 msgstr "ランレベルをカスタマイズする"
 
 #: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1238
+#: ../src/system-config-services.glade:1223
 msgid "Service Configuration"
 msgstr "サービスの設定"
 
@@ -314,36 +318,36 @@ msgid "Ser_vice"
 msgstr "サービス（_V）"
 
 #: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:363
+#: ../src/system-config-services.glade:362
 msgid "_Customize"
 msgstr "カスタマイズ（_C）"
 
-#: ../src/system-config-services.glade:203
-#: ../src/system-config-services.glade:410
+#: ../src/system-config-services.glade:202
+#: ../src/system-config-services.glade:409
 msgid "S_top"
 msgstr "停止（_T）"
 
-#: ../src/system-config-services.glade:251
+#: ../src/system-config-services.glade:250
 msgid "_Help"
 msgstr "ヘルプ (_H)"
 
-#: ../src/system-config-services.glade:260
+#: ../src/system-config-services.glade:259
 msgid "_Contents"
 msgstr "コンテンツ (_C)"
 
-#: ../src/system-config-services.glade:288
+#: ../src/system-config-services.glade:287
 msgid "_About"
 msgstr "情報（_A）"
 
-#: ../src/system-config-services.glade:362
+#: ../src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
 msgstr "サービスが有効になっているランレベルをカスタマイズする"
 
-#: ../src/system-config-services.glade:558
+#: ../src/system-config-services.glade:559
 msgid "No service selected."
 msgstr "サービスが選択されていません。"
 
-#: ../src/system-config-services.glade:620
+#: ../src/system-config-services.glade:621
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
@@ -351,12 +355,12 @@ msgstr ""
 "このサービスは一度開始しています。通常、システムが起動する時に背後で 稼働して"
 "いて、必要な時に表面に出てきます。"
 
-#: ../src/system-config-services.glade:807
-#: ../src/system-config-services.glade:1006
+#: ../src/system-config-services.glade:769
+#: ../src/system-config-services.glade:960
 msgid "Description"
 msgstr "詳細"
 
-#: ../src/system-config-services.glade:874
+#: ../src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
@@ -364,23 +368,23 @@ msgstr ""
 "このサービスは xinetd サービスによってオンデマンドで開始されます。そして 必要"
 "でなくなった時に停止します。"
 
-#: ../src/system-config-services.glade:1080
+#: ../src/system-config-services.glade:1065
 msgid "Service Information"
 msgstr "サービス情報"
 
-#: ../src/system-config-services.glade:1199
+#: ../src/system-config-services.glade:1184
 msgid "Status of service %s:"
 msgstr "サービスの状態 %s:"
 
-#: ../src/system-config-services.glade:1236
+#: ../src/system-config-services.glade:1221
 msgid "system-config-services"
 msgstr "system-config-services"
 
-#: ../src/system-config-services.glade:1237
+#: ../src/system-config-services.glade:1222
 msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
 msgstr "Copyright  2002-2008 Red Hat, Inc. と貢献者"
 
-#: ../src/system-config-services.glade:1239
+#: ../src/system-config-services.glade:1224
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -410,23 +414,23 @@ msgstr ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 
-#: ../src/system-config-services.glade:1246
+#: ../src/system-config-services.glade:1231
 msgid "translator-credits"
 msgstr "翻訳者クレジット"
 
-#: ../src/system-config-services.glade:1391
+#: ../src/system-config-services.glade:1395
 msgid "Runlevel _2"
 msgstr "ランレベル 2（_2）"
 
-#: ../src/system-config-services.glade:1410
+#: ../src/system-config-services.glade:1414
 msgid "Runlevel _3"
 msgstr "ランレベル 3 (_3)"
 
-#: ../src/system-config-services.glade:1429
+#: ../src/system-config-services.glade:1433
 msgid "Runlevel _4"
 msgstr "ランレベル 4 (_4)"
 
-#: ../src/system-config-services.glade:1448
+#: ../src/system-config-services.glade:1452
 msgid "Runlevel _5"
 msgstr "ランレベル 5 (_5)"
 

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.tip.ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-20 16:11+0100\n"
+"POT-Creation-Date: 2009-03-13 13:44+0100\n"
 "PO-Revision-Date: 2008-09-25 14:08+1000\n"
 "Last-Translator: Yulia Poyarkova <yulia.poyarkova@redhat.com>\n"
 "Language-Team: \n"
@@ -22,48 +22,52 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../src/gui.py:109
+#: ../src/gui.py:112
 msgid "Name"
 msgstr "Имя"
 
-#: ../src/gui.py:110
+#: ../src/gui.py:113
 msgid "Remarks"
 msgstr "Заметки"
 
-#: ../src/gui.py:170 ../src/gui.py:187
+#: ../src/gui.py:174 ../src/gui.py:192
 msgid "This service is being refreshed right now."
 msgstr "Осуществляется обновление службы."
 
-#: ../src/gui.py:171
+#: ../src/gui.py:175
+msgid "Getting information about this service failed."
+msgstr ""
+
+#: ../src/gui.py:176
 msgid "This service is enabled."
 msgstr "Служба включена."
 
-#: ../src/gui.py:172
+#: ../src/gui.py:177
 msgid "This service is disabled."
 msgstr "Служба отключена."
 
-#: ../src/gui.py:173
+#: ../src/gui.py:178
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "Эта служба включена на уровнях выполнения: %(runlevels)s"
 
-#: ../src/gui.py:188
+#: ../src/gui.py:193
 msgid "The status of this service is unknown."
 msgstr "Статус службы неизвестен."
 
-#: ../src/gui.py:189
+#: ../src/gui.py:194
 msgid "This service is stopped."
 msgstr "Служба остановлена."
 
-#: ../src/gui.py:190
+#: ../src/gui.py:195
 msgid "This service is running."
 msgstr "Служба выполняется."
 
-#: ../src/gui.py:191
+#: ../src/gui.py:196
 msgid "This service is dead."
 msgstr "Служба не работает."
 
-#: ../src/gui.py:268
+#: ../src/gui.py:273
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
@@ -72,11 +76,11 @@ msgstr ""
 "Служба <b>%(servicename)s</b> запускается один раз, обычно при загрузке "
 "системы, выполняется в фоновом режиме и активируется при необходимости."
 
-#: ../src/gui.py:282
+#: ../src/gui.py:287
 msgid "This service is updated currently."
 msgstr "Служба обновлена."
 
-#: ../src/gui.py:308
+#: ../src/gui.py:313
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
@@ -85,7 +89,7 @@ msgstr ""
 "Служба  <b>%(servicename)s</b> будет запущена при необходимости службой "
 "xinetd и завершит работу, если больше нечего делать."
 
-#: ../src/gui.py:317
+#: ../src/gui.py:322
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
@@ -93,7 +97,7 @@ msgstr ""
 "Эта служба включена, но пакет <b>xinetd</b> не установлен. Служба не сможет "
 "выполняться без <b>xinetd</b>."
 
-#: ../src/gui.py:323
+#: ../src/gui.py:328
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
@@ -101,12 +105,12 @@ msgstr ""
 "Эта служба включена, но <b>xinetd</b> не выполняется. Служба не сможет "
 "выполняться без <b>xinetd</b>."
 
-#: ../src/gui.py:630 ../src/system-config-services.glade:1365
+#: ../src/gui.py:710 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Включить службу <b>%(service)s</b> на уровнях выполнения:"
 
-#: ../src/gui.py:754
+#: ../src/gui.py:842
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
@@ -176,26 +180,26 @@ msgid "Enable Default"
 msgstr "Включить стандартные настройки"
 
 #: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
-#: ../src/system-config-services.glade:135
-#: ../src/system-config-services.glade:1256
+#: ../src/system-config-services.glade:134
+#: ../src/system-config-services.glade:1241
 msgid "Runlevel 2"
 msgstr "Уровень выполнения 2"
 
 #: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
-#: ../src/system-config-services.glade:144
-#: ../src/system-config-services.glade:1266
+#: ../src/system-config-services.glade:143
+#: ../src/system-config-services.glade:1251
 msgid "Runlevel 3"
 msgstr "Уровень выполнения 3"
 
 #: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
-#: ../src/system-config-services.glade:153
-#: ../src/system-config-services.glade:1276
+#: ../src/system-config-services.glade:152
+#: ../src/system-config-services.glade:1261
 msgid "Runlevel 4"
 msgstr "Уровень выполнения 4"
 
 #: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
-#: ../src/system-config-services.glade:162
-#: ../src/system-config-services.glade:1286
+#: ../src/system-config-services.glade:161
+#: ../src/system-config-services.glade:1271
 msgid "Runlevel 5"
 msgstr "Уровень выполнения 5"
 
@@ -258,23 +262,23 @@ msgstr "Управление службой"
 msgid "Status output"
 msgstr "Вывод статуса"
 
-#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:181
-#: ../src/system-config-services.glade:393
+#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:180
+#: ../src/system-config-services.glade:392
 msgid "_Start"
 msgstr "_Запустить"
 
-#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:225
-#: ../src/system-config-services.glade:427
+#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:224
+#: ../src/system-config-services.glade:426
 msgid "_Restart"
 msgstr "_Перезапустить"
 
 #: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
-#: ../src/system-config-services.glade:328
+#: ../src/system-config-services.glade:327
 msgid "_Enable"
 msgstr "_Включить"
 
 #: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
-#: ../src/system-config-services.glade:345
+#: ../src/system-config-services.glade:344
 msgid "_Disable"
 msgstr "_Отключить"
 
@@ -294,12 +298,12 @@ msgstr "label16"
 msgid "Service %s:"
 msgstr "Служба %s:"
 
-#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1295
+#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1280
 msgid "Customize Runlevels"
 msgstr "Настроить уровни выполнения"
 
 #: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1238
+#: ../src/system-config-services.glade:1223
 msgid "Service Configuration"
 msgstr "Настройка служб"
 
@@ -312,36 +316,36 @@ msgid "Ser_vice"
 msgstr "Слу_жба"
 
 #: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:363
+#: ../src/system-config-services.glade:362
 msgid "_Customize"
 msgstr "_Настроить"
 
-#: ../src/system-config-services.glade:203
-#: ../src/system-config-services.glade:410
+#: ../src/system-config-services.glade:202
+#: ../src/system-config-services.glade:409
 msgid "S_top"
 msgstr "Ос_тановить"
 
-#: ../src/system-config-services.glade:251
+#: ../src/system-config-services.glade:250
 msgid "_Help"
 msgstr "_Справка"
 
-#: ../src/system-config-services.glade:260
+#: ../src/system-config-services.glade:259
 msgid "_Contents"
 msgstr "Содер_жание"
 
-#: ../src/system-config-services.glade:288
+#: ../src/system-config-services.glade:287
 msgid "_About"
 msgstr "_О программе"
 
-#: ../src/system-config-services.glade:362
+#: ../src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
 msgstr "Настроить уровни выполнения, на которых служба будет включена."
 
-#: ../src/system-config-services.glade:558
+#: ../src/system-config-services.glade:559
 msgid "No service selected."
 msgstr "Не выбрана служба."
 
-#: ../src/system-config-services.glade:620
+#: ../src/system-config-services.glade:621
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
@@ -349,12 +353,12 @@ msgstr ""
 "Эта служба запускается один раз, обычно при загрузке системы, работает в "
 "фоновом режиме и активируется при необходимости."
 
-#: ../src/system-config-services.glade:807
-#: ../src/system-config-services.glade:1006
+#: ../src/system-config-services.glade:769
+#: ../src/system-config-services.glade:960
 msgid "Description"
 msgstr "Описание"
 
-#: ../src/system-config-services.glade:874
+#: ../src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
@@ -362,23 +366,23 @@ msgstr ""
 "Служба будет запущена при необходимости службой xinetd и завершит работу, "
 "если больше нечего делать."
 
-#: ../src/system-config-services.glade:1080
+#: ../src/system-config-services.glade:1065
 msgid "Service Information"
 msgstr "Информация о службе"
 
-#: ../src/system-config-services.glade:1199
+#: ../src/system-config-services.glade:1184
 msgid "Status of service %s:"
 msgstr "Статус службы %s:"
 
-#: ../src/system-config-services.glade:1236
+#: ../src/system-config-services.glade:1221
 msgid "system-config-services"
 msgstr "system-config-services"
 
-#: ../src/system-config-services.glade:1237
+#: ../src/system-config-services.glade:1222
 msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
 msgstr "© 2002-2008 Red Hat, Inc. и др."
 
-#: ../src/system-config-services.glade:1239
+#: ../src/system-config-services.glade:1224
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -407,23 +411,23 @@ msgstr ""
 "сообщите в отделение Free Software Foundation, Inc. по адресу 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA."
 
-#: ../src/system-config-services.glade:1246
+#: ../src/system-config-services.glade:1231
 msgid "translator-credits"
 msgstr "перевод"
 
-#: ../src/system-config-services.glade:1391
+#: ../src/system-config-services.glade:1395
 msgid "Runlevel _2"
 msgstr "Уровень выполнения 2"
 
-#: ../src/system-config-services.glade:1410
+#: ../src/system-config-services.glade:1414
 msgid "Runlevel _3"
 msgstr "Уровень запуска _3"
 
-#: ../src/system-config-services.glade:1429
+#: ../src/system-config-services.glade:1433
 msgid "Runlevel _4"
 msgstr "Уровень запуска _4"
 
-#: ../src/system-config-services.glade:1448
+#: ../src/system-config-services.glade:1452
 msgid "Runlevel _5"
 msgstr "Уровень запуска _5"
 

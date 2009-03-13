@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.tip.gu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-20 16:11+0100\n"
+"POT-Creation-Date: 2009-03-13 13:44+0100\n"
 "PO-Revision-Date: 2008-09-26 12:31+0530\n"
 "Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
 "Language-Team: Gujarati\n"
@@ -32,48 +32,52 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../src/gui.py:109
+#: ../src/gui.py:112
 msgid "Name"
 msgstr "નામ"
 
-#: ../src/gui.py:110
+#: ../src/gui.py:113
 msgid "Remarks"
 msgstr "ટિપ્પણીઓ"
 
-#: ../src/gui.py:170 ../src/gui.py:187
+#: ../src/gui.py:174 ../src/gui.py:192
 msgid "This service is being refreshed right now."
 msgstr "આ સેવા અત્યારે તાજુ કરવામાં આવ્યુ છે."
 
-#: ../src/gui.py:171
+#: ../src/gui.py:175
+msgid "Getting information about this service failed."
+msgstr ""
+
+#: ../src/gui.py:176
 msgid "This service is enabled."
 msgstr "સેવા સક્રિય થયેલ છે."
 
-#: ../src/gui.py:172
+#: ../src/gui.py:177
 msgid "This service is disabled."
 msgstr "સેવા નિષ્ક્રિય થયેલ છે."
 
-#: ../src/gui.py:173
+#: ../src/gui.py:178
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "રનલેવલોમાં આ સેવા સક્રિય થયેલ છે: %(runlevels)s"
 
-#: ../src/gui.py:188
+#: ../src/gui.py:193
 msgid "The status of this service is unknown."
 msgstr "આ સેવાની સ્થિતી અજ્ઞાત છે."
 
-#: ../src/gui.py:189
+#: ../src/gui.py:194
 msgid "This service is stopped."
 msgstr "સેવા બંધ થયેલ છે."
 
-#: ../src/gui.py:190
+#: ../src/gui.py:195
 msgid "This service is running."
 msgstr "સેવા ચાલી રહી છે."
 
-#: ../src/gui.py:191
+#: ../src/gui.py:196
 msgid "This service is dead."
 msgstr "સેવા મૃત થઇ ગઇ છે."
 
-#: ../src/gui.py:268
+#: ../src/gui.py:273
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
@@ -82,11 +86,11 @@ msgstr ""
 "<b>%(servicename)s</b> સેવા એકવાર શરૂ થયેલ છે, સામાન્ય રીતે જ્યારે સિસ્ટમ બુટ થયેલ હોય "
 "છે, પાશ્ર્વભાગમાં ચલાવો અને જ્યારે જરૂરિયાત હોય ત્યારે જગાડો."
 
-#: ../src/gui.py:282
+#: ../src/gui.py:287
 msgid "This service is updated currently."
 msgstr "સેવા હાલમાં સુધારેલ છે."
 
-#: ../src/gui.py:308
+#: ../src/gui.py:313
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
@@ -95,7 +99,7 @@ msgstr ""
 "<b>%(servicename)s</b> સેવા xinetd સેવા દ્દારા માંગ પર શરૂ થયેલ હશે અને જ્યારે તેની પાસે "
 "કઇ વધારે કરવા માટે કંઇ ન હોય ત્યારે અંત થાય છે."
 
-#: ../src/gui.py:317
+#: ../src/gui.py:322
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
@@ -103,7 +107,7 @@ msgstr ""
 "આ સેવા સક્રિય થયેલ છે, પરંતુ <b>xinetd</b> પેકેજ સ્થાપિત થયેલ નથી. આ સેવા તેના વગર કામ "
 "કરતુ નથી."
 
-#: ../src/gui.py:323
+#: ../src/gui.py:328
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
@@ -111,12 +115,12 @@ msgstr ""
 "આ સેવા સક્રિય થયેલ છે, પરંતુ <b>xinetd</b> સેવા ચાલી નથી રહી. આ સેવા તેના વગર કામ કરતુ "
 "નથી."
 
-#: ../src/gui.py:630 ../src/system-config-services.glade:1365
+#: ../src/gui.py:710 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "આ રનલેવલોમાં <b>%(service)s</b> સેવા ને સક્રિય કરો:"
 
-#: ../src/gui.py:754
+#: ../src/gui.py:842
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
@@ -186,26 +190,26 @@ msgid "Enable Default"
 msgstr "મૂળભૂતને સક્રિય કરો"
 
 #: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
-#: ../src/system-config-services.glade:135
-#: ../src/system-config-services.glade:1256
+#: ../src/system-config-services.glade:134
+#: ../src/system-config-services.glade:1241
 msgid "Runlevel 2"
 msgstr "રનલેવલ 2"
 
 #: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
-#: ../src/system-config-services.glade:144
-#: ../src/system-config-services.glade:1266
+#: ../src/system-config-services.glade:143
+#: ../src/system-config-services.glade:1251
 msgid "Runlevel 3"
 msgstr "રનલેવલ 3"
 
 #: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
-#: ../src/system-config-services.glade:153
-#: ../src/system-config-services.glade:1276
+#: ../src/system-config-services.glade:152
+#: ../src/system-config-services.glade:1261
 msgid "Runlevel 4"
 msgstr "રનલેવલ 4"
 
 #: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
-#: ../src/system-config-services.glade:162
-#: ../src/system-config-services.glade:1286
+#: ../src/system-config-services.glade:161
+#: ../src/system-config-services.glade:1271
 msgid "Runlevel 5"
 msgstr "રનલેવલ 5"
 
@@ -268,23 +272,23 @@ msgstr "સેવા નિયંત્રણ"
 msgid "Status output"
 msgstr "સ્થિતી આઉટપુટ"
 
-#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:181
-#: ../src/system-config-services.glade:393
+#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:180
+#: ../src/system-config-services.glade:392
 msgid "_Start"
 msgstr "શરૂ કરો (_S)"
 
-#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:225
-#: ../src/system-config-services.glade:427
+#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:224
+#: ../src/system-config-services.glade:426
 msgid "_Restart"
 msgstr "પુન:શરૂ કરો (_R)"
 
 #: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
-#: ../src/system-config-services.glade:328
+#: ../src/system-config-services.glade:327
 msgid "_Enable"
 msgstr "સક્રિય (_E)"
 
 #: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
-#: ../src/system-config-services.glade:345
+#: ../src/system-config-services.glade:344
 msgid "_Disable"
 msgstr "નિષ્ક્રિય (_D)"
 
@@ -304,12 +308,12 @@ msgstr "લેબલ16"
 msgid "Service %s:"
 msgstr "સેવા %s:"
 
-#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1295
+#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1280
 msgid "Customize Runlevels"
 msgstr "રનલેવલોને રુચિ અનુસાર બનાવવુ"
 
 #: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1238
+#: ../src/system-config-services.glade:1223
 msgid "Service Configuration"
 msgstr "સેવા રૂપરેખાંકન"
 
@@ -322,36 +326,36 @@ msgid "Ser_vice"
 msgstr "સેવા (_v)"
 
 #: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:363
+#: ../src/system-config-services.glade:362
 msgid "_Customize"
 msgstr "રુચિ અનુસાર બનાવવુ (_C)"
 
-#: ../src/system-config-services.glade:203
-#: ../src/system-config-services.glade:410
+#: ../src/system-config-services.glade:202
+#: ../src/system-config-services.glade:409
 msgid "S_top"
 msgstr "બંધ કરો (_t)"
 
-#: ../src/system-config-services.glade:251
+#: ../src/system-config-services.glade:250
 msgid "_Help"
 msgstr "મદદ (_H)"
 
-#: ../src/system-config-services.glade:260
+#: ../src/system-config-services.glade:259
 msgid "_Contents"
 msgstr "વિષયસૂચી (_C)"
 
-#: ../src/system-config-services.glade:288
+#: ../src/system-config-services.glade:287
 msgid "_About"
 msgstr "વિશે (_A)"
 
-#: ../src/system-config-services.glade:362
+#: ../src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
 msgstr "કઇ સેવા સક્રિય થયેલ છે તેમાં રનલેવલોને રુચિ અનુસાર બનાવો."
 
-#: ../src/system-config-services.glade:558
+#: ../src/system-config-services.glade:559
 msgid "No service selected."
 msgstr "સેવા પસંદ થયેલ નથી."
 
-#: ../src/system-config-services.glade:620
+#: ../src/system-config-services.glade:621
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
@@ -359,12 +363,12 @@ msgstr ""
 "આ સેવા એકવાર શરૂ થયેલ છે, સામાન્ય રીતે જ્યારે સિસ્ટમ બુટ થયેલ છે, પાશ્ર્વભાગમાં ચલાવો અને "
 "જ્યારે જરૂરિયાત હોય ત્યારે જગાડો."
 
-#: ../src/system-config-services.glade:807
-#: ../src/system-config-services.glade:1006
+#: ../src/system-config-services.glade:769
+#: ../src/system-config-services.glade:960
 msgid "Description"
 msgstr "વર્ણન"
 
-#: ../src/system-config-services.glade:874
+#: ../src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
@@ -372,23 +376,23 @@ msgstr ""
 "xinetd સેવા દ્દારા આ સેવા માંગ પર શરૂ થયેલ હશે અને જ્યારે તેની પાસે કંઇ કરવા માટે નહિં હોય "
 "ત્યારે અંત થશે."
 
-#: ../src/system-config-services.glade:1080
+#: ../src/system-config-services.glade:1065
 msgid "Service Information"
 msgstr "સેવા જાણકારી"
 
-#: ../src/system-config-services.glade:1199
+#: ../src/system-config-services.glade:1184
 msgid "Status of service %s:"
 msgstr "સેવા %s ની સ્થિતી:"
 
-#: ../src/system-config-services.glade:1236
+#: ../src/system-config-services.glade:1221
 msgid "system-config-services"
 msgstr "system-config-services"
 
-#: ../src/system-config-services.glade:1237
+#: ../src/system-config-services.glade:1222
 msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
 msgstr "Copyright  2002-2008 Red Hat, Inc. and contributors"
 
-#: ../src/system-config-services.glade:1239
+#: ../src/system-config-services.glade:1224
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -418,23 +422,23 @@ msgstr ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 
-#: ../src/system-config-services.glade:1246
+#: ../src/system-config-services.glade:1231
 msgid "translator-credits"
 msgstr "શ્ર્વેતા કોઠારી <swkothar@redhat.com>"
 
-#: ../src/system-config-services.glade:1391
+#: ../src/system-config-services.glade:1395
 msgid "Runlevel _2"
 msgstr "રનલેવલ _2"
 
-#: ../src/system-config-services.glade:1410
+#: ../src/system-config-services.glade:1414
 msgid "Runlevel _3"
 msgstr "રનલેવલ _3"
 
-#: ../src/system-config-services.glade:1429
+#: ../src/system-config-services.glade:1433
 msgid "Runlevel _4"
 msgstr "રનલેવલ _4"
 
-#: ../src/system-config-services.glade:1448
+#: ../src/system-config-services.glade:1452
 msgid "Runlevel _5"
 msgstr "રનલેવલ _5"
 
