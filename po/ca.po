@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-09-27 00:47+0200\n"
+"PO-Revision-Date: 2009-03-13 00:47+0200\n"
 "Last-Translator: Xavier Conde Rueda <xaviconde@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
 "MIME-Version: 1.0\n"
@@ -42,7 +42,7 @@ msgstr "Aquest servei s'està refrescant."
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "No s'ha pogut obtenir informació d'aquest servei."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
