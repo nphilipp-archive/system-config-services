@@ -1,25 +1,23 @@
-# translation of system-config-services.tip.sr2.po to Serbian
 # Serbian(Latin) translations for system-config-services
 # Copyright (C) 2005 Red Hat, Inc.
 # This file is distributed under the same license as the system-config-services package.
-#
 # Miloš Komarčević <kmilos@gmail.com>, 2005.
 # Milos Mijatovic <mijatix@gmail.com>, 2008.
 # Igor Miletic <grejigl-gnomeprevod@yahoo.ca>, 2008.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.tip.sr2\n"
+"Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-04-06 02:15-0400\n"
-"Last-Translator: Igor Miletic <grejigl-gnomeprevod@yahoo.ca>\n"
-"Language-Team: Serbian <fedora-trans-sr@redhat.com>\n"
+"PO-Revision-Date: 2009-03-14 21:52+0100\n"
+"Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
+"Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: KBabel 1.11.4\n"
 
 #: ../src/gui.py:112
 msgid "Name"
@@ -35,7 +33,7 @@ msgstr "Ovaj se servis osvežava sada."
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "Pribavljanje informacija o ovom servisu nije uspelo."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -77,7 +75,7 @@ msgstr ""
 
 #: ../src/gui.py:287
 msgid "This service is updated currently."
-msgstr "Ovaj servis je trenutno ažuriran."
+msgstr "Ovaj servis je se trenutno ažurira."
 
 #: ../src/gui.py:313
 #, python-format
@@ -107,15 +105,15 @@ msgstr ""
 #: ../src/gui.py:710 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "Uključi servis <b>%(service)s</b> u ovim izvrpnim nivoima:"
+msgstr "Uključi servis <b>%(service)s</b> u ovim izvršnim nivoima:"
 
 #: ../src/gui.py:842
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
-"Program za pregledanje pomoći nije nađen. Da bi mogli pregledati pomoć paket "
-"„yelp“ mora biti instaliran."
+"Program za pregledanje pomoći nije nađen. Da biste mogli pregledati pomoć "
+"paket „yelp“ mora biti instaliran."
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -299,7 +297,7 @@ msgstr "Servis %s:"
 
 #: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1280
 msgid "Customize Runlevels"
-msgstr "Prilagodi izvšne nivoe"
+msgstr "Prilagodi izvršne nivoe"
 
 #: ../src/system-config-services.glade:7
 #: ../src/system-config-services.glade:1223
@@ -342,7 +340,7 @@ msgstr "Prilagodi izvršne nivoe u kojima je servis uključen."
 
 #: ../src/system-config-services.glade:559
 msgid "No service selected."
-msgstr "Ni jedan servis nije izabran."
+msgstr "Nijedan servis nije izabran."
 
 #: ../src/system-config-services.glade:621
 msgid ""
@@ -379,7 +377,7 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-msgstr "Autorska prava  2002-2008 Red Hat, Inc. i priložioci"
+msgstr "Autorska prava  2002-2008 Red Hat, Inc. i saradnici"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
@@ -404,15 +402,19 @@ msgstr ""
 "\n"
 "Ovaj program se raspodeljuje u nadi da će biti od koristi, ali BEZ IKAKVIH "
 "GARANCIJA; čak i bez podrazumevane garancije KORISNOSTI ili PRILAGOĐENOSTI "
-"ODREĐENOJ NAMENI.  Vidite GNU Opštu Javnu Licencu za više detalja.\n"
+"ODREĐENOJ NAMENI.  Vidite\n"
+"GNU Opštu Javnu Licencu za više detalja.\n"
 "\n"
-"Trebalo je da primite primerak GNU Opšte Javne Licence uz ovaj program, ako "
-"niste, pišite Zadužbini za Slobodni Softver  Free Software Foundation, Inc., "
+"Trebalo je da primite primerak GNU Opšte Javne Licence uz ovaj program; ako "
+"niste, pišite Zadužbini za Slobodni Softver: Free Software Foundation, Inc., "
 "59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: ../src/system-config-services.glade:1231
 msgid "translator-credits"
-msgstr "Igor Miletic Milos Komarcevic"
+msgstr ""
+"Miloš Komarčević <kmilos@gmail.com>, 2005.\n"
+"Milos Mijatovic <mijatix@gmail.com>, 2008.\n"
+"Igor Miletic <grejigl-gnomeprevod@yahoo.ca>, 2008."
 
 #: ../src/system-config-services.glade:1395
 msgid "Runlevel _2"
