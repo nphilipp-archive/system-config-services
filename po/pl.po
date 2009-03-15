@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-04-07 22:00+0200\n"
+"PO-Revision-Date: 2009-03-15 18:59+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -29,7 +29,7 @@ msgstr "Ta usługa jest właśnie odświeżana."
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "Uzyskiwanie informacji o tej usłudze nie powiodło się."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -328,7 +328,7 @@ msgstr "_Zawartość"
 
 #: ../src/system-config-services.glade:287
 msgid "_About"
-msgstr "_Informacje o"
+msgstr "_O programie"
 
 #: ../src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
