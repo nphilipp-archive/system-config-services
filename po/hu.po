@@ -10,13 +10,13 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-10-12 21:29+0200\n"
+"PO-Revision-Date: 2009-03-18 21:24+0100\n"
 "Last-Translator: Sulyok Péter <peti@sulyok.hu>\n"
 "Language-Team: Hungarian <fedora-trans-hu@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);"
 
 #: ../src/gui.py:112
 msgid "Name"
@@ -32,7 +32,7 @@ msgstr "A szolgáltatást éppen frissítem."
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "Nem sikerült adatokat lekérdezni e szolgáltatásról."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
