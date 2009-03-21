@@ -4,20 +4,20 @@
 # Valentina Besi <valentina@redhat.it>, 2001.
 # Luca Ferrari <alexluca@inwind.it>, 2004.
 # Francesco Valente <fvalen@redhat.com>, 2004.
-# Francesco Tombolini <tombo@adamantio.net>, 2005, 2006, 2007, 2008.
+# Francesco Tombolini <tombo@adamantio.net>, 2005, 2006, 2007, 2008, 2009.
 # Silvio Pierro <perplesso82@gmail.com>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-10-05 10:57+0200\n"
+"PO-Revision-Date: 2009-03-21 21:36+0100\n"
 "Last-Translator: Francesco Tombolini <tombo@adamantio.net>\n"
 "Language-Team: Italiano <fedora-trans-it@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #: ../src/gui.py:112
@@ -28,13 +28,14 @@ msgstr "Nome"
 msgid "Remarks"
 msgstr "Commenti"
 
-#: ../src/gui.py:174 ../src/gui.py:192
+#: ../src/gui.py:174
+#: ../src/gui.py:192
 msgid "This service is being refreshed right now."
 msgstr "Questo servizio è stato aggiornato in questo momento."
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "Recupero delle informazioni sul servizio fallito."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -67,13 +68,8 @@ msgstr "Questo servizio è morto."
 
 #: ../src/gui.py:273
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service is started once, usually when the system "
-"is booted, runs in the background and wakes up when needed."
-msgstr ""
-"Il servizio <b>%(servicename)s</b> viene avviato una volta, solitamente "
-"quando il sistema viene avviato, viene eseguito in background e si attiva "
-"quando necessario."
+msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "Il servizio <b>%(servicename)s</b> viene avviato una volta, solitamente quando il sistema viene avviato, viene eseguito in background e si attiva quando necessario."
 
 #: ../src/gui.py:287
 msgid "This service is updated currently."
@@ -81,41 +77,26 @@ msgstr "Questo servizio è attualmente aggiornato."
 
 #: ../src/gui.py:313
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has got nothing more to do."
-msgstr ""
-"Il servizio <b>%(servicename)s</b> sarà avviato a richiesta dal servizio "
-"xinetd e terminerà quando non avrà più nulla da fare."
+msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has got nothing more to do."
+msgstr "Il servizio <b>%(servicename)s</b> sarà avviato a richiesta dal servizio xinetd e terminerà quando non avrà più nulla da fare."
 
 #: ../src/gui.py:322
-msgid ""
-"This service is enabled, but the <b>xinetd</b> package is not installed. "
-"This service does not work without it."
-msgstr ""
-"Questo servizio è abilitato, ma il pacchetto <b>xinetd</b> non è installato. "
-"Questo servizio non funziona senza di esso."
+msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
+msgstr "Questo servizio è abilitato, ma il pacchetto <b>xinetd</b> non è installato. Questo servizio non funziona senza di esso."
 
 #: ../src/gui.py:328
-msgid ""
-"This service is enabled, but the <b>xinetd</b> service is not running. This "
-"service does not work without it."
-msgstr ""
-"Questo servizio è abilitato, ma il servizio <b>xinetd</b> non è in "
-"esecuzione. Questo servizio non funziona senza di esso."
+msgid "This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."
+msgstr "Questo servizio è abilitato, ma il servizio <b>xinetd</b> non è in esecuzione. Questo servizio non funziona senza di esso."
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:710
+#: ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Abilitare il servizio <b>%(service)s</b> in questi runlevel:"
 
 #: ../src/gui.py:842
-msgid ""
-"The help viewer could not be found. To be able to view help, the 'yelp' "
-"package needs to be installed."
-msgstr ""
-"Il visualizzatore di aiuto non può essere trovato. Per essere in grado di "
-"visualizzare l'aiuto, deve essere installato il pacchetto 'yelp'."
+msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
+msgstr "Il visualizzatore di aiuto non può essere trovato. Per essere in grado di visualizzare l'aiuto, deve essere installato il pacchetto 'yelp'."
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -142,12 +123,14 @@ msgstr "Il servizio %s riporta un errore"
 msgid "Service %s is stopped"
 msgstr "Il servizio %s è fermo"
 
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
+#: ../src/servicecontrol.py:234
+#: ../src/servicecontrol.py:253
 #, python-format
 msgid "Currently enabled in runlevels %s"
 msgstr "Attualmente abilitato nei runlevel %s"
 
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
+#: ../src/servicecontrol.py:242
+#: ../src/servicecontrol.py:256
 #, python-format
 msgid "Enable %(name)s in runlevels %(levels)s"
 msgstr "Abilitare %(name)s nei runlevel %(levels)s"
@@ -160,13 +143,17 @@ msgstr "window1"
 msgid "Service %s"
 msgstr "Servizio %s"
 
-#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
-#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
+#: ../src/servicetab.glade:47
+#: ../src/servicetab.glade:395
+#: ../src/servicetab.glade:606
+#: ../src/servicetab.glade:1949
 msgid "Enable"
 msgstr "Abilita"
 
-#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
-#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
+#: ../src/servicetab.glade:68
+#: ../src/servicetab.glade:413
+#: ../src/servicetab.glade:685
+#: ../src/servicetab.glade:1970
 msgid "Disable"
 msgstr "Disabilita"
 
@@ -174,53 +161,63 @@ msgstr "Disabilita"
 msgid "Customize"
 msgstr "Personalizza"
 
-#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
+#: ../src/servicetab.glade:110
+#: ../src/servicetab.glade:2013
 msgid "Enable Default"
 msgstr "Abilita come predefinito"
 
-#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
+#: ../src/servicetab.glade:137
+#: ../src/servicetab.glade:2040
 #: ../src/system-config-services.glade:134
 #: ../src/system-config-services.glade:1241
 msgid "Runlevel 2"
 msgstr "Runlevel 2"
 
-#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
+#: ../src/servicetab.glade:147
+#: ../src/servicetab.glade:2050
 #: ../src/system-config-services.glade:143
 #: ../src/system-config-services.glade:1251
 msgid "Runlevel 3"
 msgstr "Runlevel 3"
 
-#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
+#: ../src/servicetab.glade:157
+#: ../src/servicetab.glade:2060
 #: ../src/system-config-services.glade:152
 #: ../src/system-config-services.glade:1261
 msgid "Runlevel 4"
 msgstr "Runlevel 4"
 
-#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
+#: ../src/servicetab.glade:167
+#: ../src/servicetab.glade:2070
 #: ../src/system-config-services.glade:161
 #: ../src/system-config-services.glade:1271
 msgid "Runlevel 5"
 msgstr "Runlevel 5"
 
-#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
+#: ../src/servicetab.glade:183
+#: ../src/servicetab.glade:2086
 msgid "Enable All"
 msgstr "Abilita tutti"
 
-#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
+#: ../src/servicetab.glade:204
+#: ../src/servicetab.glade:2107
 msgid "Disable All"
 msgstr "Disabilita tutti"
 
-#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
+#: ../src/servicetab.glade:235
+#: ../src/servicetab.glade:332
 #: ../src/servicetab.glade:2135
 msgid "Start"
 msgstr "Avvia"
 
-#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
+#: ../src/servicetab.glade:256
+#: ../src/servicetab.glade:349
 #: ../src/servicetab.glade:2156
 msgid "Restart"
 msgstr "Riavvia"
 
-#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
+#: ../src/servicetab.glade:292
+#: ../src/servicetab.glade:441
 #: ../src/servicetab.glade:1922
 msgid "Configure"
 msgstr "Configura"
@@ -237,7 +234,8 @@ msgstr "barfoo"
 msgid "Current runlevel is %s"
 msgstr "Il runlevel corrente è il %s"
 
-#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
+#: ../src/servicetab.glade:764
+#: ../src/servicetab.glade:836
 msgid "Runlevels"
 msgstr "Runlevel"
 
@@ -249,7 +247,8 @@ msgstr "label18"
 msgid "Start "
 msgstr "Avvia "
 
-#: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
+#: ../src/servicetab.glade:1019
+#: ../src/servicetab.glade:2177
 msgid "Stop"
 msgstr "Arresta"
 
@@ -261,22 +260,26 @@ msgstr "Controllo servizio"
 msgid "Status output"
 msgstr "Output dello stato"
 
-#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:180
+#: ../src/servicetab.glade:1260
+#: ../src/system-config-services.glade:180
 #: ../src/system-config-services.glade:392
 msgid "_Start"
 msgstr "_Avvia"
 
-#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:224
+#: ../src/servicetab.glade:1339
+#: ../src/system-config-services.glade:224
 #: ../src/system-config-services.glade:426
 msgid "_Restart"
 msgstr "_Riavvia"
 
-#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
+#: ../src/servicetab.glade:1446
+#: ../src/system-config-services.glade:69
 #: ../src/system-config-services.glade:327
 msgid "_Enable"
 msgstr "A_bilita"
 
-#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
+#: ../src/servicetab.glade:1525
+#: ../src/system-config-services.glade:91
 #: ../src/system-config-services.glade:344
 msgid "_Disable"
 msgstr "_Disabilita"
@@ -293,11 +296,13 @@ msgstr "Button Box"
 msgid "label16"
 msgstr "label16"
 
-#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
+#: ../src/servicetab.glade:1779
+#: ../src/servicetab.glade:1864
 msgid "Service %s:"
 msgstr "Servizio %s:"
 
-#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1280
+#: ../src/servicetab.glade:1991
+#: ../src/system-config-services.glade:1280
 msgid "Customize Runlevels"
 msgstr "Personalizzazione runlevel"
 
@@ -345,12 +350,8 @@ msgid "No service selected."
 msgstr "Nessun servizio selezionato."
 
 #: ../src/system-config-services.glade:621
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"Questo servizio viene avviato una volta, solitamente quando il sistema viene "
-"avviato, viene eseguito in background e si attiva quando necessario."
+msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "Questo servizio viene avviato una volta, solitamente quando il sistema viene avviato, viene eseguito in background e si attiva quando necessario."
 
 #: ../src/system-config-services.glade:769
 #: ../src/system-config-services.glade:960
@@ -358,12 +359,8 @@ msgid "Description"
 msgstr "Descrizione"
 
 #: ../src/system-config-services.glade:867
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has got nothing more to do."
-msgstr ""
-"Questo servizio sarà avviato a richiesta dal servizio xinetd e terminerà "
-"quando non avrà più nulla da fare."
+msgid "This service will be started on demand by the xinetd service and ends when it has got nothing more to do."
+msgstr "Questo servizio sarà avviato a richiesta dal servizio xinetd e terminerà quando non avrà più nulla da fare."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -383,33 +380,19 @@ msgstr "Copyright  2002-2008 Red Hat, Inc. e contributori"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: ../src/system-config-services.glade:1231
 msgid "translator-credits"
@@ -447,3 +430,4 @@ msgstr "Gestione dei servizi"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Servizi"
+
