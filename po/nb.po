@@ -1,13 +1,13 @@
 # Norwegian bokmål translation of system-config-services.
 # Copyright (C) 2004 Free Software Foundation, Inc.
-# Kjartan Maraas <kmaraas@broadpark.no>, 2004-2008
+# Kjartan Maraas <kmaraas@broadpark.no>, 2004-2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services 0.99.8\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-10-11 12:17+0200\n"
+"PO-Revision-Date: 2009-03-25 21:19+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@broadpark.no>\n"
 "Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr "Tjenesten oppdateres akkurat nå."
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "Klarte ikke å hente informasjon om denne tjenesten."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -108,7 +108,7 @@ msgstr "Tjeneste %s ikke funnet!"
 #: ../src/servicecontrol.py:94
 #, python-format
 msgid "Service %s is running with old configuration"
-msgstr ""
+msgstr "Tjeneste %s kjører med gammel konfigurasjon"
 
 #: ../src/servicecontrol.py:97
 #, python-format
@@ -128,12 +128,12 @@ msgstr "Tjeneste %s er stoppet"
 #: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
 #, python-format
 msgid "Currently enabled in runlevels %s"
-msgstr ""
+msgstr "Aktivert i kjøringsnivå %s"
 
 #: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
 #, python-format
 msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr ""
+msgstr "Slå på %(name)s i kjøringsnivå %(level)s"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -159,7 +159,7 @@ msgstr "Tilpass"
 
 #: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
 msgid "Enable Default"
-msgstr ""
+msgstr "Slå på som forvalg"
 
 #: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
 #: ../src/system-config-services.glade:134
@@ -282,7 +282,7 @@ msgstr "Tjeneste %s:"
 
 #: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1280
 msgid "Customize Runlevels"
-msgstr ""
+msgstr "Tilpass kjøringsnivåer"
 
 #: ../src/system-config-services.glade:7
 #: ../src/system-config-services.glade:1223
