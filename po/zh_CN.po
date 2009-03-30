@@ -1,17 +1,17 @@
-# translation of system-config-services.tip.po to Simplified Chinese
+# translation of system-config-services.master.po to Simplified Chinese
 # translation of zh_CN.po to
 # Simplified Chinese Version of serviceconf.
 # Copyright (C) 2002 Red Hat, Inc.
 #
 # Sarah Wang <sarahs@redhat.com>, 2003,2004, 2005.
 # Leah Liu <weliu@redhat.com>, 2005, 2006.
-# Leah Liu <lliu@redhat.com>, 2008.
+# Leah Liu <lliu@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.tip\n"
+"Project-Id-Version: system-config-services.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-09-25 09:10+1000\n"
+"PO-Revision-Date: 2009-03-30 15:01+1000\n"
 "Last-Translator: Leah Liu <lliu@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -33,7 +33,7 @@ msgstr "正在刷新这个服务。"
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "获取有关此服务的信息失败。"
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -82,8 +82,7 @@ msgstr "目前更新了这个服务。"
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
-msgstr ""
-"将根据 xinetd 服务的需要启动 <b>%(servicename)s</b> 服务，并在不需要时终止。"
+msgstr "将根据 xinetd 服务的需要启动 <b>%(servicename)s</b> 服务，并在不需要时终止。"
 
 #: ../src/gui.py:322
 msgid ""
@@ -97,8 +96,7 @@ msgstr ""
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"启用了这个服务，但没有运行 <b>xinetd</b> 服务。没有它这个服务无法工作。"
+msgstr "启用了这个服务，但没有运行 <b>xinetd</b> 服务。没有它这个服务无法工作。"
 
 #: ../src/gui.py:710 ../src/system-config-services.glade:1351
 #, python-format
@@ -427,3 +425,4 @@ msgstr "服务程序管理："
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "服务"
+
