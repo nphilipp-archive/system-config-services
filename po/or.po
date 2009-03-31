@@ -1,23 +1,23 @@
-# translation of system-config-services.tip.or.po to Oriya
+# translation of system-config-services.master.or.po to Oriya
 # This file is distributed under the same license as the system-config-services package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
 # Subhransu Behera <sbehera@redhat.com>, 2006.
 # saroj kumar padhy <saroz.kumar@gmail.com>, 2008.
-# Manoj Kumar Giri <mgiri@redhat.com>, 2008.
+# Manoj Kumar Giri <mgiri@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.tip.or\n"
+"Project-Id-Version: system-config-services.master.or\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-09-27 14:16+0530\n"
+"PO-Revision-Date: 2009-03-31 17:51+0530\n"
 "Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
-"Language-Team: Oriya\n"
+"Language-Team: Oriya <oriya-it@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2;plural=(n!=1)\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
 "\n"
 "\n"
 "\n"
@@ -37,7 +37,7 @@ msgstr "ଏହି ସର୍ଭିସକୁ ବର୍ତ୍ତମାନ ସତେ
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "ଏହି ସର୍ଭିସ ବିଷୟରେ ସୂଚନା ଗ୍ରହଣ କରିବାରେ ବିଫଳ।"
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -115,8 +115,7 @@ msgstr "ଏହି ଚାଲିବା ସ୍ତରଗୁଡ଼ିକରେ <b>%(s
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"ସହାୟକ ପ୍ରଦର୍ଶକ ମିଳୁନାହିଁ. ସହାୟତା ଦେଖିବାପାଇଁ ଆପଣଙ୍କୁ 'yelp' ପ୍ଯାକେଜ ସ୍ଥାପନ କରିବାକୁ ପଡିବ."
+msgstr "ସହାୟକ ପ୍ରଦର୍ଶକ ମିଳୁନାହିଁ. ସହାୟତା ଦେଖିବାପାଇଁ ଆପଣଙ୍କୁ 'yelp' ପ୍ଯାକେଜ ସ୍ଥାପନ କରିବାକୁ ପଡିବ."
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -443,3 +442,4 @@ msgstr "ସେବା ପରିଚାଳନ"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "ସେବା"
+
