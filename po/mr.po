@@ -1,4 +1,4 @@
-# translation of system-config-services.tip.mr.po to marathi
+# translation of system-config-services.master.mr.po to marathi
 # Marathi translations for PACKAGE package.
 # Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the system-config-services package.
@@ -6,13 +6,13 @@
 # Automatically generated, 2004.
 # Rahul Bhalerao <rbhalera@redhat.com>, 2006.
 # Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006.
-# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008.
+# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.tip.mr\n"
+"Project-Id-Version: system-config-services.master.mr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-10-03 17:03+0530\n"
+"PO-Revision-Date: 2009-03-31 19:55+0530\n"
 "Last-Translator: Sandeep Shedmake <sandeep.shedmake@gmail.com>\n"
 "Language-Team: marathi\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,7 @@ msgstr "ही सेवा आता पुन्ह दाखल केली 
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "या सेवा विषयी माहिती प्राप्त करणे अपयशी ठरले."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -113,8 +113,7 @@ msgstr "या रनलेवल अंतर्गत <b>%(service)s</b> स�
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"मदत प्रदर्शक आढळले नाही. मदत पहाण्याकरीता, 'yelp' संकुल प्रतिष्ठापीत करणे आवश्यक आहे."
+msgstr "मदत प्रदर्शक आढळले नाही. मदत पहाण्याकरीता, 'yelp' संकुल प्रतिष्ठापीत करणे आवश्यक आहे."
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -414,7 +413,7 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006; संदिप शेडमाके <sandeep."
-"shedmake@gmail.com>, 2008."
+"shedmake@gmail.com>, 2008, 2009."
 
 #: ../src/system-config-services.glade:1395
 msgid "Runlevel _2"
@@ -443,3 +442,4 @@ msgstr "सेवा व्यवस्थापन"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "सेवा"
+
