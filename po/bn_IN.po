@@ -1,20 +1,20 @@
-# translation of system-config-services.tip.po to Bengali INDIA
+# translation of system-config-services.master.bn_IN.po to Bengali INDIA
 # Bangla Translation of system-config-services
 # Copyright (C) 2003 Red Hat, Inc.
 # This file is distributed under the same license as the system-config-services package.
 #
 # Indranil Das Gupta <indradg@cal.vsnl.net.in>, 2003.
-# Runa Bhattacharjee <runab@redhat.com>, 2005, 2006, 2008.
+# Runa Bhattacharjee <runab@redhat.com>, 2005, 2006, 2008, 2009.
 # Runa Bhattacharjee <runabh@gmail.com>, 2007.
 # Runa Bhattacharjee <runab@fedoraproject.org>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.tip\n"
+"Project-Id-Version: system-config-services.master.bn_IN\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-09-25 18:43+0530\n"
+"PO-Revision-Date: 2009-03-31 14:33+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
-"Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
+"Language-Team: Bengali INDIA <fedora-trans-bn_in@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,7 +37,7 @@ msgstr "পরিসেবার তথ্য নতুন করে প্র�
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "চিহ্নিত পরিসেবা সম্পর্কে তথ্য প্রাপ্ত করতে ব্যর্থ।"
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -363,8 +363,7 @@ msgstr "বিবরণ"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
-msgstr ""
-"প্রয়োজনে এই পরিসেবাটি xinetd দ্বারা আরম্ভ করা হবে ও কর্ম সমাপ্ত হলে বন্ধ করা হবে।"
+msgstr "প্রয়োজনে এই পরিসেবাটি xinetd দ্বারা আরম্ভ করা হবে ও কর্ম সমাপ্ত হলে বন্ধ করা হবে।"
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -443,3 +442,4 @@ msgstr "পরিসেবা পরিচালনা"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "পরিসেবা"
+
