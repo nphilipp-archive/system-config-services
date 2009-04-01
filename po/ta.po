@@ -1,4 +1,4 @@
-# translation of system-config-services.tip.ta.po to Tamil
+# translation of system-config-services.master.ta.po to Tamil
 # translation of ta.po to
 # This file is distributed under the same license as the system-config-services package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
@@ -6,13 +6,13 @@
 # Jayaradha N <jaya@pune.redhat.com>, 2004.
 # Jayaradha N <njaya@redhat.com>, 2004, 2006.
 # Felix <ifelix@redhat.com>, 2006.
-# I. Felix <ifelix@redhat.com>, 2008.
+# I. Felix <ifelix@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.tip.ta\n"
+"Project-Id-Version: system-config-services.master.ta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-10-13 16:43+0530\n"
+"PO-Revision-Date: 2009-04-01 12:43+0530\n"
 "Last-Translator: I. Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -20,6 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\\n\n"
+"\n"
 "\n"
 "\n"
 "\n"
@@ -44,7 +45,7 @@ msgstr "இந்த சேவை இப்போது புதுப்பி
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "இந்த சேவையை பற்றிய தகவலை பெற முடியவில்லை."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -449,3 +450,4 @@ msgstr "சேவை மேலாண்மை"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "சேவைகள்"
+
