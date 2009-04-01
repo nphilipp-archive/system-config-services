@@ -1,3 +1,4 @@
+# translation of ru.po to
 # translation of system-config-services.tip.ru.po to
 # Copyright (C) 2008 ORGANIZATION.
 #
@@ -8,13 +9,13 @@
 # Ivan Kukharchuk <wedge@inbox.ru>, 2006.
 # Anatoliy Guskov <anatoliy.guskov@gmail.com>, 2008.
 # Andrew Martynov <andrewm@inventa.ru>, 2008.
-# Yulia Poyarkova <yulia.poyarkova@redhat.com>, 2008.
+# Yulia Poyarkova <yulia.poyarkova@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.tip.ru\n"
+"Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-09-25 14:08+1000\n"
+"PO-Revision-Date: 2009-04-01 15:12+1100\n"
 "Last-Translator: Yulia Poyarkova <yulia.poyarkova@redhat.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -36,7 +37,7 @@ msgstr "Осуществляется обновление службы."
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "Не удалось получить информацию об этой службе."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -442,3 +443,4 @@ msgstr "Управление службами"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Службы"
+
