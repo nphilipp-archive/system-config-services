@@ -1,15 +1,15 @@
-# translation of system-config-services.tip.gu.po to Gujarati
+# translation of gu.po to Gujarati
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
 # Ankit Patel <ankit@redhat.com>, 2004, 2005, 2006, 2007, 2008.
-# Sweta Kothari <swkothar@redhat.com>, 2008.
+# Sweta Kothari <swkothar@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.tip.gu\n"
+"Project-Id-Version: gu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-09-26 12:31+0530\n"
+"PO-Revision-Date: 2009-04-01 14:35+0530\n"
 "Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
 "Language-Team: Gujarati\n"
 "MIME-Version: 1.0\n"
@@ -46,7 +46,7 @@ msgstr "આ સેવા અત્યારે તાજુ કરવામા�
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "આ નિષ્ફળ થયેલ સેવા વિશે જાણકારી મેળવી રહ્યા છે."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -453,3 +453,4 @@ msgstr "સેવા વ્યવસ્થાપન"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "સેવાઓ"
+
