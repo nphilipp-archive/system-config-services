@@ -4,19 +4,19 @@
 #
 # Amitakhya Phukan <amitakhya.phukan@gmail.com>, 2006.
 # Amitakhya Phukan <aphukan@redhat.com>, 2008.
-# Amitakhya Phukan <aphukan@fedoraproject.org>, 2008.
+# Amitakhya Phukan <aphukan@fedoraproject.org>, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.tip\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-10-06 12:58+0530\n"
+"PO-Revision-Date: 2009-04-01 15:31+0530\n"
 "Last-Translator: Amitakhya Phukan <aphukan@fedoraproject.org>\n"
-"Language-Team: Assamese\n"
+"Language-Team: Assamese <fedora-trans-as@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 0.3\n"
 "Plural-Forms: nplurals=2; plural=(n!=1)\n"
 
 #: ../src/gui.py:112
@@ -33,7 +33,7 @@ msgstr "এই সেৱা এতিয়া সতেজ কৰা হৈছে 
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "এই সেৱাৰ তথ্য পোৱা বিফল হ'ল ।"
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -98,8 +98,7 @@ msgstr ""
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"সেৱা সক্ৰিয়, কিন্তু <b>xinetd</b> সৰঞ্জাম চলা নাই । এইটো ন'হলে সেৱাই কাম নকৰে ।"
+msgstr "সেৱা সক্ৰিয়, কিন্তু <b>xinetd</b> সৰঞ্জাম চলা নাই । এইটো ন'হলে সেৱাই কাম নকৰে ।"
 
 #: ../src/gui.py:710 ../src/system-config-services.glade:1351
 #, python-format
@@ -110,8 +109,7 @@ msgstr "এই চলনাস্তৰসমূহত <b>%(service)s</b> সে
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"সহায় প্ৰদৰ্শক পোৱা ন'গ'ল । সহায় চাবলৈ, 'yelp' সৰঞ্জাম সংস্থাপিত হ'ব লাগিব ।"
+msgstr "সহায় প্ৰদৰ্শক পোৱা ন'গ'ল । সহায় চাবলৈ, 'yelp' সৰঞ্জাম সংস্থাপিত হ'ব লাগিব ।"
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -438,3 +436,4 @@ msgstr "সেৱাৰ পৰিচালনা"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "সেৱাসমূহ"
+
