@@ -1,3 +1,4 @@
+# translation of system-config-services.master.ml.po to
 # translation of system-config-services.tip.ml.po to
 # translation of ml.po to
 # This file is distributed under the same license as the system-config-services package.
@@ -6,10 +7,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.tip.ml\n"
+"Project-Id-Version: system-config-services.master.ml\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-10-18 17:50+0530\n"
+"PO-Revision-Date: 2009-04-02 04:03+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -36,7 +37,7 @@ msgstr "ഈ സേവനം നിലവില്‍ പരിഷ്കരിക
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "ഈ സര്‍വീസ് സംബന്ധിച്ചുള്ള വിവരം ലഭിക്കുവാന്‍ സാധ്യമായില്ല."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -101,8 +102,7 @@ msgstr ""
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സേവനം പ്രവര്‍ത്തിക്കുന്നതല്ല."
+msgstr "ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സേവനം പ്രവര്‍ത്തിക്കുന്നതല്ല."
 
 #: ../src/gui.py:710 ../src/system-config-services.glade:1351
 #, python-format
@@ -440,3 +440,4 @@ msgstr "സര്‍വീസ് മാനേജ്മെന്റ്"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "സേവനങ്ങള്‍"
+
