@@ -1,25 +1,31 @@
+# translation of system-config-services.master.po to Dutch
 # Translation of system-config-services to Dutch.
-# Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+# Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the system-config-services package.
+#
+# --
+# Misschien is 'voorzieningen' toch wat te belegen/vergezocht
+# en moeten we het gewoon bij services houden.
+#    +1 helemaal mee eens dus. ga ik nu veranderen. Indien iemand niet mee eens
+#          mag die het weer op 'voorzieningen' zetten  RL 04/2009
 #
 # Taco Witte <T.C.Witte@phys.uu.nl>, 2002.
 # Tino Meinen <a.t.meinen@chello.nl>, 2003.
 # Peter van Egdom <p.van.egdom@gmail.com>, 2003, 2004, 2005, 2006, 2007, 2008.
-# --
-# Misschien is 'voorzieningen' toch wat te belegen/vergezocht
-# en moeten we het gewoon bij services houden.
-#
+# R.E. van der Luit <nippur@fedoraproject.org>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-09-29 23:18+0200\n"
-"Last-Translator: Peter van Egdom <p.van.egdom@gmail.com>\n"
-"Language-Team: Dutch <fedora-trans-list@redhat.com>\n"
+"PO-Revision-Date: 2009-04-02 15:28+0200\n"
+"Last-Translator: R.E. van der Luit <nippur@fedoraproject.org>\n"
+"Language-Team: Dutch <nippur@fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: ../src/gui.py:112
 msgid "Name"
@@ -31,40 +37,40 @@ msgstr "Opmerkingen"
 
 #: ../src/gui.py:174 ../src/gui.py:192
 msgid "This service is being refreshed right now."
-msgstr "Deze voorziening wordt op dit moment ververst."
+msgstr "Deze service wordt op dit moment ververst."
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "Verkrijgen van informatie over deze service is niet gelukt."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
-msgstr "Deze voorziening is aangezet."
+msgstr "Deze service is aangezet."
 
 #: ../src/gui.py:177
 msgid "This service is disabled."
-msgstr "Deze voorziening is uitgezet."
+msgstr "Deze service is uitgezet."
 
 #: ../src/gui.py:178
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr "Deze voorziening is aangezet in runlevels: %(runlevels)s"
+msgstr "Deze service is aangezet in runlevels: %(runlevels)s"
 
 #: ../src/gui.py:193
 msgid "The status of this service is unknown."
-msgstr "De status van deze voorziening is onbekend."
+msgstr "De status van deze service is onbekend."
 
 #: ../src/gui.py:194
 msgid "This service is stopped."
-msgstr "Deze voorziening is gestopt."
+msgstr "Deze service is gestopt."
 
 #: ../src/gui.py:195
 msgid "This service is running."
-msgstr "Deze voorziening is actief."
+msgstr "Deze service is actief."
 
 #: ../src/gui.py:196
 msgid "This service is dead."
-msgstr "Deze voorziening is afgesloten."
+msgstr "Deze service is afgesloten."
 
 #: ../src/gui.py:273
 #, python-format
@@ -72,13 +78,13 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
-"De <b>%(servicename)s</b> voorziening wordt eenmaal gestart, meestal wanneer "
+"De <b>%(servicename)s</b> service wordt eenmaal gestart, meestal wanneer "
 "het systeem wordt opgestart, wordt uitgevoerd in de achtergrond en wordt "
 "actief als dat nodig is."
 
 #: ../src/gui.py:287
 msgid "This service is updated currently."
-msgstr "Deze voorziening wordt momenteel bijgewerkt."
+msgstr "Deze service wordt momenteel bijgewerkt."
 
 #: ../src/gui.py:313
 #, python-format
@@ -86,29 +92,29 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has got nothing more to do."
 msgstr ""
-"De <b>%(servicename)s</b> voorziening zal op verzoek worden gestart door de "
-"xinetd voorziening en eindigt wanneer het niets meer te doen heeft."
+"De <b>%(servicename)s</b> service zal op verzoek worden gestart door de "
+"xinetd service en eindigt wanneer het niets meer te doen heeft."
 
 #: ../src/gui.py:322
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
-"Deze voorziening is aangezet, maar het <b>xinetd</b> pakket is niet "
-"geïnstalleerd. Deze voorziening werkt hier niet zonder mee."
+"Deze service is aangezet, maar het <b>xinetd</b> pakket is niet "
+"geïnstalleerd. Deze service werkt hier niet zonder mee."
 
 #: ../src/gui.py:328
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
-"Deze voorziening is aangezet, maar de <b>xinetd</b> voorziening is niet "
-"actief. Deze voorziening werkt hier niet zonder mee."
+"Deze service is aangezet, maar de <b>xinetd</b> service is niet "
+"actief. Deze service werkt hier niet zonder mee."
 
 #: ../src/gui.py:710 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "Zet de <b>%(service)s</b> voorziening aan in deze runlevels:"
+msgstr "Zet de <b>%(service)s</b> service aan in deze runlevels:"
 
 #: ../src/gui.py:842
 msgid ""
@@ -121,27 +127,27 @@ msgstr ""
 #: ../src/servicecontrol.py:88
 #, python-format
 msgid "Service %s not found!"
-msgstr "Voorziening %s niet gevonden!"
+msgstr "Service %s niet gevonden!"
 
 #: ../src/servicecontrol.py:94
 #, python-format
 msgid "Service %s is running with old configuration"
-msgstr "Voorziening %s is actief met oude configuratie"
+msgstr "Service %s is actief met oude configuratie"
 
 #: ../src/servicecontrol.py:97
 #, python-format
 msgid "Service %s is running"
-msgstr "Voorziening %s is actief"
+msgstr "Service %s is actief"
 
 #: ../src/servicecontrol.py:100
 #, python-format
 msgid "Service %s reports an error"
-msgstr "Voorziening %s rapporteert een fout"
+msgstr "Service %s rapporteert een fout"
 
 #: ../src/servicecontrol.py:103
 #, python-format
 msgid "Service %s is stopped"
-msgstr "Voorziening %s is gestopt"
+msgstr "Service %s is gestopt"
 
 #: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
 #, python-format
@@ -159,7 +165,7 @@ msgstr "window1"
 
 #: ../src/servicetab.glade:38
 msgid "Service %s"
-msgstr "Voorziening %s"
+msgstr "Service %s"
 
 #: ../src/servicetab.glade:47 ../src/servicetab.glade:395
 #: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
@@ -256,7 +262,7 @@ msgstr "Stoppen"
 
 #: ../src/servicetab.glade:1066
 msgid "Service control"
-msgstr "Voorzieningenbesturing"
+msgstr "Service besturing"
 
 #: ../src/servicetab.glade:1148
 msgid "Status output"
@@ -296,7 +302,7 @@ msgstr "label16"
 
 #: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
 msgid "Service %s:"
-msgstr "Voorziening %s:"
+msgstr "Service %s:"
 
 #: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1280
 msgid "Customize Runlevels"
@@ -305,7 +311,7 @@ msgstr "Runlevels aanpassen"
 #: ../src/system-config-services.glade:7
 #: ../src/system-config-services.glade:1223
 msgid "Service Configuration"
-msgstr "Voorzieningenconfiguratie"
+msgstr "Service Configuratie"
 
 #: ../src/system-config-services.glade:38
 msgid "_Program"
@@ -339,18 +345,18 @@ msgstr "_Over"
 
 #: ../src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
-msgstr "Pas de runlevels aan waarin een voorziening is aangezet."
+msgstr "Pas de runlevels aan waarin een service is aangezet."
 
 #: ../src/system-config-services.glade:559
 msgid "No service selected."
-msgstr "Geen voorziening geselecteerd."
+msgstr "Geen service geselecteerd."
 
 #: ../src/system-config-services.glade:621
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
-"Deze voorziening wordt eenmaal gestart, meestal wanneer het systeem wordt "
+"Deze service wordt eenmaal gestart, meestal wanneer het systeem wordt "
 "opgestart, wordt uitgevoerd in de achtergrond en wordt actief als dat nodig "
 "is."
 
@@ -364,16 +370,16 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has got nothing more to do."
 msgstr ""
-"Deze voorziening zal op verzoek worden gestart door de xinetd voorziening en "
+"Deze service zal op verzoek worden gestart door de xinetd service en "
 "eindigt wanneer het niets meer te doen heeft."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
-msgstr "Voorzieningeninformatie"
+msgstr "service informatie"
 
 #: ../src/system-config-services.glade:1184
 msgid "Status of service %s:"
-msgstr "Status van voorziening %s:"
+msgstr "Status van service %s:"
 
 #: ../src/system-config-services.glade:1221
 msgid "system-config-services"
@@ -439,280 +445,13 @@ msgstr "Runlevel _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
-"Configureer welke voorzieningen actief zullen zijn wanneer het systeem start"
+msgstr "Configureer welke service actief zal zijn wanneer het systeem start"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr "Voorzieningenbeheer"
+msgstr "Service Beheer"
 
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
-msgstr "Voorzieningen"
+msgstr "Services"
 
-#~ msgid "None"
-#~ msgstr "Geen"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Opslaan dialoogvenster"
-
-#~ msgid "Don't Save"
-#~ msgstr "Niet opslaan"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "U hebt veranderingen gemaakt in het huidige runlevel.\n"
-#~ "Wilt u deze veranderingen opslaan?"
-
-#~ msgid "Add Service"
-#~ msgstr "Voorziening toevoegen"
-
-#~ msgid "Service Name: "
-#~ msgstr "Voorzieningnaam: "
-
-#~ msgid "_File"
-#~ msgstr "_Bestand"
-
-#~ msgid "_Save Changes"
-#~ msgstr "Wijzigingen op_slaan"
-
-#~ msgid "Revert To _Last Save"
-#~ msgstr "Naar _laatste opgeslagen wijziging terugkeren"
-
-#~ msgid "_Quit"
-#~ msgstr "_Afsluiten"
-
-#~ msgid "_View"
-#~ msgstr "Beel_d"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "Voorzieningenlijst _verversen"
-
-#~ msgid "_Actions"
-#~ msgstr "_Acties"
-
-#~ msgid "Delete Service"
-#~ msgstr "Voorziening verwijderen"
-
-#~ msgid "_Start Service"
-#~ msgstr "Voorziening _starten"
-
-#~ msgid "S_top Service"
-#~ msgstr "Voorziening s_toppen"
-
-#~ msgid "_Restart Service"
-#~ msgstr "Voorziening _herstarten"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "Runlevel _bewerken"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "Runlevel _Alle"
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Deze voorzieningen worden eenmaal opgestart en zijn actief in de "
-#~ "achtergrond. U kunt opgeven in welke runlevels ze worden gestart."
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "Huidig actief runlevel: "
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "Runlevel dat wordt bewerkt:"
-
-#~ msgid "Status"
-#~ msgstr "Status"
-
-#~ msgid "_Background Services"
-#~ msgstr "_Achtergrondvoorzieningen"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "Deze voorzieningen starten automatisch wanneer ze nodig zijn, en stoppen "
-#~ "wanneer ze niet meer nodig zijn. De <b>xinetd</b> voorziening moet actief "
-#~ "zijn om ze te kunnen gebruiken."
-
-#~ msgid "_On Demand Services"
-#~ msgstr "Aut_omatische voorzieningen"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "Weet u zeker dat u %s wilt verwijderen?"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "Runlevel %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "Momenteel actief in runlevel: "
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "Runlevel dat wordt bewerkt: "
-
-#~ msgid "Unknown"
-#~ msgstr "Onbekend"
-
-#~ msgid "All"
-#~ msgstr "Alle"
-
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "Configuratiehulpmiddel voor systeemvoorzieningen VERSION\n"
-#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "Over"
-
-#~ msgid ""
-#~ "The help viewer could not be found. To be able to view help you need to "
-#~ "install the 'yelp' package."
-#~ msgstr ""
-#~ "De hulpweergave kon niet worden gevonden. Om de hulp te tonen dient u het "
-#~ "'yelp' pakket te installeren."
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "U moet system-config-services als root starten."
-
-#~ msgid "Running"
-#~ msgstr "Actief"
-
-#~ msgid "Stopped"
-#~ msgstr "Gestopt"
-
-#~ msgid "Error"
-#~ msgstr "Fout"
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "%s mislukt. De fout was: %s"
-
-# gelukt
-#~ msgid " successful"
-#~ msgstr " succesvol"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "xinetd moet worden aangezet om %s te kunnen starten"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "xinetd kon niet herladen omdat "
-
-#~ msgid ". The error was: "
-#~ msgstr ". De fout was: "
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "xinetd herlaadde %s succesvol"
-
-#~ msgid "Help is not available."
-#~ msgstr "Er is geen hulp beschikbaar."
-
-#~ msgid "Start the selected service"
-#~ msgstr "De geselecteerde voorziening starten"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "De geselecteerde voorziening stoppen"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "De geselecteerde voorziening opnieuw starten"
-
-#~ msgid "Refresh the list of services"
-#~ msgstr "Lijst van voorzieningen verversen"
-
-#~ msgid "Save the changes you have made"
-#~ msgstr "Opslaan van de door u gemaakte wijzigingen"
-
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Terugkeren naar de laatst opgeslagen wijziging"
-
-#~ msgid "Actions such as start, stop, and restart on the selected service"
-#~ msgstr ""
-#~ "Acties zoals starten, stoppen en herstarten van de geselecteerde "
-#~ "voorziening"
-
-#~ msgid "Select the runlevel you would like to edit"
-#~ msgstr "Selecteer het runlevel dat u wilt bewerken"
-
-#~ msgid "Runlevel 3 is multiuser mode with networking"
-#~ msgstr "Runlevel 3 is de multiuser-modus met netwerkondersteuning"
-
-#~ msgid ""
-#~ "Runlevel 4 is reserved for local customization, and is not usually used"
-#~ msgstr ""
-#~ "Runlevel 4 is gereserveerd voor lokale aanpassingen en wordt meestal niet "
-#~ "gebruikt"
-
-#~ msgid "Runlevel 5 is multiuser mode with networking and X Windows"
-#~ msgstr ""
-#~ "Runlevel 5 is de multiuser-modus met netwerkondersteuning en X Windows"
-
-#~ msgid "Read Manual"
-#~ msgstr "Lees de handleiding"
-
-#~ msgid "_Manual"
-#~ msgstr "_Handleiding"
-
-#~ msgid "Save"
-#~ msgstr "Opslaan"
-
-#~ msgid "Cancel"
-#~ msgstr "Annuleren"
-
-#~ msgid "Exit"
-#~ msgstr "Beëindigen"
-
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd is required for this service."
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "Voor deze dienst is xinetd benodigd."
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid "_Save"
-#~ msgstr "_Opslaan"
-
-#~ msgid "_Revert"
-#~ msgstr "_Terugkeren"
-
-#~ msgid "Revert"
-#~ msgstr "Terugkeren"
-
-#~ msgid "Start at Boot"
-#~ msgstr "Starten bij opstarten"
-
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "Copyright (c) 2002 Red Hat, Inc. Alle rechten voorbehouden."
-
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "Deze software mag vrij worden verspreid onder de voorwaarden van de GPL.\n"
-#~ "Rapporteer alstublieft fouten die u vindt bij het Red Hat bugsysteem:\n"
-#~ "http://bugzilla.redhat.com"
-
-#~ msgid "translator_credits"
-#~ msgstr ""
-#~ "Taco Witte <T.C.Witte@phys.uu.nl>\n"
-#~ "Tino Meinen <a.t.meinen@chello.nl>"
