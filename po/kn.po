@@ -1,15 +1,15 @@
-# translation of system-config-services.tip.kn.po to Kannada
+# translation of system-config-services.master.kn.po to Kannada
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the system-config-services package.
 #
 # shankar prasad <svenkate@redhat.com>, 2006.
-# Shankar Prasad <svenkate@redhat.com>, 2008.
+# Shankar Prasad <svenkate@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.tip.kn\n"
+"Project-Id-Version: system-config-services.master.kn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-10-06 20:55+0530\n"
+"PO-Revision-Date: 2009-04-02 22:45+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +34,7 @@ msgstr "ಈ ಸೇವೆಯು ಈಗ ಪುನಶ್ಚೇತನಗೊಳಿಸ
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "ಈ ಸೇವೆಯ ಬಗೆಗೆ ಮಾಹಿತಿಯನ್ನು ಪಡೆಯುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -337,8 +337,7 @@ msgstr "ಇದರ ಬಗ್ಗೆ(_A)"
 
 #: ../src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
-"ಒಂದು ಸೇವೆಯು ಚಾಲನೆಗೊಂಡಿರುವ ರನ್‌ಲೆವೆಲ್‌ಗಳನ್ನು ನಿಮ್ಮಿಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಬದಲಾಯಿಸಿಕೊಳ್ಳಿ."
+msgstr "ಒಂದು ಸೇವೆಯು ಚಾಲನೆಗೊಂಡಿರುವ ರನ್‌ಲೆವೆಲ್‌ಗಳನ್ನು ನಿಮ್ಮಿಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಬದಲಾಯಿಸಿಕೊಳ್ಳಿ."
 
 #: ../src/system-config-services.glade:559
 msgid "No service selected."
@@ -442,3 +441,4 @@ msgstr "ಸೇವೆಯ ನಿರ್ವಹಣೆ"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "ಸೇವೆಗಳು"
+
