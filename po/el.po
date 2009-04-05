@@ -7,6 +7,7 @@
 # Nikos Charonitakis <charosn@her.forthnet.gr>, 2002.
 # Dimitrios Michelinakis <dimitris@michelinakis.gr>, 2006.
 # Dimitrios Typaldos <dtfedora@yahoo.com>, 2007.
+# Konstantinos Antonakoglou <anton.cost@gmail.com>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
