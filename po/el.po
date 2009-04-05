@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-10-12 18:46+0300\n"
-"Last-Translator: nikosCharonitakis <nikosx@gmail.com>\n"
+"PO-Revision-Date: 2009-04-05 22:09+0200\n"
+"Last-Translator: Konstantinos Antonakoglou <anton.cost@gmail.com>\n"
 "Language-Team: Greek Fedora team <fedora-trans-el@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,15 +25,16 @@ msgstr "Όνομα"
 
 #: ../src/gui.py:113
 msgid "Remarks"
-msgstr ""
+msgstr "Παρατηρήσεις"
 
-#: ../src/gui.py:174 ../src/gui.py:192
+#: ../src/gui.py:174
+#: ../src/gui.py:192
 msgid "This service is being refreshed right now."
 msgstr "Γίνετε άμεση ανανέωση της υπηρεσίας."
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "Απέτυχε η λύψη πληροφοριών για αυτή την υπηρεσία."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -66,12 +67,8 @@ msgstr "Αυτή η υπηρεσία είναι νεκρή."
 
 #: ../src/gui.py:273
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service is started once, usually when the system "
-"is booted, runs in the background and wakes up when needed."
-msgstr ""
-"The <b>%(servicename)s</b> service is started once, usually when the system "
-"is booted, runs in the background and wakes up when needed."
+msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
 
 #: ../src/gui.py:287
 msgid "This service is updated currently."
@@ -79,41 +76,26 @@ msgstr "Η υπηρεσία ανανεώνεται αυτή την στιγμή.
 
 #: ../src/gui.py:313
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has got nothing more to do."
-msgstr ""
-"Η υπηρεσία <b>%(servicename)s</b> θα εκκινηθεί κατόπιν απαίτησης απο την "
-"υπηρεσία xinetd και θα τερματίσει όταν δεν υπάρχει υπάρχει κάτι άλλο να γίνει"
+msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has got nothing more to do."
+msgstr "Η υπηρεσία <b>%(servicename)s</b> θα εκκινηθεί κατόπιν απαίτησης απο την υπηρεσία xinetd και θα τερματίσει όταν δεν υπάρχει υπάρχει κάτι άλλο να γίνει"
 
 #: ../src/gui.py:322
-msgid ""
-"This service is enabled, but the <b>xinetd</b> package is not installed. "
-"This service does not work without it."
-msgstr ""
-"Η υπηρεσία είναι ενεργοποιημένη αλλά το πακέτο <b>xinetd</b> δεν είναι "
-"εγκατεστημένο. Η υπηρεσία αυτή δεν μπορεί να λειτουργήσει χωρίς αυτό."
+msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
+msgstr "Η υπηρεσία είναι ενεργοποιημένη αλλά το πακέτο <b>xinetd</b> δεν είναι εγκατεστημένο. Η υπηρεσία αυτή δεν μπορεί να λειτουργήσει χωρίς αυτό."
 
 #: ../src/gui.py:328
-msgid ""
-"This service is enabled, but the <b>xinetd</b> service is not running. This "
-"service does not work without it."
-msgstr ""
-"Η υπηρεσία είναι ενεργοποιημένη, αλλά δεν εκτελείται η υπηρεσία <b>xinetd</"
-"b> η οποία είναι  είναι απαραίτητη για να δουλέψει."
+msgid "This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."
+msgstr "Η υπηρεσία είναι ενεργοποιημένη, αλλά δεν εκτελείται η υπηρεσία <b>xinetd</b> η οποία είναι  είναι απαραίτητη για να δουλέψει."
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:710
+#: ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Ενεργοποίηση <b>%(service)s</b> υπηρεσίας σε αυτά τα runlevels:"
 
 #: ../src/gui.py:842
-msgid ""
-"The help viewer could not be found. To be able to view help, the 'yelp' "
-"package needs to be installed."
-msgstr ""
-"Δεν βρέθηκε η προβολή βοήθειας. Για να μπορέσετε να δείτε την βοήθεια, "
-"πρέπει να εγκατασταθεί το πακέτο  'yelp'."
+msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
+msgstr "Δεν βρέθηκε η προβολή βοήθειας. Για να μπορέσετε να δείτε την βοήθεια, πρέπει να εγκατασταθεί το πακέτο  'yelp'."
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -140,12 +122,14 @@ msgstr "Η υπηρεσία %s αναφέρει σφάλμα"
 msgid "Service %s is stopped"
 msgstr "Η υπηρεσία %s έχει διακοπεί"
 
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
+#: ../src/servicecontrol.py:234
+#: ../src/servicecontrol.py:253
 #, python-format
 msgid "Currently enabled in runlevels %s"
 msgstr "Τώρα ενεργοποιημένη στα runlevels %s"
 
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
+#: ../src/servicecontrol.py:242
+#: ../src/servicecontrol.py:256
 #, python-format
 msgid "Enable %(name)s in runlevels %(levels)s"
 msgstr "Ενεργοποίηση %(name)s στα runlevels %(levels)s"
@@ -158,13 +142,17 @@ msgstr "παράθυρο1"
 msgid "Service %s"
 msgstr "Υπηρεσία  %s"
 
-#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
-#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
+#: ../src/servicetab.glade:47
+#: ../src/servicetab.glade:395
+#: ../src/servicetab.glade:606
+#: ../src/servicetab.glade:1949
 msgid "Enable"
 msgstr "Ενεργοποίηση"
 
-#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
-#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
+#: ../src/servicetab.glade:68
+#: ../src/servicetab.glade:413
+#: ../src/servicetab.glade:685
+#: ../src/servicetab.glade:1970
 msgid "Disable"
 msgstr "Απενεργοποίηση"
 
@@ -172,53 +160,63 @@ msgstr "Απενεργοποίηση"
 msgid "Customize"
 msgstr "Προσαρμογή"
 
-#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
+#: ../src/servicetab.glade:110
+#: ../src/servicetab.glade:2013
 msgid "Enable Default"
 msgstr "Ενεργοποίηση προεπιλογής"
 
-#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
+#: ../src/servicetab.glade:137
+#: ../src/servicetab.glade:2040
 #: ../src/system-config-services.glade:134
 #: ../src/system-config-services.glade:1241
 msgid "Runlevel 2"
 msgstr "Runlevel 2"
 
-#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
+#: ../src/servicetab.glade:147
+#: ../src/servicetab.glade:2050
 #: ../src/system-config-services.glade:143
 #: ../src/system-config-services.glade:1251
 msgid "Runlevel 3"
 msgstr "Runlevel 3"
 
-#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
+#: ../src/servicetab.glade:157
+#: ../src/servicetab.glade:2060
 #: ../src/system-config-services.glade:152
 #: ../src/system-config-services.glade:1261
 msgid "Runlevel 4"
 msgstr "Runlevel 4"
 
-#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
+#: ../src/servicetab.glade:167
+#: ../src/servicetab.glade:2070
 #: ../src/system-config-services.glade:161
 #: ../src/system-config-services.glade:1271
 msgid "Runlevel 5"
 msgstr "Runlevel 5"
 
-#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
+#: ../src/servicetab.glade:183
+#: ../src/servicetab.glade:2086
 msgid "Enable All"
 msgstr "Ενεργοποίηση όλων"
 
-#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
+#: ../src/servicetab.glade:204
+#: ../src/servicetab.glade:2107
 msgid "Disable All"
 msgstr "Απενεργοποίηση όλων"
 
-#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
+#: ../src/servicetab.glade:235
+#: ../src/servicetab.glade:332
 #: ../src/servicetab.glade:2135
 msgid "Start"
 msgstr "Έναρξη"
 
-#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
+#: ../src/servicetab.glade:256
+#: ../src/servicetab.glade:349
 #: ../src/servicetab.glade:2156
 msgid "Restart"
 msgstr "Επανεκκίνηση"
 
-#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
+#: ../src/servicetab.glade:292
+#: ../src/servicetab.glade:441
 #: ../src/servicetab.glade:1922
 msgid "Configure"
 msgstr "Ρύθμιση"
@@ -235,7 +233,8 @@ msgstr "barfoo"
 msgid "Current runlevel is %s"
 msgstr "Ενεργό Runlevel: %s"
 
-#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
+#: ../src/servicetab.glade:764
+#: ../src/servicetab.glade:836
 msgid "Runlevels"
 msgstr "Runlevel %d"
 
@@ -247,7 +246,8 @@ msgstr "label18"
 msgid "Start "
 msgstr "Έναρξη "
 
-#: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
+#: ../src/servicetab.glade:1019
+#: ../src/servicetab.glade:2177
 msgid "Stop"
 msgstr "Διακοπή"
 
@@ -259,22 +259,26 @@ msgstr "Υπηρεσία ελέγχου"
 msgid "Status output"
 msgstr "Κατάσταση εξόδου"
 
-#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:180
+#: ../src/servicetab.glade:1260
+#: ../src/system-config-services.glade:180
 #: ../src/system-config-services.glade:392
 msgid "_Start"
 msgstr "_Έναρξη"
 
-#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:224
+#: ../src/servicetab.glade:1339
+#: ../src/system-config-services.glade:224
 #: ../src/system-config-services.glade:426
 msgid "_Restart"
 msgstr "_Επανεκκίνηση"
 
-#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
+#: ../src/servicetab.glade:1446
+#: ../src/system-config-services.glade:69
 #: ../src/system-config-services.glade:327
 msgid "_Enable"
 msgstr "_Ενεργοποίηση"
 
-#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
+#: ../src/servicetab.glade:1525
+#: ../src/system-config-services.glade:91
 #: ../src/system-config-services.glade:344
 msgid "_Disable"
 msgstr "_Απενεργοποίηση"
@@ -291,11 +295,13 @@ msgstr "Κουτί με κουμπιά"
 msgid "label16"
 msgstr "label16"
 
-#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
+#: ../src/servicetab.glade:1779
+#: ../src/servicetab.glade:1864
 msgid "Service %s:"
 msgstr "Υπηρεσία %s:"
 
-#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1280
+#: ../src/servicetab.glade:1991
+#: ../src/system-config-services.glade:1280
 msgid "Customize Runlevels"
 msgstr "Προσαρμογή Runlevels"
 
@@ -343,12 +349,8 @@ msgid "No service selected."
 msgstr "Δεν επιλέχθηκε υπηρεσία."
 
 #: ../src/system-config-services.glade:621
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"Αυτή η υπηρεσία ξεκινάει μια φορά, συνήθως όταν το σύστημα εκκινείται, και "
-"στην συνέχεια εκτελείται στο παρασκήνιο και ενεργοποιείται όταν χρειαστεί."
+msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "Αυτή η υπηρεσία ξεκινάει μια φορά, συνήθως όταν το σύστημα εκκινείται, και στην συνέχεια εκτελείται στο παρασκήνιο και ενεργοποιείται όταν χρειαστεί."
 
 #: ../src/system-config-services.glade:769
 #: ../src/system-config-services.glade:960
@@ -356,12 +358,8 @@ msgid "Description"
 msgstr "Περιγραφή"
 
 #: ../src/system-config-services.glade:867
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has got nothing more to do."
-msgstr ""
-"Αυτή η υπηρεσία θα εκινηθεί κατόπιν απαίτησεις απο την υπηρεσία xinetd και "
-"θα τερματίσει όταν δεν υπάρχει κάτι άλλο να εκτελεστεί."
+msgid "This service will be started on demand by the xinetd service and ends when it has got nothing more to do."
+msgstr "Αυτή η υπηρεσία θα εκινηθεί κατόπιν απαίτησεις απο την υπηρεσία xinetd και θα τερματίσει όταν δεν υπάρχει κάτι άλλο να εκτελεστεί."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -381,20 +379,19 @@ msgstr "Πνευματικά δικαιώματα 2002-2008 Red Hat, Inc. και
 
 #: ../src/system-config-services.glade:1224
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
+"Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Μπορείτε να το αναδιανέμετε ή/και να το τροποποιήσετε υπό τους όρους της GNU General Public License όπως έχει δημοσιευτεί από το Free Software Foundation, είτε την έκδοση 2 της Άδειας, ή (κατ' επιλογή σας) οποιαδήποτε νεότερη έκδοση.\n"
+"\n"
+"Αυτό το πρόγραμμα διανέμεται με την ελπίδα ότι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ, χωρίς ακόμη την υπονοούμενη εγγύηση της ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή της ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΕΝΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε την\n"
+"GNU General Public License για περισσότερες λεπτομέρειες.\n"
+"\n"
+"Μαζί με το λογισμικό αυτό πήρατε και ένα αντίγραφο της GNU General Public License; εάν όχι, γράψτε στο Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: ../src/system-config-services.glade:1231
 msgid "translator-credits"
@@ -424,9 +421,7 @@ msgstr "Runlevel _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
-"Ρυθμίστε ποιες υπηρεσίες επιθυμείτε να τρέχουν κατά την εκκίνηση του "
-"συστήματος"
+msgstr "Ρυθμίστε ποιες υπηρεσίες επιθυμείτε να τρέχουν κατά την εκκίνηση του συστήματος"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -438,84 +433,60 @@ msgstr "Υπηρεσίες"
 
 #~ msgid "None"
 #~ msgstr "Κανένα"
-
 #~ msgid "Save Dialog"
 #~ msgstr "Διάλογος αποθήκευσης"
-
 #~ msgid "Don't Save"
 #~ msgstr "Να μην αποθηκευτεί"
-
 #~ msgid ""
 #~ "You have made changes to the current runlevel.\n"
 #~ "Do you want to save the changes?"
 #~ msgstr ""
 #~ "Έχετε πραγματοποιήσει αλλαγές στο τρέχον runlevel.\n"
 #~ "Επιθυμείτε να αποθηκεύσετε τις αλλαγές;"
-
 #~ msgid "Add Service"
 #~ msgstr "Προσθήκη υπηρεσίας"
-
 #~ msgid "Service Name: "
 #~ msgstr "Όνομα υπηρεσίας: "
-
 #~ msgid "_File"
 #~ msgstr "_Αρχείο"
-
 #~ msgid "_Save Changes"
 #~ msgstr "_Αποθήκευση αλλαγών"
-
 #~ msgid "Revert To _Last Save"
 #~ msgstr "_Επαναφορά στην προηγούμενη αποθήκευση"
-
 #~ msgid "_Quit"
 #~ msgstr "Έ_ξοδος"
-
 #~ msgid "_View"
 #~ msgstr "_Προβολή"
-
 #~ msgid "_Refresh Service List"
 #~ msgstr "Ανανέωση _λίστας υπηρεσιών"
-
 #~ msgid "_Actions"
 #~ msgstr "_Ενέργειες"
-
 #~ msgid "Delete Service"
 #~ msgstr "Διαγραφή υπηρεσίας"
-
 #~ msgid "_Start Service"
 #~ msgstr "Ε_κκίνηση υπηρεσίας"
-
 #~ msgid "S_top Service"
 #~ msgstr "_Διακοπή υπηρεσίας"
-
 #~ msgid "_Restart Service"
 #~ msgstr "Ε_πανεκκίνηση υπηρεσίας"
-
 #~ msgid "_Edit Runlevel"
 #~ msgstr "Ε_πεξεργασία Runlevel"
-
 #~ msgid "Runlevel _All"
 #~ msgstr "Runlevel _Όλα"
-
 #~ msgid ""
 #~ "These services are started once and run in the background. You can "
 #~ "specify in which runlevels they are started."
 #~ msgstr ""
 #~ "Αυτές οι υπηρεσίες λαμβάνουν εκκίνηση μία φορά και τρέχουν στο "
 #~ "παρασκήνιο. Μπορεί να καθοριστεί σε ποια runlevel να ξεκινούν."
-
 #~ msgid "Current Active Runlevel: "
 #~ msgstr "Ενεργό Runlevel: "
-
 #~ msgid "Editing Runlevel:"
 #~ msgstr "Επεξεργασία Runlevel:"
-
 #~ msgid "Status"
 #~ msgstr "Κατάσταση"
-
 #~ msgid "_Background Services"
 #~ msgstr "Ε_κκίνηση υπηρεσιών"
-
 #~ msgid ""
 #~ "These services are started on demand and end when there is nothing more "
 #~ "to do. The <b>xinetd</b> service must be running so that they can be used."
@@ -523,28 +494,20 @@ msgstr "Υπηρεσίες"
 #~ "Αυτές οι υπηρεσίες ξεκινούν όταν ζητηθούν και σταματούν όταν δεν υπάρχει "
 #~ "πλέον τίποτε άλλο να κάνουν. Η υπηρεσία <b>xinetd</b> πρέπει να τρέχει "
 #~ "για να μπορέσουν να λειτουργήσουν."
-
 #~ msgid "_On Demand Services"
 #~ msgstr "_Υπηρεσίες προς επιλογή"
-
 #~ msgid "Are you sure you want to delete the %s?"
 #~ msgstr "Είστε σίγουρος ότι θέλετε να διαγραφεί το %s;"
-
 #~ msgid "Runlevel %d"
 #~ msgstr "Runlevel %d"
-
 #~ msgid "Currently Running in Runlevel: "
 #~ msgstr "Ενεργό Runlevel: "
-
 #~ msgid "Editing Runlevel: "
 #~ msgstr "Επεξεργασία Runlevel: "
-
 #~ msgid "Unknown"
 #~ msgstr "Άγνωστο"
-
 #~ msgid "All"
 #~ msgstr "Όλα"
-
 #~ msgid ""
 #~ "System Services Configuration Tool VERSION\n"
 #~ " Copyright © 2002-2006 Red Hat, Inc.\n"
@@ -563,30 +526,22 @@ msgstr "Υπηρεσίες"
 #~ " Brent Fox <bfox@redhat.com>\n"
 #~ " Nils Philippsen <nphilipp@redhat.com>\n"
 #~ " "
-
 #~ msgid "About"
 #~ msgstr "Περί"
-
 #~ msgid "You must run system-config-services as root."
 #~ msgstr "Πρέπει να τρέξετε το system-config-services ως υπερχρήστης."
-
 #~ msgid "%s failed. The error was: %s"
 #~ msgstr "%s απέτυχε. Το σφάλμα ήταν: %s"
-
 #~ msgid " successful"
 #~ msgstr " επιτυχής"
-
 #~ msgid "xinetd must be enabled for %s to run"
 #~ msgstr "Ο xinetd πρέπει να είναι ενεργός για να τρέξει η υπηρεσία %s"
-
 #~ msgid "xinetd failed to reload for "
 #~ msgstr "Εκκίνηση του xinetd απέτυχε για"
-
 #~ msgid ". The error was: "
 #~ msgstr ". Το σφάλμα ήταν: "
-
 #~ msgid "xinetd reloaded %s successfully"
 #~ msgstr "xinetd εκκίνηση %s επιτυχής"
-
 #~ msgid "Help is not available."
 #~ msgstr "Η βοήθεια δεν είναι διαθέσιμη."
+
