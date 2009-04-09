@@ -1,16 +1,16 @@
 # Swedish messages for system-config-services.
 # Copyright © 2001, 2003, 2004, 2005, 2006 Christian Rose <menthos@menthos.com>.
 # Copyright © 2006 Magnus Larsson <fedoratrans@gmail.com>.
-# Göran Uddeborg <goeran@uddeborg.se>, 2008.
+# Göran Uddeborg <goeran@uddeborg.se>, 2008, 2009.
 #
-# $Id: system-config-services.po,v 1.2 2008-10-07 16:16:50+02 göran Exp $
+# $Id: system-config-services.po,v 1.4 2009-04-09 21:04:26+02 göran Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-10-07 16:16+0200\n"
+"PO-Revision-Date: 2009-04-09 21:04+0200\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -31,7 +31,7 @@ msgstr "Denna tjänst fräschas upp just nu."
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "Misslyckades att hämta information om denna tjänst."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
