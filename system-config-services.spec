@@ -3,7 +3,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.99.32
+Version: 0.99.33
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/releases/%(echo %{name} | %{__sed} 's@\(\(.\)\(.\).*\)@\2/\3/\1@')/%{name}-%{version}.tar.bz2
@@ -93,6 +93,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Tue Apr 14 2009 Nils Philippsen <nils@redhat.com> - 0.99.33-1
+- pick up updated translations
+
 * Mon Mar 01 2009 Nils Philippsen <nils@redhat.com> - 0.99.32-1
 - require PolicyKit-authentication-agent from F-11 on (#487200)
 
