@@ -13,12 +13,13 @@ msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2009-04-05 22:09+0200\n"
-"Last-Translator: Konstantinos Antonakoglou <anton.cost@gmail.com>\n"
+"PO-Revision-Date: 2009-05-20 14:08+0200\n"
+"Last-Translator: \n"
 "Language-Team: Greek Fedora team <fedora-trans-el@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Greek\n"
 
 #: ../src/gui.py:112
 msgid "Name"
@@ -35,7 +36,7 @@ msgstr "Γίνετε άμεση ανανέωση της υπηρεσίας."
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr "Απέτυχε η λύψη πληροφοριών για αυτή την υπηρεσία."
+msgstr "Απέτυχε η λήψη πληροφοριών για αυτή την υπηρεσία."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -69,7 +70,7 @@ msgstr "Αυτή η υπηρεσία είναι νεκρή."
 #: ../src/gui.py:273
 #, python-format
 msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
-msgstr "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "Η υπηρεσία <b>%(servicename)s</b> ξεκινάει μια φορά, συνήθως όταν το σύστημα εκκινείται, και στην συνέχεια εκτελείται στο παρασκήνιο και ενεργοποιείται όταν χρειαστεί."
 
 #: ../src/gui.py:287
 msgid "This service is updated currently."
@@ -78,7 +79,7 @@ msgstr "Η υπηρεσία ανανεώνεται αυτή την στιγμή.
 #: ../src/gui.py:313
 #, python-format
 msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has got nothing more to do."
-msgstr "Η υπηρεσία <b>%(servicename)s</b> θα εκκινηθεί κατόπιν απαίτησης απο την υπηρεσία xinetd και θα τερματίσει όταν δεν υπάρχει υπάρχει κάτι άλλο να γίνει"
+msgstr "Η υπηρεσία <b>%(servicename)s</b> θα εκκινηθεί κατόπιν απαίτησης από την υπηρεσία xinetd και θα τερματίσει όταν δεν υπάρχει υπάρχει κάτι άλλο να γίνει"
 
 #: ../src/gui.py:322
 msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
@@ -270,13 +271,13 @@ msgstr "_Έναρξη"
 #: ../src/system-config-services.glade:224
 #: ../src/system-config-services.glade:426
 msgid "_Restart"
-msgstr "_Επανεκκίνηση"
+msgstr "Ε_πανεκκίνηση"
 
 #: ../src/servicetab.glade:1446
 #: ../src/system-config-services.glade:69
 #: ../src/system-config-services.glade:327
 msgid "_Enable"
-msgstr "_Ενεργοποίηση"
+msgstr "Ε_νεργοποίηση"
 
 #: ../src/servicetab.glade:1525
 #: ../src/system-config-services.glade:91
@@ -290,7 +291,7 @@ msgstr "_Ρύθμιση"
 
 #: ../src/servicetab.glade:1653
 msgid "Button Box"
-msgstr "Κουτί με κουμπιά"
+msgstr "Πεδίο με κουμπιά"
 
 #: ../src/servicetab.glade:1730
 msgid "label16"
@@ -317,7 +318,7 @@ msgstr "_Πρόγραμμα"
 
 #: ../src/system-config-services.glade:60
 msgid "Ser_vice"
-msgstr "Υ_πηρεσία"
+msgstr "_Υπηρεσία"
 
 #: ../src/system-config-services.glade:113
 #: ../src/system-config-services.glade:362
@@ -339,7 +340,7 @@ msgstr "_Περιεχόμενα"
 
 #: ../src/system-config-services.glade:287
 msgid "_About"
-msgstr "_Περί"
+msgstr "Πε_ρί"
 
 #: ../src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
