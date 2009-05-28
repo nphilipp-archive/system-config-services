@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: system-config-services.tip.fr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2008-09-25 14:31+1000\n"
+"PO-Revision-Date: 2009-04-17 16:06+0200\n"
 "Last-Translator: Corina Roe <croe@redhat.com>\n"
 "Language-Team: French <i18@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -41,7 +41,7 @@ msgstr "Ce service est en cours de ré-actualisation actuellement."
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "Impossible d'obtenir des informations à propos de ce service."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
