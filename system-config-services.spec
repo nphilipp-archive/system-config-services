@@ -6,7 +6,7 @@ Name: system-config-services
 Version: 0.99.33
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
-Source0: http://fedorahosted.org/releases/%(echo %{name} | %{__sed} 's@\(\(.\)\(.\).*\)@\2/\3/\1@')/%{name}-%{version}.tar.bz2
+Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
 License: GPLv2+
 Group: Applications/System
 BuildArch: noarch
@@ -93,6 +93,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Thu May 28 2009 Nils Philippsen <nils@redhat.com>
+- use simplified source URL
+
 * Tue Apr 14 2009 Nils Philippsen <nils@redhat.com> - 0.99.33-1
 - pick up updated translations
 
