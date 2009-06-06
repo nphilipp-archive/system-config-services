@@ -2,7 +2,7 @@
 # Copyright © 2004, 2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the
 #  system-config-services package.
-# Xavier Conde Rueda <xaviconde@gmail.com>, 2004-8
+# Xavier Conde Rueda <xavi.conde@gmail.com>, 2004-8
 #
 # This file is translated according to the glossary and style guide of
 #   Softcatalà. If you plan to modify this file, please read first the page
@@ -21,8 +21,8 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-13 13:44+0100\n"
-"PO-Revision-Date: 2009-03-13 00:47+0200\n"
-"Last-Translator: Xavier Conde Rueda <xaviconde@gmail.com>\n"
+"PO-Revision-Date: 2009-06-06 00:47+0200\n"
+"Last-Translator: Xavier Conde Rueda <xavi.conde@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -404,14 +404,28 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
+"Això és programari lliure; podeu redistribuir-lo i/o\n"
+"modificar-lo sota els termes de la Llicència Pública General GNU tal i\n"
+"com ha estat publicada per la Free Software Foundation; bé sota la\n"
+"versió 2 de la Llicència o una altra versió posterior.\n"
+"\n"
+"Aquest programa es distribueix amb l'expectativa de que serà útil,\n"
+"però SENSE CAP GARANTIA; ni tan sols la garantia implícita de\n"
+"COMERCIABILITAT o ADEQUACIÓ PER UN PROPÒSIT PARTICULAR. Vegeu la\n"
+"Llicència Pública General GNU per obtenir-ne\n"
+"més detalls.\n"
+"\n"
+"Hauríeu d'haver rebut una còpia de la Llicència Pública General GNU amb "
+"aquest programa; si no, escriviu a la Free Software Foundation, Inc. 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: ../src/system-config-services.glade:1231
 msgid "translator-credits"
-msgstr "Xavier Conde Rueda <xaviconde@gmail.com>"
+msgstr "Xavier Conde Rueda <xavi.conde@gmail.com>, 2009"
 
 #: ../src/system-config-services.glade:1395
 msgid "Runlevel _2"
-msgstr "Nivell d'execució _3"
+msgstr "Nivell d'execució _2"
 
 #: ../src/system-config-services.glade:1414
 msgid "Runlevel _3"
@@ -427,7 +441,7 @@ msgstr "Nivell d'execució _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "Configura quins serveis s'executaran quan el sistema s'iniciï"
+msgstr "Configureu quins serveis s'executaran quan el sistema s'iniciï"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -437,157 +451,3 @@ msgstr "Gestió de serveis"
 msgid "Services"
 msgstr "Serveis"
 
-#~ msgid "None"
-#~ msgstr "Cap"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Diàleg per desar"
-
-#~ msgid "Don't Save"
-#~ msgstr "No ho desis"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Heu fet canvis al nivell d'execució actual.\n"
-#~ "Voleu desar els canvis?"
-
-#~ msgid "Add Service"
-#~ msgstr "Afegeix un servei"
-
-#~ msgid "Service Name: "
-#~ msgstr "Nom del servei: "
-
-#~ msgid "_File"
-#~ msgstr "_Fitxer"
-
-#~ msgid "_Save Changes"
-#~ msgstr "De_sa els canvis"
-
-#~ msgid "Revert To _Last Save"
-#~ msgstr "Retorna a_l darrer estat desat"
-
-#~ msgid "_Quit"
-#~ msgstr "_Surt"
-
-#~ msgid "_View"
-#~ msgstr "_Visualitza"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "_Actualitza els serveis"
-
-#~ msgid "_Actions"
-#~ msgstr "_Accions"
-
-#~ msgid "Delete Service"
-#~ msgstr "Suprimeix el servei"
-
-#~ msgid "_Start Service"
-#~ msgstr "Inicia el _servei"
-
-#~ msgid "S_top Service"
-#~ msgstr "A_tura el servei"
-
-#~ msgid "_Restart Service"
-#~ msgstr "_Reinicia el servei"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "_Edita el nivell"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "_Tots els nivells d'execució"
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Aquests serveis s'inicien un cop, i s'executen en segon pla. Heu "
-#~ "d'especificar en quins nivells d'execució s'inicien."
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "Nivell d'execució actual: "
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "S'està editant el nivell d'execució:"
-
-#~ msgid "Status"
-#~ msgstr "Estat"
-
-#~ msgid "_Background Services"
-#~ msgstr "_Serveis en segon pla"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "Aquests serveis s'inicien quan es necessiten, i finalitzen quan ja no hi "
-#~ "ha res més a fer. El servei <b>xinetd</b> s'ha d'executar per tal de que "
-#~ "es puguin utilitzar."
-
-#~ msgid "_On Demand Services"
-#~ msgstr "Ser_veis a la carta"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "Esteu segur que voleu suprimir %s?"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "Nivell d'execució %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "S'està executant el nivell: "
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "S'està editant el nivell: "
-
-#~ msgid "Unknown"
-#~ msgstr "Desconegut"
-
-#~ msgid "All"
-#~ msgstr "Tots"
-
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "Eina de configuració dels serveis del sistema VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat>\n"
-#~ " Bill Nottingham <notting@redhat>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "Quant a"
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "Heu d'executar el system-config-services com a superusuari."
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "El %s ha fallat. L'error era: %s"
-
-#~ msgid " successful"
-#~ msgstr " correctament"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "S'ha d'habilitar l'xinetd per executar %s"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "No s'ha pogut tornar a carregar l'xinetd per a "
-
-#~ msgid ". The error was: "
-#~ msgstr ". L'error era:"
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "L'xinetd ha tornat a carregar %s correctament"
-
-#~ msgid "Help is not available."
-#~ msgstr "No hi ha ajuda disponible."
