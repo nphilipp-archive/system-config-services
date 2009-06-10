@@ -76,7 +76,7 @@ refresh-po: Makefile
 	done
 
 clean:
-	@rm -fv *mo *~ .depend $(GLADEHFILES) $(DESKTOPINHFILES)
+	@rm -fv *mo *~ .depend $(DESKTOPINHFILES)
 
 install: $(MOFILES)
 	@for n in $(MOFILES); do \
