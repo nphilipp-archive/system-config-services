@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.kn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-13 13:44+0100\n"
+"POT-Creation-Date: 2009-06-10 17:17+0200\n"
 "PO-Revision-Date: 2009-04-02 22:45+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
@@ -82,10 +82,8 @@ msgstr "ಈ ಸೇವೆಯು ಇತ್ತೀಚಿಗೆ ಅಪ್ಡೇಟ್
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has got nothing more to do."
+"service and ends when it has nothing more to do."
 msgstr ""
-"xinetd ಸೇವೆಯು ಬಯಸಿದಾಗ <b>%(servicename)s</b> ಸೇವೆಯು ಆರಂಭಗೊಳ್ಳುತ್ತದೆ ಹಾಗು ಇದಕ್ಕೆ "
-"ಮಾಡಲು ಏನೂ ಕೆಲಸವಿಲ್ಲದಾಗ ನಿಲ್ಲಿಸಲ್ಪಡುತ್ತದೆ."
 
 #: ../src/gui.py:322
 msgid ""
@@ -337,7 +335,8 @@ msgstr "ಇದರ ಬಗ್ಗೆ(_A)"
 
 #: ../src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
-msgstr "ಒಂದು ಸೇವೆಯು ಚಾಲನೆಗೊಂಡಿರುವ ರನ್‌ಲೆವೆಲ್‌ಗಳನ್ನು ನಿಮ್ಮಿಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಬದಲಾಯಿಸಿಕೊಳ್ಳಿ."
+msgstr ""
+"ಒಂದು ಸೇವೆಯು ಚಾಲನೆಗೊಂಡಿರುವ ರನ್‌ಲೆವೆಲ್‌ಗಳನ್ನು ನಿಮ್ಮಿಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಬದಲಾಯಿಸಿಕೊಳ್ಳಿ."
 
 #: ../src/system-config-services.glade:559
 msgid "No service selected."
@@ -359,10 +358,8 @@ msgstr "ವಿವರಣೆ"
 #: ../src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
-"it has got nothing more to do."
+"it has nothing more to do."
 msgstr ""
-"xinetd ಸೇವೆಯು ಬಯಸಿದಾಗ ಈ ಸೇವೆಯು ಆರಂಭಗೊಳ್ಳುತ್ತದೆ ಹಾಗು ಇದಕ್ಕೆ ಮಾಡಲು ಏನೂ "
-"ಕೆಲಸವಿಲ್ಲದಾಗ ನಿಲ್ಲಿಸಲ್ಪಡುತ್ತದೆ."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -442,3 +439,16 @@ msgstr "ಸೇವೆಯ ನಿರ್ವಹಣೆ"
 msgid "Services"
 msgstr "ಸೇವೆಗಳು"
 
+#~ msgid ""
+#~ "The <b>%(servicename)s</b> service will be started on demand by the "
+#~ "xinetd service and ends when it has got nothing more to do."
+#~ msgstr ""
+#~ "xinetd ಸೇವೆಯು ಬಯಸಿದಾಗ <b>%(servicename)s</b> ಸೇವೆಯು ಆರಂಭಗೊಳ್ಳುತ್ತದೆ ಹಾಗು "
+#~ "ಇದಕ್ಕೆ ಮಾಡಲು ಏನೂ ಕೆಲಸವಿಲ್ಲದಾಗ ನಿಲ್ಲಿಸಲ್ಪಡುತ್ತದೆ."
+
+#~ msgid ""
+#~ "This service will be started on demand by the xinetd service and ends "
+#~ "when it has got nothing more to do."
+#~ msgstr ""
+#~ "xinetd ಸೇವೆಯು ಬಯಸಿದಾಗ ಈ ಸೇವೆಯು ಆರಂಭಗೊಳ್ಳುತ್ತದೆ ಹಾಗು ಇದಕ್ಕೆ ಮಾಡಲು ಏನೂ "
+#~ "ಕೆಲಸವಿಲ್ಲದಾಗ ನಿಲ್ಲಿಸಲ್ಪಡುತ್ತದೆ."

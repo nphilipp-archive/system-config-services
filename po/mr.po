@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.mr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-13 13:44+0100\n"
+"POT-Creation-Date: 2009-06-10 17:17+0200\n"
 "PO-Revision-Date: 2009-03-31 19:55+0530\n"
 "Last-Translator: Sandeep Shedmake <sandeep.shedmake@gmail.com>\n"
 "Language-Team: marathi\n"
@@ -83,10 +83,8 @@ msgstr "ही सेवा वर्तमानक्षणी अद्यय
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has got nothing more to do."
+"service and ends when it has nothing more to do."
 msgstr ""
-"xinetd सेवा द्वारे विनंती केल्यावरच <b>%(servicename)s</b> सेवा सुरू केली जाते व मोकळले "
-"असल्यावरच समाप्त केले जाते."
 
 #: ../src/gui.py:322
 msgid ""
@@ -113,7 +111,8 @@ msgstr "या रनलेवल अंतर्गत <b>%(service)s</b> स�
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr "मदत प्रदर्शक आढळले नाही. मदत पहाण्याकरीता, 'yelp' संकुल प्रतिष्ठापीत करणे आवश्यक आहे."
+msgstr ""
+"मदत प्रदर्शक आढळले नाही. मदत पहाण्याकरीता, 'yelp' संकुल प्रतिष्ठापीत करणे आवश्यक आहे."
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -358,10 +357,8 @@ msgstr "वर्णन"
 #: ../src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
-"it has got nothing more to do."
+"it has nothing more to do."
 msgstr ""
-"ही सेवा xinetd सेवा द्वारे आवश्यकता नुरूप सुरू केली जाईल व कुठलेही कार्य हाताळत नसल्यास "
-"समाप्त होईल."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -443,3 +440,16 @@ msgstr "सेवा व्यवस्थापन"
 msgid "Services"
 msgstr "सेवा"
 
+#~ msgid ""
+#~ "The <b>%(servicename)s</b> service will be started on demand by the "
+#~ "xinetd service and ends when it has got nothing more to do."
+#~ msgstr ""
+#~ "xinetd सेवा द्वारे विनंती केल्यावरच <b>%(servicename)s</b> सेवा सुरू केली जाते व "
+#~ "मोकळले असल्यावरच समाप्त केले जाते."
+
+#~ msgid ""
+#~ "This service will be started on demand by the xinetd service and ends "
+#~ "when it has got nothing more to do."
+#~ msgstr ""
+#~ "ही सेवा xinetd सेवा द्वारे आवश्यकता नुरूप सुरू केली जाईल व कुठलेही कार्य हाताळत नसल्यास "
+#~ "समाप्त होईल."

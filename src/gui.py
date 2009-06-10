@@ -310,7 +310,7 @@ class GUIXinetdServicesDetailsPainter (GUIServicesDetailsPainter):
         super (GUIXinetdServicesDetailsPainter, self).__init__ (serviceslist, service)
 
     def paint_details (self):
-        self.xinetdServiceExplanationLabel.set_markup (_("The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has got nothing more to do.") % {'servicename': self.service.name})
+        self.xinetdServiceExplanationLabel.set_markup (_("The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do.") % {'servicename': self.service.name})
 
         enabled = self.service.get_enabled ()
         xinetd_service = self.serviceslist.xinetd_service

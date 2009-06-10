@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-13 13:44+0100\n"
+"POT-Creation-Date: 2009-06-10 17:17+0200\n"
 "PO-Revision-Date: 2008-08-05 07:13+0200\n"
 "Last-Translator: Adam Pribyl <pribyl@lowlevel.cz>\n"
 "Language-Team: Czech <fedora-cs-list@redhat.com>\n"
@@ -83,10 +83,8 @@ msgstr "Tato služba je právě aktualizována."
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has got nothing more to do."
+"service and ends when it has nothing more to do."
 msgstr ""
-"Služba <b>%(servicename)s</b> bude spuštěna v případě potřeby službou xinetd "
-"a ukončena pokud nebude mít další požadavny na vyřízení."
 
 #: ../src/gui.py:322
 msgid ""
@@ -360,10 +358,8 @@ msgstr "Popis"
 #: ../src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
-"it has got nothing more to do."
+"it has nothing more to do."
 msgstr ""
-"Tato služba bude spuštěna na vyžádání službou xinetd a ukončena pokud nemá "
-"další požadavky na vyřízení."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -440,6 +436,20 @@ msgstr "Správa služeb"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Služby"
+
+#~ msgid ""
+#~ "The <b>%(servicename)s</b> service will be started on demand by the "
+#~ "xinetd service and ends when it has got nothing more to do."
+#~ msgstr ""
+#~ "Služba <b>%(servicename)s</b> bude spuštěna v případě potřeby službou "
+#~ "xinetd a ukončena pokud nebude mít další požadavny na vyřízení."
+
+#~ msgid ""
+#~ "This service will be started on demand by the xinetd service and ends "
+#~ "when it has got nothing more to do."
+#~ msgstr ""
+#~ "Tato služba bude spuštěna na vyžádání službou xinetd a ukončena pokud "
+#~ "nemá další požadavky na vyřízení."
 
 #~ msgid "Are you sure you want to delete the %s?"
 #~ msgstr "Jste si jisti, že chcete odstranit %s?"

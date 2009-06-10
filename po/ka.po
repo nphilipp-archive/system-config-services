@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ka\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-13 13:44+0100\n"
+"POT-Creation-Date: 2009-06-10 17:17+0200\n"
 "PO-Revision-Date: 2005-12-20 01:55+0300\n"
 "Last-Translator: George Machitidze <giomac@gmail.com>\n"
 "Language-Team: Georgian <guiasher@mes.gov.ge>\n"
@@ -78,7 +78,7 @@ msgstr ""
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has got nothing more to do."
+"service and ends when it has nothing more to do."
 msgstr ""
 
 #: ../src/gui.py:322
@@ -350,7 +350,7 @@ msgstr "განმარტება"
 #: ../src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
-"it has got nothing more to do."
+"it has nothing more to do."
 msgstr ""
 
 #: ../src/system-config-services.glade:1065

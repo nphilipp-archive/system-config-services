@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-13 13:44+0100\n"
+"POT-Creation-Date: 2009-06-10 17:17+0200\n"
 "PO-Revision-Date: 2009-03-30 15:01+1000\n"
 "Last-Translator: Leah Liu <lliu@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
@@ -81,8 +81,8 @@ msgstr "目前更新了这个服务。"
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has got nothing more to do."
-msgstr "将根据 xinetd 服务的需要启动 <b>%(servicename)s</b> 服务，并在不需要时终止。"
+"service and ends when it has nothing more to do."
+msgstr ""
 
 #: ../src/gui.py:322
 msgid ""
@@ -96,7 +96,8 @@ msgstr ""
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr "启用了这个服务，但没有运行 <b>xinetd</b> 服务。没有它这个服务无法工作。"
+msgstr ""
+"启用了这个服务，但没有运行 <b>xinetd</b> 服务。没有它这个服务无法工作。"
 
 #: ../src/gui.py:710 ../src/system-config-services.glade:1351
 #, python-format
@@ -350,8 +351,8 @@ msgstr "描述"
 #: ../src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
-"it has got nothing more to do."
-msgstr "将根据 xinetd 服务的需要启动这个服务，并在不需要时终止。"
+"it has nothing more to do."
+msgstr ""
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -426,3 +427,14 @@ msgstr "服务程序管理："
 msgid "Services"
 msgstr "服务"
 
+#~ msgid ""
+#~ "The <b>%(servicename)s</b> service will be started on demand by the "
+#~ "xinetd service and ends when it has got nothing more to do."
+#~ msgstr ""
+#~ "将根据 xinetd 服务的需要启动 <b>%(servicename)s</b> 服务，并在不需要时终"
+#~ "止。"
+
+#~ msgid ""
+#~ "This service will be started on demand by the xinetd service and ends "
+#~ "when it has got nothing more to do."
+#~ msgstr "将根据 xinetd 服务的需要启动这个服务，并在不需要时终止。"

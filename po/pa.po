@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-13 13:44+0100\n"
+"POT-Creation-Date: 2009-06-10 17:17+0200\n"
 "PO-Revision-Date: 2009-04-02 08:24+0000\n"
 "Last-Translator: Jaswinder Singh <jsingh@redhat.com>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -86,10 +86,8 @@ msgstr "ਹੁਣ ਇਹ ਸਰਵਿਸ ਅੱਪਡੇਟ ਹੋ ਰਹੀ ਹ
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has got nothing more to do."
+"service and ends when it has nothing more to do."
 msgstr ""
-"<b>%(servicename)s</b> ਸਰਵਿਸ xinetd ਦੀ ਲੋੜ ਮੁਤਾਬਿਕ ਚਾਲੂ ਕੀਤੀ ਜਾਵੇਗੀ ਅਤੇ ਮੁਕੰਮਲ ਹੋਣ ਤੇ "
-"ਬੰਦ ਹੋ ਜਾਂਦੀ ਹੈ।"
 
 #: ../src/gui.py:322
 msgid ""
@@ -361,9 +359,8 @@ msgstr "ਵੇਰਵਾ"
 #: ../src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
-"it has got nothing more to do."
+"it has nothing more to do."
 msgstr ""
-"ਇਹ ਸਰਵਿਸ xinetd ਸਰਵਿਸ ਦੁਆਰਾ ਲੋੜ ਮੁਤਾਬਿਕ ਚਾਲੂ ਕੀਤੀ ਜਾਵੇਗੀ ਅਤੇ ਮੁਕੰਮਲ ਹੋਣ ਤੇ ਬੰਦ ਹੋ ਜਾਵੇਗੀ।"
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -441,3 +438,16 @@ msgstr "ਸੇਵਾ ਪਰਬੰਧ"
 msgid "Services"
 msgstr "ਸਰਵਿਸਾਂ"
 
+#~ msgid ""
+#~ "The <b>%(servicename)s</b> service will be started on demand by the "
+#~ "xinetd service and ends when it has got nothing more to do."
+#~ msgstr ""
+#~ "<b>%(servicename)s</b> ਸਰਵਿਸ xinetd ਦੀ ਲੋੜ ਮੁਤਾਬਿਕ ਚਾਲੂ ਕੀਤੀ ਜਾਵੇਗੀ ਅਤੇ ਮੁਕੰਮਲ "
+#~ "ਹੋਣ ਤੇ ਬੰਦ ਹੋ ਜਾਂਦੀ ਹੈ।"
+
+#~ msgid ""
+#~ "This service will be started on demand by the xinetd service and ends "
+#~ "when it has got nothing more to do."
+#~ msgstr ""
+#~ "ਇਹ ਸਰਵਿਸ xinetd ਸਰਵਿਸ ਦੁਆਰਾ ਲੋੜ ਮੁਤਾਬਿਕ ਚਾਲੂ ਕੀਤੀ ਜਾਵੇਗੀ ਅਤੇ ਮੁਕੰਮਲ ਹੋਣ ਤੇ ਬੰਦ ਹੋ "
+#~ "ਜਾਵੇਗੀ।"

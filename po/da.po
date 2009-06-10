@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-13 13:44+0100\n"
+"POT-Creation-Date: 2009-06-10 17:17+0200\n"
 "PO-Revision-Date: 2009-05-15 16:19+0200\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -80,10 +80,8 @@ msgstr "Denne tjeneste er lige blevet opdateret."
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has got nothing more to do."
+"service and ends when it has nothing more to do."
 msgstr ""
-"\"<b>%(servicename)s</b>\" tjenesten vil blive startet efter ordre fra "
-"xinetd-tjenesten og stopper når den ikke har mere at gøre."
 
 #: ../src/gui.py:322
 msgid ""
@@ -357,10 +355,8 @@ msgstr "Beskrivelse"
 #: ../src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
-"it has got nothing more to do."
+"it has nothing more to do."
 msgstr ""
-"Denne tjeneste vil blive startet efter ordre fra \"xinetd\"-tjenesten og "
-"stoppernår den ikke har mere at gøre."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -443,6 +439,20 @@ msgstr "Administration af tjenester"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Tjenester"
+
+#~ msgid ""
+#~ "The <b>%(servicename)s</b> service will be started on demand by the "
+#~ "xinetd service and ends when it has got nothing more to do."
+#~ msgstr ""
+#~ "\"<b>%(servicename)s</b>\" tjenesten vil blive startet efter ordre fra "
+#~ "xinetd-tjenesten og stopper når den ikke har mere at gøre."
+
+#~ msgid ""
+#~ "This service will be started on demand by the xinetd service and ends "
+#~ "when it has got nothing more to do."
+#~ msgstr ""
+#~ "Denne tjeneste vil blive startet efter ordre fra \"xinetd\"-tjenesten og "
+#~ "stoppernår den ikke har mere at gøre."
 
 #~ msgid "None"
 #~ msgstr "Ingen"

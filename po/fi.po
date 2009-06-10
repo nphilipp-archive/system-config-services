@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-13 13:44+0100\n"
+"POT-Creation-Date: 2009-06-10 17:17+0200\n"
 "PO-Revision-Date: 2009-03-23 11:38+0200\n"
 "Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
 "Language-Team: Finnish <laatu@lokalisointi.org>\n"
@@ -79,10 +79,8 @@ msgstr "Tätä palvelua päivitetään juuri nyt."
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has got nothing more to do."
+"service and ends when it has nothing more to do."
 msgstr ""
-"Xinetd-palvelu käynnistää palvelun <b>%(servicename)s</b> tarvittaessa ja "
-"lopettaa sen, kun sitä ei enää tarvita."
 
 #: ../src/gui.py:322
 msgid ""
@@ -357,10 +355,8 @@ msgstr "Kuvaus"
 #: ../src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
-"it has got nothing more to do."
+"it has nothing more to do."
 msgstr ""
-"Xinetd-palvelu käynnistää tämän palvelun tarvittaessa ja lopettaa sen, kun "
-"sitä ei enää tarvita."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -439,6 +435,20 @@ msgstr "Palvelujen hallinta"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Palvelut"
+
+#~ msgid ""
+#~ "The <b>%(servicename)s</b> service will be started on demand by the "
+#~ "xinetd service and ends when it has got nothing more to do."
+#~ msgstr ""
+#~ "Xinetd-palvelu käynnistää palvelun <b>%(servicename)s</b> tarvittaessa ja "
+#~ "lopettaa sen, kun sitä ei enää tarvita."
+
+#~ msgid ""
+#~ "This service will be started on demand by the xinetd service and ends "
+#~ "when it has got nothing more to do."
+#~ msgstr ""
+#~ "Xinetd-palvelu käynnistää tämän palvelun tarvittaessa ja lopettaa sen, "
+#~ "kun sitä ei enää tarvita."
 
 #~ msgid "Are you sure you want to delete the %s?"
 #~ msgstr "Haluatko varmasti poistaa %s?"

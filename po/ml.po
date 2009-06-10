@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.ml\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-13 13:44+0100\n"
+"POT-Creation-Date: 2009-06-10 17:17+0200\n"
 "PO-Revision-Date: 2009-04-02 04:03+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
@@ -85,10 +85,8 @@ msgstr "ഈ സേവനം നിലവില്‍ പരിഷ്കരിക
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has got nothing more to do."
+"service and ends when it has nothing more to do."
 msgstr ""
-"xinetd സേവനത്തിന്റെ ആവശ്യപ്രകാരം <b>%(servicename)s</b> സേവനം ആരംഭിക്കുന്നു. ജോലികള്‍ "
-"പൂര്‍ത്തിയാക്കിയ ശേഷം അതു് അവസാനിക്കുന്നു"
 
 #: ../src/gui.py:322
 msgid ""
@@ -102,7 +100,8 @@ msgstr ""
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr "ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സേവനം പ്രവര്‍ത്തിക്കുന്നതല്ല."
+msgstr ""
+"ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സേവനം പ്രവര്‍ത്തിക്കുന്നതല്ല."
 
 #: ../src/gui.py:710 ../src/system-config-services.glade:1351
 #, python-format
@@ -360,10 +359,8 @@ msgstr "വിവരണം"
 #: ../src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
-"it has got nothing more to do."
+"it has nothing more to do."
 msgstr ""
-"xinetd സേവനത്തിന്റെ ആവശ്യപ്രകാരം സേവനം ആരംഭിക്കുന്നു. ജോലികള്‍ പൂര്‍ത്തിയാക്കിയ ശേഷം അതു് "
-"അവസാനിക്കുന്നു"
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -441,3 +438,16 @@ msgstr "സര്‍വീസ് മാനേജ്മെന്റ്"
 msgid "Services"
 msgstr "സേവനങ്ങള്‍"
 
+#~ msgid ""
+#~ "The <b>%(servicename)s</b> service will be started on demand by the "
+#~ "xinetd service and ends when it has got nothing more to do."
+#~ msgstr ""
+#~ "xinetd സേവനത്തിന്റെ ആവശ്യപ്രകാരം <b>%(servicename)s</b> സേവനം ആരംഭിക്കുന്നു. "
+#~ "ജോലികള്‍ പൂര്‍ത്തിയാക്കിയ ശേഷം അതു് അവസാനിക്കുന്നു"
+
+#~ msgid ""
+#~ "This service will be started on demand by the xinetd service and ends "
+#~ "when it has got nothing more to do."
+#~ msgstr ""
+#~ "xinetd സേവനത്തിന്റെ ആവശ്യപ്രകാരം സേവനം ആരംഭിക്കുന്നു. ജോലികള്‍ പൂര്‍ത്തിയാക്കിയ ശേഷം അതു് "
+#~ "അവസാനിക്കുന്നു"

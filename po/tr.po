@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-13 13:44+0100\n"
+"POT-Creation-Date: 2009-06-10 17:17+0200\n"
 "PO-Revision-Date: 2006-11-06 11:52+0200\n"
 "Last-Translator: \n"
 "Language-Team:  <tr@li.org>\n"
@@ -79,7 +79,7 @@ msgstr ""
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has got nothing more to do."
+"service and ends when it has nothing more to do."
 msgstr ""
 
 #: ../src/gui.py:322
@@ -346,7 +346,7 @@ msgstr "Açıklama"
 #: ../src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
-"it has got nothing more to do."
+"it has nothing more to do."
 msgstr ""
 
 #: ../src/system-config-services.glade:1065

@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-13 13:44+0100\n"
+"POT-Creation-Date: 2009-06-10 17:17+0200\n"
 "PO-Revision-Date: 2009-03-18 21:24+0100\n"
 "Last-Translator: Sulyok Péter <peti@sulyok.hu>\n"
 "Language-Team: Hungarian <fedora-trans-hu@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 #: ../src/gui.py:112
 msgid "Name"
@@ -80,10 +80,8 @@ msgstr "E szolgáltatást éppen módosítják."
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has got nothing more to do."
+"service and ends when it has nothing more to do."
 msgstr ""
-"<b>%(servicename)s</b> szolgáltatást igény szerint indítja a xinetd "
-"szolgáltatás,és befejeződik, amikor már nincs több dolga."
 
 #: ../src/gui.py:322
 msgid ""
@@ -357,10 +355,8 @@ msgstr "Leírás"
 #: ../src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
-"it has got nothing more to do."
+"it has nothing more to do."
 msgstr ""
-"E szolgáltatást igény szerint indítja az xinetd szolgáltatás, és "
-"befejeződik, amikor már nincs több dolga."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -440,6 +436,20 @@ msgstr "Szolgáltatás igazgatás"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Szolgáltatások"
+
+#~ msgid ""
+#~ "The <b>%(servicename)s</b> service will be started on demand by the "
+#~ "xinetd service and ends when it has got nothing more to do."
+#~ msgstr ""
+#~ "<b>%(servicename)s</b> szolgáltatást igény szerint indítja a xinetd "
+#~ "szolgáltatás,és befejeződik, amikor már nincs több dolga."
+
+#~ msgid ""
+#~ "This service will be started on demand by the xinetd service and ends "
+#~ "when it has got nothing more to do."
+#~ msgstr ""
+#~ "E szolgáltatást igény szerint indítja az xinetd szolgáltatás, és "
+#~ "befejeződik, amikor már nincs több dolga."
 
 #~ msgid "Are you sure you want to delete the %s?"
 #~ msgstr "Biztosan törölni akarja ezt: %s?"
