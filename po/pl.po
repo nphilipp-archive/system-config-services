@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-06-10 17:17+0200\n"
-"PO-Revision-Date: 2009-03-15 18:59+0100\n"
+"PO-Revision-Date: 2009-06-11 16:01+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr "Nazwa"
 
 #: ../src/gui.py:113
 msgid "Remarks"
-msgstr "Zmień oznaczenia"
+msgstr "Opis"
 
 #: ../src/gui.py:174 ../src/gui.py:192
 msgid "This service is being refreshed right now."
@@ -29,7 +29,7 @@ msgstr "Ta usługa jest właśnie odświeżana."
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr "Uzyskiwanie informacji o tej usłudze nie powiodło się."
+msgstr "Uzyskanie informacji o tej usłudze nie powiodło się."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../src/gui.py:287
 msgid "This service is updated currently."
-msgstr "Ta usługa jest obecnie zaktualizowana."
+msgstr "Ta usługa jest obecnie aktualizowana."
 
 #: ../src/gui.py:313
 #, python-format
@@ -79,6 +79,8 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
+"Usługa <b>%(servicename)s</b> zostanie uruchomiona na żądanie przez usługę "
+"xinetd i zakończy działanie, kiedy nie będzie już co robić."
 
 #: ../src/gui.py:322
 msgid ""
@@ -231,7 +233,7 @@ msgstr "Bieżący poziom uruchamiania to %s"
 
 #: ../src/servicetab.glade:764 ../src/servicetab.glade:836
 msgid "Runlevels"
-msgstr "Poziomy"
+msgstr "Poziomy uruchamiania"
 
 #: ../src/servicetab.glade:807
 msgid "label18"
@@ -354,6 +356,8 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
+"Ta usługa zostanie uruchomiona na żądanie przez usługę xinetd i zakończy "
+"działanie, kiedy nie będzie już co robić."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -427,7 +431,7 @@ msgstr "Poziom uruchamiania _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "Konfiguracja usług uruchamianych przy starcie systemu"
+msgstr "Konfiguracja usług uruchamianych podczas startu systemu"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -436,17 +440,3 @@ msgstr "Zarządzanie usługami"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Usługi"
-
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "Usługa <b>%(servicename)s</b> zostanie uruchomiona na żądanie przez "
-#~ "usługę xinetd i zakończy działanie, kiedy nie ma nic do zrobienia."
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "Ta usługa zostanie uruchomiona na żądanie przez usługę xinetd i zakończy "
-#~ "działanie, kiedy nie ma nic do zrobienia."
