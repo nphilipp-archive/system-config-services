@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-06-10 17:17+0200\n"
-"PO-Revision-Date: 2009-03-15 00:29-0300\n"
+"PO-Revision-Date: 2009-06-14 22:47-0300\n"
 "Last-Translator: Igor Pires Soares <igor@projetofedora.org>\n"
 "Language-Team: Brazilian Portuguese <fedora-trans-pt_br@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,8 @@ msgstr "Nome"
 msgid "Remarks"
 msgstr "Observações"
 
-#: ../src/gui.py:174 ../src/gui.py:192
+#: ../src/gui.py:174
+#: ../src/gui.py:192
 msgid "This service is being refreshed right now."
 msgstr "Este serviço está sendo atualizado no momento."
 
@@ -74,13 +75,8 @@ msgstr "Este serviço está morto."
 
 #: ../src/gui.py:273
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service is started once, usually when the system "
-"is booted, runs in the background and wakes up when needed."
-msgstr ""
-"O serviço <b>%(servicename)s</b> é iniciado uma única vez, normalmente "
-"quando o sistema é inicializado, é executado em segundo plano e acionado "
-"quando necessário."
+msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "O serviço <b>%(servicename)s</b> é iniciado uma única vez, normalmente quando o sistema é inicializado, é executado em segundo plano e acionado quando necessário."
 
 #: ../src/gui.py:287
 msgid "This service is updated currently."
@@ -88,39 +84,26 @@ msgstr "Este serviço está atualmente atualizado."
 
 #: ../src/gui.py:313
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has nothing more to do."
-msgstr ""
+msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "O serviço <b>%(servicename)s</b> será iniciado sob demanda pelo serviço xinetd e terminará quando não houver mais nada a ser feito."
 
 #: ../src/gui.py:322
-msgid ""
-"This service is enabled, but the <b>xinetd</b> package is not installed. "
-"This service does not work without it."
-msgstr ""
-"Este serviço está habilitado, mas o pacote <b>xinetd</b> não está instalado. "
-"Este serviço não funciona sem ele."
+msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
+msgstr "Este serviço está habilitado, mas o pacote <b>xinetd</b> não está instalado. Este serviço não funciona sem ele."
 
 #: ../src/gui.py:328
-msgid ""
-"This service is enabled, but the <b>xinetd</b> service is not running. This "
-"service does not work without it."
-msgstr ""
-"Este serviço está habilitado, mas o serviço <b>xinetd</b> não está em "
-"execução. Este serviço não funciona sem ele."
+msgid "This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."
+msgstr "Este serviço está habilitado, mas o serviço <b>xinetd</b> não está em execução. Este serviço não funciona sem ele."
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:710
+#: ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Habilitar o serviço <b>%(service)s</b> nestes níveis de execução:"
 
 #: ../src/gui.py:842
-msgid ""
-"The help viewer could not be found. To be able to view help, the 'yelp' "
-"package needs to be installed."
-msgstr ""
-"O visualizador de ajuda não pôde ser encontrado. Para estar apto a "
-"visualizar a ajuda, o pacote \"yelp\" precisa estar instalado."
+msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
+msgstr "O visualizador de ajuda não pôde ser encontrado. Para estar apto a visualizar a ajuda, o pacote \"yelp\" precisa estar instalado."
 
 #: ../src/servicecontrol.py:88
 #, python-format
@@ -147,12 +130,14 @@ msgstr "O serviço %s reporta um erro"
 msgid "Service %s is stopped"
 msgstr "O serviço %s está parado"
 
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
+#: ../src/servicecontrol.py:234
+#: ../src/servicecontrol.py:253
 #, python-format
 msgid "Currently enabled in runlevels %s"
 msgstr "Atualmente habilitado nos níveis de execução %s"
 
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
+#: ../src/servicecontrol.py:242
+#: ../src/servicecontrol.py:256
 #, python-format
 msgid "Enable %(name)s in runlevels %(levels)s"
 msgstr "Habilitar %(name)s nos níveis de execução %(levels)s"
@@ -165,13 +150,17 @@ msgstr "window1"
 msgid "Service %s"
 msgstr "Serviço %s"
 
-#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
-#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
+#: ../src/servicetab.glade:47
+#: ../src/servicetab.glade:395
+#: ../src/servicetab.glade:606
+#: ../src/servicetab.glade:1949
 msgid "Enable"
 msgstr "Habilitar"
 
-#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
-#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
+#: ../src/servicetab.glade:68
+#: ../src/servicetab.glade:413
+#: ../src/servicetab.glade:685
+#: ../src/servicetab.glade:1970
 msgid "Disable"
 msgstr "Desabilitar"
 
@@ -179,53 +168,63 @@ msgstr "Desabilitar"
 msgid "Customize"
 msgstr "Personalizar"
 
-#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
+#: ../src/servicetab.glade:110
+#: ../src/servicetab.glade:2013
 msgid "Enable Default"
 msgstr "Habilitar por padrão"
 
-#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
+#: ../src/servicetab.glade:137
+#: ../src/servicetab.glade:2040
 #: ../src/system-config-services.glade:134
 #: ../src/system-config-services.glade:1241
 msgid "Runlevel 2"
 msgstr "Nível de execução 2"
 
-#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
+#: ../src/servicetab.glade:147
+#: ../src/servicetab.glade:2050
 #: ../src/system-config-services.glade:143
 #: ../src/system-config-services.glade:1251
 msgid "Runlevel 3"
 msgstr "Nível de execução 3"
 
-#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
+#: ../src/servicetab.glade:157
+#: ../src/servicetab.glade:2060
 #: ../src/system-config-services.glade:152
 #: ../src/system-config-services.glade:1261
 msgid "Runlevel 4"
 msgstr "Nível de execução 4"
 
-#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
+#: ../src/servicetab.glade:167
+#: ../src/servicetab.glade:2070
 #: ../src/system-config-services.glade:161
 #: ../src/system-config-services.glade:1271
 msgid "Runlevel 5"
 msgstr "Nível de execução 5"
 
-#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
+#: ../src/servicetab.glade:183
+#: ../src/servicetab.glade:2086
 msgid "Enable All"
 msgstr "Habilitar todos"
 
-#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
+#: ../src/servicetab.glade:204
+#: ../src/servicetab.glade:2107
 msgid "Disable All"
 msgstr "Desabilitar todos"
 
-#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
+#: ../src/servicetab.glade:235
+#: ../src/servicetab.glade:332
 #: ../src/servicetab.glade:2135
 msgid "Start"
 msgstr "Iniciar"
 
-#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
+#: ../src/servicetab.glade:256
+#: ../src/servicetab.glade:349
 #: ../src/servicetab.glade:2156
 msgid "Restart"
 msgstr "Reiniciar"
 
-#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
+#: ../src/servicetab.glade:292
+#: ../src/servicetab.glade:441
 #: ../src/servicetab.glade:1922
 msgid "Configure"
 msgstr "Configurar"
@@ -242,7 +241,8 @@ msgstr "barfoo"
 msgid "Current runlevel is %s"
 msgstr "O nível de execução atual é o %s"
 
-#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
+#: ../src/servicetab.glade:764
+#: ../src/servicetab.glade:836
 msgid "Runlevels"
 msgstr "Níveis de execução"
 
@@ -254,7 +254,8 @@ msgstr "label18"
 msgid "Start "
 msgstr "Iniciar"
 
-#: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
+#: ../src/servicetab.glade:1019
+#: ../src/servicetab.glade:2177
 msgid "Stop"
 msgstr "Parar"
 
@@ -266,22 +267,26 @@ msgstr "Controle do serviço"
 msgid "Status output"
 msgstr "Saída de status"
 
-#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:180
+#: ../src/servicetab.glade:1260
+#: ../src/system-config-services.glade:180
 #: ../src/system-config-services.glade:392
 msgid "_Start"
 msgstr "_Iniciar"
 
-#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:224
+#: ../src/servicetab.glade:1339
+#: ../src/system-config-services.glade:224
 #: ../src/system-config-services.glade:426
 msgid "_Restart"
 msgstr "_Reiniciar"
 
-#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
+#: ../src/servicetab.glade:1446
+#: ../src/system-config-services.glade:69
 #: ../src/system-config-services.glade:327
 msgid "_Enable"
 msgstr "_Habilitar"
 
-#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
+#: ../src/servicetab.glade:1525
+#: ../src/system-config-services.glade:91
 #: ../src/system-config-services.glade:344
 msgid "_Disable"
 msgstr "_Desabilitar"
@@ -298,11 +303,13 @@ msgstr "Caixa de Botão"
 msgid "label16"
 msgstr "label16"
 
-#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
+#: ../src/servicetab.glade:1779
+#: ../src/servicetab.glade:1864
 msgid "Service %s:"
 msgstr "Serviço %s:"
 
-#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1280
+#: ../src/servicetab.glade:1991
+#: ../src/system-config-services.glade:1280
 msgid "Customize Runlevels"
 msgstr "Personalizar níveis de execução "
 
@@ -350,12 +357,8 @@ msgid "No service selected."
 msgstr "Nenhum serviço selecionado."
 
 #: ../src/system-config-services.glade:621
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"Este serviço é iniciado uma única vez, normalmente quando o sistema é "
-"inicializado, é executado em segundo plano e acionado quando necessário."
+msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "Este serviço é iniciado uma única vez, normalmente quando o sistema é inicializado, é executado em segundo plano e acionado quando necessário."
 
 #: ../src/system-config-services.glade:769
 #: ../src/system-config-services.glade:960
@@ -363,10 +366,8 @@ msgid "Description"
 msgstr "Descrição"
 
 #: ../src/system-config-services.glade:867
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr ""
+msgid "This service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "Este serviço será iniciado sob demanda pelo serviço xinetd e terminará quando não houver mais nada a ser feito."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -386,34 +387,18 @@ msgstr "Copyright  2002-2008 Red Hat, Inc. e colaboradores"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Este programa é um software livre; você pode redistribuí-lo e/ou modificá-lo "
-"sob os termos da Licença Pública Geral GNU (GNU General Public License) "
-"publicada pela Free Software Foundation; tanto na versão 2 da Licença, "
-"quanto (a seu critério) qualquer versão mais nova.\n"
+"Este programa é um software livre; você pode redistribuí-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU (GNU General Public License) publicada pela Free Software Foundation; tanto na versão 2 da Licença, quanto (a seu critério) qualquer versão mais nova.\n"
 "\n"
-"Este programa é distribuído na esperança de ser útil, mas SEM NENHUMA "
-"GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou ADEQUAÇÃO A "
-"UM PROPÓSITO EM PARTICULAR. Veja a Licença Pública Geral GNU (GNU General "
-"Public License) para mais detalhes.\n"
+"Este programa é distribuído na esperança de ser útil, mas SEM NENHUMA GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou ADEQUAÇÃO A UM PROPÓSITO EM PARTICULAR. Veja a Licença Pública Geral GNU (GNU General Public License) para mais detalhes.\n"
 "\n"
-"Você deve ter recebido uma cópia da Licença Pública Geral GNU (GNU General "
-"Public License) junto com o este programa; caso contrário, escreva para a "
-"Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-"
-"1307  USA."
+"Você deve ter recebido uma cópia da Licença Pública Geral GNU (GNU General Public License) junto com o este programa; caso contrário, escreva para a Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA."
 
 #: ../src/system-config-services.glade:1231
 msgid "translator-credits"
@@ -443,8 +428,7 @@ msgstr "Nível de execução _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
-"Configure quais serviços serão executados quando o sistema for iniciado"
+msgstr "Configure quais serviços serão executados quando o sistema for iniciado"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -460,10 +444,10 @@ msgstr "Serviços"
 #~ msgstr ""
 #~ "O serviço <b>%(servicename)s</b> será iniciado sob demanda através do "
 #~ "serviço xinetd e pára quando ele não tem mais nada a fazer."
-
 #~ msgid ""
 #~ "This service will be started on demand by the xinetd service and ends "
 #~ "when it has got nothing more to do."
 #~ msgstr ""
 #~ "Este serviço será iniciado sob demanda através do serviço xinetd e pára "
 #~ "quando ele não tem mais nada a fazer."
+
