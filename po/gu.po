@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-06-10 17:17+0200\n"
-"PO-Revision-Date: 2009-04-01 14:35+0530\n"
+"PO-Revision-Date: 2009-07-07 06:39-0400\n"
 "Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
 "Language-Team: Gujarati\n"
 "MIME-Version: 1.0\n"
@@ -96,6 +96,8 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
+"<b>%(servicename)s</b> સેવા એ xinetd સેવા દ્દારા માંગણી પર શરૂ થયેલ હશે અને "
+"જ્યારે તેની પાસે કરવા માટે કંઇ ન હોય ત્યારે અંત કરે છે."
 
 #: ../src/gui.py:322
 msgid ""
@@ -370,7 +372,7 @@ msgstr "વર્ણન"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
+msgstr "આ સેવા એ xinetd સેવા દ્દારા માંગણી પર શરૂ થયેલ હશે અને જ્યારે કરવા માટે કંઇ ન હોય તો તેનો અંત થાય છે."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -424,19 +426,19 @@ msgstr "શ્ર્વેતા કોઠારી <swkothar@redhat.com>"
 
 #: ../src/system-config-services.glade:1395
 msgid "Runlevel _2"
-msgstr "રનલેવલ _2"
+msgstr "રનલેવલ 2 (_2)"
 
 #: ../src/system-config-services.glade:1414
 msgid "Runlevel _3"
-msgstr "રનલેવલ _3"
+msgstr "રનલેવલ 3 (_3)"
 
 #: ../src/system-config-services.glade:1433
 msgid "Runlevel _4"
-msgstr "રનલેવલ _4"
+msgstr "રનલેવલ 4 (_4)"
 
 #: ../src/system-config-services.glade:1452
 msgid "Runlevel _5"
-msgstr "રનલેવલ _5"
+msgstr "રનલેવલ 5 (_5)"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -450,16 +452,3 @@ msgstr "સેવા વ્યવસ્થાપન"
 msgid "Services"
 msgstr "સેવાઓ"
 
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "<b>%(servicename)s</b> સેવા xinetd સેવા દ્દારા માંગ પર શરૂ થયેલ હશે અને જ્યારે તેની "
-#~ "પાસે કઇ વધારે કરવા માટે કંઇ ન હોય ત્યારે અંત થાય છે."
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "xinetd સેવા દ્દારા આ સેવા માંગ પર શરૂ થયેલ હશે અને જ્યારે તેની પાસે કંઇ કરવા માટે નહિં "
-#~ "હોય ત્યારે અંત થશે."
