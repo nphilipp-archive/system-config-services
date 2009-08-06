@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-06-10 17:17+0200\n"
-"PO-Revision-Date: 2009-04-01 15:12+1100\n"
+"PO-Revision-Date: 2009-08-06 13:55+1000\n"
 "Last-Translator: Yulia Poyarkova <yulia.poyarkova@redhat.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -86,7 +86,7 @@ msgstr "Служба обновлена."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
+msgstr "<b>%(servicename)s</b> запускается по запросу службы xinetd и завершает работу, если нет необходимости в каких-либо действиях."
 
 #: ../src/gui.py:322
 msgid ""
@@ -114,7 +114,7 @@ msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
-"Не найдена утилита промотра справки. Чтобы просмотреть справку, необходимо "
+"Не найдена утилита просмотра справки. Чтобы просмотреть справку, необходимо "
 "установить пакет 'yelp'."
 
 #: ../src/servicecontrol.py:88
@@ -361,7 +361,7 @@ msgstr "Описание"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
+msgstr "Эта служба запускается по запросу службы xinetd и завершает работу, если нет необходимости в каких-либо действиях."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -395,9 +395,9 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Эта программа является открытым программным обеспечением. Ее можно "
-"распространять и модифицировать с учетом условий лицензии GNU версии 2 или "
-"более поздней, опубликованной компанией Free Software Foundation.\n"
+"Эта программа является открытым программным обеспечением. Ее разрешается "
+"распространять и модифицировать с учетом условий лицензии GNU 2 или "
+"более поздней версии, опубликованной компанией Free Software Foundation.\n"
 "\n"
 "Эта программа распространяется БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, в том числе не "
 "гарантируется ее пригодность для определенных целей. За подробной "
@@ -406,7 +406,7 @@ msgstr ""
 "Копия лицензии предоставляется с этой программой. Если вы не получили копию "
 "лицензии, \n"
 "сообщите в отделение Free Software Foundation, Inc. по адресу 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA."
+"Place, Suite 330, Boston, MA 02111-1307 USA."
 
 #: ../src/system-config-services.glade:1231
 msgid "translator-credits"
@@ -414,23 +414,23 @@ msgstr "перевод"
 
 #: ../src/system-config-services.glade:1395
 msgid "Runlevel _2"
-msgstr "Уровень выполнения 2"
+msgstr "Уровень выполнения _2"
 
 #: ../src/system-config-services.glade:1414
 msgid "Runlevel _3"
-msgstr "Уровень запуска _3"
+msgstr "Уровень выполнения _3"
 
 #: ../src/system-config-services.glade:1433
 msgid "Runlevel _4"
-msgstr "Уровень запуска _4"
+msgstr "Уровень выполнения _4"
 
 #: ../src/system-config-services.glade:1452
 msgid "Runlevel _5"
-msgstr "Уровень запуска _5"
+msgstr "Уровень выполения _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "Настройка списка служб, которые запускаются при старте системы"
+msgstr "Настройка списка служб, запускаемых при старте системы"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -440,16 +440,3 @@ msgstr "Управление службами"
 msgid "Services"
 msgstr "Службы"
 
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "Служба  <b>%(servicename)s</b> будет запущена при необходимости службой "
-#~ "xinetd и завершит работу, если больше нечего делать."
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "Служба будет запущена при необходимости службой xinetd и завершит работу, "
-#~ "если больше нечего делать."
