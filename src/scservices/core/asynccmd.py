@@ -211,7 +211,8 @@ defaultAsyncCmdQueueHerder = None
 if __name__ == '__main__':
     mainloop = gobject.MainLoop ()
 
-    queue = AsyncCmdQueue ()
+    import sys
+    sys.setrecursionlimit (19)
 
     cmds_running = 0
 
@@ -224,8 +225,11 @@ if __name__ == '__main__':
         if cmds_running < 1:
             mainloop.quit ()
 
-    queue.queue ('sleep 5; echo "hello"', ready_cb = ready_cb, combined_stdout = True)
-    queue.queue ('sleep 3; echo "good day"', ready_cb = ready_cb, combined_stdout = True)
-    cmds_running += 2
+    for i in xrange (200):
+        queue = AsyncCmdQueue ()
+
+        queue.queue ('sleep 5; echo "hello (%d)"' % i, ready_cb = ready_cb, combined_stdout = True)
+        queue.queue ('sleep 3; echo "good day (%d)"' % i, ready_cb = ready_cb, combined_stdout = True)
+        cmds_running += 2
 
     mainloop.run ()
