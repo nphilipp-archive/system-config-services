@@ -3,7 +3,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.99.33
+Version: 0.99.34
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
@@ -93,6 +93,13 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Tue Aug 11 2009 Nils Philippsen <nils@redhat.com> - 0.99.34-1
+- avoid unnecessary recursions (#504964)
+- fix DeprecationWarning in dbus mechanism
+
+* Wed Jun 10 2009 Nils Philippsen <nils@redhat.com>
+- improve xinetd service description text (#441258)
+
 * Thu May 28 2009 Nils Philippsen <nils@redhat.com>
 - use simplified source URL
 
