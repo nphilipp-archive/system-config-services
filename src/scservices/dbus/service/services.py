@@ -41,7 +41,7 @@ class DBusService (slip.dbus.service.Object):
 
         for srv_cls, dbussrv_cls in srv_cls_dbussrv_cls.iteritems ():
             if isinstance (service, srv_cls):
-                return super (DBusService, cls).__new__ (dbussrv_cls, bus_name, object_path, service, **k)
+                return super (DBusService, cls).__new__ (dbussrv_cls)
         raise NotImplementedError
 
     def __init__ (self, bus_name, object_path, service):
