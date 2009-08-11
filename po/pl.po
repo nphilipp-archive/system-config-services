@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2009-06-11 16:01+0200\n"
+"PO-Revision-Date: 2009-08-11 17:26+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -133,7 +133,7 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright © 2002-2009 Red Hat, Inc. i współtwórcy"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
@@ -300,99 +300,3 @@ msgstr "Zarządzanie usługami"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Usługi"
-
-#~ msgid "window1"
-#~ msgstr "okno1"
-
-#~ msgid "Service %s"
-#~ msgstr "Usługa %s"
-
-#~ msgid "Enable"
-#~ msgstr "Włącz"
-
-#~ msgid "Disable"
-#~ msgstr "Wyłącz"
-
-#~ msgid "Customize"
-#~ msgstr "Dostosuj"
-
-#~ msgid "Enable Default"
-#~ msgstr "Włącz domyślnie"
-
-#~ msgid "Enable All"
-#~ msgstr "Włącz wszystkie"
-
-#~ msgid "Disable All"
-#~ msgstr "Wyłącz wszystkie"
-
-#~ msgid "Start"
-#~ msgstr "Uruchom"
-
-#~ msgid "Restart"
-#~ msgstr "Uruchom ponownie"
-
-#~ msgid "Configure"
-#~ msgstr "Skonfiguruj"
-
-#~ msgid "foobar"
-#~ msgstr "foobar"
-
-#~ msgid "barfoo"
-#~ msgstr "barfoo"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Bieżący poziom uruchamiania to %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "Poziomy uruchamiania"
-
-#~ msgid "label18"
-#~ msgstr "label18"
-
-#~ msgid "Start "
-#~ msgstr "Uruchom "
-
-#~ msgid "Stop"
-#~ msgstr "Zatrzymaj"
-
-#~ msgid "Service control"
-#~ msgstr "Konfiguracja usług"
-
-#~ msgid "Status output"
-#~ msgstr "Wyjście stanu"
-
-#~ msgid "_Configure"
-#~ msgstr "_Skonfiguruj"
-
-#~ msgid "Button Box"
-#~ msgstr "Przycisk"
-
-#~ msgid "label16"
-#~ msgstr "label16"
-
-#~ msgid "Service %s:"
-#~ msgstr "Usługa %s:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright  2002-2008 Red Hat, Inc. oraz współtwórcy"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "Nie znaleziono usługi %s!"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "Usługa %s jest uruchomiona za pomocą starej konfiguracji"
-
-#~ msgid "Service %s is running"
-#~ msgstr "Usługa %s jest uruchomiona"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "Usługa %s zgłasza błąd"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "Usługa %s jest zatrzymana"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "Obecnie jest włączona na poziomach uruchamiania %s"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "Włącz %(name)s na poziomach uruchamiania %(levels)s"
