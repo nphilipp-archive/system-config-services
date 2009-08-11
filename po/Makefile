@@ -29,7 +29,7 @@ INTLTOOLEXTRACT	= intltool-extract
 # What do we need to do
 POFILES		= $(wildcard *.po)
 MOFILES		= $(patsubst %.po,%.mo,$(POFILES))
-PYSRC		= $(wildcard ../src/*.py)
+PYSRC		= $(filter-out %/setup.py,$(wildcard ../src/*.py))
 GLADESRC	= $(wildcard ../src/*.glade)
 DESKTOPINFILES	= $(wildcard ../*.desktop.in)
 DESKTOPINHFILES	= $(patsubst %.desktop.in,%.desktop.in.h,$(DESKTOPINFILES))
@@ -55,9 +55,9 @@ po_diff_and_mv_or_rm_func = \
 	}
 
 $(POTFILE): $(SRCFILES)
-	$(XGETTEXT) --omit-header    --keyword --keyword=_ --keyword=N_ --language=python $(PYSRC)
-	$(XGETTEXT) --omit-header -j --keyword --keyword=_ --keyword=N_ --language=Glade $(GLADESRC)
-	$(XGETTEXT)               -j --keyword --keyword=_ --keyword=N_ --language=C $(CSRC)
+	$(XGETTEXT) --from-code=utf-8    --keyword --keyword=_ --keyword=N_ --language=Glade $(GLADESRC)
+	$(XGETTEXT) --from-code=utf-8 -j --keyword --keyword=_ --keyword=N_ --language=python $(PYSRC)
+	$(XGETTEXT) --from-code=utf-8 -j --keyword --keyword=_ --keyword=N_ --language=C $(CSRC)
 	@$(call po_diff_and_mv_or_rm,$(POTFILE),$(NLSPACKAGE).po)
 
 update-po: Makefile $(POTFILE) refresh-po
