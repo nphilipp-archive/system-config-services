@@ -420,6 +420,7 @@ class GUIServicesList (GladeController):
 
     def __init__ (self, xml, serviceherders):
         self.busy_cursor = gtk.gdk.Cursor (gtk.gdk.WATCH)
+        self.inhibit_recursion = False
 
         self.current_service = None
         self.xinetd_service = None
@@ -541,8 +542,11 @@ class GUIServicesList (GladeController):
         w.set_sensitive (sensitive)
 
     def on_services_changed (self, herder, change, service):
-        while gtk.events_pending ():
-            gtk.main_iteration ()
+        if not self.inhibit_recursion:
+            self.inhibit_recursion = True
+            while gtk.events_pending ():
+                gtk.main_iteration ()
+            self.inhibit_recursion = False
         if change == SVC_ADDED:
             self.on_service_added (service)
         elif change == SVC_DELETED:
