@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.ml\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-04-02 04:03+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
@@ -103,53 +103,18 @@ msgid ""
 msgstr ""
 "ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സേവനം പ്രവര്‍ത്തിക്കുന്നതല്ല."
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "ഈ റണ്‍ലവലുകളില്‍ <b>%(service)s</b> സേവനം സജ്ജമാക്കുക:"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
 "സഹായം ലഭ്യമാക്കുന്ന സംവിധാനം ഇവിടെ ലഭ്യമല്ല. ഇതിനായി, 'yelp' പാക്കേജുകള്‍ ഇന്‍സ്റ്റോള്‍ "
 "ചെയ്യേണ്ടതുണ്ടു്."
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "%s സേവനം ലഭ്യമല്ല!"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "%s സേവനം പഴയ ക്രമികരണത്തിലാണു് പ്രവര്‍ത്തിക്കുന്നതു്"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "%s എന്ന സേവനം പ്രവര്‍ത്തനത്തിലാണു്"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "%s സേവനം ഒരു പിശകു് രേഖപ്പെടുത്തുന്നു"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "%s സേവനം നിര്‍ത്തിയിരിക്കുന്നു"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "നിലവില്‍ %s റണ്‍ലവലുകളില്‍ സജ്ജമാണു്"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "%(name)s %(levels)s റണ്‍ലവലുകളില്‍ സജ്ജമാക്കുക"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -437,6 +402,27 @@ msgstr "സര്‍വീസ് മാനേജ്മെന്റ്"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "സേവനങ്ങള്‍"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "%s സേവനം ലഭ്യമല്ല!"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "%s സേവനം പഴയ ക്രമികരണത്തിലാണു് പ്രവര്‍ത്തിക്കുന്നതു്"
+
+#~ msgid "Service %s is running"
+#~ msgstr "%s എന്ന സേവനം പ്രവര്‍ത്തനത്തിലാണു്"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "%s സേവനം ഒരു പിശകു് രേഖപ്പെടുത്തുന്നു"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "%s സേവനം നിര്‍ത്തിയിരിക്കുന്നു"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "നിലവില്‍ %s റണ്‍ലവലുകളില്‍ സജ്ജമാണു്"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "%(name)s %(levels)s റണ്‍ലവലുകളില്‍ സജ്ജമാക്കുക"
 
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "

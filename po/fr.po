@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.tip.fr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-04-17 16:06+0200\n"
 "Last-Translator: Corina Roe <croe@redhat.com>\n"
 "Language-Team: French <i18@redhat.com>\n"
@@ -109,53 +109,18 @@ msgstr ""
 "Ce service est activé, mais le service <b>xinetd</b> n'est pas activé. Ce "
 "service ne fonctionne pas sans lui."
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Activer le service <b>%(service)s</b> à ces niveaux d'exécution:"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
 "On ne peut pas trouver l'affichage d'aide. Pour pouvoir le voir, on a besoin "
 "d'installer le paquetage 'yelp'."
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "Service %s non trouvé!"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "Service %s est exécuté dans l'ancienne configuration"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "Service %s est en cours d'exécution"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "Service %s reporte un erreur"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "Service %s est arrêté"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "Actuellement activé sur niveaux d'exécution %s"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "Activer %(name)s dans niveaux d'exécution %(levels)s"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -447,6 +412,27 @@ msgstr "Gestion des services"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Services"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "Service %s non trouvé!"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "Service %s est exécuté dans l'ancienne configuration"
+
+#~ msgid "Service %s is running"
+#~ msgstr "Service %s est en cours d'exécution"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "Service %s reporte un erreur"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "Service %s est arrêté"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "Actuellement activé sur niveaux d'exécution %s"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "Activer %(name)s dans niveaux d'exécution %(levels)s"
 
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-06-06 00:47+0200\n"
 "Last-Translator: Xavier Conde Rueda <xavi.conde@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
@@ -109,53 +109,18 @@ msgstr ""
 "El servei està habilitat, però el servei <b>xinetd</b> no s'està executant. "
 "Aquest servei no funcionarà sense ell."
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Habilita el servei <b>%(service)s</b> en aquests nivells:"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
 "No s'ha trobat el visualitzador d'ajuda. Per poder veure l'ajuda, us cal "
 "instal·lar el paquet «yelp»."
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "No s'ha trobat el servei %s"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "El servei %s s'executa amb la configuració antiga"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "S'està executant el servei %s"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "El servei %s ha informat d'un error"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "El servei %s està aturat"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "Habilitat en els nivells d'execució %s"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "Habilita %(name)s als nivells d'execució %(levels)s"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -446,6 +411,27 @@ msgstr "Gestió de serveis"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Serveis"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "No s'ha trobat el servei %s"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "El servei %s s'executa amb la configuració antiga"
+
+#~ msgid "Service %s is running"
+#~ msgstr "S'està executant el servei %s"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "El servei %s ha informat d'un error"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "El servei %s està aturat"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "Habilitat en els nivells d'execució %s"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "Habilita %(name)s als nivells d'execució %(levels)s"
 
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "

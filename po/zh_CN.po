@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-03-30 15:01+1000\n"
 "Last-Translator: Leah Liu <lliu@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
@@ -99,51 +99,16 @@ msgid ""
 msgstr ""
 "启用了这个服务，但没有运行 <b>xinetd</b> 服务。没有它这个服务无法工作。"
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "在这些运行级别中启用 <b>%(service)s</b> 服务："
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr "无法找到帮助视窗。要能够查看帮助，您需要安装‘yelp’软件包。"
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "没有找到服务 %s！"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "正在使用原来的配置运行服务 %s"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "服务 %s 正在运行"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "服务 %s 报告了一个错误"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "停止了服务 %s"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "目前在运行级别 %s 中启用"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "在运行级别 %(levels)s 中启用 %(name)s"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -426,6 +391,27 @@ msgstr "服务程序管理："
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "服务"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "没有找到服务 %s！"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "正在使用原来的配置运行服务 %s"
+
+#~ msgid "Service %s is running"
+#~ msgstr "服务 %s 正在运行"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "服务 %s 报告了一个错误"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "停止了服务 %s"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "目前在运行级别 %s 中启用"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "在运行级别 %(levels)s 中启用 %(name)s"
 
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "

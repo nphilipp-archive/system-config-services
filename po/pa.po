@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-04-02 08:24+0000\n"
 "Last-Translator: Jaswinder Singh <jsingh@redhat.com>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -105,51 +105,16 @@ msgstr ""
 "ਇਹ ਸਰਵਿਸ ਯੋਗ ਕੀਤੀ ਹੈ, ਪਰ <b>xinetd</b> ਸਰਵਿਸ ਨਹੀਂ ਚੱਲ ਰਹੀ ਹੈ। ਇਹ ਸਰਵਿਸ ਇਸ ਤੋਂ ਬਿਨਾਂ "
 "ਕੰਮ ਨਹੀਂ ਕਰਦੀ ਹੈ।"
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr " <b>%(service)s</b> ਸਰਵਿਸ ਨੂੰ ਇਹਨਾਂ ਰੰਨਲੈਵਲਾਂ ਵਿੱਚ ਯੋਗ ਕਰੋ:"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr "ਸਹਾਇਤਾ ਦਰਸ਼ਕ ਨਹੀਂ ਲੱਭਿਆ। ਸਹਾਇਤਾ ਵੇਖਣ ਲਈ ਤੁਹਾਨੂੰ 'yelp' ਪੈਕੇਜ ਇੰਸਟਾਲ ਕਰਨਾ ਪਵੇਗਾ।"
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "ਸਰਵਿਸ %s ਨਹੀਂ ਲੱਭੀ!"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "ਸਰਵਿਸ %s ਪੁਰਾਣੀ ਸੰਰਚਨਾ ਨਾਲ ਚੱਲ ਰਹੀ ਹੈ।"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "ਸਰਵਿਸ %s ਚੱਲ ਰਹੀ ਹੈ"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "ਸਰਵਿਸ %s ਨੇ ਇੱਕ ਗਲਤੀ ਦਿੱਤੀ ਹੈ"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "ਸਰਵਿਸ %s ਰੋਕੀ ਗਈ ਹੈ"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "ਇਸ ਵੇਲੇ ਰਨਲੈਵਲ %s ਵਿਚ ਚੱਲ ਰਿਹਾ"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "%(name)s ਨੂੰ ਰੰਨਲੈਵਲਾਂ %(levels)s ਵਿੱਚ ਯੋਗ ਕਰੋ"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -437,6 +402,27 @@ msgstr "ਸੇਵਾ ਪਰਬੰਧ"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "ਸਰਵਿਸਾਂ"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "ਸਰਵਿਸ %s ਨਹੀਂ ਲੱਭੀ!"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "ਸਰਵਿਸ %s ਪੁਰਾਣੀ ਸੰਰਚਨਾ ਨਾਲ ਚੱਲ ਰਹੀ ਹੈ।"
+
+#~ msgid "Service %s is running"
+#~ msgstr "ਸਰਵਿਸ %s ਚੱਲ ਰਹੀ ਹੈ"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "ਸਰਵਿਸ %s ਨੇ ਇੱਕ ਗਲਤੀ ਦਿੱਤੀ ਹੈ"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "ਸਰਵਿਸ %s ਰੋਕੀ ਗਈ ਹੈ"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "ਇਸ ਵੇਲੇ ਰਨਲੈਵਲ %s ਵਿਚ ਚੱਲ ਰਿਹਾ"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "%(name)s ਨੂੰ ਰੰਨਲੈਵਲਾਂ %(levels)s ਵਿੱਚ ਯੋਗ ਕਰੋ"
 
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "

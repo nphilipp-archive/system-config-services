@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.kn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-04-02 22:45+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
@@ -101,53 +101,18 @@ msgstr ""
 "ಈ ಸೇವೆಯು ಶಕ್ತಗೊಂಡಿದೆ, ಆದರೆ <b>xinetd</b> ಸೇವೆಯು ಚಾಲನೆಯಲ್ಲಿಲ್ಲ. ಅದಿಲ್ಲದೆ ಈ ಸೇವೆಯು "
 "ಕೆಲಸ ಮಾಡುವುದಿಲ್ಲ."
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "<b>%(service)s</b> ಸೇವೆಯನ್ನು ಈ ರನ್‌ಲೆವೆಲ್‌ಗಳಲ್ಲಿ ಶಕ್ತಗೊಳಿಸಿ:"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
 "ಸಹಾಯ ವೀಕ್ಷಕವು ಕಂಡುಬರುತ್ತಿಲ್ಲ. ಸಹಾಯವನ್ನು ಕಾಣಲು ನೀವು 'yelp' ಪ್ಯಾಕೇಜ್ ಅನ್ನು "
 "ಅನುಸ್ಥಾಪಿಸಬೇಕಾಗುತ್ತದೆ."
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "%s ಸೇವೆಯು ಕಂಡುಬರುತ್ತಿಲ್ಲ!"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "%s ಸೇವೆಯು ಹಳೆಯ ಸಂರಚನೆಯೊಂದಿಗೆ ಚಾಲನೆಯಲ್ಲಿದೆ"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "%s ಸೇವೆಯು ಚಾಲನೆಯಲ್ಲಿದೆ"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "%s ಸೇವೆಯು ಒಂದು ದೋಷವನ್ನು ವರದಿ ಮಾಡಿದೆ"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "%s ಸೇವೆಯನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "ಸದ್ಯಕ್ಕೆ %s ರನ್‌ಲೆವೆಲ್ಲಿನಲ್ಲಿ ಚಾಲನೆಯಾಗುತ್ತಿದೆ"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "%(name)s ಅನ್ನು %(levels)s ರನ್‌ಲೆವೆಲ್ಲಿನಲ್ಲಿ ಶಕ್ತಗೊಳಿಸು"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -438,6 +403,27 @@ msgstr "ಸೇವೆಯ ನಿರ್ವಹಣೆ"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "ಸೇವೆಗಳು"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "%s ಸೇವೆಯು ಕಂಡುಬರುತ್ತಿಲ್ಲ!"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "%s ಸೇವೆಯು ಹಳೆಯ ಸಂರಚನೆಯೊಂದಿಗೆ ಚಾಲನೆಯಲ್ಲಿದೆ"
+
+#~ msgid "Service %s is running"
+#~ msgstr "%s ಸೇವೆಯು ಚಾಲನೆಯಲ್ಲಿದೆ"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "%s ಸೇವೆಯು ಒಂದು ದೋಷವನ್ನು ವರದಿ ಮಾಡಿದೆ"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "%s ಸೇವೆಯನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "ಸದ್ಯಕ್ಕೆ %s ರನ್‌ಲೆವೆಲ್ಲಿನಲ್ಲಿ ಚಾಲನೆಯಾಗುತ್ತಿದೆ"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "%(name)s ಅನ್ನು %(levels)s ರನ್‌ಲೆವೆಲ್ಲಿನಲ್ಲಿ ಶಕ್ತಗೊಳಿಸು"
 
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "

@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-06-11 12:22+0200\n"
 "Last-Translator: R.E. van der Luit <nippur@fedoraproject.org>\n"
 "Language-Team: Dutch <nippur@fedoraproject.org>\n"
@@ -111,53 +111,18 @@ msgstr ""
 "Deze service is aangezet, maar de <b>xinetd</b> service is niet actief. Deze "
 "service werkt hier niet zonder mee."
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Zet de <b>%(service)s</b> service aan in deze runlevels:"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
 "De hulpweergave kan niet worden gevonden. Om de hulp te tonen dient u het "
 "'yelp' pakket te installeren."
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "Service %s niet gevonden!"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "Service %s is actief met oude configuratie"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "Service %s is actief"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "Service %s rapporteert een fout"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "Service %s is gestopt"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "Momenteel aangezet in runlevels %s"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "%(name)s in runlevels %(levels)s aanzetten"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -454,6 +419,27 @@ msgstr "Service Beheer"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Services"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "Service %s niet gevonden!"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "Service %s is actief met oude configuratie"
+
+#~ msgid "Service %s is running"
+#~ msgstr "Service %s is actief"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "Service %s rapporteert een fout"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "Service %s is gestopt"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "Momenteel aangezet in runlevels %s"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "%(name)s in runlevels %(levels)s aanzetten"
 
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "

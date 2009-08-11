@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-05-20 14:08+0200\n"
 "Last-Translator: \n"
 "Language-Team: Greek Fedora team <fedora-trans-el@redhat.com>\n"
@@ -103,53 +103,18 @@ msgstr ""
 "Η υπηρεσία είναι ενεργοποιημένη, αλλά δεν εκτελείται η υπηρεσία <b>xinetd</"
 "b> η οποία είναι  είναι απαραίτητη για να δουλέψει."
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Ενεργοποίηση <b>%(service)s</b> υπηρεσίας σε αυτά τα runlevels:"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
 "Δεν βρέθηκε η προβολή βοήθειας. Για να μπορέσετε να δείτε την βοήθεια, "
 "πρέπει να εγκατασταθεί το πακέτο  'yelp'."
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "Δε βρέθηκε η υπηρεσία %s !"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "Η υπηρεσία %s εκτελείται με παλιές ρυθμίσεις"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "Η υπηρεσία %s εκτελείται"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "Η υπηρεσία %s αναφέρει σφάλμα"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "Η υπηρεσία %s έχει διακοπεί"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "Τώρα ενεργοποιημένη στα runlevels %s"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "Ενεργοποίηση %(name)s στα runlevels %(levels)s"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -447,6 +412,27 @@ msgstr "Διαχείριση υπηρεσιών"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Υπηρεσίες"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "Δε βρέθηκε η υπηρεσία %s !"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "Η υπηρεσία %s εκτελείται με παλιές ρυθμίσεις"
+
+#~ msgid "Service %s is running"
+#~ msgstr "Η υπηρεσία %s εκτελείται"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "Η υπηρεσία %s αναφέρει σφάλμα"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "Η υπηρεσία %s έχει διακοπεί"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "Τώρα ενεργοποιημένη στα runlevels %s"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "Ενεργοποίηση %(name)s στα runlevels %(levels)s"
 
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "

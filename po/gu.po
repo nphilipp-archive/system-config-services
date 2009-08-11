@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-07-07 06:39-0400\n"
 "Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
 "Language-Team: Gujarati\n"
@@ -96,8 +96,8 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
-"<b>%(servicename)s</b> સેવા એ xinetd સેવા દ્દારા માંગણી પર શરૂ થયેલ હશે અને "
-"જ્યારે તેની પાસે કરવા માટે કંઇ ન હોય ત્યારે અંત કરે છે."
+"<b>%(servicename)s</b> સેવા એ xinetd સેવા દ્દારા માંગણી પર શરૂ થયેલ હશે અને જ્યારે તેની "
+"પાસે કરવા માટે કંઇ ન હોય ત્યારે અંત કરે છે."
 
 #: ../src/gui.py:322
 msgid ""
@@ -115,53 +115,18 @@ msgstr ""
 "આ સેવા સક્રિય થયેલ છે, પરંતુ <b>xinetd</b> સેવા ચાલી નથી રહી. આ સેવા તેના વગર કામ કરતુ "
 "નથી."
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "આ રનલેવલોમાં <b>%(service)s</b> સેવા ને સક્રિય કરો:"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
 "મદદ દર્શક શોધાઇ શકાતુ નથી. મદદ દેખાવાનું સક્ષમ કરવા માટે, 'yelp' પેકેજ ને સ્થાપિત કરવુ "
 "જરૂરી છે."
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "સેવા %s શોધાઇ નથી!"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "જૂના રૂપરેખાંકન સાથે સેવા %s ચાલી રહી છે"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "સેવા %s ચાલી રહી છે"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "સેવા %s એ ભૂલનો રીપોર્ટ કરે છે"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "સેવા %s બંધ થયેલ છે"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "રનલેવલો %s માં અત્યારે સક્રિય થયેલ છે"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "રનલેવલો %(levels)s માં %(name)s સક્રિય કરો"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -372,7 +337,9 @@ msgstr "વર્ણન"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr "આ સેવા એ xinetd સેવા દ્દારા માંગણી પર શરૂ થયેલ હશે અને જ્યારે કરવા માટે કંઇ ન હોય તો તેનો અંત થાય છે."
+msgstr ""
+"આ સેવા એ xinetd સેવા દ્દારા માંગણી પર શરૂ થયેલ હશે અને જ્યારે કરવા માટે કંઇ ન હોય તો તેનો "
+"અંત થાય છે."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -452,3 +419,23 @@ msgstr "સેવા વ્યવસ્થાપન"
 msgid "Services"
 msgstr "સેવાઓ"
 
+#~ msgid "Service %s not found!"
+#~ msgstr "સેવા %s શોધાઇ નથી!"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "જૂના રૂપરેખાંકન સાથે સેવા %s ચાલી રહી છે"
+
+#~ msgid "Service %s is running"
+#~ msgstr "સેવા %s ચાલી રહી છે"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "સેવા %s એ ભૂલનો રીપોર્ટ કરે છે"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "સેવા %s બંધ થયેલ છે"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "રનલેવલો %s માં અત્યારે સક્રિય થયેલ છે"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "રનલેવલો %(levels)s માં %(name)s સક્રિય કરો"

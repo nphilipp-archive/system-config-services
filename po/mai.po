@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-02-24 21:50+0530\n"
 "Last-Translator: Sangeeta Kumari <sangeeta09@gmail.com>\n"
 "Language-Team: Maithili <maithili.sf.net>\n"
@@ -99,53 +99,18 @@ msgstr ""
 "ई सेवा सक्रिय अछि.  मुदा  <b>xinetd</b> सेवा नहि चलि रहल अछि. ई सेवा एकरा बिनु काम "
 "नहि करैत अछि."
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "<b>%(service)s</b> सेवा इन रनलेवल मे सक्रिय  करू :"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
 " मदति  प्रदर्शक नहि मिल सका.  मदति  देखब मे समर्थ हए क' लेल अहाँकेँ 'yelp' संकुल "
 "संस्थापित करने क' जरूरत अछि."
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "सेवा %s नहि भेटल!"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "सेवा %s पुराने विन्यास सँ चलि रहल अछि"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "सेवा %s चलि रहल अछि"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "सेवा %s ने एकटा त्रुटि देल अछि"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "सेवा %s रूकल अछि"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "अखन %s रनलेवल मे सक्रिय अछि"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "%(name)s केँ %(levels)s रनलेवल मे सक्रिय  करू "
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -435,6 +400,27 @@ msgstr "सेवा प्रबंधन"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "सेवा"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "सेवा %s नहि भेटल!"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "सेवा %s पुराने विन्यास सँ चलि रहल अछि"
+
+#~ msgid "Service %s is running"
+#~ msgstr "सेवा %s चलि रहल अछि"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "सेवा %s ने एकटा त्रुटि देल अछि"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "सेवा %s रूकल अछि"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "अखन %s रनलेवल मे सक्रिय अछि"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "%(name)s केँ %(levels)s रनलेवल मे सक्रिय  करू "
 
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "

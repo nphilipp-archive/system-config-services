@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-08-01 21:25+0900\n"
 "Last-Translator: Hyu_gabaru Ryu_ichi <hyu_gabaru@yahoo.co.jp>\n"
 "Language-Team: Japanese <jp@li.org>\n"
@@ -89,8 +89,8 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
-"<b>%(servicename)s</b> サービスは要求に応じて xinetd サービスによって起動"
-"され、何もすることがなくなると終了します。"
+"<b>%(servicename)s</b> サービスは要求に応じて xinetd サービスによって起動さ"
+"れ、何もすることがなくなると終了します。"
 
 #: ../src/gui.py:322
 msgid ""
@@ -108,53 +108,18 @@ msgstr ""
 "このサービスは有効ですが、<b>xinetd</b> サービスが実行していません。 このサー"
 "ビスはそれがないと機能しません。"
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "これらのランレベルで <b>%(service)s</b> サービスを有効にする:"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
 "ヘルプビューアを見つけることができませんでした。ヘルプの表示をできるように す"
 "るには、'yelp' パッケージをインストールする必要があります。"
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "サービス %s が見付かりません"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "サービス %s は古い設定で実行中です。"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "サービス %s は実行中です。"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "サービス %s がエラーを報告しています。"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "サービス %s は停止しました"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "現在 ランレベル %s で有効です。"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "ランレベル %(levels)s で %(name)s を有効にする"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -366,8 +331,8 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
-"このサービスは要求に応じて xinetd サービスによって起動され、何もすることが"
-"なくなると終了します。"
+"このサービスは要求に応じて xinetd サービスによって起動され、何もすることがな"
+"くなると終了します。"
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -455,6 +420,27 @@ msgstr "サービス管理"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "サービス"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "サービス %s が見付かりません"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "サービス %s は古い設定で実行中です。"
+
+#~ msgid "Service %s is running"
+#~ msgstr "サービス %s は実行中です。"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "サービス %s がエラーを報告しています。"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "サービス %s は停止しました"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "現在 ランレベル %s で有効です。"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "ランレベル %(levels)s で %(name)s を有効にする"
 
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "

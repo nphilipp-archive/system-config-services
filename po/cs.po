@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2008-08-05 07:13+0200\n"
 "Last-Translator: Adam Pribyl <pribyl@lowlevel.cz>\n"
 "Language-Team: Czech <fedora-cs-list@redhat.com>\n"
@@ -102,53 +102,18 @@ msgstr ""
 "Tato služba je povolena, ale služba <b>xinetd</b> neběží. Bez ní nebude tato "
 "služba fungovat."
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Povolte službu <b>%(service)s</b> v těchto runlevelech:"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
 "Nemohu nalézt prohlížeč nápovědy. Abyste byli schopni prohlížet nápovědu, "
 "musí být nainstalován balíček 'yelp'."
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "Služba %s nenalezena!"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "Služba %s běží se starou konfigurací."
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "Služba %s běží"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "Služba %s hlásí chybu"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "Služba %s je zastavena"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "Momentálně povoleno v runlevelech %s"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "Povolit %(name)s v runevelech %(levels)s"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -436,6 +401,27 @@ msgstr "Správa služeb"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Služby"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "Služba %s nenalezena!"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "Služba %s běží se starou konfigurací."
+
+#~ msgid "Service %s is running"
+#~ msgstr "Služba %s běží"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "Služba %s hlásí chybu"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "Služba %s je zastavena"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "Momentálně povoleno v runlevelech %s"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "Povolit %(name)s v runevelech %(levels)s"
 
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "

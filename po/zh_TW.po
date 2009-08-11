@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-03-31 13:16+1000\n"
 "Last-Translator: Terry Chuang <tchuang@redhat.com>\n"
 "Language-Team:  <zh@li.org>\n"
@@ -101,51 +101,16 @@ msgstr ""
 "這項服務已啟用，不過 <b>xinetd</b> 服務尚未被執行。這項服務無法在沒有此套件的"
 "情況下運作。"
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "在這些 runlevel 中啟用 <b>%(service)s</b> 服務："
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr "無法找到說明檢視器。若要檢視說明，您必須安裝「yelp」套件。"
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "找不到 %s 服務！"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "%s 服務正在以舊的設定執行中"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "%s 服務正在運作中"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "%s 服務回報了錯誤"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "%s 服務已停止"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "目前已啟用於 runlevel %s 中"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "在 runlevel %(levels)s 中啟用 %(name)s"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -430,6 +395,27 @@ msgstr "服務管理"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "服務"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "找不到 %s 服務！"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "%s 服務正在以舊的設定執行中"
+
+#~ msgid "Service %s is running"
+#~ msgstr "%s 服務正在運作中"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "%s 服務回報了錯誤"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "%s 服務已停止"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "目前已啟用於 runlevel %s 中"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "在 runlevel %(levels)s 中啟用 %(name)s"
 
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "

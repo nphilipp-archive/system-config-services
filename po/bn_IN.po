@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.bn_IN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-03-31 14:33+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <fedora-trans-bn_in@redhat.com>\n"
@@ -104,53 +104,18 @@ msgstr ""
 "এই পরিসেবা সক্রিয় হলেও, <b>xinetd</b> পরিসেবা চলছে না। xinetd বিনা এই পরিসেবা "
 "সঞ্চালন করা সম্ভব নয়।"
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "চিহ্নিত রান-লেভেলে <b>%(service)s</b> পরিসেবা সক্রিয় করা হবে:"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
 "সহায়িকা প্রদর্শন ব্যবস্থা পাওয়া যায়নি। সহায়ক নথিপত্র প্রদর্শনের জন্য 'yelp' নামক "
 "প্যাকেজটি ইনস্টল থাকা আবশ্যক।"
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "%s পরিসেবা পাওয়া যায়নি!"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "%s পরিসেবা পুরোনো কনফিগারেশন সহ সঞ্চালিত হচ্ছে"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "%s পরিসেবা চলছে"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "%s পরিসেবা দ্বারা একটি ত্রুটি উৎপন্ন হয়েছে"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "%s পরিসেবা বন্ধ রয়েছে"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "বর্তমানে %s রান-লেভেলে সক্রিয় করা আছে"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "%(levels)s রান-লেভেলে %(name)s সক্রিয় করা হবে"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -440,6 +405,27 @@ msgstr "পরিসেবা পরিচালনা"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "পরিসেবা"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "%s পরিসেবা পাওয়া যায়নি!"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "%s পরিসেবা পুরোনো কনফিগারেশন সহ সঞ্চালিত হচ্ছে"
+
+#~ msgid "Service %s is running"
+#~ msgstr "%s পরিসেবা চলছে"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "%s পরিসেবা দ্বারা একটি ত্রুটি উৎপন্ন হয়েছে"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "%s পরিসেবা বন্ধ রয়েছে"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "বর্তমানে %s রান-লেভেলে সক্রিয় করা আছে"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "%(levels)s রান-লেভেলে %(name)s সক্রিয় করা হবে"
 
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "

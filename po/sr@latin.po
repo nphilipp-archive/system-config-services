@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-07-12 19:16+0100\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
@@ -102,53 +102,18 @@ msgstr ""
 "Ovaj servis je uključen, ali servis <b>xinetd</b> nije pokrenut. Ovaj servis "
 "ne radi bez njega."
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Uključi servis <b>%(service)s</b> u ovim izvršnim nivoima:"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
 "Program za pregledanje pomoći nije nađen. Da biste mogli pregledati pomoć "
 "paket „yelp“ mora biti instaliran."
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "Servis %s nije pronađen!"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "Servis %s je pokrenut sa starim podešavanjima"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "Servis %s je pokrenut"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "Servis %s javlja grešku"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "Servis %s je zaustavljen"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "Trenutno se radi u izvršnom nivou %s"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "Uključi %(name)s u izvršnim nivoima %(levels)s"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -443,3 +408,24 @@ msgstr "Upravljanje servisima"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Servisi"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "Servis %s nije pronađen!"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "Servis %s je pokrenut sa starim podešavanjima"
+
+#~ msgid "Service %s is running"
+#~ msgstr "Servis %s je pokrenut"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "Servis %s javlja grešku"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "Servis %s je zaustavljen"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "Trenutno se radi u izvršnom nivou %s"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "Uključi %(name)s u izvršnim nivoima %(levels)s"

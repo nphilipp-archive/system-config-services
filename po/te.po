@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.te\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-04-06 19:34+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
@@ -101,51 +101,16 @@ msgid ""
 "service does not work without it."
 msgstr "సేవ చేతన పరచబడింది, అయితే <b>xinted</b> సేవ నడుచుటలేదు. అది లేకుండా ఈ సేవ పనిచేయదు."
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "<b>%(service)s</b> సేవను ఈ రన్‌లెవల్సు నందు చేతనంచేస్తుంది:"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr "సహాయ దర్శని కనగొనబడలేదు. సహాయమును చూడగల్గుటకు, 'yelp' ప్యాకేజీ సంస్థాపించవలసి వున్నది."
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "సేవ %s కనబడలేదు!"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "సేవ %s పాత ఆకృతీకరణతో నడుచుచున్నది"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "సేవ %s నడుచుచున్నది"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "సేవ %s వొక దోషమును నివేదిస్తుంది"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "సేవ %s ఆపివేయబడింది"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "ప్రస్తుతం రన్‌లెవల్స్‍ %s నందు చేతనపరచబడింది"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "%(name)s ను రన్‌లెవల్స్‍ %(levels)s నందు చేనతనంచేయుము."
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -433,6 +398,27 @@ msgstr "సేవల నిర్వహణ"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "సేవలు"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "సేవ %s కనబడలేదు!"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "సేవ %s పాత ఆకృతీకరణతో నడుచుచున్నది"
+
+#~ msgid "Service %s is running"
+#~ msgstr "సేవ %s నడుచుచున్నది"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "సేవ %s వొక దోషమును నివేదిస్తుంది"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "సేవ %s ఆపివేయబడింది"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "ప్రస్తుతం రన్‌లెవల్స్‍ %s నందు చేతనపరచబడింది"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "%(name)s ను రన్‌లెవల్స్‍ %(levels)s నందు చేనతనంచేయుము."
 
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "

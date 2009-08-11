@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.ko\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-03-31 14:28+1000\n"
 "Last-Translator: Eunju Kim <eukim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -102,53 +102,18 @@ msgstr ""
 "서비스를 사용할 수 있지만, <b>xinetd</b> 서비스가 실행되고 있지 않습니다. 이 "
 "서비스를 실행하지 않고 이는 작동하지 않습니다. "
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "다음의 런레벨에서 <b>%(service)s</b> 서비스를 사용할 수 있습니다: "
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
 "도움말 보기를 찾을 수 없습니다. 도움말을 보시려면 'yelp' 패키지를 설치하셔야 "
 "합니다.  "
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "%s 서비스를 찾을 수 없습니다! "
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "이전 설정으로 %s 서비스는 실행되고 있습니다 "
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "%s 서비스가 실행되고 있습니다 "
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "%s 서비스에서 오류가 보고되었습니다 "
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "%s 서비스를 중지합니다 "
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "현재 %s 런레벨에서 실행되고 있습니다 "
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "%(levels)s 런레벨에서 %(name)s 사용 "
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -438,6 +403,27 @@ msgstr "서비스 관리"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "서비스"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "%s 서비스를 찾을 수 없습니다! "
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "이전 설정으로 %s 서비스는 실행되고 있습니다 "
+
+#~ msgid "Service %s is running"
+#~ msgstr "%s 서비스가 실행되고 있습니다 "
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "%s 서비스에서 오류가 보고되었습니다 "
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "%s 서비스를 중지합니다 "
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "현재 %s 런레벨에서 실행되고 있습니다 "
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "%(levels)s 런레벨에서 %(name)s 사용 "
 
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "

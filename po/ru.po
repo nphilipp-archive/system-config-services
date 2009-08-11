@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-08-06 13:55+1000\n"
 "Last-Translator: Yulia Poyarkova <yulia.poyarkova@redhat.com>\n"
 "Language-Team: \n"
@@ -86,7 +86,9 @@ msgstr "Служба обновлена."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr "<b>%(servicename)s</b> запускается по запросу службы xinetd и завершает работу, если нет необходимости в каких-либо действиях."
+msgstr ""
+"<b>%(servicename)s</b> запускается по запросу службы xinetd и завершает "
+"работу, если нет необходимости в каких-либо действиях."
 
 #: ../src/gui.py:322
 msgid ""
@@ -104,53 +106,18 @@ msgstr ""
 "Эта служба включена, но <b>xinetd</b> не выполняется. Служба не сможет "
 "выполняться без <b>xinetd</b>."
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Включить службу <b>%(service)s</b> на уровнях выполнения:"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
 "Не найдена утилита просмотра справки. Чтобы просмотреть справку, необходимо "
 "установить пакет 'yelp'."
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "Служба  %s не найдена."
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "Служба %s выполняется со старыми настройками"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "Служба %s выполняется"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "Получена ошибка службы %s"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "Служба %s остановлена"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "Включено на уровнях выполнения %s"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "Включить %(name)s на уровнях выполнения %(levels)s"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -361,7 +328,9 @@ msgstr "Описание"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr "Эта служба запускается по запросу службы xinetd и завершает работу, если нет необходимости в каких-либо действиях."
+msgstr ""
+"Эта служба запускается по запросу службы xinetd и завершает работу, если нет "
+"необходимости в каких-либо действиях."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -396,8 +365,8 @@ msgid ""
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
 "Эта программа является открытым программным обеспечением. Ее разрешается "
-"распространять и модифицировать с учетом условий лицензии GNU 2 или "
-"более поздней версии, опубликованной компанией Free Software Foundation.\n"
+"распространять и модифицировать с учетом условий лицензии GNU 2 или более "
+"поздней версии, опубликованной компанией Free Software Foundation.\n"
 "\n"
 "Эта программа распространяется БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, в том числе не "
 "гарантируется ее пригодность для определенных целей. За подробной "
@@ -440,3 +409,23 @@ msgstr "Управление службами"
 msgid "Services"
 msgstr "Службы"
 
+#~ msgid "Service %s not found!"
+#~ msgstr "Служба  %s не найдена."
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "Служба %s выполняется со старыми настройками"
+
+#~ msgid "Service %s is running"
+#~ msgstr "Служба %s выполняется"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "Получена ошибка службы %s"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "Служба %s остановлена"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "Включено на уровнях выполнения %s"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "Включить %(name)s на уровнях выполнения %(levels)s"

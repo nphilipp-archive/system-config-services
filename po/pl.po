@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-06-11 16:01+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -98,53 +98,18 @@ msgstr ""
 "Ta usługa jest włączona, ale usługa <b>xinetd</b> nie jest uruchomiona. Ta "
 "usługa nie działa bez niej."
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Włącz usługę <b>%(service)s</b> na tych poziomach uruchamiania:"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
 "Nie można znaleźć przeglądarki pomocy. Aby zobaczyć pomoc, zainstaluj pakiet "
 "\"yelp\"."
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "Nie znaleziono usługi %s!"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "Usługa %s jest uruchomiona za pomocą starej konfiguracji"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "Usługa %s jest uruchomiona"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "Usługa %s zgłasza błąd"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "Usługa %s jest zatrzymana"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "Obecnie jest włączona na poziomach uruchamiania %s"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "Włącz %(name)s na poziomach uruchamiania %(levels)s"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -440,3 +405,24 @@ msgstr "Zarządzanie usługami"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Usługi"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "Nie znaleziono usługi %s!"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "Usługa %s jest uruchomiona za pomocą starej konfiguracji"
+
+#~ msgid "Service %s is running"
+#~ msgstr "Usługa %s jest uruchomiona"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "Usługa %s zgłasza błąd"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "Usługa %s jest zatrzymana"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "Obecnie jest włączona na poziomach uruchamiania %s"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "Włącz %(name)s na poziomach uruchamiania %(levels)s"

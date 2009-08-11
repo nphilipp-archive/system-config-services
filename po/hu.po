@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-07-04 11:21+0200\n"
 "Last-Translator: Sulyok Péter <peti@fedoraproject.org>\n"
 "Language-Team: Hungarian <fedora-trans-hu@redhat.com>\n"
@@ -100,52 +100,17 @@ msgstr ""
 "E szolgáltatás engedélyezett, de a <b>xinetd</b> szolgáltatás nem fut. Ez a "
 "szolgáltatás anélkül nem működik."
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "<b>%(service)s</b> szolgáltatás engedélyezése futásszintenként:"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
 "A súgónéző nincs meg. A súgó nézegetéséhez telepíteni kell a „yelp” csomagot."
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "%s szolgáltatás nincs meg!"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "%s szolgáltatás régi beállítással fut."
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "%s szolgáltatás fut."
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "%s szolgáltatás hibát jelent."
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "%s szolgáltatás áll."
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "Jelenleg %s futásszinteken engedélyezve"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "%(name)s engedélyezése %(levels)s futásszinteken."
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -443,6 +408,27 @@ msgstr "Szolgáltatás igazgatás"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Szolgáltatások"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "%s szolgáltatás nincs meg!"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "%s szolgáltatás régi beállítással fut."
+
+#~ msgid "Service %s is running"
+#~ msgstr "%s szolgáltatás fut."
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "%s szolgáltatás hibát jelent."
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "%s szolgáltatás áll."
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "Jelenleg %s futásszinteken engedélyezve"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "%(name)s engedélyezése %(levels)s futásszinteken."
 
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "

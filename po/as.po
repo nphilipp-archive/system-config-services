@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.tip\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-10 17:17+0200\n"
+"POT-Creation-Date: 2009-08-11 12:04+0200\n"
 "PO-Revision-Date: 2009-04-01 15:31+0530\n"
 "Last-Translator: Amitakhya Phukan <aphukan@fedoraproject.org>\n"
 "Language-Team: Assamese <fedora-trans-as@redhat.com>\n"
@@ -99,52 +99,17 @@ msgid ""
 msgstr ""
 "সেৱা সক্ৰিয়, কিন্তু <b>xinetd</b> সৰঞ্জাম চলা নাই । এইটো ন'হলে সেৱাই কাম নকৰে ।"
 
-#: ../src/gui.py:710 ../src/system-config-services.glade:1351
+#: ../src/gui.py:714 ../src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "এই চলনাস্তৰসমূহত <b>%(service)s</b> সেৱা সক্ৰিয় কৰক:"
 
-#: ../src/gui.py:842
+#: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
 "সহায় প্ৰদৰ্শক পোৱা ন'গ'ল । সহায় চাবলৈ, 'yelp' সৰঞ্জাম সংস্থাপিত হ'ব লাগিব ।"
-
-#: ../src/servicecontrol.py:88
-#, python-format
-msgid "Service %s not found!"
-msgstr "%s সেৱা পোৱা ন'গ'ল!"
-
-#: ../src/servicecontrol.py:94
-#, python-format
-msgid "Service %s is running with old configuration"
-msgstr "%s সেৱা পূৰণি বিন্যাসৰ সৈতে চলি আছে"
-
-#: ../src/servicecontrol.py:97
-#, python-format
-msgid "Service %s is running"
-msgstr "%s সেৱা চলি আছে"
-
-#: ../src/servicecontrol.py:100
-#, python-format
-msgid "Service %s reports an error"
-msgstr "%s সেৱাই এটা ভুলৰ কথা কৈছে"
-
-#: ../src/servicecontrol.py:103
-#, python-format
-msgid "Service %s is stopped"
-msgstr "%s সেৱা বন্ধ"
-
-#: ../src/servicecontrol.py:234 ../src/servicecontrol.py:253
-#, python-format
-msgid "Currently enabled in runlevels %s"
-msgstr "%s চলনাস্তৰত বৰ্ত্তমানে সক্ৰিয়"
-
-#: ../src/servicecontrol.py:242 ../src/servicecontrol.py:256
-#, python-format
-msgid "Enable %(name)s in runlevels %(levels)s"
-msgstr "%(name)s ক চলনাস্তৰ %(levels)s ত সক্ৰিয় কৰক"
 
 #: ../src/servicetab.glade:8
 msgid "window1"
@@ -434,6 +399,27 @@ msgstr "সেৱাৰ পৰিচালনা"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "সেৱাসমূহ"
+
+#~ msgid "Service %s not found!"
+#~ msgstr "%s সেৱা পোৱা ন'গ'ল!"
+
+#~ msgid "Service %s is running with old configuration"
+#~ msgstr "%s সেৱা পূৰণি বিন্যাসৰ সৈতে চলি আছে"
+
+#~ msgid "Service %s is running"
+#~ msgstr "%s সেৱা চলি আছে"
+
+#~ msgid "Service %s reports an error"
+#~ msgstr "%s সেৱাই এটা ভুলৰ কথা কৈছে"
+
+#~ msgid "Service %s is stopped"
+#~ msgstr "%s সেৱা বন্ধ"
+
+#~ msgid "Currently enabled in runlevels %s"
+#~ msgstr "%s চলনাস্তৰত বৰ্ত্তমানে সক্ৰিয়"
+
+#~ msgid "Enable %(name)s in runlevels %(levels)s"
+#~ msgstr "%(name)s ক চলনাস্তৰ %(levels)s ত সক্ৰিয় কৰক"
 
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "
