@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-11 12:04+0200\n"
+"POT-Creation-Date: 2009-08-11 14:46+0200\n"
 "PO-Revision-Date: 2009-06-11 02:04+0200\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -17,6 +17,189 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../src/system-config-services.glade:7
+#: ../src/system-config-services.glade:1223
+msgid "Service Configuration"
+msgstr "Tjenestekonfiguration"
+
+#: ../src/system-config-services.glade:38
+msgid "_Program"
+msgstr "_Program"
+
+#: ../src/system-config-services.glade:60
+msgid "Ser_vice"
+msgstr "Tje_neste"
+
+#: ../src/system-config-services.glade:69
+#: ../src/system-config-services.glade:327
+msgid "_Enable"
+msgstr "_Aktivér"
+
+#: ../src/system-config-services.glade:91
+#: ../src/system-config-services.glade:344
+msgid "_Disable"
+msgstr "_Deaktivér"
+
+#: ../src/system-config-services.glade:113
+#: ../src/system-config-services.glade:362
+msgid "_Customize"
+msgstr "_Tilpas"
+
+#: ../src/system-config-services.glade:134
+#: ../src/system-config-services.glade:1241
+msgid "Runlevel 2"
+msgstr "Kørselsniveau 2"
+
+#: ../src/system-config-services.glade:143
+#: ../src/system-config-services.glade:1251
+msgid "Runlevel 3"
+msgstr "Kørselsniveau 3"
+
+#: ../src/system-config-services.glade:152
+#: ../src/system-config-services.glade:1261
+msgid "Runlevel 4"
+msgstr "Kørselsniveau 4"
+
+#: ../src/system-config-services.glade:161
+#: ../src/system-config-services.glade:1271
+msgid "Runlevel 5"
+msgstr "Kørselsniveau 5"
+
+#: ../src/system-config-services.glade:180
+#: ../src/system-config-services.glade:392
+msgid "_Start"
+msgstr "_Start"
+
+#: ../src/system-config-services.glade:202
+#: ../src/system-config-services.glade:409
+msgid "S_top"
+msgstr "_Stop"
+
+#: ../src/system-config-services.glade:224
+#: ../src/system-config-services.glade:426
+msgid "_Restart"
+msgstr "_Genstart"
+
+#: ../src/system-config-services.glade:250
+msgid "_Help"
+msgstr "_Hjælp"
+
+#: ../src/system-config-services.glade:259
+msgid "_Contents"
+msgstr "_Indhold"
+
+#: ../src/system-config-services.glade:287
+msgid "_About"
+msgstr "_Om"
+
+#: ../src/system-config-services.glade:361
+msgid "Customize the runlevels in which a service is enabled."
+msgstr "Tilpas kørselsniveauer i hvilke en tjeneste er aktiveret."
+
+#: ../src/system-config-services.glade:559
+msgid "No service selected."
+msgstr "Ingen tjenester valgt."
+
+#: ../src/system-config-services.glade:621
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"Denne tjeneste bliver startet en gang, som regel når systemet er startet, "
+"kører i baggrunden og vågner op når det er nødvendigt."
+
+#: ../src/system-config-services.glade:769
+#: ../src/system-config-services.glade:960
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: ../src/system-config-services.glade:867
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+"Denne tjeneste vil blive startet efter ordre fra xinetd-tjenesten og slutter "
+"når den ikke har mere at udføre."
+
+#: ../src/system-config-services.glade:1065
+msgid "Service Information"
+msgstr "Information om tjeneste"
+
+#: ../src/system-config-services.glade:1184
+msgid "Status of service %s:"
+msgstr "Status på tjeneste \"%s\":"
+
+#: ../src/system-config-services.glade:1221
+msgid "system-config-services"
+msgstr "system-config-services"
+
+#: ../src/system-config-services.glade:1222
+msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+msgstr ""
+
+#: ../src/system-config-services.glade:1224
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+"Dette program er fri software. Du kan redistribuere og/eller modificere det "
+"under de betingelserne som er angivet i GNU General Public License, som er "
+"udgivet af Free Software Foundation. Enten version 2 af licensen eller "
+"(efter eget valg) enhver senere version.\n"
+"\n"
+"Dette program distribueres i håb om at det vil vise sig nyttigt, men UDEN "
+"NOGEN FORM FOR GARANTI, uden selv de underforståede garantier omkring "
+"SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere detaljer kan "
+"læses i GNU General Public License.\n"
+"\n"
+"Du skulle have modtaget en kopi af GNU General Public License sammen med "
+"dette program. Hvis ikke, så skriv til Free software Foundation, Inc., 59 "
+"Temple Place, Suite 330, Boston, MA 02111-1307, USA"
+
+#: ../src/system-config-services.glade:1231
+msgid "translator-credits"
+msgstr ""
+"Kris Thomsen\n"
+"\n"
+"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
+"Mere info: http://www.dansk-gruppen.dk"
+
+#: ../src/system-config-services.glade:1280
+msgid "Customize Runlevels"
+msgstr "Tilpas kørselsniveauer"
+
+#: ../src/system-config-services.glade:1351 ../src/gui.py:714
+#, python-format
+msgid "Enable the <b>%(service)s</b> service in these runlevels:"
+msgstr "Aktivér \"<b>%(service)s</b>\" tjenesten i disse kørselsniveauer:"
+
+#: ../src/system-config-services.glade:1395
+msgid "Runlevel _2"
+msgstr "Kørselsniveau _2"
+
+#: ../src/system-config-services.glade:1414
+msgid "Runlevel _3"
+msgstr "Kørselsniveau _3"
+
+#: ../src/system-config-services.glade:1433
+msgid "Runlevel _4"
+msgstr "Kørselsniveau _4"
+
+#: ../src/system-config-services.glade:1452
+msgid "Runlevel _5"
+msgstr "Kørselsniveau _5"
 
 #: ../src/gui.py:112
 msgid "Name"
@@ -101,11 +284,6 @@ msgstr ""
 "Denne tjeneste er aktiveret, men \"<b>xinetd</b>\"-tjenesten kører ikke. "
 "Denne tjeneste virker ikke uden at den kører."
 
-#: ../src/gui.py:714 ../src/system-config-services.glade:1351
-#, python-format
-msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "Aktivér \"<b>%(service)s</b>\" tjenesten i disse kørselsniveauer:"
-
 #: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
@@ -113,289 +291,6 @@ msgid ""
 msgstr ""
 "Hjælpeviseren kunne ikke findes. For at kunne se hjælpen, skal du installere "
 "\"yelp\"-pakken."
-
-#: ../src/servicetab.glade:8
-msgid "window1"
-msgstr "vindue1"
-
-#: ../src/servicetab.glade:38
-msgid "Service %s"
-msgstr "Tjeneste \"%s\""
-
-#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
-#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
-msgid "Enable"
-msgstr "Aktivér"
-
-#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
-#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
-msgid "Disable"
-msgstr "Deaktivér"
-
-#: ../src/servicetab.glade:89
-msgid "Customize"
-msgstr "Tilpas"
-
-#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
-msgid "Enable Default"
-msgstr "Aktivér standard"
-
-#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
-#: ../src/system-config-services.glade:134
-#: ../src/system-config-services.glade:1241
-msgid "Runlevel 2"
-msgstr "Kørselsniveau 2"
-
-#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
-#: ../src/system-config-services.glade:143
-#: ../src/system-config-services.glade:1251
-msgid "Runlevel 3"
-msgstr "Kørselsniveau 3"
-
-#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
-#: ../src/system-config-services.glade:152
-#: ../src/system-config-services.glade:1261
-msgid "Runlevel 4"
-msgstr "Kørselsniveau 4"
-
-#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
-#: ../src/system-config-services.glade:161
-#: ../src/system-config-services.glade:1271
-msgid "Runlevel 5"
-msgstr "Kørselsniveau 5"
-
-#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
-msgid "Enable All"
-msgstr "Aktivér alle"
-
-#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
-msgid "Disable All"
-msgstr "Deaktivér alle"
-
-#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
-#: ../src/servicetab.glade:2135
-msgid "Start"
-msgstr "Start"
-
-#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
-#: ../src/servicetab.glade:2156
-msgid "Restart"
-msgstr "Genstart"
-
-#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
-#: ../src/servicetab.glade:1922
-msgid "Configure"
-msgstr "Konfigurér"
-
-#: ../src/servicetab.glade:394
-msgid "foobar"
-msgstr "foobar"
-
-#: ../src/servicetab.glade:412
-msgid "barfoo"
-msgstr "barfoo"
-
-#: ../src/servicetab.glade:521
-msgid "Current runlevel is %s"
-msgstr "Nuværende kørselsniveau er %s"
-
-#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
-msgid "Runlevels"
-msgstr "Kørselsniveauer"
-
-#: ../src/servicetab.glade:807
-msgid "label18"
-msgstr "etiket18"
-
-#: ../src/servicetab.glade:940
-msgid "Start "
-msgstr "Start "
-
-#: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
-msgid "Stop"
-msgstr "Afbryd"
-
-#: ../src/servicetab.glade:1066
-msgid "Service control"
-msgstr "Styring af tjenester"
-
-#: ../src/servicetab.glade:1148
-msgid "Status output"
-msgstr "Uddata for status"
-
-#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:180
-#: ../src/system-config-services.glade:392
-msgid "_Start"
-msgstr "_Start"
-
-#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:224
-#: ../src/system-config-services.glade:426
-msgid "_Restart"
-msgstr "_Genstart"
-
-#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
-#: ../src/system-config-services.glade:327
-msgid "_Enable"
-msgstr "_Aktivér"
-
-#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
-#: ../src/system-config-services.glade:344
-msgid "_Disable"
-msgstr "_Deaktivér"
-
-#: ../src/servicetab.glade:1613
-msgid "_Configure"
-msgstr "_Konfigurér"
-
-#: ../src/servicetab.glade:1653
-msgid "Button Box"
-msgstr "Knapkasse"
-
-#: ../src/servicetab.glade:1730
-msgid "label16"
-msgstr "etiket16"
-
-#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
-msgid "Service %s:"
-msgstr "Tjeneste \"%s\":"
-
-#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1280
-msgid "Customize Runlevels"
-msgstr "Tilpas kørselsniveauer"
-
-#: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1223
-msgid "Service Configuration"
-msgstr "Tjenestekonfiguration"
-
-#: ../src/system-config-services.glade:38
-msgid "_Program"
-msgstr "_Program"
-
-#: ../src/system-config-services.glade:60
-msgid "Ser_vice"
-msgstr "Tje_neste"
-
-#: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:362
-msgid "_Customize"
-msgstr "_Tilpas"
-
-#: ../src/system-config-services.glade:202
-#: ../src/system-config-services.glade:409
-msgid "S_top"
-msgstr "_Stop"
-
-#: ../src/system-config-services.glade:250
-msgid "_Help"
-msgstr "_Hjælp"
-
-#: ../src/system-config-services.glade:259
-msgid "_Contents"
-msgstr "_Indhold"
-
-#: ../src/system-config-services.glade:287
-msgid "_About"
-msgstr "_Om"
-
-#: ../src/system-config-services.glade:361
-msgid "Customize the runlevels in which a service is enabled."
-msgstr "Tilpas kørselsniveauer i hvilke en tjeneste er aktiveret."
-
-#: ../src/system-config-services.glade:559
-msgid "No service selected."
-msgstr "Ingen tjenester valgt."
-
-#: ../src/system-config-services.glade:621
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"Denne tjeneste bliver startet en gang, som regel når systemet er startet, "
-"kører i baggrunden og vågner op når det er nødvendigt."
-
-#: ../src/system-config-services.glade:769
-#: ../src/system-config-services.glade:960
-msgid "Description"
-msgstr "Beskrivelse"
-
-#: ../src/system-config-services.glade:867
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr ""
-"Denne tjeneste vil blive startet efter ordre fra xinetd-tjenesten og slutter "
-"når den ikke har mere at udføre."
-
-#: ../src/system-config-services.glade:1065
-msgid "Service Information"
-msgstr "Information om tjeneste"
-
-#: ../src/system-config-services.glade:1184
-msgid "Status of service %s:"
-msgstr "Status på tjeneste \"%s\":"
-
-#: ../src/system-config-services.glade:1221
-msgid "system-config-services"
-msgstr "system-config-services"
-
-#: ../src/system-config-services.glade:1222
-msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-msgstr "Copyright 2002-2008 Red Hat, Inc. og bidragsydere"
-
-#: ../src/system-config-services.glade:1224
-msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"Dette program er fri software. Du kan redistribuere og/eller modificere det "
-"under de betingelserne som er angivet i GNU General Public License, som er "
-"udgivet af Free Software Foundation. Enten version 2 af licensen eller "
-"(efter eget valg) enhver senere version.\n"
-"\n"
-"Dette program distribueres i håb om at det vil vise sig nyttigt, men UDEN "
-"NOGEN FORM FOR GARANTI, uden selv de underforståede garantier omkring "
-"SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere detaljer kan "
-"læses i GNU General Public License.\n"
-"\n"
-"Du skulle have modtaget en kopi af GNU General Public License sammen med "
-"dette program. Hvis ikke, så skriv til Free software Foundation, Inc., 59 "
-"Temple Place, Suite 330, Boston, MA 02111-1307, USA"
-
-#: ../src/system-config-services.glade:1231
-msgid "translator-credits"
-msgstr ""
-"Kris Thomsen\n"
-"\n"
-"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
-"Mere info: http://www.dansk-gruppen.dk"
-
-#: ../src/system-config-services.glade:1395
-msgid "Runlevel _2"
-msgstr "Kørselsniveau _2"
-
-#: ../src/system-config-services.glade:1414
-msgid "Runlevel _3"
-msgstr "Kørselsniveau _3"
-
-#: ../src/system-config-services.glade:1433
-msgid "Runlevel _4"
-msgstr "Kørselsniveau _4"
-
-#: ../src/system-config-services.glade:1452
-msgid "Runlevel _5"
-msgstr "Kørselsniveau _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -408,6 +303,81 @@ msgstr "Administration af tjenester"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Tjenester"
+
+#~ msgid "window1"
+#~ msgstr "vindue1"
+
+#~ msgid "Service %s"
+#~ msgstr "Tjeneste \"%s\""
+
+#~ msgid "Enable"
+#~ msgstr "Aktivér"
+
+#~ msgid "Disable"
+#~ msgstr "Deaktivér"
+
+#~ msgid "Customize"
+#~ msgstr "Tilpas"
+
+#~ msgid "Enable Default"
+#~ msgstr "Aktivér standard"
+
+#~ msgid "Enable All"
+#~ msgstr "Aktivér alle"
+
+#~ msgid "Disable All"
+#~ msgstr "Deaktivér alle"
+
+#~ msgid "Start"
+#~ msgstr "Start"
+
+#~ msgid "Restart"
+#~ msgstr "Genstart"
+
+#~ msgid "Configure"
+#~ msgstr "Konfigurér"
+
+#~ msgid "foobar"
+#~ msgstr "foobar"
+
+#~ msgid "barfoo"
+#~ msgstr "barfoo"
+
+#~ msgid "Current runlevel is %s"
+#~ msgstr "Nuværende kørselsniveau er %s"
+
+#~ msgid "Runlevels"
+#~ msgstr "Kørselsniveauer"
+
+#~ msgid "label18"
+#~ msgstr "etiket18"
+
+#~ msgid "Start "
+#~ msgstr "Start "
+
+#~ msgid "Stop"
+#~ msgstr "Afbryd"
+
+#~ msgid "Service control"
+#~ msgstr "Styring af tjenester"
+
+#~ msgid "Status output"
+#~ msgstr "Uddata for status"
+
+#~ msgid "_Configure"
+#~ msgstr "_Konfigurér"
+
+#~ msgid "Button Box"
+#~ msgstr "Knapkasse"
+
+#~ msgid "label16"
+#~ msgstr "etiket16"
+
+#~ msgid "Service %s:"
+#~ msgstr "Tjeneste \"%s\":"
+
+#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
+#~ msgstr "Copyright 2002-2008 Red Hat, Inc. og bidragsydere"
 
 #~ msgid "Service %s not found!"
 #~ msgstr "Tjeneste \"%s\" er ikke fundet!"

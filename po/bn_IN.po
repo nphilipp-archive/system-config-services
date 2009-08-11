@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.bn_IN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-11 12:04+0200\n"
+"POT-Creation-Date: 2009-08-11 14:46+0200\n"
 "PO-Revision-Date: 2009-03-31 14:33+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <fedora-trans-bn_in@redhat.com>\n"
@@ -22,6 +22,182 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "\n"
 "\n"
+
+#: ../src/system-config-services.glade:7
+#: ../src/system-config-services.glade:1223
+msgid "Service Configuration"
+msgstr "পরিসেবা কনফিগারেশন"
+
+#: ../src/system-config-services.glade:38
+msgid "_Program"
+msgstr "প্রোগ্রাম (_P)"
+
+#: ../src/system-config-services.glade:60
+msgid "Ser_vice"
+msgstr "পরিসেবা (_v)"
+
+#: ../src/system-config-services.glade:69
+#: ../src/system-config-services.glade:327
+msgid "_Enable"
+msgstr "সক্রিয় (_E)"
+
+#: ../src/system-config-services.glade:91
+#: ../src/system-config-services.glade:344
+msgid "_Disable"
+msgstr "নিষ্ক্রিয় করুন (_D)"
+
+#: ../src/system-config-services.glade:113
+#: ../src/system-config-services.glade:362
+msgid "_Customize"
+msgstr "স্বনির্ধারণ (_C)"
+
+#: ../src/system-config-services.glade:134
+#: ../src/system-config-services.glade:1241
+msgid "Runlevel 2"
+msgstr "Runlevel 2"
+
+#: ../src/system-config-services.glade:143
+#: ../src/system-config-services.glade:1251
+msgid "Runlevel 3"
+msgstr "Runlevel 3"
+
+#: ../src/system-config-services.glade:152
+#: ../src/system-config-services.glade:1261
+msgid "Runlevel 4"
+msgstr "Runlevel 4"
+
+#: ../src/system-config-services.glade:161
+#: ../src/system-config-services.glade:1271
+msgid "Runlevel 5"
+msgstr "Runlevel 5"
+
+#: ../src/system-config-services.glade:180
+#: ../src/system-config-services.glade:392
+msgid "_Start"
+msgstr "আরম্ভ (_S)"
+
+#: ../src/system-config-services.glade:202
+#: ../src/system-config-services.glade:409
+msgid "S_top"
+msgstr "বন্ধ করা হবে (_t)"
+
+#: ../src/system-config-services.glade:224
+#: ../src/system-config-services.glade:426
+msgid "_Restart"
+msgstr "পুনরারম্ভ (_R)"
+
+#: ../src/system-config-services.glade:250
+msgid "_Help"
+msgstr "সাহায্য (_H)"
+
+#: ../src/system-config-services.glade:259
+msgid "_Contents"
+msgstr "বিষয়বস্তু (_C)"
+
+#: ../src/system-config-services.glade:287
+msgid "_About"
+msgstr "পরিচিতি (_A)"
+
+#: ../src/system-config-services.glade:361
+msgid "Customize the runlevels in which a service is enabled."
+msgstr "পরিসেবা যে রান-লেভেলগুলিতে সক্রিয় করা হবে তা নির্ধারণ করুন।"
+
+#: ../src/system-config-services.glade:559
+msgid "No service selected."
+msgstr "কোনো পরিসেবা নির্বাচন করা হয়নি।"
+
+#: ../src/system-config-services.glade:621
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"এই পরিসেবাটি সাধারণত সিস্টেম বুট করার সময় একবার আরম্ভ করা হয় ও নেপথ্যে সঞ্চালিত "
+"হয়। প্রয়োজন অনুযায়ী পরিসেবাটি সক্রিয় করা হয়।"
+
+#: ../src/system-config-services.glade:769
+#: ../src/system-config-services.glade:960
+msgid "Description"
+msgstr "বিবরণ"
+
+#: ../src/system-config-services.glade:867
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+
+#: ../src/system-config-services.glade:1065
+msgid "Service Information"
+msgstr "পরিসেবা সংক্রান্ত তথ্য"
+
+#: ../src/system-config-services.glade:1184
+msgid "Status of service %s:"
+msgstr "%s পরিসেবার অবস্থা:"
+
+#: ../src/system-config-services.glade:1221
+msgid "system-config-services"
+msgstr "system-config-services"
+
+#: ../src/system-config-services.glade:1222
+msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+msgstr ""
+
+#: ../src/system-config-services.glade:1224
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+"এটি একটি মুক্ত সফ্টওয়্যার; Free Software Foundation দ্বারা প্রকাশিত GNU General "
+"Public License-র শর্তানুযায়ী এটি বিতরণ ও পরিবর্তন করা যাবে; লাইসেন্সের সংস্করণ ২ "
+"অথবা (আপনার সুবিধানুযায়ী) ঊর্ধ্বতন কোনো সংস্করণের অধীন।\n"
+"\n"
+"এই প্রোগ্রাম বিতরণ করার মূল উদ্দেশ্য যে ব্যবহারকারীরা এর দ্বারা উপকৃত হবেন, কিন্তু "
+"এটির জন্য কোনো সুস্পষ্ট ওয়ারেন্টি উপস্থিত নেই; বাণিজ্যিক ও কোনো সুনির্দিষ্ট কর্ম "
+"সাধনের \n"
+"জন্য অন্তর্নিহীত ওয়ারেন্টিও অনুপস্থিত। অধিক জানতে GNU General Public License পড়ুন।\n"
+"\n"
+"এর সাথে GNU General Public License-র একটি প্রতিলিপি উপলব্ধ হওয়া উচিত; না থাকলে "
+"নিম্নলিখিত ঠিকানায় লিখে তা সংগ্রহ করুন Free Software Foundation, Inc., 675 Mass "
+"Ave, Cambridge, MA 02139, USA।"
+
+#: ../src/system-config-services.glade:1231
+msgid "translator-credits"
+msgstr "রুণা ভট্টাচার্য (runab at redhat dot com)"
+
+#: ../src/system-config-services.glade:1280
+msgid "Customize Runlevels"
+msgstr "রান-লেভেল স্বনির্ধারণ"
+
+#: ../src/system-config-services.glade:1351 ../src/gui.py:714
+#, python-format
+msgid "Enable the <b>%(service)s</b> service in these runlevels:"
+msgstr "চিহ্নিত রান-লেভেলে <b>%(service)s</b> পরিসেবা সক্রিয় করা হবে:"
+
+#: ../src/system-config-services.glade:1395
+msgid "Runlevel _2"
+msgstr "Runlevel _2"
+
+#: ../src/system-config-services.glade:1414
+msgid "Runlevel _3"
+msgstr "Runlevel _3"
+
+#: ../src/system-config-services.glade:1433
+msgid "Runlevel _4"
+msgstr "Runlevel _4"
+
+#: ../src/system-config-services.glade:1452
+msgid "Runlevel _5"
+msgstr "Runlevel _5"
 
 #: ../src/gui.py:112
 msgid "Name"
@@ -104,11 +280,6 @@ msgstr ""
 "এই পরিসেবা সক্রিয় হলেও, <b>xinetd</b> পরিসেবা চলছে না। xinetd বিনা এই পরিসেবা "
 "সঞ্চালন করা সম্ভব নয়।"
 
-#: ../src/gui.py:714 ../src/system-config-services.glade:1351
-#, python-format
-msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "চিহ্নিত রান-লেভেলে <b>%(service)s</b> পরিসেবা সক্রিয় করা হবে:"
-
 #: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
@@ -116,282 +287,6 @@ msgid ""
 msgstr ""
 "সহায়িকা প্রদর্শন ব্যবস্থা পাওয়া যায়নি। সহায়ক নথিপত্র প্রদর্শনের জন্য 'yelp' নামক "
 "প্যাকেজটি ইনস্টল থাকা আবশ্যক।"
-
-#: ../src/servicetab.glade:8
-msgid "window1"
-msgstr "window1"
-
-#: ../src/servicetab.glade:38
-msgid "Service %s"
-msgstr "পরিসেবা %s"
-
-#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
-#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
-msgid "Enable"
-msgstr "সক্রিয়"
-
-#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
-#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
-msgid "Disable"
-msgstr "নিষ্ক্রিয়"
-
-#: ../src/servicetab.glade:89
-msgid "Customize"
-msgstr "স্বনির্ধারণ"
-
-#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
-msgid "Enable Default"
-msgstr "ডিফল্ট মান সক্রিয় করা হবে"
-
-#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
-#: ../src/system-config-services.glade:134
-#: ../src/system-config-services.glade:1241
-msgid "Runlevel 2"
-msgstr "Runlevel 2"
-
-#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
-#: ../src/system-config-services.glade:143
-#: ../src/system-config-services.glade:1251
-msgid "Runlevel 3"
-msgstr "Runlevel 3"
-
-#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
-#: ../src/system-config-services.glade:152
-#: ../src/system-config-services.glade:1261
-msgid "Runlevel 4"
-msgstr "Runlevel 4"
-
-#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
-#: ../src/system-config-services.glade:161
-#: ../src/system-config-services.glade:1271
-msgid "Runlevel 5"
-msgstr "Runlevel 5"
-
-#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
-msgid "Enable All"
-msgstr "সকল সক্রিয় করা হবে"
-
-#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
-msgid "Disable All"
-msgstr "সকল নিষ্ক্রিয় করা হবে"
-
-#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
-#: ../src/servicetab.glade:2135
-msgid "Start"
-msgstr "আরম্ভ"
-
-#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
-#: ../src/servicetab.glade:2156
-msgid "Restart"
-msgstr "পুনরাম্ভ"
-
-#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
-#: ../src/servicetab.glade:1922
-msgid "Configure"
-msgstr "কনফিগার করুন"
-
-#: ../src/servicetab.glade:394
-msgid "foobar"
-msgstr "foobar"
-
-#: ../src/servicetab.glade:412
-msgid "barfoo"
-msgstr "barfoo"
-
-#: ../src/servicetab.glade:521
-msgid "Current runlevel is %s"
-msgstr "বর্তমানে সক্রিয় রান-লেভেল %s"
-
-#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
-msgid "Runlevels"
-msgstr "রান-লেভেল"
-
-#: ../src/servicetab.glade:807
-msgid "label18"
-msgstr "label18"
-
-#: ../src/servicetab.glade:940
-msgid "Start "
-msgstr "আরম্ভ "
-
-#: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
-msgid "Stop"
-msgstr "বন্ধ"
-
-#: ../src/servicetab.glade:1066
-msgid "Service control"
-msgstr "পরিসেবা নিয়ন্ত্রণ"
-
-#: ../src/servicetab.glade:1148
-msgid "Status output"
-msgstr "অবস্থা বিষয়ক আউটপুট"
-
-#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:180
-#: ../src/system-config-services.glade:392
-msgid "_Start"
-msgstr "আরম্ভ (_S)"
-
-#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:224
-#: ../src/system-config-services.glade:426
-msgid "_Restart"
-msgstr "পুনরারম্ভ (_R)"
-
-#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
-#: ../src/system-config-services.glade:327
-msgid "_Enable"
-msgstr "সক্রিয় (_E)"
-
-#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
-#: ../src/system-config-services.glade:344
-msgid "_Disable"
-msgstr "নিষ্ক্রিয় করুন (_D)"
-
-#: ../src/servicetab.glade:1613
-msgid "_Configure"
-msgstr "কনফিগার করুন (_C)"
-
-#: ../src/servicetab.glade:1653
-msgid "Button Box"
-msgstr "বাটন বক্স"
-
-#: ../src/servicetab.glade:1730
-msgid "label16"
-msgstr "label16"
-
-#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
-msgid "Service %s:"
-msgstr "পরিসেবা %s:"
-
-#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1280
-msgid "Customize Runlevels"
-msgstr "রান-লেভেল স্বনির্ধারণ"
-
-#: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1223
-msgid "Service Configuration"
-msgstr "পরিসেবা কনফিগারেশন"
-
-#: ../src/system-config-services.glade:38
-msgid "_Program"
-msgstr "প্রোগ্রাম (_P)"
-
-#: ../src/system-config-services.glade:60
-msgid "Ser_vice"
-msgstr "পরিসেবা (_v)"
-
-#: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:362
-msgid "_Customize"
-msgstr "স্বনির্ধারণ (_C)"
-
-#: ../src/system-config-services.glade:202
-#: ../src/system-config-services.glade:409
-msgid "S_top"
-msgstr "বন্ধ করা হবে (_t)"
-
-#: ../src/system-config-services.glade:250
-msgid "_Help"
-msgstr "সাহায্য (_H)"
-
-#: ../src/system-config-services.glade:259
-msgid "_Contents"
-msgstr "বিষয়বস্তু (_C)"
-
-#: ../src/system-config-services.glade:287
-msgid "_About"
-msgstr "পরিচিতি (_A)"
-
-#: ../src/system-config-services.glade:361
-msgid "Customize the runlevels in which a service is enabled."
-msgstr "পরিসেবা যে রান-লেভেলগুলিতে সক্রিয় করা হবে তা নির্ধারণ করুন।"
-
-#: ../src/system-config-services.glade:559
-msgid "No service selected."
-msgstr "কোনো পরিসেবা নির্বাচন করা হয়নি।"
-
-#: ../src/system-config-services.glade:621
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"এই পরিসেবাটি সাধারণত সিস্টেম বুট করার সময় একবার আরম্ভ করা হয় ও নেপথ্যে সঞ্চালিত "
-"হয়। প্রয়োজন অনুযায়ী পরিসেবাটি সক্রিয় করা হয়।"
-
-#: ../src/system-config-services.glade:769
-#: ../src/system-config-services.glade:960
-msgid "Description"
-msgstr "বিবরণ"
-
-#: ../src/system-config-services.glade:867
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr ""
-
-#: ../src/system-config-services.glade:1065
-msgid "Service Information"
-msgstr "পরিসেবা সংক্রান্ত তথ্য"
-
-#: ../src/system-config-services.glade:1184
-msgid "Status of service %s:"
-msgstr "%s পরিসেবার অবস্থা:"
-
-#: ../src/system-config-services.glade:1221
-msgid "system-config-services"
-msgstr "system-config-services"
-
-#: ../src/system-config-services.glade:1222
-msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-msgstr "স্বত্বাধিকার  ২০০২-২০০৮ Red Hat, Inc. ও যোগদানকারীদের"
-
-#: ../src/system-config-services.glade:1224
-msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"এটি একটি মুক্ত সফ্টওয়্যার; Free Software Foundation দ্বারা প্রকাশিত GNU General "
-"Public License-র শর্তানুযায়ী এটি বিতরণ ও পরিবর্তন করা যাবে; লাইসেন্সের সংস্করণ ২ "
-"অথবা (আপনার সুবিধানুযায়ী) ঊর্ধ্বতন কোনো সংস্করণের অধীন।\n"
-"\n"
-"এই প্রোগ্রাম বিতরণ করার মূল উদ্দেশ্য যে ব্যবহারকারীরা এর দ্বারা উপকৃত হবেন, কিন্তু "
-"এটির জন্য কোনো সুস্পষ্ট ওয়ারেন্টি উপস্থিত নেই; বাণিজ্যিক ও কোনো সুনির্দিষ্ট কর্ম "
-"সাধনের \n"
-"জন্য অন্তর্নিহীত ওয়ারেন্টিও অনুপস্থিত। অধিক জানতে GNU General Public License পড়ুন।\n"
-"\n"
-"এর সাথে GNU General Public License-র একটি প্রতিলিপি উপলব্ধ হওয়া উচিত; না থাকলে "
-"নিম্নলিখিত ঠিকানায় লিখে তা সংগ্রহ করুন Free Software Foundation, Inc., 675 Mass "
-"Ave, Cambridge, MA 02139, USA।"
-
-#: ../src/system-config-services.glade:1231
-msgid "translator-credits"
-msgstr "রুণা ভট্টাচার্য (runab at redhat dot com)"
-
-#: ../src/system-config-services.glade:1395
-msgid "Runlevel _2"
-msgstr "Runlevel _2"
-
-#: ../src/system-config-services.glade:1414
-msgid "Runlevel _3"
-msgstr "Runlevel _3"
-
-#: ../src/system-config-services.glade:1433
-msgid "Runlevel _4"
-msgstr "Runlevel _4"
-
-#: ../src/system-config-services.glade:1452
-msgid "Runlevel _5"
-msgstr "Runlevel _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -405,6 +300,81 @@ msgstr "পরিসেবা পরিচালনা"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "পরিসেবা"
+
+#~ msgid "window1"
+#~ msgstr "window1"
+
+#~ msgid "Service %s"
+#~ msgstr "পরিসেবা %s"
+
+#~ msgid "Enable"
+#~ msgstr "সক্রিয়"
+
+#~ msgid "Disable"
+#~ msgstr "নিষ্ক্রিয়"
+
+#~ msgid "Customize"
+#~ msgstr "স্বনির্ধারণ"
+
+#~ msgid "Enable Default"
+#~ msgstr "ডিফল্ট মান সক্রিয় করা হবে"
+
+#~ msgid "Enable All"
+#~ msgstr "সকল সক্রিয় করা হবে"
+
+#~ msgid "Disable All"
+#~ msgstr "সকল নিষ্ক্রিয় করা হবে"
+
+#~ msgid "Start"
+#~ msgstr "আরম্ভ"
+
+#~ msgid "Restart"
+#~ msgstr "পুনরাম্ভ"
+
+#~ msgid "Configure"
+#~ msgstr "কনফিগার করুন"
+
+#~ msgid "foobar"
+#~ msgstr "foobar"
+
+#~ msgid "barfoo"
+#~ msgstr "barfoo"
+
+#~ msgid "Current runlevel is %s"
+#~ msgstr "বর্তমানে সক্রিয় রান-লেভেল %s"
+
+#~ msgid "Runlevels"
+#~ msgstr "রান-লেভেল"
+
+#~ msgid "label18"
+#~ msgstr "label18"
+
+#~ msgid "Start "
+#~ msgstr "আরম্ভ "
+
+#~ msgid "Stop"
+#~ msgstr "বন্ধ"
+
+#~ msgid "Service control"
+#~ msgstr "পরিসেবা নিয়ন্ত্রণ"
+
+#~ msgid "Status output"
+#~ msgstr "অবস্থা বিষয়ক আউটপুট"
+
+#~ msgid "_Configure"
+#~ msgstr "কনফিগার করুন (_C)"
+
+#~ msgid "Button Box"
+#~ msgstr "বাটন বক্স"
+
+#~ msgid "label16"
+#~ msgstr "label16"
+
+#~ msgid "Service %s:"
+#~ msgstr "পরিসেবা %s:"
+
+#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
+#~ msgstr "স্বত্বাধিকার  ২০০২-২০০৮ Red Hat, Inc. ও যোগদানকারীদের"
 
 #~ msgid "Service %s not found!"
 #~ msgstr "%s পরিসেবা পাওয়া যায়নি!"

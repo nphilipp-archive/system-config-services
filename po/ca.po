@@ -20,13 +20,191 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-11 12:04+0200\n"
+"POT-Creation-Date: 2009-08-11 14:46+0200\n"
 "PO-Revision-Date: 2009-06-06 00:47+0200\n"
 "Last-Translator: Xavier Conde Rueda <xavi.conde@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/system-config-services.glade:7
+#: ../src/system-config-services.glade:1223
+msgid "Service Configuration"
+msgstr "Configuració dels serveis"
+
+#: ../src/system-config-services.glade:38
+msgid "_Program"
+msgstr "_Programa"
+
+#: ../src/system-config-services.glade:60
+msgid "Ser_vice"
+msgstr "Ser_vei"
+
+#: ../src/system-config-services.glade:69
+#: ../src/system-config-services.glade:327
+msgid "_Enable"
+msgstr "_Habilita"
+
+#: ../src/system-config-services.glade:91
+#: ../src/system-config-services.glade:344
+msgid "_Disable"
+msgstr "Inh_abilita"
+
+#: ../src/system-config-services.glade:113
+#: ../src/system-config-services.glade:362
+msgid "_Customize"
+msgstr "_Personalitza"
+
+#: ../src/system-config-services.glade:134
+#: ../src/system-config-services.glade:1241
+msgid "Runlevel 2"
+msgstr "Nivell d'execució 2"
+
+#: ../src/system-config-services.glade:143
+#: ../src/system-config-services.glade:1251
+msgid "Runlevel 3"
+msgstr "Nivell d'execució 3"
+
+#: ../src/system-config-services.glade:152
+#: ../src/system-config-services.glade:1261
+msgid "Runlevel 4"
+msgstr "Nivell d'execució 4"
+
+#: ../src/system-config-services.glade:161
+#: ../src/system-config-services.glade:1271
+msgid "Runlevel 5"
+msgstr "Nivell d'execució 5"
+
+#: ../src/system-config-services.glade:180
+#: ../src/system-config-services.glade:392
+msgid "_Start"
+msgstr "_Inicia"
+
+#: ../src/system-config-services.glade:202
+#: ../src/system-config-services.glade:409
+msgid "S_top"
+msgstr "A_tura"
+
+#: ../src/system-config-services.glade:224
+#: ../src/system-config-services.glade:426
+msgid "_Restart"
+msgstr "_Reinicia"
+
+#: ../src/system-config-services.glade:250
+msgid "_Help"
+msgstr "_Ajuda"
+
+#: ../src/system-config-services.glade:259
+msgid "_Contents"
+msgstr "_Contingut"
+
+#: ../src/system-config-services.glade:287
+msgid "_About"
+msgstr "_Quant a"
+
+#: ../src/system-config-services.glade:361
+msgid "Customize the runlevels in which a service is enabled."
+msgstr "Personalitza els nivells en què s'habilitarà un servei."
+
+#: ../src/system-config-services.glade:559
+msgid "No service selected."
+msgstr "No s'ha seleccionat cap servei."
+
+#: ../src/system-config-services.glade:621
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"Aquest servei s'inicia una vegada, normalment quan s'arrenca el sistema, "
+"s'executa en segon terme i es desperta quan se'l necessita."
+
+#: ../src/system-config-services.glade:769
+#: ../src/system-config-services.glade:960
+msgid "Description"
+msgstr "Descripció"
+
+#: ../src/system-config-services.glade:867
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+
+#: ../src/system-config-services.glade:1065
+msgid "Service Information"
+msgstr "Informació del servei"
+
+#: ../src/system-config-services.glade:1184
+msgid "Status of service %s:"
+msgstr "Estat del servei %s:"
+
+#: ../src/system-config-services.glade:1221
+msgid "system-config-services"
+msgstr "system-config-services"
+
+#: ../src/system-config-services.glade:1222
+msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+msgstr ""
+
+#: ../src/system-config-services.glade:1224
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+"Això és programari lliure; podeu redistribuir-lo i/o\n"
+"modificar-lo sota els termes de la Llicència Pública General GNU tal i\n"
+"com ha estat publicada per la Free Software Foundation; bé sota la\n"
+"versió 2 de la Llicència o una altra versió posterior.\n"
+"\n"
+"Aquest programa es distribueix amb l'expectativa de que serà útil,\n"
+"però SENSE CAP GARANTIA; ni tan sols la garantia implícita de\n"
+"COMERCIABILITAT o ADEQUACIÓ PER UN PROPÒSIT PARTICULAR. Vegeu la\n"
+"Llicència Pública General GNU per obtenir-ne\n"
+"més detalls.\n"
+"\n"
+"Hauríeu d'haver rebut una còpia de la Llicència Pública General GNU amb "
+"aquest programa; si no, escriviu a la Free Software Foundation, Inc. 59 "
+"Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+
+#: ../src/system-config-services.glade:1231
+msgid "translator-credits"
+msgstr "Xavier Conde Rueda <xavi.conde@gmail.com>, 2009"
+
+#: ../src/system-config-services.glade:1280
+msgid "Customize Runlevels"
+msgstr "Personalitza els nivells"
+
+#: ../src/system-config-services.glade:1351 ../src/gui.py:714
+#, python-format
+msgid "Enable the <b>%(service)s</b> service in these runlevels:"
+msgstr "Habilita el servei <b>%(service)s</b> en aquests nivells:"
+
+#: ../src/system-config-services.glade:1395
+msgid "Runlevel _2"
+msgstr "Nivell d'execució _2"
+
+#: ../src/system-config-services.glade:1414
+msgid "Runlevel _3"
+msgstr "Nivell d'execució _3"
+
+#: ../src/system-config-services.glade:1433
+msgid "Runlevel _4"
+msgstr "Nivell d'execució _4"
+
+#: ../src/system-config-services.glade:1452
+msgid "Runlevel _5"
+msgstr "Nivell d'execució _5"
 
 #: ../src/gui.py:112
 msgid "Name"
@@ -109,11 +287,6 @@ msgstr ""
 "El servei està habilitat, però el servei <b>xinetd</b> no s'està executant. "
 "Aquest servei no funcionarà sense ell."
 
-#: ../src/gui.py:714 ../src/system-config-services.glade:1351
-#, python-format
-msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "Habilita el servei <b>%(service)s</b> en aquests nivells:"
-
 #: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
@@ -121,284 +294,6 @@ msgid ""
 msgstr ""
 "No s'ha trobat el visualitzador d'ajuda. Per poder veure l'ajuda, us cal "
 "instal·lar el paquet «yelp»."
-
-#: ../src/servicetab.glade:8
-msgid "window1"
-msgstr " "
-
-#: ../src/servicetab.glade:38
-msgid "Service %s"
-msgstr "Servei %s"
-
-#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
-#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
-msgid "Enable"
-msgstr "Habilita"
-
-#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
-#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
-msgid "Disable"
-msgstr "Inhabilita"
-
-#: ../src/servicetab.glade:89
-msgid "Customize"
-msgstr "Personalitza"
-
-#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
-msgid "Enable Default"
-msgstr "Habilita el predeterminat"
-
-#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
-#: ../src/system-config-services.glade:134
-#: ../src/system-config-services.glade:1241
-msgid "Runlevel 2"
-msgstr "Nivell d'execució 2"
-
-#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
-#: ../src/system-config-services.glade:143
-#: ../src/system-config-services.glade:1251
-msgid "Runlevel 3"
-msgstr "Nivell d'execució 3"
-
-#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
-#: ../src/system-config-services.glade:152
-#: ../src/system-config-services.glade:1261
-msgid "Runlevel 4"
-msgstr "Nivell d'execució 4"
-
-#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
-#: ../src/system-config-services.glade:161
-#: ../src/system-config-services.glade:1271
-msgid "Runlevel 5"
-msgstr "Nivell d'execució 5"
-
-#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
-msgid "Enable All"
-msgstr "Habilita'ls tots"
-
-#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
-msgid "Disable All"
-msgstr "Inhabilita'ls tots"
-
-#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
-#: ../src/servicetab.glade:2135
-msgid "Start"
-msgstr "Inicia"
-
-#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
-#: ../src/servicetab.glade:2156
-msgid "Restart"
-msgstr "Reinicia"
-
-#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
-#: ../src/servicetab.glade:1922
-msgid "Configure"
-msgstr "Configura"
-
-#: ../src/servicetab.glade:394
-msgid "foobar"
-msgstr " "
-
-#: ../src/servicetab.glade:412
-msgid "barfoo"
-msgstr " "
-
-#: ../src/servicetab.glade:521
-msgid "Current runlevel is %s"
-msgstr "El nivell actual és %s"
-
-#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
-msgid "Runlevels"
-msgstr "Nivells d'execució"
-
-#: ../src/servicetab.glade:807
-msgid "label18"
-msgstr " "
-
-#: ../src/servicetab.glade:940
-msgid "Start "
-msgstr "Inicia "
-
-#: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
-msgid "Stop"
-msgstr "Atura"
-
-#: ../src/servicetab.glade:1066
-msgid "Service control"
-msgstr "Control del servei"
-
-#: ../src/servicetab.glade:1148
-msgid "Status output"
-msgstr "Sortida de l'estat"
-
-#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:180
-#: ../src/system-config-services.glade:392
-msgid "_Start"
-msgstr "_Inicia"
-
-#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:224
-#: ../src/system-config-services.glade:426
-msgid "_Restart"
-msgstr "_Reinicia"
-
-#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
-#: ../src/system-config-services.glade:327
-msgid "_Enable"
-msgstr "_Habilita"
-
-#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
-#: ../src/system-config-services.glade:344
-msgid "_Disable"
-msgstr "Inh_abilita"
-
-#: ../src/servicetab.glade:1613
-msgid "_Configure"
-msgstr "_Configura"
-
-#: ../src/servicetab.glade:1653
-msgid "Button Box"
-msgstr " "
-
-#: ../src/servicetab.glade:1730
-msgid "label16"
-msgstr " "
-
-#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
-msgid "Service %s:"
-msgstr "Servei %s:"
-
-#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1280
-msgid "Customize Runlevels"
-msgstr "Personalitza els nivells"
-
-#: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1223
-msgid "Service Configuration"
-msgstr "Configuració dels serveis"
-
-#: ../src/system-config-services.glade:38
-msgid "_Program"
-msgstr "_Programa"
-
-#: ../src/system-config-services.glade:60
-msgid "Ser_vice"
-msgstr "Ser_vei"
-
-#: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:362
-msgid "_Customize"
-msgstr "_Personalitza"
-
-#: ../src/system-config-services.glade:202
-#: ../src/system-config-services.glade:409
-msgid "S_top"
-msgstr "A_tura"
-
-#: ../src/system-config-services.glade:250
-msgid "_Help"
-msgstr "_Ajuda"
-
-#: ../src/system-config-services.glade:259
-msgid "_Contents"
-msgstr "_Contingut"
-
-#: ../src/system-config-services.glade:287
-msgid "_About"
-msgstr "_Quant a"
-
-#: ../src/system-config-services.glade:361
-msgid "Customize the runlevels in which a service is enabled."
-msgstr "Personalitza els nivells en què s'habilitarà un servei."
-
-#: ../src/system-config-services.glade:559
-msgid "No service selected."
-msgstr "No s'ha seleccionat cap servei."
-
-#: ../src/system-config-services.glade:621
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"Aquest servei s'inicia una vegada, normalment quan s'arrenca el sistema, "
-"s'executa en segon terme i es desperta quan se'l necessita."
-
-#: ../src/system-config-services.glade:769
-#: ../src/system-config-services.glade:960
-msgid "Description"
-msgstr "Descripció"
-
-#: ../src/system-config-services.glade:867
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr ""
-
-#: ../src/system-config-services.glade:1065
-msgid "Service Information"
-msgstr "Informació del servei"
-
-#: ../src/system-config-services.glade:1184
-msgid "Status of service %s:"
-msgstr "Estat del servei %s:"
-
-#: ../src/system-config-services.glade:1221
-msgid "system-config-services"
-msgstr "system-config-services"
-
-#: ../src/system-config-services.glade:1222
-msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-msgstr "Copyright  2002-2008 Red Hat, Inc. i col·laboradors"
-
-#: ../src/system-config-services.glade:1224
-msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"Això és programari lliure; podeu redistribuir-lo i/o\n"
-"modificar-lo sota els termes de la Llicència Pública General GNU tal i\n"
-"com ha estat publicada per la Free Software Foundation; bé sota la\n"
-"versió 2 de la Llicència o una altra versió posterior.\n"
-"\n"
-"Aquest programa es distribueix amb l'expectativa de que serà útil,\n"
-"però SENSE CAP GARANTIA; ni tan sols la garantia implícita de\n"
-"COMERCIABILITAT o ADEQUACIÓ PER UN PROPÒSIT PARTICULAR. Vegeu la\n"
-"Llicència Pública General GNU per obtenir-ne\n"
-"més detalls.\n"
-"\n"
-"Hauríeu d'haver rebut una còpia de la Llicència Pública General GNU amb "
-"aquest programa; si no, escriviu a la Free Software Foundation, Inc. 59 "
-"Temple Place, Suite 330, Boston, MA 02111-1307  USA"
-
-#: ../src/system-config-services.glade:1231
-msgid "translator-credits"
-msgstr "Xavier Conde Rueda <xavi.conde@gmail.com>, 2009"
-
-#: ../src/system-config-services.glade:1395
-msgid "Runlevel _2"
-msgstr "Nivell d'execució _2"
-
-#: ../src/system-config-services.glade:1414
-msgid "Runlevel _3"
-msgstr "Nivell d'execució _3"
-
-#: ../src/system-config-services.glade:1433
-msgid "Runlevel _4"
-msgstr "Nivell d'execució _4"
-
-#: ../src/system-config-services.glade:1452
-msgid "Runlevel _5"
-msgstr "Nivell d'execució _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -411,6 +306,81 @@ msgstr "Gestió de serveis"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Serveis"
+
+#~ msgid "window1"
+#~ msgstr " "
+
+#~ msgid "Service %s"
+#~ msgstr "Servei %s"
+
+#~ msgid "Enable"
+#~ msgstr "Habilita"
+
+#~ msgid "Disable"
+#~ msgstr "Inhabilita"
+
+#~ msgid "Customize"
+#~ msgstr "Personalitza"
+
+#~ msgid "Enable Default"
+#~ msgstr "Habilita el predeterminat"
+
+#~ msgid "Enable All"
+#~ msgstr "Habilita'ls tots"
+
+#~ msgid "Disable All"
+#~ msgstr "Inhabilita'ls tots"
+
+#~ msgid "Start"
+#~ msgstr "Inicia"
+
+#~ msgid "Restart"
+#~ msgstr "Reinicia"
+
+#~ msgid "Configure"
+#~ msgstr "Configura"
+
+#~ msgid "foobar"
+#~ msgstr " "
+
+#~ msgid "barfoo"
+#~ msgstr " "
+
+#~ msgid "Current runlevel is %s"
+#~ msgstr "El nivell actual és %s"
+
+#~ msgid "Runlevels"
+#~ msgstr "Nivells d'execució"
+
+#~ msgid "label18"
+#~ msgstr " "
+
+#~ msgid "Start "
+#~ msgstr "Inicia "
+
+#~ msgid "Stop"
+#~ msgstr "Atura"
+
+#~ msgid "Service control"
+#~ msgstr "Control del servei"
+
+#~ msgid "Status output"
+#~ msgstr "Sortida de l'estat"
+
+#~ msgid "_Configure"
+#~ msgstr "_Configura"
+
+#~ msgid "Button Box"
+#~ msgstr " "
+
+#~ msgid "label16"
+#~ msgstr " "
+
+#~ msgid "Service %s:"
+#~ msgstr "Servei %s:"
+
+#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
+#~ msgstr "Copyright  2002-2008 Red Hat, Inc. i col·laboradors"
 
 #~ msgid "Service %s not found!"
 #~ msgstr "No s'ha trobat el servei %s"

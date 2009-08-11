@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.ml\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-11 12:04+0200\n"
+"POT-Creation-Date: 2009-08-11 14:46+0200\n"
 "PO-Revision-Date: 2009-04-02 04:03+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
@@ -22,6 +22,181 @@ msgstr ""
 "\n"
 "\n"
 "\n"
+
+#: ../src/system-config-services.glade:7
+#: ../src/system-config-services.glade:1223
+msgid "Service Configuration"
+msgstr "സര്‍വീസ് ക്രമീകരണം"
+
+#: ../src/system-config-services.glade:38
+msgid "_Program"
+msgstr "_പ്രോഗ്രാം"
+
+#: ../src/system-config-services.glade:60
+msgid "Ser_vice"
+msgstr "_സേവനം"
+
+#: ../src/system-config-services.glade:69
+#: ../src/system-config-services.glade:327
+msgid "_Enable"
+msgstr "_പ്രവര്‍ത്തന സജ്ജം"
+
+#: ../src/system-config-services.glade:91
+#: ../src/system-config-services.glade:344
+msgid "_Disable"
+msgstr "_പ്രവര്‍ത്തന രഹിതം"
+
+#: ../src/system-config-services.glade:113
+#: ../src/system-config-services.glade:362
+msgid "_Customize"
+msgstr "_യഥേഷ്ടം"
+
+#: ../src/system-config-services.glade:134
+#: ../src/system-config-services.glade:1241
+msgid "Runlevel 2"
+msgstr "റണ്‍ലവല്‍ 2 "
+
+#: ../src/system-config-services.glade:143
+#: ../src/system-config-services.glade:1251
+msgid "Runlevel 3"
+msgstr "റണ്‍ലവല്‍ 3"
+
+#: ../src/system-config-services.glade:152
+#: ../src/system-config-services.glade:1261
+msgid "Runlevel 4"
+msgstr "റണ്‍ലവല്‍ 4"
+
+#: ../src/system-config-services.glade:161
+#: ../src/system-config-services.glade:1271
+msgid "Runlevel 5"
+msgstr "റണ്‍ലവല്‍ 5"
+
+#: ../src/system-config-services.glade:180
+#: ../src/system-config-services.glade:392
+msgid "_Start"
+msgstr "_ആരംഭിക്കുക"
+
+#: ../src/system-config-services.glade:202
+#: ../src/system-config-services.glade:409
+msgid "S_top"
+msgstr "_നിര്‍ത്തുക"
+
+#: ../src/system-config-services.glade:224
+#: ../src/system-config-services.glade:426
+msgid "_Restart"
+msgstr "_വീണ്ടും ആരംഭിക്കുക"
+
+#: ../src/system-config-services.glade:250
+msgid "_Help"
+msgstr "_സഹായം"
+
+#: ../src/system-config-services.glade:259
+msgid "_Contents"
+msgstr "_ഉളളടക്കം"
+
+#: ../src/system-config-services.glade:287
+msgid "_About"
+msgstr "_സംബന്ധിച്ചുള്ള"
+
+#: ../src/system-config-services.glade:361
+msgid "Customize the runlevels in which a service is enabled."
+msgstr "സേവനം സജ്ജമാക്കിയിട്ടുള്ള റണ്‍ലവലുകള്‍ യഥേഷ്ടമാക്കുക."
+
+#: ../src/system-config-services.glade:559
+msgid "No service selected."
+msgstr "സേവനം തെരഞ്ഞെടുത്തിട്ടില്ല."
+
+#: ../src/system-config-services.glade:621
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"സിസ്റ്റം ബൂട്ട് ചെയ്യുമ്പോള്‍ സേവനം ഒരിക്കല്‍ ആരംഭിക്കുന്നു. ശേഷം പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിക്കുന്നു, "
+"ആവശ്യമുള്ളപ്പോള്‍ പ്രത്യക്ഷത്തില്‍ വരുന്നു."
+
+#: ../src/system-config-services.glade:769
+#: ../src/system-config-services.glade:960
+msgid "Description"
+msgstr "വിവരണം"
+
+#: ../src/system-config-services.glade:867
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+
+#: ../src/system-config-services.glade:1065
+msgid "Service Information"
+msgstr "സേവന വിവരം"
+
+#: ../src/system-config-services.glade:1184
+msgid "Status of service %s:"
+msgstr "സേവനം %s-ന്റെ അവസ്ഥ:"
+
+#: ../src/system-config-services.glade:1221
+msgid "system-config-services"
+msgstr "system-config-services"
+
+#: ../src/system-config-services.glade:1222
+msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+msgstr ""
+
+#: ../src/system-config-services.glade:1224
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+"ഇതു് ഒരു സ്വതന്ത്ര സോഫ്റ്റ്‌വെയര്‍ ആകുന്നു; നിങ്ങള്‍ക്കിതു് ഗ്നു ജനറല്‍ പബ്ളിക് ലൈസന്‍സിന്റെ നിബന്ധനകള്‍ "
+"പ്രകാരം (രണ്ടാം ലക്കം അല്ലെങ്കില്‍ നിങ്ങളുടെ താല്‍പര്യമനുസരിച്ച് അതിലും പുതിയ ലക്കം) വീണ്ടും "
+"വിതരണം ചെയ്യുകയോ മാറ്റം വരുത്തുകയോ ചെയ്യാം. ഫ്രീ സോഫ്റ്റ്‌വെയര്‍ ഫൌണ്ടേഷന്‍ ആണു് ഈ ലൈസന്‍സ് "
+"പ്രസിദ്ധീകരിച്ചിട്ടുള്ളത്.\n"
+"\n"
+"വളരെ ഫലപ്രദമായ പ്രോഗ്രാം എന്ന പ്രതീക്ഷയിലാകുന്നു ഇതു് വിതരണം ചെയ്യുന്നതു്. ഇതിനു് വാറന്റി "
+"ലഭ്യമല്ല. കൂടുതല്‍ വിവരങ്ങള്‍ക്കായി ഗ്നു ജനറല്‍ പബ്ളിക് ലൈസന്‍സ് കാണുക.\n"
+"\n"
+"ഈ പ്രോഗ്രാമിനൊപ്പം നിങ്ങള്‍ക്കു് ഗ്നു ജനറല്‍ പബ്ളിക് ലൈസന്‍സിന്റെ ഒരു പകര്‍പ്പും ലഭിച്ചിരിക്കണം, "
+"ഇല്ലായെങ്കില്‍, ‌താഴെ പറയുന്ന മേല്‍വിലാസത്തിലേക്ക് എഴുതുക: Free Software Foundation, Inc., "
+"59 Temple Place, Suite 330, Boston, MA 02111-1307  USA."
+
+#: ../src/system-config-services.glade:1231
+msgid "translator-credits"
+msgstr "അനി പീറ്റര്‍ <apeter@redhat.com>"
+
+#: ../src/system-config-services.glade:1280
+msgid "Customize Runlevels"
+msgstr "റണ്‍ലവലുകള്‍ യഥേഷ്ടമാക്കുക"
+
+#: ../src/system-config-services.glade:1351 ../src/gui.py:714
+#, python-format
+msgid "Enable the <b>%(service)s</b> service in these runlevels:"
+msgstr "ഈ റണ്‍ലവലുകളില്‍ <b>%(service)s</b> സേവനം സജ്ജമാക്കുക:"
+
+#: ../src/system-config-services.glade:1395
+msgid "Runlevel _2"
+msgstr "റണ്‍ലവല്‍ _2"
+
+#: ../src/system-config-services.glade:1414
+msgid "Runlevel _3"
+msgstr "റണ്‍ലവല്‍ _3"
+
+#: ../src/system-config-services.glade:1433
+msgid "Runlevel _4"
+msgstr "റണ്‍ലവല്‍ _4"
+
+#: ../src/system-config-services.glade:1452
+msgid "Runlevel _5"
+msgstr "റണ്‍ലവല്‍ _5"
 
 #: ../src/gui.py:112
 msgid "Name"
@@ -103,11 +278,6 @@ msgid ""
 msgstr ""
 "ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സേവനം പ്രവര്‍ത്തിക്കുന്നതല്ല."
 
-#: ../src/gui.py:714 ../src/system-config-services.glade:1351
-#, python-format
-msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "ഈ റണ്‍ലവലുകളില്‍ <b>%(service)s</b> സേവനം സജ്ജമാക്കുക:"
-
 #: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
@@ -115,281 +285,6 @@ msgid ""
 msgstr ""
 "സഹായം ലഭ്യമാക്കുന്ന സംവിധാനം ഇവിടെ ലഭ്യമല്ല. ഇതിനായി, 'yelp' പാക്കേജുകള്‍ ഇന്‍സ്റ്റോള്‍ "
 "ചെയ്യേണ്ടതുണ്ടു്."
-
-#: ../src/servicetab.glade:8
-msgid "window1"
-msgstr "window1"
-
-#: ../src/servicetab.glade:38
-msgid "Service %s"
-msgstr "സേവനം %s"
-
-#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
-#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
-msgid "Enable"
-msgstr "പ്രവര്‍ത്തന സജ്ജം"
-
-#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
-#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
-msgid "Disable"
-msgstr "പ്രവര്‍ത്തന രഹിതം"
-
-#: ../src/servicetab.glade:89
-msgid "Customize"
-msgstr "യഥേഷ്ടമാക്കുക"
-
-#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
-msgid "Enable Default"
-msgstr "സഹജമായതു് പ്രവര്‍ത്തന സജ്ജമാക്കുക"
-
-#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
-#: ../src/system-config-services.glade:134
-#: ../src/system-config-services.glade:1241
-msgid "Runlevel 2"
-msgstr "റണ്‍ലവല്‍ 2 "
-
-#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
-#: ../src/system-config-services.glade:143
-#: ../src/system-config-services.glade:1251
-msgid "Runlevel 3"
-msgstr "റണ്‍ലവല്‍ 3"
-
-#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
-#: ../src/system-config-services.glade:152
-#: ../src/system-config-services.glade:1261
-msgid "Runlevel 4"
-msgstr "റണ്‍ലവല്‍ 4"
-
-#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
-#: ../src/system-config-services.glade:161
-#: ../src/system-config-services.glade:1271
-msgid "Runlevel 5"
-msgstr "റണ്‍ലവല്‍ 5"
-
-#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
-msgid "Enable All"
-msgstr "എല്ലാം സജ്ജമാക്കുക"
-
-#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
-msgid "Disable All"
-msgstr "എല്ലാം പ്രവര്‍ത്തന രഹിതമാക്കുക"
-
-#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
-#: ../src/servicetab.glade:2135
-msgid "Start"
-msgstr "ആരംഭിക്കുക"
-
-#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
-#: ../src/servicetab.glade:2156
-msgid "Restart"
-msgstr "വീണ്ടും ആരംഭിക്കുക"
-
-#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
-#: ../src/servicetab.glade:1922
-msgid "Configure"
-msgstr "ക്രമീകരിക്കുക"
-
-#: ../src/servicetab.glade:394
-msgid "foobar"
-msgstr "foobar"
-
-#: ../src/servicetab.glade:412
-msgid "barfoo"
-msgstr "barfoo"
-
-#: ../src/servicetab.glade:521
-msgid "Current runlevel is %s"
-msgstr "നിലവിലുള്ള റണ്‍ലവല്‍ %s ആണു്"
-
-#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
-msgid "Runlevels"
-msgstr "റണ്‍ലവലുകള്‍"
-
-#: ../src/servicetab.glade:807
-msgid "label18"
-msgstr "label18"
-
-#: ../src/servicetab.glade:940
-msgid "Start "
-msgstr "ആരംഭിക്കുക"
-
-#: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
-msgid "Stop"
-msgstr "നിര്‍ത്തുക"
-
-#: ../src/servicetab.glade:1066
-msgid "Service control"
-msgstr "സര്‍വീസ് കണ്ട്രോള്‍"
-
-#: ../src/servicetab.glade:1148
-msgid "Status output"
-msgstr "നിലവാരത്തിന്റെ ഔട്ട്പുട്ട്"
-
-#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:180
-#: ../src/system-config-services.glade:392
-msgid "_Start"
-msgstr "_ആരംഭിക്കുക"
-
-#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:224
-#: ../src/system-config-services.glade:426
-msgid "_Restart"
-msgstr "_വീണ്ടും ആരംഭിക്കുക"
-
-#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
-#: ../src/system-config-services.glade:327
-msgid "_Enable"
-msgstr "_പ്രവര്‍ത്തന സജ്ജം"
-
-#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
-#: ../src/system-config-services.glade:344
-msgid "_Disable"
-msgstr "_പ്രവര്‍ത്തന രഹിതം"
-
-#: ../src/servicetab.glade:1613
-msgid "_Configure"
-msgstr "_ക്രമീകരിക്കുക"
-
-#: ../src/servicetab.glade:1653
-msgid "Button Box"
-msgstr "ബട്ടണ്‍ ബോക്സ്"
-
-#: ../src/servicetab.glade:1730
-msgid "label16"
-msgstr "label16"
-
-#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
-msgid "Service %s:"
-msgstr "സേവനം %s:"
-
-#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1280
-msgid "Customize Runlevels"
-msgstr "റണ്‍ലവലുകള്‍ യഥേഷ്ടമാക്കുക"
-
-#: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1223
-msgid "Service Configuration"
-msgstr "സര്‍വീസ് ക്രമീകരണം"
-
-#: ../src/system-config-services.glade:38
-msgid "_Program"
-msgstr "_പ്രോഗ്രാം"
-
-#: ../src/system-config-services.glade:60
-msgid "Ser_vice"
-msgstr "_സേവനം"
-
-#: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:362
-msgid "_Customize"
-msgstr "_യഥേഷ്ടം"
-
-#: ../src/system-config-services.glade:202
-#: ../src/system-config-services.glade:409
-msgid "S_top"
-msgstr "_നിര്‍ത്തുക"
-
-#: ../src/system-config-services.glade:250
-msgid "_Help"
-msgstr "_സഹായം"
-
-#: ../src/system-config-services.glade:259
-msgid "_Contents"
-msgstr "_ഉളളടക്കം"
-
-#: ../src/system-config-services.glade:287
-msgid "_About"
-msgstr "_സംബന്ധിച്ചുള്ള"
-
-#: ../src/system-config-services.glade:361
-msgid "Customize the runlevels in which a service is enabled."
-msgstr "സേവനം സജ്ജമാക്കിയിട്ടുള്ള റണ്‍ലവലുകള്‍ യഥേഷ്ടമാക്കുക."
-
-#: ../src/system-config-services.glade:559
-msgid "No service selected."
-msgstr "സേവനം തെരഞ്ഞെടുത്തിട്ടില്ല."
-
-#: ../src/system-config-services.glade:621
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"സിസ്റ്റം ബൂട്ട് ചെയ്യുമ്പോള്‍ സേവനം ഒരിക്കല്‍ ആരംഭിക്കുന്നു. ശേഷം പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിക്കുന്നു, "
-"ആവശ്യമുള്ളപ്പോള്‍ പ്രത്യക്ഷത്തില്‍ വരുന്നു."
-
-#: ../src/system-config-services.glade:769
-#: ../src/system-config-services.glade:960
-msgid "Description"
-msgstr "വിവരണം"
-
-#: ../src/system-config-services.glade:867
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr ""
-
-#: ../src/system-config-services.glade:1065
-msgid "Service Information"
-msgstr "സേവന വിവരം"
-
-#: ../src/system-config-services.glade:1184
-msgid "Status of service %s:"
-msgstr "സേവനം %s-ന്റെ അവസ്ഥ:"
-
-#: ../src/system-config-services.glade:1221
-msgid "system-config-services"
-msgstr "system-config-services"
-
-#: ../src/system-config-services.glade:1222
-msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-msgstr "Copyright  2002-2008 Red Hat, Inc. -ഉം സംഭാവനക്കാരും"
-
-#: ../src/system-config-services.glade:1224
-msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"ഇതു് ഒരു സ്വതന്ത്ര സോഫ്റ്റ്‌വെയര്‍ ആകുന്നു; നിങ്ങള്‍ക്കിതു് ഗ്നു ജനറല്‍ പബ്ളിക് ലൈസന്‍സിന്റെ നിബന്ധനകള്‍ "
-"പ്രകാരം (രണ്ടാം ലക്കം അല്ലെങ്കില്‍ നിങ്ങളുടെ താല്‍പര്യമനുസരിച്ച് അതിലും പുതിയ ലക്കം) വീണ്ടും "
-"വിതരണം ചെയ്യുകയോ മാറ്റം വരുത്തുകയോ ചെയ്യാം. ഫ്രീ സോഫ്റ്റ്‌വെയര്‍ ഫൌണ്ടേഷന്‍ ആണു് ഈ ലൈസന്‍സ് "
-"പ്രസിദ്ധീകരിച്ചിട്ടുള്ളത്.\n"
-"\n"
-"വളരെ ഫലപ്രദമായ പ്രോഗ്രാം എന്ന പ്രതീക്ഷയിലാകുന്നു ഇതു് വിതരണം ചെയ്യുന്നതു്. ഇതിനു് വാറന്റി "
-"ലഭ്യമല്ല. കൂടുതല്‍ വിവരങ്ങള്‍ക്കായി ഗ്നു ജനറല്‍ പബ്ളിക് ലൈസന്‍സ് കാണുക.\n"
-"\n"
-"ഈ പ്രോഗ്രാമിനൊപ്പം നിങ്ങള്‍ക്കു് ഗ്നു ജനറല്‍ പബ്ളിക് ലൈസന്‍സിന്റെ ഒരു പകര്‍പ്പും ലഭിച്ചിരിക്കണം, "
-"ഇല്ലായെങ്കില്‍, ‌താഴെ പറയുന്ന മേല്‍വിലാസത്തിലേക്ക് എഴുതുക: Free Software Foundation, Inc., "
-"59 Temple Place, Suite 330, Boston, MA 02111-1307  USA."
-
-#: ../src/system-config-services.glade:1231
-msgid "translator-credits"
-msgstr "അനി പീറ്റര്‍ <apeter@redhat.com>"
-
-#: ../src/system-config-services.glade:1395
-msgid "Runlevel _2"
-msgstr "റണ്‍ലവല്‍ _2"
-
-#: ../src/system-config-services.glade:1414
-msgid "Runlevel _3"
-msgstr "റണ്‍ലവല്‍ _3"
-
-#: ../src/system-config-services.glade:1433
-msgid "Runlevel _4"
-msgstr "റണ്‍ലവല്‍ _4"
-
-#: ../src/system-config-services.glade:1452
-msgid "Runlevel _5"
-msgstr "റണ്‍ലവല്‍ _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -402,6 +297,81 @@ msgstr "സര്‍വീസ് മാനേജ്മെന്റ്"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "സേവനങ്ങള്‍"
+
+#~ msgid "window1"
+#~ msgstr "window1"
+
+#~ msgid "Service %s"
+#~ msgstr "സേവനം %s"
+
+#~ msgid "Enable"
+#~ msgstr "പ്രവര്‍ത്തന സജ്ജം"
+
+#~ msgid "Disable"
+#~ msgstr "പ്രവര്‍ത്തന രഹിതം"
+
+#~ msgid "Customize"
+#~ msgstr "യഥേഷ്ടമാക്കുക"
+
+#~ msgid "Enable Default"
+#~ msgstr "സഹജമായതു് പ്രവര്‍ത്തന സജ്ജമാക്കുക"
+
+#~ msgid "Enable All"
+#~ msgstr "എല്ലാം സജ്ജമാക്കുക"
+
+#~ msgid "Disable All"
+#~ msgstr "എല്ലാം പ്രവര്‍ത്തന രഹിതമാക്കുക"
+
+#~ msgid "Start"
+#~ msgstr "ആരംഭിക്കുക"
+
+#~ msgid "Restart"
+#~ msgstr "വീണ്ടും ആരംഭിക്കുക"
+
+#~ msgid "Configure"
+#~ msgstr "ക്രമീകരിക്കുക"
+
+#~ msgid "foobar"
+#~ msgstr "foobar"
+
+#~ msgid "barfoo"
+#~ msgstr "barfoo"
+
+#~ msgid "Current runlevel is %s"
+#~ msgstr "നിലവിലുള്ള റണ്‍ലവല്‍ %s ആണു്"
+
+#~ msgid "Runlevels"
+#~ msgstr "റണ്‍ലവലുകള്‍"
+
+#~ msgid "label18"
+#~ msgstr "label18"
+
+#~ msgid "Start "
+#~ msgstr "ആരംഭിക്കുക"
+
+#~ msgid "Stop"
+#~ msgstr "നിര്‍ത്തുക"
+
+#~ msgid "Service control"
+#~ msgstr "സര്‍വീസ് കണ്ട്രോള്‍"
+
+#~ msgid "Status output"
+#~ msgstr "നിലവാരത്തിന്റെ ഔട്ട്പുട്ട്"
+
+#~ msgid "_Configure"
+#~ msgstr "_ക്രമീകരിക്കുക"
+
+#~ msgid "Button Box"
+#~ msgstr "ബട്ടണ്‍ ബോക്സ്"
+
+#~ msgid "label16"
+#~ msgstr "label16"
+
+#~ msgid "Service %s:"
+#~ msgstr "സേവനം %s:"
+
+#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
+#~ msgstr "Copyright  2002-2008 Red Hat, Inc. -ഉം സംഭാവനക്കാരും"
 
 #~ msgid "Service %s not found!"
 #~ msgstr "%s സേവനം ലഭ്യമല്ല!"

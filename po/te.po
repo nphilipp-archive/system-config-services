@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.te\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-11 12:04+0200\n"
+"POT-Creation-Date: 2009-08-11 14:46+0200\n"
 "PO-Revision-Date: 2009-04-06 19:34+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
@@ -22,6 +22,181 @@ msgstr ""
 "\n"
 "\n"
 "\n"
+
+#: ../src/system-config-services.glade:7
+#: ../src/system-config-services.glade:1223
+msgid "Service Configuration"
+msgstr "సేవల ఆకృతీకణ"
+
+#: ../src/system-config-services.glade:38
+msgid "_Program"
+msgstr "ప్రోగ్రామ్ (_P)"
+
+#: ../src/system-config-services.glade:60
+msgid "Ser_vice"
+msgstr "సేవ (_v)"
+
+#: ../src/system-config-services.glade:69
+#: ../src/system-config-services.glade:327
+msgid "_Enable"
+msgstr "చేతనం (_E)"
+
+#: ../src/system-config-services.glade:91
+#: ../src/system-config-services.glade:344
+msgid "_Disable"
+msgstr "అచేతనము (_D)"
+
+#: ../src/system-config-services.glade:113
+#: ../src/system-config-services.glade:362
+msgid "_Customize"
+msgstr "మలచుకొను (_C)"
+
+#: ../src/system-config-services.glade:134
+#: ../src/system-config-services.glade:1241
+msgid "Runlevel 2"
+msgstr "రన్‌లెవల్ 2"
+
+#: ../src/system-config-services.glade:143
+#: ../src/system-config-services.glade:1251
+msgid "Runlevel 3"
+msgstr "రన్‌లెవల్ 3"
+
+#: ../src/system-config-services.glade:152
+#: ../src/system-config-services.glade:1261
+msgid "Runlevel 4"
+msgstr "రన్‌లెవల్ 4"
+
+#: ../src/system-config-services.glade:161
+#: ../src/system-config-services.glade:1271
+msgid "Runlevel 5"
+msgstr "రన్‌లెవల్ 5"
+
+#: ../src/system-config-services.glade:180
+#: ../src/system-config-services.glade:392
+msgid "_Start"
+msgstr "ప్రారంభించు (_S)"
+
+#: ../src/system-config-services.glade:202
+#: ../src/system-config-services.glade:409
+msgid "S_top"
+msgstr "ఆపుము (_t)"
+
+#: ../src/system-config-services.glade:224
+#: ../src/system-config-services.glade:426
+msgid "_Restart"
+msgstr "పునఃప్రారంభించు (_R)"
+
+#: ../src/system-config-services.glade:250
+msgid "_Help"
+msgstr "సహాయం (_H)"
+
+#: ../src/system-config-services.glade:259
+msgid "_Contents"
+msgstr "విషయాలు (_C)"
+
+#: ../src/system-config-services.glade:287
+msgid "_About"
+msgstr "గురించి (_A)"
+
+#: ../src/system-config-services.glade:361
+msgid "Customize the runlevels in which a service is enabled."
+msgstr "సేవ చేతనపరిచిన రన్‌లెవల్స్‍‌ను మలచుకొనుము."
+
+#: ../src/system-config-services.glade:559
+msgid "No service selected."
+msgstr "ఏ సేవ యెంపికకాలేదు."
+
+#: ../src/system-config-services.glade:621
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"సాదారణముగా సిస్టమ్ బూట్ అయినప్పుడు, ఈ సేవ వొకసారి ప్రారంభించబడుతుంది, బ్యాక్‌గ్రౌండునందు "
+"నడుపబడుతుంది అవసరమైనప్పుడు మేల్కొలపబడుతుంది."
+
+#: ../src/system-config-services.glade:769
+#: ../src/system-config-services.glade:960
+msgid "Description"
+msgstr "వర్ణన"
+
+#: ../src/system-config-services.glade:867
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+
+#: ../src/system-config-services.glade:1065
+msgid "Service Information"
+msgstr "సేవ సమాచారము"
+
+#: ../src/system-config-services.glade:1184
+msgid "Status of service %s:"
+msgstr "సేవ %sయొక్క స్థితి:"
+
+#: ../src/system-config-services.glade:1221
+msgid "system-config-services"
+msgstr "system-config-services"
+
+#: ../src/system-config-services.glade:1222
+msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+msgstr ""
+
+#: ../src/system-config-services.glade:1224
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+"ఈ ప్రోగ్రామ్ ఉచిత సాఫ్టువేర్; ఉచిత సాఫ్టువేర్ వ్యవస్థాపన నుండి ప్రచురింపబడిన GNU జనరల్ పబ్లిక్ లైసెన్సు "
+"తెలిపిన దానికి లోబడి మీరు ఈ ప్రోగ్రామ్ ను తిరిగిపంరిణీ చేయవచ్చు మరియు/లేదా సవరించవచ్చు; లైసెన్సు విడుదల 2 "
+"కాని, లేదా(మీ ఐచ్చికంగా) తర్వాతి ఏ విడుదల నైనా అవలంబించవచ్చు.\n"
+"\n"
+"ఈ ప్రోగ్రామ్ ఉపయోగపడుతుందనే నమ్మకం తో పంపిణీ చేయబడుతోంది, అయితే ఏ హామీ లేకుండా; వ్యాపారసంభందితంగా గాని "
+"లేదా ఒక ప్రయోజనం కొరకు సంపూర్ణతతో ఉందని గాని కూడా హామీ లేదు. ఎక్కువ సమాచారం కొరకు GNU జనరల్\n"
+"పబ్లిక్ లైసెన్సును చూడండి.\n"
+"\n"
+"ఈ ప్రోగ్రామ్ తో మీరు ఒక GNU జనరల్ పబ్లిక్ లైసెన్సు నకలు ను పొందివుంటారు.పొందకపోతే, Free Software "
+"Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USAకు "
+"వ్రాయండి."
+
+#: ../src/system-config-services.glade:1231
+msgid "translator-credits"
+msgstr "Krishna Babu K <kkrothap@redhat.com>, 2008."
+
+#: ../src/system-config-services.glade:1280
+msgid "Customize Runlevels"
+msgstr "రన్‌లెవల్స్‍‌ను మలచుకొనుము"
+
+#: ../src/system-config-services.glade:1351 ../src/gui.py:714
+#, python-format
+msgid "Enable the <b>%(service)s</b> service in these runlevels:"
+msgstr "<b>%(service)s</b> సేవను ఈ రన్‌లెవల్సు నందు చేతనంచేస్తుంది:"
+
+#: ../src/system-config-services.glade:1395
+msgid "Runlevel _2"
+msgstr "రన్‌లెవల్ _2"
+
+#: ../src/system-config-services.glade:1414
+msgid "Runlevel _3"
+msgstr "ఉపయోగ స్థాయి _౩"
+
+#: ../src/system-config-services.glade:1433
+msgid "Runlevel _4"
+msgstr "ఉపయోగ స్థాయి _౪"
+
+#: ../src/system-config-services.glade:1452
+msgid "Runlevel _5"
+msgstr "ఉపయోగ స్థాయి _౫"
 
 #: ../src/gui.py:112
 msgid "Name"
@@ -101,291 +276,11 @@ msgid ""
 "service does not work without it."
 msgstr "సేవ చేతన పరచబడింది, అయితే <b>xinted</b> సేవ నడుచుటలేదు. అది లేకుండా ఈ సేవ పనిచేయదు."
 
-#: ../src/gui.py:714 ../src/system-config-services.glade:1351
-#, python-format
-msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "<b>%(service)s</b> సేవను ఈ రన్‌లెవల్సు నందు చేతనంచేస్తుంది:"
-
 #: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr "సహాయ దర్శని కనగొనబడలేదు. సహాయమును చూడగల్గుటకు, 'yelp' ప్యాకేజీ సంస్థాపించవలసి వున్నది."
-
-#: ../src/servicetab.glade:8
-msgid "window1"
-msgstr "విండో1"
-
-#: ../src/servicetab.glade:38
-msgid "Service %s"
-msgstr "సేవ %s"
-
-#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
-#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
-msgid "Enable"
-msgstr "చేతనం"
-
-#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
-#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
-msgid "Disable"
-msgstr "అచేతనం"
-
-#: ../src/servicetab.glade:89
-msgid "Customize"
-msgstr "మలచుకొను"
-
-#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
-msgid "Enable Default"
-msgstr "అప్రమేయంగా చేతనం"
-
-#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
-#: ../src/system-config-services.glade:134
-#: ../src/system-config-services.glade:1241
-msgid "Runlevel 2"
-msgstr "రన్‌లెవల్ 2"
-
-#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
-#: ../src/system-config-services.glade:143
-#: ../src/system-config-services.glade:1251
-msgid "Runlevel 3"
-msgstr "రన్‌లెవల్ 3"
-
-#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
-#: ../src/system-config-services.glade:152
-#: ../src/system-config-services.glade:1261
-msgid "Runlevel 4"
-msgstr "రన్‌లెవల్ 4"
-
-#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
-#: ../src/system-config-services.glade:161
-#: ../src/system-config-services.glade:1271
-msgid "Runlevel 5"
-msgstr "రన్‌లెవల్ 5"
-
-#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
-msgid "Enable All"
-msgstr "అన్నింటిని చేతనంచేయుము"
-
-#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
-msgid "Disable All"
-msgstr "అన్నింటిని అచేతనముచేయుము"
-
-#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
-#: ../src/servicetab.glade:2135
-msgid "Start"
-msgstr "ప్రారంభించు"
-
-#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
-#: ../src/servicetab.glade:2156
-msgid "Restart"
-msgstr "పునఃప్రారంభించు"
-
-#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
-#: ../src/servicetab.glade:1922
-msgid "Configure"
-msgstr "ఆకృతీకరించుము"
-
-#: ../src/servicetab.glade:394
-msgid "foobar"
-msgstr "ఫూబార్"
-
-#: ../src/servicetab.glade:412
-msgid "barfoo"
-msgstr "బార్‌ఫూ"
-
-#: ../src/servicetab.glade:521
-msgid "Current runlevel is %s"
-msgstr "ప్రస్తుత రన్‌లెవల్ %s"
-
-#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
-msgid "Runlevels"
-msgstr "రన్‌లెవల్సు"
-
-#: ../src/servicetab.glade:807
-msgid "label18"
-msgstr "లేబుల్18"
-
-#: ../src/servicetab.glade:940
-msgid "Start "
-msgstr "ప్రారంభించుము"
-
-#: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
-msgid "Stop"
-msgstr "ఆపు"
-
-#: ../src/servicetab.glade:1066
-msgid "Service control"
-msgstr "సేవ నియంత్రణ"
-
-#: ../src/servicetab.glade:1148
-msgid "Status output"
-msgstr "స్థితి అవుట్‌పుట్"
-
-#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:180
-#: ../src/system-config-services.glade:392
-msgid "_Start"
-msgstr "ప్రారంభించు (_S)"
-
-#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:224
-#: ../src/system-config-services.glade:426
-msgid "_Restart"
-msgstr "పునఃప్రారంభించు (_R)"
-
-#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
-#: ../src/system-config-services.glade:327
-msgid "_Enable"
-msgstr "చేతనం (_E)"
-
-#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
-#: ../src/system-config-services.glade:344
-msgid "_Disable"
-msgstr "అచేతనము (_D)"
-
-#: ../src/servicetab.glade:1613
-msgid "_Configure"
-msgstr "ఆకృతీకరించు (_C)"
-
-#: ../src/servicetab.glade:1653
-msgid "Button Box"
-msgstr "బటన్ పెట్టె"
-
-#: ../src/servicetab.glade:1730
-msgid "label16"
-msgstr "లేబుల్16"
-
-#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
-msgid "Service %s:"
-msgstr "సేవ %s:"
-
-#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1280
-msgid "Customize Runlevels"
-msgstr "రన్‌లెవల్స్‍‌ను మలచుకొనుము"
-
-#: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1223
-msgid "Service Configuration"
-msgstr "సేవల ఆకృతీకణ"
-
-#: ../src/system-config-services.glade:38
-msgid "_Program"
-msgstr "ప్రోగ్రామ్ (_P)"
-
-#: ../src/system-config-services.glade:60
-msgid "Ser_vice"
-msgstr "సేవ (_v)"
-
-#: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:362
-msgid "_Customize"
-msgstr "మలచుకొను (_C)"
-
-#: ../src/system-config-services.glade:202
-#: ../src/system-config-services.glade:409
-msgid "S_top"
-msgstr "ఆపుము (_t)"
-
-#: ../src/system-config-services.glade:250
-msgid "_Help"
-msgstr "సహాయం (_H)"
-
-#: ../src/system-config-services.glade:259
-msgid "_Contents"
-msgstr "విషయాలు (_C)"
-
-#: ../src/system-config-services.glade:287
-msgid "_About"
-msgstr "గురించి (_A)"
-
-#: ../src/system-config-services.glade:361
-msgid "Customize the runlevels in which a service is enabled."
-msgstr "సేవ చేతనపరిచిన రన్‌లెవల్స్‍‌ను మలచుకొనుము."
-
-#: ../src/system-config-services.glade:559
-msgid "No service selected."
-msgstr "ఏ సేవ యెంపికకాలేదు."
-
-#: ../src/system-config-services.glade:621
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"సాదారణముగా సిస్టమ్ బూట్ అయినప్పుడు, ఈ సేవ వొకసారి ప్రారంభించబడుతుంది, బ్యాక్‌గ్రౌండునందు "
-"నడుపబడుతుంది అవసరమైనప్పుడు మేల్కొలపబడుతుంది."
-
-#: ../src/system-config-services.glade:769
-#: ../src/system-config-services.glade:960
-msgid "Description"
-msgstr "వర్ణన"
-
-#: ../src/system-config-services.glade:867
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr ""
-
-#: ../src/system-config-services.glade:1065
-msgid "Service Information"
-msgstr "సేవ సమాచారము"
-
-#: ../src/system-config-services.glade:1184
-msgid "Status of service %s:"
-msgstr "సేవ %sయొక్క స్థితి:"
-
-#: ../src/system-config-services.glade:1221
-msgid "system-config-services"
-msgstr "system-config-services"
-
-#: ../src/system-config-services.glade:1222
-msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-msgstr "కాపీరైట్  2002-2008 Red Hat, Inc. మరియు సహాయకులు"
-
-#: ../src/system-config-services.glade:1224
-msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"ఈ ప్రోగ్రామ్ ఉచిత సాఫ్టువేర్; ఉచిత సాఫ్టువేర్ వ్యవస్థాపన నుండి ప్రచురింపబడిన GNU జనరల్ పబ్లిక్ లైసెన్సు "
-"తెలిపిన దానికి లోబడి మీరు ఈ ప్రోగ్రామ్ ను తిరిగిపంరిణీ చేయవచ్చు మరియు/లేదా సవరించవచ్చు; లైసెన్సు విడుదల 2 "
-"కాని, లేదా(మీ ఐచ్చికంగా) తర్వాతి ఏ విడుదల నైనా అవలంబించవచ్చు.\n"
-"\n"
-"ఈ ప్రోగ్రామ్ ఉపయోగపడుతుందనే నమ్మకం తో పంపిణీ చేయబడుతోంది, అయితే ఏ హామీ లేకుండా; వ్యాపారసంభందితంగా గాని "
-"లేదా ఒక ప్రయోజనం కొరకు సంపూర్ణతతో ఉందని గాని కూడా హామీ లేదు. ఎక్కువ సమాచారం కొరకు GNU జనరల్\n"
-"పబ్లిక్ లైసెన్సును చూడండి.\n"
-"\n"
-"ఈ ప్రోగ్రామ్ తో మీరు ఒక GNU జనరల్ పబ్లిక్ లైసెన్సు నకలు ను పొందివుంటారు.పొందకపోతే, Free Software "
-"Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USAకు "
-"వ్రాయండి."
-
-#: ../src/system-config-services.glade:1231
-msgid "translator-credits"
-msgstr "Krishna Babu K <kkrothap@redhat.com>, 2008."
-
-#: ../src/system-config-services.glade:1395
-msgid "Runlevel _2"
-msgstr "రన్‌లెవల్ _2"
-
-#: ../src/system-config-services.glade:1414
-msgid "Runlevel _3"
-msgstr "ఉపయోగ స్థాయి _౩"
-
-#: ../src/system-config-services.glade:1433
-msgid "Runlevel _4"
-msgstr "ఉపయోగ స్థాయి _౪"
-
-#: ../src/system-config-services.glade:1452
-msgid "Runlevel _5"
-msgstr "ఉపయోగ స్థాయి _౫"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -398,6 +293,81 @@ msgstr "సేవల నిర్వహణ"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "సేవలు"
+
+#~ msgid "window1"
+#~ msgstr "విండో1"
+
+#~ msgid "Service %s"
+#~ msgstr "సేవ %s"
+
+#~ msgid "Enable"
+#~ msgstr "చేతనం"
+
+#~ msgid "Disable"
+#~ msgstr "అచేతనం"
+
+#~ msgid "Customize"
+#~ msgstr "మలచుకొను"
+
+#~ msgid "Enable Default"
+#~ msgstr "అప్రమేయంగా చేతనం"
+
+#~ msgid "Enable All"
+#~ msgstr "అన్నింటిని చేతనంచేయుము"
+
+#~ msgid "Disable All"
+#~ msgstr "అన్నింటిని అచేతనముచేయుము"
+
+#~ msgid "Start"
+#~ msgstr "ప్రారంభించు"
+
+#~ msgid "Restart"
+#~ msgstr "పునఃప్రారంభించు"
+
+#~ msgid "Configure"
+#~ msgstr "ఆకృతీకరించుము"
+
+#~ msgid "foobar"
+#~ msgstr "ఫూబార్"
+
+#~ msgid "barfoo"
+#~ msgstr "బార్‌ఫూ"
+
+#~ msgid "Current runlevel is %s"
+#~ msgstr "ప్రస్తుత రన్‌లెవల్ %s"
+
+#~ msgid "Runlevels"
+#~ msgstr "రన్‌లెవల్సు"
+
+#~ msgid "label18"
+#~ msgstr "లేబుల్18"
+
+#~ msgid "Start "
+#~ msgstr "ప్రారంభించుము"
+
+#~ msgid "Stop"
+#~ msgstr "ఆపు"
+
+#~ msgid "Service control"
+#~ msgstr "సేవ నియంత్రణ"
+
+#~ msgid "Status output"
+#~ msgstr "స్థితి అవుట్‌పుట్"
+
+#~ msgid "_Configure"
+#~ msgstr "ఆకృతీకరించు (_C)"
+
+#~ msgid "Button Box"
+#~ msgstr "బటన్ పెట్టె"
+
+#~ msgid "label16"
+#~ msgstr "లేబుల్16"
+
+#~ msgid "Service %s:"
+#~ msgstr "సేవ %s:"
+
+#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
+#~ msgstr "కాపీరైట్  2002-2008 Red Hat, Inc. మరియు సహాయకులు"
 
 #~ msgid "Service %s not found!"
 #~ msgstr "సేవ %s కనబడలేదు!"

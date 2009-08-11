@@ -1219,7 +1219,7 @@
   <property name="border_width">5</property>
   <property name="destroy_with_parent">False</property>
   <property name="name" translatable="yes">system-config-services</property>
-  <property name="copyright" translatable="yes">Copyright © 2002-2008 Red Hat, Inc. and contributors</property>
+  <property name="copyright" translatable="yes">Copyright © 2002-2009 Red Hat, Inc. and contributors</property>
   <property name="comments" translatable="yes">Service Configuration</property>
   <property name="license" translatable="yes">This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 

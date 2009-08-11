@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-11 12:04+0200\n"
+"POT-Creation-Date: 2009-08-11 14:46+0200\n"
 "PO-Revision-Date: 2009-05-20 14:08+0200\n"
 "Last-Translator: \n"
 "Language-Team: Greek Fedora team <fedora-trans-el@redhat.com>\n"
@@ -20,6 +20,189 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Greek\n"
+
+#: ../src/system-config-services.glade:7
+#: ../src/system-config-services.glade:1223
+msgid "Service Configuration"
+msgstr "Ρύθμιση υπηρεσίας"
+
+#: ../src/system-config-services.glade:38
+msgid "_Program"
+msgstr "_Πρόγραμμα"
+
+#: ../src/system-config-services.glade:60
+msgid "Ser_vice"
+msgstr "_Υπηρεσία"
+
+#: ../src/system-config-services.glade:69
+#: ../src/system-config-services.glade:327
+msgid "_Enable"
+msgstr "Ε_νεργοποίηση"
+
+#: ../src/system-config-services.glade:91
+#: ../src/system-config-services.glade:344
+msgid "_Disable"
+msgstr "_Απενεργοποίηση"
+
+#: ../src/system-config-services.glade:113
+#: ../src/system-config-services.glade:362
+msgid "_Customize"
+msgstr "Προ_σαρμογή"
+
+#: ../src/system-config-services.glade:134
+#: ../src/system-config-services.glade:1241
+msgid "Runlevel 2"
+msgstr "Runlevel 2"
+
+#: ../src/system-config-services.glade:143
+#: ../src/system-config-services.glade:1251
+msgid "Runlevel 3"
+msgstr "Runlevel 3"
+
+#: ../src/system-config-services.glade:152
+#: ../src/system-config-services.glade:1261
+msgid "Runlevel 4"
+msgstr "Runlevel 4"
+
+#: ../src/system-config-services.glade:161
+#: ../src/system-config-services.glade:1271
+msgid "Runlevel 5"
+msgstr "Runlevel 5"
+
+#: ../src/system-config-services.glade:180
+#: ../src/system-config-services.glade:392
+msgid "_Start"
+msgstr "_Έναρξη"
+
+#: ../src/system-config-services.glade:202
+#: ../src/system-config-services.glade:409
+msgid "S_top"
+msgstr "_Διακοπή"
+
+#: ../src/system-config-services.glade:224
+#: ../src/system-config-services.glade:426
+msgid "_Restart"
+msgstr "Ε_πανεκκίνηση"
+
+#: ../src/system-config-services.glade:250
+msgid "_Help"
+msgstr "_Βοήθεια"
+
+#: ../src/system-config-services.glade:259
+msgid "_Contents"
+msgstr "_Περιεχόμενα"
+
+#: ../src/system-config-services.glade:287
+msgid "_About"
+msgstr "Πε_ρί"
+
+#: ../src/system-config-services.glade:361
+msgid "Customize the runlevels in which a service is enabled."
+msgstr "Προσαρμογή των runlevels στα οποία θα είναι ενεργή η υπηρεσία."
+
+#: ../src/system-config-services.glade:559
+msgid "No service selected."
+msgstr "Δεν επιλέχθηκε υπηρεσία."
+
+#: ../src/system-config-services.glade:621
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"Αυτή η υπηρεσία ξεκινάει μια φορά, συνήθως όταν το σύστημα εκκινείται, και "
+"στην συνέχεια εκτελείται στο παρασκήνιο και ενεργοποιείται όταν χρειαστεί."
+
+#: ../src/system-config-services.glade:769
+#: ../src/system-config-services.glade:960
+msgid "Description"
+msgstr "Περιγραφή"
+
+#: ../src/system-config-services.glade:867
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+
+#: ../src/system-config-services.glade:1065
+msgid "Service Information"
+msgstr "Πληροφορίες υπηρεσίας"
+
+#: ../src/system-config-services.glade:1184
+msgid "Status of service %s:"
+msgstr "Κατάσταση υπηρεσίας %s:"
+
+#: ../src/system-config-services.glade:1221
+msgid "system-config-services"
+msgstr "system-config-services"
+
+#: ../src/system-config-services.glade:1222
+msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+msgstr ""
+
+#: ../src/system-config-services.glade:1224
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+"Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Μπορείτε να το αναδιανέμετε ή/"
+"και να το τροποποιήσετε υπό τους όρους της GNU General Public License όπως "
+"έχει δημοσιευτεί από το Free Software Foundation, είτε την έκδοση 2 της "
+"Άδειας, ή (κατ' επιλογή σας) οποιαδήποτε νεότερη έκδοση.\n"
+"\n"
+"Αυτό το πρόγραμμα διανέμεται με την ελπίδα ότι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ "
+"ΚΑΜΙΑ ΕΓΓΥΗΣΗ, χωρίς ακόμη την υπονοούμενη εγγύηση της ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή "
+"της ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΕΝΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε την\n"
+"GNU General Public License για περισσότερες λεπτομέρειες.\n"
+"\n"
+"Μαζί με το λογισμικό αυτό πήρατε και ένα αντίγραφο της GNU General Public "
+"License; εάν όχι, γράψτε στο Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+
+#: ../src/system-config-services.glade:1231
+msgid "translator-credits"
+msgstr ""
+"Ελληνική μεταφραστική ομάδα Fedora\n"
+"Nikos Charonitakis <nikosx@gmail.com>\n"
+"Dimitrios Michelinakis <dimitris@michelinakis.gr>\n"
+"Dimitrios Typaldos <dtfedora@yahoo.com>\n"
+"\n"
+"Για περισσότερα δείτε http://fedoraproject.gr/"
+
+#: ../src/system-config-services.glade:1280
+msgid "Customize Runlevels"
+msgstr "Προσαρμογή Runlevels"
+
+#: ../src/system-config-services.glade:1351 ../src/gui.py:714
+#, python-format
+msgid "Enable the <b>%(service)s</b> service in these runlevels:"
+msgstr "Ενεργοποίηση <b>%(service)s</b> υπηρεσίας σε αυτά τα runlevels:"
+
+#: ../src/system-config-services.glade:1395
+msgid "Runlevel _2"
+msgstr "Runlevel _2"
+
+#: ../src/system-config-services.glade:1414
+msgid "Runlevel _3"
+msgstr "Runlevel _3"
+
+#: ../src/system-config-services.glade:1433
+msgid "Runlevel _4"
+msgstr "Runlevel _4"
+
+#: ../src/system-config-services.glade:1452
+msgid "Runlevel _5"
+msgstr "Runlevel _5"
 
 #: ../src/gui.py:112
 msgid "Name"
@@ -103,11 +286,6 @@ msgstr ""
 "Η υπηρεσία είναι ενεργοποιημένη, αλλά δεν εκτελείται η υπηρεσία <b>xinetd</"
 "b> η οποία είναι  είναι απαραίτητη για να δουλέψει."
 
-#: ../src/gui.py:714 ../src/system-config-services.glade:1351
-#, python-format
-msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "Ενεργοποίηση <b>%(service)s</b> υπηρεσίας σε αυτά τα runlevels:"
-
 #: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
@@ -115,289 +293,6 @@ msgid ""
 msgstr ""
 "Δεν βρέθηκε η προβολή βοήθειας. Για να μπορέσετε να δείτε την βοήθεια, "
 "πρέπει να εγκατασταθεί το πακέτο  'yelp'."
-
-#: ../src/servicetab.glade:8
-msgid "window1"
-msgstr "παράθυρο1"
-
-#: ../src/servicetab.glade:38
-msgid "Service %s"
-msgstr "Υπηρεσία  %s"
-
-#: ../src/servicetab.glade:47 ../src/servicetab.glade:395
-#: ../src/servicetab.glade:606 ../src/servicetab.glade:1949
-msgid "Enable"
-msgstr "Ενεργοποίηση"
-
-#: ../src/servicetab.glade:68 ../src/servicetab.glade:413
-#: ../src/servicetab.glade:685 ../src/servicetab.glade:1970
-msgid "Disable"
-msgstr "Απενεργοποίηση"
-
-#: ../src/servicetab.glade:89
-msgid "Customize"
-msgstr "Προσαρμογή"
-
-#: ../src/servicetab.glade:110 ../src/servicetab.glade:2013
-msgid "Enable Default"
-msgstr "Ενεργοποίηση προεπιλογής"
-
-#: ../src/servicetab.glade:137 ../src/servicetab.glade:2040
-#: ../src/system-config-services.glade:134
-#: ../src/system-config-services.glade:1241
-msgid "Runlevel 2"
-msgstr "Runlevel 2"
-
-#: ../src/servicetab.glade:147 ../src/servicetab.glade:2050
-#: ../src/system-config-services.glade:143
-#: ../src/system-config-services.glade:1251
-msgid "Runlevel 3"
-msgstr "Runlevel 3"
-
-#: ../src/servicetab.glade:157 ../src/servicetab.glade:2060
-#: ../src/system-config-services.glade:152
-#: ../src/system-config-services.glade:1261
-msgid "Runlevel 4"
-msgstr "Runlevel 4"
-
-#: ../src/servicetab.glade:167 ../src/servicetab.glade:2070
-#: ../src/system-config-services.glade:161
-#: ../src/system-config-services.glade:1271
-msgid "Runlevel 5"
-msgstr "Runlevel 5"
-
-#: ../src/servicetab.glade:183 ../src/servicetab.glade:2086
-msgid "Enable All"
-msgstr "Ενεργοποίηση όλων"
-
-#: ../src/servicetab.glade:204 ../src/servicetab.glade:2107
-msgid "Disable All"
-msgstr "Απενεργοποίηση όλων"
-
-#: ../src/servicetab.glade:235 ../src/servicetab.glade:332
-#: ../src/servicetab.glade:2135
-msgid "Start"
-msgstr "Έναρξη"
-
-#: ../src/servicetab.glade:256 ../src/servicetab.glade:349
-#: ../src/servicetab.glade:2156
-msgid "Restart"
-msgstr "Επανεκκίνηση"
-
-#: ../src/servicetab.glade:292 ../src/servicetab.glade:441
-#: ../src/servicetab.glade:1922
-msgid "Configure"
-msgstr "Ρύθμιση"
-
-#: ../src/servicetab.glade:394
-msgid "foobar"
-msgstr "foobar"
-
-#: ../src/servicetab.glade:412
-msgid "barfoo"
-msgstr "barfoo"
-
-#: ../src/servicetab.glade:521
-msgid "Current runlevel is %s"
-msgstr "Ενεργό Runlevel: %s"
-
-#: ../src/servicetab.glade:764 ../src/servicetab.glade:836
-msgid "Runlevels"
-msgstr "Runlevel %d"
-
-#: ../src/servicetab.glade:807
-msgid "label18"
-msgstr "label18"
-
-#: ../src/servicetab.glade:940
-msgid "Start "
-msgstr "Έναρξη "
-
-#: ../src/servicetab.glade:1019 ../src/servicetab.glade:2177
-msgid "Stop"
-msgstr "Διακοπή"
-
-#: ../src/servicetab.glade:1066
-msgid "Service control"
-msgstr "Υπηρεσία ελέγχου"
-
-#: ../src/servicetab.glade:1148
-msgid "Status output"
-msgstr "Κατάσταση εξόδου"
-
-#: ../src/servicetab.glade:1260 ../src/system-config-services.glade:180
-#: ../src/system-config-services.glade:392
-msgid "_Start"
-msgstr "_Έναρξη"
-
-#: ../src/servicetab.glade:1339 ../src/system-config-services.glade:224
-#: ../src/system-config-services.glade:426
-msgid "_Restart"
-msgstr "Ε_πανεκκίνηση"
-
-#: ../src/servicetab.glade:1446 ../src/system-config-services.glade:69
-#: ../src/system-config-services.glade:327
-msgid "_Enable"
-msgstr "Ε_νεργοποίηση"
-
-#: ../src/servicetab.glade:1525 ../src/system-config-services.glade:91
-#: ../src/system-config-services.glade:344
-msgid "_Disable"
-msgstr "_Απενεργοποίηση"
-
-#: ../src/servicetab.glade:1613
-msgid "_Configure"
-msgstr "_Ρύθμιση"
-
-#: ../src/servicetab.glade:1653
-msgid "Button Box"
-msgstr "Πεδίο με κουμπιά"
-
-#: ../src/servicetab.glade:1730
-msgid "label16"
-msgstr "label16"
-
-#: ../src/servicetab.glade:1779 ../src/servicetab.glade:1864
-msgid "Service %s:"
-msgstr "Υπηρεσία %s:"
-
-#: ../src/servicetab.glade:1991 ../src/system-config-services.glade:1280
-msgid "Customize Runlevels"
-msgstr "Προσαρμογή Runlevels"
-
-#: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1223
-msgid "Service Configuration"
-msgstr "Ρύθμιση υπηρεσίας"
-
-#: ../src/system-config-services.glade:38
-msgid "_Program"
-msgstr "_Πρόγραμμα"
-
-#: ../src/system-config-services.glade:60
-msgid "Ser_vice"
-msgstr "_Υπηρεσία"
-
-#: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:362
-msgid "_Customize"
-msgstr "Προ_σαρμογή"
-
-#: ../src/system-config-services.glade:202
-#: ../src/system-config-services.glade:409
-msgid "S_top"
-msgstr "_Διακοπή"
-
-#: ../src/system-config-services.glade:250
-msgid "_Help"
-msgstr "_Βοήθεια"
-
-#: ../src/system-config-services.glade:259
-msgid "_Contents"
-msgstr "_Περιεχόμενα"
-
-#: ../src/system-config-services.glade:287
-msgid "_About"
-msgstr "Πε_ρί"
-
-#: ../src/system-config-services.glade:361
-msgid "Customize the runlevels in which a service is enabled."
-msgstr "Προσαρμογή των runlevels στα οποία θα είναι ενεργή η υπηρεσία."
-
-#: ../src/system-config-services.glade:559
-msgid "No service selected."
-msgstr "Δεν επιλέχθηκε υπηρεσία."
-
-#: ../src/system-config-services.glade:621
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"Αυτή η υπηρεσία ξεκινάει μια φορά, συνήθως όταν το σύστημα εκκινείται, και "
-"στην συνέχεια εκτελείται στο παρασκήνιο και ενεργοποιείται όταν χρειαστεί."
-
-#: ../src/system-config-services.glade:769
-#: ../src/system-config-services.glade:960
-msgid "Description"
-msgstr "Περιγραφή"
-
-#: ../src/system-config-services.glade:867
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr ""
-
-#: ../src/system-config-services.glade:1065
-msgid "Service Information"
-msgstr "Πληροφορίες υπηρεσίας"
-
-#: ../src/system-config-services.glade:1184
-msgid "Status of service %s:"
-msgstr "Κατάσταση υπηρεσίας %s:"
-
-#: ../src/system-config-services.glade:1221
-msgid "system-config-services"
-msgstr "system-config-services"
-
-#: ../src/system-config-services.glade:1222
-msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-msgstr "Πνευματικά δικαιώματα 2002-2008 Red Hat, Inc. και συντελεστές"
-
-#: ../src/system-config-services.glade:1224
-msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Μπορείτε να το αναδιανέμετε ή/"
-"και να το τροποποιήσετε υπό τους όρους της GNU General Public License όπως "
-"έχει δημοσιευτεί από το Free Software Foundation, είτε την έκδοση 2 της "
-"Άδειας, ή (κατ' επιλογή σας) οποιαδήποτε νεότερη έκδοση.\n"
-"\n"
-"Αυτό το πρόγραμμα διανέμεται με την ελπίδα ότι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ "
-"ΚΑΜΙΑ ΕΓΓΥΗΣΗ, χωρίς ακόμη την υπονοούμενη εγγύηση της ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή "
-"της ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΕΝΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε την\n"
-"GNU General Public License για περισσότερες λεπτομέρειες.\n"
-"\n"
-"Μαζί με το λογισμικό αυτό πήρατε και ένα αντίγραφο της GNU General Public "
-"License; εάν όχι, γράψτε στο Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-
-#: ../src/system-config-services.glade:1231
-msgid "translator-credits"
-msgstr ""
-"Ελληνική μεταφραστική ομάδα Fedora\n"
-"Nikos Charonitakis <nikosx@gmail.com>\n"
-"Dimitrios Michelinakis <dimitris@michelinakis.gr>\n"
-"Dimitrios Typaldos <dtfedora@yahoo.com>\n"
-"\n"
-"Για περισσότερα δείτε http://fedoraproject.gr/"
-
-#: ../src/system-config-services.glade:1395
-msgid "Runlevel _2"
-msgstr "Runlevel _2"
-
-#: ../src/system-config-services.glade:1414
-msgid "Runlevel _3"
-msgstr "Runlevel _3"
-
-#: ../src/system-config-services.glade:1433
-msgid "Runlevel _4"
-msgstr "Runlevel _4"
-
-#: ../src/system-config-services.glade:1452
-msgid "Runlevel _5"
-msgstr "Runlevel _5"
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -412,6 +307,81 @@ msgstr "Διαχείριση υπηρεσιών"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Υπηρεσίες"
+
+#~ msgid "window1"
+#~ msgstr "παράθυρο1"
+
+#~ msgid "Service %s"
+#~ msgstr "Υπηρεσία  %s"
+
+#~ msgid "Enable"
+#~ msgstr "Ενεργοποίηση"
+
+#~ msgid "Disable"
+#~ msgstr "Απενεργοποίηση"
+
+#~ msgid "Customize"
+#~ msgstr "Προσαρμογή"
+
+#~ msgid "Enable Default"
+#~ msgstr "Ενεργοποίηση προεπιλογής"
+
+#~ msgid "Enable All"
+#~ msgstr "Ενεργοποίηση όλων"
+
+#~ msgid "Disable All"
+#~ msgstr "Απενεργοποίηση όλων"
+
+#~ msgid "Start"
+#~ msgstr "Έναρξη"
+
+#~ msgid "Restart"
+#~ msgstr "Επανεκκίνηση"
+
+#~ msgid "Configure"
+#~ msgstr "Ρύθμιση"
+
+#~ msgid "foobar"
+#~ msgstr "foobar"
+
+#~ msgid "barfoo"
+#~ msgstr "barfoo"
+
+#~ msgid "Current runlevel is %s"
+#~ msgstr "Ενεργό Runlevel: %s"
+
+#~ msgid "Runlevels"
+#~ msgstr "Runlevel %d"
+
+#~ msgid "label18"
+#~ msgstr "label18"
+
+#~ msgid "Start "
+#~ msgstr "Έναρξη "
+
+#~ msgid "Stop"
+#~ msgstr "Διακοπή"
+
+#~ msgid "Service control"
+#~ msgstr "Υπηρεσία ελέγχου"
+
+#~ msgid "Status output"
+#~ msgstr "Κατάσταση εξόδου"
+
+#~ msgid "_Configure"
+#~ msgstr "_Ρύθμιση"
+
+#~ msgid "Button Box"
+#~ msgstr "Πεδίο με κουμπιά"
+
+#~ msgid "label16"
+#~ msgstr "label16"
+
+#~ msgid "Service %s:"
+#~ msgstr "Υπηρεσία %s:"
+
+#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
+#~ msgstr "Πνευματικά δικαιώματα 2002-2008 Red Hat, Inc. και συντελεστές"
 
 #~ msgid "Service %s not found!"
 #~ msgstr "Δε βρέθηκε η υπηρεσία %s !"
