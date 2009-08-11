@@ -119,9 +119,44 @@ class Service (object):
 class ChkconfigService (Service):
     """Represents an abstract service handled with chkconfig."""
 
+    _chkconfig_invocation = "LC_ALL=C /sbin/chkconfig"
+    _chkconfig_version_re = re.compile (r"^chkconfig\s+version\s+(?P<version>[\d\.]+)\s*$", re.IGNORECASE)
+
     def __init__ (self, name, mon, herder):
         super (ChkconfigService, self).__init__ (name, mon, herder)
         self._chkconfig_running = 0
+
+        if not hasattr (ChkconfigService, "chkconfig_version"):
+            # determine chkconfig version, we only want to use some features
+            # from certain versions on
+            ckver_pipe = os.popen ("%s -v" %
+                    ChkconfigService._chkconfig_invocation)
+            for line in ckver_pipe:
+                line = line.strip ()
+                m = ChkconfigService._chkconfig_version_re.match (line)
+                if m:
+                    version = m.group ("version")
+                    ChkconfigService.chkconfig_version = map (lambda x: int (x), version.split ("."))
+                    break
+
+            ckver_pipe.close ()
+
+    @property
+    def chkconfig_invocation (self):
+        if not hasattr (self.__class__, "_chkconfig_actual_invocation"):
+            invoke = [ChkconfigService._chkconfig_invocation]
+
+            ckver = ChkconfigService.chkconfig_version
+            # --type <sysv|xinetd> exists in 1.3.40 and later
+            if ckver[0] > 1 or \
+                    (ckver[0] == 1 and \
+                    (ckver[1] > 3 or \
+                    (ckver[1] == 3 and ckver[2] >= 40))):
+                invoke.append ("--type %s" % self.chkconfig_type)
+
+            self.__class__._chkconfig_actual_invocation = " ".join (invoke)
+
+        return self.__class__._chkconfig_actual_invocation
 
     def is_chkconfig_running (self):
         return self._chkconfig_running < 1
@@ -132,7 +167,7 @@ class ChkconfigService (Service):
     def _change_enablement (self, change):
         # no callback, we let the herder handle that
         self._chkconfig_running += 1
-        self._asynccmdqueue.queue ('env LC_ALL=C /sbin/chkconfig "%s" "%s"' % (self.name, change), self._change_enablement_ready)
+        self._asynccmdqueue.queue ('%s "%s" "%s"' % (self.chkconfig_invocation, self.name, change), self._change_enablement_ready)
 
     def enable (self):
         """Enable this service."""
@@ -149,6 +184,8 @@ class ChkconfigService (Service):
 
 class SysVService (ChkconfigService):
     """Represents a service handled by SysVinit."""
+
+    chkconfig_type = "sysv"
 
     init_list_re = re.compile (r'^(?P<name>\S+)\s+0:(?P<r0>off|on)\s+1:(?P<r1>off|on)\s+2:(?P<r2>off|on)\s+3:(?P<r3>off|on)\s+4:(?P<r4>off|on)\s+5:(?P<r5>off|on)\s+6:(?P<r6>off|on)\s*$')
 
@@ -191,7 +228,7 @@ class SysVService (ChkconfigService):
     def _async_load (self, callback, *p, **k):
         """Load configuration from disk asynchronously."""
         p = (callback, ) + p
-        self._asynccmdqueue.queue ('env LC_ALL=C /sbin/chkconfig --list "%s"' % self.name, combined_stdout = True, ready_cb = self._async_load_ready, ready_args = p, ready_kwargs = k)
+        self._asynccmdqueue.queue ('%s --list "%s"' % (self.chkconfig_invocation, self.name), combined_stdout = True, ready_cb = self._async_load_ready, ready_args = p, ready_kwargs = k)
         self.conf_updates_running += 1
 
     def _async_load_process (self, cmd):
@@ -238,9 +275,9 @@ class SysVService (ChkconfigService):
         for what in ('on', 'off'):
             if not len (runlevel_changes[what]):
                 continue
-            (status, output) = getstatusoutput ('env LC_ALL=C /sbin/chkconfig --level %s %s %s 2>&1' % (''.join (runlevel_changes[what]), self.name, what))
+            (status, output) = getstatusoutput ('%s --level %s %s %s 2>&1' % (self.chkconfig_invocation, ''.join (runlevel_changes[what]), self.name, what))
             if status != 0:
-                raise OSError ("Saving service '%s' failed, command was 'LC_ALL=C /sbin/chkconfig --level %s %s %s'.\nOutput was:\n%s" % (self.name, ''.join (runlevel_changes[what]), self.name, what, output))
+                raise OSError ("Saving service '%s' failed, command was '%s --level %s %s %s'.\nOutput was:\n%s" % (self.name, self.chkconfig_invocation, ''.join (runlevel_changes[what]), self.name, what, output))
 
         self.configured = True
 
@@ -395,6 +432,8 @@ class SysVService (ChkconfigService):
 class XinetdService (ChkconfigService):
     """Represents a service handled by xinetd."""
 
+    chkconfig_type = "xinetd"
+
     xinetd_list_re = re.compile (r'^(?P<name>\S+)\s+(?P<enabled>off|on)\s*$')
 
     def __init__ (self, name, mon, herder):
@@ -414,7 +453,7 @@ class XinetdService (ChkconfigService):
 
         p = (callback, ) + p
 
-        self._asynccmdqueue.queue ('env LC_ALL=C /sbin/chkconfig --list %s' % self.name, combined_stdout = True, ready_cb = self._async_load_ready, ready_args = p, ready_kwargs = k)
+        self._asynccmdqueue.queue ('%s --list %s' % (self.chkconfig_invocation, self.name), combined_stdout = True, ready_cb = self._async_load_ready, ready_args = p, ready_kwargs = k)
         self.conf_updates_running += 1
 
     def _async_load_process (self, cmd):
@@ -449,9 +488,9 @@ class XinetdService (ChkconfigService):
         old_enabled = getattr (self, "_enabled", None)
         self._enabled = enabled
         if old_enabled != enabled:
-            (status, output) = getstatusoutput ('LC_ALL=C /sbin/chkconfig %s %s 2>/dev/null' % (self.name, self.enabled and 'on' or 'off'))
+            (status, output) = getstatusoutput ('%s %s %s 2>&1' % (self.chkconfig_invocation, self.name, self.enabled and 'on' or 'off'))
             if status != 0:
-                raise OSError ("Saving service '%s' failed, command was 'LC_ALL=C /sbin/chkconfig %s %s 2>/dev/null'." % (self.name, self.name, self.enabled and 'on' or 'off'))
+                raise OSError ("Saving service '%s' failed, command was '%s %s %s 2>&1'." % (self.chkconfig_invocation, self.name, self.name, self.enabled and 'on' or 'off'))
 
     enabled = property (_get_enabled, _set_enabled)
 
