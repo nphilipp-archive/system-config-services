@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2009-07-12 19:16+0100\n"
+"PO-Revision-Date: 2009-08-12 23:13+0100\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -137,7 +137,7 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Ауторска права 2002-2009 Red Hat, Inc. и сарадници"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
@@ -303,99 +303,3 @@ msgstr "Управљање сервисима"
 #: ../system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Сервиси"
-
-#~ msgid "window1"
-#~ msgstr "window1"
-
-#~ msgid "Service %s"
-#~ msgstr "Сервис %s"
-
-#~ msgid "Enable"
-#~ msgstr "Укључи"
-
-#~ msgid "Disable"
-#~ msgstr "Искључи"
-
-#~ msgid "Customize"
-#~ msgstr "Прилагоди"
-
-#~ msgid "Enable Default"
-#~ msgstr "Укључи подразумевано"
-
-#~ msgid "Enable All"
-#~ msgstr "Укључи све"
-
-#~ msgid "Disable All"
-#~ msgstr "Искључи све"
-
-#~ msgid "Start"
-#~ msgstr "Покрени"
-
-#~ msgid "Restart"
-#~ msgstr "Покрени поново"
-
-#~ msgid "Configure"
-#~ msgstr "Подеси"
-
-#~ msgid "foobar"
-#~ msgstr "foobar"
-
-#~ msgid "barfoo"
-#~ msgstr "barfoo"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Тренутно активан извршни ниво је %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "Извршни нивои"
-
-#~ msgid "label18"
-#~ msgstr "label18"
-
-#~ msgid "Start "
-#~ msgstr "Покрени"
-
-#~ msgid "Stop"
-#~ msgstr "Заустави"
-
-#~ msgid "Service control"
-#~ msgstr "Контрола сервиса"
-
-#~ msgid "Status output"
-#~ msgstr "Излазни статус"
-
-#~ msgid "_Configure"
-#~ msgstr "П_одеси"
-
-#~ msgid "Button Box"
-#~ msgstr "Кутија за дугме"
-
-#~ msgid "label16"
-#~ msgstr "label16"
-
-#~ msgid "Service %s:"
-#~ msgstr "Сервис %s:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "Ауторска права  2002-2008 Red Hat, Inc. и сарадници"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "Сервис %s није пронађен!"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "Сервис %s је покренут са старим подешавањима"
-
-#~ msgid "Service %s is running"
-#~ msgstr "Сервис %s је покренут"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "Сервис %s јавља грешку"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "Сервис %s је заустављен"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "Тренутно се ради у извршном нивоу %s"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "Укључи %(name)s у извршним нивоима %(levels)s"
