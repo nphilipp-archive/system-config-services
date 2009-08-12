@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2009-06-14 22:47-0300\n"
+"PO-Revision-Date: 2009-08-11 21:27-0300\n"
 "Last-Translator: Igor Pires Soares <igor@projetofedora.org>\n"
 "Language-Team: Brazilian Portuguese <fedora-trans-pt_br@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -111,12 +111,8 @@ msgid "No service selected."
 msgstr "Nenhum serviço selecionado."
 
 #: ../src/system-config-services.glade:621
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"Este serviço é iniciado uma única vez, normalmente quando o sistema é "
-"inicializado, é executado em segundo plano e acionado quando necessário."
+msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "Este serviço é iniciado uma única vez, normalmente quando o sistema é inicializado, é executado em segundo plano e acionado quando necessário."
 
 #: ../src/system-config-services.glade:769
 #: ../src/system-config-services.glade:960
@@ -124,12 +120,8 @@ msgid "Description"
 msgstr "Descrição"
 
 #: ../src/system-config-services.glade:867
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr ""
-"Este serviço será iniciado sob demanda pelo serviço xinetd e terminará "
-"quando não houver mais nada a ser feito."
+msgid "This service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "Este serviço será iniciado sob demanda pelo serviço xinetd e terminará quando não houver mais nada a ser feito."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -145,38 +137,22 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright © 2002-2009 Red Hat, Inc. e colaboradores"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Este programa é um software livre; você pode redistribuí-lo e/ou modificá-lo "
-"sob os termos da Licença Pública Geral GNU (GNU General Public License) "
-"publicada pela Free Software Foundation; tanto na versão 2 da Licença, "
-"quanto (a seu critério) qualquer versão mais nova.\n"
+"Este programa é um software livre; você pode redistribuí-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU (GNU General Public License) publicada pela Free Software Foundation; tanto na versão 2 da Licença, quanto (a seu critério) qualquer versão mais nova.\n"
 "\n"
-"Este programa é distribuído na esperança de ser útil, mas SEM NENHUMA "
-"GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou ADEQUAÇÃO A "
-"UM PROPÓSITO EM PARTICULAR. Veja a Licença Pública Geral GNU (GNU General "
-"Public License) para mais detalhes.\n"
+"Este programa é distribuído na esperança de ser útil, mas SEM NENHUMA GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou ADEQUAÇÃO A UM PROPÓSITO EM PARTICULAR. Veja a Licença Pública Geral GNU (GNU General Public License) para mais detalhes.\n"
 "\n"
-"Você deve ter recebido uma cópia da Licença Pública Geral GNU (GNU General "
-"Public License) junto com o este programa; caso contrário, escreva para a "
-"Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-"
-"1307  USA."
+"Você deve ter recebido uma cópia da Licença Pública Geral GNU (GNU General Public License) junto com o este programa; caso contrário, escreva para a Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA."
 
 #: ../src/system-config-services.glade:1231
 msgid "translator-credits"
@@ -192,7 +168,8 @@ msgstr ""
 msgid "Customize Runlevels"
 msgstr "Personalizar níveis de execução "
 
-#: ../src/system-config-services.glade:1351 ../src/gui.py:714
+#: ../src/system-config-services.glade:1351
+#: ../src/gui.py:714
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Habilitar o serviço <b>%(service)s</b> nestes níveis de execução:"
@@ -221,7 +198,8 @@ msgstr "Nome"
 msgid "Remarks"
 msgstr "Observações"
 
-#: ../src/gui.py:174 ../src/gui.py:192
+#: ../src/gui.py:174
+#: ../src/gui.py:192
 msgid "This service is being refreshed right now."
 msgstr "Este serviço está sendo atualizado no momento."
 
@@ -260,13 +238,8 @@ msgstr "Este serviço está morto."
 
 #: ../src/gui.py:273
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service is started once, usually when the system "
-"is booted, runs in the background and wakes up when needed."
-msgstr ""
-"O serviço <b>%(servicename)s</b> é iniciado uma única vez, normalmente "
-"quando o sistema é inicializado, é executado em segundo plano e acionado "
-"quando necessário."
+msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "O serviço <b>%(servicename)s</b> é iniciado uma única vez, normalmente quando o sistema é inicializado, é executado em segundo plano e acionado quando necessário."
 
 #: ../src/gui.py:287
 msgid "This service is updated currently."
@@ -274,41 +247,24 @@ msgstr "Este serviço está atualmente atualizado."
 
 #: ../src/gui.py:313
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has nothing more to do."
-msgstr ""
-"O serviço <b>%(servicename)s</b> será iniciado sob demanda pelo serviço "
-"xinetd e terminará quando não houver mais nada a ser feito."
+msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "O serviço <b>%(servicename)s</b> será iniciado sob demanda pelo serviço xinetd e terminará quando não houver mais nada a ser feito."
 
 #: ../src/gui.py:322
-msgid ""
-"This service is enabled, but the <b>xinetd</b> package is not installed. "
-"This service does not work without it."
-msgstr ""
-"Este serviço está habilitado, mas o pacote <b>xinetd</b> não está instalado. "
-"Este serviço não funciona sem ele."
+msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
+msgstr "Este serviço está habilitado, mas o pacote <b>xinetd</b> não está instalado. Este serviço não funciona sem ele."
 
 #: ../src/gui.py:328
-msgid ""
-"This service is enabled, but the <b>xinetd</b> service is not running. This "
-"service does not work without it."
-msgstr ""
-"Este serviço está habilitado, mas o serviço <b>xinetd</b> não está em "
-"execução. Este serviço não funciona sem ele."
+msgid "This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."
+msgstr "Este serviço está habilitado, mas o serviço <b>xinetd</b> não está em execução. Este serviço não funciona sem ele."
 
 #: ../src/gui.py:846
-msgid ""
-"The help viewer could not be found. To be able to view help, the 'yelp' "
-"package needs to be installed."
-msgstr ""
-"O visualizador de ajuda não pôde ser encontrado. Para estar apto a "
-"visualizar a ajuda, o pacote \"yelp\" precisa estar instalado."
+msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
+msgstr "O visualizador de ajuda não pôde ser encontrado. Para estar apto a visualizar a ajuda, o pacote \"yelp\" precisa estar instalado."
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
-"Configure quais serviços serão executados quando o sistema for iniciado"
+msgstr "Configure quais serviços serão executados quando o sistema for iniciado"
 
 #: ../system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -320,110 +276,78 @@ msgstr "Serviços"
 
 #~ msgid "window1"
 #~ msgstr "window1"
-
 #~ msgid "Service %s"
 #~ msgstr "Serviço %s"
-
 #~ msgid "Enable"
 #~ msgstr "Habilitar"
-
 #~ msgid "Disable"
 #~ msgstr "Desabilitar"
-
 #~ msgid "Customize"
 #~ msgstr "Personalizar"
-
 #~ msgid "Enable Default"
 #~ msgstr "Habilitar por padrão"
-
 #~ msgid "Enable All"
 #~ msgstr "Habilitar todos"
-
 #~ msgid "Disable All"
 #~ msgstr "Desabilitar todos"
-
 #~ msgid "Start"
 #~ msgstr "Iniciar"
-
 #~ msgid "Restart"
 #~ msgstr "Reiniciar"
-
 #~ msgid "Configure"
 #~ msgstr "Configurar"
-
 #~ msgid "foobar"
 #~ msgstr "foobar"
-
 #~ msgid "barfoo"
 #~ msgstr "barfoo"
-
 #~ msgid "Current runlevel is %s"
 #~ msgstr "O nível de execução atual é o %s"
-
 #~ msgid "Runlevels"
 #~ msgstr "Níveis de execução"
-
 #~ msgid "label18"
 #~ msgstr "label18"
-
 #~ msgid "Start "
 #~ msgstr "Iniciar"
-
 #~ msgid "Stop"
 #~ msgstr "Parar"
-
 #~ msgid "Service control"
 #~ msgstr "Controle do serviço"
-
 #~ msgid "Status output"
 #~ msgstr "Saída de status"
-
 #~ msgid "_Configure"
 #~ msgstr "_Configurar"
-
 #~ msgid "Button Box"
 #~ msgstr "Caixa de Botão"
-
 #~ msgid "label16"
 #~ msgstr "label16"
-
 #~ msgid "Service %s:"
 #~ msgstr "Serviço %s:"
-
 #~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
 #~ msgstr "Copyright  2002-2008 Red Hat, Inc. e colaboradores"
-
 #~ msgid "Service %s not found!"
 #~ msgstr "Serviço %s não encontrado!"
-
 #~ msgid "Service %s is running with old configuration"
 #~ msgstr "O serviço %s está em execução com a configuração antiga"
-
 #~ msgid "Service %s is running"
 #~ msgstr "O serviço %s está em execução"
-
 #~ msgid "Service %s reports an error"
 #~ msgstr "O serviço %s reporta um erro"
-
 #~ msgid "Service %s is stopped"
 #~ msgstr "O serviço %s está parado"
-
 #~ msgid "Currently enabled in runlevels %s"
 #~ msgstr "Atualmente habilitado nos níveis de execução %s"
-
 #~ msgid "Enable %(name)s in runlevels %(levels)s"
 #~ msgstr "Habilitar %(name)s nos níveis de execução %(levels)s"
-
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "
 #~ "xinetd service and ends when it has got nothing more to do."
 #~ msgstr ""
 #~ "O serviço <b>%(servicename)s</b> será iniciado sob demanda através do "
 #~ "serviço xinetd e pára quando ele não tem mais nada a fazer."
-
 #~ msgid ""
 #~ "This service will be started on demand by the xinetd service and ends "
 #~ "when it has got nothing more to do."
 #~ msgstr ""
 #~ "Este serviço será iniciado sob demanda através do serviço xinetd e pára "
 #~ "quando ele não tem mais nada a fazer."
+
