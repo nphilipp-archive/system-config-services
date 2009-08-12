@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2009-06-11 02:04+0200\n"
+"PO-Revision-Date: 2009-08-11 20:31+0200\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -128,7 +128,7 @@ msgstr "Information om tjeneste"
 
 #: ../src/system-config-services.glade:1184
 msgid "Status of service %s:"
-msgstr "Status på tjeneste \"%s\":"
+msgstr "Status på tjeneste %s:"
 
 #: ../src/system-config-services.glade:1221
 msgid "system-config-services"
@@ -136,7 +136,7 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Ophavsret © 2002-2009 Red Hat, Inc. og bidragydere"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
@@ -377,7 +377,7 @@ msgstr "Tjenester"
 #~ msgstr "Tjeneste \"%s\":"
 
 #~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright 2002-2008 Red Hat, Inc. og bidragsydere"
+#~ msgstr "Copyright 2002-2008 Red Hat, Inc. og bidragydere"
 
 #~ msgid "Service %s not found!"
 #~ msgstr "Tjeneste \"%s\" er ikke fundet!"
