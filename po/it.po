@@ -1,4 +1,4 @@
-# translation of it.po to Italiano
+# translation of system-config-services.master.po to
 # Copyright (C) 2001, Red Hat, Inc.
 #
 # Valentina Besi <valentina@redhat.it>, 2001.
@@ -9,12 +9,12 @@
 # Daniele Catanesi <translate@ccielogs.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: it\n"
+"Project-Id-Version: system-config-services.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2009-07-28 16:57+0100\n"
-"Last-Translator: Daniele Catanesi <translate@ccielogs.com>\n"
-"Language-Team: Italiano <fedora-trans-it@redhat.com>\n"
+"PO-Revision-Date: 2009-08-13 14:38+1000\n"
+"Last-Translator: \n"
+"Language-Team:  <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -139,7 +139,7 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright © 2002-2009 Red Hat, Inc. e contributori"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
@@ -309,112 +309,3 @@ msgstr "Gestione dei servizi"
 msgid "Services"
 msgstr "Servizi"
 
-#~ msgid "window1"
-#~ msgstr "window1"
-
-#~ msgid "Service %s"
-#~ msgstr "Servizio %s"
-
-#~ msgid "Enable"
-#~ msgstr "Abilita"
-
-#~ msgid "Disable"
-#~ msgstr "Disabilita"
-
-#~ msgid "Customize"
-#~ msgstr "Personalizza"
-
-#~ msgid "Enable Default"
-#~ msgstr "Abilita come predefinito"
-
-#~ msgid "Enable All"
-#~ msgstr "Abilita tutti"
-
-#~ msgid "Disable All"
-#~ msgstr "Disabilita tutti"
-
-#~ msgid "Start"
-#~ msgstr "Avvia"
-
-#~ msgid "Restart"
-#~ msgstr "Riavvia"
-
-#~ msgid "Configure"
-#~ msgstr "Configura"
-
-#~ msgid "foobar"
-#~ msgstr "foobar"
-
-#~ msgid "barfoo"
-#~ msgstr "barfoo"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Il runlevel corrente è il %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "Runlevel"
-
-#~ msgid "label18"
-#~ msgstr "label18"
-
-#~ msgid "Start "
-#~ msgstr "Avvia "
-
-#~ msgid "Stop"
-#~ msgstr "Arresta"
-
-#~ msgid "Service control"
-#~ msgstr "Controllo servizio"
-
-#~ msgid "Status output"
-#~ msgstr "Output dello stato"
-
-#~ msgid "_Configure"
-#~ msgstr "_Configura"
-
-#~ msgid "Button Box"
-#~ msgstr "Button Box"
-
-#~ msgid "label16"
-#~ msgstr "label16"
-
-#~ msgid "Service %s:"
-#~ msgstr "Servizio %s:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright  2002-2008 Red Hat, Inc. e contributori"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "Servizio %s non trovato!"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "Il servizio %s è in esecuzione con una vecchia configurazione"
-
-#~ msgid "Service %s is running"
-#~ msgstr "Il servizio %s è in esecuzione"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "Il servizio %s riporta un errore"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "Il servizio %s è fermo"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "Attualmente abilitato nei runlevel %s"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "Abilitare %(name)s nei runlevel %(levels)s"
-
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "Il servizio <b>%(servicename)s</b> sarà avviato a richiesta dal servizio "
-#~ "xinetd e terminerà quando non avrà più nulla da fare."
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "Questo servizio sarà avviato a richiesta dal servizio xinetd e terminerà "
-#~ "quando non avrà più nulla da fare."
