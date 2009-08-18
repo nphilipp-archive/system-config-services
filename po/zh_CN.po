@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: system-config-services.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2009-03-30 15:01+1000\n"
+"PO-Revision-Date: 2009-08-18 10:05+1000\n"
 "Last-Translator: Leah Liu <lliu@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -117,7 +117,7 @@ msgstr "描述"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
+msgstr "会根据需要使用 xinetd 服务启动这个服务并在不需要时关闭。"
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -133,7 +133,7 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "版权 © 2002-2009 红帽公司及贡献者"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
@@ -252,7 +252,7 @@ msgstr "目前更新了这个服务。"
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
+msgstr "会根据需要使用 xinetd 服务启动 <b>%(servicename)s</b> 服务，并在不需要时关闭。"
 
 #: ../src/gui.py:322
 msgid ""
@@ -266,8 +266,7 @@ msgstr ""
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"启用了这个服务，但没有运行 <b>xinetd</b> 服务。没有它这个服务无法工作。"
+msgstr "启用了这个服务，但没有运行 <b>xinetd</b> 服务。没有它这个服务无法工作。"
 
 #: ../src/gui.py:846
 msgid ""
@@ -287,110 +286,3 @@ msgstr "服务程序管理："
 msgid "Services"
 msgstr "服务"
 
-#~ msgid "window1"
-#~ msgstr "视窗1"
-
-#~ msgid "Service %s"
-#~ msgstr "服务 %s"
-
-#~ msgid "Enable"
-#~ msgstr "启用"
-
-#~ msgid "Disable"
-#~ msgstr "禁用"
-
-#~ msgid "Customize"
-#~ msgstr "定制"
-
-#~ msgid "Enable Default"
-#~ msgstr "启用默认"
-
-#~ msgid "Enable All"
-#~ msgstr "启用所有"
-
-#~ msgid "Disable All"
-#~ msgstr "禁用所有"
-
-#~ msgid "Start"
-#~ msgstr "开始"
-
-#~ msgid "Restart"
-#~ msgstr "重启"
-
-#~ msgid "Configure"
-#~ msgstr "配置"
-
-#~ msgid "foobar"
-#~ msgstr "foobar"
-
-#~ msgid "barfoo"
-#~ msgstr "barfoo"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "目前的运行级别是 %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "运行级别"
-
-#~ msgid "label18"
-#~ msgstr "标签18"
-
-#~ msgid "Start "
-#~ msgstr "启动"
-
-#~ msgid "Stop"
-#~ msgstr "停止"
-
-#~ msgid "Service control"
-#~ msgstr "服务控制"
-
-#~ msgid "Status output"
-#~ msgstr "状态输出"
-
-#~ msgid "_Configure"
-#~ msgstr "配置（_C）"
-
-#~ msgid "Button Box"
-#~ msgstr "按钮框"
-
-#~ msgid "label16"
-#~ msgstr "标签16"
-
-#~ msgid "Service %s:"
-#~ msgstr "服务 %s："
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "红帽公司及贡献者版权所有 2002-2008"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "没有找到服务 %s！"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "正在使用原来的配置运行服务 %s"
-
-#~ msgid "Service %s is running"
-#~ msgstr "服务 %s 正在运行"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "服务 %s 报告了一个错误"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "停止了服务 %s"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "目前在运行级别 %s 中启用"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "在运行级别 %(levels)s 中启用 %(name)s"
-
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "将根据 xinetd 服务的需要启动 <b>%(servicename)s</b> 服务，并在不需要时终"
-#~ "止。"
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr "将根据 xinetd 服务的需要启动这个服务，并在不需要时终止。"
