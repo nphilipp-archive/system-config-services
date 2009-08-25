@@ -22,11 +22,14 @@
 
 from scservices.dbus import dbus_service_name
 
+import dbus
 import slip.dbus.polkit as polkit
 
 ##############################################################################
 
 class DBusServiceInfoProxy (object):
+    dbus_interface_name = "org.fedoraproject.Config.Services.Service"
+
     def __init__ (self, name, bus, service):
         self.name = name
         self.bus = bus
@@ -35,24 +38,29 @@ class DBusServiceInfoProxy (object):
         self.dbus_service_path = self.service.dbus_service_path
         self.dbus_object = bus.get_object (dbus_service_name,
                 self.dbus_service_path)
+        self.dbus_interface = dbus.Interface (self.dbus_object, self.dbus_interface_name)
 
 ##############################################################################
 
 class DBusSysVServiceInfoProxy (DBusServiceInfoProxy):
+    dbus_interface_name = "org.fedoraproject.Config.Services.SysVService"
+
     @property
     @polkit.enable_proxy
     def shortdescription (self):
-        return self.dbus_object.get_shortdescription (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+        return self.dbus_interface.get_shortdescription ()
 
     @property
     @polkit.enable_proxy
     def description (self):
-        return self.dbus_object.get_description (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+        return self.dbus_interface.get_description ()
 
 ##############################################################################
 
 class DBusXinetdServiceInfoProxy (DBusServiceInfoProxy):
+    dbus_interface_name = "org.fedoraproject.Config.Services.XinetdService"
+
     @property
     @polkit.enable_proxy
     def description (self):
-        return self.dbus_object.get_description (dbus_interface = "org.fedoraproject.Config.Services.XinetdService")
+        return self.dbus_interface.get_description ()

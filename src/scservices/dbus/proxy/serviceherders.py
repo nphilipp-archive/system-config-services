@@ -28,6 +28,7 @@ from scservices.dbus.proxy.services import DBusSysVServiceProxy, DBusXinetdServi
 
 from scservices.dbus import dbus_service_name, dbus_service_path
 
+import dbus
 import slip.dbus.polkit as polkit
 
 ##############################################################################
@@ -39,6 +40,7 @@ class DBusServiceHerderProxy (object):
         self.bus = bus
         self.dbus_service_path = self.object_path + self.object_name
         self.dbus_object = bus.get_object (dbus_service_name, self.dbus_service_path)
+        self.dbus_interface = dbus.Interface (self.dbus_object, "org.fedoraproject.Config.Services.ServiceHerder")
         self.services_dbus_object = bus.get_object (dbus_service_name, self.dbus_service_path + "/Services")
 
         self.services = {}
@@ -59,11 +61,11 @@ class DBusServiceHerderProxy (object):
     @property
     @polkit.enable_proxy
     def ready (self):
-        return self.dbus_object.is_ready (dbus_interface = "org.fedoraproject.Config.Services.ServiceHerder")
+        return self.dbus_interface.is_ready ()
 
     @polkit.enable_proxy
     def list_services (self):
-        return self.dbus_object.list_services (dbus_interface = "org.fedoraproject.Config.Services.ServiceHerder")
+        return self.dbus_interface.list_services ()
 
     class _Subscriber (object):
         def __init__ (self, remote_method_or_function, p, k):

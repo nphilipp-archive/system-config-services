@@ -24,6 +24,7 @@ from scservices.dbus.proxy.servicesinfo import DBusServiceInfoProxy, DBusSysVSer
 
 from scservices.dbus import dbus_service_name
 
+import dbus
 import slip.dbus.polkit as polkit
 from slip.util.hookable import HookableSet
 
@@ -31,6 +32,7 @@ from slip.util.hookable import HookableSet
 
 class DBusServiceProxy (object):
     info_class = DBusServiceInfoProxy
+    dbus_interface_name = "org.fedoraproject.Config.Services.Service"
 
     def __init__ (self, name, bus, herder):
         super (DBusServiceProxy, self).__init__ ()
@@ -40,6 +42,7 @@ class DBusServiceProxy (object):
 
         self.dbus_service_path = herder.dbus_service_path + "/Services/" + self.dbus_name
         self.dbus_object = bus.get_object (dbus_service_name, self.dbus_service_path)
+        self.dbus_interface = dbus.Interface (self.dbus_object, self.dbus_interface_name)
 
         self.info = self.info_class (name, bus, self)
 
@@ -54,53 +57,56 @@ class DBusServiceProxy (object):
 
     @polkit.enable_proxy
     def save (self):
-        self.dbus_object.save (dbus_interface = "org.fedoraproject.Config.Services.Service")
+        return self.dbus_interface.save ()
 
 ##############################################################################
 
 class DBusChkconfigServiceProxy (DBusServiceProxy):
+    dbus_interface_name = "org.fedoraproject.Config.Services.ChkconfigService"
+
     @polkit.enable_proxy
     def enable (self):
-        self.dbus_object.enable (dbus_interface = "org.fedoraproject.Config.Services.ChkconfigService")
+        return self.dbus_interface.enable ()
 
     @polkit.enable_proxy
     def disable (self):
-        self.dbus_object.disable (dbus_interface = "org.fedoraproject.Config.Services.ChkconfigService")
+        return self.dbus_interface.disable ()
 
     @polkit.enable_proxy
     def get_enabled (self):
-        return self.dbus_object.get_enabled (dbus_interface = "org.fedoraproject.Config.Services.ChkconfigService")
+        return self.dbus_interface.get_enabled ()
 
 ##############################################################################
 
 class DBusSysVServiceProxy (DBusChkconfigServiceProxy):
     info_class = DBusSysVServiceInfoProxy
+    dbus_interface_name = "org.fedoraproject.Config.Services.SysVService"
 
     @polkit.enable_proxy
     def start (self):
-        self.dbus_object.start (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+        return self.dbus_interface.start ()
 
     @polkit.enable_proxy
     def stop (self):
-        self.dbus_object.stop (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+        return self.dbus_interface.stop ()
 
     @polkit.enable_proxy
     def restart (self):
-        self.dbus_object.restart (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+        return self.dbus_interface.restart ()
 
     @polkit.enable_proxy
     def reload (self):
-        self.dbus_object.reload (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+        return self.dbus_interface.reload ()
 
     @property
     @polkit.enable_proxy
     def status (self):
-        return self.dbus_object.get_status (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+        return self.dbus_interface.get_status ()
 
     @property
     @polkit.enable_proxy
     def status_updates_running (self):
-        return self.dbus_object.get_status_updates_running (dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+        return self.dbus_interface.get_status_updates_running ()
 
     @polkit.enable_proxy
     def _get_runlevels (self):
@@ -109,7 +115,7 @@ class DBusSysVServiceProxy (DBusChkconfigServiceProxy):
             self._runlevels.add_hook (self._save_runlevels)
         self._runlevels.hooks_enabled = False
         self._runlevels.clear ()
-        self._runlevels.update (self.dbus_object.get_runlevels (dbus_interface = "org.fedoraproject.Config.Services.SysVService"))
+        self._runlevels.update (self.dbus_interface.get_runlevels ())
         self._runlevels.hooks_enabled = True
         return self._runlevels
 
@@ -123,7 +129,7 @@ class DBusSysVServiceProxy (DBusChkconfigServiceProxy):
 
     @polkit.enable_proxy
     def _save_runlevels (self):
-        self.dbus_object.set_runlevels (list (self._runlevels), dbus_interface = "org.fedoraproject.Config.Services.SysVService")
+        return self.dbus_interface.set_runlevels (list (self._runlevels))
 
     runlevels = property (_get_runlevels, _set_runlevels)
 
