@@ -11,7 +11,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.99.35
+Version: 0.99.36
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
@@ -115,6 +115,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Tue Aug 25 2009 Nils Philippsen <nils@redhat.com> - 0.99.36-1
+- support PolicyKit 1.0 (#500007)
+
 * Tue Aug 11 2009 Nils Philippsen <nils@redhat.com> - 0.99.35-1
 - use "chkconfig --type ..." if available (#467871)
 
