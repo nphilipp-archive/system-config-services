@@ -1,5 +1,5 @@
 # License: GPL v2 or later
-# Copyright Red Hat Inc. 2001 - 2008
+# Copyright Red Hat Inc. 2001 - 2009
 
 PKGNAME=system-config-services
 
@@ -19,7 +19,10 @@ LIBEXECDIR=$(PREFIX)/libexec
 
 DBUS_POLICY_DIR=$(SYSCONFDIR)/dbus-1/system.d
 DBUS_SERVICE_DIR=$(DATADIR)/dbus-1/system-services
-POLKIT_POLICY_DIR=$(DATADIR)/PolicyKit/policy
+POLKIT0_SUPPORTED=1
+POLKIT1_SUPPORTED=1
+POLKIT0_POLICY_DIR=$(DATADIR)/PolicyKit/policy
+POLKIT1_POLICY_DIR=$(DATADIR)/polkit-1/actions
 
 PKGDATADIR=$(DATADIR)/$(PKGNAME)
 GLADEDIR=$(PKGDATADIR)
@@ -58,7 +61,6 @@ install:	all py-install
 	mkdir -p $(DESTDIR)$(MANDIR)/man8
 	mkdir -p $(DESTDIR)$(DBUS_POLICY_DIR)
 	mkdir -p $(DESTDIR)$(DBUS_SERVICE_DIR)
-	mkdir -p $(DESTDIR)$(POLKIT_POLICY_DIR)
 
 	install -m 0644 pixmaps/*.png $(DESTDIR)$(PKGDATADIR)
 	install -m 0644 pixmaps/$(PKGNAME).png $(DESTDIR)/usr/share/icons/hicolor/48x48/apps
@@ -71,7 +73,14 @@ install:	all py-install
 
 	install -m 0644 config/org.fedoraproject.Config.Services.conf $(DESTDIR)$(DBUS_POLICY_DIR)/
 	install -m 0644 config/org.fedoraproject.Config.Services.service $(DESTDIR)$(DBUS_SERVICE_DIR)/
-	install -m 0644 config/org.fedoraproject.config.services.policy $(DESTDIR)$(POLKIT_POLICY_DIR)/
+	if test "x$(POLKIT0_SUPPORTED)" = "x1"; then \
+		mkdir -p $(DESTDIR)$(POLKIT0_POLICY_DIR); \
+		install -m 0644 config/org.fedoraproject.config.services.policy.0 $(DESTDIR)$(POLKIT0_POLICY_DIR)/org.fedoraproject.config.services.policy ; \
+	fi
+	if test "x$(POLKIT1_SUPPORTED)" = "x1"; then \
+		mkdir -p $(DESTDIR)$(POLKIT1_POLICY_DIR); \
+		install -m 0644 config/org.fedoraproject.config.services.policy.1 $(DESTDIR)$(POLKIT1_POLICY_DIR)/org.fedoraproject.config.services.policy ; \
+	fi
 
 	python -c 'import compileall; compileall.compile_dir ("'"$(DESTDIR)$(PKGDATADIR)"'", ddir="'"$(PKGDATADIR)"'", maxlevels=10, force=1)'
 	softdir=$(PKGDATADIR); \

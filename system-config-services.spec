@@ -1,6 +1,14 @@
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(0)")}
 %{!?python_version: %global python_version %(%{__python} -c "from distutils.sysconfig import get_python_version; print get_python_version()")}
 
+%if 0%{?fedora}%{?rhel} == 0 || 0%{?fedora} >= 12 || 0%{?rhel} >= 6
+%bcond_without polkit1
+%endif
+
+%if 0%{?fedora}%{?rhel} == 0 || 0%{?fedora} >= 11 || 0%{?rhel} >= 6
+%bcond_without polkitauthagent
+%endif
+
 Summary: Utility to start and stop system services
 Name: system-config-services
 Version: 0.99.35
@@ -26,9 +34,13 @@ Requires: pygtk2-libglade
 Requires: python >= 2.3.0
 Requires: dbus-python
 Requires: python-slip >= 0.1.11
+%if %{with polkit1}
+Requires: python-slip-dbus >= 0.2.0
+%else
 Requires: python-slip-dbus >= 0.1.15
+%endif
 Requires: python-slip-gtk
-%if 0%{?fedora} >= 11 || 0%{?rhel} >= 6
+%if %{with polkitauthagent}
 Requires: PolicyKit-authentication-agent
 %else
 Requires: PolicyKit-gnome
@@ -50,7 +62,13 @@ make %{?_smp_mflags}
 
 %install
 rm -rf %{buildroot}
-make DESTDIR=%buildroot install
+make DESTDIR=%buildroot \
+%if %{with polkit1}
+    POLKIT0_SUPPORTED=0 \
+%else
+    POLKIT1_SUPPORTED=0 \
+%endif
+    install
 
 desktop-file-install --vendor system --delete-original      \
   --dir %{buildroot}%{_datadir}/applications                \
@@ -88,7 +106,11 @@ rm -rf %{buildroot}
 
 %{_sysconfdir}/dbus-1/system.d/org.fedoraproject.Config.Services.conf
 %{_datadir}/dbus-1/system-services/org.fedoraproject.Config.Services.service
+%if %{with polkit1}
+%{_datadir}/polkit-1/actions/org.fedoraproject.config.services.policy
+%else
 %{_datadir}/PolicyKit/policy/org.fedoraproject.config.services.policy
+%endif
 
 %{_mandir}/*/system-config-services.8*
 
