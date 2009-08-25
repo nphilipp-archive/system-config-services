@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # scservices.dbus.proxy.serviceherders: DBus proxy objects for service herders
 #
-# Copyright © 2008 Red Hat, Inc.
+# Copyright © 2008, 2009 Red Hat, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -40,7 +40,7 @@ class DBusServiceHerderProxy (object):
         self.bus = bus
         self.dbus_service_path = self.object_path + self.object_name
         self.dbus_object = bus.get_object (dbus_service_name, self.dbus_service_path)
-        self.dbus_interface = dbus.Interface (self.dbus_object, "org.fedoraproject.Config.Services.ServiceHerder")
+        self.herder_interface = dbus.Interface (self.dbus_object, "org.fedoraproject.Config.Services.ServiceHerder")
         self.services_dbus_object = bus.get_object (dbus_service_name, self.dbus_service_path + "/Services")
 
         self.services = {}
@@ -61,11 +61,11 @@ class DBusServiceHerderProxy (object):
     @property
     @polkit.enable_proxy
     def ready (self):
-        return self.dbus_interface.is_ready ()
+        return self.herder_interface.is_ready ()
 
     @polkit.enable_proxy
     def list_services (self):
-        return self.dbus_interface.list_services ()
+        return self.herder_interface.list_services ()
 
     class _Subscriber (object):
         def __init__ (self, remote_method_or_function, p, k):

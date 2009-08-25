@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # scservices.dbus.proxy.services: DBus proxy objects for services
 #
-# Copyright © 2008 Red Hat, Inc.
+# Copyright © 2008, 2009 Red Hat, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -28,8 +28,6 @@ import slip.dbus.polkit as polkit
 ##############################################################################
 
 class DBusServiceInfoProxy (object):
-    dbus_interface_name = "org.fedoraproject.Config.Services.Service"
-
     def __init__ (self, name, bus, service):
         self.name = name
         self.bus = bus
@@ -38,29 +36,33 @@ class DBusServiceInfoProxy (object):
         self.dbus_service_path = self.service.dbus_service_path
         self.dbus_object = bus.get_object (dbus_service_name,
                 self.dbus_service_path)
-        self.dbus_interface = dbus.Interface (self.dbus_object, self.dbus_interface_name)
+        self.svc_interface = dbus.Interface (self.dbus_object, "org.fedoraproject.Config.Services.Service")
 
 ##############################################################################
 
 class DBusSysVServiceInfoProxy (DBusServiceInfoProxy):
-    dbus_interface_name = "org.fedoraproject.Config.Services.SysVService"
+    def __init__ (self, *p, **k):
+        super (DBusSysVServiceInfoProxy, self).__init__ (*p, **k)
+        self.sysv_interface = dbus.Interface (self.dbus_object, "org.fedoraproject.Config.Services.SysVService")
 
     @property
     @polkit.enable_proxy
     def shortdescription (self):
-        return self.dbus_interface.get_shortdescription ()
+        return self.sysv_interface.get_shortdescription ()
 
     @property
     @polkit.enable_proxy
     def description (self):
-        return self.dbus_interface.get_description ()
+        return self.sysv_interface.get_description ()
 
 ##############################################################################
 
 class DBusXinetdServiceInfoProxy (DBusServiceInfoProxy):
-    dbus_interface_name = "org.fedoraproject.Config.Services.XinetdService"
+    def __init__ (self, *p, **k):
+        super (DBusXinetdServiceInfoProxy, self).__init__ (*p, **k)
+        self.xinetd_interface = dbus.Interface (self.dbus_object, "org.fedoraproject.Config.Services.XinetdService")
 
     @property
     @polkit.enable_proxy
     def description (self):
-        return self.dbus_interface.get_description ()
+        return self.xinetd_interface.get_description ()
