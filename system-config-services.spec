@@ -118,6 +118,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Wed Aug 26 2009 Nils Philippsen <nils@redhat.com>
+- explain obsoleting old versions (#519300)
+
 * Tue Aug 25 2009 Nils Philippsen <nils@redhat.com> - 0.99.38-1
 - always allow access if properly authorized
 
