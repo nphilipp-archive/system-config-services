@@ -47,7 +47,7 @@ Requires: PolicyKit-gnome
 %endif
 Obsoletes: serviceconf <= 0.8.1
 Obsoletes: redhat-config-services <= 0.8.5
-# Until version 0.99.28, system-config-date contained online documentation.
+# Until version 0.99.28, system-config-services contained online documentation.
 # From version 0.99.29 on, online documentation is split off into its own
 # package system-config-services-docs. The following ensures that updating from
 # earlier versions gives you both the main package and documentation.
