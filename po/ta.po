@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: system-config-services.master.ta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2009-04-01 12:43+0530\n"
+"PO-Revision-Date: 2009-08-27 21:45+0530\n"
 "Last-Translator: I. Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -20,15 +20,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\\n\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
 "\n"
 
 #: ../src/system-config-services.glade:7
@@ -115,12 +106,8 @@ msgid "No service selected."
 msgstr "எந்த சேவையும் தேர்ந்தெடுக்கப்படவில்லை."
 
 #: ../src/system-config-services.glade:621
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"சேவை துவங்கியதும், பொதுவாக கணினி துவக்கப்படும், பின்னணியில் இயங்கி தேவையானபோது "
-"எழுப்பப்படும்."
+msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "சேவை துவங்கியதும், பொதுவாக கணினி துவக்கப்படும், பின்னணியில் இயங்கி தேவையானபோது எழுப்பப்படும்."
 
 #: ../src/system-config-services.glade:769
 #: ../src/system-config-services.glade:960
@@ -128,10 +115,8 @@ msgid "Description"
 msgstr "விளக்கம்"
 
 #: ../src/system-config-services.glade:867
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr ""
+msgid "This service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "இந்த சேவையானது xinetd சேவையின் வினவியதால் துவக்குகறிது மற்றும் எதுவும் செய்ய இல்லாத போது முடிக்கிறது."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -147,37 +132,23 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: ../src/system-config-services.glade:1231
 msgid "translator-credits"
@@ -187,7 +158,8 @@ msgstr "I. Felix <ifelix@redhat.com> 2008"
 msgid "Customize Runlevels"
 msgstr "தனிபயனாக்கப்பட்ட இயக்க நிலைகள்"
 
-#: ../src/system-config-services.glade:1351 ../src/gui.py:714
+#: ../src/system-config-services.glade:1351
+#: ../src/gui.py:714
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "<b>%(service)s</b> சேவையை இந்த இயக்க நிலைகளில் செயல்படுத்தவும்:"
@@ -216,7 +188,8 @@ msgstr "பெயர்"
 msgid "Remarks"
 msgstr "குறிப்புகள்"
 
-#: ../src/gui.py:174 ../src/gui.py:192
+#: ../src/gui.py:174
+#: ../src/gui.py:192
 msgid "This service is being refreshed right now."
 msgstr "இந்த சேவை இப்போது புதுப்பிக்கப்பட்டது."
 
@@ -255,12 +228,8 @@ msgstr "இந்த சேவை முடக்கப்பட்டது"
 
 #: ../src/gui.py:273
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service is started once, usually when the system "
-"is booted, runs in the background and wakes up when needed."
-msgstr ""
-"<b>%(servicename)s</b> சேவை துவங்கியதும், பொதுவாக கணினி துவக்கப்படும், பின்னணியில் "
-"இயங்கி தேவையானபோது எழுப்பப்படும்."
+msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "<b>%(servicename)s</b> சேவை துவங்கியதும், பொதுவாக கணினி துவக்கப்படும், பின்னணியில் இயங்கி தேவையானபோது எழுப்பப்படும்."
 
 #: ../src/gui.py:287
 msgid "This service is updated currently."
@@ -268,31 +237,19 @@ msgstr "இந்த சேவை தற்போது மேம்படுத
 
 #: ../src/gui.py:313
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has nothing more to do."
-msgstr ""
+msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "<b>%(servicename)s</b> சேவையானது xinetd சேவையின் வினவியதால் துவக்குகறிது மற்றும் எதுவும் செய்ய இல்லாத போது முடிக்கிறது."
 
 #: ../src/gui.py:322
-msgid ""
-"This service is enabled, but the <b>xinetd</b> package is not installed. "
-"This service does not work without it."
-msgstr ""
-"இந்த சேவை செயல்படுத்தப்பட்டது, ஆனால் <b>xinetd</b> தொகுப்பு நிறுவப்படவில்லை. இந்த சேவை "
-"இது இல்லாமல் வேலை செய்யாது."
+msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
+msgstr "இந்த சேவை செயல்படுத்தப்பட்டது, ஆனால் <b>xinetd</b> தொகுப்பு நிறுவப்படவில்லை. இந்த சேவை இது இல்லாமல் வேலை செய்யாது."
 
 #: ../src/gui.py:328
-msgid ""
-"This service is enabled, but the <b>xinetd</b> service is not running. This "
-"service does not work without it."
-msgstr ""
-"இந்த சேவை செயல்படுத்தப்பட்டது, ஆனால் <b>xinetd</b> சேவை இயங்கவில்லை. அது இல்லாமல் இது "
-"இயங்காது."
+msgid "This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."
+msgstr "இந்த சேவை செயல்படுத்தப்பட்டது, ஆனால் <b>xinetd</b> சேவை இயங்கவில்லை. அது இல்லாமல் இது இயங்காது."
 
 #: ../src/gui.py:846
-msgid ""
-"The help viewer could not be found. To be able to view help, the 'yelp' "
-"package needs to be installed."
+msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
 msgstr "உதவி காட்டியை காணவில்லை. நீங்கள் உதவியை காண 'yelp' தொகுப்பை நிறுவ வேண்டும்."
 
 #: ../system-config-services.desktop.in.h:1
@@ -307,112 +264,3 @@ msgstr "சேவை மேலாண்மை"
 msgid "Services"
 msgstr "சேவைகள்"
 
-#~ msgid "window1"
-#~ msgstr "window1"
-
-#~ msgid "Service %s"
-#~ msgstr "சேவை %s"
-
-#~ msgid "Enable"
-#~ msgstr "செயல்படுத்து"
-
-#~ msgid "Disable"
-#~ msgstr "செயல்நீக்கு"
-
-#~ msgid "Customize"
-#~ msgstr "தனிபயன்"
-
-#~ msgid "Enable Default"
-#~ msgstr "முன்னிருப்பை செயல்படுத்து"
-
-#~ msgid "Enable All"
-#~ msgstr "அனைத்தையும் செயல்படுத்து"
-
-#~ msgid "Disable All"
-#~ msgstr "அனைத்தையும் செயல்நீக்கு"
-
-#~ msgid "Start"
-#~ msgstr "துவக்கவும்"
-
-#~ msgid "Restart"
-#~ msgstr "மீண்டும் துவக்கவும்"
-
-#~ msgid "Configure"
-#~ msgstr "கட்டமை"
-
-#~ msgid "foobar"
-#~ msgstr "foobar"
-
-#~ msgid "barfoo"
-#~ msgstr "barfoo"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "தற்போதைய இயக்க நிலை %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "இயக்க நிலைகள்"
-
-#~ msgid "label18"
-#~ msgstr "label18"
-
-#~ msgid "Start "
-#~ msgstr "துவக்கு"
-
-#~ msgid "Stop"
-#~ msgstr "நிறுத்தவும்"
-
-#~ msgid "Service control"
-#~ msgstr "சேவை கட்டுப்பாடு"
-
-#~ msgid "Status output"
-#~ msgstr "நிலை வெளிப்பாடு"
-
-#~ msgid "_Configure"
-#~ msgstr "கட்டமை (_C)"
-
-#~ msgid "Button Box"
-#~ msgstr "பொத்தான் பெட்டி"
-
-#~ msgid "label16"
-#~ msgstr "label16"
-
-#~ msgid "Service %s:"
-#~ msgstr "சேவை %s:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright  2002-2008 Red Hat, Inc. and contributors"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "சேவை %s காணப்படவில்லை!"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "சேவை %s பழைய கட்டமைப்புடன் இயங்குகிறது"
-
-#~ msgid "Service %s is running"
-#~ msgstr "சேவை %s இயங்குகிறது"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "சேவை %s ஒரு பிழையை அறிக்கையிடுகிறது"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "சேவை %s நிறுத்தப்பட்டது"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "தற்போது இயங்குநிலைகள் %s செயல்படுத்தப்பட்டுள்ளது"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "%(name)s ஐ இயக்கநிலைகள் %(levels)sஇல் செயல்படுத்து"
-
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "<b>%(servicename)s</b> xinetd சேவையின் தேவையை பொருத்து துவக்கப்படும் மற்றும் "
-#~ "அதில் எதுவும் செய்ய வேண்டாமென்றால் முடிக்கப்படும்."
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "xinetd சேவையின் தேவையை பொருத்து துவக்கப்படும் மற்றும் அதில் எதுவும் செய்ய "
-#~ "வேண்டாமென்றால் முடிக்கப்படும்."
