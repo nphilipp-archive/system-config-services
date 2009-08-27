@@ -1,3 +1,4 @@
+# translation of ru.po to Russian
 # translation of ru.po to
 # translation of system-config-services.tip.ru.po to
 # Copyright (C) 2008 ORGANIZATION.
@@ -10,14 +11,15 @@
 # Anatoliy Guskov <anatoliy.guskov@gmail.com>, 2008.
 # Andrew Martynov <andrewm@inventa.ru>, 2008.
 # Yulia Poyarkova <yulia.poyarkova@redhat.com>, 2008, 2009.
+# Yulia Poyarkova <yulia.poyarkova@gmail.com>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2009-08-06 13:55+1000\n"
-"Last-Translator: Yulia Poyarkova <yulia.poyarkova@redhat.com>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2009-08-27 10:59+1000\n"
+"Last-Translator: Yulia Poyarkova <yulia.poyarkova@gmail.com>\n"
+"Language-Team: Russian <fedora-trans-ru@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -141,7 +143,7 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "© 2002-2009 Red Hat, Inc. и соавторы"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
@@ -304,98 +306,3 @@ msgstr "Управление службами"
 msgid "Services"
 msgstr "Службы"
 
-#~ msgid "window1"
-#~ msgstr "window1"
-
-#~ msgid "Service %s"
-#~ msgstr "Служба %s"
-
-#~ msgid "Enable"
-#~ msgstr "Включить"
-
-#~ msgid "Disable"
-#~ msgstr "Отключить"
-
-#~ msgid "Customize"
-#~ msgstr "Настроить"
-
-#~ msgid "Enable Default"
-#~ msgstr "Включить стандартные настройки"
-
-#~ msgid "Enable All"
-#~ msgstr "Включить все"
-
-#~ msgid "Disable All"
-#~ msgstr "Отключить все"
-
-#~ msgid "Start"
-#~ msgstr "Запустить"
-
-#~ msgid "Restart"
-#~ msgstr "Перезапустить"
-
-#~ msgid "Configure"
-#~ msgstr "Настроить"
-
-#~ msgid "foobar"
-#~ msgstr "foobar"
-
-#~ msgid "barfoo"
-#~ msgstr "barfoo"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Текущий уровень выполнения -- %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "Уровни выполнения"
-
-#~ msgid "label18"
-#~ msgstr "label18"
-
-#~ msgid "Start "
-#~ msgstr "Старт"
-
-#~ msgid "Stop"
-#~ msgstr "Остановка"
-
-#~ msgid "Service control"
-#~ msgstr "Управление службой"
-
-#~ msgid "Status output"
-#~ msgstr "Вывод статуса"
-
-#~ msgid "_Configure"
-#~ msgstr "_Настроить"
-
-#~ msgid "Button Box"
-#~ msgstr "Контейнер с кнопками"
-
-#~ msgid "label16"
-#~ msgstr "label16"
-
-#~ msgid "Service %s:"
-#~ msgstr "Служба %s:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "© 2002-2008 Red Hat, Inc. и др."
-
-#~ msgid "Service %s not found!"
-#~ msgstr "Служба  %s не найдена."
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "Служба %s выполняется со старыми настройками"
-
-#~ msgid "Service %s is running"
-#~ msgstr "Служба %s выполняется"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "Получена ошибка службы %s"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "Служба %s остановлена"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "Включено на уровнях выполнения %s"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "Включить %(name)s на уровнях выполнения %(levels)s"
