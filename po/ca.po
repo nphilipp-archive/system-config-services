@@ -129,6 +129,8 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
+"Aquest servei serà iniciat a petició per l'xinetd i acabarà quan no tingui "
+"res més a fer."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -144,7 +146,7 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright © 2002-2009 Red Hat, Inc. i col·laboradors"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
@@ -270,6 +272,8 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
+"El servei <b>%(servicename)s</b> serà iniciat a petició per l'xinetd i acabarà quan no tingui "
+"res més a fer."
 
 #: ../src/gui.py:322
 msgid ""
