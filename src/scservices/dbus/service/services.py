@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # scservices.dbus.service.services: DBus wrappers for services
 #
-# Copyright © 2008 Red Hat, Inc.
+# Copyright © 2008, 2009 Red Hat, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -19,7 +19,7 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #
 # Authors:
-# Nils Philippsen <nphilipp@redhat.com>
+# Nils Philippsen <nils@redhat.com>
 
 import dbus.service
 import slip.dbus.service
