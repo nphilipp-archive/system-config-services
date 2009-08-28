@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2009-03-23 11:38+0200\n"
+"PO-Revision-Date: 2009-08-29 01:12+0300\n"
 "Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
 "Language-Team: Finnish <laatu@lokalisointi.org>\n"
 "MIME-Version: 1.0\n"
@@ -118,6 +118,8 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
+"Xinetd-palvelu käynnistää tämän palvelun tarvittaessa ja tämä palvelu "
+"lopettaa toimintansa, kun sillä ei enää ole mitään tehtävää."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -133,7 +135,7 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Tekijänoikeudet © 2002-2009 Red Hat, Inc. ja osallistujat"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
@@ -258,6 +260,8 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
+"Xinetd käynnistää <b>%(servicename)s</b> -palvelun tarvittaessa ja palvelu "
+"lopettaa toimintansa, kun sillä ei ole enää mitään tehtävää."
 
 #: ../src/gui.py:322
 msgid ""
