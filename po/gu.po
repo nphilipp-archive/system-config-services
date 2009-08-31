@@ -1,4 +1,4 @@
-# translation of gu.po to Gujarati
+# translation of system-config-services.po to Gujarati
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
@@ -6,10 +6,10 @@
 # Sweta Kothari <swkothar@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: gu\n"
+"Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2009-07-07 06:39-0400\n"
+"PO-Revision-Date: 2009-08-31 19:27+0530\n"
 "Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
 "Language-Team: Gujarati\n"
 "MIME-Version: 1.0\n"
@@ -150,7 +150,7 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright © 2002-2009 Red Hat, Inc. અને ફાળકો"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
@@ -314,98 +314,3 @@ msgstr "સેવા વ્યવસ્થાપન"
 msgid "Services"
 msgstr "સેવાઓ"
 
-#~ msgid "window1"
-#~ msgstr "વિન્ડો1"
-
-#~ msgid "Service %s"
-#~ msgstr "સેવા %s"
-
-#~ msgid "Enable"
-#~ msgstr "સક્રિય કરો"
-
-#~ msgid "Disable"
-#~ msgstr "નિષ્ક્રિય કરો"
-
-#~ msgid "Customize"
-#~ msgstr "રુચિને અનુસાર બનાવવુ"
-
-#~ msgid "Enable Default"
-#~ msgstr "મૂળભૂતને સક્રિય કરો"
-
-#~ msgid "Enable All"
-#~ msgstr "બધાને સક્રિય કરો"
-
-#~ msgid "Disable All"
-#~ msgstr "બધાને નિષ્ક્રિય કરો"
-
-#~ msgid "Start"
-#~ msgstr "શરૂ"
-
-#~ msgid "Restart"
-#~ msgstr "પુનઃશરૂ કરો"
-
-#~ msgid "Configure"
-#~ msgstr "રૂપરેખાંકન"
-
-#~ msgid "foobar"
-#~ msgstr "foobar"
-
-#~ msgid "barfoo"
-#~ msgstr "barfoo"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "તાજેતરનું રનલેવલ %s છે"
-
-#~ msgid "Runlevels"
-#~ msgstr "રનલેવલો"
-
-#~ msgid "label18"
-#~ msgstr "લેબલ18"
-
-#~ msgid "Start "
-#~ msgstr "શરૂ કરો"
-
-#~ msgid "Stop"
-#~ msgstr "અટકાવો"
-
-#~ msgid "Service control"
-#~ msgstr "સેવા નિયંત્રણ"
-
-#~ msgid "Status output"
-#~ msgstr "સ્થિતી આઉટપુટ"
-
-#~ msgid "_Configure"
-#~ msgstr "રૂપરેખાંકન (_C)"
-
-#~ msgid "Button Box"
-#~ msgstr "બટન બોક્સ"
-
-#~ msgid "label16"
-#~ msgstr "લેબલ16"
-
-#~ msgid "Service %s:"
-#~ msgstr "સેવા %s:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright  2002-2008 Red Hat, Inc. and contributors"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "સેવા %s શોધાઇ નથી!"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "જૂના રૂપરેખાંકન સાથે સેવા %s ચાલી રહી છે"
-
-#~ msgid "Service %s is running"
-#~ msgstr "સેવા %s ચાલી રહી છે"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "સેવા %s એ ભૂલનો રીપોર્ટ કરે છે"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "સેવા %s બંધ થયેલ છે"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "રનલેવલો %s માં અત્યારે સક્રિય થયેલ છે"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "રનલેવલો %(levels)s માં %(name)s સક્રિય કરો"
