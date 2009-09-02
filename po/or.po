@@ -10,14 +10,17 @@ msgstr ""
 "Project-Id-Version: system-config-services.master.or\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2009-03-31 17:51+0530\n"
+"PO-Revision-Date: 2009-09-01 18:01+0530\n"
 "Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
 "Language-Team: Oriya <oriya-it@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n!=1);\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
+"\n"
+"\n"
+"\n"
 "\n"
 "\n"
 "\n"
@@ -27,7 +30,7 @@ msgstr ""
 #: ../src/system-config-services.glade:7
 #: ../src/system-config-services.glade:1223
 msgid "Service Configuration"
-msgstr "ସେବା ବିନ୍ଯାସ କରନ୍ତୁ"
+msgstr "ସର୍ଭିସ ବିନ୍ଯାସ"
 
 #: ../src/system-config-services.glade:38
 msgid "_Program"
@@ -125,6 +128,8 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
+"ଏହି ସର୍ଭିସଟି ଆବଶ୍ୟକତା ଅନୁସାରେ xinetd ସର୍ଭିସ ଦ୍ୱାରା ଆରମ୍ଭ କରାଯାଇଥାଏ ଏବଂ "
+"ଯେତେବେଳେ କିଛି କରିବାକୁ ନଥାଏ ସେତେବେଳେ ସମାପ୍ତ ହୋଇଥାଏ।"
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -140,7 +145,7 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
@@ -265,6 +270,8 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
+"ଏହି <b>%(servicename)s</b> ସର୍ଭିସଟି ଆବଶ୍ୟକତା ଅନୁସାରେ xinetd ସର୍ଭିସ ଦ୍ୱାରା ଆରମ୍ଭ "
+"କରାହେବ ଏବଂ ଯେତେବେଳେ କିଛି କରିବାକୁ ନଥାଏ ସେତେବେଳେ ସମାପ୍ତ ହୋଇଥାଏ।"
 
 #: ../src/gui.py:322
 msgid ""
@@ -286,8 +293,7 @@ msgstr ""
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"ସହାୟକ ପ୍ରଦର୍ଶକ ମିଳୁନାହିଁ. ସହାୟତା ଦେଖିବାପାଇଁ ଆପଣଙ୍କୁ 'yelp' ପ୍ଯାକେଜ ସ୍ଥାପନ କରିବାକୁ ପଡିବ."
+msgstr "ସହାୟକ ପ୍ରଦର୍ଶକ ମିଳୁନାହିଁ. ସହାୟତା ଦେଖିବାପାଇଁ ଆପଣଙ୍କୁ 'yelp' ପ୍ଯାକେଜ ସ୍ଥାପନ କରିବାକୁ ପଡିବ."
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -301,112 +307,3 @@ msgstr "ସେବା ପରିଚାଳନ"
 msgid "Services"
 msgstr "ସେବା"
 
-#~ msgid "window1"
-#~ msgstr "ୱିଣ୍ଡୋ1"
-
-#~ msgid "Service %s"
-#~ msgstr "ସର୍ଭିସ %s"
-
-#~ msgid "Enable"
-#~ msgstr "ସକ୍ରିୟକରନ୍ତୁ"
-
-#~ msgid "Disable"
-#~ msgstr "ନିଷ୍କ୍ରିୟକରନ୍ତୁ"
-
-#~ msgid "Customize"
-#~ msgstr "ଇଚ୍ଛାରୂପଣ"
-
-#~ msgid "Enable Default"
-#~ msgstr "ପୂର୍ବନିର୍ଦ୍ଧାରିତକୁ ସକ୍ରିୟକରନ୍ତୁ"
-
-#~ msgid "Enable All"
-#~ msgstr "ସମସ୍ତଙ୍କୁ ସକ୍ରିୟକରନ୍ତୁ"
-
-#~ msgid "Disable All"
-#~ msgstr "ସମସ୍ତଙ୍କୁ ନିଷ୍କ୍ରିୟକରନ୍ତୁ"
-
-#~ msgid "Start"
-#~ msgstr "ପ୍ରାରମ୍ଭ"
-
-#~ msgid "Restart"
-#~ msgstr "ପୁନଃପ୍ରାରମ୍ଭ କରନ୍ତୁ"
-
-#~ msgid "Configure"
-#~ msgstr "ବିନ୍ୟାସକରନ୍ତୁ"
-
-#~ msgid "foobar"
-#~ msgstr "ଫୁବାର"
-
-#~ msgid "barfoo"
-#~ msgstr "ବାରଫୁ"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "ପ୍ରଚଳିତ ଚାଲିବା ସ୍ତରଟି ହେଉଛି %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "ଚାଲିବା ସ୍ତରଗୁଡ଼ିକ"
-
-#~ msgid "label18"
-#~ msgstr "ସ୍ତର 18"
-
-#~ msgid "Start "
-#~ msgstr "ପ୍ରାରମ୍ଭ"
-
-#~ msgid "Stop"
-#~ msgstr "ବିରାମ"
-
-#~ msgid "Service control"
-#~ msgstr "ସର୍ଭିସ ନିୟନ୍ତ୍ରଣ"
-
-#~ msgid "Status output"
-#~ msgstr "ଅବସ୍ଥିତି ଫଳାଫଳ"
-
-#~ msgid "_Configure"
-#~ msgstr "ବିନ୍ୟାସକରନ୍ତୁ (_C)"
-
-#~ msgid "Button Box"
-#~ msgstr "ବଟନ ବାକ୍ସ"
-
-#~ msgid "label16"
-#~ msgstr "ସ୍ତର 16"
-
-#~ msgid "Service %s:"
-#~ msgstr "ସର୍ଭିସ %s:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright  2002-2008 Red Hat, Inc. and contributors"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "ସର୍ଭିସ %s ମିଳୁନାହିଁ!"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "ସର୍ଭିସ %s ପୁରୁଣା ବିନ୍ୟାସ ସହିତ ଚାଲୁଅଛି"
-
-#~ msgid "Service %s is running"
-#~ msgstr "ସର୍ଭିସ %s ଚାଲୁଅଛି"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "ସର୍ଭିସ %s ତ୍ରୁଟି ଖବର କରେ"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "ସର୍ଭିସ %s ଅଟକିଯାଇଛି"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "ବର୍ତ୍ତମାନ ଚାଲିବା ସ୍ତର %s ରେ ସକ୍ରିୟ କରାଯାଇଛି"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "ଚାଲିବା ସ୍ତର %(levels)s ରେ %(name)sକୁ ସକ୍ରିୟକରନ୍ତୁ"
-
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "<b>%(servicename)s</b> ସର୍ଭିସକୁ ଆବଶ୍ୟକ ହେଲେ xinetd ସର୍ଭିସ ଦ୍ୱାରା ଆରମ୍ଭ କରାଯିବ ଏବଂ "
-#~ "ଯେତେବେଳେ କିଛି କରିବାର ନଥିବ ସେତେବେଳେ ସମାପ୍ତ ହୋଇଯିବ."
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "ଏହି ସର୍ଭିସକୁ ଆବଶ୍ୟକ ହେଲେ xinetd ସର୍ଭିସ ଦ୍ୱାରା ଆରମ୍ଭ କରାଯିବ ଏବଂ ଯେତେବେଳେ କିଛି କରିବାର "
-#~ "ନଥିବ ସେତେବେଳେ ସମାପ୍ତ ହୋଇଯିବ."
