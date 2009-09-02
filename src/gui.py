@@ -32,7 +32,7 @@ import slip.gtk
 
 import locale
 import gettext
-gettext.install ('system-config-services', codeset = locale.getpreferredencoding ())
+gettext.install ('system-config-services', codeset = locale.getpreferredencoding (), names = ["gettext"])
 
 from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED, SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, SVC_STATUS_CHANGED, SVC_HERDER_READY
 
