@@ -1,4 +1,4 @@
-# translation of system-config-services.master.mr.po to marathi
+# translation of system-config-services.master.po to Marathi
 # Marathi translations for PACKAGE package.
 # Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the system-config-services package.
@@ -7,14 +7,15 @@
 # Rahul Bhalerao <rbhalera@redhat.com>, 2006.
 # Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006.
 # Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008, 2009.
+# Sandeep Shedmake <sshedmak@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.master.mr\n"
+"Project-Id-Version: system-config-services.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2009-03-31 19:55+0530\n"
-"Last-Translator: Sandeep Shedmake <sandeep.shedmake@gmail.com>\n"
-"Language-Team: marathi\n"
+"PO-Revision-Date: 2009-09-02 17:53+0530\n"
+"Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
+"Language-Team: Marathi <fedora-trans-mr@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -121,7 +122,7 @@ msgstr "वर्णन"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
+msgstr "ही सेवा xinetd द्वारे आवश्यकताप्रमाणे सुरू केले जाईल व काहिच कार्य नसल्यावर समाप्त होईल."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -137,7 +138,7 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "सर्वहक्काधिकार © 2002-2009 Red Hat, Inc. व सहभागी"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
@@ -173,7 +174,7 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006; संदिप शेडमाके <sandeep."
-"shedmake@gmail.com>, 2008, 2009."
+"shedmake@gmail.com>, 2008, 2009; संदिप शेडमाके <sshedmak@redhat.com>, 2009."
 
 #: ../src/system-config-services.glade:1280
 msgid "Customize Runlevels"
@@ -186,7 +187,7 @@ msgstr "या रनलेवल अंतर्गत <b>%(service)s</b> स�
 
 #: ../src/system-config-services.glade:1395
 msgid "Runlevel _2"
-msgstr "रनलेवल 2 (_2)"
+msgstr "रनलेव्हल 2 (_2)"
 
 #: ../src/system-config-services.glade:1414
 msgid "Runlevel _3"
@@ -264,6 +265,8 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
+"<b>%(servicename)s</b> सेवा xinetd द्वारे आवश्यकताप्रमाणे सुरू केले जाईल व "
+"काहिच कार्य नसल्यावर समाप्त होईल."
 
 #: ../src/gui.py:322
 msgid ""
@@ -285,8 +288,7 @@ msgstr ""
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"मदत प्रदर्शक आढळले नाही. मदत पहाण्याकरीता, 'yelp' संकुल प्रतिष्ठापीत करणे आवश्यक आहे."
+msgstr "मदत प्रदर्शक आढळले नाही. मदत पहाण्याकरीता, 'yelp' संकुल प्रतिष्ठापीत करणे आवश्यक आहे."
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -300,112 +302,3 @@ msgstr "सेवा व्यवस्थापन"
 msgid "Services"
 msgstr "सेवा"
 
-#~ msgid "window1"
-#~ msgstr "window1"
-
-#~ msgid "Service %s"
-#~ msgstr "सेवा %s"
-
-#~ msgid "Enable"
-#~ msgstr "कार्यान्वीत"
-
-#~ msgid "Disable"
-#~ msgstr "अकार्यान्वीत"
-
-#~ msgid "Customize"
-#~ msgstr "इच्छिक करा"
-
-#~ msgid "Enable Default"
-#~ msgstr "मुलभूत कार्यान्वीत करा"
-
-#~ msgid "Enable All"
-#~ msgstr "सर्व कार्यान्वीत करा"
-
-#~ msgid "Disable All"
-#~ msgstr "सर्व अकार्यान्वीत करा"
-
-#~ msgid "Start"
-#~ msgstr "आरंभ"
-
-#~ msgid "Restart"
-#~ msgstr "पुनःआरंभ"
-
-#~ msgid "Configure"
-#~ msgstr "संयोजन"
-
-#~ msgid "foobar"
-#~ msgstr "foobar"
-
-#~ msgid "barfoo"
-#~ msgstr "barfoo"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "वर्तमान रनलेवल %s आहे"
-
-#~ msgid "Runlevels"
-#~ msgstr "रनलेवल"
-
-#~ msgid "label18"
-#~ msgstr "लेबल18"
-
-#~ msgid "Start "
-#~ msgstr "सुरू करा"
-
-#~ msgid "Stop"
-#~ msgstr "थांबा"
-
-#~ msgid "Service control"
-#~ msgstr "सेवा नियंत्रण"
-
-#~ msgid "Status output"
-#~ msgstr "स्थिती आऊटपुट"
-
-#~ msgid "_Configure"
-#~ msgstr "संयोजन (_C)"
-
-#~ msgid "Button Box"
-#~ msgstr "बटन बॉक्स्"
-
-#~ msgid "label16"
-#~ msgstr "लेबल16"
-
-#~ msgid "Service %s:"
-#~ msgstr "सेवा %s:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright  2002-2008 Red Hat, Inc. and contributors"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "सेवा %s आढळले नाही!"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "सेवा %s जुनी संयोजनासह कार्यरत आहे"
-
-#~ msgid "Service %s is running"
-#~ msgstr "सेवा %s कार्यरत आहे"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "सेवा %s त्रुटी दर्शवितो"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "सेवा %s थांबविली गेली"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "वर्तमानक्षणी रनलेवल %s अंतर्गत कार्यान्वीत केले गेले"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "रनलेवल %(levels)s अंतर्गत %(name)s कार्यान्वीत करा"
-
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "xinetd सेवा द्वारे विनंती केल्यावरच <b>%(servicename)s</b> सेवा सुरू केली जाते व "
-#~ "मोकळले असल्यावरच समाप्त केले जाते."
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "ही सेवा xinetd सेवा द्वारे आवश्यकता नुरूप सुरू केली जाईल व कुठलेही कार्य हाताळत नसल्यास "
-#~ "समाप्त होईल."
