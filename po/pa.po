@@ -1,4 +1,4 @@
-# translation of pa.po to Punjabi
+# translation of system-config-services.master.pa.po to Punjabi
 # <kbstpunjab@netscape.net>
 #
 #
@@ -10,16 +10,16 @@
 # Jaswinder Singh <jsingh@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: pa\n"
+"Project-Id-Version: system-config-services.master.pa\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2009-04-02 08:24+0000\n"
+"PO-Revision-Date: 2009-09-02 14:32+0530\n"
 "Last-Translator: Jaswinder Singh <jsingh@redhat.com>\n"
-"Language-Team: American English <kde-i18n-doc@kde.org>\n"
+"Language-Team: Punjabi <Punjabi-users@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 0.3\n"
+"X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "\n"
 "\n"
@@ -124,7 +124,7 @@ msgstr "ਵੇਰਵਾ"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
+msgstr "ਇਸ ਸਰਵਿਸ ਨੂੰ xinetd ਸਰਵਿਸ ਦੀ ਲੋੜ ਮੁਤਾਬਿਕ ਚਾਲੂ ਕੀਤਾ ਜਾਂਦਾ ਹੈ ਅਤੇ ਲੋੜ ਤੋਂ ਬਾਅਦ ਬੰਦ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।"
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -140,7 +140,7 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "ਹੱਕ ਰਾਖਵੇਂ © 2002-2009 Red Hat, Inc. ਅਤੇ ਹਿੱਸੇਦਾਰ"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
@@ -262,7 +262,7 @@ msgstr "ਹੁਣ ਇਹ ਸਰਵਿਸ ਅੱਪਡੇਟ ਹੋ ਰਹੀ ਹ
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
+msgstr "<b>%(servicename)s</b> ਸਰਵਿਸ ਨੂੰ xinetd ਸਰਵਿਸ ਦੀ ਲੋੜ ਮੁਤਾਬਿਕ ਚਾਲੂ ਕੀਤਾ ਜਾਂਦਾ ਹੈ ਅਤੇ ਲੋੜ ਤੋਂ ਬਾਅਦ ਬੰਦ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।"
 
 #: ../src/gui.py:322
 msgid ""
@@ -298,112 +298,3 @@ msgstr "ਸੇਵਾ ਪਰਬੰਧ"
 msgid "Services"
 msgstr "ਸਰਵਿਸਾਂ"
 
-#~ msgid "window1"
-#~ msgstr "window1"
-
-#~ msgid "Service %s"
-#~ msgstr "ਸਰਵਿਸ %s"
-
-#~ msgid "Enable"
-#~ msgstr "ਯੋਗ"
-
-#~ msgid "Disable"
-#~ msgstr "ਅਯੋਗ"
-
-#~ msgid "Customize"
-#~ msgstr "ਪਸੰਦ"
-
-#~ msgid "Enable Default"
-#~ msgstr "ਮੂਲ ਯਗ"
-
-#~ msgid "Enable All"
-#~ msgstr "ਸਭ ਯੋਗ"
-
-#~ msgid "Disable All"
-#~ msgstr "ਸਭ ਅਯੋਗ"
-
-#~ msgid "Start"
-#~ msgstr "ਸ਼ੁਰੂ"
-
-#~ msgid "Restart"
-#~ msgstr "ਮੁਡ਼ ਚਾਲੂ"
-
-#~ msgid "Configure"
-#~ msgstr "ਸੰਰਚਨਾ"
-
-#~ msgid "foobar"
-#~ msgstr "foobar"
-
-#~ msgid "barfoo"
-#~ msgstr "barfoo"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "ਮੌਜੂਦਾ ਰੰਨਲੈਵਲ %s ਹੈ"
-
-#~ msgid "Runlevels"
-#~ msgstr "ਰਨਲੈਵਲ"
-
-#~ msgid "label18"
-#~ msgstr "label18"
-
-#~ msgid "Start "
-#~ msgstr "ਸ਼ੁਰੂ "
-
-#~ msgid "Stop"
-#~ msgstr "ਰੋਕੋ"
-
-#~ msgid "Service control"
-#~ msgstr "ਸਰਵਿਸ ਕੰਟਰੋਲ"
-
-#~ msgid "Status output"
-#~ msgstr "ਹਾਲਤ ਆਊਟਪੁੱਟ"
-
-#~ msgid "_Configure"
-#~ msgstr "ਸੰਰਚਨਾ(_C)"
-
-#~ msgid "Button Box"
-#~ msgstr "ਬਟਨ ਬਾਕਸ"
-
-#~ msgid "label16"
-#~ msgstr "label16"
-
-#~ msgid "Service %s:"
-#~ msgstr "ਸਰਵਿਸ %s:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "ਕਾਪੀਰਾਈਟ  2002-2008 Red Hat, Inc. ਅਤੇ ਹਿੱਸੇਦਾਰ"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "ਸਰਵਿਸ %s ਨਹੀਂ ਲੱਭੀ!"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "ਸਰਵਿਸ %s ਪੁਰਾਣੀ ਸੰਰਚਨਾ ਨਾਲ ਚੱਲ ਰਹੀ ਹੈ।"
-
-#~ msgid "Service %s is running"
-#~ msgstr "ਸਰਵਿਸ %s ਚੱਲ ਰਹੀ ਹੈ"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "ਸਰਵਿਸ %s ਨੇ ਇੱਕ ਗਲਤੀ ਦਿੱਤੀ ਹੈ"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "ਸਰਵਿਸ %s ਰੋਕੀ ਗਈ ਹੈ"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "ਇਸ ਵੇਲੇ ਰਨਲੈਵਲ %s ਵਿਚ ਚੱਲ ਰਿਹਾ"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "%(name)s ਨੂੰ ਰੰਨਲੈਵਲਾਂ %(levels)s ਵਿੱਚ ਯੋਗ ਕਰੋ"
-
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "<b>%(servicename)s</b> ਸਰਵਿਸ xinetd ਦੀ ਲੋੜ ਮੁਤਾਬਿਕ ਚਾਲੂ ਕੀਤੀ ਜਾਵੇਗੀ ਅਤੇ ਮੁਕੰਮਲ "
-#~ "ਹੋਣ ਤੇ ਬੰਦ ਹੋ ਜਾਂਦੀ ਹੈ।"
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "ਇਹ ਸਰਵਿਸ xinetd ਸਰਵਿਸ ਦੁਆਰਾ ਲੋੜ ਮੁਤਾਬਿਕ ਚਾਲੂ ਕੀਤੀ ਜਾਵੇਗੀ ਅਤੇ ਮੁਕੰਮਲ ਹੋਣ ਤੇ ਬੰਦ ਹੋ "
-#~ "ਜਾਵੇਗੀ।"
