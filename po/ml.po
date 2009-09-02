@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: system-config-services.master.ml\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2009-04-02 04:03+0530\n"
+"PO-Revision-Date: 2009-09-02 09:27+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -124,6 +124,8 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
+"xinetd സര്‍വീസിന്റെ ആവശ്യപ്രകാരം ഈ സര്‍വീസ് ആരംഭിക്കുന്നു. എല്ലാ പ്രക്രിയകളും "
+"അവസാനിക്കുമ്പോള്‍ ഈ സര്‍വീസ് അവസാനിക്കുന്നു."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -139,7 +141,7 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "പകര്‍പ്പവകാശം © 2002-2009 Red Hat, Inc.-ഉം മറ്റു് സംഭാവനക്കാരും"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
@@ -262,6 +264,8 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
+"xinetd സര്‍വീസിന്റെ ആവശ്യപ്രകാരം <b>%(servicename)s</b> ആരംഭിക്കുന്നു. എല്ലാ പ്രക്രിയകളും "
+"അവസാനിക്കുമ്പോള്‍ ഈ സര്‍വീസ് അവസാനിക്കുന്നു."
 
 #: ../src/gui.py:322
 msgid ""
@@ -275,8 +279,7 @@ msgstr ""
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സേവനം പ്രവര്‍ത്തിക്കുന്നതല്ല."
+msgstr "ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സേവനം പ്രവര്‍ത്തിക്കുന്നതല്ല."
 
 #: ../src/gui.py:846
 msgid ""
@@ -298,112 +301,3 @@ msgstr "സര്‍വീസ് മാനേജ്മെന്റ്"
 msgid "Services"
 msgstr "സേവനങ്ങള്‍"
 
-#~ msgid "window1"
-#~ msgstr "window1"
-
-#~ msgid "Service %s"
-#~ msgstr "സേവനം %s"
-
-#~ msgid "Enable"
-#~ msgstr "പ്രവര്‍ത്തന സജ്ജം"
-
-#~ msgid "Disable"
-#~ msgstr "പ്രവര്‍ത്തന രഹിതം"
-
-#~ msgid "Customize"
-#~ msgstr "യഥേഷ്ടമാക്കുക"
-
-#~ msgid "Enable Default"
-#~ msgstr "സഹജമായതു് പ്രവര്‍ത്തന സജ്ജമാക്കുക"
-
-#~ msgid "Enable All"
-#~ msgstr "എല്ലാം സജ്ജമാക്കുക"
-
-#~ msgid "Disable All"
-#~ msgstr "എല്ലാം പ്രവര്‍ത്തന രഹിതമാക്കുക"
-
-#~ msgid "Start"
-#~ msgstr "ആരംഭിക്കുക"
-
-#~ msgid "Restart"
-#~ msgstr "വീണ്ടും ആരംഭിക്കുക"
-
-#~ msgid "Configure"
-#~ msgstr "ക്രമീകരിക്കുക"
-
-#~ msgid "foobar"
-#~ msgstr "foobar"
-
-#~ msgid "barfoo"
-#~ msgstr "barfoo"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "നിലവിലുള്ള റണ്‍ലവല്‍ %s ആണു്"
-
-#~ msgid "Runlevels"
-#~ msgstr "റണ്‍ലവലുകള്‍"
-
-#~ msgid "label18"
-#~ msgstr "label18"
-
-#~ msgid "Start "
-#~ msgstr "ആരംഭിക്കുക"
-
-#~ msgid "Stop"
-#~ msgstr "നിര്‍ത്തുക"
-
-#~ msgid "Service control"
-#~ msgstr "സര്‍വീസ് കണ്ട്രോള്‍"
-
-#~ msgid "Status output"
-#~ msgstr "നിലവാരത്തിന്റെ ഔട്ട്പുട്ട്"
-
-#~ msgid "_Configure"
-#~ msgstr "_ക്രമീകരിക്കുക"
-
-#~ msgid "Button Box"
-#~ msgstr "ബട്ടണ്‍ ബോക്സ്"
-
-#~ msgid "label16"
-#~ msgstr "label16"
-
-#~ msgid "Service %s:"
-#~ msgstr "സേവനം %s:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright  2002-2008 Red Hat, Inc. -ഉം സംഭാവനക്കാരും"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "%s സേവനം ലഭ്യമല്ല!"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "%s സേവനം പഴയ ക്രമികരണത്തിലാണു് പ്രവര്‍ത്തിക്കുന്നതു്"
-
-#~ msgid "Service %s is running"
-#~ msgstr "%s എന്ന സേവനം പ്രവര്‍ത്തനത്തിലാണു്"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "%s സേവനം ഒരു പിശകു് രേഖപ്പെടുത്തുന്നു"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "%s സേവനം നിര്‍ത്തിയിരിക്കുന്നു"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "നിലവില്‍ %s റണ്‍ലവലുകളില്‍ സജ്ജമാണു്"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "%(name)s %(levels)s റണ്‍ലവലുകളില്‍ സജ്ജമാക്കുക"
-
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "xinetd സേവനത്തിന്റെ ആവശ്യപ്രകാരം <b>%(servicename)s</b> സേവനം ആരംഭിക്കുന്നു. "
-#~ "ജോലികള്‍ പൂര്‍ത്തിയാക്കിയ ശേഷം അതു് അവസാനിക്കുന്നു"
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "xinetd സേവനത്തിന്റെ ആവശ്യപ്രകാരം സേവനം ആരംഭിക്കുന്നു. ജോലികള്‍ പൂര്‍ത്തിയാക്കിയ ശേഷം അതു് "
-#~ "അവസാനിക്കുന്നു"
