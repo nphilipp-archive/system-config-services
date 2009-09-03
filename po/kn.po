@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: system-config-services.master.kn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2009-04-02 22:45+0530\n"
+"PO-Revision-Date: 2009-09-03 14:28+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: ../src/system-config-services.glade:7
 #: ../src/system-config-services.glade:1223
 msgid "Service Configuration"
-msgstr "ಸೇವೆಯ ಸ್ವರೂಪ"
+msgstr "ಸೇವೆಯ ಸಂರಚನೆ"
 
 #: ../src/system-config-services.glade:38
 msgid "_Program"
@@ -97,8 +97,7 @@ msgstr "ಇದರ ಬಗ್ಗೆ(_A)"
 
 #: ../src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
-"ಒಂದು ಸೇವೆಯು ಚಾಲನೆಗೊಂಡಿರುವ ರನ್‌ಲೆವೆಲ್‌ಗಳನ್ನು ನಿಮ್ಮಿಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಬದಲಾಯಿಸಿಕೊಳ್ಳಿ."
+msgstr "ಒಂದು ಸೇವೆಯು ಚಾಲನೆಗೊಂಡಿರುವ ರನ್‌ಲೆವೆಲ್‌ಗಳನ್ನು ನಿಮ್ಮಿಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಬದಲಾಯಿಸಿಕೊಳ್ಳಿ."
 
 #: ../src/system-config-services.glade:559
 msgid "No service selected."
@@ -121,7 +120,7 @@ msgstr "ವಿವರಣೆ"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
+msgstr "ಈ ಸೇವೆಯನ್ನು ಬೇಡಿಕೆಗೆ ಅನುಗುಣವಾಗಿ xinetd ಸೇವೆಯಿಂದ ಆರಂಭಿಸಲಾಗುವುದು ಹಾಗು ನಿರ್ವಹಿಸಲು ಇದಕ್ಕೆ ಬೇರೇನೂ ಇಲ್ಲದೆ ಇರುವಾಗ ನಿರ್ಗಮಿಸುತ್ತದೆ."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -137,7 +136,7 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "ಹಕ್ಕು © 2002-2009 Red Hat, Inc. ಹಾಗು ನೆರವಾದ ಇತರರು"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
@@ -261,7 +260,7 @@ msgstr "ಈ ಸೇವೆಯು ಇತ್ತೀಚಿಗೆ ಅಪ್ಡೇಟ್
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
+msgstr "<b>%(servicename)s</b> ಸೇವೆಯನ್ನು ಬೇಡಿಕೆಗೆ ಅನುಗುಣವಾಗಿ xinetd ಸೇವೆಯಿಂದ ಆರಂಭಿಸಲಾಗುವುದು ಹಾಗು ನಿರ್ವಹಿಸಲು ಇದಕ್ಕೆ ಬೇರೇನೂ ಇಲ್ಲದೆ ಇರುವಾಗ ನಿರ್ಗಮಿಸುತ್ತದೆ."
 
 #: ../src/gui.py:322
 msgid ""
@@ -299,112 +298,3 @@ msgstr "ಸೇವೆಯ ನಿರ್ವಹಣೆ"
 msgid "Services"
 msgstr "ಸೇವೆಗಳು"
 
-#~ msgid "window1"
-#~ msgstr "ವಿಂಡೋ1"
-
-#~ msgid "Service %s"
-#~ msgstr "ಸೇವೆ %s"
-
-#~ msgid "Enable"
-#~ msgstr "ಶಕ್ತಗೊಳಿಸು"
-
-#~ msgid "Disable"
-#~ msgstr "ಅಶಕ್ತಗೊಳಿಸು"
-
-#~ msgid "Customize"
-#~ msgstr "ನಿಮ್ಮಿಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಹೊಂದಿಸಿ"
-
-#~ msgid "Enable Default"
-#~ msgstr "ಡೀಫಾಲ್ಟನ್ನು ಶಕ್ತಗೊಳಿಸಿ"
-
-#~ msgid "Enable All"
-#~ msgstr "ಎಲ್ಲವನ್ನೂ ಶಕ್ತಗೊಳಿಸಿ"
-
-#~ msgid "Disable All"
-#~ msgstr "ಎಲ್ಲವನ್ನೂ ಅಶಕ್ತಗೊಳಿಸಿ"
-
-#~ msgid "Start"
-#~ msgstr "ಪ್ರಾರಂಭಿಸು"
-
-#~ msgid "Restart"
-#~ msgstr "ಪುನಃ ಪ್ರಾರಂಭಿಸು"
-
-#~ msgid "Configure"
-#~ msgstr "ಸಂರಚಿಸು"
-
-#~ msgid "foobar"
-#~ msgstr "foobar"
-
-#~ msgid "barfoo"
-#~ msgstr "barfoo"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "ಪ್ರಸ್ತುತ ರನ್‌ಲೆವೆಲ್ %s ಆಗಿದೆ"
-
-#~ msgid "Runlevels"
-#~ msgstr "ರನ್‌ಲೆವೆಲ್‌ಗಳು"
-
-#~ msgid "label18"
-#~ msgstr "ಲೇಬಲ್18"
-
-#~ msgid "Start "
-#~ msgstr "ಪ್ರಾರಂಭ "
-
-#~ msgid "Stop"
-#~ msgstr "ತಡೆಹಿಡಿ"
-
-#~ msgid "Service control"
-#~ msgstr "ಸೇವೆಯ ನಿಯಂತ್ರಣ"
-
-#~ msgid "Status output"
-#~ msgstr "ಸ್ಥಿತಿಯ ಔಟ್‌ಪುಟ್"
-
-#~ msgid "_Configure"
-#~ msgstr "ಸಂರಚಿಸು(_C)"
-
-#~ msgid "Button Box"
-#~ msgstr "ಗುಂಡಿಯ ಪೆಟ್ಟಿಗೆ"
-
-#~ msgid "label16"
-#~ msgstr "ಲೇಬಲ್16"
-
-#~ msgid "Service %s:"
-#~ msgstr "ಸೇವೆ %s:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "ಹಕ್ಕು  2002-2008 Red Hat, Inc. ಹಾಗು ದೇಣಿಗೆದಾರರು"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "%s ಸೇವೆಯು ಕಂಡುಬರುತ್ತಿಲ್ಲ!"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "%s ಸೇವೆಯು ಹಳೆಯ ಸಂರಚನೆಯೊಂದಿಗೆ ಚಾಲನೆಯಲ್ಲಿದೆ"
-
-#~ msgid "Service %s is running"
-#~ msgstr "%s ಸೇವೆಯು ಚಾಲನೆಯಲ್ಲಿದೆ"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "%s ಸೇವೆಯು ಒಂದು ದೋಷವನ್ನು ವರದಿ ಮಾಡಿದೆ"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "%s ಸೇವೆಯನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "ಸದ್ಯಕ್ಕೆ %s ರನ್‌ಲೆವೆಲ್ಲಿನಲ್ಲಿ ಚಾಲನೆಯಾಗುತ್ತಿದೆ"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "%(name)s ಅನ್ನು %(levels)s ರನ್‌ಲೆವೆಲ್ಲಿನಲ್ಲಿ ಶಕ್ತಗೊಳಿಸು"
-
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "xinetd ಸೇವೆಯು ಬಯಸಿದಾಗ <b>%(servicename)s</b> ಸೇವೆಯು ಆರಂಭಗೊಳ್ಳುತ್ತದೆ ಹಾಗು "
-#~ "ಇದಕ್ಕೆ ಮಾಡಲು ಏನೂ ಕೆಲಸವಿಲ್ಲದಾಗ ನಿಲ್ಲಿಸಲ್ಪಡುತ್ತದೆ."
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "xinetd ಸೇವೆಯು ಬಯಸಿದಾಗ ಈ ಸೇವೆಯು ಆರಂಭಗೊಳ್ಳುತ್ತದೆ ಹಾಗು ಇದಕ್ಕೆ ಮಾಡಲು ಏನೂ "
-#~ "ಕೆಲಸವಿಲ್ಲದಾಗ ನಿಲ್ಲಿಸಲ್ಪಡುತ್ತದೆ."
