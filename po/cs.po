@@ -10,15 +10,14 @@ msgstr ""
 "Project-Id-Version: system-config-services VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2008-08-05 07:13+0200\n"
-"Last-Translator: Adam Pribyl <pribyl@lowlevel.cz>\n"
+"PO-Revision-Date: 2009-09-05 08:50+0100\n"
+"Last-Translator: Dusan Hokuv <dusan@mirc.cz>\n"
 "Language-Team: Czech <fedora-cs-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.4\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 0.2\n"
 
 #: ../src/system-config-services.glade:7
@@ -105,12 +104,8 @@ msgid "No service selected."
 msgstr "Není vybrána žádná služba."
 
 #: ../src/system-config-services.glade:621
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"Tato služba je spuštěna jednou, obvykle při zavádění systému, poté běží na "
-"pozadí a vzbudí se pouze pokud je potřeba."
+msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "Tato služba je spuštěna jednou, obvykle při zavádění systému, poté běží na pozadí a vzbudí se pouze pokud je potřeba."
 
 #: ../src/system-config-services.glade:769
 #: ../src/system-config-services.glade:960
@@ -118,10 +113,8 @@ msgid "Description"
 msgstr "Popis"
 
 #: ../src/system-config-services.glade:867
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr ""
+msgid "This service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "Tato služba bude spuštěna na vyžádání pomocí xinetd a vypne se až nebude potřeba."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -137,35 +130,22 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright © 2002-2009 Red Hat, Inc. a spolupracovníci"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Tento program je svobodný software; můžete jej libovolně kopírovat "
-"aupravovat, pokud zachováte podmínky GNU General Public Licence, jak "
-"jsoupublikovány na stránkách nadace Svobodného Softwrare (FSF); buď ve verzi "
-"2nebo (podle vašeho zvážení) jakákoli pozdější. \n"
+"Tento program je svobodný software; můžete jej libovolně kopírovat aupravovat, pokud zachováte podmínky GNU General Public Licence, jak jsoupublikovány na stránkách nadace Svobodného Softwrare (FSF); buď ve verzi 2nebo (podle vašeho zvážení) jakákoli pozdější. \n"
 "\n"
-"Tento program je distribuován v dobré víře, že bude užitečný, ale "
-"bezVEŠKERÝCH ZÁRUK; Pro detaily si přečtete licenci GNU General "
-"PublicLicense. \n"
+"Tento program je distribuován v dobré víře, že bude užitečný, ale bezVEŠKERÝCH ZÁRUK; Pro detaily si přečtete licenci GNU General PublicLicense. \n"
 "\n"
-"S tímto programem byste měli obdržet kopii GNU General Public Licence. "
-"Pokudne, podívete se na http://www.gnu.org/licenses/."
+"S tímto programem byste měli obdržet kopii GNU General Public Licence. Pokudne, podívete se na http://www.gnu.org/licenses/."
 
 #: ../src/system-config-services.glade:1231
 msgid "translator-credits"
@@ -175,7 +155,8 @@ msgstr "Adam Přibyl"
 msgid "Customize Runlevels"
 msgstr "Upravit runlevely"
 
-#: ../src/system-config-services.glade:1351 ../src/gui.py:714
+#: ../src/system-config-services.glade:1351
+#: ../src/gui.py:714
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Povolte službu <b>%(service)s</b> v těchto runlevelech:"
@@ -204,13 +185,14 @@ msgstr "Jméno"
 msgid "Remarks"
 msgstr "Poznámky"
 
-#: ../src/gui.py:174 ../src/gui.py:192
+#: ../src/gui.py:174
+#: ../src/gui.py:192
 msgid "This service is being refreshed right now."
 msgstr "Tato služba se právě obnovuje."
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "Získání informací o této službě selhalo."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
@@ -243,12 +225,8 @@ msgstr "Tato služba neodpovídá."
 
 #: ../src/gui.py:273
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service is started once, usually when the system "
-"is booted, runs in the background and wakes up when needed."
-msgstr ""
-"Služba <b>%(servicename)s</b> se nastaruje pouze jednou, obvykle při "
-"zavádění systému, potom běží na pozadí a probouzí se pouze pokud je potřeba."
+msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "Služba <b>%(servicename)s</b> se nastaruje pouze jednou, obvykle při zavádění systému, potom běží na pozadí a probouzí se pouze pokud je potřeba."
 
 #: ../src/gui.py:287
 msgid "This service is updated currently."
@@ -256,34 +234,20 @@ msgstr "Tato služba je právě aktualizována."
 
 #: ../src/gui.py:313
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has nothing more to do."
-msgstr ""
+msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "Služba <b>%(servicename)s</b> bude spuštěna na vyžádání pomocí xinetd a vypne se až nebude potřeba."
 
 #: ../src/gui.py:322
-msgid ""
-"This service is enabled, but the <b>xinetd</b> package is not installed. "
-"This service does not work without it."
-msgstr ""
-"Tato služba je povolena, ale <b>xinetd</b> není nainstalován. Bez něj nebude "
-"tato služba fungovat."
+msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
+msgstr "Tato služba je povolena, ale <b>xinetd</b> není nainstalován. Bez něj nebude tato služba fungovat."
 
 #: ../src/gui.py:328
-msgid ""
-"This service is enabled, but the <b>xinetd</b> service is not running. This "
-"service does not work without it."
-msgstr ""
-"Tato služba je povolena, ale služba <b>xinetd</b> neběží. Bez ní nebude tato "
-"služba fungovat."
+msgid "This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."
+msgstr "Tato služba je povolena, ale služba <b>xinetd</b> neběží. Bez ní nebude tato služba fungovat."
 
 #: ../src/gui.py:846
-msgid ""
-"The help viewer could not be found. To be able to view help, the 'yelp' "
-"package needs to be installed."
-msgstr ""
-"Nemohu nalézt prohlížeč nápovědy. Abyste byli schopni prohlížet nápovědu, "
-"musí být nainstalován balíček 'yelp'."
+msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
+msgstr "Nemohu nalézt prohlížeč nápovědy. Abyste byli schopni prohlížet nápovědu, musí být nainstalován balíček 'yelp'."
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -299,132 +263,92 @@ msgstr "Služby"
 
 #~ msgid "window1"
 #~ msgstr "window1"
-
 #~ msgid "Service %s"
 #~ msgstr "Služba %s"
-
 #~ msgid "Enable"
 #~ msgstr "Povolit"
-
 #~ msgid "Disable"
 #~ msgstr "Zakázat"
-
 #~ msgid "Customize"
 #~ msgstr "Upravit"
-
 #~ msgid "Enable Default"
 #~ msgstr "Povolit výchozí"
-
 #~ msgid "Enable All"
 #~ msgstr "Povolit všechny"
-
 #~ msgid "Disable All"
 #~ msgstr "Zakázat všechny"
-
 #~ msgid "Start"
 #~ msgstr "Spustit"
-
 #~ msgid "Restart"
 #~ msgstr "Restartovat"
-
 #~ msgid "Configure"
 #~ msgstr "Nastavit"
-
 #~ msgid "foobar"
 #~ msgstr "pepa"
-
 #~ msgid "barfoo"
 #~ msgstr "josef"
-
 #~ msgid "Current runlevel is %s"
 #~ msgstr "Aktuální runlevel je %s"
-
 #~ msgid "Runlevels"
 #~ msgstr "Runlevely"
-
 #~ msgid "label18"
 #~ msgstr "label18"
-
 #~ msgid "Start "
 #~ msgstr "Spustit"
-
 #~ msgid "Stop"
 #~ msgstr "Zastavit"
-
 #~ msgid "Service control"
 #~ msgstr "Ovládání služby"
-
 #~ msgid "Status output"
 #~ msgstr "Stav"
-
 #~ msgid "_Configure"
 #~ msgstr "_Nastavit"
-
 #~ msgid "Button Box"
 #~ msgstr "Tlačítko"
-
 #~ msgid "label16"
 #~ msgstr "label16"
-
 #~ msgid "Service %s:"
 #~ msgstr "Služba %s:"
-
 #~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
 #~ msgstr "Všechna práva vyhrazena 2002-2008 Red Hat, Inc. a přispěvatelé"
-
 #~ msgid "Service %s not found!"
 #~ msgstr "Služba %s nenalezena!"
-
 #~ msgid "Service %s is running with old configuration"
 #~ msgstr "Služba %s běží se starou konfigurací."
-
 #~ msgid "Service %s is running"
 #~ msgstr "Služba %s běží"
-
 #~ msgid "Service %s reports an error"
 #~ msgstr "Služba %s hlásí chybu"
-
 #~ msgid "Service %s is stopped"
 #~ msgstr "Služba %s je zastavena"
-
 #~ msgid "Currently enabled in runlevels %s"
 #~ msgstr "Momentálně povoleno v runlevelech %s"
-
 #~ msgid "Enable %(name)s in runlevels %(levels)s"
 #~ msgstr "Povolit %(name)s v runevelech %(levels)s"
-
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "
 #~ "xinetd service and ends when it has got nothing more to do."
 #~ msgstr ""
 #~ "Služba <b>%(servicename)s</b> bude spuštěna v případě potřeby službou "
 #~ "xinetd a ukončena pokud nebude mít další požadavny na vyřízení."
-
 #~ msgid ""
 #~ "This service will be started on demand by the xinetd service and ends "
 #~ "when it has got nothing more to do."
 #~ msgstr ""
 #~ "Tato služba bude spuštěna na vyžádání službou xinetd a ukončena pokud "
 #~ "nemá další požadavky na vyřízení."
-
 #~ msgid "Are you sure you want to delete the %s?"
 #~ msgstr "Jste si jisti, že chcete odstranit %s?"
-
 #~ msgid "Runlevel %d"
 #~ msgstr "Runlevel %d"
-
 #~ msgid "Currently Running in Runlevel: "
 #~ msgstr "Momentálně je systém v runlevelu: "
-
 #~ msgid "Editing Runlevel: "
 #~ msgstr "Úprava runlevelu: "
-
 #~ msgid "Unknown"
 #~ msgstr "Neznámý"
-
 #~ msgid "All"
 #~ msgstr "Všechny"
-
 #~ msgid ""
 #~ "System Services Configuration Tool VERSION\n"
 #~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -443,83 +367,58 @@ msgstr "Služby"
 #~ " Brent Fox <bfox@redhat.com>\n"
 #~ " Nils Philippsen <nphilipp@redhat.com>\n"
 #~ " "
-
 #~ msgid "About"
 #~ msgstr "O aplikaci"
-
 #~ msgid ""
 #~ "The help viewer could not be found. To be able to view help you need to "
 #~ "install the 'yelp' package."
 #~ msgstr ""
 #~ "Prohlížeč nápovědy nelze najít. Abyste mohli zobrazit nápovědu, musíte "
 #~ "nainstalovat balíček 'yelp'."
-
 #~ msgid "You must run system-config-services as root."
 #~ msgstr "Nástroj system-config-services musíte spustit jako root."
-
 #~ msgid "Running"
 #~ msgstr "Běží"
-
 #~ msgid "Stopped"
 #~ msgstr "Zastaveno"
-
 #~ msgid "Error"
 #~ msgstr "Chyba"
-
 #~ msgid "%s failed. The error was: %s"
 #~ msgstr "%s selhalo. Chyba byla: %s"
-
 #~ msgid " successful"
 #~ msgstr " úspěšný"
-
 #~ msgid "xinetd must be enabled for %s to run"
 #~ msgstr "Pro běh %s musí být povolen xinetd"
-
 #~ msgid "xinetd failed to reload for "
 #~ msgstr "Selhalo opětovné načtení xinetd pro "
-
 #~ msgid ". The error was: "
 #~ msgstr ". Chyba byla: "
-
 #~ msgid "xinetd reloaded %s successfully"
 #~ msgstr "xinetd úspěšně opětovně načetl %s"
-
 #~ msgid "Add Service"
 #~ msgstr "_Přidat službu"
-
 #~ msgid "Current Active Runlevel: "
 #~ msgstr "Právě aktivní runlevel: "
-
 #~ msgid "Delete Service"
 #~ msgstr "_Odstranit službu"
-
 #~ msgid "Don't Save"
 #~ msgstr "Neukládat"
-
 #~ msgid "Editing Runlevel:"
 #~ msgstr "Úprava runlevelu:"
-
 #~ msgid "None"
 #~ msgstr "Žádný"
-
 #~ msgid "Revert To _Last Save"
 #~ msgstr "Vrátit se k _poslednímu uloženému stavu"
-
 #~ msgid "Runlevel _All"
 #~ msgstr "_Všechny runlevely"
-
 #~ msgid "S_top Service"
 #~ msgstr "_Zastavit službu"
-
 #~ msgid "Save Dialog"
 #~ msgstr "Ukládací dialog"
-
 #~ msgid "Service Name: "
 #~ msgstr "Jméno služby"
-
 #~ msgid "Status"
 #~ msgstr "Stav"
-
 #~ msgid ""
 #~ "These services are started on demand and end when there is nothing more "
 #~ "to do. The <b>xinetd</b> service must be running so that they can be used."
@@ -527,50 +426,38 @@ msgstr "Služby"
 #~ "Služby jsou spouštěny příchodem požadavku a ukončí se, když obsluha "
 #~ "požadavku skončí. Tyto služby jsou spouštěny síťovým superserverm "
 #~ "<b>xinetd</b>, který musí být trvale spuštěn."
-
 #~ msgid ""
 #~ "These services are started once and run in the background. You can "
 #~ "specify in which runlevels they are started."
 #~ msgstr ""
 #~ "Tyto služby jsou spouštěny na pozadí a trvale běží. Můžete nastavit, ve "
 #~ "kterých runlevelech budou spuštěny."
-
 #~ msgid ""
 #~ "You have made changes to the current runlevel.\n"
 #~ "Do you want to save the changes?"
 #~ msgstr ""
 #~ "V aktuálním runlevelu jste provedli změny.\n"
 #~ "Chcete své změny uložit?"
-
 #~ msgid "_Actions"
 #~ msgstr "_Akce"
-
 #~ msgid "_Background Services"
 #~ msgstr "Služby na _pozadí"
-
 #~ msgid "_Edit Runlevel"
 #~ msgstr "_Upravit runlevel"
-
 #~ msgid "_File"
 #~ msgstr "_Soubor"
-
 #~ msgid "_On Demand Services"
 #~ msgstr "Služby _dle potřeby"
-
 #~ msgid "_Quit"
 #~ msgstr "_Konec"
-
 #~ msgid "_Refresh Service List"
 #~ msgstr "_Obnovit seznam služeb"
-
 #~ msgid "_Restart Service"
 #~ msgstr "_Restartovat službu"
-
 #~ msgid "_Save Changes"
 #~ msgstr "_Uložit změny"
-
 #~ msgid "_Start Service"
 #~ msgstr "_Spustit službu"
-
 #~ msgid "_View"
 #~ msgstr "_Zobrazit"
+
