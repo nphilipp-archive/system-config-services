@@ -11,14 +11,14 @@ msgstr ""
 "Project-Id-Version: system-config-services.master.te\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2009-04-06 19:34+0530\n"
+"PO-Revision-Date: 2009-09-07 20:11+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
 "\n"
 "\n"
 "\n"
@@ -124,6 +124,8 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
+"ఈ సేవ xinetd సేవ ద్వారా కోరడంవలన ప్రారంభించబడుతుంది మరియు అది చేయుటకు ఏమీ లేనప్పుడు "
+"ముగుస్తుంది."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
@@ -139,7 +141,7 @@ msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "కాపీరైట్ © 2002-2009 Red Hat, Inc. మరియు సహాయకులు"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
@@ -262,13 +264,14 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
+"<b>%(servicename)s</b> సేవ xinetd సేవ ద్వారా కోరడంవలన ప్రారంభించబడుతుంది మరియు "
+"అది చేయుటకు ఏమీ లేనప్పుడు ముగుస్తుంది."
 
 #: ../src/gui.py:322
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"సేవ చేతనపరచబడింది, అయితే <b>xinted</b> ప్యాకేజి సంస్థాపించబడిలేదు. అది లేకుండా ఈ సేవ పనిచేయదు."
+msgstr "సేవ చేతనపరచబడింది, అయితే <b>xinted</b> ప్యాకేజి సంస్థాపించబడిలేదు. అది లేకుండా ఈ సేవ పనిచేయదు."
 
 #: ../src/gui.py:328
 msgid ""
@@ -294,111 +297,3 @@ msgstr "సేవల నిర్వహణ"
 msgid "Services"
 msgstr "సేవలు"
 
-#~ msgid "window1"
-#~ msgstr "విండో1"
-
-#~ msgid "Service %s"
-#~ msgstr "సేవ %s"
-
-#~ msgid "Enable"
-#~ msgstr "చేతనం"
-
-#~ msgid "Disable"
-#~ msgstr "అచేతనం"
-
-#~ msgid "Customize"
-#~ msgstr "మలచుకొను"
-
-#~ msgid "Enable Default"
-#~ msgstr "అప్రమేయంగా చేతనం"
-
-#~ msgid "Enable All"
-#~ msgstr "అన్నింటిని చేతనంచేయుము"
-
-#~ msgid "Disable All"
-#~ msgstr "అన్నింటిని అచేతనముచేయుము"
-
-#~ msgid "Start"
-#~ msgstr "ప్రారంభించు"
-
-#~ msgid "Restart"
-#~ msgstr "పునఃప్రారంభించు"
-
-#~ msgid "Configure"
-#~ msgstr "ఆకృతీకరించుము"
-
-#~ msgid "foobar"
-#~ msgstr "ఫూబార్"
-
-#~ msgid "barfoo"
-#~ msgstr "బార్‌ఫూ"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "ప్రస్తుత రన్‌లెవల్ %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "రన్‌లెవల్సు"
-
-#~ msgid "label18"
-#~ msgstr "లేబుల్18"
-
-#~ msgid "Start "
-#~ msgstr "ప్రారంభించుము"
-
-#~ msgid "Stop"
-#~ msgstr "ఆపు"
-
-#~ msgid "Service control"
-#~ msgstr "సేవ నియంత్రణ"
-
-#~ msgid "Status output"
-#~ msgstr "స్థితి అవుట్‌పుట్"
-
-#~ msgid "_Configure"
-#~ msgstr "ఆకృతీకరించు (_C)"
-
-#~ msgid "Button Box"
-#~ msgstr "బటన్ పెట్టె"
-
-#~ msgid "label16"
-#~ msgstr "లేబుల్16"
-
-#~ msgid "Service %s:"
-#~ msgstr "సేవ %s:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "కాపీరైట్  2002-2008 Red Hat, Inc. మరియు సహాయకులు"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "సేవ %s కనబడలేదు!"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "సేవ %s పాత ఆకృతీకరణతో నడుచుచున్నది"
-
-#~ msgid "Service %s is running"
-#~ msgstr "సేవ %s నడుచుచున్నది"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "సేవ %s వొక దోషమును నివేదిస్తుంది"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "సేవ %s ఆపివేయబడింది"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "ప్రస్తుతం రన్‌లెవల్స్‍ %s నందు చేతనపరచబడింది"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "%(name)s ను రన్‌లెవల్స్‍ %(levels)s నందు చేనతనంచేయుము."
-
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "<b>%(servicename)s</b> సేవ అనునది డిమాండ్‌పై xinetd సేవ చేత ప్రారంభించబడుతుంది మరియు అది "
-#~ "చేయటానికి యేదీలేనప్పుడు ముగుస్తుంది."
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "ఈ సేవ డిమాండ్‌పై xinetd సేవ చేత ప్రారంభించబడుతుంది మరియు అది చేయటానికి యేదీలేనప్పుడు ముగుస్తుంది."
