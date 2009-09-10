@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-11 14:46+0200\n"
-"PO-Revision-Date: 2007-01-24 17:57+0200\n"
+"PO-Revision-Date: 2009-08-11 17:57+0200\n"
 "Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -23,61 +23,61 @@ msgstr "Налаштовування служби"
 
 #: ../src/system-config-services.glade:38
 msgid "_Program"
-msgstr ""
+msgstr "_Програма"
 
 #: ../src/system-config-services.glade:60
 msgid "Ser_vice"
-msgstr ""
+msgstr "Слу_жба"
 
 #: ../src/system-config-services.glade:69
 #: ../src/system-config-services.glade:327
 msgid "_Enable"
-msgstr ""
+msgstr "_Увімкнути"
 
 #: ../src/system-config-services.glade:91
 #: ../src/system-config-services.glade:344
 msgid "_Disable"
-msgstr ""
+msgstr "В_имкнути"
 
 #: ../src/system-config-services.glade:113
 #: ../src/system-config-services.glade:362
 msgid "_Customize"
-msgstr ""
+msgstr "_Налаштувати"
 
 #: ../src/system-config-services.glade:134
 #: ../src/system-config-services.glade:1241
 msgid "Runlevel 2"
-msgstr ""
+msgstr "Рівень запуску 2"
 
 #: ../src/system-config-services.glade:143
 #: ../src/system-config-services.glade:1251
 msgid "Runlevel 3"
-msgstr ""
+msgstr "Рівень запуску 3"
 
 #: ../src/system-config-services.glade:152
 #: ../src/system-config-services.glade:1261
 msgid "Runlevel 4"
-msgstr ""
+msgstr "Рівень запуску 4"
 
 #: ../src/system-config-services.glade:161
 #: ../src/system-config-services.glade:1271
 msgid "Runlevel 5"
-msgstr ""
+msgstr "Рівень запуску 5"
 
 #: ../src/system-config-services.glade:180
 #: ../src/system-config-services.glade:392
 msgid "_Start"
-msgstr ""
+msgstr "_Запустити"
 
 #: ../src/system-config-services.glade:202
 #: ../src/system-config-services.glade:409
 msgid "S_top"
-msgstr ""
+msgstr "З_упинити"
 
 #: ../src/system-config-services.glade:224
 #: ../src/system-config-services.glade:426
 msgid "_Restart"
-msgstr ""
+msgstr "_Перезапустити"
 
 #: ../src/system-config-services.glade:250
 msgid "_Help"
@@ -89,21 +89,23 @@ msgstr "_Зміст"
 
 #: ../src/system-config-services.glade:287
 msgid "_About"
-msgstr ""
+msgstr "_Про програму"
 
 #: ../src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
+msgstr "Налаштувати рівні запуску, на яких службу буде увімкнено."
 
 #: ../src/system-config-services.glade:559
 msgid "No service selected."
-msgstr ""
+msgstr "Не обрано службу."
 
 #: ../src/system-config-services.glade:621
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
+"Ця служба запускається один раз, зазвичай при завантаженні системи, працює у "
+"фоновому режимі та активується при потребі."
 
 #: ../src/system-config-services.glade:769
 #: ../src/system-config-services.glade:960
@@ -115,22 +117,24 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
+"Ця служба запускається за запитом служби xinetd та завершує роботу, коли немає "
+"потреби у будь-яких діях."
 
 #: ../src/system-config-services.glade:1065
 msgid "Service Information"
-msgstr ""
+msgstr "Інформація про службу"
 
 #: ../src/system-config-services.glade:1184
 msgid "Status of service %s:"
-msgstr ""
+msgstr "Статус служби %s:"
 
 #: ../src/system-config-services.glade:1221
 msgid "system-config-services"
-msgstr ""
+msgstr "system-config-services"
 
 #: ../src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "© 2002-2009 Red Hat, Inc. та співавтори"
 
 #: ../src/system-config-services.glade:1224
 msgid ""
@@ -148,23 +152,33 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
+"Ця програма є відкритим програмним забезпеченням. Дозволяється поширювати її "
+"та змінювати на умовах ліцензії GNU 2 або старшої версії, що видана Free Software Foundation.\n"
+"\n"
+"Ця програма поширюється БЕЗ БУДЬ-ЯКИХ ГАРАНТІЙ, у тому числі не "
+"гарантується її придатність до певної мети. Докладнішу інформацію "
+"дивіться у ліцензії GNU.\n"
+"\n"
+"Копія ліцензії надається з цією програмою. Якщо ви не отримали копію ліцензії, \n"
+"повідомте про це Free Software Foundation, Inc. за адресою 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307 USA."
 
 #: ../src/system-config-services.glade:1231
 msgid "translator-credits"
-msgstr ""
+msgstr "Максим Дзюманенко"
 
 #: ../src/system-config-services.glade:1280
 msgid "Customize Runlevels"
-msgstr ""
+msgstr "Налаштувати рівні запуску"
 
 #: ../src/system-config-services.glade:1351 ../src/gui.py:714
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr ""
+msgstr "Увімкнути службу <b>%(service)s</b> на рівнях запуску:"
 
 #: ../src/system-config-services.glade:1395
 msgid "Runlevel _2"
-msgstr ""
+msgstr "Рівень запуску _2"
 
 #: ../src/system-config-services.glade:1414
 msgid "Runlevel _3"
@@ -180,48 +194,48 @@ msgstr "Рівень запуску _5"
 
 #: ../src/gui.py:112
 msgid "Name"
-msgstr ""
+msgstr "Назва"
 
 #: ../src/gui.py:113
 msgid "Remarks"
-msgstr ""
+msgstr "Примітки"
 
 #: ../src/gui.py:174 ../src/gui.py:192
 msgid "This service is being refreshed right now."
-msgstr ""
+msgstr "Відбувається оновлення служби."
 
 #: ../src/gui.py:175
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "Не вдається отримати інформацію про цю службу."
 
 #: ../src/gui.py:176
 msgid "This service is enabled."
-msgstr ""
+msgstr "Службу увімкнено."
 
 #: ../src/gui.py:177
 msgid "This service is disabled."
-msgstr ""
+msgstr "Службу вимкнено."
 
 #: ../src/gui.py:178
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr ""
+msgstr "Цю службу увімкнено на рівнях запуску: %(runlevels)s"
 
 #: ../src/gui.py:193
 msgid "The status of this service is unknown."
-msgstr ""
+msgstr "Статус служби невідомий."
 
 #: ../src/gui.py:194
 msgid "This service is stopped."
-msgstr ""
+msgstr "Службу зупинено."
 
 #: ../src/gui.py:195
 msgid "This service is running."
-msgstr ""
+msgstr "Службу запущено."
 
 #: ../src/gui.py:196
 msgid "This service is dead."
-msgstr ""
+msgstr "Служба не працює."
 
 #: ../src/gui.py:273
 #, python-format
@@ -229,10 +243,12 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
+"Служба <b>%(servicename)s</b> запускається один раз, зазвичай при завантаженні "
+"системи, виконується у фоновому режимі та активується при потребі."
 
 #: ../src/gui.py:287
 msgid "This service is updated currently."
-msgstr ""
+msgstr "Службу оновлено."
 
 #: ../src/gui.py:313
 #, python-format
@@ -240,24 +256,32 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
+"<b>%(servicename)s</b> запускається за запитом служби xinetd та завершує "
+"роботу, якщо немає потреби у будь-яких діях."
 
 #: ../src/gui.py:322
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
+"Цю службу увімкнено, але пакет <b>xinetd</b> не встановлено. Служба не зможе "
+"запуститись без <b>xinetd</b>."
 
 #: ../src/gui.py:328
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
+"Цю службу увімкнено, але <b>xinetd</b> не запущено. Служба не зможе "
+"виконуватись без <b>xinetd</b>."
 
 #: ../src/gui.py:846
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
+"Не знайдено утиліту перегляду довідки. Щоб переглянути довідку, треба "
+"встановити пакет 'yelp'."
 
 #: ../system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -271,188 +295,4 @@ msgstr "Керування службами"
 msgid "Services"
 msgstr "Служби"
 
-#~ msgid "Enable"
-#~ msgstr "Увімкнути"
 
-#~ msgid "Disable"
-#~ msgstr "Вимкнути"
-
-#~ msgid "Start"
-#~ msgstr "Запустити"
-
-#~ msgid "Restart"
-#~ msgstr "Перезавантажити"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Поточний рівень запуску - %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "Рівні запуску"
-
-#~ msgid "Start "
-#~ msgstr "Запустити "
-
-#~ msgid "Stop"
-#~ msgstr "Зупинити"
-
-#~ msgid "Service control"
-#~ msgstr "Налаштовування служб"
-
-#~ msgid "Status output"
-#~ msgstr "Стан"
-
-#~ msgid "None"
-#~ msgstr "Немає"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Діалогове вікно збереження"
-
-#~ msgid "Don't Save"
-#~ msgstr "Не зберігати"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Були зроблені зміни поточного півня запуску.\n"
-#~ "Зберегти зміни?"
-
-#~ msgid "Add Service"
-#~ msgstr "Додати службу"
-
-#~ msgid "Service Name: "
-#~ msgstr "Назва служби: "
-
-#~ msgid "_File"
-#~ msgstr "_Файл"
-
-#~ msgid "_Save Changes"
-#~ msgstr "З_берегти зміни"
-
-#~ msgid "Revert To _Last Save"
-#~ msgstr "Від_новити збережену конфігурацію"
-
-#~ msgid "_Quit"
-#~ msgstr "Ви_йти"
-
-#~ msgid "_View"
-#~ msgstr "_Вигляд"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "_Оновити список служб"
-
-#~ msgid "_Actions"
-#~ msgstr "Д_ії"
-
-#~ msgid "Delete Service"
-#~ msgstr "Видалити службу"
-
-#~ msgid "_Start Service"
-#~ msgstr "_Запустити службу"
-
-#~ msgid "S_top Service"
-#~ msgstr "З_упинити службу"
-
-#~ msgid "_Restart Service"
-#~ msgstr "_Перезапустити службу"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "_Правка рівня"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "_Всі рівні запуску"
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Ці служби запускаються та працюють у фоновому режимі. Ви можете "
-#~ "встановити для них рівні запуску."
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "Поточний активний рівень запуску:"
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "Редагування рівня запуску:"
-
-#~ msgid "Status"
-#~ msgstr "Статус"
-
-#~ msgid "_Background Services"
-#~ msgstr "_Фонові служби"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "Ці служби запускаються за запитом та зупиняються, коли більше немає "
-#~ "роботи. Для їх роботи необхідно, щоб служба <b>xinetd</b> була запущена."
-
-#~ msgid "_On Demand Services"
-#~ msgstr "Служби _за вимогою"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "Ви впевнені, що хочете видалити %s?"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "Рівень запуску %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "Поточний рівень запуску:"
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "Редагування рівня запуску:"
-
-#~ msgid "Unknown"
-#~ msgstr "Невідомий"
-
-#~ msgid "All"
-#~ msgstr "Усі"
-
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "Утиліта налаштовування конфігурації служб VERSION\n"
-#~ " Авторські права © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat>\n"
-#~ " Bill Nottingham <notting@redhat>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "Про програму"
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr ""
-#~ "Необхідно запускати програму system-config-services з правами користувача "
-#~ "root."
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "Помилка запуску %s. Трапилась помилка: %s"
-
-#~ msgid " successful"
-#~ msgstr " успішно"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "Щоб запустити службу %s потрібно увімкнути xinetd"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "Помилка перезавантаження xinetd для "
-
-#~ msgid ". The error was: "
-#~ msgstr ". Виникла помилка:"
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "xinetd перезавантажив %s успішно"
-
-#~ msgid "Help is not available."
-#~ msgstr "Довідка недоступна."
