@@ -11,7 +11,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.99.39
+Version: 0.99.40
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
@@ -118,6 +118,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Sep 14 2009 Nils Philippsen <nils@redhat.com> - 0.99.40-1
+- pick up updated translations
+
 * Wed Sep 02 2009 Nils Philippsen <nils@redhat.com> - 0.99.39-1
 - initialize gettext correctly
 
