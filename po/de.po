@@ -16,14 +16,13 @@ msgstr ""
 "Project-Id-Version: system-config-services.tip.de\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-06-15 15:11+0100\n"
-"Last-Translator: Fabian Affolter <fab@fedoraproject.org>\n"
+"PO-Revision-Date: 2009-09-21 13:38+0200\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
 "Language-Team: German <Fedora-trans-de@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: KBabel 1.11.4\n"
 "X-Poedit-Language: German\n"
 
 #: src/gui.py:111
@@ -310,22 +309,22 @@ msgstr "Dienste"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "Auf Informationen über System-Dienste zugreifen"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "System-Dienste verwalten"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "Eine System-Richtlinie verhindert den Zugriff auf Informationen über System-Dienste"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "Eine System-Richtlinie verhindert das Verwalten von System-Diensten"
 
 #~ msgid "window1"
 #~ msgstr "window1"
