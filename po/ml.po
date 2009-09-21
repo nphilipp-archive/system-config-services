@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: system-config-services.master.ml\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-09-02 09:27+0530\n"
+"PO-Revision-Date: 2009-09-22 01:30+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -102,8 +102,7 @@ msgstr ""
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സേവനം പ്രവര്‍ത്തിക്കുന്നതല്ല."
+msgstr "ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സേവനം പ്രവര്‍ത്തിക്കുന്നതല്ല."
 
 #: src/gui.py:713 src/system-config-services.glade:1351
 #, python-format
@@ -293,19 +292,20 @@ msgstr "സേവനങ്ങള്‍"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "സിസ്റ്റം സര്‍വീസുകളെപ്പറ്റി വിവരങ്ങള്‍ ലഭ്യമാക്കുക"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "സിസ്റ്റം സര്‍വീസുകള്‍ കൈകാര്യം ചെയ്യുക"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "സിസ്റ്റം സര്‍വീസുകളുടെ വിവരങ്ങളിലേക്കുള്ള പ്രവേശനം സിസ്റ്റം പോളിസി തടയുന്നു"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "സിസ്റ്റം സര്‍വീസുകള്‍ കൈകാര്യം ചെയ്യുന്നതു് സിസ്റ്റം പോളിസി തടയുന്നു"
+
