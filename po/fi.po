@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-08-29 01:12+0300\n"
+"PO-Revision-Date: 2009-09-21 22:24+0300\n"
 "Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
 "Language-Team: Finnish <laatu@lokalisointi.org>\n"
 "MIME-Version: 1.0\n"
@@ -290,22 +290,22 @@ msgstr "Palvelut"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "Tietoja järjestelmän palveluista"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "Hallitse järjestelmän palveluja"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "Järjestelmäkäytäntö estää järjestelmän palvelutietojen käytön"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "Järjestelmäkäytäntö estää järjestelmäpalvelujen hallinnan"
 
 #~ msgid "window1"
 #~ msgstr "ikkuna1"
