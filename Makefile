@@ -6,8 +6,6 @@ PKGNAME=system-config-services
 SCM_REMOTEREPO_RE = ^ssh://(.*@)?git.fedorahosted.org/git/$(PKGNAME).git$
 UPLOAD_URL = ssh://fedorahosted.org/$(PKGNAME)
 
-SUBDIRS=po
-
 PREFIX=/usr
 
 BINDIR=$(PREFIX)/bin
@@ -19,10 +17,9 @@ LIBEXECDIR=$(PREFIX)/libexec
 
 DBUS_POLICY_DIR=$(SYSCONFDIR)/dbus-1/system.d
 DBUS_SERVICE_DIR=$(DATADIR)/dbus-1/system-services
-POLKIT0_SUPPORTED=1
-POLKIT1_SUPPORTED=1
-POLKIT0_POLICY_DIR=$(DATADIR)/PolicyKit/policy
-POLKIT1_POLICY_DIR=$(DATADIR)/polkit-1/actions
+
+POLKIT_FILES=config/org.fedoraproject.config.services.policy.0 \
+			 config/org.fedoraproject.config.services.policy.1
 
 PKGDATADIR=$(DATADIR)/$(PKGNAME)
 GLADEDIR=$(PKGDATADIR)
@@ -34,7 +31,11 @@ PY_SRC_MODULES	= scservices
 _PY_SRC_MODULE_FILES	= $(shell find $(patsubst %,$(PY_SRC_DIR)/%,$(PY_SRC_MODULES)) -type f -a -name "*.py")
 PY_SOURCES		= $(_PY_SRC_APPS) $(_PY_SRC_MODULE_FILES)
 
-all:	config $(PKGNAME).desktop py-build
+GLADE_SOURCES	= $(wildcard src/*.glade)
+
+PO_SOURCES		= $(PY_SOURCES) $(GLADE_SOURCES) $(DESKTOPINH_FILES) $(POLKITINH_FILES)
+
+all:	config py-build po-all polkit-all desktop-all
 	rm -f src/$(PKGNAME)
 	ln -snf gui.py src/$(PKGNAME)
 
@@ -42,45 +43,30 @@ include rpmspec_rules.mk
 include py_rules.mk
 include git_rules.mk
 include upload_rules.mk
+include polkit_rules.mk
+include desktop_rules.mk
+include po_rules.mk
 
 src/scservices/config.py:	src/scservices/config.py.in $(PKGNAME).spec
 	sed -e 's,\@DATADIR\@,$(DATADIR),g; s,\@VERSION\@,$(PKGVERSION),g;' $< > $@ || rm -f $@
 
 config:	src/scservices/config.py
 
-%.desktop: %.desktop.in po/$(PKGNAME).pot po/*.po
-	intltool-merge -u -d po/ $< $@
-
-install:	all py-install
-	$(MAKE) -C po install
-	mkdir -p $(DESTDIR)$(BINDIR)
-	mkdir -p $(DESTDIR)$(SBINDIR)
-	mkdir -p $(DESTDIR)$(PKGDATADIR)
-	mkdir -p $(DESTDIR)$(DATADIR)/icons/hicolor/48x48/apps
-	mkdir -p $(DESTDIR)$(DATADIR)/applications
-	mkdir -p $(DESTDIR)$(MANDIR)/man8
-	mkdir -p $(DESTDIR)$(DBUS_POLICY_DIR)
-	mkdir -p $(DESTDIR)$(DBUS_SERVICE_DIR)
+install:	all py-install po-install polkit-install desktop-install
+	install -d $(DESTDIR)$(PKGDATADIR)
+	install -d $(DESTDIR)$(BINDIR)
+	install -d $(DESTDIR)$(SBINDIR)
 
 	install -m 0644 pixmaps/*.png $(DESTDIR)$(PKGDATADIR)
-	install -m 0644 pixmaps/$(PKGNAME).png $(DESTDIR)/usr/share/icons/hicolor/48x48/apps
-	install -m 0644 man/$(PKGNAME).8 $(DESTDIR)$(MANDIR)/man8
+	install -D -m 0644 pixmaps/$(PKGNAME).png $(DESTDIR)/usr/share/icons/hicolor/48x48/apps/$(PKGNAME).png
+	install -D -m 0644 man/$(PKGNAME).8 $(DESTDIR)$(MANDIR)/man8/$(PKGNAME).8
 	for file in $(_PY_SRC_APPS); do \
 		install -m 0755 "$$file" "$(DESTDIR)$(PKGDATADIR)/"; \
 	done
-	install -m 0644 src/$(PKGNAME).glade $(DESTDIR)$(GLADEDIR)
-	install -m 0644 $(PKGNAME).desktop $(DESTDIR)$(DATADIR)/applications/$(PKGNAME).desktop
+	install -D -m 0644 src/$(PKGNAME).glade $(DESTDIR)$(GLADEDIR)/$(PKGNAME).glade
 
-	install -m 0644 config/org.fedoraproject.Config.Services.conf $(DESTDIR)$(DBUS_POLICY_DIR)/
-	install -m 0644 config/org.fedoraproject.Config.Services.service $(DESTDIR)$(DBUS_SERVICE_DIR)/
-	if test "x$(POLKIT0_SUPPORTED)" = "x1"; then \
-		mkdir -p $(DESTDIR)$(POLKIT0_POLICY_DIR); \
-		install -m 0644 config/org.fedoraproject.config.services.policy.0 $(DESTDIR)$(POLKIT0_POLICY_DIR)/org.fedoraproject.config.services.policy ; \
-	fi
-	if test "x$(POLKIT1_SUPPORTED)" = "x1"; then \
-		mkdir -p $(DESTDIR)$(POLKIT1_POLICY_DIR); \
-		install -m 0644 config/org.fedoraproject.config.services.policy.1 $(DESTDIR)$(POLKIT1_POLICY_DIR)/org.fedoraproject.config.services.policy ; \
-	fi
+	install -D -m 0644 config/org.fedoraproject.Config.Services.conf $(DESTDIR)$(DBUS_POLICY_DIR)/org.fedoraproject.Config.Services.conf
+	install -D -m 0644 config/org.fedoraproject.Config.Services.service $(DESTDIR)$(DBUS_SERVICE_DIR)/org.fedoraproject.Config.Services.service
 
 	python -c 'import compileall; compileall.compile_dir ("'"$(DESTDIR)$(PKGDATADIR)"'", ddir="'"$(PKGDATADIR)"'", maxlevels=10, force=1)'
 	softdir=$(PKGDATADIR); \
@@ -94,7 +80,4 @@ install:	all py-install
 	ln  -fs ../$${softdir}/gui.py $(DESTDIR)$(SBINDIR)/system-config-services; \
 	ln  -fs ../$${softdir}/gui.py $(DESTDIR)$(SBINDIR)/serviceconf;
 
-clean: py-clean
-	@rm -fv *~
-	@rm -fv src/*.pyc src/*.pyo
-	@rm -fv system-config-services.desktop
+clean: py-clean po-clean polkit-clean desktop-clean
