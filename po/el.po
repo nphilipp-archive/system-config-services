@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-11 14:46+0200\n"
+"POT-Creation-Date: 2009-09-21 13:26+0200\n"
 "PO-Revision-Date: 2009-05-20 14:08+0200\n"
 "Last-Translator: \n"
 "Language-Team: Greek Fedora team <fedora-trans-el@redhat.com>\n"
@@ -21,90 +21,174 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Greek\n"
 
-#: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1223
+#: src/gui.py:111
+msgid "Name"
+msgstr "Όνομα"
+
+#: src/gui.py:112
+msgid "Remarks"
+msgstr "Παρατηρήσεις"
+
+#: src/gui.py:173 src/gui.py:191
+msgid "This service is being refreshed right now."
+msgstr "Γίνετε άμεση ανανέωση της υπηρεσίας."
+
+#: src/gui.py:174
+msgid "Getting information about this service failed."
+msgstr "Απέτυχε η λήψη πληροφοριών για αυτή την υπηρεσία."
+
+#: src/gui.py:175
+msgid "This service is enabled."
+msgstr "Αυτή η υπηρεσία είναι ενεργοποιημένη."
+
+#: src/gui.py:176
+msgid "This service is disabled."
+msgstr "Αυτή η υπηρεσία είναι απενεργοποιημένη."
+
+#: src/gui.py:177
+#, python-format
+msgid "This service is enabled in runlevels: %(runlevels)s"
+msgstr "Αυτή η υπηρεσία είναι ενεργοποιημένη στα runlevels: %(runlevels)s"
+
+#: src/gui.py:192
+msgid "The status of this service is unknown."
+msgstr "Δεν είναι γνωστή η κατάσταση αυτής της υπηρεσίας."
+
+#: src/gui.py:193
+msgid "This service is stopped."
+msgstr "Αυτή η υπηρεσία έχει διακοπεί."
+
+#: src/gui.py:194
+msgid "This service is running."
+msgstr "Αυτή η υπηρεσία εκτελείται."
+
+#: src/gui.py:195
+msgid "This service is dead."
+msgstr "Αυτή η υπηρεσία είναι νεκρή."
+
+#: src/gui.py:272
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is started once, usually when the system "
+"is booted, runs in the background and wakes up when needed."
+msgstr ""
+"Η υπηρεσία <b>%(servicename)s</b> ξεκινάει μια φορά, συνήθως όταν το σύστημα "
+"εκκινείται, και στην συνέχεια εκτελείται στο παρασκήνιο και ενεργοποιείται "
+"όταν χρειαστεί."
+
+#: src/gui.py:286
+msgid "This service is updated currently."
+msgstr "Η υπηρεσία ανανεώνεται αυτή την στιγμή."
+
+#: src/gui.py:312
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
+"service and ends when it has nothing more to do."
+msgstr ""
+
+#: src/gui.py:321
+msgid ""
+"This service is enabled, but the <b>xinetd</b> package is not installed. "
+"This service does not work without it."
+msgstr ""
+"Η υπηρεσία είναι ενεργοποιημένη αλλά το πακέτο <b>xinetd</b> δεν είναι "
+"εγκατεστημένο. Η υπηρεσία αυτή δεν μπορεί να λειτουργήσει χωρίς αυτό."
+
+#: src/gui.py:327
+msgid ""
+"This service is enabled, but the <b>xinetd</b> service is not running. This "
+"service does not work without it."
+msgstr ""
+"Η υπηρεσία είναι ενεργοποιημένη, αλλά δεν εκτελείται η υπηρεσία <b>xinetd</"
+"b> η οποία είναι  είναι απαραίτητη για να δουλέψει."
+
+#: src/gui.py:713 src/system-config-services.glade:1351
+#, python-format
+msgid "Enable the <b>%(service)s</b> service in these runlevels:"
+msgstr "Ενεργοποίηση <b>%(service)s</b> υπηρεσίας σε αυτά τα runlevels:"
+
+#: src/gui.py:845
+msgid ""
+"The help viewer could not be found. To be able to view help, the 'yelp' "
+"package needs to be installed."
+msgstr ""
+"Δεν βρέθηκε η προβολή βοήθειας. Για να μπορέσετε να δείτε την βοήθεια, "
+"πρέπει να εγκατασταθεί το πακέτο  'yelp'."
+
+#: src/system-config-services.glade:7 src/system-config-services.glade:1223
 msgid "Service Configuration"
 msgstr "Ρύθμιση υπηρεσίας"
 
-#: ../src/system-config-services.glade:38
+#: src/system-config-services.glade:38
 msgid "_Program"
 msgstr "_Πρόγραμμα"
 
-#: ../src/system-config-services.glade:60
+#: src/system-config-services.glade:60
 msgid "Ser_vice"
 msgstr "_Υπηρεσία"
 
-#: ../src/system-config-services.glade:69
-#: ../src/system-config-services.glade:327
+#: src/system-config-services.glade:69 src/system-config-services.glade:327
 msgid "_Enable"
 msgstr "Ε_νεργοποίηση"
 
-#: ../src/system-config-services.glade:91
-#: ../src/system-config-services.glade:344
+#: src/system-config-services.glade:91 src/system-config-services.glade:344
 msgid "_Disable"
 msgstr "_Απενεργοποίηση"
 
-#: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:362
+#: src/system-config-services.glade:113 src/system-config-services.glade:362
 msgid "_Customize"
 msgstr "Προ_σαρμογή"
 
-#: ../src/system-config-services.glade:134
-#: ../src/system-config-services.glade:1241
+#: src/system-config-services.glade:134 src/system-config-services.glade:1241
 msgid "Runlevel 2"
 msgstr "Runlevel 2"
 
-#: ../src/system-config-services.glade:143
-#: ../src/system-config-services.glade:1251
+#: src/system-config-services.glade:143 src/system-config-services.glade:1251
 msgid "Runlevel 3"
 msgstr "Runlevel 3"
 
-#: ../src/system-config-services.glade:152
-#: ../src/system-config-services.glade:1261
+#: src/system-config-services.glade:152 src/system-config-services.glade:1261
 msgid "Runlevel 4"
 msgstr "Runlevel 4"
 
-#: ../src/system-config-services.glade:161
-#: ../src/system-config-services.glade:1271
+#: src/system-config-services.glade:161 src/system-config-services.glade:1271
 msgid "Runlevel 5"
 msgstr "Runlevel 5"
 
-#: ../src/system-config-services.glade:180
-#: ../src/system-config-services.glade:392
+#: src/system-config-services.glade:180 src/system-config-services.glade:392
 msgid "_Start"
 msgstr "_Έναρξη"
 
-#: ../src/system-config-services.glade:202
-#: ../src/system-config-services.glade:409
+#: src/system-config-services.glade:202 src/system-config-services.glade:409
 msgid "S_top"
 msgstr "_Διακοπή"
 
-#: ../src/system-config-services.glade:224
-#: ../src/system-config-services.glade:426
+#: src/system-config-services.glade:224 src/system-config-services.glade:426
 msgid "_Restart"
 msgstr "Ε_πανεκκίνηση"
 
-#: ../src/system-config-services.glade:250
+#: src/system-config-services.glade:250
 msgid "_Help"
 msgstr "_Βοήθεια"
 
-#: ../src/system-config-services.glade:259
+#: src/system-config-services.glade:259
 msgid "_Contents"
 msgstr "_Περιεχόμενα"
 
-#: ../src/system-config-services.glade:287
+#: src/system-config-services.glade:287
 msgid "_About"
 msgstr "Πε_ρί"
 
-#: ../src/system-config-services.glade:361
+#: src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
 msgstr "Προσαρμογή των runlevels στα οποία θα είναι ενεργή η υπηρεσία."
 
-#: ../src/system-config-services.glade:559
+#: src/system-config-services.glade:559
 msgid "No service selected."
 msgstr "Δεν επιλέχθηκε υπηρεσία."
 
-#: ../src/system-config-services.glade:621
+#: src/system-config-services.glade:621
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
@@ -112,34 +196,33 @@ msgstr ""
 "Αυτή η υπηρεσία ξεκινάει μια φορά, συνήθως όταν το σύστημα εκκινείται, και "
 "στην συνέχεια εκτελείται στο παρασκήνιο και ενεργοποιείται όταν χρειαστεί."
 
-#: ../src/system-config-services.glade:769
-#: ../src/system-config-services.glade:960
+#: src/system-config-services.glade:769 src/system-config-services.glade:960
 msgid "Description"
 msgstr "Περιγραφή"
 
-#: ../src/system-config-services.glade:867
+#: src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
 
-#: ../src/system-config-services.glade:1065
+#: src/system-config-services.glade:1065
 msgid "Service Information"
 msgstr "Πληροφορίες υπηρεσίας"
 
-#: ../src/system-config-services.glade:1184
+#: src/system-config-services.glade:1184
 msgid "Status of service %s:"
 msgstr "Κατάσταση υπηρεσίας %s:"
 
-#: ../src/system-config-services.glade:1221
+#: src/system-config-services.glade:1221
 msgid "system-config-services"
 msgstr "system-config-services"
 
-#: ../src/system-config-services.glade:1222
+#: src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
 msgstr ""
 
-#: ../src/system-config-services.glade:1224
+#: src/system-config-services.glade:1224
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -169,7 +252,7 @@ msgstr ""
 "License; εάν όχι, γράψτε στο Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 
-#: ../src/system-config-services.glade:1231
+#: src/system-config-services.glade:1231
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα Fedora\n"
@@ -179,134 +262,59 @@ msgstr ""
 "\n"
 "Για περισσότερα δείτε http://fedoraproject.gr/"
 
-#: ../src/system-config-services.glade:1280
+#: src/system-config-services.glade:1280
 msgid "Customize Runlevels"
 msgstr "Προσαρμογή Runlevels"
 
-#: ../src/system-config-services.glade:1351 ../src/gui.py:714
-#, python-format
-msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "Ενεργοποίηση <b>%(service)s</b> υπηρεσίας σε αυτά τα runlevels:"
-
-#: ../src/system-config-services.glade:1395
+#: src/system-config-services.glade:1395
 msgid "Runlevel _2"
 msgstr "Runlevel _2"
 
-#: ../src/system-config-services.glade:1414
+#: src/system-config-services.glade:1414
 msgid "Runlevel _3"
 msgstr "Runlevel _3"
 
-#: ../src/system-config-services.glade:1433
+#: src/system-config-services.glade:1433
 msgid "Runlevel _4"
 msgstr "Runlevel _4"
 
-#: ../src/system-config-services.glade:1452
+#: src/system-config-services.glade:1452
 msgid "Runlevel _5"
 msgstr "Runlevel _5"
 
-#: ../src/gui.py:112
-msgid "Name"
-msgstr "Όνομα"
-
-#: ../src/gui.py:113
-msgid "Remarks"
-msgstr "Παρατηρήσεις"
-
-#: ../src/gui.py:174 ../src/gui.py:192
-msgid "This service is being refreshed right now."
-msgstr "Γίνετε άμεση ανανέωση της υπηρεσίας."
-
-#: ../src/gui.py:175
-msgid "Getting information about this service failed."
-msgstr "Απέτυχε η λήψη πληροφοριών για αυτή την υπηρεσία."
-
-#: ../src/gui.py:176
-msgid "This service is enabled."
-msgstr "Αυτή η υπηρεσία είναι ενεργοποιημένη."
-
-#: ../src/gui.py:177
-msgid "This service is disabled."
-msgstr "Αυτή η υπηρεσία είναι απενεργοποιημένη."
-
-#: ../src/gui.py:178
-#, python-format
-msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr "Αυτή η υπηρεσία είναι ενεργοποιημένη στα runlevels: %(runlevels)s"
-
-#: ../src/gui.py:193
-msgid "The status of this service is unknown."
-msgstr "Δεν είναι γνωστή η κατάσταση αυτής της υπηρεσίας."
-
-#: ../src/gui.py:194
-msgid "This service is stopped."
-msgstr "Αυτή η υπηρεσία έχει διακοπεί."
-
-#: ../src/gui.py:195
-msgid "This service is running."
-msgstr "Αυτή η υπηρεσία εκτελείται."
-
-#: ../src/gui.py:196
-msgid "This service is dead."
-msgstr "Αυτή η υπηρεσία είναι νεκρή."
-
-#: ../src/gui.py:273
-#, python-format
-msgid ""
-"The <b>%(servicename)s</b> service is started once, usually when the system "
-"is booted, runs in the background and wakes up when needed."
-msgstr ""
-"Η υπηρεσία <b>%(servicename)s</b> ξεκινάει μια φορά, συνήθως όταν το σύστημα "
-"εκκινείται, και στην συνέχεια εκτελείται στο παρασκήνιο και ενεργοποιείται "
-"όταν χρειαστεί."
-
-#: ../src/gui.py:287
-msgid "This service is updated currently."
-msgstr "Η υπηρεσία ανανεώνεται αυτή την στιγμή."
-
-#: ../src/gui.py:313
-#, python-format
-msgid ""
-"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has nothing more to do."
-msgstr ""
-
-#: ../src/gui.py:322
-msgid ""
-"This service is enabled, but the <b>xinetd</b> package is not installed. "
-"This service does not work without it."
-msgstr ""
-"Η υπηρεσία είναι ενεργοποιημένη αλλά το πακέτο <b>xinetd</b> δεν είναι "
-"εγκατεστημένο. Η υπηρεσία αυτή δεν μπορεί να λειτουργήσει χωρίς αυτό."
-
-#: ../src/gui.py:328
-msgid ""
-"This service is enabled, but the <b>xinetd</b> service is not running. This "
-"service does not work without it."
-msgstr ""
-"Η υπηρεσία είναι ενεργοποιημένη, αλλά δεν εκτελείται η υπηρεσία <b>xinetd</"
-"b> η οποία είναι  είναι απαραίτητη για να δουλέψει."
-
-#: ../src/gui.py:846
-msgid ""
-"The help viewer could not be found. To be able to view help, the 'yelp' "
-"package needs to be installed."
-msgstr ""
-"Δεν βρέθηκε η προβολή βοήθειας. Για να μπορέσετε να δείτε την βοήθεια, "
-"πρέπει να εγκατασταθεί το πακέτο  'yelp'."
-
-#: ../system-config-services.desktop.in.h:1
+#: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr ""
 "Ρυθμίστε ποιες υπηρεσίες επιθυμείτε να τρέχουν κατά την εκκίνηση του "
 "συστήματος"
 
-#: ../system-config-services.desktop.in.h:2
+#: system-config-services.desktop.in.h:2
 msgid "Service Management"
 msgstr "Διαχείριση υπηρεσιών"
 
-#: ../system-config-services.desktop.in.h:3
+#: system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Υπηρεσίες"
+
+#: config/org.fedoraproject.config.services.policy.0.in.h:1
+#: config/org.fedoraproject.config.services.policy.1.in.h:1
+msgid "Get information about system services"
+msgstr ""
+
+#: config/org.fedoraproject.config.services.policy.0.in.h:2
+#: config/org.fedoraproject.config.services.policy.1.in.h:2
+msgid "Manage system services"
+msgstr ""
+
+#: config/org.fedoraproject.config.services.policy.0.in.h:3
+#: config/org.fedoraproject.config.services.policy.1.in.h:3
+msgid "System policy prevents access to system services information"
+msgstr ""
+
+#: config/org.fedoraproject.config.services.policy.0.in.h:4
+#: config/org.fedoraproject.config.services.policy.1.in.h:4
+msgid "System policy prevents management of system services"
+msgstr ""
 
 #~ msgid "window1"
 #~ msgstr "παράθυρο1"

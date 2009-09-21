@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.kn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-11 14:46+0200\n"
+"POT-Creation-Date: 2009-09-21 13:26+0200\n"
 "PO-Revision-Date: 2009-09-03 14:28+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
@@ -20,229 +20,52 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1223
-msgid "Service Configuration"
-msgstr "ಸೇವೆಯ ಸಂರಚನೆ"
-
-#: ../src/system-config-services.glade:38
-msgid "_Program"
-msgstr "ಪ್ರೊಗ್ರಾಂ(_P)"
-
-#: ../src/system-config-services.glade:60
-msgid "Ser_vice"
-msgstr "ಸೇವೆ(_v)"
-
-#: ../src/system-config-services.glade:69
-#: ../src/system-config-services.glade:327
-msgid "_Enable"
-msgstr "ಶಕ್ತಗೊಳಿಸು(_E)"
-
-#: ../src/system-config-services.glade:91
-#: ../src/system-config-services.glade:344
-msgid "_Disable"
-msgstr "ಅಶಕ್ತಗೊಳಿಸು(_D)"
-
-#: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:362
-msgid "_Customize"
-msgstr "ಇಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಹೊಂದಿಸು(_C)"
-
-#: ../src/system-config-services.glade:134
-#: ../src/system-config-services.glade:1241
-msgid "Runlevel 2"
-msgstr "ರನ್‌ಲೆವೆಲ್ 2"
-
-#: ../src/system-config-services.glade:143
-#: ../src/system-config-services.glade:1251
-msgid "Runlevel 3"
-msgstr "ರನ್‌ಲೆವೆಲ್ 3"
-
-#: ../src/system-config-services.glade:152
-#: ../src/system-config-services.glade:1261
-msgid "Runlevel 4"
-msgstr "ರನ್‌ಲೆವೆಲ್ 4"
-
-#: ../src/system-config-services.glade:161
-#: ../src/system-config-services.glade:1271
-msgid "Runlevel 5"
-msgstr "ರನ್‌ಲೆವೆಲ್ 5"
-
-#: ../src/system-config-services.glade:180
-#: ../src/system-config-services.glade:392
-msgid "_Start"
-msgstr "ಪ್ರಾರಂಭಿಸು(_S)"
-
-#: ../src/system-config-services.glade:202
-#: ../src/system-config-services.glade:409
-msgid "S_top"
-msgstr "ನಿಲ್ಲಿಸು(t)"
-
-#: ../src/system-config-services.glade:224
-#: ../src/system-config-services.glade:426
-msgid "_Restart"
-msgstr "ಪುನಃ ಆರಂಭಿಸು(_R)"
-
-#: ../src/system-config-services.glade:250
-msgid "_Help"
-msgstr "ಸಹಾಯ (_H)"
-
-#: ../src/system-config-services.glade:259
-msgid "_Contents"
-msgstr "ಅನುಕ್ರಮಗಳು (_C)"
-
-#: ../src/system-config-services.glade:287
-msgid "_About"
-msgstr "ಇದರ ಬಗ್ಗೆ(_A)"
-
-#: ../src/system-config-services.glade:361
-msgid "Customize the runlevels in which a service is enabled."
-msgstr "ಒಂದು ಸೇವೆಯು ಚಾಲನೆಗೊಂಡಿರುವ ರನ್‌ಲೆವೆಲ್‌ಗಳನ್ನು ನಿಮ್ಮಿಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಬದಲಾಯಿಸಿಕೊಳ್ಳಿ."
-
-#: ../src/system-config-services.glade:559
-msgid "No service selected."
-msgstr "ಯಾವುದೆ ಸೇವೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿಲ್ಲ."
-
-#: ../src/system-config-services.glade:621
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"ಈ ಸೇವೆಯು ಸಾಮಾನ್ಯವಾಗಿ ಗಣಕವು ಬೂಟ್‌ ಆದಾಗ ಒಮ್ಮೆ ಆರಂಭಗೊಂಡು, ಹಿನ್ನಲೆಯಲ್ಲಿ "
-"ಚಾಲನೆಯಲ್ಲಿದ್ದುಕೊಂಡು ಹಾಗು ಅಗತ್ಯವಿದ್ದಾಗ ಎಚ್ಚರಗೊಳ್ಳುತ್ತದೆ."
-
-#: ../src/system-config-services.glade:769
-#: ../src/system-config-services.glade:960
-msgid "Description"
-msgstr "ವಿವರಣೆ"
-
-#: ../src/system-config-services.glade:867
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr "ಈ ಸೇವೆಯನ್ನು ಬೇಡಿಕೆಗೆ ಅನುಗುಣವಾಗಿ xinetd ಸೇವೆಯಿಂದ ಆರಂಭಿಸಲಾಗುವುದು ಹಾಗು ನಿರ್ವಹಿಸಲು ಇದಕ್ಕೆ ಬೇರೇನೂ ಇಲ್ಲದೆ ಇರುವಾಗ ನಿರ್ಗಮಿಸುತ್ತದೆ."
-
-#: ../src/system-config-services.glade:1065
-msgid "Service Information"
-msgstr "ಸೇವಾ ಮಾಹಿತಿ"
-
-#: ../src/system-config-services.glade:1184
-msgid "Status of service %s:"
-msgstr "%s ಸೇವೆಯ ಸ್ಥಿತಿ:"
-
-#: ../src/system-config-services.glade:1221
-msgid "system-config-services"
-msgstr "system-config-services"
-
-#: ../src/system-config-services.glade:1222
-msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr "ಹಕ್ಕು © 2002-2009 Red Hat, Inc. ಹಾಗು ನೆರವಾದ ಇತರರು"
-
-#: ../src/system-config-services.glade:1224
-msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-
-#: ../src/system-config-services.glade:1231
-msgid "translator-credits"
-msgstr "ಶಂಕರ್ ಪ್ರಸಾದ್ ಎಂ. ವಿ.<svenkate@redhat.com>"
-
-#: ../src/system-config-services.glade:1280
-msgid "Customize Runlevels"
-msgstr "ರನ್‌ಲೆವೆಲ್‌ಗಳನ್ನು ಹೊಂದಿಸಿ"
-
-#: ../src/system-config-services.glade:1351 ../src/gui.py:714
-#, python-format
-msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "<b>%(service)s</b> ಸೇವೆಯನ್ನು ಈ ರನ್‌ಲೆವೆಲ್‌ಗಳಲ್ಲಿ ಶಕ್ತಗೊಳಿಸಿ:"
-
-#: ../src/system-config-services.glade:1395
-msgid "Runlevel _2"
-msgstr "ರನ್‌ಲೆವೆಲ್ _2"
-
-#: ../src/system-config-services.glade:1414
-msgid "Runlevel _3"
-msgstr "ರನ್‌ಲೆವೆಲ್ _3"
-
-#: ../src/system-config-services.glade:1433
-msgid "Runlevel _4"
-msgstr "ರನ್‌ಲೆವೆಲ್ _4"
-
-#: ../src/system-config-services.glade:1452
-msgid "Runlevel _5"
-msgstr "ರನ್‌ಲೆವೆಲ್ _5"
-
-#: ../src/gui.py:112
+#: src/gui.py:111
 msgid "Name"
 msgstr "ಹೆಸರು"
 
-#: ../src/gui.py:113
+#: src/gui.py:112
 msgid "Remarks"
 msgstr "ಟಿಪ್ಪಣಿಗಳು"
 
-#: ../src/gui.py:174 ../src/gui.py:192
+#: src/gui.py:173 src/gui.py:191
 msgid "This service is being refreshed right now."
 msgstr "ಈ ಸೇವೆಯು ಈಗ ಪುನಶ್ಚೇತನಗೊಳಿಸಲ್ಪಡುತ್ತದೆ."
 
-#: ../src/gui.py:175
+#: src/gui.py:174
 msgid "Getting information about this service failed."
 msgstr "ಈ ಸೇವೆಯ ಬಗೆಗೆ ಮಾಹಿತಿಯನ್ನು ಪಡೆಯುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ."
 
-#: ../src/gui.py:176
+#: src/gui.py:175
 msgid "This service is enabled."
 msgstr "ಈ ಸೇವೆಯು ಶಕ್ತಗೊಳಿಸಲ್ಪಟ್ಟಿದೆ."
 
-#: ../src/gui.py:177
+#: src/gui.py:176
 msgid "This service is disabled."
 msgstr "ಈ ಸೇವೆಯು ಅಶಕ್ತಗೊಳಿಸಲ್ಪಟ್ಟಿದೆ."
 
-#: ../src/gui.py:178
+#: src/gui.py:177
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "ಈ ಸೇವೆಯು ರನ್‌ಲೆವೆಲ್‌ಗಳಲ್ಲಿ ಶಕ್ತಗೊಳಿಸಲ್ಪಟ್ಟಿದೆ.: %(runlevels)s"
 
-#: ../src/gui.py:193
+#: src/gui.py:192
 msgid "The status of this service is unknown."
 msgstr "ಈ ಸೇವೆಯ ಸ್ಥಿತಿಯು ತಿಳಿದಿಲ್ಲ."
 
-#: ../src/gui.py:194
+#: src/gui.py:193
 msgid "This service is stopped."
 msgstr "ಈ ಸೇವೆಯನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ."
 
-#: ../src/gui.py:195
+#: src/gui.py:194
 msgid "This service is running."
 msgstr "ಈ ಸೇವೆಯು ಚಾಲನೆಯಲ್ಲಿದೆ."
 
-#: ../src/gui.py:196
+#: src/gui.py:195
 msgid "This service is dead."
 msgstr "ಈ ಸೇವೆಯು ನಿಷ್ಕ್ರಿಯವಾಗಿದೆ."
 
-#: ../src/gui.py:273
+#: src/gui.py:272
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
@@ -251,18 +74,20 @@ msgstr ""
 "<b>%(servicename)s</b> ಸೇವೆಯು ಸಾಮಾನ್ಯವಾಗಿ ಗಣಕವು ಬೂಟ್‌ ಆದಾಗ ಒಮ್ಮೆ ಆರಂಭಗೊಂಡು, "
 "ಹಿನ್ನಲೆಯಲ್ಲಿ ಚಾಲನೆಯಲ್ಲಿದ್ದುಕೊಂಡು ಹಾಗು ಅಗತ್ಯವಿದ್ದಾಗ ಎಚ್ಚರಗೊಳ್ಳುತ್ತದೆ."
 
-#: ../src/gui.py:287
+#: src/gui.py:286
 msgid "This service is updated currently."
 msgstr "ಈ ಸೇವೆಯು ಇತ್ತೀಚಿಗೆ ಅಪ್ಡೇಟ್ ಮಾಡಲ್ಪಟ್ಟಿದೆ."
 
-#: ../src/gui.py:313
+#: src/gui.py:312
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr "<b>%(servicename)s</b> ಸೇವೆಯನ್ನು ಬೇಡಿಕೆಗೆ ಅನುಗುಣವಾಗಿ xinetd ಸೇವೆಯಿಂದ ಆರಂಭಿಸಲಾಗುವುದು ಹಾಗು ನಿರ್ವಹಿಸಲು ಇದಕ್ಕೆ ಬೇರೇನೂ ಇಲ್ಲದೆ ಇರುವಾಗ ನಿರ್ಗಮಿಸುತ್ತದೆ."
+msgstr ""
+"<b>%(servicename)s</b> ಸೇವೆಯನ್ನು ಬೇಡಿಕೆಗೆ ಅನುಗುಣವಾಗಿ xinetd ಸೇವೆಯಿಂದ "
+"ಆರಂಭಿಸಲಾಗುವುದು ಹಾಗು ನಿರ್ವಹಿಸಲು ಇದಕ್ಕೆ ಬೇರೇನೂ ಇಲ್ಲದೆ ಇರುವಾಗ ನಿರ್ಗಮಿಸುತ್ತದೆ."
 
-#: ../src/gui.py:322
+#: src/gui.py:321
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
@@ -270,7 +95,7 @@ msgstr ""
 "ಈ ಸೇವೆಯು ಶಕ್ತಗೊಂಡಿದೆ, ಆದರೆ <b>xinetd</b> ಪ್ಯಾಕೇಜ್ ಅನುಸ್ಥಾಪಿತಗೊಂಡಿಲ್ಲ. ಅದಿಲ್ಲದೆ ಈ "
 "ಸೇವೆಯು ಕೆಲಸ ಮಾಡುವುದಿಲ್ಲ."
 
-#: ../src/gui.py:328
+#: src/gui.py:327
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
@@ -278,7 +103,12 @@ msgstr ""
 "ಈ ಸೇವೆಯು ಶಕ್ತಗೊಂಡಿದೆ, ಆದರೆ <b>xinetd</b> ಸೇವೆಯು ಚಾಲನೆಯಲ್ಲಿಲ್ಲ. ಅದಿಲ್ಲದೆ ಈ ಸೇವೆಯು "
 "ಕೆಲಸ ಮಾಡುವುದಿಲ್ಲ."
 
-#: ../src/gui.py:846
+#: src/gui.py:713 src/system-config-services.glade:1351
+#, python-format
+msgid "Enable the <b>%(service)s</b> service in these runlevels:"
+msgstr "<b>%(service)s</b> ಸೇವೆಯನ್ನು ಈ ರನ್‌ಲೆವೆಲ್‌ಗಳಲ್ಲಿ ಶಕ್ತಗೊಳಿಸಿ:"
+
+#: src/gui.py:845
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
@@ -286,15 +116,197 @@ msgstr ""
 "ಸಹಾಯ ವೀಕ್ಷಕವು ಕಂಡುಬರುತ್ತಿಲ್ಲ. ಸಹಾಯವನ್ನು ಕಾಣಲು ನೀವು 'yelp' ಪ್ಯಾಕೇಜ್ ಅನ್ನು "
 "ಅನುಸ್ಥಾಪಿಸಬೇಕಾಗುತ್ತದೆ."
 
-#: ../system-config-services.desktop.in.h:1
+#: src/system-config-services.glade:7 src/system-config-services.glade:1223
+msgid "Service Configuration"
+msgstr "ಸೇವೆಯ ಸಂರಚನೆ"
+
+#: src/system-config-services.glade:38
+msgid "_Program"
+msgstr "ಪ್ರೊಗ್ರಾಂ(_P)"
+
+#: src/system-config-services.glade:60
+msgid "Ser_vice"
+msgstr "ಸೇವೆ(_v)"
+
+#: src/system-config-services.glade:69 src/system-config-services.glade:327
+msgid "_Enable"
+msgstr "ಶಕ್ತಗೊಳಿಸು(_E)"
+
+#: src/system-config-services.glade:91 src/system-config-services.glade:344
+msgid "_Disable"
+msgstr "ಅಶಕ್ತಗೊಳಿಸು(_D)"
+
+#: src/system-config-services.glade:113 src/system-config-services.glade:362
+msgid "_Customize"
+msgstr "ಇಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಹೊಂದಿಸು(_C)"
+
+#: src/system-config-services.glade:134 src/system-config-services.glade:1241
+msgid "Runlevel 2"
+msgstr "ರನ್‌ಲೆವೆಲ್ 2"
+
+#: src/system-config-services.glade:143 src/system-config-services.glade:1251
+msgid "Runlevel 3"
+msgstr "ರನ್‌ಲೆವೆಲ್ 3"
+
+#: src/system-config-services.glade:152 src/system-config-services.glade:1261
+msgid "Runlevel 4"
+msgstr "ರನ್‌ಲೆವೆಲ್ 4"
+
+#: src/system-config-services.glade:161 src/system-config-services.glade:1271
+msgid "Runlevel 5"
+msgstr "ರನ್‌ಲೆವೆಲ್ 5"
+
+#: src/system-config-services.glade:180 src/system-config-services.glade:392
+msgid "_Start"
+msgstr "ಪ್ರಾರಂಭಿಸು(_S)"
+
+#: src/system-config-services.glade:202 src/system-config-services.glade:409
+msgid "S_top"
+msgstr "ನಿಲ್ಲಿಸು(t)"
+
+#: src/system-config-services.glade:224 src/system-config-services.glade:426
+msgid "_Restart"
+msgstr "ಪುನಃ ಆರಂಭಿಸು(_R)"
+
+#: src/system-config-services.glade:250
+msgid "_Help"
+msgstr "ಸಹಾಯ (_H)"
+
+#: src/system-config-services.glade:259
+msgid "_Contents"
+msgstr "ಅನುಕ್ರಮಗಳು (_C)"
+
+#: src/system-config-services.glade:287
+msgid "_About"
+msgstr "ಇದರ ಬಗ್ಗೆ(_A)"
+
+#: src/system-config-services.glade:361
+msgid "Customize the runlevels in which a service is enabled."
+msgstr ""
+"ಒಂದು ಸೇವೆಯು ಚಾಲನೆಗೊಂಡಿರುವ ರನ್‌ಲೆವೆಲ್‌ಗಳನ್ನು ನಿಮ್ಮಿಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಬದಲಾಯಿಸಿಕೊಳ್ಳಿ."
+
+#: src/system-config-services.glade:559
+msgid "No service selected."
+msgstr "ಯಾವುದೆ ಸೇವೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿಲ್ಲ."
+
+#: src/system-config-services.glade:621
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"ಈ ಸೇವೆಯು ಸಾಮಾನ್ಯವಾಗಿ ಗಣಕವು ಬೂಟ್‌ ಆದಾಗ ಒಮ್ಮೆ ಆರಂಭಗೊಂಡು, ಹಿನ್ನಲೆಯಲ್ಲಿ "
+"ಚಾಲನೆಯಲ್ಲಿದ್ದುಕೊಂಡು ಹಾಗು ಅಗತ್ಯವಿದ್ದಾಗ ಎಚ್ಚರಗೊಳ್ಳುತ್ತದೆ."
+
+#: src/system-config-services.glade:769 src/system-config-services.glade:960
+msgid "Description"
+msgstr "ವಿವರಣೆ"
+
+#: src/system-config-services.glade:867
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+"ಈ ಸೇವೆಯನ್ನು ಬೇಡಿಕೆಗೆ ಅನುಗುಣವಾಗಿ xinetd ಸೇವೆಯಿಂದ ಆರಂಭಿಸಲಾಗುವುದು ಹಾಗು ನಿರ್ವಹಿಸಲು "
+"ಇದಕ್ಕೆ ಬೇರೇನೂ ಇಲ್ಲದೆ ಇರುವಾಗ ನಿರ್ಗಮಿಸುತ್ತದೆ."
+
+#: src/system-config-services.glade:1065
+msgid "Service Information"
+msgstr "ಸೇವಾ ಮಾಹಿತಿ"
+
+#: src/system-config-services.glade:1184
+msgid "Status of service %s:"
+msgstr "%s ಸೇವೆಯ ಸ್ಥಿತಿ:"
+
+#: src/system-config-services.glade:1221
+msgid "system-config-services"
+msgstr "system-config-services"
+
+#: src/system-config-services.glade:1222
+msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+msgstr "ಹಕ್ಕು © 2002-2009 Red Hat, Inc. ಹಾಗು ನೆರವಾದ ಇತರರು"
+
+#: src/system-config-services.glade:1224
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+
+#: src/system-config-services.glade:1231
+msgid "translator-credits"
+msgstr "ಶಂಕರ್ ಪ್ರಸಾದ್ ಎಂ. ವಿ.<svenkate@redhat.com>"
+
+#: src/system-config-services.glade:1280
+msgid "Customize Runlevels"
+msgstr "ರನ್‌ಲೆವೆಲ್‌ಗಳನ್ನು ಹೊಂದಿಸಿ"
+
+#: src/system-config-services.glade:1395
+msgid "Runlevel _2"
+msgstr "ರನ್‌ಲೆವೆಲ್ _2"
+
+#: src/system-config-services.glade:1414
+msgid "Runlevel _3"
+msgstr "ರನ್‌ಲೆವೆಲ್ _3"
+
+#: src/system-config-services.glade:1433
+msgid "Runlevel _4"
+msgstr "ರನ್‌ಲೆವೆಲ್ _4"
+
+#: src/system-config-services.glade:1452
+msgid "Runlevel _5"
+msgstr "ರನ್‌ಲೆವೆಲ್ _5"
+
+#: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "ವ್ಯವಸ್ಥೆ ಪ್ರಾರಂಭಗೊಂಡಾಗ ಯಾವ ಯಾವ ಸೇವೆಗಳು ಚಾಲನೆಯಲ್ಲಿರ ಬೇಕು ಎಂಬುದನ್ನು ರೂಪಿಸಿ"
 
-#: ../system-config-services.desktop.in.h:2
+#: system-config-services.desktop.in.h:2
 msgid "Service Management"
 msgstr "ಸೇವೆಯ ನಿರ್ವಹಣೆ"
 
-#: ../system-config-services.desktop.in.h:3
+#: system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "ಸೇವೆಗಳು"
 
+#: config/org.fedoraproject.config.services.policy.0.in.h:1
+#: config/org.fedoraproject.config.services.policy.1.in.h:1
+msgid "Get information about system services"
+msgstr ""
+
+#: config/org.fedoraproject.config.services.policy.0.in.h:2
+#: config/org.fedoraproject.config.services.policy.1.in.h:2
+msgid "Manage system services"
+msgstr ""
+
+#: config/org.fedoraproject.config.services.policy.0.in.h:3
+#: config/org.fedoraproject.config.services.policy.1.in.h:3
+msgid "System policy prevents access to system services information"
+msgstr ""
+
+#: config/org.fedoraproject.config.services.policy.0.in.h:4
+#: config/org.fedoraproject.config.services.policy.1.in.h:4
+msgid "System policy prevents management of system services"
+msgstr ""

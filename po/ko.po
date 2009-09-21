@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-11 14:46+0200\n"
+"POT-Creation-Date: 2009-09-21 13:26+0200\n"
 "PO-Revision-Date: 2009-08-20 09:57+1000\n"
 "Last-Translator: Eunju Kim <eukim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -16,234 +16,58 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n"
 "\n"
 "\n"
 "\n"
-
-#: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1223
-msgid "Service Configuration"
-msgstr "서비스 설정"
-
-#: ../src/system-config-services.glade:38
-msgid "_Program"
-msgstr "프로그램(_P) "
-
-#: ../src/system-config-services.glade:60
-msgid "Ser_vice"
-msgstr "서비스(_V) "
-
-#: ../src/system-config-services.glade:69
-#: ../src/system-config-services.glade:327
-msgid "_Enable"
-msgstr "사용(_E) "
-
-#: ../src/system-config-services.glade:91
-#: ../src/system-config-services.glade:344
-msgid "_Disable"
-msgstr "사용 안 함(_D) "
-
-#: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:362
-msgid "_Customize"
-msgstr "사용자 설정(_C) "
-
-#: ../src/system-config-services.glade:134
-#: ../src/system-config-services.glade:1241
-msgid "Runlevel 2"
-msgstr "런레벨 2 "
-
-#: ../src/system-config-services.glade:143
-#: ../src/system-config-services.glade:1251
-msgid "Runlevel 3"
-msgstr "런레벨 3  "
-
-#: ../src/system-config-services.glade:152
-#: ../src/system-config-services.glade:1261
-msgid "Runlevel 4"
-msgstr "런레벨 4  "
-
-#: ../src/system-config-services.glade:161
-#: ../src/system-config-services.glade:1271
-msgid "Runlevel 5"
-msgstr "런레벨 5  "
-
-#: ../src/system-config-services.glade:180
-#: ../src/system-config-services.glade:392
-msgid "_Start"
-msgstr "시작(_S) "
-
-#: ../src/system-config-services.glade:202
-#: ../src/system-config-services.glade:409
-msgid "S_top"
-msgstr "중지(_T) "
-
-#: ../src/system-config-services.glade:224
-#: ../src/system-config-services.glade:426
-msgid "_Restart"
-msgstr "재시작(_R) "
-
-#: ../src/system-config-services.glade:250
-msgid "_Help"
-msgstr "도움말 (_H)"
-
-#: ../src/system-config-services.glade:259
-msgid "_Contents"
-msgstr "내용물(_C)"
-
-#: ../src/system-config-services.glade:287
-msgid "_About"
-msgstr "정보(_A) "
-
-#: ../src/system-config-services.glade:361
-msgid "Customize the runlevels in which a service is enabled."
-msgstr "서비스를 사용할 수 있는 런레벨로 사용자 설정합니다. "
-
-#: ../src/system-config-services.glade:559
-msgid "No service selected."
-msgstr "서비스가 선택되어 있지 않습니다. "
-
-#: ../src/system-config-services.glade:621
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"서비스가 시작되면, 시스템을 부팅했을 때 백그라운드에서 실행되고 필요에 따라 "
-"활성화됩니다.  "
-
-#: ../src/system-config-services.glade:769
-#: ../src/system-config-services.glade:960
-msgid "Description"
-msgstr "설명"
-
-#: ../src/system-config-services.glade:867
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr "이 서비스는 xinetd 서비스에 의해 데몬에서 시작되고 더이상 실행할 것이 없을 때 종료됩니다.        "
-
-#: ../src/system-config-services.glade:1065
-msgid "Service Information"
-msgstr "서비스 정보 "
-
-#: ../src/system-config-services.glade:1184
-msgid "Status of service %s:"
-msgstr "%s 서비스 상태: "
-
-#: ../src/system-config-services.glade:1221
-msgid "system-config-services"
-msgstr "system-config-services"
-
-#: ../src/system-config-services.glade:1222
-msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-
-#: ../src/system-config-services.glade:1224
-msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
 
-#: ../src/system-config-services.glade:1231
-msgid "translator-credits"
-msgstr "김은주 (eukim@redhat.com) 2006-2008 "
-
-#: ../src/system-config-services.glade:1280
-msgid "Customize Runlevels"
-msgstr "런레벨 사용자 설정 "
-
-#: ../src/system-config-services.glade:1351 ../src/gui.py:714
-#, python-format
-msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "다음의 런레벨에서 <b>%(service)s</b> 서비스를 사용할 수 있습니다: "
-
-#: ../src/system-config-services.glade:1395
-msgid "Runlevel _2"
-msgstr "런레벨 2 (_2) "
-
-#: ../src/system-config-services.glade:1414
-msgid "Runlevel _3"
-msgstr "런레벨 3 (_3)"
-
-#: ../src/system-config-services.glade:1433
-msgid "Runlevel _4"
-msgstr "런레벨 4 (_4)"
-
-#: ../src/system-config-services.glade:1452
-msgid "Runlevel _5"
-msgstr "런레벨 5 (_5)"
-
-#: ../src/gui.py:112
+#: src/gui.py:111
 msgid "Name"
 msgstr "이름 "
 
-#: ../src/gui.py:113
+#: src/gui.py:112
 msgid "Remarks"
 msgstr "비고 "
 
-#: ../src/gui.py:174 ../src/gui.py:192
+#: src/gui.py:173 src/gui.py:191
 msgid "This service is being refreshed right now."
 msgstr "현재 이 서비스를 다시 불러 오고 있습니다. "
 
-#: ../src/gui.py:175
+#: src/gui.py:174
 msgid "Getting information about this service failed."
 msgstr "이 서비스에 대한 정보 얻기에 실패했습니다. "
 
-#: ../src/gui.py:176
+#: src/gui.py:175
 msgid "This service is enabled."
 msgstr "이 서비스를 사용할 수 있습니다. "
 
-#: ../src/gui.py:177
+#: src/gui.py:176
 msgid "This service is disabled."
 msgstr "이 서비스를 사용할 수 없습니다. "
 
-#: ../src/gui.py:178
+#: src/gui.py:177
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "이 서비스는 다음의 런레벨에서 사용할 수 있습니다: %(runlevels)s"
 
-#: ../src/gui.py:193
+#: src/gui.py:192
 msgid "The status of this service is unknown."
 msgstr "서비스의 상태를 알 수 없습니다. "
 
-#: ../src/gui.py:194
+#: src/gui.py:193
 msgid "This service is stopped."
 msgstr "서비스를 중지합니다. "
 
-#: ../src/gui.py:195
+#: src/gui.py:194
 msgid "This service is running."
 msgstr "서비스가 실행되고 있습니다.   "
 
-#: ../src/gui.py:196
+#: src/gui.py:195
 msgid "This service is dead."
 msgstr "서비스가 작동하지 않습니다.  "
 
-#: ../src/gui.py:273
+#: src/gui.py:272
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
@@ -252,18 +76,20 @@ msgstr ""
 "<b>%(servicename)s</b> 서비스가 시작되면, 시스템을 부팅했을 때 백그라운드에"
 "서 실행되고 필요에 따라 활성화됩니다.  "
 
-#: ../src/gui.py:287
+#: src/gui.py:286
 msgid "This service is updated currently."
 msgstr "현재 이 서비스는 업데이트되어 있습니다.  "
 
-#: ../src/gui.py:313
+#: src/gui.py:312
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr "<b>%(servicename)s</b> 서비스는 xinetd 서비스에 의해 데몬에서 시작되고 더이상 실행할 것이 없을 때 종료됩니다.          "
+msgstr ""
+"<b>%(servicename)s</b> 서비스는 xinetd 서비스에 의해 데몬에서 시작되고 더이"
+"상 실행할 것이 없을 때 종료됩니다.          "
 
-#: ../src/gui.py:322
+#: src/gui.py:321
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
@@ -271,7 +97,7 @@ msgstr ""
 "서비스를 사용할 수 있지만, <b>xinetd</b> 패키지가 설치되어 있지 않습니다. 패"
 "키지 없이 서비스는 작동하지 않습니다.  "
 
-#: ../src/gui.py:328
+#: src/gui.py:327
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
@@ -279,7 +105,12 @@ msgstr ""
 "서비스를 사용할 수 있지만, <b>xinetd</b> 서비스가 실행되고 있지 않습니다. 이 "
 "서비스를 실행하지 않고 이는 작동하지 않습니다. "
 
-#: ../src/gui.py:846
+#: src/gui.py:713 src/system-config-services.glade:1351
+#, python-format
+msgid "Enable the <b>%(service)s</b> service in these runlevels:"
+msgstr "다음의 런레벨에서 <b>%(service)s</b> 서비스를 사용할 수 있습니다: "
+
+#: src/gui.py:845
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
@@ -287,15 +118,196 @@ msgstr ""
 "도움말 보기를 찾을 수 없습니다. 도움말을 보시려면 'yelp' 패키지를 설치하셔야 "
 "합니다.  "
 
-#: ../system-config-services.desktop.in.h:1
+#: src/system-config-services.glade:7 src/system-config-services.glade:1223
+msgid "Service Configuration"
+msgstr "서비스 설정"
+
+#: src/system-config-services.glade:38
+msgid "_Program"
+msgstr "프로그램(_P) "
+
+#: src/system-config-services.glade:60
+msgid "Ser_vice"
+msgstr "서비스(_V) "
+
+#: src/system-config-services.glade:69 src/system-config-services.glade:327
+msgid "_Enable"
+msgstr "사용(_E) "
+
+#: src/system-config-services.glade:91 src/system-config-services.glade:344
+msgid "_Disable"
+msgstr "사용 안 함(_D) "
+
+#: src/system-config-services.glade:113 src/system-config-services.glade:362
+msgid "_Customize"
+msgstr "사용자 설정(_C) "
+
+#: src/system-config-services.glade:134 src/system-config-services.glade:1241
+msgid "Runlevel 2"
+msgstr "런레벨 2 "
+
+#: src/system-config-services.glade:143 src/system-config-services.glade:1251
+msgid "Runlevel 3"
+msgstr "런레벨 3  "
+
+#: src/system-config-services.glade:152 src/system-config-services.glade:1261
+msgid "Runlevel 4"
+msgstr "런레벨 4  "
+
+#: src/system-config-services.glade:161 src/system-config-services.glade:1271
+msgid "Runlevel 5"
+msgstr "런레벨 5  "
+
+#: src/system-config-services.glade:180 src/system-config-services.glade:392
+msgid "_Start"
+msgstr "시작(_S) "
+
+#: src/system-config-services.glade:202 src/system-config-services.glade:409
+msgid "S_top"
+msgstr "중지(_T) "
+
+#: src/system-config-services.glade:224 src/system-config-services.glade:426
+msgid "_Restart"
+msgstr "재시작(_R) "
+
+#: src/system-config-services.glade:250
+msgid "_Help"
+msgstr "도움말 (_H)"
+
+#: src/system-config-services.glade:259
+msgid "_Contents"
+msgstr "내용물(_C)"
+
+#: src/system-config-services.glade:287
+msgid "_About"
+msgstr "정보(_A) "
+
+#: src/system-config-services.glade:361
+msgid "Customize the runlevels in which a service is enabled."
+msgstr "서비스를 사용할 수 있는 런레벨로 사용자 설정합니다. "
+
+#: src/system-config-services.glade:559
+msgid "No service selected."
+msgstr "서비스가 선택되어 있지 않습니다. "
+
+#: src/system-config-services.glade:621
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"서비스가 시작되면, 시스템을 부팅했을 때 백그라운드에서 실행되고 필요에 따라 "
+"활성화됩니다.  "
+
+#: src/system-config-services.glade:769 src/system-config-services.glade:960
+msgid "Description"
+msgstr "설명"
+
+#: src/system-config-services.glade:867
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+"이 서비스는 xinetd 서비스에 의해 데몬에서 시작되고 더이상 실행할 것이 없을 "
+"때 종료됩니다.        "
+
+#: src/system-config-services.glade:1065
+msgid "Service Information"
+msgstr "서비스 정보 "
+
+#: src/system-config-services.glade:1184
+msgid "Status of service %s:"
+msgstr "%s 서비스 상태: "
+
+#: src/system-config-services.glade:1221
+msgid "system-config-services"
+msgstr "system-config-services"
+
+#: src/system-config-services.glade:1222
+msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+
+#: src/system-config-services.glade:1224
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+
+#: src/system-config-services.glade:1231
+msgid "translator-credits"
+msgstr "김은주 (eukim@redhat.com) 2006-2008 "
+
+#: src/system-config-services.glade:1280
+msgid "Customize Runlevels"
+msgstr "런레벨 사용자 설정 "
+
+#: src/system-config-services.glade:1395
+msgid "Runlevel _2"
+msgstr "런레벨 2 (_2) "
+
+#: src/system-config-services.glade:1414
+msgid "Runlevel _3"
+msgstr "런레벨 3 (_3)"
+
+#: src/system-config-services.glade:1433
+msgid "Runlevel _4"
+msgstr "런레벨 4 (_4)"
+
+#: src/system-config-services.glade:1452
+msgid "Runlevel _5"
+msgstr "런레벨 5 (_5)"
+
+#: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "시스템을 시작할 때 실행되는 서비스 설정"
 
-#: ../system-config-services.desktop.in.h:2
+#: system-config-services.desktop.in.h:2
 msgid "Service Management"
 msgstr "서비스 관리"
 
-#: ../system-config-services.desktop.in.h:3
+#: system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "서비스"
 
+#: config/org.fedoraproject.config.services.policy.0.in.h:1
+#: config/org.fedoraproject.config.services.policy.1.in.h:1
+msgid "Get information about system services"
+msgstr ""
+
+#: config/org.fedoraproject.config.services.policy.0.in.h:2
+#: config/org.fedoraproject.config.services.policy.1.in.h:2
+msgid "Manage system services"
+msgstr ""
+
+#: config/org.fedoraproject.config.services.policy.0.in.h:3
+#: config/org.fedoraproject.config.services.policy.1.in.h:3
+msgid "System policy prevents access to system services information"
+msgstr ""
+
+#: config/org.fedoraproject.config.services.policy.0.in.h:4
+#: config/org.fedoraproject.config.services.policy.1.in.h:4
+msgid "System policy prevents management of system services"
+msgstr ""

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.ml\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-11 14:46+0200\n"
+"POT-Creation-Date: 2009-09-21 13:26+0200\n"
 "PO-Revision-Date: 2009-09-02 09:27+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
@@ -23,90 +23,174 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1223
+#: src/gui.py:111
+msgid "Name"
+msgstr "പേരു്"
+
+#: src/gui.py:112
+msgid "Remarks"
+msgstr "നിരൂപണങ്ങള്‍"
+
+#: src/gui.py:173 src/gui.py:191
+msgid "This service is being refreshed right now."
+msgstr "ഈ സേവനം നിലവില്‍ പരിഷ്കരിക്കപ്പെടുന്നു."
+
+#: src/gui.py:174
+msgid "Getting information about this service failed."
+msgstr "ഈ സര്‍വീസ് സംബന്ധിച്ചുള്ള വിവരം ലഭിക്കുവാന്‍ സാധ്യമായില്ല."
+
+#: src/gui.py:175
+msgid "This service is enabled."
+msgstr "ഈ സേവനം പ്രവര്‍ത്തന സജ്ജമാണു്."
+
+#: src/gui.py:176
+msgid "This service is disabled."
+msgstr "ഈ സേവനം പ്രവര്‍ത്തന രഹിതമാണു്."
+
+#: src/gui.py:177
+#, python-format
+msgid "This service is enabled in runlevels: %(runlevels)s"
+msgstr "ഈ സേവനങ്ങള്‍ റണ്‍ലവലുകളില്‍ പ്രവര്‍ത്തന സജ്ജമാണു്: %(runlevels)s"
+
+#: src/gui.py:192
+msgid "The status of this service is unknown."
+msgstr "ഈ സേവനത്തിന്റെ അവസ്ഥ അപരിചിതമാണു്."
+
+#: src/gui.py:193
+msgid "This service is stopped."
+msgstr "ഈ സേവനം നിര്‍ത്തിയിരിക്കുന്നു."
+
+#: src/gui.py:194
+msgid "This service is running."
+msgstr "ഈ സേവനം പ്രവര്‍ത്തനത്തിലാണു്."
+
+#: src/gui.py:195
+msgid "This service is dead."
+msgstr "ഈ സേവനം നിര്‍ജ്ജീവമാണു്."
+
+#: src/gui.py:272
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is started once, usually when the system "
+"is booted, runs in the background and wakes up when needed."
+msgstr ""
+"സിസ്റ്റം ബൂട്ട് ചെയ്യുമ്പോള്‍ <b>%(servicename)s</b> സേവനം ഒരിക്കല്‍ ആരംഭിക്കുന്നു. ശേഷം "
+"പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിക്കുന്നു, ആവശ്യമുള്ളപ്പോള്‍ പ്രത്യക്ഷത്തില്‍ വരുന്നു."
+
+#: src/gui.py:286
+msgid "This service is updated currently."
+msgstr "ഈ സേവനം നിലവില്‍ പരിഷ്കരിക്കപ്പെടുന്നു."
+
+#: src/gui.py:312
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
+"service and ends when it has nothing more to do."
+msgstr ""
+"xinetd സര്‍വീസിന്റെ ആവശ്യപ്രകാരം <b>%(servicename)s</b> ആരംഭിക്കുന്നു. എല്ലാ പ്രക്രിയകളും "
+"അവസാനിക്കുമ്പോള്‍ ഈ സര്‍വീസ് അവസാനിക്കുന്നു."
+
+#: src/gui.py:321
+msgid ""
+"This service is enabled, but the <b>xinetd</b> package is not installed. "
+"This service does not work without it."
+msgstr ""
+"ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് ഇന്‍സ്റ്റോള്‍ അല്ലാത്തതിനാല്‍ ഈ സേവനം "
+"പ്രവര്‍ത്തിക്കുന്നതല്ല."
+
+#: src/gui.py:327
+msgid ""
+"This service is enabled, but the <b>xinetd</b> service is not running. This "
+"service does not work without it."
+msgstr ""
+"ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സേവനം പ്രവര്‍ത്തിക്കുന്നതല്ല."
+
+#: src/gui.py:713 src/system-config-services.glade:1351
+#, python-format
+msgid "Enable the <b>%(service)s</b> service in these runlevels:"
+msgstr "ഈ റണ്‍ലവലുകളില്‍ <b>%(service)s</b> സേവനം സജ്ജമാക്കുക:"
+
+#: src/gui.py:845
+msgid ""
+"The help viewer could not be found. To be able to view help, the 'yelp' "
+"package needs to be installed."
+msgstr ""
+"സഹായം ലഭ്യമാക്കുന്ന സംവിധാനം ഇവിടെ ലഭ്യമല്ല. ഇതിനായി, 'yelp' പാക്കേജുകള്‍ ഇന്‍സ്റ്റോള്‍ "
+"ചെയ്യേണ്ടതുണ്ടു്."
+
+#: src/system-config-services.glade:7 src/system-config-services.glade:1223
 msgid "Service Configuration"
 msgstr "സര്‍വീസ് ക്രമീകരണം"
 
-#: ../src/system-config-services.glade:38
+#: src/system-config-services.glade:38
 msgid "_Program"
 msgstr "_പ്രോഗ്രാം"
 
-#: ../src/system-config-services.glade:60
+#: src/system-config-services.glade:60
 msgid "Ser_vice"
 msgstr "_സേവനം"
 
-#: ../src/system-config-services.glade:69
-#: ../src/system-config-services.glade:327
+#: src/system-config-services.glade:69 src/system-config-services.glade:327
 msgid "_Enable"
 msgstr "_പ്രവര്‍ത്തന സജ്ജം"
 
-#: ../src/system-config-services.glade:91
-#: ../src/system-config-services.glade:344
+#: src/system-config-services.glade:91 src/system-config-services.glade:344
 msgid "_Disable"
 msgstr "_പ്രവര്‍ത്തന രഹിതം"
 
-#: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:362
+#: src/system-config-services.glade:113 src/system-config-services.glade:362
 msgid "_Customize"
 msgstr "_യഥേഷ്ടം"
 
-#: ../src/system-config-services.glade:134
-#: ../src/system-config-services.glade:1241
+#: src/system-config-services.glade:134 src/system-config-services.glade:1241
 msgid "Runlevel 2"
 msgstr "റണ്‍ലവല്‍ 2 "
 
-#: ../src/system-config-services.glade:143
-#: ../src/system-config-services.glade:1251
+#: src/system-config-services.glade:143 src/system-config-services.glade:1251
 msgid "Runlevel 3"
 msgstr "റണ്‍ലവല്‍ 3"
 
-#: ../src/system-config-services.glade:152
-#: ../src/system-config-services.glade:1261
+#: src/system-config-services.glade:152 src/system-config-services.glade:1261
 msgid "Runlevel 4"
 msgstr "റണ്‍ലവല്‍ 4"
 
-#: ../src/system-config-services.glade:161
-#: ../src/system-config-services.glade:1271
+#: src/system-config-services.glade:161 src/system-config-services.glade:1271
 msgid "Runlevel 5"
 msgstr "റണ്‍ലവല്‍ 5"
 
-#: ../src/system-config-services.glade:180
-#: ../src/system-config-services.glade:392
+#: src/system-config-services.glade:180 src/system-config-services.glade:392
 msgid "_Start"
 msgstr "_ആരംഭിക്കുക"
 
-#: ../src/system-config-services.glade:202
-#: ../src/system-config-services.glade:409
+#: src/system-config-services.glade:202 src/system-config-services.glade:409
 msgid "S_top"
 msgstr "_നിര്‍ത്തുക"
 
-#: ../src/system-config-services.glade:224
-#: ../src/system-config-services.glade:426
+#: src/system-config-services.glade:224 src/system-config-services.glade:426
 msgid "_Restart"
 msgstr "_വീണ്ടും ആരംഭിക്കുക"
 
-#: ../src/system-config-services.glade:250
+#: src/system-config-services.glade:250
 msgid "_Help"
 msgstr "_സഹായം"
 
-#: ../src/system-config-services.glade:259
+#: src/system-config-services.glade:259
 msgid "_Contents"
 msgstr "_ഉളളടക്കം"
 
-#: ../src/system-config-services.glade:287
+#: src/system-config-services.glade:287
 msgid "_About"
 msgstr "_സംബന്ധിച്ചുള്ള"
 
-#: ../src/system-config-services.glade:361
+#: src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
 msgstr "സേവനം സജ്ജമാക്കിയിട്ടുള്ള റണ്‍ലവലുകള്‍ യഥേഷ്ടമാക്കുക."
 
-#: ../src/system-config-services.glade:559
+#: src/system-config-services.glade:559
 msgid "No service selected."
 msgstr "സേവനം തെരഞ്ഞെടുത്തിട്ടില്ല."
 
-#: ../src/system-config-services.glade:621
+#: src/system-config-services.glade:621
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
@@ -114,36 +198,35 @@ msgstr ""
 "സിസ്റ്റം ബൂട്ട് ചെയ്യുമ്പോള്‍ സേവനം ഒരിക്കല്‍ ആരംഭിക്കുന്നു. ശേഷം പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിക്കുന്നു, "
 "ആവശ്യമുള്ളപ്പോള്‍ പ്രത്യക്ഷത്തില്‍ വരുന്നു."
 
-#: ../src/system-config-services.glade:769
-#: ../src/system-config-services.glade:960
+#: src/system-config-services.glade:769 src/system-config-services.glade:960
 msgid "Description"
 msgstr "വിവരണം"
 
-#: ../src/system-config-services.glade:867
+#: src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
-"xinetd സര്‍വീസിന്റെ ആവശ്യപ്രകാരം ഈ സര്‍വീസ് ആരംഭിക്കുന്നു. എല്ലാ പ്രക്രിയകളും "
-"അവസാനിക്കുമ്പോള്‍ ഈ സര്‍വീസ് അവസാനിക്കുന്നു."
+"xinetd സര്‍വീസിന്റെ ആവശ്യപ്രകാരം ഈ സര്‍വീസ് ആരംഭിക്കുന്നു. എല്ലാ പ്രക്രിയകളും അവസാനിക്കുമ്പോള്‍ ഈ "
+"സര്‍വീസ് അവസാനിക്കുന്നു."
 
-#: ../src/system-config-services.glade:1065
+#: src/system-config-services.glade:1065
 msgid "Service Information"
 msgstr "സേവന വിവരം"
 
-#: ../src/system-config-services.glade:1184
+#: src/system-config-services.glade:1184
 msgid "Status of service %s:"
 msgstr "സേവനം %s-ന്റെ അവസ്ഥ:"
 
-#: ../src/system-config-services.glade:1221
+#: src/system-config-services.glade:1221
 msgid "system-config-services"
 msgstr "system-config-services"
 
-#: ../src/system-config-services.glade:1222
+#: src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
 msgstr "പകര്‍പ്പവകാശം © 2002-2009 Red Hat, Inc.-ഉം മറ്റു് സംഭാവനക്കാരും"
 
-#: ../src/system-config-services.glade:1224
+#: src/system-config-services.glade:1224
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -171,133 +254,58 @@ msgstr ""
 "ഇല്ലായെങ്കില്‍, ‌താഴെ പറയുന്ന മേല്‍വിലാസത്തിലേക്ക് എഴുതുക: Free Software Foundation, Inc., "
 "59 Temple Place, Suite 330, Boston, MA 02111-1307  USA."
 
-#: ../src/system-config-services.glade:1231
+#: src/system-config-services.glade:1231
 msgid "translator-credits"
 msgstr "അനി പീറ്റര്‍ <apeter@redhat.com>"
 
-#: ../src/system-config-services.glade:1280
+#: src/system-config-services.glade:1280
 msgid "Customize Runlevels"
 msgstr "റണ്‍ലവലുകള്‍ യഥേഷ്ടമാക്കുക"
 
-#: ../src/system-config-services.glade:1351 ../src/gui.py:714
-#, python-format
-msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "ഈ റണ്‍ലവലുകളില്‍ <b>%(service)s</b> സേവനം സജ്ജമാക്കുക:"
-
-#: ../src/system-config-services.glade:1395
+#: src/system-config-services.glade:1395
 msgid "Runlevel _2"
 msgstr "റണ്‍ലവല്‍ _2"
 
-#: ../src/system-config-services.glade:1414
+#: src/system-config-services.glade:1414
 msgid "Runlevel _3"
 msgstr "റണ്‍ലവല്‍ _3"
 
-#: ../src/system-config-services.glade:1433
+#: src/system-config-services.glade:1433
 msgid "Runlevel _4"
 msgstr "റണ്‍ലവല്‍ _4"
 
-#: ../src/system-config-services.glade:1452
+#: src/system-config-services.glade:1452
 msgid "Runlevel _5"
 msgstr "റണ്‍ലവല്‍ _5"
 
-#: ../src/gui.py:112
-msgid "Name"
-msgstr "പേരു്"
-
-#: ../src/gui.py:113
-msgid "Remarks"
-msgstr "നിരൂപണങ്ങള്‍"
-
-#: ../src/gui.py:174 ../src/gui.py:192
-msgid "This service is being refreshed right now."
-msgstr "ഈ സേവനം നിലവില്‍ പരിഷ്കരിക്കപ്പെടുന്നു."
-
-#: ../src/gui.py:175
-msgid "Getting information about this service failed."
-msgstr "ഈ സര്‍വീസ് സംബന്ധിച്ചുള്ള വിവരം ലഭിക്കുവാന്‍ സാധ്യമായില്ല."
-
-#: ../src/gui.py:176
-msgid "This service is enabled."
-msgstr "ഈ സേവനം പ്രവര്‍ത്തന സജ്ജമാണു്."
-
-#: ../src/gui.py:177
-msgid "This service is disabled."
-msgstr "ഈ സേവനം പ്രവര്‍ത്തന രഹിതമാണു്."
-
-#: ../src/gui.py:178
-#, python-format
-msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr "ഈ സേവനങ്ങള്‍ റണ്‍ലവലുകളില്‍ പ്രവര്‍ത്തന സജ്ജമാണു്: %(runlevels)s"
-
-#: ../src/gui.py:193
-msgid "The status of this service is unknown."
-msgstr "ഈ സേവനത്തിന്റെ അവസ്ഥ അപരിചിതമാണു്."
-
-#: ../src/gui.py:194
-msgid "This service is stopped."
-msgstr "ഈ സേവനം നിര്‍ത്തിയിരിക്കുന്നു."
-
-#: ../src/gui.py:195
-msgid "This service is running."
-msgstr "ഈ സേവനം പ്രവര്‍ത്തനത്തിലാണു്."
-
-#: ../src/gui.py:196
-msgid "This service is dead."
-msgstr "ഈ സേവനം നിര്‍ജ്ജീവമാണു്."
-
-#: ../src/gui.py:273
-#, python-format
-msgid ""
-"The <b>%(servicename)s</b> service is started once, usually when the system "
-"is booted, runs in the background and wakes up when needed."
-msgstr ""
-"സിസ്റ്റം ബൂട്ട് ചെയ്യുമ്പോള്‍ <b>%(servicename)s</b> സേവനം ഒരിക്കല്‍ ആരംഭിക്കുന്നു. ശേഷം "
-"പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിക്കുന്നു, ആവശ്യമുള്ളപ്പോള്‍ പ്രത്യക്ഷത്തില്‍ വരുന്നു."
-
-#: ../src/gui.py:287
-msgid "This service is updated currently."
-msgstr "ഈ സേവനം നിലവില്‍ പരിഷ്കരിക്കപ്പെടുന്നു."
-
-#: ../src/gui.py:313
-#, python-format
-msgid ""
-"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has nothing more to do."
-msgstr ""
-"xinetd സര്‍വീസിന്റെ ആവശ്യപ്രകാരം <b>%(servicename)s</b> ആരംഭിക്കുന്നു. എല്ലാ പ്രക്രിയകളും "
-"അവസാനിക്കുമ്പോള്‍ ഈ സര്‍വീസ് അവസാനിക്കുന്നു."
-
-#: ../src/gui.py:322
-msgid ""
-"This service is enabled, but the <b>xinetd</b> package is not installed. "
-"This service does not work without it."
-msgstr ""
-"ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് ഇന്‍സ്റ്റോള്‍ അല്ലാത്തതിനാല്‍ ഈ സേവനം "
-"പ്രവര്‍ത്തിക്കുന്നതല്ല."
-
-#: ../src/gui.py:328
-msgid ""
-"This service is enabled, but the <b>xinetd</b> service is not running. This "
-"service does not work without it."
-msgstr "ഈ സേവനം സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സേവനം പ്രവര്‍ത്തിക്കുന്നതല്ല."
-
-#: ../src/gui.py:846
-msgid ""
-"The help viewer could not be found. To be able to view help, the 'yelp' "
-"package needs to be installed."
-msgstr ""
-"സഹായം ലഭ്യമാക്കുന്ന സംവിധാനം ഇവിടെ ലഭ്യമല്ല. ഇതിനായി, 'yelp' പാക്കേജുകള്‍ ഇന്‍സ്റ്റോള്‍ "
-"ചെയ്യേണ്ടതുണ്ടു്."
-
-#: ../system-config-services.desktop.in.h:1
+#: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "സിസ്റ്റം ആരംഭിക്കുമ്പോള്‍ ഏതെല്ലാം സേവനങ്ങള്‍ പ്രവര്‍ത്തിക്കണം എന്നതു് ക്രമീകരിക്കുക"
 
-#: ../system-config-services.desktop.in.h:2
+#: system-config-services.desktop.in.h:2
 msgid "Service Management"
 msgstr "സര്‍വീസ് മാനേജ്മെന്റ്"
 
-#: ../system-config-services.desktop.in.h:3
+#: system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "സേവനങ്ങള്‍"
 
+#: config/org.fedoraproject.config.services.policy.0.in.h:1
+#: config/org.fedoraproject.config.services.policy.1.in.h:1
+msgid "Get information about system services"
+msgstr ""
+
+#: config/org.fedoraproject.config.services.policy.0.in.h:2
+#: config/org.fedoraproject.config.services.policy.1.in.h:2
+msgid "Manage system services"
+msgstr ""
+
+#: config/org.fedoraproject.config.services.policy.0.in.h:3
+#: config/org.fedoraproject.config.services.policy.1.in.h:3
+msgid "System policy prevents access to system services information"
+msgstr ""
+
+#: config/org.fedoraproject.config.services.policy.0.in.h:4
+#: config/org.fedoraproject.config.services.policy.1.in.h:4
+msgid "System policy prevents management of system services"
+msgstr ""

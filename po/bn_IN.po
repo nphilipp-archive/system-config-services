@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.bn_IN\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-11 14:46+0200\n"
+"POT-Creation-Date: 2009-09-21 13:26+0200\n"
 "PO-Revision-Date: 2009-09-01 11:15+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <anubad@lists.ankur.org.in>\n"
@@ -23,90 +23,175 @@ msgstr ""
 "\n"
 "\n"
 
-#: ../src/system-config-services.glade:7
-#: ../src/system-config-services.glade:1223
+#: src/gui.py:111
+msgid "Name"
+msgstr "নাম"
+
+#: src/gui.py:112
+msgid "Remarks"
+msgstr "মন্তব্য"
+
+#: src/gui.py:173 src/gui.py:191
+msgid "This service is being refreshed right now."
+msgstr "পরিসেবার তথ্য নতুন করে প্রদর্শন করা হচ্ছে।"
+
+#: src/gui.py:174
+msgid "Getting information about this service failed."
+msgstr "চিহ্নিত পরিসেবা সম্পর্কে তথ্য প্রাপ্ত করতে ব্যর্থ।"
+
+#: src/gui.py:175
+msgid "This service is enabled."
+msgstr "এই পরিসেবা বর্তমানে সক্রিয়।"
+
+#: src/gui.py:176
+msgid "This service is disabled."
+msgstr "এই পরিসেবা বর্তমানে নিষ্ক্রিয়।"
+
+#: src/gui.py:177
+#, python-format
+msgid "This service is enabled in runlevels: %(runlevels)s"
+msgstr "এই পরিসেবা চিহ্নিত রান-লেভেলে বর্তমানে চলছে:  %(runlevels)s"
+
+#: src/gui.py:192
+msgid "The status of this service is unknown."
+msgstr "এই পরিসেবার অবস্থা বর্তমানে অজানা।"
+
+#: src/gui.py:193
+msgid "This service is stopped."
+msgstr "এই পরিসেবা বন্ধ করা হয়েছে।"
+
+#: src/gui.py:194
+msgid "This service is running."
+msgstr "এই পরিসেবা বর্তমানে চলছে।"
+
+#: src/gui.py:195
+msgid "This service is dead."
+msgstr "পরিসেবাটি সম্পূর্ণরূপে বন্ধ।"
+
+#: src/gui.py:272
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is started once, usually when the system "
+"is booted, runs in the background and wakes up when needed."
+msgstr ""
+"<b>%(servicename)s</b> পরিসেবাটি সাধারণত সিস্টেম বুট করার সময় একবার আরম্ভ করা "
+"হয় ও নেপথ্যে সঞ্চালিত হয়। প্রয়োজন অনুযায়ী পরিসেবাটি সক্রিয় করা হয়।"
+
+#: src/gui.py:286
+msgid "This service is updated currently."
+msgstr "এই পরিসেবা বর্তমানে আপডেট করা হয়েছে।"
+
+#: src/gui.py:312
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
+"service and ends when it has nothing more to do."
+msgstr ""
+"প্রয়োজন অনুযায়ী xinetd পরিসেবা দ্বারা <b>%(servicename)s</b> পরিসেবা আরম্ভ করা "
+"হবে ও কর্ম সমাপ্ত হলে পরিসেবাটি বন্ধ করা হবে।"
+
+#: src/gui.py:321
+msgid ""
+"This service is enabled, but the <b>xinetd</b> package is not installed. "
+"This service does not work without it."
+msgstr ""
+"এই পরিসেবা সক্রিয় হলেও, <b>xinetd</b> প্যাকেজ ইনস্টল করা হয়নি। xinetd বিনা এই "
+"পরিসেবা সঞ্চালন করা সম্ভব নয়।"
+
+#: src/gui.py:327
+msgid ""
+"This service is enabled, but the <b>xinetd</b> service is not running. This "
+"service does not work without it."
+msgstr ""
+"এই পরিসেবা সক্রিয় হলেও, <b>xinetd</b> পরিসেবা চলছে না। xinetd বিনা এই পরিসেবা "
+"সঞ্চালন করা সম্ভব নয়।"
+
+#: src/gui.py:713 src/system-config-services.glade:1351
+#, python-format
+msgid "Enable the <b>%(service)s</b> service in these runlevels:"
+msgstr "চিহ্নিত রান-লেভেলে <b>%(service)s</b> পরিসেবা সক্রিয় করা হবে:"
+
+#: src/gui.py:845
+msgid ""
+"The help viewer could not be found. To be able to view help, the 'yelp' "
+"package needs to be installed."
+msgstr ""
+"সহায়িকা প্রদর্শন ব্যবস্থা পাওয়া যায়নি। সহায়ক নথিপত্র প্রদর্শনের জন্য 'yelp' নামক "
+"প্যাকেজটি ইনস্টল থাকা আবশ্যক।"
+
+#: src/system-config-services.glade:7 src/system-config-services.glade:1223
 msgid "Service Configuration"
 msgstr "পরিসেবা কনফিগারেশন"
 
-#: ../src/system-config-services.glade:38
+#: src/system-config-services.glade:38
 msgid "_Program"
 msgstr "প্রোগ্রাম (_P)"
 
-#: ../src/system-config-services.glade:60
+#: src/system-config-services.glade:60
 msgid "Ser_vice"
 msgstr "পরিসেবা (_v)"
 
-#: ../src/system-config-services.glade:69
-#: ../src/system-config-services.glade:327
+#: src/system-config-services.glade:69 src/system-config-services.glade:327
 msgid "_Enable"
 msgstr "সক্রিয় (_E)"
 
-#: ../src/system-config-services.glade:91
-#: ../src/system-config-services.glade:344
+#: src/system-config-services.glade:91 src/system-config-services.glade:344
 msgid "_Disable"
 msgstr "নিষ্ক্রিয় করুন (_D)"
 
-#: ../src/system-config-services.glade:113
-#: ../src/system-config-services.glade:362
+#: src/system-config-services.glade:113 src/system-config-services.glade:362
 msgid "_Customize"
 msgstr "স্বনির্ধারণ (_C)"
 
-#: ../src/system-config-services.glade:134
-#: ../src/system-config-services.glade:1241
+#: src/system-config-services.glade:134 src/system-config-services.glade:1241
 msgid "Runlevel 2"
 msgstr "Runlevel 2"
 
-#: ../src/system-config-services.glade:143
-#: ../src/system-config-services.glade:1251
+#: src/system-config-services.glade:143 src/system-config-services.glade:1251
 msgid "Runlevel 3"
 msgstr "Runlevel 3"
 
-#: ../src/system-config-services.glade:152
-#: ../src/system-config-services.glade:1261
+#: src/system-config-services.glade:152 src/system-config-services.glade:1261
 msgid "Runlevel 4"
 msgstr "Runlevel 4"
 
-#: ../src/system-config-services.glade:161
-#: ../src/system-config-services.glade:1271
+#: src/system-config-services.glade:161 src/system-config-services.glade:1271
 msgid "Runlevel 5"
 msgstr "Runlevel 5"
 
-#: ../src/system-config-services.glade:180
-#: ../src/system-config-services.glade:392
+#: src/system-config-services.glade:180 src/system-config-services.glade:392
 msgid "_Start"
 msgstr "আরম্ভ (_S)"
 
-#: ../src/system-config-services.glade:202
-#: ../src/system-config-services.glade:409
+#: src/system-config-services.glade:202 src/system-config-services.glade:409
 msgid "S_top"
 msgstr "বন্ধ করা হবে (_t)"
 
-#: ../src/system-config-services.glade:224
-#: ../src/system-config-services.glade:426
+#: src/system-config-services.glade:224 src/system-config-services.glade:426
 msgid "_Restart"
 msgstr "পুনরারম্ভ (_R)"
 
-#: ../src/system-config-services.glade:250
+#: src/system-config-services.glade:250
 msgid "_Help"
 msgstr "সাহায্য (_H)"
 
-#: ../src/system-config-services.glade:259
+#: src/system-config-services.glade:259
 msgid "_Contents"
 msgstr "বিষয়বস্তু (_C)"
 
-#: ../src/system-config-services.glade:287
+#: src/system-config-services.glade:287
 msgid "_About"
 msgstr "পরিচিতি (_A)"
 
-#: ../src/system-config-services.glade:361
+#: src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
 msgstr "পরিসেবা যে রান-লেভেলগুলিতে সক্রিয় করা হবে তা নির্ধারণ করুন।"
 
-#: ../src/system-config-services.glade:559
+#: src/system-config-services.glade:559
 msgid "No service selected."
 msgstr "কোনো পরিসেবা নির্বাচন করা হয়নি।"
 
-#: ../src/system-config-services.glade:621
+#: src/system-config-services.glade:621
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
@@ -114,34 +199,35 @@ msgstr ""
 "এই পরিসেবাটি সাধারণত সিস্টেম বুট করার সময় একবার আরম্ভ করা হয় ও নেপথ্যে সঞ্চালিত "
 "হয়। প্রয়োজন অনুযায়ী পরিসেবাটি সক্রিয় করা হয়।"
 
-#: ../src/system-config-services.glade:769
-#: ../src/system-config-services.glade:960
+#: src/system-config-services.glade:769 src/system-config-services.glade:960
 msgid "Description"
 msgstr "বিবরণ"
 
-#: ../src/system-config-services.glade:867
+#: src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr "প্রয়োজন অনুযায়ী xinetd পরিসেবা দ্বারা এই পরিসেবা আরম্ভ করা হবে ও কর্ম সমাপ্ত হলে পরিসেবাটি বন্ধ করা হবে।"
+msgstr ""
+"প্রয়োজন অনুযায়ী xinetd পরিসেবা দ্বারা এই পরিসেবা আরম্ভ করা হবে ও কর্ম সমাপ্ত হলে "
+"পরিসেবাটি বন্ধ করা হবে।"
 
-#: ../src/system-config-services.glade:1065
+#: src/system-config-services.glade:1065
 msgid "Service Information"
 msgstr "পরিসেবা সংক্রান্ত তথ্য"
 
-#: ../src/system-config-services.glade:1184
+#: src/system-config-services.glade:1184
 msgid "Status of service %s:"
 msgstr "%s পরিসেবার অবস্থা:"
 
-#: ../src/system-config-services.glade:1221
+#: src/system-config-services.glade:1221
 msgid "system-config-services"
 msgstr "system-config-services"
 
-#: ../src/system-config-services.glade:1222
+#: src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
 msgstr "স্বত্বাধিকার © ২০০২-২০০৯ Red Hat, Inc. ও অন্যান্য অংশগ্রহণকারীদের"
 
-#: ../src/system-config-services.glade:1224
+#: src/system-config-services.glade:1224
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -170,134 +256,59 @@ msgstr ""
 "নিম্নলিখিত ঠিকানায় লিখে তা সংগ্রহ করুন Free Software Foundation, Inc., 675 Mass "
 "Ave, Cambridge, MA 02139, USA।"
 
-#: ../src/system-config-services.glade:1231
+#: src/system-config-services.glade:1231
 msgid "translator-credits"
 msgstr "রুণা ভট্টাচার্য (runab at redhat dot com)"
 
-#: ../src/system-config-services.glade:1280
+#: src/system-config-services.glade:1280
 msgid "Customize Runlevels"
 msgstr "রান-লেভেল স্বনির্ধারণ"
 
-#: ../src/system-config-services.glade:1351 ../src/gui.py:714
-#, python-format
-msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "চিহ্নিত রান-লেভেলে <b>%(service)s</b> পরিসেবা সক্রিয় করা হবে:"
-
-#: ../src/system-config-services.glade:1395
+#: src/system-config-services.glade:1395
 msgid "Runlevel _2"
 msgstr "Runlevel _2"
 
-#: ../src/system-config-services.glade:1414
+#: src/system-config-services.glade:1414
 msgid "Runlevel _3"
 msgstr "Runlevel _3"
 
-#: ../src/system-config-services.glade:1433
+#: src/system-config-services.glade:1433
 msgid "Runlevel _4"
 msgstr "Runlevel _4"
 
-#: ../src/system-config-services.glade:1452
+#: src/system-config-services.glade:1452
 msgid "Runlevel _5"
 msgstr "Runlevel _5"
 
-#: ../src/gui.py:112
-msgid "Name"
-msgstr "নাম"
-
-#: ../src/gui.py:113
-msgid "Remarks"
-msgstr "মন্তব্য"
-
-#: ../src/gui.py:174 ../src/gui.py:192
-msgid "This service is being refreshed right now."
-msgstr "পরিসেবার তথ্য নতুন করে প্রদর্শন করা হচ্ছে।"
-
-#: ../src/gui.py:175
-msgid "Getting information about this service failed."
-msgstr "চিহ্নিত পরিসেবা সম্পর্কে তথ্য প্রাপ্ত করতে ব্যর্থ।"
-
-#: ../src/gui.py:176
-msgid "This service is enabled."
-msgstr "এই পরিসেবা বর্তমানে সক্রিয়।"
-
-#: ../src/gui.py:177
-msgid "This service is disabled."
-msgstr "এই পরিসেবা বর্তমানে নিষ্ক্রিয়।"
-
-#: ../src/gui.py:178
-#, python-format
-msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr "এই পরিসেবা চিহ্নিত রান-লেভেলে বর্তমানে চলছে:  %(runlevels)s"
-
-#: ../src/gui.py:193
-msgid "The status of this service is unknown."
-msgstr "এই পরিসেবার অবস্থা বর্তমানে অজানা।"
-
-#: ../src/gui.py:194
-msgid "This service is stopped."
-msgstr "এই পরিসেবা বন্ধ করা হয়েছে।"
-
-#: ../src/gui.py:195
-msgid "This service is running."
-msgstr "এই পরিসেবা বর্তমানে চলছে।"
-
-#: ../src/gui.py:196
-msgid "This service is dead."
-msgstr "পরিসেবাটি সম্পূর্ণরূপে বন্ধ।"
-
-#: ../src/gui.py:273
-#, python-format
-msgid ""
-"The <b>%(servicename)s</b> service is started once, usually when the system "
-"is booted, runs in the background and wakes up when needed."
-msgstr ""
-"<b>%(servicename)s</b> পরিসেবাটি সাধারণত সিস্টেম বুট করার সময় একবার আরম্ভ করা "
-"হয় ও নেপথ্যে সঞ্চালিত হয়। প্রয়োজন অনুযায়ী পরিসেবাটি সক্রিয় করা হয়।"
-
-#: ../src/gui.py:287
-msgid "This service is updated currently."
-msgstr "এই পরিসেবা বর্তমানে আপডেট করা হয়েছে।"
-
-#: ../src/gui.py:313
-#, python-format
-msgid ""
-"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has nothing more to do."
-msgstr "প্রয়োজন অনুযায়ী xinetd পরিসেবা দ্বারা <b>%(servicename)s</b> পরিসেবা আরম্ভ করা হবে ও কর্ম সমাপ্ত হলে পরিসেবাটি বন্ধ করা হবে।"
-
-#: ../src/gui.py:322
-msgid ""
-"This service is enabled, but the <b>xinetd</b> package is not installed. "
-"This service does not work without it."
-msgstr ""
-"এই পরিসেবা সক্রিয় হলেও, <b>xinetd</b> প্যাকেজ ইনস্টল করা হয়নি। xinetd বিনা এই "
-"পরিসেবা সঞ্চালন করা সম্ভব নয়।"
-
-#: ../src/gui.py:328
-msgid ""
-"This service is enabled, but the <b>xinetd</b> service is not running. This "
-"service does not work without it."
-msgstr ""
-"এই পরিসেবা সক্রিয় হলেও, <b>xinetd</b> পরিসেবা চলছে না। xinetd বিনা এই পরিসেবা "
-"সঞ্চালন করা সম্ভব নয়।"
-
-#: ../src/gui.py:846
-msgid ""
-"The help viewer could not be found. To be able to view help, the 'yelp' "
-"package needs to be installed."
-msgstr ""
-"সহায়িকা প্রদর্শন ব্যবস্থা পাওয়া যায়নি। সহায়ক নথিপত্র প্রদর্শনের জন্য 'yelp' নামক "
-"প্যাকেজটি ইনস্টল থাকা আবশ্যক।"
-
-#: ../system-config-services.desktop.in.h:1
+#: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "সিস্টেম আরম্ভের সময় সক্রিয় পরিসেবাগুলি কনফিগার করুন"
 
-#: ../system-config-services.desktop.in.h:2
+#: system-config-services.desktop.in.h:2
 msgid "Service Management"
 msgstr "পরিসেবা পরিচালনা"
 
 # msgstr "সার্ভিস বন্ধ"--old version
-#: ../system-config-services.desktop.in.h:3
+#: system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "পরিসেবা"
 
+#: config/org.fedoraproject.config.services.policy.0.in.h:1
+#: config/org.fedoraproject.config.services.policy.1.in.h:1
+msgid "Get information about system services"
+msgstr ""
+
+#: config/org.fedoraproject.config.services.policy.0.in.h:2
+#: config/org.fedoraproject.config.services.policy.1.in.h:2
+msgid "Manage system services"
+msgstr ""
+
+#: config/org.fedoraproject.config.services.policy.0.in.h:3
+#: config/org.fedoraproject.config.services.policy.1.in.h:3
+msgid "System policy prevents access to system services information"
+msgstr ""
+
+#: config/org.fedoraproject.config.services.policy.0.in.h:4
+#: config/org.fedoraproject.config.services.policy.1.in.h:4
+msgid "System policy prevents management of system services"
+msgstr ""
