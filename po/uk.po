@@ -2,14 +2,14 @@
 # Copyright (C) Free Software Foundation
 # This file is distributed under the same license as the system-config-services package.
 # Maxim Dubovoy <max@mylinux.com.ua>, 2003.
-# Maxim Dziumanenko <dziumanenko@gmail.com>, 2003-2007.
+# Maxim Dziumanenko <dziumanenko@gmail.com>, 2003-2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-08-11 17:57+0200\n"
+"PO-Revision-Date: 2009-09-21 17:57+0200\n"
 "Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -289,19 +289,21 @@ msgstr "Служби"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "Отримати інформацію про системні служби"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "Керування системними службами"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "Системна політика перешкоджає доступу до інформації про системні служби"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "Системна політика перешкоджає керуванню системними службами"
+
+
