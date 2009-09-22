@@ -1,4 +1,4 @@
-# translation of system-config-services.tip.fr.po to French
+# translation of system-config-services.master.fr.po to French
 # translation of fr.po to
 # translation of fr.po to
 # Copyright (C) 2001 Red Hat, Inc.
@@ -15,14 +15,15 @@
 # Thomas Canniot <mrtom@fedoraproject.org>, 2008.
 # Corina Roe <croe@redhat.com>, 2008.
 # Pablo Martin-Gomez <pablo.martin-gomez@laposte.net>, 2009.
+# Sam Friedmann <sam.friedmann@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.tip.fr\n"
+"Project-Id-Version: system-config-services.master.fr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-08-17 21:57+0200\n"
-"Last-Translator: Pablo Martin-Gomez <pablo.martin-gomez@laposte.net>\n"
-"Language-Team: Français <fedora-trans-fr@redhat.com>\n"
+"PO-Revision-Date: 2009-09-22 16:21+1000\n"
+"Last-Translator: Sam Friedmann <sam.friedmann@redhat.com>\n"
+"Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -191,8 +192,7 @@ msgstr "_A propos de"
 
 #: src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
-"Personaliser les niveaux d'exécution pour lesquels un service est activé."
+msgstr "Personaliser les niveaux d'exécution pour lesquels un service est activé."
 
 #: src/system-config-services.glade:559
 msgid "No service selected."
@@ -304,130 +304,20 @@ msgstr "Services"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "Obtenir des informations sur vos services système"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "Gérer vos services système"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "La politique du système empêche l'accès aux informations des services système"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "La politique du système empêche la gestion de certains services système"
 
-#~ msgid "window1"
-#~ msgstr "fenêtre1"
-
-#~ msgid "Service %s"
-#~ msgstr "Service %s"
-
-#~ msgid "Enable"
-#~ msgstr "Activer"
-
-#~ msgid "Disable"
-#~ msgstr "Désactiver"
-
-#~ msgid "Customize"
-#~ msgstr "Personnaliser"
-
-#~ msgid "Enable Default"
-#~ msgstr "Activer valeur par défaut"
-
-#~ msgid "Enable All"
-#~ msgstr "Activer Tout"
-
-#~ msgid "Disable All"
-#~ msgstr "Désactiver Tout"
-
-#~ msgid "Start"
-#~ msgstr "Démarrer"
-
-#~ msgid "Restart"
-#~ msgstr "Redémarrer"
-
-#~ msgid "Configure"
-#~ msgstr "Configurer"
-
-#~ msgid "foobar"
-#~ msgstr "foobar"
-
-#~ msgid "barfoo"
-#~ msgstr "barfoo"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Niveau d'exécution actuel est de %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "Niveaux d'exécution"
-
-#~ msgid "label18"
-#~ msgstr "label18"
-
-#~ msgid "Start "
-#~ msgstr "Démarrer"
-
-#~ msgid "Stop"
-#~ msgstr "Arrêter"
-
-#~ msgid "Service control"
-#~ msgstr "Commande de service"
-
-#~ msgid "Status output"
-#~ msgstr "Statut"
-
-#~ msgid "_Configure"
-#~ msgstr "_Configurer"
-
-#~ msgid "Button Box"
-#~ msgstr "Boîte à boutons"
-
-#~ msgid "label16"
-#~ msgstr "label16"
-
-#~ msgid "Service %s:"
-#~ msgstr "Service %s:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright  2002-2008 Red Hat, Inc. et contributeurs"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "Service %s non trouvé!"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "Service %s est exécuté dans l'ancienne configuration"
-
-#~ msgid "Service %s is running"
-#~ msgstr "Service %s est en cours d'exécution"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "Service %s reporte un erreur"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "Service %s est arrêté"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "Actuellement activé sur niveaux d'exécution %s"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "Activer %(name)s dans niveaux d'exécution %(levels)s"
-
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "Le service <b>%(servicename)s</b> sera démarré à la demande par "
-#~ "l'intermédiaire du service xinetd et sera interrompu quand il n'y a plus "
-#~ "rien à faire."
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "Le service démarre à la demande du service xinetd et s'interrompt quand "
-#~ "il n'a plus rien à faire."
