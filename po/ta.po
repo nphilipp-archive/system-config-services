@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: system-config-services.master.ta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-08-27 21:45+0530\n"
+"PO-Revision-Date: 2009-09-22 11:37+0530\n"
 "Last-Translator: I. Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -20,6 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\\n\n"
+"\n"
 "\n"
 
 #: src/gui.py:111
@@ -49,7 +50,7 @@ msgstr "இந்த சேவை செயல்நீக்கப்பட்�
 #: src/gui.py:177
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr "இந்த சேவை இயக்க்கநிலைகளில் செயல்படுத்தப்பட்டது: %(runlevels)s"
+msgstr "இந்த சேவை இயக்கநிலைகளில் செயல்படுத்தப்பட்டது: %(runlevels)s"
 
 #: src/gui.py:192
 msgid "The status of this service is unknown."
@@ -86,7 +87,7 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
-"<b>%(servicename)s</b> சேவையானது xinetd சேவையின் வினவியதால் துவக்குகறிது மற்றும் "
+"<b>%(servicename)s</b> சேவையானது xinetd சேவையின் வினவியதால் துவக்குகிறது மற்றும் "
 "எதுவும் செய்ய இல்லாத போது முடிக்கிறது."
 
 #: src/gui.py:321
@@ -293,19 +294,20 @@ msgstr "சேவைகள்"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "கணினி சேவைகள் பற்றிய தகவலை பெறு"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "கணினி சேவைகளை நிர்வகி"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "கணினி பாலிசி கணினி சேவைகள் தகவலை அணுகுவதை தடுக்கிறது"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "கணினி பாலிசி கணினி சேவைகள் மேலாண்மையை தடுக்கிறது"
+
