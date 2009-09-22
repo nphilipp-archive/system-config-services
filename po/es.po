@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: system-config-services.tip.es\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-08-12 10:08-0300\n"
-"Last-Translator: Héctor Daniel Cabrera <h.daniel.cabrera@gmail.com>\n"
+"PO-Revision-Date: 2009-09-22 00:25-0300\n"
+"Last-Translator: Claudio Rodrigo Pereyra Diaz <claudio@pereyradiaz.com.ar>\n"
 "Language-Team: Fedora Spanish <fedora-trans-es@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,7 +29,8 @@ msgstr "Nombre"
 msgid "Remarks"
 msgstr "Notas"
 
-#: src/gui.py:173 src/gui.py:191
+#: src/gui.py:173
+#: src/gui.py:191
 msgid "This service is being refreshed right now."
 msgstr "Este servicio está siendo refrescado actualmente."
 
@@ -68,13 +69,8 @@ msgstr "Este servicio está muerto."
 
 #: src/gui.py:272
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service is started once, usually when the system "
-"is booted, runs in the background and wakes up when needed."
-msgstr ""
-"El servicio <b>%(servicename)s</b> se inicia una vez, normalmente cuando el "
-"sistema arranca, funciona en segundo plano y se despierta cuando se lo "
-"necesita."
+msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "El servicio <b>%(servicename)s</b> se inicia una vez, normalmente cuando el sistema arranca, funciona en segundo plano y se despierta cuando se lo necesita."
 
 #: src/gui.py:286
 msgid "This service is updated currently."
@@ -82,45 +78,30 @@ msgstr "Este servicio se está actualizando en este momento."
 
 #: src/gui.py:312
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has nothing more to do."
-msgstr ""
-"El servicio <b>%(servicename)s</b> se iniciará por demanda con el servicio "
-"xinetd y finalizará cuando no tenga nada más que hacer."
+msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "El servicio <b>%(servicename)s</b> se iniciará por demanda con el servicio xinetd y finalizará cuando no tenga nada más que hacer."
 
 #: src/gui.py:321
-msgid ""
-"This service is enabled, but the <b>xinetd</b> package is not installed. "
-"This service does not work without it."
-msgstr ""
-"Este servicio está habilitado, pero el paquete <b>xinetd</b> no está "
-"instalado. Este servicio no funciona sin xinetd."
+msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
+msgstr "Este servicio está habilitado, pero el paquete <b>xinetd</b> no está instalado. Este servicio no funciona sin xinetd."
 
 #: src/gui.py:327
-msgid ""
-"This service is enabled, but the <b>xinetd</b> service is not running. This "
-"service does not work without it."
-msgstr ""
-"Este servicio está habilitado, pero el servicio <b>xinetd</b> no está "
-"funcionando. Este servicio no funciona sin xinetd."
+msgid "This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."
+msgstr "Este servicio está habilitado, pero el servicio <b>xinetd</b> no está funcionando. Este servicio no funciona sin xinetd."
 
-#: src/gui.py:713 src/system-config-services.glade:1351
+#: src/gui.py:713
+#: src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr ""
-"Habilitar el servicio <b>%(service)s</b> en estos niveles de ejecución:"
+msgstr "Habilitar el servicio <b>%(service)s</b> en estos niveles de ejecución:"
 
 #: src/gui.py:845
-msgid ""
-"The help viewer could not be found. To be able to view help, the 'yelp' "
-"package needs to be installed."
-msgstr ""
-"El visor de ayuda no está. Para poder ver la ayuda debe instalar el paquete "
-"'yelp'."
+msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
+msgstr "El visor de ayuda no está. Para poder ver la ayuda debe instalar el paquete 'yelp'."
 
 # serviceconf.gladestrings:14
-#: src/system-config-services.glade:7 src/system-config-services.glade:1223
+#: src/system-config-services.glade:7
+#: src/system-config-services.glade:1223
 msgid "Service Configuration"
 msgstr "Configuración del servicio"
 
@@ -132,43 +113,53 @@ msgstr "_Programa"
 msgid "Ser_vice"
 msgstr "Ser_vicio"
 
-#: src/system-config-services.glade:69 src/system-config-services.glade:327
+#: src/system-config-services.glade:69
+#: src/system-config-services.glade:327
 msgid "_Enable"
 msgstr "_Habilitar"
 
-#: src/system-config-services.glade:91 src/system-config-services.glade:344
+#: src/system-config-services.glade:91
+#: src/system-config-services.glade:344
 msgid "_Disable"
 msgstr "_Deshabilitar"
 
-#: src/system-config-services.glade:113 src/system-config-services.glade:362
+#: src/system-config-services.glade:113
+#: src/system-config-services.glade:362
 msgid "_Customize"
 msgstr "P_ersonalizar"
 
-#: src/system-config-services.glade:134 src/system-config-services.glade:1241
+#: src/system-config-services.glade:134
+#: src/system-config-services.glade:1241
 msgid "Runlevel 2"
 msgstr "Nivel de ejecución 2"
 
-#: src/system-config-services.glade:143 src/system-config-services.glade:1251
+#: src/system-config-services.glade:143
+#: src/system-config-services.glade:1251
 msgid "Runlevel 3"
 msgstr "Nivel de ejecución 3"
 
-#: src/system-config-services.glade:152 src/system-config-services.glade:1261
+#: src/system-config-services.glade:152
+#: src/system-config-services.glade:1261
 msgid "Runlevel 4"
 msgstr "Nivel de ejecución 4"
 
-#: src/system-config-services.glade:161 src/system-config-services.glade:1271
+#: src/system-config-services.glade:161
+#: src/system-config-services.glade:1271
 msgid "Runlevel 5"
 msgstr "Nivel de ejecución 5"
 
-#: src/system-config-services.glade:180 src/system-config-services.glade:392
+#: src/system-config-services.glade:180
+#: src/system-config-services.glade:392
 msgid "_Start"
 msgstr "_Iniciar"
 
-#: src/system-config-services.glade:202 src/system-config-services.glade:409
+#: src/system-config-services.glade:202
+#: src/system-config-services.glade:409
 msgid "S_top"
 msgstr "De_tener"
 
-#: src/system-config-services.glade:224 src/system-config-services.glade:426
+#: src/system-config-services.glade:224
+#: src/system-config-services.glade:426
 msgid "_Restart"
 msgstr "_Reiniciar"
 
@@ -186,32 +177,24 @@ msgstr "_Acerca de"
 
 #: src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
-"Personalizar los niveles de ejecución en los que un servicio se habilita."
+msgstr "Personalizar los niveles de ejecución en los que un servicio se habilita."
 
 #: src/system-config-services.glade:559
 msgid "No service selected."
 msgstr "No ha seleccionado ningún servicio."
 
 #: src/system-config-services.glade:621
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"Este servicio se inicia una vez, usualmente cuando se inicia el sistema, se "
-"ejecuta en segundo plano y se despierta cuando se lo necesita."
+msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "Este servicio se inicia una vez, usualmente cuando se inicia el sistema, se ejecuta en segundo plano y se despierta cuando se lo necesita."
 
-#: src/system-config-services.glade:769 src/system-config-services.glade:960
+#: src/system-config-services.glade:769
+#: src/system-config-services.glade:960
 msgid "Description"
 msgstr "Descripción"
 
 #: src/system-config-services.glade:867
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr ""
-"Este servicio se iniciará por demanda con el servicio xinetd y finalizará "
-"cuando ya no tenga nada más que hacer."
+msgid "This service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "Este servicio se iniciará por demanda con el servicio xinetd y finalizará cuando ya no tenga nada más que hacer."
 
 #: src/system-config-services.glade:1065
 msgid "Service Information"
@@ -231,33 +214,18 @@ msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
 
 #: src/system-config-services.glade:1224
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Este programa es software libre; lo puede redistribuir y/o modificar bajo "
-"los términos de la Licencia Pública General de GNU como fue publicada por la "
-"Fundación de Software Libre; ya sea en la versión 2 de la Licencia, o (a su "
-"opción) cualquier versión más nueva.\n"
+"Este programa es software libre; lo puede redistribuir y/o modificar bajo los términos de la Licencia Pública General de GNU como fue publicada por la Fundación de Software Libre; ya sea en la versión 2 de la Licencia, o (a su opción) cualquier versión más nueva.\n"
 "\n"
-"Este programa se distribuye con la esperanza de que le sea útil, pero SIN "
-"NINGUNA GARANTÍA; sin siquiera la garantía implícita de MERCANTIBILIDAD o "
-"AJUSTE A UN PROPÓSITO PARTICULAR. Vea la Licencia Pública General de GNU "
-"para más detalles.\n"
+"Este programa se distribuye con la esperanza de que le sea útil, pero SIN NINGUNA GARANTÍA; sin siquiera la garantía implícita de MERCANTIBILIDAD o AJUSTE A UN PROPÓSITO PARTICULAR. Vea la Licencia Pública General de GNU para más detalles.\n"
 "\n"
-"Debe haber recibido una copia de la Licencia Pública General de GNU junto "
-"con este programa; si no fue así, escriba a la Free Software Foundation, "
-"Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+"Debe haber recibido una copia de la Licencia Pública General de GNU junto con este programa; si no fue así, escriba a la Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade:1231
 msgid "translator-credits"
@@ -312,43 +280,37 @@ msgstr "Servicios"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "Obtener información sobre los servicios del sistema"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "Administración de servicios del sistema"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "Las políticas del sistema previenen el acceso a la información de los servicios del sistema"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "Las políticas del sistema previenen la administración de los servicios del sistema"
 
 #~ msgid "window1"
 #~ msgstr "window1"
-
 #~ msgid "Service %s"
 #~ msgstr "Servicio %s"
-
 #~ msgid "Enable"
 #~ msgstr "Habilitar"
-
 #~ msgid "Disable"
 #~ msgstr "Deshabilitar"
-
 #~ msgid "Customize"
 #~ msgstr "Personalizar"
-
 #~ msgid "Enable Default"
 #~ msgstr "Habilitar Predeterminado"
-
 #~ msgid "Enable All"
 #~ msgstr "Habilitar en Todos"
-
 #~ msgid "Disable All"
 #~ msgstr "Deshabilita en Todos"
+
