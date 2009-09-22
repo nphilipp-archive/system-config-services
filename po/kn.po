@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: system-config-services.master.kn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-09-03 14:28+0530\n"
+"PO-Revision-Date: 2009-09-22 12:34+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -182,8 +182,7 @@ msgstr "ಇದರ ಬಗ್ಗೆ(_A)"
 
 #: src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
-"ಒಂದು ಸೇವೆಯು ಚಾಲನೆಗೊಂಡಿರುವ ರನ್‌ಲೆವೆಲ್‌ಗಳನ್ನು ನಿಮ್ಮಿಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಬದಲಾಯಿಸಿಕೊಳ್ಳಿ."
+msgstr "ಒಂದು ಸೇವೆಯು ಚಾಲನೆಗೊಂಡಿರುವ ರನ್‌ಲೆವೆಲ್‌ಗಳನ್ನು ನಿಮ್ಮಿಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಬದಲಾಯಿಸಿಕೊಳ್ಳಿ."
 
 #: src/system-config-services.glade:559
 msgid "No service selected."
@@ -294,19 +293,20 @@ msgstr "ಸೇವೆಗಳು"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "ವ್ಯವಸ್ಥೆಯ ಸೇವೆಗಳ ಬಗೆಗೆ ಮಾಹಿತಿಯನ್ನು ಪಡೆದುಕೊಳ್ಳಿ"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "ವ್ಯವಸ್ಥೆಯ ಸೇವೆಗಳನ್ನು ವ್ಯವಸ್ಥಾಪಿಸಿ"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "ವ್ಯವಸ್ಥೆಯ ಸೇವೆಗಳನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳದಂತೆ ವ್ಯವಸ್ಥೆಯ ಪಾಲಿಸಿಯು ತಡೆದಿದೆ"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "ವ್ಯವಸ್ಥೆಯ ಸೇವೆಗಳನ್ನು ವ್ಯವಸ್ಥಾಪಿಸದಂತೆ ವ್ಯವಸ್ಥೆಯ ಪಾಲಿಸಿಯು ತಡೆದಿದೆ"
+
