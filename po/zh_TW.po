@@ -1,4 +1,4 @@
-# translation of system-config-services.master.zh_TW.po to Traditional Chinese
+# translation of system-config-services.master.po to Traditional Chinese
 # translation of system-config-services.master.po to
 # Translation of system-config-services to Chinese (traditional)
 # Copyright (C) 2002 Red Hat Inc.
@@ -9,10 +9,10 @@
 # Terry Chuang <tchuang@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.master.zh_TW\n"
+"Project-Id-Version: system-config-services.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-08-26 11:18+1000\n"
+"PO-Revision-Date: 2009-09-22 16:47+1000\n"
 "Last-Translator: Terry Chuang <tchuang@redhat.com>\n"
 "Language-Team: Traditional Chinese <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -121,23 +121,23 @@ msgstr "服務設定"
 
 #: src/system-config-services.glade:38
 msgid "_Program"
-msgstr "程式（_P）"
+msgstr "程式(_P)"
 
 #: src/system-config-services.glade:60
 msgid "Ser_vice"
-msgstr "服務（_v）"
+msgstr "服務(_v)"
 
 #: src/system-config-services.glade:69 src/system-config-services.glade:327
 msgid "_Enable"
-msgstr "啟用（_E）"
+msgstr "啟用(_E)"
 
 #: src/system-config-services.glade:91 src/system-config-services.glade:344
 msgid "_Disable"
-msgstr "停用（_D）"
+msgstr "停用(_D)"
 
 #: src/system-config-services.glade:113 src/system-config-services.glade:362
 msgid "_Customize"
-msgstr "自訂化（_C）"
+msgstr "自訂化(_C)"
 
 #: src/system-config-services.glade:134 src/system-config-services.glade:1241
 msgid "Runlevel 2"
@@ -157,27 +157,27 @@ msgstr "Runlevel 5"
 
 #: src/system-config-services.glade:180 src/system-config-services.glade:392
 msgid "_Start"
-msgstr "開始（_S）"
+msgstr "開始(_S)"
 
 #: src/system-config-services.glade:202 src/system-config-services.glade:409
 msgid "S_top"
-msgstr "停止（_t）"
+msgstr "停止(_t)"
 
 #: src/system-config-services.glade:224 src/system-config-services.glade:426
 msgid "_Restart"
-msgstr "重新啟動（_R）"
+msgstr "重新啟動(_R)"
 
 #: src/system-config-services.glade:250
 msgid "_Help"
-msgstr "說明（_H）"
+msgstr "說明(_H)"
 
 #: src/system-config-services.glade:259
 msgid "_Contents"
-msgstr "內容（_C）"
+msgstr "內容(_C)"
 
 #: src/system-config-services.glade:287
 msgid "_About"
-msgstr "關於（_A）"
+msgstr "關於(_A)"
 
 #: src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
@@ -195,14 +195,13 @@ msgstr "服務一般在系統開機時便會被啟用，執行於背景中，並
 
 #: src/system-config-services.glade:769 src/system-config-services.glade:960
 msgid "Description"
-msgstr "說明"
+msgstr "描述"
 
 #: src/system-config-services.glade:867
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"這項服務將可依照需求由 xinetd 服務來啟用，並且當沒有其它工作之後便會結束。"
+msgstr "這項服務將可依照需求由 xinetd 服務來啟用，並且當沒有其它工作之後便會結束。"
 
 #: src/system-config-services.glade:1065
 msgid "Service Information"
@@ -236,20 +235,17 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"此程式為免費軟體；您可將它重新發佈與 / 或將它進行修改，您必須同意自由軟件基金"
-"會（Free Software Foundation）的 GNU 通用公共許可證（GNU General Public "
-"License）的授權條款；許可證版本 2 或任何更新的版本。\n"
+"本程式為自由軟體；您可依據自由軟體基金會所發表的 GNU 通用公共許可證就本作品再為發佈與/或修改；無論您依據的是本授權的第二版或（您自行選擇的）任一日後發行的版本。\n"
 "\n"
-"此程式是為了方便社群使用，不過卻不含任何使用上的保証；甚至沒有任何適銷性上以"
-"及特定使用對象的保証。欲取得更多詳細資訊請參閱 GNU 通用公共許可證。\n"
+"本程式是基於使用目的而加以發佈，然而不負任何擔保責任；亦無對適售性或特定目的適用性所為的默示性擔保。詳情\n"
+"請參照 GNU 通用公共許可證。\n"
 "\n"
-"當您取得此程式時，您應同時取得了一份 GNU 通用公共許可證。若沒有的話，請透過書"
-"信通知：Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, "
-"MA 02111-1307  USA 來與自由軟件基金會取得聯繫。"
+"您應該已收到了附隨於本程式的 GNU 通用公共授權的副本；若沒有的話，請寫信至自由軟體基金會：59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA。"
 
 #: src/system-config-services.glade:1231
 msgid "translator-credits"
-msgstr "譯者姓名：莊佳儒（tchuang@redhat.com）"
+msgstr "譯者姓名：莊佳儒（tchuang@redhat.com，2009）"
 
 #: src/system-config-services.glade:1280
 msgid "Customize Runlevels"
@@ -257,19 +253,19 @@ msgstr "自訂 Runlevel"
 
 #: src/system-config-services.glade:1395
 msgid "Runlevel _2"
-msgstr "Runlevel _2（_2）"
+msgstr "Runlevel _2(_2)"
 
 #: src/system-config-services.glade:1414
 msgid "Runlevel _3"
-msgstr "Runlevel _3（_3）"
+msgstr "Runlevel _3(_3)"
 
 #: src/system-config-services.glade:1433
 msgid "Runlevel _4"
-msgstr "Runlevel _4（_4）"
+msgstr "Runlevel _4(_4)"
 
 #: src/system-config-services.glade:1452
 msgid "Runlevel _5"
-msgstr "Runlevel _5（_5）"
+msgstr "Runlevel _5(_5)"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -286,19 +282,20 @@ msgstr "服務"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "取得有關於系統服務的資訊"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "管理系統服務"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "系統政策防止了系統服務資訊上的存取"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "系統政策防止了系統服務上的管理"
+
