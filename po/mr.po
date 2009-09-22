@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: system-config-services.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-09-02 17:53+0530\n"
+"PO-Revision-Date: 2009-09-22 13:47+0530\n"
 "Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
 "Language-Team: Marathi <fedora-trans-mr@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -114,8 +114,7 @@ msgstr "या रनलेवल अंतर्गत <b>%(service)s</b> स�
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"मदत प्रदर्शक आढळले नाही. मदत पहाण्याकरीता, 'yelp' संकुल प्रतिष्ठापीत करणे आवश्यक आहे."
+msgstr "मदत प्रदर्शक आढळले नाही. मदत पहाण्याकरीता, 'yelp' संकुल प्रतिष्ठापीत करणे आवश्यक आहे."
 
 #: src/system-config-services.glade:7 src/system-config-services.glade:1223
 msgid "Service Configuration"
@@ -205,8 +204,7 @@ msgstr "वर्णन"
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"ही सेवा xinetd द्वारे आवश्यकताप्रमाणे सुरू केले जाईल व काहिच कार्य नसल्यावर समाप्त होईल."
+msgstr "ही सेवा xinetd द्वारे आवश्यकताप्रमाणे सुरू केले जाईल व काहिच कार्य नसल्यावर समाप्त होईल."
 
 #: src/system-config-services.glade:1065
 msgid "Service Information"
@@ -295,19 +293,20 @@ msgstr "सेवा"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "प्रणाली सेवाविष्यी माहिती प्राप्त करत आहे"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "प्रणाली सेवा व्यवस्थापीत करा"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "प्रणाली करार प्रणाली सेवा माहितीकरीता प्रवेश रोखतो"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "प्रणाली करार प्रणाली सेवांचे व्यवस्थापन रोखतो"
+
