@@ -1,21 +1,21 @@
-# translation of system-config-services.master.po to Maithili
+# translation of system-config-services.master.mai.po to Maithili
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Sangeeta Kumari <sangeeta09@gmail.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.master\n"
+"Project-Id-Version: system-config-services.master.mai\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-02-24 21:50+0530\n"
+"PO-Revision-Date: 2009-09-22 22:44+0530\n"
 "Last-Translator: Sangeeta Kumari <sangeeta09@gmail.com>\n"
 "Language-Team: Maithili <maithili.sf.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
 "\n"
 
 #: src/gui.py:111
@@ -32,7 +32,7 @@ msgstr "ई सेवा अखन फेर ताजा कएल जाए �
 
 #: src/gui.py:174
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "ई सेवाक संबंधमे सूचना पएनाइ विफल."
 
 #: src/gui.py:175
 msgid "This service is enabled."
@@ -82,6 +82,8 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
+"<b>%(servicename)s</b> सेवा केँ आरंभ कएल जएताह xinetd सेवाक मांग पर आओर तखन अंत "
+"होइछ जखन एकरा संग बेसी किछु करबाकेँ नहि अछि."
 
 #: src/gui.py:321
 msgid ""
@@ -201,6 +203,8 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
+"ई सेवाकेँ आरंभ कएल जएताह xinetd सेवाक मांग पर आओर तखन खतम होइछ जखन एकरा संग "
+"बेसी किछु करबाक नहि अछि."
 
 #: src/system-config-services.glade:1065
 msgid "Service Information"
@@ -216,7 +220,7 @@ msgstr "system-config-services"
 
 #: src/system-config-services.glade:1222
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "कापीराइट © 2002-2009 Red Hat, Inc. आओर एकर योगदानकएनिहार"
 
 #: src/system-config-services.glade:1224
 msgid ""
@@ -287,129 +291,20 @@ msgstr "सेवा"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "तंत्र सेवाक संबंधमे सूचना पाउ"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "तंत्र सेवा प्रबंधित करू"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "तंत्र नीति तंत्र सेवा सूचनामे पहुँच रोकैछ"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "तंत्र नीति तंत्र सेवा सूचनाक प्रबंधन रोकैत अछि"
 
-#~ msgid "window1"
-#~ msgstr "window1"
-
-#~ msgid "Service %s"
-#~ msgstr "सेवा %s"
-
-#~ msgid "Enable"
-#~ msgstr "सक्षम"
-
-#~ msgid "Disable"
-#~ msgstr "अक्षम"
-
-#~ msgid "Customize"
-#~ msgstr "मनपसिन्न"
-
-#~ msgid "Enable Default"
-#~ msgstr "पूर्वनिर्धारित सक्रिय करू"
-
-#~ msgid "Enable All"
-#~ msgstr "सभटा सक्रिय  करू "
-
-#~ msgid "Disable All"
-#~ msgstr "सभटा निष्क्रिय  करू "
-
-#~ msgid "Start"
-#~ msgstr "आरंभ"
-
-#~ msgid "Restart"
-#~ msgstr "पुनःआरंभ  करू "
-
-#~ msgid "Configure"
-#~ msgstr "कान्फ़िगर"
-
-#~ msgid "foobar"
-#~ msgstr "foobar"
-
-#~ msgid "barfoo"
-#~ msgstr "barfoo"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "वर्तमान रनलेवल %s अछि"
-
-#~ msgid "Runlevels"
-#~ msgstr "रनलेवल"
-
-#~ msgid "label18"
-#~ msgstr "label18"
-
-#~ msgid "Start "
-#~ msgstr "आरंभ  करू "
-
-#~ msgid "Stop"
-#~ msgstr "रोकू"
-
-#~ msgid "Service control"
-#~ msgstr "सेवा नियंत्रण"
-
-#~ msgid "Status output"
-#~ msgstr "स्थिति आउटपुट"
-
-#~ msgid "_Configure"
-#~ msgstr "विन्यस्त करू (_C)"
-
-#~ msgid "Button Box"
-#~ msgstr "बटन बाक्स"
-
-#~ msgid "label16"
-#~ msgstr "label16"
-
-#~ msgid "Service %s:"
-#~ msgstr "सेवा %s:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "2Copyright  2002-2008 Red Hat, Inc. and contributors"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "सेवा %s नहि भेटल!"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "सेवा %s पुराने विन्यास सँ चलि रहल अछि"
-
-#~ msgid "Service %s is running"
-#~ msgstr "सेवा %s चलि रहल अछि"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "सेवा %s ने एकटा त्रुटि देल अछि"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "सेवा %s रूकल अछि"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "अखन %s रनलेवल मे सक्रिय अछि"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "%(name)s केँ %(levels)s रनलेवल मे सक्रिय  करू "
-
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "<b>%(servicename)s</b> सेवा केँ मांग क' आधार पर आरंभ कएल जएताह xinetd सेवा क' "
-#~ "द्वारा आओर समाप्त  हाएत  अछि जखन  एकरा  करब क' लेल किछु नहि रह जाएत अछि."
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "ई सेवा केँ xinetd सेवा क' द्वारा मांग क' आधार पर आरंभ कएल जएताह आओर ई समाप्त हाएत "
-#~ "अछि जखन करब केँ किछु आओर नहि अछि."
