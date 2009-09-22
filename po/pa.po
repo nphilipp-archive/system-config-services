@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: system-config-services.master.pa\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-09-02 14:32+0530\n"
+"PO-Revision-Date: 2009-09-22 09:55+0530\n"
 "Last-Translator: Jaswinder Singh <jsingh@redhat.com>\n"
 "Language-Team: Punjabi <Punjabi-users@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -293,19 +293,20 @@ msgstr "ਸਰਵਿਸਾਂ"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "ਸਿਸਟਮ ਸਰਵਿਸਾਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਲਵੋ"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "ਸਿਸਟਮ ਸਰਵਿਸਾਂ ਦਾ ਪਰਬੰਧਨ"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "ਸਿਸਟਮ ਪਾਲਿਸੀ ਨਾਲ ਸਿਸਟਮ ਸਰਵਿਸਾਂ ਦੀ ਜਾਣਕਾਰੀ ਤੇ ਪਾਬੰਦੀ ਲੱਗਦੀ ਹੈ"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "ਸਿਸਟਮ ਪਾਲਿਸੀ ਸਿਸਟਮ ਸਰਵਿਸਾਂ ਦਾ ਪਰਬੰਧਨ ਰੋਕਦੀ ਹੈ"
+
