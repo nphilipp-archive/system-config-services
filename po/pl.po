@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-09-21 21:20+0200\n"
+"PO-Revision-Date: 2009-09-22 22:24+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <fedora-trans-pl@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -101,15 +101,15 @@ msgstr ""
 #: src/gui.py:713 src/system-config-services.glade:1351
 #, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "Włącz usługę <b>%(service)s</b> na tych poziomach uruchamiania:"
+msgstr "Włączenie usługi <b>%(service)s</b> na tych poziomach uruchamiania:"
 
 #: src/gui.py:845
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
-"Nie można znaleźć przeglądarki pomocy. Aby zobaczyć pomoc, zainstaluj pakiet "
-"\"yelp\"."
+"Nie można odnaleźć przeglądarki pomocy. Aby wyświetlić pomoc, należy "
+"zainstalować pakiet \"yelp\"."
 
 #: src/system-config-services.glade:7 src/system-config-services.glade:1223
 msgid "Service Configuration"
@@ -177,7 +177,8 @@ msgstr "_O programie"
 
 #: src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
-msgstr "Dostosuj poziomy uruchamiania, w których usługa jest włączona."
+msgstr ""
+"Proszę dostosować poziomy uruchamiania, w których usługa jest włączona."
 
 #: src/system-config-services.glade:559
 msgid "No service selected."
@@ -235,20 +236,21 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Niniejszy program jest wolnym oprogramowaniem; możesz go rozprowadzać dalej "
+"Niniejszy program jest wolnym oprogramowaniem; można go rozprowadzać dalej "
 "i/lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU, wydanej "
-"przez Fundację Wolnego Oprogramowania - według wersji 2-giej tej Licencji "
-"lub którejś z późniejszych wersji.\n"
+"przez Fundację Wolnego Oprogramowania (Free Software Foundation) - według "
+"wersji drugiej tej Licencji lub którejś z późniejszych wersji.\n"
 "\n"
 "Niniejszy program rozpowszechniany jest z nadzieją, iż będzie on użyteczny - "
 "jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI "
 "HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania "
-"bliższych informacji - Powszechna Licencja Publiczna GNU.\n"
+"bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną "
+"GNU.\n"
 "\n"
-"Z pewnością wraz z niniejszym programem otrzymałeś też egzemplarz "
+"Z pewnością wraz z niniejszym programem dostarczono także egzemplarz "
 "Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie "
-"- napisz do Free Software Foundation, Inc., 59 Temple Place, Suite 330, "
-"Boston, MA 02111-1307 USA."
+"- proszę napisać do Free Software Foundation, Inc., 59 Temple Place, Suite "
+"330, Boston, MA 02111-1307 USA"
 
 #: src/system-config-services.glade:1231
 msgid "translator-credits"
@@ -259,7 +261,7 @@ msgstr ""
 
 #: src/system-config-services.glade:1280
 msgid "Customize Runlevels"
-msgstr "Dostosuj poziomy uruchamiania"
+msgstr "Dostosowanie poziomów uruchamiania"
 
 #: src/system-config-services.glade:1395
 msgid "Runlevel _2"
