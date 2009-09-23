@@ -1,16 +1,15 @@
 # Swedish messages for system-config-services.
-# Copyright © 2001, 2003, 2004, 2005, 2006 Christian Rose <menthos@menthos.com>.
-# Copyright © 2006 Magnus Larsson <fedoratrans@gmail.com>.
+# Copyright © Free Software Foundation
+# Magnus Larsson <fedoratrans@gmail.com> 2006, 2009.
 # Göran Uddeborg <goeran@uddeborg.se>, 2008, 2009.
 #
-# $Id: system-config-services.po,v 1.10 2009-09-14 17:27:38+02 göran Exp $
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-09-14 17:27+0200\n"
+"PO-Revision-Date: 2009-09-23 13:15-0400\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -293,19 +292,19 @@ msgstr "Tjänster"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "Hämta information om systemtjänster"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "Administrera systemtjänster"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "Systempolicy förhindrar åtkomst av information om systemtjänster"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "Systempolicy förhindrar administration av systemtjänster"
