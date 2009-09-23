@@ -11,14 +11,14 @@ msgstr ""
 "Project-Id-Version: system-config-services.master.te\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-09-07 20:11+0530\n"
+"PO-Revision-Date: 2009-09-23 12:55+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
 "\n"
 "\n"
 "\n"
@@ -95,8 +95,7 @@ msgstr ""
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"సేవ చేతనపరచబడింది, అయితే <b>xinted</b> ప్యాకేజి సంస్థాపించబడిలేదు. అది లేకుండా ఈ సేవ పనిచేయదు."
+msgstr "సేవ చేతనపరచబడింది, అయితే <b>xinted</b> ప్యాకేజి సంస్థాపించబడిలేదు. అది లేకుండా ఈ సేవ పనిచేయదు."
 
 #: src/gui.py:327
 msgid ""
@@ -290,19 +289,20 @@ msgstr "సేవలు"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "సిస్టమ్ సేవల గురించి సమాచారమును పొందుము"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "సిస్టమ్ సేవలను నిర్వహించుము"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "సిస్టమ్ విధానము అనునది సిస్టమ్ సేవల సమాచారమునకు యాక్సెస్‌ను నిరోధిస్తోంది"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "సిస్టమ్ విధానము అనునది సిస్టమ్ సేవల యొక్క నిర్వహణను నిరోధిస్తోంది"
+
