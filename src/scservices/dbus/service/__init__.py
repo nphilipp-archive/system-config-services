@@ -23,6 +23,7 @@
 
 import gobject
 import dbus
+import slip.dbus
 import dbus.mainloop.glib
 import gamin
 
@@ -39,7 +40,8 @@ def run_service (persistent = False):
     mainloop = gobject.MainLoop()
     dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
 
-    system_bus = dbus.SystemBus()
+    slip.dbus.mainloop.mainloop_class = slip.dbus.mainloop.GlibMainLoop
+    system_bus = slip.dbus.SystemBus()
     name = dbus.service.BusName(dbus_service_name, system_bus)
 
     filemon = gamin.WatchMonitor ()

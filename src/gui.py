@@ -872,6 +872,10 @@ class GUI (object):
         self.mainloop = gobject.MainLoop ()
 
         if use_dbus == None:
+            import dbus.mainloop.glib
+            import slip.dbus
+            dbus.mainloop.glib.DBusGMainLoop (set_as_default=True)
+            bus = slip.dbus.SystemBus()
             if slip.dbus.polkit.AreAuthorizationsObtainable (self.polkit_actions):
                 use_dbus = True
             else:
@@ -909,10 +913,12 @@ class GUI (object):
 
     def dbus_init (self):
         import dbus.mainloop.glib
+        import slip.dbus
         import scservices.dbus.proxy.serviceherders as serviceherders
         import scservices.dbus.proxy.services as services
         dbus.mainloop.glib.DBusGMainLoop (set_as_default=True)
-        self._bus = dbus.SystemBus ()
+        self._bus = slip.dbus.SystemBus ()
+        self._bus.default_timeout = None
         return serviceherders, services
 
     def direct_init (self):
