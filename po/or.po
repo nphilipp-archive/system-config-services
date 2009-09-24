@@ -10,14 +10,16 @@ msgstr ""
 "Project-Id-Version: system-config-services.master.or\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-09-01 18:01+0530\n"
+"PO-Revision-Date: 2009-09-24 17:05+0530\n"
 "Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
 "Language-Team: Oriya <oriya-it@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n!=1);\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
+"\n"
+"\n"
 "\n"
 "\n"
 "\n"
@@ -120,8 +122,7 @@ msgstr "ଏହି ଚାଲିବା ସ୍ତରଗୁଡ଼ିକରେ <b>%(s
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"ସହାୟକ ପ୍ରଦର୍ଶକ ମିଳୁନାହିଁ. ସହାୟତା ଦେଖିବାପାଇଁ ଆପଣଙ୍କୁ 'yelp' ପ୍ଯାକେଜ ସ୍ଥାପନ କରିବାକୁ ପଡିବ."
+msgstr "ସହାୟକ ପ୍ରଦର୍ଶକ ମିଳୁନାହିଁ. ସହାୟତା ଦେଖିବାପାଇଁ ଆପଣଙ୍କୁ 'yelp' ପ୍ଯାକେଜ ସ୍ଥାପନ କରିବାକୁ ପଡିବ."
 
 #: src/system-config-services.glade:7 src/system-config-services.glade:1223
 msgid "Service Configuration"
@@ -300,19 +301,20 @@ msgstr "ସେବା"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "ତନ୍ତ୍ର ସର୍ଭିସ ବିଷୟରେ ସୂଚନା ଗ୍ରହଣ କରନ୍ତୁ"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "ତନ୍ତ୍ର ସର୍ଭିସଗୁଡ଼ିକୁ ପରିଚାଳନା କରନ୍ତୁକରନ୍ତ"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "ତନ୍ତ୍ର ସର୍ଭିସ ସୂଚନାକୁ ତନ୍ତ୍ର ନୀତି ବାରଣ କରିଥାଏ"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "ତନ୍ତ୍ର ସର୍ଭିସଗୁଡ଼ିକର ପରିଚାଳନାକୁ ତନ୍ତ୍ର ନୀତି ବାରଣ କରିଥାଏ"
+
