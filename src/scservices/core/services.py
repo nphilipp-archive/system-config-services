@@ -487,7 +487,7 @@ class XinetdService (ChkconfigService):
         if old_enabled != enabled:
             (status, output) = getstatusoutput ('%s %s %s 2>&1' % (self.chkconfig_invocation, self.name, self.enabled and 'on' or 'off'))
             if status != 0:
-                raise OSError ("Saving service '%s' failed, command was '%s %s %s 2>&1'." % (self.chkconfig_invocation, self.name, self.name, self.enabled and 'on' or 'off'))
+                raise OSError ("Saving service '%(name)s' failed, command was '%(invocation)s %(name)s %(action)s 2>&1'." % {"name": self.name, "invocation": self.chkconfig_invocation, "action": self.enabled and "on" or "off"})
 
     enabled = property (_get_enabled, _set_enabled)
 
