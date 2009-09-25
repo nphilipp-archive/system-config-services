@@ -81,3 +81,4 @@ install:	all py-install po-install polkit-install desktop-install
 	ln  -fs ../$${softdir}/gui.py $(DESTDIR)$(SBINDIR)/serviceconf;
 
 clean: py-clean po-clean polkit-clean desktop-clean
+	@rm -fv src/scservices/config.py
