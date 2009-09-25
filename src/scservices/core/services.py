@@ -153,7 +153,7 @@ class ChkconfigService(Service):
                 if m:
                     version = m.group("version")
                     ChkconfigService.chkconfig_version = \
-                            map(lambda x: int(x), version.split("."))
+                            tuple(map(lambda x: int(x), version.split(".")))
                     break
 
             ckver_pipe.close()
