@@ -4,3 +4,4 @@ system-config-services.desktop
 po/*.mo
 src/setup.py
 src/build
+*.py[co]
