@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: system-config-services.master.fr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-09-22 16:21+1000\n"
+"PO-Revision-Date: 2009-09-25 10:50+1000\n"
 "Last-Translator: Sam Friedmann <sam.friedmann@redhat.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -192,7 +192,7 @@ msgstr "_A propos de"
 
 #: src/system-config-services.glade:361
 msgid "Customize the runlevels in which a service is enabled."
-msgstr "Personaliser les niveaux d'exécution pour lesquels un service est activé."
+msgstr "Personnaliser les niveaux d'exécution pour lesquels un service est activé."
 
 #: src/system-config-services.glade:559
 msgid "No service selected."
