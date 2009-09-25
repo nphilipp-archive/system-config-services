@@ -146,12 +146,9 @@ class ChkconfigService (Service):
         if not hasattr (self.__class__, "_chkconfig_actual_invocation"):
             invoke = [ChkconfigService._chkconfig_invocation]
 
-            ckver = ChkconfigService.chkconfig_version
             # --type <sysv|xinetd> exists in 1.3.40 and later
-            if ckver[0] > 1 or \
-                    (ckver[0] == 1 and \
-                    (ckver[1] > 3 or \
-                    (ckver[1] == 3 and ckver[2] >= 40))):
+
+            if ChkconfigService.chkconfig_version >= (1, 3, 40):
                 invoke.append ("--type %s" % self.chkconfig_type)
 
             self.__class__._chkconfig_actual_invocation = " ".join (invoke)
