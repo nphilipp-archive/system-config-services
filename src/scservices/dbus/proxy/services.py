@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 # scservices.dbus.proxy.services: DBus proxy objects for services
 #
 # Copyright © 2008, 2009 Red Hat, Inc.
@@ -7,12 +8,12 @@
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
 # (at your option) any later version.
-#           
+#
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
-#   
+#
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -20,7 +21,8 @@
 # Authors:
 # Nils Philippsen <nphilipp@redhat.com>
 
-from scservices.dbus.proxy.servicesinfo import DBusServiceInfoProxy, DBusSysVServiceInfoProxy, DBusXinetdServiceInfoProxy
+from scservices.dbus.proxy.servicesinfo import DBusServiceInfoProxy, \
+    DBusSysVServiceInfoProxy, DBusXinetdServiceInfoProxy
 
 from scservices.dbus import dbus_service_name
 
@@ -28,124 +30,133 @@ import dbus
 import slip.dbus.polkit as polkit
 from slip.util.hookable import HookableSet
 
-##############################################################################
 
-class DBusServiceProxy (object):
+class DBusServiceProxy(object):
+
     info_class = DBusServiceInfoProxy
 
-    def __init__ (self, name, bus, herder):
-        super (DBusServiceProxy, self).__init__ ()
+    def __init__(self, name, bus, herder):
+        super(DBusServiceProxy, self).__init__()
         self.name = name
         self.bus = bus
         self.herder = herder
 
-        self.dbus_service_path = herder.dbus_service_path + "/Services/" + self.dbus_name
-        self.dbus_object = bus.get_object (dbus_service_name, self.dbus_service_path)
-        self.svc_interface = dbus.Interface (self.dbus_object, "org.fedoraproject.Config.Services.Service")
+        self.dbus_service_path = herder.dbus_service_path + "/Services/" + \
+            self.dbus_name
+        self.dbus_object = bus.get_object(dbus_service_name,
+                self.dbus_service_path)
+        self.svc_interface = dbus.Interface(self.dbus_object,
+                "org.fedoraproject.Config.Services.Service")
 
-        self.info = self.info_class (name, bus, self)
+        self.info = self.info_class(name, bus, self)
 
-    def __repr__ (self):
-        return "<%s.%s object at %x: %s>" % (self.__class__.__module__, self.__class__.__name__, id (self), self.name)
+    def __repr__(self):
+        return "<%s.%s object at %x: %s>" % (self.__class__.__module__,
+                self.__class__.__name__, id(self), self.name)
 
     @property
-    def dbus_name (self):
-        if "_dbus_name" not in dir (self):
-            self._dbus_name = self.name.replace ("-", "_")
+    def dbus_name(self):
+        if "_dbus_name" not in dir(self):
+            self._dbus_name = self.name.replace("-", "_")
         return self._dbus_name
 
     @polkit.enable_proxy
-    def save (self):
-        return self.svc_interface.save ()
+    def save(self):
+        return self.svc_interface.save()
 
-##############################################################################
 
-class DBusChkconfigServiceProxy (DBusServiceProxy):
-    def __init__ (self, *p,**k):
-        super (DBusChkconfigServiceProxy, self).__init__ (*p, **k)
-        self.chkconfig_interface = dbus.Interface (self.dbus_object, "org.fedoraproject.Config.Services.ChkconfigService")
+class DBusChkconfigServiceProxy(DBusServiceProxy):
 
-    @polkit.enable_proxy
-    def enable (self):
-        return self.chkconfig_interface.enable ()
+    def __init__(self, *p, **k):
+        super(DBusChkconfigServiceProxy, self).__init__(*p, **k)
+        self.chkconfig_interface = dbus.Interface(self.dbus_object,
+                "org.fedoraproject.Config.Services.ChkconfigService")
 
     @polkit.enable_proxy
-    def disable (self):
-        return self.chkconfig_interface.disable ()
+    def enable(self):
+        return self.chkconfig_interface.enable()
 
     @polkit.enable_proxy
-    def get_enabled (self):
-        return self.chkconfig_interface.get_enabled ()
+    def disable(self):
+        return self.chkconfig_interface.disable()
 
-##############################################################################
+    @polkit.enable_proxy
+    def get_enabled(self):
+        return self.chkconfig_interface.get_enabled()
 
-class DBusSysVServiceProxy (DBusChkconfigServiceProxy):
+
+class DBusSysVServiceProxy(DBusChkconfigServiceProxy):
+
     info_class = DBusSysVServiceInfoProxy
 
-    def __init__ (self, *p,**k):
-        super (DBusSysVServiceProxy, self).__init__ (*p, **k)
-        self.sysv_interface = dbus.Interface (self.dbus_object, "org.fedoraproject.Config.Services.SysVService")
+    def __init__(self, *p, **k):
+        super(DBusSysVServiceProxy, self).__init__(*p, **k)
+        self.sysv_interface = dbus.Interface(self.dbus_object,
+                "org.fedoraproject.Config.Services.SysVService")
 
     @polkit.enable_proxy
-    def start (self):
-        return self.sysv_interface.start ()
+    def start(self):
+        return self.sysv_interface.start()
 
     @polkit.enable_proxy
-    def stop (self):
-        return self.sysv_interface.stop ()
+    def stop(self):
+        return self.sysv_interface.stop()
 
     @polkit.enable_proxy
-    def restart (self):
-        return self.sysv_interface.restart ()
+    def restart(self):
+        return self.sysv_interface.restart()
 
     @polkit.enable_proxy
-    def reload (self):
-        return self.sysv_interface.reload ()
-
-    @property
-    @polkit.enable_proxy
-    def status (self):
-        return self.sysv_interface.get_status ()
+    def reload(self):
+        return self.sysv_interface.reload()
 
     @property
     @polkit.enable_proxy
-    def status_updates_running (self):
-        return self.sysv_interface.get_status_updates_running ()
+    def status(self):
+        return self.sysv_interface.get_status()
+
+    @property
+    @polkit.enable_proxy
+    def status_updates_running(self):
+        return self.sysv_interface.get_status_updates_running()
 
     @polkit.enable_proxy
-    def _get_runlevels (self):
-        if not hasattr (self, "_runlevels"):
-            self._runlevels = HookableSet ()
-            self._runlevels.add_hook (self._save_runlevels)
+    def _get_runlevels(self):
+        if not hasattr(self, "_runlevels"):
+            self._runlevels = HookableSet()
+            self._runlevels.add_hook(self._save_runlevels)
         self._runlevels.hooks_enabled = False
-        self._runlevels.clear ()
-        self._runlevels.update (self.sysv_interface.get_runlevels ())
+        self._runlevels.clear()
+        self._runlevels.update(self.sysv_interface.get_runlevels())
         self._runlevels.hooks_enabled = True
         return self._runlevels
 
-    def _set_runlevels (self, runlevels):
+    def _set_runlevels(self, runlevels):
         self.runlevels
         if self._runlevels != runlevels:
-            self._runlevels.freeze_hooks ()
-            self._runlevels.clear ()
-            self._runlevels.update (runlevels)
-            self._runlevels.thaw_hooks ()
+            self._runlevels.freeze_hooks()
+            self._runlevels.clear()
+            self._runlevels.update(runlevels)
+            self._runlevels.thaw_hooks()
 
     @polkit.enable_proxy
-    def _save_runlevels (self):
-        return self.sysv_interface.set_runlevels (list (self._runlevels))
+    def _save_runlevels(self):
+        return self.sysv_interface.set_runlevels(list(self._runlevels))
 
-    runlevels = property (_get_runlevels, _set_runlevels)
+    runlevels = property(_get_runlevels, _set_runlevels)
+
 
 SysVService = DBusSysVServiceProxy
 
-##############################################################################
 
-class DBusXinetdServiceProxy (DBusChkconfigServiceProxy):
+class DBusXinetdServiceProxy(DBusChkconfigServiceProxy):
+
     info_class = DBusXinetdServiceInfoProxy
 
-    def __init__ (self, *p,**k):
-        super (DBusXinetdServiceProxy, self).__init__ (*p, **k)
-        self.xinetd_interface = dbus.Interface (self.dbus_object, "org.fedoraproject.Config.Services.XinetdService")
+    def __init__(self, *p, **k):
+        super(DBusXinetdServiceProxy, self).__init__(*p, **k)
+        self.xinetd_interface = dbus.Interface(self.dbus_object,
+                "org.fedoraproject.Config.Services.XinetdService")
+
 
 XinetdService = DBusXinetdServiceProxy

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-""" system-config-services: This module contains configuration. """
+
 # config.py
 # Copyright © 2008 Red Hat, Inc.
 #
@@ -19,9 +19,11 @@
 #
 # Authors: Nils Philippsen <nils@redhat.com>
 
+"""system-config-services: This module contains configuration."""
+
 import os.path
 
 name = "system-config-services"
 domain = name
-datadir = os.path.join ("@DATADIR@", domain)
+datadir = os.path.join("@DATADIR@", domain)
 version = "@VERSION@"
