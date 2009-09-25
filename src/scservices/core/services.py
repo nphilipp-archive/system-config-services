@@ -583,6 +583,4 @@ class XinetdService(ChkconfigService):
         return self.enabled and SVC_ENABLED_YES or SVC_ENABLED_NO
 
 
-# #############################################################################
-
 service_classes = [SysVService, XinetdService]

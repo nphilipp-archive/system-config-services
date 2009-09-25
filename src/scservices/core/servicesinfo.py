@@ -32,15 +32,10 @@ class __struct__(object):
 
 __allrunlevels__ = set(xrange(0, 7))
 
-# #############################################################################
-
 
 class InvalidServiceInfoException(Exception):
 
     pass
-
-
-# #############################################################################
 
 
 class ServiceInfo(object):
@@ -88,9 +83,6 @@ class ServiceInfo(object):
                 setattr(self, attr, v)
             except AttributeError:
                 pass
-
-
-# #############################################################################
 
 
 class SysVServiceInfo(ServiceInfo):
