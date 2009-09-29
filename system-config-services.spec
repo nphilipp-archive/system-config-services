@@ -11,7 +11,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.99.40
+Version: 0.99.41
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
@@ -35,7 +35,7 @@ Requires: python >= 2.3.0
 Requires: dbus-python
 Requires: python-slip >= 0.1.11
 %if %{with polkit1}
-Requires: python-slip-dbus >= 0.2.5
+Requires: python-slip-dbus >= 0.2.7
 %else
 Requires: python-slip-dbus >= 0.1.15
 %endif
@@ -118,6 +118,10 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Tue Sep 29 2009 Nils Philippsen <nils@redhat.com> - 0.99.41-1
+- initialize subscribers at the right place
+- pick up new translations
+
 * Thu Sep 24 2009 Nils Philippsen <nils@redhat.com>
 - require python-slip-dbus >= 0.2.5
 
