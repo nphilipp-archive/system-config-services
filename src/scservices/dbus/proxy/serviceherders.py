@@ -57,14 +57,14 @@ class DBusServiceHerderProxy(object):
 
         self.freeze_notifications()
 
+        self.subscribers = set()
+
         self.dbus_object.connect_to_signal("notify", self.notify)
 
         for service_name in self.list_services():
             self.services[service_name] = self.service_class(service_name,
                     bus, self)
         self.thaw_notifications()
-
-        self.subscribers = set()
 
     @property
     @polkit.enable_proxy
