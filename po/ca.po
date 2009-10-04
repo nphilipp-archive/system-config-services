@@ -302,129 +302,20 @@ msgstr "Serveis"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "Obteniu informació quant als serveis del sistema"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "Gestioneu els serveis del sistema"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "La política del sistema evita l'accès a la informació dels serveis del sistema"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "La política del sistema evita la gestió dels serveis del sistema"
 
-#~ msgid "window1"
-#~ msgstr " "
-
-#~ msgid "Service %s"
-#~ msgstr "Servei %s"
-
-#~ msgid "Enable"
-#~ msgstr "Habilita"
-
-#~ msgid "Disable"
-#~ msgstr "Inhabilita"
-
-#~ msgid "Customize"
-#~ msgstr "Personalitza"
-
-#~ msgid "Enable Default"
-#~ msgstr "Habilita el predeterminat"
-
-#~ msgid "Enable All"
-#~ msgstr "Habilita'ls tots"
-
-#~ msgid "Disable All"
-#~ msgstr "Inhabilita'ls tots"
-
-#~ msgid "Start"
-#~ msgstr "Inicia"
-
-#~ msgid "Restart"
-#~ msgstr "Reinicia"
-
-#~ msgid "Configure"
-#~ msgstr "Configura"
-
-#~ msgid "foobar"
-#~ msgstr " "
-
-#~ msgid "barfoo"
-#~ msgstr " "
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "El nivell actual és %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "Nivells d'execució"
-
-#~ msgid "label18"
-#~ msgstr " "
-
-#~ msgid "Start "
-#~ msgstr "Inicia "
-
-#~ msgid "Stop"
-#~ msgstr "Atura"
-
-#~ msgid "Service control"
-#~ msgstr "Control del servei"
-
-#~ msgid "Status output"
-#~ msgstr "Sortida de l'estat"
-
-#~ msgid "_Configure"
-#~ msgstr "_Configura"
-
-#~ msgid "Button Box"
-#~ msgstr " "
-
-#~ msgid "label16"
-#~ msgstr " "
-
-#~ msgid "Service %s:"
-#~ msgstr "Servei %s:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright  2002-2008 Red Hat, Inc. i col·laboradors"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "No s'ha trobat el servei %s"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "El servei %s s'executa amb la configuració antiga"
-
-#~ msgid "Service %s is running"
-#~ msgstr "S'està executant el servei %s"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "El servei %s ha informat d'un error"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "El servei %s està aturat"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "Habilitat en els nivells d'execució %s"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "Habilita %(name)s als nivells d'execució %(levels)s"
-
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "El servei <b>%(servicename)s</b> serà iniciat per l'xinetd quan se'l "
-#~ "demani i acaba quan no té res més a fer."
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "Aquest servei s'inicia per l'xinetd quan es demani i finalitza quan no té "
-#~ "res més a fer."
