@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: system-config-services 0.99.8\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-08-31 13:21+0200\n"
+"PO-Revision-Date: 2009-10-05 13:45+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@broadpark.no>\n"
 "Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -64,7 +64,7 @@ msgstr "Tjenesten er død."
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
+msgstr "Tjenesten <b>%(servicename)s</b> startes en gang, vanligvis når systemet starter opp, kjører i bakgrunnen og våkner opp ved behov."
 
 #: src/gui.py:286
 msgid "This service is updated currently."
@@ -98,7 +98,7 @@ msgstr "Slå på <b>%(service)s</b>-tjenesten i følgende kjøringsnivå:"
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
+msgstr "Program for visning av hjelp ble ikke funnet. Du må installere pakken «yelp» for å kunne vise hjelp."
 
 #: src/system-config-services.glade:7 src/system-config-services.glade:1223
 msgid "Service Configuration"
@@ -264,19 +264,19 @@ msgstr "Tjenester"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "Hent informasjon om systemtjenestene"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "Håndter systemtjenester"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "Regelsett forhindrer tilgang informasjon om systemets tjenester"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "Regelsett forhindrer styring av systemets tjenester"
