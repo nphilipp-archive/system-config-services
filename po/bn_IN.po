@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: system-config-services.master.bn_IN\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-21 13:26+0200\n"
-"PO-Revision-Date: 2009-09-01 11:15+0530\n"
+"PO-Revision-Date: 2009-10-06 12:39+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <anubad@lists.ankur.org.in>\n"
 "MIME-Version: 1.0\n"
@@ -296,19 +296,20 @@ msgstr "পরিসেবা"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "সিস্টেমের পরিসেবা সম্পর্কে তথ্য প্রাপ্ত করুন"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Manage system services"
-msgstr ""
+msgstr "সিস্টেমের পরিসেবা পরিচালনা করুন"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "System policy prevents access to system services information"
-msgstr ""
+msgstr "সিস্টেমের বর্তমান নিয়মনীতির কারণে সিস্টেম পরিসেবা সম্পর্কিত তথ্য প্রাপ্ত করতে প্রতিরোধ করা হচ্ছে"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "System policy prevents management of system services"
-msgstr ""
+msgstr "সিস্টেমের বর্তমান নিয়মনীতির কারণে সিস্টেম পরিসেবা পরিচালনা করতে প্রতিরোধ করা হচ্ছে"
+
