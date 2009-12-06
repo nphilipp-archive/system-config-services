@@ -221,7 +221,7 @@ msgstr ""
 
 #: src/system-config-services.glade:1231
 msgid "translator-credits"
-msgstr "קרדיטים למתרגמים"
+msgstr "אלעד <el.il@doom.co.il> /n"
 	
 #: src/system-config-services.glade:1280
 msgid "Customize Runlevels"
