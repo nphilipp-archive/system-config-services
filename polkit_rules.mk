@@ -17,10 +17,6 @@ ifndef PO_INTLTOOLMERGE
 PO_INTLTOOLMERGE = intltool-merge
 endif
 
-ifndef PO_INTLTOOLMERGE
-$(error po_rules.mk must be included before $(lastword $(MAKEFILE_LIST)))
-endif
-
 ifndef POLKIT0_POLICY_DIR
 POLKIT0_POLICY_DIR	= $(DATADIR)/PolicyKit/policy
 endif
