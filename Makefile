@@ -33,7 +33,7 @@ PY_SOURCES		= $(_PY_SRC_APPS) $(_PY_SRC_MODULE_FILES)
 
 GLADE_SOURCES	= $(wildcard src/*.glade)
 
-PO_SOURCES		= $(PY_SOURCES) $(GLADE_SOURCES) $(DESKTOPINH_FILES) $(POLKITINH_FILES)
+PO_SOURCES		= $(PY_SOURCES) $(PO_GLADEH_FILES) $(DESKTOPINH_FILES) $(POLKITINH_FILES)
 
 all:	config py-build po-all polkit-all desktop-all
 	rm -f src/$(PKGNAME)

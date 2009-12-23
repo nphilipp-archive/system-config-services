@@ -18,7 +18,7 @@ PO_GREP		= /bin/grep
 
 # PO catalog handling
 PO_MSGMERGE	= msgmerge -v -N
-PO_XGETTEXT	= xgettext --default-domain=$(PKGNAME) \
+PO_XGETTEXT	= xgettext --from-code=utf-8 --default-domain=$(PKGNAME) \
 		  --add-comments
 PO_MSGFMT		= msgfmt --statistics --verbose
 PO_INTLTOOLEXTRACT = intltool-extract
@@ -27,6 +27,7 @@ PO_INTLTOOLMERGE = intltool-merge
 # What do we need to do
 PO_POFILES		= $(wildcard po/*.po)
 PO_MOFILES		= $(patsubst %.po,%.mo,$(PO_POFILES))
+PO_GLADEH_FILES	= $(patsubst %.glade,%.glade.h,$(GLADE_SOURCES))
 
 po-all: po-update-po $(PO_MOFILES)
 
@@ -67,6 +68,7 @@ po-refresh-po: Makefile
 
 po-clean:
 	@rm -fv po/*.mo po/*~
+	@rm -fv $(PO_GLADEH_FILES)
 
 po-install: $(PO_MOFILES)
 	@for n in $(PO_MOFILES); do \
@@ -77,5 +79,8 @@ po-install: $(PO_MOFILES)
 
 %.mo: %.po
 	$(PO_MSGFMT) -o $@ $<
+
+%.glade.h: %.glade
+	$(PO_INTLTOOLEXTRACT) -t gettext/glade $<
 
 endif
