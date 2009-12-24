@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.mai\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-21 13:26+0200\n"
+"POT-Creation-Date: 2009-12-24 12:19+0100\n"
 "PO-Revision-Date: 2009-09-22 22:44+0530\n"
 "Last-Translator: Sangeeta Kumari <sangeeta09@gmail.com>\n"
 "Language-Team: Maithili <maithili.sf.net>\n"
@@ -15,55 +15,56 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
 "\n"
 
-#: src/gui.py:111
+#: src/gui.py:125
 msgid "Name"
 msgstr "नाम"
 
-#: src/gui.py:112
+#: src/gui.py:128
 msgid "Remarks"
 msgstr "विशेष कथन"
 
-#: src/gui.py:173 src/gui.py:191
+#: src/gui.py:196 src/gui.py:213
 msgid "This service is being refreshed right now."
 msgstr "ई सेवा अखन फेर ताजा कएल जाए रहल अछि."
 
-#: src/gui.py:174
+#: src/gui.py:197
 msgid "Getting information about this service failed."
 msgstr "ई सेवाक संबंधमे सूचना पएनाइ विफल."
 
-#: src/gui.py:175
+#: src/gui.py:198
 msgid "This service is enabled."
 msgstr "ई सेवा सक्रिय अछि."
 
-#: src/gui.py:176
+#: src/gui.py:199
 msgid "This service is disabled."
 msgstr "ई सेवा निष्क्रिय अछि."
 
-#: src/gui.py:177
+#: src/gui.py:201
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "ई सेवा रनलेवल मे सक्रिय अछि. %(runlevels)s"
 
-#: src/gui.py:192
+#: src/gui.py:214
 msgid "The status of this service is unknown."
 msgstr "ई सेवा क' स्थिति अज्ञात अछि."
 
-#: src/gui.py:193
+#: src/gui.py:215
 msgid "This service is stopped."
 msgstr "ई सेवा रूकल अछि."
 
-#: src/gui.py:194
+#: src/gui.py:216
 msgid "This service is running."
 msgstr "ई सेवा कार्यशील अछि."
 
-#: src/gui.py:195
+#: src/gui.py:217
 msgid "This service is dead."
 msgstr "ई सेवा मृत अछि."
 
-#: src/gui.py:272
+#: src/gui.py:298
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
@@ -72,11 +73,11 @@ msgstr ""
 "<b>%(servicename)s</b> सेवा एकटा बार आरंभ कएल जाइत अछि जखन सिस्टम बूट करैत अछि, "
 "पृष्ठभूमि मे चलैत अछि आओर जरूरत पड़ने पर फेर चालू  हाएत  अछि."
 
-#: src/gui.py:286
+#: src/gui.py:317
 msgid "This service is updated currently."
 msgstr "ई सेवा अखन अद्यतन कएल गेल अछि."
 
-#: src/gui.py:312
+#: src/gui.py:344
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
@@ -85,7 +86,7 @@ msgstr ""
 "<b>%(servicename)s</b> सेवा केँ आरंभ कएल जएताह xinetd सेवाक मांग पर आओर तखन अंत "
 "होइछ जखन एकरा संग बेसी किछु करबाकेँ नहि अछि."
 
-#: src/gui.py:321
+#: src/gui.py:356
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
@@ -93,7 +94,7 @@ msgstr ""
 "ई सेवा सक्रिय अछि.  मुदा  <b>xinetd</b> संकुल संस्थापित नहि अछि. ई सेवा एकरा बिनु काम "
 "नहि करैत अछि."
 
-#: src/gui.py:327
+#: src/gui.py:365
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
@@ -101,12 +102,12 @@ msgstr ""
 "ई सेवा सक्रिय अछि.  मुदा  <b>xinetd</b> सेवा नहि चलि रहल अछि. ई सेवा एकरा बिनु काम "
 "नहि करैत अछि."
 
-#: src/gui.py:713 src/system-config-services.glade:1351
-#, python-format
+#: src/gui.py:782 src/system-config-services.glade.h:6
+#, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "<b>%(service)s</b> सेवा इन रनलेवल मे सक्रिय  करू :"
 
-#: src/gui.py:845
+#: src/gui.py:920
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
@@ -114,79 +115,110 @@ msgstr ""
 " मदति  प्रदर्शक नहि मिल सका.  मदति  देखब मे समर्थ हए क' लेल अहाँकेँ 'yelp' संकुल "
 "संस्थापित करने क' जरूरत अछि."
 
-#: src/system-config-services.glade:7 src/system-config-services.glade:1223
-msgid "Service Configuration"
-msgstr "सेवा विन्यास"
+#: src/system-config-services.glade.h:1
+msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+msgstr "कापीराइट © 2002-2009 Red Hat, Inc. आओर एकर योगदानकएनिहार"
 
-#: src/system-config-services.glade:38
-msgid "_Program"
-msgstr "प्रोग्राम (_P)"
+#: src/system-config-services.glade.h:2
+msgid "Customize Runlevels"
+msgstr "रनलेवल पसंदीदा बनाउ"
 
-#: src/system-config-services.glade:60
-msgid "Ser_vice"
-msgstr "सेवा (_v)"
-
-#: src/system-config-services.glade:69 src/system-config-services.glade:327
-msgid "_Enable"
-msgstr "समर्थ करू (_E)"
-
-#: src/system-config-services.glade:91 src/system-config-services.glade:344
-msgid "_Disable"
-msgstr "निष्क्रिय करू (_D)"
-
-#: src/system-config-services.glade:113 src/system-config-services.glade:362
-msgid "_Customize"
-msgstr "पसंदीदा करू (_C)"
-
-#: src/system-config-services.glade:134 src/system-config-services.glade:1241
-msgid "Runlevel 2"
-msgstr "रनलेवल _2"
-
-#: src/system-config-services.glade:143 src/system-config-services.glade:1251
-msgid "Runlevel 3"
-msgstr "रनलेवल _3"
-
-#: src/system-config-services.glade:152 src/system-config-services.glade:1261
-msgid "Runlevel 4"
-msgstr "रनलेवल _4"
-
-#: src/system-config-services.glade:161 src/system-config-services.glade:1271
-msgid "Runlevel 5"
-msgstr "रनलेवल _5"
-
-#: src/system-config-services.glade:180 src/system-config-services.glade:392
-msgid "_Start"
-msgstr "प्रारंभ करू (_S)"
-
-#: src/system-config-services.glade:202 src/system-config-services.glade:409
-msgid "S_top"
-msgstr "रोकू (_t)"
-
-#: src/system-config-services.glade:224 src/system-config-services.glade:426
-msgid "_Restart"
-msgstr "पुन:आरंभ करू (_R)"
-
-#: src/system-config-services.glade:250
-msgid "_Help"
-msgstr " मदति  (_H)"
-
-#: src/system-config-services.glade:259
-msgid "_Contents"
-msgstr "सामग्री (_C)"
-
-#: src/system-config-services.glade:287
-msgid "_About"
-msgstr "परिचय (_A)"
-
-#: src/system-config-services.glade:361
+#: src/system-config-services.glade.h:3
 msgid "Customize the runlevels in which a service is enabled."
 msgstr "रनलेवल पसंदीदा करू जखन सेवा सक्रिय कएल गेल अछि."
 
-#: src/system-config-services.glade:559
+#: src/system-config-services.glade.h:4
+msgid "Description"
+msgstr "वर्णन"
+
+#: src/system-config-services.glade.h:7
 msgid "No service selected."
 msgstr "कोनो सेवा नहि चुनल गेल."
 
-#: src/system-config-services.glade:621
+#: src/system-config-services.glade.h:8
+msgid "Runlevel 2"
+msgstr "रनलेवल _2"
+
+#: src/system-config-services.glade.h:9
+msgid "Runlevel 3"
+msgstr "रनलेवल _3"
+
+#: src/system-config-services.glade.h:10
+msgid "Runlevel 4"
+msgstr "रनलेवल _4"
+
+#: src/system-config-services.glade.h:11
+msgid "Runlevel 5"
+msgstr "रनलेवल _5"
+
+#: src/system-config-services.glade.h:12
+msgid "Runlevel _2"
+msgstr "Runlevel _2"
+
+#: src/system-config-services.glade.h:13
+msgid "Runlevel _3"
+msgstr "रनलेवल _3"
+
+#: src/system-config-services.glade.h:14
+msgid "Runlevel _4"
+msgstr "रनलेवल _4"
+
+#: src/system-config-services.glade.h:15
+msgid "Runlevel _5"
+msgstr "रनलेवल _5"
+
+#: src/system-config-services.glade.h:16
+msgid "S_top"
+msgstr "रोकू (_t)"
+
+#: src/system-config-services.glade.h:17
+msgid "Ser_vice"
+msgstr "सेवा (_v)"
+
+#: src/system-config-services.glade.h:18
+msgid "Service Configuration"
+msgstr "सेवा विन्यास"
+
+#: src/system-config-services.glade.h:19
+msgid "Service Information"
+msgstr "सेवा जानकारी"
+
+#: src/system-config-services.glade.h:21
+#, no-c-format
+msgid "Status of service %s:"
+msgstr "सेवा %s क' स्थिति:"
+
+#: src/system-config-services.glade.h:22
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+
+#: src/system-config-services.glade.h:28
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
@@ -194,87 +226,58 @@ msgstr ""
 "ई सेवा एकटा बार आरंभ कएल जाइत अछि जखन सिस्टम बूट कएल जाएत अछि, पृष्ठभूमि मे चलैत अछि "
 "आओर जरूरत पड़ै पर जागैत अछि."
 
-#: src/system-config-services.glade:769 src/system-config-services.glade:960
-msgid "Description"
-msgstr "वर्णन"
-
-#: src/system-config-services.glade:867
+#: src/system-config-services.glade.h:29
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
-"ई सेवाकेँ आरंभ कएल जएताह xinetd सेवाक मांग पर आओर तखन खतम होइछ जखन एकरा संग "
-"बेसी किछु करबाक नहि अछि."
+"ई सेवाकेँ आरंभ कएल जएताह xinetd सेवाक मांग पर आओर तखन खतम होइछ जखन एकरा संग बेसी किछु "
+"करबाक नहि अछि."
 
-#: src/system-config-services.glade:1065
-msgid "Service Information"
-msgstr "सेवा जानकारी"
+#: src/system-config-services.glade.h:30
+msgid "_About"
+msgstr "परिचय (_A)"
 
-#: src/system-config-services.glade:1184
-msgid "Status of service %s:"
-msgstr "सेवा %s क' स्थिति:"
+#: src/system-config-services.glade.h:31
+msgid "_Contents"
+msgstr "सामग्री (_C)"
 
-#: src/system-config-services.glade:1221
+#: src/system-config-services.glade.h:32
+msgid "_Customize"
+msgstr "पसंदीदा करू (_C)"
+
+#: src/system-config-services.glade.h:33
+msgid "_Disable"
+msgstr "निष्क्रिय करू (_D)"
+
+#: src/system-config-services.glade.h:34
+msgid "_Enable"
+msgstr "समर्थ करू (_E)"
+
+#: src/system-config-services.glade.h:35
+msgid "_Help"
+msgstr " मदति  (_H)"
+
+#: src/system-config-services.glade.h:36
+msgid "_Program"
+msgstr "प्रोग्राम (_P)"
+
+#: src/system-config-services.glade.h:37
+msgid "_Restart"
+msgstr "पुन:आरंभ करू (_R)"
+
+#: src/system-config-services.glade.h:38
+msgid "_Start"
+msgstr "प्रारंभ करू (_S)"
+
+#: src/system-config-services.glade.h:39
 msgid "system-config-services"
 msgstr "system-config-services"
 
-#: src/system-config-services.glade:1222
-msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr "कापीराइट © 2002-2009 Red Hat, Inc. आओर एकर योगदानकएनिहार"
-
-#: src/system-config-services.glade:1224
-msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-
-#: src/system-config-services.glade:1231
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: src/system-config-services.glade.h:41
 msgid "translator-credits"
 msgstr "संगीता कुमारी (sangeeta09@gmail.com)"
-
-#: src/system-config-services.glade:1280
-msgid "Customize Runlevels"
-msgstr "रनलेवल पसंदीदा बनाउ"
-
-#: src/system-config-services.glade:1395
-msgid "Runlevel _2"
-msgstr "Runlevel _2"
-
-#: src/system-config-services.glade:1414
-msgid "Runlevel _3"
-msgstr "रनलेवल _3"
-
-#: src/system-config-services.glade:1433
-msgid "Runlevel _4"
-msgstr "रनलेवल _4"
-
-#: src/system-config-services.glade:1452
-msgid "Runlevel _5"
-msgstr "रनलेवल _5"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -295,16 +298,21 @@ msgstr "तंत्र सेवाक संबंधमे सूचना �
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
-msgid "Manage system services"
-msgstr "तंत्र सेवा प्रबंधित करू"
+msgid "Getting information about system services requires authentication"
+msgstr ""
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
-msgid "System policy prevents access to system services information"
-msgstr "तंत्र नीति तंत्र सेवा सूचनामे पहुँच रोकैछ"
+msgid "Manage system services"
+msgstr "तंत्र सेवा प्रबंधित करू"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
-msgid "System policy prevents management of system services"
-msgstr "तंत्र नीति तंत्र सेवा सूचनाक प्रबंधन रोकैत अछि"
+msgid "Managing system services requires authentication"
+msgstr ""
 
+#~ msgid "System policy prevents access to system services information"
+#~ msgstr "तंत्र नीति तंत्र सेवा सूचनामे पहुँच रोकैछ"
+
+#~ msgid "System policy prevents management of system services"
+#~ msgstr "तंत्र नीति तंत्र सेवा सूचनाक प्रबंधन रोकैत अछि"

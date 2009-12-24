@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.te\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-21 13:26+0200\n"
+"POT-Creation-Date: 2009-12-24 12:19+0100\n"
 "PO-Revision-Date: 2009-09-23 12:55+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
@@ -18,58 +18,59 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
 "\n"
 "\n"
 "\n"
 "\n"
 
-#: src/gui.py:111
+#: src/gui.py:125
 msgid "Name"
 msgstr "పేరు"
 
-#: src/gui.py:112
+#: src/gui.py:128
 msgid "Remarks"
 msgstr "నివేదనలు"
 
-#: src/gui.py:173 src/gui.py:191
+#: src/gui.py:196 src/gui.py:213
 msgid "This service is being refreshed right now."
 msgstr "ఈ సేవ ప్రస్తుతం రీఫ్రెష్ అవుతోంది."
 
-#: src/gui.py:174
+#: src/gui.py:197
 msgid "Getting information about this service failed."
 msgstr "ఈ సేవ గురించి సమాచారమును పొందుట విఫలమైంది."
 
-#: src/gui.py:175
+#: src/gui.py:198
 msgid "This service is enabled."
 msgstr "ఈ సేవ చేతనము చేయబడింది."
 
-#: src/gui.py:176
+#: src/gui.py:199
 msgid "This service is disabled."
 msgstr "ఈ సేవ అచేతనము చేయబడింది."
 
-#: src/gui.py:177
+#: src/gui.py:201
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "ఈ సేవ రన్‌లెవల్సు: %(runlevels)s నందు చేతనంచేయబడింది."
 
-#: src/gui.py:192
+#: src/gui.py:214
 msgid "The status of this service is unknown."
 msgstr "ఈ సేవయొక్క స్థితి తెలియదు."
 
-#: src/gui.py:193
+#: src/gui.py:215
 msgid "This service is stopped."
 msgstr "ఈ సేవ ఆపివేయబడింది."
 
-#: src/gui.py:194
+#: src/gui.py:216
 msgid "This service is running."
 msgstr "ఈ సేవ నడుచుచున్నది."
 
-#: src/gui.py:195
+#: src/gui.py:217
 msgid "This service is dead."
 msgstr "ఈ సేవ అంతమైనది."
 
-#: src/gui.py:272
+#: src/gui.py:298
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
@@ -78,11 +79,11 @@ msgstr ""
 "సాదారణముగా సిస్టమ్ బూట్ అయినప్పుడు <b>%(servicename)s</b> సేవ వొకసారి ప్రారంభించబడుతుంది, "
 "బ్యాక్‌గ్రౌండునందు నడపబడుతూ అవసరమైనప్పుడు మేలుకొల్పబడుతుంది."
 
-#: src/gui.py:286
+#: src/gui.py:317
 msgid "This service is updated currently."
 msgstr "ప్రస్తుతం ఈ సేవ నవీకరించబడింది."
 
-#: src/gui.py:312
+#: src/gui.py:344
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
@@ -91,138 +92,104 @@ msgstr ""
 "<b>%(servicename)s</b> సేవ xinetd సేవ ద్వారా కోరడంవలన ప్రారంభించబడుతుంది మరియు అది "
 "చేయుటకు ఏమీ లేనప్పుడు ముగుస్తుంది."
 
-#: src/gui.py:321
+#: src/gui.py:356
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr "సేవ చేతనపరచబడింది, అయితే <b>xinted</b> ప్యాకేజి సంస్థాపించబడిలేదు. అది లేకుండా ఈ సేవ పనిచేయదు."
+msgstr ""
+"సేవ చేతనపరచబడింది, అయితే <b>xinted</b> ప్యాకేజి సంస్థాపించబడిలేదు. అది లేకుండా ఈ సేవ పనిచేయదు."
 
-#: src/gui.py:327
+#: src/gui.py:365
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr "సేవ చేతన పరచబడింది, అయితే <b>xinted</b> సేవ నడుచుటలేదు. అది లేకుండా ఈ సేవ పనిచేయదు."
 
-#: src/gui.py:713 src/system-config-services.glade:1351
-#, python-format
+#: src/gui.py:782 src/system-config-services.glade.h:6
+#, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "<b>%(service)s</b> సేవను ఈ రన్‌లెవల్సు నందు చేతనంచేస్తుంది:"
 
-#: src/gui.py:845
+#: src/gui.py:920
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr "సహాయ దర్శని కనగొనబడలేదు. సహాయమును చూడగల్గుటకు, 'yelp' ప్యాకేజీ సంస్థాపించవలసి వున్నది."
 
-#: src/system-config-services.glade:7 src/system-config-services.glade:1223
-msgid "Service Configuration"
-msgstr "సేవల ఆకృతీకణ"
-
-#: src/system-config-services.glade:38
-msgid "_Program"
-msgstr "ప్రోగ్రామ్ (_P)"
-
-#: src/system-config-services.glade:60
-msgid "Ser_vice"
-msgstr "సేవ (_v)"
-
-#: src/system-config-services.glade:69 src/system-config-services.glade:327
-msgid "_Enable"
-msgstr "చేతనం (_E)"
-
-#: src/system-config-services.glade:91 src/system-config-services.glade:344
-msgid "_Disable"
-msgstr "అచేతనము (_D)"
-
-#: src/system-config-services.glade:113 src/system-config-services.glade:362
-msgid "_Customize"
-msgstr "మలచుకొను (_C)"
-
-#: src/system-config-services.glade:134 src/system-config-services.glade:1241
-msgid "Runlevel 2"
-msgstr "రన్‌లెవల్ 2"
-
-#: src/system-config-services.glade:143 src/system-config-services.glade:1251
-msgid "Runlevel 3"
-msgstr "రన్‌లెవల్ 3"
-
-#: src/system-config-services.glade:152 src/system-config-services.glade:1261
-msgid "Runlevel 4"
-msgstr "రన్‌లెవల్ 4"
-
-#: src/system-config-services.glade:161 src/system-config-services.glade:1271
-msgid "Runlevel 5"
-msgstr "రన్‌లెవల్ 5"
-
-#: src/system-config-services.glade:180 src/system-config-services.glade:392
-msgid "_Start"
-msgstr "ప్రారంభించు (_S)"
-
-#: src/system-config-services.glade:202 src/system-config-services.glade:409
-msgid "S_top"
-msgstr "ఆపుము (_t)"
-
-#: src/system-config-services.glade:224 src/system-config-services.glade:426
-msgid "_Restart"
-msgstr "పునఃప్రారంభించు (_R)"
-
-#: src/system-config-services.glade:250
-msgid "_Help"
-msgstr "సహాయం (_H)"
-
-#: src/system-config-services.glade:259
-msgid "_Contents"
-msgstr "విషయాలు (_C)"
-
-#: src/system-config-services.glade:287
-msgid "_About"
-msgstr "గురించి (_A)"
-
-#: src/system-config-services.glade:361
-msgid "Customize the runlevels in which a service is enabled."
-msgstr "సేవ చేతనపరిచిన రన్‌లెవల్స్‍‌ను మలచుకొనుము."
-
-#: src/system-config-services.glade:559
-msgid "No service selected."
-msgstr "ఏ సేవ యెంపికకాలేదు."
-
-#: src/system-config-services.glade:621
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"సాదారణముగా సిస్టమ్ బూట్ అయినప్పుడు, ఈ సేవ వొకసారి ప్రారంభించబడుతుంది, బ్యాక్‌గ్రౌండునందు "
-"నడుపబడుతుంది అవసరమైనప్పుడు మేల్కొలపబడుతుంది."
-
-#: src/system-config-services.glade:769 src/system-config-services.glade:960
-msgid "Description"
-msgstr "వర్ణన"
-
-#: src/system-config-services.glade:867
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr ""
-"ఈ సేవ xinetd సేవ ద్వారా కోరడంవలన ప్రారంభించబడుతుంది మరియు అది చేయుటకు ఏమీ లేనప్పుడు "
-"ముగుస్తుంది."
-
-#: src/system-config-services.glade:1065
-msgid "Service Information"
-msgstr "సేవ సమాచారము"
-
-#: src/system-config-services.glade:1184
-msgid "Status of service %s:"
-msgstr "సేవ %sయొక్క స్థితి:"
-
-#: src/system-config-services.glade:1221
-msgid "system-config-services"
-msgstr "system-config-services"
-
-#: src/system-config-services.glade:1222
+#: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
 msgstr "కాపీరైట్ © 2002-2009 Red Hat, Inc. మరియు సహాయకులు"
 
-#: src/system-config-services.glade:1224
+#: src/system-config-services.glade.h:2
+msgid "Customize Runlevels"
+msgstr "రన్‌లెవల్స్‍‌ను మలచుకొనుము"
+
+#: src/system-config-services.glade.h:3
+msgid "Customize the runlevels in which a service is enabled."
+msgstr "సేవ చేతనపరిచిన రన్‌లెవల్స్‍‌ను మలచుకొనుము."
+
+#: src/system-config-services.glade.h:4
+msgid "Description"
+msgstr "వర్ణన"
+
+#: src/system-config-services.glade.h:7
+msgid "No service selected."
+msgstr "ఏ సేవ యెంపికకాలేదు."
+
+#: src/system-config-services.glade.h:8
+msgid "Runlevel 2"
+msgstr "రన్‌లెవల్ 2"
+
+#: src/system-config-services.glade.h:9
+msgid "Runlevel 3"
+msgstr "రన్‌లెవల్ 3"
+
+#: src/system-config-services.glade.h:10
+msgid "Runlevel 4"
+msgstr "రన్‌లెవల్ 4"
+
+#: src/system-config-services.glade.h:11
+msgid "Runlevel 5"
+msgstr "రన్‌లెవల్ 5"
+
+#: src/system-config-services.glade.h:12
+msgid "Runlevel _2"
+msgstr "రన్‌లెవల్ _2"
+
+#: src/system-config-services.glade.h:13
+msgid "Runlevel _3"
+msgstr "ఉపయోగ స్థాయి _౩"
+
+#: src/system-config-services.glade.h:14
+msgid "Runlevel _4"
+msgstr "ఉపయోగ స్థాయి _౪"
+
+#: src/system-config-services.glade.h:15
+msgid "Runlevel _5"
+msgstr "ఉపయోగ స్థాయి _౫"
+
+#: src/system-config-services.glade.h:16
+msgid "S_top"
+msgstr "ఆపుము (_t)"
+
+#: src/system-config-services.glade.h:17
+msgid "Ser_vice"
+msgstr "సేవ (_v)"
+
+#: src/system-config-services.glade.h:18
+msgid "Service Configuration"
+msgstr "సేవల ఆకృతీకణ"
+
+#: src/system-config-services.glade.h:19
+msgid "Service Information"
+msgstr "సేవ సమాచారము"
+
+#: src/system-config-services.glade.h:21
+#, no-c-format
+msgid "Status of service %s:"
+msgstr "సేవ %sయొక్క స్థితి:"
+
+#: src/system-config-services.glade.h:22
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -250,29 +217,66 @@ msgstr ""
 "Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USAకు "
 "వ్రాయండి."
 
-#: src/system-config-services.glade:1231
+#: src/system-config-services.glade.h:28
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"సాదారణముగా సిస్టమ్ బూట్ అయినప్పుడు, ఈ సేవ వొకసారి ప్రారంభించబడుతుంది, బ్యాక్‌గ్రౌండునందు "
+"నడుపబడుతుంది అవసరమైనప్పుడు మేల్కొలపబడుతుంది."
+
+#: src/system-config-services.glade.h:29
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+"ఈ సేవ xinetd సేవ ద్వారా కోరడంవలన ప్రారంభించబడుతుంది మరియు అది చేయుటకు ఏమీ లేనప్పుడు "
+"ముగుస్తుంది."
+
+#: src/system-config-services.glade.h:30
+msgid "_About"
+msgstr "గురించి (_A)"
+
+#: src/system-config-services.glade.h:31
+msgid "_Contents"
+msgstr "విషయాలు (_C)"
+
+#: src/system-config-services.glade.h:32
+msgid "_Customize"
+msgstr "మలచుకొను (_C)"
+
+#: src/system-config-services.glade.h:33
+msgid "_Disable"
+msgstr "అచేతనము (_D)"
+
+#: src/system-config-services.glade.h:34
+msgid "_Enable"
+msgstr "చేతనం (_E)"
+
+#: src/system-config-services.glade.h:35
+msgid "_Help"
+msgstr "సహాయం (_H)"
+
+#: src/system-config-services.glade.h:36
+msgid "_Program"
+msgstr "ప్రోగ్రామ్ (_P)"
+
+#: src/system-config-services.glade.h:37
+msgid "_Restart"
+msgstr "పునఃప్రారంభించు (_R)"
+
+#: src/system-config-services.glade.h:38
+msgid "_Start"
+msgstr "ప్రారంభించు (_S)"
+
+#: src/system-config-services.glade.h:39
+msgid "system-config-services"
+msgstr "system-config-services"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: src/system-config-services.glade.h:41
 msgid "translator-credits"
 msgstr "Krishna Babu K <kkrothap@redhat.com>, 2008."
-
-#: src/system-config-services.glade:1280
-msgid "Customize Runlevels"
-msgstr "రన్‌లెవల్స్‍‌ను మలచుకొనుము"
-
-#: src/system-config-services.glade:1395
-msgid "Runlevel _2"
-msgstr "రన్‌లెవల్ _2"
-
-#: src/system-config-services.glade:1414
-msgid "Runlevel _3"
-msgstr "ఉపయోగ స్థాయి _౩"
-
-#: src/system-config-services.glade:1433
-msgid "Runlevel _4"
-msgstr "ఉపయోగ స్థాయి _౪"
-
-#: src/system-config-services.glade:1452
-msgid "Runlevel _5"
-msgstr "ఉపయోగ స్థాయి _౫"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -293,16 +297,21 @@ msgstr "సిస్టమ్ సేవల గురించి సమాచా
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
-msgid "Manage system services"
-msgstr "సిస్టమ్ సేవలను నిర్వహించుము"
+msgid "Getting information about system services requires authentication"
+msgstr ""
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
-msgid "System policy prevents access to system services information"
-msgstr "సిస్టమ్ విధానము అనునది సిస్టమ్ సేవల సమాచారమునకు యాక్సెస్‌ను నిరోధిస్తోంది"
+msgid "Manage system services"
+msgstr "సిస్టమ్ సేవలను నిర్వహించుము"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
-msgid "System policy prevents management of system services"
-msgstr "సిస్టమ్ విధానము అనునది సిస్టమ్ సేవల యొక్క నిర్వహణను నిరోధిస్తోంది"
+msgid "Managing system services requires authentication"
+msgstr ""
 
+#~ msgid "System policy prevents access to system services information"
+#~ msgstr "సిస్టమ్ విధానము అనునది సిస్టమ్ సేవల సమాచారమునకు యాక్సెస్‌ను నిరోధిస్తోంది"
+
+#~ msgid "System policy prevents management of system services"
+#~ msgstr "సిస్టమ్ విధానము అనునది సిస్టమ్ సేవల యొక్క నిర్వహణను నిరోధిస్తోంది"

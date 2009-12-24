@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-21 13:26+0200\n"
+"POT-Creation-Date: 2009-12-24 12:19+0100\n"
 "PO-Revision-Date: 2009-09-21 19:55+0100\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
@@ -19,52 +19,52 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: src/gui.py:111
+#: src/gui.py:125
 msgid "Name"
 msgstr "Ime"
 
-#: src/gui.py:112
+#: src/gui.py:128
 msgid "Remarks"
 msgstr "Napomene"
 
-#: src/gui.py:173 src/gui.py:191
+#: src/gui.py:196 src/gui.py:213
 msgid "This service is being refreshed right now."
 msgstr "Ovaj se servis osvežava sada."
 
-#: src/gui.py:174
+#: src/gui.py:197
 msgid "Getting information about this service failed."
 msgstr "Pribavljanje informacija o ovom servisu nije uspelo."
 
-#: src/gui.py:175
+#: src/gui.py:198
 msgid "This service is enabled."
 msgstr "Ovaj servis je uključen."
 
-#: src/gui.py:176
+#: src/gui.py:199
 msgid "This service is disabled."
 msgstr "Ovaj servis je isključen."
 
-#: src/gui.py:177
+#: src/gui.py:201
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "Servis je uključen u izvršnim nivoima: %(runlevels)s"
 
-#: src/gui.py:192
+#: src/gui.py:214
 msgid "The status of this service is unknown."
 msgstr "Status ovog servisa je nepoznat."
 
-#: src/gui.py:193
+#: src/gui.py:215
 msgid "This service is stopped."
 msgstr "Ovaj servis je zaustavljen."
 
-#: src/gui.py:194
+#: src/gui.py:216
 msgid "This service is running."
 msgstr "Ovaj servis je pokrenut."
 
-#: src/gui.py:195
+#: src/gui.py:217
 msgid "This service is dead."
 msgstr "Ovaj servis ne reaguje."
 
-#: src/gui.py:272
+#: src/gui.py:298
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
@@ -73,11 +73,11 @@ msgstr ""
 "Servis <b>%(servicename)s</b> se pokreće jednom, obično prilikom podizanja "
 "sistema, radi u pozadini i budi se po potrebi."
 
-#: src/gui.py:286
+#: src/gui.py:317
 msgid "This service is updated currently."
 msgstr "Ovaj servis je se trenutno ažurira."
 
-#: src/gui.py:312
+#: src/gui.py:344
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
@@ -86,7 +86,7 @@ msgstr ""
 "Servis xinetd će pokrenuti servis <b>%(servicename)s</b> na zahtev i "
 "završiće kada ne bude imao više šta da radi."
 
-#: src/gui.py:321
+#: src/gui.py:356
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
@@ -94,7 +94,7 @@ msgstr ""
 "Ovaj servis je uključen, ali paket <b>xinetd</b> nije instaliran. Ovaj "
 "servis ne radi bez njega."
 
-#: src/gui.py:327
+#: src/gui.py:365
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
@@ -102,12 +102,12 @@ msgstr ""
 "Ovaj servis je uključen, ali servis <b>xinetd</b> nije pokrenut. Ovaj servis "
 "ne radi bez njega."
 
-#: src/gui.py:713 src/system-config-services.glade:1351
-#, python-format
+#: src/gui.py:782 src/system-config-services.glade.h:6
+#, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Uključi servis <b>%(service)s</b> u ovim izvršnim nivoima:"
 
-#: src/gui.py:845
+#: src/gui.py:920
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
@@ -115,115 +115,80 @@ msgstr ""
 "Program za pregledanje pomoći nije nađen. Da biste mogli pregledati pomoć "
 "paket „yelp“ mora biti instaliran."
 
-#: src/system-config-services.glade:7 src/system-config-services.glade:1223
-msgid "Service Configuration"
-msgstr "Podešavanje servisa"
-
-#: src/system-config-services.glade:38
-msgid "_Program"
-msgstr "Progra_m"
-
-#: src/system-config-services.glade:60
-msgid "Ser_vice"
-msgstr "Ser_vis"
-
-#: src/system-config-services.glade:69 src/system-config-services.glade:327
-msgid "_Enable"
-msgstr "_Uključi"
-
-#: src/system-config-services.glade:91 src/system-config-services.glade:344
-msgid "_Disable"
-msgstr "_Isključi"
-
-#: src/system-config-services.glade:113 src/system-config-services.glade:362
-msgid "_Customize"
-msgstr "_Prilagodi"
-
-#: src/system-config-services.glade:134 src/system-config-services.glade:1241
-msgid "Runlevel 2"
-msgstr "Izvršni nivo 2"
-
-#: src/system-config-services.glade:143 src/system-config-services.glade:1251
-msgid "Runlevel 3"
-msgstr "Izvršni nivo 3"
-
-#: src/system-config-services.glade:152 src/system-config-services.glade:1261
-msgid "Runlevel 4"
-msgstr "Izvršni nivo 4"
-
-#: src/system-config-services.glade:161 src/system-config-services.glade:1271
-msgid "Runlevel 5"
-msgstr "Izvršni nivo 5"
-
-#: src/system-config-services.glade:180 src/system-config-services.glade:392
-msgid "_Start"
-msgstr "_Pokreni"
-
-#: src/system-config-services.glade:202 src/system-config-services.glade:409
-msgid "S_top"
-msgstr "_Zaustavi"
-
-#: src/system-config-services.glade:224 src/system-config-services.glade:426
-msgid "_Restart"
-msgstr "Pok_reni ponovo"
-
-#: src/system-config-services.glade:250
-msgid "_Help"
-msgstr "_Pomoć"
-
-#: src/system-config-services.glade:259
-msgid "_Contents"
-msgstr "_Sadržaj"
-
-#: src/system-config-services.glade:287
-msgid "_About"
-msgstr "_O programu"
-
-#: src/system-config-services.glade:361
-msgid "Customize the runlevels in which a service is enabled."
-msgstr "Prilagodi izvršne nivoe u kojima je servis uključen."
-
-#: src/system-config-services.glade:559
-msgid "No service selected."
-msgstr "Nijedan servis nije izabran."
-
-#: src/system-config-services.glade:621
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"Ovaj servis se pokreće jednom, obično prilikom podizanja sistema, radi u "
-"pozadini i budi se po potrebi."
-
-#: src/system-config-services.glade:769 src/system-config-services.glade:960
-msgid "Description"
-msgstr "Opis"
-
-#: src/system-config-services.glade:867
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr ""
-"Servis xinetd će pokrenuti ovaj servis na zahtev i završiće kada ne bude "
-"imao više šta da radi."
-
-#: src/system-config-services.glade:1065
-msgid "Service Information"
-msgstr "Podaci servisa"
-
-#: src/system-config-services.glade:1184
-msgid "Status of service %s:"
-msgstr "Status servisa %s:"
-
-#: src/system-config-services.glade:1221
-msgid "system-config-services"
-msgstr "system-config-services"
-
-#: src/system-config-services.glade:1222
+#: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
 msgstr "Autorska prava 2002-2009 Red Hat, Inc. i saradnici"
 
-#: src/system-config-services.glade:1224
+#: src/system-config-services.glade.h:2
+msgid "Customize Runlevels"
+msgstr "Prilagodi izvršne nivoe"
+
+#: src/system-config-services.glade.h:3
+msgid "Customize the runlevels in which a service is enabled."
+msgstr "Prilagodi izvršne nivoe u kojima je servis uključen."
+
+#: src/system-config-services.glade.h:4
+msgid "Description"
+msgstr "Opis"
+
+#: src/system-config-services.glade.h:7
+msgid "No service selected."
+msgstr "Nijedan servis nije izabran."
+
+#: src/system-config-services.glade.h:8
+msgid "Runlevel 2"
+msgstr "Izvršni nivo 2"
+
+#: src/system-config-services.glade.h:9
+msgid "Runlevel 3"
+msgstr "Izvršni nivo 3"
+
+#: src/system-config-services.glade.h:10
+msgid "Runlevel 4"
+msgstr "Izvršni nivo 4"
+
+#: src/system-config-services.glade.h:11
+msgid "Runlevel 5"
+msgstr "Izvršni nivo 5"
+
+#: src/system-config-services.glade.h:12
+msgid "Runlevel _2"
+msgstr "Izvršni nivo _2"
+
+#: src/system-config-services.glade.h:13
+msgid "Runlevel _3"
+msgstr "Izvršni nivo _3"
+
+#: src/system-config-services.glade.h:14
+msgid "Runlevel _4"
+msgstr "Izvršni nivo _4"
+
+#: src/system-config-services.glade.h:15
+msgid "Runlevel _5"
+msgstr "Izvršni nivo _5"
+
+#: src/system-config-services.glade.h:16
+msgid "S_top"
+msgstr "_Zaustavi"
+
+#: src/system-config-services.glade.h:17
+msgid "Ser_vice"
+msgstr "Ser_vis"
+
+#: src/system-config-services.glade.h:18
+msgid "Service Configuration"
+msgstr "Podešavanje servisa"
+
+#: src/system-config-services.glade.h:19
+msgid "Service Information"
+msgstr "Podaci servisa"
+
+#: src/system-config-services.glade.h:21
+#, no-c-format
+msgid "Status of service %s:"
+msgstr "Status servisa %s:"
+
+#: src/system-config-services.glade.h:22
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -253,32 +218,69 @@ msgstr ""
 "niste, pišite Zadužbini za Slobodni Softver: Free Software Foundation, Inc., "
 "59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
-#: src/system-config-services.glade:1231
+#: src/system-config-services.glade.h:28
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"Ovaj servis se pokreće jednom, obično prilikom podizanja sistema, radi u "
+"pozadini i budi se po potrebi."
+
+#: src/system-config-services.glade.h:29
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+"Servis xinetd će pokrenuti ovaj servis na zahtev i završiće kada ne bude "
+"imao više šta da radi."
+
+#: src/system-config-services.glade.h:30
+msgid "_About"
+msgstr "_O programu"
+
+#: src/system-config-services.glade.h:31
+msgid "_Contents"
+msgstr "_Sadržaj"
+
+#: src/system-config-services.glade.h:32
+msgid "_Customize"
+msgstr "_Prilagodi"
+
+#: src/system-config-services.glade.h:33
+msgid "_Disable"
+msgstr "_Isključi"
+
+#: src/system-config-services.glade.h:34
+msgid "_Enable"
+msgstr "_Uključi"
+
+#: src/system-config-services.glade.h:35
+msgid "_Help"
+msgstr "_Pomoć"
+
+#: src/system-config-services.glade.h:36
+msgid "_Program"
+msgstr "Progra_m"
+
+#: src/system-config-services.glade.h:37
+msgid "_Restart"
+msgstr "Pok_reni ponovo"
+
+#: src/system-config-services.glade.h:38
+msgid "_Start"
+msgstr "_Pokreni"
+
+#: src/system-config-services.glade.h:39
+msgid "system-config-services"
+msgstr "system-config-services"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: src/system-config-services.glade.h:41
 msgid "translator-credits"
 msgstr ""
 "Miloš Komarčević <kmilos@gmail.com>, 2005.\n"
 "Milos Mijatovic <mijatix@gmail.com>, 2008.\n"
 "Igor Miletic <grejigl-gnomeprevod@yahoo.ca>, 2008."
-
-#: src/system-config-services.glade:1280
-msgid "Customize Runlevels"
-msgstr "Prilagodi izvršne nivoe"
-
-#: src/system-config-services.glade:1395
-msgid "Runlevel _2"
-msgstr "Izvršni nivo _2"
-
-#: src/system-config-services.glade:1414
-msgid "Runlevel _3"
-msgstr "Izvršni nivo _3"
-
-#: src/system-config-services.glade:1433
-msgid "Runlevel _4"
-msgstr "Izvršni nivo _4"
-
-#: src/system-config-services.glade:1452
-msgid "Runlevel _5"
-msgstr "Izvršni nivo _5"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -299,15 +301,22 @@ msgstr "Dobavljanje informacija o sistemskim servisima"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
-msgid "Manage system services"
-msgstr "Upravljanje sistemskim servisima"
+msgid "Getting information about system services requires authentication"
+msgstr ""
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
-msgid "System policy prevents access to system services information"
-msgstr "Sistemska polisa sprečava pristup informacijama o sistemskim servisima"
+msgid "Manage system services"
+msgstr "Upravljanje sistemskim servisima"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
-msgid "System policy prevents management of system services"
-msgstr "Sistemska polisa sprečava upravljanje sistemskim servisima"
+msgid "Managing system services requires authentication"
+msgstr ""
+
+#~ msgid "System policy prevents access to system services information"
+#~ msgstr ""
+#~ "Sistemska polisa sprečava pristup informacijama o sistemskim servisima"
+
+#~ msgid "System policy prevents management of system services"
+#~ msgstr "Sistemska polisa sprečava upravljanje sistemskim servisima"

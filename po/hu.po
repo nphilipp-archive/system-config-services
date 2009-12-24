@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-21 13:26+0200\n"
+"POT-Creation-Date: 2009-12-24 12:19+0100\n"
 "PO-Revision-Date: 2009-09-24 20:30+0100\n"
 "Last-Translator: Nagy István Zoltán <nagyesta@gmail.com>\n"
 "Language-Team: Hungarian <fedora-trans-hu@redhat.com>\n"
@@ -19,213 +19,262 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: src/gui.py:111
+#: src/gui.py:125
 msgid "Name"
 msgstr "Név"
 
-#: src/gui.py:112
+#: src/gui.py:128
 msgid "Remarks"
 msgstr "Megjegyzések"
 
-#: src/gui.py:173
-#: src/gui.py:191
+#: src/gui.py:196 src/gui.py:213
 msgid "This service is being refreshed right now."
 msgstr "A szolgáltatást éppen frissítem."
 
-#: src/gui.py:174
+#: src/gui.py:197
 msgid "Getting information about this service failed."
 msgstr "Nem sikerült adatokat lekérdezni e szolgáltatásról."
 
-#: src/gui.py:175
+#: src/gui.py:198
 msgid "This service is enabled."
 msgstr "Ez a szolgáltatás engedélyezett."
 
-#: src/gui.py:176
+#: src/gui.py:199
 msgid "This service is disabled."
 msgstr "Ez a szolgáltatás tiltott."
 
-#: src/gui.py:177
+#: src/gui.py:201
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "Ez a szolgáltatás %(runlevels)s futásszinteken engedélyezett."
 
-#: src/gui.py:192
+#: src/gui.py:214
 msgid "The status of this service is unknown."
 msgstr "Ez a szolgáltatás állapota ismeretlen."
 
-#: src/gui.py:193
+#: src/gui.py:215
 msgid "This service is stopped."
 msgstr "Ez a szolgáltatás áll."
 
-#: src/gui.py:194
+#: src/gui.py:216
 msgid "This service is running."
 msgstr "Ez a szolgáltatás fut."
 
-#: src/gui.py:195
+#: src/gui.py:217
 msgid "This service is dead."
 msgstr "Ez a szolgáltatás bedöglött."
 
-#: src/gui.py:272
+#: src/gui.py:298
 #, python-format
-msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
-msgstr "<b>%(servicename)s</b> szolgáltatás a rendszer betöltésekor indul. A háttérben fut, és felébred amikor szükség van rá."
+msgid ""
+"The <b>%(servicename)s</b> service is started once, usually when the system "
+"is booted, runs in the background and wakes up when needed."
+msgstr ""
+"<b>%(servicename)s</b> szolgáltatás a rendszer betöltésekor indul. A "
+"háttérben fut, és felébred amikor szükség van rá."
 
-#: src/gui.py:286
+#: src/gui.py:317
 msgid "This service is updated currently."
 msgstr "Ez a szolgáltatás éppen frissül."
 
-#: src/gui.py:312
+#: src/gui.py:344
 #, python-format
-msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do."
-msgstr "<b>%(servicename)s</b> szolgáltatást az xinetd szolgáltatás elindítja amikor igény van rá, és leállítja, amikor annak már nincs mit tennie."
+msgid ""
+"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
+"service and ends when it has nothing more to do."
+msgstr ""
+"<b>%(servicename)s</b> szolgáltatást az xinetd szolgáltatás elindítja amikor "
+"igény van rá, és leállítja, amikor annak már nincs mit tennie."
 
-#: src/gui.py:321
-msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
-msgstr "Ez a szolgáltatás engedélyezett, de a <b>xinetd</b> csomagot nem telepítették. Anélkül ez a szolgáltatás nem működik."
+#: src/gui.py:356
+msgid ""
+"This service is enabled, but the <b>xinetd</b> package is not installed. "
+"This service does not work without it."
+msgstr ""
+"Ez a szolgáltatás engedélyezett, de a <b>xinetd</b> csomagot nem "
+"telepítették. Anélkül ez a szolgáltatás nem működik."
 
-#: src/gui.py:327
-msgid "This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."
-msgstr "Ez a szolgáltatás engedélyezett, de a <b>xinetd</b> szolgáltatás nem fut. Ez a szolgáltatás anélkül nem működik."
+#: src/gui.py:365
+msgid ""
+"This service is enabled, but the <b>xinetd</b> service is not running. This "
+"service does not work without it."
+msgstr ""
+"Ez a szolgáltatás engedélyezett, de a <b>xinetd</b> szolgáltatás nem fut. Ez "
+"a szolgáltatás anélkül nem működik."
 
-#: src/gui.py:713
-#: src/system-config-services.glade:1351
-#, python-format
+#: src/gui.py:782 src/system-config-services.glade.h:6
+#, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "<b>%(service)s</b> szolgáltatás engedélyezése futásszintenként:"
 
-#: src/gui.py:845
-msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
-msgstr "A súgónéző nincs meg. A súgó nézegetéséhez telepíteni kell a „yelp” csomagot."
+#: src/gui.py:920
+msgid ""
+"The help viewer could not be found. To be able to view help, the 'yelp' "
+"package needs to be installed."
+msgstr ""
+"A súgónéző nincs meg. A súgó nézegetéséhez telepíteni kell a „yelp” csomagot."
 
-#: src/system-config-services.glade:7
-#: src/system-config-services.glade:1223
-msgid "Service Configuration"
-msgstr "Szolgáltatások"
-
-#: src/system-config-services.glade:38
-msgid "_Program"
-msgstr "_Főablak"
-
-#: src/system-config-services.glade:60
-msgid "Ser_vice"
-msgstr "S_zolgáltatás"
-
-#: src/system-config-services.glade:69
-#: src/system-config-services.glade:327
-msgid "_Enable"
-msgstr "_Megenged"
-
-#: src/system-config-services.glade:91
-#: src/system-config-services.glade:344
-msgid "_Disable"
-msgstr "Le_tilt"
-
-#: src/system-config-services.glade:113
-#: src/system-config-services.glade:362
-msgid "_Customize"
-msgstr "I_gazít"
-
-#: src/system-config-services.glade:134
-#: src/system-config-services.glade:1241
-msgid "Runlevel 2"
-msgstr "2. futásszint"
-
-#: src/system-config-services.glade:143
-#: src/system-config-services.glade:1251
-msgid "Runlevel 3"
-msgstr "3. futásszint"
-
-#: src/system-config-services.glade:152
-#: src/system-config-services.glade:1261
-msgid "Runlevel 4"
-msgstr "4. futásszint"
-
-#: src/system-config-services.glade:161
-#: src/system-config-services.glade:1271
-msgid "Runlevel 5"
-msgstr "5. futásszint"
-
-#: src/system-config-services.glade:180
-#: src/system-config-services.glade:392
-msgid "_Start"
-msgstr "_Elindít"
-
-#: src/system-config-services.glade:202
-#: src/system-config-services.glade:409
-msgid "S_top"
-msgstr "_Leállít"
-
-#: src/system-config-services.glade:224
-#: src/system-config-services.glade:426
-msgid "_Restart"
-msgstr "Új_raindít"
-
-#: src/system-config-services.glade:250
-msgid "_Help"
-msgstr "_Súgó"
-
-#: src/system-config-services.glade:259
-msgid "_Contents"
-msgstr "_Tartalom"
-
-#: src/system-config-services.glade:287
-msgid "_About"
-msgstr "_Névjegy"
-
-#: src/system-config-services.glade:361
-msgid "Customize the runlevels in which a service is enabled."
-msgstr "Szolgáltatás engedélyezése futásszintenként."
-
-#: src/system-config-services.glade:559
-msgid "No service selected."
-msgstr "Nincs kiválasztott szolgáltatás."
-
-#: src/system-config-services.glade:621
-msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
-msgstr "Ez a szolgáltatás szokás szerint a rendszer betöltésekor indul, a háttérben fut, és felébred, amikor szükség van rá."
-
-#: src/system-config-services.glade:769
-#: src/system-config-services.glade:960
-msgid "Description"
-msgstr "Jellemzés"
-
-#: src/system-config-services.glade:867
-msgid "This service will be started on demand by the xinetd service and ends when it has nothing more to do."
-msgstr "Ezt a szolgáltatást az xinetd szolgáltatás elindítja amikor igény van rá, és leállítja, amikor annak már nincs mit tennie."
-
-#: src/system-config-services.glade:1065
-msgid "Service Information"
-msgstr "Szolgáltatás ismertető"
-
-#: src/system-config-services.glade:1184
-msgid "Status of service %s:"
-msgstr "%s szolgáltatás állapota:"
-
-#: src/system-config-services.glade:1221
-msgid "system-config-services"
-msgstr "system-config-services"
-
-#: src/system-config-services.glade:1222
+#: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
 msgstr "Copyright © 2002-2009 Red Hat, Inc. és közreműködői"
 
-#: src/system-config-services.glade:1224
-msgid ""
-"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+#: src/system-config-services.glade.h:2
+msgid "Customize Runlevels"
+msgstr "Igazítás"
 
-#: src/system-config-services.glade:1231
+#: src/system-config-services.glade.h:3
+msgid "Customize the runlevels in which a service is enabled."
+msgstr "Szolgáltatás engedélyezése futásszintenként."
+
+#: src/system-config-services.glade.h:4
+msgid "Description"
+msgstr "Jellemzés"
+
+#: src/system-config-services.glade.h:7
+msgid "No service selected."
+msgstr "Nincs kiválasztott szolgáltatás."
+
+#: src/system-config-services.glade.h:8
+msgid "Runlevel 2"
+msgstr "2. futásszint"
+
+#: src/system-config-services.glade.h:9
+msgid "Runlevel 3"
+msgstr "3. futásszint"
+
+#: src/system-config-services.glade.h:10
+msgid "Runlevel 4"
+msgstr "4. futásszint"
+
+#: src/system-config-services.glade.h:11
+msgid "Runlevel 5"
+msgstr "5. futásszint"
+
+#: src/system-config-services.glade.h:12
+msgid "Runlevel _2"
+msgstr "_2. futásszint"
+
+#: src/system-config-services.glade.h:13
+msgid "Runlevel _3"
+msgstr "_3. futásszint"
+
+#: src/system-config-services.glade.h:14
+msgid "Runlevel _4"
+msgstr "_4. futásszint"
+
+#: src/system-config-services.glade.h:15
+msgid "Runlevel _5"
+msgstr "_5. futásszint"
+
+#: src/system-config-services.glade.h:16
+msgid "S_top"
+msgstr "_Leállít"
+
+#: src/system-config-services.glade.h:17
+msgid "Ser_vice"
+msgstr "S_zolgáltatás"
+
+#: src/system-config-services.glade.h:18
+msgid "Service Configuration"
+msgstr "Szolgáltatások"
+
+#: src/system-config-services.glade.h:19
+msgid "Service Information"
+msgstr "Szolgáltatás ismertető"
+
+#: src/system-config-services.glade.h:21
+#, no-c-format
+msgid "Status of service %s:"
+msgstr "%s szolgáltatás állapota:"
+
+#: src/system-config-services.glade.h:22
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+
+#: src/system-config-services.glade.h:28
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"Ez a szolgáltatás szokás szerint a rendszer betöltésekor indul, a háttérben "
+"fut, és felébred, amikor szükség van rá."
+
+#: src/system-config-services.glade.h:29
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+"Ezt a szolgáltatást az xinetd szolgáltatás elindítja amikor igény van rá, és "
+"leállítja, amikor annak már nincs mit tennie."
+
+#: src/system-config-services.glade.h:30
+msgid "_About"
+msgstr "_Névjegy"
+
+#: src/system-config-services.glade.h:31
+msgid "_Contents"
+msgstr "_Tartalom"
+
+#: src/system-config-services.glade.h:32
+msgid "_Customize"
+msgstr "I_gazít"
+
+#: src/system-config-services.glade.h:33
+msgid "_Disable"
+msgstr "Le_tilt"
+
+#: src/system-config-services.glade.h:34
+msgid "_Enable"
+msgstr "_Megenged"
+
+#: src/system-config-services.glade.h:35
+msgid "_Help"
+msgstr "_Súgó"
+
+#: src/system-config-services.glade.h:36
+msgid "_Program"
+msgstr "_Főablak"
+
+#: src/system-config-services.glade.h:37
+msgid "_Restart"
+msgstr "Új_raindít"
+
+#: src/system-config-services.glade.h:38
+msgid "_Start"
+msgstr "_Elindít"
+
+#: src/system-config-services.glade.h:39
+msgid "system-config-services"
+msgstr "system-config-services"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: src/system-config-services.glade.h:41
 msgid "translator-credits"
 msgstr ""
 "Tamas Szanto <tszanto@mol.hu>, 2003.\n"
@@ -234,29 +283,10 @@ msgstr ""
 "Gábor Szentiványi <szenti@ulx.hu>, 2006.\n"
 "Sulyok Péter <peti@fedoraproject.org>, 2008-2009."
 
-#: src/system-config-services.glade:1280
-msgid "Customize Runlevels"
-msgstr "Igazítás"
-
-#: src/system-config-services.glade:1395
-msgid "Runlevel _2"
-msgstr "_2. futásszint"
-
-#: src/system-config-services.glade:1414
-msgid "Runlevel _3"
-msgstr "_3. futásszint"
-
-#: src/system-config-services.glade:1433
-msgid "Runlevel _4"
-msgstr "_4. futásszint"
-
-#: src/system-config-services.glade:1452
-msgid "Runlevel _5"
-msgstr "_5. futásszint"
-
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "Annak beállítása, hogy mely szolgáltatások fussanak a rendszer indításakor"
+msgstr ""
+"Annak beállítása, hogy mely szolgáltatások fussanak a rendszer indításakor"
 
 #: system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -273,103 +303,149 @@ msgstr "Szerezzen információkat a rendszer szolgáltatásairól"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
-msgid "Manage system services"
-msgstr "Rendszer-szolgáltatások kezelése"
+msgid "Getting information about system services requires authentication"
+msgstr ""
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
-msgid "System policy prevents access to system services information"
-msgstr "A rendszerházirend meggátolja a rendszer-szolgáltatások információhoz való hozzáférést"
+msgid "Manage system services"
+msgstr "Rendszer-szolgáltatások kezelése"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
-msgid "System policy prevents management of system services"
-msgstr "A rendszerházirend meggátolja a rendszer-szolgáltatások kezelését"
+msgid "Managing system services requires authentication"
+msgstr ""
+
+#~ msgid "System policy prevents access to system services information"
+#~ msgstr ""
+#~ "A rendszerházirend meggátolja a rendszer-szolgáltatások információhoz "
+#~ "való hozzáférést"
+
+#~ msgid "System policy prevents management of system services"
+#~ msgstr "A rendszerházirend meggátolja a rendszer-szolgáltatások kezelését"
 
 #~ msgid "window1"
 #~ msgstr "window1"
+
 #~ msgid "Service %s"
 #~ msgstr "%s szolgáltatás"
+
 #~ msgid "Enable"
 #~ msgstr "Megenged"
+
 #~ msgid "Disable"
 #~ msgstr "Letilt"
+
 #~ msgid "Customize"
 #~ msgstr "Igazít"
+
 #~ msgid "Enable Default"
 #~ msgstr "Alapértelmezett engedélyezés"
+
 #~ msgid "Enable All"
 #~ msgstr "Mindet megengedi"
+
 #~ msgid "Disable All"
 #~ msgstr "Mindet letiltja"
+
 #~ msgid "Start"
 #~ msgstr "Elindít"
+
 #~ msgid "Restart"
 #~ msgstr "Újraindít"
+
 #~ msgid "Configure"
 #~ msgstr "Beállít"
+
 #~ msgid "foobar"
 #~ msgstr "foobar"
+
 #~ msgid "barfoo"
 #~ msgstr "barfoo"
+
 #~ msgid "Current runlevel is %s"
 #~ msgstr "Jelenlegi futásszint %s"
+
 #~ msgid "Runlevels"
 #~ msgstr "Futásszintek"
+
 #~ msgid "label18"
 #~ msgstr "label18"
+
 #~ msgid "Start "
 #~ msgstr "Elindít"
+
 #~ msgid "Stop"
 #~ msgstr "Leállít"
+
 #~ msgid "Service control"
 #~ msgstr "Szolgáltatás vezérlés"
+
 #~ msgid "Status output"
 #~ msgstr "Állapot kimenet"
+
 #~ msgid "_Configure"
 #~ msgstr "_Beállít"
+
 #~ msgid "Button Box"
 #~ msgstr "Button Box"
+
 #~ msgid "label16"
 #~ msgstr "label16"
+
 #~ msgid "Service %s:"
 #~ msgstr "%s szolgáltatás:"
+
 #~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
 #~ msgstr "Szerzői jog 2002-2008. Red Hat, Inc. és hozzájárulók"
+
 #~ msgid "Service %s not found!"
 #~ msgstr "%s szolgáltatás nincs meg!"
+
 #~ msgid "Service %s is running with old configuration"
 #~ msgstr "%s szolgáltatás régi beállítással fut."
+
 #~ msgid "Service %s is running"
 #~ msgstr "%s szolgáltatás fut."
+
 #~ msgid "Service %s reports an error"
 #~ msgstr "%s szolgáltatás hibát jelent."
+
 #~ msgid "Service %s is stopped"
 #~ msgstr "%s szolgáltatás áll."
+
 #~ msgid "Currently enabled in runlevels %s"
 #~ msgstr "Jelenleg %s futásszinteken engedélyezve"
+
 #~ msgid "Enable %(name)s in runlevels %(levels)s"
 #~ msgstr "%(name)s engedélyezése %(levels)s futásszinteken."
+
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "
 #~ "xinetd service and ends when it has got nothing more to do."
 #~ msgstr ""
 #~ "<b>%(servicename)s</b> szolgáltatást igény szerint indítja a xinetd "
 #~ "szolgáltatás,és befejeződik, amikor már nincs több dolga."
+
 #~ msgid ""
 #~ "This service will be started on demand by the xinetd service and ends "
 #~ "when it has got nothing more to do."
 #~ msgstr ""
 #~ "Ez a szolgáltatást igény szerint indítja az xinetd szolgáltatás, és "
 #~ "befejeződik, amikor már nincs több dolga."
+
 #~ msgid "Are you sure you want to delete the %s?"
 #~ msgstr "Biztosan törölni akarja ezt: %s?"
+
 #~ msgid "Editing Runlevel: "
 #~ msgstr "Szerkesztendő futási szint: "
+
 #~ msgid "Unknown"
 #~ msgstr "Ismeretlen"
+
 #~ msgid "All"
 #~ msgstr "Összes"
+
 #~ msgid ""
 #~ "System Services Configuration Tool VERSION\n"
 #~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
@@ -388,42 +464,61 @@ msgstr "A rendszerházirend meggátolja a rendszer-szolgáltatások kezelését"
 #~ " Brent Fox <bfox@redhat.com>\n"
 #~ " Nils Philippsen <nphilipp@redhat.com>\n"
 #~ " "
+
 #~ msgid "Running"
 #~ msgstr "Fut"
+
 #~ msgid "Stopped"
 #~ msgstr "Leállítva"
+
 #~ msgid "Error"
 #~ msgstr "Hiba"
+
 #~ msgid "%s failed. The error was: %s"
 #~ msgstr "%s nem sikerült. A hiba: %s"
+
 #~ msgid " successful"
 #~ msgstr " sikerült"
+
 #~ msgid "xinetd must be enabled for %s to run"
 #~ msgstr "%s futásához engedélyezni kell az xinetd-t"
+
 #~ msgid "xinetd failed to reload for "
 #~ msgstr "xinetd újratöltése nem sikerült:"
+
 #~ msgid ". The error was: "
 #~ msgstr ". A hibaüzenet: "
+
 #~ msgid "xinetd reloaded %s successfully"
 #~ msgstr "Az xinetd sikeresen újratöltötte ezt: %s"
+
 #~ msgid "Add Service"
 #~ msgstr "Szolgáltatás hozzáadás"
+
 #~ msgid "Delete Service"
 #~ msgstr "Szolgáltatás eltávolítása"
+
 #~ msgid "Don't Save"
 #~ msgstr "Ne legyen mentés"
+
 #~ msgid "Editing Runlevel:"
 #~ msgstr "Futási szint szerkesztése:"
+
 #~ msgid "None"
 #~ msgstr "Nincs"
+
 #~ msgid "Revert To _Last Save"
 #~ msgstr "A legutóbbi mentett állapotra való _visszalépés"
+
 #~ msgid "S_top Service"
 #~ msgstr "A szolgáltatás _leállítása"
+
 #~ msgid "Save Dialog"
 #~ msgstr "Mentés párbeszédablak"
+
 #~ msgid "Service Name: "
 #~ msgstr "Szolgáltatásnév: "
+
 #~ msgid ""
 #~ "These services are started on demand and end when there is nothing more "
 #~ "to do. The <b>xinetd</b> service must be running so that they can be used."
@@ -431,34 +526,44 @@ msgstr "A rendszerházirend meggátolja a rendszer-szolgáltatások kezelését"
 #~ "Ezen szolgáltatások igény esetén indulnak el, és akkor állnak le, amikor "
 #~ "nincs további teendőjük. Ahhoz, hogy használhatók legyenek, futnia kell "
 #~ "az <b>xinetd</b> szolgáltatásnak."
+
 #~ msgid ""
 #~ "These services are started once and run in the background. You can "
 #~ "specify in which runlevels they are started."
 #~ msgstr ""
 #~ "Ezen szolgáltatások egyszer kerülnek elindításra, és a háttérben futnak. "
 #~ "Megadható, hogy mely futási szinteken legyenek elindítva."
+
 #~ msgid ""
 #~ "You have made changes to the current runlevel.\n"
 #~ "Do you want to save the changes?"
 #~ msgstr ""
 #~ "Módosította az aktuális futási szintet.\n"
 #~ "El akarja menteni a módosításokat?"
+
 #~ msgid "_Actions"
 #~ msgstr "Mű_veletek"
+
 #~ msgid "_Background Services"
 #~ msgstr "_Háttérszolgáltatások"
+
 #~ msgid "_Edit Runlevel"
 #~ msgstr "F_utási szint szerkesztése"
+
 #~ msgid "_On Demand Services"
 #~ msgstr "I_gény szerinti szolgáltatások"
+
 #~ msgid "_Quit"
 #~ msgstr "Ki_lépés"
+
 #~ msgid "_Refresh Service List"
 #~ msgstr "Sz_olgáltatáslista frissítése"
+
 #~ msgid "_Restart Service"
 #~ msgstr "Szolgáltatás újrain_dítása"
+
 #~ msgid "_Save Changes"
 #~ msgstr "Módosítások m_entése"
+
 #~ msgid "_View"
 #~ msgstr "Meg_jelenítés"
-
