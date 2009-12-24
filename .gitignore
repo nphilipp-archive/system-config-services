@@ -2,6 +2,12 @@ system-config-services-*.tar.bz2
 system-config-services.desktop.in.h
 system-config-services.desktop
 po/*.mo
+config/org.fedoraproject.config.services.policy.0
+config/org.fedoraproject.config.services.policy.0.in.h
+config/org.fedoraproject.config.services.policy.1
+config/org.fedoraproject.config.services.policy.1.in.h
 src/setup.py
 src/build
+src/scservices/config.py
+src/system-config-services.glade.h
 *.py[co]
