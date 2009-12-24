@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2009-09-22 22:24+0200\n"
+"PO-Revision-Date: 2009-12-24 23:57+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <fedora-trans-pl@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -301,7 +301,7 @@ msgstr "Uzyskanie informacji o usługach systemowych"
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "Pobieranie informacji o usługach systemowych wymaga uwierzytelnienia"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -311,11 +311,4 @@ msgstr "Zarządzanie usługami systemowymi"
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
-
-#~ msgid "System policy prevents access to system services information"
-#~ msgstr ""
-#~ "Polityka systemu powstrzymuje dostęp do informacji o usługach systemowych"
-
-#~ msgid "System policy prevents management of system services"
-#~ msgstr "Polityka systemu powstrzymuje zarządzanie usługami systemowymi"
+msgstr "Zarządzanie usługami systemowymi wymaga uwierzytelnienia"
