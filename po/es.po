@@ -4,15 +4,15 @@
 # Luis Mayoral <mayoral@linuxadicto.org>, 2003, 2004.
 # Manuel Ospina <mospina@redhat.com>, 2005, 2006.
 # Domingo Becker <domingobecker@gmail.com>, 2008.
-# Héctor Daniel Cabrera <h.daniel.cabrera@gmail.com>, 2009.
+# Héctor Daniel Cabrera <logan@fedoraproject.org>, 2009.
 # Yelitza Louze <ylouze@redhat.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.tip.es\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2009-09-22 00:25-0300\n"
-"Last-Translator: Claudio Rodrigo Pereyra Diaz <claudio@pereyradiaz.com.ar>\n"
+"PO-Revision-Date: 2009-12-28 10:43-0300\n"
+"Last-Translator: Héctor Daniel Cabrera <logan@fedoraproject.org>\n"
 "Language-Team: Fedora Spanish <fedora-trans-es@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,7 +29,8 @@ msgstr "Nombre"
 msgid "Remarks"
 msgstr "Notas"
 
-#: src/gui.py:196 src/gui.py:213
+#: src/gui.py:196
+#: src/gui.py:213
 msgid "This service is being refreshed right now."
 msgstr "Este servicio está siendo refrescado actualmente."
 
@@ -68,13 +69,8 @@ msgstr "Este servicio está muerto."
 
 #: src/gui.py:298
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service is started once, usually when the system "
-"is booted, runs in the background and wakes up when needed."
-msgstr ""
-"El servicio <b>%(servicename)s</b> se inicia una vez, normalmente cuando el "
-"sistema arranca, funciona en segundo plano y se despierta cuando se lo "
-"necesita."
+msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "El servicio <b>%(servicename)s</b> se inicia una vez, normalmente cuando el sistema arranca, funciona en segundo plano y se despierta cuando se lo necesita."
 
 #: src/gui.py:317
 msgid "This service is updated currently."
@@ -82,42 +78,26 @@ msgstr "Este servicio se está actualizando en este momento."
 
 #: src/gui.py:344
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has nothing more to do."
-msgstr ""
-"El servicio <b>%(servicename)s</b> se iniciará por demanda con el servicio "
-"xinetd y finalizará cuando no tenga nada más que hacer."
+msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "El servicio <b>%(servicename)s</b> se iniciará por demanda con el servicio xinetd y finalizará cuando no tenga nada más que hacer."
 
 #: src/gui.py:356
-msgid ""
-"This service is enabled, but the <b>xinetd</b> package is not installed. "
-"This service does not work without it."
-msgstr ""
-"Este servicio está habilitado, pero el paquete <b>xinetd</b> no está "
-"instalado. Este servicio no funciona sin xinetd."
+msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
+msgstr "Este servicio está habilitado, pero el paquete <b>xinetd</b> no está instalado. Este servicio no funciona sin xinetd."
 
 #: src/gui.py:365
-msgid ""
-"This service is enabled, but the <b>xinetd</b> service is not running. This "
-"service does not work without it."
-msgstr ""
-"Este servicio está habilitado, pero el servicio <b>xinetd</b> no está "
-"funcionando. Este servicio no funciona sin xinetd."
+msgid "This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."
+msgstr "Este servicio está habilitado, pero el servicio <b>xinetd</b> no está funcionando. Este servicio no funciona sin xinetd."
 
-#: src/gui.py:782 src/system-config-services.glade.h:6
+#: src/gui.py:782
+#: src/system-config-services.glade.h:6
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr ""
-"Habilitar el servicio <b>%(service)s</b> en estos niveles de ejecución:"
+msgstr "Habilitar el servicio <b>%(service)s</b> en estos niveles de ejecución:"
 
 #: src/gui.py:920
-msgid ""
-"The help viewer could not be found. To be able to view help, the 'yelp' "
-"package needs to be installed."
-msgstr ""
-"El visor de ayuda no está. Para poder ver la ayuda debe instalar el paquete "
-"'yelp'."
+msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
+msgstr "El visor de ayuda no está. Para poder ver la ayuda debe instalar el paquete 'yelp'."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
@@ -129,8 +109,7 @@ msgstr "Personalizar los Niveles de Ejecución"
 
 #: src/system-config-services.glade.h:3
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
-"Personalizar los niveles de ejecución en los que un servicio se habilita."
+msgstr "Personalizar los niveles de ejecución en los que un servicio se habilita."
 
 #: src/system-config-services.glade.h:4
 msgid "Description"
@@ -205,49 +184,26 @@ msgstr "Estado del servicio %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Este programa es software libre; lo puede redistribuir y/o modificar bajo "
-"los términos de la Licencia Pública General de GNU como fue publicada por la "
-"Fundación de Software Libre; ya sea en la versión 2 de la Licencia, o (a su "
-"opción) cualquier versión más nueva.\n"
+"Este programa es software libre; lo puede redistribuir y/o modificar bajo los términos de la Licencia Pública General de GNU como fue publicada por la Fundación de Software Libre; ya sea en la versión 2 de la Licencia, o (a su opción) cualquier versión más nueva.\n"
 "\n"
-"Este programa se distribuye con la esperanza de que le sea útil, pero SIN "
-"NINGUNA GARANTÍA; sin siquiera la garantía implícita de MERCANTIBILIDAD o "
-"AJUSTE A UN PROPÓSITO PARTICULAR. Vea la Licencia Pública General de GNU "
-"para más detalles.\n"
+"Este programa se distribuye con la esperanza de que le sea útil, pero SIN NINGUNA GARANTÍA; sin siquiera la garantía implícita de MERCANTIBILIDAD o AJUSTE A UN PROPÓSITO PARTICULAR. Vea la Licencia Pública General de GNU para más detalles.\n"
 "\n"
-"Debe haber recibido una copia de la Licencia Pública General de GNU junto "
-"con este programa; si no fue así, escriba a la Free Software Foundation, "
-"Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+"Debe haber recibido una copia de la Licencia Pública General de GNU junto con este programa; si no fue así, escriba a la Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"Este servicio se inicia una vez, usualmente cuando se inicia el sistema, se "
-"ejecuta en segundo plano y se despierta cuando se lo necesita."
+msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "Este servicio se inicia una vez, usualmente cuando se inicia el sistema, se ejecuta en segundo plano y se despierta cuando se lo necesita."
 
 #: src/system-config-services.glade.h:29
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr ""
-"Este servicio se iniciará por demanda con el servicio xinetd y finalizará "
-"cuando ya no tenga nada más que hacer."
+msgid "This service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "Este servicio se iniciará por demanda con el servicio xinetd y finalizará cuando ya no tenga nada más que hacer."
 
 #: src/system-config-services.glade.h:30
 msgid "_About"
@@ -319,7 +275,7 @@ msgstr "Obtener información sobre los servicios del sistema"
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "Es necesario autenticarse para obtener información acerca de los servicios del sistema  "
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -329,38 +285,30 @@ msgstr "Administración de servicios del sistema"
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "Es necesario autenticarse para administrar los servicios del sistema  "
 
 #~ msgid "System policy prevents access to system services information"
 #~ msgstr ""
 #~ "Las políticas del sistema previenen el acceso a la información de los "
 #~ "servicios del sistema"
-
 #~ msgid "System policy prevents management of system services"
 #~ msgstr ""
 #~ "Las políticas del sistema previenen la administración de los servicios "
 #~ "del sistema"
-
 #~ msgid "window1"
 #~ msgstr "window1"
-
 #~ msgid "Service %s"
 #~ msgstr "Servicio %s"
-
 #~ msgid "Enable"
 #~ msgstr "Habilitar"
-
 #~ msgid "Disable"
 #~ msgstr "Deshabilitar"
-
 #~ msgid "Customize"
 #~ msgstr "Personalizar"
-
 #~ msgid "Enable Default"
 #~ msgstr "Habilitar Predeterminado"
-
 #~ msgid "Enable All"
 #~ msgstr "Habilitar en Todos"
-
 #~ msgid "Disable All"
 #~ msgstr "Deshabilita en Todos"
+
