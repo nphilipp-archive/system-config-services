@@ -14,13 +14,13 @@
 # Peter van Egdom <p.van.egdom@gmail.com>, 2003, 2004, 2005, 2006, 2007, 2008.
 # R.E. van der Luit <nippur@fedoraproject.org>, 2009.
 # Geert Warrink <geert.warrink@onsnet.nu, 2009.
-# Geert Warrink <geert.warrink@onsnet.nu>, 2009.
+# Geert Warrink <geert.warrink@onsnet.nu>, 2009, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2009-09-21 20:56+0200\n"
+"PO-Revision-Date: 2010-01-05 14:12+0100\n"
 "Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
 "Language-Team: nl <nl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -315,7 +315,7 @@ msgstr "Haal informatie op over systeem services"
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "Het ophalen van informatie over systeem services vereist authenticatie"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -325,7 +325,7 @@ msgstr "Beheer systeem services"
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "Het beheren van systeem services vereist authenticatie"
 
 #~ msgid "System policy prevents access to system services information"
 #~ msgstr ""
