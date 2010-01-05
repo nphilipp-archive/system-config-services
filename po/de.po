@@ -10,14 +10,15 @@
 # Timo Trinks <ttrinks@redhat.com>, 2006, 2007.
 # Fabian Affolter <fab@fedoraproject.org>, 2007-2009.
 # Daniela Kugelmann <dkugelma@redhat.com >, 2008.
+# Cornelius Neckenig <tbull@fedoraproject.org>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.tip.de\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2009-09-21 13:38+0200\n"
-"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"PO-Revision-Date: 2010-01-05 12:47+0100\n"
+"Last-Translator: Cornelius Neckenig <tbull@fedoraproject.org>\n"
 "Language-Team: German <Fedora-trans-de@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,7 +34,8 @@ msgstr "Name"
 msgid "Remarks"
 msgstr "Anmerkung"
 
-#: src/gui.py:196 src/gui.py:213
+#: src/gui.py:196
+#: src/gui.py:213
 msgid "This service is being refreshed right now."
 msgstr "Dieser Dienst wurde gerade aktualisiert."
 
@@ -72,13 +74,8 @@ msgstr "Dieser Dienst ist tot."
 
 #: src/gui.py:298
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service is started once, usually when the system "
-"is booted, runs in the background and wakes up when needed."
-msgstr ""
-"Der <b>%(servicename)s</b>-Dienst wird normalerweise, wenn das System "
-"startet, ausgeführt, läuft im Hintergrund und wacht auf, wenn er benötigt "
-"wird."
+msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "Der <b>%(servicename)s</b>-Dienst wird normalerweise, wenn das System startet, ausgeführt, läuft im Hintergrund und wacht auf, wenn er benötigt wird."
 
 #: src/gui.py:317
 msgid "This service is updated currently."
@@ -86,41 +83,26 @@ msgstr "Dieser Dienst wird momentan aktualisiert."
 
 #: src/gui.py:344
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has nothing more to do."
-msgstr ""
-"Der <b>%(servicename)s</b>-Dienst wird vom xinetd-Dienst gestartet, wenn er "
-"gebraucht wird, und beendet, wenn er nichts mehr zu tun hat."
+msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "Der <b>%(servicename)s</b>-Dienst wird vom xinetd-Dienst gestartet, wenn er gebraucht wird, und beendet, wenn er nichts mehr zu tun hat."
 
 #: src/gui.py:356
-msgid ""
-"This service is enabled, but the <b>xinetd</b> package is not installed. "
-"This service does not work without it."
-msgstr ""
-"Dieser Dienst ist aktiviert, aber die <b>xinetd</b>-Paktete sind noch nicht "
-"installiert. Dieser Dienst funktioniert ohne diese Pakete."
+msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
+msgstr "Dieser Dienst ist aktiviert, aber die <b>xinetd</b>-Paktete sind noch nicht installiert. Dieser Dienst funktioniert ohne diese Pakete."
 
 #: src/gui.py:365
-msgid ""
-"This service is enabled, but the <b>xinetd</b> service is not running. This "
-"service does not work without it."
-msgstr ""
-"Dieser Dienst ist aktiviert, aber die <b>xinetd</b>-Dienst wird nicht "
-"ausgeführt. Dieser Dienst funktioniert ohne diesen Service."
+msgid "This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."
+msgstr "Dieser Dienst ist aktiviert, aber die <b>xinetd</b>-Dienst wird nicht ausgeführt. Dieser Dienst funktioniert ohne diesen Service."
 
-#: src/gui.py:782 src/system-config-services.glade.h:6
+#: src/gui.py:782
+#: src/system-config-services.glade.h:6
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Aktivieren Sie den <b>%(service)s</b>-Dienst in diesen Runlevels:"
 
 #: src/gui.py:920
-msgid ""
-"The help viewer could not be found. To be able to view help, the 'yelp' "
-"package needs to be installed."
-msgstr ""
-"Die Hilfsansicht konnte nicht gefunden werden. Um in der Lage zu sein, die "
-"Hilfe anzusehen, muss das 'yelp'-Paket installiert werden."
+msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
+msgstr "Die Hilfsansicht konnte nicht gefunden werden. Um in der Lage zu sein, die Hilfe anzusehen, muss das 'yelp'-Paket installiert werden."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
@@ -197,49 +179,27 @@ msgstr "Dienst-Status von %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"Dieser Dienst wird normalerweise, wenn das System startet, ausgeführt, läuft "
-"im Hintergrund und wacht auf, wenn er benötigt wird."
+msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "Dieser Dienst wird normalerweise, wenn das System startet, ausgeführt, läuft im Hintergrund und wacht auf, wenn er benötigt wird."
 
 #: src/system-config-services.glade.h:29
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr ""
-"Der Dienst wird vom xinetd-Dienst gestartet, wenn er gebraucht wird, und "
-"beendet, wenn er nichts mehr zu tun hat."
+msgid "This service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "Der Dienst wird vom xinetd-Dienst gestartet, wenn er gebraucht wird, und beendet, wenn er nichts mehr zu tun hat."
 
 #: src/system-config-services.glade.h:30
 msgid "_About"
@@ -297,8 +257,7 @@ msgstr ""
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
-"Konfigurieren der Dienste, die beim Starten des Systems ausgeführt werden"
+msgstr "Konfigurieren der Dienste, die beim Starten des Systems ausgeführt werden"
 
 #: system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -316,7 +275,7 @@ msgstr "Auf Informationen über System-Dienste zugreifen"
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "Die Abrufung von Informationen über Systemdienste verlangt eine Authentifizierung"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -326,122 +285,88 @@ msgstr "System-Dienste verwalten"
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "Die Verwaltung von Systemdiensten verlangt eine Authentifizierung"
 
 #~ msgid "System policy prevents access to system services information"
 #~ msgstr ""
 #~ "Eine System-Richtlinie verhindert den Zugriff auf Informationen über "
 #~ "System-Dienste"
-
 #~ msgid "System policy prevents management of system services"
 #~ msgstr "Eine System-Richtlinie verhindert das Verwalten von System-Diensten"
-
 #~ msgid "window1"
 #~ msgstr "window1"
-
 #~ msgid "Service %s"
 #~ msgstr "Dienst %s"
-
 #~ msgid "Enable"
 #~ msgstr "Aktivieren"
-
 #~ msgid "Disable"
 #~ msgstr "Deaktivieren"
-
 #~ msgid "Customize"
 #~ msgstr "Anpassen"
-
 #~ msgid "Enable Default"
 #~ msgstr "Standardmässig aktiviert"
-
 #~ msgid "Enable All"
 #~ msgstr "Aktiviere Alle"
-
 #~ msgid "Disable All"
 #~ msgstr "Deaktiviere Alle"
-
 #~ msgid "Start"
 #~ msgstr "Starten"
-
 #~ msgid "Restart"
 #~ msgstr "Neustart"
-
 #~ msgid "Configure"
 #~ msgstr "Konfiguriere"
-
 #~ msgid "foobar"
 #~ msgstr "foobar"
-
 #~ msgid "barfoo"
 #~ msgstr "barfoo"
-
 #~ msgid "Current runlevel is %s"
 #~ msgstr "Aktuelles Runlevel ist %s"
-
 #~ msgid "Runlevels"
 #~ msgstr "Runlevel"
-
 #~ msgid "label18"
 #~ msgstr "label18"
-
 #~ msgid "Start "
 #~ msgstr "Starten "
-
 #~ msgid "Stop"
 #~ msgstr "Stop"
-
 #~ msgid "Service control"
 #~ msgstr "Dienste-Kontrolle"
-
 #~ msgid "Status output"
 #~ msgstr "Status-Ausgabe"
-
 #~ msgid "_Configure"
 #~ msgstr "_Konfiguriere"
-
 #~ msgid "Button Box"
 #~ msgstr "Knopfschachtel"
-
 #~ msgid "label16"
 #~ msgstr "label16"
-
 #~ msgid "Service %s:"
 #~ msgstr "Dienst %s:"
-
 #~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
 #~ msgstr "Copyright  2002-2009 Red Hat, Inc. und Mitwirkende"
-
 #~ msgid "Service %s not found!"
 #~ msgstr "Dienst %s nicht gefunden!"
-
 #~ msgid "Service %s is running with old configuration"
 #~ msgstr "Dienst %s wird mit alter Konfiguration ausgeführt"
-
 #~ msgid "Service %s is running"
 #~ msgstr "Dienst %s wird ausgeführt"
-
 #~ msgid "Service %s reports an error"
 #~ msgstr "Dienst %s meldet einen Fehler"
-
 #~ msgid "Service %s is stopped"
 #~ msgstr "Dienst %s ist gestoppt"
-
 #~ msgid "Currently enabled in runlevels %s"
 #~ msgstr "Momentan in Runlevels %s aktiviert"
-
 #~ msgid "Enable %(name)s in runlevels %(levels)s"
 #~ msgstr "Aktiviert %(name)s in Runlevels %(levels)s"
-
 #~ msgid ""
 #~ "The <b>%(servicename)s</b> service will be started on demand by the "
 #~ "xinetd service and ends when it has got nothing more to do."
 #~ msgstr ""
 #~ "Der <b>%(servicename)s</b>-Dienst wird auf verlangen vom xinetd-Dienst "
 #~ "gestartet und beendet, wenn er nichts mehr zu tun hat."
-
 #~ msgid ""
 #~ "This service will be started on demand by the xinetd service and ends "
 #~ "when it has got nothing more to do."
 #~ msgstr ""
 #~ "Dieser Dienst wird auf verlangen vom xinetd-Dienst gestartet und beendet "
 #~ "wenn er nichts mehr zu tun hat."
+
