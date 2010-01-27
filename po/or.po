@@ -4,20 +4,20 @@
 #
 # Subhransu Behera <sbehera@redhat.com>, 2006.
 # saroj kumar padhy <saroz.kumar@gmail.com>, 2008.
-# Manoj Kumar Giri <mgiri@redhat.com>, 2008, 2009.
+# Manoj Kumar Giri <mgiri@redhat.com>, 2008, 2009, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.or\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2009-09-24 17:05+0530\n"
+"PO-Revision-Date: 2010-01-27 11:39+0530\n"
 "Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
 "Language-Team: Oriya <oriya-it@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n!=1);\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
 "\n"
 "\n"
 "\n"
@@ -123,8 +123,7 @@ msgstr "ଏହି ଚାଲିବା ସ୍ତରଗୁଡ଼ିକରେ <b>%(s
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"ସହାୟକ ପ୍ରଦର୍ଶକ ମିଳୁନାହିଁ. ସହାୟତା ଦେଖିବାପାଇଁ ଆପଣଙ୍କୁ 'yelp' ପ୍ଯାକେଜ ସ୍ଥାପନ କରିବାକୁ ପଡିବ."
+msgstr "ସହାୟକ ପ୍ରଦର୍ଶକ ମିଳୁନାହିଁ. ସହାୟତା ଦେଖିବାପାଇଁ ଆପଣଙ୍କୁ 'yelp' ପ୍ଯାକେଜ ସ୍ଥାପନ କରିବାକୁ ପଡିବ."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
@@ -310,7 +309,7 @@ msgstr "ତନ୍ତ୍ର ସର୍ଭିସ ବିଷୟରେ ସୂଚନା
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "ତନ୍ତ୍ର ସର୍ଭିସଗୁଡ଼ିକ ବିଷୟରେ ସୂଚନା ପାଇବା ପାଇଁ ବୈଧିକରଣ ଆବଶ୍ୟକ"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -320,10 +319,5 @@ msgstr "ତନ୍ତ୍ର ସର୍ଭିସଗୁଡ଼ିକୁ ପରିଚ�
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "ତନ୍ତ୍ର ସର୍ଭିସଗୁଡ଼ିକୁ ପରିଚାଳନା କରିବା ପାଇଁ ବୈଧିକରଣ ଆବଶ୍ୟକ"
 
-#~ msgid "System policy prevents access to system services information"
-#~ msgstr "ତନ୍ତ୍ର ସର୍ଭିସ ସୂଚନାକୁ ତନ୍ତ୍ର ନୀତି ବାରଣ କରିଥାଏ"
-
-#~ msgid "System policy prevents management of system services"
-#~ msgstr "ତନ୍ତ୍ର ସର୍ଭିସଗୁଡ଼ିକର ପରିଚାଳନାକୁ ତନ୍ତ୍ର ନୀତି ବାରଣ କରିଥାଏ"
