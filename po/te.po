@@ -5,20 +5,20 @@
 # This file is distributed under the same license as the system-config-services package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2006.
 #
-# Krishna Babu K <kkrothap@redhat.com>, 2008, 2009.
+# Krishna Babu K <kkrothap@redhat.com>, 2008, 2009, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.te\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2009-09-23 12:55+0530\n"
+"PO-Revision-Date: 2010-01-29 14:21+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
 "\n"
 "\n"
 "\n"
@@ -96,8 +96,7 @@ msgstr ""
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"సేవ చేతనపరచబడింది, అయితే <b>xinted</b> ప్యాకేజి సంస్థాపించబడిలేదు. అది లేకుండా ఈ సేవ పనిచేయదు."
+msgstr "సేవ చేతనపరచబడింది, అయితే <b>xinted</b> ప్యాకేజి సంస్థాపించబడిలేదు. అది లేకుండా ఈ సేవ పనిచేయదు."
 
 #: src/gui.py:365
 msgid ""
@@ -298,7 +297,7 @@ msgstr "సిస్టమ్ సేవల గురించి సమాచా
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "సిస్టమ్ సేవల గురించి సమాచారము పొందుటకు ధృవీకరణ అవసరము"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -308,10 +307,5 @@ msgstr "సిస్టమ్ సేవలను నిర్వహించు�
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "సిస్టమ్ సేవలను నిర్వహించుటకు ధృవీకరణ అవసరము"
 
-#~ msgid "System policy prevents access to system services information"
-#~ msgstr "సిస్టమ్ విధానము అనునది సిస్టమ్ సేవల సమాచారమునకు యాక్సెస్‌ను నిరోధిస్తోంది"
-
-#~ msgid "System policy prevents management of system services"
-#~ msgstr "సిస్టమ్ విధానము అనునది సిస్టమ్ సేవల యొక్క నిర్వహణను నిరోధిస్తోంది"
