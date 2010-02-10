@@ -2,65 +2,68 @@
 # Copyright (C) 2004-2006
 # This file is distributed under the same license as the system-config-services package.
 # Teguh DC <dheche@brawijaya.ac.id>, 2004-2007.
-#
+# Teguh DC <dheche@songolimo.net>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services-0.8.15-1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2008-02-18 16:22+0700\n"
-"Last-Translator: Dapid Candra <dapidc@gmail.com>\n"
-"Language-Team: Linux Indonesia <http:/www.linux.or.id>\n"
+"PO-Revision-Date: 2010-02-10 13:22+0700\n"
+"Last-Translator: Teguh DC <dheche@songolimo.net>\n"
+"Language-Team: Fedora Indonesia <trans-id@lists.fedoraproject.org>\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Virtaal 0.5.1\n"
 "X-Poedit-Language: Indonesian\n"
 "X-Poedit-Country: INDONESIA\n"
 
 #: src/gui.py:125
 msgid "Name"
-msgstr ""
+msgstr "Nama"
 
 #: src/gui.py:128
 msgid "Remarks"
-msgstr ""
+msgstr "Keterangan"
 
 #: src/gui.py:196 src/gui.py:213
 msgid "This service is being refreshed right now."
-msgstr ""
+msgstr "Saat ini layanan ini sedang disegarkan kembali."
 
 #: src/gui.py:197
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "Gagal memperoleh informasi tentang layanan ini."
 
 #: src/gui.py:198
 msgid "This service is enabled."
-msgstr ""
+msgstr "Layanan ini aktif."
 
 #: src/gui.py:199
 msgid "This service is disabled."
-msgstr ""
+msgstr "Layanan ini nonaktif."
 
 #: src/gui.py:201
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr ""
+msgstr "Layanan ini aktif di runlevel: %(runlevels)s"
 
 #: src/gui.py:214
 msgid "The status of this service is unknown."
-msgstr ""
+msgstr "Status layanan ini tidak diketahui."
 
 #: src/gui.py:215
 msgid "This service is stopped."
-msgstr ""
+msgstr "Layanan ini tidak berjalan."
 
 #: src/gui.py:216
 msgid "This service is running."
-msgstr ""
+msgstr "Layanan ini sedang berjalan."
 
 #: src/gui.py:217
 msgid "This service is dead."
-msgstr ""
+msgstr "Layanan ini sudah mati."
 
 #: src/gui.py:298
 #, python-format
@@ -68,10 +71,12 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
+"Layanan <b>%(servicename)s</b> dijalankan sekali, biasanya ketika sistem "
+"boot, berjalan di latar belakang dan hidup bila diperlukan."
 
 #: src/gui.py:317
 msgid "This service is updated currently."
-msgstr ""
+msgstr "Saat ini layanan ini sudah diperbarui."
 
 #: src/gui.py:344
 #, python-format
@@ -79,41 +84,49 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
+"Layanan <b>%(servicename)s</b> akan dijalankan berdasarkan kebutuhan oleh "
+"layanan xinetd dan berhenti ketika tidak ada lagi yang harus dilakukan."
 
 #: src/gui.py:356
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
+"Layanan ini diaktifkan, tapi paket <b>xinetd</b> tidak terpasang. Layanan "
+"ini tidak dapat bekerja tanpa itu."
 
 #: src/gui.py:365
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
+"Layanan ini diaktifkan, tapi layanan <b>xinetd</b> tidak berjalan. Layanan "
+"ini tidak dapat berjalan tanpa itu."
 
 #: src/gui.py:782 src/system-config-services.glade.h:6
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr ""
+msgstr "Aktifkan layanan <b>%(service)s</b> di runlevel ini:"
 
 #: src/gui.py:920
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
+"Penampil bantuan tidak dapat ditemukan. Untuk melihat bantuan, paket 'yelp' "
+"harus diinstal."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Hak Cipta © 2002-2009 Red Hat, Inc. dan para kontributor"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
-msgstr ""
+msgstr "Sesuaikan Runlevel"
 
 #: src/system-config-services.glade.h:3
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
+msgstr "Sesuaikan di runlevel mana layanan ini diaktifkan."
 
 #: src/system-config-services.glade.h:4
 msgid "Description"
@@ -121,27 +134,27 @@ msgstr "Keterangan"
 
 #: src/system-config-services.glade.h:7
 msgid "No service selected."
-msgstr ""
+msgstr "Tidak ada layanan yang dipilih."
 
 #: src/system-config-services.glade.h:8
 msgid "Runlevel 2"
-msgstr ""
+msgstr "Runlevel 2"
 
 #: src/system-config-services.glade.h:9
 msgid "Runlevel 3"
-msgstr ""
+msgstr "Runlevel 3"
 
 #: src/system-config-services.glade.h:10
 msgid "Runlevel 4"
-msgstr ""
+msgstr "Runlevel 4"
 
 #: src/system-config-services.glade.h:11
 msgid "Runlevel 5"
-msgstr ""
+msgstr "Runlevel 5"
 
 #: src/system-config-services.glade.h:12
 msgid "Runlevel _2"
-msgstr ""
+msgstr "Runlevel _2"
 
 #: src/system-config-services.glade.h:13
 msgid "Runlevel _3"
@@ -157,11 +170,11 @@ msgstr "Runlevel _5"
 
 #: src/system-config-services.glade.h:16
 msgid "S_top"
-msgstr ""
+msgstr "S_top"
 
 #: src/system-config-services.glade.h:17
 msgid "Ser_vice"
-msgstr ""
+msgstr "Layanan"
 
 #: src/system-config-services.glade.h:18
 msgid "Service Configuration"
@@ -169,12 +182,12 @@ msgstr "Konfigurasi Layanan"
 
 #: src/system-config-services.glade.h:19
 msgid "Service Information"
-msgstr ""
+msgstr "Informasi Layanan"
 
 #: src/system-config-services.glade.h:21
 #, no-c-format
 msgid "Status of service %s:"
-msgstr ""
+msgstr "Status layanan %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
@@ -189,8 +202,8 @@ msgid ""
 "GNU General Public License for more details.\n"
 "\n"
 "You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"this program; if not, write to the Free Software Foundation, Inc., 59 "
+"Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
 
 #: src/system-config-services.glade.h:28
@@ -198,16 +211,20 @@ msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
+"Layanan ini dijalankan sekali, biasanya ketika sistem boot, berjalan di "
+"latar belakang dan hidup bila diperlukan."
 
 #: src/system-config-services.glade.h:29
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
+"Layanan ini akan dijalankan berdasarkan kebutuhan oleh layanan xinetd dan "
+"berhenti ketika tidak ada lagi yang harus dilakukan."
 
 #: src/system-config-services.glade.h:30
 msgid "_About"
-msgstr ""
+msgstr "Tent_ang"
 
 #: src/system-config-services.glade.h:31
 msgid "_Contents"
@@ -219,11 +236,11 @@ msgstr ""
 
 #: src/system-config-services.glade.h:33
 msgid "_Disable"
-msgstr ""
+msgstr "Nonaktifkan"
 
 #: src/system-config-services.glade.h:34
 msgid "_Enable"
-msgstr ""
+msgstr "Aktifkan"
 
 #: src/system-config-services.glade.h:35
 msgid "_Help"
@@ -231,24 +248,24 @@ msgstr "Bantuan"
 
 #: src/system-config-services.glade.h:36
 msgid "_Program"
-msgstr ""
+msgstr "_Program"
 
 #: src/system-config-services.glade.h:37
 msgid "_Restart"
-msgstr ""
+msgstr "Jalankan Ulang"
 
 #: src/system-config-services.glade.h:38
 msgid "_Start"
-msgstr ""
+msgstr "Jalankan"
 
 #: src/system-config-services.glade.h:39
 msgid "system-config-services"
-msgstr ""
+msgstr "system-config-services"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:41
 msgid "translator-credits"
-msgstr ""
+msgstr "Teguh DC <dheche@songolimo.net>, 2010"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -265,22 +282,22 @@ msgstr "Layanan"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "Dapatkan informasi tentang layanan sistem"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "Memperoleh informasi tentang layanan sistem memerlukan otentikasi"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "Manage system services"
-msgstr ""
+msgstr "Mengelola layanan sistem"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "Mengelola layanan sistem membutuhkan otentikasi"
 
 #~ msgid "Enable"
 #~ msgstr "Aktifkan"
