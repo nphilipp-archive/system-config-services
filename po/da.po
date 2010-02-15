@@ -3,14 +3,14 @@
 # Kenneth Christiansen <kenneth@gnu.org>, 2001.
 # Keld Simonsen <keld@dkuug.dk>, 2001-2003, 2004, 2005.
 # Keld Simonsen <keld@rap.dk>, 2006.
-# Kris Thomsen <lakristho@gmail.com>, 2009.
+# Kris Thomsen <lakristho@gmail.com>, 2009, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2009-09-22 00:28+0200\n"
+"PO-Revision-Date: 2010-02-15 16:15+0200\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -69,8 +69,8 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
-"\"<b>%(servicename)s</b>\" tjenesten bliver startet en gang, som regel når "
-"systemet er startet, kører i baggrunden og vågner op når det er nødvendigt."
+"Tjenesten <b>%(servicename)s</b> bliver startet en gang, som regel når "
+"systemet startes, kører i baggrunden og vågner op når det er nødvendigt."
 
 #: src/gui.py:317
 msgid "This service is updated currently."
@@ -82,7 +82,7 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
-"<b>%(servicename)s</b> tjenesten vil blive startet efter ordre fra xinetd-"
+"Tjenesten <b>%(servicename)s</b> vil blive startet efter ordre fra xinetd-"
 "tjenesten og slutter når den ikke har mere at udføre."
 
 #: src/gui.py:356
@@ -98,13 +98,13 @@ msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
-"Denne tjeneste er aktiveret, men \"<b>xinetd</b>\"-tjenesten kører ikke. "
+"Denne tjeneste er aktiveret, men tjenesten \"<b>xinetd</b>\" kører ikke. "
 "Denne tjeneste virker ikke uden at den kører."
 
 #: src/gui.py:782 src/system-config-services.glade.h:6
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "Aktivér \"<b>%(service)s</b>\" tjenesten i disse kørselsniveauer:"
+msgstr "Aktivér tjenesten <b>%(service)s</b> i disse kørselsniveauer:"
 
 #: src/gui.py:920
 msgid ""
@@ -222,7 +222,7 @@ msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
-"Denne tjeneste bliver startet en gang, som regel når systemet er startet, "
+"Denne tjeneste bliver startet en gang, som regel når systemet startes, "
 "kører i baggrunden og vågner op når det er nødvendigt."
 
 #: src/system-config-services.glade.h:29
@@ -302,7 +302,7 @@ msgstr "Hent information om systemtjenester"
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "Henter information om systemtjenester som kræver godkendelse"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -312,7 +312,7 @@ msgstr "Håndtér systemtjenester"
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "Håndterer systemtjenester som kræver godkendelse"
 
 #~ msgid "System policy prevents access to system services information"
 #~ msgstr ""
