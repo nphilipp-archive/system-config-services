@@ -3,16 +3,17 @@
 #
 # Miloslav Trmač <mitr@volny.cz>, 2002 - 2005, 2008.
 # Nikola Štohanzl <niko@srnet.cz>, 2006.
-# Milan Kerslager <kerslage@linux.cz>, 2007, 2009.
+# Milan Kerslager <kerslage@linux.cz>, 2007, 2009, 2010.
 # Adam Pribyl <pribyl@lowlevel.cz>, 2008.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2009-11-18 13:10+0100\n"
+"PO-Revision-Date: 2010-02-22 15:14+0100\n"
 "Last-Translator: Milan Kerslager <milan@kerslager.cz>\n"
-"Language-Team: Czech <fedora-cs-list@redhat.com>\n"
+"Language-Team: Czech <Czech <cs-users@lists.fedoraproject.org>>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,7 +32,7 @@ msgstr "Poznámky"
 
 #: src/gui.py:196 src/gui.py:213
 msgid "This service is being refreshed right now."
-msgstr "Tato služba se právě obnovuje."
+msgstr "Služba se právě obnovuje."
 
 #: src/gui.py:197
 msgid "Getting information about this service failed."
@@ -39,32 +40,32 @@ msgstr "Získání informací o této službě selhalo."
 
 #: src/gui.py:198
 msgid "This service is enabled."
-msgstr "Tato služba je povolena."
+msgstr "Služba je povolena."
 
 #: src/gui.py:199
 msgid "This service is disabled."
-msgstr "Tato služba je zakázána."
+msgstr "Služba je zakázána."
 
 #: src/gui.py:201
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr "Tato služba je povolena v runlevelech: %(runlevels)s"
+msgstr "Služba je povolena v runlevelech: %(runlevels)s"
 
 #: src/gui.py:214
 msgid "The status of this service is unknown."
-msgstr "Stav této služby je neznámý"
+msgstr "Stav služby je neznámý"
 
 #: src/gui.py:215
 msgid "This service is stopped."
-msgstr "Tato služba je zastavena."
+msgstr "Služba je zastavena."
 
 #: src/gui.py:216
 msgid "This service is running."
-msgstr "Tato služba běží."
+msgstr "Služba je spuštěna."
 
 #: src/gui.py:217
 msgid "This service is dead."
-msgstr "Tato služba neodpovídá."
+msgstr "Služba je mrtvá."
 
 #: src/gui.py:298
 #, python-format
@@ -72,8 +73,8 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
-"Služba <b>%(servicename)s</b> se nastaruje pouze jednou, obvykle při "
-"zavádění systému, potom běží na pozadí a probouzí se pouze pokud je potřeba."
+"Služba <b>%(servicename)s</b> se spouští jen jednou, obvykle při startu "
+"systému, a potom běží na pozadí a reaguje v případě potřeby."
 
 #: src/gui.py:317
 msgid "This service is updated currently."
@@ -85,29 +86,29 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
-"Služba <b>%(servicename)s</b> bude spuštěna na vyžádání pomocí xinetd a "
-"vypne se až nebude potřeba."
+"Služba <b>%(servicename)s</b> bude v případě potřeby spuštěna pomocí "
+"síťového superserveru xinetd a ukončí se po vykonání požadavku."
 
 #: src/gui.py:356
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
-"Tato služba je povolena, ale <b>xinetd</b> není nainstalován. Bez něj nebude "
-"tato služba fungovat."
+"Služba je povolena, ale balíček superserveru <b>xinetd</b> není "
+"nainstalován. Bez něj nebude tato služba fungovat."
 
 #: src/gui.py:365
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
-"Tato služba je povolena, ale služba <b>xinetd</b> neběží. Bez ní nebude tato "
-"služba fungovat."
+"Služba je povolena, ale superserver <b>xinetd</b> není spuštěn (též jako "
+"služba). Bez něj nebude tato služba fungovat."
 
 #: src/gui.py:782 src/system-config-services.glade.h:6
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "Povolte službu <b>%(service)s</b> v těchto runlevelech:"
+msgstr "Povolit službu <b>%(service)s</b> v těchto runlevelech:"
 
 #: src/gui.py:920
 msgid ""
@@ -171,11 +172,11 @@ msgstr "Runlevel _5"
 
 #: src/system-config-services.glade.h:16
 msgid "S_top"
-msgstr "Zas_tavit"
+msgstr "_Zastavit"
 
 #: src/system-config-services.glade.h:17
 msgid "Ser_vice"
-msgstr "Sl_užba"
+msgstr "_Služba"
 
 #: src/system-config-services.glade.h:18
 msgid "Service Configuration"
@@ -183,7 +184,7 @@ msgstr "Nastavení služeb"
 
 #: src/system-config-services.glade.h:19
 msgid "Service Information"
-msgstr "Informace o službě"
+msgstr "Informace o službách"
 
 #: src/system-config-services.glade.h:21
 #, no-c-format
@@ -223,7 +224,7 @@ msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
-"Tato služba je spuštěna jednou, obvykle při zavádění systému, poté běží na "
+"Služba je spuštěna jen jednou, obvykle při startu systému, poté běží na "
 "pozadí a vzbudí se pouze pokud je potřeba."
 
 #: src/system-config-services.glade.h:29
@@ -231,8 +232,8 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
-"Tato služba bude spuštěna na vyžádání pomocí xinetd a vypne se až nebude "
-"potřeba."
+"Služba bude spuštěna na vyžádání pomocí superserveru xinetd a po dokončení "
+"úkolu se ukončí."
 
 #: src/system-config-services.glade.h:30
 msgid "_About"
@@ -277,11 +278,15 @@ msgstr "system-config-services"
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:41
 msgid "translator-credits"
-msgstr "Adam Přibyl"
+msgstr ""
+"Miloslav Trmač <mitr@volny.cz>, 2002 - 2005, 2008.\n"
+"Nikola Štohanzl <niko@srnet.cz>, 2006.\n"
+"Milan Keršláger <kerslage@linux.cz>, 2007, 2009, 2010.\n"
+"Adam Přibyl <pribyl@lowlevel.cz>, 2008."
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "Nastavit, jaké služby budou při startu systému spuštěny"
+msgstr "Nastavení služeb, které budou při startu systému spuštěny"
 
 #: system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -299,7 +304,7 @@ msgstr "Získat informace o systémových službách"
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "Získání informací o systémových službách vyžaduje autentizaci"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -309,7 +314,7 @@ msgstr "Spravovat systémové služby"
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "Spravování systémových služeb vyžaduje autentizaci"
 
 #~ msgid "System policy prevents access to system services information"
 #~ msgstr "Systémová politika znemožňuje přístup k informacím o službách"
