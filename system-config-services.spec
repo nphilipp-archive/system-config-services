@@ -52,8 +52,8 @@ Requires: PolicyKit-gnome
 Obsoletes: system-config-services < 0.99.29
 
 %description
-system-config-services is a utility which allows you to configure which services
-should be enabled on your machine.
+system-config-services is a utility which allows you to configure which
+services should be enabled on your machine.
 
 %prep
 %setup -q
