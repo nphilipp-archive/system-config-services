@@ -1,4 +1,3 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
 # scservices.dbus.service.serviceherder: DBUS wrapper for service herders

@@ -1,4 +1,3 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
 # scservices.dbus.service: dbus backend service for system-config-services
