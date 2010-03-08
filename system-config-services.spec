@@ -11,7 +11,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.99.41
+Version: 0.99.42
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
@@ -116,6 +116,13 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Mar 08 2010 Nils Philippsen <nils@redhat.com> - 0.99.42-1
+- add is_chkconfig_running() to dbus chkconfig service API (#539672)
+- fix undefined names
+
+* Thu Feb 25 2010 Nils Philippsen <nils@redhat.com>
+- remove script hash-bangs from ordinary modules
+
 * Tue Sep 29 2009 Nils Philippsen <nils@redhat.com> - 0.99.41-1
 - initialize subscribers at the right place
 - pick up new translations
