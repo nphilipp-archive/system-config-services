@@ -23,10 +23,10 @@
 
 import gobject
 import dbus
-import slip.dbus
 import dbus.mainloop.glib
 import gamin
 
+import slip.dbus
 import slip.dbus.service
 
 from scservices.core.serviceherders import herder_classes

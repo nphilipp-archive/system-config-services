@@ -28,9 +28,9 @@ import gobject
 import gamin
 
 from util import getstatusoutput
-from asynccmd import *
+from asynccmd import AsyncCmdQueue
 
-from servicesinfo import *
+from servicesinfo import SysVServiceInfo, XinetdServiceInfo, InvalidServiceInfoException
 
 # make pydoc work by working around cyclic dependency
 

@@ -23,8 +23,7 @@
 
 import copy
 
-from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED, \
-    SVC_HERDER_READY
+from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED
 
 from scservices.dbus.proxy.services import DBusSysVServiceProxy, \
     DBusXinetdServiceProxy

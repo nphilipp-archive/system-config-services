@@ -25,9 +25,7 @@ import dbus.service
 import slip.dbus.service
 import slip.dbus.polkit as polkit
 
-from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED, \
-    SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, \
-    SVC_STATUS_CHANGED
+from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED
 from scservices.dbus.service.services import DBusService
 
 from scservices.dbus import dbus_service_name
