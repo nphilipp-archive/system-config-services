@@ -84,6 +84,10 @@ class DBusChkconfigServiceProxy(DBusServiceProxy):
     def get_enabled(self):
         return self.chkconfig_interface.get_enabled()
 
+    @polkit.enable_proxy
+    def is_chkconfig_running(self):
+        return self.chkconfig_interface.is_chkconfig_running()
+
 
 class DBusSysVServiceProxy(DBusChkconfigServiceProxy):
 

@@ -173,10 +173,10 @@ class ChkconfigService(Service):
         return self.__class__._chkconfig_actual_invocation
 
     def is_chkconfig_running(self):
-        return self._chkconfig_running < 1
+        return self._chkconfig_running > 0
 
     def _change_enablement_ready(self, cmd):
-        self._chkconfig_running -= 1
+        self._chkconfig_running = max((0, self._chkconfig_running - 1))
 
     def _change_enablement(self, change):
 
