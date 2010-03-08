@@ -23,9 +23,7 @@
 
 import os
 import sys
-import copy
 import re
-import time
 import gobject
 import gamin
 

@@ -22,7 +22,6 @@
 # Nils Philippsen <nphilipp@redhat.com>
 
 import copy
-import time
 
 from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED, \
     SVC_HERDER_READY
