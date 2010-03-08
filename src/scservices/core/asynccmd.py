@@ -156,7 +156,7 @@ class AsyncCmdQueue(object):
 
     def __repr__(self):
         return "<%s.%s object at %s: max: %d run: %d wait: %d>" % \
-            (self.__class__.__module, self.__class__.__name__,
+            (self.__class__.__module__, self.__class__.__name__,
             hex(id(self)), self.max_cmds_running, len(self.cmds_running),
             len(self.cmds_waiting))
 
