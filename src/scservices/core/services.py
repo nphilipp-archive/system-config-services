@@ -177,13 +177,10 @@ class ChkconfigService(Service):
         self._chkconfig_running = max((0, self._chkconfig_running - 1))
 
     def _change_enablement(self, change):
-
-        # no callback, we let the herder handle that
-
         self._chkconfig_running += 1
         self._asynccmdqueue.queue("%s \"%s\" \"%s\""
                                    % (self.chkconfig_invocation, self.name,
-                                  change), self._change_enablement_ready)
+                                  change), ready_cb=self._change_enablement_ready)
 
     def enable(self):
         """Enable this service."""

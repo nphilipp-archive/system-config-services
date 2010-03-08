@@ -81,7 +81,7 @@ class DBusChkconfigService(DBusService):
     @polkit.require_auth("org.fedoraproject.config.services.info")
     @dbus.service.method(dbus_interface=dbus_service_name +
                           ".ChkconfigService", in_signature="",
-                         out_signature="i")
+                         out_signature="b")
     def is_chkconfig_running(self):
         return self.service.is_chkconfig_running()
 
