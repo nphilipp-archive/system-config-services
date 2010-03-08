@@ -345,7 +345,7 @@ class XinetdServiceHerder(ChkconfigServiceHerder):
             self.delete_service_delayed(path)
         elif action == gamin.GAMChanged:
             if self.services.has_key(path):
-                self.services[name].async_load()
+                self.services[path].async_load()
 
     def create_service_delayed(self, name):
         if self.delay_timeout != 0:

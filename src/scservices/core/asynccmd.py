@@ -71,7 +71,7 @@ class AsyncCmd(object):
         elif isinstance(self.cmd, (list, tuple)):
             shell = False
         else:
-            raise TypeError("cmd: %s" % cmd)
+            raise TypeError("cmd: %s" % self.cmd)
 
         self.pipe = subprocess.Popen(args=self.cmd, stdout=subprocess.PIPE,
                                      stderr=stderr_arg, close_fds=True,
