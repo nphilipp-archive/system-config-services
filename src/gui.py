@@ -36,11 +36,13 @@ import locale
 import gettext
 gettext.install("system-config-services",
                 codeset=locale.getpreferredencoding(), names=["gettext"])
+_ = lambda x: gettext.ldgettext("system-config-services", x)
 
 from scservices.core.serviceherders import SVC_ADDED, SVC_DELETED, \
     SVC_CONF_UPDATING, SVC_CONF_CHANGED, SVC_STATUS_UPDATING, \
     SVC_STATUS_CHANGED, SVC_HERDER_READY
 
+import scservices.core.services as services
 from scservices.core.services import SVC_STATUS_REFRESHING, \
     SVC_STATUS_UNKNOWN, SVC_STATUS_STOPPED, SVC_STATUS_RUNNING, \
     SVC_STATUS_DEAD, SVC_ENABLED_REFRESHING, SVC_ENABLED_ERROR, \
