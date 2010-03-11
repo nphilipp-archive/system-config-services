@@ -60,10 +60,6 @@ class DBusServiceProxy(object):
             self._dbus_name = self.name.replace("-", "_")
         return self._dbus_name
 
-    @polkit.enable_proxy
-    def save(self):
-        return self.svc_interface.save()
-
 
 class DBusChkconfigServiceProxy(DBusServiceProxy):
 

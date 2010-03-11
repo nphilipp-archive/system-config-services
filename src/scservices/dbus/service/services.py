@@ -48,12 +48,6 @@ class DBusService(slip.dbus.service.Object):
 
         self.service = service
 
-    @polkit.require_auth("org.fedoraproject.config.services.manage")
-    @dbus.service.method(dbus_interface=dbus_service_name + ".Service",
-                         in_signature="", out_signature="")
-    def save(self):
-        raise NotImplementedError
-
 
 class DBusChkconfigService(DBusService):
 
@@ -87,11 +81,6 @@ class DBusChkconfigService(DBusService):
 
 
 class DBusSysVService(DBusChkconfigService):
-
-    # FIXME
-
-    def save(self, runlevels):
-        pass
 
     @polkit.require_auth("org.fedoraproject.config.services.manage")
     @dbus.service.method(dbus_interface=dbus_service_name + ".SysVService",
@@ -161,13 +150,6 @@ class DBusSysVService(DBusChkconfigService):
 
 
 class DBusXinetdService(DBusChkconfigService):
-
-    @polkit.require_auth("org.fedoraproject.config.services.manage")
-    @dbus.service.method(dbus_interface=dbus_service_name + ".XinetdService",
-                         in_signature="b", out_signature="")
-    def save(self, enabled):
-        self.service.enabled = enabled
-        self.service.save()
 
     @polkit.require_auth("org.fedoraproject.config.services.info")
     @dbus.service.method(dbus_interface=dbus_service_name + ".XinetdService",
