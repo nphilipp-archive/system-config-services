@@ -68,11 +68,11 @@ class DBusChkconfigServiceProxy(DBusServiceProxy):
         self.chkconfig_interface = dbus.Interface(self.dbus_object,
                 "org.fedoraproject.Config.Services.ChkconfigService")
 
-    @polkit.enable_proxy
+    @polkit.enable_proxy(authfail_result=None)
     def enable(self):
         return self.chkconfig_interface.enable()
 
-    @polkit.enable_proxy
+    @polkit.enable_proxy(authfail_result=None)
     def disable(self):
         return self.chkconfig_interface.disable()
 
@@ -94,19 +94,19 @@ class DBusSysVServiceProxy(DBusChkconfigServiceProxy):
         self.sysv_interface = dbus.Interface(self.dbus_object,
                 "org.fedoraproject.Config.Services.SysVService")
 
-    @polkit.enable_proxy
+    @polkit.enable_proxy(authfail_result=None)
     def start(self):
         return self.sysv_interface.start()
 
-    @polkit.enable_proxy
+    @polkit.enable_proxy(authfail_result=None)
     def stop(self):
         return self.sysv_interface.stop()
 
-    @polkit.enable_proxy
+    @polkit.enable_proxy(authfail_result=None)
     def restart(self):
         return self.sysv_interface.restart()
 
-    @polkit.enable_proxy
+    @polkit.enable_proxy(authfail_result=None)
     def reload(self):
         return self.sysv_interface.reload()
 
@@ -139,7 +139,7 @@ class DBusSysVServiceProxy(DBusChkconfigServiceProxy):
             self._runlevels.update(runlevels)
             self._runlevels.thaw_hooks()
 
-    @polkit.enable_proxy
+    @polkit.enable_proxy(authfail_result=None)
     def _save_runlevels(self):
         return self.sysv_interface.set_runlevels(list(self._runlevels))
 

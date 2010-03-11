@@ -34,11 +34,7 @@ Requires: pygtk2-libglade
 Requires: python >= 2.3.0
 Requires: dbus-python
 Requires: python-slip >= 0.1.11
-%if %{with polkit1}
-Requires: python-slip-dbus >= 0.2.7
-%else
-Requires: python-slip-dbus >= 0.1.15
-%endif
+Requires: python-slip-dbus >= 0.2.8
 Requires: python-slip-gtk
 %if %{with polkitauthagent}
 Requires: PolicyKit-authentication-agent
