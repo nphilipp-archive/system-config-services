@@ -11,11 +11,11 @@ msgstr ""
 "Project-Id-Version: system-config-services master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2010-02-20 16:12+0100\n"
-"Last-Translator: Nikolas Slivka <snicore@gmail.com>\n"
+"PO-Revision-Date: 2010-03-14 20:43+0100\n"
+"Last-Translator: Peter Bojtos <ptr@ulx.hu>\n"
 "Language-Team: Hungarian Fedora Translation Team <fedora-trans-hu@redhat.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Poedit-Language: Hungarian\n"
@@ -33,11 +33,11 @@ msgstr "Megjegyzések"
 #: src/gui.py:196
 #: src/gui.py:213
 msgid "This service is being refreshed right now."
-msgstr "A szolgáltatást éppen frissítem."
+msgstr "A szolgáltatás állapotának frissítése…"
 
 #: src/gui.py:197
 msgid "Getting information about this service failed."
-msgstr "Nem sikerült adatokat lekérdezni e szolgáltatásról."
+msgstr "Nem sikerült információkat lekérdezni a szolgáltatásról."
 
 #: src/gui.py:198
 msgid "This service is enabled."
@@ -50,23 +50,25 @@ msgstr "Ez a szolgáltatás tiltott."
 #: src/gui.py:201
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr "Ez a szolgáltatás %(runlevels)s futásszinteken engedélyezett."
+msgstr "Ez a szolgáltatás csak %(runlevels)s futásszinteken engedélyezett."
 
 #: src/gui.py:214
 msgid "The status of this service is unknown."
-msgstr "Ez a szolgáltatás állapota ismeretlen."
+msgstr "A szolgáltatás állapota ismeretlen."
 
 #: src/gui.py:215
 msgid "This service is stopped."
-msgstr "Ez a szolgáltatás áll."
+msgstr "Ez a szolgáltatás NEM fut."
 
 #: src/gui.py:216
 msgid "This service is running."
 msgstr "Ez a szolgáltatás fut."
 
+# A megállt helyett jobb a bedöglött? Szerintem komolytalan…
 #: src/gui.py:217
+#, fuzzy
 msgid "This service is dead."
-msgstr "Ez a szolgáltatás bedöglött."
+msgstr "Ez a szolgáltatás megállt."
 
 #: src/gui.py:298
 #, python-format
@@ -80,7 +82,7 @@ msgstr "Ez a szolgáltatás éppen frissül."
 #: src/gui.py:344
 #, python-format
 msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do."
-msgstr "<b>%(servicename)s</b> szolgáltatást az xinetd szolgáltatás elindítja amikor igény van rá, és leállítja, amikor annak már nincs mit tennie."
+msgstr "A(z) <b>%(servicename)s</b> szolgáltatást az xinetd elindítja, amikor igény van rá és leállítja, amikor már nincs rá szükség."
 
 #: src/gui.py:356
 msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
@@ -98,7 +100,7 @@ msgstr "<b>%(service)s</b> szolgáltatás engedélyezése futásszintenként:"
 
 #: src/gui.py:920
 msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
-msgstr "A súgónéző nincs meg. A súgó nézegetéséhez telepíteni kell a „yelp” csomagot."
+msgstr "A súgóböngésző nem található. A súgóoldalak megtekintéséhez telepíteni kell a „yelp” csomagot."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
@@ -106,7 +108,7 @@ msgstr "Copyright © 2002-2009 Red Hat, Inc. és közreműködői"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
-msgstr "Igazítás"
+msgstr "Futásszintek beállítása"
 
 #: src/system-config-services.glade.h:3
 msgid "Customize the runlevels in which a service is enabled."
@@ -114,7 +116,7 @@ msgstr "Szolgáltatás engedélyezése futásszintenként."
 
 #: src/system-config-services.glade.h:4
 msgid "Description"
-msgstr "Jellemzés"
+msgstr "Leírás"
 
 #: src/system-config-services.glade.h:7
 msgid "No service selected."
@@ -162,7 +164,7 @@ msgstr "S_zolgáltatás"
 
 #: src/system-config-services.glade.h:18
 msgid "Service Configuration"
-msgstr "Szolgáltatások"
+msgstr "Szolgáltatás beállítása"
 
 #: src/system-config-services.glade.h:19
 msgid "Service Information"
@@ -191,11 +193,11 @@ msgstr ""
 
 #: src/system-config-services.glade.h:28
 msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
-msgstr "Ez a szolgáltatás szokás szerint a rendszer betöltésekor indul, a háttérben fut, és felébred, amikor szükség van rá."
+msgstr "Ez a szolgáltatás a rendszer betöltésekor indul, a háttérben fut és felébred amikor szükség van rá."
 
 #: src/system-config-services.glade.h:29
 msgid "This service will be started on demand by the xinetd service and ends when it has nothing more to do."
-msgstr "Ezt a szolgáltatást az xinetd szolgáltatás elindítja amikor igény van rá, és leállítja, amikor annak már nincs mit tennie."
+msgstr "Ezt a szolgáltatást az xinetd szolgáltatás elindítja, amikor igény van rá és leállítja, amikor már nincs rá szükség."
 
 #: src/system-config-services.glade.h:30
 msgid "_About"
@@ -207,7 +209,7 @@ msgstr "_Tartalom"
 
 #: src/system-config-services.glade.h:32
 msgid "_Customize"
-msgstr "I_gazít"
+msgstr "_Részletes beállítás"
 
 #: src/system-config-services.glade.h:33
 msgid "_Disable"
@@ -215,7 +217,7 @@ msgstr "Le_tilt"
 
 #: src/system-config-services.glade.h:34
 msgid "_Enable"
-msgstr "_Megenged"
+msgstr "_Engedélyez"
 
 #: src/system-config-services.glade.h:35
 msgid "_Help"
@@ -223,7 +225,7 @@ msgstr "_Súgó"
 
 #: src/system-config-services.glade.h:36
 msgid "_Program"
-msgstr "_Főablak"
+msgstr "_Ablak"
 
 #: src/system-config-services.glade.h:37
 msgid "_Restart"
@@ -245,7 +247,8 @@ msgstr ""
 "Arpad Biro <biro_arpad@yahoo.com>, 2005, 2006.\n"
 "Szentiványi Gábor <szentivanyi.gabor@ulx.hu>, 2006.\n"
 "Gábor Szentiványi <szenti@ulx.hu>, 2006.\n"
-"Sulyok Péter <peti@fedoraproject.org>, 2008-2009."
+"Sulyok Péter <peti@fedoraproject.org>, 2008-2009.\n"
+"Bojtos Péter <ptr@ulx.hu>, 2010"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -253,7 +256,7 @@ msgstr "Annak beállítása, hogy mely szolgáltatások fussanak a rendszer ind�
 
 #: system-config-services.desktop.in.h:2
 msgid "Service Management"
-msgstr "Szolgáltatás igazgatás"
+msgstr "Szolgáltatások kezelése"
 
 #: system-config-services.desktop.in.h:3
 msgid "Services"
@@ -267,7 +270,7 @@ msgstr "Szerezzen információkat a rendszer szolgáltatásairól"
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr "Információk megjelenítése az a rendszer-szolgáltatásokról hitelesítést igényel"
+msgstr "A rendszerszolgáltatások lekérdezése hitelesítést igényel"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -277,7 +280,7 @@ msgstr "Rendszer-szolgáltatások kezelése"
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr "A szolgáltatások menedzselése hitelesítést igényel"
+msgstr "A szolgáltatások kezelése hitelesítést igényel"
 
 #~ msgid "System policy prevents access to system services information"
 #~ msgstr ""
