@@ -1,4 +1,4 @@
-                                        # translation of system-config-services.master.fr.po to French
+# translation of system-config-services.master.fr.po to French
 # Copyright (C) 2001 Red Hat, Inc.
 #
 # Bettina De Monti <bdemonti@redhat.it>, 2001.
@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: system-config-services.master.fr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2010-01-21 04:11+0100\n"
+"PO-Revision-Date: 2010-03-15 22:25+0100\n"
 "Last-Translator: Stéphane Raimbault <stephane.raimbault@gmail.com>\n"
 "Language-Team: French <trans-fr@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
@@ -120,7 +120,9 @@ msgstr "Activer le service <b>%(service)s</b> à ces niveaux d'exécution :"
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr "Impossible de trouver le lecteur d'aide. Afin de consulter l'aide, le paquet « yelp » doit être installé."
+msgstr ""
+"Impossible de trouver le lecteur d'aide. Afin de consulter l'aide, le paquet "
+"« yelp » doit être installé."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
@@ -132,7 +134,8 @@ msgstr "Personnaliser les niveaux d'exécution"
 
 #: src/system-config-services.glade.h:3
 msgid "Customize the runlevels in which a service is enabled."
-msgstr "Personnalise les niveaux d'exécution pour lesquels un service est activé."
+msgstr ""
+"Personnalise les niveaux d'exécution pour lesquels un service est activé."
 
 #: src/system-config-services.glade.h:4
 msgid "Description"
@@ -320,7 +323,7 @@ msgstr "Obtient des informations sur les services du système"
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr "Obtenir des informations sur les services du système nécessite une authentification."
+msgstr "L'accès aux informations sur les services du système nécessite une authentification"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
