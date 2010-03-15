@@ -1,13 +1,13 @@
 # Norwegian bokmål translation of system-config-services.
 # Copyright (C) 2004 Free Software Foundation, Inc.
-# Kjartan Maraas <kmaraas@broadpark.no>, 2004-2009.
+# Kjartan Maraas <kmaraas@broadpark.no>, 2004-2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services 0.99.8\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2009-10-05 13:45+0200\n"
+"PO-Revision-Date: 2010-03-15 20:20+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@broadpark.no>\n"
 "Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -77,19 +77,19 @@ msgstr "Denne tjenesten oppdateres for tiden."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
+msgstr "Tjenesten <b>%(servicename)s</b> vil bli startet etter behov av xinetd-tjenesten og avsluttes når den ikke har mer å gjøre."
 
 #: src/gui.py:356
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
+msgstr "Denne tjenesten er slått på, men pakken <b>xinetd</b> er ikke installert. Denne tjenesten fungerer ikke uten den."
 
 #: src/gui.py:365
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
+msgstr "Denne tjenesten er slått på, men <b>xinetd</b>-tjenesten kjører ikke. Denne tjenesten fungerer ikke uten den."
 
 #: src/gui.py:782 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -193,6 +193,11 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
+"Dette programmet er fri programvare. Du kan redistribuere og/eller endre programmet under betingelsene gitt i GNU General Public License som utgitt av Free Software Foundation; enten versjon 2 av lisensen, eller (hvis du ønsker det) enhver senere versjon.\n"
+"\n"
+"Programmet distribueres i håp om at programmet er nyttig, men uten NOEN GARANTI, ikke engang implisitt garanti om at det er SALGBART eller PASSER ET BESTEMT FORMÅL. Se GNU General Public License for detaljer.\n"
+"\n"
+"Du skal ha mottatt en kopi av GNU General Public License sammen med dette programmet. Hvis dette ikke er tilfelle, kan du skrive til Free Software Foundation, Inc. 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
@@ -275,7 +280,7 @@ msgstr "Hent informasjon om systemtjenestene"
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "Du må autentisere deg for å hente informasjon om systemtjenestene"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -285,10 +290,4 @@ msgstr "Håndter systemtjenester"
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
-
-#~ msgid "System policy prevents access to system services information"
-#~ msgstr "Regelsett forhindrer tilgang informasjon om systemets tjenester"
-
-#~ msgid "System policy prevents management of system services"
-#~ msgstr "Regelsett forhindrer styring av systemets tjenester"
+msgstr "Du må autentisere deg for å håndtere systemtjenester"
