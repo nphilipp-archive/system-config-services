@@ -1,3 +1,4 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
@@ -60,12 +61,8 @@ msgstr "השירות הזה מת."
 
 #: src/gui.py:298
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service is started once, usually when the system "
-"is booted, runs in the background and wakes up when needed."
-msgstr ""
-"השירות <b>%(servicename)s</b> מופעל פעם אחת, בדרך כלל בעליית המערכת, רץ ברקע "
-"ומתוערר כשצריך."
+msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "השירות <b>%(servicename)s</b> מופעל פעם אחת, בדרך כלל בעליית המערכת, רץ ברקע ומתוערר כשצריך."
 
 #: src/gui.py:317
 msgid "This service is updated currently."
@@ -73,28 +70,16 @@ msgstr "השרות הזה מעודכן כרגע."
 
 #: src/gui.py:344
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has nothing more to do."
-msgstr ""
-"השירות <b>%(servicename)s</b> יתחיל לפי דרישה על-ידי השירות xinetd ויסתיים "
-"כשלא יהיה לו מה לעשות."
+msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "השירות <b>%(servicename)s</b> יתחיל לפי דרישה על-ידי השירות xinetd ויסתיים כשלא יהיה לו מה לעשות."
 
 #: src/gui.py:356
-msgid ""
-"This service is enabled, but the <b>xinetd</b> package is not installed. "
-"This service does not work without it."
-msgstr ""
-"השירות הזה מאופשר, אבל החבילה <b>xinetd</b> לא מותקנת. השירות הזה לא יכול "
-"לעבוד בלעדיה."
+msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
+msgstr "השירות הזה מאופשר, אבל החבילה <b>xinetd</b> לא מותקנת. השירות הזה לא יכול לעבוד בלעדיה."
 
 #: src/gui.py:365
-msgid ""
-"This service is enabled, but the <b>xinetd</b> service is not running. This "
-"service does not work without it."
-msgstr ""
-"השירות הזה מאופשר, אבל השירות <b>xinetd</b> לא רץ. השירות הזה לא יכול לעבוד "
-"בלעדיו."
+msgid "This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."
+msgstr "השירות הזה מאופשר, אבל השירות <b>xinetd</b> לא רץ. השירות הזה לא יכול לעבוד בלעדיו."
 
 #: src/gui.py:782 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -102,12 +87,8 @@ msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "אפשר את השירות <b>%(service)s</b> ברמות הריצה הבאות:"
 
 #: src/gui.py:920
-msgid ""
-"The help viewer could not be found. To be able to view help, the 'yelp' "
-"package needs to be installed."
-msgstr ""
-"לא ניתן למצוא את מציג העזרה. כדי לראות את העזרה, החבילה 'yelp' צריכה להיות "
-"מותקנת."
+msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
+msgstr "לא ניתן למצוא את מציג העזרה. כדי לראות את העזרה, החבילה 'yelp' צריכה להיות מותקנת."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
@@ -184,47 +165,27 @@ msgstr "מצב השירות %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"השירות הזה מופעל פעם אחת, בדרך כלל בעליית המערכת, רץ ברקע ומתעורר מתי שצריך."
+msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "השירות הזה מופעל פעם אחת, בדרך כלל בעליית המערכת, רץ ברקע ומתעורר מתי שצריך."
 
 #: src/system-config-services.glade.h:29
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr ""
-"השירות הזה יופעל על-ידי השירות xinted לפי דרישה ויפסיק כשלא יהיה לו מה לעשות."
+msgid "This service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "השירות הזה יופעל על-ידי השירות xinted לפי דרישה ויפסיק כשלא יהיה לו מה לעשות."
 
 #: src/system-config-services.glade.h:30
 msgid "_About"
@@ -288,20 +249,20 @@ msgstr "שירותים"
 msgid "Get information about system services"
 msgstr "קבל מידע על שירותי מערכת"
 
-#: config/org.fedoraproject.config.services.policy.0.in.h:2
-#: config/org.fedoraproject.config.services.policy.1.in.h:2
-msgid "Getting information about system services requires authentication"
-msgstr ""
-
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "Manage system services"
 msgstr "נהל שירותי מערכת"
 
+#: config/org.fedoraproject.config.services.policy.0.in.h:2
+#: config/org.fedoraproject.config.services.policy.1.in.h:2
+msgid "Getting information about system services requires authentication"
+msgstr "קבלת מידע על שירותי המערכת דורשת אימות"
+
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "ניהול שירותי המערכת דורש אימות"
 
 #~ msgid "System policy prevents access to system services information"
 #~ msgstr "מדיניות המערכת מונעת גישה למידע השירותים"
