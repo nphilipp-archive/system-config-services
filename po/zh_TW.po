@@ -2,7 +2,7 @@
 # translation of system-config-services.master.po to
 # Translation of system-config-services to Chinese (traditional)
 # Copyright (C) 2002 Red Hat Inc.
-#
+# 
 # Ben Wu <hpwu@redhat.com>, 2002, 2003, 2004.
 # Chester Cheng <ccheng@redhat.com>, 2005, 2006.
 # Walter Cheuk <wwycheuk@netvigator.com>, 2006.
@@ -68,12 +68,8 @@ msgstr "這項服務已終止。"
 
 #: src/gui.py:298
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service is started once, usually when the system "
-"is booted, runs in the background and wakes up when needed."
-msgstr ""
-"<b>%(servicename)s</b> 這項服務一般會在系統開機時啟用，執行於背景中並且會視需"
-"求啟動。"
+msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
+msgstr "<b>%(servicename)s</b> 這項服務一般會在系統開機時啟用，執行於背景中並且會視需求啟動。"
 
 #: src/gui.py:317
 msgid "This service is updated currently."
@@ -81,28 +77,16 @@ msgstr "這項服務目前已更新。"
 
 #: src/gui.py:344
 #, python-format
-msgid ""
-"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has nothing more to do."
-msgstr ""
-"<b>%(servicename)s</b> 服務將會依照需求由 xinetd 服務啟用並且在沒有其它工作之"
-"後便會結束。"
+msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "<b>%(servicename)s</b> 服務將會依照需求由 xinetd 服務啟用並且在沒有其它工作之後便會結束。"
 
 #: src/gui.py:356
-msgid ""
-"This service is enabled, but the <b>xinetd</b> package is not installed. "
-"This service does not work without it."
-msgstr ""
-"這項服務已啟用，不過 <b>xinetd</b> 套件尚未安裝。這項服務無法在沒有此套件的情"
-"況下運作。"
+msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
+msgstr "這項服務已啟用，不過 <b>xinetd</b> 套件尚未安裝。這項服務無法在沒有此套件的情況下運作。"
 
 #: src/gui.py:365
-msgid ""
-"This service is enabled, but the <b>xinetd</b> service is not running. This "
-"service does not work without it."
-msgstr ""
-"這項服務已啟用，不過 <b>xinetd</b> 服務尚未被執行。這項服務無法在沒有此套件的"
-"情況下運作。"
+msgid "This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."
+msgstr "這項服務已啟用，不過 <b>xinetd</b> 服務尚未被執行。這項服務無法在沒有此套件的情況下運作。"
 
 #: src/gui.py:782 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -110,9 +94,7 @@ msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "在這些 runlevel 中啟用 <b>%(service)s</b> 服務："
 
 #: src/gui.py:920
-msgid ""
-"The help viewer could not be found. To be able to view help, the 'yelp' "
-"package needs to be installed."
+msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
 msgstr "無法找到說明檢視器。若要檢視說明，您必須安裝「yelp」套件。"
 
 #: src/system-config-services.glade.h:1
@@ -190,43 +172,27 @@ msgstr "%s 服務的狀態："
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"本程式為自由軟體；您可依據自由軟體基金會所發表的 GNU 通用公共許可證就本作品再"
-"為發佈與/或修改；無論您依據的是本授權的第二版或（您自行選擇的）任一日後發行的"
-"版本。\n"
+"本程式為自由軟體；您可依據自由軟體基金會所發表的 GNU 通用公共許可證就本作品再為發佈與/或修改；無論您依據的是本授權的第二版或（您自行選擇的）任一日後發行的版本。\n"
 "\n"
-"本程式是基於使用目的而加以發佈，然而不負任何擔保責任；亦無對適售性或特定目的"
-"適用性所為的默示性擔保。詳情\n"
+"本程式是基於使用目的而加以發佈，然而不負任何擔保責任；亦無對適售性或特定目的適用性所為的默示性擔保。詳情\n"
 "請參照 GNU 通用公共許可證。\n"
 "\n"
-"您應該已收到了附隨於本程式的 GNU 通用公共授權的副本；若沒有的話，請寫信至自由"
-"軟體基金會：59 Temple Place, Suite 330, Boston, MA 02111-1307  USA。"
+"您應該已收到了附隨於本程式的 GNU 通用公共授權的副本；若沒有的話，請寫信至自由軟體基金會：59 Temple Place, Suite 330, Boston, MA 02111-1307  USA。"
 
 #: src/system-config-services.glade.h:28
-msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
+msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
 msgstr "服務一般在系統開機時便會被啟用，執行於背景中，並且會視需求被啟動。"
 
 #: src/system-config-services.glade.h:29
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr ""
-"這項服務將可依照需求由 xinetd 服務來啟用，並且當沒有其它工作之後便會結束。"
+msgid "This service will be started on demand by the xinetd service and ends when it has nothing more to do."
+msgstr "這項服務將可依照需求由 xinetd 服務來啟用，並且當沒有其它工作之後便會結束。"
 
 #: src/system-config-services.glade.h:30
 msgid "_About"
@@ -290,20 +256,22 @@ msgstr "服務"
 msgid "Get information about system services"
 msgstr "取得有關於系統服務的資訊"
 
-#: config/org.fedoraproject.config.services.policy.0.in.h:2
-#: config/org.fedoraproject.config.services.policy.1.in.h:2
-msgid "Getting information about system services requires authentication"
-msgstr ""
-
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "Manage system services"
 msgstr "管理系統服務"
 
+#: config/org.fedoraproject.config.services.policy.0.in.h:2
+#: config/org.fedoraproject.config.services.policy.1.in.h:2
+#, fuzzy
+msgid "Getting information about system services requires authentication"
+msgstr "取得關於系統服務需求授權的資訊"
+
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
+#, fuzzy
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "管理系統服務需求授權"
 
 #~ msgid "System policy prevents access to system services information"
 #~ msgstr "系統政策防止了系統服務資訊上的存取"
