@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2009-09-21 17:57+0200\n"
+"PO-Revision-Date: 2010-03-21 17:57+0200\n"
 "Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -296,7 +296,7 @@ msgstr "Отримати інформацію про системні служб
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "Отримання інформації про системні служби вимагає автентифікації"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -306,11 +306,6 @@ msgstr "Керування системними службами"
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "Керування системними службами вимагає автентифікації"
 
-#~ msgid "System policy prevents access to system services information"
-#~ msgstr ""
-#~ "Системна політика перешкоджає доступу до інформації про системні служби"
 
-#~ msgid "System policy prevents management of system services"
-#~ msgstr "Системна політика перешкоджає керуванню системними службами"
