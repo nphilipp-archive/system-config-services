@@ -11,7 +11,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.99.43
+Version: 0.99.44
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
@@ -112,6 +112,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Tue Mar 23 2010 Nils Philippsen <nils@redhat.com> - 0.99.44-1
+- pick up translation updates
+
 * Thu Mar 11 2010 Nils Philippsen <nils@redhat.com> - 0.99.43-1
 - use improved @polkit.enable_proxy decorator to gracefully catch some
   authorization failures (#543599)
