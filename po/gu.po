@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2010-03-29 14:13+0530\n"
+"PO-Revision-Date: 2010-03-31 15:55+0530\n"
 "Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
 "Language-Team: Gujarati\n"
 "MIME-Version: 1.0\n"
@@ -308,7 +308,7 @@ msgstr "સિસ્ટમ સેવાઓ વિશે જાણકારીન
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "સિસ્ટમ સેવાઓને સત્તાધિકરણની જરૂર છે તે વિશે જાણકારી મેળવી રહ્યા છે"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -318,5 +318,5 @@ msgstr "સિસ્ટમ સેવાઓને સંચાલિત કરો
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "સંચાલિત સિસ્ટમ સેવાઓને સત્તાધિકરણની જરૂર છે"
 
