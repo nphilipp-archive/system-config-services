@@ -1,4 +1,4 @@
-# translation of system-config-services.master.po to Marathi
+# translation of mr.po to Marathi
 # Marathi translations for PACKAGE package.
 # Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the system-config-services package.
@@ -7,15 +7,15 @@
 # Rahul Bhalerao <rbhalera@redhat.com>, 2006.
 # Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006.
 # Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008, 2009.
-# Sandeep Shedmake <sshedmak@redhat.com>, 2009.
+# Sandeep Shedmake <sshedmak@redhat.com>, 2009, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.master\n"
+"Project-Id-Version: mr\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2009-09-22 13:47+0530\n"
+"PO-Revision-Date: 2010-04-07 20:29+0530\n"
 "Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
-"Language-Team: Marathi <fedora-trans-mr@redhat.com>\n"
+"Language-Team: Marathi <maajhe-sanganak@freelists.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -114,8 +114,7 @@ msgstr "या रनलेवल अंतर्गत <b>%(service)s</b> स�
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"मदत प्रदर्शक आढळले नाही. मदत पहाण्याकरीता, 'yelp' संकुल प्रतिष्ठापीत करणे आवश्यक आहे."
+msgstr "मदत प्रदर्शक आढळले नाही. मदत पहाण्याकरीता, 'yelp' संकुल प्रतिष्ठापीत करणे आवश्यक आहे."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
@@ -232,8 +231,7 @@ msgstr ""
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"ही सेवा xinetd द्वारे आवश्यकताप्रमाणे सुरू केले जाईल व काहिच कार्य नसल्यावर समाप्त होईल."
+msgstr "ही सेवा xinetd द्वारे आवश्यकताप्रमाणे सुरू केले जाईल व काहिच कार्य नसल्यावर समाप्त होईल."
 
 #: src/system-config-services.glade.h:30
 msgid "_About"
@@ -280,7 +278,7 @@ msgstr "system-config-services"
 msgid "translator-credits"
 msgstr ""
 "Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006; संदिप शेडमाके <sandeep."
-"shedmake@gmail.com>, 2008, 2009; संदिप शेडमाके <sshedmak@redhat.com>, 2009."
+"shedmake@gmail.com>, 2008, 2009; संदिप शेडमाके <sshedmak@redhat.com>, 2009, 2010."
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -302,7 +300,7 @@ msgstr "प्रणाली सेवाविष्यी माहिती 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "प्रणाली सेवांविषयी माहिती प्राप्त करण्यासाठी ओळख पटवणे आवश्यक आहे"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -312,10 +310,5 @@ msgstr "प्रणाली सेवा व्यवस्थापीत क
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "प्रणाली सेवांच्या व्यवस्थापनकरीता ओळख पटवणे आवश्यक आहे"
 
-#~ msgid "System policy prevents access to system services information"
-#~ msgstr "प्रणाली करार प्रणाली सेवा माहितीकरीता प्रवेश रोखतो"
-
-#~ msgid "System policy prevents management of system services"
-#~ msgstr "प्रणाली करार प्रणाली सेवांचे व्यवस्थापन रोखतो"
