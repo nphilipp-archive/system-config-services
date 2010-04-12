@@ -5,10 +5,6 @@
 %bcond_without polkit1
 %endif
 
-%if 0%{?fedora}%{?rhel} == 0 || 0%{?fedora} >= 11 || 0%{?rhel} >= 6
-%bcond_without polkitauthagent
-%endif
-
 Summary: Utility to start and stop system services
 Name: system-config-services
 Version: 0.99.44
@@ -36,11 +32,6 @@ Requires: dbus-python
 Requires: python-slip >= 0.1.11
 Requires: python-slip-dbus >= 0.2.8
 Requires: python-slip-gtk
-%if %{with polkitauthagent}
-Requires: PolicyKit-authentication-agent
-%else
-Requires: PolicyKit-gnome
-%endif
 # Until version 0.99.28, system-config-services contained online documentation.
 # From version 0.99.29 on, online documentation is split off into its own
 # package system-config-services-docs. The following ensures that updating from
@@ -112,6 +103,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Apr 12 2010 Nils Philippsen <nils@redhat.com>
+- remove obsolete PolicyKit-authentication-agent dependency (#581084)
+
 * Tue Mar 23 2010 Nils Philippsen <nils@redhat.com> - 0.99.44-1
 - pick up translation updates
 
