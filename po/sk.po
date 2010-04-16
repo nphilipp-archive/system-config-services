@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the system-config-services package.
 #
 # Marcel Telka <marcel@telka.sk>, 2004, 2005.
-# Ondrej Šulek <feonsu@gmail.com>, 2008, 2009.
+# Ondrej Šulek <feonsu@gmail.com>, 2008, 2009, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2009-09-21 20:13+0200\n"
-"Last-Translator: Ondrej Šulek <feonsu@gmail.com>\n"
+"PO-Revision-Date: 2010-04-15 17:15+0200\n"
+"Last-Translator: Ondrej Šulek <<feonsu@gmail.com>\n"
 "Language-Team: Slovak <fedora-trans-sk@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -299,7 +299,7 @@ msgstr "Získanie informácií o systémových službách"
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "Získanie informácií o systémových službách vyžaduje overenie"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -309,7 +309,7 @@ msgstr "Správa systémových služieb"
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "Spravovanie systémových služieb vyžaduje overenie"
 
 #~ msgid "System policy prevents access to system services information"
 #~ msgstr ""
