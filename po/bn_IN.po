@@ -1,4 +1,4 @@
-# translation of system-config-services.master.bn_IN.po to Bengali INDIA
+# translation of system-config-services.master.po to Bengali INDIA
 # Bangla Translation of system-config-services
 # Copyright (C) 2003 Red Hat, Inc.
 # This file is distributed under the same license as the system-config-services package.
@@ -9,10 +9,10 @@
 # Runa Bhattacharjee <runab@fedoraproject.org>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.master.bn_IN\n"
+"Project-Id-Version: system-config-services.master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2010-02-18 14:24+0530\n"
+"PO-Revision-Date: 2010-04-17 13:31+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <anubad@lists.ankur.org.in>\n"
 "MIME-Version: 1.0\n"
@@ -173,7 +173,7 @@ msgstr "Runlevel _5"
 
 #: src/system-config-services.glade.h:16
 msgid "S_top"
-msgstr "বন্ধ করা হবে (_t)"
+msgstr "বন্ধ করুন (_t)"
 
 #: src/system-config-services.glade.h:17
 msgid "Ser_vice"
@@ -243,7 +243,7 @@ msgstr "পরিচিতি (_A)"
 
 #: src/system-config-services.glade.h:31
 msgid "_Contents"
-msgstr "বিষয়বস্তু (_C)"
+msgstr "সূচিপত্র (_C)"
 
 #: src/system-config-services.glade.h:32
 msgid "_Customize"
@@ -271,7 +271,7 @@ msgstr "পুনরারম্ভ (_R)"
 
 #: src/system-config-services.glade.h:38
 msgid "_Start"
-msgstr "আরম্ভ (_S)"
+msgstr "আরম্ভ করুন (_S)"
 
 #: src/system-config-services.glade.h:39
 msgid "system-config-services"
