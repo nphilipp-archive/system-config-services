@@ -4,15 +4,15 @@
 #
 # Amitakhya Phukan <amitakhya.phukan@gmail.com>, 2006.
 # Amitakhya Phukan <aphukan@redhat.com>, 2008.
-# Amitakhya Phukan <aphukan@fedoraproject.org>, 2008, 2009.
+# Amitakhya Phukan <aphukan@fedoraproject.org>, 2008, 2009, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.tip\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2009-09-22 13:21+0530\n"
-"Last-Translator: \n"
-"Language-Team: Assamese <>\n"
+"PO-Revision-Date: 2010-04-16 13:55+0530\n"
+"Last-Translator: Amitakhya Phukan <aphukan@fedoraproject.org>\n"
+"Language-Team: American English <fedora-trans-as@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -98,8 +98,7 @@ msgstr ""
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"সেৱা সক্ৰিয়, কিন্তু <b>xinetd</b> সৰঞ্জাম চলা নাই । এইটো ন'হলে সেৱাই কাম নকৰে ।"
+msgstr "সেৱা সক্ৰিয়, কিন্তু <b>xinetd</b> সৰঞ্জাম চলা নাই । এইটো ন'হলে সেৱাই কাম নকৰে ।"
 
 #: src/gui.py:782 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -110,8 +109,7 @@ msgstr "এই চলনাস্তৰসমূহত <b>%(service)s</b> সে
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"সহায় প্ৰদৰ্শক পোৱা ন'গ'ল । সহায় চাবলৈ, 'yelp' সৰঞ্জাম সংস্থাপিত হ'ব লাগিব ।"
+msgstr "সহায় প্ৰদৰ্শক পোৱা ন'গ'ল । সহায় চাবলৈ, 'yelp' সৰঞ্জাম সংস্থাপিত হ'ব লাগিব ।"
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
@@ -297,7 +295,7 @@ msgstr "ব্যৱস্থাপ্ৰণালীৰ সেৱা সমূ�
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "প্ৰণালীৰ সেৱাৰ তথ্য পাবলৈ প্ৰমাণীকৰণৰ প্ৰয়োজন"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -307,7 +305,7 @@ msgstr "ব্যৱস্থাপ্ৰণালীৰ সেৱা পৰি�
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "প্ৰণালীৰ সেৱা পৰিচালন কৰিবলৈ প্ৰমাণীকৰণৰ প্ৰয়োজন"
 
 #~ msgid "System policy prevents access to system services information"
 #~ msgstr "প্ৰণালীৰ নীতিয়ে প্ৰণালীৰ সেৱাৰ তথ্য অভিগম কৰিব নিদিয়ে"
@@ -424,3 +422,4 @@ msgstr ""
 #~ msgstr ""
 #~ "এই সেৱা প্ৰয়োজনৰ মতে xinetd সেৱাৰ দ্বাৰা আৰম্ভ কৰা হ'ব আৰু কোনো কাৰ্য্য "
 #~ "নাথাকিলে অন্ত হ'ব ।"
+
