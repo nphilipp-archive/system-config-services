@@ -1,15 +1,16 @@
-# translation of system-config-services.master.po to Korean
+# translation of ko.po to Korean
 # Michelle Kim <mkim@redhat.com>, 2002.
 # Michelle J Kim <mkim@redhat.com>, 2003,2004.
 # Michelle Ji Yeen Kim <mkim@redhat.com>, 2005, 2006.
 # Eunju Kim <eukim@redhat.com>, 2006, 2007, 2008, 2009.
+# Hyunsok Oh <hoh@redhat.com>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.master\n"
+"Project-Id-Version: ko\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2009-09-22 11:19+1000\n"
-"Last-Translator: Eunju Kim <eukim@redhat.com>\n"
+"PO-Revision-Date: 2010-04-06 11:56+1000\n"
+"Last-Translator: Hyunsok Oh <hoh@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,20 +37,20 @@ msgstr "현재 이 서비스를 다시 불러 오고 있습니다. "
 
 #: src/gui.py:197
 msgid "Getting information about this service failed."
-msgstr "이 서비스에 대한 정보 얻기에 실패했습니다. "
+msgstr "이 서비스에 대한 정보 얻기에 실패했습니다."
 
 #: src/gui.py:198
 msgid "This service is enabled."
-msgstr "이 서비스를 사용할 수 있습니다. "
+msgstr "이 서비스가 활성화 되었습니다."
 
 #: src/gui.py:199
 msgid "This service is disabled."
-msgstr "이 서비스를 사용할 수 없습니다. "
+msgstr "이 서비스가 비활성화 되었습니다."
 
 #: src/gui.py:201
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr "이 서비스는 다음의 런레벨에서 사용할 수 있습니다: %(runlevels)s"
+msgstr "이 서비스는 다음 런레벨에서 사용할 수 있습니다: %(runlevels)s"
 
 #: src/gui.py:214
 msgid "The status of this service is unknown."
@@ -61,11 +62,11 @@ msgstr "서비스를 중지합니다. "
 
 #: src/gui.py:216
 msgid "This service is running."
-msgstr "서비스가 실행되고 있습니다.   "
+msgstr "서비스가 실행 중입니다."
 
 #: src/gui.py:217
 msgid "This service is dead."
-msgstr "서비스가 작동하지 않습니다.  "
+msgstr "서비스가 작동하지 않습니다."
 
 #: src/gui.py:298
 #, python-format
@@ -73,12 +74,12 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
-"<b>%(servicename)s</b> 서비스가 시작되면, 시스템을 부팅했을 때 백그라운드에"
-"서 실행되고 필요에 따라 활성화됩니다.  "
+"<b>%(servicename)s</b> 서비스는, 보통 시스템 부팅시, 한번만 시작되며 백그라운드로 돌다가"
+"필요할 때 깨어납니다."
 
 #: src/gui.py:317
 msgid "This service is updated currently."
-msgstr "현재 이 서비스는 업데이트되어 있습니다.  "
+msgstr "이 서비스는 최신으로 업데이트되어 있습니다."
 
 #: src/gui.py:344
 #, python-format
@@ -86,36 +87,32 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
-"<b>%(servicename)s</b> 서비스는 xinetd 서비스에 의해 데몬에서 시작되고 더이"
-"상 실행할 것이 없을 때 종료됩니다.          "
+"<b>%(servicename)s</b> 서비스는 xinetd 서비스의 요청에 따라 그때그때 시작되며, 더 "
+"이상 필요가 없을 때 종료됩니다."
 
 #: src/gui.py:356
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"서비스를 사용할 수 있지만, <b>xinetd</b> 패키지가 설치되어 있지 않습니다. 패"
-"키지 없이 서비스는 작동하지 않습니다.  "
+msgstr "서비스가 활성화 되었지만, <b>xinetd</b> 패키지가 설치되어 있지 않습니다. xineted가 없으면 서비스가 작동하지 않습니다.  "
 
 #: src/gui.py:365
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"서비스를 사용할 수 있지만, <b>xinetd</b> 서비스가 실행되고 있지 않습니다. 이 "
-"서비스를 실행하지 않고 이는 작동하지 않습니다. "
+msgstr "서비스가 활성화 되었지만, <b>xinetd</b> 서비스가 실행중이 아닙니다. xineted가 없으면 서비스가 작동하지 않습니다."
 
 #: src/gui.py:782 src/system-config-services.glade.h:6
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "다음의 런레벨에서 <b>%(service)s</b> 서비스를 사용할 수 있습니다: "
+msgstr "다음의 런레벨에서 <b>%(service)s</b> 서비스를 활성화 합니다: "
 
 #: src/gui.py:920
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
-"도움말 보기를 찾을 수 없습니다. 도움말을 보시려면 'yelp' 패키지를 설치하셔야 "
+"도움말 뷰어를 찾을 수 없습니다. 도움말을 보시려면 'yelp' 패키지를 설치해야 "
 "합니다.  "
 
 #: src/system-config-services.glade.h:1
@@ -124,11 +121,11 @@ msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
-msgstr "런레벨 사용자 설정 "
+msgstr "사용자 설정 런레벨"
 
 #: src/system-config-services.glade.h:3
 msgid "Customize the runlevels in which a service is enabled."
-msgstr "서비스를 사용할 수 있는 런레벨로 사용자 설정합니다. "
+msgstr "서비스가 활성화되어 있는 런레벨을 사용자 설정합니다."
 
 #: src/system-config-services.glade.h:4
 msgid "Description"
@@ -136,7 +133,7 @@ msgstr "설명"
 
 #: src/system-config-services.glade.h:7
 msgid "No service selected."
-msgstr "서비스가 선택되어 있지 않습니다. "
+msgstr "선택된 서비스가 없습니다."
 
 #: src/system-config-services.glade.h:8
 msgid "Runlevel 2"
@@ -226,16 +223,14 @@ msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
-"서비스가 시작되면, 시스템을 부팅했을 때 백그라운드에서 실행되고 필요에 따라 "
-"활성화됩니다.  "
+"이 서비스는, 보통 시스템이 부팅될 때, 한번만 시작되며, 백그라운드에서 실행되면서 필요할 때마다 "
+"깨어납니다."
 
 #: src/system-config-services.glade.h:29
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"이 서비스는 xinetd 서비스에 의해 데몬에서 시작되고 더이상 실행할 것이 없을 "
-"때 종료됩니다.        "
+msgstr "이 서비스는 xinetd 서비스의 요구에 의해 그때그때 시작되며, 더이상 필요 없을 때 종료됩니다."
 
 #: src/system-config-services.glade.h:30
 msgid "_About"
@@ -243,7 +238,7 @@ msgstr "정보(_A) "
 
 #: src/system-config-services.glade.h:31
 msgid "_Contents"
-msgstr "내용물(_C)"
+msgstr "내용(_C)"
 
 #: src/system-config-services.glade.h:32
 msgid "_Customize"
@@ -251,7 +246,7 @@ msgstr "사용자 설정(_C) "
 
 #: src/system-config-services.glade.h:33
 msgid "_Disable"
-msgstr "사용 안 함(_D) "
+msgstr "사용 안함(_D) "
 
 #: src/system-config-services.glade.h:34
 msgid "_Enable"
@@ -280,11 +275,13 @@ msgstr "system-config-services"
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:41
 msgid "translator-credits"
-msgstr "김은주 (eukim@redhat.com) 2006-2008 "
+msgstr ""
+"김은주 (eukim@redhat.com) 2006-2009\n"
+"오현석 (hoh@redhat.com) 2010"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "시스템을 시작할 때 실행되는 서비스 설정"
+msgstr "시스템을 시작할 때 실행될 서비스 설정"
 
 #: system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -302,7 +299,7 @@ msgstr "시스템 서비스에 관한 정보 얻기  "
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "시스템 서비스에 대한 정보를 얻기 위해서는 인증이 필요합니다"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -312,10 +309,5 @@ msgstr "시스템 서비스 관리  "
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "시스템 서비스를 관리하기 위해서는 인증이 필요합니다"
 
-#~ msgid "System policy prevents access to system services information"
-#~ msgstr "시스템 정책은 시스템 서비스 정보로 액세스하지 못하게 합니다  "
-
-#~ msgid "System policy prevents management of system services"
-#~ msgstr "시스템 정책은 시스템 서비스를 관리하지 못하게 합니다   "
