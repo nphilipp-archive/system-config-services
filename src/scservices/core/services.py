@@ -544,9 +544,9 @@ class XinetdService(ChkconfigService):
         if not m or m.group("name") != self.name:
             print >> sys.stderr, "%s: unable to parse chkconfig output:\n" \
                                   "%s" % (self, output)
-            self.enabled = None
+            self._enabled = None
         else:
-            self.enabled = m.group("enabled") == "on"
+            self._enabled = m.group("enabled") == "on"
 
     def _get_enabled(self):
         if not hasattr(self, "_enabled"):
