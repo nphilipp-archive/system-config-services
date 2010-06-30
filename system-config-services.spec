@@ -14,7 +14,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.99.45
+Version: 0.99.46
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
@@ -113,6 +113,13 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Wed Jun 30 2010 Nils Philippsen <nils@redhat.com> - 0.99.46-1
+- require docs in enterprise builds
+
+* Fri Jun 25 2010 Nils Philippsen <nils@redhat.com>
+- don't needlessly trigger xinetd reloads (#583842)
+- make icon themeable
+
 * Tue Jun 22 2010 Nils Philippsen <nils@redhat.com> - 0.99.45-1
 - pick up translation updates
 
