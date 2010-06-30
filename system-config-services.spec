@@ -5,6 +5,13 @@
 %bcond_without polkit1
 %endif
 
+# Enterprise versions pull in docs automatically
+%if 0%{?rhel} > 0
+%bcond_without require_docs
+%else
+%bcond_with require_docs
+%endif
+
 Summary: Utility to start and stop system services
 Name: system-config-services
 Version: 0.99.45
@@ -37,6 +44,9 @@ Requires: python-slip-gtk
 # package system-config-services-docs. The following ensures that updating from
 # earlier versions gives you both the main package and documentation.
 Obsoletes: system-config-services < 0.99.29
+%if %{with require_docs}
+Requires: system-config-services-docs
+%endif
 
 %description
 system-config-services is a utility which allows you to configure which
