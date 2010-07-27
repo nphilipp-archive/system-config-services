@@ -7,19 +7,21 @@
 # Jayaradha N <njaya@redhat.com>, 2004, 2006.
 # Felix <ifelix@redhat.com>, 2006.
 # I. Felix <ifelix@redhat.com>, 2008, 2009.
+# I Felix <ifelix@redhat.com>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.ta\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2009-09-22 11:37+0530\n"
-"Last-Translator: I. Felix <ifelix@redhat.com>\n"
-"Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
+"PO-Revision-Date: 2010-07-27 11:51+0530\n"
+"Last-Translator: I Felix <ifelix@redhat.com>\n"
+"Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\\n\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\\n"
+"\n"
 "\n"
 "\n"
 
@@ -301,7 +303,7 @@ msgstr "கணினி சேவைகள் பற்றிய தகவலை
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "கணினி சேவைகளுக்கு தேவையான அங்கீகாரம் பற்றிய தகவலை எடுக்கிறது"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -311,7 +313,7 @@ msgstr "கணினி சேவைகளை நிர்வகி"
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "கணினி சேவைகளை நிர்வகிக்க அங்கீகாரம் தேவைப்படுகிறது"
 
 #~ msgid "System policy prevents access to system services information"
 #~ msgstr "கணினி பாலிசி கணினி சேவைகள் தகவலை அணுகுவதை தடுக்கிறது"
