@@ -1,64 +1,67 @@
 # English (British) translation.
 # Copyright (C) 2007 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same licence as the PACKAGE package.
 # Abigail Brady <morwen@evilmagic.org>, Bastien Nocera <hadess@hadess.net>, 2007.
-#
+# Bruce Cowan <bruce@bcowan.me.uk>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2007-06-13 16:14+0000\n"
-"Last-Translator: Abigail Brady <morwen@evilmagic.org>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2010-08-20 13:58+0100\n"
+"Last-Translator: Bruce Cowan <bruce@bcowan.me.uk>\n"
+"Language-Team: British English <en@li.org>\n"
+"Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.6.1\n"
 
 #: src/gui.py:125
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: src/gui.py:128
 msgid "Remarks"
-msgstr ""
+msgstr "Remarks"
 
 #: src/gui.py:196 src/gui.py:213
 msgid "This service is being refreshed right now."
-msgstr ""
+msgstr "This service is being refreshed right now."
 
 #: src/gui.py:197
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "Getting information about this service failed."
 
 #: src/gui.py:198
 msgid "This service is enabled."
-msgstr ""
+msgstr "This service is enabled."
 
 #: src/gui.py:199
 msgid "This service is disabled."
-msgstr ""
+msgstr "This service is disabled."
 
 #: src/gui.py:201
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr ""
+msgstr "This service is enabled in runlevels: %(runlevels)s"
 
 #: src/gui.py:214
 msgid "The status of this service is unknown."
-msgstr ""
+msgstr "The status of this service is unknown."
 
 #: src/gui.py:215
 msgid "This service is stopped."
-msgstr ""
+msgstr "This service is stopped."
 
 #: src/gui.py:216
 msgid "This service is running."
-msgstr ""
+msgstr "This service is running."
 
 #: src/gui.py:217
 msgid "This service is dead."
-msgstr ""
+msgstr "This service is dead."
 
 #: src/gui.py:298
 #, python-format
@@ -66,10 +69,12 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
+"The <b>%(servicename)s</b> service is started once, usually when the system "
+"is booted, runs in the background and wakes up when needed."
 
 #: src/gui.py:317
 msgid "This service is updated currently."
-msgstr ""
+msgstr "This service is updated currently."
 
 #: src/gui.py:344
 #, python-format
@@ -77,41 +82,49 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
+"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
+"service and ends when it has nothing more to do."
 
 #: src/gui.py:356
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
+"This service is enabled, but the <b>xinetd</b> package is not installed. "
+"This service does not work without it."
 
 #: src/gui.py:365
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
+"This service is enabled, but the <b>xinetd</b> service is not running. This "
+"service does not work without it."
 
 #: src/gui.py:782 src/system-config-services.glade.h:6
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr ""
+msgstr "Enable the <b>%(service)s</b> service in these runlevels:"
 
 #: src/gui.py:920
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
+"The help viewer could not be found. To be able to view help, the 'yelp' "
+"package needs to be installed."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
-msgstr ""
+msgstr "Customise Runlevels"
 
 #: src/system-config-services.glade.h:3
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
+msgstr "Customise the runlevels in which a service is enabled."
 
 #: src/system-config-services.glade.h:4
 msgid "Description"
@@ -119,27 +132,27 @@ msgstr "Description"
 
 #: src/system-config-services.glade.h:7
 msgid "No service selected."
-msgstr ""
+msgstr "No service selected."
 
 #: src/system-config-services.glade.h:8
 msgid "Runlevel 2"
-msgstr ""
+msgstr "Runlevel 2"
 
 #: src/system-config-services.glade.h:9
 msgid "Runlevel 3"
-msgstr ""
+msgstr "Runlevel 3"
 
 #: src/system-config-services.glade.h:10
 msgid "Runlevel 4"
-msgstr ""
+msgstr "Runlevel 4"
 
 #: src/system-config-services.glade.h:11
 msgid "Runlevel 5"
-msgstr ""
+msgstr "Runlevel 5"
 
 #: src/system-config-services.glade.h:12
 msgid "Runlevel _2"
-msgstr ""
+msgstr "Runlevel _2"
 
 #: src/system-config-services.glade.h:13
 msgid "Runlevel _3"
@@ -155,11 +168,11 @@ msgstr "Runlevel _5"
 
 #: src/system-config-services.glade.h:16
 msgid "S_top"
-msgstr ""
+msgstr "S_top"
 
 #: src/system-config-services.glade.h:17
 msgid "Ser_vice"
-msgstr ""
+msgstr "Ser_vice"
 
 #: src/system-config-services.glade.h:18
 msgid "Service Configuration"
@@ -167,12 +180,12 @@ msgstr "Service Configuration"
 
 #: src/system-config-services.glade.h:19
 msgid "Service Information"
-msgstr ""
+msgstr "Service Information"
 
 #: src/system-config-services.glade.h:21
 #, no-c-format
 msgid "Status of service %s:"
-msgstr ""
+msgstr "Status of service %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
@@ -190,22 +203,39 @@ msgid ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public Licence as published by the Free "
+"Software Foundation; either version 2 of the Licence, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public Licence for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public Licence along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 "
+"Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
 
 #: src/system-config-services.glade.h:29
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
 
 #: src/system-config-services.glade.h:30
 msgid "_About"
-msgstr ""
+msgstr "_About"
 
 #: src/system-config-services.glade.h:31
 msgid "_Contents"
@@ -213,15 +243,15 @@ msgstr "_Contents"
 
 #: src/system-config-services.glade.h:32
 msgid "_Customize"
-msgstr ""
+msgstr "_Customise"
 
 #: src/system-config-services.glade.h:33
 msgid "_Disable"
-msgstr ""
+msgstr "_Disable"
 
 #: src/system-config-services.glade.h:34
 msgid "_Enable"
-msgstr ""
+msgstr "_Enable"
 
 #: src/system-config-services.glade.h:35
 msgid "_Help"
@@ -229,24 +259,26 @@ msgstr "_Help"
 
 #: src/system-config-services.glade.h:36
 msgid "_Program"
-msgstr ""
+msgstr "_Program"
 
 #: src/system-config-services.glade.h:37
 msgid "_Restart"
-msgstr ""
+msgstr "_Restart"
 
 #: src/system-config-services.glade.h:38
 msgid "_Start"
-msgstr ""
+msgstr "_Start"
 
 #: src/system-config-services.glade.h:39
 msgid "system-config-services"
-msgstr ""
+msgstr "system-config-services"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:41
 msgid "translator-credits"
-msgstr ""
+msgstr "Abigail Brady <morwen@evilmagic.org>\n"
+"Bastien Nocera <hadess@hadess.net>\n"
+"Bruce Cowan <bruce@bcowan.me.uk>"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -263,22 +295,22 @@ msgstr "Services"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "Get information about system services"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "Getting information about system services requires authentication"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "Manage system services"
-msgstr ""
+msgstr "Manage system services"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
+msgstr "Managing system services requires authentication"
 
 #~ msgid "Enable"
 #~ msgstr "Enable"
