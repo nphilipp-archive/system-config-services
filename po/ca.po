@@ -247,11 +247,6 @@ msgstr "_Inicia"
 msgid "system-config-services"
 msgstr "system-config-services"
 
-#. TRANSLATORS: Replace this string with your names, one name per line.
-#: src/system-config-services.glade.h:41
-msgid "translator-credits"
-msgstr "Xavier Conde Rueda <xavi.conde@gmail.com>, 2009"
-
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
 msgstr "Configureu quins serveis s'executaran quan el sistema s'iniciï"
@@ -283,6 +278,13 @@ msgstr "L'obtenció d'informació quant al sistema necessita autenticació"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "La gestió dels serveis del sistema necessita autenticació"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: src/system-config-services.glade.h:41
+msgid "translator-credits"
+msgstr ""
+"Xavier Conde Rueda <xavi.conde@gmail.com>\r\n"
+"Robert Buj Gelonch <robert.buj@gmail.com>"
 
 #~ msgid "System policy prevents access to system services information"
 #~ msgstr "La política del sistema evita l'accès a la informació dels serveis del sistema"
