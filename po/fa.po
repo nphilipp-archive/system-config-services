@@ -1,19 +1,22 @@
 # Persian translation of system-config-services.
 # This file is distributed under the same license as the system-config-services package.
 # Copyright (C) 2003 Hedayat Vatankhah.
-# Hedayat Vatankhah <hedavat@mail15.com>, 2003, 2004.
 #
+# Hedayat Vatankhah <hedayat@fedoraproject.org>, 2003, 2004, 2010.
+# Mostafa <lashar@fedoraproject.org>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-24 12:19+0100\n"
-"PO-Revision-Date: 2010-09-05 20:32+0330\n"
-"Last-Translator: Mostafa <info@mostafadaneshvar.com>\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2010-09-23 03:03+0330\n"
+"Last-Translator: Hedayat Vatankhah <hedayat@fedoraproject.org>\n"
+"Language-Team: Persian <trans-fa@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: src/gui.py:125
 msgid "Name"
@@ -21,16 +24,16 @@ msgstr "نام"
 
 #: src/gui.py:128
 msgid "Remarks"
-msgstr "نشان ها"
+msgstr "نشان‌ها"
 
 #: src/gui.py:196
 #: src/gui.py:213
 msgid "This service is being refreshed right now."
-msgstr "این خدمت اکنون تازه شده است."
+msgstr "این خدمت اکنون در حال تازه‌شدن است."
 
 #: src/gui.py:197
 msgid "Getting information about this service failed."
-msgstr "گرفتن اطلاعات درباره ی این خدمت شکست خورد"
+msgstr "گرفتن اطلاعات درباره‌ی این خدمت شکست خورد."
 
 #: src/gui.py:198
 msgid "This service is enabled."
@@ -43,11 +46,11 @@ msgstr "این خدمت فعال نیست."
 #: src/gui.py:201
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr "این خدمت در سطح اجرایی فعال است:: %(runlevels)s"
+msgstr "این خدمت در این سطوح اجرایی فعال است:: %(runlevels)s"
 
 #: src/gui.py:214
 msgid "The status of this service is unknown."
-msgstr "وضعیت این خدمت نامعلوم است"
+msgstr "وضعیت این خدمت نامعلوم است."
 
 #: src/gui.py:215
 msgid "This service is stopped."
@@ -55,7 +58,7 @@ msgstr "این خدمت متوقف است."
 
 #: src/gui.py:216
 msgid "This service is running."
-msgstr "این خدمت درحال اجرا است."
+msgstr "این خدمت در حال اجرا است."
 
 #: src/gui.py:217
 msgid "This service is dead."
@@ -64,16 +67,16 @@ msgstr "این خدمت مرده است."
 #: src/gui.py:298
 #, python-format
 msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
-msgstr ""
+msgstr "خدمت <b>%(servicename)s</b> یک بار - معمولا هنگامی که سیستم راه‌اندازی می‌شود - آغاز می‌شود، در پس‌زمینه اجرا می‌شود و هنگامی که نیاز باشد بیدار می‌شود."
 
 #: src/gui.py:317
 msgid "This service is updated currently."
-msgstr "این خدمت اکنون به روز شده است"
+msgstr "این خدمت اکنون به روز شده است."
 
 #: src/gui.py:344
 #, python-format
 msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do."
-msgstr ""
+msgstr "خدمت <b>%(servicename)s</b> هنگامی که نیاز باشد به وسیله‌ی خدمت xinetd آغاز خواهد شد و هنگامی که کار دیگری برای انجام دادن نداشته باشد پایان می‌یابد."
 
 #: src/gui.py:356
 msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
@@ -87,7 +90,7 @@ msgstr ""
 #: src/system-config-services.glade.h:6
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr "فعال سازی <b>%(service)s</b> در این سطوح اجرایی:"
+msgstr "فعال‌سازی خدمت <b>%(service)s</b> در این سطوح اجرایی:"
 
 #: src/gui.py:920
 msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
@@ -95,15 +98,15 @@ msgstr ""
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr "حق تالیف © ۲۰۰۲-۲۰۰۹ ردهت و مشارکت کنندگان"
+msgstr "حق نشر © ۲۰۰۲-۲۰۰۹ ردهت و مشارکت کنندگان"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
-msgstr "تغییر سطح اجرا"
+msgstr "سفارشی‌سازی سطوح اجرایی"
 
 #: src/system-config-services.glade.h:3
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
+msgstr "سطوح اجرایی که در آن‌ها یک خدمت فعال است را سفارشی‌سازی کنید."
 
 #: src/system-config-services.glade.h:4
 msgid "Description"
@@ -115,19 +118,19 @@ msgstr "هیچ خدمتی انتخاب نشده است."
 
 #: src/system-config-services.glade.h:8
 msgid "Runlevel 2"
-msgstr "سطح اجرایی _۲"
+msgstr "سطح اجرایی ۲"
 
 #: src/system-config-services.glade.h:9
 msgid "Runlevel 3"
-msgstr "سطح اجرایی _۳"
+msgstr "سطح اجرایی ۳"
 
 #: src/system-config-services.glade.h:10
 msgid "Runlevel 4"
-msgstr "سطح اجرایی _۴"
+msgstr "سطح اجرایی ۴"
 
 #: src/system-config-services.glade.h:11
 msgid "Runlevel 5"
-msgstr "سطح اجرایی _۵"
+msgstr "سطح اجرایی ۵"
 
 #: src/system-config-services.glade.h:12
 msgid "Runlevel _2"
@@ -147,11 +150,11 @@ msgstr "سطح اجرایی _۵"
 
 #: src/system-config-services.glade.h:16
 msgid "S_top"
-msgstr "توقف"
+msgstr "_توقف"
 
 #: src/system-config-services.glade.h:17
 msgid "Ser_vice"
-msgstr "خدمت"
+msgstr "_خدمت"
 
 #: src/system-config-services.glade.h:18
 msgid "Service Configuration"
@@ -159,7 +162,7 @@ msgstr "پیکربندی خدمت"
 
 #: src/system-config-services.glade.h:19
 msgid "Service Information"
-msgstr "اطلاعات سرویس"
+msgstr "اطلاعات خدمت"
 
 #: src/system-config-services.glade.h:21
 #, no-c-format
@@ -178,11 +181,11 @@ msgstr ""
 
 #: src/system-config-services.glade.h:28
 msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
-msgstr ""
+msgstr "این خدمت یک بار - معمولا هنگامی که سیستم راه‌اندازی می‌شود - آغاز می‌شود، در پس‌زمینه اجرا می‌شود و هنگامی که نیاز باشد بیدار می‌شود."
 
 #: src/system-config-services.glade.h:29
 msgid "This service will be started on demand by the xinetd service and ends when it has nothing more to do."
-msgstr ""
+msgstr "این خدمت هنگامی که نیاز باشد به وسیله‌ی خدمت xinetd آغاز خواهد شد و هنگامی که کار دیگری برای انجام دادن نداشته باشد پایان می‌یابد."
 
 #: src/system-config-services.glade.h:30
 msgid "_About"
@@ -194,7 +197,7 @@ msgstr "_محتوا"
 
 #: src/system-config-services.glade.h:32
 msgid "_Customize"
-msgstr "ـ سفارشی"
+msgstr "_سفارشی‌سازی"
 
 #: src/system-config-services.glade.h:33
 msgid "_Disable"
@@ -210,28 +213,30 @@ msgstr "_راهنما"
 
 #: src/system-config-services.glade.h:36
 msgid "_Program"
-msgstr "_برنامه:"
+msgstr "_برنامه"
 
 #: src/system-config-services.glade.h:37
 msgid "_Restart"
-msgstr "_شروع مجدد"
+msgstr "ش_روع مجدد"
 
 #: src/system-config-services.glade.h:38
 msgid "_Start"
-msgstr "شروع"
+msgstr "_شروع"
 
 #: src/system-config-services.glade.h:39
 msgid "system-config-services"
-msgstr "مدیریت خدمات سیستم"
+msgstr "system-config-services"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:41
 msgid "translator-credits"
-msgstr "مترجم‌ها"
+msgstr ""
+"هدایت وطن‌خواه <hedayat@fedoraproject.org>"
+"مصطفی دانشور <lashar@fedoraproject.org>"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "پیکره بندی کنید کدام خدمات در هنگام شروع سیستم اجرا شوند"
+msgstr "خدمت‌هایی را که هنگام آغاز به کار سیستم در حال اجرا خواهند بود را پیکربندی کنید"
 
 #: system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -249,7 +254,7 @@ msgstr "دریافت اطلاعات درباره خدمات سیستم"
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "دریافت اطلاعات درباره خدمات سیستم نیازمند تأیید هویت است"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -259,7 +264,7 @@ msgstr "مدیریت خدمات سیستم"
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr "مدیریت خدمات سیستم به تصدیق نیاز دارد"
+msgstr "مدیریت خدمات سیستم به تأیید هویت نیاز دارد"
 
 #~ msgid "Start"
 #~ msgstr "آغاز"
