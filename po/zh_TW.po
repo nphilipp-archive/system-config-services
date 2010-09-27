@@ -250,7 +250,7 @@ msgstr "啟用(_E)"
 
 #: src/system-config-services.glade.h:35
 msgid "_Help"
-msgstr "說明(_H)"
+msgstr "求助(_H)"
 
 #: src/system-config-services.glade.h:36
 msgid "_Program"
