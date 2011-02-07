@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # gui.py
-# Copyright © 2008, 2009 Red Hat, Inc.
+# Copyright © 2008, 2009, 2011 Red Hat, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -997,7 +997,6 @@ class GUI(object):
         import scservices.dbus.proxy.services as services
         dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
         self._bus = slip.dbus.SystemBus()
-        self._bus.default_timeout = None
         return (serviceherders, services)
 
     def direct_init(self):
