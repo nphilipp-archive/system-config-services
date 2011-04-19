@@ -205,16 +205,18 @@ class SysVService(ChkconfigService):
     init_list_re = \
         re.compile(r"^(?P<name>\S+)\s+0:(?P<r0>off|on)\s+1:(?P<r1>off|on)\s+"
                     "2:(?P<r2>off|on)\s+3:(?P<r3>off|on)\s+4:(?P<r4>off|on)\s+"
-                    "5:(?P<r5>off|on)\s+6:(?P<r6>off|on)\s*$")
+                    "5:(?P<r5>off|on)\s+6:(?P<r6>off|on)\s*$", re.MULTILINE)
 
     no_chkconfig_re = \
-        re.compile(r"^service (?P<name>.*) does not support chkconfig$")
+        re.compile(r"^service (?P<name>.*) does not support chkconfig$",
+                re.MULTILINE)
     chkconfig_error_re = \
-        re.compile(r"^error reading information on service (?P<name>.*):.*$")
+        re.compile(r"^error reading information on service (?P<name>.*):.*$",
+                re.MULTILINE)
     chkconfig_unconfigured_re = \
         re.compile(r"^service (?P<name>.*) supports chkconfig, but is not "
                     "referenced in any runlevel "
-                    "\(run 'chkconfig --add (?P=name)'\)$")
+                    "\(run 'chkconfig --add (?P=name)'\)$", re.MULTILINE)
 
     _fallback_default_runlevels = set((2, 3, 4, 5))
 
@@ -270,20 +272,18 @@ class SysVService(ChkconfigService):
         output = cmd.output
 
         if exitcode != 0:
-            if self.no_chkconfig_re.match(output)\
-                 or self.chkconfig_error_re.match(output):
+            if self.no_chkconfig_re.search(output)\
+                 or self.chkconfig_error_re.search(output):
                 raise InvalidServiceException(output)
-            elif self.chkconfig_unconfigured_re.match(output):
+            elif self.chkconfig_unconfigured_re.search(output):
                 self.configured = False
                 return
             else:
-
                 # the service might have been deleted, let the herder take care
                 # of it
-
                 return
 
-        m = self.init_list_re.match(output)
+        m = self.init_list_re.search(output)
         if not m or m.group("name") != self.name:
             raise output
         runlevels = set()
@@ -495,7 +495,8 @@ class XinetdService(ChkconfigService):
 
     chkconfig_type = "xinetd"
 
-    xinetd_list_re = re.compile(r"^(?P<name>\S+)\s+(?P<enabled>off|on)\s*$")
+    xinetd_list_re = re.compile(r"^(?P<name>\S+)\s+(?P<enabled>off|on)\s*$",
+            re.MULTILINE)
 
     def __init__(self, name, mon, herder):
         super(XinetdService, self).__init__(name, mon, herder)
@@ -528,10 +529,10 @@ class XinetdService(ChkconfigService):
         output = cmd.output
 
         if exitcode != 0:
-            if self.no_chkconfig_re.match(output)\
-                 or self.chkconfig_error_re.match(output):
+            if self.no_chkconfig_re.search(output)\
+                 or self.chkconfig_error_re.search(output):
                 raise InvalidServiceException(output)
-            elif self.chkconfig_unconfigured_re.match(output):
+            elif self.chkconfig_unconfigured_re.search(output):
                 self.configured = False
                 return
             else:
@@ -540,7 +541,7 @@ class XinetdService(ChkconfigService):
 
                 return
 
-        m = self.xinetd_list_re.match(output)
+        m = self.xinetd_list_re.search(output)
         if not m or m.group("name") != self.name:
             print >> sys.stderr, "%s: unable to parse chkconfig output:\n" \
                                   "%s" % (self, output)
@@ -552,7 +553,6 @@ class XinetdService(ChkconfigService):
         if not hasattr(self, "_enabled"):
             self._enabled = None
         return self._enabled
-
     def _set_enabled(self, enabled):
         old_enabled = getattr(self, "_enabled", None)
         self._enabled = enabled
