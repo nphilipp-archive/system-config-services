@@ -553,6 +553,7 @@ class XinetdService(ChkconfigService):
         if not hasattr(self, "_enabled"):
             self._enabled = None
         return self._enabled
+
     def _set_enabled(self, enabled):
         old_enabled = getattr(self, "_enabled", None)
         self._enabled = enabled
