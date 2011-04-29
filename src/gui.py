@@ -38,9 +38,9 @@ import slip.dbus.polkit
 import slip.gtk
 
 import locale
+locale.setlocale(locale.LC_ALL, '')
+
 import gettext
-gettext.install("system-config-services",
-                codeset=locale.getpreferredencoding(), names=["gettext"])
 _ = lambda x: gettext.ldgettext("system-config-services", x)
 
 from scservices.core.legacy.serviceherders import SVC_ADDED, SVC_DELETED, \
