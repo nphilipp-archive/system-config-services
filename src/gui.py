@@ -197,7 +197,7 @@ _enabled_stock_id = {
     SVC_ENABLED_YES: gtk.STOCK_YES,
     SVC_ENABLED_NO: gtk.STOCK_NO,
     SVC_ENABLED_CUSTOM: gtk.STOCK_PREFERENCES,
-    'fixme': gtk.STOCK_DIALOG_QUESTION, # FIXME
+    'fixme': '', # FIXME
     'enabled': gtk.STOCK_YES,
     'active': gtk.STOCK_YES,
     'disabled': gtk.STOCK_NO,
