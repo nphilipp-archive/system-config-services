@@ -23,8 +23,13 @@
 """ system-config-services: This module contains GUI functionality. """
 
 import scservices.config as config
+from scservices.core.systemd.manager import SystemDManager
+from scservices.core.systemd.unit import SystemDService
+from scservices.core.systemd.util import check_systemd_active
 
 import os.path
+import sys
+
 import gobject
 import gtk
 import gtk.glade
@@ -192,6 +197,12 @@ _enabled_stock_id = {
     SVC_ENABLED_YES: gtk.STOCK_YES,
     SVC_ENABLED_NO: gtk.STOCK_NO,
     SVC_ENABLED_CUSTOM: gtk.STOCK_PREFERENCES,
+    'fixme': gtk.STOCK_DIALOG_QUESTION, # FIXME
+    'enabled': gtk.STOCK_YES,
+    'active': gtk.STOCK_YES,
+    'disabled': gtk.STOCK_NO,
+    'inactive': gtk.STOCK_NO,
+    'masked': gtk.STOCK_DIALOG_ERROR,
     }
 
 _enabled_text = {
@@ -201,6 +212,12 @@ _enabled_text = {
     SVC_ENABLED_NO: _("This service is disabled."),
     SVC_ENABLED_CUSTOM: \
             _("This service is enabled in runlevels: %(runlevels)s"),
+    'fixme': "Enabled, disabled, who knows?", # FIXME
+    'enabled': _("This service is enabled."),
+    'active': _("This service is enabled."),
+    'disabled': _("This service is disabled."),
+    'inactive': _("This service is disabled."),
+    'masked': _("This service is masked."),
     }
 
 _status_stock_id = {
@@ -209,6 +226,9 @@ _status_stock_id = {
     SVC_STATUS_STOPPED: gtk.STOCK_DISCONNECT,
     SVC_STATUS_RUNNING: gtk.STOCK_CONNECT,
     SVC_STATUS_DEAD: gtk.STOCK_DIALOG_WARNING,
+    'active': gtk.STOCK_CONNECT,
+    'inactive': gtk.STOCK_DISCONNECT,
+    'failed': gtk.STOCK_DIALOG_WARNING,
     }
 
 _status_text = {
@@ -217,7 +237,33 @@ _status_text = {
     SVC_STATUS_STOPPED: _("This service is stopped."),
     SVC_STATUS_RUNNING: _("This service is running."),
     SVC_STATUS_DEAD: _("This service is dead."),
+    'active': _("This service is active."),
+    'inactive': _("This service is inactive."),
+    'failed': _("This service has failed."),
     }
+
+def _systemd_active_sub_state_icon_text(active_state, sub_state):
+    if active_state == 'inactive':
+        icon = gtk.STOCK_DISCONNECT
+        text = _("This unit is inactive.")
+    elif active_state == 'active':
+        if sub_state == 'running':
+            icon = gtk.STOCK_MEDIA_PLAY
+            text = _("This unit is running.")
+        elif sub_state == 'exited':
+            icon = gtk.STOCK_MEDIA_STOP
+            text = _("This unit has finished.")
+        else:
+            icon = gtk.STOCK_CONNECT
+            text = _("This unit is active.")
+    elif active_state == 'failed':
+        icon = gtk.STOCK_DIALOG_WARNING
+        text = _("This unit has failed.")
+    else:
+        icon = gtk.STOCK_DIALOG_QUESTION
+        text = _("The state of this unit is unknown: %(active_state)s/%(sub_state)s") % locals()
+
+    return icon, text
 
 
 class GladeController(object):
@@ -248,9 +294,10 @@ class GUIServicesDetailsPainter(GladeController):
 
     def __new__(cls, serviceslist, service, *p, **k):
         if GUIServicesDetailsPainter._classes == None:
-            GUIServicesDetailsPainter._classes = \
-                {services.SysVService: GUISysVServicesDetailsPainter,
-                 services.XinetdService: GUIXinetdServicesDetailsPainter}
+            GUIServicesDetailsPainter._classes = {
+                    SystemDService: GUISystemDServicesDetailsPainter,
+                    services.SysVService: GUISysVServicesDetailsPainter,
+                    services.XinetdService: GUIXinetdServicesDetailsPainter}
 
         painter_class = None
 
@@ -276,6 +323,42 @@ class GUIServicesDetailsPainter(GladeController):
 
     def paint_details(self):
         raise NotImplementedError
+
+
+class GUISystemDServicesDetailsPainter(GUIServicesDetailsPainter):
+
+    """Details painter for systemd services"""
+
+    _xml_widgets = (
+        "SystemDServiceExplanationLabel",
+        "SystemDServiceEnabledIcon",
+        "SystemDServiceEnabledLabel",
+        "SystemDServiceStatusIcon",
+        "SystemDServiceStatusLabel",
+        "SystemDServiceDescriptionTextView",
+        )
+
+    def paint_details(self):
+        self.SystemDServiceExplanationLabel.set_markup(
+                _("The <b>%(servicename)s</b> service is managed by systemd. "
+                  "It may be started then run in the background, or be "
+                  "activated on demand, or run once for preparation or "
+                  "cleanup purposes.") % {'servicename': self.service.name})
+
+        enabled = 'fixme' # FIXME
+
+        self.SystemDServiceEnabledIcon.set_from_stock(
+                _enabled_stock_id[enabled], gtk.ICON_SIZE_MENU)
+        self.SystemDServiceEnabledLabel.set_text(_enabled_text[enabled])
+
+        icon, text = _systemd_active_sub_state_icon_text(
+                self.service.ActiveState, self.service.SubState)
+        self.SystemDServiceStatusIcon.set_from_stock(icon, gtk.ICON_SIZE_MENU)
+        self.SystemDServiceStatusLabel.set_text(text)
+
+        description = self.service.Description
+        self.SystemDServiceDescriptionTextView.get_buffer().set_text(
+                description)
 
 
 class GUISysVServicesDetailsPainter(GUIServicesDetailsPainter):
@@ -384,7 +467,9 @@ class GUIXinetdServicesDetailsPainter(GUIServicesDetailsPainter):
 class GUIServiceEntryPainter(object):
 
     def __new__(cls, serviceslist, service, *p, **k):
-        if isinstance(service, services.SysVService):
+        if isinstance(service, SystemDService):
+            return object.__new__(GUISystemDServiceEntryPainter)
+        elif isinstance(service, services.SysVService):
             return object.__new__(GUISysVServiceEntryPainter)
         elif isinstance(service, services.XinetdService):
             return object.__new__(GUIXinetdServiceEntryPainter)
@@ -398,6 +483,18 @@ class GUIServiceEntryPainter(object):
 
     def paint(self):
         raise NotImplementedError
+
+
+class GUISystemDServiceEntryPainter(GUIServiceEntryPainter):
+
+    def paint(self):
+        iter = self.treestore.service_iters[self.service]
+        self.treestore.set(iter, SVC_COL_ENABLED,
+                _enabled_stock_id['fixme']) # FIXME
+        self.treestore.set(iter, SVC_COL_STATUS,
+                _systemd_active_sub_state_icon_text(self.service.ActiveState,
+                    self.service.SubState)[0])
+        self.treestore.set(iter, SVC_COL_REMARK, self.service.Description)
 
 
 class GUISysVServiceEntryPainter(GUIServiceEntryPainter):
@@ -434,6 +531,7 @@ class GUIServicesList(GladeController):
     SVC_PAGE_NONE = 0
     SVC_PAGE_SYSV = 1
     SVC_PAGE_XINETD = 2
+    SVC_PAGE_SYSTEMD = 3
 
     _service_xml_widgets = (
         "serviceEnable",
@@ -463,7 +561,7 @@ class GUIServicesList(GladeController):
         "serviceRunlevel5",
         )
 
-    def __init__(self, xml, serviceherders):
+    def __init__(self, xml, serviceherders, systemd_manager):
         self.busy_cursor = gtk.gdk.Cursor(gtk.gdk.WATCH)
         self.inhibit_recursion = False
 
@@ -472,8 +570,6 @@ class GUIServicesList(GladeController):
         self.service_painters = {}
 
         super(GUIServicesList, self).__init__(xml)
-        self.serviceherders = set(serviceherders)
-        self.serviceherders_ready = set()
 
         self.runlevels_checkboxes = {
             2: self.serviceRunlevel2,
@@ -511,10 +607,49 @@ class GUIServicesList(GladeController):
 
         self.disable()
 
+        self.systemd_manager = systemd_manager
+        if systemd_manager:
+            systemd_manager.connect("unit_new", self.on_systemd_unit_new)
+            systemd_manager.connect("unit_removed",
+                    self.on_systemd_unit_removed)
+            systemd_manager.connect("discovery_started",
+                    self.on_systemd_manager_discovery_started)
+            systemd_manager.connect("discovery_finished",
+                    self.on_systemd_manager_discovery_finished)
+            if not systemd_manager.discovering:
+                # simulate systemd manager discovering already known units
+                for unit in systemd_manager.units.itervalues():
+                    self.on_unit_new(systemd_manager, unit)
+                self.on_systemd_discovery_finished(systemd_manager)
+
+        self.serviceherders = set(serviceherders)
+        self.serviceherders_ready = set()
+
         for herder in serviceherders:
             herder.subscribe(self.on_services_changed)
             if herder.ready:
                 self.on_service_herder_ready(herder)
+
+    def on_systemd_unit_new(self, manager, unit):
+        if isinstance(unit, SystemDService):
+            self.on_service_added(unit)
+
+    def on_systemd_unit_removed(self, manager, unit):
+        if isinstance(unit, SystemDService):
+            self.on_service_removed(unit)
+
+    def on_systemd_manager_discovery_started(self, manager):
+        pass
+
+    def on_systemd_manager_discovery_finished(self, manager):
+        self.enable_on_discovery_finished()
+
+    def enable_on_discovery_finished(self):
+        if self.serviceherders == self.serviceherders_ready and not (
+                self.systemd_manager and self.systemd_manager.discovering):
+            self.enable()
+        else:
+            self.disable()
 
     def _update_runlevel_menu(self):
         for rl in xrange(2, 6):
@@ -536,7 +671,10 @@ class GUIServicesList(GladeController):
         self.current_service = service
         if service:
             GUIServicesDetailsPainter(self, service).paint_details()
-        if isinstance(service, services.SysVService):
+        if isinstance(service, SystemDService):
+            self.servicesDetailsNotebook.set_current_page(
+                    self.SVC_PAGE_SYSTEMD)
+        elif isinstance(service, services.SysVService):
             self.servicesDetailsNotebook.set_current_page(self.SVC_PAGE_SYSV)
             self._update_runlevel_menu()
         elif isinstance(service, services.XinetdService):
@@ -546,9 +684,8 @@ class GUIServicesList(GladeController):
         self._set_widgets_sensitivity()
 
     def _set_widgets_sensitivity(self):
-        map(lambda x: \
-                self._set_service_widget_sensitive(x, self.current_service),
-                self._service_xml_widgets)
+        for widget in self._service_xml_widgets:
+            self._set_service_widget_sensitive(widget, self.current_service)
 
     def _set_service_widget_sensitive(self, wname, service):
         try:
@@ -566,13 +703,19 @@ class GUIServicesList(GladeController):
         sensitive = True
 
         if wname in ("serviceEnable", "serviceDisable"):
-            is_enabled = service.get_enabled()
+            if isinstance(service, services.Service):
+                is_enabled = service.get_enabled()
+            else:
+                is_enabled = 'fixme' # FIXME
+
             if is_enabled in (SVC_ENABLED_REFRESHING, SVC_ENABLED_ERROR):
                 sensitive = False
             elif wname == "serviceEnable":
-                sensitive = is_enabled != SVC_ENABLED_YES
+                sensitive = is_enabled not in (SVC_ENABLED_YES, 'enabled')
             elif wname == "serviceDisable":
-                sensitive = is_enabled != SVC_ENABLED_NO
+                sensitive = is_enabled not in (SVC_ENABLED_NO, 'disabled')
+            elif wname == "serviceMask":
+                sensitive = is_enabled != 'masked'
         elif wname in ("serviceCustomize", "serviceStart", "serviceStop",
                        "serviceRestart"):
             if isinstance(service, services.SysVService):
@@ -587,6 +730,14 @@ class GUIServicesList(GladeController):
                             SVC_STATUS_RUNNING)
                 elif wname == "serviceRestart":
                     sensitive = service.status == SVC_STATUS_RUNNING
+            elif isinstance(service, SystemDService):
+                astate = service.ActiveState
+                if wname == 'serviceCustomize':
+                    sensitive = False
+                elif wname == 'serviceStart':
+                    sensitive = astate != 'active'
+                elif wname not in ('serviceStop', 'serviceRestart'):
+                    sensitive = astate != 'inactive'
             else:
                 sensitive = False
         else:
@@ -623,11 +774,14 @@ class GUIServicesList(GladeController):
                 painter.paint()
 
     def on_service_added(self, service):
+        # eats legacy SysVService, XinetdService and new-style SystemDService
+        # instances
+
         self.servicesTreeStore.add_service(service)
         self.service_painters[service] = GUIServiceEntryPainter(self, service)
         self.service_painters[service].paint()
         if service.name == "xinetd" and isinstance(service,
-                services.SysVService):
+                (SystemDService, services.SysVService)):
             self.xinetd_service = service
             if isinstance(self.current_service, services.XinetdService):
                 GUIServicesDetailsPainter(self, self.current_service).\
@@ -735,8 +889,7 @@ class GUIServicesList(GladeController):
 
     def on_service_herder_ready(self, herder):
         self.serviceherders_ready.add(herder)
-        if self.serviceherders == self.serviceherders_ready:
-            self.enable()
+        self.enable_on_discovery_finished()
 
     def disable(self):
         self._enabled = False
@@ -817,7 +970,7 @@ class MainWindow(GladeController):
         "aboutDialog",
         )
 
-    def __init__(self, mainloop, serviceherders):
+    def __init__(self, mainloop, serviceherders, systemd_manager):
         if os.access("system-config-services.glade", os.R_OK):
             fd = open("system-config-services.glade", "r")
         else:
@@ -836,7 +989,7 @@ class MainWindow(GladeController):
         self.maincontext = mainloop.get_context()
 
         self.servicesList = GUIServicesList(xml=self.xml,
-                serviceherders=serviceherders)
+                serviceherders=serviceherders, systemd_manager=systemd_manager)
 
         self.toplevel = xml.get_widget("mainWindow")
         self.toplevel.connect("delete_event", self.on_programQuit_activate)
@@ -940,25 +1093,40 @@ class MainWindow(GladeController):
         return True
 
 
-class GUI(object):
+class UIController(object):
 
     polkit_actions = ("org.fedoraproject.config.services.info",
                       "org.fedoraproject.config.services.manage")
 
-    def __init__(self, use_dbus=True):
+    def __init__(self, use_dbus=None):
+        """Initialize a UIController object.
+
+use_dbus: Whether or not to access privileged functionality via the
+          system-config-services DBus mechanism. Passing None means to check if
+          the necessary PolicyKit authorizations are obtainable (in theory) and
+          fall back to direct access if they are not."""
+
         global serviceherders, services
 
         self.mainloop = gobject.MainLoop()
 
+        # We need DBus in all cases to access systemd
+        import dbus.mainloop.glib
+        import slip.dbus
+        dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
+        bus = slip.dbus.SystemBus()
+
         if use_dbus == None:
-            import dbus.mainloop.glib
-            import slip.dbus
-            dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
-            bus = slip.dbus.SystemBus()
             if slip.dbus.polkit.AreAuthorizationsObtainable(self.polkit_actions):
                 use_dbus = True
             else:
                 use_dbus = False
+
+        if check_systemd_active():
+            self.systemd_manager = systemd_manager = SystemDManager(bus,
+                    use_polkit=use_dbus)
+        else:
+            self.systemd_manager = systemd_manager = None
 
         serviceherders = None
         services = None
@@ -972,7 +1140,6 @@ class GUI(object):
                 self.use_dbus = False
 
         if not serviceherders or not services:
-            import sys
             if use_dbus != False:
                 print >> sys.stderr, "Setting up DBus connection failed."
             if use_dbus != True:
@@ -980,15 +1147,25 @@ class GUI(object):
             print >> sys.stderr, "Exiting."
             sys.exit(1)
 
+        if not systemd_manager:
+            print >> sys.stdout, "Couldn't acquire connection to systemd. Falling back to legacy SysV scheme."
+            herder_classes = serviceherders.herder_classes
+        else:
+            # filter out SysV service herder as systemd supplants its
+            # functionality
+            herder_classes = [ x for x in serviceherders.herder_classes
+                    if "sysv" not in x.__name__.lower() ]
+
         self.serviceherders = []
-        for cls in serviceherders.herder_classes:
+        for cls in herder_classes:
             if not self.use_dbus:
                 self.serviceherders.append(cls(mon=self._filemon))
             else:
                 self.serviceherders.append(cls(bus=self._bus))
 
         self.mainWindow = MainWindow(mainloop=self.mainloop,
-                                     serviceherders=self.serviceherders)
+                                     serviceherders=self.serviceherders,
+                                     systemd_manager=self.systemd_manager)
 
     def dbus_init(self):
         import dbus.mainloop.glib
@@ -1009,12 +1186,7 @@ class GUI(object):
                               gobject.IO_PRI, self._mon_handle_events)
         return (serviceherders, services)
 
-    def _mon_handle_events(
-        self,
-        source,
-        condition,
-        data=None,
-        ):
+    def _mon_handle_events(self, source, condition, data=None):
         self._filemon.handle_events()
         return True
 
@@ -1027,8 +1199,6 @@ class GUI(object):
 
 
 if __name__ == "__main__":
-    import sys
-
     if "--no-dbus" in sys.argv[1:]:
         use_dbus = False
     elif "--dbus" in sys.argv[1:]:
@@ -1036,4 +1206,4 @@ if __name__ == "__main__":
     else:
         use_dbus = None
 
-    GUI(use_dbus=use_dbus).run()
+    UIController(use_dbus=use_dbus).run()

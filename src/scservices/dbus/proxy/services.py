@@ -61,6 +61,9 @@ class DBusServiceProxy(object):
         return self._dbus_name
 
 
+Service = DBusServiceProxy
+
+
 class DBusChkconfigServiceProxy(DBusServiceProxy):
 
     def __init__(self, *p, **k):

@@ -29,8 +29,11 @@ import gamin
 import slip.dbus
 import slip.dbus.service
 
-from scservices.core.legacy.serviceherders import herder_classes
+from scservices.core.legacy.serviceherders import (
+        herder_classes as legacy_herder_classes)
 from scservices.dbus.service.serviceherder import DBusServiceHerder
+
+from scservices.core.systemd.manager import SystemDManager
 
 from scservices.dbus import dbus_service_name, dbus_service_path
 
@@ -46,7 +49,21 @@ def run_service(persistent=False):
     filemon = gamin.WatchMonitor()
     filemon_fd = filemon.get_fd()
 
+    try:
+        systemd_manager = SystemDManager(system_bus, use_polkit=False,
+                subscribe=True)
+    except:
+        systemd_manager = None
+
     dbus_herder_objects = []
+
+    if systemd_manager:
+        # ignore SysV services
+        herder_classes = [ x for x in legacy_herder_classes
+                if "sysv" not in x.__name__.lower() ]
+    else:
+        # assume systemd isn't running, revert to legacy style
+        herder_classes = legacy_herder_classes
 
     for herder_cls in herder_classes:
         herder = herder_cls(filemon)
