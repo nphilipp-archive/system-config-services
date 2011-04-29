@@ -73,7 +73,7 @@ class SystemDManager(gobject.GObject):
 
     def discover_units(self):
         self.discovering = True
-        self.emit("discovery_started")
+        self.emit('discovery_started')
         self.manager_interface.ListUnits(
                 reply_handler=self.on_discover_units_reply,
                 error_handler=self.on_discover_units_error)
@@ -84,11 +84,11 @@ class SystemDManager(gobject.GObject):
             self.on_unit_new(unit_id, unit_path)
 
         self.discovering = False
-        self.emit("discovery_finished")
+        self.emit('discovery_finished')
 
     def on_discover_units_error(self, *p, **k):
         self.discovering = False
-        self.emit("discovery_failed")
+        self.emit('discovery_failed')
 
     def on_unit_new(self, unit_id, unit_path):
         if unit_id in self.units:
@@ -99,7 +99,7 @@ class SystemDManager(gobject.GObject):
 
         self.units[unit_id] = new_unit
 
-        self.emit("unit_new", new_unit)
+        self.emit('unit_new', new_unit)
 
     def on_unit_removed(self, unit_id, unit_path):
         try:
@@ -108,26 +108,26 @@ class SystemDManager(gobject.GObject):
             # shield against units added/removed out of order
             pass
         else:
-            self.emit("unit_removed", removed_unit)
+            self.emit('unit_removed', removed_unit)
 
 systemd_manager_discovery_started_signal = (
-        gobject.signal_new("discovery_started", SystemDManager,
+        gobject.signal_new('discovery_started', SystemDManager,
             gobject.SIGNAL_RUN_LAST, gobject.TYPE_NONE, []))
 
 systemd_manager_discovery_finished_signal = (
-        gobject.signal_new("discovery_finished", SystemDManager,
+        gobject.signal_new('discovery_finished', SystemDManager,
             gobject.SIGNAL_RUN_LAST, gobject.TYPE_NONE, []))
 
 systemd_manager_discovery_failed_signal = (
-        gobject.signal_new("discovery_failed", SystemDManager,
+        gobject.signal_new('discovery_failed', SystemDManager,
             gobject.SIGNAL_RUN_LAST, gobject.TYPE_NONE, []))
 
 systemd_manager_unit_new_signal = (
-        gobject.signal_new("unit_new", SystemDManager,
+        gobject.signal_new('unit_new', SystemDManager,
             gobject.SIGNAL_RUN_LAST, gobject.TYPE_NONE, [gobject.TYPE_PYOBJECT]))
 
 systemd_manager_unit_removed_signal = (
-        gobject.signal_new("unit_removed", SystemDManager,
+        gobject.signal_new('unit_removed', SystemDManager,
             gobject.SIGNAL_RUN_LAST, gobject.TYPE_NONE, [gobject.TYPE_PYOBJECT]))
 
 if __name__ == '__main__':
@@ -149,8 +149,8 @@ if __name__ == '__main__':
     def on_discovery_failed(manager):
         print "%r: discovery failed" % manager
 
-    systemd_manager.connect("discovery_finished", on_discovery_finished)
-    systemd_manager.connect("discovery_failed", on_discovery_failed)
+    systemd_manager.connect('discovery_finished', on_discovery_finished)
+    systemd_manager.connect('discovery_failed', on_discovery_failed)
 
     def on_unit_new(manager, unit):
         print "%r: new unit %r" % (manager, unit)
@@ -158,8 +158,8 @@ if __name__ == '__main__':
     def on_unit_removed(manager, unit):
         print "%r: unit %r removed" % (manager, unit)
 
-    systemd_manager.connect("unit_new", on_unit_new)
-    systemd_manager.connect("unit_removed", on_unit_removed)
+    systemd_manager.connect('unit_new', on_unit_new)
+    systemd_manager.connect('unit_removed', on_unit_removed)
 
     slip.dbus.service.set_mainloop(mainloop)
 
