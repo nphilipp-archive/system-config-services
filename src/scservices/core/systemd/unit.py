@@ -64,7 +64,7 @@ class SystemDUnit(gobject.GObject):
 
     unit_type = 'unit'
 
-    __bus_instances = defaultdict(set)
+    __bus_instances = defaultdict(dict)
     __bus_signal_matches = {}
 
     unit_id_encoding_re = re.compile(r'\\x(?P<hexenc>[0-9A-Fa-f][0-9A-Fa-f])')
@@ -106,7 +106,10 @@ class SystemDUnit(gobject.GObject):
         self.properties_interface = dbus.Interface(self.bus_object,
                 constants.dbus.properties_interface)
 
-        SystemDUnit.__bus_instances[self.bus].add(self)
+        if SystemDUnit.__bus_instances[self.bus].has_key(bus_path):
+            raise ValueError("duplicate bus path: %s" % bus_path)
+
+        SystemDUnit.__bus_instances[self.bus][bus_path] = self
 
         # connecting to signals on each unit object would result in a
         # org.freedesktop.DBus.Error.LimitsExceeded error, so we won't do this:
@@ -117,15 +120,25 @@ class SystemDUnit(gobject.GObject):
         # but rather that instead (once for each bus):
 
         if self.bus not in SystemDUnit.__bus_signal_matches:
+            def on_properties_changed_for_bus(interface, changed_properties,
+                    invalidated_properties, unit_path):
+                SystemDUnit.on_properties_changed(self.bus, interface,
+                        changed_properties, invalidated_properties, unit_path)
+
             SystemDUnit.__bus_signal_matches[self.bus] = (
-                    self.bus.add_signal_receiver(SystemDUnit.on_properties_changed,
+                    self.bus.add_signal_receiver(
+                        on_properties_changed_for_bus,
                         path_keyword='unit_path',
                         signal_name='PropertiesChanged',
                         dbus_interface=constants.dbus.properties_interface,
                         bus_name=constants.dbus.service_name))
 
     def __del__(self):
-        SystemDUnit.__bus_instances[self.bus].remove(self)
+        # deal with exceptions raised in __init__()
+        if self.bus_path not in SystemDUnit.__bus_instances[self.bus]:
+            return
+
+        del SystemDUnit.__bus_instances[self.bus][self.bus_path]
         if not len(SystemDUnit.__bus_instances[self.bus]):
             SystemDUnit.__bus_signal_matches[self.bus].remove()
             del SystemDUnit.__bus_signal_matches[self.bus]
@@ -135,12 +148,13 @@ class SystemDUnit(gobject.GObject):
         return "%s '%s'%s" % (_repr[:-1], self.unit_id, _repr[-1:])
 
     @classmethod
-    def on_properties_changed(cls, interface, changed_properties,
+    def on_properties_changed(cls, bus, interface, changed_properties,
             invalidated_properties, unit_path):
         if interface != constants.dbus.unit_interface:
             return
-        print "on_properties_changed(%r[%s], %r, %r, %r, %r)" % (cls, id(cls), interface,
-                changed_properties, invalidated_properties, unit_path)
+        unit = SystemDUnit.__bus_instances[bus][unit_path]
+        unit.emit('properties_changed', interface, changed_properties,
+                invalidated_properties)
 
     @property
     def ActiveState(self):
@@ -185,6 +199,12 @@ class SystemDUnit(gobject.GObject):
                 return _("Error while getting description.")
             else:
                 raise
+
+systemd_unit_properties_changed_signal = (
+        gobject.signal_new('properties_changed', SystemDUnit,
+            gobject.SIGNAL_RUN_LAST, gobject.TYPE_NONE,
+            [gobject.TYPE_STRING, gobject.TYPE_PYOBJECT,
+                gobject.TYPE_PYOBJECT]))
 
 
 class SystemDAutomount(SystemDUnit):

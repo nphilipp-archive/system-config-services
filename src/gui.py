@@ -641,6 +641,7 @@ class GUIServicesList(GladeController):
     def on_systemd_unit_new(self, manager, unit):
         if isinstance(unit, SystemDService):
             self.on_service_added(unit)
+            unit.connect("properties_changed", self.on_unit_properties_changed)
 
     def on_systemd_unit_removed(self, manager, unit):
         if isinstance(unit, SystemDService):
@@ -864,6 +865,11 @@ class GUIServicesList(GladeController):
     def on_service_conf_updating(self, service):
         self.service_painters[service].paint()
         self._set_widgets_sensitivity()
+
+    def on_unit_properties_changed(self, unit, interface, changed_properties,
+            invalidated_properties):
+        self.on_service_conf_changed(unit)
+        self.on_service_status_changed(unit)
 
     def on_service_conf_changed(self, service):
         self.service_painters[service].paint()
