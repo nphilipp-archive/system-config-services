@@ -30,6 +30,9 @@ import gobject
 import dbus
 #import slip.dbus.polkit as polkit
 
+import gettext
+_ = lambda x: gettext.ldgettext('system-config-services', x)
+
 import constants.dbus
 
 class SystemDUnitTypelessError(ValueError):
@@ -141,23 +144,47 @@ class SystemDUnit(gobject.GObject):
 
     @property
     def ActiveState(self):
-        return self.properties_interface.Get(constants.dbus.unit_interface,
-                'ActiveState')
+        try:
+            return self.properties_interface.Get(constants.dbus.unit_interface,
+                    'ActiveState')
+        except dbus.DBusException, e:
+            if e.get_dbus_name() == 'org.freedesktop.DBus.Error.UnknownObject':
+                return 'unknown'
+            else:
+                raise
 
     @property
     def LoadState(self):
-        return self.properties_interface.Get(constants.dbus.unit_interface,
-                'LoadState')
+        try:
+            return self.properties_interface.Get(constants.dbus.unit_interface,
+                    'LoadState')
+        except dbus.DBusException, e:
+            if e.get_dbus_name() == 'org.freedesktop.DBus.Error.UnknownObject':
+                return 'unknown'
+            else:
+                raise
 
     @property
     def SubState(self):
-        return self.properties_interface.Get(constants.dbus.unit_interface,
-                'SubState')
+        try:
+            return self.properties_interface.Get(constants.dbus.unit_interface,
+                    'SubState')
+        except dbus.DBusException, e:
+            if e.get_dbus_name() == 'org.freedesktop.DBus.Error.UnknownObject':
+                return 'unknown'
+            else:
+                raise
 
     @property
     def Description(self):
-        return self.properties_interface.Get(constants.dbus.unit_interface,
-                'Description')
+        try:
+            return self.properties_interface.Get(constants.dbus.unit_interface,
+                    'Description')
+        except dbus.DBusException, e:
+            if e.get_dbus_name() == 'org.freedesktop.DBus.Error.UnknownObject':
+                return _("Error while getting description.")
+            else:
+                raise
 
 
 class SystemDAutomount(SystemDUnit):
