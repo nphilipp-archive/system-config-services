@@ -245,7 +245,10 @@ _status_text = {
 def _systemd_active_sub_state_icon_text(active_state, sub_state):
     if active_state == 'inactive':
         icon = gtk.STOCK_DISCONNECT
-        text = _("This unit is inactive.")
+        if sub_state == 'dead':
+            text = _("This unit is inactive.")
+        else:
+            text = _("This unit is inactive: %(sub_state)s") % locals()
     elif active_state == 'active':
         if sub_state == 'running':
             icon = gtk.STOCK_MEDIA_PLAY
@@ -255,10 +258,19 @@ def _systemd_active_sub_state_icon_text(active_state, sub_state):
             text = _("This unit has finished.")
         else:
             icon = gtk.STOCK_CONNECT
-            text = _("This unit is active.")
+            text = _("This unit is active: %(sub_state)s") % locals()
     elif active_state == 'failed':
         icon = gtk.STOCK_DIALOG_WARNING
-        text = _("This unit has failed.")
+        text = _("This unit has failed: %(sub_state)s") % locals()
+    elif active_state == 'activating':
+        icon = gtk.STOCK_MEDIA_FORWARD
+        if sub_state == 'start':
+            text = _("This unit is starting.")
+        else:
+            text = _("This unit is activating: %(sub_state)s") % locals()
+    elif active_state == 'deactivating':
+        icon = gtk.STOCK_MEDIA_NEXT
+        text = _("This unit is deactivating: %(sub_state)s") % locals()
     else:
         icon = gtk.STOCK_DIALOG_QUESTION
         text = _("The state of this unit is unknown: %(active_state)s/%(sub_state)s") % locals()
