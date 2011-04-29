@@ -25,7 +25,7 @@ import dbus.service
 import slip.dbus.service
 import slip.dbus.polkit as polkit
 
-import scservices.core.services as services
+import scservices.core.legacy.services as services
 
 from scservices.dbus import dbus_service_name
 

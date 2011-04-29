@@ -29,7 +29,7 @@ import gamin
 import slip.dbus
 import slip.dbus.service
 
-from scservices.core.serviceherders import herder_classes
+from scservices.core.legacy.serviceherders import herder_classes
 from scservices.dbus.service.serviceherder import DBusServiceHerder
 
 from scservices.dbus import dbus_service_name, dbus_service_path

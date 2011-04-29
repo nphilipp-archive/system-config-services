@@ -2,7 +2,7 @@
 
 # services.py: services
 #
-# Copyright © 2007 - 2009 Red Hat, Inc.
+# Copyright © 2007 - 2009, 2011 Red Hat, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -27,10 +27,10 @@ import re
 import gobject
 import gamin
 
-from util import getstatusoutput
-from asynccmd import AsyncCmdQueue
+from ..util import getstatusoutput
+from .asynccmd import AsyncCmdQueue
 
-from servicesinfo import SysVServiceInfo, XinetdServiceInfo, InvalidServiceInfoException
+from .servicesinfo import SysVServiceInfo, XinetdServiceInfo, InvalidServiceInfoException
 
 # make pydoc work by working around cyclic dependency
 
