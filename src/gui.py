@@ -374,10 +374,6 @@ class GUISysVServicesDetailsPainter(GUIServicesDetailsPainter):
         "sysVServiceDescriptionTextView",
         )
 
-    def __init__(self, serviceslist, service):
-        super(GUISysVServicesDetailsPainter, self).__init__(serviceslist,
-                service)
-
     def paint_details(self):
         self.sysVServiceExplanationLabel.set_markup(
                 _("The <b>%(servicename)s</b> service is started once, "
