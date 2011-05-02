@@ -825,6 +825,9 @@ class GUIServicesList(GladeController):
                     path_to_select = model.get_path(prev_iter)
         return path_to_select
 
+    def on_service_removed(self, service):
+        self.on_service_deleted(service)
+
     def on_service_deleted(self, service):
         if service == self.current_service:
             path_to_select = self.find_new_service_path_to_select()
