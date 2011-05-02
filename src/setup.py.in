@@ -3,9 +3,11 @@
 
 from distutils.core import setup
 
-setup(name="scservices", version="@VERSION@", packages=["scservices",
-      "scservices.core"])
+setup(name="scservices", version="@VERSION@",
+        packages=["scservices", "scservices.core",
+            "scservices.core.systemd", "scservices.core.systemd.constants",
+            "scservices.core.legacy"])
 
 setup(name="scservices.dbus", version="@VERSION@",
-      packages=["scservices.dbus" , "scservices.dbus.service",
-                "scservices.dbus.proxy"])
+        packages=["scservices.dbus" , "scservices.dbus.service",
+            "scservices.dbus.service.systemd", "scservices.dbus.proxy"])
