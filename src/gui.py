@@ -55,19 +55,13 @@ from scservices.core.legacy.services import SVC_STATUS_REFRESHING, \
 
 gtk.glade.bindtextdomain(config.domain)
 
-SVC_COL_SVC_OBJECT = 0
-SVC_COL_ENABLED = 1
-SVC_COL_STATUS = 2
-SVC_COL_NAME = 3
-SVC_COL_REMARK = 4
-SVC_COL_LAST = 5
-
+all_svc_columns = (SVC_COL_SVC_OBJECT, SVC_COL_STATUS, SVC_COL_NAME,
+        SVC_COL_REMARK) = range(4)
 
 class GUIServicesListStore(gtk.ListStore):
 
     col_types = {
         SVC_COL_SVC_OBJECT: gobject.TYPE_PYOBJECT,
-        SVC_COL_ENABLED: gobject.TYPE_STRING,
         SVC_COL_STATUS: gobject.TYPE_STRING,
         SVC_COL_NAME: gobject.TYPE_STRING,
         SVC_COL_REMARK: gobject.TYPE_STRING,
@@ -75,7 +69,7 @@ class GUIServicesListStore(gtk.ListStore):
 
     def __init__(self):
         col_types = []
-        for col in xrange(SVC_COL_LAST):
+        for col in all_svc_columns:
             col_types.append(self.col_types[col])
         gtk.ListStore.__init__(self, *col_types)
         self.set_default_sort_func(self._sort_by_name)
@@ -123,9 +117,6 @@ class GUIServicesTreeView(gtk.TreeView):
     COL_LAST = 7
 
     col_spec = {
-        SVC_COL_ENABLED: ["", gtk.CellRendererPixbuf, "stock_id",
-            False, False, False,
-            gtk.icon_size_lookup(gtk.ICON_SIZE_MENU)[0]],
         SVC_COL_STATUS: ["", gtk.CellRendererPixbuf, "stock_id",
             False, False, False,
             gtk.icon_size_lookup(gtk.ICON_SIZE_MENU)[0]],
@@ -144,7 +135,7 @@ class GUIServicesTreeView(gtk.TreeView):
 
         self.selection = self.get_selection()
 
-        for column in xrange(1, SVC_COL_LAST):
+        for column in xrange(1, len(all_svc_columns)):
             title = self.col_spec[column][self.COL_TITLE]
             cell_renderer = self.col_spec[column][self.COL_CELL_RENDERER]()
 
@@ -226,9 +217,6 @@ _status_stock_id = {
     SVC_STATUS_STOPPED: gtk.STOCK_DISCONNECT,
     SVC_STATUS_RUNNING: gtk.STOCK_CONNECT,
     SVC_STATUS_DEAD: gtk.STOCK_DIALOG_WARNING,
-    'active': gtk.STOCK_CONNECT,
-    'inactive': gtk.STOCK_DISCONNECT,
-    'failed': gtk.STOCK_DIALOG_WARNING,
     }
 
 _status_text = {
@@ -237,10 +225,20 @@ _status_text = {
     SVC_STATUS_STOPPED: _("This service is stopped."),
     SVC_STATUS_RUNNING: _("This service is running."),
     SVC_STATUS_DEAD: _("This service is dead."),
-    'active': _("This service is active."),
-    'inactive': _("This service is inactive."),
-    'failed': _("This service has failed."),
     }
+
+def _xinetd_enabled_icon_text(enabled):
+    xinetd_enabled_icon_text = {
+            SVC_ENABLED_REFRESHING: (gtk.STOCK_REFRESH,
+                _("This service is being refreshed right now.")),
+            SVC_ENABLED_ERROR: (gtk.STOCK_DIALOG_WARNING,
+                _("Getting information about this service failed.")),
+            SVC_ENABLED_YES: (gtk.STOCK_CONNECT, ("This service is enabled.")),
+            SVC_ENABLED_NO: (gtk.STOCK_DISCONNECT,
+                _("This service is disabled.")),
+        }
+
+    return xinetd_enabled_icon_text[enabled]
 
 def _systemd_active_sub_state_icon_text(active_state, sub_state):
     if active_state == 'inactive':
@@ -449,8 +447,10 @@ class GUIXinetdServicesDetailsPainter(GUIServicesDetailsPainter):
                     _("This service is enabled, but the <b>xinetd</b> package "
                     "is not installed. This service does not work without it."
                     ))
-        elif enabled == SVC_ENABLED_YES and xinetd_service.status != \
-                SVC_STATUS_RUNNING:
+        elif enabled == SVC_ENABLED_YES and (
+                isinstance(xinetd_service, SystemDService) and
+                xinetd_service.ActiveState != 'active' or
+                xinetd_service.status != SVC_STATUS_RUNNING):
             self.xinetdServiceEnabledIcon.set_from_stock(
                     gtk.STOCK_DIALOG_WARNING,
                     gtk.ICON_SIZE_MENU)
@@ -459,11 +459,10 @@ class GUIXinetdServicesDetailsPainter(GUIServicesDetailsPainter):
                       "service is not running. This service does not work "
                       "without it."))
         else:
-
-            self.xinetdServiceEnabledIcon.set_from_stock(
-                    _enabled_stock_id[enabled],
+            icon, text = _xinetd_enabled_icon_text(enabled)
+            self.xinetdServiceEnabledIcon.set_from_stock(icon,
                     gtk.ICON_SIZE_MENU)
-            self.xinetdServiceEnabledLabel.set_text(_enabled_text[enabled])
+            self.xinetdServiceEnabledLabel.set_text(text)
 
         if self.service.info.description:
             self.xinetdServiceDescriptionTextView.get_buffer().set_text(
@@ -497,8 +496,6 @@ class GUISystemDServiceEntryPainter(GUIServiceEntryPainter):
 
     def paint(self):
         iter = self.treestore.service_iters[self.service]
-        self.treestore.set(iter, SVC_COL_ENABLED,
-                _enabled_stock_id['fixme']) # FIXME
         self.treestore.set(iter, SVC_COL_STATUS,
                 _systemd_active_sub_state_icon_text(self.service.ActiveState,
                     self.service.SubState)[0])
@@ -509,8 +506,6 @@ class GUISysVServiceEntryPainter(GUIServiceEntryPainter):
 
     def paint(self):
         iter = self.treestore.service_iters[self.service]
-        self.treestore.set(iter, SVC_COL_ENABLED,
-                           _enabled_stock_id[self.service.get_enabled()])
         self.treestore.set(iter, SVC_COL_STATUS,
                            _status_stock_id[self.service.status])
         if self.service.info.shortdescription:
@@ -525,13 +520,14 @@ class GUIXinetdServiceEntryPainter(GUIServiceEntryPainter):
         enabled = self.service.get_enabled()
         xinetd_service = self.serviceslist.xinetd_service
         if enabled == SVC_ENABLED_YES and (not xinetd_service or
-                 xinetd_service.status != SVC_STATUS_RUNNING):
-            self.treestore.set(iter, SVC_COL_ENABLED,
+                isinstance(xinetd_service, SystemDService) and
+                xinetd_service.ActiveState != 'active' or
+                xinetd_service.status != SVC_STATUS_RUNNING):
+            self.treestore.set(iter, SVC_COL_STATUS,
                                gtk.STOCK_DIALOG_WARNING)
         else:
-            self.treestore.set(iter, SVC_COL_ENABLED,
-                               _enabled_stock_id[self.service.get_enabled()])
-        self.treestore.set(iter, SVC_COL_STATUS, None)
+            self.treestore.set(iter, SVC_COL_STATUS,
+                    _xinetd_enabled_icon_text(enabled)[0])
 
 
 class GUIServicesList(GladeController):
