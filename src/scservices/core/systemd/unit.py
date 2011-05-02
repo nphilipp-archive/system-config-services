@@ -200,6 +200,50 @@ class SystemDUnit(gobject.GObject):
             else:
                 raise
 
+    @property
+    def CanIsolate(self):
+        try:
+            return self.properties_interface.Get(constants.dbus.unit_interface,
+                    'CanIsolate')
+        except dbus.DBusException, e:
+            if e.get_dbus_name() == 'org.freedesktop.DBus.Error.UnknownObject':
+                return False
+            else:
+                raise
+
+    @property
+    def CanReload(self):
+        try:
+            return self.properties_interface.Get(constants.dbus.unit_interface,
+                    'CanReload')
+        except dbus.DBusException, e:
+            if e.get_dbus_name() == 'org.freedesktop.DBus.Error.UnknownObject':
+                return False
+            else:
+                raise
+
+    @property
+    def CanStart(self):
+        try:
+            return self.properties_interface.Get(constants.dbus.unit_interface,
+                    'CanStart')
+        except dbus.DBusException, e:
+            if e.get_dbus_name() == 'org.freedesktop.DBus.Error.UnknownObject':
+                return False
+            else:
+                raise
+
+    @property
+    def CanStop(self):
+        try:
+            return self.properties_interface.Get(constants.dbus.unit_interface,
+                    'CanStop')
+        except dbus.DBusException, e:
+            if e.get_dbus_name() == 'org.freedesktop.DBus.Error.UnknownObject':
+                return False
+            else:
+                raise
+
 systemd_unit_properties_changed_signal = (
         gobject.signal_new('properties_changed', SystemDUnit,
             gobject.SIGNAL_RUN_LAST, gobject.TYPE_NONE,

@@ -708,19 +708,17 @@ class GUIServicesList(GladeController):
         sensitive = True
 
         if wname in ("serviceEnable", "serviceDisable"):
-            if isinstance(service, services.Service):
-                is_enabled = service.get_enabled()
-            else:
-                is_enabled = 'fixme' # FIXME
-
-            if is_enabled in (SVC_ENABLED_REFRESHING, SVC_ENABLED_ERROR):
+            if isinstance(service, SystemDService):
                 sensitive = False
-            elif wname == "serviceEnable":
-                sensitive = is_enabled not in (SVC_ENABLED_YES, 'enabled')
-            elif wname == "serviceDisable":
-                sensitive = is_enabled not in (SVC_ENABLED_NO, 'disabled')
-            elif wname == "serviceMask":
-                sensitive = is_enabled != 'masked'
+            else:
+                is_enabled = service.get_enabled()
+
+                if is_enabled in (SVC_ENABLED_REFRESHING, SVC_ENABLED_ERROR):
+                    sensitive = False
+                elif wname == "serviceEnable":
+                    sensitive = is_enabled not in (SVC_ENABLED_YES, 'enabled')
+                elif wname == "serviceDisable":
+                    sensitive = is_enabled not in (SVC_ENABLED_NO, 'disabled')
         elif wname in ("serviceCustomize", "serviceStart", "serviceStop",
                        "serviceRestart"):
             if isinstance(service, services.SysVService):
@@ -740,9 +738,12 @@ class GUIServicesList(GladeController):
                 if wname == 'serviceCustomize':
                     sensitive = False
                 elif wname == 'serviceStart':
-                    sensitive = astate != 'active'
-                elif wname not in ('serviceStop', 'serviceRestart'):
-                    sensitive = astate != 'inactive'
+                    sensitive = service.CanStart and astate != 'active'
+                elif wname == 'serviceStop':
+                    sensitive = service.CanStop and astate != 'inactive'
+                elif wname == 'serviceRestart':
+                    sensitive = (service.CanStart and service.CanStop and
+                            astate != 'inactive')
             else:
                 sensitive = False
         else:
