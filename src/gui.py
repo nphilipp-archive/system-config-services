@@ -1027,6 +1027,7 @@ class MainWindow(GladeController):
 
         slip.gtk.label_set_autowrap(self.sysVServiceExplanationLabel)
         slip.gtk.label_set_autowrap(self.xinetdServiceExplanationLabel)
+        slip.gtk.label_set_autowrap(self.SystemDServiceExplanationLabel)
 
     # ## Callbacks
 
