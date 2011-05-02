@@ -188,7 +188,6 @@ _enabled_stock_id = {
     SVC_ENABLED_YES: gtk.STOCK_YES,
     SVC_ENABLED_NO: gtk.STOCK_NO,
     SVC_ENABLED_CUSTOM: gtk.STOCK_PREFERENCES,
-    'fixme': '', # FIXME
     'enabled': gtk.STOCK_YES,
     'active': gtk.STOCK_YES,
     'disabled': gtk.STOCK_NO,
@@ -203,7 +202,6 @@ _enabled_text = {
     SVC_ENABLED_NO: _("This service is disabled."),
     SVC_ENABLED_CUSTOM: \
             _("This service is enabled in runlevels: %(runlevels)s"),
-    'fixme': "Enabled, disabled, who knows?", # FIXME
     'enabled': _("This service is enabled."),
     'active': _("This service is enabled."),
     'disabled': _("This service is disabled."),
@@ -341,8 +339,6 @@ class GUISystemDServicesDetailsPainter(GUIServicesDetailsPainter):
 
     _xml_widgets = (
         "SystemDServiceExplanationLabel",
-        "SystemDServiceEnabledIcon",
-        "SystemDServiceEnabledLabel",
         "SystemDServiceStatusIcon",
         "SystemDServiceStatusLabel",
         "SystemDServiceDescriptionTextView",
@@ -354,12 +350,6 @@ class GUISystemDServicesDetailsPainter(GUIServicesDetailsPainter):
                   "It may be started then run in the background, or be "
                   "activated on demand, or run once for preparation or "
                   "cleanup purposes.") % {'servicename': self.service.name})
-
-        enabled = 'fixme' # FIXME
-
-        self.SystemDServiceEnabledIcon.set_from_stock(
-                _enabled_stock_id[enabled], gtk.ICON_SIZE_MENU)
-        self.SystemDServiceEnabledLabel.set_text(_enabled_text[enabled])
 
         icon, text = _systemd_active_sub_state_icon_text(
                 self.service.ActiveState, self.service.SubState)
