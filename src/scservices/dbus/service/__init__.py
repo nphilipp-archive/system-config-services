@@ -32,8 +32,10 @@ import slip.dbus.service
 from scservices.core.legacy.serviceherders import (
         herder_classes as legacy_herder_classes)
 from scservices.dbus.service.serviceherder import DBusServiceHerder
+from scservices.dbus.service.systemd.manager import DBusSystemDManager
 
 from scservices.core.systemd.manager import SystemDManager
+from scservices.core.systemd.constants.dbus import polkit_manager_path
 
 from scservices.dbus import dbus_service_name, dbus_service_path
 
@@ -55,9 +57,13 @@ def run_service(persistent=False):
     except:
         systemd_manager = None
 
-    dbus_herder_objects = []
+    dbus_objects = []
 
     if systemd_manager:
+        dbus_systemd_manager_object = DBusSystemDManager(name,
+               polkit_manager_path, systemd_manager, persistent=persistent)
+        dbus_objects.append(dbus_systemd_manager_object)
+
         # ignore SysV services
         herder_classes = [ x for x in legacy_herder_classes
                 if "sysv" not in x.__name__.lower() ]
@@ -70,7 +76,7 @@ def run_service(persistent=False):
         dbus_herder_object = DBusServiceHerder(name, dbus_service_path +
                  "/ServiceHerders/%s" % herder_cls.__name__,
                 herder, persistent=persistent)
-        dbus_herder_objects.append(dbus_herder_object)
+        dbus_objects.append(dbus_herder_object)
 
     def filemon_handle_events(source, condition, data=None):
         filemon.handle_events()

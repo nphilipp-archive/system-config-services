@@ -53,8 +53,11 @@ class SystemDManager(gobject.GObject):
 
         if use_polkit:
             self.polkit_bus_path = constants.dbus.polkit_manager_path
-            self.privileged_manager_interface = bus.get_object(
+            self.privileged_manager_object = bus.get_object(
                     constants.dbus.polkit_service_name, self.polkit_bus_path)
+            self.privileged_manager_interface = dbus.Interface(
+                    self.privileged_manager_object,
+                    constants.dbus.manager_interface)
         else:
             self.privileged_manager_interface = self.manager_interface
 
@@ -109,6 +112,19 @@ class SystemDManager(gobject.GObject):
             pass
         else:
             self.emit('unit_removed', removed_unit)
+
+    @polkit.enable_proxy
+    def RestartUnit(self, name, mode='replace'):
+        return self.privileged_manager_interface.RestartUnit(name, mode)
+
+    @polkit.enable_proxy
+    def StartUnit(self, name, mode='replace'):
+        return self.privileged_manager_interface.StartUnit(name, mode)
+
+    @polkit.enable_proxy
+    def StopUnit(self, name, mode='replace'):
+        return self.privileged_manager_interface.StopUnit(name, mode)
+
 
 systemd_manager_discovery_started_signal = (
         gobject.signal_new('discovery_started', SystemDManager,

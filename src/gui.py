@@ -995,6 +995,9 @@ class MainWindow(GladeController):
         self.servicesList = GUIServicesList(xml=self.xml,
                 serviceherders=serviceherders, systemd_manager=systemd_manager)
 
+        self.serviceherders = serviceherders
+        self.systemd_manager = systemd_manager
+
         self.toplevel = xml.get_widget("mainWindow")
         self.toplevel.connect("delete_event", self.on_programQuit_activate)
 
@@ -1059,17 +1062,26 @@ class MainWindow(GladeController):
     def on_serviceStart_activate(self, *args):
         service = self.servicesList.current_service
         if service:
-            service.start()
+            if isinstance(service, SystemDService):
+                self.systemd_manager.StartUnit(service.unit_id)
+            else:
+                service.start()
 
     def on_serviceStop_activate(self, *args):
         service = self.servicesList.current_service
         if service:
-            service.stop()
+            if isinstance(service, SystemDService):
+                self.systemd_manager.StopUnit(service.unit_id)
+            else:
+                service.stop()
 
     def on_serviceRestart_activate(self, *args):
         service = self.servicesList.current_service
         if service:
-            service.restart()
+            if isinstance(service, SystemDService):
+                self.systemd_manager.RestartUnit(service.unit_id)
+            else:
+                service.restart()
 
     def on_serviceInformation_activate(self, *args):
         print "MainWindow.on_serviceInformation_activate (%s)" % \
