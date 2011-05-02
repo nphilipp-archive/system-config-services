@@ -970,15 +970,18 @@ class ServiceRunlevelDialog(GladeController):
 class MainWindow(GladeController):
 
     _xml_widgets = (
-        # "serviceEnableButton",
-        # "serviceEnable_popupMenu",
-        "serviceRunlevelsDialog",
-        "helpContents",
-        "helpContentsButton",
-        "servicesDetailsNotebook",
-        "sysVServiceExplanationLabel",
-        "xinetdServiceExplanationLabel",
-        "aboutDialog",
+        # 'serviceEnableButton',
+        # 'serviceEnable_popupMenu',
+        'serviceCustomize',
+        'serviceCustomizeButton',
+        'serviceRunlevelsDialog',
+        'helpContents',
+        'helpContentsButton',
+        'servicesDetailsNotebook',
+        'sysVServiceExplanationLabel',
+        'xinetdServiceExplanationLabel',
+        'SystemDServiceExplanationLabel',
+        'aboutDialog',
         )
 
     def __init__(self, mainloop, serviceherders, systemd_manager):
@@ -1012,6 +1015,11 @@ class MainWindow(GladeController):
         # ... so we hide them
 
         self.servicesDetailsNotebook.set_show_tabs(False)
+
+        # hide SysV-specific stuff if running with systemd
+        if systemd_manager:
+            self.serviceCustomize.hide()
+            self.serviceCustomizeButton.hide()
 
         self.aboutDialog.set_name(config.name)
         self.aboutDialog.set_version(config.version)
