@@ -14,7 +14,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.99.47
+Version: 0.101.0
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
@@ -31,7 +31,6 @@ BuildRequires: desktop-file-utils
 Requires: chkconfig
 Requires: gamin-python
 Requires: hicolor-icon-theme
-Requires: initscripts
 Requires: pygtk2
 Requires: pygtk2-libglade
 Requires: python >= 2.3.0
@@ -47,6 +46,7 @@ Obsoletes: system-config-services < 0.99.29
 %if %{with require_docs}
 Requires: system-config-services-docs
 %endif
+Requires: systemd
 
 %description
 system-config-services is a utility which allows you to configure which
@@ -113,6 +113,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon May 02 2011 Nils Philippsen <nils@redhat.com> - 0.101.0-1
+- initial support for systemd
+
 * Tue Aug 24 2010 Nils Philippsen <nils@redhat.com> - 0.99.47-1
 - pick up translation updates
 
