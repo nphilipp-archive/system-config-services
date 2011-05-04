@@ -17,97 +17,178 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-24 12:19+0100\n"
+"POT-Creation-Date: 2011-05-04 17:07+0200\n"
 "PO-Revision-Date: 2010-03-09 18:54+0900\n"
 "Last-Translator: Hajime Taira <htaira@redhat.com>\n"
 "Language-Team: Japanese <jp@li.org>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/gui.py:125
+#: src/gui.py:123
 msgid "Name"
 msgstr "名前"
 
-#: src/gui.py:128
+#: src/gui.py:126
 msgid "Remarks"
 msgstr "メモ記録"
 
-#: src/gui.py:196
-#: src/gui.py:213
+#: src/gui.py:199 src/gui.py:221 src/gui.py:231
 msgid "This service is being refreshed right now."
 msgstr "このサービスは現在リフレッシュ中です。"
 
-#: src/gui.py:197
+#: src/gui.py:200 src/gui.py:233
 msgid "Getting information about this service failed."
 msgstr "このサービスについての情報取得に失敗しました。"
 
-#: src/gui.py:198
+#: src/gui.py:201 src/gui.py:205 src/gui.py:206
 msgid "This service is enabled."
 msgstr "このサービスは有効です。"
 
-#: src/gui.py:199
+#: src/gui.py:202 src/gui.py:207 src/gui.py:208 src/gui.py:236
 msgid "This service is disabled."
 msgstr "このサービスは無効です。"
 
-#: src/gui.py:201
+#: src/gui.py:204
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "このサービスはランレベル %(runlevels)s で有効です。"
 
-#: src/gui.py:214
+#: src/gui.py:209
+msgid "This service is masked."
+msgstr ""
+
+#: src/gui.py:222
 msgid "The status of this service is unknown."
 msgstr "このサービスの状態は不明です。"
 
-#: src/gui.py:215
+#: src/gui.py:223
 msgid "This service is stopped."
 msgstr "このサービスは停止しています。"
 
-#: src/gui.py:216
+#: src/gui.py:224
 msgid "This service is running."
 msgstr "このサービスは実行中です。"
 
-#: src/gui.py:217
+#: src/gui.py:225
 msgid "This service is dead."
 msgstr "このサービスは機能しません。"
 
-#: src/gui.py:298
-#, python-format
-msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
-msgstr "<b>%(servicename)s</b> サービスは一度開始しました。通常システムが起動した時に 背後で稼働して、必要な時に表面にでます。"
+#: src/gui.py:245
+msgid "This unit is inactive."
+msgstr ""
 
-#: src/gui.py:317
+#: src/gui.py:247
+#, python-format
+msgid "This unit is inactive: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:251
+msgid "This unit is running."
+msgstr ""
+
+#: src/gui.py:254
+msgid "This unit has finished."
+msgstr ""
+
+#: src/gui.py:257
+#, python-format
+msgid "This unit is active: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:260
+#, python-format
+msgid "This unit has failed: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:264
+msgid "This unit is starting."
+msgstr ""
+
+#: src/gui.py:266
+#, python-format
+msgid "This unit is activating: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:269
+#, python-format
+msgid "This unit is deactivating: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:272
+#, python-format
+msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
+msgstr ""
+
+#: src/gui.py:349
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is managed by systemd. It may be started "
+"then run in the background, or be activated on demand, or run once for "
+"preparation or cleanup purposes."
+msgstr ""
+
+#: src/gui.py:379
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is started once, usually when the system "
+"is booted, runs in the background and wakes up when needed."
+msgstr ""
+"<b>%(servicename)s</b> サービスは一度開始しました。通常システムが起動した時"
+"に 背後で稼働して、必要な時に表面にでます。"
+
+#: src/gui.py:398
 msgid "This service is updated currently."
 msgstr "このサービスは現在更新されています。"
 
-#: src/gui.py:344
+#: src/gui.py:425
 #, python-format
-msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do."
-msgstr "<b>%(servicename)s</b> サービスは要求に応じて xinetd サービスによって起動され、何もすることがなくなると終了します。"
+msgid ""
+"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
+"service and ends when it has nothing more to do."
+msgstr ""
+"<b>%(servicename)s</b> サービスは要求に応じて xinetd サービスによって起動さ"
+"れ、何もすることがなくなると終了します。"
 
-#: src/gui.py:356
-msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
-msgstr "このサービスは有効ですが、<b>xinetd</b>  パッケージがインストールされて いません。このサービスはこのパッケージがないと機能しません。"
+#: src/gui.py:437
+msgid ""
+"This service is enabled, but the <b>xinetd</b> package is not installed. "
+"This service does not work without it."
+msgstr ""
+"このサービスは有効ですが、<b>xinetd</b>  パッケージがインストールされて いま"
+"せん。このサービスはこのパッケージがないと機能しません。"
 
-#: src/gui.py:365
-msgid "This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."
-msgstr "このサービスは有効ですが、<b>xinetd</b> サービスが実行していません。 このサービスはそれがないと機能しません。"
+#: src/gui.py:448
+msgid ""
+"This service is enabled, but the <b>xinetd</b> service is not running. This "
+"service does not work without it."
+msgstr ""
+"このサービスは有効ですが、<b>xinetd</b> サービスが実行していません。 このサー"
+"ビスはそれがないと機能しません。"
 
-#: src/gui.py:782
-#: src/system-config-services.glade.h:6
+#: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "これらのランレベルで <b>%(service)s</b> サービスを有効にする:"
 
-#: src/gui.py:920
-msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
-msgstr "ヘルプビューアを見つけることができませんでした。ヘルプの表示をできるように するには、'yelp' パッケージをインストールする必要があります。"
+#: src/gui.py:1100
+msgid ""
+"The help viewer could not be found. To be able to view help, the 'yelp' "
+"package needs to be installed."
+msgstr ""
+"ヘルプビューアを見つけることができませんでした。ヘルプの表示をできるように す"
+"るには、'yelp' パッケージをインストールする必要があります。"
+
+#: src/scservices/core/systemd/unit.py:202
+msgid "Error while getting description."
+msgstr ""
 
 #: src/system-config-services.glade.h:1
-msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
+msgstr ""
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -180,70 +261,99 @@ msgstr "サービスの状態 %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
-msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
-msgstr "このサービスは一度開始しています。通常、システムが起動する時に背後で 稼働していて、必要な時に表面に出てきます。"
+msgid ""
+"This service is managed by systemd. It may be started then run in the "
+"background, or be activated on demand, or run once for preparation or "
+"cleanup purposes."
+msgstr ""
 
 #: src/system-config-services.glade.h:29
-msgid "This service will be started on demand by the xinetd service and ends when it has nothing more to do."
-msgstr "このサービスは要求に応じて xinetd サービスによって起動され、何もすることがなくなると終了します。"
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"このサービスは一度開始しています。通常、システムが起動する時に背後で 稼働して"
+"いて、必要な時に表面に出てきます。"
 
 #: src/system-config-services.glade.h:30
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+"このサービスは要求に応じて xinetd サービスによって起動され、何もすることがな"
+"くなると終了します。"
+
+#: src/system-config-services.glade.h:31
 msgid "_About"
 msgstr "情報（_A）"
 
-#: src/system-config-services.glade.h:31
+#: src/system-config-services.glade.h:32
 msgid "_Contents"
 msgstr "コンテンツ (_C)"
 
-#: src/system-config-services.glade.h:32
+#: src/system-config-services.glade.h:33
 msgid "_Customize"
 msgstr "カスタマイズ（_C）"
 
-#: src/system-config-services.glade.h:33
+#: src/system-config-services.glade.h:34
 msgid "_Disable"
 msgstr "無効（_D）"
 
-#: src/system-config-services.glade.h:34
+#: src/system-config-services.glade.h:35
 msgid "_Enable"
 msgstr "有効（_E）"
 
-#: src/system-config-services.glade.h:35
+#: src/system-config-services.glade.h:36
 msgid "_Help"
 msgstr "ヘルプ (_H)"
 
-#: src/system-config-services.glade.h:36
+#: src/system-config-services.glade.h:37
 msgid "_Program"
 msgstr "プログラム（_P）"
 
-#: src/system-config-services.glade.h:37
+#: src/system-config-services.glade.h:38
 msgid "_Restart"
 msgstr "再開始（_R）"
 
-#: src/system-config-services.glade.h:38
+#: src/system-config-services.glade.h:39
 msgid "_Start"
 msgstr "開始（_S）"
 
-#: src/system-config-services.glade.h:39
+#: src/system-config-services.glade.h:40
 msgid "system-config-services"
 msgstr "system-config-services"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: src/system-config-services.glade.h:41
+#: src/system-config-services.glade.h:42
 msgid "translator-credits"
 msgstr ""
 "SATO Satoru <ssato@redhat.com>, 2001,\n"
@@ -287,6 +397,9 @@ msgstr "システムサービスを管理"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "システムサービスを管理するには認証が必要です"
+
+#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+#~ msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
 
 #~ msgid "System policy prevents access to system services information"
 #~ msgstr "システムポリシーはシステムサービス情報へのアクセスを阻止しています"

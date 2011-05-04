@@ -12,65 +12,123 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.master.ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-24 12:19+0100\n"
+"POT-Creation-Date: 2011-05-04 17:07+0200\n"
 "PO-Revision-Date: 2011-02-02 15:17+0530\n"
 "Last-Translator: I Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
+"Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.1\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\\n"
-"\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\\n\n"
 "\n"
 "\n"
 
-#: src/gui.py:125
+#: src/gui.py:123
 msgid "Name"
 msgstr "பெயர்"
 
-#: src/gui.py:128
+#: src/gui.py:126
 msgid "Remarks"
 msgstr "குறிப்புகள்"
 
-#: src/gui.py:196 src/gui.py:213
+#: src/gui.py:199 src/gui.py:221 src/gui.py:231
 msgid "This service is being refreshed right now."
 msgstr "இந்த சேவை இப்போது புதுப்பிக்கப்பட்டது."
 
-#: src/gui.py:197
+#: src/gui.py:200 src/gui.py:233
 msgid "Getting information about this service failed."
 msgstr "இந்த சேவையை பற்றிய தகவலை பெற முடியவில்லை."
 
-#: src/gui.py:198
+#: src/gui.py:201 src/gui.py:205 src/gui.py:206
 msgid "This service is enabled."
 msgstr "இந்த சேவை செயல்படுத்தப்பட்டது."
 
-#: src/gui.py:199
+#: src/gui.py:202 src/gui.py:207 src/gui.py:208 src/gui.py:236
 msgid "This service is disabled."
 msgstr "இந்த சேவை செயல்நீக்கப்பட்டது."
 
-#: src/gui.py:201
+#: src/gui.py:204
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "இந்த சேவை இயக்கநிலைகளில் செயல்படுத்தப்பட்டது: %(runlevels)s"
 
-#: src/gui.py:214
+#: src/gui.py:209
+msgid "This service is masked."
+msgstr ""
+
+#: src/gui.py:222
 msgid "The status of this service is unknown."
 msgstr "இந்த சேவையின் நிலை தெரியாதது."
 
-#: src/gui.py:215
+#: src/gui.py:223
 msgid "This service is stopped."
 msgstr "இந்த சேவை நிறுத்தப்பட்டது."
 
-#: src/gui.py:216
+#: src/gui.py:224
 msgid "This service is running."
 msgstr "இந்த சேவை இயங்குகிறது."
 
-#: src/gui.py:217
+#: src/gui.py:225
 msgid "This service is dead."
 msgstr "இந்த சேவை முடக்கப்பட்டது"
 
-#: src/gui.py:298
+#: src/gui.py:245
+msgid "This unit is inactive."
+msgstr ""
+
+#: src/gui.py:247
+#, python-format
+msgid "This unit is inactive: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:251
+msgid "This unit is running."
+msgstr ""
+
+#: src/gui.py:254
+msgid "This unit has finished."
+msgstr ""
+
+#: src/gui.py:257
+#, python-format
+msgid "This unit is active: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:260
+#, python-format
+msgid "This unit has failed: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:264
+msgid "This unit is starting."
+msgstr ""
+
+#: src/gui.py:266
+#, python-format
+msgid "This unit is activating: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:269
+#, python-format
+msgid "This unit is deactivating: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:272
+#, python-format
+msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
+msgstr ""
+
+#: src/gui.py:349
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is managed by systemd. It may be started "
+"then run in the background, or be activated on demand, or run once for "
+"preparation or cleanup purposes."
+msgstr ""
+
+#: src/gui.py:379
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
@@ -79,11 +137,11 @@ msgstr ""
 "<b>%(servicename)s</b> சேவை துவங்கியதும், பொதுவாக கணினி துவக்கப்படும், பின்னணியில் "
 "இயங்கி தேவையானபோது எழுப்பப்படும்."
 
-#: src/gui.py:317
+#: src/gui.py:398
 msgid "This service is updated currently."
 msgstr "இந்த சேவை தற்போது மேம்படுத்தப்பட்டது"
 
-#: src/gui.py:344
+#: src/gui.py:425
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
@@ -92,7 +150,7 @@ msgstr ""
 "<b>%(servicename)s</b> சேவையானது xinetd சேவையின் வினவியதால் துவக்குகிறது மற்றும் "
 "எதுவும் செய்ய இல்லாத போது முடிக்கிறது."
 
-#: src/gui.py:356
+#: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
@@ -100,7 +158,7 @@ msgstr ""
 "இந்த சேவை செயல்படுத்தப்பட்டது, ஆனால் <b>xinetd</b> தொகுப்பு நிறுவப்படவில்லை. இந்த சேவை "
 "இது இல்லாமல் வேலை செய்யாது."
 
-#: src/gui.py:365
+#: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
@@ -108,20 +166,24 @@ msgstr ""
 "இந்த சேவை செயல்படுத்தப்பட்டது, ஆனால் <b>xinetd</b> சேவை இயங்கவில்லை. அது இல்லாமல் இது "
 "இயங்காது."
 
-#: src/gui.py:782 src/system-config-services.glade.h:6
+#: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "<b>%(service)s</b> சேவையை இந்த இயக்க நிலைகளில் செயல்படுத்தவும்:"
 
-#: src/gui.py:920
+#: src/gui.py:1100
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr "உதவி காட்டியை காணவில்லை. நீங்கள் உதவியை காண 'yelp' தொகுப்பை நிறுவ வேண்டும்."
 
+#: src/scservices/core/systemd/unit.py:202
+msgid "Error while getting description."
+msgstr ""
+
 #: src/system-config-services.glade.h:1
-msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
+msgstr ""
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -224,13 +286,20 @@ msgstr ""
 
 #: src/system-config-services.glade.h:28
 msgid ""
+"This service is managed by systemd. It may be started then run in the "
+"background, or be activated on demand, or run once for preparation or "
+"cleanup purposes."
+msgstr ""
+
+#: src/system-config-services.glade.h:29
+msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
 "சேவை துவங்கியதும், பொதுவாக கணினி துவக்கப்படும், பின்னணியில் இயங்கி தேவையானபோது "
 "எழுப்பப்படும்."
 
-#: src/system-config-services.glade.h:29
+#: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
@@ -238,48 +307,48 @@ msgstr ""
 "இந்த சேவையானது xinetd சேவையின் வினவியதால் துவக்குகறிது மற்றும் எதுவும் செய்ய இல்லாத "
 "போது முடிக்கிறது."
 
-#: src/system-config-services.glade.h:30
+#: src/system-config-services.glade.h:31
 msgid "_About"
 msgstr "பற்றி (_A)"
 
-#: src/system-config-services.glade.h:31
+#: src/system-config-services.glade.h:32
 msgid "_Contents"
 msgstr "உள்ளடக்கங்கள் (_C)"
 
-#: src/system-config-services.glade.h:32
+#: src/system-config-services.glade.h:33
 msgid "_Customize"
 msgstr "தனிபயன் (_C)"
 
-#: src/system-config-services.glade.h:33
+#: src/system-config-services.glade.h:34
 msgid "_Disable"
 msgstr "செயல்நீக்கு (_D)"
 
-#: src/system-config-services.glade.h:34
+#: src/system-config-services.glade.h:35
 msgid "_Enable"
 msgstr "செயல்படுத்து (_E)"
 
-#: src/system-config-services.glade.h:35
+#: src/system-config-services.glade.h:36
 msgid "_Help"
 msgstr "உதவி (_H)"
 
-#: src/system-config-services.glade.h:36
+#: src/system-config-services.glade.h:37
 msgid "_Program"
 msgstr "நிரல் (_P)"
 
-#: src/system-config-services.glade.h:37
+#: src/system-config-services.glade.h:38
 msgid "_Restart"
 msgstr "மறுதுவக்கம் (_R)"
 
-#: src/system-config-services.glade.h:38
+#: src/system-config-services.glade.h:39
 msgid "_Start"
 msgstr "துவக்கு (_S)"
 
-#: src/system-config-services.glade.h:39
+#: src/system-config-services.glade.h:40
 msgid "system-config-services"
 msgstr "system-config-services"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: src/system-config-services.glade.h:41
+#: src/system-config-services.glade.h:42
 msgid "translator-credits"
 msgstr "I. Felix <ifelix@redhat.com> 2008"
 
@@ -314,6 +383,9 @@ msgstr "கணினி சேவைகளை நிர்வகி"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "கணினி சேவைகளை நிர்வகிக்க அங்கீகாரம் தேவைப்படுகிறது"
+
+#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+#~ msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
 
 #~ msgid "System policy prevents access to system services information"
 #~ msgstr "கணினி பாலிசி கணினி சேவைகள் தகவலை அணுகுவதை தடுக்கிறது"

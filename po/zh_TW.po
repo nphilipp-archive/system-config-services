@@ -12,62 +12,121 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zh_TW\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-24 12:19+0100\n"
+"POT-Creation-Date: 2011-05-04 17:07+0200\n"
 "PO-Revision-Date: 2010-04-12 10:14+1000\n"
 "Last-Translator: Terry Chuang <tchuang at redhat>\n"
 "Language-Team: Traditional Chinese <zh_TW@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.1\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: src/gui.py:125
+#: src/gui.py:123
 msgid "Name"
 msgstr "名稱"
 
-#: src/gui.py:128
+#: src/gui.py:126
 msgid "Remarks"
 msgstr "備注"
 
-#: src/gui.py:196 src/gui.py:213
+#: src/gui.py:199 src/gui.py:221 src/gui.py:231
 msgid "This service is being refreshed right now."
 msgstr "服務現在正在更新。"
 
-#: src/gui.py:197
+#: src/gui.py:200 src/gui.py:233
 msgid "Getting information about this service failed."
 msgstr "正在取得有關於這項服務失敗的相關資訊。"
 
-#: src/gui.py:198
+#: src/gui.py:201 src/gui.py:205 src/gui.py:206
 msgid "This service is enabled."
 msgstr "服務已啟用。"
 
-#: src/gui.py:199
+#: src/gui.py:202 src/gui.py:207 src/gui.py:208 src/gui.py:236
 msgid "This service is disabled."
 msgstr "服務已停用。"
 
-#: src/gui.py:201
+#: src/gui.py:204
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "服務已啟用於 runlevel：%(runlevels)s"
 
-#: src/gui.py:214
+#: src/gui.py:209
+msgid "This service is masked."
+msgstr ""
+
+#: src/gui.py:222
 msgid "The status of this service is unknown."
 msgstr "這項服務的狀態不明。"
 
-#: src/gui.py:215
+#: src/gui.py:223
 msgid "This service is stopped."
 msgstr "這項服務已停止。"
 
-#: src/gui.py:216
+#: src/gui.py:224
 msgid "This service is running."
 msgstr "這項服務正在執行。"
 
-#: src/gui.py:217
+#: src/gui.py:225
 msgid "This service is dead."
 msgstr "這項服務已終止。"
 
-#: src/gui.py:298
+#: src/gui.py:245
+msgid "This unit is inactive."
+msgstr ""
+
+#: src/gui.py:247
+#, python-format
+msgid "This unit is inactive: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:251
+msgid "This unit is running."
+msgstr ""
+
+#: src/gui.py:254
+msgid "This unit has finished."
+msgstr ""
+
+#: src/gui.py:257
+#, python-format
+msgid "This unit is active: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:260
+#, python-format
+msgid "This unit has failed: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:264
+msgid "This unit is starting."
+msgstr ""
+
+#: src/gui.py:266
+#, python-format
+msgid "This unit is activating: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:269
+#, python-format
+msgid "This unit is deactivating: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:272
+#, python-format
+msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
+msgstr ""
+
+#: src/gui.py:349
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is managed by systemd. It may be started "
+"then run in the background, or be activated on demand, or run once for "
+"preparation or cleanup purposes."
+msgstr ""
+
+#: src/gui.py:379
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
@@ -76,11 +135,11 @@ msgstr ""
 "<b>%(servicename)s</b> 這項服務一般會在系統開機時啟用，執行於背景中並且會視需"
 "求啟動。"
 
-#: src/gui.py:317
+#: src/gui.py:398
 msgid "This service is updated currently."
 msgstr "這項服務目前已更新。"
 
-#: src/gui.py:344
+#: src/gui.py:425
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
@@ -89,7 +148,7 @@ msgstr ""
 "<b>%(servicename)s</b> 服務將會依照需求由 xinetd 服務啟用並且在沒有其它工作之"
 "後便會結束。"
 
-#: src/gui.py:356
+#: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
@@ -97,7 +156,7 @@ msgstr ""
 "這項服務已啟用，不過 <b>xinetd</b> 套件尚未安裝。這項服務無法在沒有此套件的情"
 "況下運作。"
 
-#: src/gui.py:365
+#: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
@@ -105,20 +164,24 @@ msgstr ""
 "這項服務已啟用，不過 <b>xinetd</b> 服務尚未被執行。這項服務無法在沒有此套件的"
 "情況下運作。"
 
-#: src/gui.py:782 src/system-config-services.glade.h:6
+#: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "在這些 runlevel 中啟用 <b>%(service)s</b> 服務："
 
-#: src/gui.py:920
+#: src/gui.py:1100
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr "無法找到說明檢視器。若要檢視說明，您必須安裝「yelp」套件。"
 
+#: src/scservices/core/systemd/unit.py:202
+msgid "Error while getting description."
+msgstr ""
+
 #: src/system-config-services.glade.h:1
-msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr "Copyright © 2002-2009 Red Hat, Inc. 以及所有貢獻人員"
+msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
+msgstr ""
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -218,58 +281,66 @@ msgstr ""
 
 #: src/system-config-services.glade.h:28
 msgid ""
+"This service is managed by systemd. It may be started then run in the "
+"background, or be activated on demand, or run once for preparation or "
+"cleanup purposes."
+msgstr ""
+
+#: src/system-config-services.glade.h:29
+msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr "服務一般在系統開機時便會被啟用，執行於背景中，並且會視需求被啟動。"
 
-#: src/system-config-services.glade.h:29
+#: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr "這項服務將可依照需求由 xinetd 服務來啟用，並且當沒有其它工作之後便會結束。"
+msgstr ""
+"這項服務將可依照需求由 xinetd 服務來啟用，並且當沒有其它工作之後便會結束。"
 
-#: src/system-config-services.glade.h:30
+#: src/system-config-services.glade.h:31
 msgid "_About"
 msgstr "關於(_A)"
 
-#: src/system-config-services.glade.h:31
+#: src/system-config-services.glade.h:32
 msgid "_Contents"
 msgstr "內容(_C)"
 
-#: src/system-config-services.glade.h:32
+#: src/system-config-services.glade.h:33
 msgid "_Customize"
 msgstr "自訂化(_C)"
 
-#: src/system-config-services.glade.h:33
+#: src/system-config-services.glade.h:34
 msgid "_Disable"
 msgstr "停用(_D)"
 
-#: src/system-config-services.glade.h:34
+#: src/system-config-services.glade.h:35
 msgid "_Enable"
 msgstr "啟用(_E)"
 
-#: src/system-config-services.glade.h:35
+#: src/system-config-services.glade.h:36
 msgid "_Help"
 msgstr "求助(_H)"
 
-#: src/system-config-services.glade.h:36
+#: src/system-config-services.glade.h:37
 msgid "_Program"
 msgstr "程式(_P)"
 
-#: src/system-config-services.glade.h:37
+#: src/system-config-services.glade.h:38
 msgid "_Restart"
 msgstr "重新啟動(_R)"
 
-#: src/system-config-services.glade.h:38
+#: src/system-config-services.glade.h:39
 msgid "_Start"
 msgstr "開始(_S)"
 
-#: src/system-config-services.glade.h:39
+#: src/system-config-services.glade.h:40
 msgid "system-config-services"
 msgstr "system-config-services"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: src/system-config-services.glade.h:41
+#: src/system-config-services.glade.h:42
 msgid "translator-credits"
 msgstr "譯者姓名：莊佳儒（tchuang@redhat.com，2009）"
 
@@ -305,3 +376,5 @@ msgstr "管理系統服務"
 msgid "Managing system services requires authentication"
 msgstr "管理需要進行驗證的系統服務"
 
+#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+#~ msgstr "Copyright © 2002-2009 Red Hat, Inc. 以及所有貢獻人員"

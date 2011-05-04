@@ -9,10 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ml\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-24 12:19+0100\n"
+"POT-Creation-Date: 2011-05-04 17:07+0200\n"
 "PO-Revision-Date: 2010-04-14 10:57+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,52 +24,110 @@ msgstr ""
 "\n"
 "\n"
 
-#: src/gui.py:125
+#: src/gui.py:123
 msgid "Name"
 msgstr "പേരു്"
 
-#: src/gui.py:128
+#: src/gui.py:126
 msgid "Remarks"
 msgstr "നിരൂപണങ്ങള്‍"
 
-#: src/gui.py:196 src/gui.py:213
+#: src/gui.py:199 src/gui.py:221 src/gui.py:231
 msgid "This service is being refreshed right now."
 msgstr "ഈ സര്‍വീസ് നിലവില്‍ പരിഷ്കരിക്കപ്പെടുന്നു."
 
-#: src/gui.py:197
+#: src/gui.py:200 src/gui.py:233
 msgid "Getting information about this service failed."
 msgstr "ഈ സര്‍വീസ് സംബന്ധിച്ചുള്ള വിവരം ലഭിക്കുവാന്‍ സാധ്യമായില്ല."
 
-#: src/gui.py:198
+#: src/gui.py:201 src/gui.py:205 src/gui.py:206
 msgid "This service is enabled."
 msgstr "ഈ സര്‍വീസ് പ്രവര്‍ത്തന സജ്ജമാണു്."
 
-#: src/gui.py:199
+#: src/gui.py:202 src/gui.py:207 src/gui.py:208 src/gui.py:236
 msgid "This service is disabled."
 msgstr "ഈ സര്‍വീസ് പ്രവര്‍ത്തന രഹിതമാണു്."
 
-#: src/gui.py:201
+#: src/gui.py:204
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "ഈ സര്‍വീസുകള്‍ റണ്‍ലവലുകളില്‍ പ്രവര്‍ത്തന സജ്ജമാണു്: %(runlevels)s"
 
-#: src/gui.py:214
+#: src/gui.py:209
+msgid "This service is masked."
+msgstr ""
+
+#: src/gui.py:222
 msgid "The status of this service is unknown."
 msgstr "ഈ സര്‍വീസിന്റെ അവസ്ഥ അപരിചിതമാണു്."
 
-#: src/gui.py:215
+#: src/gui.py:223
 msgid "This service is stopped."
 msgstr "ഈ സര്‍വീസ് നിര്‍ത്തിയിരിക്കുന്നു."
 
-#: src/gui.py:216
+#: src/gui.py:224
 msgid "This service is running."
 msgstr "ഈ സര്‍വീസ് പ്രവര്‍ത്തനത്തിലാണു്."
 
-#: src/gui.py:217
+#: src/gui.py:225
 msgid "This service is dead."
 msgstr "ഈ സര്‍വീസ് നിര്‍ജ്ജീവമാണു്."
 
-#: src/gui.py:298
+#: src/gui.py:245
+msgid "This unit is inactive."
+msgstr ""
+
+#: src/gui.py:247
+#, python-format
+msgid "This unit is inactive: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:251
+msgid "This unit is running."
+msgstr ""
+
+#: src/gui.py:254
+msgid "This unit has finished."
+msgstr ""
+
+#: src/gui.py:257
+#, python-format
+msgid "This unit is active: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:260
+#, python-format
+msgid "This unit has failed: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:264
+msgid "This unit is starting."
+msgstr ""
+
+#: src/gui.py:266
+#, python-format
+msgid "This unit is activating: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:269
+#, python-format
+msgid "This unit is deactivating: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:272
+#, python-format
+msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
+msgstr ""
+
+#: src/gui.py:349
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is managed by systemd. It may be started "
+"then run in the background, or be activated on demand, or run once for "
+"preparation or cleanup purposes."
+msgstr ""
+
+#: src/gui.py:379
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
@@ -77,11 +136,11 @@ msgstr ""
 "സിസ്റ്റം ബൂട്ട് ചെയ്യുമ്പോള്‍ <b>%(servicename)s</b> സര്‍വീസ് ഒരിക്കല്‍ ആരംഭിക്കുന്നു. ശേഷം "
 "പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിക്കുന്നു, ആവശ്യമുള്ളപ്പോള്‍ പ്രത്യക്ഷത്തില്‍ വരുന്നു."
 
-#: src/gui.py:317
+#: src/gui.py:398
 msgid "This service is updated currently."
 msgstr "ഈ സര്‍വീസ് നിലവില്‍ പരിഷ്കരിക്കപ്പെടുന്നു."
 
-#: src/gui.py:344
+#: src/gui.py:425
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
@@ -90,7 +149,7 @@ msgstr ""
 "xinetd സര്‍വീസിന്റെ ആവശ്യപ്രകാരം <b>%(servicename)s</b> ആരംഭിക്കുന്നു. എല്ലാ പ്രക്രിയകളും "
 "അവസാനിക്കുമ്പോള്‍ ഈ സര്‍വീസ് അവസാനിക്കുന്നു."
 
-#: src/gui.py:356
+#: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
@@ -98,18 +157,19 @@ msgstr ""
 "ഈ സര്‍വീസ് സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് ഇന്‍സ്റ്റോള്‍ അല്ലാത്തതിനാല്‍ ഈ സര്‍വീസ് "
 "പ്രവര്‍ത്തിക്കുന്നതല്ല."
 
-#: src/gui.py:365
+#: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr "ഈ സര്‍വീസ് സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സര്‍വീസ് പ്രവര്‍ത്തിക്കുന്നതല്ല."
+msgstr ""
+"ഈ സര്‍വീസ് സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സര്‍വീസ് പ്രവര്‍ത്തിക്കുന്നതല്ല."
 
-#: src/gui.py:782 src/system-config-services.glade.h:6
+#: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "ഈ റണ്‍ലവലുകളില്‍ <b>%(service)s</b> സര്‍വീസ് സജ്ജമാക്കുക:"
 
-#: src/gui.py:920
+#: src/gui.py:1100
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
@@ -117,9 +177,13 @@ msgstr ""
 "സഹായം ലഭ്യമാക്കുന്ന സംവിധാനം ഇവിടെ ലഭ്യമല്ല. ഇതിനായി, 'yelp' പാക്കേജുകള്‍ ഇന്‍സ്റ്റോള്‍ "
 "ചെയ്യേണ്ടതുണ്ടു്."
 
+#: src/scservices/core/systemd/unit.py:202
+msgid "Error while getting description."
+msgstr ""
+
 #: src/system-config-services.glade.h:1
-msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr "പകര്‍പ്പവകാശം © 2002-2009 Red Hat, Inc.-ഉം മറ്റു് സംഭാവനക്കാരും"
+msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
+msgstr ""
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -220,13 +284,20 @@ msgstr ""
 
 #: src/system-config-services.glade.h:28
 msgid ""
+"This service is managed by systemd. It may be started then run in the "
+"background, or be activated on demand, or run once for preparation or "
+"cleanup purposes."
+msgstr ""
+
+#: src/system-config-services.glade.h:29
+msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
 "സിസ്റ്റം ബൂട്ട് ചെയ്യുമ്പോള്‍ സര്‍വീസ് ഒരിക്കല്‍ ആരംഭിക്കുന്നു. ശേഷം പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിക്കുന്നു, "
 "ആവശ്യമുള്ളപ്പോള്‍ പ്രത്യക്ഷത്തില്‍ വരുന്നു."
 
-#: src/system-config-services.glade.h:29
+#: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
@@ -234,48 +305,48 @@ msgstr ""
 "xinetd സര്‍വീസിന്റെ ആവശ്യപ്രകാരം ഈ സര്‍വീസ് ആരംഭിക്കുന്നു. എല്ലാ പ്രക്രിയകളും അവസാനിക്കുമ്പോള്‍ ഈ "
 "സര്‍വീസ് അവസാനിക്കുന്നു."
 
-#: src/system-config-services.glade.h:30
+#: src/system-config-services.glade.h:31
 msgid "_About"
 msgstr "_സംബന്ധിച്ചുള്ള"
 
-#: src/system-config-services.glade.h:31
+#: src/system-config-services.glade.h:32
 msgid "_Contents"
 msgstr "_ഉളളടക്കം"
 
-#: src/system-config-services.glade.h:32
+#: src/system-config-services.glade.h:33
 msgid "_Customize"
 msgstr "_യഥേഷ്ടം"
 
-#: src/system-config-services.glade.h:33
+#: src/system-config-services.glade.h:34
 msgid "_Disable"
 msgstr "_പ്രവര്‍ത്തന രഹിതം"
 
-#: src/system-config-services.glade.h:34
+#: src/system-config-services.glade.h:35
 msgid "_Enable"
 msgstr "_പ്രവര്‍ത്തന സജ്ജം"
 
-#: src/system-config-services.glade.h:35
+#: src/system-config-services.glade.h:36
 msgid "_Help"
 msgstr "_സഹായം"
 
-#: src/system-config-services.glade.h:36
+#: src/system-config-services.glade.h:37
 msgid "_Program"
 msgstr "_പ്രോഗ്രാം"
 
-#: src/system-config-services.glade.h:37
+#: src/system-config-services.glade.h:38
 msgid "_Restart"
 msgstr "_വീണ്ടും ആരംഭിക്കുക"
 
-#: src/system-config-services.glade.h:38
+#: src/system-config-services.glade.h:39
 msgid "_Start"
 msgstr "_ആരംഭിക്കുക"
 
-#: src/system-config-services.glade.h:39
+#: src/system-config-services.glade.h:40
 msgid "system-config-services"
 msgstr "system-config-services"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: src/system-config-services.glade.h:41
+#: src/system-config-services.glade.h:42
 msgid "translator-credits"
 msgstr "അനി പീറ്റര്‍ <apeter@redhat.com>"
 
@@ -311,3 +382,5 @@ msgstr "സിസ്റ്റം സര്‍വീസുകള്‍ കൈക�
 msgid "Managing system services requires authentication"
 msgstr "സിസ്റ്റം സര്‍വീസുകള്‍ കൈകാര്യം ചെയ്യുന്നതിനായി ആധികാരികത ഉറപ്പാക്കേണ്ടതുണ്ടു്"
 
+#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+#~ msgstr "പകര്‍പ്പവകാശം © 2002-2009 Red Hat, Inc.-ഉം മറ്റു് സംഭാവനക്കാരും"

@@ -9,62 +9,121 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services.tip\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-24 12:19+0100\n"
+"POT-Creation-Date: 2011-05-04 17:07+0200\n"
 "PO-Revision-Date: 2010-04-16 13:55+0530\n"
 "Last-Translator: Amitakhya Phukan <aphukan@fedoraproject.org>\n"
 "Language-Team: American English <fedora-trans-as@redhat.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1)\n"
 
-#: src/gui.py:125
+#: src/gui.py:123
 msgid "Name"
 msgstr "নাম"
 
-#: src/gui.py:128
+#: src/gui.py:126
 msgid "Remarks"
 msgstr "মন্তব্য"
 
-#: src/gui.py:196 src/gui.py:213
+#: src/gui.py:199 src/gui.py:221 src/gui.py:231
 msgid "This service is being refreshed right now."
 msgstr "এই সেৱা এতিয়া সতেজ কৰা হৈছে ।"
 
-#: src/gui.py:197
+#: src/gui.py:200 src/gui.py:233
 msgid "Getting information about this service failed."
 msgstr "এই সেৱাৰ তথ্য পোৱা বিফল হ'ল ।"
 
-#: src/gui.py:198
+#: src/gui.py:201 src/gui.py:205 src/gui.py:206
 msgid "This service is enabled."
 msgstr "এই সেৱা সক্ৰিয় ।"
 
-#: src/gui.py:199
+#: src/gui.py:202 src/gui.py:207 src/gui.py:208 src/gui.py:236
 msgid "This service is disabled."
 msgstr "এই সেৱা নিষ্ক্ৰিয় ।"
 
-#: src/gui.py:201
+#: src/gui.py:204
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "এই চলনাস্তৰসমূহত এই সেৱা সক্ৰিয়: %(runlevels)s"
 
-#: src/gui.py:214
+#: src/gui.py:209
+msgid "This service is masked."
+msgstr ""
+
+#: src/gui.py:222
 msgid "The status of this service is unknown."
 msgstr "এই সেৱাৰ অৱস্থা অজ্ঞাত ।"
 
-#: src/gui.py:215
+#: src/gui.py:223
 msgid "This service is stopped."
 msgstr "এই সেৱা বন্ধ ।"
 
-#: src/gui.py:216
+#: src/gui.py:224
 msgid "This service is running."
 msgstr "এই সেৱা চলি আছে ।"
 
-#: src/gui.py:217
+#: src/gui.py:225
 msgid "This service is dead."
 msgstr "এই সেৱা অন্ত হ'ল ।"
 
-#: src/gui.py:298
+#: src/gui.py:245
+msgid "This unit is inactive."
+msgstr ""
+
+#: src/gui.py:247
+#, python-format
+msgid "This unit is inactive: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:251
+msgid "This unit is running."
+msgstr ""
+
+#: src/gui.py:254
+msgid "This unit has finished."
+msgstr ""
+
+#: src/gui.py:257
+#, python-format
+msgid "This unit is active: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:260
+#, python-format
+msgid "This unit has failed: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:264
+msgid "This unit is starting."
+msgstr ""
+
+#: src/gui.py:266
+#, python-format
+msgid "This unit is activating: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:269
+#, python-format
+msgid "This unit is deactivating: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:272
+#, python-format
+msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
+msgstr ""
+
+#: src/gui.py:349
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is managed by systemd. It may be started "
+"then run in the background, or be activated on demand, or run once for "
+"preparation or cleanup purposes."
+msgstr ""
+
+#: src/gui.py:379
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
@@ -73,11 +132,11 @@ msgstr ""
 "সাধাৰণতে ব্যৱস্থাপ্ৰণালী বুট কৰাৰ সময়ত, <b>%(servicename)s</b> সেৱা এবাৰ আৰম্ভ "
 "কৰা হয়, পৃষ্ঠভুমিত চলে আৰু প্ৰয়োজনৰ সময়ত সজাগ হয় ।"
 
-#: src/gui.py:317
+#: src/gui.py:398
 msgid "This service is updated currently."
 msgstr "এই সেৱা বৰ্ত্তমানে উন্নত কৰা হৈছে ।"
 
-#: src/gui.py:344
+#: src/gui.py:425
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
@@ -86,7 +145,7 @@ msgstr ""
 "<b>%(servicename)s</b> সেৱাক অনুৰোধৰ মতে xinetd সেৱাৰ দ্বাৰা আৰম্ভ কৰা হয় আৰু "
 "তাৰ কাম ন'হ'লে বন্ধ হ'ব ।"
 
-#: src/gui.py:356
+#: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
@@ -94,26 +153,32 @@ msgstr ""
 "সেৱা সক্ৰিয়, কিন্তু <b>xinetd</b> সৰঞ্জাম সংস্থাপিত নহয় । এইটো ন'হলে সেৱাই কাম "
 "নকৰে ।"
 
-#: src/gui.py:365
+#: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr "সেৱা সক্ৰিয়, কিন্তু <b>xinetd</b> সৰঞ্জাম চলা নাই । এইটো ন'হলে সেৱাই কাম নকৰে ।"
+msgstr ""
+"সেৱা সক্ৰিয়, কিন্তু <b>xinetd</b> সৰঞ্জাম চলা নাই । এইটো ন'হলে সেৱাই কাম নকৰে ।"
 
-#: src/gui.py:782 src/system-config-services.glade.h:6
+#: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "এই চলনাস্তৰসমূহত <b>%(service)s</b> সেৱা সক্ৰিয় কৰক:"
 
-#: src/gui.py:920
+#: src/gui.py:1100
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr "সহায় প্ৰদৰ্শক পোৱা ন'গ'ল । সহায় চাবলৈ, 'yelp' সৰঞ্জাম সংস্থাপিত হ'ব লাগিব ।"
+msgstr ""
+"সহায় প্ৰদৰ্শক পোৱা ন'গ'ল । সহায় চাবলৈ, 'yelp' সৰঞ্জাম সংস্থাপিত হ'ব লাগিব ।"
+
+#: src/scservices/core/systemd/unit.py:202
+msgid "Error while getting description."
+msgstr ""
 
 #: src/system-config-services.glade.h:1
-msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
+msgstr ""
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -216,13 +281,20 @@ msgstr ""
 
 #: src/system-config-services.glade.h:28
 msgid ""
+"This service is managed by systemd. It may be started then run in the "
+"background, or be activated on demand, or run once for preparation or "
+"cleanup purposes."
+msgstr ""
+
+#: src/system-config-services.glade.h:29
+msgid ""
 "This service is started once, usually when the system is booted, runs in the "
 "background and wakes up when needed."
 msgstr ""
 "সাধাৰণতে ব্যৱস্থাপ্ৰণালী বুট কৰাৰ সময়ত, এই সেৱা এবাৰ আৰম্ভ কৰা হয়, পৃষ্ঠভুমিত চলে আৰু "
 "প্ৰয়োজনৰ সময়ত সজাগ হয় ।"
 
-#: src/system-config-services.glade.h:29
+#: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
@@ -230,48 +302,48 @@ msgstr ""
 "এই সেৱাক অনুৰোধৰ মতে xinetd সেৱাৰ দ্বাৰা আৰম্ভ কৰা হয় আৰু তাৰ কাম ন'হ'লে বন্ধ হ'ব "
 "।"
 
-#: src/system-config-services.glade.h:30
+#: src/system-config-services.glade.h:31
 msgid "_About"
 msgstr "বিষয়ে (_A)"
 
-#: src/system-config-services.glade.h:31
+#: src/system-config-services.glade.h:32
 msgid "_Contents"
 msgstr "বিষয়বস্তু (_C)"
 
-#: src/system-config-services.glade.h:32
+#: src/system-config-services.glade.h:33
 msgid "_Customize"
 msgstr "নিজৰ পছন্দৰ মতে সজাওক (_C)"
 
-#: src/system-config-services.glade.h:33
+#: src/system-config-services.glade.h:34
 msgid "_Disable"
 msgstr "নিষ্ক্ৰীয় কৰক (_D)"
 
-#: src/system-config-services.glade.h:34
+#: src/system-config-services.glade.h:35
 msgid "_Enable"
 msgstr "সক্ৰিয় (_E)"
 
-#: src/system-config-services.glade.h:35
+#: src/system-config-services.glade.h:36
 msgid "_Help"
 msgstr "সহায় (_H)"
 
-#: src/system-config-services.glade.h:36
+#: src/system-config-services.glade.h:37
 msgid "_Program"
 msgstr "অনুপ্ৰয়োগ (_P) "
 
-#: src/system-config-services.glade.h:37
+#: src/system-config-services.glade.h:38
 msgid "_Restart"
 msgstr "পুনৰাৰম্ভ (_R)"
 
-#: src/system-config-services.glade.h:38
+#: src/system-config-services.glade.h:39
 msgid "_Start"
 msgstr "আৰম্ভ (_S)"
 
-#: src/system-config-services.glade.h:39
+#: src/system-config-services.glade.h:40
 msgid "system-config-services"
 msgstr "system-config-services"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: src/system-config-services.glade.h:41
+#: src/system-config-services.glade.h:42
 msgid "translator-credits"
 msgstr "অমিতাক্ষ ফুকন (aphukan@fedoraproject.org)"
 
@@ -306,6 +378,9 @@ msgstr "ব্যৱস্থাপ্ৰণালীৰ সেৱা পৰি�
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "প্ৰণালীৰ সেৱা পৰিচালন কৰিবলৈ প্ৰমাণীকৰণৰ প্ৰয়োজন"
+
+#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+#~ msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
 
 #~ msgid "System policy prevents access to system services information"
 #~ msgstr "প্ৰণালীৰ নীতিয়ে প্ৰণালীৰ সেৱাৰ তথ্য অভিগম কৰিব নিদিয়ে"
@@ -422,4 +497,3 @@ msgstr "প্ৰণালীৰ সেৱা পৰিচালন কৰিব
 #~ msgstr ""
 #~ "এই সেৱা প্ৰয়োজনৰ মতে xinetd সেৱাৰ দ্বাৰা আৰম্ভ কৰা হ'ব আৰু কোনো কাৰ্য্য "
 #~ "নাথাকিলে অন্ত হ'ব ।"
-

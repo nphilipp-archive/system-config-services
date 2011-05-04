@@ -3,110 +3,193 @@
 # This file is distributed under the same license as the
 #  system-config-services package.
 # Xavier Conde Rueda <xavi.conde@gmail.com>, 2004-8
-# 
+#
 # This file is translated according to the glossary and style guide of
 #   Softcatalà. If you plan to modify this file, please read first the page
 #   of the Catalan translation team for the Fedora project at:
 #   http://www.softcatala.org/projectes/fedora/
 #   and contact the previous translator
-# 
+#
 # Aquest fitxer s'ha de traduir d'acord amb el recull de termes i la guia
 #   d'estil de Softcatalà. Si voleu modificar aquest fitxer, llegiu si
 #   us plau la pàgina de catalanització del projecte Fedora a:
 #   http://www.softcatala.org/projectes/fedora/
 #   i contacteu l'anterior traductor/a.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-24 12:19+0100\n"
+"POT-Creation-Date: 2011-05-04 17:07+0200\n"
 "PO-Revision-Date: 2009-06-06 00:47+0200\n"
 "Last-Translator: Xavier Conde Rueda <xavi.conde@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/gui.py:125
+#: src/gui.py:123
 msgid "Name"
 msgstr "Nom"
 
-#: src/gui.py:128
+#: src/gui.py:126
 msgid "Remarks"
 msgstr "Comentaris"
 
-#: src/gui.py:196 src/gui.py:213
+#: src/gui.py:199 src/gui.py:221 src/gui.py:231
 msgid "This service is being refreshed right now."
 msgstr "Aquest servei s'està refrescant."
 
-#: src/gui.py:197
+#: src/gui.py:200 src/gui.py:233
 msgid "Getting information about this service failed."
 msgstr "No s'ha pogut obtenir informació d'aquest servei."
 
-#: src/gui.py:198
+#: src/gui.py:201 src/gui.py:205 src/gui.py:206
 msgid "This service is enabled."
 msgstr "Aquest servei està habilitat."
 
-#: src/gui.py:199
+#: src/gui.py:202 src/gui.py:207 src/gui.py:208 src/gui.py:236
 msgid "This service is disabled."
 msgstr "Aquest servei està inhabilitat."
 
-#: src/gui.py:201
+#: src/gui.py:204
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "Aquest servei està habilitat en els nivells: %(runlevels)s"
 
-#: src/gui.py:214
+#: src/gui.py:209
+msgid "This service is masked."
+msgstr ""
+
+#: src/gui.py:222
 msgid "The status of this service is unknown."
 msgstr "L'estat del servei és desconegut."
 
-#: src/gui.py:215
+#: src/gui.py:223
 msgid "This service is stopped."
 msgstr "El servei està aturat."
 
-#: src/gui.py:216
+#: src/gui.py:224
 msgid "This service is running."
 msgstr "El servei s'està executant."
 
-#: src/gui.py:217
+#: src/gui.py:225
 msgid "This service is dead."
 msgstr "El servei ha mort."
 
-#: src/gui.py:298
-#, python-format
-msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
-msgstr "El servei <b>%(servicename)s</b> s'inicia una vegada, normalment quan el sistema arrenca, s'executa en segon terme i es desperta quan se'l necessita."
+#: src/gui.py:245
+msgid "This unit is inactive."
+msgstr ""
 
-#: src/gui.py:317
+#: src/gui.py:247
+#, python-format
+msgid "This unit is inactive: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:251
+msgid "This unit is running."
+msgstr ""
+
+#: src/gui.py:254
+msgid "This unit has finished."
+msgstr ""
+
+#: src/gui.py:257
+#, python-format
+msgid "This unit is active: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:260
+#, python-format
+msgid "This unit has failed: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:264
+msgid "This unit is starting."
+msgstr ""
+
+#: src/gui.py:266
+#, python-format
+msgid "This unit is activating: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:269
+#, python-format
+msgid "This unit is deactivating: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:272
+#, python-format
+msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
+msgstr ""
+
+#: src/gui.py:349
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is managed by systemd. It may be started "
+"then run in the background, or be activated on demand, or run once for "
+"preparation or cleanup purposes."
+msgstr ""
+
+#: src/gui.py:379
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is started once, usually when the system "
+"is booted, runs in the background and wakes up when needed."
+msgstr ""
+"El servei <b>%(servicename)s</b> s'inicia una vegada, normalment quan el "
+"sistema arrenca, s'executa en segon terme i es desperta quan se'l necessita."
+
+#: src/gui.py:398
 msgid "This service is updated currently."
 msgstr "Aquest servei s'actualitza actualment."
 
-#: src/gui.py:344
+#: src/gui.py:425
 #, python-format
-msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do."
-msgstr "El servei <b>%(servicename)s</b> serà iniciat a petició per l'xinetd i acabarà quan no tingui res més a fer."
+msgid ""
+"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
+"service and ends when it has nothing more to do."
+msgstr ""
+"El servei <b>%(servicename)s</b> serà iniciat a petició per l'xinetd i "
+"acabarà quan no tingui res més a fer."
 
-#: src/gui.py:356
-msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
-msgstr "El servei està habilitat, però el paquet <b>xinetd</b> no està instal·lat. Aquest servei no funcionarà sense ell."
+#: src/gui.py:437
+msgid ""
+"This service is enabled, but the <b>xinetd</b> package is not installed. "
+"This service does not work without it."
+msgstr ""
+"El servei està habilitat, però el paquet <b>xinetd</b> no està instal·lat. "
+"Aquest servei no funcionarà sense ell."
 
-#: src/gui.py:365
-msgid "This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."
-msgstr "El servei està habilitat, però el servei <b>xinetd</b> no s'està executant. Aquest servei no funcionarà sense ell."
+#: src/gui.py:448
+msgid ""
+"This service is enabled, but the <b>xinetd</b> service is not running. This "
+"service does not work without it."
+msgstr ""
+"El servei està habilitat, però el servei <b>xinetd</b> no s'està executant. "
+"Aquest servei no funcionarà sense ell."
 
-#: src/gui.py:782 src/system-config-services.glade.h:6
+#: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Habilita el servei <b>%(service)s</b> en aquests nivells:"
 
-#: src/gui.py:920
-msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
-msgstr "No s'ha trobat el visualitzador d'ajuda. Per poder veure l'ajuda, us cal instal·lar el paquet «yelp»."
+#: src/gui.py:1100
+msgid ""
+"The help viewer could not be found. To be able to view help, the 'yelp' "
+"package needs to be installed."
+msgstr ""
+"No s'ha trobat el visualitzador d'ajuda. Per poder veure l'ajuda, us cal "
+"instal·lar el paquet «yelp»."
+
+#: src/scservices/core/systemd/unit.py:202
+msgid "Error while getting description."
+msgstr ""
 
 #: src/system-config-services.glade.h:1
-msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr "Copyright © 2002-2009 Red Hat, Inc. i col·laboradors"
+msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
+msgstr ""
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -179,12 +262,19 @@ msgstr "Estat del servei %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
 "Això és programari lliure; podeu redistribuir-lo i/o\n"
 "modificar-lo sota els termes de la Llicència Pública General GNU tal i\n"
@@ -197,55 +287,79 @@ msgstr ""
 "Llicència Pública General GNU per obtenir-ne\n"
 "més detalls.\n"
 "\n"
-"Hauríeu d'haver rebut una còpia de la Llicència Pública General GNU amb aquest programa; si no, escriviu a la Free Software Foundation, Inc. 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+"Hauríeu d'haver rebut una còpia de la Llicència Pública General GNU amb "
+"aquest programa; si no, escriviu a la Free Software Foundation, Inc. 59 "
+"Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
-msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
-msgstr "Aquest servei s'inicia una vegada, normalment quan s'arrenca el sistema, s'executa en segon terme i es desperta quan se'l necessita."
+msgid ""
+"This service is managed by systemd. It may be started then run in the "
+"background, or be activated on demand, or run once for preparation or "
+"cleanup purposes."
+msgstr ""
 
 #: src/system-config-services.glade.h:29
-msgid "This service will be started on demand by the xinetd service and ends when it has nothing more to do."
-msgstr "Aquest servei serà iniciat a petició per l'xinetd i acabarà quan no tingui res més a fer."
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"Aquest servei s'inicia una vegada, normalment quan s'arrenca el sistema, "
+"s'executa en segon terme i es desperta quan se'l necessita."
 
 #: src/system-config-services.glade.h:30
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+"Aquest servei serà iniciat a petició per l'xinetd i acabarà quan no tingui "
+"res més a fer."
+
+#: src/system-config-services.glade.h:31
 msgid "_About"
 msgstr "_Quant a"
 
-#: src/system-config-services.glade.h:31
+#: src/system-config-services.glade.h:32
 msgid "_Contents"
 msgstr "_Contingut"
 
-#: src/system-config-services.glade.h:32
+#: src/system-config-services.glade.h:33
 msgid "_Customize"
 msgstr "_Personalitza"
 
-#: src/system-config-services.glade.h:33
+#: src/system-config-services.glade.h:34
 msgid "_Disable"
 msgstr "Inh_abilita"
 
-#: src/system-config-services.glade.h:34
+#: src/system-config-services.glade.h:35
 msgid "_Enable"
 msgstr "_Habilita"
 
-#: src/system-config-services.glade.h:35
+#: src/system-config-services.glade.h:36
 msgid "_Help"
 msgstr "_Ajuda"
 
-#: src/system-config-services.glade.h:36
+#: src/system-config-services.glade.h:37
 msgid "_Program"
 msgstr "_Programa"
 
-#: src/system-config-services.glade.h:37
+#: src/system-config-services.glade.h:38
 msgid "_Restart"
 msgstr "_Reinicia"
 
-#: src/system-config-services.glade.h:38
+#: src/system-config-services.glade.h:39
 msgid "_Start"
 msgstr "_Inicia"
 
-#: src/system-config-services.glade.h:39
+#: src/system-config-services.glade.h:40
 msgid "system-config-services"
 msgstr "system-config-services"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: src/system-config-services.glade.h:42
+msgid "translator-credits"
+msgstr ""
+"Xavier Conde Rueda <xavi.conde@gmail.com>\r\n"
+"Robert Buj Gelonch <robert.buj@gmail.com>"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -264,30 +378,28 @@ msgstr "Serveis"
 msgid "Get information about system services"
 msgstr "Obteniu informació quant als serveis del sistema"
 
-#: config/org.fedoraproject.config.services.policy.0.in.h:3
-#: config/org.fedoraproject.config.services.policy.1.in.h:3
-msgid "Manage system services"
-msgstr "Gestioneu els serveis del sistema"
-
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
 msgstr "L'obtenció d'informació quant al sistema necessita autenticació"
+
+#: config/org.fedoraproject.config.services.policy.0.in.h:3
+#: config/org.fedoraproject.config.services.policy.1.in.h:3
+msgid "Manage system services"
+msgstr "Gestioneu els serveis del sistema"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "La gestió dels serveis del sistema necessita autenticació"
 
-#. TRANSLATORS: Replace this string with your names, one name per line.
-#: src/system-config-services.glade.h:41
-msgid "translator-credits"
-msgstr ""
-"Xavier Conde Rueda <xavi.conde@gmail.com>\r\n"
-"Robert Buj Gelonch <robert.buj@gmail.com>"
+#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+#~ msgstr "Copyright © 2002-2009 Red Hat, Inc. i col·laboradors"
 
 #~ msgid "System policy prevents access to system services information"
-#~ msgstr "La política del sistema evita l'accès a la informació dels serveis del sistema"
+#~ msgstr ""
+#~ "La política del sistema evita l'accès a la informació dels serveis del "
+#~ "sistema"
 
 #~ msgid "System policy prevents management of system services"
 #~ msgstr "La política del sistema evita la gestió dels serveis del sistema"

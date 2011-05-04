@@ -8,97 +8,172 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-24 12:19+0100\n"
+"POT-Creation-Date: 2011-05-04 17:07+0200\n"
 "PO-Revision-Date: 2010-09-23 03:03+0330\n"
 "Last-Translator: Hedayat Vatankhah <hedayat@fedoraproject.org>\n"
 "Language-Team: Persian <trans-fa@lists.fedoraproject.org>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: src/gui.py:125
+#: src/gui.py:123
 msgid "Name"
 msgstr "نام"
 
-#: src/gui.py:128
+#: src/gui.py:126
 msgid "Remarks"
 msgstr "نشان‌ها"
 
-#: src/gui.py:196
-#: src/gui.py:213
+#: src/gui.py:199 src/gui.py:221 src/gui.py:231
 msgid "This service is being refreshed right now."
 msgstr "این خدمت اکنون در حال تازه‌شدن است."
 
-#: src/gui.py:197
+#: src/gui.py:200 src/gui.py:233
 msgid "Getting information about this service failed."
 msgstr "گرفتن اطلاعات درباره‌ی این خدمت شکست خورد."
 
-#: src/gui.py:198
+#: src/gui.py:201 src/gui.py:205 src/gui.py:206
 msgid "This service is enabled."
 msgstr "این خدمت فعال است."
 
-#: src/gui.py:199
+#: src/gui.py:202 src/gui.py:207 src/gui.py:208 src/gui.py:236
 msgid "This service is disabled."
 msgstr "این خدمت فعال نیست."
 
-#: src/gui.py:201
+#: src/gui.py:204
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "این خدمت در این سطوح اجرایی فعال است:: %(runlevels)s"
 
-#: src/gui.py:214
+#: src/gui.py:209
+msgid "This service is masked."
+msgstr ""
+
+#: src/gui.py:222
 msgid "The status of this service is unknown."
 msgstr "وضعیت این خدمت نامعلوم است."
 
-#: src/gui.py:215
+#: src/gui.py:223
 msgid "This service is stopped."
 msgstr "این خدمت متوقف است."
 
-#: src/gui.py:216
+#: src/gui.py:224
 msgid "This service is running."
 msgstr "این خدمت در حال اجرا است."
 
-#: src/gui.py:217
+#: src/gui.py:225
 msgid "This service is dead."
 msgstr "این خدمت مرده است."
 
-#: src/gui.py:298
-#, python-format
-msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
-msgstr "خدمت <b>%(servicename)s</b> یک بار - معمولا هنگامی که سیستم راه‌اندازی می‌شود - آغاز می‌شود، در پس‌زمینه اجرا می‌شود و هنگامی که نیاز باشد بیدار می‌شود."
+#: src/gui.py:245
+msgid "This unit is inactive."
+msgstr ""
 
-#: src/gui.py:317
+#: src/gui.py:247
+#, python-format
+msgid "This unit is inactive: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:251
+msgid "This unit is running."
+msgstr ""
+
+#: src/gui.py:254
+msgid "This unit has finished."
+msgstr ""
+
+#: src/gui.py:257
+#, python-format
+msgid "This unit is active: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:260
+#, python-format
+msgid "This unit has failed: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:264
+msgid "This unit is starting."
+msgstr ""
+
+#: src/gui.py:266
+#, python-format
+msgid "This unit is activating: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:269
+#, python-format
+msgid "This unit is deactivating: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:272
+#, python-format
+msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
+msgstr ""
+
+#: src/gui.py:349
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is managed by systemd. It may be started "
+"then run in the background, or be activated on demand, or run once for "
+"preparation or cleanup purposes."
+msgstr ""
+
+#: src/gui.py:379
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is started once, usually when the system "
+"is booted, runs in the background and wakes up when needed."
+msgstr ""
+"خدمت <b>%(servicename)s</b> یک بار - معمولا هنگامی که سیستم راه‌اندازی می‌شود "
+"- آغاز می‌شود، در پس‌زمینه اجرا می‌شود و هنگامی که نیاز باشد بیدار می‌شود."
+
+#: src/gui.py:398
 msgid "This service is updated currently."
 msgstr "این خدمت اکنون به روز شده است."
 
-#: src/gui.py:344
+#: src/gui.py:425
 #, python-format
-msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do."
-msgstr "خدمت <b>%(servicename)s</b> هنگامی که نیاز باشد به وسیله‌ی خدمت xinetd آغاز خواهد شد و هنگامی که کار دیگری برای انجام دادن نداشته باشد پایان می‌یابد."
+msgid ""
+"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
+"service and ends when it has nothing more to do."
+msgstr ""
+"خدمت <b>%(servicename)s</b> هنگامی که نیاز باشد به وسیله‌ی خدمت xinetd آغاز "
+"خواهد شد و هنگامی که کار دیگری برای انجام دادن نداشته باشد پایان می‌یابد."
 
-#: src/gui.py:356
-msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
+#: src/gui.py:437
+msgid ""
+"This service is enabled, but the <b>xinetd</b> package is not installed. "
+"This service does not work without it."
 msgstr ""
 
-#: src/gui.py:365
-msgid "This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."
+#: src/gui.py:448
+msgid ""
+"This service is enabled, but the <b>xinetd</b> service is not running. This "
+"service does not work without it."
 msgstr ""
 
-#: src/gui.py:782
-#: src/system-config-services.glade.h:6
+#: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "فعال‌سازی خدمت <b>%(service)s</b> در این سطوح اجرایی:"
 
-#: src/gui.py:920
-msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
+#: src/gui.py:1100
+msgid ""
+"The help viewer could not be found. To be able to view help, the 'yelp' "
+"package needs to be installed."
+msgstr ""
+
+#: src/scservices/core/systemd/unit.py:202
+msgid "Error while getting description."
 msgstr ""
 
 #: src/system-config-services.glade.h:1
-msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr "حق نشر © ۲۰۰۲-۲۰۰۹ ردهت و مشارکت کنندگان"
+msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
+msgstr ""
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -171,72 +246,96 @@ msgstr "وضعیت خدمت  %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
 
 #: src/system-config-services.glade.h:28
-msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
-msgstr "این خدمت یک بار - معمولا هنگامی که سیستم راه‌اندازی می‌شود - آغاز می‌شود، در پس‌زمینه اجرا می‌شود و هنگامی که نیاز باشد بیدار می‌شود."
+msgid ""
+"This service is managed by systemd. It may be started then run in the "
+"background, or be activated on demand, or run once for preparation or "
+"cleanup purposes."
+msgstr ""
 
 #: src/system-config-services.glade.h:29
-msgid "This service will be started on demand by the xinetd service and ends when it has nothing more to do."
-msgstr "این خدمت هنگامی که نیاز باشد به وسیله‌ی خدمت xinetd آغاز خواهد شد و هنگامی که کار دیگری برای انجام دادن نداشته باشد پایان می‌یابد."
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"این خدمت یک بار - معمولا هنگامی که سیستم راه‌اندازی می‌شود - آغاز می‌شود، در "
+"پس‌زمینه اجرا می‌شود و هنگامی که نیاز باشد بیدار می‌شود."
 
 #: src/system-config-services.glade.h:30
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+"این خدمت هنگامی که نیاز باشد به وسیله‌ی خدمت xinetd آغاز خواهد شد و هنگامی که "
+"کار دیگری برای انجام دادن نداشته باشد پایان می‌یابد."
+
+#: src/system-config-services.glade.h:31
 msgid "_About"
 msgstr "_درباره"
 
-#: src/system-config-services.glade.h:31
+#: src/system-config-services.glade.h:32
 msgid "_Contents"
 msgstr "_محتوا"
 
-#: src/system-config-services.glade.h:32
+#: src/system-config-services.glade.h:33
 msgid "_Customize"
 msgstr "_سفارشی‌سازی"
 
-#: src/system-config-services.glade.h:33
+#: src/system-config-services.glade.h:34
 msgid "_Disable"
 msgstr "_از کار انداختن"
 
-#: src/system-config-services.glade.h:34
+#: src/system-config-services.glade.h:35
 msgid "_Enable"
 msgstr "_به کار انداختن"
 
-#: src/system-config-services.glade.h:35
+#: src/system-config-services.glade.h:36
 msgid "_Help"
 msgstr "_راهنما"
 
-#: src/system-config-services.glade.h:36
+#: src/system-config-services.glade.h:37
 msgid "_Program"
 msgstr "_برنامه"
 
-#: src/system-config-services.glade.h:37
+#: src/system-config-services.glade.h:38
 msgid "_Restart"
 msgstr "ش_روع مجدد"
 
-#: src/system-config-services.glade.h:38
+#: src/system-config-services.glade.h:39
 msgid "_Start"
 msgstr "_شروع"
 
-#: src/system-config-services.glade.h:39
+#: src/system-config-services.glade.h:40
 msgid "system-config-services"
 msgstr "system-config-services"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: src/system-config-services.glade.h:41
+#: src/system-config-services.glade.h:42
 msgid "translator-credits"
 msgstr ""
-"هدایت وطن‌خواه <hedayat@fedoraproject.org>"
-"مصطفی دانشور <lashar@fedoraproject.org>"
+"هدایت وطن‌خواه <hedayat@fedoraproject.org>مصطفی دانشور <lashar@fedoraproject."
+"org>"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "خدمت‌هایی را که هنگام آغاز به کار سیستم در حال اجرا خواهند بود را پیکربندی کنید"
+msgstr ""
+"خدمت‌هایی را که هنگام آغاز به کار سیستم در حال اجرا خواهند بود را پیکربندی "
+"کنید"
 
 #: system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -265,6 +364,9 @@ msgstr "مدیریت خدمات سیستم"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "مدیریت خدمات سیستم به تأیید هویت نیاز دارد"
+
+#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+#~ msgstr "حق نشر © ۲۰۰۲-۲۰۰۹ ردهت و مشارکت کنندگان"
 
 #~ msgid "Start"
 #~ msgstr "آغاز"

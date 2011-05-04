@@ -14,96 +14,178 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-24 12:19+0100\n"
+"POT-Creation-Date: 2011-05-04 17:07+0200\n"
 "PO-Revision-Date: 2010-02-17 01:38+0200\n"
 "Last-Translator: Thalia Papoutsaki <saliyath@gmail.com>\n"
 "Language-Team: Greek Fedora team <fedora-trans-el@redhat.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Greek\n"
 
-#: src/gui.py:125
+#: src/gui.py:123
 msgid "Name"
 msgstr "Όνομα"
 
-#: src/gui.py:128
+#: src/gui.py:126
 msgid "Remarks"
 msgstr "Παρατηρήσεις"
 
-#: src/gui.py:196
-#: src/gui.py:213
+#: src/gui.py:199 src/gui.py:221 src/gui.py:231
 msgid "This service is being refreshed right now."
 msgstr "Γίνετε άμεση ανανέωση της υπηρεσίας."
 
-#: src/gui.py:197
+#: src/gui.py:200 src/gui.py:233
 msgid "Getting information about this service failed."
 msgstr "Απέτυχε η λήψη πληροφοριών για αυτή την υπηρεσία."
 
-#: src/gui.py:198
+#: src/gui.py:201 src/gui.py:205 src/gui.py:206
 msgid "This service is enabled."
 msgstr "Αυτή η υπηρεσία είναι ενεργοποιημένη."
 
-#: src/gui.py:199
+#: src/gui.py:202 src/gui.py:207 src/gui.py:208 src/gui.py:236
 msgid "This service is disabled."
 msgstr "Αυτή η υπηρεσία είναι απενεργοποιημένη."
 
-#: src/gui.py:201
+#: src/gui.py:204
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "Αυτή η υπηρεσία είναι ενεργοποιημένη στα runlevels: %(runlevels)s"
 
-#: src/gui.py:214
+#: src/gui.py:209
+msgid "This service is masked."
+msgstr ""
+
+#: src/gui.py:222
 msgid "The status of this service is unknown."
 msgstr "Δεν είναι γνωστή η κατάσταση αυτής της υπηρεσίας."
 
-#: src/gui.py:215
+#: src/gui.py:223
 msgid "This service is stopped."
 msgstr "Αυτή η υπηρεσία έχει διακοπεί."
 
-#: src/gui.py:216
+#: src/gui.py:224
 msgid "This service is running."
 msgstr "Αυτή η υπηρεσία εκτελείται."
 
-#: src/gui.py:217
+#: src/gui.py:225
 msgid "This service is dead."
 msgstr "Αυτή η υπηρεσία είναι νεκρή."
 
-#: src/gui.py:298
-#, python-format
-msgid "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
-msgstr "Η υπηρεσία <b>%(servicename)s</b> ξεκινάει μια φορά, συνήθως όταν το σύστημα εκκινείται, και στην συνέχεια εκτελείται στο παρασκήνιο και ενεργοποιείται όταν χρειαστεί."
+#: src/gui.py:245
+msgid "This unit is inactive."
+msgstr ""
 
-#: src/gui.py:317
+#: src/gui.py:247
+#, python-format
+msgid "This unit is inactive: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:251
+msgid "This unit is running."
+msgstr ""
+
+#: src/gui.py:254
+msgid "This unit has finished."
+msgstr ""
+
+#: src/gui.py:257
+#, python-format
+msgid "This unit is active: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:260
+#, python-format
+msgid "This unit has failed: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:264
+msgid "This unit is starting."
+msgstr ""
+
+#: src/gui.py:266
+#, python-format
+msgid "This unit is activating: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:269
+#, python-format
+msgid "This unit is deactivating: %(sub_state)s"
+msgstr ""
+
+#: src/gui.py:272
+#, python-format
+msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
+msgstr ""
+
+#: src/gui.py:349
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is managed by systemd. It may be started "
+"then run in the background, or be activated on demand, or run once for "
+"preparation or cleanup purposes."
+msgstr ""
+
+#: src/gui.py:379
+#, python-format
+msgid ""
+"The <b>%(servicename)s</b> service is started once, usually when the system "
+"is booted, runs in the background and wakes up when needed."
+msgstr ""
+"Η υπηρεσία <b>%(servicename)s</b> ξεκινάει μια φορά, συνήθως όταν το σύστημα "
+"εκκινείται, και στην συνέχεια εκτελείται στο παρασκήνιο και ενεργοποιείται "
+"όταν χρειαστεί."
+
+#: src/gui.py:398
 msgid "This service is updated currently."
 msgstr "Η υπηρεσία ανανεώνεται αυτή την στιγμή."
 
-#: src/gui.py:344
+#: src/gui.py:425
 #, python-format
-msgid "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do."
-msgstr "Η υπηρεσία <b>%(servicename)s</b> θα ξεκινήσει κατά απαίτηση από την υπηρεσία xinetd και θα τερματιστεί όταν ολοκληρώσει το έργο της."
+msgid ""
+"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
+"service and ends when it has nothing more to do."
+msgstr ""
+"Η υπηρεσία <b>%(servicename)s</b> θα ξεκινήσει κατά απαίτηση από την "
+"υπηρεσία xinetd και θα τερματιστεί όταν ολοκληρώσει το έργο της."
 
-#: src/gui.py:356
-msgid "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
-msgstr "Η υπηρεσία είναι ενεργοποιημένη αλλά το πακέτο <b>xinetd</b> δεν είναι εγκατεστημένο. Η υπηρεσία αυτή δεν μπορεί να λειτουργήσει χωρίς αυτό."
+#: src/gui.py:437
+msgid ""
+"This service is enabled, but the <b>xinetd</b> package is not installed. "
+"This service does not work without it."
+msgstr ""
+"Η υπηρεσία είναι ενεργοποιημένη αλλά το πακέτο <b>xinetd</b> δεν είναι "
+"εγκατεστημένο. Η υπηρεσία αυτή δεν μπορεί να λειτουργήσει χωρίς αυτό."
 
-#: src/gui.py:365
-msgid "This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."
-msgstr "Η υπηρεσία είναι ενεργοποιημένη, αλλά δεν εκτελείται η υπηρεσία <b>xinetd</b> η οποία είναι  είναι απαραίτητη για να δουλέψει."
+#: src/gui.py:448
+msgid ""
+"This service is enabled, but the <b>xinetd</b> service is not running. This "
+"service does not work without it."
+msgstr ""
+"Η υπηρεσία είναι ενεργοποιημένη, αλλά δεν εκτελείται η υπηρεσία <b>xinetd</"
+"b> η οποία είναι  είναι απαραίτητη για να δουλέψει."
 
-#: src/gui.py:782
-#: src/system-config-services.glade.h:6
+#: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Ενεργοποίηση <b>%(service)s</b> υπηρεσίας σε αυτά τα runlevels:"
 
-#: src/gui.py:920
-msgid "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
-msgstr "Δεν βρέθηκε η προβολή βοήθειας. Για να μπορέσετε να δείτε την βοήθεια, πρέπει να εγκατασταθεί το πακέτο  'yelp'."
+#: src/gui.py:1100
+msgid ""
+"The help viewer could not be found. To be able to view help, the 'yelp' "
+"package needs to be installed."
+msgstr ""
+"Δεν βρέθηκε η προβολή βοήθειας. Για να μπορέσετε να δείτε την βοήθεια, "
+"πρέπει να εγκατασταθεί το πακέτο  'yelp'."
+
+#: src/scservices/core/systemd/unit.py:202
+msgid "Error while getting description."
+msgstr ""
 
 #: src/system-config-services.glade.h:1
-msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-msgstr "Πνευματικά δικαιώματα © 2002-2009 Red Hat, Inc. και συντελεστές"
+msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
+msgstr ""
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -176,70 +258,99 @@ msgstr "Κατάσταση υπηρεσίας %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Μπορείτε να το αναδιανέμετε ή/και να το τροποποιήσετε υπό τους όρους της GNU General Public License όπως έχει δημοσιευτεί από το Free Software Foundation, είτε την έκδοση 2 της Άδειας, ή (κατ' επιλογή σας) οποιαδήποτε νεότερη έκδοση.\n"
+"Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό. Μπορείτε να το αναδιανέμετε ή/"
+"και να το τροποποιήσετε υπό τους όρους της GNU General Public License όπως "
+"έχει δημοσιευτεί από το Free Software Foundation, είτε την έκδοση 2 της "
+"Άδειας, ή (κατ' επιλογή σας) οποιαδήποτε νεότερη έκδοση.\n"
 "\n"
-"Αυτό το πρόγραμμα διανέμεται με την ελπίδα ότι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ, χωρίς ακόμη την υπονοούμενη εγγύηση της ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή της ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΕΝΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε την\n"
+"Αυτό το πρόγραμμα διανέμεται με την ελπίδα ότι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ "
+"ΚΑΜΙΑ ΕΓΓΥΗΣΗ, χωρίς ακόμη την υπονοούμενη εγγύηση της ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή "
+"της ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΕΝΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε την\n"
 "GNU General Public License για περισσότερες λεπτομέρειες.\n"
 "\n"
-"Μαζί με το λογισμικό αυτό πήρατε και ένα αντίγραφο της GNU General Public License; εάν όχι, γράψτε στο Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+"Μαζί με το λογισμικό αυτό πήρατε και ένα αντίγραφο της GNU General Public "
+"License; εάν όχι, γράψτε στο Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
-msgid "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
-msgstr "Αυτή η υπηρεσία ξεκινάει μια φορά, συνήθως όταν το σύστημα εκκινείται, και στην συνέχεια εκτελείται στο παρασκήνιο και ενεργοποιείται όταν χρειαστεί."
+msgid ""
+"This service is managed by systemd. It may be started then run in the "
+"background, or be activated on demand, or run once for preparation or "
+"cleanup purposes."
+msgstr ""
 
 #: src/system-config-services.glade.h:29
-msgid "This service will be started on demand by the xinetd service and ends when it has nothing more to do."
-msgstr "Η υπηρεσία θα ξεκινήσει κατά απαίτηση από την υπηρεσία xinetd και θα τερματιστεί όταν ολοκληρώσει το έργο της."
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"Αυτή η υπηρεσία ξεκινάει μια φορά, συνήθως όταν το σύστημα εκκινείται, και "
+"στην συνέχεια εκτελείται στο παρασκήνιο και ενεργοποιείται όταν χρειαστεί."
 
 #: src/system-config-services.glade.h:30
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+"Η υπηρεσία θα ξεκινήσει κατά απαίτηση από την υπηρεσία xinetd και θα "
+"τερματιστεί όταν ολοκληρώσει το έργο της."
+
+#: src/system-config-services.glade.h:31
 msgid "_About"
 msgstr "Πε_ρί"
 
-#: src/system-config-services.glade.h:31
+#: src/system-config-services.glade.h:32
 msgid "_Contents"
 msgstr "_Περιεχόμενα"
 
-#: src/system-config-services.glade.h:32
+#: src/system-config-services.glade.h:33
 msgid "_Customize"
 msgstr "Προ_σαρμογή"
 
-#: src/system-config-services.glade.h:33
+#: src/system-config-services.glade.h:34
 msgid "_Disable"
 msgstr "_Απενεργοποίηση"
 
-#: src/system-config-services.glade.h:34
+#: src/system-config-services.glade.h:35
 msgid "_Enable"
 msgstr "Ε_νεργοποίηση"
 
-#: src/system-config-services.glade.h:35
+#: src/system-config-services.glade.h:36
 msgid "_Help"
 msgstr "_Βοήθεια"
 
-#: src/system-config-services.glade.h:36
+#: src/system-config-services.glade.h:37
 msgid "_Program"
 msgstr "_Πρόγραμμα"
 
-#: src/system-config-services.glade.h:37
+#: src/system-config-services.glade.h:38
 msgid "_Restart"
 msgstr "Ε_πανεκκίνηση"
 
-#: src/system-config-services.glade.h:38
+#: src/system-config-services.glade.h:39
 msgid "_Start"
 msgstr "_Έναρξη"
 
-#: src/system-config-services.glade.h:39
+#: src/system-config-services.glade.h:40
 msgid "system-config-services"
 msgstr "system-config-services"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: src/system-config-services.glade.h:41
+#: src/system-config-services.glade.h:42
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα Fedora\n"
@@ -251,7 +362,9 @@ msgstr ""
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr "Ρυθμίστε ποιες υπηρεσίες επιθυμείτε να τρέχουν κατά την εκκίνηση του συστήματος"
+msgstr ""
+"Ρυθμίστε ποιες υπηρεσίες επιθυμείτε να τρέχουν κατά την εκκίνηση του "
+"συστήματος"
 
 #: system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -269,7 +382,8 @@ msgstr "Λήψη πληροφοριών για τις υπηρεσίες συσ�
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr "Η λήψη πληροφοριών σχετικά με τις υπηρεσίες συστήματος απαιτεί πιστοποίηση"
+msgstr ""
+"Η λήψη πληροφοριών σχετικά με τις υπηρεσίες συστήματος απαιτεί πιστοποίηση"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -280,6 +394,9 @@ msgstr "Διαχείριση υπηρεσιών συστήματος"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "Η διαχείρηση υπηρεσιών συστήματος απαιτεί πιστοποίηση"
+
+#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
+#~ msgstr "Πνευματικά δικαιώματα © 2002-2009 Red Hat, Inc. και συντελεστές"
 
 #~ msgid "System policy prevents access to system services information"
 #~ msgstr ""
