@@ -134,6 +134,9 @@ class SystemDUnit(gobject.GObject):
                         bus_name=constants.dbus.service_name))
 
     def __del__(self):
+        self.remove()
+
+    def remove(self):
         # deal with exceptions raised in __init__()
         if self.bus_path not in SystemDUnit.__bus_instances[self.bus]:
             return

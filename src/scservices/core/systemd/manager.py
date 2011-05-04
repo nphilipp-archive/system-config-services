@@ -111,6 +111,7 @@ class SystemDManager(gobject.GObject):
             # shield against units added/removed out of order
             pass
         else:
+            removed_unit.remove()
             self.emit('unit_removed', removed_unit)
 
     @polkit.enable_proxy
