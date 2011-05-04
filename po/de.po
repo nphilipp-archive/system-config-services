@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2011-05-04 15:25+0000\n"
+"PO-Revision-Date: 2011-05-04 15:51+0000\n"
 "Last-Translator: nils <nils@redhat.com>\n"
 "Language-Team: German <trans-de@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
@@ -48,7 +48,7 @@ msgstr "Dieser Dienst ist in Runlevels aktiviert: %(runlevels)s"
 
 #: src/gui.py:209
 msgid "This service is masked."
-msgstr ""
+msgstr "Dieser Dienst ist ausmaskiert."
 
 #: src/gui.py:222
 msgid "The status of this service is unknown."
@@ -68,49 +68,50 @@ msgstr "Dieser Dienst ist tot."
 
 #: src/gui.py:245
 msgid "This unit is inactive."
-msgstr ""
+msgstr "Diese Einheit ist nicht aktiv."
 
 #: src/gui.py:247
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
-msgstr ""
+msgstr "Diese Einheit ist nicht aktiv: %(sub_state)s"
 
 #: src/gui.py:251
 msgid "This unit is running."
-msgstr ""
+msgstr "Diese Einheit läuft gerade."
 
 #: src/gui.py:254
 msgid "This unit has finished."
-msgstr ""
+msgstr "Diese Einheit hat ihre Arbeit beendet."
 
 #: src/gui.py:257
 #, python-format
 msgid "This unit is active: %(sub_state)s"
-msgstr ""
+msgstr "Diese Einheit ist aktiv: %(sub_state)s"
 
 #: src/gui.py:260
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
-msgstr ""
+msgstr "Diese Einheit ist ausgefallen: %(sub_state)s"
 
 #: src/gui.py:264
 msgid "This unit is starting."
-msgstr ""
+msgstr "Diese Einheit startet gerade."
 
 #: src/gui.py:266
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
-msgstr ""
+msgstr "Diese Einheit wird gerade aktiviert: %(sub_state)s"
 
 #: src/gui.py:269
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
-msgstr ""
+msgstr "Diese Einheit wird gerade deaktiviert: %(sub_state)s"
 
 #: src/gui.py:272
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
 msgstr ""
+"Der Status dieser Einheit ist unbekannt: %(active_state)s/%(sub_state)s"
 
 #: src/gui.py:349
 #, python-format
@@ -119,6 +120,10 @@ msgid ""
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
 msgstr ""
+"Der <b>%(servicename)s</b> Dienst wird von systemd verwaltet. Er wird "
+"entweder gestartet und läuft dann im Hintergrund weiter, oder wird bei "
+"Bedarf aktiviert, oder wird ein Mal ausgeführt um Dinge vorzubereiten oder "
+"aufzuräumen."
 
 #: src/gui.py:379
 #, python-format
@@ -174,11 +179,11 @@ msgstr ""
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
-msgstr ""
+msgstr "Fehler beim Laden der Beschreibung."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright © 2002-2011 Red Hat, Inc. und Mitwirkende"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -271,6 +276,9 @@ msgid ""
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
 msgstr ""
+"Dieser Dienst wird von systemd verwaltet. Er wird entweder gestartet und "
+"läuft dann im Hintergrund weiter, oder wird bei Bedarf aktiviert, oder wird "
+"ein Mal ausgeführt um Dinge vorzubereiten oder aufzuräumen."
 
 #: src/system-config-services.glade.h:29
 msgid ""
