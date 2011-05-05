@@ -440,6 +440,7 @@ class GUIXinetdServicesDetailsPainter(GUIServicesDetailsPainter):
         elif enabled == SVC_ENABLED_YES and (
                 isinstance(xinetd_service, SystemDService) and
                 xinetd_service.ActiveState != 'active' or
+                isinstance(xinetd_service, services.SysVService) and
                 xinetd_service.status != SVC_STATUS_RUNNING):
             self.xinetdServiceEnabledIcon.set_from_stock(
                     gtk.STOCK_DIALOG_WARNING,
@@ -512,6 +513,7 @@ class GUIXinetdServiceEntryPainter(GUIServiceEntryPainter):
         if enabled == SVC_ENABLED_YES and (not xinetd_service or
                 isinstance(xinetd_service, SystemDService) and
                 xinetd_service.ActiveState != 'active' or
+                isinstance(xinetd_service, services.SysVService) and
                 xinetd_service.status != SVC_STATUS_RUNNING):
             self.treestore.set(iter, SVC_COL_STATUS,
                                gtk.STOCK_DIALOG_WARNING)
@@ -1032,7 +1034,11 @@ class MainWindow(GladeController):
 
     def _xinetd_reload(self, service):
         xinetd_service = self.servicesList.xinetd_service
-        if xinetd_service and xinetd_service.status == SVC_STATUS_RUNNING:
+        if xinetd_service and (
+                isinstance(xinetd_service, SystemDService) and
+                    xinetd_service.ActiveState == 'active' or
+                isinstance(xinetd_service, services.SysVService) and
+                    xinetd_service.status == SVC_STATUS_RUNNING):
             while service.is_chkconfig_running():
                 while self.maincontext.pending():
                     self.maincontext.iteration()
