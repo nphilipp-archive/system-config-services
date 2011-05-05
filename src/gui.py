@@ -627,9 +627,10 @@ class GUIServicesList(GladeController):
                 self.on_service_herder_ready(herder)
 
     def on_systemd_unit_new(self, manager, unit):
+        # filter out units that aren't services
         if isinstance(unit, SystemDService):
-            self.on_service_added(unit)
             unit.connect("properties_changed", self.on_unit_properties_changed)
+            self._on_unit_properties_changed(unit)
 
     def on_systemd_unit_removed(self, manager, unit):
         if isinstance(unit, SystemDService):
@@ -840,7 +841,11 @@ class GUIServicesList(GladeController):
 
             # self.on_service_selected (service = self.find_new_service_to_select ())
 
-        self.servicesTreeStore.delete_service(service)
+        try:
+            self.servicesTreeStore.delete_service(service)
+        except KeyError:
+            # systemd service might not be loaded, i.e. not shown
+            pass
 
         try:
             del self.service_painters[service]
@@ -860,8 +865,19 @@ class GUIServicesList(GladeController):
 
     def on_unit_properties_changed(self, unit, interface, changed_properties,
             invalidated_properties):
-        self.on_service_conf_changed(unit)
-        self.on_service_status_changed(unit)
+        self._on_unit_properties_changed(unit)
+
+    def _on_unit_properties_changed(self, unit):
+        loaded = unit.LoadState == 'loaded'
+        if loaded:
+            if unit not in self.service_painters:
+                self.on_service_added(unit)
+            self.on_service_conf_changed(unit)
+            self.on_service_status_changed(unit)
+        else:
+            if unit in self.service_painters:
+                self.on_service_removed(unit)
+
 
     def on_service_conf_changed(self, service):
         self.service_painters[service].paint()
@@ -876,7 +892,7 @@ class GUIServicesList(GladeController):
         self._set_widgets_sensitivity()
 
     def on_service_status_changed(self, service):
-        if self.service_painters.has_key(service):
+        if service in self.service_painters:
             self.service_painters[service].paint()
             if service == self.current_service:
                 GUIServicesDetailsPainter(self, service).paint_details()
@@ -886,9 +902,8 @@ class GUIServicesList(GladeController):
                             paint_details()
                 self._update_xinetd_service_entries()
         else:
-
-            # service might have been deleted
-
+            # service might have been deleted or not shown (systemd units that
+            # are not "loaded")
             pass
 
         self._set_widgets_sensitivity()
