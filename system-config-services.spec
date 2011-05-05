@@ -14,7 +14,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.101.0
+Version: 0.101.1
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
@@ -113,6 +113,14 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Thu May 05 2011 Nils Philippsen <nils@redhat.com> - 0.101.1-1
+- version 0.101.1:
+  - improve coping with systemd reloads
+  - improve checking service types (systemd vs. legacy), don't try to call
+    old-style methods on systemd units (#702086)
+  - hide systemd units that aren't loaded (#702163)
+  - improve dealing with xinetd package being removed
+
 * Mon May 02 2011 Nils Philippsen <nils@redhat.com> - 0.101.0-1
 - initial support for systemd
 
