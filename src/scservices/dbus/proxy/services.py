@@ -81,11 +81,25 @@ class DBusChkconfigServiceProxy(DBusServiceProxy):
 
     @polkit.enable_proxy
     def get_enabled(self):
-        return self.chkconfig_interface.get_enabled()
+        try:
+            return self.chkconfig_interface.get_enabled()
+        except dbus.DBusException, e:
+            if e.get_dbus_name() in ('org.freedesktop.DBus.Error.UnknownObject',
+                    'org.freedesktop.DBus.Error.UnknownMethod'):
+                return False
+            else:
+                raise
 
     @polkit.enable_proxy
     def is_chkconfig_running(self):
-        return self.chkconfig_interface.is_chkconfig_running()
+        try:
+            return self.chkconfig_interface.is_chkconfig_running()
+        except dbus.DBusException, e:
+            if e.get_dbus_name() in ('org.freedesktop.DBus.Error.UnknownObject',
+                    'org.freedesktop.DBus.Error.UnknownMethod'):
+                return False
+            else:
+                raise
 
 
 class DBusSysVServiceProxy(DBusChkconfigServiceProxy):
