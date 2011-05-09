@@ -1,20 +1,21 @@
-# translation of pl.po to Polish
-# Radosław Zawartko <radzaw@radzaw.one.pl>, 2003.
-# Tom Berner <tom@lodz.pl>, 2005.
-# Piotr Drąg <piotrdrag@gmail.com>, 2006.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: pl\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2010-03-04 12:12+0100\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <trans-pl@lists.fedoraproject.org>\n"
-"Language: pl\n"
+"PO-Revision-Date: 2011-05-05 14:42+0000\n"
+"Last-Translator: raven <piotrdrag@gmail.com>\n"
+"Language-Team: Polish (http://www.transifex.net/projects/p/fedora/team/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -47,7 +48,7 @@ msgstr "Ta usługa jest włączona na poziomach uruchamiania: %(runlevels)s"
 
 #: src/gui.py:209
 msgid "This service is masked."
-msgstr ""
+msgstr "Ta usługa jest zamaskowana."
 
 #: src/gui.py:222
 msgid "The status of this service is unknown."
@@ -67,49 +68,49 @@ msgstr "Ta usługa jest martwa."
 
 #: src/gui.py:245
 msgid "This unit is inactive."
-msgstr ""
+msgstr "Ta jednostka jest nieaktywna."
 
 #: src/gui.py:247
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
-msgstr ""
+msgstr "Ta jednostka jest nieaktywna: %(sub_state)s"
 
 #: src/gui.py:251
 msgid "This unit is running."
-msgstr ""
+msgstr "Ta jednostka jest uruchomiona."
 
 #: src/gui.py:254
 msgid "This unit has finished."
-msgstr ""
+msgstr "Ta jednostka została zakończona."
 
 #: src/gui.py:257
 #, python-format
 msgid "This unit is active: %(sub_state)s"
-msgstr ""
+msgstr "Ta jednostka jest aktywna: %(sub_state)s"
 
 #: src/gui.py:260
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
-msgstr ""
+msgstr "Ta jednostka nie powiodła się: %(sub_state)s"
 
 #: src/gui.py:264
 msgid "This unit is starting."
-msgstr ""
+msgstr "Ta jednostka jest uruchamiana."
 
 #: src/gui.py:266
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
-msgstr ""
+msgstr "Ta jednostka jest aktywowana: %(sub_state)s"
 
 #: src/gui.py:269
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
-msgstr ""
+msgstr "Ta jednostka jest deaktywowana: %(sub_state)s"
 
 #: src/gui.py:272
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
-msgstr ""
+msgstr "Stan tej jednostki jest nieznany: %(active_state)s/%(sub_state)s"
 
 #: src/gui.py:349
 #, python-format
@@ -118,6 +119,9 @@ msgid ""
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
 msgstr ""
+"Usługa <b>%(servicename)s</b> jest zarządzana przez systemd. Może być "
+"uruchamiana, a następnie działać w tle, być aktywowana na żądanie albo "
+"uruchamiana raz do celów przygotowawczych lub porządkowych."
 
 #: src/gui.py:379
 #, python-format
@@ -146,8 +150,8 @@ msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
-"Ta usługa jest włączona, ale pakiet <b>xinetd</b> nie jest zainstalowany. Ta "
-"usługa nie działa bez niego."
+"Ta usługa jest włączona, ale pakiet <b>xinetd</b> nie jest zainstalowany. Ta"
+" usługa nie działa bez niego."
 
 #: src/gui.py:448
 msgid ""
@@ -172,11 +176,11 @@ msgstr ""
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
-msgstr ""
+msgstr "Błąd podczas pobierania opisu."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright © 2002-2011 Red Hat, Inc. i współtwórcy"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -250,35 +254,18 @@ msgstr "Stan usługi %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Niniejszy program jest wolnym oprogramowaniem; można go rozprowadzać dalej i/"
-"lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU, wydanej "
-"przez Fundację Wolnego Oprogramowania (Free Software Foundation) - według "
-"wersji drugiej tej Licencji lub którejś z późniejszych wersji.\n"
+"Niniejszy program jest wolnym oprogramowaniem; można go rozprowadzać dalej i/lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU, wydanej przez Fundację Wolnego Oprogramowania (Free Software Foundation) - według wersji drugiej tej Licencji lub którejś z późniejszych wersji.\n"
 "\n"
-"Niniejszy program rozpowszechniany jest z nadzieją, iż będzie on użyteczny - "
-"jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI "
-"HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania "
-"bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną "
-"GNU.\n"
+"Niniejszy program rozpowszechniany jest z nadzieją, iż będzie on użyteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną GNU.\n"
 "\n"
-"Z pewnością wraz z niniejszym programem dostarczono także egzemplarz "
-"Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie "
-"- proszę napisać do Free Software Foundation, Inc., 59 Temple Place, Suite "
-"330, Boston, MA 02111-1307 USA"
+"Z pewnością wraz z niniejszym programem dostarczono także egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie - proszę napisać do Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
@@ -286,11 +273,14 @@ msgid ""
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
 msgstr ""
+"Ta usługa jest zarządzana przez systemd. Może być uruchamiana, a następnie "
+"działać w tle, być aktywowana na żądanie albo uruchamiana raz do celów "
+"przygotowawczych lub porządkowych."
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
 msgstr ""
 "Ta usługa jest uruchamiana raz, zwykle podczas uruchamiania systemu, działa "
 "w tle i przebudza się, kiedy jest potrzebna."
@@ -382,6 +372,3 @@ msgstr "Zarządzanie usługami systemowymi"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "Zarządzanie usługami systemowymi wymaga uwierzytelnienia"
-
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright © 2002-2009 Red Hat, Inc. i współtwórcy"

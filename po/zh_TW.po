@@ -1,27 +1,21 @@
-# translation of zh_TW.po to Traditional Chinese
-# translation of system-config-services.master.po to
-# Translation of system-config-services to Chinese (traditional)
-# Copyright (C) 2002 Red Hat Inc.
-#
-# Ben Wu <hpwu@redhat.com>, 2002, 2003, 2004.
-# Chester Cheng <ccheng@redhat.com>, 2005, 2006.
-# Walter Cheuk <wwycheuk@netvigator.com>, 2006.
-# Terry Chuang <tchuang@redhat.com>, 2008, 2009.
-# Terry Chuang <tchuang at redhat>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: zh_TW\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2010-04-12 10:14+1000\n"
-"Last-Translator: Terry Chuang <tchuang at redhat>\n"
-"Language-Team: Traditional Chinese <zh_TW@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2011-05-06 10:06+0000\n"
+"Last-Translator: zerng07 <pswo10680@gmail.com>\n"
+"Language-Team: Chinese (Taiwan) (http://www.transifex.net/projects/p/fedora/team/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.1\n"
-"X-Generator: KBabel 1.11.4\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -54,7 +48,7 @@ msgstr "服務已啟用於 runlevel：%(runlevels)s"
 
 #: src/gui.py:209
 msgid "This service is masked."
-msgstr ""
+msgstr "這個服務已被遮罩。"
 
 #: src/gui.py:222
 msgid "The status of this service is unknown."
@@ -74,49 +68,49 @@ msgstr "這項服務已終止。"
 
 #: src/gui.py:245
 msgid "This unit is inactive."
-msgstr ""
+msgstr "這個單位不再使用中。"
 
 #: src/gui.py:247
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
-msgstr ""
+msgstr "這個單位不在使用中：%(sub_state)s"
 
 #: src/gui.py:251
 msgid "This unit is running."
-msgstr ""
+msgstr "這個單位正在執行中。"
 
 #: src/gui.py:254
 msgid "This unit has finished."
-msgstr ""
+msgstr "這個單位已經完成。"
 
 #: src/gui.py:257
 #, python-format
 msgid "This unit is active: %(sub_state)s"
-msgstr ""
+msgstr "這個單位正在使用中：%(sub_state)s"
 
 #: src/gui.py:260
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
-msgstr ""
+msgstr "這個單位已經失敗：%(sub_state)s"
 
 #: src/gui.py:264
 msgid "This unit is starting."
-msgstr ""
+msgstr "這個單位正在啟動。"
 
 #: src/gui.py:266
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
-msgstr ""
+msgstr "這個單位正在啟用：%(sub_state)s"
 
 #: src/gui.py:269
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
-msgstr ""
+msgstr "這個單位正在停用：%(sub_state)s"
 
 #: src/gui.py:272
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
-msgstr ""
+msgstr "這個單位的狀態為未知：%(active_state)s/%(sub_state)s"
 
 #: src/gui.py:349
 #, python-format
@@ -125,15 +119,15 @@ msgid ""
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
 msgstr ""
+"<b>%(servicename)s</b> 服務是由 systemd "
+"所管理。它可能會被啟動接著在背景執行，或是依照需求啟用，或是執行一次以供準備或清理之用。"
 
 #: src/gui.py:379
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"<b>%(servicename)s</b> 這項服務一般會在系統開機時啟用，執行於背景中並且會視需"
-"求啟動。"
+msgstr "<b>%(servicename)s</b> 這項服務一般會在系統開機時啟用，執行於背景中並且會視需求啟動。"
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -144,25 +138,19 @@ msgstr "這項服務目前已更新。"
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"<b>%(servicename)s</b> 服務將會依照需求由 xinetd 服務啟用並且在沒有其它工作之"
-"後便會結束。"
+msgstr "<b>%(servicename)s</b> 服務將會依照需求由 xinetd 服務啟用並且在沒有其它工作之後便會結束。"
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"這項服務已啟用，不過 <b>xinetd</b> 套件尚未安裝。這項服務無法在沒有此套件的情"
-"況下運作。"
+msgstr "這項服務已啟用，不過 <b>xinetd</b> 套件尚未安裝。這項服務無法在沒有此套件的情況下運作。"
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"這項服務已啟用，不過 <b>xinetd</b> 服務尚未被執行。這項服務無法在沒有此套件的"
-"情況下運作。"
+msgstr "這項服務已啟用，不過 <b>xinetd</b> 服務尚未被執行。這項服務無法在沒有此套件的情況下運作。"
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -177,11 +165,11 @@ msgstr "無法找到說明檢視器。若要檢視說明，您必須安裝「yel
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
-msgstr ""
+msgstr "當取得描述時發生錯誤。"
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "著作權所有 © 2002-2011 Red Hat, Inc. 與貢獻者"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -254,50 +242,38 @@ msgstr "%s 服務的狀態："
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"本程式為自由軟體；您可依據自由軟體基金會所發表的 GNU 通用公共許可證就本作品再"
-"為發佈與/或修改；無論您依據的是本授權的第二版或（您自行選擇的）任一日後發行的"
-"版本。\n"
+"本程式為自由軟體；您可依據自由軟體基金會所發表的 GNU 通用公共許可證就本作品再為發佈與/或修改；無論您依據的是本授權的第二版或 (您自行選擇的) 任一日後發行的版本。\n"
 "\n"
-"本程式是基於使用目的而加以發佈，然而不負任何擔保責任；亦無對適售性或特定目的"
-"適用性所為的默示性擔保。詳情\n"
+"本程式是基於使用目的而加以發佈，然而不負任何擔保責任；亦無對適售性或特定目的適用性所為的默示性擔保。詳情\n"
 "請參照 GNU 通用公共許可證。\n"
 "\n"
-"您應該已收到了附隨於本程式的 GNU 通用公共授權的副本；若沒有的話，請寫信至自由"
-"軟體基金會：59 Temple Place, Suite 330, Boston, MA 02111-1307  USA。"
+"您應該已收到了附隨於本程式的 GNU 通用公共授權的副本；若沒有的話，請寫信至自由軟體基金會：59 Temple Place, Suite 330, Boston, MA 02111-1307  USA。"
 
 #: src/system-config-services.glade.h:28
 msgid ""
 "This service is managed by systemd. It may be started then run in the "
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
-msgstr ""
+msgstr "這個服務是由 systemd 所管理。它可能會被啟動接著在背景執行，或是依照需求啟動，或是執行一次以供準備或清理之用。"
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
 msgstr "服務一般在系統開機時便會被啟用，執行於背景中，並且會視需求被啟動。"
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"這項服務將可依照需求由 xinetd 服務來啟用，並且當沒有其它工作之後便會結束。"
+msgstr "這項服務將可依照需求由 xinetd 服務來啟用，並且當沒有其它工作之後便會結束。"
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -342,7 +318,9 @@ msgstr "system-config-services"
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:42
 msgid "translator-credits"
-msgstr "譯者姓名：莊佳儒（tchuang@redhat.com，2009）"
+msgstr ""
+"莊佳儒 <tchuang@redhat.com>，2009.\n"
+"Cheng-Chia Tseng <pswo10680@gmail.com>, 2011."
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -375,6 +353,3 @@ msgstr "管理系統服務"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "管理需要進行驗證的系統服務"
-
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright © 2002-2009 Red Hat, Inc. 以及所有貢獻人員"

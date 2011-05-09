@@ -1,32 +1,21 @@
-# translation of system-config-services.master.po to Dutch
-# Translation of system-config-services to Dutch.
-# Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
-# This file is distributed under the same license as the system-config-services package.
-# --
-# Misschien is 'voorzieningen' toch wat te belegen/vergezocht
-# en moeten we het gewoon bij services houden.
-# +1 helemaal mee eens dus. ga ik nu veranderen. Indien iemand niet mee eens
-# mag die het weer op 'voorzieningen' zetten  RL 04/2009
-# Taco Witte <T.C.Witte@phys.uu.nl>, 2002.
-# Tino Meinen <a.t.meinen@chello.nl>, 2003.
-# Peter van Egdom <p.van.egdom@gmail.com>, 2003, 2004, 2005, 2006, 2007, 2008.
-# R.E. van der Luit <nippur@fedoraproject.org>, 2009.
-# Geert Warrink <geert.warrink@onsnet.nu, 2009, 2010.
-# Geert Warrink <geert.warrink@onsnet.nu>, 2009, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2010-07-11 12:53+0200\n"
-"Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
-"Language-Team: Fedora\n"
-"Language: nl\n"
+"PO-Revision-Date: 2011-05-06 18:49+0000\n"
+"Last-Translator: warrink <geert.warrink@onsnet.nu>\n"
+"Language-Team: Dutch (http://www.transifex.net/projects/p/fedora/team/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.6.1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -59,7 +48,7 @@ msgstr "Deze service is aangezet in runlevels: %(runlevels)s"
 
 #: src/gui.py:209
 msgid "This service is masked."
-msgstr ""
+msgstr "Deze service is gemaskeerd."
 
 #: src/gui.py:222
 msgid "The status of this service is unknown."
@@ -79,49 +68,49 @@ msgstr "Deze service is afgesloten."
 
 #: src/gui.py:245
 msgid "This unit is inactive."
-msgstr ""
+msgstr "Deze unit is niet actief."
 
 #: src/gui.py:247
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
-msgstr ""
+msgstr "Deze unit is niet actief: %(sub_state)s"
 
 #: src/gui.py:251
 msgid "This unit is running."
-msgstr ""
+msgstr "Deze unit draait."
 
 #: src/gui.py:254
 msgid "This unit has finished."
-msgstr ""
+msgstr "Deze unit is voltooid."
 
 #: src/gui.py:257
 #, python-format
 msgid "This unit is active: %(sub_state)s"
-msgstr ""
+msgstr "Deze unit is actief: %(sub_state)s"
 
 #: src/gui.py:260
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
-msgstr ""
+msgstr "Deze unit is mislukt: %(sub_state)s"
 
 #: src/gui.py:264
 msgid "This unit is starting."
-msgstr ""
+msgstr "Deze unit wordt gestart."
 
 #: src/gui.py:266
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
-msgstr ""
+msgstr "Deze unit wordt geactiveerd: %(sub_state)s"
 
 #: src/gui.py:269
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
-msgstr ""
+msgstr "Deze unit wordt gedeactiveerd: %(sub_state)s"
 
 #: src/gui.py:272
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
-msgstr ""
+msgstr "De toestand van deze unit is onbekend: %(active_state)s/%(sub_state)s"
 
 #: src/gui.py:349
 #, python-format
@@ -130,6 +119,9 @@ msgid ""
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
 msgstr ""
+"De <b>%(servicename)s</b> service wordt beheerd door systemd. Het kan worden"
+" gestart om op de achtergrond te draaien, of om op aanvraag geactiveerd te "
+"worden, of eenmaal te draaien voor voorbereiding of opschoon doeleinden."
 
 #: src/gui.py:379
 #, python-format
@@ -137,9 +129,9 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
-"De <b>%(servicename)s</b> service wordt eenmaal gestart, meestal wanneer het "
-"systeem wordt opgestart, wordt uitgevoerd in de achtergrond en wordt actief "
-"als dat nodig is."
+"De <b>%(servicename)s</b> service wordt eenmaal gestart, meestal wanneer het"
+" systeem wordt opgestart, wordt uitgevoerd in de achtergrond en wordt actief"
+" als dat nodig is."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -167,8 +159,8 @@ msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
-"Deze service is aangezet, maar de <b>xinetd</b> service is niet actief. Deze "
-"service werkt hier niet zonder mee."
+"Deze service is aangezet, maar de <b>xinetd</b> service is niet actief. Deze"
+" service werkt hier niet zonder mee."
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -185,11 +177,11 @@ msgstr ""
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
-msgstr ""
+msgstr "Fout bij het ophalen van beschrijving."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright © 2002-2011 Red Hat, Inc. en medewerkers"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -262,34 +254,19 @@ msgstr "Status van service %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Dit programma is vrije software; U kan het verspreiden en/of wijzigen onder "
-"de bepalingen van de GNU General Public License, zoals uitgegeven door de "
-"Free Software Foundation; zowel versie 2 van de licentie, of (naar vrije "
-"keuze) een latere versie.\n"
+"Dit programma is vrije software; U kan het verspreiden en/of wijzigen onder de bepalingen van de GNU General Public License, zoals uitgegeven door de Free Software Foundation; zowel versie 2 van de licentie, of (naar vrije keuze) een latere versie.\n"
 "\n"
-"Dit programma is verspreid met de hoop dat het nuttig zal zijn, maar ZONDER "
-"ENIGE GARANTIE; zelfs zonder de impliciete garantie van VERKOOPBAARHEID of "
-"GESCHIKTHEID VOOR EEN BEPAALD DOEL. Zie de\n"
+"Dit programma is verspreid met de hoop dat het nuttig zal zijn, maar ZONDER ENIGE GARANTIE; zelfs zonder de impliciete garantie van VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL. Zie de\n"
 "GNU General Public License voor meer details.\n"
 "\n"
-"Je zou een kopie van de GNU General Public License, samen met dit programma, "
-"ontvangen moeten hebben; indien dat niet het geval is kun je schrijven naar "
-"de Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA "
-"02111-1307  USA"
+"Je zou een kopie van de GNU General Public License, samen met dit programma, ontvangen moeten hebben; indien dat niet het geval is kun je schrijven naar de Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
@@ -297,11 +274,14 @@ msgid ""
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
 msgstr ""
+"Deze service wordt beheerd door systemd. Het kan worden gestart om op de "
+"achtergrond te draaien, of om op aanvraag geactiveerd te worden, of om "
+"eenmalig te draaien voor voorbereiding of opschoon doeleinden."
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
 msgstr ""
 "Deze service wordt eenmaal gestart, meestal wanneer het systeem wordt "
 "opgestart, wordt uitgevoerd in de achtergrond en wordt actief als dat nodig "
@@ -384,7 +364,8 @@ msgstr "Haal informatie op over systeem services"
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr "Het ophalen van informatie over systeem services vereist authenticatie"
+msgstr ""
+"Het ophalen van informatie over systeem services vereist authenticatie"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -395,123 +376,3 @@ msgstr "Beheer systeem services"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "Het beheren van systeem services vereist authenticatie"
-
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright © 2002-2009 Red Hat, Inc. en medewerkers"
-
-#~ msgid "System policy prevents access to system services information"
-#~ msgstr ""
-#~ "Systeem richtlijnen beletten toegang tot systeem services informatie"
-
-#~ msgid "System policy prevents management of system services"
-#~ msgstr "Systeem richtlijnen beletten het beheer van systeem services"
-
-#~ msgid "window1"
-#~ msgstr "window1"
-
-#~ msgid "Service %s"
-#~ msgstr "Service %s"
-
-#~ msgid "Enable"
-#~ msgstr "Aanzetten"
-
-#~ msgid "Disable"
-#~ msgstr "Uitzetten"
-
-#~ msgid "Customize"
-#~ msgstr "Aanpassen"
-
-#~ msgid "Enable Default"
-#~ msgstr "Standaard aanzetten"
-
-#~ msgid "Enable All"
-#~ msgstr "Alles aanzetten"
-
-#~ msgid "Disable All"
-#~ msgstr "Alles uitzetten"
-
-#~ msgid "Start"
-#~ msgstr "Starten"
-
-#~ msgid "Restart"
-#~ msgstr "Herstarten"
-
-#~ msgid "Configure"
-#~ msgstr "Configureren"
-
-#~ msgid "foobar"
-#~ msgstr "foobar"
-
-#~ msgid "barfoo"
-#~ msgstr "barfoo"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Huidig runlevel is %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "Runlevels"
-
-#~ msgid "label18"
-#~ msgstr "label18"
-
-#~ msgid "Start "
-#~ msgstr "Starten "
-
-#~ msgid "Stop"
-#~ msgstr "Stoppen"
-
-#~ msgid "Service control"
-#~ msgstr "Service besturing"
-
-#~ msgid "Status output"
-#~ msgstr "Statusuitvoer"
-
-#~ msgid "_Configure"
-#~ msgstr "_Configureren"
-
-#~ msgid "Button Box"
-#~ msgstr "Knopbox"
-
-#~ msgid "label16"
-#~ msgstr "label16"
-
-#~ msgid "Service %s:"
-#~ msgstr "Service %s:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright  2002-2008 Red Hat, Inc. en medewerkers"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "Service %s niet gevonden!"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "Service %s is actief met oude configuratie"
-
-#~ msgid "Service %s is running"
-#~ msgstr "Service %s is actief"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "Service %s rapporteert een fout"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "Service %s is gestopt"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "Momenteel aangezet in runlevels %s"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "%(name)s in runlevels %(levels)s aanzetten"
-
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "De <b>%(servicename)s</b> service zal op verzoek worden gestart door de "
-#~ "xinetd service en eindigt wanneer het niets meer te doen heeft."
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "Deze service zal op verzoek worden gestart door de xinetd service en "
-#~ "eindigt wanneer het niets meer te doen heeft."

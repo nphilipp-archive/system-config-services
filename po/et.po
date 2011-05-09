@@ -1,117 +1,116 @@
-#
-#
-# This file is distributed under the same license as the system-config-services package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-# Allan Sims <allsi@eau.ee>, 2004.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: et\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2005-07-27 16:56+0200\n"
-"Last-Translator: Allan Sims <allan.sims@eau.ee>\n"
-"Language-Team: Estonian <Eesti>\n"
-"Language: et\n"
+"PO-Revision-Date: 2011-05-09 06:08+0000\n"
+"Last-Translator: mihkel <turakas@gmail.com>\n"
+"Language-Team: Estonian (http://www.transifex.net/projects/p/fedora/team/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0.2\n"
+"Language: et\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: src/gui.py:123
 msgid "Name"
-msgstr ""
+msgstr "Nimi"
 
 #: src/gui.py:126
 msgid "Remarks"
-msgstr ""
+msgstr "Märkused"
 
 #: src/gui.py:199 src/gui.py:221 src/gui.py:231
 msgid "This service is being refreshed right now."
-msgstr ""
+msgstr "Seda teenust värskendatakse hetkel."
 
 #: src/gui.py:200 src/gui.py:233
 msgid "Getting information about this service failed."
-msgstr ""
+msgstr "Selle teenuse kohta informatsiooni hankimine nurjus."
 
 #: src/gui.py:201 src/gui.py:205 src/gui.py:206
 msgid "This service is enabled."
-msgstr ""
+msgstr "See teenus on lubatud."
 
 #: src/gui.py:202 src/gui.py:207 src/gui.py:208 src/gui.py:236
 msgid "This service is disabled."
-msgstr ""
+msgstr "See teenus on keelatud"
 
 #: src/gui.py:204
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr ""
+msgstr "See teenus on lubatud järgmistel käivitustasemetel: %(runlevels)s"
 
 #: src/gui.py:209
 msgid "This service is masked."
-msgstr ""
+msgstr "See teenus on maskitud."
 
 #: src/gui.py:222
 msgid "The status of this service is unknown."
-msgstr ""
+msgstr "Selle teenuse olek on teadmata."
 
 #: src/gui.py:223
 msgid "This service is stopped."
-msgstr ""
+msgstr "See teenus on peatatud."
 
 #: src/gui.py:224
 msgid "This service is running."
-msgstr ""
+msgstr "See teenus töötab."
 
 #: src/gui.py:225
 msgid "This service is dead."
-msgstr ""
+msgstr "See teenus on surnud."
 
 #: src/gui.py:245
 msgid "This unit is inactive."
-msgstr ""
+msgstr "See ühik on mitteaktiivne."
 
 #: src/gui.py:247
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
-msgstr ""
+msgstr "See ühik on mitteaktiivne: %(sub_state)s"
 
 #: src/gui.py:251
 msgid "This unit is running."
-msgstr ""
+msgstr "See ühik töötab."
 
 #: src/gui.py:254
 msgid "This unit has finished."
-msgstr ""
+msgstr "See ühik on lõpetanud."
 
 #: src/gui.py:257
 #, python-format
 msgid "This unit is active: %(sub_state)s"
-msgstr ""
+msgstr "See ühik on aktiivne: %(sub_state)s"
 
 #: src/gui.py:260
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
-msgstr ""
+msgstr "See ühik on nurjunud: %(sub_state)s"
 
 #: src/gui.py:264
 msgid "This unit is starting."
-msgstr ""
+msgstr "See ühik käivitub."
 
 #: src/gui.py:266
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
-msgstr ""
+msgstr "See ühik aktiveerub: %(sub_state)s"
 
 #: src/gui.py:269
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
-msgstr ""
+msgstr "See ühik deaktiveerum: %(sub_state)s"
 
 #: src/gui.py:272
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
-msgstr ""
+msgstr "Selle ühiku olek on teadmata: %(active_state)s/%(sub_state)s"
 
 #: src/gui.py:349
 #, python-format
@@ -120,6 +119,9 @@ msgid ""
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
 msgstr ""
+"<b>%(servicename)s</b>-i teenust haldab systemd. Teda võib käivitada taustal"
+" või aktiveerida käsu peale või käivitada ainult korraks ettevalmistamiseks "
+"või puhastamise eesmärkidel."
 
 #: src/gui.py:379
 #, python-format
@@ -127,10 +129,12 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
+"<b>%(servicename)s</b>-i teenus käivitatakse korraks, tavaliselt süsteemi "
+"alglaadimise ajal, töötab taustal ja ärkab üles kui vaja."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
-msgstr ""
+msgstr "Seda teenust värskendatakse hetkel."
 
 #: src/gui.py:425
 #, python-format
@@ -138,45 +142,53 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
+"<b>%(servicename)s</b>-i teenus käivitatakse käsu peale xinetd teenuse poolt"
+" ja lõpetab siis, kui tal ei ole enam midagi teha."
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
+"See teenus on lubatud, aga <b>xinetd</b> pakk pole paigaldatud. See teenus "
+"ei tööta ilma selleta."
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
 msgstr ""
+"See teenus on lubatud, aga <b>xinetd</b> teenus ei tööta. See teenus ei "
+"tööta ilma selleta."
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
-msgstr ""
+msgstr "Luba <b>%(service)s</b>-i teenus järgmistel käivitustasemetel:"
 
 #: src/gui.py:1100
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
+"Abi sirvijat polnud võimalik leida. Abi vaatamiseks tuleb paigaldada 'yelp' "
+"pakk."
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
-msgstr ""
+msgstr "Kirjelduse hankimine nurjus."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Autoriõigused © 2002-2011 Red Hat, Inc. ja kaasautorid"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
-msgstr ""
+msgstr "Kohanda käivitustasemeid"
 
 #: src/system-config-services.glade.h:3
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
+msgstr "Kohanda käivitustasemeid, milles teenus on lubatud."
 
 #: src/system-config-services.glade.h:4
 msgid "Description"
@@ -184,27 +196,27 @@ msgstr "Kirjeldus"
 
 #: src/system-config-services.glade.h:7
 msgid "No service selected."
-msgstr ""
+msgstr "Ühtegi teenust pole valitud"
 
 #: src/system-config-services.glade.h:8
 msgid "Runlevel 2"
-msgstr ""
+msgstr "Käivitustase 2"
 
 #: src/system-config-services.glade.h:9
 msgid "Runlevel 3"
-msgstr ""
+msgstr "Käivitustase 3"
 
 #: src/system-config-services.glade.h:10
 msgid "Runlevel 4"
-msgstr ""
+msgstr "Käivitustase 4"
 
 #: src/system-config-services.glade.h:11
 msgid "Runlevel 5"
-msgstr ""
+msgstr "Käivitustase 5"
 
 #: src/system-config-services.glade.h:12
 msgid "Runlevel _2"
-msgstr ""
+msgstr "Käivitustase _2"
 
 #: src/system-config-services.glade.h:13
 msgid "Runlevel _3"
@@ -220,11 +232,11 @@ msgstr "Käivitustase _5"
 
 #: src/system-config-services.glade.h:16
 msgid "S_top"
-msgstr ""
+msgstr "S_topp"
 
 #: src/system-config-services.glade.h:17
 msgid "Ser_vice"
-msgstr ""
+msgstr "Tee_nus"
 
 #: src/system-config-services.glade.h:18
 msgid "Service Configuration"
@@ -232,29 +244,27 @@ msgstr "Teenuse seadistus"
 
 #: src/system-config-services.glade.h:19
 msgid "Service Information"
-msgstr ""
+msgstr "Teenuse teave"
 
 #: src/system-config-services.glade.h:21
 #, no-c-format
 msgid "Status of service %s:"
-msgstr ""
+msgstr "Teenuse %s olek:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
+"See rakendus on vaba tarkvara; te võite seda edasi levitada ja/või muuta vastavalt GNU Üldise Avaliku Litsentsi tingimustele, nagu need on Vaba Tarkvara Fondi poolt avaldatud; kas Litsentsi versioon number 2 või (vastavalt teie valikule) ükskõik milline hilisem versioon.\n"
+"\n"
+"Seda rakendust levitatakse lootuses, et see on kasulik, kuid ILMA IGASUGUSE GARANTIITA; isegi ilma KESKMISE/TAVALISE KVALITEEDI GARANTIITA või SOBIVUSELE TEATUD KINDLAKS EESMÄRGIKS. Üksikasjade suhtes vaata GNU Üldist Avalikku Litsentsi.\n"
+"\n"
+"Te peaks olema saanud GNU Üldise Avaliku Litsentsi koopia koos selle programmiga, kui ei, siis võtke ühendust Free Software Foundation'iga, 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
@@ -262,22 +272,29 @@ msgid ""
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
 msgstr ""
+"Seda teenust haldab systemd. Teda võib käivitada taustal või aktiveerida "
+"käsu peale või käivitada ainult korraks ettevalmistamiseks või puhastamise "
+"eesmärkidel."
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
 msgstr ""
+"See teenus käivitatakse korraks, tavaliselt süsteemi alglaadimise ajal, "
+"töötab taustal ja ärkab üles kui vaja."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
+"See teenus käivitatakse käsu peale xinetd teenuse poolt ja lõpetab siis, kui"
+" tal ei ole enam midagi teha."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
-msgstr ""
+msgstr "_Programmist lähemalt"
 
 #: src/system-config-services.glade.h:32
 msgid "_Contents"
@@ -285,15 +302,15 @@ msgstr "_Sisu"
 
 #: src/system-config-services.glade.h:33
 msgid "_Customize"
-msgstr ""
+msgstr "_Kohanda"
 
 #: src/system-config-services.glade.h:34
 msgid "_Disable"
-msgstr ""
+msgstr "K_eela"
 
 #: src/system-config-services.glade.h:35
 msgid "_Enable"
-msgstr ""
+msgstr "_Luba"
 
 #: src/system-config-services.glade.h:36
 msgid "_Help"
@@ -301,24 +318,24 @@ msgstr "_Abi"
 
 #: src/system-config-services.glade.h:37
 msgid "_Program"
-msgstr ""
+msgstr "P_rogramm"
 
 #: src/system-config-services.glade.h:38
 msgid "_Restart"
-msgstr ""
+msgstr "_Taaskäivita"
 
 #: src/system-config-services.glade.h:39
 msgid "_Start"
-msgstr ""
+msgstr "K_äivita"
 
 #: src/system-config-services.glade.h:40
 msgid "system-config-services"
-msgstr ""
+msgstr "system-config-services"
 
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:42
 msgid "translator-credits"
-msgstr ""
+msgstr "translator-credits"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -335,253 +352,19 @@ msgstr "Teenused"
 #: config/org.fedoraproject.config.services.policy.0.in.h:1
 #: config/org.fedoraproject.config.services.policy.1.in.h:1
 msgid "Get information about system services"
-msgstr ""
+msgstr "Hangi teavet süsteemi teenuste kohta"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
+msgstr "Süsteemi teenuste kohta teabe hankimine nõuab autentimist"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "Manage system services"
-msgstr ""
+msgstr "Halda süsteemi teenuseid"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
-msgstr ""
-
-#~ msgid "Start"
-#~ msgstr "Käivita"
-
-#~ msgid "Restart"
-#~ msgstr "Taaslae"
-
-#, fuzzy
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Käesolev aktiivne käivitustase: "
-
-#, fuzzy
-#~ msgid "Runlevels"
-#~ msgstr "Käivitustase %d"
-
-#, fuzzy
-#~ msgid "Start "
-#~ msgstr "Käivita"
-
-#~ msgid "Stop"
-#~ msgstr "Seiska"
-
-#, fuzzy
-#~ msgid "Service control"
-#~ msgstr "Teenuse seadistus"
-
-#, fuzzy
-#~ msgid "Status output"
-#~ msgstr "Seisund"
-
-#~ msgid "None"
-#~ msgstr "Mitte ühtegi"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Salvestamise dialoog"
-
-#~ msgid "Don't Save"
-#~ msgstr "Ei salvesta"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Sa oled muutnud käesolevat käivitustased.\n"
-#~ "Kas sa soovid muutusi salvestada?"
-
-#~ msgid "Add Service"
-#~ msgstr "Lisa teenuse"
-
-#~ msgid "Service Name: "
-#~ msgstr "Teenuse nimi:"
-
-#~ msgid "_File"
-#~ msgstr "_Fail"
-
-#~ msgid "_Save Changes"
-#~ msgstr "_Salvesta muutused"
-
-#, fuzzy
-#~ msgid "Revert To _Last Save"
-#~ msgstr "Taasta viimati salvestatud"
-
-#, fuzzy
-#~ msgid "_Quit"
-#~ msgstr "_Välju"
-
-#~ msgid "_View"
-#~ msgstr "_Vaade"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "Vä_rskenda teenuste loendit"
-
-#~ msgid "_Actions"
-#~ msgstr "_Tegevused"
-
-#~ msgid "Delete Service"
-#~ msgstr "Kustuta teenus"
-
-#~ msgid "_Start Service"
-#~ msgstr "_Käivita teenus"
-
-#~ msgid "S_top Service"
-#~ msgstr "Seiska _teenus"
-
-#~ msgid "_Restart Service"
-#~ msgstr "Taaslae teenus"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "_Redigeeri käivitustaset"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "Käivitustase _kõik"
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "Käesolev aktiivne käivitustase: "
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "Redigeeritav käivitustase:"
-
-#~ msgid "Status"
-#~ msgstr "Seisund"
-
-#, fuzzy
-#~ msgid "_Background Services"
-#~ msgstr "_Käivita teenus"
-
-#, fuzzy
-#~ msgid "_On Demand Services"
-#~ msgstr "Taaslae teenus"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "Oled sa kindel, et soovid kustutada %s?"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "Käivitustase %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "Käesolev käivitustase: "
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "Redigeeritav käivitustase: "
-
-#~ msgid "Unknown"
-#~ msgstr "Tundmatu"
-
-#~ msgid "All"
-#~ msgstr "Kõik"
-
-#, fuzzy
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "Süsteemi Teenuste Seadistamise Vahebd VERSION\n"
-#~ "Autoriõigus (c) 2002-2004 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat>\n"
-#~ " Bill Nottingham <notting@redhat>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "Tiitelandmed"
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "system-config-services tuleb käivitada juurkasutajana."
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "%s ebaõnnestus. Viga oli: %s"
-
-#~ msgid " successful"
-#~ msgstr " õnnestus"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "xinetd peab olema lubatud %s käivitamiseks"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "xinetd-i taaslaadimine ebaõnnestus "
-
-#~ msgid ". The error was: "
-#~ msgstr ". Viga oli:"
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "xinetd taaslaadimine %s õnnestus"
-
-#~ msgid "Help is not available."
-#~ msgstr "Abi ei ole kättesaadav."
-
-#~ msgid "Start the selected service"
-#~ msgstr "Käivita valitud teenus"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "Seiska valitud teenus"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "Taaslae valitud teenus"
-
-#, fuzzy
-#~ msgid "Refresh the list of services"
-#~ msgstr "Taaslae valitud teenus"
-
-#, fuzzy
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Taasta viimati salvestatud"
-
-#~ msgid "Save"
-#~ msgstr "Salvesta"
-
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd is required for this service."
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd on vajalik selle teenuse jaoks."
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid "_Save"
-#~ msgstr "_Salvesta"
-
-#~ msgid "_Revert"
-#~ msgstr "_Pöödu tagasi"
-
-#~ msgid "Revert"
-#~ msgstr "Pöördu tagasi"
-
-#~ msgid "Start at Boot"
-#~ msgstr "Käivita laadimisel"
-
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "Autoriõigus (c) 2002 Red Hat, Inc. Kõik õigused reserveeritud."
-
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "See tarkvara peab olema vabalt taas välja antud GPL litsensi tingimuste "
-#~ "alusel.\n"
-#~ "Palun teata kõikidest vigadest, mis sa leiad, Red Hat vigade jälituse "
-#~ "süsteemi kaudu:\n"
-#~ "http://bugzilla.redhat.com"
-
-#~ msgid "translator_credits"
-#~ msgstr "Allan Sims <allsi@eau.ee>"
+msgstr "Süsteemi teenuste haldamine nõuab autentimist"
