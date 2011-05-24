@@ -92,9 +92,10 @@ class SystemDUnit(gobject.GObject):
         self.unit_id = unit_id
 
         # the name is the unit_id without the unit type, unquoted
-        unit_name_encoded = unit_id.rsplit(".", 1)[0]
-        self.name = self.unit_id_encoding_re.sub(
+        unit_name_encoded = str(unit_id.rsplit(".", 1)[0])
+        name = self.unit_id_encoding_re.sub(
                 lambda x: chr(int(x.group('hexenc'), 16)), unit_name_encoded)
+        self.name = name.encode('utf-8', 'replace')
 
         self.bus_path = bus_path
         self.bus_object = self.bus.get_object(constants.dbus.service_name,
