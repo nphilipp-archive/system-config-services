@@ -1,21 +1,20 @@
-# Swedish messages for system-config-services.
-# Copyright © 2006-2010 Free Software Foundation, Inc.
-# Magnus Larsson <fedoratrans@gmail.com> 2006, 2009.
-# Göran Uddeborg <goeran@uddeborg.se>, 2008-2010.
-#
-# $Revision: 1.12 $
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2010-08-21 20:51+0200\n"
-"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
-"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
-"Language: sv\n"
+"PO-Revision-Date: 2011-05-14 18:54+0000\n"
+"Last-Translator: goeran <goeran@uddeborg.se>\n"
+"Language-Team: Swedish (http://www.transifex.net/projects/p/fedora/team/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -48,7 +47,7 @@ msgstr "Denna tjänst är aktiverad i körnivåerna: %(runlevels)s"
 
 #: src/gui.py:209
 msgid "This service is masked."
-msgstr ""
+msgstr "Denna tjänst är maskerad."
 
 #: src/gui.py:222
 msgid "The status of this service is unknown."
@@ -68,49 +67,49 @@ msgstr "Denna tjänst är död."
 
 #: src/gui.py:245
 msgid "This unit is inactive."
-msgstr ""
+msgstr "Denna enhet är inaktiv."
 
 #: src/gui.py:247
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
-msgstr ""
+msgstr "Denna enhet är inaktiv: %(sub_state)s"
 
 #: src/gui.py:251
 msgid "This unit is running."
-msgstr ""
+msgstr "Denna enhet kör."
 
 #: src/gui.py:254
 msgid "This unit has finished."
-msgstr ""
+msgstr "Denna enhet har avslutat."
 
 #: src/gui.py:257
 #, python-format
 msgid "This unit is active: %(sub_state)s"
-msgstr ""
+msgstr "Denna enhet är aktiv: %(sub_state)s"
 
 #: src/gui.py:260
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
-msgstr ""
+msgstr "Denna enhet har misslyckats: %(sub_state)s"
 
 #: src/gui.py:264
 msgid "This unit is starting."
-msgstr ""
+msgstr "Denna tjänst startar."
 
 #: src/gui.py:266
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
-msgstr ""
+msgstr "Denna enhet aktiveras: %(sub_state)s"
 
 #: src/gui.py:269
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
-msgstr ""
+msgstr "Denna enhet avaktiveras: %(sub_state)s"
 
 #: src/gui.py:272
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
-msgstr ""
+msgstr "Tillståndet för denna enhet är okänt: %(active_state)s/%(sub_state)s"
 
 #: src/gui.py:349
 #, python-format
@@ -119,6 +118,9 @@ msgid ""
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
 msgstr ""
+"Tjänsten <b>%(servicename)s</b> hanteras av systemd.  Den kan startas och "
+"sedan köra i bakgrunden, eller aktiveras vid behov, eller köra en gång i "
+"förberedelse- eller uppstädningssyfte."
 
 #: src/gui.py:379
 #, python-format
@@ -168,16 +170,16 @@ msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
-"Hjälpvisaren hittades inte.  För att kunna se hjälpen behöver paketet \"yelp"
-"\" vara installerat."
+"Hjälpvisaren hittades inte.  För att kunna se hjälpen behöver paketet "
+"\"yelp\" vara installerat."
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
-msgstr ""
+msgstr "Fel när beskrivningen hämtades."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright © 2002-2011 Red Hat, Inc. och medverkande"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -250,33 +252,18 @@ msgstr "Status för tjänst %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Detta program är fri programvara. Du kan distribuera det och/eller modifiera "
-"det under villkoren i GNU General Public License, publicerad av Free "
-"Software Foundation, antingen version 2 av licensen eller (om du så vill) "
-"någon senare version.\n"
+"Detta program är fri programvara. Du kan distribuera det och/eller modifiera det under villkoren i GNU General Public License, publicerad av Free Software Foundation, antingen version 2 av licensen eller (om du så vill) någon senare version.\n"
 "\n"
-"Detta program distribueras i hopp om att det skall vara användbart, men UTAN "
-"NÅGON GARANTI, även utan underförstådd garanti vid KÖP eller LÄMPLIGHET FÖR "
-"NÅGOT SPECIELLT ÄNDAMÅL.  Se GNU General Public License för ytterligare "
-"information.\n"
+"Detta program distribueras i hopp om att det skall vara användbart, men UTAN NÅGON GARANTI, även utan underförstådd garanti vid KÖP eller LÄMPLIGHET FÖR NÅGOT SPECIELLT ÄNDAMÅL.  Se GNU General Public License för ytterligare information.\n"
 "\n"
-"Du bör ha fått en kopia av GNU General Public License tillsammans med detta "
-"program.  Om inte, skriv till Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307, USA."
+"Du bör ha fått en kopia av GNU General Public License tillsammans med detta program.  Om inte, skriv till Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA."
 
 #: src/system-config-services.glade.h:28
 msgid ""
@@ -284,11 +271,14 @@ msgid ""
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
 msgstr ""
+"Denna tjänsten hanteras av systemd.  Den kan startas och sedan köra i "
+"bakgrunden, eller aktiveras vid behov, eller köra en gång i förberedelse- "
+"eller uppstädningssyfte."
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
 msgstr ""
 "Denna tjänsten startas en gång, vanligen när systemet startas upp, kör i "
 "bakgrunden och vaknar upp vid behov."
@@ -381,5 +371,4 @@ msgstr "Administrera systemtjänster"
 msgid "Managing system services requires authentication"
 msgstr "Att administrera systemtjänster kräver autenticiering"
 
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright © 2002-2009 Red Hat, Inc. och medverkande"
+

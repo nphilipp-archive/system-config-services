@@ -1,19 +1,21 @@
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Elad Alfassa <el.il@doom.co.il>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Elad <el.il@doom.co.il>\n"
-"Language-Team: Hebrew <fedora-he-list@redhat.com>\n"
-"Language: he\n"
+"PO-Revision-Date: 2011-05-23 07:48+0000\n"
+"Last-Translator: elad <el.il@doom.co.il>\n"
+"Language-Team: Hebrew <he-users@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Language: Hebrew\n"
-"X-Poedit-Country: ISRAEL\n"
+"Language: he\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -46,7 +48,7 @@ msgstr ":השירות הזה מאופשר ברמות ריצה %(runlevels)s"
 
 #: src/gui.py:209
 msgid "This service is masked."
-msgstr ""
+msgstr "השירות הזה ממוסך"
 
 #: src/gui.py:222
 msgid "The status of this service is unknown."
@@ -66,49 +68,49 @@ msgstr "השירות הזה מת."
 
 #: src/gui.py:245
 msgid "This unit is inactive."
-msgstr ""
+msgstr "היחידה הזו אינה פעילה."
 
 #: src/gui.py:247
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
-msgstr ""
+msgstr "היחידה הזו אינה פעילה: %(sub_state)s"
 
 #: src/gui.py:251
 msgid "This unit is running."
-msgstr ""
+msgstr "היחידה הזו רצה."
 
 #: src/gui.py:254
 msgid "This unit has finished."
-msgstr ""
+msgstr "היחידה הזו הסתיימה."
 
 #: src/gui.py:257
 #, python-format
 msgid "This unit is active: %(sub_state)s"
-msgstr ""
+msgstr "היחידה הזו פעילה: %(sub_state)s"
 
 #: src/gui.py:260
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
-msgstr ""
+msgstr "היחידה הזו נכשלה: %(sub_state)s"
 
 #: src/gui.py:264
 msgid "This unit is starting."
-msgstr ""
+msgstr "היחידה הזו מתחילה."
 
 #: src/gui.py:266
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
-msgstr ""
+msgstr "יחידה הזו מופעלת: %(sub_state)s"
 
 #: src/gui.py:269
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
-msgstr ""
+msgstr "היחידה הזו נכבית: %(sub_state)s"
 
 #: src/gui.py:272
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
-msgstr ""
+msgstr "מצב יחידה זו אינו ידוע: %(active_state)s/%(sub_state)s"
 
 #: src/gui.py:349
 #, python-format
@@ -117,6 +119,8 @@ msgid ""
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
 msgstr ""
+"השירות <b>%(servicename)s</b> מנוהל ע\"י systemd. ייתכן שהוא מופעל כדי לרוץ "
+"ברקע, מופעל לפי דרישה, או רץ פעם אחת להכנה או תהליכי ניקוי."
 
 #: src/gui.py:379
 #, python-format
@@ -124,8 +128,8 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
-"השירות <b>%(servicename)s</b> מופעל פעם אחת, בדרך כלל בעליית המערכת, רץ ברקע "
-"ומתוערר כשצריך."
+"השירות <b>%(servicename)s</b> מופעל פעם אחת, בדרך כלל בעליית המערכת, רץ ברקע"
+" ומתוערר כשצריך."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -248,33 +252,19 @@ msgstr "מצב השירות %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
@@ -282,11 +272,13 @@ msgid ""
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
 msgstr ""
+"השירות הזה מנוהל ע\"י systemd. ייתכן שהוא הופעל ולאחר מכן רץ ברקע, או שהוא "
+"מופעל לפי דרישה, או שהוא רץ פעם אחת לצרכי ניקוי או הכנה."
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
 msgstr ""
 "השירות הזה מופעל פעם אחת, בדרך כלל בעליית המערכת, רץ ברקע ומתעורר מתי שצריך."
 
@@ -295,7 +287,8 @@ msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
-"השירות הזה יופעל על-ידי השירות xinted לפי דרישה ויפסיק כשלא יהיה לו מה לעשות."
+"השירות הזה יופעל על-ידי השירות xinted לפי דרישה ויפסיק כשלא יהיה לו מה "
+"לעשות."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -340,7 +333,7 @@ msgstr "system-config-services"
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:42
 msgid "translator-credits"
-msgstr "אלעד <el.il@doom.co.il> /n"
+msgstr "אלעד אלפסה <elad@fedoraproject.org>"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -374,11 +367,4 @@ msgstr "נהל שירותי מערכת"
 msgid "Managing system services requires authentication"
 msgstr "ניהול שירותי המערכת דורש אימות"
 
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
 
-#~ msgid "System policy prevents access to system services information"
-#~ msgstr "מדיניות המערכת מונעת גישה למידע השירותים"
-
-#~ msgid "System policy prevents management of system services"
-#~ msgstr "מדיניות המערכת מונעת ניהול של שירותי המערכת"
