@@ -126,6 +126,14 @@ class SystemDManager(gobject.GObject):
     def StopUnit(self, name, mode='replace'):
         return self.privileged_manager_interface.StopUnit(name, mode)
 
+    @polkit.enable_proxy
+    def ReloadUnit(self, name, mode='replace'):
+        return self.privileged_manager_interface.ReloadUnit(name, mode)
+
+    @polkit.enable_proxy
+    def ReloadOrRestartUnit(self, name, mode='replace'):
+        return self.privileged_manager_interface.ReloadOrRestartUnit(name, mode)
+
 
 systemd_manager_discovery_started_signal = (
         gobject.signal_new('discovery_started', SystemDManager,
