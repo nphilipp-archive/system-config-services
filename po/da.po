@@ -1,23 +1,25 @@
-# Danish Translation of system-config-services
-# Copyright (C) 2009
-# Kenneth Christiansen <kenneth@gnu.org>, 2001.
-# Keld Simonsen <keld@dkuug.dk>, 2001-2003, 2004, 2005.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Keld Simonsen <keld@dkuug.dk>, 2001.
 # Keld Simonsen <keld@rap.dk>, 2006.
-# Kris Thomsen <lakristho@gmail.com>, 2009, 2010.
-#
+# Kenneth Christiansen <kenneth@gnu.org>, 2001.
+# Nils Philippsen <nils@redhat.com>, 2011.
+# Kris Thomsen <lakristho@gmail.com>, 2009, 2010, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2010-02-15 16:15+0200\n"
-"Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
+"PO-Revision-Date: 2011-07-16 22:46+0000\n"
+"Last-Translator: kristho <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
-"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -50,7 +52,7 @@ msgstr "Denne tjeneste er aktiveret i disse kørselsniveauer: %(runlevels)s"
 
 #: src/gui.py:209
 msgid "This service is masked."
-msgstr ""
+msgstr "Tjenesten er maskeret."
 
 #: src/gui.py:222
 msgid "The status of this service is unknown."
@@ -70,49 +72,49 @@ msgstr "Denne tjeneste er død."
 
 #: src/gui.py:245
 msgid "This unit is inactive."
-msgstr ""
+msgstr "Denne enhed er inaktiv."
 
 #: src/gui.py:247
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
-msgstr ""
+msgstr "Denne enhed er inaktiv: %(sub_state)s"
 
 #: src/gui.py:251
 msgid "This unit is running."
-msgstr ""
+msgstr "Denne enhed kører."
 
 #: src/gui.py:254
 msgid "This unit has finished."
-msgstr ""
+msgstr "Denne enhed er afsluttet."
 
 #: src/gui.py:257
 #, python-format
 msgid "This unit is active: %(sub_state)s"
-msgstr ""
+msgstr "Denne enhed er aktiv: %(sub_state)s"
 
 #: src/gui.py:260
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
-msgstr ""
+msgstr "Denne enhed har fejlet: %(sub_state)s"
 
 #: src/gui.py:264
 msgid "This unit is starting."
-msgstr ""
+msgstr "Denne enhed starter op."
 
 #: src/gui.py:266
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
-msgstr ""
+msgstr "Denne enhed aktiverer: %(sub_state)s"
 
 #: src/gui.py:269
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
-msgstr ""
+msgstr "Denne enhed deaktiverer: %(sub_state)s"
 
 #: src/gui.py:272
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
-msgstr ""
+msgstr "Statussen på denne enhed er ukendt: %(active_state)s/%(sub_state)s"
 
 #: src/gui.py:349
 #, python-format
@@ -121,6 +123,9 @@ msgid ""
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
 msgstr ""
+"Tjenesten <b>%(servicename)s</b> er håndteret af systemd. Den skal muligvis "
+"startes og så køre i baggrunden eller aktiveres efter behov eller køres en "
+"gang til forberedelses- og oprydningsformål."
 
 #: src/gui.py:379
 #, python-format
@@ -170,16 +175,16 @@ msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
-"Hjælpeviseren kunne ikke findes. For at kunne se hjælpen, skal du installere "
-"\"yelp\"-pakken."
+"Hjælpeviseren kunne ikke findes. For at kunne se hjælpen, skal du installere"
+" \"yelp\"-pakken."
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
-msgstr ""
+msgstr "Fejl under hentning af beskrivelse."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Ophavsret © 2002-2011 Red Hat, Inc. og bidragsydere"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -252,33 +257,18 @@ msgstr "Status på tjeneste %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"Dette program er fri software. Du kan redistribuere og/eller modificere det "
-"under de betingelserne som er angivet i GNU General Public License, som er "
-"udgivet af Free Software Foundation. Enten version 2 af licensen eller "
-"(efter eget valg) enhver senere version.\n"
+"Dette program er fri software. Du kan redistribuere og/eller modificere det under de betingelserne som er angivet i GNU General Public License, som er udgivet af Free Software Foundation. Enten version 2 af licensen eller (efter eget valg) enhver senere version.\n"
 "\n"
-"Dette program distribueres i håb om at det vil vise sig nyttigt, men UDEN "
-"NOGEN FORM FOR GARANTI, uden selv de underforståede garantier omkring "
-"SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere detaljer kan "
-"læses i GNU General Public License.\n"
+"Dette program distribueres i håb om at det vil vise sig nyttigt, men UDEN NOGEN FORM FOR GARANTI, uden selv de underforståede garantier omkring SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere detaljer kan læses i GNU General Public License.\n"
 "\n"
-"Du skulle have modtaget en kopi af GNU General Public License sammen med "
-"dette program. Hvis ikke, så skriv til Free software Foundation, Inc., 59 "
-"Temple Place, Suite 330, Boston, MA 02111-1307, USA"
+"Du skulle have modtaget en kopi af GNU General Public License sammen med dette program. Hvis ikke, så skriv til Free software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
@@ -286,22 +276,25 @@ msgid ""
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
 msgstr ""
+"Denne tjeneste er håndteret af systemd. Den skal muligvis startes og så køre"
+" i baggrunden eller aktiveres efter behov eller køres en gang til "
+"forberedelses- og oprydningsformål."
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
 msgstr ""
-"Denne tjeneste bliver startet en gang, som regel når systemet startes, kører "
-"i baggrunden og vågner op når det er nødvendigt."
+"Denne tjeneste bliver startet en gang, som regel når systemet startes, kører"
+" i baggrunden og vågner op når det er nødvendigt."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
 msgstr ""
-"Denne tjeneste vil blive startet efter ordre fra xinetd-tjenesten og slutter "
-"når den ikke har mere at udføre."
+"Denne tjeneste vil blive startet efter ordre fra xinetd-tjenesten og slutter"
+" når den ikke har mere at udføre."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -384,277 +377,4 @@ msgstr "Håndtér systemtjenester"
 msgid "Managing system services requires authentication"
 msgstr "Håndterer systemtjenester som kræver godkendelse"
 
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "Ophavsret © 2002-2009 Red Hat, Inc. og bidragydere"
 
-#~ msgid "System policy prevents access to system services information"
-#~ msgstr ""
-#~ "Retningslinjer for system forhindrer adgang til information om "
-#~ "systemtjenester"
-
-#~ msgid "System policy prevents management of system services"
-#~ msgstr "Retningslinjer for system forhindrer håndtering af systemtjenester"
-
-#~ msgid "window1"
-#~ msgstr "vindue1"
-
-#~ msgid "Service %s"
-#~ msgstr "Tjeneste \"%s\""
-
-#~ msgid "Enable"
-#~ msgstr "Aktivér"
-
-#~ msgid "Disable"
-#~ msgstr "Deaktivér"
-
-#~ msgid "Customize"
-#~ msgstr "Tilpas"
-
-#~ msgid "Enable Default"
-#~ msgstr "Aktivér standard"
-
-#~ msgid "Enable All"
-#~ msgstr "Aktivér alle"
-
-#~ msgid "Disable All"
-#~ msgstr "Deaktivér alle"
-
-#~ msgid "Start"
-#~ msgstr "Start"
-
-#~ msgid "Restart"
-#~ msgstr "Genstart"
-
-#~ msgid "Configure"
-#~ msgstr "Konfigurér"
-
-#~ msgid "foobar"
-#~ msgstr "foobar"
-
-#~ msgid "barfoo"
-#~ msgstr "barfoo"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Nuværende kørselsniveau er %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "Kørselsniveauer"
-
-#~ msgid "label18"
-#~ msgstr "etiket18"
-
-#~ msgid "Start "
-#~ msgstr "Start "
-
-#~ msgid "Stop"
-#~ msgstr "Afbryd"
-
-#~ msgid "Service control"
-#~ msgstr "Styring af tjenester"
-
-#~ msgid "Status output"
-#~ msgstr "Uddata for status"
-
-#~ msgid "_Configure"
-#~ msgstr "_Konfigurér"
-
-#~ msgid "Button Box"
-#~ msgstr "Knapkasse"
-
-#~ msgid "label16"
-#~ msgstr "etiket16"
-
-#~ msgid "Service %s:"
-#~ msgstr "Tjeneste \"%s\":"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright 2002-2008 Red Hat, Inc. og bidragydere"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "Tjeneste \"%s\" er ikke fundet!"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "Tjeneste \"%s\" kører med en gammel konfiguration"
-
-#~ msgid "Service %s is running"
-#~ msgstr "Tjeneste \"%s\" kører"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "Tjeneste \"%s\" rapporterer en fejl"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "Tjeneste \"%s\" er stoppet"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "I øjeblikket aktiveret i disse kørselsniveauer %s"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "Aktivér \"%(name)s\" i disse kørselsniveauer %(levels)s"
-
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "\"<b>%(servicename)s</b>\" tjenesten vil blive startet efter ordre fra "
-#~ "xinetd-tjenesten og stopper når den ikke har mere at gøre."
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "Denne tjeneste vil blive startet efter ordre fra \"xinetd\"-tjenesten og "
-#~ "stoppernår den ikke har mere at gøre."
-
-#~ msgid "None"
-#~ msgstr "Ingen"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Gem dialog"
-
-#~ msgid "Don't Save"
-#~ msgstr "Gem ikke"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Du har lavet ændringer til det aktuelle kørselsniveau.\n"
-#~ "Ønsker du at gemme ændringerne?"
-
-#~ msgid "Add Service"
-#~ msgstr "Tilføj tjeneste"
-
-#~ msgid "Service Name: "
-#~ msgstr "Navn på tjeneste: "
-
-#~ msgid "_File"
-#~ msgstr "_Fil"
-
-#~ msgid "_Save Changes"
-#~ msgstr "_Gem ændringer"
-
-#~ msgid "Revert To _Last Save"
-#~ msgstr "Genetablér til _sidste gemning"
-
-#~ msgid "_Quit"
-#~ msgstr "_Afslut"
-
-#~ msgid "_View"
-#~ msgstr "_Vis"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "_Opdatér tjenestelisten"
-
-#~ msgid "_Actions"
-#~ msgstr "_Handlinger"
-
-#~ msgid "Delete Service"
-#~ msgstr "Slet tjeneste"
-
-#~ msgid "_Start Service"
-#~ msgstr "_Start tjeneste"
-
-#~ msgid "S_top Service"
-#~ msgstr "_Afbryd tjeneste"
-
-#~ msgid "_Restart Service"
-#~ msgstr "Gensta_rt tjeneste"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "_Ændr kørselsniveau"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "Kørselsniveau _Alle"
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Disse tjenester startes én gang og kører i baggrunden. Du kan angive i "
-#~ "hvilke kørselsniveauer de skal startes."
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "Nuværende aktive kørselsniveau: "
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "Ændrer kørselsniveau:"
-
-#~ msgid "Status"
-#~ msgstr "Status"
-
-#~ msgid "_Background Services"
-#~ msgstr "_Baggrunds-tjenester"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "Disse tjenester startes når der bedes om det og slutter når der ikke er "
-#~ "mere at lave. \"<b>xinetd</b>\"-tjenesten skal køre for at de kan bruges."
-
-#~ msgid "_On Demand Services"
-#~ msgstr "_Tjenester der startes når der bedes om det"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "Er du sikker på at du ønsker at slette \"%s\"?"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "Kørselsniveau %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "Kører øjeblikkeligt i kørselsniveau: "
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "Ændrer kørselsniveau: "
-
-#~ msgid "Unknown"
-#~ msgstr "Ukendt"
-
-#~ msgid "All"
-#~ msgstr "Alle"
-
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "Konfigurationsværktøj for systemtjenester VERSION\n"
-#~ " Ophavsret © 2002-2004 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat>\n"
-#~ " Bill Nottingham <notting@redhat>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "Om"
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "Du skal køre system-config-services som administrator (root)."
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "\"%s\" mislykkedes. Fejlen var: \"%s\""
-
-#~ msgid " successful"
-#~ msgstr " med succés"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "\"xinetd\" skal aktiveres for at \"%s\" kan køre"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "\"xinetd\" genindlæsning mislykkedes for "
-
-#~ msgid ". The error was: "
-#~ msgstr ". Fejlen var: "
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "\"xinetd\" genindlæste \"%s\" uden problemer"
-
-#~ msgid "Help is not available."
-#~ msgstr "Hjælp er ikke tilgængelig."

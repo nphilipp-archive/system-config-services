@@ -2,14 +2,22 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # 
+# Leonid Kanter <leon@asplinux.ru>, 2004.
+# Yulia Poyarkova <yulia.poyarkova@gmail.com>, 2009.
+# Ivan Kukharchuk <wedge@inbox.ru>, 2006.
+# Leonid Kanter <leon@geon.donetsk.ua>, 2003.
 # Stanislav Darchinov <darchinov@gmail.com>, 2011.
 # Nils Philippsen <nils@redhat.com>, 2011.
+# Anatoliy Guskov <anatoliy.guskov@gmail.com>, 2008.
+# Andrew Zaytsev <andzaytsev@gmail.com>, 2010.
+# Andrew Martynov <andrewm@inventa.ru>, 2004, 2005, 2006, 2008.
+# Yulia Poyarkova <yulia.poyarkova@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2011-06-28 11:33+0000\n"
+"PO-Revision-Date: 2011-06-29 13:31+0000\n"
 "Last-Translator: karbafosss <darchinov@gmail.com>\n"
 "Language-Team: Russian <trans-ru@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
@@ -49,7 +57,7 @@ msgstr "Эта служба включена на уровнях выполне�
 
 #: src/gui.py:209
 msgid "This service is masked."
-msgstr ""
+msgstr "Сервис скрыт."
 
 #: src/gui.py:222
 msgid "The status of this service is unknown."
