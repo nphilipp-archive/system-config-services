@@ -14,7 +14,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.101.3
+Version: 0.101.4
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
@@ -113,6 +113,11 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Aug 22 2011 Nils Philippsen <nils@redhat.com> - 0.101.4-1
+- version 0.101.4:
+  - use systemd manager interface to reload xinetd (#732231)
+  - pull updated translations
+
 * Tue Jun 28 2011 Nils Philippsen <nils@redhat.com> - 0.101.3-1
 - version 0.101.3:
   - decode UTF-8 encoded unit names instead of vice versa (#717262)
