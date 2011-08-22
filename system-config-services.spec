@@ -14,7 +14,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.101.5
+Version: 0.101.6
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
@@ -113,6 +113,10 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Aug 22 2011 Nils Philippsen <nils@redhat.com> - 0.101.6-1
+- version 0.101.6:
+  - implement Reload/ReloadOrRestart dbus interfaces (#732231)
+
 * Mon Aug 22 2011 Nils Philippsen <nils@redhat.com> - 0.101.5-1
 - version 0.101.5:
   - implement Reload/ReloadOrRestart interfaces (#732231)
