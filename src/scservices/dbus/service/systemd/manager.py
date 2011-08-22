@@ -56,3 +56,13 @@ class DBusSystemDManager(slip.dbus.service.Object):
             in_signature="ss", out_signature="o")
     def StopUnit(self, name, mode):
         return self.manager.StopUnit(name, mode)
+
+    @dbus.service.method(dbus_interface=manager_interface,
+            in_signature="ss", out_signature="o")
+    def ReloadUnit(self, name, mode):
+        return self.manager.ReloadUnit(name, mode)
+
+    @dbus.service.method(dbus_interface=manager_interface,
+            in_signature="ss", out_signature="o")
+    def ReloadOrRestartUnit(self, name, mode):
+        return self.manager.ReloadOrRestartUnit(name, mode)
