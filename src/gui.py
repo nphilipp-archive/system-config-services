@@ -1057,7 +1057,10 @@ class MainWindow(GladeController):
             while service.is_chkconfig_running():
                 while self.maincontext.pending():
                     self.maincontext.iteration()
-            xinetd_service.reload()
+            if isinstance(xinetd_service, SystemDService):
+                self.systemd_manager.ReloadOrRestartUnit(xinetd_service.unit_id)
+            else:
+                xinetd_service.reload()
 
     def on_serviceEnable_activate(self, *args):
         service = self.servicesList.current_service
