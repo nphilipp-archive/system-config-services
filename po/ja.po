@@ -1,32 +1,32 @@
-# translation of ja.po to Japanese
-# serviceconf ja.po
-# Copyright (C) Red Hat, Inc. 2002
-#
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Hirofumi Saito <hi_saito@yk.rim.or.jp>, 2005, 2006.
 # SATO Satoru <ssato@redhat.com>, 2001.
 # Yukihiro Nakai <ynakai@redhat.com>, 2001.
-# James Hashida <khashida@redhat.com>, 2002,2003.
 # Tadashi Jokagi <fedora@elf.no-ip.org>, 2004.
 # Noriko Mizumoto <noriko@redhat.com>, 2004, 2006, 2007.
-# Hirofumi Saito <hi_saito@yk.rim.or.jp>, 2005, 2006.
 # Makoto Mizukami <mmk9060@aol.com>, 2008.
-# Kiyoto Hashida <khashida@redhat.com>, 2008, 2009.
+#   <www.carrotsoft@gmail.com>, 2011.
 # Hyu_gabaru Ryu_ichi <hyu_gabaru@yahoo.co.jp>, 2009.
+# Nils Philippsen <nils@redhat.com>, 2011.
+# Kiyoto Hashida <khashida@redhat.com>, 2008, 2009.
+# James Hashida <khashida@redhat.com>, 2002, 2003.
 # Hajime Taira <htaira@redhat.com>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: ja\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2010-03-09 18:54+0900\n"
-"Last-Translator: Hajime Taira <htaira@redhat.com>\n"
-"Language-Team: Japanese <jp@li.org>\n"
-"Language: ja\n"
+"PO-Revision-Date: 2011-08-23 10:11+0000\n"
+"Last-Translator: carrotsoft <www.carrotsoft@gmail.com>\n"
+"Language-Team: Japanese <trans-ja@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -137,8 +137,7 @@ msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
 msgstr ""
-"<b>%(servicename)s</b> サービスは一度開始しました。通常システムが起動した時"
-"に 背後で稼働して、必要な時に表面にでます。"
+"<b>%(servicename)s</b> サービスは一度開始しました。通常システムが起動した時に 背後で稼働して、必要な時に表面にでます。"
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -150,24 +149,20 @@ msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
 msgstr ""
-"<b>%(servicename)s</b> サービスは要求に応じて xinetd サービスによって起動さ"
-"れ、何もすることがなくなると終了します。"
+"<b>%(servicename)s</b> サービスは要求に応じて xinetd サービスによって起動され、何もすることがなくなると終了します。"
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
 msgstr ""
-"このサービスは有効ですが、<b>xinetd</b>  パッケージがインストールされて いま"
-"せん。このサービスはこのパッケージがないと機能しません。"
+"このサービスは有効ですが、<b>xinetd</b>  パッケージがインストールされて いません。このサービスはこのパッケージがないと機能しません。"
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"このサービスは有効ですが、<b>xinetd</b> サービスが実行していません。 このサー"
-"ビスはそれがないと機能しません。"
+msgstr "このサービスは有効ですが、<b>xinetd</b> サービスが実行していません。 このサービスはそれがないと機能しません。"
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -179,12 +174,11 @@ msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
 msgstr ""
-"ヘルプビューアを見つけることができませんでした。ヘルプの表示をできるように す"
-"るには、'yelp' パッケージをインストールする必要があります。"
+"ヘルプビューアを見つけることができませんでした。ヘルプの表示をできるように するには、'yelp' パッケージをインストールする必要があります。"
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
-msgstr ""
+msgstr "詳細情報の取得中にエラーが発生しました。"
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
@@ -261,33 +255,19 @@ msgstr "サービスの状態 %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
@@ -298,19 +278,15 @@ msgstr ""
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"このサービスは一度開始しています。通常、システムが起動する時に背後で 稼働して"
-"いて、必要な時に表面に出てきます。"
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
+msgstr "このサービスは一度開始しています。通常、システムが起動する時に背後で 稼働していて、必要な時に表面に出てきます。"
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"このサービスは要求に応じて xinetd サービスによって起動され、何もすることがな"
-"くなると終了します。"
+msgstr "このサービスは要求に応じて xinetd サービスによって起動され、何もすることがなくなると終了します。"
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -398,11 +374,4 @@ msgstr "システムサービスを管理"
 msgid "Managing system services requires authentication"
 msgstr "システムサービスを管理するには認証が必要です"
 
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
 
-#~ msgid "System policy prevents access to system services information"
-#~ msgstr "システムポリシーはシステムサービス情報へのアクセスを阻止しています"
-
-#~ msgid "System policy prevents management of system services"
-#~ msgstr "システムポリシーはシステムサービスの管理を阻止しています"
