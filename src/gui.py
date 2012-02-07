@@ -702,16 +702,16 @@ class GUIServicesList(GladeController):
 
         if wname in ("serviceEnable", "serviceDisable"):
             if isinstance(service, SystemDService):
-                sensitive = False
+                is_enabled = service.UnitFileState
             else:
                 is_enabled = service.get_enabled()
 
-                if is_enabled in (SVC_ENABLED_REFRESHING, SVC_ENABLED_ERROR):
-                    sensitive = False
-                elif wname == "serviceEnable":
-                    sensitive = is_enabled not in (SVC_ENABLED_YES, 'enabled')
-                elif wname == "serviceDisable":
-                    sensitive = is_enabled not in (SVC_ENABLED_NO, 'disabled')
+            if is_enabled in (SVC_ENABLED_REFRESHING, SVC_ENABLED_ERROR):
+                sensitive = False
+            elif wname == "serviceEnable":
+                sensitive = is_enabled not in (SVC_ENABLED_YES, 'enabled')
+            elif wname == "serviceDisable":
+                sensitive = is_enabled not in (SVC_ENABLED_NO, 'disabled')
         elif wname in ("serviceCustomize", "serviceStart", "serviceStop",
                        "serviceRestart"):
             if isinstance(service, services.SysVService):
@@ -1062,12 +1062,25 @@ class MainWindow(GladeController):
             else:
                 xinetd_service.reload()
 
+    def _systemd_change_unit_file(self, unit, action):
+        assert action in ("enable", "disable")
+
+        if action == "enable":
+            self.systemd_manager.EnableUnitFiles([unit.unit_id])
+        elif action == "disable":
+            self.systemd_manager.DisableUnitFiles([unit.unit_id])
+
+        self.systemd_manager.Reload()
+
     def on_serviceEnable_activate(self, *args):
         service = self.servicesList.current_service
         if service:
-            service.enable()
-            if isinstance(service, services.XinetdService):
-                self._xinetd_reload(service)
+            if isinstance(service, SystemDService):
+                self._systemd_change_unit_file(service, "enable")
+            else:
+                service.enable()
+                if isinstance(service, services.XinetdService):
+                    self._xinetd_reload(service)
 
     # def on_serviceEnable_show_menu (self, *args):
     #    print "MainWindow.on_serviceEnable_show_menu (%s)" % ', '.join (map (lambda x: str(x), args))
@@ -1075,9 +1088,12 @@ class MainWindow(GladeController):
     def on_serviceDisable_activate(self, *args):
         service = self.servicesList.current_service
         if service:
-            service.disable()
-            if isinstance(service, services.XinetdService):
-                self._xinetd_reload(service)
+            if isinstance(service, SystemDService):
+                self._systemd_change_unit_file(service, "disable")
+            else:
+                service.disable()
+                if isinstance(service, services.XinetdService):
+                    self._xinetd_reload(service)
 
     def on_serviceCustomize_activate(self, *args):
         service = self.servicesList.current_service

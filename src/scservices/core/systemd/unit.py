@@ -121,18 +121,18 @@ class SystemDUnit(gobject.GObject):
         # but rather that instead (once for each bus):
 
         if self.bus not in SystemDUnit.__bus_signal_matches:
-            def on_properties_changed_for_bus(interface, changed_properties,
-                    invalidated_properties, unit_path):
-                SystemDUnit.on_properties_changed(self.bus, interface,
-                        changed_properties, invalidated_properties, unit_path)
-
             SystemDUnit.__bus_signal_matches[self.bus] = (
                     self.bus.add_signal_receiver(
-                        on_properties_changed_for_bus,
+                        self.on_properties_changed_for_bus,
                         path_keyword='unit_path',
                         signal_name='PropertiesChanged',
                         dbus_interface=constants.dbus.properties_interface,
                         bus_name=constants.dbus.service_name))
+
+    def on_properties_changed_for_bus(self, interface, changed_properties,
+            invalidated_properties, unit_path):
+        SystemDUnit.on_properties_changed(self.bus, interface,
+                changed_properties, invalidated_properties, unit_path)
 
     def __del__(self):
         self.remove()
@@ -245,6 +245,17 @@ class SystemDUnit(gobject.GObject):
         except dbus.DBusException, e:
             if e.get_dbus_name() == 'org.freedesktop.DBus.Error.UnknownObject':
                 return False
+            else:
+                raise
+
+    @property
+    def UnitFileState(self):
+        try:
+            return self.properties_interface.Get(constants.dbus.unit_interface,
+                    'UnitFileState')
+        except dbus.DBusException, e:
+            if e.get_dbus_name() == 'org.freedesktop.DBus.Error.UnknownObject':
+                return "unknown"
             else:
                 raise
 

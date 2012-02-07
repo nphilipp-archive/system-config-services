@@ -134,6 +134,20 @@ class SystemDManager(gobject.GObject):
     def ReloadOrRestartUnit(self, name, mode='replace'):
         return self.privileged_manager_interface.ReloadOrRestartUnit(name, mode)
 
+    @polkit.enable_proxy
+    def Reload(self):
+        return self.privileged_manager_interface.Reload()
+
+    @polkit.enable_proxy
+    def EnableUnitFiles(self, files, runtime=False, force=True):
+        return self.privileged_manager_interface.EnableUnitFiles(files,
+                runtime, force)
+
+    @polkit.enable_proxy
+    def DisableUnitFiles(self, files, runtime=False):
+        return self.privileged_manager_interface.DisableUnitFiles(files,
+                runtime)
+
 
 systemd_manager_discovery_started_signal = (
         gobject.signal_new('discovery_started', SystemDManager,

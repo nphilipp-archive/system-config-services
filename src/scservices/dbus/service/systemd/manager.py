@@ -66,3 +66,18 @@ class DBusSystemDManager(slip.dbus.service.Object):
             in_signature="ss", out_signature="o")
     def ReloadOrRestartUnit(self, name, mode):
         return self.manager.ReloadOrRestartUnit(name, mode)
+
+    @dbus.service.method(dbus_interface=manager_interface,
+            in_signature="", out_signature="")
+    def Reload(self):
+        self.manager.Reload()
+
+    @dbus.service.method(dbus_interface=manager_interface,
+            in_signature="asbb", out_signature="(ba(sss))")
+    def EnableUnitFiles(self, files, runtime, force):
+        return self.manager.EnableUnitFiles(files, runtime, force)
+
+    @dbus.service.method(dbus_interface=manager_interface,
+            in_signature="asb", out_signature="a(sss)")
+    def DisableUnitFiles(self, files, runtime):
+        return self.manager.DisableUnitFiles(files, runtime)
