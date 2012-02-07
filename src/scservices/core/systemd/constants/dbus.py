@@ -16,7 +16,7 @@ manager_interface = _interface_root + ".Manager"
 unit_interface = _interface_root + ".Unit"
 service_interface = _interface_root + ".Service"
 
-## PolicyKit enabled mechanism for privileges operations
+## PolicyKit enabled mechanism for privileged operations
 
 # DBus service name
 polkit_service_name = 'org.fedoraproject.Config.Services'
@@ -25,6 +25,6 @@ polkit_service_name = 'org.fedoraproject.Config.Services'
 _polkit_root_path = "/org/fedoraproject/Config/Services/systemd1"
 polkit_manager_path = _polkit_root_path
 # the polkit-enabled mechanism supports (a reasonable subset of) the interfaces
-# of SystemD itself, so we just abuse the original interface names
+# of SystemD itself, so we just abuse the original interface names for them
 
 properties_interface = 'org.freedesktop.DBus.Properties'
