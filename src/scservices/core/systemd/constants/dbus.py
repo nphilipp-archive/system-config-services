@@ -24,8 +24,6 @@ polkit_service_name = 'org.fedoraproject.Config.Services'
 # DBus paths
 _polkit_root_path = "/org/fedoraproject/Config/Services/systemd1"
 polkit_manager_path = _polkit_root_path
-polkit_unit_root = _polkit_root_path + "/unit"
-
 # the polkit-enabled mechanism supports (a reasonable subset of) the interfaces
 # of SystemD itself, so we just abuse the original interface names
 
