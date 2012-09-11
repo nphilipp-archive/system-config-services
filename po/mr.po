@@ -1,27 +1,27 @@
-# translation of mr.po to Marathi
-# Marathi translations for PACKAGE package.
-# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the system-config-services package.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Automatically generated, 2004.
-# Rahul Bhalerao <rbhalera@redhat.com>, 2006.
+# Nils Philippsen <nils@redhat.com>, 2011.
 # Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006.
+# Rahul Bhalerao <rbhalera@redhat.com>, 2006.
 # Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008, 2009.
-# Sandeep Shedmake <sshedmak@redhat.com>, 2009, 2010.
+# Sandeep Shedmake <sshedmak@redhat.com>, 2009, 2010, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: mr\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2010-04-07 20:29+0530\n"
-"Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
-"Language-Team: Marathi <maajhe-sanganak@freelists.org>\n"
-"Language: mr\n"
+"PO-Revision-Date: 2012-02-17 00:26+0000\n"
+"Last-Translator: sandeeps <sshedmak@redhat.com>\n"
+"Language-Team: Marathi (http://www.transifex.com/projects/p/fedora/language/mr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Language: mr\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -54,7 +54,7 @@ msgstr "ही सेवा रनलेवल अंतर्गत कार�
 
 #: src/gui.py:209
 msgid "This service is masked."
-msgstr ""
+msgstr "हि सर्व्हिस मास्कड् आहे."
 
 #: src/gui.py:222
 msgid "The status of this service is unknown."
@@ -74,49 +74,49 @@ msgstr "ही सेवा अकार्यक्षम आहे."
 
 #: src/gui.py:245
 msgid "This unit is inactive."
-msgstr ""
+msgstr "हे युनिट निष्क्रिय आहे."
 
 #: src/gui.py:247
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
-msgstr ""
+msgstr "हे युनिट निष्क्रिय आहे: %(sub_state)s"
 
 #: src/gui.py:251
 msgid "This unit is running."
-msgstr ""
+msgstr "हे युनिट सुरू आहे."
 
 #: src/gui.py:254
 msgid "This unit has finished."
-msgstr ""
+msgstr "हे युनिट पूर्ण झाले आहे."
 
 #: src/gui.py:257
 #, python-format
 msgid "This unit is active: %(sub_state)s"
-msgstr ""
+msgstr "हे युनिट सुरू आहे: %(sub_state)s"
 
 #: src/gui.py:260
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
-msgstr ""
+msgstr "हे युनिट अपयशी झाले: %(sub_state)s"
 
 #: src/gui.py:264
 msgid "This unit is starting."
-msgstr ""
+msgstr "हे युनिट सुरू होणार आहे."
 
 #: src/gui.py:266
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
-msgstr ""
+msgstr "हे युनिट सुरू होत आहे: %(sub_state)s"
 
 #: src/gui.py:269
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
-msgstr ""
+msgstr "हे युनिट बंद होत आहे: %(sub_state)s"
 
 #: src/gui.py:272
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
-msgstr ""
+msgstr "या युनिटचे स्तर अपरिचीत आहे: %(active_state)s/%(sub_state)s"
 
 #: src/gui.py:349
 #, python-format
@@ -124,16 +124,14 @@ msgid ""
 "The <b>%(servicename)s</b> service is managed by systemd. It may be started "
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
-msgstr ""
+msgstr "<b>%(servicename)s</b> सर्व्हिस systemd तर्फे व्यवस्थापीत केली जाते. त्यास सुरू करून पार्श्वभूमीत सुरू करणे, किंवा आवश्यकताप्रमाणे सुरू करणे, किंवा तयार किंवा क्लिनअप कारणास्तव एकदा चालवणे शक्य आहे."
 
 #: src/gui.py:379
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"सहसा प्रणाली सुरू केल्यावर, <b>%(servicename)s</b> सेवा एकदाच सुरू केली जाते, व ती "
-"पार्श्वभूमी अंतर्गत चालविले जाते व आवश्यक असल्यावर सक्रीय केले जाते."
+msgstr "सहसा प्रणाली सुरू केल्यावर, <b>%(servicename)s</b> सेवा एकदाच सुरू केली जाते, व ती पार्श्वभूमी अंतर्गत चालविले जाते व आवश्यक असल्यावर सक्रीय केले जाते."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -144,25 +142,19 @@ msgstr "ही सेवा वर्तमानक्षणी अद्यय
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"<b>%(servicename)s</b> सेवा xinetd द्वारे आवश्यकताप्रमाणे सुरू केले जाईल व काहिच कार्य "
-"नसल्यावर समाप्त होईल."
+msgstr "<b>%(servicename)s</b> सेवा xinetd द्वारे आवश्यकताप्रमाणे सुरू केले जाईल व काहिच कार्य नसल्यावर समाप्त होईल."
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"ही सेवा कार्यान्वीत केली गेली आहे, परंतु <b>xinetd</b> संकुल प्रतिष्ठापीत केले गेले. ही सेवा "
-"त्याविना कार्य करत नाही."
+msgstr "ही सेवा कार्यान्वीत केली गेली आहे, परंतु <b>xinetd</b> संकुल प्रतिष्ठापीत केले गेले. ही सेवा त्याविना कार्य करत नाही."
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"ही सेवा कार्यान्वीत केली गेली आहे, परंतु <b>xinetd</b> सेवा कार्यरत नाही. ही सेवा "
-"त्याविना कार्य करत नाही."
+msgstr "ही सेवा कार्यान्वीत केली गेली आहे, परंतु <b>xinetd</b> सेवा कार्यरत नाही. ही सेवा त्याविना कार्य करत नाही."
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -173,16 +165,15 @@ msgstr "या रनलेवल अंतर्गत <b>%(service)s</b> स�
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"मदत प्रदर्शक आढळले नाही. मदत पहाण्याकरीता, 'yelp' संकुल प्रतिष्ठापीत करणे आवश्यक आहे."
+msgstr "मदत प्रदर्शक आढळले नाही. मदत पहाण्याकरीता, 'yelp' संकुल प्रतिष्ठापीत करणे आवश्यक आहे."
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
-msgstr ""
+msgstr "वर्णन प्राप्त करतेवेळी त्रुटी आढळली."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "सर्वहक्काधिकार © 2002-2011 Red Hat, Inc. and contributors"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -255,55 +246,32 @@ msgstr "सेवा %s ची स्थिती:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
 "This service is managed by systemd. It may be started then run in the "
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
-msgstr ""
+msgstr "हि सर्व्हिस systemd तर्फे व्यवस्थापीत केली जाते. त्यास सुरू करून पार्श्वभूमीत सुरू करणे, किंवा आवश्यकताप्रमाणे सुरू करणे, किंवा तयार किंवा क्लिनअप कारणास्तव एकदा चालवणे शक्य आहे."
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"ही सेवा सहसा प्रणाली बूट झाल्यावर, पार्श्वभूमीत एकदाच चालविले जाते व आवश्यक नुरूप सक्रीय "
-"केले जाते."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
+msgstr "ही सेवा सहसा प्रणाली बूट झाल्यावर, पार्श्वभूमीत एकदाच चालविले जाते व आवश्यक नुरूप सक्रीय केले जाते."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"ही सेवा xinetd द्वारे आवश्यकताप्रमाणे सुरू केले जाईल व काहिच कार्य नसल्यावर समाप्त होईल."
+msgstr "ही सेवा xinetd द्वारे आवश्यकताप्रमाणे सुरू केले जाईल व काहिच कार्य नसल्यावर समाप्त होईल."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -348,10 +316,7 @@ msgstr "system-config-services"
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:42
 msgid "translator-credits"
-msgstr ""
-"Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006; संदिप शेडमाके <sandeep."
-"shedmake@gmail.com>, 2008, 2009; संदिप शेडमाके <sshedmak@redhat.com>, 2009, "
-"2010."
+msgstr "Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006; संदिप शेडमाके <sandeep.shedmake@gmail.com>, 2008, 2009; संदिप शेडमाके <sshedmak@redhat.com>, 2009, 2010."
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -384,6 +349,3 @@ msgstr "प्रणाली सेवा व्यवस्थापीत क
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "प्रणाली सेवांच्या व्यवस्थापनकरीता ओळख पटवणे आवश्यक आहे"
-
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "सर्वहक्काधिकार © 2002-2009 Red Hat, Inc. व सहभागी"

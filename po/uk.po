@@ -1,21 +1,25 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Maxim Dubovoy <max@mylinux.com.ua>, 2003.
+# Maxim Dziumanenko <dziumanenko@gmail.com>, 2003.
+# Nils Philippsen <nils@redhat.com>, 2011.
+# Yuri Chornoivan <yurchor@ukr.net>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2011-05-05 17:00+0000\n"
-"Last-Translator: yurchor <yurchor@ukr.net>\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: uk\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -118,20 +122,14 @@ msgid ""
 "The <b>%(servicename)s</b> service is managed by systemd. It may be started "
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
-msgstr ""
-"Служба <b>%(servicename)s</b> керується systemd. Її можна запустити для "
-"роботи у фоновому режимі або активувати на вимогу або запустити один раз з "
-"метою приготування або очищення даних."
+msgstr "Служба <b>%(servicename)s</b> керується systemd. Її можна запустити для роботи у фоновому режимі або активувати на вимогу або запустити один раз з метою приготування або очищення даних."
 
 #: src/gui.py:379
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"Служба <b>%(servicename)s</b> запускається один раз, зазвичай при "
-"завантаженні системи, виконується у фоновому режимі та активується при "
-"потребі."
+msgstr "Служба <b>%(servicename)s</b> запускається один раз, зазвичай при завантаженні системи, виконується у фоновому режимі та активується при потребі."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -142,25 +140,19 @@ msgstr "Службу оновлено."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"<b>%(servicename)s</b> запускається за запитом служби xinetd та завершує "
-"роботу, якщо немає потреби у будь-яких діях."
+msgstr "<b>%(servicename)s</b> запускається за запитом служби xinetd та завершує роботу, якщо немає потреби у будь-яких діях."
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"Цю службу увімкнено, але пакет <b>xinetd</b> не встановлено. Служба не зможе"
-" запуститись без <b>xinetd</b>."
+msgstr "Цю службу увімкнено, але пакет <b>xinetd</b> не встановлено. Служба не зможе запуститись без <b>xinetd</b>."
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"Цю службу увімкнено, але <b>xinetd</b> не запущено. Служба не зможе "
-"виконуватись без <b>xinetd</b>."
+msgstr "Цю службу увімкнено, але <b>xinetd</b> не запущено. Служба не зможе виконуватись без <b>xinetd</b>."
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -171,9 +163,7 @@ msgstr "Увімкнути службу <b>%(service)s</b> на рівнях з�
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"Не знайдено утиліту перегляду довідки. Щоб переглянути довідку, треба "
-"встановити пакет 'yelp'."
+msgstr "Не знайдено утиліту перегляду довідки. Щоб переглянути довідку, треба встановити пакет 'yelp'."
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
@@ -260,39 +250,26 @@ msgid ""
 "GNU General Public License for more details.\n"
 "\n"
 "You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"Ця програма є відкритим програмним забезпеченням. Дозволяється поширювати її та змінювати на умовах ліцензії GNU 2 або старшої версії, що видана Free Software Foundation.\n"
-"\n"
-"Ця програма поширюється БЕЗ БУДЬ-ЯКИХ ГАРАНТІЙ, у тому числі не гарантується її придатність до певної мети. Докладнішу інформацію дивіться у ліцензії GNU.\n"
-"\n"
-"Копія ліцензії надається з цією програмою. Якщо ви не отримали копію ліцензії, \n"
-"повідомте про це Free Software Foundation, Inc. за адресою 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA."
+msgstr "Ця програма є відкритим програмним забезпеченням. Дозволяється поширювати її та змінювати на умовах ліцензії GNU 2 або старшої версії, що видана Free Software Foundation.\n\nЦя програма поширюється БЕЗ БУДЬ-ЯКИХ ГАРАНТІЙ, у тому числі не гарантується її придатність до певної мети. Докладнішу інформацію дивіться у ліцензії GNU.\n\nКопія ліцензії надається з цією програмою. Якщо ви не отримали копію ліцензії, \nповідомте про це Free Software Foundation, Inc. за адресою 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA."
 
 #: src/system-config-services.glade.h:28
 msgid ""
 "This service is managed by systemd. It may be started then run in the "
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
-msgstr ""
-"Ця служба керується systemd. Її можна запустити для роботи у фоновому режимі"
-" або активувати на вимогу або запустити один раз з метою приготування або "
-"очищення даних."
+msgstr "Ця служба керується systemd. Її можна запустити для роботи у фоновому режимі або активувати на вимогу або запустити один раз з метою приготування або очищення даних."
 
 #: src/system-config-services.glade.h:29
 msgid ""
 "This service is started once, usually when the system is booted, runs in the"
 " background and wakes up when needed."
-msgstr ""
-"Ця служба запускається один раз, зазвичай при завантаженні системи, працює у"
-" фоновому режимі та активується при потребі."
+msgstr "Ця служба запускається один раз, зазвичай при завантаженні системи, працює у фоновому режимі та активується при потребі."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"Ця служба запускається за запитом служби xinetd та завершує роботу, коли "
-"немає потреби у будь-яких діях."
+msgstr "Ця служба запускається за запитом служби xinetd та завершує роботу, коли немає потреби у будь-яких діях."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"

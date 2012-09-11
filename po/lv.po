@@ -1,21 +1,23 @@
-# translation of lv.po to Latvian
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Gatis Kalnins <gatis.kalnins@metatrons.lv>, 2006.
+# Nils Philippsen <nils@redhat.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: lv\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2006-11-21 07:07+0200\n"
-"Last-Translator: Gatis Kalnins <gatis.kalnins@metatrons.lv>\n"
-"Language-Team: Latvian <locale@laka.lv>\n"
-"Language: lv\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: Latvian (http://www.transifex.com/projects/p/fedora/language/lv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Latvian\n"
-"X-Poedit-Country: LATVIA\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: KBabel 1.11.1\n"
+"Language: lv\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -240,19 +242,12 @@ msgstr ""
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
 
 #: src/system-config-services.glade.h:28
@@ -264,8 +259,8 @@ msgstr ""
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
 msgstr ""
 
 #: src/system-config-services.glade.h:30
@@ -350,188 +345,3 @@ msgstr ""
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr ""
-
-#~ msgid "Enable"
-#~ msgstr "Ieslēgt"
-
-#~ msgid "Disable"
-#~ msgstr "Izslēgt"
-
-#~ msgid "Start"
-#~ msgstr "Startēt"
-
-#~ msgid "Restart"
-#~ msgstr "Pārstartēt"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Pašreizējais darblīmenis ir %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "Darblīmeņi"
-
-#~ msgid "Start "
-#~ msgstr "Startēt"
-
-#~ msgid "Stop"
-#~ msgstr "Apturēt"
-
-#~ msgid "Service control"
-#~ msgstr "Servisu kontrole"
-
-#~ msgid "Status output"
-#~ msgstr "Stāvoklis"
-
-#~ msgid "None"
-#~ msgstr "Neviens"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Saglabāšana"
-
-#~ msgid "Don't Save"
-#~ msgstr "Nesaglabāt"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Jūs izmainījāt šo darblīmeni.\n"
-#~ "Vai vēlaties saglabāt izmaiņas?"
-
-#~ msgid "Add Service"
-#~ msgstr "Pievienot servisu"
-
-#~ msgid "Service Name: "
-#~ msgstr "Servisa nosaukums:"
-
-#~ msgid "_File"
-#~ msgstr "Fails"
-
-#~ msgid "_Save Changes"
-#~ msgstr "_Saglabāt izmaiņas"
-
-#~ msgid "Revert To _Last Save"
-#~ msgstr "Atcelt pēdējās izmaiņas"
-
-#~ msgid "_Quit"
-#~ msgstr "Iziet"
-
-#~ msgid "_View"
-#~ msgstr "Skatīt"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "Atsvaidzināt servisu sarakstu"
-
-#~ msgid "_Actions"
-#~ msgstr "D_arbības"
-
-#~ msgid "Delete Service"
-#~ msgstr "Dzēst servisu"
-
-#~ msgid "_Start Service"
-#~ msgstr "_Startēt servisu"
-
-#~ msgid "S_top Service"
-#~ msgstr "Ap_stādināt servisu"
-
-#~ msgid "_Restart Service"
-#~ msgstr "Pā_rstartēt servisu"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "R_ediģēt darblīmeni"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "Darblīmenis Visi"
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Šie servisi tiek startēti un izmantoti fona režīmā. Jums jānorāda, kādā "
-#~ "darblīmenī tie izmantojami."
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "Pašlaik aktīvais darblīmenis: "
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "Rediģējamais darblīmenis: "
-
-#~ msgid "Status"
-#~ msgstr "Statuss"
-
-#~ msgid "_Background Services"
-#~ msgstr "_Fona servisi"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "Šie servisi tiek startēti pēc pieprasījuma un tiek apstādināti, kad to "
-#~ "darbība vairs nav nepieciešama. Lai tos izmantotu, jābūt startētam "
-#~ "<b>xinetd</b> servisam."
-
-#~ msgid "_On Demand Services"
-#~ msgstr "Servisi pēc pieprasījuma"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "Vai tik tiešām vēlaties dzēst %s?"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "Darblīmenis %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "Pašlaik strādājošais darblīmenis: "
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "Rediģējamais darblīmenis: "
-
-#~ msgid "Unknown"
-#~ msgstr "Nezināms"
-
-#~ msgid "All"
-#~ msgstr "Visi"
-
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "Sistēmas servisu konfigurācijas rīks VERSION\n"
-#~ " Autortiesības © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "Par"
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "Lai strādātu ar system-config-services, Jums jābūt root tiesībām."
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "%s neizdevās. Konstatēta kļūda: %s"
-
-#~ msgid " successful"
-#~ msgstr " veiksmīgi"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "lai startētu %s ir jābūt atļautam xinetd"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "xinetd neizdevās pārstartēt"
-
-#~ msgid ". The error was: "
-#~ msgstr ". Konstatēta kļūda:"
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "xinetd veiksmīgi pārstartēja %s"
-
-#~ msgid "Help is not available."
-#~ msgstr "Palīdzība nav pieejama."

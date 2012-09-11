@@ -1,24 +1,25 @@
-# Romanian translation of system-config-services
-# Copyright (C) 2004 linux360
-# This file is distributed under the same license as the system-config-services package.
-# Răzvan Corneliu VILT <razvan.vilt@linux360.ro>, 2004.
-# Razvan VILT <razvan.vilt@linux360.ro>, 2004.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Alexandru Szasz <alexxed@gmail.com>, 2006.
-# Răzvan Corneliu VILT <razvan.vilt@linux360.ro>, 2006.
-#
-#
+# Nils Philippsen <nils@redhat.com>, 2011.
+# Răzvan Corneliu VILT <razvan.vilt@linux360.ro>, 2004, 2006.
+# Razvan VILT <razvan.vilt@linux360.ro>, 2004.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services cvs\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2006-11-16 22:37+0200\n"
-"Last-Translator: Alexandru Szasz <alexxed@gmail.com>\n"
-"Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
-"Language: ro\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: Romanian (http://www.transifex.com/projects/p/fedora/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -243,19 +244,12 @@ msgstr ""
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
 
 #: src/system-config-services.glade.h:28
@@ -267,8 +261,8 @@ msgstr ""
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
 msgstr ""
 
 #: src/system-config-services.glade.h:30
@@ -353,211 +347,3 @@ msgstr ""
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr ""
-
-#~ msgid "Enable"
-#~ msgstr "Activează"
-
-#~ msgid "Disable"
-#~ msgstr "Dezactivează"
-
-#~ msgid "Start"
-#~ msgstr "Porniţi"
-
-#~ msgid "Restart"
-#~ msgstr "Reporniţi"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Nivelul de rulare este acum %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "Nivele de rulare"
-
-#~ msgid "Start "
-#~ msgstr "Porniţi "
-
-#~ msgid "Stop"
-#~ msgstr "Opriţi"
-
-#~ msgid "Service control"
-#~ msgstr "Control serviciu"
-
-#~ msgid "Status output"
-#~ msgstr "Starea curentă"
-
-#~ msgid "None"
-#~ msgstr "Nimic"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Dialog salvare"
-
-#~ msgid "Don't Save"
-#~ msgstr "Nu salva"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Aţi făcut schimbări la nivelul de rulare curent.\n"
-#~ "Doriţi să salvaţi schimbările?"
-
-#~ msgid "Add Service"
-#~ msgstr "Adaugă serviciu"
-
-#~ msgid "Service Name: "
-#~ msgstr "Nume serviciu: "
-
-#~ msgid "_File"
-#~ msgstr "_Fişier"
-
-#~ msgid "_Save Changes"
-#~ msgstr "_Salvează schimbările"
-
-#~ msgid "Revert To _Last Save"
-#~ msgstr "Revenire la u_ltima salvare"
-
-#~ msgid "_Quit"
-#~ msgstr "_Ieşiţi"
-
-#~ msgid "_View"
-#~ msgstr "_Vedere"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "_Reîmprospătare listă servicii"
-
-#~ msgid "_Actions"
-#~ msgstr "_Acţiuni"
-
-#~ msgid "Delete Service"
-#~ msgstr "Şterge serviciul"
-
-#~ msgid "_Start Service"
-#~ msgstr "_Porniţi serviciul"
-
-#~ msgid "S_top Service"
-#~ msgstr "Opri_ţi serviciul"
-
-#~ msgid "_Restart Service"
-#~ msgstr "_Reporniţi serviciul"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "_Editează nivel de rulare"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "To_ate nivelele de rulare"
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Aceste servicii sunt pornite o dată şi rulează în fundal. Puteţi "
-#~ "specifica în ce nivele de rulare să fie pornite."
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "Nivelul de rulare activ: "
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "Editare nivel de rulare:"
-
-#~ msgid "Status"
-#~ msgstr "Stare"
-
-#~ msgid "_Background Services"
-#~ msgstr "Servicii din _fundal"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "Acest servicii sunt pornite la cerere şi se termină când nu mai este "
-#~ "nimic de făcut. Servicul <b>xinetd</b> trebuie pornit pentru a putea fi "
-#~ "utilizate."
-
-#~ msgid "_On Demand Services"
-#~ msgstr "Servicii la _Cerere"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "Sigur doriţi să ştergeţi %s?"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "Nivel de rulare %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "Actualmente se rulează în nivelul: "
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "Editare nivelul de rulare:"
-
-#~ msgid "Unknown"
-#~ msgstr "Necunoscut"
-
-#~ msgid "All"
-#~ msgstr "Toate"
-
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "Unealtă de configurare a serviciilor VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "Despre"
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "Trebuie să rulaţi system-config-services ca root."
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "%s a eşuat. Eroarea a fost: %s"
-
-#~ msgid " successful"
-#~ msgstr "cu succes"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "xinetd trebuie să fie activat pentru ca %s să ruleze"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "xinetd a eşuat la reîncărcarea "
-
-#~ msgid ". The error was: "
-#~ msgstr ". Eroarea a fost: "
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "xinetd a reîncărcat cu succes %s"
-
-#~ msgid "Help is not available."
-#~ msgstr "Ajutorul nu este disponibil."
-
-#, fuzzy
-#~ msgid "Start the selected service"
-#~ msgstr "_Porniţi serviciul"
-
-#, fuzzy
-#~ msgid "Stop the selected service"
-#~ msgstr "Ştergeţi serviciu"
-
-#, fuzzy
-#~ msgid "Restart the selected service"
-#~ msgstr "_Restartează serviciu"
-
-#, fuzzy
-#~ msgid "Refresh the list of services"
-#~ msgstr "_Reactualizaţi lista de servicii"
-
-#, fuzzy
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Reincarcă la _Ultima Salvare"
-
-#~ msgid "Save"
-#~ msgstr "Salvaţi"

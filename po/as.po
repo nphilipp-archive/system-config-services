@@ -1,24 +1,26 @@
-# translation of system-config-services.tip.po to Assamese
-# This file is distributed under the same license as the system-config-services package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Amitakhya Phukan <amitakhya.phukan@gmail.com>, 2006.
-# Amitakhya Phukan <aphukan@redhat.com>, 2008.
 # Amitakhya Phukan <aphukan@fedoraproject.org>, 2008, 2009, 2010.
+# Amitakhya Phukan <aphukan@redhat.com>, 2008.
+# Nilamdyuti Goswami <ngoswami@redhat.com>, 2012.
+# Nils Philippsen <nils@redhat.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.tip\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2010-04-16 13:55+0530\n"
-"Last-Translator: Amitakhya Phukan <aphukan@fedoraproject.org>\n"
-"Language-Team: American English <fedora-trans-as@redhat.com>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-02-16 20:11+0000\n"
+"Last-Translator: ngoswami <ngoswami@redhat.com>\n"
+"Language-Team: Assamese (http://www.transifex.com/projects/p/fedora/language/as/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 0.2\n"
-"Plural-Forms: nplurals=2; plural=(n!=1)\n"
+"Language: as\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -51,7 +53,7 @@ msgstr "এই চলনাস্তৰসমূহত এই সেৱা স�
 
 #: src/gui.py:209
 msgid "This service is masked."
-msgstr ""
+msgstr "এই সেৱা মাস্ক কৰা আছে।"
 
 #: src/gui.py:222
 msgid "The status of this service is unknown."
@@ -71,49 +73,49 @@ msgstr "এই সেৱা অন্ত হ'ল ।"
 
 #: src/gui.py:245
 msgid "This unit is inactive."
-msgstr ""
+msgstr "এই একক নিষ্ক্ৰিয়।"
 
 #: src/gui.py:247
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
-msgstr ""
+msgstr "এই একক নিষ্ক্ৰিয়: %(sub_state)s"
 
 #: src/gui.py:251
 msgid "This unit is running."
-msgstr ""
+msgstr "এই একক চলি আছে।"
 
 #: src/gui.py:254
 msgid "This unit has finished."
-msgstr ""
+msgstr "এই একক সমাপ্ত হৈছে।"
 
 #: src/gui.py:257
 #, python-format
 msgid "This unit is active: %(sub_state)s"
-msgstr ""
+msgstr "এই একক সক্ৰিয়: %(sub_state)s"
 
 #: src/gui.py:260
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
-msgstr ""
+msgstr "এই একক ব্যৰ্থ হল: %(sub_state)s"
 
 #: src/gui.py:264
 msgid "This unit is starting."
-msgstr ""
+msgstr "এই একক আৰম্ভ হৈ আছে।"
 
 #: src/gui.py:266
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
-msgstr ""
+msgstr "এই একক সক্ৰিয় হৈ আছে: %(sub_state)s"
 
 #: src/gui.py:269
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
-msgstr ""
+msgstr "এই একক নিষ্ক্ৰিয় হৈ আছে: %(sub_state)s"
 
 #: src/gui.py:272
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
-msgstr ""
+msgstr "এই এককৰ অৱস্থা অজ্ঞাত: %(active_state)s/%(sub_state)s"
 
 #: src/gui.py:349
 #, python-format
@@ -121,16 +123,14 @@ msgid ""
 "The <b>%(servicename)s</b> service is managed by systemd. It may be started "
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
-msgstr ""
+msgstr "<b>%(servicename)s</b> সেৱা systemd দ্বাৰা ব্যৱস্থাপিত। ইয়াক আৰম্ভ কৰা যাব তাৰ পিছত পটভূমীত চলিব, অথবা চাহিদা মতে সক্ৰিয় কৰা যাব, অথবা এবাৰ প্ৰস্তুতি অথবা পৰিষ্কাৰ কৰাৰ বাবে চলিব পাৰিব।"
 
 #: src/gui.py:379
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"সাধাৰণতে ব্যৱস্থাপ্ৰণালী বুট কৰাৰ সময়ত, <b>%(servicename)s</b> সেৱা এবাৰ আৰম্ভ "
-"কৰা হয়, পৃষ্ঠভুমিত চলে আৰু প্ৰয়োজনৰ সময়ত সজাগ হয় ।"
+msgstr "সাধাৰণতে ব্যৱস্থাপ্ৰণালী বুট কৰাৰ সময়ত, <b>%(servicename)s</b> সেৱা এবাৰ আৰম্ভ কৰা হয়, পৃষ্ঠভুমিত চলে আৰু প্ৰয়োজনৰ সময়ত সজাগ হয় ।"
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -141,24 +141,19 @@ msgstr "এই সেৱা বৰ্ত্তমানে উন্নত ক�
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"<b>%(servicename)s</b> সেৱাক অনুৰোধৰ মতে xinetd সেৱাৰ দ্বাৰা আৰম্ভ কৰা হয় আৰু "
-"তাৰ কাম ন'হ'লে বন্ধ হ'ব ।"
+msgstr "<b>%(servicename)s</b> সেৱাক অনুৰোধৰ মতে xinetd সেৱাৰ দ্বাৰা আৰম্ভ কৰা হয় আৰু তাৰ কাম ন'হ'লে বন্ধ হ'ব ।"
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"সেৱা সক্ৰিয়, কিন্তু <b>xinetd</b> সৰঞ্জাম সংস্থাপিত নহয় । এইটো ন'হলে সেৱাই কাম "
-"নকৰে ।"
+msgstr "সেৱা সক্ৰিয়, কিন্তু <b>xinetd</b> সৰঞ্জাম সংস্থাপিত নহয় । এইটো ন'হলে সেৱাই কাম নকৰে ।"
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"সেৱা সক্ৰিয়, কিন্তু <b>xinetd</b> সৰঞ্জাম চলা নাই । এইটো ন'হলে সেৱাই কাম নকৰে ।"
+msgstr "সেৱা সক্ৰিয়, কিন্তু <b>xinetd</b> সৰঞ্জাম চলা নাই । এইটো ন'হলে সেৱাই কাম নকৰে ।"
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -169,16 +164,15 @@ msgstr "এই চলনাস্তৰসমূহত <b>%(service)s</b> সে
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"সহায় প্ৰদৰ্শক পোৱা ন'গ'ল । সহায় চাবলৈ, 'yelp' সৰঞ্জাম সংস্থাপিত হ'ব লাগিব ।"
+msgstr "সহায় প্ৰদৰ্শক পোৱা ন'গ'ল । সহায় চাবলৈ, 'yelp' সৰঞ্জাম সংস্থাপিত হ'ব লাগিব ।"
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
-msgstr ""
+msgstr "বিৱৰণ প্ৰাপ্ত কৰোতে ত্ৰুটি।"
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "স্বত্বাধিকাৰ © 2002-2011 Red Hat, Inc. আৰু অৱদানকাৰীসমূহ"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -251,56 +245,32 @@ msgstr "%s সেৱাৰ অৱস্থা:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
 "This service is managed by systemd. It may be started then run in the "
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
-msgstr ""
+msgstr "এই সেৱা systemd দ্বাৰা ব্যৱস্থাপিত। ইয়াক আৰম্ভ কৰা যাব তাৰ পিছত পটভূমীত চলিব, অথবা চাহিদা মতে সক্ৰিয় কৰা যাব, অথবা এবাৰ প্ৰস্তুতি অথবা পৰিষ্কাৰ কৰাৰ বাবে চলিব পাৰিব।"
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"সাধাৰণতে ব্যৱস্থাপ্ৰণালী বুট কৰাৰ সময়ত, এই সেৱা এবাৰ আৰম্ভ কৰা হয়, পৃষ্ঠভুমিত চলে আৰু "
-"প্ৰয়োজনৰ সময়ত সজাগ হয় ।"
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
+msgstr "সাধাৰণতে ব্যৱস্থাপ্ৰণালী বুট কৰাৰ সময়ত, এই সেৱা এবাৰ আৰম্ভ কৰা হয়, পৃষ্ঠভুমিত চলে আৰু প্ৰয়োজনৰ সময়ত সজাগ হয় ।"
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"এই সেৱাক অনুৰোধৰ মতে xinetd সেৱাৰ দ্বাৰা আৰম্ভ কৰা হয় আৰু তাৰ কাম ন'হ'লে বন্ধ হ'ব "
-"।"
+msgstr "এই সেৱাক অনুৰোধৰ মতে xinetd সেৱাৰ দ্বাৰা আৰম্ভ কৰা হয় আৰু তাৰ কাম ন'হ'লে বন্ধ হ'ব ।"
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -378,122 +348,3 @@ msgstr "ব্যৱস্থাপ্ৰণালীৰ সেৱা পৰি�
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "প্ৰণালীৰ সেৱা পৰিচালন কৰিবলৈ প্ৰমাণীকৰণৰ প্ৰয়োজন"
-
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-
-#~ msgid "System policy prevents access to system services information"
-#~ msgstr "প্ৰণালীৰ নীতিয়ে প্ৰণালীৰ সেৱাৰ তথ্য অভিগম কৰিব নিদিয়ে"
-
-#~ msgid "System policy prevents management of system services"
-#~ msgstr "প্ৰণালীৰ নীতিয়ে প্ৰণালীৰ সেৱাৰ পৰিচালন কৰিব নিদিয়ে"
-
-#~ msgid "window1"
-#~ msgstr "window1"
-
-#~ msgid "Service %s"
-#~ msgstr "%s সেৱা"
-
-#~ msgid "Enable"
-#~ msgstr "সক্ৰিয়"
-
-#~ msgid "Disable"
-#~ msgstr "নিষ্ক্ৰীয়"
-
-#~ msgid "Customize"
-#~ msgstr "নিজৰ পছন্দৰ মতে সজাওক"
-
-#~ msgid "Enable Default"
-#~ msgstr "অবিকল্পিত সক্ৰিয় কৰক"
-
-#~ msgid "Enable All"
-#~ msgstr "সকলো সক্ৰিয় কৰক"
-
-#~ msgid "Disable All"
-#~ msgstr "সকলো নিষ্ক্ৰীয় কৰক"
-
-#~ msgid "Start"
-#~ msgstr "আৰম্ভ"
-
-#~ msgid "Restart"
-#~ msgstr "পুনৰাৰম্ভ"
-
-#~ msgid "Configure"
-#~ msgstr "বিন্যাস কৰক"
-
-#~ msgid "foobar"
-#~ msgstr "foobar"
-
-#~ msgid "barfoo"
-#~ msgstr "barfoo"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "বৰ্ত্তমানৰ চলনাস্তৰ হৈছে %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "চলনাস্তৰসমূহ"
-
-#~ msgid "label18"
-#~ msgstr "label18"
-
-#~ msgid "Start "
-#~ msgstr "আৰম্ভ কৰক"
-
-#~ msgid "Stop"
-#~ msgstr "বন্ধ কৰক"
-
-#~ msgid "Service control"
-#~ msgstr "সেৱাৰ নিয়ন্ত্ৰণ"
-
-#~ msgid "Status output"
-#~ msgstr "অৱস্থাৰ নিৰ্গম"
-
-#~ msgid "_Configure"
-#~ msgstr "বিন্যাস কৰক (_C)"
-
-#~ msgid "Button Box"
-#~ msgstr "বুটামৰ বক্স"
-
-#~ msgid "label16"
-#~ msgstr "label16"
-
-#~ msgid "Service %s:"
-#~ msgstr "%s সেৱা:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright  2002-2008 Red Hat, Inc. and contributors"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "%s সেৱা পোৱা ন'গ'ল!"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "%s সেৱা পূৰণি বিন্যাসৰ সৈতে চলি আছে"
-
-#~ msgid "Service %s is running"
-#~ msgstr "%s সেৱা চলি আছে"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "%s সেৱাই এটা ভুলৰ কথা কৈছে"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "%s সেৱা বন্ধ"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "%s চলনাস্তৰত বৰ্ত্তমানে সক্ৰিয়"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "%(name)s ক চলনাস্তৰ %(levels)s ত সক্ৰিয় কৰক"
-
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "<b>%(servicename)s</b> সেৱাক প্ৰয়োজনৰ মতে xinetd সেৱাৰ দ্বাৰা আৰম্ভ কৰা হ'ব "
-#~ "আৰু কোনো কাৰ্য্য নাথাকিলে অন্ত হ'ব ।"
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "এই সেৱা প্ৰয়োজনৰ মতে xinetd সেৱাৰ দ্বাৰা আৰম্ভ কৰা হ'ব আৰু কোনো কাৰ্য্য "
-#~ "নাথাকিলে অন্ত হ'ব ।"

@@ -1,23 +1,24 @@
-# translation of redhat-config-services.mk.po to Macedonian
-# translation of mk.po to Macedonian
-# Macedonian translations for PACKAGE package.
-# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the system-config-services package.
-# Automatically generated, 2004.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Arangel Angov <ufo@linux.net.mk>, 2004.
-#
+# Automatically generated, 2004.
+# Nils Philippsen <nils@redhat.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: redhat-config-services.mk\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2005-05-07 14:13+0200\n"
-"Last-Translator: Arangel Angov <ufo@linux.net.mk>\n"
-"Language-Team: Macedonian <ossm-members@hedona.on.net.mk>\n"
-"Language: mk\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: mk\n"
+"Plural-Forms: nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -242,19 +243,12 @@ msgstr ""
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
 
 #: src/system-config-services.glade.h:28
@@ -266,8 +260,8 @@ msgstr ""
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
 msgstr ""
 
 #: src/system-config-services.glade.h:30
@@ -352,224 +346,3 @@ msgstr ""
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr ""
-
-#~ msgid "Start"
-#~ msgstr "Старт"
-
-#~ msgid "Restart"
-#~ msgstr "Рестарт"
-
-#, fuzzy
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Моментално активно ниво на извршување:"
-
-#, fuzzy
-#~ msgid "Runlevels"
-#~ msgstr "Ниво на извршување %d"
-
-#, fuzzy
-#~ msgid "Start "
-#~ msgstr "Старт"
-
-#~ msgid "Stop"
-#~ msgstr "Стоп"
-
-#, fuzzy
-#~ msgid "Service control"
-#~ msgstr "Конфигурација на сервиси"
-
-#, fuzzy
-#~ msgid "Status output"
-#~ msgstr "Статус"
-
-#~ msgid "None"
-#~ msgstr "Ништо"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Зачувај дијалог"
-
-#~ msgid "Don't Save"
-#~ msgstr "Не зачувувај"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Направивте промени во тековните нивоа на извршување.\n"
-#~ "Дали сакате да ги зачувате промените?"
-
-#~ msgid "Add Service"
-#~ msgstr "Додаj сервис"
-
-#~ msgid "Service Name: "
-#~ msgstr "Име на сервис: "
-
-#~ msgid "_File"
-#~ msgstr "_Датотека"
-
-#~ msgid "_Save Changes"
-#~ msgstr "_Зачувај ги промените"
-
-#, fuzzy
-#~ msgid "Revert To _Last Save"
-#~ msgstr "Поврати до _последното снимање"
-
-#, fuzzy
-#~ msgid "_Quit"
-#~ msgstr "_Излез"
-
-#~ msgid "_View"
-#~ msgstr "_Поглед"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "_Освежи ја листата со сервиси"
-
-#~ msgid "_Actions"
-#~ msgstr "_Дејствија"
-
-#, fuzzy
-#~ msgid "Delete Service"
-#~ msgstr "_Рестартирај сервис"
-
-#~ msgid "_Start Service"
-#~ msgstr "_Пушти сервис"
-
-#~ msgid "S_top Service"
-#~ msgstr "С_топирај сервис"
-
-#~ msgid "_Restart Service"
-#~ msgstr "_Рестартирај сервис"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "_Уреди ниво на извршување"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "Сите нивоа на _извршување"
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "Моментално активно ниво на извршување:"
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "Уредувам ниво на извршување:"
-
-#~ msgid "Status"
-#~ msgstr "Статус"
-
-#, fuzzy
-#~ msgid "_Background Services"
-#~ msgstr "_Пушти сервис"
-
-#, fuzzy
-#~ msgid "_On Demand Services"
-#~ msgstr "_Рестартирај сервис"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "Дали сте сигурни дека сакате да го избришете %s?"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "Ниво на извршување %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "Моментално работам со нивоа на извршување: "
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "Уредувам ниво на извршување: "
-
-#~ msgid "Unknown"
-#~ msgstr "Непознато"
-
-#~ msgid "All"
-#~ msgstr "Сите"
-
-#, fuzzy
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "Алатка за конфигурација на системските сервиси ВЕРЗИЈА\n"
-#~ " Copyright (c) 2002-2004 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat>\n"
-#~ " Bill Nottingham <notting@redhat>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "За"
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "Мора да го извршите system-config-services како root."
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "%s не успеа. Грешката беше: %s"
-
-#~ msgid " successful"
-#~ msgstr " успешно"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "xinetd мора да е овозможен за да работи %s"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "xinetd не успеа да се вчита повторно за "
-
-#~ msgid ". The error was: "
-#~ msgstr ". Грешката беше: "
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "xinetd успешно го вчита %s"
-
-#~ msgid "Help is not available."
-#~ msgstr "Помошта не е достапна."
-
-#, fuzzy
-#~ msgid "Start the selected service"
-#~ msgstr "_Пушти сервис"
-
-#, fuzzy
-#~ msgid "Stop the selected service"
-#~ msgstr "Избриши сервис"
-
-#, fuzzy
-#~ msgid "Restart the selected service"
-#~ msgstr "_Рестартирај сервис"
-
-#, fuzzy
-#~ msgid "Refresh the list of services"
-#~ msgstr "_Освежи ја листата со сервиси"
-
-#, fuzzy
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Поврати до _последното снимање"
-
-#~ msgid "Save"
-#~ msgstr "Зачувај"
-
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd is required for this service."
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "овој сервис има потреба од xinetd."
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid "_Save"
-#~ msgstr "_Зачувај"
-
-#~ msgid "_Revert"
-#~ msgstr "_Поврати"
-
-#~ msgid "Revert"
-#~ msgstr "Поврати"
-
-#~ msgid "Start at Boot"
-#~ msgstr "Извршувај при подигнување"

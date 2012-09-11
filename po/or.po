@@ -1,37 +1,25 @@
-# translation of system-config-services.master.or.po to Oriya
-# This file is distributed under the same license as the system-config-services package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-#
-# Subhransu Behera <sbehera@redhat.com>, 2006.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Manoj Kumar Giri <mgiri@redhat.com>, 2008, 2009, 2010, 2012.
+# Nils Philippsen <nils@redhat.com>, 2011.
 # saroj kumar padhy <saroz.kumar@gmail.com>, 2008.
-# Manoj Kumar Giri <mgiri@redhat.com>, 2008, 2009, 2010.
+# Subhransu Behera <sbehera@redhat.com>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.master.or\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2010-01-27 11:39+0530\n"
+"PO-Revision-Date: 2012-02-21 08:40+0000\n"
 "Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
-"Language-Team: Oriya <oriya-it@googlegroups.com>\n"
-"Language: or\n"
+"Language-Team: Oriya (http://www.transifex.com/projects/p/fedora/language/or/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n!=1);\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
+"Language: or\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -64,7 +52,7 @@ msgstr "ଏହି ସର୍ଭିସକୁ ଚାଲିବା ସ୍ତରଗୁ
 
 #: src/gui.py:209
 msgid "This service is masked."
-msgstr ""
+msgstr "ଏହି ସର୍ଭିସରେ ମୁଖା ଲଗାହୋଇଛି।"
 
 #: src/gui.py:222
 msgid "The status of this service is unknown."
@@ -84,49 +72,49 @@ msgstr "ଏହି ସର୍ଭିସଟି ନଷ୍ଟ ହୋଇଯାଇଛି
 
 #: src/gui.py:245
 msgid "This unit is inactive."
-msgstr ""
+msgstr "ଏହି ଏକକଟି ନିଷ୍କ୍ରିୟ ଅଛି।"
 
 #: src/gui.py:247
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
-msgstr ""
+msgstr "ଏହି ଏକକଟି ନିଷ୍କ୍ରିୟ ଅଛି: %(sub_state)s"
 
 #: src/gui.py:251
 msgid "This unit is running."
-msgstr ""
+msgstr "ଏହି ଏକକଟି ଚାଲୁଅଛି।"
 
 #: src/gui.py:254
 msgid "This unit has finished."
-msgstr ""
+msgstr "ଏହି ଏକକଟି ସମାପ୍ତ ହୋଇଛି।"
 
 #: src/gui.py:257
 #, python-format
 msgid "This unit is active: %(sub_state)s"
-msgstr ""
+msgstr "ଏହି ଏକକଟି ସକ୍ରିୟ ଅଛି: %(sub_state)s"
 
 #: src/gui.py:260
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
-msgstr ""
+msgstr "ଏହି ଏକକଟି ବିଫଳ ହୋଇଛି: %(sub_state)s"
 
 #: src/gui.py:264
 msgid "This unit is starting."
-msgstr ""
+msgstr "ଏହି ଏକକଟି ଆରମ୍ଭ ହେଉଛି।"
 
 #: src/gui.py:266
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
-msgstr ""
+msgstr "ଏହି ଏକକଟି ସକ୍ରିୟ ହେଉଅଛି: %(sub_state)s"
 
 #: src/gui.py:269
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
-msgstr ""
+msgstr "ଏହି ଏକକଟି ନିଷ୍କ୍ରିୟ ହେଉଅଛି: %(sub_state)s"
 
 #: src/gui.py:272
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
-msgstr ""
+msgstr "ଏହି ଏକକର ସ୍ଥିତି ଜଣା ନାହିଁ: %(active_state)s/%(sub_state)s"
 
 #: src/gui.py:349
 #, python-format
@@ -134,16 +122,14 @@ msgid ""
 "The <b>%(servicename)s</b> service is managed by systemd. It may be started "
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
-msgstr ""
+msgstr "<b>%(servicename)s</b> ସର୍ଭିସଟି systemd ଦ୍ୱାରା ପରିଚାଳିତ। ଏହା ହୁଏତଃ ଆରମ୍ଭ ହୋଇପାରେଏବଂ ତାପରେ ପୃଷ୍ଠଭୂମିରେ ଚାଲିଥାଏ, କିମ୍ବା ଆବଶ୍ୟକତା ଅନୁସାରେ ସକ୍ରିୟ ହୋଇଥାଏ, କିମ୍ବା ପ୍ରସ୍ତୁତି କିମ୍ବା ସଫାକରିବା ଉଦ୍ଦେଶ୍ୟରେ ଚାଲିଥାଏ।"
 
 #: src/gui.py:379
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"<b>%(servicename)s</b> ସର୍ଭିସଟି ଥରେ ଆରମ୍ଭ ହୋଇଥିଲା, ସାଧାରଣତଃ ଯେତେବେଳେ ତନ୍ତ୍ରକୁ ବୁଟ "
-"କରାଯାଇଥିଲା, ପୃଷ୍ଠଭୂମିରେ ଚାଲିଥାଏ ଏବଂ ଆବଶ୍ୟକ ହେଲେ ଜାଗିଉଠିଥାଏ."
+msgstr "<b>%(servicename)s</b> ସର୍ଭିସଟି ଥରେ ଆରମ୍ଭ ହୋଇଥିଲା, ସାଧାରଣତଃ ଯେତେବେଳେ ତନ୍ତ୍ରକୁ ବୁଟ କରାଯାଇଥିଲା, ପୃଷ୍ଠଭୂମିରେ ଚାଲିଥାଏ ଏବଂ ଆବଶ୍ୟକ ହେଲେ ଜାଗିଉଠିଥାଏ."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -154,25 +140,19 @@ msgstr "ଏହି ସର୍ଭିସକୁ ନିକଟରେ ଅଦ୍ୟତନ
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"ଏହି <b>%(servicename)s</b> ସର୍ଭିସଟି ଆବଶ୍ୟକତା ଅନୁସାରେ xinetd ସର୍ଭିସ ଦ୍ୱାରା ଆରମ୍ଭ କରାହେବ "
-"ଏବଂ ଯେତେବେଳେ କିଛି କରିବାକୁ ନଥାଏ ସେତେବେଳେ ସମାପ୍ତ ହୋଇଥାଏ।"
+msgstr "ଏହି <b>%(servicename)s</b> ସର୍ଭିସଟି ଆବଶ୍ୟକତା ଅନୁସାରେ xinetd ସର୍ଭିସ ଦ୍ୱାରା ଆରମ୍ଭ କରାହେବ ଏବଂ ଯେତେବେଳେ କିଛି କରିବାକୁ ନଥାଏ ସେତେବେଳେ ସମାପ୍ତ ହୋଇଥାଏ।"
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"ଏହି ସର୍ଭିସକୁ ସକ୍ରିୟକରାଯାଇଛି, କିନ୍ତୁ <b>xinetd</b> ପ୍ୟାକେଜଟି ସ୍ଥାପିତ ହୋଇନାହିଁ. ଏହା ବିନା ଏହି "
-"ସର୍ଭିସ କାମକରିନଥାଏ."
+msgstr "ଏହି ସର୍ଭିସକୁ ସକ୍ରିୟକରାଯାଇଛି, କିନ୍ତୁ <b>xinetd</b> ପ୍ୟାକେଜଟି ସ୍ଥାପିତ ହୋଇନାହିଁ. ଏହା ବିନା ଏହି ସର୍ଭିସ କାମକରିନଥାଏ."
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"ଏହି ସର୍ଭିସକୁ ସକ୍ରିୟକରାଯାଇଛି, କିନ୍ତୁ <b>xinetd</b> ପ୍ୟାକେଜଟି ଚାଲୁନାହିଁ. ଏହା ବିନା ଏହି ସର୍ଭିସ "
-"କାମକରିନଥାଏ."
+msgstr "ଏହି ସର୍ଭିସକୁ ସକ୍ରିୟକରାଯାଇଛି, କିନ୍ତୁ <b>xinetd</b> ପ୍ୟାକେଜଟି ଚାଲୁନାହିଁ. ଏହା ବିନା ଏହି ସର୍ଭିସ କାମକରିନଥାଏ."
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -183,16 +163,15 @@ msgstr "ଏହି ଚାଲିବା ସ୍ତରଗୁଡ଼ିକରେ <b>%(s
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"ସହାୟକ ପ୍ରଦର୍ଶକ ମିଳୁନାହିଁ. ସହାୟତା ଦେଖିବାପାଇଁ ଆପଣଙ୍କୁ 'yelp' ପ୍ଯାକେଜ ସ୍ଥାପନ କରିବାକୁ ପଡିବ."
+msgstr "ସହାୟକ ପ୍ରଦର୍ଶକ ମିଳୁନାହିଁ. ସହାୟତା ଦେଖିବାପାଇଁ ଆପଣଙ୍କୁ 'yelp' ପ୍ଯାକେଜ ସ୍ଥାପନ କରିବାକୁ ପଡିବ."
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
-msgstr ""
+msgstr "ବର୍ଣ୍ଣନା ପାଇବା ସମୟରେ ତ୍ରୁଟି।"
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright © 2002-2011 Red Hat, Inc. and contributors"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -265,56 +244,32 @@ msgstr "ସର୍ଭିସ %sର ସ୍ଥିତି:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
 "This service is managed by systemd. It may be started then run in the "
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
-msgstr ""
+msgstr "ଏହି ସର୍ଭିସଟି systemd ଦ୍ୱାରା ପରିଚାଳିତ।  ଏହା ହୁଏତଃ ଆରମ୍ଭ ହୋଇଛି ଏବଂ ପୃଷ୍ଠଭୂମିରେ ଚାଲୁଅଛି, ଅଥବା ଆବଶ୍ୟକ ହେଲେ ସକ୍ରିୟ ହେବ, କିମ୍ବା କେବଳ ଥରେ ପ୍ରସ୍ତୁତି ଏବଂ ସଫାକରିବା ପାଇଁ ଚାଲିଥାଏ।"
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"ଏହି ସର୍ଭିସଟି ଥରେ ମାତ୍ର ଆରମ୍ଭ ହୋଇଥିଲା, ସାଧାରଣତଃ ଯେତେବେଳେ ତନ୍ତ୍ର ବୁଟକରାଯାଇଥିଲା, ପୃଷ୍ଠଭୂମିରେ "
-"ଚାଲୁଥାଏ ଏବଂ ଆବଶ୍ୟକ ହେଲେ ଜାଗ୍ରତ ହୋଇଥାଏ."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
+msgstr "ଏହି ସର୍ଭିସଟି ଥରେ ମାତ୍ର ଆରମ୍ଭ ହୋଇଥିଲା, ସାଧାରଣତଃ ଯେତେବେଳେ ତନ୍ତ୍ର ବୁଟକରାଯାଇଥିଲା, ପୃଷ୍ଠଭୂମିରେ ଚାଲୁଥାଏ ଏବଂ ଆବଶ୍ୟକ ହେଲେ ଜାଗ୍ରତ ହୋଇଥାଏ."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"ଏହି ସର୍ଭିସଟି ଆବଶ୍ୟକତା ଅନୁସାରେ xinetd ସର୍ଭିସ ଦ୍ୱାରା ଆରମ୍ଭ କରାଯାଇଥାଏ ଏବଂ ଯେତେବେଳେ କିଛି "
-"କରିବାକୁ ନଥାଏ ସେତେବେଳେ ସମାପ୍ତ ହୋଇଥାଏ।"
+msgstr "ଏହି ସର୍ଭିସଟି ଆବଶ୍ୟକତା ଅନୁସାରେ xinetd ସର୍ଭିସ ଦ୍ୱାରା ଆରମ୍ଭ କରାଯାଇଥାଏ ଏବଂ ଯେତେବେଳେ କିଛି କରିବାକୁ ନଥାଏ ସେତେବେଳେ ସମାପ୍ତ ହୋଇଥାଏ।"
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -392,6 +347,3 @@ msgstr "ତନ୍ତ୍ର ସର୍ଭିସଗୁଡ଼ିକୁ ପରିଚ�
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "ତନ୍ତ୍ର ସର୍ଭିସଗୁଡ଼ିକୁ ପରିଚାଳନା କରିବା ପାଇଁ ବୈଧିକରଣ ଆବଶ୍ୟକ"
-
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"

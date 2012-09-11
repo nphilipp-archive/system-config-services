@@ -1,23 +1,25 @@
-# Persian translation of system-config-services.
-# This file is distributed under the same license as the system-config-services package.
-# Copyright (C) 2003 Hedayat Vatankhah.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Hedayat Vatankhah <hedavat@mail15.com>, 2003, 2004.
 # Hedayat Vatankhah <hedayat@fedoraproject.org>, 2003, 2004, 2010.
 # Mostafa <lashar@fedoraproject.org>, 2010.
+# Nils Philippsen <nils@redhat.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2010-09-23 03:03+0330\n"
-"Last-Translator: Hedayat Vatankhah <hedayat@fedoraproject.org>\n"
-"Language-Team: Persian <trans-fa@lists.fedoraproject.org>\n"
-"Language: fa\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: Persian (http://www.transifex.com/projects/p/fedora/language/fa/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Language: fa\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -127,9 +129,7 @@ msgstr ""
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"خدمت <b>%(servicename)s</b> یک بار - معمولا هنگامی که سیستم راه‌اندازی می‌شود "
-"- آغاز می‌شود، در پس‌زمینه اجرا می‌شود و هنگامی که نیاز باشد بیدار می‌شود."
+msgstr "خدمت <b>%(servicename)s</b> یک بار - معمولا هنگامی که سیستم راه‌اندازی می‌شود - آغاز می‌شود، در پس‌زمینه اجرا می‌شود و هنگامی که نیاز باشد بیدار می‌شود."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -140,9 +140,7 @@ msgstr "این خدمت اکنون به روز شده است."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"خدمت <b>%(servicename)s</b> هنگامی که نیاز باشد به وسیله‌ی خدمت xinetd آغاز "
-"خواهد شد و هنگامی که کار دیگری برای انجام دادن نداشته باشد پایان می‌یابد."
+msgstr "خدمت <b>%(servicename)s</b> هنگامی که نیاز باشد به وسیله‌ی خدمت xinetd آغاز خواهد شد و هنگامی که کار دیگری برای انجام دادن نداشته باشد پایان می‌یابد."
 
 #: src/gui.py:437
 msgid ""
@@ -246,19 +244,12 @@ msgstr "وضعیت خدمت  %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
 
 #: src/system-config-services.glade.h:28
@@ -270,19 +261,15 @@ msgstr ""
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"این خدمت یک بار - معمولا هنگامی که سیستم راه‌اندازی می‌شود - آغاز می‌شود، در "
-"پس‌زمینه اجرا می‌شود و هنگامی که نیاز باشد بیدار می‌شود."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
+msgstr "این خدمت یک بار - معمولا هنگامی که سیستم راه‌اندازی می‌شود - آغاز می‌شود، در پس‌زمینه اجرا می‌شود و هنگامی که نیاز باشد بیدار می‌شود."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"این خدمت هنگامی که نیاز باشد به وسیله‌ی خدمت xinetd آغاز خواهد شد و هنگامی که "
-"کار دیگری برای انجام دادن نداشته باشد پایان می‌یابد."
+msgstr "این خدمت هنگامی که نیاز باشد به وسیله‌ی خدمت xinetd آغاز خواهد شد و هنگامی که کار دیگری برای انجام دادن نداشته باشد پایان می‌یابد."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -327,15 +314,11 @@ msgstr "system-config-services"
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:42
 msgid "translator-credits"
-msgstr ""
-"هدایت وطن‌خواه <hedayat@fedoraproject.org>مصطفی دانشور <lashar@fedoraproject."
-"org>"
+msgstr "هدایت وطن‌خواه <hedayat@fedoraproject.org>مصطفی دانشور <lashar@fedoraproject.org>"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
-"خدمت‌هایی را که هنگام آغاز به کار سیستم در حال اجرا خواهند بود را پیکربندی "
-"کنید"
+msgstr "خدمت‌هایی را که هنگام آغاز به کار سیستم در حال اجرا خواهند بود را پیکربندی کنید"
 
 #: system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -364,198 +347,3 @@ msgstr "مدیریت خدمات سیستم"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "مدیریت خدمات سیستم به تأیید هویت نیاز دارد"
-
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "حق نشر © ۲۰۰۲-۲۰۰۹ ردهت و مشارکت کنندگان"
-
-#~ msgid "Start"
-#~ msgstr "آغاز"
-
-#~ msgid "Restart"
-#~ msgstr "راه‌اندازی مجدد"
-
-#, fuzzy
-#~ msgid "Current runlevel is %s"
-#~ msgstr "سطح اجرایی فعال جاری: "
-
-#, fuzzy
-#~ msgid "Runlevels"
-#~ msgstr "سطح اجرایی _۳"
-
-#, fuzzy
-#~ msgid "Start "
-#~ msgstr "آغاز"
-
-#~ msgid "Stop"
-#~ msgstr "توقف"
-
-#, fuzzy
-#~ msgid "Service control"
-#~ msgstr "پیکربندی خدمت"
-
-#, fuzzy
-#~ msgid "Status output"
-#~ msgstr "وضعیت"
-
-#~ msgid "None"
-#~ msgstr "هیچ‌کدام"
-
-#~ msgid "Save Dialog"
-#~ msgstr "محاوره‌ی ذخیره"
-
-#~ msgid "Don't Save"
-#~ msgstr "ذخیره نکن"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "شما در سطح اجرایی جاری تغییراتی داده‌اید.\n"
-#~ "آیا می‌خواهید تغییرات را ذخیره کنید؟"
-
-#~ msgid "Add Service"
-#~ msgstr "اضافه‌ی خدمت"
-
-#~ msgid "Service Name: "
-#~ msgstr "نام خدمت: "
-
-#~ msgid "_File"
-#~ msgstr "_پرونده"
-
-#~ msgid "_Save Changes"
-#~ msgstr "_ذخیره‌ی تغییرات"
-
-#, fuzzy
-#~ msgid "Revert To _Last Save"
-#~ msgstr "بازگشت به _آخرین ذخیره"
-
-#~ msgid "_View"
-#~ msgstr "_نما"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "_نوسازی فهرست خدمت"
-
-#~ msgid "_Actions"
-#~ msgstr "_عمل‌ها"
-
-#~ msgid "Delete Service"
-#~ msgstr "حذف خدمت"
-
-#~ msgid "_Start Service"
-#~ msgstr "_آغاز خدمت"
-
-#~ msgid "S_top Service"
-#~ msgstr "_توقف خدمت"
-
-#~ msgid "_Restart Service"
-#~ msgstr "_راه‌اندازی مجدد خدمت"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "_ویرایش سطح اجرایی"
-
-#, fuzzy
-#~ msgid "Runlevel _All"
-#~ msgstr "سطح اجرایی _۳"
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "سطح اجرایی فعال جاری: "
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "ویرایش سطح اجرایی:"
-
-#~ msgid "Status"
-#~ msgstr "وضعیت"
-
-#, fuzzy
-#~ msgid "_Background Services"
-#~ msgstr "_آغاز خدمت"
-
-#, fuzzy
-#~ msgid "_On Demand Services"
-#~ msgstr "_راه‌اندازی مجدد خدمت"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "مطمئنید که می‌خواهید %s را حذف کنید؟"
-
-#, fuzzy
-#~ msgid "Runlevel %d"
-#~ msgstr "سطح اجرایی _۳"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "درحال اجرا در سطح اجرایی: "
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "ویرایش سطح اجرایی: "
-
-#~ msgid "Unknown"
-#~ msgstr "ناشناخته"
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "شما باید system-config-services را به‌عنوان root اجرا کنید."
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "%s شکست خورد. خطا %s بود."
-
-#~ msgid " successful"
-#~ msgstr " موفق"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "xinetd باید برای اجرای %s به‌کار انداخته شود"
-
-#~ msgid ". The error was: "
-#~ msgstr ". خطا این بود: "
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "xinetd %s را با موفقیت دوباره بارکرد"
-
-#~ msgid "Start the selected service"
-#~ msgstr "آغاز خدمت انتخاب شده"
-
-#~ msgid "Stop the selected service"
-#~ msgstr "توقف خدمت انتخاب شده"
-
-#~ msgid "Restart the selected service"
-#~ msgstr "راه‌اندازی مجدد خدمت انتخاب شده"
-
-#, fuzzy
-#~ msgid "Refresh the list of services"
-#~ msgstr "راه‌اندازی مجدد خدمت انتخاب شده"
-
-#, fuzzy
-#~ msgid "Revert to the last saved change"
-#~ msgstr "بازگشت به _آخرین ذخیره"
-
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd is required for this service."
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd برای این خدمت لازم است."
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#, fuzzy
-#~ msgid "Revert"
-#~ msgstr "راه‌اندازی مجدد"
-
-#~ msgid "Start at Boot"
-#~ msgstr "آغاز هنگام راه‌اندازی"
-
-#~ msgid "Copyright (c) 2002 Red Hat, Inc. All rights reserved."
-#~ msgstr "حق نشر ۲۰۰۲ (c) شرکت ردهت. همه‌ی حقوق محفوظ است."
-
-#~ msgid ""
-#~ "This software may be freely redistributed under the terms of the GPL.\n"
-#~ "Please report all bugs you find at the Red Hat bug tracking system:\n"
-#~ "http://bugzilla.redhat.com"
-#~ msgstr ""
-#~ "این نرم‌افزار می‌تواند تحت شرایط جی‌پی‌ال به صورت آزاد دوباره توزیع شود.\n"
-#~ "لطفاً همه‌ی اشکال‌هایی را که پیدا می‌کنید در سیستم پیگیری اشکال ردهت گزارش "
-#~ "دهید:\n"
-#~ "http://bugzilla.redhat.com"
-
-#~ msgid "translator_credits"
-#~ msgstr "هدایت وطن‌خواه <hedavat@mail15.com>"

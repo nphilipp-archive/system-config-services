@@ -1,21 +1,24 @@
-# Malay Translation of system-config-services
-# Copyright (C) 2002 Projek Gabai http://gabai.sf.net
-# Hasbullah Bin Pit <sebol@ikhlas.com>, 2002. Merlimau.
-# Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>, 2004
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Hasbullah Bin Pit <sebol@ikhlas.com>, 2002.
+# Nils Philippsen <nils@redhat.com>, 2011.
+# Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>, 2004.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2007-01-22 01:39+0800\n"
-"Last-Translator: Sharuzzaman Ahmat Raslan <sharuzzaman@myrealbox.com>\n"
-"Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
-"Language: ms\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0\n"
+"Language: ms\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -240,19 +243,12 @@ msgstr ""
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
 
 #: src/system-config-services.glade.h:28
@@ -264,8 +260,8 @@ msgstr ""
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
 msgstr ""
 
 #: src/system-config-services.glade.h:30
@@ -350,188 +346,3 @@ msgstr ""
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr ""
-
-#~ msgid "Enable"
-#~ msgstr "Hidupkan"
-
-#~ msgid "Disable"
-#~ msgstr "Matikan"
-
-#~ msgid "Start"
-#~ msgstr "Mula"
-
-#~ msgid "Restart"
-#~ msgstr "Ulanghidup"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Runlevel semasa adalah %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "Runlevel"
-
-#~ msgid "Start "
-#~ msgstr "Mula"
-
-#~ msgid "Stop"
-#~ msgstr "Henti"
-
-#~ msgid "Service control"
-#~ msgstr "Kawalan servis"
-
-#~ msgid "Status output"
-#~ msgstr "Keluaran status"
-
-#~ msgid "None"
-#~ msgstr "Tiada"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Dialog Simpan"
-
-#~ msgid "Don't Save"
-#~ msgstr "Jangan Simpan"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Anda membuat perubahan pada runlevel semasa.\n"
-#~ "Adakah anda ingin menyimpan perubahan ini?"
-
-#~ msgid "Add Service"
-#~ msgstr "Tambah Servis"
-
-#~ msgid "Service Name: "
-#~ msgstr "Nama Servis:"
-
-#~ msgid "_File"
-#~ msgstr "_Fail"
-
-#~ msgid "_Save Changes"
-#~ msgstr "_Simpan Perubahan"
-
-#~ msgid "Revert To _Last Save"
-#~ msgstr "Berbalik ke yang Ter_akhir Disimpan"
-
-#~ msgid "_Quit"
-#~ msgstr "_Keluar"
-
-#~ msgid "_View"
-#~ msgstr "_Lihat"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "_Segarkan Senarai Servis"
-
-#~ msgid "_Actions"
-#~ msgstr "_Aksi"
-
-#~ msgid "Delete Service"
-#~ msgstr "Padam Servis"
-
-#~ msgid "_Start Service"
-#~ msgstr "_Mulakan Servis"
-
-#~ msgid "S_top Service"
-#~ msgstr "_Hentikan Servis"
-
-#~ msgid "_Restart Service"
-#~ msgstr "_Ulanghidup Servis"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "_Edit Runlevel"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "Runlevel Semu_a"
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Servis ini dimulakan sekali dan dilaksana pada latarbelakang. Anda boleh "
-#~ "menyatakan dalam runlevel mana ia dimulakan."
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "Runlevel Aktif Samasa:"
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "Mengedit Runlevel:"
-
-#~ msgid "Status"
-#~ msgstr "Status"
-
-#~ msgid "_Background Services"
-#~ msgstr "Servis Latar_belakang"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "Servis ini dimulakan apabila diminta dan berakhir apabila tiada lagi apa-"
-#~ "apa untuk dilakukan. Servis <b>xinetd</b> mestilah dilaksanakan supaya ia "
-#~ "boleh digunakan."
-
-#~ msgid "_On Demand Services"
-#~ msgstr "_Servis Ketika Perlu"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "Anda pasti untuk memadam %s?"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "Runlevel %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "Kini Dilaksana pada Runlevel:"
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "Menyunting Runlevel: "
-
-#~ msgid "Unknown"
-#~ msgstr "Tidak Diketahui"
-
-#~ msgid "All"
-#~ msgstr "Semua"
-
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "Alatan Tetapan Servis Sistem VERSION\n"
-#~ " Hakcipta © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "Perihal"
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "Anda perlu melaksanakan system-config-services sebagai root"
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "%s gagal. Ralat adalah: %s"
-
-#~ msgid " successful"
-#~ msgstr " berjaya"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "xinetd perlu dihidupkan supaya %s dilaksanakan"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "xinetd gagal untuk mengulangmuat untuk"
-
-#~ msgid ". The error was: "
-#~ msgstr ". Ralatnya adalah:"
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "xinetd mengulangmuat %s dengan jayanya"
-
-#~ msgid "Help is not available."
-#~ msgstr "Tiada bantuan didapati."

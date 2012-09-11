@@ -1,20 +1,23 @@
-# Fedora Asturian translation of system-config-services.tip
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # astur <malditoastur@gmail.com>, 2009.
+# Nils Philippsen <nils@redhat.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.tip.ast\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2009-11-18 16:47+0100\n"
-"Last-Translator: astur <malditoastur@gmail.com>\n"
-"Language-Team: Fedora Asturian <alministradores@softastur.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: Asturian (http://www.transifex.com/projects/p/fedora/language/ast/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.1\n"
-"X-Generator: KBabel 1.11.4\n"
-"X-Poedit-Language: Asturian\n"
+"Language: ast\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -124,9 +127,7 @@ msgstr ""
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"El serviciu <b>%(servicename)s</b> aníciase una vegada, normalmente cuando'l "
-"sistema arranca, funciona en segundu planu y esconsoña cuando se-y necesita."
+msgstr "El serviciu <b>%(servicename)s</b> aníciase una vegada, normalmente cuando'l sistema arranca, funciona en segundu planu y esconsoña cuando se-y necesita."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -137,25 +138,19 @@ msgstr "Esti serviciu ta anovándose nesti intre."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"El serviciu <b>%(servicename)s</b> aniciaráse por demanda col serviciu "
-"xinetd y finará cuando nun tenga res más que facer."
+msgstr "El serviciu <b>%(servicename)s</b> aniciaráse por demanda col serviciu xinetd y finará cuando nun tenga res más que facer."
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"Esti serviciu ta habilitáu, pero'l paquete <b>xinetd</b> nun ta instaláu. "
-"Esti serviciu nun funciona ensin xinetd."
+msgstr "Esti serviciu ta habilitáu, pero'l paquete <b>xinetd</b> nun ta instaláu. Esti serviciu nun funciona ensin xinetd."
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"Esti serviciu ta habilitáu, pero'l serviciu <b>xinetd</b> nun ta "
-"funcionando. Esti serviciu nun funciona ensin xinetd."
+msgstr "Esti serviciu ta habilitáu, pero'l serviciu <b>xinetd</b> nun ta funcionando. Esti serviciu nun funciona ensin xinetd."
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -166,9 +161,7 @@ msgstr "Habilitar el serviciu <b>%(service)s</b> nestos niveles d'execución:"
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"El visor d'aida nun ta. Pa poder ver l'aida tien d'instalar el paquete "
-"'yelp'."
+msgstr "El visor d'aida nun ta. Pa poder ver l'aida tien d'instalar el paquete 'yelp'."
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
@@ -214,23 +207,14 @@ msgstr "Nivel d'execución 5"
 msgid "Runlevel _2"
 msgstr "Nivel d'execución 2"
 
-# ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
-# ../serviceconf.py:296
-# serviceconf.gladestrings:32
 #: src/system-config-services.glade.h:13
 msgid "Runlevel _3"
 msgstr "Nivel d'execución _3"
 
-# ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
-# ../serviceconf.py:296
-# serviceconf.gladestrings:34
 #: src/system-config-services.glade.h:14
 msgid "Runlevel _4"
 msgstr "Nivel d'execución _4"
 
-# ../serviceconf.py:186 ../serviceconf.py:278 ../serviceconf.py:287
-# ../serviceconf.py:296
-# serviceconf.gladestrings:36
 #: src/system-config-services.glade.h:15
 msgid "Runlevel _5"
 msgstr "Nivel d'execución _5"
@@ -243,7 +227,6 @@ msgstr "De_tener"
 msgid "Ser_vice"
 msgstr "Ser_viciu"
 
-# serviceconf.gladestrings:14
 #: src/system-config-services.glade.h:18
 msgid "Service Configuration"
 msgstr "Configuración del serviciu"
@@ -259,33 +242,13 @@ msgstr "Estáu del serviciu %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
@@ -296,19 +259,15 @@ msgstr ""
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"Esti serviciu aníciase una vegada, usualmente cuando s'anicia'l sistema, "
-"execútase en segundu planu y esconsoña cuando se-y necesita."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
+msgstr "Esti serviciu aníciase una vegada, usualmente cuando s'anicia'l sistema, execútase en segundu planu y esconsoña cuando se-y necesita."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"Esti serviciu aniciaráse por demanda col serviciu xinetd y finará cuando yá "
-"nun tenga res más que facer."
+msgstr "Esti serviciu aniciaráse por demanda col serviciu xinetd y finará cuando yá nun tenga res más que facer."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -363,8 +322,6 @@ msgstr "Configurar qué servicios van executase cuando s'anicie'l sistema "
 msgid "Service Management"
 msgstr "Alministración de Servicios"
 
-# ../serviceconf.py:144
-# serviceconf.gladestrings:26
 #: system-config-services.desktop.in.h:3
 msgid "Services"
 msgstr "Servicios"
@@ -388,40 +345,3 @@ msgstr "Alministración de servicios del sistema"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr ""
-
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-
-#~ msgid "System policy prevents access to system services information"
-#~ msgstr ""
-#~ "Les polítiques del sistema previenen l'accesu a la información de los "
-#~ "servicios del sistema"
-
-#~ msgid "System policy prevents management of system services"
-#~ msgstr ""
-#~ "Les polítiques del sistema previenen l'alministración de los servicios "
-#~ "del sistema"
-
-#~ msgid "window1"
-#~ msgstr "window1"
-
-#~ msgid "Service %s"
-#~ msgstr "Serviciu %s"
-
-#~ msgid "Enable"
-#~ msgstr "Habilitar"
-
-#~ msgid "Disable"
-#~ msgstr "Deshabilitar"
-
-#~ msgid "Customize"
-#~ msgstr "Personalizar"
-
-#~ msgid "Enable Default"
-#~ msgstr "Habilitar Predetermináu"
-
-#~ msgid "Enable All"
-#~ msgstr "Habilitar en Toos"
-
-#~ msgid "Disable All"
-#~ msgstr "Deshabilitar en Toos"

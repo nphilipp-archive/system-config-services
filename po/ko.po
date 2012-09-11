@@ -1,28 +1,29 @@
-# translation of ko.po to Korean
-# Michelle Kim <mkim@redhat.com>, 2002.
-# Michelle J Kim <mkim@redhat.com>, 2003,2004.
-# Michelle Ji Yeen Kim <mkim@redhat.com>, 2005, 2006.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Eunju Kim <eukim@redhat.com>, 2006, 2007, 2008, 2009.
+# Eun-Ju Kim <eukim@redhat.com>, 2012.
 # Hyunsok Oh <hoh@redhat.com>, 2010.
+#   <kwb0128@gmail.com>, 2011.
+# Michelle Ji Yeen Kim <mkim@redhat.com>, 2005, 2006.
+# Michelle J Kim <mkim@redhat.com>, 2003, 2004.
+# Michelle Kim <mkim@redhat.com>, 2002.
+# Nils Philippsen <nils@redhat.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: ko\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2010-04-06 11:56+1000\n"
-"Last-Translator: Hyunsok Oh <hoh@redhat.com>\n"
-"Language-Team: Korean <ko@li.org>\n"
-"Language: ko\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: eukim <eukim@redhat.com>\n"
+"Language-Team: Korean (http://www.transifex.com/projects/p/fedora/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.1\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=1; plural=0;\n"
-"\n"
-"\n"
-"\n"
-"\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -55,7 +56,7 @@ msgstr "이 서비스는 다음 런레벨에서 사용할 수 있습니다: %(ru
 
 #: src/gui.py:209
 msgid "This service is masked."
-msgstr ""
+msgstr "서비스는 마스크됩니다. "
 
 #: src/gui.py:222
 msgid "The status of this service is unknown."
@@ -75,49 +76,49 @@ msgstr "서비스가 작동하지 않습니다."
 
 #: src/gui.py:245
 msgid "This unit is inactive."
-msgstr ""
+msgstr "유닛은 비활성화 돼있습니다."
 
 #: src/gui.py:247
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
-msgstr ""
+msgstr "유닛이 비활성화 돼있습니다: %(sub_state)s"
 
 #: src/gui.py:251
 msgid "This unit is running."
-msgstr ""
+msgstr "유닛이 실행중입니다."
 
 #: src/gui.py:254
 msgid "This unit has finished."
-msgstr ""
+msgstr "유닛이 종료되었습니다."
 
 #: src/gui.py:257
 #, python-format
 msgid "This unit is active: %(sub_state)s"
-msgstr ""
+msgstr "유닛이 실행중입니다: %(sub_state)s"
 
 #: src/gui.py:260
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
-msgstr ""
+msgstr "유닛을 실행하지 못했습니다. %(sub_state)s"
 
 #: src/gui.py:264
 msgid "This unit is starting."
-msgstr ""
+msgstr "유닛을 실행하고 있습니다."
 
 #: src/gui.py:266
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
-msgstr ""
+msgstr "유닛을 활성화 하고 있습니다: %(sub_state)s"
 
 #: src/gui.py:269
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
-msgstr ""
+msgstr "유닛을 비활성화 하고 있습니다: %(sub_state)s"
 
 #: src/gui.py:272
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
-msgstr ""
+msgstr "유닛의 상태를 알 수 없습니다: %(active_state)s/%(sub_state)s"
 
 #: src/gui.py:349
 #, python-format
@@ -125,16 +126,14 @@ msgid ""
 "The <b>%(servicename)s</b> service is managed by systemd. It may be started "
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
-msgstr ""
+msgstr "<b>%(servicename)s</b> 서비스는 systemd로부터 관리되고 있습니다. "
 
 #: src/gui.py:379
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"<b>%(servicename)s</b> 서비스는, 보통 시스템 부팅시, 한번만 시작되며 백그라운"
-"드로 돌다가필요할 때 깨어납니다."
+msgstr "<b>%(servicename)s</b> 서비스는, 보통 시스템 부팅시, 한번만 시작되며 백그라운드로 돌다가필요할 때 깨어납니다."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -145,25 +144,19 @@ msgstr "이 서비스는 최신으로 업데이트되어 있습니다."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"<b>%(servicename)s</b> 서비스는 xinetd 서비스의 요청에 따라 그때그때 시작되"
-"며, 더 이상 필요가 없을 때 종료됩니다."
+msgstr "<b>%(servicename)s</b> 서비스는 xinetd 서비스의 요청에 따라 그때그때 시작되며, 더 이상 필요가 없을 때 종료됩니다."
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"서비스가 활성화 되었지만, <b>xinetd</b> 패키지가 설치되어 있지 않습니다. "
-"xineted가 없으면 서비스가 작동하지 않습니다.  "
+msgstr "서비스가 활성화 되었지만, <b>xinetd</b> 패키지가 설치되어 있지 않습니다. xineted가 없으면 서비스가 작동하지 않습니다.  "
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"서비스가 활성화 되었지만, <b>xinetd</b> 서비스가 실행중이 아닙니다. xineted"
-"가 없으면 서비스가 작동하지 않습니다."
+msgstr "서비스가 활성화 되었지만, <b>xinetd</b> 서비스가 실행중이 아닙니다. xineted가 없으면 서비스가 작동하지 않습니다."
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -174,17 +167,15 @@ msgstr "다음의 런레벨에서 <b>%(service)s</b> 서비스를 활성화 합�
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"도움말 뷰어를 찾을 수 없습니다. 도움말을 보시려면 'yelp' 패키지를 설치해야 합"
-"니다.  "
+msgstr "도움말 뷰어를 찾을 수 없습니다. 도움말을 보시려면 'yelp' 패키지를 설치해야 합니다.  "
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
-msgstr ""
+msgstr "정보를 가져오는 중에 오류가 발생했습니다."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright © 2002-2011 Red Hat, Inc. and contributors"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -257,56 +248,32 @@ msgstr "%s 서비스 상태: "
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
 "This service is managed by systemd. It may be started then run in the "
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
-msgstr ""
+msgstr "서비스는 systemd에 의해 관리됩니다. 이는 백그라운드에서 실행을 시작하거나 요청에 따라 활성화될 수 있습니다. 또는 준비 및 정리 목적으로 한 번만 실행될 수 있습니다. "
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"이 서비스는, 보통 시스템이 부팅될 때, 한번만 시작되며, 백그라운드에서 실행되"
-"면서 필요할 때마다 깨어납니다."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
+msgstr "이 서비스는, 보통 시스템이 부팅될 때, 한번만 시작되며, 백그라운드에서 실행되면서 필요할 때마다 깨어납니다."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"이 서비스는 xinetd 서비스의 요구에 의해 그때그때 시작되며, 더이상 필요 없을 "
-"때 종료됩니다."
+msgstr "이 서비스는 xinetd 서비스의 요구에 의해 그때그때 시작되며, 더이상 필요 없을 때 종료됩니다."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -351,9 +318,7 @@ msgstr "system-config-services"
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:42
 msgid "translator-credits"
-msgstr ""
-"김은주 (eukim@redhat.com) 2006-2009\n"
-"오현석 (hoh@redhat.com) 2010"
+msgstr "김은주 (eukim@redhat.com) 2006-2009\n오현석 (hoh@redhat.com) 2010"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -386,6 +351,3 @@ msgstr "시스템 서비스 관리  "
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "시스템 서비스를 관리하기 위해서는 인증이 필요합니다"
-
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"

@@ -1,31 +1,25 @@
-# translation of system-config-services.master.te.po to Telugu
-# translation of te.po to
-# translation of te౧.po to
-# translation of te.po to
-# This file is distributed under the same license as the system-config-services package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2006.
-#
 # Krishna Babu K <kkrothap@redhat.com>, 2008, 2009, 2010.
+# Krishnababu Krothapalli <krisnababu@gmail.com>, 2012.
+# Nils Philippsen <nils@redhat.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.master.te\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2010-01-29 14:21+0530\n"
-"Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
-"Language-Team: Telugu <en@li.org>\n"
-"Language: te\n"
+"PO-Revision-Date: 2012-03-07 15:10+0000\n"
+"Last-Translator: Krishnababu Krothapalli <krisnababu@gmail.com>\n"
+"Language-Team: Telugu (http://www.transifex.com/projects/p/fedora/language/te/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"\n"
+"Language: te\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -58,7 +52,7 @@ msgstr "ఈ సేవ రన్‌లెవల్సు: %(runlevels)s నంద
 
 #: src/gui.py:209
 msgid "This service is masked."
-msgstr ""
+msgstr "సేవ మాస్క్ వేయబడింది."
 
 #: src/gui.py:222
 msgid "The status of this service is unknown."
@@ -78,49 +72,49 @@ msgstr "ఈ సేవ అంతమైనది."
 
 #: src/gui.py:245
 msgid "This unit is inactive."
-msgstr ""
+msgstr "ఈ యూనిట్ క్రియాహీనంగా వుంది."
 
 #: src/gui.py:247
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
-msgstr ""
+msgstr "ఈ యూనిట్ క్రియాహీనంగా వుంది: %(sub_state)s"
 
 #: src/gui.py:251
 msgid "This unit is running."
-msgstr ""
+msgstr "ఈ యూనిట్ నడుచుచున్నది."
 
 #: src/gui.py:254
 msgid "This unit has finished."
-msgstr ""
+msgstr "ఈ యూనిట్ పూర్తైనది."
 
 #: src/gui.py:257
 #, python-format
 msgid "This unit is active: %(sub_state)s"
-msgstr ""
+msgstr "ఈ యూనిట్ క్రియాశీలంగా వుంది: %(sub_state)s"
 
 #: src/gui.py:260
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
-msgstr ""
+msgstr "ఈ యూనిట్ విఫలమైంది: %(sub_state)s"
 
 #: src/gui.py:264
 msgid "This unit is starting."
-msgstr ""
+msgstr "ఈ యూనిట్ ప్రారంభమౌతోంది."
 
 #: src/gui.py:266
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
-msgstr ""
+msgstr "ఈ యూనిట్ క్రియాశీలమౌతోంది: %(sub_state)s"
 
 #: src/gui.py:269
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
-msgstr ""
+msgstr "ఈ యూనిట్ క్రియాహీనమౌతోంది: %(sub_state)s"
 
 #: src/gui.py:272
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
-msgstr ""
+msgstr "ఈ యూనిట్ యొక్క స్థితి తెలియనిది: %(active_state)s/%(sub_state)s"
 
 #: src/gui.py:349
 #, python-format
@@ -128,16 +122,14 @@ msgid ""
 "The <b>%(servicename)s</b> service is managed by systemd. It may be started "
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
-msgstr ""
+msgstr "<b>%(servicename)s</b> సేవ systemd చేత నిర్వహించబడుతోంది. అది ప్రారంభమై బ్యాక్‌గ్రౌండ్ నందు నడుస్తూ వుండవచ్చు, లేదా వత్తిడిపై క్రియాశీలపరచవచ్చు, లేదా సమాయత్తమునకు లేదా శుభ్రపరిచే ప్రయోజనాల కొరకు వొకసారి నడుపవచ్చు."
 
 #: src/gui.py:379
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"సాదారణముగా సిస్టమ్ బూట్ అయినప్పుడు <b>%(servicename)s</b> సేవ వొకసారి ప్రారంభించబడుతుంది, "
-"బ్యాక్‌గ్రౌండునందు నడపబడుతూ అవసరమైనప్పుడు మేలుకొల్పబడుతుంది."
+msgstr "సాదారణముగా సిస్టమ్ బూట్ అయినప్పుడు <b>%(servicename)s</b> సేవ వొకసారి ప్రారంభించబడుతుంది, బ్యాక్‌గ్రౌండునందు నడపబడుతూ అవసరమైనప్పుడు మేలుకొల్పబడుతుంది."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -148,16 +140,13 @@ msgstr "ప్రస్తుతం ఈ సేవ నవీకరించబడ
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"<b>%(servicename)s</b> సేవ xinetd సేవ ద్వారా కోరడంవలన ప్రారంభించబడుతుంది మరియు అది "
-"చేయుటకు ఏమీ లేనప్పుడు ముగుస్తుంది."
+msgstr "<b>%(servicename)s</b> సేవ xinetd సేవ ద్వారా కోరడంవలన ప్రారంభించబడుతుంది మరియు అది చేయుటకు ఏమీ లేనప్పుడు ముగుస్తుంది."
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"సేవ చేతనపరచబడింది, అయితే <b>xinted</b> ప్యాకేజి సంస్థాపించబడిలేదు. అది లేకుండా ఈ సేవ పనిచేయదు."
+msgstr "సేవ చేతనపరచబడింది, అయితే <b>xinted</b> ప్యాకేజి సంస్థాపించబడిలేదు. అది లేకుండా ఈ సేవ పనిచేయదు."
 
 #: src/gui.py:448
 msgid ""
@@ -178,11 +167,11 @@ msgstr "సహాయ దర్శని కనగొనబడలేదు. స�
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
-msgstr ""
+msgstr "వివరణను పొందునప్పుడు దోషం."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "కాపీరైట్ © 2002-2011 Red Hat, Inc. మరియు సహాయకులు"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -255,54 +244,32 @@ msgstr "సేవ %sయొక్క స్థితి:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"ఈ ప్రోగ్రామ్ ఉచిత సాఫ్టువేర్; ఉచిత సాఫ్టువేర్ వ్యవస్థాపన నుండి ప్రచురింపబడిన GNU జనరల్ పబ్లిక్ లైసెన్సు "
-"తెలిపిన దానికి లోబడి మీరు ఈ ప్రోగ్రామ్ ను తిరిగిపంరిణీ చేయవచ్చు మరియు/లేదా సవరించవచ్చు; లైసెన్సు విడుదల 2 "
-"కాని, లేదా(మీ ఐచ్చికంగా) తర్వాతి ఏ విడుదల నైనా అవలంబించవచ్చు.\n"
-"\n"
-"ఈ ప్రోగ్రామ్ ఉపయోగపడుతుందనే నమ్మకం తో పంపిణీ చేయబడుతోంది, అయితే ఏ హామీ లేకుండా; వ్యాపారసంభందితంగా గాని "
-"లేదా ఒక ప్రయోజనం కొరకు సంపూర్ణతతో ఉందని గాని కూడా హామీ లేదు. ఎక్కువ సమాచారం కొరకు GNU జనరల్\n"
-"పబ్లిక్ లైసెన్సును చూడండి.\n"
-"\n"
-"ఈ ప్రోగ్రామ్ తో మీరు ఒక GNU జనరల్ పబ్లిక్ లైసెన్సు నకలు ను పొందివుంటారు.పొందకపోతే, Free Software "
-"Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USAకు "
-"వ్రాయండి."
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr "ఈ ప్రోగ్రామ్ ఉచిత సాఫ్టువేర్; ఉచిత సాఫ్టువేర్ వ్యవస్థాపన నుండి ప్రచురింపబడిన GNU జనరల్ పబ్లిక్ లైసెన్సు తెలిపిన దానికి లోబడి మీరు ఈ ప్రోగ్రామ్ ను తిరిగిపంరిణీ చేయవచ్చు మరియు/లేదా సవరించవచ్చు; లైసెన్సు విడుదల 2 కాని, లేదా(మీ ఐచ్చికంగా) తర్వాతి ఏ విడుదల నైనా అవలంబించవచ్చు.\n\nఈ ప్రోగ్రామ్ ఉపయోగపడుతుందనే నమ్మకం తో పంపిణీ చేయబడుతోంది, అయితే ఏ హామీ లేకుండా; వ్యాపారసంభందితంగా గాని లేదా ఒక ప్రయోజనం కొరకు సంపూర్ణతతో ఉందని గాని కూడా హామీ లేదు. ఎక్కువ సమాచారం కొరకు GNU జనరల్\nపబ్లిక్ లైసెన్సును చూడండి.\n\nఈ ప్రోగ్రామ్ తో మీరు ఒక GNU జనరల్ పబ్లిక్ లైసెన్సు నకలు ను పొందివుంటారు.పొందకపోతే, Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USAకు వ్రాయండి."
 
 #: src/system-config-services.glade.h:28
 msgid ""
 "This service is managed by systemd. It may be started then run in the "
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
-msgstr ""
+msgstr "ఈ సేవ systemd చే నిర్వహించబడును. అది ప్రారంభమై బ్యాక్‌గ్రౌండ్ నందు నడుస్తూ వుండవచ్చు, లేదా వత్తిడిపై క్రియాశీలపరచవచ్చు, లేదా సమాయత్తమునకు లేదా శుభ్రపరిచే ప్రయోజనాల కొరకు వొకసారి నడుపవచ్చు."
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"సాదారణముగా సిస్టమ్ బూట్ అయినప్పుడు, ఈ సేవ వొకసారి ప్రారంభించబడుతుంది, బ్యాక్‌గ్రౌండునందు "
-"నడుపబడుతుంది అవసరమైనప్పుడు మేల్కొలపబడుతుంది."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
+msgstr "సాదారణముగా సిస్టమ్ బూట్ అయినప్పుడు, ఈ సేవ వొకసారి ప్రారంభించబడుతుంది, బ్యాక్‌గ్రౌండునందు నడుపబడుతుంది అవసరమైనప్పుడు మేల్కొలపబడుతుంది."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"ఈ సేవ xinetd సేవ ద్వారా కోరడంవలన ప్రారంభించబడుతుంది మరియు అది చేయుటకు ఏమీ లేనప్పుడు "
-"ముగుస్తుంది."
+msgstr "ఈ సేవ xinetd సేవ ద్వారా కోరడంవలన ప్రారంభించబడుతుంది మరియు అది చేయుటకు ఏమీ లేనప్పుడు ముగుస్తుంది."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -380,6 +347,3 @@ msgstr "సిస్టమ్ సేవలను నిర్వహించు�
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "సిస్టమ్ సేవలను నిర్వహించుటకు ధృవీకరణ అవసరము"
-
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "కాపీరైట్ © 2002-2009 Red Hat, Inc. మరియు సహాయకులు"

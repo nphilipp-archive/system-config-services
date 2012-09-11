@@ -1,22 +1,24 @@
-# translation of ar.po to 
-# This file is distributed under the same license as the system-config-services package.
-# Copyright (C) 2005.
-# Ossama M. Khayat <okhayat@yahoo.com>, 2004.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Munzir Taha <munzirtaha@newhoriznos.com.sa>, 2005.
-#
+# Nils Philippsen <nils@redhat.com>, 2011.
+# Ossama M. Khayat <okhayat@yahoo.com>, 2004.
 msgid ""
 msgstr ""
-"Project-Id-Version: ar\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2005-05-26 00:04+0300\n"
-"Last-Translator: Munzir Taha <munzirtaha@newhorizons.com.sa>\n"
-"Language-Team:  Arabic <fedora-trans-ar@redhat.com>\n"
-"Language: ar\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: Arabic <trans-ar@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -241,19 +243,12 @@ msgstr ""
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
 
 #: src/system-config-services.glade.h:28
@@ -265,8 +260,8 @@ msgstr ""
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
 msgstr ""
 
 #: src/system-config-services.glade.h:30
@@ -351,208 +346,3 @@ msgstr ""
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr ""
-
-#~ msgid "Start"
-#~ msgstr "تشغيل"
-
-#~ msgid "Restart"
-#~ msgstr "إعادة التّشغيل"
-
-#, fuzzy
-#~ msgid "Current runlevel is %s"
-#~ msgstr "مستوى التّشغيل النّشط حاليّاً: "
-
-#, fuzzy
-#~ msgid "Runlevels"
-#~ msgstr "مستوى التشغيل %d"
-
-#, fuzzy
-#~ msgid "Start "
-#~ msgstr "تشغيل"
-
-#~ msgid "Stop"
-#~ msgstr "إيقاف"
-
-#, fuzzy
-#~ msgid "Service control"
-#~ msgstr "تهيئة الخدمة"
-
-#, fuzzy
-#~ msgid "Status output"
-#~ msgstr "الحالة"
-
-#~ msgid "None"
-#~ msgstr "لاشيء"
-
-#~ msgid "Save Dialog"
-#~ msgstr "مربّع حوار الحفظ"
-
-#~ msgid "Don't Save"
-#~ msgstr "لا تقم بالحفظ"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "لقد قمت ببعض التّغييرات على مستوى التّشغيل الحالي.\n"
-#~ "هل تريد حفظ هذه التّغييرات؟"
-
-#~ msgid "Add Service"
-#~ msgstr "أضف خدمة"
-
-#~ msgid "Service Name: "
-#~ msgstr "اسم الخدمة: "
-
-#~ msgid "_File"
-#~ msgstr "_ملف"
-
-#~ msgid "_Save Changes"
-#~ msgstr "_حفظ التّغييرات"
-
-#, fuzzy
-#~ msgid "Revert To _Last Save"
-#~ msgstr "استعد آ_خر حفظ"
-
-#, fuzzy
-#~ msgid "_Quit"
-#~ msgstr "_خروج"
-
-#~ msgid "_View"
-#~ msgstr "_عرض"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "ت_حديث لائحة الخدمات"
-
-#~ msgid "_Actions"
-#~ msgstr "إ_جراءات"
-
-#, fuzzy
-#~ msgid "Delete Service"
-#~ msgstr "إ_عادة تشغيل الخدمة"
-
-#~ msgid "_Start Service"
-#~ msgstr "_تشغيل الخدمة"
-
-#~ msgid "S_top Service"
-#~ msgstr "أ_وْقف الخدمة"
-
-#~ msgid "_Restart Service"
-#~ msgstr "إ_عادة تشغيل الخدمة"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "_تحرير مستوى التّشغيل"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "مستوى التشغيل ال_كل"
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "مستوى التّشغيل النّشط حاليّاً: "
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "تحرير مستوى التّشغيل:"
-
-#~ msgid "Status"
-#~ msgstr "الحالة"
-
-#, fuzzy
-#~ msgid "_Background Services"
-#~ msgstr "_تشغيل الخدمة"
-
-#, fuzzy
-#~ msgid "_On Demand Services"
-#~ msgstr "إ_عادة تشغيل الخدمة"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "هل تريد بالتأكيد حذف %s؟"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "مستوى التشغيل %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "يعمل حاليّاً في مستوى التّشغيل: "
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "تحرير مستوى التّشغيل: "
-
-#~ msgid "Unknown"
-#~ msgstr "مجهول"
-
-#~ msgid "All"
-#~ msgstr "الكل"
-
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "أداة تهيئة خدمات النّظام VERSION\n"
-#~ "حقوق النّسخ محفوظة لردهات، المتّحدة لسنة 2002-2004\n"
-#~ " تّمْ باوَرْزْ <timp@redhat>\n"
-#~ " بِلْ نوتِنجهام <notting@redhat>\n"
-#~ " دان والش <dwalsh@redhat.com>\n"
-#~ " بْرِنْت فوكْس <bfox@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "حَوْل"
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "يجب أن تُشغّل system-config-services كمستخدم root."
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "فشل %s. كان الخطأ: %s"
-
-#~ msgid " successful"
-#~ msgstr " بنجاح"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "يجب أن يكون xinetd مُمكّنا كييتعمل %s"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "فشل xinetd في إعادة تحميل "
-
-#~ msgid ". The error was: "
-#~ msgstr ". كان الخطأ: "
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "قام xinetd بإعادة تحميل %s بنجاح"
-
-#~ msgid "Help is not available."
-#~ msgstr "المُساعدة غير متوفّرة."
-
-#, fuzzy
-#~ msgid "Start the selected service"
-#~ msgstr "_تشغيل الخدمة"
-
-#, fuzzy
-#~ msgid "Stop the selected service"
-#~ msgstr "احذف خدمة"
-
-#, fuzzy
-#~ msgid "Restart the selected service"
-#~ msgstr "إ_عادة تشغيل الخدمة"
-
-#, fuzzy
-#~ msgid "Refresh the list of services"
-#~ msgstr "ت_حديث لائحة الخدمات"
-
-#, fuzzy
-#~ msgid "Revert to the last saved change"
-#~ msgstr "استعد آ_خر حفظ"
-
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd is required for this service."
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd مطلوب لهذه الخدمة."
-
-#~ msgid "*"
-#~ msgstr "*"

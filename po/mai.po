@@ -1,24 +1,23 @@
-# translation of system-config-services.master.mai.po to Maithili
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
+# Translators:
+# Nils Philippsen <nils@redhat.com>, 2011.
 # Sangeeta Kumari <sangeeta09@gmail.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services.master.mai\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2009-09-22 22:44+0530\n"
-"Last-Translator: Sangeeta Kumari <sangeeta09@gmail.com>\n"
-"Language-Team: Maithili <maithili.sf.net>\n"
-"Language: mai\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: Maithili (http://www.transifex.com/projects/p/fedora/language/mai/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"\n"
-"\n"
+"Language: mai\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -128,9 +127,7 @@ msgstr ""
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"<b>%(servicename)s</b> सेवा एकटा बार आरंभ कएल जाइत अछि जखन सिस्टम बूट करैत अछि, "
-"पृष्ठभूमि मे चलैत अछि आओर जरूरत पड़ने पर फेर चालू  हाएत  अछि."
+msgstr "<b>%(servicename)s</b> सेवा एकटा बार आरंभ कएल जाइत अछि जखन सिस्टम बूट करैत अछि, पृष्ठभूमि मे चलैत अछि आओर जरूरत पड़ने पर फेर चालू  हाएत  अछि."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -141,25 +138,19 @@ msgstr "ई सेवा अखन अद्यतन कएल गेल अछ
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"<b>%(servicename)s</b> सेवा केँ आरंभ कएल जएताह xinetd सेवाक मांग पर आओर तखन अंत "
-"होइछ जखन एकरा संग बेसी किछु करबाकेँ नहि अछि."
+msgstr "<b>%(servicename)s</b> सेवा केँ आरंभ कएल जएताह xinetd सेवाक मांग पर आओर तखन अंत होइछ जखन एकरा संग बेसी किछु करबाकेँ नहि अछि."
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"ई सेवा सक्रिय अछि.  मुदा  <b>xinetd</b> संकुल संस्थापित नहि अछि. ई सेवा एकरा बिनु काम "
-"नहि करैत अछि."
+msgstr "ई सेवा सक्रिय अछि.  मुदा  <b>xinetd</b> संकुल संस्थापित नहि अछि. ई सेवा एकरा बिनु काम नहि करैत अछि."
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"ई सेवा सक्रिय अछि.  मुदा  <b>xinetd</b> सेवा नहि चलि रहल अछि. ई सेवा एकरा बिनु काम "
-"नहि करैत अछि."
+msgstr "ई सेवा सक्रिय अछि.  मुदा  <b>xinetd</b> सेवा नहि चलि रहल अछि. ई सेवा एकरा बिनु काम नहि करैत अछि."
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -170,9 +161,7 @@ msgstr "<b>%(service)s</b> सेवा इन रनलेवल मे सक�
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-" मदति  प्रदर्शक नहि मिल सका.  मदति  देखब मे समर्थ हए क' लेल अहाँकेँ 'yelp' संकुल "
-"संस्थापित करने क' जरूरत अछि."
+msgstr " मदति  प्रदर्शक नहि मिल सका.  मदति  देखब मे समर्थ हए क' लेल अहाँकेँ 'yelp' संकुल संस्थापित करने क' जरूरत अछि."
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
@@ -253,33 +242,13 @@ msgstr "सेवा %s क' स्थिति:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
@@ -290,19 +259,15 @@ msgstr ""
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"ई सेवा एकटा बार आरंभ कएल जाइत अछि जखन सिस्टम बूट कएल जाएत अछि, पृष्ठभूमि मे चलैत अछि "
-"आओर जरूरत पड़ै पर जागैत अछि."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
+msgstr "ई सेवा एकटा बार आरंभ कएल जाइत अछि जखन सिस्टम बूट कएल जाएत अछि, पृष्ठभूमि मे चलैत अछि आओर जरूरत पड़ै पर जागैत अछि."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"ई सेवाकेँ आरंभ कएल जएताह xinetd सेवाक मांग पर आओर तखन खतम होइछ जखन एकरा संग बेसी किछु "
-"करबाक नहि अछि."
+msgstr "ई सेवाकेँ आरंभ कएल जएताह xinetd सेवाक मांग पर आओर तखन खतम होइछ जखन एकरा संग बेसी किछु करबाक नहि अछि."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -380,12 +345,3 @@ msgstr "तंत्र सेवा प्रबंधित करू"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr ""
-
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "कापीराइट © 2002-2009 Red Hat, Inc. आओर एकर योगदानकएनिहार"
-
-#~ msgid "System policy prevents access to system services information"
-#~ msgstr "तंत्र नीति तंत्र सेवा सूचनामे पहुँच रोकैछ"
-
-#~ msgid "System policy prevents management of system services"
-#~ msgstr "तंत्र नीति तंत्र सेवा सूचनाक प्रबंधन रोकैत अछि"

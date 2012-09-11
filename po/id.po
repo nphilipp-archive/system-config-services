@@ -1,24 +1,24 @@
-# system-config-services Bahasa Indonesia (Id)
-# Copyright (C) 2004-2006
-# This file is distributed under the same license as the system-config-services package.
-# Teguh DC <dheche@brawijaya.ac.id>, 2004-2007.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Nils Philippsen <nils@redhat.com>, 2011.
+# Teguh DC <dheche@brawijaya.ac.id>, 2004.
 # Teguh DC <dheche@songolimo.net>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: system-config-services-0.8.15-1\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2010-02-10 13:22+0700\n"
-"Last-Translator: Teguh DC <dheche@songolimo.net>\n"
-"Language-Team: Fedora Indonesia <trans-id@lists.fedoraproject.org>\n"
-"Language: id\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: Indonesian <trans-id@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Virtaal 0.5.1\n"
-"X-Poedit-Language: Indonesian\n"
-"X-Poedit-Country: INDONESIA\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -128,9 +128,7 @@ msgstr ""
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"Layanan <b>%(servicename)s</b> dijalankan sekali, biasanya ketika sistem "
-"boot, berjalan di latar belakang dan hidup bila diperlukan."
+msgstr "Layanan <b>%(servicename)s</b> dijalankan sekali, biasanya ketika sistem boot, berjalan di latar belakang dan hidup bila diperlukan."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -141,25 +139,19 @@ msgstr "Saat ini layanan ini sudah diperbarui."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"Layanan <b>%(servicename)s</b> akan dijalankan berdasarkan kebutuhan oleh "
-"layanan xinetd dan berhenti ketika tidak ada lagi yang harus dilakukan."
+msgstr "Layanan <b>%(servicename)s</b> akan dijalankan berdasarkan kebutuhan oleh layanan xinetd dan berhenti ketika tidak ada lagi yang harus dilakukan."
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"Layanan ini diaktifkan, tapi paket <b>xinetd</b> tidak terpasang. Layanan "
-"ini tidak dapat bekerja tanpa itu."
+msgstr "Layanan ini diaktifkan, tapi paket <b>xinetd</b> tidak terpasang. Layanan ini tidak dapat bekerja tanpa itu."
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"Layanan ini diaktifkan, tapi layanan <b>xinetd</b> tidak berjalan. Layanan "
-"ini tidak dapat berjalan tanpa itu."
+msgstr "Layanan ini diaktifkan, tapi layanan <b>xinetd</b> tidak berjalan. Layanan ini tidak dapat berjalan tanpa itu."
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -170,9 +162,7 @@ msgstr "Aktifkan layanan <b>%(service)s</b> di runlevel ini:"
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"Penampil bantuan tidak dapat ditemukan. Untuk melihat bantuan, paket 'yelp' "
-"harus diinstal."
+msgstr "Penampil bantuan tidak dapat ditemukan. Untuk melihat bantuan, paket 'yelp' harus diinstal."
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
@@ -253,19 +243,12 @@ msgstr "Status layanan %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
 
 #: src/system-config-services.glade.h:28
@@ -277,19 +260,15 @@ msgstr ""
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"Layanan ini dijalankan sekali, biasanya ketika sistem boot, berjalan di "
-"latar belakang dan hidup bila diperlukan."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
+msgstr "Layanan ini dijalankan sekali, biasanya ketika sistem boot, berjalan di latar belakang dan hidup bila diperlukan."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"Layanan ini akan dijalankan berdasarkan kebutuhan oleh layanan xinetd dan "
-"berhenti ketika tidak ada lagi yang harus dilakukan."
+msgstr "Layanan ini akan dijalankan berdasarkan kebutuhan oleh layanan xinetd dan berhenti ketika tidak ada lagi yang harus dilakukan."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -367,254 +346,3 @@ msgstr "Mengelola layanan sistem"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "Mengelola layanan sistem membutuhkan otentikasi"
-
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "Hak Cipta © 2002-2009 Red Hat, Inc. dan para kontributor"
-
-#~ msgid "Enable"
-#~ msgstr "Aktifkan"
-
-#~ msgid "Disable"
-#~ msgstr "Nonaktifkan"
-
-#~ msgid "Start"
-#~ msgstr "Mulai"
-
-#~ msgid "Restart"
-#~ msgstr "Mulai kembali"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Runlevel Saat Ini %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "Runlevel"
-
-#~ msgid "Start "
-#~ msgstr "Mulai"
-
-#~ msgid "Stop"
-#~ msgstr "Berhenti"
-
-#~ msgid "Service control"
-#~ msgstr "Kontrol Layanan"
-
-#~ msgid "Status output"
-#~ msgstr "Status keluaran"
-
-#~ msgid "None"
-#~ msgstr "Tidak Satu pun"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Dialog Penyimpanan"
-
-#~ msgid "Don't Save"
-#~ msgstr "Jangan Simpan"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Anda telah membuat perubahan pada runlevel saat ini.\n"
-#~ "Apakah anda ingin menyimpan perubahan tersebut?"
-
-#~ msgid "Add Service"
-#~ msgstr "Tambah Layanan"
-
-#~ msgid "Service Name: "
-#~ msgstr "Nama Layanan: "
-
-#~ msgid "_File"
-#~ msgstr "Berkas"
-
-#~ msgid "_Save Changes"
-#~ msgstr "_Simpan Perubahan"
-
-#~ msgid "Revert To _Last Save"
-#~ msgstr "Kemba_likan ke Simpanan Terakhir"
-
-#~ msgid "_Quit"
-#~ msgstr "Keluar"
-
-#~ msgid "_View"
-#~ msgstr "_Lihat"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "_Refresh Daftar Layanan"
-
-#~ msgid "_Actions"
-#~ msgstr "_Aksi"
-
-#~ msgid "Delete Service"
-#~ msgstr "Hapus Layanan"
-
-#~ msgid "_Start Service"
-#~ msgstr "Mulai Layanan"
-
-#~ msgid "S_top Service"
-#~ msgstr "Hen_tikan Layanan"
-
-#~ msgid "_Restart Service"
-#~ msgstr "Jalankan Kembali Layanan"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "Ubah Runlevel"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "Semu_a Runlevel"
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Layanan ini dijalankan satu kali dan berjalan di background. Anda dapat "
-#~ "menentukan di runlevel mana ia berjalan."
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "Runlevel Aktif Saat Ini: "
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "Mengubah Runlevel:"
-
-#~ msgid "Status"
-#~ msgstr "Status"
-
-#~ msgid "_Background Services"
-#~ msgstr "Layanan _Background"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "Layanan ini akan dijalankan apabila ada permintaan dan akan diakhiri "
-#~ "ketika tidak ada lagi yang harus dilakukan. Layanan <b>xinetd</b> harus "
-#~ "dijalankan sehingga ia dapat digunakan."
-
-#~ msgid "_On Demand Services"
-#~ msgstr "Layanan _On Demand"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "Apakah anda yakin ingin menghapus %s?"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "Runlevel %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "Saat ini berjalan di Runlevel: "
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "Mengubah Runlevel: "
-
-#~ msgid "Unknown"
-#~ msgstr "Tidak diketahui"
-
-#~ msgid "All"
-#~ msgstr "Semua"
-
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright Â© 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Hakcipta © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat>\n"
-#~ " Bill Nottingham <notting@redhat>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "Tentang"
-
-#~ msgid ""
-#~ "The help viewer could not be found. To be able to view help you need to "
-#~ "install the 'yelp' package."
-#~ msgstr ""
-#~ "Penampil bantuan tidak ditemukan. Untuk menampilkan bantuan Anda perlu "
-#~ "memasang paket 'yelp'."
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "Anda harus menjalankan system-config-services sebagai root."
-
-#~ msgid "Running"
-#~ msgstr "Jalan"
-
-#~ msgid "Stopped"
-#~ msgstr "Dihentikan"
-
-#~ msgid "Error"
-#~ msgstr "Error"
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "%s gagal. Kesalahannya adalah: %s"
-
-#~ msgid " successful"
-#~ msgstr " dengan sukses"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "xinetd harus diaktifkan agar %s dapat berjalan"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "xinetd gagal dipanggil ulang untuk "
-
-#~ msgid ". The error was: "
-#~ msgstr ". Kesalahannya adalah: "
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "xinetd memanggil ulang %s dengan sukses"
-
-#~ msgid "Help is not available."
-#~ msgstr "Bantuan tidak tersedia."
-
-#, fuzzy
-#~ msgid "Start the selected service"
-#~ msgstr "_Jalankan Layanan"
-
-#, fuzzy
-#~ msgid "Stop the selected service"
-#~ msgstr "Hapus Layanan"
-
-#, fuzzy
-#~ msgid "Restart the selected service"
-#~ msgstr "_Jalankan Kembali Layanan"
-
-#, fuzzy
-#~ msgid "Refresh the list of services"
-#~ msgstr "_Refresh Daftar Layanan"
-
-#, fuzzy
-#~ msgid "Revert to the last saved change"
-#~ msgstr "Kembalikan ke Simpanan Terakhir"
-
-#~ msgid "Save"
-#~ msgstr "Simpan"
-
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd is required for this service."
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd dibutuhkan oleh layanan ini."
-
-#~ msgid "*"
-#~ msgstr "*"
-
-#~ msgid "_Save"
-#~ msgstr "_Simpan"
-
-#~ msgid "_Revert"
-#~ msgstr "Kem_bali"
-
-#~ msgid "Revert"
-#~ msgstr "Kembali"
-
-#~ msgid "Start at Boot"
-#~ msgstr "Mulai pada saat Boot"

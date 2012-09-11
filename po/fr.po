@@ -2,19 +2,33 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # 
+# Translators:
+# Alain PORTAL <aportal@univ-montp2.fr>, 2006.
+# Audrey Simons <asimons@redhat.com>, 2003.
+# Bettina De Monti <bdemonti@redhat.it>, 2001.
+# Corina Roe <croe@redhat.com>, 2008.
+# Damien Durand <splinux@fedoraproject.org>, 2006.
+# dominique bribanick <chepioq@gmail.com>, 2011.
+# Mathieu Schopfer <mat.schopfer@bluewin.ch>, 2008.
+# Nils Philippsen <nils@redhat.com>, 2011.
+# Philippe Villiers <kissifrot@gmail.com>, 2006.
+# Sam Friedmann <sam.friedmann@redhat.com>, 2009.
+# Stephane Raimbault <stephane.raimbault@gmail.com>, 2004, 2006, 2010.
+# Thomas Canniot <mrtom@fedoraproject.org>, 2008.
+# Thomas Canniot <thomas.canniot@laposte.net>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2011-05-15 04:49+0000\n"
-"Last-Translator: dominique <chepioq@gmail.com>\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: dominique bribanick <chepioq@gmail.com>\n"
 "Language-Team: French <trans-fr@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -117,20 +131,14 @@ msgid ""
 "The <b>%(servicename)s</b> service is managed by systemd. It may be started "
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
-msgstr ""
-"Le service <b>%(servicename)s</b> est géré par systemd. Il peut être démarré"
-" puis être actif en arrière-plan, ou être activé sur demande, ou être "
-"exécuté une fois à fin de préparation ou de nettoyage."
+msgstr "Le service <b>%(servicename)s</b> est géré par systemd. Il peut être démarré puis être actif en arrière-plan, ou être activé sur demande, ou être exécuté une fois à fin de préparation ou de nettoyage."
 
 #: src/gui.py:379
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"Le service <b>%(servicename)s</b> démarre au départ, en général, quand le "
-"système est initialisé, puis opère en arrière-plan et se réveille quand on "
-"en a besoin."
+msgstr "Le service <b>%(servicename)s</b> démarre au départ, en général, quand le système est initialisé, puis opère en arrière-plan et se réveille quand on en a besoin."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -141,25 +149,19 @@ msgstr "Ce service est actuellement mis à jour."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"Le service <b>%(servicename)s</b> sera démarré à la demande par le service "
-"xined et s'arrêtera lorsqu'il n'aura plus rien à faire."
+msgstr "Le service <b>%(servicename)s</b> sera démarré à la demande par le service xined et s'arrêtera lorsqu'il n'aura plus rien à faire."
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"Ce service est activé, mais le paquetage <b>xinetd</b> n'est pas installé. "
-"Ce service ne fonctionne pas sans lui."
+msgstr "Ce service est activé, mais le paquetage <b>xinetd</b> n'est pas installé. Ce service ne fonctionne pas sans lui."
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"Ce service est activé, mais le service <b>xinetd</b> n'est pas activé. Ce "
-"service ne fonctionne pas sans lui."
+msgstr "Ce service est activé, mais le service <b>xinetd</b> n'est pas activé. Ce service ne fonctionne pas sans lui."
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -170,9 +172,7 @@ msgstr "Activer le service <b>%(service)s</b> à ces niveaux d'exécution :"
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"Impossible de trouver le lecteur d'aide. Afin de consulter l'aide, le paquet"
-" « yelp » doit être installé."
+msgstr "Impossible de trouver le lecteur d'aide. Afin de consulter l'aide, le paquet « yelp » doit être installé."
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
@@ -188,8 +188,7 @@ msgstr "Personnaliser les niveaux d'exécution"
 
 #: src/system-config-services.glade.h:3
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
-"Personnalise les niveaux d'exécution pour lesquels un service est activé."
+msgstr "Personnalise les niveaux d'exécution pour lesquels un service est activé."
 
 #: src/system-config-services.glade.h:4
 msgid "Description"
@@ -260,39 +259,26 @@ msgid ""
 "GNU General Public License for more details.\n"
 "\n"
 "You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"Ce programme est un logiciel gratuit; vous pouvez le redistribuer et/ou le modifier sous les conditions générales de GNU General Public License (Permis grand public GNU) ainsi publiée par Free Software Foundation, soit en version 2 de la Licence, ou (c'est une option qui vous est présentée) en version supérieure.\n"
-"\n"
-"Ce programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE, même sans la garantie implicite de QUALITE MARCHANDE, ni ADAPTATION POUR UN USAGE PARTICULIER. Consulter\n"
-"GNU General Public License pour davantage d'informations.\n"
-"\n"
-"Vous devriez avoir reçu une copie de la GNU General Public License attachée à ce programme; sinon, veuillez écrire à l'adresse suivante: Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr "Ce programme est un logiciel gratuit; vous pouvez le redistribuer et/ou le modifier sous les conditions générales de GNU General Public License (Permis grand public GNU) ainsi publiée par Free Software Foundation, soit en version 2 de la Licence, ou (c'est une option qui vous est présentée) en version supérieure.\n\nCe programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE, même sans la garantie implicite de QUALITE MARCHANDE, ni ADAPTATION POUR UN USAGE PARTICULIER. Consulter\nGNU General Public License pour davantage d'informations.\n\nVous devriez avoir reçu une copie de la GNU General Public License attachée à ce programme; sinon, veuillez écrire à l'adresse suivante: Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
 "This service is managed by systemd. It may be started then run in the "
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
-msgstr ""
-"Ce service est géré par systemd. Il peut être démarré puis être actif en "
-"arrière-plan, ou être activé sur demande, ou être exécuté une fois à fin de "
-"préparation ou de nettoyage."
+msgstr "Ce service est géré par systemd. Il peut être démarré puis être actif en arrière-plan, ou être activé sur demande, ou être exécuté une fois à fin de préparation ou de nettoyage."
 
 #: src/system-config-services.glade.h:29
 msgid ""
 "This service is started once, usually when the system is booted, runs in the"
 " background and wakes up when needed."
-msgstr ""
-"Le service démarre au départ, en général, quand le système est initialisé, "
-"puis opère en arrière-plan et se réveille quand on en a besoin."
+msgstr "Le service démarre au départ, en général, quand le système est initialisé, puis opère en arrière-plan et se réveille quand on en a besoin."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"Ce service sera démarré à la demande par le service xined et s'arrêtera "
-"lorsqu'il n'aura plus rien à faire."
+msgstr "Ce service sera démarré à la demande par le service xined et s'arrêtera lorsqu'il n'aura plus rien à faire."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -337,20 +323,7 @@ msgstr "system-config-services"
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:42
 msgid "translator-credits"
-msgstr ""
-"Bettina De Monti <bdemonti@redhat.it>, 2001.\n"
-"Audrey Simons <asimons@redhat.com>, 2003.\n"
-"Jean-Paul Aubry <jpaubry@redhat.com>, 2003,2004.\n"
-"Stephane Raimbault <stephane.raimbault@gmail.com>, 2004, 2006, 2010\n"
-"Philippe Villiers <kissifrot@gmail.com>, 2006.\n"
-"Thomas Canniot <thomas.canniot@laposte.net>, 2006.\n"
-"Damien Durand <splinux@fedoraproject.org>, 2006.\n"
-"Alain PORTAL <aportal@univ-montp2.fr>, 2006.\n"
-"Mathieu Schopfer <mat.schopfer@bluewin.ch>, 2008.\n"
-"Thomas Canniot <mrtom@fedoraproject.org>, 2008.\n"
-"Corina Roe <croe@redhat.com>, 2008.\n"
-"Pablo Martin-Gomez <pablo.martin-gomez@laposte.net>, 2009.\n"
-"Sam Friedmann <sam.friedmann@redhat.com>, 2009."
+msgstr "Bettina De Monti <bdemonti@redhat.it>, 2001.\nAudrey Simons <asimons@redhat.com>, 2003.\nJean-Paul Aubry <jpaubry@redhat.com>, 2003,2004.\nStephane Raimbault <stephane.raimbault@gmail.com>, 2004, 2006, 2010\nPhilippe Villiers <kissifrot@gmail.com>, 2006.\nThomas Canniot <thomas.canniot@laposte.net>, 2006.\nDamien Durand <splinux@fedoraproject.org>, 2006.\nAlain PORTAL <aportal@univ-montp2.fr>, 2006.\nMathieu Schopfer <mat.schopfer@bluewin.ch>, 2008.\nThomas Canniot <mrtom@fedoraproject.org>, 2008.\nCorina Roe <croe@redhat.com>, 2008.\nPablo Martin-Gomez <pablo.martin-gomez@laposte.net>, 2009.\nSam Friedmann <sam.friedmann@redhat.com>, 2009."
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -372,9 +345,7 @@ msgstr "Obtient des informations sur les services du système"
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
-"L'accès aux informations sur les services du système nécessite une "
-"authentification"
+msgstr "L'accès aux informations sur les services du système nécessite une authentification"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -385,5 +356,3 @@ msgstr "Gére les services du système"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "La gestion des services du système requiert une authentification"
-
-

@@ -1,23 +1,24 @@
-# translation of ka.po to Georgian
-# Georgian translations for PACKAGE package.
-# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the system-config-services package.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Automatically generated, 2004.
 # George Machitidze <giomac@gmail.com>, 2005.
+# Nils Philippsen <nils@redhat.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: ka\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2005-12-20 01:55+0300\n"
-"Last-Translator: George Machitidze <giomac@gmail.com>\n"
-"Language-Team: Georgian <guiasher@mes.gov.ge>\n"
-"Language: ka\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: Georgian (http://www.transifex.com/projects/p/fedora/language/ka/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11\n"
+"Language: ka\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -242,19 +243,12 @@ msgstr ""
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 msgstr ""
 
 #: src/system-config-services.glade.h:28
@@ -266,8 +260,8 @@ msgstr ""
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
 msgstr ""
 
 #: src/system-config-services.glade.h:30
@@ -352,210 +346,3 @@ msgstr ""
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr ""
-
-#~ msgid "Start"
-#~ msgstr "გაშვება"
-
-#~ msgid "Restart"
-#~ msgstr "გადატვირთვა"
-
-#, fuzzy
-#~ msgid "Current runlevel is %s"
-#~ msgstr "მიმდინარე აქტიური გაშვების დონე:"
-
-#, fuzzy
-#~ msgid "Runlevels"
-#~ msgstr "გაშვების დონე %d"
-
-#, fuzzy
-#~ msgid "Start "
-#~ msgstr "გაშვება"
-
-#~ msgid "Stop"
-#~ msgstr "შეჩერება"
-
-#, fuzzy
-#~ msgid "Service control"
-#~ msgstr "სერვისების კონფიგურაცია"
-
-#, fuzzy
-#~ msgid "Status output"
-#~ msgstr "მდგომარეობა"
-
-#~ msgid "None"
-#~ msgstr "არ არის"
-
-#~ msgid "Save Dialog"
-#~ msgstr "შენახვის დიალოგი"
-
-#~ msgid "Don't Save"
-#~ msgstr "შენახვის გარეშე"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "თქვენ შეცვალეთ მიმდინარე გაშვების დონე.\n"
-#~ "გსურთ ცვლილებების შენახვა?"
-
-#~ msgid "Add Service"
-#~ msgstr "_სერვისის დამატება"
-
-#~ msgid "Service Name: "
-#~ msgstr "სერვისის სახელი:"
-
-#~ msgid "_File"
-#~ msgstr "_ფაილი"
-
-#~ msgid "_Save Changes"
-#~ msgstr "ცვლილებების _შენახვა"
-
-#, fuzzy
-#~ msgid "Revert To _Last Save"
-#~ msgstr "დაბ_რუნება"
-
-#, fuzzy
-#~ msgid "_Quit"
-#~ msgstr "_გასვლა"
-
-#~ msgid "_View"
-#~ msgstr "_ხედი"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "_სერვისების სიის განახება"
-
-#~ msgid "_Actions"
-#~ msgstr "_მოქმედებები"
-
-#, fuzzy
-#~ msgid "Delete Service"
-#~ msgstr "სერვისის გა_დატვირთვა"
-
-#~ msgid "_Start Service"
-#~ msgstr "სერვისის _გაშვება"
-
-#~ msgid "S_top Service"
-#~ msgstr "სერვისის _შეჩერება"
-
-#~ msgid "_Restart Service"
-#~ msgstr "სერვისის გა_დატვირთვა"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "გაშვების დონის _რედაქტირება"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "_ყველა გაშვების დონე"
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "მიმდინარე აქტიური გაშვების დონე:"
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "რედაქტირებადი გაშვების დონე:"
-
-#~ msgid "Status"
-#~ msgstr "მდგომარეობა"
-
-#, fuzzy
-#~ msgid "_Background Services"
-#~ msgstr "სერვისის _გაშვება"
-
-#, fuzzy
-#~ msgid "_On Demand Services"
-#~ msgstr "სერვისის გა_დატვირთვა"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "ნამდვილად გსურთ %s-ის წაშლა?"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "გაშვების დონე %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "მიმდინარე გაშვების დონე:"
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "რედაქტირებადი გაშვების დონე:"
-
-#~ msgid "Unknown"
-#~ msgstr "უცნობი"
-
-#~ msgid "All"
-#~ msgstr "ყველა"
-
-#, fuzzy
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "სისტემური სერვისების კონფიგურირების ინსტრუმენტი VERSION\n"
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright (c) 2002-2004 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat>\n"
-#~ " Bill Nottingham <notting@redhat>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "პროგრამის შესახებ"
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "System-config-services უნდა გაიშვას root-მომხმარებლის მიერ."
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "%s სერვისისთვის შეუძლებელია. შეცდომა: %s"
-
-#~ msgid " successful"
-#~ msgstr "წარმატებით დასრულდა"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "%s-ის გასაშვებად xinetd უნდა იყოს ჩართული"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "xinetd-ის გადატვირვა შეუძლებელია "
-
-#~ msgid ". The error was: "
-#~ msgstr "სერვისისთვის. შეცდომა:"
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "xinetd-მა %s წარმატებით გადატვირთა"
-
-#~ msgid "Help is not available."
-#~ msgstr "დახმარება არ არის ხელმისაწვდომი"
-
-#, fuzzy
-#~ msgid "Start the selected service"
-#~ msgstr "სერვისის _გაშვება"
-
-#, fuzzy
-#~ msgid "Stop the selected service"
-#~ msgstr "სერვისის _წაშლა"
-
-#, fuzzy
-#~ msgid "Restart the selected service"
-#~ msgstr "სერვისის გა_დატვირთვა"
-
-#, fuzzy
-#~ msgid "Refresh the list of services"
-#~ msgstr "_სერვისების სიის განახება"
-
-#, fuzzy
-#~ msgid "Revert to the last saved change"
-#~ msgstr "დაბ_რუნება"
-
-#~ msgid ""
-#~ "\n"
-#~ "\n"
-#~ "xinetd is required for this service."
-#~ msgstr ""
-#~ "\n"
-#~ "\n"
-#~ "ამ სერვისისთვის საჭიროა xinetd."
-
-#~ msgid "*"
-#~ msgstr "*"

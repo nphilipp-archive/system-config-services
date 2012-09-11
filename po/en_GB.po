@@ -1,22 +1,24 @@
-# English (British) translation.
-# Copyright (C) 2007 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same licence as the PACKAGE package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Abigail Brady <morwen@evilmagic.org>, Bastien Nocera <hadess@hadess.net>, 2007.
 # Bruce Cowan <bruce@bcowan.me.uk>, 2010.
+# Nils Philippsen <nils@redhat.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2010-08-20 13:58+0100\n"
-"Last-Translator: Bruce Cowan <bruce@bcowan.me.uk>\n"
-"Language-Team: British English <en@li.org>\n"
-"Language: en_GB\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: English (United Kingdom) (http://www.transifex.com/projects/p/fedora/language/en_GB/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.6.1\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -126,9 +128,7 @@ msgstr ""
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"The <b>%(servicename)s</b> service is started once, usually when the system "
-"is booted, runs in the background and wakes up when needed."
+msgstr "The <b>%(servicename)s</b> service is started once, usually when the system is booted, runs in the background and wakes up when needed."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -139,25 +139,19 @@ msgstr "This service is updated currently."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"The <b>%(servicename)s</b> service will be started on demand by the xinetd "
-"service and ends when it has nothing more to do."
+msgstr "The <b>%(servicename)s</b> service will be started on demand by the xinetd service and ends when it has nothing more to do."
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"This service is enabled, but the <b>xinetd</b> package is not installed. "
-"This service does not work without it."
+msgstr "This service is enabled, but the <b>xinetd</b> package is not installed. This service does not work without it."
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"This service is enabled, but the <b>xinetd</b> service is not running. This "
-"service does not work without it."
+msgstr "This service is enabled, but the <b>xinetd</b> service is not running. This service does not work without it."
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -168,9 +162,7 @@ msgstr "Enable the <b>%(service)s</b> service in these runlevels:"
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"The help viewer could not be found. To be able to view help, the 'yelp' "
-"package needs to be installed."
+msgstr "The help viewer could not be found. To be able to view help, the 'yelp' package needs to be installed."
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
@@ -251,33 +243,13 @@ msgstr "Status of service %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public Licence as published by the Free "
-"Software Foundation; either version 2 of the Licence, or (at your option) "
-"any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public Licence for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public Licence along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public Licence as published by the Free Software Foundation; either version 2 of the Licence, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public Licence for more details.\n\nYou should have received a copy of the GNU General Public Licence along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
@@ -288,19 +260,15 @@ msgstr ""
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
+msgstr "This service is started once, usually when the system is booted, runs in the background and wakes up when needed."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
+msgstr "This service will be started on demand by the xinetd service and ends when it has nothing more to do."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -345,10 +313,7 @@ msgstr "system-config-services"
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:42
 msgid "translator-credits"
-msgstr ""
-"Abigail Brady <morwen@evilmagic.org>\n"
-"Bastien Nocera <hadess@hadess.net>\n"
-"Bruce Cowan <bruce@bcowan.me.uk>"
+msgstr "Abigail Brady <morwen@evilmagic.org>\nBastien Nocera <hadess@hadess.net>\nBruce Cowan <bruce@bcowan.me.uk>"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -381,190 +346,3 @@ msgstr "Manage system services"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "Managing system services requires authentication"
-
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-
-#~ msgid "Enable"
-#~ msgstr "Enable"
-
-#~ msgid "Disable"
-#~ msgstr "Disable"
-
-#~ msgid "Start"
-#~ msgstr "Start"
-
-#~ msgid "Restart"
-#~ msgstr "Restart"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Current runlevel is %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "Runlevels"
-
-#~ msgid "Start "
-#~ msgstr "Start "
-
-#~ msgid "Stop"
-#~ msgstr "Stop"
-
-#~ msgid "Service control"
-#~ msgstr "Service control"
-
-#~ msgid "Status output"
-#~ msgstr "Status output"
-
-#~ msgid "None"
-#~ msgstr "None"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Save Dialogue"
-
-#~ msgid "Don't Save"
-#~ msgstr "Don't Save"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-
-#~ msgid "Add Service"
-#~ msgstr "Add Service"
-
-#~ msgid "Service Name: "
-#~ msgstr "Service Name: "
-
-#~ msgid "_File"
-#~ msgstr "_File"
-
-#~ msgid "_Save Changes"
-#~ msgstr "_Save Changes"
-
-#~ msgid "Revert To _Last Save"
-#~ msgstr "Revert To _Last Save"
-
-#~ msgid "_Quit"
-#~ msgstr "_Quit"
-
-#~ msgid "_View"
-#~ msgstr "_View"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "_Refresh Service List"
-
-#~ msgid "_Actions"
-#~ msgstr "_Actions"
-
-#~ msgid "Delete Service"
-#~ msgstr "Delete Service"
-
-#~ msgid "_Start Service"
-#~ msgstr "_Start Service"
-
-#~ msgid "S_top Service"
-#~ msgstr "S_top Service"
-
-#~ msgid "_Restart Service"
-#~ msgstr "_Restart Service"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "_Edit Runlevel"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "Runlevel _All"
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "Current Active Runlevel: "
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "Editing Runlevel:"
-
-#~ msgid "Status"
-#~ msgstr "Status"
-
-#~ msgid "_Background Services"
-#~ msgstr "_Background Services"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-
-#~ msgid "_On Demand Services"
-#~ msgstr "_On Demand Services"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "Are you sure you want to delete the %s?"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "Runlevel %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "Currently Running in Runlevel: "
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "Editing Runlevel: "
-
-#~ msgid "Unknown"
-#~ msgstr "Unknown"
-
-#~ msgid "All"
-#~ msgstr "All"
-
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "About"
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "You must run system-config-services as root."
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "%s failed. The error was: %s"
-
-#~ msgid " successful"
-#~ msgstr " successful"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "xinetd must be enabled for %s to run"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "xinetd failed to reload for "
-
-#~ msgid ". The error was: "
-#~ msgstr ". The error was: "
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "xinetd reloaded %s successfully"
-
-#~ msgid "Help is not available."
-#~ msgstr "Help is not available."

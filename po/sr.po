@@ -1,24 +1,25 @@
-# Serbian translations for system-config-services
-# Copyright (C) 2005 Red Hat, Inc.
-# This file is distributed under the same license as the system-config-services package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Igor Miletic <grejigl-gnomeprevod@yahoo.ca>, 2008.
 # Miloš Komarčević <kmilos@gmail.com>, 2005.
 # Milos Mijatovic <mijatix@gmail.com>, 2008.
-# Igor Miletic <grejigl-gnomeprevod@yahoo.ca>, 2008.
-#
+# Nils Philippsen <nils@redhat.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2010-02-16 23:35+0100\n"
-"Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
 "Language-Team: Serbian <trans-sr@lists.fedoraproject.org>\n"
-"Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: sr\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -128,9 +129,7 @@ msgstr ""
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"Сервис <b>%(servicename)s</b> се покреће једном, обично приликом подизања "
-"система, ради у позадини и буди се по потреби."
+msgstr "Сервис <b>%(servicename)s</b> се покреће једном, обично приликом подизања система, ради у позадини и буди се по потреби."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -141,25 +140,19 @@ msgstr "Овај сервис је се тренутно ажурира."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"Сервис xinetd ће покренути сервис <b>%(servicename)s</b> на захтев и "
-"завршиће када не буде имао више шта да ради."
+msgstr "Сервис xinetd ће покренути сервис <b>%(servicename)s</b> на захтев и завршиће када не буде имао више шта да ради."
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"Овај сервис је укључен, али пакет <b>xinetd</b> није инсталиран. Овај сервис "
-"не ради без њега."
+msgstr "Овај сервис је укључен, али пакет <b>xinetd</b> није инсталиран. Овај сервис не ради без њега."
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"Овај сервис је укључен, али сервис <b>xinetd</b> није покренут. Овај сервис "
-"не ради без њега."
+msgstr "Овај сервис је укључен, али сервис <b>xinetd</b> није покренут. Овај сервис не ради без њега."
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -170,9 +163,7 @@ msgstr "Укључи сервис <b>%(service)s</b> у овим извршни�
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"Програм за прегледање помоћи није нађен. Да бисте могли прегледати помоћ "
-"пакет „yelp“ мора бити инсталиран."
+msgstr "Програм за прегледање помоћи није нађен. Да бисте могли прегледати помоћ пакет „yelp“ мора бити инсталиран."
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
@@ -253,33 +244,13 @@ msgstr "Статус сервиса %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"Овај програм је слободан софтвер; можете га раздељивати и/или га измењивати "
-"под условима ГНУ Опште јавне лиценце као што је објавила Задужбина за "
-"слободни софтвер; или лиценцом верзије 2, или (по вашем избору) било којом "
-"каснијом верзијом.\n"
-"\n"
-"Овај програм се раздељује у нади да ће бити од користи, али БЕЗ ИКАКВЕ "
-"ГАРАНЦИЈЕ; чак и без подразумеване гаранције ПРИКЛАДНОСТИ ЗА ПРОДАЈУ или "
-"ПОДОБНОСТИ ЗА ПОСЕБНУ НАМЕНУ.  Погледајте\n"
-"ГНУ Општу јавну лиценцу за више детаља.\n"
-"\n"
-"Требало би да сте примили узорак ГНУ Опште јавне лиценце уз овај програм;  "
-"ако нисте, пишите Задужбини за слободни софтвер: Free Software Foundation, "
-"Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr "Овај програм је слободан софтвер; можете га раздељивати и/или га измењивати под условима ГНУ Опште јавне лиценце као што је објавила Задужбина за слободни софтвер; или лиценцом верзије 2, или (по вашем избору) било којом каснијом верзијом.\n\nОвај програм се раздељује у нади да ће бити од користи, али БЕЗ ИКАКВЕ ГАРАНЦИЈЕ; чак и без подразумеване гаранције ПРИКЛАДНОСТИ ЗА ПРОДАЈУ или ПОДОБНОСТИ ЗА ПОСЕБНУ НАМЕНУ.  Погледајте\nГНУ Општу јавну лиценцу за више детаља.\n\nТребало би да сте примили узорак ГНУ Опште јавне лиценце уз овај програм;  ако нисте, пишите Задужбини за слободни софтвер: Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
@@ -290,19 +261,15 @@ msgstr ""
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"Овај сервис се покреће једном, обично приликом подизања система, ради у "
-"позадини и буди се по потреби."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
+msgstr "Овај сервис се покреће једном, обично приликом подизања система, ради у позадини и буди се по потреби."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"Сервис xinetd ће покренути овај сервис на захтев и завршиће када не буде "
-"имао више шта да ради."
+msgstr "Сервис xinetd ће покренути овај сервис на захтев и завршиће када не буде имао више шта да ради."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -347,10 +314,7 @@ msgstr "system-config-services"
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:42
 msgid "translator-credits"
-msgstr ""
-"Miloš Komarčević <kmilos@gmail.com>, 2005.\n"
-"Milos Mijatovic <mijatix@gmail.com>, 2008.\n"
-"Igor Miletic <grejigl-gnomeprevod@yahoo.ca>, 2008."
+msgstr "Miloš Komarčević <kmilos@gmail.com>, 2005.\nMilos Mijatovic <mijatix@gmail.com>, 2008.\nIgor Miletic <grejigl-gnomeprevod@yahoo.ca>, 2008."
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -383,13 +347,3 @@ msgstr "Управљање системским сервисима"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "Управљање системским сервисима захтева аутентификацију"
-
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "Ауторска права 2002-2009 Red Hat, Inc. и сарадници"
-
-#~ msgid "System policy prevents access to system services information"
-#~ msgstr ""
-#~ "Системска полиса спречава приступ информацијама о системским сервисима"
-
-#~ msgid "System policy prevents management of system services"
-#~ msgstr "Системска полиса спречава управљање системским сервисима"

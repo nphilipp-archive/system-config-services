@@ -2,19 +2,26 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # 
+# Translators:
+# CyrusHMH <cyrushmh@vip.qq.com>, 2009.
+# Huan Chen <chenhuan126@126.com>, 2011.
+# Leah Liu <lliu@redhat.com>, 2008, 2009.
+# Leah Liu <weliu@redhat.com>, 2005, 2006.
+# Nils Philippsen <nils@redhat.com>, 2011.
+# Sarah Wang <sarahs@redhat.com>, 2003, 2004, 2005.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2011-05-15 02:17+0000\n"
-"Last-Translator: chen_tx <chenhuan126@126.com>\n"
-"Language-Team: Chinese (China) (http://www.transifex.net/projects/p/fedora/team/zh_CN/)\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Huan Chen <chenhuan126@126.com>\n"
+"Language-Team: Chinese (China) <trans-zh_cn@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_CN\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -117,8 +124,7 @@ msgid ""
 "The <b>%(servicename)s</b> service is managed by systemd. It may be started "
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
-msgstr ""
-"<b>%(servicename)s</b> 服务由 systemd 管理。它能在启动后运行于后台，或按需激活，或为了准备或清理之目的运行一次。"
+msgstr "<b>%(servicename)s</b> 服务由 systemd 管理。它能在启动后运行于后台，或按需激活，或为了准备或清理之目的运行一次。"
 
 #: src/gui.py:379
 #, python-format
@@ -246,12 +252,7 @@ msgid ""
 "GNU General Public License for more details.\n"
 "\n"
 "You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"该程序是自由软件，您可根据自由软件基金发布的 GNU 通用公共许可证（版本 2 或者更新的版本）来重新发布和/或修改这个软件。\n"
-"\n"
-"发布这个程序是希望它可以有所帮助，但不负担保责任，甚至就适售性以及特定目的的适用性作默示性担保。更多详情请见 GNU 通用公共许可证。\n"
-"\n"
-"您应该会收到此程序附带的一份 GNU 通用公共许可证，如果没有，请致信 Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA。"
+msgstr "该程序是自由软件，您可根据自由软件基金发布的 GNU 通用公共许可证（版本 2 或者更新的版本）来重新发布和/或修改这个软件。\n\n发布这个程序是希望它可以有所帮助，但不负担保责任，甚至就适售性以及特定目的的适用性作默示性担保。更多详情请见 GNU 通用公共许可证。\n\n您应该会收到此程序附带的一份 GNU 通用公共许可证，如果没有，请致信 Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA。"
 
 #: src/system-config-services.glade.h:28
 msgid ""
@@ -342,13 +343,9 @@ msgstr "获取系统服务相关信息需要认证"
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
 msgid "Manage system services"
-msgstr ""
-"\t\n"
-"管理系统服务"
+msgstr "\t\n管理系统服务"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:4
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "管理系统服务需要认证"
-
-

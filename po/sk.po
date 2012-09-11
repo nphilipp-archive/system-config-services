@@ -1,22 +1,24 @@
-# Slovak translations for system-config-services package.
-# Copyright (C) 2004, 2005 Marcel Telka
-# This file is distributed under the same license as the system-config-services package.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Dušan Kazik <prescott66@gmail.com>, 2011.
 # Marcel Telka <marcel@telka.sk>, 2004, 2005.
+# Nils Philippsen <nils@redhat.com>, 2011.
 # Ondrej Šulek <feonsu@gmail.com>, 2008, 2009, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2010-04-15 17:15+0200\n"
-"Last-Translator: Ondrej Šulek <<feonsu@gmail.com>\n"
-"Language-Team: Slovak <fedora-trans-sk@redhat.com>\n"
-"Language: sk\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
+"Language-Team: Slovak (http://www.transifex.com/projects/p/fedora/language/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
+"Language: sk\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: src/gui.py:123
@@ -50,7 +52,7 @@ msgstr "Táto služba je povolená v runleveloch: %(runlevels)s"
 
 #: src/gui.py:209
 msgid "This service is masked."
-msgstr ""
+msgstr "Táto služba je zamaskovaná."
 
 #: src/gui.py:222
 msgid "The status of this service is unknown."
@@ -70,49 +72,49 @@ msgstr "Táto služba je mŕtva."
 
 #: src/gui.py:245
 msgid "This unit is inactive."
-msgstr ""
+msgstr "Táto jednotka je neaktívna."
 
 #: src/gui.py:247
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
-msgstr ""
+msgstr "Táto jednotka je naktívna: %(sub_state)s"
 
 #: src/gui.py:251
 msgid "This unit is running."
-msgstr ""
+msgstr "Táto jednotka beží."
 
 #: src/gui.py:254
 msgid "This unit has finished."
-msgstr ""
+msgstr "Táto jednotka bola dokončená."
 
 #: src/gui.py:257
 #, python-format
 msgid "This unit is active: %(sub_state)s"
-msgstr ""
+msgstr "Táto jednotka je aktívna: %(sub_state)s"
 
 #: src/gui.py:260
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
-msgstr ""
+msgstr "Táto jednotka zlyhala: %(sub_state)s"
 
 #: src/gui.py:264
 msgid "This unit is starting."
-msgstr ""
+msgstr "Táto jednotka sa spúšťa."
 
 #: src/gui.py:266
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
-msgstr ""
+msgstr "Táto jednotka sa aktivuje: %(sub_state)s"
 
 #: src/gui.py:269
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
-msgstr ""
+msgstr "Táto jednotka sa deaktivuje: %(sub_state)s"
 
 #: src/gui.py:272
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
-msgstr ""
+msgstr "Stav tejto jednotky nie je známy: %(active_state)s/%(sub_state)s"
 
 #: src/gui.py:349
 #, python-format
@@ -120,16 +122,14 @@ msgid ""
 "The <b>%(servicename)s</b> service is managed by systemd. It may be started "
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
-msgstr ""
+msgstr "Služba <b>%(servicename)s</b> je spravovaná od systemd. Môže byť spustená a potom bežať na pozadí, alebo aktivovaná na požiadanie, alebo spustená raz pre účely prípravy alebo čistenia."
 
 #: src/gui.py:379
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"Služba <b>%(servicename)s</b> sa spustí len jeden krát, zvyčajne pri "
-"zavádzaní systému, beží na pozadí a prebúdza sa len ak je to potrebné."
+msgstr "Služba <b>%(servicename)s</b> sa spustí len jeden krát, zvyčajne pri zavádzaní systému, beží na pozadí a prebúdza sa len ak je to potrebné."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -140,25 +140,19 @@ msgstr "Táto služba sa momentálne aktualizuje."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"Služba <b>%(servicename)s</b> bude spustená na požiadanie pomocou xinetd a "
-"vypne sa keď nebude potrebná."
+msgstr "Služba <b>%(servicename)s</b> bude spustená na požiadanie pomocou xinetd a vypne sa keď nebude potrebná."
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"Táto služba je povolená, ale balíček <b>xinetd</b> nie je nainštalovaný. Bez "
-"neho nebude táto služba fungovať."
+msgstr "Táto služba je povolená, ale balíček <b>xinetd</b> nie je nainštalovaný. Bez neho nebude táto služba fungovať."
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"Táto služba je povolená, ale služba <b>xinetd</b> nebeží. Bez nej nebude "
-"táto služba fungovať."
+msgstr "Táto služba je povolená, ale služba <b>xinetd</b> nebeží. Bez nej nebude táto služba fungovať."
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -169,17 +163,15 @@ msgstr "Povoliť službu <b>%(service)s</b> v týchto runleveloch:"
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"Nepodarilo sa nájsť prehliadač pomocníka. Aby ste mohli prehliadať "
-"pomocníka, musí byť nainštalovaný balíček 'yelp'."
+msgstr "Nepodarilo sa nájsť prehliadač pomocníka. Aby ste mohli prehliadať pomocníka, musí byť nainštalovaný balíček 'yelp'."
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
-msgstr ""
+msgstr "Chyba počas získavania popisu."
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Copyright © 2002-2011 Red Hat, Inc. a prispievatelia"
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -252,55 +244,32 @@ msgstr "Stav služby %s:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"Toto je slobodný software; môžete ho šíriť a/alebo upravovať podľa "
-"ustanovení GNU General Public License vydaných Free Software Foundation; buď "
-"verzia 2 tejto licencie alebo (podľa vášho uváženia) ktorákoľvek neskoršia "
-"verzia.\n"
-"\n"
-"Tento program je šírený v nádeji, že bude užitočný, avšak BEZ AKEJKOĽVEK "
-"ZÁRUKY; neposkytujú sa ani odvodené záruky PREDAJNOSTI alebo VHODNOSTI PRE "
-"URČITÝ ÚČEL. Ďalšie podrobnosti môžete nájsť v GNU General Public License.\n"
-"\n"
-"Kópiu GNU General Public License by ste mali obdržať spolu s týmto "
-"programom; ak sa tak nestalo napíšte si o ňu Free Software Foundation, Inc., "
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr "Toto je slobodný software; môžete ho šíriť a/alebo upravovať podľa ustanovení GNU General Public License vydaných Free Software Foundation; buď verzia 2 tejto licencie alebo (podľa vášho uváženia) ktorákoľvek neskoršia verzia.\n\nTento program je šírený v nádeji, že bude užitočný, avšak BEZ AKEJKOĽVEK ZÁRUKY; neposkytujú sa ani odvodené záruky PREDAJNOSTI alebo VHODNOSTI PRE URČITÝ ÚČEL. Ďalšie podrobnosti môžete nájsť v GNU General Public License.\n\nKópiu GNU General Public License by ste mali obdržať spolu s týmto programom; ak sa tak nestalo napíšte si o ňu Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
 "This service is managed by systemd. It may be started then run in the "
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
-msgstr ""
+msgstr "Služba je spravovaná od systemd. Môže byť spustená a potom bežať na pozadí, alebo aktivovaná na požiadanie, alebo spustená raz pre účely prípravy alebo čistenia."
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"Táto služba sa spustí len jeden krát, zvyčajne pri zavádzaní systému, beží "
-"na pozadí a prebúdza sa len ak je to potrebné."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
+msgstr "Táto služba sa spustí len jeden krát, zvyčajne pri zavádzaní systému, beží na pozadí a prebúdza sa len ak je to potrebné."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"Táto služba bude spustená na požiadanie pomocou xinetd a vypne sa keď nebude "
-"potrebná."
+msgstr "Táto služba bude spustená na požiadanie pomocou xinetd a vypne sa keď nebude potrebná."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -345,9 +314,7 @@ msgstr "system-config-services"
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:42
 msgid "translator-credits"
-msgstr ""
-"Marcel Telka <marcel@telka.sk>, 2004, 2005\n"
-"Ondrej Šulek <feonsu@gmail.com>, 2008, 2009"
+msgstr "Marcel Telka <marcel@telka.sk>, 2004, 2005\nOndrej Šulek <feonsu@gmail.com>, 2008, 2009"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -380,123 +347,3 @@ msgstr "Správa systémových služieb"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "Spravovanie systémových služieb vyžaduje overenie"
-
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright © 2002-2009 Red Hat, Inc. a prispievatelia"
-
-#~ msgid "System policy prevents access to system services information"
-#~ msgstr ""
-#~ "Systémová politika znemožňuje prístup k informáciám o systémových službách"
-
-#~ msgid "System policy prevents management of system services"
-#~ msgstr "Systémová politika znemožňuje prístup k správe systémových služieb"
-
-#~ msgid "window1"
-#~ msgstr "window1"
-
-#~ msgid "Service %s"
-#~ msgstr "Služba %s"
-
-#~ msgid "Enable"
-#~ msgstr "Povoliť"
-
-#~ msgid "Disable"
-#~ msgstr "Zakázať"
-
-#~ msgid "Customize"
-#~ msgstr "Prispôsobiť"
-
-#~ msgid "Enable Default"
-#~ msgstr "Povoliť predvolené"
-
-#~ msgid "Enable All"
-#~ msgstr "Povoliť všetky"
-
-#~ msgid "Disable All"
-#~ msgstr "Zakázať všetky"
-
-#~ msgid "Start"
-#~ msgstr "Spustiť"
-
-#~ msgid "Restart"
-#~ msgstr "Reštartovať"
-
-#~ msgid "Configure"
-#~ msgstr "Nastaviť"
-
-#~ msgid "foobar"
-#~ msgstr "foobar"
-
-#~ msgid "barfoo"
-#~ msgstr "barfoo"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Aktuálny runlevel je %s"
-
-#~ msgid "Runlevels"
-#~ msgstr "Runlevely"
-
-#~ msgid "label18"
-#~ msgstr "label18"
-
-#~ msgid "Start "
-#~ msgstr "Spustiť"
-
-#~ msgid "Stop"
-#~ msgstr "Zastaviť"
-
-#~ msgid "Service control"
-#~ msgstr "Ovládanie služby"
-
-#~ msgid "Status output"
-#~ msgstr "Stav výstupu"
-
-#~ msgid "_Configure"
-#~ msgstr "_Nastaviť"
-
-#~ msgid "Button Box"
-#~ msgstr "Tlačidlo"
-
-#~ msgid "label16"
-#~ msgstr "label16"
-
-#~ msgid "Service %s:"
-#~ msgstr "Služba %s:"
-
-#~ msgid "Copyright  2002-2008 Red Hat, Inc. and contributors"
-#~ msgstr "Copyright  2002-2008 Red Hat, Inc. a prispievatelia"
-
-#~ msgid "Service %s not found!"
-#~ msgstr "Služba %s nenájdená!"
-
-#~ msgid "Service %s is running with old configuration"
-#~ msgstr "Služba %s je spustená so starou konfiguráciou"
-
-#~ msgid "Service %s is running"
-#~ msgstr "Služba %s je spustená"
-
-#~ msgid "Service %s reports an error"
-#~ msgstr "Služba %s hlási chybu"
-
-#~ msgid "Service %s is stopped"
-#~ msgstr "Služba %s je zastavená"
-
-#~ msgid "Currently enabled in runlevels %s"
-#~ msgstr "Momentálne povolené v runleveloch %s"
-
-#~ msgid "Enable %(name)s in runlevels %(levels)s"
-#~ msgstr "Povoliť %(name)s v runleveloch %(levels)s"
-
-#~ msgid ""
-#~ "The <b>%(servicename)s</b> service will be started on demand by the "
-#~ "xinetd service and ends when it has got nothing more to do."
-#~ msgstr ""
-#~ "Služba <b>%(servicename)s</b> bude spustená v prípade potreby pomocou "
-#~ "služby xinetd a ukončená ak už nebude mať ďalšie požiadavky."
-
-#~ msgid ""
-#~ "This service will be started on demand by the xinetd service and ends "
-#~ "when it has got nothing more to do."
-#~ msgstr ""
-#~ "Táto služba bude spustená v prípade potreby pomocou služby xinetd a "
-#~ "ukončená ak už nebude mať ďalšie požiadavky."

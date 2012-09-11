@@ -1,24 +1,26 @@
-# translation of tr.po to
-# translation of services_tr.po to
-# $Id: tr.po,v 1.66 2007/04/25 14:06:10 nphilipp Exp $
-# Nilgün Belma Bugüner <nilgun@superonline.com>, 2003.
-# Erçin EKER <erc.caldera@gmx.net>, 2003.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Bahadir Yagan <bahadir.yagan@mentorsystem.com>, 2004, 2006.
-# Egemen Metin Turan <mturan@aegee-ankara.org>,  2006.
+# Egemen Metin Turan <mturan@aegee-ankara.org>, 2006.
+# Erçin EKER <erc.caldera@gmx.net>, 2003.
+# Nilgün Belma Bugüner <nilgun@superonline.com>, 2003.
+# Nils Philippsen <nils@redhat.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: tr\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: system-config-services\n"
+"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2010-08-25 16:44+0200\n"
-"Last-Translator: Hasan Alp iNAN <hasanalpinan@gmail.com>\n"
-"Language-Team:  <fedora-trans-tr@redhat.com>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: Turkish (http://www.transifex.com/projects/p/fedora/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.1\n"
-"X-Generator: KBabel 1.11.4\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -128,9 +130,7 @@ msgstr ""
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"<b>%(servicename)s</b> hizmeti bir kez başlatılır, genellikle de sistem "
-"açılırken arka planda çalışır ve gerektiğinde uyanır."
+msgstr "<b>%(servicename)s</b> hizmeti bir kez başlatılır, genellikle de sistem açılırken arka planda çalışır ve gerektiğinde uyanır."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -141,25 +141,19 @@ msgstr "Bu hizmet şu anda güncellenmektedir."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"<b>%(servicename)s</b> hizmeti, xinetd hizmeti tarafından gelen istem ile "
-"başlatılacaktır ve yapacak bir işlemi kalmadığında da sonlandırılacaktır."
+msgstr "<b>%(servicename)s</b> hizmeti, xinetd hizmeti tarafından gelen istem ile başlatılacaktır ve yapacak bir işlemi kalmadığında da sonlandırılacaktır."
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"Bu hizmet etkinleştirildi, fakat <b>xinetd</b> paketi kurulu değil. Bu paket "
-"olmadan hizmet çalışmıyor."
+msgstr "Bu hizmet etkinleştirildi, fakat <b>xinetd</b> paketi kurulu değil. Bu paket olmadan hizmet çalışmıyor."
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"Bu hizmet etkinleştirildi, fakat <b>xinetd</b> hizmeti çalışmıyor. Bu hizmet "
-"olmadan çalışmıyor."
+msgstr "Bu hizmet etkinleştirildi, fakat <b>xinetd</b> hizmeti çalışmıyor. Bu hizmet olmadan çalışmıyor."
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -170,9 +164,7 @@ msgstr "<b>%(service)s</b> hizmetini bu çalışma seviyelerinde etkinleştirin:
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"Yardım görüntüleyici bulunamadı. Yardımı görebilmek için, 'yelp' paketinin "
-"yüklü olması gerekmektedir."
+msgstr "Yardım görüntüleyici bulunamadı. Yardımı görebilmek için, 'yelp' paketinin yüklü olması gerekmektedir."
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
@@ -253,33 +245,13 @@ msgstr "%s servisinin durumu:"
 
 #: src/system-config-services.glade.h:22
 msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
+"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 "\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "GNU General Public License for more details.\n"
 "\n"
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"Bu program özgür yazılımdır; bu yazılımı Özgür Yazılım Vakfı tarafından "
-"yayımlanan GNU Genel Kamu Lisansı koşulları altında, isterseniz lisans "
-"sürümü 2 veya (sizin seçiminize göre) sonraki bir sürüm lisansı ile yeniden "
-"dağıtabilir ve/veya değiştirebilirsiniz.\n"
-"\n"
-"Bu program yararlı olacağı ümidiyle dağıtılmaktadır, fakat HİÇBİR GARANTİSİ "
-"YOKTUR; üstelik SATILABİLİRLİĞİNİN ve BELİRLİ BİR AMACA UYGUNLUĞUNUN zımni "
-"garantisi olmaksızın. Daha fazla bilgi için GNU Genel Kamu Lisansı'na "
-"bakınız.\n"
-"\n"
-"Bu program ile GNU Genel Kamu Lisansının bir kopyasını birlikte almış "
-"olmalısınız; eğer almadıysanız, Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA 02111-1307  USA adresine mektup yazınız."
+"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr "Bu program özgür yazılımdır; bu yazılımı Özgür Yazılım Vakfı tarafından yayımlanan GNU Genel Kamu Lisansı koşulları altında, isterseniz lisans sürümü 2 veya (sizin seçiminize göre) sonraki bir sürüm lisansı ile yeniden dağıtabilir ve/veya değiştirebilirsiniz.\n\nBu program yararlı olacağı ümidiyle dağıtılmaktadır, fakat HİÇBİR GARANTİSİ YOKTUR; üstelik SATILABİLİRLİĞİNİN ve BELİRLİ BİR AMACA UYGUNLUĞUNUN zımni garantisi olmaksızın. Daha fazla bilgi için GNU Genel Kamu Lisansı'na bakınız.\n\nBu program ile GNU Genel Kamu Lisansının bir kopyasını birlikte almış olmalısınız; eğer almadıysanız, Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA adresine mektup yazınız."
 
 #: src/system-config-services.glade.h:28
 msgid ""
@@ -290,19 +262,15 @@ msgstr ""
 
 #: src/system-config-services.glade.h:29
 msgid ""
-"This service is started once, usually when the system is booted, runs in the "
-"background and wakes up when needed."
-msgstr ""
-"Bu hizmet bir kez başlatılır; genellikle de sistem açılırken arka planda "
-"çalışır ve gerektiğinde uyanır."
+"This service is started once, usually when the system is booted, runs in the"
+" background and wakes up when needed."
+msgstr "Bu hizmet bir kez başlatılır; genellikle de sistem açılırken arka planda çalışır ve gerektiğinde uyanır."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"Bu hizmet, xinetd hizmeti tarafından gelen istem ile başlatılacaktır ve "
-"yapacak bir işlemi kalmadığında da sonlandırılacaktır."
+msgstr "Bu hizmet, xinetd hizmeti tarafından gelen istem ile başlatılacaktır ve yapacak bir işlemi kalmadığında da sonlandırılacaktır."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -351,9 +319,7 @@ msgstr "çevirmen-ekibi"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
-msgstr ""
-"Sisteminiz açıldığında hangi servislerin çalışmaya başlayacağını "
-"yapılandırınız"
+msgstr "Sisteminiz açıldığında hangi servislerin çalışmaya başlayacağını yapılandırınız"
 
 #: system-config-services.desktop.in.h:2
 msgid "Service Management"
@@ -371,8 +337,7 @@ msgstr "Sistem hizmetleri hakkında bilgi alın"
 #: config/org.fedoraproject.config.services.policy.0.in.h:2
 #: config/org.fedoraproject.config.services.policy.1.in.h:2
 msgid "Getting information about system services requires authentication"
-msgstr ""
-"Sistem hizmetleri hakkında bilgi almak için kimlik doğrulaması gerekiyor"
+msgstr "Sistem hizmetleri hakkında bilgi almak için kimlik doğrulaması gerekiyor"
 
 #: config/org.fedoraproject.config.services.policy.0.in.h:3
 #: config/org.fedoraproject.config.services.policy.1.in.h:3
@@ -383,191 +348,3 @@ msgstr "Sistem servislerini yönet"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "Sistem servis yönetimi kimlik doğrulama gerektiriyor"
-
-#~ msgid "Copyright © 2002-2009 Red Hat, Inc. and contributors"
-#~ msgstr "Telif Hakkı © 2002-2009 Red Hat, Inc. ve katkıda bulunanları"
-
-#~ msgid "Enable"
-#~ msgstr "Etkin"
-
-#~ msgid "Disable"
-#~ msgstr "Etkin değil"
-
-#~ msgid "Start"
-#~ msgstr "Başlat"
-
-#~ msgid "Restart"
-#~ msgstr "Yeniden Başlat"
-
-#~ msgid "Current runlevel is %s"
-#~ msgstr "Şu an Etkin olan Çalışma Seviyesi: "
-
-#~ msgid "Runlevels"
-#~ msgstr "Çalışma Seviyeleri"
-
-#~ msgid "Start "
-#~ msgstr "Başlat"
-
-#~ msgid "Stop"
-#~ msgstr "Dur"
-
-#~ msgid "Service control"
-#~ msgstr "Hizmet kontrolü"
-
-#~ msgid "Status output"
-#~ msgstr "Durum çıktısı"
-
-#~ msgid "None"
-#~ msgstr "Hiçbiri"
-
-#~ msgid "Save Dialog"
-#~ msgstr "Kayıt Diyaloğu"
-
-#~ msgid "Don't Save"
-#~ msgstr "Kaydetme"
-
-#~ msgid ""
-#~ "You have made changes to the current runlevel.\n"
-#~ "Do you want to save the changes?"
-#~ msgstr ""
-#~ "Şu anki çalışma seviyesinde değişklik yaptınız.\n"
-#~ "Bu değişikliklerin kaydedilmesini ister misiniz?"
-
-#~ msgid "Add Service"
-#~ msgstr "Servis Ekle"
-
-#~ msgid "Service Name: "
-#~ msgstr "Servis Adı: "
-
-#~ msgid "_File"
-#~ msgstr "_Dosya"
-
-#~ msgid "_Save Changes"
-#~ msgstr "Değişiklikleri _Kaydet"
-
-#~ msgid "Revert To _Last Save"
-#~ msgstr "Son Kayıtlı Duruma _Dön"
-
-#~ msgid "_Quit"
-#~ msgstr "Çı_kış"
-
-#~ msgid "_View"
-#~ msgstr "_Görünüm"
-
-#~ msgid "_Refresh Service List"
-#~ msgstr "Servis listesini _Tazele"
-
-#~ msgid "_Actions"
-#~ msgstr "_Eylemler"
-
-#~ msgid "Delete Service"
-#~ msgstr "Hizmeti Sil"
-
-#~ msgid "_Start Service"
-#~ msgstr "Servisi _Başlat"
-
-#~ msgid "S_top Service"
-#~ msgstr "Servisi _Durdur"
-
-#~ msgid "_Restart Service"
-#~ msgstr "Servisi _Yeniden Başlat"
-
-#~ msgid "_Edit Runlevel"
-#~ msgstr "Çalışma _Seviyesini Düzenle"
-
-#~ msgid "Runlevel _All"
-#~ msgstr "Çalışma Seviyesi _Tümü"
-
-#~ msgid ""
-#~ "These services are started once and run in the background. You can "
-#~ "specify in which runlevels they are started."
-#~ msgstr ""
-#~ "Bu servisler bir kez başlatılır ve arka planda çalıştırılır. Hangi "
-#~ "çalışma seviyelerinde başlatılacaklarını belirleyebilirsiniz."
-
-#~ msgid "Current Active Runlevel: "
-#~ msgstr "Şu an Etkin olan Çalışma Seviyesi: "
-
-#~ msgid "Editing Runlevel:"
-#~ msgstr "Düzenlenen Çalışma Seviyesi:"
-
-#~ msgid "Status"
-#~ msgstr "Durum"
-
-#~ msgid "_Background Services"
-#~ msgstr "_Arkaplan Servisleri"
-
-#~ msgid ""
-#~ "These services are started on demand and end when there is nothing more "
-#~ "to do. The <b>xinetd</b> service must be running so that they can be used."
-#~ msgstr ""
-#~ "Bu servisleri istek üzerine başlatılır ve yapılacak birşey olmadığında "
-#~ "durdurulur. <b>xinetd> servisinin çalışması, bu servislerin çalışması "
-#~ "için gereklidir. "
-
-#~ msgid "_On Demand Services"
-#~ msgstr "_İsteğe Bağlı Servisler"
-
-#~ msgid "Are you sure you want to delete the %s?"
-#~ msgstr "%s'i silmek istediğinizden emin misiniz?"
-
-#~ msgid "Runlevel %d"
-#~ msgstr "Çalışma Seviyesi %d"
-
-#~ msgid "Currently Running in Runlevel: "
-#~ msgstr "Şu an Etkin Olan Çalışma Seviyesi:"
-
-#~ msgid "Editing Runlevel: "
-#~ msgstr "Düzenlenen Çalışma Seviyesi: "
-
-#~ msgid "Unknown"
-#~ msgstr "Bilinmeyen"
-
-#~ msgid "All"
-#~ msgstr "Tümü"
-
-#~ msgid ""
-#~ "System Services Configuration Tool VERSION\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-#~ msgstr ""
-#~ "Sistem Servis Yapılandırma Aracı SÜRÜM\n"
-#~ " Copyright © 2002-2006 Red Hat, Inc.\n"
-#~ " Tim Powers <timp@redhat.com>\n"
-#~ " Bill Nottingham <notting@redhat.com>\n"
-#~ " Dan Walsh <dwalsh@redhat.com>\n"
-#~ " Brent Fox <bfox@redhat.com>\n"
-#~ " Nils Philippsen <nphilipp@redhat.com>\n"
-#~ " "
-
-#~ msgid "About"
-#~ msgstr "Hakkında"
-
-#~ msgid "You must run system-config-services as root."
-#~ msgstr "sytem-config-services root olarak çalıştırılmalıdır."
-
-#~ msgid "%s failed. The error was: %s"
-#~ msgstr "%s başarısız. Hata: %s"
-
-#~ msgid " successful"
-#~ msgstr " başarılı"
-
-#~ msgid "xinetd must be enabled for %s to run"
-#~ msgstr "%s i çalıştırmak için xinetd etkin olmalıdır"
-
-#~ msgid "xinetd failed to reload for "
-#~ msgstr "xinetd bunu yeniden yükleyemedi: "
-
-#~ msgid ". The error was: "
-#~ msgstr ". Hata: "
-
-#~ msgid "xinetd reloaded %s successfully"
-#~ msgstr "xinetd %s i başarıyla yeniden yükledi"
-
-#~ msgid "Help is not available."
-#~ msgstr "Yardım erişilebilir değil."

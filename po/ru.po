@@ -2,29 +2,31 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # 
-# Leonid Kanter <leon@asplinux.ru>, 2004.
-# Yulia Poyarkova <yulia.poyarkova@gmail.com>, 2009.
-# Ivan Kukharchuk <wedge@inbox.ru>, 2006.
-# Leonid Kanter <leon@geon.donetsk.ua>, 2003.
-# Stanislav Darchinov <darchinov@gmail.com>, 2011.
-# Nils Philippsen <nils@redhat.com>, 2011.
+# Translators:
 # Anatoliy Guskov <anatoliy.guskov@gmail.com>, 2008.
-# Andrew Zaytsev <andzaytsev@gmail.com>, 2010.
 # Andrew Martynov <andrewm@inventa.ru>, 2004, 2005, 2006, 2008.
+# Andrew Zaytsev <andzaytsev@gmail.com>, 2010.
+# Ivan Kukharchuk <wedge@inbox.ru>, 2006.
+# Leonid Kanter <leon@asplinux.ru>, 2004.
+# Leonid Kanter <leon@geon.donetsk.ua>, 2003.
+# Misha Shnurapet <shnurapet@fedoraproject.org>, 2011.
+# Nils Philippsen <nils@redhat.com>, 2011.
+# Stanislav Darchinov <darchinov@gmail.com>, 2011.
+# Yulia Poyarkova <yulia.poyarkova@gmail.com>, 2009.
 # Yulia Poyarkova <yulia.poyarkova@redhat.com>, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2011-06-29 13:31+0000\n"
-"Last-Translator: karbafosss <darchinov@gmail.com>\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Misha Shnurapet <shnurapet@fedoraproject.org>\n"
 "Language-Team: Russian <trans-ru@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -77,49 +79,49 @@ msgstr "Служба не работает."
 
 #: src/gui.py:245
 msgid "This unit is inactive."
-msgstr "Данный юнит неактивен."
+msgstr "Этот модуль неактивен."
 
 #: src/gui.py:247
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
-msgstr "Данный юнит неактивен: %(sub_state)s"
+msgstr "Этот модуль неактивен: %(sub_state)s"
 
 #: src/gui.py:251
 msgid "This unit is running."
-msgstr "Данный юнит работает."
+msgstr "Этот модуль выполняется."
 
 #: src/gui.py:254
 msgid "This unit has finished."
-msgstr "Данный юнит выполнен."
+msgstr "Этот модуль завершил работу."
 
 #: src/gui.py:257
 #, python-format
 msgid "This unit is active: %(sub_state)s"
-msgstr "Данный юнит активен: %(sub_state)s"
+msgstr "Этот модуль активен: %(sub_state)s"
 
 #: src/gui.py:260
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
-msgstr ""
+msgstr "Этот модуль снят с ошибкой: %(sub_state)s"
 
 #: src/gui.py:264
 msgid "This unit is starting."
-msgstr "Данный юнит запускается."
+msgstr "Данный модуль запускается."
 
 #: src/gui.py:266
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
-msgstr "Юнит активируется: %(sub_state)s"
+msgstr "Данный модуль задействуется: %(sub_state)s"
 
 #: src/gui.py:269
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
-msgstr "Юнит деактивируется: %(sub_state)s"
+msgstr "Данный модуль деактивируется: %(sub_state)s"
 
 #: src/gui.py:272
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
-msgstr "Состояние юнита неизвестно: %(active_state)s/%(sub_state)s"
+msgstr "Состояние этого модуля неизвестно: %(active_state)s/%(sub_state)s"
 
 #: src/gui.py:349
 #, python-format
@@ -127,19 +129,14 @@ msgid ""
 "The <b>%(servicename)s</b> service is managed by systemd. It may be started "
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
-msgstr ""
-"Служба <b>%(servicename)s</b> управляется systemd. Она может запускаться и "
-"работать в фоновом режиме или активироваться по запросу или запуска единожды"
-" для cleanup целей."
+msgstr "Служба <b>%(servicename)s</b> управляется systemd. Она может запускаться и работать в фоновом режиме или активироваться по запросу или запуска единожды для cleanup целей."
 
 #: src/gui.py:379
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"Служба <b>%(servicename)s</b> запускается один раз, обычно при загрузке "
-"системы, выполняется в фоновом режиме и активируется при необходимости."
+msgstr "Служба <b>%(servicename)s</b> запускается один раз, обычно при загрузке системы, выполняется в фоновом режиме и активируется при необходимости."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -150,25 +147,19 @@ msgstr "Служба обновлена."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"<b>%(servicename)s</b> запускается по запросу службы xinetd и завершает "
-"работу, если нет необходимости в каких-либо действиях."
+msgstr "<b>%(servicename)s</b> запускается по запросу службы xinetd и завершает работу, если нет необходимости в каких-либо действиях."
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"Эта служба включена, но пакет <b>xinetd</b> не установлен. Служба не сможет "
-"выполняться без <b>xinetd</b>."
+msgstr "Эта служба включена, но пакет <b>xinetd</b> не установлен. Служба не сможет выполняться без <b>xinetd</b>."
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"Эта служба включена, но <b>xinetd</b> не выполняется. Служба не сможет "
-"выполняться без <b>xinetd</b>."
+msgstr "Эта служба включена, но <b>xinetd</b> не выполняется. Служба не сможет выполняться без <b>xinetd</b>."
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -179,9 +170,7 @@ msgstr "Включить службу <b>%(service)s</b> на уровнях в�
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"Не найдена утилита просмотра справки. Чтобы просмотреть справку, необходимо "
-"установить пакет 'yelp'."
+msgstr "Не найдена утилита просмотра справки. Чтобы просмотреть справку, необходимо установить пакет 'yelp'."
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
@@ -268,38 +257,26 @@ msgid ""
 "GNU General Public License for more details.\n"
 "\n"
 "You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"Эта программа является открытым программным обеспечением. Ее разрешается распространять и модифицировать с учетом условий лицензии GNU 2 или более поздней версии, опубликованной компанией Free Software Foundation.\n"
-"\n"
-"Эта программа распространяется БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, в том числе не гарантируется ее пригодность для определенных целей. За подробной информацией обратитесь к лицензии GNU.\n"
-"\n"
-"Копия лицензии предоставляется с этой программой. Если вы не получили копию лицензии, \n"
-"сообщите в отделение Free Software Foundation, Inc. по адресу 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA."
+msgstr "Эта программа является открытым программным обеспечением. Ее разрешается распространять и модифицировать с учетом условий лицензии GNU 2 или более поздней версии, опубликованной компанией Free Software Foundation.\n\nЭта программа распространяется БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, в том числе не гарантируется ее пригодность для определенных целей. За подробной информацией обратитесь к лицензии GNU.\n\nКопия лицензии предоставляется с этой программой. Если вы не получили копию лицензии, \nсообщите в отделение Free Software Foundation, Inc. по адресу 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA."
 
 #: src/system-config-services.glade.h:28
 msgid ""
 "This service is managed by systemd. It may be started then run in the "
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
-msgstr ""
-"Служба управляется systemd. Она может запускаться и работать в фоновом "
-"режиме или активироваться по запросу или запуска единожды для cleanup целей."
+msgstr "Служба управляется systemd. Она может запускаться и работать в фоновом режиме или активироваться по запросу или запуска единожды для cleanup целей."
 
 #: src/system-config-services.glade.h:29
 msgid ""
 "This service is started once, usually when the system is booted, runs in the"
 " background and wakes up when needed."
-msgstr ""
-"Эта служба запускается один раз, обычно при загрузке системы, работает в "
-"фоновом режиме и активируется при необходимости."
+msgstr "Эта служба запускается один раз, обычно при загрузке системы, работает в фоновом режиме и активируется при необходимости."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"Эта служба запускается по запросу службы xinetd и завершает работу, если нет"
-" необходимости в каких-либо действиях."
+msgstr "Эта служба запускается по запросу службы xinetd и завершает работу, если нет необходимости в каких-либо действиях."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -377,5 +354,3 @@ msgstr "Управление системными службами"
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "Управление системными службами требует аутентификации"
-
-

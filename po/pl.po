@@ -1,21 +1,24 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Nils Philippsen <nils@redhat.com>, 2011.
+# Piotr Drąg <piotrdrag@gmail.com>, 2011.
+# Tom Berner <tom@lodz.pl>, 2005.
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2011-05-05 14:42+0000\n"
-"Last-Translator: raven <piotrdrag@gmail.com>\n"
-"Language-Team: Polish (http://www.transifex.net/projects/p/fedora/team/pl/)\n"
+"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"Language-Team: Polish <trans-pl@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: src/gui.py:123
 msgid "Name"
@@ -118,19 +121,14 @@ msgid ""
 "The <b>%(servicename)s</b> service is managed by systemd. It may be started "
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
-msgstr ""
-"Usługa <b>%(servicename)s</b> jest zarządzana przez systemd. Może być "
-"uruchamiana, a następnie działać w tle, być aktywowana na żądanie albo "
-"uruchamiana raz do celów przygotowawczych lub porządkowych."
+msgstr "Usługa <b>%(servicename)s</b> jest zarządzana przez systemd. Może być uruchamiana, a następnie działać w tle, być aktywowana na żądanie albo uruchamiana raz do celów przygotowawczych lub porządkowych."
 
 #: src/gui.py:379
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr ""
-"Usługa <b>%(servicename)s</b> jest uruchamiana raz, zwykle podczas "
-"uruchamiania systemu, działa w tle i przebudza się, kiedy jest potrzebna."
+msgstr "Usługa <b>%(servicename)s</b> jest uruchamiana raz, zwykle podczas uruchamiania systemu, działa w tle i przebudza się, kiedy jest potrzebna."
 
 #: src/gui.py:398
 msgid "This service is updated currently."
@@ -141,25 +139,19 @@ msgstr "Ta usługa jest obecnie aktualizowana."
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr ""
-"Usługa <b>%(servicename)s</b> zostanie uruchomiona na żądanie przez usługę "
-"xinetd i zakończy działanie, kiedy nie będzie już co robić."
+msgstr "Usługa <b>%(servicename)s</b> zostanie uruchomiona na żądanie przez usługę xinetd i zakończy działanie, kiedy nie będzie już co robić."
 
 #: src/gui.py:437
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr ""
-"Ta usługa jest włączona, ale pakiet <b>xinetd</b> nie jest zainstalowany. Ta"
-" usługa nie działa bez niego."
+msgstr "Ta usługa jest włączona, ale pakiet <b>xinetd</b> nie jest zainstalowany. Ta usługa nie działa bez niego."
 
 #: src/gui.py:448
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr ""
-"Ta usługa jest włączona, ale usługa <b>xinetd</b> nie jest uruchomiona. Ta "
-"usługa nie działa bez niej."
+msgstr "Ta usługa jest włączona, ale usługa <b>xinetd</b> nie jest uruchomiona. Ta usługa nie działa bez niej."
 
 #: src/gui.py:941 src/system-config-services.glade.h:6
 #, no-c-format, python-format
@@ -170,9 +162,7 @@ msgstr "Włączenie usługi <b>%(service)s</b> na tych poziomach uruchamiania:"
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr ""
-"Nie można odnaleźć przeglądarki pomocy. Aby wyświetlić pomoc, należy "
-"zainstalować pakiet \"yelp\"."
+msgstr "Nie można odnaleźć przeglądarki pomocy. Aby wyświetlić pomoc, należy zainstalować pakiet \"yelp\"."
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
@@ -188,8 +178,7 @@ msgstr "Dostosowanie poziomów uruchamiania"
 
 #: src/system-config-services.glade.h:3
 msgid "Customize the runlevels in which a service is enabled."
-msgstr ""
-"Proszę dostosować poziomy uruchamiania, w których usługa jest włączona."
+msgstr "Proszę dostosować poziomy uruchamiania, w których usługa jest włączona."
 
 #: src/system-config-services.glade.h:4
 msgid "Description"
@@ -260,38 +249,26 @@ msgid ""
 "GNU General Public License for more details.\n"
 "\n"
 "You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr ""
-"Niniejszy program jest wolnym oprogramowaniem; można go rozprowadzać dalej i/lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU, wydanej przez Fundację Wolnego Oprogramowania (Free Software Foundation) - według wersji drugiej tej Licencji lub którejś z późniejszych wersji.\n"
-"\n"
-"Niniejszy program rozpowszechniany jest z nadzieją, iż będzie on użyteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną GNU.\n"
-"\n"
-"Z pewnością wraz z niniejszym programem dostarczono także egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie - proszę napisać do Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA"
+msgstr "Niniejszy program jest wolnym oprogramowaniem; można go rozprowadzać dalej i/lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU, wydanej przez Fundację Wolnego Oprogramowania (Free Software Foundation) - według wersji drugiej tej Licencji lub którejś z późniejszych wersji.\n\nNiniejszy program rozpowszechniany jest z nadzieją, iż będzie on użyteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną GNU.\n\nZ pewnością wraz z niniejszym programem dostarczono także egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie - proszę napisać do Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
 "This service is managed by systemd. It may be started then run in the "
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
-msgstr ""
-"Ta usługa jest zarządzana przez systemd. Może być uruchamiana, a następnie "
-"działać w tle, być aktywowana na żądanie albo uruchamiana raz do celów "
-"przygotowawczych lub porządkowych."
+msgstr "Ta usługa jest zarządzana przez systemd. Może być uruchamiana, a następnie działać w tle, być aktywowana na żądanie albo uruchamiana raz do celów przygotowawczych lub porządkowych."
 
 #: src/system-config-services.glade.h:29
 msgid ""
 "This service is started once, usually when the system is booted, runs in the"
 " background and wakes up when needed."
-msgstr ""
-"Ta usługa jest uruchamiana raz, zwykle podczas uruchamiania systemu, działa "
-"w tle i przebudza się, kiedy jest potrzebna."
+msgstr "Ta usługa jest uruchamiana raz, zwykle podczas uruchamiania systemu, działa w tle i przebudza się, kiedy jest potrzebna."
 
 #: src/system-config-services.glade.h:30
 msgid ""
 "This service will be started on demand by the xinetd service and ends when "
 "it has nothing more to do."
-msgstr ""
-"Ta usługa zostanie uruchomiona na żądanie przez usługę xinetd i zakończy "
-"działanie, kiedy nie będzie już co robić."
+msgstr "Ta usługa zostanie uruchomiona na żądanie przez usługę xinetd i zakończy działanie, kiedy nie będzie już co robić."
 
 #: src/system-config-services.glade.h:31
 msgid "_About"
@@ -336,10 +313,7 @@ msgstr "system-config-services"
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:42
 msgid "translator-credits"
-msgstr ""
-"Radosław Zawartko <radzaw@radzaw.one.pl>, 2003\n"
-"Tom Berner <tom@lodz.pl>, 2005\n"
-"Piotr Drąg <piotrdrag@gmail.com>, 2006"
+msgstr "Radosław Zawartko <radzaw@radzaw.one.pl>, 2003\nTom Berner <tom@lodz.pl>, 2005\nPiotr Drąg <piotrdrag@gmail.com>, 2006"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
