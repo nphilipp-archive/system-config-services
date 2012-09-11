@@ -14,7 +14,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.101.7
+Version: 0.101.8
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
@@ -113,6 +113,11 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Tue Sep 11 2012 Nils Philippsen <nils@redhat.com> - 0.101.8-1
+- version 0.101.8:
+  - add enabling/disabling systemd units
+  - pull updated translations
+
 * Tue Aug 23 2011 Nils Philippsen <nils@redhat.com> - 0.101.7-1
 - version 0.101.7:
   - pull updated translations
