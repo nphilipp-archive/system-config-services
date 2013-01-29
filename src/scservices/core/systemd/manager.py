@@ -140,13 +140,23 @@ class SystemDManager(gobject.GObject):
 
     @polkit.enable_proxy
     def EnableUnitFiles(self, files, runtime=False, force=True):
-        return self.privileged_manager_interface.EnableUnitFiles(files,
-                runtime, force)
+        try:
+            return self.privileged_manager_interface.EnableUnitFiles(files,
+                    runtime, force)
+        except dbus.DBusException, e:
+            if e.get_dbus_name() != "org.freedesktop.DBus.Error.FileNotFound":
+                raise
+            return False, []
 
     @polkit.enable_proxy
     def DisableUnitFiles(self, files, runtime=False):
-        return self.privileged_manager_interface.DisableUnitFiles(files,
-                runtime)
+        try:
+            return self.privileged_manager_interface.DisableUnitFiles(files,
+                    runtime)
+        except dbus.DBusException, e:
+            if e.get_dbus_name() != "org.freedesktop.DBus.Error.FileNotFound":
+                raise
+            return []
 
 
 systemd_manager_discovery_started_signal = (

@@ -75,9 +75,19 @@ class DBusSystemDManager(slip.dbus.service.Object):
     @dbus.service.method(dbus_interface=manager_interface,
             in_signature="asbb", out_signature="(ba(sss))")
     def EnableUnitFiles(self, files, runtime, force):
-        return self.manager.EnableUnitFiles(files, runtime, force)
+        try:
+            return self.manager.EnableUnitFiles(files, runtime, force)
+        except dbus.DBusException, e:
+            if e.get_dbus_name() != "org.freedesktop.DBus.Error.FileNotFound":
+                raise
+            return False, []
 
     @dbus.service.method(dbus_interface=manager_interface,
             in_signature="asb", out_signature="a(sss)")
     def DisableUnitFiles(self, files, runtime):
-        return self.manager.DisableUnitFiles(files, runtime)
+        try:
+            return self.manager.DisableUnitFiles(files, runtime)
+        except dbus.DBusException, e:
+            if e.get_dbus_name() != "org.freedesktop.DBus.Error.FileNotFound":
+                raise
+            return []
