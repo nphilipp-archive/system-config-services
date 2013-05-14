@@ -14,7 +14,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.101.9
+Version: 0.101.10
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
@@ -113,6 +113,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Tue May 14 2013 Nils Philippsen <nils@redhat.com> - 0.101.10-1
+- actually distribute scservices.gui now it is a package (#960478, #962613)
+
 * Thu Apr 18 2013 Nils Philippsen <nils@redhat.com> - 0.101.9-1
 - version 0.101.9:
   - catch "file not found" exceptions while enabling/disabling units
