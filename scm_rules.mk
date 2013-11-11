@@ -89,7 +89,7 @@ ifndef BYPASSUPSTREAM
 	fi
 endif
 
-archive: checkmods incoming tag archivepush scminfo-commit
+archive: checkmods incoming tag archivepush .scminfo
 ifndef FORCEARCHIVE
 	@if [ -e "${PKGNAME}-$(PKGVERSION).tar.bz2" ]; then \
 		echo "File ${PKGNAME}-$(PKGVERSION).tar.bz2 exists already." >&2; \
@@ -97,6 +97,7 @@ ifndef FORCEARCHIVE
 		exit 1; \
 	fi
 endif
+	@$(SCM_INFO_COMMIT_CMD)
 	@$(SCM_ARCHIVE_COMMAND)
 	@$(SCM_INFO_REWIND_CMD)
 	@echo "The archive is in ${PKGNAME}-$(PKGVERSION).tar.bz2"
