@@ -14,7 +14,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.101.10
+Version: 0.111.0
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
@@ -113,6 +113,10 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Nov 11 2013 Nils Philippsen <nils@redhat.com> - 0.111.0-1
+- systemd: update for new executable path (#1028833)
+- pull updated translations
+
 * Tue May 14 2013 Nils Philippsen <nils@redhat.com> - 0.101.10-1
 - actually distribute scservices.gui now it is a package (#960478, #962613)
 
