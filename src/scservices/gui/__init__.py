@@ -1038,6 +1038,12 @@ class MainWindow(GladeController):
         self.aboutDialog.set_name(config.name)
         self.aboutDialog.set_version(config.version)
         self.aboutDialog.set_transient_for(self.toplevel)
+        self.aboutDialog.set_copyright(
+            _(u"Copyright © %(copyright_begins)s - %(copyright_ends)s "
+               "Red Hat, Inc. and contributors") % {
+                'copyright_begins': config.copyright_begins,
+                'copyright_ends': config.copyright_ends})
+
 
         slip.gtk.label_set_autowrap(self.sysVServiceExplanationLabel)
         slip.gtk.label_set_autowrap(self.xinetdServiceExplanationLabel)

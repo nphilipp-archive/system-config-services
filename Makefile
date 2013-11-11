@@ -1,5 +1,5 @@
 # License: GPL v2 or later
-# Copyright Red Hat Inc. 2001 - 2009
+# Copyright Red Hat Inc. 2001 - 2009, 2013
 
 PKGNAME=system-config-services
 
@@ -48,7 +48,7 @@ include desktop_rules.mk
 include po_rules.mk
 
 src/scservices/config.py:	src/scservices/config.py.in $(PKGNAME).spec
-	sed -e 's,\@DATADIR\@,$(DATADIR),g; s,\@VERSION\@,$(PKGVERSION),g;' $< > $@ || rm -f $@
+	sed -e 's,\@DATADIR\@,$(DATADIR),g; s,\@VERSION\@,$(PKGVERSION),g;s,\@COPYRIGHT_ENDS\@,$(SCM_LAST_CHANGE_YEAR),g' $< > $@ || rm -f $@
 
 config:	src/scservices/config.py
 

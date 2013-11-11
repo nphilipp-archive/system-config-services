@@ -1,5 +1,5 @@
 # License: GPL v2 or later
-# Copyright Red Hat Inc. 2008 - 2010
+# Copyright Red Hat Inc. 2008 - 2010, 2013
 
 ifndef SCM_REMOTE_BRANCH
 	SCM_REMOTE_BRANCH = master
@@ -32,5 +32,9 @@ SCM_SNAP_ARCHIVE_COMMAND = git archive --format=tar --prefix=$(PKGNAME)-$(PKGVER
 SCM_ARCHIVE_COMMAND = git archive --format=tar --prefix=$(PKGNAME)-$(PKGVERSION)/ $(SCM_TAG) | bzip2 -9 > $(PKGNAME)-$(PKGVERSION).tar.bz2
 SCM_LASTLOG_COMMAND = git log --stat $(SCM_TAG).. $(SCM_LOG_PATHS)
 SCM_CHANGED_FILES_SINCE_TAG_COMMAND = git diff --stat $(SCM_TAG)
+SCM_LAST_CHANGE_DATE_CMD = git log -1 --pretty=format:\%ad --date=short
+SCM_LAST_CHANGE_DATE = $(shell $(SCM_LAST_CHANGE_DATE_CMD))
+SCM_LAST_CHANGE_YEAR = $(shell $(SCM_LAST_CHANGE_DATE_CMD) | \
+					   sed 's/^0*\([1-9][0-9]*\)-.*$$/\1/g')
 
 include scm_rules.mk
