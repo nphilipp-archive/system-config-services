@@ -116,6 +116,7 @@ rm -rf %{buildroot}
 * Mon Nov 11 2013 Nils Philippsen <nils@redhat.com> - 0.111.0-1
 - systemd: update for new executable path (#1028833)
 - pull updated translations
+- fix bogus dates in changelog
 
 * Tue May 14 2013 Nils Philippsen <nils@redhat.com> - 0.101.10-1
 - actually distribute scservices.gui now it is a package (#960478, #962613)
@@ -239,7 +240,7 @@ rm -rf %{buildroot}
 * Tue Apr 14 2009 Nils Philippsen <nils@redhat.com> - 0.99.33-1
 - pick up updated translations
 
-* Mon Mar 01 2009 Nils Philippsen <nils@redhat.com> - 0.99.32-1
+* Mon Mar 02 2009 Nils Philippsen <nils@redhat.com> - 0.99.32-1
 - require PolicyKit-authentication-agent from F-11 on (#487200)
 
 * Thu Feb 19 2009 Nils Philippsen <nils@redhat.com> - 0.99.31-1
@@ -600,7 +601,7 @@ rm -rf %{buildroot}
 * Fri Mar 03 2006 Nils Philippsen <nphilipp@redhat.com> - 0.9.0-1
 - require hicolor-icon-theme (#182878, #182879)
 
-* Wed Feb 28 2006 Florian Festi <ffesti@redhat.com> 
+* Tue Feb 28 2006 Florian Festi <ffesti@redhat.com> 
 - rewrote large parts of servicemethods (OO design, better handling of old/new
   settings, read headers of init scripts completely)
 - first implementation of widgets to control services (intended for tools
@@ -732,10 +733,10 @@ rm -rf %{buildroot}
 * Tue Jan 6 2004 Daniel J Walsh <dwalsh@redhat.com> 0.8.6-2
 - remove requirement for 2.2
 
-* Thu Nov 11 2003 Daniel J Walsh <dwalsh@redhat.com> 0.8.6-1
+* Thu Dec 11 2003 Daniel J Walsh <dwalsh@redhat.com> 0.8.6-1
 - Rename system-config-services
 
-* Wed Oct 17 2003 Daniel J Walsh <dwalsh@redhat.com> 0.8.5-23
+* Wed Oct 22 2003 Daniel J Walsh <dwalsh@redhat.com> 0.8.5-23
 - Add all translated languages
 
 * Fri Oct 17 2003 Daniel J Walsh <dwalsh@redhat.com> 0.8.5-22
