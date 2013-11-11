@@ -11,3 +11,4 @@ src/build
 src/scservices/config.py
 src/system-config-services.glade.h
 *.py[co]
+.scminfo

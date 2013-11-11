@@ -89,7 +89,7 @@ ifndef BYPASSUPSTREAM
 	fi
 endif
 
-archive: checkmods incoming tag archivepush
+archive: checkmods incoming scminfo-commit tag archivepush
 ifndef FORCEARCHIVE
 	@if [ -e "${PKGNAME}-$(PKGVERSION).tar.bz2" ]; then \
 		echo "File ${PKGNAME}-$(PKGVERSION).tar.bz2 exists already." >&2; \
@@ -124,3 +124,18 @@ lastlog:
 	@echo Log since tag $(SCM_TAG)
 	@echo
 	@$(SCM_LASTLOG_COMMAND)
+
+scminfo-commit: checkmods .scminfo
+	@$(SCM_INFO_COMMIT_CMD)
+
+.scminfo:
+	@$(SCM_INFO_CMD) > $@.new; \
+	if test \! -f $@ || cmp -s $@.new $@; then \
+		mv -f $@.new $@; \
+	else \
+		rm -f $@.new; \
+	fi
+
+SCM_LAST_CHANGE_REV = $(shell cat .scminfo | grep ^REV= | cut -d= -f2)
+SCM_LAST_CHANGE_DATE = $(shell cat .scminfo | grep ^DATE= | cut -d= -f2)
+SCM_LAST_CHANGE_YEAR = $(shell cat .scminfo | grep ^YEAR= | cut -d= -f2)

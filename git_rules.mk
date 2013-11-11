@@ -32,9 +32,12 @@ SCM_SNAP_ARCHIVE_COMMAND = git archive --format=tar --prefix=$(PKGNAME)-$(PKGVER
 SCM_ARCHIVE_COMMAND = git archive --format=tar --prefix=$(PKGNAME)-$(PKGVERSION)/ $(SCM_TAG) | bzip2 -9 > $(PKGNAME)-$(PKGVERSION).tar.bz2
 SCM_LASTLOG_COMMAND = git log --stat $(SCM_TAG).. $(SCM_LOG_PATHS)
 SCM_CHANGED_FILES_SINCE_TAG_COMMAND = git diff --stat $(SCM_TAG)
-SCM_LAST_CHANGE_DATE_CMD = git log -1 --pretty=format:\%ad --date=short
-SCM_LAST_CHANGE_DATE = $(shell $(SCM_LAST_CHANGE_DATE_CMD))
-SCM_LAST_CHANGE_YEAR = $(shell $(SCM_LAST_CHANGE_DATE_CMD) | \
+GIT_LAST_CHANGE_DATE_CMD = git log -1 --pretty=format:\%ad --date=short
+GIT_LAST_CHANGE_DATE = $(shell $(SCM_LAST_CHANGE_DATE_CMD))
+GIT_LAST_CHANGE_YEAR = $(shell $(SCM_LAST_CHANGE_DATE_CMD) | \
 					   sed 's/^0*\([1-9][0-9]*\)-.*$$/\1/g')
+SCM_INFO_CMD = echo -e "REV=$$(git rev-parse HEAD)\nDATE=$(GIT_LAST_CHANGE_DATE)\nYEAR=$(GIT_LAST_CHANGE_YEAR)"
+SCM_INFO_REWIND_CMD = git checkout -f .scminfo
+SCM_INFO_COMMIT_CMD = git commit --only --message="update GIT revision information" -- .scminfo
 
 include scm_rules.mk
