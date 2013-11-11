@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Automatically generated, 2004.
-# Nils Philippsen <nils@redhat.com>, 2011.
-# Tyronne Wickramarathne <tywickra@redhat.com>, 2006.
+# Automatically generated, 2004
+# Nils Philippsen <nils@redhat.com>, 2011
+# Tyronne Wickramarathne <tywickra@redhat.com>, 2006
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"PO-Revision-Date: 2013-04-29 09:59+0000\n"
 "Last-Translator: Nils Philippsen <nils@redhat.com>\n"
 "Language-Team: Sinhala (http://www.transifex.com/projects/p/fedora/language/si/)\n"
 "MIME-Version: 1.0\n"

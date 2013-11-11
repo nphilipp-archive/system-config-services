@@ -3,16 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Alexandru Szasz <alexxed@gmail.com>, 2006.
-# Nils Philippsen <nils@redhat.com>, 2011.
-# Răzvan Corneliu VILT <razvan.vilt@linux360.ro>, 2004, 2006.
-# Razvan VILT <razvan.vilt@linux360.ro>, 2004.
+# Alexandru Szasz <alexxed@gmail.com>, 2006
+# Nils Philippsen <nils@redhat.com>, 2011
+# Răzvan Corneliu VILT <razvan.vilt@linux360.ro>, 2004, 2006
+# Razvan VILT <razvan.vilt@linux360.ro>, 2004
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2012-02-14 08:15+0000\n"
+"PO-Revision-Date: 2013-04-29 09:59+0000\n"
 "Last-Translator: Nils Philippsen <nils@redhat.com>\n"
 "Language-Team: Romanian (http://www.transifex.com/projects/p/fedora/language/ro/)\n"
 "MIME-Version: 1.0\n"

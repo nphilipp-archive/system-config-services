@@ -3,17 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Alexander Todorov <atodorov@redhat.com>, 2008.
-# Nils Philippsen <nils@redhat.com>, 2011.
-# Valentin Laskov <laskov@festa.bg>, 2011.
+# Alexander Todorov <atodorov@redhat.com>, 2008
+# Nils Philippsen <nils@redhat.com>, 2011
+# Valentin Laskov <laskov@festa.bg>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2012-02-14 08:15+0000\n"
-"Last-Translator: Valentin Laskov <laskov@festa.bg>\n"
-"Language-Team: Bulgarian <trans-bg@lists.fedoraproject.org>\n"
+"PO-Revision-Date: 2013-04-29 09:59+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: Bulgarian (http://www.transifex.com/projects/p/fedora/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"

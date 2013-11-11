@@ -3,21 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Amanpreet Singh Alam <aalam@redhat.com>, 2004.
-# Amanpreet Singh Alam[ਆਲਮ] <amanpreetalam@yahoo.com>, 2005.
-# A P Singh <apbrar@gmail.com>, 2006.
-# A S Alam <apbrar@gmail.com>, 2006.
-# Jaswinder Singh <jsingh@redhat.com>, 2008, 2009, 2010.
-# Jaswinder Singh Phulewala <jaswinderphulewala@yahoo.com>, 2006, 2012.
-# Nils Philippsen <nils@redhat.com>, 2011.
+# Amanpreet Singh Alam <aalam@redhat.com>, 2004
+# Amanpreet Singh Alam[ਆਲਮ] <amanpreetalam@yahoo.com>, 2005
+# A P Singh <apbrar@gmail.com>, 2006
+# A S Alam <apbrar@gmail.com>, 2006
+# Jaswinder Singh <jsingh@redhat.com>, 2008, 2009, 2010
+# Jaswinder Singh Phulewala <jaswinderphulewala@yahoo.com>, 2006, 2012
+# Nils Philippsen <nils@redhat.com>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2012-02-29 06:51+0000\n"
-"Last-Translator: Jaswinder Singh <j.phulewala@gmail.com>\n"
-"Language-Team: Panjabi (Punjabi) <punjabi-users@lists.sf.net>\n"
+"PO-Revision-Date: 2013-04-29 09:59+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: Panjabi (Punjabi) (http://www.transifex.com/projects/p/fedora/language/pa/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"

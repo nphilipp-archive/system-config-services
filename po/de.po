@@ -3,24 +3,25 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Bernd Bartmann <Bernd.Bartmann@sohanet.de>, 2004.
-# Bernd Groh <bgroh@redhat.com>, 2003.
-# Claudia Krug <fhonig@redhat.it>, 2001.
-# Cornelius Neckenig <tbull@fedoraproject.org>, 2010.
-# Daniela Kugelmann <dkugelma@redhat.com >, 2008.
-# Fabian Affolter <fab@fedoraproject.org>, 2007.
-# Marcus Gloeckner <mgloeckner@gmail.com>, 2006.
-# Nils Philippsen <nils@redhat.com>, 2011.
-# Nils Philippsen <nphilipp@redhat.com>, 2006.
-# Timo Trinks <ttrinks@redhat.com>, 2006, 2007.
+# Bernd Bartmann <Bernd.Bartmann@sohanet.de>, 2004
+# Bernd Groh <bgroh@redhat.com>, 2003
+# Claudia Krug <fhonig@redhat.it>, 2001
+# tbull <tbull@fedoraproject.org>, 2010
+# Daniela Kugelmann <dkugelma@redhat.com >, 2008
+# Fabian Affolter <fab@fedoraproject.org>, 2007
+# Marcus Gloeckner <mgloeckner@gmail.com>, 2006
+# Nils Philippsen <nils@redhat.com>, 2011
+# Nils Philippsen <nphilipp@redhat.com>, 2006
+# Roman Spirgi <bigant@fedoraproject.org>, 2012
+# Timo Trinks <ttrinks@redhat.com>, 2006, 2007
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2012-02-14 08:15+0000\n"
-"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
-"Language-Team: German <trans-de@lists.fedoraproject.org>\n"
+"PO-Revision-Date: 2013-04-29 09:59+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/fedora/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,7 +34,7 @@ msgstr "Name"
 
 #: src/gui.py:126
 msgid "Remarks"
-msgstr "Anmerkung"
+msgstr "Anmerkungen"
 
 #: src/gui.py:199 src/gui.py:221 src/gui.py:231
 msgid "This service is being refreshed right now."

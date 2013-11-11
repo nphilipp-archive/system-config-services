@@ -3,27 +3,28 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Alain PORTAL <aportal@univ-montp2.fr>, 2006.
-# Audrey Simons <asimons@redhat.com>, 2003.
-# Bettina De Monti <bdemonti@redhat.it>, 2001.
-# Corina Roe <croe@redhat.com>, 2008.
-# Damien Durand <splinux@fedoraproject.org>, 2006.
-# dominique bribanick <chepioq@gmail.com>, 2011.
-# Mathieu Schopfer <mat.schopfer@bluewin.ch>, 2008.
-# Nils Philippsen <nils@redhat.com>, 2011.
-# Philippe Villiers <kissifrot@gmail.com>, 2006.
-# Sam Friedmann <sam.friedmann@redhat.com>, 2009.
-# Stephane Raimbault <stephane.raimbault@gmail.com>, 2004, 2006, 2010.
-# Thomas Canniot <mrtom@fedoraproject.org>, 2008.
-# Thomas Canniot <thomas.canniot@laposte.net>, 2006.
+# Alain PORTAL <aportal@univ-montp2.fr>, 2006
+# Audrey Simons <asimons@redhat.com>, 2003
+# Bettina De Monti <bdemonti@redhat.it>, 2001
+# croe <croe@redhat.com>, 2008
+# Damien Durand <splinux@fedoraproject.org>, 2006
+# dominique bribanick <chepioq@gmail.com>, 2011
+# Jérôme Fenal <jfenal@gmail.com>, 2013
+# Mathieu Schopfer <mat.schopfer@bluewin.ch>, 2008
+# Nils Philippsen <nils@redhat.com>, 2011
+# Philippe Villiers <kissifrot@gmail.com>, 2006
+# Sam Friedmann <sam.friedmann@redhat.com>, 2009
+# Stéphane Raimbault <stephane.raimbault@gmail.com>, 2004, 2006, 2010
+# Thomas Canniot <mrtom@fedoraproject.org>, 2008
+# Thomas Canniot <thomas.canniot@laposte.net>, 2006
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2012-02-14 08:15+0000\n"
-"Last-Translator: dominique bribanick <chepioq@gmail.com>\n"
-"Language-Team: French <trans-fr@lists.fedoraproject.org>\n"
+"PO-Revision-Date: 2013-04-29 21:23+0000\n"
+"Last-Translator: Jérôme Fenal <jfenal@gmail.com>\n"
+"Language-Team: French (http://www.transifex.com/projects/p/fedora/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -57,7 +58,7 @@ msgstr "Le service est désactivé."
 #: src/gui.py:204
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
-msgstr "Le service est activé en niveau d'exécution : %(runlevels)s"
+msgstr "Le service est activé dans les niveaux d'exécution : %(runlevels)s"
 
 #: src/gui.py:209
 msgid "This service is masked."
@@ -65,7 +66,7 @@ msgstr "Ce service est masqué."
 
 #: src/gui.py:222
 msgid "The status of this service is unknown."
-msgstr "Le statut de ce service est inconnu."
+msgstr "L'état de ce service est inconnu."
 
 #: src/gui.py:223
 msgid "This service is stopped."
@@ -131,7 +132,7 @@ msgid ""
 "The <b>%(servicename)s</b> service is managed by systemd. It may be started "
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
-msgstr "Le service <b>%(servicename)s</b> est géré par systemd. Il peut être démarré puis être actif en arrière-plan, ou être activé sur demande, ou être exécuté une fois à fin de préparation ou de nettoyage."
+msgstr "Le service <b>%(servicename)s</b> est géré par systemd. Il peut être démarré puis fonctionner en arrière-plan, ou être activé sur demande, ou être exécuté une fois à fin de préparation ou de nettoyage."
 
 #: src/gui.py:379
 #, python-format
@@ -155,7 +156,7 @@ msgstr "Le service <b>%(servicename)s</b> sera démarré à la demande par le se
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr "Ce service est activé, mais le paquetage <b>xinetd</b> n'est pas installé. Ce service ne fonctionne pas sans lui."
+msgstr "Ce service est activé, mais le paquet <b>xinetd</b> n'est pas installé. Ce service ne fonctionne pas sans lui."
 
 #: src/gui.py:448
 msgid ""
@@ -188,7 +189,7 @@ msgstr "Personnaliser les niveaux d'exécution"
 
 #: src/system-config-services.glade.h:3
 msgid "Customize the runlevels in which a service is enabled."
-msgstr "Personnalise les niveaux d'exécution pour lesquels un service est activé."
+msgstr "Personnaliser les niveaux d'exécution pour lesquels un service est activé."
 
 #: src/system-config-services.glade.h:4
 msgid "Description"
@@ -244,12 +245,12 @@ msgstr "Configuration du service"
 
 #: src/system-config-services.glade.h:19
 msgid "Service Information"
-msgstr "Information Service"
+msgstr "Information sur les services"
 
 #: src/system-config-services.glade.h:21
 #, no-c-format
 msgid "Status of service %s:"
-msgstr "Statut du service %s :"
+msgstr "État du service %s :"
 
 #: src/system-config-services.glade.h:22
 msgid ""
@@ -259,7 +260,7 @@ msgid ""
 "GNU General Public License for more details.\n"
 "\n"
 "You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr "Ce programme est un logiciel gratuit; vous pouvez le redistribuer et/ou le modifier sous les conditions générales de GNU General Public License (Permis grand public GNU) ainsi publiée par Free Software Foundation, soit en version 2 de la Licence, ou (c'est une option qui vous est présentée) en version supérieure.\n\nCe programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE, même sans la garantie implicite de QUALITE MARCHANDE, ni ADAPTATION POUR UN USAGE PARTICULIER. Consulter\nGNU General Public License pour davantage d'informations.\n\nVous devriez avoir reçu une copie de la GNU General Public License attachée à ce programme; sinon, veuillez écrire à l'adresse suivante: Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr "Ce programme est un logiciel libre ; vous pouvez le redistribuer et/ou le modifier sous les conditions générales de GNU General Public License (Licence publique générale GNU) ainsi publiée par la Free Software Foundation, soit en version 2 de la Licence, ou (c'est une option qui vous est présentée) en version supérieure.\n\nCe programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE, même sans la garantie implicite de QUALITÉ MARCHANDE, ni ADAPTATION POUR UN USAGE PARTICULIER. Consulter\nla GNU General Public License pour davantage d'informations.\n\nVous devriez avoir reçu une copie de la GNU General Public License attachée à ce programme; sinon, veuillez écrire à l'adresse suivante: Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
 
 #: src/system-config-services.glade.h:28
 msgid ""
@@ -323,7 +324,7 @@ msgstr "system-config-services"
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:42
 msgid "translator-credits"
-msgstr "Bettina De Monti <bdemonti@redhat.it>, 2001.\nAudrey Simons <asimons@redhat.com>, 2003.\nJean-Paul Aubry <jpaubry@redhat.com>, 2003,2004.\nStephane Raimbault <stephane.raimbault@gmail.com>, 2004, 2006, 2010\nPhilippe Villiers <kissifrot@gmail.com>, 2006.\nThomas Canniot <thomas.canniot@laposte.net>, 2006.\nDamien Durand <splinux@fedoraproject.org>, 2006.\nAlain PORTAL <aportal@univ-montp2.fr>, 2006.\nMathieu Schopfer <mat.schopfer@bluewin.ch>, 2008.\nThomas Canniot <mrtom@fedoraproject.org>, 2008.\nCorina Roe <croe@redhat.com>, 2008.\nPablo Martin-Gomez <pablo.martin-gomez@laposte.net>, 2009.\nSam Friedmann <sam.friedmann@redhat.com>, 2009."
+msgstr "Bettina De Monti <bdemonti@redhat.it>, 2001.\nAudrey Simons <asimons@redhat.com>, 2003.\nJean-Paul Aubry <jpaubry@redhat.com>, 2003,2004.\nStephane Raimbault <stephane.raimbault@gmail.com>, 2004, 2006, 2010\nPhilippe Villiers <kissifrot@gmail.com>, 2006.\nThomas Canniot <thomas.canniot@laposte.net>, 2006.\nDamien Durand <splinux@fedoraproject.org>, 2006.\nAlain PORTAL <aportal@univ-montp2.fr>, 2006.\nMathieu Schopfer <mat.schopfer@bluewin.ch>, 2008.\nThomas Canniot <mrtom@fedoraproject.org>, 2008.\nCorina Roe <croe@redhat.com>, 2008.\nPablo Martin-Gomez <pablo.martin-gomez@laposte.net>, 2009.\nSam Friedmann <sam.friedmann@redhat.com>, 2009.\nJérôme Fenal <jfenal@redhat.com>, 2013."
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"

@@ -3,25 +3,27 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Anatoliy Guskov <anatoliy.guskov@gmail.com>, 2008.
-# Andrew Martynov <andrewm@inventa.ru>, 2004, 2005, 2006, 2008.
-# Andrew Zaytsev <andzaytsev@gmail.com>, 2010.
-# Ivan Kukharchuk <wedge@inbox.ru>, 2006.
-# Leonid Kanter <leon@asplinux.ru>, 2004.
-# Leonid Kanter <leon@geon.donetsk.ua>, 2003.
-# Misha Shnurapet <shnurapet@fedoraproject.org>, 2011.
-# Nils Philippsen <nils@redhat.com>, 2011.
-# Stanislav Darchinov <darchinov@gmail.com>, 2011.
-# Yulia Poyarkova <yulia.poyarkova@gmail.com>, 2009.
-# Yulia Poyarkova <yulia.poyarkova@redhat.com>, 2008, 2009.
+# Анатолий Гуськов <anatoliy.guskov@gmail.com>, 2008
+# Andrew Martynov <andrewm@inventa.ru>, 2004, 2005, 2006, 2008
+# andzaytsev <andzaytsev@gmail.com>, 2010
+# Ivan Kukharchuk <wedge@inbox.ru>, 2006
+# Leonid Kanter <leon@asplinux.ru>, 2004
+# Leonid Kanter <leon@geon.donetsk.ua>, 2003
+# Misha Shnurapet <shnurapet@fedoraproject.org>, 2011
+# Nils Philippsen <nils@redhat.com>, 2011
+# Stanislav Darchinov <darchinov@gmail.com>, 2011
+# Yulia Poyarkova <yulia.poyarkova@gmail.com>, 2009
+# Yulia <yulia.poyarkova@redhat.com>, 2008, 2009
+# Yulia <yulia.poyarkova@redhat.com>, 2013
+# Yulia <yulia.poyarkova@redhat.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2012-02-14 08:15+0000\n"
-"Last-Translator: Misha Shnurapet <shnurapet@fedoraproject.org>\n"
-"Language-Team: Russian <trans-ru@lists.fedoraproject.org>\n"
+"PO-Revision-Date: 2013-04-29 09:59+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
+"Language-Team: Russian (http://www.transifex.com/projects/p/fedora/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,7 +36,7 @@ msgstr "Имя"
 
 #: src/gui.py:126
 msgid "Remarks"
-msgstr "Заметки"
+msgstr "Примечание"
 
 #: src/gui.py:199 src/gui.py:221 src/gui.py:231
 msgid "This service is being refreshed right now."
@@ -79,30 +81,30 @@ msgstr "Служба не работает."
 
 #: src/gui.py:245
 msgid "This unit is inactive."
-msgstr "Этот модуль неактивен."
+msgstr "Модуль неактивен."
 
 #: src/gui.py:247
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
-msgstr "Этот модуль неактивен: %(sub_state)s"
+msgstr "Модуль неактивен: %(sub_state)s"
 
 #: src/gui.py:251
 msgid "This unit is running."
-msgstr "Этот модуль выполняется."
+msgstr "Модуль выполняется."
 
 #: src/gui.py:254
 msgid "This unit has finished."
-msgstr "Этот модуль завершил работу."
+msgstr "Модуль завершил работу."
 
 #: src/gui.py:257
 #, python-format
 msgid "This unit is active: %(sub_state)s"
-msgstr "Этот модуль активен: %(sub_state)s"
+msgstr "Модуль активен: %(sub_state)s"
 
 #: src/gui.py:260
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
-msgstr "Этот модуль снят с ошибкой: %(sub_state)s"
+msgstr "Модуль снят с ошибкой: %(sub_state)s"
 
 #: src/gui.py:264
 msgid "This unit is starting."
@@ -129,7 +131,7 @@ msgid ""
 "The <b>%(servicename)s</b> service is managed by systemd. It may be started "
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
-msgstr "Служба <b>%(servicename)s</b> управляется systemd. Она может запускаться и работать в фоновом режиме или активироваться по запросу или запуска единожды для cleanup целей."
+msgstr " <b>%(servicename)s</b> находится под управлением systemd. Может работать в фоновом режиме и активироваться по запросу."
 
 #: src/gui.py:379
 #, python-format
@@ -264,7 +266,7 @@ msgid ""
 "This service is managed by systemd. It may be started then run in the "
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
-msgstr "Служба управляется systemd. Она может запускаться и работать в фоновом режиме или активироваться по запросу или запуска единожды для cleanup целей."
+msgstr "Служба находится под управлением systemd. Может работать в фоновом режиме и активироваться по запросу."
 
 #: src/system-config-services.glade.h:29
 msgid ""
@@ -321,7 +323,7 @@ msgstr "system-config-services"
 #. TRANSLATORS: Replace this string with your names, one name per line.
 #: src/system-config-services.glade.h:42
 msgid "translator-credits"
-msgstr "перевод"
+msgstr "Yulia <ypoyarko@fedoraproject.org>"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"

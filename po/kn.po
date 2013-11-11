@@ -3,16 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Nils Philippsen <nils@redhat.com>, 2011.
-# shankar prasad <svenkate@redhat.com>, 2006.
-# Shankar Prasad <svenkate@redhat.com>, 2008, 2009, 2010, 2012.
+# Nils Philippsen <nils@redhat.com>, 2011
+# shankar <svenkate@redhat.com>, 2006
+# shankar <svenkate@redhat.com>, 2008, 2009, 2010, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2012-02-28 11:10+0000\n"
-"Last-Translator: shanky <prasad.mvs@gmail.com>\n"
+"PO-Revision-Date: 2013-04-29 09:59+0000\n"
+"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
 "Language-Team: Kannada (http://www.transifex.com/projects/p/fedora/language/kn/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

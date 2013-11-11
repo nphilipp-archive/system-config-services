@@ -3,20 +3,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Dimitrios Michelinakis <dimitris@michelinakis.gr>, 2006.
-# Dimitrios Typaldos <dtfedora@yahoo.com>, 2007.
-# Konstantinos Antonakoglou <anton.cost@gmail.com>, 2009.
-# Nikos Charonitakis <charosn@her.forthnet.gr>, 2002.
-# Nils Philippsen <nils@redhat.com>, 2011.
-# Thalia Papoutsaki <saliyath@gmail.com>, 2010.
+# Dimitrios Michelinakis <dimitris@michelinakis.gr>, 2006
+# Dimitrios Typaldos <dtfedora@yahoo.com>, 2007
+# Konstantinos Antonakoglou <anton.cost@gmail.com>, 2009
+# Nikos Charonitakis <charosn@her.forthnet.gr>, 2002
+# Nils Philippsen <nils@redhat.com>, 2011
+# mitzie <zacharias.mitzelos@gmail.com>, 2013
+# Thalia Papoutsaki <saliyath@gmail.com>, 2010
+# KAT.RAT12 <spanish.katerina@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
-"Report-Msgid-Bugs-To: http://fedorahosted.org/system-config-services\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-04 17:07+0200\n"
-"PO-Revision-Date: 2012-02-14 08:15+0000\n"
-"Last-Translator: Nils Philippsen <nils@redhat.com>\n"
-"Language-Team: Greek <trans-el@lists.fedoraproject.org>\n"
+"PO-Revision-Date: 2013-07-25 20:45+0000\n"
+"Last-Translator: mitzie <zacharias.mitzelos@gmail.com>\n"
+"Language-Team: Greek (http://www.transifex.com/projects/p/fedora/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -54,7 +56,7 @@ msgstr "Αυτή η υπηρεσία είναι ενεργοποιημένη σ�
 
 #: src/gui.py:209
 msgid "This service is masked."
-msgstr ""
+msgstr "Η υπηρεσία είναι καλυμένη "
 
 #: src/gui.py:222
 msgid "The status of this service is unknown."
@@ -74,49 +76,49 @@ msgstr "Αυτή η υπηρεσία είναι νεκρή."
 
 #: src/gui.py:245
 msgid "This unit is inactive."
-msgstr ""
+msgstr "Αυτή η μονάδα είναι ανενεργή "
 
 #: src/gui.py:247
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
-msgstr ""
+msgstr "Αυτή η μονάδα είναι ανενεργή. %(sub_state)s"
 
 #: src/gui.py:251
 msgid "This unit is running."
-msgstr ""
+msgstr "Αυτό το πρόγραμμα εκτελείται."
 
 #: src/gui.py:254
 msgid "This unit has finished."
-msgstr ""
+msgstr "Αυτό το πρόγραμμα έχει τελειώσει"
 
 #: src/gui.py:257
 #, python-format
 msgid "This unit is active: %(sub_state)s"
-msgstr ""
+msgstr "Αυτή η μονάδα είναι ανενεργή. %(sub_state)s"
 
 #: src/gui.py:260
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
-msgstr ""
+msgstr "Αυτό το πρόγραμμα απέτυχε %(sub_state)s"
 
 #: src/gui.py:264
 msgid "This unit is starting."
-msgstr ""
+msgstr "Αυτό το πρόγραμμα αρχίζει."
 
 #: src/gui.py:266
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
-msgstr ""
+msgstr "Αυτό το πρόγραμμα ενεργοποιείται%(sub_state)s"
 
 #: src/gui.py:269
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
-msgstr ""
+msgstr "Αυτό το πρόγραμμα απενεργοποιείται %(sub_state)s"
 
 #: src/gui.py:272
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
-msgstr ""
+msgstr "Η κατάσταση αυτού του προγράμματος είναι άγνωστη: %(active_state)s/%(sub_state)s"
 
 #: src/gui.py:349
 #, python-format
@@ -124,7 +126,7 @@ msgid ""
 "The <b>%(servicename)s</b> service is managed by systemd. It may be started "
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
-msgstr ""
+msgstr "Η <b>%(servicename)s</b> υπηρεσία διαχειρίζεται από το systemd.Μπορεί να αρχίσει μετά την εκτέλεση στο παρασκήνιο, ή να ενεργοποιηθεί κατά την ζήτηση, η να λειτουργήσει μια φορά για προετοιμασία ή διευκρίνηση σκοπών. "
 
 #: src/gui.py:379
 #, python-format
@@ -169,11 +171,11 @@ msgstr "Δεν βρέθηκε η προβολή βοήθειας. Για να μ
 
 #: src/scservices/core/systemd/unit.py:202
 msgid "Error while getting description."
-msgstr ""
+msgstr "Σφάλμα στην περιγραφή. "
 
 #: src/system-config-services.glade.h:1
 msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-msgstr ""
+msgstr "Πνεευματικά διακιώματα @ 2002-2011 Red Hat Inc και συμβάλλοντες."
 
 #: src/system-config-services.glade.h:2
 msgid "Customize Runlevels"
@@ -259,7 +261,7 @@ msgid ""
 "This service is managed by systemd. It may be started then run in the "
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
-msgstr ""
+msgstr "Αυτή την υπηρεσία την διευθύνει το systemd. Μπορεί να αρχίσει και να λειτουργήσει στην βάση, ή να ενεργοποιηθεί ή να λειτουργήσει κατά την προετοιμασία ή για σκοπούς καθαρισμού. "
 
 #: src/system-config-services.glade.h:29
 msgid ""
