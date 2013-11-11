@@ -38,6 +38,6 @@ GIT_LAST_CHANGE_YEAR = $(shell $(GIT_LAST_CHANGE_DATE_CMD) | \
 					   sed 's/^0*\([1-9][0-9]*\)-.*$$/\1/g')
 SCM_INFO_CMD = echo -e "REV=$$(git rev-parse HEAD)\nDATE=$(GIT_LAST_CHANGE_DATE)\nYEAR=$(GIT_LAST_CHANGE_YEAR)"
 SCM_INFO_REWIND_CMD = git reset -q --hard $(SCM_LAST_CHANGE_REV)
-SCM_INFO_COMMIT_CMD = git add .scminfo; git commit -q --only --message="update GIT revision information" -- .scminfo
+SCM_INFO_COMMIT_CMD = git add -f .scminfo; git commit -q --only --message="update GIT revision information" -- .scminfo
 
 include scm_rules.mk
