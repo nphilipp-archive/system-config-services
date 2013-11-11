@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-11 14:12+0100\n"
-"PO-Revision-Date: 2013-04-29 09:59+0000\n"
+"PO-Revision-Date: 2013-11-11 14:19+0100\n"
 "Last-Translator: Nils Philippsen <nils@redhat.com>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/fedora/language/"
 "de/)\n"
@@ -28,6 +28,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: src/gui.py:42
 #, python-format
@@ -35,6 +36,8 @@ msgid ""
 "Error while initializing GUI toolkit: %(error)s\n"
 "This program must be run in a graphical environment."
 msgstr ""
+"Fehler beim Initialisieren des GUI Toolkits: %(error)s\n"
+"Dieses Programm muss in einer grafischen Umgebung laufen gelassen werden."
 
 #: src/scservices/core/systemd/unit.py:203
 msgid "Error while getting description."
@@ -200,6 +203,8 @@ msgid ""
 "Copyright © %(copyright_begins)s - %(copyright_ends)s Red Hat, Inc. and "
 "contributors"
 msgstr ""
+"Copyright © %(copyright_begins)s - %(copyright_ends)s Red Hat, Inc. und "
+"Mitwirkende"
 
 #: src/scservices/gui/__init__.py:1147
 msgid ""
