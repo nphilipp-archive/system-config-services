@@ -2,7 +2,7 @@
 
 # scservices.dbus.service: dbus backend service for system-config-services
 #
-# Copyright © 2008 Red Hat, Inc.
+# Copyright © 2008 - 2011 Red Hat, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
