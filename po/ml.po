@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Ani Peter <apeter@redhat.com>, 2006, 2012
 # Nils Philippsen <nils@redhat.com>, 2011
@@ -9,310 +9,361 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-04 17:07+0200\n"
+"POT-Creation-Date: 2013-11-11 14:12+0100\n"
 "PO-Revision-Date: 2013-04-29 09:59+0000\n"
 "Last-Translator: Nils Philippsen <nils@redhat.com>\n"
-"Language-Team: Malayalam (http://www.transifex.com/projects/p/fedora/language/ml/)\n"
+"Language-Team: Malayalam (http://www.transifex.com/projects/p/fedora/"
+"language/ml/)\n"
+"Language: ml\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ml\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/gui.py:123
+#: src/gui.py:42
+#, python-format
+msgid ""
+"Error while initializing GUI toolkit: %(error)s\n"
+"This program must be run in a graphical environment."
+msgstr ""
+
+#: src/scservices/core/systemd/unit.py:203
+msgid "Error while getting description."
+msgstr "വിശദീകരണം ലഭ്യമാക്കുമ്പോള്‍ പിശക്."
+
+#: src/scservices/gui/__init__.py:124
 msgid "Name"
 msgstr "പേരു്"
 
-#: src/gui.py:126
+#: src/scservices/gui/__init__.py:127
 msgid "Remarks"
 msgstr "നിരൂപണങ്ങള്‍"
 
-#: src/gui.py:199 src/gui.py:221 src/gui.py:231
+#: src/scservices/gui/__init__.py:200 src/scservices/gui/__init__.py:222
+#: src/scservices/gui/__init__.py:232
 msgid "This service is being refreshed right now."
 msgstr "ഈ സര്‍വീസ് നിലവില്‍ പരിഷ്കരിക്കപ്പെടുന്നു."
 
-#: src/gui.py:200 src/gui.py:233
+#: src/scservices/gui/__init__.py:201 src/scservices/gui/__init__.py:234
 msgid "Getting information about this service failed."
 msgstr "ഈ സര്‍വീസ് സംബന്ധിച്ചുള്ള വിവരം ലഭിക്കുവാന്‍ സാധ്യമായില്ല."
 
-#: src/gui.py:201 src/gui.py:205 src/gui.py:206
+#: src/scservices/gui/__init__.py:202 src/scservices/gui/__init__.py:206
+#: src/scservices/gui/__init__.py:207
 msgid "This service is enabled."
 msgstr "ഈ സര്‍വീസ് പ്രവര്‍ത്തന സജ്ജമാണു്."
 
-#: src/gui.py:202 src/gui.py:207 src/gui.py:208 src/gui.py:236
+#: src/scservices/gui/__init__.py:203 src/scservices/gui/__init__.py:208
+#: src/scservices/gui/__init__.py:209 src/scservices/gui/__init__.py:237
 msgid "This service is disabled."
 msgstr "ഈ സര്‍വീസ് പ്രവര്‍ത്തന രഹിതമാണു്."
 
-#: src/gui.py:204
+#: src/scservices/gui/__init__.py:205
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "ഈ സര്‍വീസുകള്‍ റണ്‍ലവലുകളില്‍ പ്രവര്‍ത്തന സജ്ജമാണു്: %(runlevels)s"
 
-#: src/gui.py:209
+#: src/scservices/gui/__init__.py:210
 msgid "This service is masked."
 msgstr "ഈ സേവനം മാസ്ക് ചെയ്തിരിയ്ക്കുന്നു."
 
-#: src/gui.py:222
+#: src/scservices/gui/__init__.py:223
 msgid "The status of this service is unknown."
 msgstr "ഈ സര്‍വീസിന്റെ അവസ്ഥ അപരിചിതമാണു്."
 
-#: src/gui.py:223
+#: src/scservices/gui/__init__.py:224
 msgid "This service is stopped."
 msgstr "ഈ സര്‍വീസ് നിര്‍ത്തിയിരിക്കുന്നു."
 
-#: src/gui.py:224
+#: src/scservices/gui/__init__.py:225
 msgid "This service is running."
 msgstr "ഈ സര്‍വീസ് പ്രവര്‍ത്തനത്തിലാണു്."
 
-#: src/gui.py:225
+#: src/scservices/gui/__init__.py:226
 msgid "This service is dead."
 msgstr "ഈ സര്‍വീസ് നിര്‍ജ്ജീവമാണു്."
 
-#: src/gui.py:245
+#: src/scservices/gui/__init__.py:246
 msgid "This unit is inactive."
 msgstr "ഈ യൂണിറ്റ് സജീവമല്ല."
 
-#: src/gui.py:247
+#: src/scservices/gui/__init__.py:248
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
 msgstr "ഈ യൂണിറ്റ് സജീവമല്ല.: %(sub_state)s"
 
-#: src/gui.py:251
+#: src/scservices/gui/__init__.py:252
 msgid "This unit is running."
 msgstr "ഈ യൂണിറ്റ് പ്രവര്‍ത്തനത്തില്‍."
 
-#: src/gui.py:254
+#: src/scservices/gui/__init__.py:255
 msgid "This unit has finished."
 msgstr "ഈ യൂണിറ്റ് പൂര്‍ത്തിയായിരിയ്ക്കുന്നു."
 
-#: src/gui.py:257
+#: src/scservices/gui/__init__.py:258
 #, python-format
 msgid "This unit is active: %(sub_state)s"
 msgstr "ഈ യൂണിറ്റ് സജീവമാണു്.: %(sub_state)s"
 
-#: src/gui.py:260
+#: src/scservices/gui/__init__.py:261
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
 msgstr "ഈ യൂണിറ്റ് പരാജയപ്പെട്ടിരിയ്ക്കുന്നു: %(sub_state)s"
 
-#: src/gui.py:264
+#: src/scservices/gui/__init__.py:265
 msgid "This unit is starting."
 msgstr "ഈ യൂണിറ്റ് ആരംഭിയ്ക്കുന്നു."
 
-#: src/gui.py:266
+#: src/scservices/gui/__init__.py:267
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
 msgstr "ഈ യൂണിറ്റ് സജീവമാകുന്നു: %(sub_state)s"
 
-#: src/gui.py:269
+#: src/scservices/gui/__init__.py:270
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
 msgstr "ഈ യൂണിറ്റ് നിര്‍ജ്ജീവമാകുന്നു: %(sub_state)s"
 
-#: src/gui.py:272
+#: src/scservices/gui/__init__.py:273
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
 msgstr "ഈ യൂണിറ്റിന്റെ അവസ്ഥ അപരിചിതം: %(active_state)s/%(sub_state)s"
 
-#: src/gui.py:349
+#: src/scservices/gui/__init__.py:350
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is managed by systemd. It may be started "
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
-msgstr "systemd <b>%(servicename)s</b> സേവനം കൈകാര്യം ചെയ്യുന്നു. ഇതു് ആരംഭിച്ചു്, പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിപ്പിയ്ക്കുക, അല്ലെങ്കില്‍ ആവശ്യാനുസരണം സജീവമാക്കുക, അല്ലെങ്കില്‍ തയ്യാറക്കലിനു് അല്ലെങ്കില്‍ വെടിപ്പാക്കുന്നതിനായി പ്രവര്‍ത്തിപ്പിയ്ക്കുക."
+msgstr ""
+"systemd <b>%(servicename)s</b> സേവനം കൈകാര്യം ചെയ്യുന്നു. ഇതു് ആരംഭിച്ചു്, പശ്ചാത്തലത്തില്‍ "
+"പ്രവര്‍ത്തിപ്പിയ്ക്കുക, അല്ലെങ്കില്‍ ആവശ്യാനുസരണം സജീവമാക്കുക, അല്ലെങ്കില്‍ തയ്യാറക്കലിനു് അല്ലെങ്കില്‍ "
+"വെടിപ്പാക്കുന്നതിനായി പ്രവര്‍ത്തിപ്പിയ്ക്കുക."
 
-#: src/gui.py:379
+#: src/scservices/gui/__init__.py:380
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr "സിസ്റ്റം ബൂട്ട് ചെയ്യുമ്പോള്‍ <b>%(servicename)s</b> സര്‍വീസ് ഒരിക്കല്‍ ആരംഭിക്കുന്നു. ശേഷം പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിക്കുന്നു, ആവശ്യമുള്ളപ്പോള്‍ പ്രത്യക്ഷത്തില്‍ വരുന്നു."
+msgstr ""
+"സിസ്റ്റം ബൂട്ട് ചെയ്യുമ്പോള്‍ <b>%(servicename)s</b> സര്‍വീസ് ഒരിക്കല്‍ ആരംഭിക്കുന്നു. ശേഷം "
+"പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിക്കുന്നു, ആവശ്യമുള്ളപ്പോള്‍ പ്രത്യക്ഷത്തില്‍ വരുന്നു."
 
-#: src/gui.py:398
+#: src/scservices/gui/__init__.py:399
 msgid "This service is updated currently."
 msgstr "ഈ സര്‍വീസ് നിലവില്‍ പരിഷ്കരിക്കപ്പെടുന്നു."
 
-#: src/gui.py:425
+#: src/scservices/gui/__init__.py:426
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr "xinetd സര്‍വീസിന്റെ ആവശ്യപ്രകാരം <b>%(servicename)s</b> ആരംഭിക്കുന്നു. എല്ലാ പ്രക്രിയകളും അവസാനിക്കുമ്പോള്‍ ഈ സര്‍വീസ് അവസാനിക്കുന്നു."
+msgstr ""
+"xinetd സര്‍വീസിന്റെ ആവശ്യപ്രകാരം <b>%(servicename)s</b> ആരംഭിക്കുന്നു. എല്ലാ പ്രക്രിയകളും "
+"അവസാനിക്കുമ്പോള്‍ ഈ സര്‍വീസ് അവസാനിക്കുന്നു."
 
-#: src/gui.py:437
+#: src/scservices/gui/__init__.py:438
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr "ഈ സര്‍വീസ് സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് ഇന്‍സ്റ്റോള്‍ അല്ലാത്തതിനാല്‍ ഈ സര്‍വീസ് പ്രവര്‍ത്തിക്കുന്നതല്ല."
+msgstr ""
+"ഈ സര്‍വീസ് സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് ഇന്‍സ്റ്റോള്‍ അല്ലാത്തതിനാല്‍ ഈ സര്‍വീസ് "
+"പ്രവര്‍ത്തിക്കുന്നതല്ല."
 
-#: src/gui.py:448
+#: src/scservices/gui/__init__.py:450
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr "ഈ സര്‍വീസ് സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സര്‍വീസ് പ്രവര്‍ത്തിക്കുന്നതല്ല."
+msgstr ""
+"ഈ സര്‍വീസ് സജ്ജമാണു് എന്നാല്‍, <b>xinetd</b> പാക്കേജ് കൂടാതെ ഈ സര്‍വീസ് പ്രവര്‍ത്തിക്കുന്നതല്ല."
 
-#: src/gui.py:941 src/system-config-services.glade.h:6
+#: src/scservices/gui/__init__.py:959 src/system-config-services.glade.h:37
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "ഈ റണ്‍ലവലുകളില്‍ <b>%(service)s</b> സര്‍വീസ് സജ്ജമാക്കുക:"
 
-#: src/gui.py:1100
+#: src/scservices/gui/__init__.py:1042
+#, python-format
+msgid ""
+"Copyright © %(copyright_begins)s - %(copyright_ends)s Red Hat, Inc. and "
+"contributors"
+msgstr ""
+
+#: src/scservices/gui/__init__.py:1147
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr "സഹായം ലഭ്യമാക്കുന്ന സംവിധാനം ഇവിടെ ലഭ്യമല്ല. ഇതിനായി, 'yelp' പാക്കേജുകള്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യേണ്ടതുണ്ടു്."
-
-#: src/scservices/core/systemd/unit.py:202
-msgid "Error while getting description."
-msgstr "വിശദീകരണം ലഭ്യമാക്കുമ്പോള്‍ പിശക്."
+msgstr ""
+"സഹായം ലഭ്യമാക്കുന്ന സംവിധാനം ഇവിടെ ലഭ്യമല്ല. ഇതിനായി, 'yelp' പാക്കേജുകള്‍ ഇന്‍സ്റ്റോള്‍ "
+"ചെയ്യേണ്ടതുണ്ടു്."
 
 #: src/system-config-services.glade.h:1
-msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-msgstr "പകര്‍പ്പവകാശം © 2002-2011 Red Hat, Inc., സംഭാവനക്കാര്‍"
-
-#: src/system-config-services.glade.h:2
-msgid "Customize Runlevels"
-msgstr "റണ്‍ലവലുകള്‍ യഥേഷ്ടമാക്കുക"
-
-#: src/system-config-services.glade.h:3
-msgid "Customize the runlevels in which a service is enabled."
-msgstr "സര്‍വീസ് സജ്ജമാക്കിയിട്ടുള്ള റണ്‍ലവലുകള്‍ യഥേഷ്ടമാക്കുക."
-
-#: src/system-config-services.glade.h:4
-msgid "Description"
-msgstr "വിവരണം"
-
-#: src/system-config-services.glade.h:7
-msgid "No service selected."
-msgstr "സര്‍വീസ് തെരഞ്ഞെടുത്തിട്ടില്ല."
-
-#: src/system-config-services.glade.h:8
-msgid "Runlevel 2"
-msgstr "റണ്‍ലവല്‍ 2 "
-
-#: src/system-config-services.glade.h:9
-msgid "Runlevel 3"
-msgstr "റണ്‍ലവല്‍ 3"
-
-#: src/system-config-services.glade.h:10
-msgid "Runlevel 4"
-msgstr "റണ്‍ലവല്‍ 4"
-
-#: src/system-config-services.glade.h:11
-msgid "Runlevel 5"
-msgstr "റണ്‍ലവല്‍ 5"
-
-#: src/system-config-services.glade.h:12
-msgid "Runlevel _2"
-msgstr "റണ്‍ലവല്‍ _2"
-
-#: src/system-config-services.glade.h:13
-msgid "Runlevel _3"
-msgstr "റണ്‍ലവല്‍ _3"
-
-#: src/system-config-services.glade.h:14
-msgid "Runlevel _4"
-msgstr "റണ്‍ലവല്‍ _4"
-
-#: src/system-config-services.glade.h:15
-msgid "Runlevel _5"
-msgstr "റണ്‍ലവല്‍ _5"
-
-#: src/system-config-services.glade.h:16
-msgid "S_top"
-msgstr "_നിര്‍ത്തുക"
-
-#: src/system-config-services.glade.h:17
-msgid "Ser_vice"
-msgstr "_സര്‍വീസ്"
-
-#: src/system-config-services.glade.h:18
 msgid "Service Configuration"
 msgstr "സര്‍വീസ് ക്രമീകരണം"
 
+#: src/system-config-services.glade.h:2
+msgid "_Program"
+msgstr "_പ്രോഗ്രാം"
+
+#: src/system-config-services.glade.h:3
+msgid "Ser_vice"
+msgstr "_സര്‍വീസ്"
+
+#: src/system-config-services.glade.h:4
+msgid "_Enable"
+msgstr "_പ്രവര്‍ത്തന സജ്ജം"
+
+#: src/system-config-services.glade.h:5
+msgid "_Disable"
+msgstr "_പ്രവര്‍ത്തന രഹിതം"
+
+#: src/system-config-services.glade.h:6
+msgid "_Customize"
+msgstr "_യഥേഷ്ടം"
+
+#: src/system-config-services.glade.h:7
+msgid "Runlevel 2"
+msgstr "റണ്‍ലവല്‍ 2 "
+
+#: src/system-config-services.glade.h:8
+msgid "Runlevel 3"
+msgstr "റണ്‍ലവല്‍ 3"
+
+#: src/system-config-services.glade.h:9
+msgid "Runlevel 4"
+msgstr "റണ്‍ലവല്‍ 4"
+
+#: src/system-config-services.glade.h:10
+msgid "Runlevel 5"
+msgstr "റണ്‍ലവല്‍ 5"
+
+#: src/system-config-services.glade.h:11
+msgid "_Start"
+msgstr "_ആരംഭിക്കുക"
+
+#: src/system-config-services.glade.h:12
+msgid "S_top"
+msgstr "_നിര്‍ത്തുക"
+
+#: src/system-config-services.glade.h:13
+msgid "_Restart"
+msgstr "_വീണ്ടും ആരംഭിക്കുക"
+
+#: src/system-config-services.glade.h:14
+msgid "_Help"
+msgstr "_സഹായം"
+
+#: src/system-config-services.glade.h:15
+msgid "_Contents"
+msgstr "_ഉളളടക്കം"
+
+#: src/system-config-services.glade.h:16
+msgid "_About"
+msgstr "_സംബന്ധിച്ചുള്ള"
+
+#: src/system-config-services.glade.h:17
+msgid "Customize the runlevels in which a service is enabled."
+msgstr "സര്‍വീസ് സജ്ജമാക്കിയിട്ടുള്ള റണ്‍ലവലുകള്‍ യഥേഷ്ടമാക്കുക."
+
+#: src/system-config-services.glade.h:18
+msgid "No service selected."
+msgstr "സര്‍വീസ് തെരഞ്ഞെടുത്തിട്ടില്ല."
+
 #: src/system-config-services.glade.h:19
-msgid "Service Information"
-msgstr "സര്‍വീസ് വിവരം"
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"സിസ്റ്റം ബൂട്ട് ചെയ്യുമ്പോള്‍ സര്‍വീസ് ഒരിക്കല്‍ ആരംഭിക്കുന്നു. ശേഷം പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിക്കുന്നു, "
+"ആവശ്യമുള്ളപ്പോള്‍ പ്രത്യക്ഷത്തില്‍ വരുന്നു."
+
+#: src/system-config-services.glade.h:20
+msgid "Description"
+msgstr "വിവരണം"
 
 #: src/system-config-services.glade.h:21
-#, no-c-format
-msgid "Status of service %s:"
-msgstr "സര്‍വീസ് %s-ന്റെ അവസ്ഥ:"
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+"xinetd സര്‍വീസിന്റെ ആവശ്യപ്രകാരം ഈ സര്‍വീസ് ആരംഭിക്കുന്നു. എല്ലാ പ്രക്രിയകളും അവസാനിക്കുമ്പോള്‍ ഈ "
+"സര്‍വീസ് അവസാനിക്കുന്നു."
 
 #: src/system-config-services.glade.h:22
-msgid ""
-"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr "ഇതു് ഒരു സ്വതന്ത്ര സോഫ്റ്റ്‌വെയര്‍ ആകുന്നു; നിങ്ങള്‍ക്കിതു് ഗ്നു ജനറല്‍ പബ്ളിക് ലൈസന്‍സിന്റെ നിബന്ധനകള്‍ പ്രകാരം (രണ്ടാം ലക്കം അല്ലെങ്കില്‍ നിങ്ങളുടെ താല്‍പര്യമനുസരിച്ച് അതിലും പുതിയ ലക്കം) വീണ്ടും വിതരണം ചെയ്യുകയോ മാറ്റം വരുത്തുകയോ ചെയ്യാം. ഫ്രീ സോഫ്റ്റ്‌വെയര്‍ ഫൌണ്ടേഷന്‍ ആണു് ഈ ലൈസന്‍സ് പ്രസിദ്ധീകരിച്ചിട്ടുള്ളത്.\n\nവളരെ ഫലപ്രദമായ പ്രോഗ്രാം എന്ന പ്രതീക്ഷയിലാകുന്നു ഇതു് വിതരണം ചെയ്യുന്നതു്. ഇതിനു് വാറന്റി ലഭ്യമല്ല. കൂടുതല്‍ വിവരങ്ങള്‍ക്കായി ഗ്നു ജനറല്‍ പബ്ളിക് ലൈസന്‍സ് കാണുക.\n\nഈ പ്രോഗ്രാമിനൊപ്പം നിങ്ങള്‍ക്കു് ഗ്നു ജനറല്‍ പബ്ളിക് ലൈസന്‍സിന്റെ ഒരു പകര്‍പ്പും ലഭിച്ചിരിക്കണം, ഇല്ലായെങ്കില്‍, ‌താഴെ പറയുന്ന മേല്‍വിലാസത്തിലേക്ക് എഴുതുക: Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA."
-
-#: src/system-config-services.glade.h:28
 msgid ""
 "This service is managed by systemd. It may be started then run in the "
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
-msgstr "systemd ഈ സേവനം കൈകാര്യം ചെയ്യുന്നു. ഇതു് ആരംഭിച്ചു്, പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിപ്പിയ്ക്കുക, അല്ലെങ്കില്‍ ആവശ്യാനുസരണം സജീവമാക്കുക, അല്ലെങ്കില്‍ തയ്യാറക്കലിനു് അല്ലെങ്കില്‍ വെടിപ്പാക്കുന്നതിനായി പ്രവര്‍ത്തിപ്പിയ്ക്കുക."
+msgstr ""
+"systemd ഈ സേവനം കൈകാര്യം ചെയ്യുന്നു. ഇതു് ആരംഭിച്ചു്, പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിപ്പിയ്ക്കുക, "
+"അല്ലെങ്കില്‍ ആവശ്യാനുസരണം സജീവമാക്കുക, അല്ലെങ്കില്‍ തയ്യാറക്കലിനു് അല്ലെങ്കില്‍ "
+"വെടിപ്പാക്കുന്നതിനായി പ്രവര്‍ത്തിപ്പിയ്ക്കുക."
 
-#: src/system-config-services.glade.h:29
-msgid ""
-"This service is started once, usually when the system is booted, runs in the"
-" background and wakes up when needed."
-msgstr "സിസ്റ്റം ബൂട്ട് ചെയ്യുമ്പോള്‍ സര്‍വീസ് ഒരിക്കല്‍ ആരംഭിക്കുന്നു. ശേഷം പശ്ചാത്തലത്തില്‍ പ്രവര്‍ത്തിക്കുന്നു, ആവശ്യമുള്ളപ്പോള്‍ പ്രത്യക്ഷത്തില്‍ വരുന്നു."
+#: src/system-config-services.glade.h:23
+msgid "Service Information"
+msgstr "സര്‍വീസ് വിവരം"
 
-#: src/system-config-services.glade.h:30
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr "xinetd സര്‍വീസിന്റെ ആവശ്യപ്രകാരം ഈ സര്‍വീസ് ആരംഭിക്കുന്നു. എല്ലാ പ്രക്രിയകളും അവസാനിക്കുമ്പോള്‍ ഈ സര്‍വീസ് അവസാനിക്കുന്നു."
+#: src/system-config-services.glade.h:25
+#, no-c-format
+msgid "Status of service %s:"
+msgstr "സര്‍വീസ് %s-ന്റെ അവസ്ഥ:"
 
-#: src/system-config-services.glade.h:31
-msgid "_About"
-msgstr "_സംബന്ധിച്ചുള്ള"
-
-#: src/system-config-services.glade.h:32
-msgid "_Contents"
-msgstr "_ഉളളടക്കം"
-
-#: src/system-config-services.glade.h:33
-msgid "_Customize"
-msgstr "_യഥേഷ്ടം"
-
-#: src/system-config-services.glade.h:34
-msgid "_Disable"
-msgstr "_പ്രവര്‍ത്തന രഹിതം"
-
-#: src/system-config-services.glade.h:35
-msgid "_Enable"
-msgstr "_പ്രവര്‍ത്തന സജ്ജം"
-
-#: src/system-config-services.glade.h:36
-msgid "_Help"
-msgstr "_സഹായം"
-
-#: src/system-config-services.glade.h:37
-msgid "_Program"
-msgstr "_പ്രോഗ്രാം"
-
-#: src/system-config-services.glade.h:38
-msgid "_Restart"
-msgstr "_വീണ്ടും ആരംഭിക്കുക"
-
-#: src/system-config-services.glade.h:39
-msgid "_Start"
-msgstr "_ആരംഭിക്കുക"
-
-#: src/system-config-services.glade.h:40
+#: src/system-config-services.glade.h:26
 msgid "system-config-services"
 msgstr "system-config-services"
 
+#: src/system-config-services.glade.h:27
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+"ഇതു് ഒരു സ്വതന്ത്ര സോഫ്റ്റ്‌വെയര്‍ ആകുന്നു; നിങ്ങള്‍ക്കിതു് ഗ്നു ജനറല്‍ പബ്ളിക് ലൈസന്‍സിന്റെ നിബന്ധനകള്‍ "
+"പ്രകാരം (രണ്ടാം ലക്കം അല്ലെങ്കില്‍ നിങ്ങളുടെ താല്‍പര്യമനുസരിച്ച് അതിലും പുതിയ ലക്കം) വീണ്ടും "
+"വിതരണം ചെയ്യുകയോ മാറ്റം വരുത്തുകയോ ചെയ്യാം. ഫ്രീ സോഫ്റ്റ്‌വെയര്‍ ഫൌണ്ടേഷന്‍ ആണു് ഈ ലൈസന്‍സ് "
+"പ്രസിദ്ധീകരിച്ചിട്ടുള്ളത്.\n"
+"\n"
+"വളരെ ഫലപ്രദമായ പ്രോഗ്രാം എന്ന പ്രതീക്ഷയിലാകുന്നു ഇതു് വിതരണം ചെയ്യുന്നതു്. ഇതിനു് വാറന്റി "
+"ലഭ്യമല്ല. കൂടുതല്‍ വിവരങ്ങള്‍ക്കായി ഗ്നു ജനറല്‍ പബ്ളിക് ലൈസന്‍സ് കാണുക.\n"
+"\n"
+"ഈ പ്രോഗ്രാമിനൊപ്പം നിങ്ങള്‍ക്കു് ഗ്നു ജനറല്‍ പബ്ളിക് ലൈസന്‍സിന്റെ ഒരു പകര്‍പ്പും ലഭിച്ചിരിക്കണം, "
+"ഇല്ലായെങ്കില്‍, ‌താഴെ പറയുന്ന മേല്‍വിലാസത്തിലേക്ക് എഴുതുക: Free Software Foundation, Inc., "
+"59 Temple Place, Suite 330, Boston, MA 02111-1307  USA."
+
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: src/system-config-services.glade.h:42
+#: src/system-config-services.glade.h:34
 msgid "translator-credits"
 msgstr "അനി പീറ്റര്‍ <apeter@redhat.com>"
+
+#: src/system-config-services.glade.h:35
+msgid "Customize Runlevels"
+msgstr "റണ്‍ലവലുകള്‍ യഥേഷ്ടമാക്കുക"
+
+#: src/system-config-services.glade.h:38
+msgid "Runlevel _2"
+msgstr "റണ്‍ലവല്‍ _2"
+
+#: src/system-config-services.glade.h:39
+msgid "Runlevel _3"
+msgstr "റണ്‍ലവല്‍ _3"
+
+#: src/system-config-services.glade.h:40
+msgid "Runlevel _4"
+msgstr "റണ്‍ലവല്‍ _4"
+
+#: src/system-config-services.glade.h:41
+msgid "Runlevel _5"
+msgstr "റണ്‍ലവല്‍ _5"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -345,3 +396,6 @@ msgstr "സിസ്റ്റം സര്‍വീസുകള്‍ കൈക�
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "സിസ്റ്റം സര്‍വീസുകള്‍ കൈകാര്യം ചെയ്യുന്നതിനായി ആധികാരികത ഉറപ്പാക്കേണ്ടതുണ്ടു്"
+
+#~ msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
+#~ msgstr "പകര്‍പ്പവകാശം © 2002-2011 Red Hat, Inc., സംഭാവനക്കാര്‍"

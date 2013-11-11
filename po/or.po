@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Manoj Kumar Giri <mgiri@redhat.com>, 2008, 2009, 2010, 2012
 # Nils Philippsen <nils@redhat.com>, 2011
@@ -11,310 +11,362 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-04 17:07+0200\n"
+"POT-Creation-Date: 2013-11-11 14:12+0100\n"
 "PO-Revision-Date: 2013-04-29 09:59+0000\n"
 "Last-Translator: Nils Philippsen <nils@redhat.com>\n"
-"Language-Team: Oriya (http://www.transifex.com/projects/p/fedora/language/or/)\n"
+"Language-Team: Oriya (http://www.transifex.com/projects/p/fedora/language/"
+"or/)\n"
+"Language: or\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: or\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/gui.py:123
+#: src/gui.py:42
+#, python-format
+msgid ""
+"Error while initializing GUI toolkit: %(error)s\n"
+"This program must be run in a graphical environment."
+msgstr ""
+
+#: src/scservices/core/systemd/unit.py:203
+msgid "Error while getting description."
+msgstr "ବର୍ଣ୍ଣନା ପାଇବା ସମୟରେ ତ୍ରୁଟି।"
+
+#: src/scservices/gui/__init__.py:124
 msgid "Name"
 msgstr "ନାମ"
 
-#: src/gui.py:126
+#: src/scservices/gui/__init__.py:127
 msgid "Remarks"
 msgstr "ଟିପ୍ପଣୀ"
 
-#: src/gui.py:199 src/gui.py:221 src/gui.py:231
+#: src/scservices/gui/__init__.py:200 src/scservices/gui/__init__.py:222
+#: src/scservices/gui/__init__.py:232
 msgid "This service is being refreshed right now."
 msgstr "ଏହି ସର୍ଭିସକୁ ବର୍ତ୍ତମାନ ସତେଜନ କରାଯାଉଛି"
 
-#: src/gui.py:200 src/gui.py:233
+#: src/scservices/gui/__init__.py:201 src/scservices/gui/__init__.py:234
 msgid "Getting information about this service failed."
 msgstr "ଏହି ସର୍ଭିସ ବିଷୟରେ ସୂଚନା ଗ୍ରହଣ କରିବାରେ ବିଫଳ।"
 
-#: src/gui.py:201 src/gui.py:205 src/gui.py:206
+#: src/scservices/gui/__init__.py:202 src/scservices/gui/__init__.py:206
+#: src/scservices/gui/__init__.py:207
 msgid "This service is enabled."
 msgstr "ଏହି ସର୍ଭିସକୁ ସକ୍ରିୟ କରାଯାଇଛି."
 
-#: src/gui.py:202 src/gui.py:207 src/gui.py:208 src/gui.py:236
+#: src/scservices/gui/__init__.py:203 src/scservices/gui/__init__.py:208
+#: src/scservices/gui/__init__.py:209 src/scservices/gui/__init__.py:237
 msgid "This service is disabled."
 msgstr "ଏହି ସର୍ଭିସକୁ ନିଷ୍କ୍ରିୟ କରାଯାଇଛି."
 
-#: src/gui.py:204
+#: src/scservices/gui/__init__.py:205
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "ଏହି ସର୍ଭିସକୁ ଚାଲିବା ସ୍ତରଗୁଡ଼ିକରେ ସକ୍ରିୟ କରାଯାଇଛି: %(runlevels)s"
 
-#: src/gui.py:209
+#: src/scservices/gui/__init__.py:210
 msgid "This service is masked."
 msgstr "ଏହି ସର୍ଭିସରେ ମୁଖା ଲଗାହୋଇଛି।"
 
-#: src/gui.py:222
+#: src/scservices/gui/__init__.py:223
 msgid "The status of this service is unknown."
 msgstr "ଏହି ସର୍ଭିସର ସ୍ଥିତି ଜଣା ନାହିଁ."
 
-#: src/gui.py:223
+#: src/scservices/gui/__init__.py:224
 msgid "This service is stopped."
 msgstr "ଏହି ସର୍ଭିସଟି ଅଟକିଯାଇଛି."
 
-#: src/gui.py:224
+#: src/scservices/gui/__init__.py:225
 msgid "This service is running."
 msgstr "ଏହି ସର୍ଭିସଟି ଚାଲୁଅଛି."
 
-#: src/gui.py:225
+#: src/scservices/gui/__init__.py:226
 msgid "This service is dead."
 msgstr "ଏହି ସର୍ଭିସଟି ନଷ୍ଟ ହୋଇଯାଇଛି."
 
-#: src/gui.py:245
+#: src/scservices/gui/__init__.py:246
 msgid "This unit is inactive."
 msgstr "ଏହି ଏକକଟି ନିଷ୍କ୍ରିୟ ଅଛି।"
 
-#: src/gui.py:247
+#: src/scservices/gui/__init__.py:248
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
 msgstr "ଏହି ଏକକଟି ନିଷ୍କ୍ରିୟ ଅଛି: %(sub_state)s"
 
-#: src/gui.py:251
+#: src/scservices/gui/__init__.py:252
 msgid "This unit is running."
 msgstr "ଏହି ଏକକଟି ଚାଲୁଅଛି।"
 
-#: src/gui.py:254
+#: src/scservices/gui/__init__.py:255
 msgid "This unit has finished."
 msgstr "ଏହି ଏକକଟି ସମାପ୍ତ ହୋଇଛି।"
 
-#: src/gui.py:257
+#: src/scservices/gui/__init__.py:258
 #, python-format
 msgid "This unit is active: %(sub_state)s"
 msgstr "ଏହି ଏକକଟି ସକ୍ରିୟ ଅଛି: %(sub_state)s"
 
-#: src/gui.py:260
+#: src/scservices/gui/__init__.py:261
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
 msgstr "ଏହି ଏକକଟି ବିଫଳ ହୋଇଛି: %(sub_state)s"
 
-#: src/gui.py:264
+#: src/scservices/gui/__init__.py:265
 msgid "This unit is starting."
 msgstr "ଏହି ଏକକଟି ଆରମ୍ଭ ହେଉଛି।"
 
-#: src/gui.py:266
+#: src/scservices/gui/__init__.py:267
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
 msgstr "ଏହି ଏକକଟି ସକ୍ରିୟ ହେଉଅଛି: %(sub_state)s"
 
-#: src/gui.py:269
+#: src/scservices/gui/__init__.py:270
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
 msgstr "ଏହି ଏକକଟି ନିଷ୍କ୍ରିୟ ହେଉଅଛି: %(sub_state)s"
 
-#: src/gui.py:272
+#: src/scservices/gui/__init__.py:273
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
 msgstr "ଏହି ଏକକର ସ୍ଥିତି ଜଣା ନାହିଁ: %(active_state)s/%(sub_state)s"
 
-#: src/gui.py:349
+#: src/scservices/gui/__init__.py:350
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is managed by systemd. It may be started "
 "then run in the background, or be activated on demand, or run once for "
 "preparation or cleanup purposes."
-msgstr "<b>%(servicename)s</b> ସର୍ଭିସଟି systemd ଦ୍ୱାରା ପରିଚାଳିତ। ଏହା ହୁଏତଃ ଆରମ୍ଭ ହୋଇପାରେଏବଂ ତାପରେ ପୃଷ୍ଠଭୂମିରେ ଚାଲିଥାଏ, କିମ୍ବା ଆବଶ୍ୟକତା ଅନୁସାରେ ସକ୍ରିୟ ହୋଇଥାଏ, କିମ୍ବା ପ୍ରସ୍ତୁତି କିମ୍ବା ସଫାକରିବା ଉଦ୍ଦେଶ୍ୟରେ ଚାଲିଥାଏ।"
+msgstr ""
+"<b>%(servicename)s</b> ସର୍ଭିସଟି systemd ଦ୍ୱାରା ପରିଚାଳିତ। ଏହା ହୁଏତଃ ଆରମ୍ଭ ହୋଇପାରେଏବଂ "
+"ତାପରେ ପୃଷ୍ଠଭୂମିରେ ଚାଲିଥାଏ, କିମ୍ବା ଆବଶ୍ୟକତା ଅନୁସାରେ ସକ୍ରିୟ ହୋଇଥାଏ, କିମ୍ବା ପ୍ରସ୍ତୁତି କିମ୍ବା "
+"ସଫାକରିବା ଉଦ୍ଦେଶ୍ୟରେ ଚାଲିଥାଏ।"
 
-#: src/gui.py:379
+#: src/scservices/gui/__init__.py:380
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr "<b>%(servicename)s</b> ସର୍ଭିସଟି ଥରେ ଆରମ୍ଭ ହୋଇଥିଲା, ସାଧାରଣତଃ ଯେତେବେଳେ ତନ୍ତ୍ରକୁ ବୁଟ କରାଯାଇଥିଲା, ପୃଷ୍ଠଭୂମିରେ ଚାଲିଥାଏ ଏବଂ ଆବଶ୍ୟକ ହେଲେ ଜାଗିଉଠିଥାଏ."
+msgstr ""
+"<b>%(servicename)s</b> ସର୍ଭିସଟି ଥରେ ଆରମ୍ଭ ହୋଇଥିଲା, ସାଧାରଣତଃ ଯେତେବେଳେ ତନ୍ତ୍ରକୁ ବୁଟ "
+"କରାଯାଇଥିଲା, ପୃଷ୍ଠଭୂମିରେ ଚାଲିଥାଏ ଏବଂ ଆବଶ୍ୟକ ହେଲେ ଜାଗିଉଠିଥାଏ."
 
-#: src/gui.py:398
+#: src/scservices/gui/__init__.py:399
 msgid "This service is updated currently."
 msgstr "ଏହି ସର୍ଭିସକୁ ନିକଟରେ ଅଦ୍ୟତନ କରାଯାଇଥିଲା."
 
-#: src/gui.py:425
+#: src/scservices/gui/__init__.py:426
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr "ଏହି <b>%(servicename)s</b> ସର୍ଭିସଟି ଆବଶ୍ୟକତା ଅନୁସାରେ xinetd ସର୍ଭିସ ଦ୍ୱାରା ଆରମ୍ଭ କରାହେବ ଏବଂ ଯେତେବେଳେ କିଛି କରିବାକୁ ନଥାଏ ସେତେବେଳେ ସମାପ୍ତ ହୋଇଥାଏ।"
+msgstr ""
+"ଏହି <b>%(servicename)s</b> ସର୍ଭିସଟି ଆବଶ୍ୟକତା ଅନୁସାରେ xinetd ସର୍ଭିସ ଦ୍ୱାରା ଆରମ୍ଭ କରାହେବ "
+"ଏବଂ ଯେତେବେଳେ କିଛି କରିବାକୁ ନଥାଏ ସେତେବେଳେ ସମାପ୍ତ ହୋଇଥାଏ।"
 
-#: src/gui.py:437
+#: src/scservices/gui/__init__.py:438
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr "ଏହି ସର୍ଭିସକୁ ସକ୍ରିୟକରାଯାଇଛି, କିନ୍ତୁ <b>xinetd</b> ପ୍ୟାକେଜଟି ସ୍ଥାପିତ ହୋଇନାହିଁ. ଏହା ବିନା ଏହି ସର୍ଭିସ କାମକରିନଥାଏ."
+msgstr ""
+"ଏହି ସର୍ଭିସକୁ ସକ୍ରିୟକରାଯାଇଛି, କିନ୍ତୁ <b>xinetd</b> ପ୍ୟାକେଜଟି ସ୍ଥାପିତ ହୋଇନାହିଁ. ଏହା ବିନା ଏହି "
+"ସର୍ଭିସ କାମକରିନଥାଏ."
 
-#: src/gui.py:448
+#: src/scservices/gui/__init__.py:450
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr "ଏହି ସର୍ଭିସକୁ ସକ୍ରିୟକରାଯାଇଛି, କିନ୍ତୁ <b>xinetd</b> ପ୍ୟାକେଜଟି ଚାଲୁନାହିଁ. ଏହା ବିନା ଏହି ସର୍ଭିସ କାମକରିନଥାଏ."
+msgstr ""
+"ଏହି ସର୍ଭିସକୁ ସକ୍ରିୟକରାଯାଇଛି, କିନ୍ତୁ <b>xinetd</b> ପ୍ୟାକେଜଟି ଚାଲୁନାହିଁ. ଏହା ବିନା ଏହି ସର୍ଭିସ "
+"କାମକରିନଥାଏ."
 
-#: src/gui.py:941 src/system-config-services.glade.h:6
+#: src/scservices/gui/__init__.py:959 src/system-config-services.glade.h:37
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "ଏହି ଚାଲିବା ସ୍ତରଗୁଡ଼ିକରେ <b>%(service)s</b> ସର୍ଭିସକୁ ସକ୍ରିୟକରନ୍ତୁ:"
 
-#: src/gui.py:1100
+#: src/scservices/gui/__init__.py:1042
+#, python-format
+msgid ""
+"Copyright © %(copyright_begins)s - %(copyright_ends)s Red Hat, Inc. and "
+"contributors"
+msgstr ""
+
+#: src/scservices/gui/__init__.py:1147
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr "ସହାୟକ ପ୍ରଦର୍ଶକ ମିଳୁନାହିଁ. ସହାୟତା ଦେଖିବାପାଇଁ ଆପଣଙ୍କୁ 'yelp' ପ୍ଯାକେଜ ସ୍ଥାପନ କରିବାକୁ ପଡିବ."
-
-#: src/scservices/core/systemd/unit.py:202
-msgid "Error while getting description."
-msgstr "ବର୍ଣ୍ଣନା ପାଇବା ସମୟରେ ତ୍ରୁଟି।"
+msgstr ""
+"ସହାୟକ ପ୍ରଦର୍ଶକ ମିଳୁନାହିଁ. ସହାୟତା ଦେଖିବାପାଇଁ ଆପଣଙ୍କୁ 'yelp' ପ୍ଯାକେଜ ସ୍ଥାପନ କରିବାକୁ ପଡିବ."
 
 #: src/system-config-services.glade.h:1
-msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-msgstr "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-
-#: src/system-config-services.glade.h:2
-msgid "Customize Runlevels"
-msgstr "ଚାଲିବା ସ୍ତରଗୁଡ଼ିକୁ ଇଚ୍ଛାରୂପଣ କରନ୍ତୁ"
-
-#: src/system-config-services.glade.h:3
-msgid "Customize the runlevels in which a service is enabled."
-msgstr "ଚାଲିବା ସ୍ତରଗୁଡ଼ିକୁ ଇଚ୍ଛାରୂପଣକରନ୍ତୁ ଯେଉଁଥିରେ ସର୍ଭିସ ସକ୍ରିୟ ଥିବ."
-
-#: src/system-config-services.glade.h:4
-msgid "Description"
-msgstr "ବର୍ଣ୍ଣନା"
-
-#: src/system-config-services.glade.h:7
-msgid "No service selected."
-msgstr "କୌଣସି ସର୍ଭିସ ବଛାହୋଇନାହିଁ."
-
-#: src/system-config-services.glade.h:8
-msgid "Runlevel 2"
-msgstr "ଚାଲିବା ସ୍ତର 2"
-
-#: src/system-config-services.glade.h:9
-msgid "Runlevel 3"
-msgstr "ଚାଲିବା ସ୍ତର 3"
-
-#: src/system-config-services.glade.h:10
-msgid "Runlevel 4"
-msgstr "ଚାଲିବା ସ୍ତର 4"
-
-#: src/system-config-services.glade.h:11
-msgid "Runlevel 5"
-msgstr "ଚାଲିବା ସ୍ତର 5"
-
-#: src/system-config-services.glade.h:12
-msgid "Runlevel _2"
-msgstr "ଚାଲିବା ସ୍ତର 2 (_2)"
-
-#: src/system-config-services.glade.h:13
-msgid "Runlevel _3"
-msgstr "ରନଲେବଲ _3"
-
-#: src/system-config-services.glade.h:14
-msgid "Runlevel _4"
-msgstr "ରନଲେବଲ _4"
-
-#: src/system-config-services.glade.h:15
-msgid "Runlevel _5"
-msgstr "ରନଲେବଲ _5"
-
-#: src/system-config-services.glade.h:16
-msgid "S_top"
-msgstr "ବିରାମ କରନ୍ତୁ (_t)"
-
-#: src/system-config-services.glade.h:17
-msgid "Ser_vice"
-msgstr "ସର୍ଭିସ (_v)"
-
-#: src/system-config-services.glade.h:18
 msgid "Service Configuration"
 msgstr "ସର୍ଭିସ ବିନ୍ଯାସ"
 
+#: src/system-config-services.glade.h:2
+msgid "_Program"
+msgstr "ପ୍ରଗ୍ରାମ (_P)"
+
+#: src/system-config-services.glade.h:3
+msgid "Ser_vice"
+msgstr "ସର୍ଭିସ (_v)"
+
+#: src/system-config-services.glade.h:4
+msgid "_Enable"
+msgstr "ସକ୍ରିୟକରନ୍ତୁ (_E)"
+
+#: src/system-config-services.glade.h:5
+msgid "_Disable"
+msgstr "ନିଷ୍କ୍ରିୟକରନ୍ତୁ (_D)"
+
+#: src/system-config-services.glade.h:6
+msgid "_Customize"
+msgstr "ଇଚ୍ଛାରୂପଣ କରନ୍ତୁ (_C)"
+
+#: src/system-config-services.glade.h:7
+msgid "Runlevel 2"
+msgstr "ଚାଲିବା ସ୍ତର 2"
+
+#: src/system-config-services.glade.h:8
+msgid "Runlevel 3"
+msgstr "ଚାଲିବା ସ୍ତର 3"
+
+#: src/system-config-services.glade.h:9
+msgid "Runlevel 4"
+msgstr "ଚାଲିବା ସ୍ତର 4"
+
+#: src/system-config-services.glade.h:10
+msgid "Runlevel 5"
+msgstr "ଚାଲିବା ସ୍ତର 5"
+
+#: src/system-config-services.glade.h:11
+msgid "_Start"
+msgstr "ପ୍ରାରମ୍ଭ କରନ୍ତୁ (_S)"
+
+#: src/system-config-services.glade.h:12
+msgid "S_top"
+msgstr "ବିରାମ କରନ୍ତୁ (_t)"
+
+#: src/system-config-services.glade.h:13
+msgid "_Restart"
+msgstr "ପୁନଃପ୍ରାରମ୍ଭ କରନ୍ତୁ (_R)"
+
+#: src/system-config-services.glade.h:14
+msgid "_Help"
+msgstr "ସହାୟତା (_H)"
+
+#: src/system-config-services.glade.h:15
+msgid "_Contents"
+msgstr "ବିଷୟବସ୍ତୁ (_C)"
+
+#: src/system-config-services.glade.h:16
+msgid "_About"
+msgstr "ବିବରଣୀ (_A)"
+
+#: src/system-config-services.glade.h:17
+msgid "Customize the runlevels in which a service is enabled."
+msgstr "ଚାଲିବା ସ୍ତରଗୁଡ଼ିକୁ ଇଚ୍ଛାରୂପଣକରନ୍ତୁ ଯେଉଁଥିରେ ସର୍ଭିସ ସକ୍ରିୟ ଥିବ."
+
+#: src/system-config-services.glade.h:18
+msgid "No service selected."
+msgstr "କୌଣସି ସର୍ଭିସ ବଛାହୋଇନାହିଁ."
+
 #: src/system-config-services.glade.h:19
-msgid "Service Information"
-msgstr "ସର୍ଭିସ ସୂଚନା"
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"ଏହି ସର୍ଭିସଟି ଥରେ ମାତ୍ର ଆରମ୍ଭ ହୋଇଥିଲା, ସାଧାରଣତଃ ଯେତେବେଳେ ତନ୍ତ୍ର ବୁଟକରାଯାଇଥିଲା, ପୃଷ୍ଠଭୂମିରେ "
+"ଚାଲୁଥାଏ ଏବଂ ଆବଶ୍ୟକ ହେଲେ ଜାଗ୍ରତ ହୋଇଥାଏ."
+
+#: src/system-config-services.glade.h:20
+msgid "Description"
+msgstr "ବର୍ଣ୍ଣନା"
 
 #: src/system-config-services.glade.h:21
-#, no-c-format
-msgid "Status of service %s:"
-msgstr "ସର୍ଭିସ %sର ସ୍ଥିତି:"
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+"ଏହି ସର୍ଭିସଟି ଆବଶ୍ୟକତା ଅନୁସାରେ xinetd ସର୍ଭିସ ଦ୍ୱାରା ଆରମ୍ଭ କରାଯାଇଥାଏ ଏବଂ ଯେତେବେଳେ କିଛି "
+"କରିବାକୁ ନଥାଏ ସେତେବେଳେ ସମାପ୍ତ ହୋଇଥାଏ।"
 
 #: src/system-config-services.glade.h:22
-msgid ""
-"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
-
-#: src/system-config-services.glade.h:28
 msgid ""
 "This service is managed by systemd. It may be started then run in the "
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
-msgstr "ଏହି ସର୍ଭିସଟି systemd ଦ୍ୱାରା ପରିଚାଳିତ।  ଏହା ହୁଏତଃ ଆରମ୍ଭ ହୋଇଛି ଏବଂ ପୃଷ୍ଠଭୂମିରେ ଚାଲୁଅଛି, ଅଥବା ଆବଶ୍ୟକ ହେଲେ ସକ୍ରିୟ ହେବ, କିମ୍ବା କେବଳ ଥରେ ପ୍ରସ୍ତୁତି ଏବଂ ସଫାକରିବା ପାଇଁ ଚାଲିଥାଏ।"
+msgstr ""
+"ଏହି ସର୍ଭିସଟି systemd ଦ୍ୱାରା ପରିଚାଳିତ।  ଏହା ହୁଏତଃ ଆରମ୍ଭ ହୋଇଛି ଏବଂ ପୃଷ୍ଠଭୂମିରେ ଚାଲୁଅଛି, ଅଥବା "
+"ଆବଶ୍ୟକ ହେଲେ ସକ୍ରିୟ ହେବ, କିମ୍ବା କେବଳ ଥରେ ପ୍ରସ୍ତୁତି ଏବଂ ସଫାକରିବା ପାଇଁ ଚାଲିଥାଏ।"
 
-#: src/system-config-services.glade.h:29
-msgid ""
-"This service is started once, usually when the system is booted, runs in the"
-" background and wakes up when needed."
-msgstr "ଏହି ସର୍ଭିସଟି ଥରେ ମାତ୍ର ଆରମ୍ଭ ହୋଇଥିଲା, ସାଧାରଣତଃ ଯେତେବେଳେ ତନ୍ତ୍ର ବୁଟକରାଯାଇଥିଲା, ପୃଷ୍ଠଭୂମିରେ ଚାଲୁଥାଏ ଏବଂ ଆବଶ୍ୟକ ହେଲେ ଜାଗ୍ରତ ହୋଇଥାଏ."
+#: src/system-config-services.glade.h:23
+msgid "Service Information"
+msgstr "ସର୍ଭିସ ସୂଚନା"
 
-#: src/system-config-services.glade.h:30
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr "ଏହି ସର୍ଭିସଟି ଆବଶ୍ୟକତା ଅନୁସାରେ xinetd ସର୍ଭିସ ଦ୍ୱାରା ଆରମ୍ଭ କରାଯାଇଥାଏ ଏବଂ ଯେତେବେଳେ କିଛି କରିବାକୁ ନଥାଏ ସେତେବେଳେ ସମାପ୍ତ ହୋଇଥାଏ।"
+#: src/system-config-services.glade.h:25
+#, no-c-format
+msgid "Status of service %s:"
+msgstr "ସର୍ଭିସ %sର ସ୍ଥିତି:"
 
-#: src/system-config-services.glade.h:31
-msgid "_About"
-msgstr "ବିବରଣୀ (_A)"
-
-#: src/system-config-services.glade.h:32
-msgid "_Contents"
-msgstr "ବିଷୟବସ୍ତୁ (_C)"
-
-#: src/system-config-services.glade.h:33
-msgid "_Customize"
-msgstr "ଇଚ୍ଛାରୂପଣ କରନ୍ତୁ (_C)"
-
-#: src/system-config-services.glade.h:34
-msgid "_Disable"
-msgstr "ନିଷ୍କ୍ରିୟକରନ୍ତୁ (_D)"
-
-#: src/system-config-services.glade.h:35
-msgid "_Enable"
-msgstr "ସକ୍ରିୟକରନ୍ତୁ (_E)"
-
-#: src/system-config-services.glade.h:36
-msgid "_Help"
-msgstr "ସହାୟତା (_H)"
-
-#: src/system-config-services.glade.h:37
-msgid "_Program"
-msgstr "ପ୍ରଗ୍ରାମ (_P)"
-
-#: src/system-config-services.glade.h:38
-msgid "_Restart"
-msgstr "ପୁନଃପ୍ରାରମ୍ଭ କରନ୍ତୁ (_R)"
-
-#: src/system-config-services.glade.h:39
-msgid "_Start"
-msgstr "ପ୍ରାରମ୍ଭ କରନ୍ତୁ (_S)"
-
-#: src/system-config-services.glade.h:40
+#: src/system-config-services.glade.h:26
 msgid "system-config-services"
 msgstr "system-config-services"
 
+#: src/system-config-services.glade.h:27
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: src/system-config-services.glade.h:42
+#: src/system-config-services.glade.h:34
 msgid "translator-credits"
 msgstr "ମନୋଜ କୁମାର ଗିରି  <mgiri@redhat.com>"
+
+#: src/system-config-services.glade.h:35
+msgid "Customize Runlevels"
+msgstr "ଚାଲିବା ସ୍ତରଗୁଡ଼ିକୁ ଇଚ୍ଛାରୂପଣ କରନ୍ତୁ"
+
+#: src/system-config-services.glade.h:38
+msgid "Runlevel _2"
+msgstr "ଚାଲିବା ସ୍ତର 2 (_2)"
+
+#: src/system-config-services.glade.h:39
+msgid "Runlevel _3"
+msgstr "ରନଲେବଲ _3"
+
+#: src/system-config-services.glade.h:40
+msgid "Runlevel _4"
+msgstr "ରନଲେବଲ _4"
+
+#: src/system-config-services.glade.h:41
+msgid "Runlevel _5"
+msgstr "ରନଲେବଲ _5"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
@@ -347,3 +399,6 @@ msgstr "ତନ୍ତ୍ର ସର୍ଭିସଗୁଡ଼ିକୁ ପରିଚ�
 #: config/org.fedoraproject.config.services.policy.1.in.h:4
 msgid "Managing system services requires authentication"
 msgstr "ତନ୍ତ୍ର ସର୍ଭିସଗୁଡ଼ିକୁ ପରିଚାଳନା କରିବା ପାଇଁ ବୈଧିକରଣ ଆବଶ୍ୟକ"
+
+#~ msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
+#~ msgstr "Copyright © 2002-2011 Red Hat, Inc. and contributors"

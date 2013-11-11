@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Nils Philippsen <nils@redhat.com>, 2011
 # Xavier Conde Rueda <xavi.conde@gmail.com>, 2004
@@ -9,112 +9,127 @@ msgid ""
 msgstr ""
 "Project-Id-Version: system-config-services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-04 17:07+0200\n"
+"POT-Creation-Date: 2013-11-11 14:12+0100\n"
 "PO-Revision-Date: 2013-04-29 09:59+0000\n"
 "Last-Translator: Nils Philippsen <nils@redhat.com>\n"
-"Language-Team: Catalan (http://www.transifex.com/projects/p/fedora/language/ca/)\n"
+"Language-Team: Catalan (http://www.transifex.com/projects/p/fedora/language/"
+"ca/)\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/gui.py:123
+#: src/gui.py:42
+#, python-format
+msgid ""
+"Error while initializing GUI toolkit: %(error)s\n"
+"This program must be run in a graphical environment."
+msgstr ""
+
+#: src/scservices/core/systemd/unit.py:203
+msgid "Error while getting description."
+msgstr ""
+
+#: src/scservices/gui/__init__.py:124
 msgid "Name"
 msgstr "Nom"
 
-#: src/gui.py:126
+#: src/scservices/gui/__init__.py:127
 msgid "Remarks"
 msgstr "Comentaris"
 
-#: src/gui.py:199 src/gui.py:221 src/gui.py:231
+#: src/scservices/gui/__init__.py:200 src/scservices/gui/__init__.py:222
+#: src/scservices/gui/__init__.py:232
 msgid "This service is being refreshed right now."
 msgstr "Aquest servei s'està refrescant."
 
-#: src/gui.py:200 src/gui.py:233
+#: src/scservices/gui/__init__.py:201 src/scservices/gui/__init__.py:234
 msgid "Getting information about this service failed."
 msgstr "No s'ha pogut obtenir informació d'aquest servei."
 
-#: src/gui.py:201 src/gui.py:205 src/gui.py:206
+#: src/scservices/gui/__init__.py:202 src/scservices/gui/__init__.py:206
+#: src/scservices/gui/__init__.py:207
 msgid "This service is enabled."
 msgstr "Aquest servei està habilitat."
 
-#: src/gui.py:202 src/gui.py:207 src/gui.py:208 src/gui.py:236
+#: src/scservices/gui/__init__.py:203 src/scservices/gui/__init__.py:208
+#: src/scservices/gui/__init__.py:209 src/scservices/gui/__init__.py:237
 msgid "This service is disabled."
 msgstr "Aquest servei està inhabilitat."
 
-#: src/gui.py:204
+#: src/scservices/gui/__init__.py:205
 #, python-format
 msgid "This service is enabled in runlevels: %(runlevels)s"
 msgstr "Aquest servei està habilitat en els nivells: %(runlevels)s"
 
-#: src/gui.py:209
+#: src/scservices/gui/__init__.py:210
 msgid "This service is masked."
 msgstr ""
 
-#: src/gui.py:222
+#: src/scservices/gui/__init__.py:223
 msgid "The status of this service is unknown."
 msgstr "L'estat del servei és desconegut."
 
-#: src/gui.py:223
+#: src/scservices/gui/__init__.py:224
 msgid "This service is stopped."
 msgstr "El servei està aturat."
 
-#: src/gui.py:224
+#: src/scservices/gui/__init__.py:225
 msgid "This service is running."
 msgstr "El servei s'està executant."
 
-#: src/gui.py:225
+#: src/scservices/gui/__init__.py:226
 msgid "This service is dead."
 msgstr "El servei ha mort."
 
-#: src/gui.py:245
+#: src/scservices/gui/__init__.py:246
 msgid "This unit is inactive."
 msgstr ""
 
-#: src/gui.py:247
+#: src/scservices/gui/__init__.py:248
 #, python-format
 msgid "This unit is inactive: %(sub_state)s"
 msgstr ""
 
-#: src/gui.py:251
+#: src/scservices/gui/__init__.py:252
 msgid "This unit is running."
 msgstr ""
 
-#: src/gui.py:254
+#: src/scservices/gui/__init__.py:255
 msgid "This unit has finished."
 msgstr ""
 
-#: src/gui.py:257
+#: src/scservices/gui/__init__.py:258
 #, python-format
 msgid "This unit is active: %(sub_state)s"
 msgstr ""
 
-#: src/gui.py:260
+#: src/scservices/gui/__init__.py:261
 #, python-format
 msgid "This unit has failed: %(sub_state)s"
 msgstr ""
 
-#: src/gui.py:264
+#: src/scservices/gui/__init__.py:265
 msgid "This unit is starting."
 msgstr ""
 
-#: src/gui.py:266
+#: src/scservices/gui/__init__.py:267
 #, python-format
 msgid "This unit is activating: %(sub_state)s"
 msgstr ""
 
-#: src/gui.py:269
+#: src/scservices/gui/__init__.py:270
 #, python-format
 msgid "This unit is deactivating: %(sub_state)s"
 msgstr ""
 
-#: src/gui.py:272
+#: src/scservices/gui/__init__.py:273
 #, python-format
 msgid "The state of this unit is unknown: %(active_state)s/%(sub_state)s"
 msgstr ""
 
-#: src/gui.py:349
+#: src/scservices/gui/__init__.py:350
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is managed by systemd. It may be started "
@@ -122,197 +137,233 @@ msgid ""
 "preparation or cleanup purposes."
 msgstr ""
 
-#: src/gui.py:379
+#: src/scservices/gui/__init__.py:380
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service is started once, usually when the system "
 "is booted, runs in the background and wakes up when needed."
-msgstr "El servei <b>%(servicename)s</b> s'inicia una vegada, normalment quan el sistema arrenca, s'executa en segon terme i es desperta quan se'l necessita."
+msgstr ""
+"El servei <b>%(servicename)s</b> s'inicia una vegada, normalment quan el "
+"sistema arrenca, s'executa en segon terme i es desperta quan se'l necessita."
 
-#: src/gui.py:398
+#: src/scservices/gui/__init__.py:399
 msgid "This service is updated currently."
 msgstr "Aquest servei s'actualitza actualment."
 
-#: src/gui.py:425
+#: src/scservices/gui/__init__.py:426
 #, python-format
 msgid ""
 "The <b>%(servicename)s</b> service will be started on demand by the xinetd "
 "service and ends when it has nothing more to do."
-msgstr "El servei <b>%(servicename)s</b> serà iniciat a petició per l'xinetd i acabarà quan no tingui res més a fer."
+msgstr ""
+"El servei <b>%(servicename)s</b> serà iniciat a petició per l'xinetd i "
+"acabarà quan no tingui res més a fer."
 
-#: src/gui.py:437
+#: src/scservices/gui/__init__.py:438
 msgid ""
 "This service is enabled, but the <b>xinetd</b> package is not installed. "
 "This service does not work without it."
-msgstr "El servei està habilitat, però el paquet <b>xinetd</b> no està instal·lat. Aquest servei no funcionarà sense ell."
+msgstr ""
+"El servei està habilitat, però el paquet <b>xinetd</b> no està instal·lat. "
+"Aquest servei no funcionarà sense ell."
 
-#: src/gui.py:448
+#: src/scservices/gui/__init__.py:450
 msgid ""
 "This service is enabled, but the <b>xinetd</b> service is not running. This "
 "service does not work without it."
-msgstr "El servei està habilitat, però el servei <b>xinetd</b> no s'està executant. Aquest servei no funcionarà sense ell."
+msgstr ""
+"El servei està habilitat, però el servei <b>xinetd</b> no s'està executant. "
+"Aquest servei no funcionarà sense ell."
 
-#: src/gui.py:941 src/system-config-services.glade.h:6
+#: src/scservices/gui/__init__.py:959 src/system-config-services.glade.h:37
 #, no-c-format, python-format
 msgid "Enable the <b>%(service)s</b> service in these runlevels:"
 msgstr "Habilita el servei <b>%(service)s</b> en aquests nivells:"
 
-#: src/gui.py:1100
+#: src/scservices/gui/__init__.py:1042
+#, python-format
+msgid ""
+"Copyright © %(copyright_begins)s - %(copyright_ends)s Red Hat, Inc. and "
+"contributors"
+msgstr ""
+
+#: src/scservices/gui/__init__.py:1147
 msgid ""
 "The help viewer could not be found. To be able to view help, the 'yelp' "
 "package needs to be installed."
-msgstr "No s'ha trobat el visualitzador d'ajuda. Per poder veure l'ajuda, us cal instal·lar el paquet «yelp»."
-
-#: src/scservices/core/systemd/unit.py:202
-msgid "Error while getting description."
 msgstr ""
+"No s'ha trobat el visualitzador d'ajuda. Per poder veure l'ajuda, us cal "
+"instal·lar el paquet «yelp»."
 
 #: src/system-config-services.glade.h:1
-msgid "Copyright © 2002-2011 Red Hat, Inc. and contributors"
-msgstr ""
-
-#: src/system-config-services.glade.h:2
-msgid "Customize Runlevels"
-msgstr "Personalitza els nivells"
-
-#: src/system-config-services.glade.h:3
-msgid "Customize the runlevels in which a service is enabled."
-msgstr "Personalitza els nivells en què s'habilitarà un servei."
-
-#: src/system-config-services.glade.h:4
-msgid "Description"
-msgstr "Descripció"
-
-#: src/system-config-services.glade.h:7
-msgid "No service selected."
-msgstr "No s'ha seleccionat cap servei."
-
-#: src/system-config-services.glade.h:8
-msgid "Runlevel 2"
-msgstr "Nivell d'execució 2"
-
-#: src/system-config-services.glade.h:9
-msgid "Runlevel 3"
-msgstr "Nivell d'execució 3"
-
-#: src/system-config-services.glade.h:10
-msgid "Runlevel 4"
-msgstr "Nivell d'execució 4"
-
-#: src/system-config-services.glade.h:11
-msgid "Runlevel 5"
-msgstr "Nivell d'execució 5"
-
-#: src/system-config-services.glade.h:12
-msgid "Runlevel _2"
-msgstr "Nivell d'execució _2"
-
-#: src/system-config-services.glade.h:13
-msgid "Runlevel _3"
-msgstr "Nivell d'execució _3"
-
-#: src/system-config-services.glade.h:14
-msgid "Runlevel _4"
-msgstr "Nivell d'execució _4"
-
-#: src/system-config-services.glade.h:15
-msgid "Runlevel _5"
-msgstr "Nivell d'execució _5"
-
-#: src/system-config-services.glade.h:16
-msgid "S_top"
-msgstr "A_tura"
-
-#: src/system-config-services.glade.h:17
-msgid "Ser_vice"
-msgstr "Ser_vei"
-
-#: src/system-config-services.glade.h:18
 msgid "Service Configuration"
 msgstr "Configuració dels serveis"
 
+#: src/system-config-services.glade.h:2
+msgid "_Program"
+msgstr "_Programa"
+
+#: src/system-config-services.glade.h:3
+msgid "Ser_vice"
+msgstr "Ser_vei"
+
+#: src/system-config-services.glade.h:4
+msgid "_Enable"
+msgstr "_Habilita"
+
+#: src/system-config-services.glade.h:5
+msgid "_Disable"
+msgstr "Inh_abilita"
+
+#: src/system-config-services.glade.h:6
+msgid "_Customize"
+msgstr "_Personalitza"
+
+#: src/system-config-services.glade.h:7
+msgid "Runlevel 2"
+msgstr "Nivell d'execució 2"
+
+#: src/system-config-services.glade.h:8
+msgid "Runlevel 3"
+msgstr "Nivell d'execució 3"
+
+#: src/system-config-services.glade.h:9
+msgid "Runlevel 4"
+msgstr "Nivell d'execució 4"
+
+#: src/system-config-services.glade.h:10
+msgid "Runlevel 5"
+msgstr "Nivell d'execució 5"
+
+#: src/system-config-services.glade.h:11
+msgid "_Start"
+msgstr "_Inicia"
+
+#: src/system-config-services.glade.h:12
+msgid "S_top"
+msgstr "A_tura"
+
+#: src/system-config-services.glade.h:13
+msgid "_Restart"
+msgstr "_Reinicia"
+
+#: src/system-config-services.glade.h:14
+msgid "_Help"
+msgstr "_Ajuda"
+
+#: src/system-config-services.glade.h:15
+msgid "_Contents"
+msgstr "_Contingut"
+
+#: src/system-config-services.glade.h:16
+msgid "_About"
+msgstr "_Quant a"
+
+#: src/system-config-services.glade.h:17
+msgid "Customize the runlevels in which a service is enabled."
+msgstr "Personalitza els nivells en què s'habilitarà un servei."
+
+#: src/system-config-services.glade.h:18
+msgid "No service selected."
+msgstr "No s'ha seleccionat cap servei."
+
 #: src/system-config-services.glade.h:19
-msgid "Service Information"
-msgstr "Informació del servei"
+msgid ""
+"This service is started once, usually when the system is booted, runs in the "
+"background and wakes up when needed."
+msgstr ""
+"Aquest servei s'inicia una vegada, normalment quan s'arrenca el sistema, "
+"s'executa en segon terme i es desperta quan se'l necessita."
+
+#: src/system-config-services.glade.h:20
+msgid "Description"
+msgstr "Descripció"
 
 #: src/system-config-services.glade.h:21
-#, no-c-format
-msgid "Status of service %s:"
-msgstr "Estat del servei %s:"
+msgid ""
+"This service will be started on demand by the xinetd service and ends when "
+"it has nothing more to do."
+msgstr ""
+"Aquest servei serà iniciat a petició per l'xinetd i acabarà quan no tingui "
+"res més a fer."
 
 #: src/system-config-services.glade.h:22
-msgid ""
-"This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
-"\n"
-"This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
-msgstr "Això és programari lliure; podeu redistribuir-lo i/o\nmodificar-lo sota els termes de la Llicència Pública General GNU tal i\ncom ha estat publicada per la Free Software Foundation; bé sota la\nversió 2 de la Llicència o una altra versió posterior.\n\nAquest programa es distribueix amb l'expectativa de que serà útil,\nperò SENSE CAP GARANTIA; ni tan sols la garantia implícita de\nCOMERCIABILITAT o ADEQUACIÓ PER UN PROPÒSIT PARTICULAR. Vegeu la\nLlicència Pública General GNU per obtenir-ne\nmés detalls.\n\nHauríeu d'haver rebut una còpia de la Llicència Pública General GNU amb aquest programa; si no, escriviu a la Free Software Foundation, Inc. 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA"
-
-#: src/system-config-services.glade.h:28
 msgid ""
 "This service is managed by systemd. It may be started then run in the "
 "background, or be activated on demand, or run once for preparation or "
 "cleanup purposes."
 msgstr ""
 
-#: src/system-config-services.glade.h:29
-msgid ""
-"This service is started once, usually when the system is booted, runs in the"
-" background and wakes up when needed."
-msgstr "Aquest servei s'inicia una vegada, normalment quan s'arrenca el sistema, s'executa en segon terme i es desperta quan se'l necessita."
+#: src/system-config-services.glade.h:23
+msgid "Service Information"
+msgstr "Informació del servei"
 
-#: src/system-config-services.glade.h:30
-msgid ""
-"This service will be started on demand by the xinetd service and ends when "
-"it has nothing more to do."
-msgstr "Aquest servei serà iniciat a petició per l'xinetd i acabarà quan no tingui res més a fer."
+#: src/system-config-services.glade.h:25
+#, no-c-format
+msgid "Status of service %s:"
+msgstr "Estat del servei %s:"
 
-#: src/system-config-services.glade.h:31
-msgid "_About"
-msgstr "_Quant a"
-
-#: src/system-config-services.glade.h:32
-msgid "_Contents"
-msgstr "_Contingut"
-
-#: src/system-config-services.glade.h:33
-msgid "_Customize"
-msgstr "_Personalitza"
-
-#: src/system-config-services.glade.h:34
-msgid "_Disable"
-msgstr "Inh_abilita"
-
-#: src/system-config-services.glade.h:35
-msgid "_Enable"
-msgstr "_Habilita"
-
-#: src/system-config-services.glade.h:36
-msgid "_Help"
-msgstr "_Ajuda"
-
-#: src/system-config-services.glade.h:37
-msgid "_Program"
-msgstr "_Programa"
-
-#: src/system-config-services.glade.h:38
-msgid "_Restart"
-msgstr "_Reinicia"
-
-#: src/system-config-services.glade.h:39
-msgid "_Start"
-msgstr "_Inicia"
-
-#: src/system-config-services.glade.h:40
+#: src/system-config-services.glade.h:26
 msgid "system-config-services"
 msgstr "system-config-services"
 
+#: src/system-config-services.glade.h:27
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
+"Place, Suite 330, Boston, MA 02111-1307  USA"
+msgstr ""
+"Això és programari lliure; podeu redistribuir-lo i/o\n"
+"modificar-lo sota els termes de la Llicència Pública General GNU tal i\n"
+"com ha estat publicada per la Free Software Foundation; bé sota la\n"
+"versió 2 de la Llicència o una altra versió posterior.\n"
+"\n"
+"Aquest programa es distribueix amb l'expectativa de que serà útil,\n"
+"però SENSE CAP GARANTIA; ni tan sols la garantia implícita de\n"
+"COMERCIABILITAT o ADEQUACIÓ PER UN PROPÒSIT PARTICULAR. Vegeu la\n"
+"Llicència Pública General GNU per obtenir-ne\n"
+"més detalls.\n"
+"\n"
+"Hauríeu d'haver rebut una còpia de la Llicència Pública General GNU amb "
+"aquest programa; si no, escriviu a la Free Software Foundation, Inc. 59 "
+"Temple Place, Suite 330, Boston, MA 02111-1307  USA"
+
 #. TRANSLATORS: Replace this string with your names, one name per line.
-#: src/system-config-services.glade.h:42
+#: src/system-config-services.glade.h:34
 msgid "translator-credits"
-msgstr "Xavier Conde Rueda <xavi.conde@gmail.com>\r\nRobert Buj Gelonch <robert.buj@gmail.com>"
+msgstr ""
+"Xavier Conde Rueda <xavi.conde@gmail.com>\r\n"
+"Robert Buj Gelonch <robert.buj@gmail.com>"
+
+#: src/system-config-services.glade.h:35
+msgid "Customize Runlevels"
+msgstr "Personalitza els nivells"
+
+#: src/system-config-services.glade.h:38
+msgid "Runlevel _2"
+msgstr "Nivell d'execució _2"
+
+#: src/system-config-services.glade.h:39
+msgid "Runlevel _3"
+msgstr "Nivell d'execució _3"
+
+#: src/system-config-services.glade.h:40
+msgid "Runlevel _4"
+msgstr "Nivell d'execució _4"
+
+#: src/system-config-services.glade.h:41
+msgid "Runlevel _5"
+msgstr "Nivell d'execució _5"
 
 #: system-config-services.desktop.in.h:1
 msgid "Configure which services will be running when the system starts"
