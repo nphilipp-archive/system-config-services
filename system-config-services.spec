@@ -118,6 +118,7 @@ rm -rf %{buildroot}
 - pull updated translations
 - fix bogus dates in changelog
 - remove trailing white space
+- systemd: recognize slice, scope unit types
 
 * Tue May 14 2013 Nils Philippsen <nils@redhat.com> - 0.101.10-1
 - actually distribute scservices.gui now it is a package (#960478, #962613)

@@ -302,6 +302,14 @@ class SystemDTimer(SystemDUnit):
     unit_type = 'timer'
 
 
+class SystemDSlice(SystemDUnit):
+    unit_type = 'slice'
+
+
+class SystemDScope(SystemDUnit):
+    unit_type = 'scope'
+
+
 if __name__ == '__main__':
     import gobject
     import slip.dbus
