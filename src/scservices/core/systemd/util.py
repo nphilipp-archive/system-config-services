@@ -39,7 +39,8 @@ def check_systemd_active():
     if cg_fs_stat.st_dev == cg_sysd_fs_stat.st_dev:
         return False
 
-    if not os.path.exists(constants.paths.daemon_path):
-        return False
+    for daemon_path in constants.paths.daemon_paths:
+        if os.path.exists(daemon_path):
+            return True
 
-    return True
+    return False
