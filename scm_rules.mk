@@ -104,7 +104,7 @@ endif
 
 snaparchive: .scminfo
 	@$(SCM_INFO_COMMIT_CMD)
-	@$(SCM_SNAP_ARCHIVE_COMMAND)
+	@$(SCM_ARCHIVE_COMMAND)
 	@$(SCM_INFO_REWIND_CMD)
 	@echo "The _local_ snapshot archive is in ${PKGNAME}-$(PKGVERSION).tar.bz2"
 

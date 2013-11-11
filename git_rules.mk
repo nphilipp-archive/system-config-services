@@ -28,8 +28,8 @@ SCM_PUSH_REMOTE_COMMAND = { git push $(SCM_REMOTEREPO_NAME) $(SCM_LOCAL_BRANCH):
 else
 	SCM_PUSH_REMOTE_COMMAND = { git push $(SCM_REMOTEREPO_NAME) $(SCM_LOCAL_BRANCH):$(SCM_REMOTE_BRANCH) && git push $(SCM_REMOTEREPO_NAME) :refs/tags/$(SCM_TAG) && git push $(SCM_REMOTEREPO_NAME) $(SCM_TAG); }
 endif
-SCM_SNAP_ARCHIVE_COMMAND = git archive --format=tar --prefix=$(PKGNAME)-$(PKGVERSION)/ HEAD | bzip2 -9 > $(PKGNAME)-$(PKGVERSION).tar.bz2
-SCM_ARCHIVE_COMMAND = git archive --format=tar --prefix=$(PKGNAME)-$(PKGVERSION)/ $(SCM_TAG) | bzip2 -9 > $(PKGNAME)-$(PKGVERSION).tar.bz2
+SCM_ARCHIVE_COMMAND = git archive --format=tar --prefix=$(PKGNAME)-$(PKGVERSION)/ HEAD | bzip2 -9 > $(PKGNAME)-$(PKGVERSION).tar.bz2
+SCM_TAGGED_ARCHIVE_COMMAND = git archive --format=tar --prefix=$(PKGNAME)-$(PKGVERSION)/ $(SCM_TAG) | bzip2 -9 > $(PKGNAME)-$(PKGVERSION).tar.bz2
 SCM_LASTLOG_COMMAND = git log --stat $(SCM_TAG).. $(SCM_LOG_PATHS)
 SCM_CHANGED_FILES_SINCE_TAG_COMMAND = git diff --stat $(SCM_TAG)
 GIT_LAST_CHANGE_DATE_CMD = git log -1 --pretty=format:\%ad --date=short
