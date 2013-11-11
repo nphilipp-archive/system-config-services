@@ -117,6 +117,7 @@ rm -rf %{buildroot}
 - systemd: update for new executable path (#1028833)
 - pull updated translations
 - fix bogus dates in changelog
+- remove trailing white space
 
 * Tue May 14 2013 Nils Philippsen <nils@redhat.com> - 0.101.10-1
 - actually distribute scservices.gui now it is a package (#960478, #962613)
@@ -601,7 +602,7 @@ rm -rf %{buildroot}
 * Fri Mar 03 2006 Nils Philippsen <nphilipp@redhat.com> - 0.9.0-1
 - require hicolor-icon-theme (#182878, #182879)
 
-* Tue Feb 28 2006 Florian Festi <ffesti@redhat.com> 
+* Tue Feb 28 2006 Florian Festi <ffesti@redhat.com>
 - rewrote large parts of servicemethods (OO design, better handling of old/new
   settings, read headers of init scripts completely)
 - first implementation of widgets to control services (intended for tools
@@ -656,7 +657,7 @@ rm -rf %{buildroot}
 - dynamic, translated column titles for runlevel columns
 
 * Thu Feb 17 2005 Daniel J Walsh <dwalsh@redhat.com> 0.8.19-1
-- Added patch from Charlie Brej 
+- Added patch from Charlie Brej
 
 * Fri Jan 28 2005 Nils Philippsen <nphilipp@redhat.com> 0.8.18-1
 - fix off-by-one which prevented saving changes to the last service in the list
