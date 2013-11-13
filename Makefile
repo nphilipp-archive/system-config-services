@@ -47,7 +47,7 @@ include polkit_rules.mk
 include desktop_rules.mk
 include po_rules.mk
 
-src/scservices/config.py:	.scminfo src/scservices/config.py.in $(PKGNAME).spec
+src/scservices/config.py:	src/scservices/config.py.in $(PKGNAME).spec .scminfo
 	sed -e 's,\@DATADIR\@,$(DATADIR),g; s,\@VERSION\@,$(PKGVERSION),g;s,\@COPYRIGHT_ENDS\@,$(SCM_LAST_CHANGE_YEAR),g' $< > $@ || rm -f $@
 
 config:	src/scservices/config.py
