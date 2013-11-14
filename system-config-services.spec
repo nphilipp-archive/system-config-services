@@ -14,7 +14,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.111.0
+Version: 0.111.1
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
@@ -113,6 +113,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Thu Nov 13 2013 Nils Philippsen <nils@redhat.com> - 0.111.1-1
+- use correct source file for config.py
+
 * Mon Nov 11 2013 Nils Philippsen <nils@redhat.com> - 0.111.0-1
 - systemd: update for new executable path (#1028833)
 - pull updated translations
