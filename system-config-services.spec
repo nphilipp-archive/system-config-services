@@ -113,7 +113,7 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
-* Thu Nov 13 2013 Nils Philippsen <nils@redhat.com> - 0.111.1-1
+* Thu Nov 14 2013 Nils Philippsen <nils@redhat.com> - 0.111.1-1
 - use correct source file for config.py
 
 * Mon Nov 11 2013 Nils Philippsen <nils@redhat.com> - 0.111.0-1
