@@ -97,15 +97,19 @@ ifndef FORCEARCHIVE
 		exit 1; \
 	fi
 endif
-	@$(SCM_INFO_COMMIT_CMD)
-	@$(SCM_ARCHIVE_COMMAND)
-	@$(SCM_INFO_REWIND_CMD)
+	@$(SCM_ARCHIVE_PREPARE_COMMANDS); \
+	$(SCM_INFO_COMMIT_CMD); \
+	$(SCM_ARCHIVE_COMMAND); \
+	$(SCM_INFO_REWIND_CMD); \
+	$(SCM_ARCHIVE_CLEANUP_COMMANDS)
 	@echo "The archive is in ${PKGNAME}-$(PKGVERSION).tar.bz2"
 
 snaparchive: .scminfo
-	@$(SCM_INFO_COMMIT_CMD)
-	@$(SCM_ARCHIVE_COMMAND)
-	@$(SCM_INFO_REWIND_CMD)
+	@$(SCM_ARCHIVE_PREPARE_COMMANDS); \
+	$(SCM_INFO_COMMIT_CMD); \
+	$(SCM_ARCHIVE_COMMAND); \
+	$(SCM_INFO_REWIND_CMD); \
+	$(SCM_ARCHIVE_CLEANUP_COMMANDS)
 	@echo "The _local_ snapshot archive is in ${PKGNAME}-$(PKGVERSION).tar.bz2"
 
 dif:	diff
