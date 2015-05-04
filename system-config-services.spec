@@ -14,7 +14,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.111.1
+Version: 0.111.2
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
@@ -114,7 +114,7 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
-* Mon May 04 2015 Nils Philippsen <nils@redhat.com>
+* Mon May 04 2015 Nils Philippsen <nils@redhat.com> - 0.111.2-1
 - use new set of icons (#562675)
 
 * Thu Nov 14 2013 Nils Philippsen <nils@redhat.com> - 0.111.1-1
