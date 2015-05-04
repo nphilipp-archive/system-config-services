@@ -18,6 +18,8 @@ LIBEXECDIR=$(PREFIX)/libexec
 DBUS_POLICY_DIR=$(SYSCONFDIR)/dbus-1/system.d
 DBUS_SERVICE_DIR=$(DATADIR)/dbus-1/system-services
 
+ICONDIR=$(DATADIR)/icons/hicolor
+
 POLKIT_FILES=config/org.fedoraproject.config.services.policy.0 \
 			 config/org.fedoraproject.config.services.policy.1
 
@@ -57,8 +59,17 @@ install:	all py-install po-install polkit-install desktop-install
 	install -d $(DESTDIR)$(BINDIR)
 	install -d $(DESTDIR)$(SBINDIR)
 
-	install -m 0644 pixmaps/*.png $(DESTDIR)$(PKGDATADIR)
-	install -D -m 0644 pixmaps/$(PKGNAME).png $(DESTDIR)/usr/share/icons/hicolor/48x48/apps/$(PKGNAME).png
+	for res in 16 22 24 32 48 64 128 256 512 scalable; do \
+		if [ -z "$${res//[0-9]}" ]; then \
+			res="$${res}x$${res}"; \
+		fi; \
+		install -d -m 0755 $(DESTDIR)$(ICONDIR)/$${res}/apps/; \
+		install -m 0644 icons/$${res}/apps/$(PKGNAME).* \
+			$(DESTDIR)$(ICONDIR)/$${res}/apps/; \
+	done
+	install -D -m 0644 icons/symbolic/apps/$(PKGNAME)-symbolic.svg \
+		$(DESTDIR)$(ICONDIR)/scalable/apps/$(PKGNAME)-symbolic.svg
+
 	install -D -m 0644 man/$(PKGNAME).8 $(DESTDIR)$(MANDIR)/man8/$(PKGNAME).8
 	for file in $(_PY_SRC_APPS); do \
 		install -m 0755 "$$file" "$(DESTDIR)$(PKGDATADIR)/"; \

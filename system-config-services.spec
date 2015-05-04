@@ -96,7 +96,8 @@ rm -rf %{buildroot}
 %{_sbindir}/*
 %{_bindir}/*
 %{_datadir}/applications/system-config-services.desktop
-%{_datadir}/icons/hicolor/48x48/apps/system-config-services.png
+%{_datadir}/icons/hicolor/*/apps/system-config-services.png
+%{_datadir}/icons/hicolor/scalable/apps/system-config-services*.svg
 %{_datadir}/system-config-services
 %{python_sitelib}/scservices
 %{python_sitelib}/scservices-%{version}-py%{python_version}.egg-info
@@ -113,6 +114,9 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon May 04 2015 Nils Philippsen <nils@redhat.com>
+- use new set of icons (#562675)
+
 * Thu Nov 14 2013 Nils Philippsen <nils@redhat.com> - 0.111.1-1
 - use correct source file for config.py
 
