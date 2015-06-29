@@ -2,7 +2,7 @@
 
 # scservices.core.systemd.unit: DBUS wrapper for systemd units
 #
-# Copyright © 2011, 2013 Red Hat, Inc.
+# Copyright © 2011, 2013, 2015 Red Hat, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -270,6 +270,10 @@ class SystemDAutomount(SystemDUnit):
     unit_type = 'automount'
 
 
+class SystemDBusName(SystemDUnit):
+    unit_type = 'busname'
+
+
 class SystemDDevice(SystemDUnit):
     unit_type = 'device'
 
@@ -292,6 +296,10 @@ class SystemDService(SystemDUnit):
 
 class SystemDSlice(SystemDUnit):
     unit_type = 'slice'
+
+
+class SystemDSnapShot(SystemDUnit):
+    unit_type = 'snapshot'
 
 
 class SystemDSocket(SystemDUnit):
