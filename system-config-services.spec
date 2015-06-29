@@ -14,7 +14,7 @@
 
 Summary: Utility to start and stop system services
 Name: system-config-services
-Version: 0.111.3
+Version: 0.111.4
 Release: 1%{?dist}
 URL: http://fedorahosted.org/%{name}
 Source0: http://fedorahosted.org/released/%{name}/%{name}-%{version}.tar.bz2
@@ -114,6 +114,10 @@ rm -rf %{buildroot}
 %{_mandir}/*/system-config-services.8*
 
 %changelog
+* Mon Jun 29 2015 Nils Philippsen <nils@redhat.com> - 0.111.4-1
+- add missing 'busname' and 'snapshot' unit classes (#1236419)
+- remove deprecated has-separator property from glade file
+
 * Tue May 05 2015 Nils Philippsen <nils@redhat.com> - 0.111.3-1
 - update the scalable icon to 48x48
 
