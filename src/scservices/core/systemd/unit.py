@@ -282,8 +282,16 @@ class SystemDPath(SystemDUnit):
     unit_type = 'path'
 
 
+class SystemDScope(SystemDUnit):
+    unit_type = 'scope'
+
+
 class SystemDService(SystemDUnit):
     unit_type = 'service'
+
+
+class SystemDSlice(SystemDUnit):
+    unit_type = 'slice'
 
 
 class SystemDSocket(SystemDUnit):
@@ -300,14 +308,6 @@ class SystemDTarget(SystemDUnit):
 
 class SystemDTimer(SystemDUnit):
     unit_type = 'timer'
-
-
-class SystemDSlice(SystemDUnit):
-    unit_type = 'slice'
-
-
-class SystemDScope(SystemDUnit):
-    unit_type = 'scope'
 
 
 if __name__ == '__main__':
